@@ -1,0 +1,32 @@
+---
+title: Grundlegendes zu Ergebnissen zwischen Datenbank und SQL-Editor
+description: Erfahren Sie mehr über die Ergebnisse zwischen Datenbank und SQL-Editor.
+exl-id: f31f3eef-791a-4984-901e-bc10554031bd
+source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 0%
+
+---
+
+# Datenbankergebnisse vs. `SQL Editor` Ergebnisse
+
+Sie können neugierig sein, was die `Last successful update began` -Feld in Ihrer `Integrations` Seite:
+
+![Last_success_update.png](../../../assets/Last_successful_update.png)
+
+## Die `timestamp` field
+
+Er zeigt den Start an `timestamp` (in der in Ihrem Konto festgelegten Zeitzone) der _Letzter erfolgreicher Aktualisierungszyklus_ auf Ihrem Konto.
+
+- Wenn bei einer der synchronisierten Tabellen während des letzten Aktualisierungszyklus ein Problem aufgetreten ist, wird dieser Zeitstempel *nicht aktualisiert*.
+- Es kann daher vorkommen, dass Berichte mit neuen Daten aktualisiert wurden, aber die *Letzte erfolgreiche Aktualisierung gestartet* hinkt noch hinterher.
+
+## Identifizieren des letzten &quot;echten&quot;Datenpunkts
+
+Der neueste Datenpunkt für eine bestimmte Integration wird durch die Variable `Last Data Point Received` `timestamp` befindet sich rechts neben jeder Integration. Dieser Zeitstempel bezieht sich auf den letzten Punkt, an dem Ihr Data Warehouse erfolgreich Datenpunkte von dieser Quelle erhalten hat, unabhängig davon, ob es sich um eine Datenbank-, API- oder Drittanbieter-Integration handelt.
+
+So überprüfen Sie die Aktualisierung von Daten aus *Spezifische Tabellen* wird empfohlen, eine schnelle [SQL-Bericht](../../dev-reports/sql-rpt-bldr.md) , die eine `MAX(timestamp)` auf der wichtigsten Tabelle Ihres Kontos. Vergleich dieses Zeitstempels mit dem `Last Data Point` gibt an, ob das Problem das gesamte Konto oder eine Untergruppe der Tabellen betraf. Es wird empfohlen, dies für drei bis vier wichtige, häufig verwendete Tabellen zu tun.
+
+- Wenn die Variable `MAX(timestamp)` Werte, die aktueller sind als `Last Data Point Received`bedeutet dies, dass eine Teilmenge der Tabellen betroffen war, der Aktualisierungszyklus des Gesamtkontos jedoch stabil ist.
+- Wenn die Variable `MAX(timestamp)` Werte sind gleich oder bevor `Last Data Point Received`bedeutet dies, dass der Aktualisierungszyklus des Kontos betroffen war. In diesem Fall [Support-Ticket einreichen](../../../guide-overview.md).

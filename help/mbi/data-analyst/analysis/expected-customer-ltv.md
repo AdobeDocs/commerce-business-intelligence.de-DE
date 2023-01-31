@@ -1,0 +1,156 @@
+---
+title: Erwartete Lebenszeitwert-Analyse (LTV) für Pro
+description: Erfahren Sie, wie Sie ein Dashboard einrichten, das Ihnen dabei hilft, das Wachstum des Kundenlebenszeitwerts und den erwarteten Lebenszeitwert Ihrer Kunden zu verstehen.
+exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
+source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 0%
+
+---
+
+# Erwartete Lebenszeitwertanalyse
+
+In diesem Artikel zeigen wir, wie Sie ein Dashboard einrichten, das Ihnen dabei hilft, das Lebenszeitwertwachstum und den erwarteten Lebenszeitwert Ihrer Kunden zu verstehen.
+
+![](../../assets/exp-lifetim-value-anyalysis.png)
+
+Diese Analyse steht nur Pro-Konto-Kunden in der neuen Architektur zur Verfügung. Wenn Ihr Konto Zugriff auf die `Persistent Views` -Funktion unter `Manage Data` Seitenleiste, befinden Sie sich in der neuen Architektur und können den hier aufgeführten Anweisungen folgen, um diese Analyse selbst zu erstellen.
+
+Bevor Sie beginnen, sollten Sie sich mit unserer [Kohorten-ReportBuilder.](../dev-reports/cohort-rpt-bldr.md)
+
+## Berechnete Spalten
+
+Spalten, die für die **Bestellungen** -Tabelle verwenden **30-Tage-Monate**:
+
+* [!UICONTROL Column name]: `Months between first order and this order`
+* [!UICONTROL Column type]: `Same Table`
+* 
+   [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column input]: A = `Seconds between customer's first order date and this order`
+* 
+   [!UICONTROL Datatype]: `Integer`
+* **Definition:**`case when A is null then null when A <= 0 then '1'::int else (ceil(A)/2629800)::int end`
+
+* [!UICONTROL Column name]: `Months since order`
+* [!UICONTROL Column type]: `Same Table`
+* 
+   [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column input]: A = `created_at`
+* 
+   [!UICONTROL Datatype]: `Integer`
+* Definition: `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
+
+Spalten, die für die **`orders`** -Tabelle verwenden **calendar** months:
+
+* [!UICONTROL Column name]: `Calendar months between first order and this order`
+* [!UICONTROL Column type]: `Same Table`
+* 
+   [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column inputs]:
+   * `A` = `created_at`
+   * `B` = `Customer's first order date`
+
+* 
+   [!UICONTROL Datatype]: `Integer`
+* Definition: `case when (A::date is null) or (B::date is null) then null else ((date_part('year',A::date) - date_part('year',B::date))*12 + date_part('month',A::date) - date_part('month',B::date))::int end`
+
+* [!UICONTROL Column name]: `Calendar months since order`
+* [!UICONTROL Column type]: `Same Table`
+* 
+   [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column input]: `A` = `created_at`
+* 
+   [!UICONTROL Datatype]: `Integer`
+* **Definition:**`case when A is null then null else ((date_part('year',current_timestamp::date) - date_part('year',A::date))*12 + date_part('month',current_timestamp::date) - date_part('month',A::date))::int end`
+
+* [!UICONTROL Column name]: `Is in current month? (Yes/No)`
+* [!UICONTROL Column type]: `Same Table`
+* 
+   [!UICONTROL Column equation]: `CALCULATION`
+* [!UICONTROL Column input]: A = `created_at`
+* 
+   [!UICONTROL Datatype]: `String`
+* Definition: `case when A is null then null when (date_trunc('month', current_timestamp::date))::varchar = (date_trunc('month', A::date))::varchar then 'Yes' else 'No' end`
+
+## Metriken
+
+### Metrikanweisungen
+
+Zu erstellende Metriken
+
+* **Unique Customers nach Erstbestellungsdatum**
+   * Wenn Sie Gastbestellungen aktivieren, verwenden Sie `customer_email`
+
+* Im **`orders`** table
+* Diese Metrik führt eine **Zählung unterschiedlicher Werte**
+* Im **`customer_id`** column
+* Bestellt von der **`Customer's first order date`** timestamp
+
+>[!NOTE]
+>
+>Stellen Sie sicher, dass [Metriken alle neuen Spalten als Dimensionen hinzufügen](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) vor der Erstellung neuer Berichte.
+
+## Berichte
+
+### Berichtanweisungen
+
+**Erwarteter Umsatz pro Kunde nach Monat**
+
+* Metrik `A`: `Revenue (hide)`
+   * `Calendar months between first order and this order` `<= X` (Wählen Sie eine vernünftige Zahl für X aus, z. B. 24 Monate)
+   * `Is in current month?` = `No`
+
+* 
+   [!UICONTROL Metrik]: `Revenue`
+* [!UICONTROL Filter]:
+
+* Metrik `B`: `All time customers (hide)`
+   * `Is in current month?` = `No`
+
+* [!UICONTROL Metric]: `New customers by first order date`
+* [!UICONTROL Filter]:
+
+* Metrik `C`: `All time customers by month since first order (hide)`
+   * `Calendar months since order` `<= X`
+   * `Is in current month?` = `No`
+
+* [!UICONTROL Metric]: `New customers by first order date`
+* [!UICONTROL Filter]:
+
+* [!UICONTROL Formula]: `Expected revenue`
+* [!UICONTROL Formula]: `A / (B - C)`
+* 
+
+   [!UICONTROL Format]: `Currency`
+
+Weitere Diagrammdetails
+
+* [!UICONTROL Time period]: `All time`
+* Zeitintervall: `None`
+* [!UICONTROL Group by]: `Calendar months between first order and this order` - Alle anzeigen
+* Ändern Sie die `group by` für `All time customers` Metrik mithilfe des Stiftsymbols neben dem `group by`
+* Bearbeiten Sie die `Show top/bottom` -Felder wie folgt:
+   * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
+   * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
+   * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
+
+**Durchschnittlicher Umsatz pro Monat nach Kohorte**
+
+* Metrik `A`: `Revenue`
+* 
+   [!UICONTROL Metric view]: `Cohort`
+* [!UICONTROL Cohort date]: `Customer's first order date`
+* [!UICONTROL Perspective]: `Average value per cohort member`
+
+**Kumulativer durchschnittlicher Umsatz pro Monat nach Kohorte**
+
+* Metrik `A`: `Revenue`
+* 
+   [!UICONTROL Metric view]: `Cohort`
+* [!UICONTROL Cohort date]: `Customer's first order date`
+* [!UICONTROL Perspective]: `Cumulative average value per cohort member`
+
+Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Endergebnis kann wie das Bild oben auf der Seite aussehen.
+
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach unser Professional Services-Team einbinden möchten, [Support kontaktieren](../../guide-overview.md).
