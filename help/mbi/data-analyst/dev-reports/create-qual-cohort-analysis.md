@@ -2,9 +2,9 @@
 title: Erstellen einer qualitativen Kohortenanalyse
 description: Erfahren Sie, was eine qualitative Kohorte ist, warum Sie an der Erstellung dieser Analyse interessiert sein könnten und wie Sie sie erstellen können in [!DNL MBI].
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Wenn Sie jedoch das Kohortenverhalten mehrerer Benutzersegmente im selben Kohort
 
 Erstellen einer `qualitative cohort` im Bericht `Report Builder` beteiligt unser Analyseteam an der Erstellung von [Erweiterte berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md) auf den erforderlichen Tabellen.
 
-Um diese zu erstellen, senden Sie eine [Support-Ticket](../../guide-overview.md) (und referenzieren Sie diesen Artikel!). Folgendes müssen wir wissen:
+Um diese zu erstellen, senden Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) (und referenzieren Sie diesen Artikel!). Folgendes müssen wir wissen:
 
 * Die `metric` Sie möchten Ihre Kohortenanalyse mit der verwendeten Tabelle durchführen (Beispiel: `Revenue`, basierend auf der `orders` Tabelle).
 

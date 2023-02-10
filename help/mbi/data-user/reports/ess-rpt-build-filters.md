@@ -2,9 +2,9 @@
 title: Filter
 description: Erfahren Sie, wie Sie Filter verwenden.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu beschrä
 >
 >Ein Bericht kann maximal 3.500 Datenpunkte enthalten. Um die Anzahl der Datenpunkte zu reduzieren, verwenden Sie einen Filter, um die Datenmenge zu reduzieren, die zum Generieren des Berichts verwendet wird.
 
-MBI enthält eine Auswahl von Filtern, die Sie standardmäßig verwenden oder an Ihre Anforderungen anpassen können. Die Anzahl der Filter, die Sie erstellen können, ist unbegrenzt.
+MBI enthält eine Auswahl von Filtern, die Sie &quot;vorkonfiguriert&quot;(OOTB) verwenden oder an Ihre Anforderungen anpassen können. Die Anzahl der Filter, die Sie erstellen können, ist unbegrenzt.
 
 ## So fügen Sie einen Filter hinzu:
 

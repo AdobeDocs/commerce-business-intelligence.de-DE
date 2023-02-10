@@ -2,9 +2,9 @@
 title: Arbeitstabelle einer Metrik ändern
 description: Erfahren Sie, wie Sie die Datentabelle ändern, mit der eine Metrik ihren Vorgang ausführt.
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ In bestimmten Fällen können Sie die Datentabelle ändern, mit der eine Metrik 
 
    ![](../../assets/change-metrics-2.png)
 
-1. Wenn die neue Tabelle keine übereinstimmende Spalte enthält, können Sie entweder **Erstellen in der Datentabelle** oder [Support kontaktieren](../../guide-overview.md) wenn es sich um eine Berechnungsspalte oder -dimension handelt, die von [!DNL MBI]) oder einfach **Dimension aus der Metrik löschen**. Um eine Dimension zu löschen, die Sie nicht mehr benötigen, gehen Sie einfach zum Editor der Metrik zurück und wählen Sie unter die zu löschenden Dimensionen aus `Dimensions`.
+1. Wenn die neue Tabelle keine übereinstimmende Spalte enthält, können Sie entweder **Erstellen in der Datentabelle** oder [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) wenn es sich um eine Berechnungsspalte oder -dimension handelt, die von [!DNL MBI]) oder einfach **Dimension aus der Metrik löschen**. Um eine Dimension zu löschen, die Sie nicht mehr benötigen, gehen Sie einfach zum Editor der Metrik zurück und wählen Sie unter die zu löschenden Dimensionen aus `Dimensions`.
 
    ![](../../assets/change-metrics-3.png)

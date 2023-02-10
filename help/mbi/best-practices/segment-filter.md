@@ -2,9 +2,9 @@
 title: Empfohlene Daten-Dimensionen für Segmentierung und Filterung
 description: Erfahren Sie mehr über Best Practices für die Segmentierung und Filterung.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Diese Art von Analyse machen Marketer in Fortune 1000-Unternehmen den ganzen Tag
 
 Der erste Schritt zur Segmentierung Ihrer Metriken nach den oben genannten Dimensionen besteht darin sicherzustellen, dass Sie diese Daten in Ihrer Datenbank verfolgen. Wenn sie nicht verfolgt wird, wenden Sie sich an Ihr Technikerteam und finden Sie eine Möglichkeit, das Tracking dieser Daten zu starten.
 
-Sobald wir bestätigen, dass die Daten in Ihrer Datenbank nachverfolgt werden, [Kontakt zu unserem Support-Team](../guide-overview.md) um die Dimensionen an Ihre [!DNL MBI] Metriken und Diagrammen oder einfach unser Tool zur Feldverwaltung verwenden, um diese Felder in [!DNL MBI].
+Sobald wir bestätigen, dass die Daten in Ihrer Datenbank nachverfolgt werden, [Kontakt zu unserem Support-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) um die Dimensionen an Ihre [!DNL MBI] Metriken und Diagrammen oder einfach unser Tool zur Feldverwaltung verwenden, um diese Felder in [!DNL MBI].
 
 ## Verwandte
 

@@ -2,10 +2,10 @@
 title: Google Analytics - Übersicht über die Benutzerakquise-Quelldaten
 description: Erfahren Sie, wie Sie Ihre Daten nach Benutzerakquise-Quelle segmentieren.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 0%
+source-wordcount: '837'
+ht-degree: 1%
 
 ---
 
@@ -69,11 +69,11 @@ Nehmen wir an, wir verwenden eine SQL-Datenbank und verfügen über eine `users`
 
 | ID | E-MAIL | JOIN_DATE | ACQ_SOURCE | ACQ_MEDIUM |
 |--- |--- |--- |--- |--- |
-| 1 | john@abc.com | 24.01.2012 | google | organisch |
-| 2 | jim@abc.com | 24.01.2012 | google | cpc |
-| 3 | joe@def.com | 25.01.2012 | direct | - |
-| 4 | jess@ghi.com | 26.01.2012 | Verweis | techcrunch.com |
-| 5 | jen@ghi.net | 30.01.2012 | other | organisch |
+| 1 | john@abc.com | 2012-01-24 | google | organisch |
+| 2 | jim@abc.com | 2012-01-24 | google | cpc |
+| 3 | joe@def.com | 2012-01-25 | direct | - |
+| 4 | jess@ghi.com | 2012-01-26 | Verweis | techcrunch.com |
+| 5 | jen@ghi.net | 2012-01-30 | other | organisch |
 | ... | ... | ... | ... | ... |
 
 Zunächst können wir die Anzahl der Benutzer aus den einzelnen Verweiskanälen zählen, indem wir die folgende Abfrage für Ihre Datenbank ausführen:
@@ -93,7 +93,6 @@ Das ist interessant, aber von begrenztem Nutzen. Was wir wirklich gerne wissen w
 
 ### Verwandte
 
-* **[Tracking von Benutzergeräte-, Browser- und Betriebssystemdaten in Ihrer Datenbank](https://support.magento.com/hc/en-us/articles/360016732911)**
 * **[Entdecken Sie Ihre wertvollsten Akquisequellen und -kanäle](../analysis/most-value-source-channel.md)**
 * **[Verbinden Sie Ihre [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)**
 * **[Erhöhen Sie den ROI Ihrer Werbekampagnen.](../analysis/roi-ad-camp.md)**

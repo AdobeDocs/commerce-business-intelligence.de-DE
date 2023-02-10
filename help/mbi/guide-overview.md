@@ -5,9 +5,9 @@ breadcrumb-title: Guide Overview
 seo-title: MBI User Guide
 seo-description: Describes how to use the MBI features used to gain insights from Adobe Commerce or Magento Open Source data.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Greifen Sie auf unser Support-Team zu, wenn Sie Fragen haben oder von einigen un
 
 ### Service-Richtlinien
 
-Siehe [Liste der von unserem Support-Team angebotenen Dienstleistungen](https://support.magento.com/hc/en-us/articles/360016730811).
+Siehe [Liste der von unserem Support-Team angebotenen Dienstleistungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### Senden eines Support-Tickets
 
-Benötigen Sie Hilfe beim Erstellen einer erweiterten berechneten Spalte? Fehlerkorrektur - kein Verbindungsproblem mehr aufgetreten? Sollten Sie Kontakt mit unserem Support-Team benötigen, bitten wir Sie, unsere [Support-Ticketrichtlinien](https://support.magento.com/hc/en-us/articles/360016730351). In diesen Leitlinien wird beschrieben, welche Informationen die Adobe zur Lösung des Problems benötigt.
+Benötigen Sie Hilfe beim Erstellen einer erweiterten berechneten Spalte? Fehlerkorrektur - kein Verbindungsproblem mehr aufgetreten? Sollten Sie Kontakt mit unserem Support-Team benötigen, bitten wir Sie, unsere [Support-Ticketrichtlinien] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en). In diesen Leitlinien wird beschrieben, welche Informationen die Adobe zur Lösung des Problems benötigt.
 
 ## Verfügbare Dokumentation
 

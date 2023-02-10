@@ -2,9 +2,9 @@
 title: Datei-Uploader verwenden
 description: Erfahren Sie, wie Sie alle Ihre Daten in ein einziges Data Warehouse übertragen.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Verwenden wir Werbekampagnen als Beispiel. Wenn Sie sowohl Online- als auch Offl
 ## Einschränkungen und Anforderungen {#require}
 
 1. **Das einzige unterstützte Format für Datei-Uploads ist `CSV` oder`comma separated values`**. Wenn Sie in Excel arbeiten, können Sie die Datei mit der Funktion Speichern unter in `.csv` Format.
-1. **`CSV`-Dateien müssen`UTF-8 encoding`**. Meistens wird dies kein Problem sein. Wenn dieser Fehler beim Hochladen einer Datei auftritt, [Artikel zum Support](https://support.magento.com/hc/en-us/articles/360016730591).
+1. **`CSV`-Dateien müssen`UTF-8 encoding`**. Meistens wird dies kein Problem sein. Wenn dieser Fehler beim Hochladen einer Datei auftritt, [Artikel zum Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
 1. **Dateien dürfen nicht größer als 100 MB sein.**. Wenn die Datei größer ist, trennen Sie die Tabelle in Blöcke und speichern Sie sie als einzelne Dateien. Sie können die Daten nach dem Laden der ursprünglichen Datei anhängen.
 1. **Alle Tabellen müssen über eine`primary key`**. Ihre Tabelle muss mindestens eine Spalte enthalten, die als `primary key`oder eine eindeutige Kennung für jede Zeile in der Tabelle. Jede Spalte, die als `primary key` can *never* null sein. A `primary key` kann so einfach sein, wie das Hinzufügen einer Spalte, die jeder Zeile eine Zahl gibt, oder zwei miteinander verkettete Spalten, um eine Spalte mit eindeutigen Werten zu bilden (z. B. `campaign name` und `date`).
 

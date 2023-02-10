@@ -25,24 +25,24 @@ Mit diesen Berechtigungen können Benutzer bestimmte Aktionen durchführen oder 
 
 |  | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
-| **Benutzer erstellen/verwalten** | ms |  |  |
-| **E-Mail-Zusammenfassungen erstellen** | ms | ms |  |
-| **Dashboards erstellen/bearbeiten/freigeben** | ms | ms |  |
-| **Anzeigen von Dashboards** | ms | ms | ms |
-| **Erstellen/Bearbeiten/Löschen visueller Berichte** | ms | * |  |
-| **SQL-Berichte erstellen/bearbeiten/löschen** | ms |  |  |
-| **Dashboards klonen** | ms |  |  |
-| **Integrationen hinzufügen/verwalten** | ms |  |  |
-| **Zugriff auf Data Warehouse Manager** | ms |  |  |
-| **Synchronisieren/Aufheben der Synchronisierung von Tabellen und Spalten** | ms |  |  |
-| **Erstellen/Bearbeiten von Metriken** | ms |  |  |
-| **Erstellen und Bearbeiten von Filtersätzen** | ms |  |  |
-| **Berechnete Spalten erstellen/bearbeiten** | ms |  |  |
-| **Liste der abhängigen Berichte erstellen** | ms |  |  |
-| **Zugriffssystemzusammenfassung** | ms |  |  |
-| **Zeitzoneneinstellungen aufrufen** | ms |  |  |
-| **Abrechnung des Zugriffs** | ms | * |  |
-| **Support kontaktieren** | ms | ms | ms |
+| **Benutzer erstellen/verwalten** | ✔ |  |  |
+| **E-Mail-Zusammenfassungen erstellen** | ✔ | ✔ |  |
+| **Dashboards erstellen/bearbeiten/freigeben** | ✔ | ✔ |  |
+| **Anzeigen von Dashboards** | ✔ | ✔ | ✔ |
+| **Erstellen/Bearbeiten/Löschen visueller Berichte** | ✔ | ✔* |  |
+| **SQL-Berichte erstellen/bearbeiten/löschen** | ✔ |  |  |
+| **Dashboards klonen** | ✔ |  |  |
+| **Integrationen hinzufügen/verwalten** | ✔ |  |  |
+| **Zugriff auf Data Warehouse Manager** | ✔ |  |  |
+| **Synchronisieren/Aufheben der Synchronisierung von Tabellen und Spalten** | ✔ |  |  |
+| **Erstellen/Bearbeiten von Metriken** | ✔ |  |  |
+| **Erstellen und Bearbeiten von Filtersätzen** | ✔ |  |  |
+| **Berechnete Spalten erstellen/bearbeiten** | ✔ |  |  |
+| **Liste der abhängigen Berichte erstellen** | ✔ |  |  |
+| **Zugriffssystemzusammenfassung** | ✔ |  |  |
+| **Zeitzoneneinstellungen aufrufen** | ✔ |  |  |
+| **Abrechnung des Zugriffs** | ✔ | ✔** |  |
+| **Support kontaktieren** | ✔ | ✔ | ✔ |
 
 {style=&quot;table-layout:auto&quot;}
 

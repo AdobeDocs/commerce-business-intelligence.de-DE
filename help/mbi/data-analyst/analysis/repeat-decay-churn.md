@@ -2,9 +2,9 @@
 title: Analysieren von Wiederholwahrscheinlichkeitsabfall und Abwanderung
 description: Erfahren Sie, wie die Zeit zwischen Bestellungen verfällt und wann mit einer Abwanderung der Kunden zu rechnen ist.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Bei der Analyse des Rückgangs und der Abwanderung von Wiederholungswahrscheinli
 
 ### anfängliche Wiederholungsreihenwahrscheinlichkeit
 
-Diese Kennzahl ist definiert als die Gesamtzahl der wiederkehrenden Bestellungen in Prozent der Gesamtbestellungen. Anders ausgedrückt: Dies ist die Wahrscheinlichkeit, dass eine Bestellung von einer anderen Bestellung gefolgt wird. Wenn diese Wahrscheinlichkeit über 50 % liegt, bedeutet dies, dass mehr als die Hälfte aller Bestellungen von einer nachfolgenden Bestellung gefolgt wird.
+Diese Kennzahl ist definiert als die Gesamtzahl der wiederkehrenden Bestellungen in Prozent der Gesamtbestellungen. Anders ausgedrückt: Dies ist die Wahrscheinlichkeit, dass eine Bestellung von einer anderen Bestellung gefolgt wird. Wenn diese Wahrscheinlichkeit über 50 Prozent liegt, bedeutet dies, dass mehr als die Hälfte aller Bestellungen von einer nachfolgenden Bestellung gefolgt wird.
 
 ### Wiederholungsbestellwahrscheinlichkeit seit Bestellung in Monaten
 
@@ -76,7 +76,7 @@ Nachdem Sie die obige Analyse erstellt und einen Abwanderungsschwellenwert ermit
 
 Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt kaufen, im Laufe der Zeit anders verhalten als andere Kunden. Möchten Sie mehr erfahren? Sehen Sie sich dieses Tutorial an, um das lebenslange Kaufverhalten von Kundenkohorten basierend auf bestimmten Produkten, die sie gekauft haben, zu untersuchen.
 
-Diese Best Practice wird von [!DNL MBI] Data Analysis Services (DAS). Wir freuen uns auf Ihre speziellen Geschäftsfragen! [Support kontaktieren](../../guide-overview.md) für weitere Informationen.
+Diese Best Practice wird von [!DNL MBI] Data Analysis Services (DAS). Wir freuen uns auf Ihre speziellen Geschäftsfragen! [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) für weitere Informationen.
 
 ### Verwandte
 

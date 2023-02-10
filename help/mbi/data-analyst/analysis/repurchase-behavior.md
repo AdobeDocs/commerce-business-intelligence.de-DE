@@ -2,10 +2,10 @@
 title: Analysieren des Kundenrückkaufverhaltens
 description: Erfahren Sie, wie Sie das Verhalten von Kunden bei der Rücknahme analysieren.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
@@ -46,9 +46,9 @@ Beachten Sie die oben genannten Metriken. Sehen wir uns ein Beispiel für Kaffee
 
 | **Produktname** | **Wiederholungsreihenwahrscheinlichkeit** | **Durchschnittliche Anzahl der Bestellungen über die Lebensdauer** | **Durchschnittlicher Umsatz während der Lebensdauer** | **Mittlere Zeit bis nächste Bestellung** |
 |-----|-----|-----|-----|-----|
-| Kaffeebierwanne für eine Tasse | 94,98% | 7,92 | 549,82 $ | 57.01 Tage |
-| Kaffeekapseln | 93,82% | 8,68 | $ 479.98 | 63.48 Tage |
-| Kaffeebohnen | 41,92% | 6,07 | 99,82 $ | 27.31 Tage |
+| Kaffeebierwanne für eine Tasse | 94.98% | 7.92 | $549.82 | 57.01 Tage |
+| Kaffeekapseln | 93.82% | 8.68 | $479.98 | 63.48 Tage |
+| Kaffeebohnen | 41.92% | 6.07 | $99.82 | 27.31 Tage |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -80,4 +80,4 @@ Zusätzlich zur Analyse des Kaufverhaltens Ihrer Kunden können Sie auch Analyse
 
 Nachdem Sie ermittelt haben, warum die Abwanderung stattfindet, können Sie Ihre Analyse verwenden, um eine `reactivation` Kampagne. Mithilfe dieser Daten können Sie Benutzer identifizieren, die inaktiv geworden sind, wie lange es seit ihrem letzten Besuch ist, was ihr letzter Kauf war usw. Auf diese Weise können Sie umsetzbare Entscheidungen treffen, die Ihre Kunden zur Rückkehr bewegen.
 
-Hilfe zur Analyse: [Support kontaktieren](../../guide-overview.md).
+Hilfe zur Analyse: [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

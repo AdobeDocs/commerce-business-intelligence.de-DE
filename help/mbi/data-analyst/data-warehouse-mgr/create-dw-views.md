@@ -5,7 +5,7 @@ exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '1111'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -56,11 +56,11 @@ Sehen wir uns eines der oben in diesem Artikel erwähnten Beispiele genauer an: 
 
 | **`_id`** | **`campaign`** | **`adClicks`** | **`date`** | **`impressions`** | **`adCost`** |
 |--- |--- |--- |--- |--- |--- |
-| 1 | eee | 60 | 05.05.2017 00:00:00 | 2000 | Artikel 10 Absatz 2 |
-| 2 | ggg | 40 | 23.05.2017 00:00:00 | 900 | 4,6 |
-| 3 | aaa | 22 | 12.06.2017 00:00:00 | 400 | 2,5 |
-| 4 | eee | 350 | 30.06.2017:00:00 | 14500 | 35 |
-| 5 | fff | 280 | 07.10.2017:00:00 | 10200 | 28,5 |
+| 1 | eee | 60 | 2017-05-05 00:00:00 | 2000 | 10.2 |
+| 2 | ggg | 40 | 2017-05-23 00:00:00 | 900 | 4.6 |
+| 3 | aaa | 22 | 2017-06-12 00:00:00 | 400 | 2.5 |
+| 4 | eee | 350 | 2017-06-30 00:00:00 | 14500 | 35 |
+| 5 | fff | 280 | 2017-07-10 00:00:00 | 10200 | 28.5 |
 
 `Ad source: Facebook`
 
@@ -70,11 +70,11 @@ Sehen wir uns eines der oben in diesem Artikel erwähnten Beispiele genauer an: 
 
 | **`_id`** | **`campaign`** | **`adClicks`** | **`date`** | **`impressions`** | **`adCost`** |
 |--- |--- |--- |--- |--- |--- |
-| 1 | aaa | 25 | 05.01.2017 00:00:00 | 1200 | 5 |
-| 2 | ddd | 12 | 15.05.2017 00:00:00 | 800 | 2,5 |
-| 3 | aaa | 40 | 22.05.2017 00:00:00 | 2000 | 7 |
-| 4 | aaa | 110 | 06.08.2017 00:00:00 | 6000 | 10 |
-| 5 | ccc | 5 | 07.06.2017 00:00:00 | 300 | 1,2 |
+| 1 | aaa | 25 | 2017-05-01 00:00:00 | 1200 | 5 |
+| 2 | ddd | 12 | 2017-05-15 00:00:00 | 800 | 2.5 |
+| 3 | aaa | 40 | 2017-05-22 00:00:00 | 2000 | 7 |
+| 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
+| 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
 So erstellen Sie eine Ausgabentabelle für eine einzelne Anzeige, die beide [!DNL Facebook] und [!DNL AdWords] Kampagnen, müssen wir eine SQL-Abfrage schreiben und die `UNION ALL` -Funktion. A `UNION ALL` -Anweisung wird meist verwendet, um mehrere verschiedene SQL-Abfragen zu kombinieren und gleichzeitig die Ergebnisse jeder Abfrage an eine einzelne Ausgabe anzuhängen.
 
@@ -118,16 +118,16 @@ Speichern der obigen Abfrage als `Data Warehouse View` erstellt eine neue Tabell
 
 | **`id`** | **`ad_source`** | **`date`** | **`campaign`** | **`spend`** | **`impressions`** | **`clicks`** |
 |--- |--- |--- |--- |--- |--- |--- |
-| **1** | [!DNL Facebook] | 05.01.2017 00:00:00 | aaa | 5 | 1200 | 25 |
-| **1** | [!DNL Google AdWords] | 05.05.2017 00:00:00 | eee | Artikel 10 Absatz 2 | 2000 | 60 |
-| **2** | [!DNL Facebook] | 15.05.2017 00:00:00 | ddd | 2,5 | 800 | 12 |
-| **2** | [!DNL Google AdWords] | 23.05.2017 00:00:00 | ggg | 4,6 | 900 | 40 |
-| **3** | [!DNL Facebook] | 22.05.2017 00:00:00 | aaa | 7 | 2000 | 40 |
-| **3** | [!DNL Google AdWords] | 12.06.2017 00:00:00 | aaa | 2,5 | 400 | 22 |
-| **4** | [!DNL Facebook] | 06.08.2017 00:00:00 | aaa | 10 | 6000 | 110 |
-| **4** | [!DNL Google AdWords] | 30.06.2017:00:00 | eee | 35 | 14500 | 350 |
-| **5** | [!DNL Facebook] | 07.06.2017 00:00:00 | ccc | 1,2 | 300 | 5 |
-| **5** | [!DNL Google AdWords] | 07.10.2017:00:00 | fff | 28,5 | 10200 | 280 |
+| **1** | [!DNL Facebook] | 2017-05-01 00:00:00 | aaa | 5 | 1200 | 25 |
+| **1** | [!DNL Google AdWords] | 2017-05-05 00:00:00 | eee | 10.2 | 2000 | 60 |
+| **2** | [!DNL Facebook] | 2017-05-15 00:00:00 | ddd | 2.5 | 800 | 12 |
+| **2** | [!DNL Google AdWords] | 2017-05-23 00:00:00 | ggg | 4.6 | 900 | 40 |
+| **3** | [!DNL Facebook] | 2017-05-22 00:00:00 | aaa | 7 | 2000 | 40 |
+| **3** | [!DNL Google AdWords] | 2017-06-12 00:00:00 | aaa | 2.5 | 400 | 22 |
+| **4** | [!DNL Facebook] | 2017-06-08 00:00:00 | aaa | 10 | 6000 | 110 |
+| **4** | [!DNL Google AdWords] | 2017-06-30 00:00:00 | eee | 35 | 14500 | 350 |
+| **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1.2 | 300 | 5 |
+| **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28.5 | 10200 | 280 |
 
 Anstatt für jede Anzeigenquelle einen separaten Satz von Marketing-Metriken zu erstellen, können Sie jetzt nur einen einzigen Metriksatz mit der obigen Tabelle erstellen, um alle Ihre Anzeigen zu erfassen.
 

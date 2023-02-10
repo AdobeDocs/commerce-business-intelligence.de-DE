@@ -2,9 +2,9 @@
 title: Helpdesk Reporting für Zendesk
 description: Erfahren Sie mehr über Ihre bevorzugten Verweiskanäle.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dies ist nur für Kunden verfügbar, die sich auf der `Pro` Planen und Verwenden der neuen Architektur. Sie befinden sich auf der [neue Architektur](https://support.magento.com/hc/en-us/articles/360016503052-New-Architecture-FAQ) Wenn Sie über `Data Warehouse Views` -Bereich nach Auswahl `Manage Data` aus der Hauptsymbolleiste.
+>Dies ist nur für Kunden verfügbar, die sich auf der `Pro` Planen und Verwenden der neuen Architektur. Sie befinden sich in der neuen Architektur, wenn Sie über die `Data Warehouse Views` -Bereich nach Auswahl `Manage Data` aus der Hauptsymbolleiste.
 
 Konsolidierung Ihrer [!DNL Zendesk] -Daten mit Ihrer Transaktionsdatenbank sind eine hervorragende Möglichkeit, um besser zu verstehen, wie Ihre Kunden mit Ihren Vertriebs- oder Kundenerfolgsteams interagieren und welche Art von Kunden Ihre Support-Plattform nutzen. In diesem Artikel zeigen wir, wie wir ein Dashboard einrichten, um detaillierte Berichte über Ihre [!DNL Zendesk] Leistung und Bindung Ihrer Transaktionskunden.
 
@@ -196,7 +196,7 @@ Bevor Sie beginnen, sollten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.md
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-      *`Datatype` - `String`
+      *`Datatype` – `String`
 
 
 * **`customer_entity`** table
@@ -221,7 +221,7 @@ Bevor Sie beginnen, sollten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.md
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` - `String`
+      * `Datatype` – `String`
 
 * **`[Zendesk] Tickets`** table
    * Wählen Sie eine Definition aus: `Joined Column`

@@ -2,9 +2,9 @@
 title: Einbezogene Dashboards
 description: Erfahren Sie, wie Sie die Gesundheit wichtiger Metriken wie den Umsatz während der Nutzungsdauer, die Anzahl wiederholter Käufe und mehr überprüfen und so eine solide Grundlage für die zukünftige Exploration schaffen können.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 3557e6370fae637cd74550b2806847bebe61d5d3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '973'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Im Rahmen unserer Dienstleistungen bieten wir eCommerce und `SaaS` Starter-Paket
 >
 >Die Verfügbarkeit einiger Dashboards hängt von Ihrem Datensatz ab.
 
-Wenn Sie Fragen haben oder ein Package zu Ihrem Konto hinzufügen möchten, senden Sie eine [Support-Ticket](../../guide-overview.md) für Hilfe.
+Wenn Sie Fragen haben oder ein Package zu Ihrem Konto hinzufügen möchten, senden Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) für Hilfe.
 
 ## Übersicht über das Unternehmen
 

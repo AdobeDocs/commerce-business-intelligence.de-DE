@@ -2,9 +2,9 @@
 title: Erwartete Ersatzdaten
 description: Die wichtigsten Datentabellen, die Sie aus Spree in Ihre [!DNL MBI] -Konto.
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In diesem Artikel untersuchen wir die wichtigsten Datentabellen, aus denen Sie i
 | `Users` | Die `users` enthält die Kontodetails für registrierte Kunden, einschließlich E-Mail, Name und Registrierungsdatum der Person. Auf diese Weise können Sie verschiedene Kundensegmente und deren Kaufverhalten analysieren. |
 | [`Orders`](https://guides.spreecommerce.org/developer/orders.html#overview) | Die `orders` -Tabelle dient als Grundlage für alle Metriken auf Bestellebene. Hier aufgezeichnet sind alle Bestelldetails der Käufe von [!DNL Spree] Store, einschließlich `completed\_at` (Zeitstempel der Bestellung), `user\_id` (ID des registrierten Benutzers, der die Bestellung aufgegeben hat). Wenn die Bestellung von einem registrierten Benutzer getätigt wurde, wird die `user\_id` verknüpft zurück zu `users` -Tabelle, um eine Analyse des Kaufverhaltens der Benutzer zu ermöglichen. |
 | `Line items` | Die `line\_items` -Tabelle ist ein untergeordnetes Element der `orders` Tabelle oder `subscriptions`. Er zeichnet die Zeileneinträge einer Bestellung oder eines Abonnements auf. Bei Bestellungen mit mehreren Produkten enthält jedes Produkt eine eigene Datenzeile in dieser Tabelle, einschließlich einer `product\_id` , mit der Sie ihn mit der `Products` Tabelle. |
-| [`Products`](https://guides.spreecommerce.com/developer/products.html#overview) | Die `products` -Tabelle erfasst alle Produktdetails für einen verkäuflichen Artikel in Ihrem Spree-Katalog. Auf diese Weise können Sie Ihre Metriken auf Zeileneinträgen nach Produktattributen segmentieren. |
+| `Products` | Die `products` -Tabelle erfasst alle Produktdetails für einen verkäuflichen Artikel in Ihrem Spree-Katalog. Auf diese Weise können Sie Ihre Metriken auf Zeileneinträgen nach Produktattributen segmentieren. |
 | `Subscriptions` | Wenn Sie [!DNL Spree] Abonnementerweiterung, die `subscriptions` -Tabelle enthält die Informationen jedes einzelnen Abonnements, einschließlich `created\_at` (Startdatum), `cancelled\_at` (Datum, an dem ein Abonnement abgebrochen wurde) und `interval` des Abonnements. |
 
 {style=&quot;table-layout:auto&quot;}
@@ -28,4 +28,4 @@ In diesem Artikel untersuchen wir die wichtigsten Datentabellen, aus denen Sie i
 ## Verwandte:
 
 * [Verbinden [!DNL Spree]](../integrations/spree.md)
-* [Erneutes Authentifizieren von Integrationen](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

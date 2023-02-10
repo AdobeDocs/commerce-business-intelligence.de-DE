@@ -2,16 +2,16 @@
 title: Analysieren der Lagerbestandsebenen
 description: Erfahren Sie, wie Sie Lagerbestandsstufen analysieren.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # Inventarebenen analysieren
 
-Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihren aktuellen Bestand bietet. Dieses Thema enthält Anweisungen für Clients sowohl zur alten Architektur als auch zur neuen Architektur. Sie befinden sich in der alten Architektur, wenn Sie nicht über die **[!UICONTROL Data Warehouse Views]** Option unter **[!UICONTROL Manage Data]** Menü). Wenn Sie sich in der alten Architektur befinden, senden Sie eine [neue Supportanfrage](../../guide-overview.md) mit dem Betreff **[!UICONTROL INVENTORY ANALYSIS]** Sobald Sie den vorgesehenen Abschnitt im _Berechnete Spalten_ Anweisungen unten.
+Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihren aktuellen Bestand bietet. Dieses Thema enthält Anweisungen für Clients sowohl zur alten Architektur als auch zur neuen Architektur. Sie befinden sich in der alten Architektur, wenn Sie nicht über die **[!UICONTROL Data Warehouse Views]** Option unter **[!UICONTROL Manage Data]** Menü). Wenn Sie sich in der alten Architektur befinden, senden Sie eine [neue Supportanfrage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) mit dem Betreff **[!UICONTROL INVENTORY ANALYSIS]** Sobald Sie den vorgesehenen Abschnitt im _Berechnete Spalten_ Anweisungen unten.
 
 ## Zu verfolgende Spalten:
 
@@ -240,4 +240,4 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihren akt
       [!UICONTROL Chart type]: `Table`
 
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach unser Professional Services-Team einbinden möchten, [Support kontaktieren](../../guide-overview.md).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach unser Professional Services-Team einbinden möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

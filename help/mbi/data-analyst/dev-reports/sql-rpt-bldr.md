@@ -2,9 +2,9 @@
 title: Verwenden von SQL Report Builder
 description: Lernen Sie die In- und Outs der Verwendung von SQL Report Builder kennen.
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
-source-git-commit: 09b6983c3e06a1f18035542dfa3b9de9ac3ceb38
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1501'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md) , um SQL-Diagramme zu erstellen und zu bearbeiten. `Standard` Benutzer können diese Diagramme in Dashboards neu anordnen und `Read-only` -Benutzer haben dasselbe Erlebnis wie herkömmliche Diagramme. Darüber hinaus `Read-only` -Benutzer haben keinen Zugriff auf den Text der Abfrage.
 
-Siehe [Schulungsvideo](https://support.magento.com/hc/en-us/articles/360016730131) , um mehr zu erfahren.
+Siehe [Schulungsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) , um mehr zu erfahren.
 
 `SQL`, oder Structured Query Language, ist eine Programmiersprache, die zur Kommunikation mit Datenbanken verwendet wird. In [!DNL MBI], wird SQL verwendet, um Daten aus Ihrem Data Warehouse abzufragen oder abzurufen. Sehen Sie sich die Berichte in Ihrem Dashboard an - hinter den Kulissen basiert jeder auf einer SQL-Abfrage.
 
 Sie können die [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) um Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und in ein Diagramm umzuwandeln. Sie können mit der Erstellung eines Berichts beginnen, indem Sie `SQL Report Builder` durch Navigation zu **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
-Siehe [Schulungsvideo](https://support.magento.com/hc/en-us/articles/360016730131-Training-Video-SQL-Report-Builder) , um mehr zu erfahren.
+Siehe [Schulungsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) , um mehr zu erfahren.
 
-Die `SQL Report Builder` ermöglicht Ihnen, Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und sie schnell in ein Diagramm umzuwandeln. Die Verwendung von SQL zum Erstellen von Berichten ist am besten: [Sie müssen nicht auf Aktualisierungszyklen warten, um Spalten zu iterieren](https://support.magento.com/hc/en-us/articles/360016506212) erstellen. Wenn die Ergebnisse nicht richtig aussehen, können Sie die Abfrage schnell bearbeiten und erneut ausführen, bis die Ergebnisse Ihren Erwartungen entsprechen.
+Die `SQL Report Builder` ermöglicht Ihnen, Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und sie schnell in ein Diagramm umzuwandeln. Das Beste an der Verwendung von SQL zum Erstellen von Berichten besteht darin, dass Sie nicht auf Aktualisierungszyklen warten müssen, um die von Ihnen erstellten Spalten zu iterieren. Wenn die Ergebnisse nicht richtig aussehen, können Sie die Abfrage schnell bearbeiten und erneut ausführen, bis die Ergebnisse Ihren Erwartungen entsprechen.
 
 In diesem Artikel führen wir Sie durch die Verwendung der `SQL Report Builder`. Nachdem Sie Ihren Umweg kennen, sehen Sie sich unser Tutorial SQL für Visualisierungen an oder versuchen Sie, einige der von Ihnen geschriebenen Abfragen zu optimieren.
 
@@ -123,7 +123,7 @@ Wir möchten erwähnen, dass berechnete Spalten, die mit SQL erstellt wurden, ni
 |---|---|
 | Vermittelnde/erweiterte Analysten | Anfänger - Sie müssen SQL kennen. |
 | SQL-Speicherung | Einfache Analysen - das Schreiben einer Abfrage kann mehr als nur die Verwendung des Visual Report Builder sein. |
-| Erstellen von einmaligen berechneten Spalten | Freigabe für andere - denken Sie an Ihre Zielgruppe: Verstehen sie SQL? Andernfalls könnten sie durch die Erstellung des Berichts verwirrt werden. |
+| Erstellen von einmaligen berechneten Spalten | Freigabe für andere - denken Sie an Ihre Zielgruppe: Verstehen sie SQL? Andernfalls kann die Erstellung des Berichts verwirrt sein. |
 | Daten mit `one-to-many` Beziehungen |  |
 | Testen einer neuen Spalte oder Analyse |  |
 
@@ -131,9 +131,9 @@ Wir möchten erwähnen, dass berechnete Spalten, die mit SQL erstellt wurden, ni
 
 Meistens können Unterschiede in den Ergebnissen auf Aktualisierungszyklen zurückgeführt werden. Wenn [!DNL MBI] im Prozess der Replikation von Daten aus Ihrer Datenbank auf Ihre Data Warehouse ausgeführt wird, kann es sogar bei Verwendung derselben Abfrage zu unterschiedlichen Ergebnissen kommen.
 
-Verbindungsprobleme können auch zu Diskrepanzen führen. Navigieren Sie zum `Connections` Seite durch Klicken auf **[!DNL Manage Data** > **Connections]**), um es auszuchecken - Gibt es einen Fehler für die betreffende Datenbankintegration? Wenn ja, müssen Sie möglicherweise [die Integration erneut authentifizieren](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations) um die Dinge wieder in Gang zu bringen.
+Verbindungsprobleme können auch zu Diskrepanzen führen. Navigieren Sie zum `Connections` Seite durch Klicken auf **[!DNL Manage Data** > **Connections]**), um es auszuchecken - Gibt es einen Fehler für die betreffende Datenbankintegration? Wenn ja, müssen Sie möglicherweise [die Integration erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en) um die Dinge wieder in Gang zu bringen.
 
-Wenn all Ihre Integrationen erfolgreich verbunden sind und Sie sich nicht mitten in einem Aktualisierungszyklus befinden, kann etwas Anderes fehlschlagen. Verwenden Sie die [Anleitungen zur Fehlerbehebung bei Datendiskrepanzen](https://support.magento.com/hc/en-us/sections/360003074492) auf unserer Support-Website, um das Problem zu bestimmen.
+Wenn all Ihre Integrationen erfolgreich verbunden sind und Sie sich nicht mitten in einem Aktualisierungszyklus befinden, kann etwas Anderes fehlschlagen.
 
 #### Löscht das Löschen eines SQL-Berichts auch die zugrunde liegenden Spalten aus meiner Data Warehouse?
 

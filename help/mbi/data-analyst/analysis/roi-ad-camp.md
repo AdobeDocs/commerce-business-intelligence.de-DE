@@ -2,9 +2,9 @@
 title: Steigerung des ROI bei Werbekampagnen
 description: Erfahren Sie mehr über verschiedene Methoden zur Leistungsbewertung Ihrer Kampagne.
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Führen Sie produktspezifische Werbung durch? Wenn ja, können Sie den ROI für 
 >
 >Wir gehen davon aus, dass alle Kampagnenkosten ausschließlich zur Generierung von Käufen bestimmter Produkte verwendet wurden. Wenn man davon ausgeht, dass alle Kosten für die Generierung von Käufen ausgegeben wurden, wird der resultierende ROI das Worst-Case-Szenario berücksichtigen (höchste Kosten pro Kauf), sodass Sie sicher sein können, dass Ihr tatsächlicher ROI höher ist als diese Berechnung. Beispiel: Angenommen, Sie haben 20 USD für eine Kampagne ausgegeben, aus der 10 neue Benutzer und 10 Käufe kamen. Ihre tatsächlichen Kosten pro Kauf belaufen sich auf 1 USD, aber unter unserer Annahme, dass alle Kosten für den Erwerb neuer Benutzer anfallen, belaufen sich die Kosten pro Kauf auf 2 USD.)*
 
-Bevor wir beginnen, [Support-Ticket einreichen](../../guide-overview.md) , um die folgenden Dimensionen mit der Tabelle der Zeileneinträge zu verknüpfen (`sales\_flat\_order\_item, order\_item`):
+Bevor wir beginnen, [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) , um die folgenden Dimensionen mit der Tabelle der Zeileneinträge zu verknüpfen (`sales\_flat\_order\_item, order\_item`):
 
 * Quelle der Bestellung (wenn Sie nur die Verweisquelle auf Benutzerebene verfolgen und dann der Quelle des Benutzers beitreten)
 * Bestellungskampagne (wenn Sie nur die Verweisquelle auf Benutzerebene verfolgen und dann der Kampagne des Benutzers beitreten)

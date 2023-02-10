@@ -2,7 +2,7 @@
 title: Berichte und Elemente in MBI benennen
 description: Best Practices für die Benennung von Berichten und Elementen in [!DNL MBI].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
@@ -101,4 +101,4 @@ Umsatz (ausgeliefert\_at) Umsatz (erstellt\_at)
 
 ## Aufbrechen {#wrapup}
 
-Die frühzeitige Festlegung von Stil- und Benennungskonventionen hilft Ihnen bei der erfolgreichen Einrichtung Ihrer [!DNL MBI] -Konto. Beachten Sie die drei CSS: Klarheit, Kohärenz und Glaubwürdigkeit.
+Die frühzeitige Festlegung von Stil- und Benennungskonventionen hilft Ihnen bei der erfolgreichen Einrichtung Ihrer [!DNL MBI] -Konto. Denken Sie an die drei Cs: Klarheit, Kohärenz und Glaubwürdigkeit.

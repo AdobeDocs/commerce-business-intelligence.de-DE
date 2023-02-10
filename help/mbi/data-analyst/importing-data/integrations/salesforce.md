@@ -2,9 +2,9 @@
 title: Salesforce verbinden
 description: Erfahren Sie, wie Salesforce-Daten eine Reihe von Analysen ermöglichen, von der Auswertung und Optimierung von Leads bis hin zum Erreichen Ihrer Ziele für konvertierte Gelegenheiten.
 exl-id: 249b2b40-8c8a-4616-9383-17690f07003d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -36,4 +36,4 @@ Das ist es! Nachdem Ihre Anmeldedaten validiert wurden, [!DNL Salesforce] Das Se
 Wenn man ein bisschen technisch versiert ist, ist die [[!DNL Salesforce] API-Dokumentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) kann eine nützliche Ressource sein, um mehr über die Integration von Salesforce mit [!DNL MBI].
 
 * [Erwartet [!DNL Salesforce] data](../integrations/salesforce-data.md)
-* [Erneutes Authentifizieren von Integrationen](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

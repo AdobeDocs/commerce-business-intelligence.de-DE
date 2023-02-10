@@ -2,9 +2,9 @@
 title: Bericht zur Bestellwahrscheinlichkeit wiederholen
 description: Erfahren Sie mehr über den Bericht zur Wahrscheinlichkeit wiederholter Bestellungen.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Wenn wir einen Filter hinzufügen würden, der eine Dimension verwendet, die nic
 
 In bestimmten Fällen können wir die `order-specific` Dimension in eine `user-specific` Dimension, die als Filter in der `Repeat Order Probability` Diagramm. In diesen Fällen geben wir das Bestellattribut der ersten Bestellung oder der neuesten Bestellung eines Benutzers zurück (z. B. den Regionennamen des Benutzers für die erste Bestellung).
 
-Wenn Sie eine solche neue Dimension erstellen möchten, [Support kontaktieren](../../guide-overview.md).
+Wenn Sie eine solche neue Dimension erstellen möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ## Vergleich der Wiederholungswahrscheinlichkeit von Bestellungen mit unterschiedlichen Attributen
 

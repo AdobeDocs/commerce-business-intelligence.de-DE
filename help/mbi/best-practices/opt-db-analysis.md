@@ -23,7 +23,7 @@ Dieses Thema enthält einige Empfehlungen, mit denen Sie Ihre Datenbank für die
 
 Wenn eine Bestellung storniert, ein Benutzer sein Konto deaktiviert oder ein Produkt eingestellt wird, ist es versucht, die zugehörigen Informationen in der Datenbank zu löschen. Tabellen wachsen und beseitigen Unübersichtlichkeit scheint eine umsichtige Idee zu sein. Das Löschen von Zeilen bedeutet jedoch, dass diese Informationen für immer verloren gehen oder dass Sie alte Sicherungen durchsuchen müssen, um sie zu finden.
 
-Stattdessen können Sie der Tabelle eine Statusspalte hinzufügen, die angibt, wann die Zeile nicht mehr aktiv oder relevant ist. Es wird außerdem empfohlen, eine Spalte hinzuzufügen, in der das Datum der Änderung gespeichert wird, oder ein Protokoll für historische Änderungen zu erstellen. Wenn Tabellen so groß sind, dass die Leistung langsam beeinträchtigt wird, sollten Sie die alten Daten in einer für Analysen verwendeten Tabelle archivieren.
+Stattdessen können Sie der Tabelle eine Statusspalte hinzufügen, die angibt, wann die Zeile nicht mehr aktiv oder relevant ist. Es wird außerdem empfohlen, eine Spalte hinzuzufügen, in der das Datum der Änderung gespeichert wird, oder ein Protokoll für historische Änderungen zu erstellen. Wenn Tabellen so groß sind, dass die Leistung langsam zunimmt, sollten Sie die alten Daten in einer für Analysen verwendeten Tabelle archivieren.
 
 ## Daten selten überschreiben
 

@@ -2,10 +2,10 @@
 title: Auswirkungen des Gutscheins analysieren
 description: Erfahren Sie, wie Sie die Auswirkungen von Gutscheinen auf die Akquise und Kundenbindung analysieren können.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 0%
+source-wordcount: '1392'
+ht-degree: 2%
 
 ---
 
@@ -46,8 +46,8 @@ Sehen wir uns einige Beispieldaten für die Kennzahlen für die Gutscheinakquise
 
 | **Kundenakquise** | **Anzahl neuer Kunden** | **Durchschnittlicher Umsatz während der Lebensdauer** | **Anzahl wiederholter Bestellungen** | **Anzahl wiederholter Bestellungen mit Coupon** | **% der Wiederholungsaufträge mit Coupon** |
 |-----|-----|-----|-----|-----|-----|
-| Coupon | 1.206 | 356,91 $ | 2.570 | 1.248 | 48,56% |
-| Nicht Coupon | 11.561 | $ 498.30 | 20.145 | 3.251 | 16,14 % |
+| Coupon | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
+| Nicht Coupon | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -109,9 +109,9 @@ Sehen wir uns nun ein Beispiel an, in dem drei verschiedene Gutscheine für die 
 
 | **Coupon** | **Erstbestellungen (FTO)** | **Bruttoeinnahmen aus FTO** | **Ermäßigungen für FTO** | **Nettoeinnahmen aus FTO** | **Durchschnittlicher Bestellwert für FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25 % Rabatt auf 100 USD oder mehr** | 56 | 8.531,04 $ | 2.132,76 $ | $ 6&#39;398.28 | 152,34 $ |
-| **10 USD Rabatt** | 87 | $ 3&#39;707.07 | 426,10 $ | $ 3&#39;280.97 | 42,61 $ |
-| **20 % Rabatt** | 145 | 10.975,05 $ | 2.195,01 $ | 8.780,04 $ | $ 75.69 |
+| **25 % Rabatt auf 100 USD oder mehr** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
+| **10 USD Rabatt** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
+| **20 % Rabatt** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -137,9 +137,9 @@ Nachdem wir uns nun die Bestellungen selbst angesehen haben, sollten wir uns die
 
 | **Erstbestellcoupon des Kunden** | **Anzahl der Kunden** | **Durchschnittliche Anzahl der Bestellungen über die Lebensdauer** | **Durchschnittlicher Umsatz während der Lebensdauer** |
 |-----|-----|-----|-----|
-| **25 % Rabatt auf 100 USD oder mehr** | 56 | 2,8 | 554,54 $ |
-| **10 USD Rabatt** | 87 | 1,9 | 115,50 $ |
-| **20 % Rabatt** | 145 | 1,3 | 103,75 $ |
+| **25 % Rabatt auf 100 USD oder mehr** | 56 | 2.8 | $554.54 |
+| **10 USD Rabatt** | 87 | 1.9 | $115.50 |
+| **20 % Rabatt** | 145 | 1.3 | $103.75 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -149,4 +149,4 @@ Die größte Anzahl von Kunden wurde durch den &quot;20% Rabatt&quot;-Gutschein 
 
 ## Aufbrechen {#wrapup}
 
-Es gibt eine Vielzahl von Analysen, die Sie erstellen können, um besser zu verstehen, wie Ihre Kunden Gutscheine verwenden. Haben Sie schon einmal darüber nachgedacht zu analysieren, wie Ihre Kunden Ihre Gutscheine verwenden oder wie lange es dauert, bis Gutscheine verwendet werden? Wie sieht es mit der Suche nach dem optimalen Rabattbetrag aus - welcher Betrag ermutigt Wiederholungskäufer, einen höheren durchschnittlichen Bestellwert und höheren Lebenszeitumsatz? Für Hilfe zu diesen Fragen, [Support kontaktieren](../../guide-overview.md).
+Es gibt eine Vielzahl von Analysen, die Sie erstellen können, um besser zu verstehen, wie Ihre Kunden Gutscheine verwenden. Haben Sie schon einmal darüber nachgedacht zu analysieren, wie Ihre Kunden Ihre Gutscheine verwenden oder wie lange es dauert, bis Gutscheine verwendet werden? Wie sieht es mit der Suche nach dem optimalen Rabattbetrag aus - welcher Betrag ermutigt Wiederholungskäufer, einen höheren durchschnittlichen Bestellwert und höheren Lebenszeitumsatz? Für Hilfe zu diesen Fragen, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

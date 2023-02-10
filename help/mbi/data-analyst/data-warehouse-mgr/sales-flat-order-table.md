@@ -2,9 +2,9 @@
 title: sales_order-Tabelle
 description: Erfahren Sie, wie Sie mit der Tabelle sales_order arbeiten.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 73373924b7adaffabf643b65bd290ce2d9408574
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Diese Tabelle enthält alle Kundenbestellungen, unabhängig davon, ob diese Best
 | `customer_group_id` | Fremdschlüssel, der mit dem `customer_group` Tabelle. Mitglied werden `customer_group.customer_group_id` zur Bestimmung der Kundengruppe, die der Bestellung zugeordnet ist |
 | `customer_id` | `Foreign key` mit `customer_entity` -Tabelle, wenn der Kunde registriert ist. Mitglied werden `customer_entity.entity_id` , um Kundenattribute zu bestimmen, die mit der Bestellung verknüpft sind. Wenn die Bestellung über einen Gastkasse aufgegeben wurde, wird dieses Feld `NULL` |
 | `entity_id` (PK) | Eindeutige Kennung für die Tabelle und wird häufig in Verknüpfungen zu anderen Tabellen innerhalb der Commerce-Instanz verwendet |
-| `increment_id` | Eindeutige Kennung für eine Bestellung, die häufig als `order_id` in Magento. Die `increment_id` wird am häufigsten für Verknüpfungen zu externen Quellen verwendet, z. B. [!DNL Google Ecommerce] |
+| `increment_id` | Eindeutige Kennung für eine Bestellung, die häufig als `order_id` innerhalb von Adobe Commerce. Die `increment_id` wird am häufigsten für Verknüpfungen zu externen Quellen verwendet, z. B. [!DNL Google Ecommerce] |
 | `shipping_address_id` | Fremdschlüssel, der mit dem `sales_order_address` Tabelle. Mitglied werden `sales_order_address.entity_id` zur Bestimmung der Versandadressen, die mit der Bestellung verbunden sind |
 | `status` | Bestellstatus. Kann Werte wie &quot;complete&quot;, &quot;processing&quot;, &quot;cancelled&quot;, &quot;refund&quot;sowie alle benutzerdefinierten Status zurückgeben, die in der Commerce-Instanz implementiert sind. Vorbehaltlich Änderungen bei der Verarbeitung der Bestellung |
 | `store_id` | `Foreign key` mit `store` Tabelle. Mitglied werden `store`.`store_id` , um zu bestimmen, welche Commerce Store-Ansicht mit der Bestellung verknüpft ist |

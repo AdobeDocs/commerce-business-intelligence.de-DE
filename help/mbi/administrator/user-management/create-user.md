@@ -2,9 +2,9 @@
 title: Neuen Benutzer hinzufügen/bearbeiten
 description: Erfahren Sie, wie Sie eine neue [!DNL MBI] und wie Sie Ihren Benutzernamen oder Ihr Kennwort aktualisieren können.
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 0%
    >Um die Rechnungsinformationen Ihres Kontos anzuzeigen, hinzuzufügen oder zu ändern, müssen Sie über `Billing` Berechtigungen. [Berechtigungen werden auf Benutzerbasis festgelegt](../../administrator/user-management/user-management.md) wenn Benutzerkonten erstellt werden. Wenn Sie `Billing` -Berechtigungen, wenden Sie sich an den Administrator Ihres Kontos.
 
 1. Klicken **[!UICONTROL Save]**.
-1. Der neue Benutzer erhält eine E-Mail mit Anmelde- und Kennwortdetails.
+
+Der neue Benutzer erhält eine E-Mail mit Anmelde- und Kennwortdetails.
 
 >[!NOTE]
 >
@@ -37,4 +38,4 @@ Wenn Sie die Einladung erneut an den neuen Benutzer senden müssen, muss die [An
 
 >[!IMPORTANT]
 >
->Jedes Konto verfügt über eine vertraglich festgelegte Anzahl von Lizenzen oder Sitzen. Wenn Sie Ihr Limit erreichen oder mehr erfahren möchten, [Support-Ticket einreichen](../../guide-overview.md).
+>Jedes Konto verfügt über eine vertraglich festgelegte Anzahl von Lizenzen oder Sitzen. Wenn Sie Ihr Limit erreichen oder mehr erfahren möchten, [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

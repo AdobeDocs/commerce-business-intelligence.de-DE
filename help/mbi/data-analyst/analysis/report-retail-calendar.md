@@ -39,9 +39,9 @@ Sie können [herunterladen](../../assets/454-calendar.csv) a `.csv` Version des 
 
 * **sales\_order** table
    * `INPUT` `created\_at` (JJJJ-MM-TT 00:00:00)
-      * [!UICONTROL Column type]: - `Same table > Calculation`
-      * [!UICONTROL Inputs]: - `created\_at`
-      * [!UICONTROL Datatype]: - `Datetime`
+      * [!UICONTROL Column type]: – `Same table > Calculation`
+      * [!UICONTROL Inputs]: – `created\_at`
+      * [!UICONTROL Datatype]: – `Datetime`
       * [!UICONTROL Calculation]: - ` case when A is null then null else to\_char(A, 'YYYY-MM-DD 00:00:00') end`
 
 * **Einzelhandelskalender** Datei-Upload-Tabelle

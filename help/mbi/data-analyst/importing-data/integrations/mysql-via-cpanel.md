@@ -2,9 +2,9 @@
 title: MySQL über cPanel verbinden
 description: Erfahren Sie, wie Sie MySQL über cPanel verbinden.
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >Es wird dringend empfohlen, SSH oder eine andere Form der Verschlüsselung zu verwenden, um Ihre Daten zu schützen! Wenn dies keine Option ist, können Sie weiterhin direkt eine Verbindung herstellen [!DNL MBI] zu Ihrer Datenbank mithilfe der Anweisungen in diesem Artikel.
 
-In diesem Artikel führen wir Sie durch die direkte Verbindung Ihrer MySQL-Datenbank zu [!DNL MBI] unter Verwendung von cPanel&quot;. Dieser Prozess kann auch verwendet werden, um eine Verbindung herzustellen [!DNL Magento] und anderen MySQL-basierten eCommerce-Datenbanken, um [!DNL MBI].
+In diesem Artikel führen wir Sie durch die direkte Verbindung Ihrer MySQL-Datenbank zu [!DNL MBI] unter Verwendung von cPanel&quot;. Dieser Prozess kann auch verwendet werden, um eine Verbindung herzustellen [!DNL Adobe Commerce] und anderen MySQL-basierten eCommerce-Datenbanken, um [!DNL MBI].
 
 1. Erstellen Sie eine [!DNL MBI] MySQL-Benutzer in `cPanel`
 1. Eingabe von Verbindungs- und Benutzerinformationen in [!DNL MBI]
@@ -69,4 +69,4 @@ Das ist es! Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** ,
 
 ## Verwandte:
 
-* [Erneutes Authentifizieren von Integrationen](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

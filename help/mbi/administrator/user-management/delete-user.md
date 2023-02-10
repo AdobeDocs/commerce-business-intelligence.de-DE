@@ -2,9 +2,9 @@
 title: Benutzer löschen oder reaktivieren
 description: Erfahren Sie, wie Sie eine [!DNL MBI] Benutzer.
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -24,5 +24,5 @@ Sie können den Benutzer reaktivieren, indem Sie einen neuen Benutzer mit dersel
 Wenn Sie nur die Dashboards dieses Benutzers in ein anderes Benutzerkonto übertragen müssen, gehen Sie wie folgt vor:
 
 1. Verwenden Sie die E-Mail-Adresse des gelöschten Benutzers, um eine neue [!DNL MBI] Benutzer.
-1. [Support benachrichtigen](../../guide-overview.md) , nachdem Sie den Benutzer erstellt haben. Der Support überträgt die Dashboards auf Ihr Konto.
+1. [Support benachrichtigen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) , nachdem Sie den Benutzer erstellt haben. Der Support überträgt die Dashboards auf Ihr Konto.
 1. Nachdem der Support Sie über die Übertragung informiert hat, können Sie den Benutzer erneut löschen.

@@ -37,7 +37,7 @@ Dies ist der Teil des Prozesses, in dem die Schritte je nach verwendeter Datenba
 
 ## Verbindungsinformationen in MBI eingeben
 
-Nachdem Sie die [!DNL MBI] Zugriff auf Ihre Instanz und Erstellung eines Benutzers für uns. Das Letzte, was Sie tun müssen, ist die Angabe der Verbindungsinformationen in [!DNL MBI].
+Nachdem Sie [!DNL MBI] Zugriff auf Ihre Instanz und Erstellung eines Benutzers für uns. Das Letzte, was Sie tun müssen, ist die Angabe der Verbindungsinformationen in [!DNL MBI].
 
 Die Berechtigungsseiten für `MySQL`, `Microsoft SQL`und `PostgreSQL` auf die über `Integrations` page (**[!UICONTROL Manage Data** > **Integrations]**) durch Klicken auf **[!UICONTROL Add Integration]**. Wenn die Liste der Integrationen angezeigt wird, klicken Sie auf das Symbol für die Datenbank, die Sie verwenden, um zur Seite &quot;Anmeldeinformationen&quot;zu gelangen. Wenn Sie derzeit keinen Zugriff auf die benötigte Integration haben, wenden Sie sich an Ihren CSM.
 

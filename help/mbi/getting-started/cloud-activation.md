@@ -2,9 +2,9 @@
 title: Aktivieren Ihrer [!DNL MBI] Konto für Cloud Starter-Abonnements
 description: Erfahren Sie, wie Sie [!DNL MBI] für Cloud Starter-Projekte.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ So aktivieren [!DNL MBI] für `Cloud Starter` Projekte, erstellen Sie zunächst 
 
 1. Erstellen Sie Ihre [!DNL MBI] Konto.
 
-   - Navigieren Sie zu [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)
+   - Navigieren Sie zu [Anmeldung für Adobe Commerce-Konten](https://account.magento.com/customer/account/login)
 
    - Navigieren Sie zu **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
@@ -53,7 +53,7 @@ So aktivieren [!DNL MBI] für `Cloud Starter` Projekte, erstellen Sie zunächst 
 
 1. Erstellen eines dedizierten [!DNL MBI] Benutzer.
 
-   - Neuen Benutzer erstellen auf [https://accounts.magento.com](https://accounts.magento.com).
+   - Erstellen Sie einen neuen Benutzer in Ihrem [Adobe Commerce-Konto](https://accounts.magento.com).
 
    - _Warum ein neuer Benutzer?_ [!DNL MBI] benötigt einen Benutzer, der zum Projekt hinzugefügt wurde, um kontinuierlich neue Daten abzurufen, die an das Konto übertragen werden. [!DNL MBI] Data Warehouse. Dieser Benutzer dient als diese Verbindung. Das Hinzufügen dieses Benutzers zum Projekt erfolgt in Schritt 4.
 
@@ -75,7 +75,7 @@ So aktivieren [!DNL MBI] für `Cloud Starter` Projekte, erstellen Sie zunächst 
 
 1. Neue hinzufügen [!DNL MBI] `Public key` der [!DNL MBI] Benutzer, der in Schritt 5 erstellt wurde.
 
-   - Navigieren Sie zu [https://accounts.magento.cloud/](https://accounts.magento.cloud/). Melden Sie sich mit den Anmeldedaten für Ihr Konto an. [!DNL MBI] Benutzer erstellt. Gehen Sie dann zu `Account Settings` Registerkarte.
+   - Navigieren Sie zu [Ihr Cloud Adobe Commerce-Konto](https://accounts.magento.cloud/). Melden Sie sich mit den Anmeldedaten für Ihr Konto an. [!DNL MBI] Benutzer erstellt. Gehen Sie dann zu `Account Settings` Registerkarte.
 
    - Scrollen Sie nach unten und erweitern Sie das Dropdown-Menü für `SSH` Schlüssel. Klicken Sie anschließend auf **[!UICONTROL Add a public key]**.
 

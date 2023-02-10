@@ -2,16 +2,16 @@
 title: quote_item-Tabelle
 description: Erfahren Sie, wie Sie mit der Tabelle "quote_item"arbeiten.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # quote_item-Tabelle
 
-Die `quote_item` table (`sales_flat_quote_item` on [!DNL Magento] 1) enthält Datensätze zu jedem Artikel, der einem Warenkorb hinzugefügt wird, unabhängig davon, ob der Warenkorb abgebrochen oder in einen Kauf umgewandelt wurde. Jede Zeile stellt ein Warenkorbelement dar. Aufgrund der potenziellen Größe dieser Tabelle wird empfohlen, Datensätze regelmäßig zu löschen, wenn bestimmte Kriterien erfüllt sind, z. B. wenn nicht konvertierte Warenkörbe älter als 60 Tage sind.
+Die `quote_item` table (`sales_flat_quote_item` auf M1) 1) enthält Einträge zu jedem Artikel, der einem Warenkorb hinzugefügt wird, unabhängig davon, ob der Warenkorb abgebrochen oder in einen Kauf umgewandelt wurde. Jede Zeile stellt ein Warenkorbelement dar. Aufgrund der potenziellen Größe dieser Tabelle wird empfohlen, Datensätze regelmäßig zu löschen, wenn bestimmte Kriterien erfüllt sind, z. B. wenn nicht konvertierte Warenkörbe älter als 60 Tage sind.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Die `quote_item` table (`sales_flat_quote_item` on [!DNL Magento] 1) enthält D
 
 `quote_item`
 
-* Mitglied werden `quote_item` , um neue Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. Beachten Sie, dass Sie [Support kontaktieren](../../guide-overview.md) Hilfe bei der Konfiguration dieser Berechnungen, wenn sie im Data Warehousen-Manager erstellt werden.
+* Mitglied werden `quote_item` , um neue Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. Beachten Sie, dass Sie [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) Hilfe bei der Konfiguration dieser Berechnungen, wenn sie im Data Warehousen-Manager erstellt werden.
    * Pfad: `quote_item.parent_item_id` (viele) => `quote_item.item_id` (eins)
 
 `store`

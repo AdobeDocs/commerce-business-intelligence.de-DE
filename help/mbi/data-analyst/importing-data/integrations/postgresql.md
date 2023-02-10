@@ -2,9 +2,9 @@
 title: Anbinden von PostgreSQL über den SSH-Tunnel
 description: Erfahren Sie, wie Sie Ihre PostgreSQL-Datenbank mit [!DNL MBI] über einen SSH-Tunnel.
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Geben Sie die folgenden Informationen auf dieser Seite ein, beginnend mit dem Ab
 * `Username`: Der Benutzername RJMetrics Postgres (sollte rjmetric sein)
 * `Password`: Das Kennwort für RJMetrics Postgres
 * `Port`: PostgreSQL-Anschluss auf Ihrem Server (standardmäßig 5432)
-* `Host`: 127,0,0,1
+* `Host`: 127.0.0.1
 
 under `SSH Connection`:
 
@@ -105,4 +105,4 @@ Das ist es! Wenn Sie fertig sind, klicken Sie auf **Speichern und testen** , um 
 
 ### Verwandte
 
-* [Erneutes Authentifizieren von Integrationen](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

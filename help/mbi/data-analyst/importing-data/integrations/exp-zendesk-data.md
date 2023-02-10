@@ -2,9 +2,9 @@
 title: Erwartete Zendesk-Daten
 description: Erfahren Sie mehr über die wichtigsten Datentabellen, die Sie aus Zendesk in MBI importieren können, einschließlich Links zur zusätzlichen Dokumentation zu Zendesk-Daten.
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ In diesem Artikel untersuchen wir die wichtigsten Datentabellen, aus denen Sie i
 ## Verwandte
 
 * [Zendesk verbinden](../integrations/zendesk.md)
-* [Erneutes Authentifizieren von Integrationen](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

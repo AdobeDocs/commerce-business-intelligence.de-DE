@@ -2,9 +2,9 @@
 title: Externe Daten mithilfe einer Integration verbinden
 description: Erfahren Sie mehr über die verfügbaren Integrationen, mit denen Sie verschiedene externe Datenquellen verbinden können. [!DNL MBI].
 exl-id: b80f6f77-15f7-4d20-83fe-c6d758f9b0f8
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '92'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ Eine Integration ist eine Datenquelle. Integrationen sind Anwendungen und Datenb
 
 In diesem Abschnitt werden die verfügbaren Integrationen vorgestellt, mit denen Sie verschiedene externe Datenquellen verbinden können. [!DNL MBI].
 
-Wenden Sie sich zum Löschen einer Verbindung oder Integration an [Support](../../../guide-overview.md) und fügen Sie den Namen der Verbindung oder Integration ein, die gelöscht werden soll.
+So löschen Sie eine Verbindung oder Integration: [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) und fügen Sie den Namen der Verbindung oder Integration ein, die gelöscht werden soll.

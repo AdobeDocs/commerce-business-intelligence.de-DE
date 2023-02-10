@@ -2,9 +2,9 @@
 title: Erwartete Lebenszeitwert-Analyse (Basis)
 description: Erfahren Sie, wie Sie Analysen erstellen, um den Lebenszeitwert Ihrer aktuellen Kunden zu verstehen und vorherzusagen, wie der Lebenszeitwert mit mehr Bestellungen steigt.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,6 @@ Nachdem die Metrik erstellt wurde, können Sie **Dashboard erstellen** indem Sie
 * Hier werden wir alle Berichte erstellen und hinzufügen.
 
 ## Erstellen von Berichten
-
-* Wenn Sie es noch nicht getan haben, checken Sie aus. [dieses Video](https://fast.wistia.net/embed/iframe/24zz7wmjrt) über die Verwendung von **[!UICONTROL Visual Report Builder] um Diagramme, Tabellen und skalare Werte zu erstellen.
 
 >[!NOTE]
 >

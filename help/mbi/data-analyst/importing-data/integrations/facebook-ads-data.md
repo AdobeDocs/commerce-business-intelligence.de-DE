@@ -2,9 +2,9 @@
 title: Erwartete Facebook Ads-Daten
 description: Hier erhalten Sie einen kurzen Überblick über die Tabellen, für die eine Synchronisierung mit Ihrem Data Warehouse empfohlen wird.
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -60,4 +60,4 @@ Diese Tabelle enthält dieselben Informationen wie die `facebook_ads_insights_{a
 ## Verwandte
 
 * [Verbinden [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Erneutes Authentifizieren von Integrationen](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

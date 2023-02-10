@@ -2,9 +2,9 @@
 title: Verbindungsstreifen
 description: Erfahren Sie, wie Sie die Zahlungs- und Rechnungsdaten Ihres Unternehmens verwalten und verfolgen können.
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Nach dem Klicken **[!UICONTROL Connect with Stripe]**, wird eine Seite mit Zugri
 Wenn man ein bisschen technisch versiert ist, ist die [[!DNL Stripe] API-Dokumentation](https://stripe.com/docs/api) kann eine nützliche Ressource sein, um mehr darüber zu erfahren, wie [!DNL Stripe] ist integriert in [!DNL MBI].
 
 * [Erwartet [!DNL Stripe] data](../integrations/stripe-data.md)
-* [Erneutes Authentifizieren von Integrationen](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

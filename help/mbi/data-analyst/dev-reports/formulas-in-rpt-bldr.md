@@ -2,9 +2,9 @@
 title: Formeln im Report Builder
 description: Erfahren Sie, wie Formeln im Report Builder verwendet werden können.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -63,4 +63,4 @@ In unserem Beispiel haben wir die `Stacked Columns` um die Ergebnisse nach Monat
 
 Haben Sie in den obigen Beispielen bemerkt, dass die Formel `timestamp`, `groupings`, `perspectives`und `filters` von den Eingabemetriken vererbt werden? Denken Sie daran, dass Formeln zur Verwendung `perspectives` und [unabhängige Zeitoptionen](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, genau wie Metriken.
 
-Wenn Sie weitere Fragen zur Verwendung von Formeln im `Report Builder`, [Support kontaktieren](../../guide-overview.md).
+Wenn Sie weitere Fragen zur Verwendung von Formeln im `Report Builder`, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

@@ -2,9 +2,9 @@
 title: Überprüfen des Aktualisierungszyklusstatus
 description: Erfahren Sie, wie Sie den Status des Aktualisierungszyklus überprüfen.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Wenn Sie sich bei Ihrem [!DNL MBI] Dashboard gibt es mehrere Möglichkeiten, den
 
 ## Warum sollte ich den Status des Aktualisierungszyklus überprüfen?
 
-Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die Daten in Ihrem [!DNL MBI] -Konto. Wenn [Ergebnisse, die nicht Ihren Erwartungen entsprechen](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)z. B. täglicher Umsatz in [!DNL MBI] nicht mit dem übereinstimmen, was Sie in Ihrer E-Commerce-Plattform oder in Ihrer [[!DNL Google] E-Commerce-Umsätze](https://support.magento.com/hc/en-us/articles/360016505232) Sie können den letzten Datenpunkt überprüfen, um festzustellen, ob das Problem nach Abschluss einer Aktualisierung behoben wird.
+Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die Daten in Ihrem [!DNL MBI] -Konto. Wenn [Ergebnisse, die nicht Ihren Erwartungen entsprechen](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)z. B. täglicher Umsatz in [!DNL MBI] nicht mit dem übereinstimmen, was Sie in Ihrer E-Commerce-Plattform oder in Ihrer [[!DNL Google] E-Commerce-Umsätze](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) Sie können den letzten Datenpunkt überprüfen, um festzustellen, ob das Problem nach Abschluss einer Aktualisierung behoben wird.
 
 ## [!UICONTROL Read-Only] und [!UICONTROL Standard]** Benutzer
 

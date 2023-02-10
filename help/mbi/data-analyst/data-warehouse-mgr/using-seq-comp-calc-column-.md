@@ -5,7 +5,7 @@ exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
 source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,11 +25,11 @@ Die `Sequential Comparison` Spaltentyp: ermittelt den Unterschied zwischen aufei
 
 | **`event_id`** | **`owner_id`** | **`timestamp`** | **`Seconds since owner's previous event`** |
 |--- |--- |--- |--- |
-| **`1`** | A | 01.01.2015 00:00:00 | NULL |
-| **`2`** | B | 01.01.2015 00:30:00 | NULL |
-| **`3`** | A | 01.01.2015 02:00:00 | 7200 |
+| **`1`** | A | 2015-01-01 00:00:00 | NULL |
+| **`2`** | B | 2015-01-01 00:30:00 | NULL |
+| **`3`** | A | 2015-01-01 02:00:00 | 7200 |
 | **`4`** | A | 2015-01-02 13:00:00 | 126000 |
-| **`5`** | B | 03.01.2015 13:00:00 | 217800 |
+| **`5`** | B | 2015-01-03 13:00:00 | 217800 |
 
 Im obigen Beispiel `Seconds since owner's previous event` ist die `Sequential Comparison` berechnete Spalte. Für `owner_id = A`, wird zunächst eine Sequenz anhand der `timestamp` und subtrahiert dann die `timestamp` aus dem Zeitstempel des aktuellen Ereignisses. In der dritten Zeile in der Tabelle - die zweite Zeile für `owner_id A` - der Wert von `Seconds since owner's previous event` die Anzahl der Sekunden zwischen &quot;2015-01-01 02:00&quot;und &quot;2015-01-01 00&quot;:00:00&#39;. Dieser Unterschied entspricht 2 Stunden = 7200 Sekunden.
 

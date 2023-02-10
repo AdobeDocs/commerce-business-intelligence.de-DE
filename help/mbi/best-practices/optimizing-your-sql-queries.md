@@ -2,9 +2,9 @@
 title: Optimieren Ihrer SQL-Abfragen
 description: Erfahren Sie, wie Sie Ihre SQL-Abfragen optimieren können.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Der SQL-Report Builder ermöglicht es Ihnen, diese Abfragen jederzeit abzufragen und zu wiederholen. Dies ist nützlich, wenn Sie eine Abfrage ändern müssen, ohne warten zu müssen, bis ein Aktualisierungszyklus abgeschlossen ist, bevor Sie eine von Ihnen erstellte Spalte oder einen erstellten Bericht realisieren können, die aktualisiert werden muss.
 
-Vor der Ausführung einer Abfrage [[!DNL MBI] Kostenschätzungen](https://support.magento.com/hc/en-us/articles/360016730391). Die Kosten berücksichtigen die Zeitdauer und die Anzahl der Ressourcen, die zur Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch gelten oder die Anzahl der zurückgegebenen Zeilen unsere Grenzwerte überschreitet, wird die Abfrage nicht ausgeführt. Wir haben eine Liste mit Empfehlungen für die Abfrage Ihres Data Warehouse zusammengestellt, um sicherzustellen, dass Sie die bestmöglichen rationalisierten Abfragen schreiben.
+Vor der Ausführung einer Abfrage [[!DNL MBI] Kostenschätzungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). Die Kosten berücksichtigen die Zeitdauer und die Anzahl der Ressourcen, die zur Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch gelten oder die Anzahl der zurückgegebenen Zeilen unsere Grenzwerte überschreitet, wird die Abfrage nicht ausgeführt. Wir haben eine Liste mit Empfehlungen für die Abfrage Ihres Data Warehouse zusammengestellt, um sicherzustellen, dass Sie die bestmöglichen rationalisierten Abfragen schreiben.
 
 ## Verwenden von SELECT oder Auswählen aller Spalten
 

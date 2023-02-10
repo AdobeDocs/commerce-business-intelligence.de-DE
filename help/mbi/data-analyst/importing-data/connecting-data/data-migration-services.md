@@ -2,7 +2,7 @@
 title: Datenmigrationsdienste
 description: Hier erfahren Sie alles, was Sie zum Senden einer Anforderung und zum Einstieg in die Migration benötigen.
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Datenmigration
 
-Die Migration zu einem neuen Datenbankschema, Server oder Reporting-Datenbank muss nicht aufwändig sein. Unsere **[!DNL Magento Services - Analytics]** Das Team bietet Migrationshilfe - wir tun das ganze Schwergewicht, damit Sie nicht müssen.
+Die Migration zu einem neuen Datenbankschema, Server oder Reporting-Datenbank muss nicht aufwändig sein. Unsere **[!DNL Adobe Commerce Services - Analytics]** Das Team bietet Migrationshilfe - wir tun das ganze Schwergewicht, damit Sie nicht müssen.
 
 Um sicherzustellen, dass Ihr Übergang so reibungslos wie möglich ist, bitten wir Sie, beim Senden Ihrer Migrationsanfrage möglichst detailliert zu sein. In diesem Artikel müssen Sie nur eine Anfrage senden und mit der Migration beginnen. Wenn Sie uns ein umfassendes Bild von Ihren Bedürfnissen geben, garantieren wir Ihnen, dass Ihr Projekt richtig erfasst wird und dass die Schätzung korrekt ist.
 

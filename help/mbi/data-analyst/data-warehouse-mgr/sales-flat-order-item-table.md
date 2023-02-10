@@ -2,16 +2,16 @@
 title: sales_order_item table
 description: Erfahren Sie, wie Sie mit der Tabelle sales_order_item arbeiten.
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: c0892aa046c80f90561b4a178525ef9ed05b435a
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # `sales_order_item` Verzeichnis
 
-Die `sales_order_item` table (`sales_flat_order_item` on [!DNL Magento] 1) enthält Aufzeichnungen aller Produkte, die bei einer Bestellung gekauft wurden. Jede Zeile stellt eine eindeutige `sku` in einer Bestellung enthalten ist. Die Menge der Einheiten, die für einen bestimmten `sku` wird am häufigsten durch `qty_ordered` -Feld.
+Die `sales_order_item` table (`sales_flat_order_item` auf M1 1) enthält Aufzeichnungen aller Produkte, die bei einer Bestellung gekauft wurden. Jede Zeile stellt eine eindeutige `sku` in einer Bestellung enthalten ist. Die Menge der Einheiten, die für einen bestimmten `sku` wird am häufigsten durch `qty_ordered` -Feld.
 
 ## Produkttypen
 
@@ -82,7 +82,7 @@ Daher ist es möglich, über den Verkauf von Produkten entweder auf einfacher Eb
 
 `sales_order_item`
 
-* Mitglied werden `sales_order_item` , um neue Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. Beachten Sie, dass Sie [Support kontaktieren](../../guide-overview.md) Hilfe bei der Konfiguration dieser Berechnungen, wenn sie im Data Warehousen-Manager erstellt werden.
+* Mitglied werden `sales_order_item` , um neue Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. Beachten Sie, dass Sie [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) Hilfe bei der Konfiguration dieser Berechnungen, wenn sie im Data Warehousen-Manager erstellt werden.
    * Pfad: `sales_order_item.parent_item_id` (viele) => `sales_order_item.item_id` (eins)
 
 `store`

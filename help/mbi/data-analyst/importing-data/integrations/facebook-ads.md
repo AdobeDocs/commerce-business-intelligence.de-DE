@@ -2,9 +2,9 @@
 title: Verbinden von Facebook-Anzeigen
 description: Erfahren Sie, wie Sie Ihre Anzeigenausgabedaten analysieren und feststellen können, ob Ihr Geld effektiv ausgegeben wird.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ Führen Sie eine Reihe von Schritten aus, um [!DNL MBI] , um auf Daten aus Ihrem
 
 ## Wie geht es weiter? {#next}
 
-Vergewissern Sie sich, dass Sie das Tracking durchführen [!DNL Facebook] Kampagnen in [!DNL Google Analytics] wie folgt [Tutorial](https://www.facebook.com/business/google-analytics). Dadurch wird sichergestellt, dass `utm\_campaign` -Feld in [!DNL Google Analytics] für Ihre [!DNL Facebook] Kampagnen.
+Vergewissern Sie sich, dass Sie das Tracking durchführen [!DNL Facebook] Kampagnen in [!DNL Google Analytics]. Dadurch wird sichergestellt, dass `utm\_campaign` -Feld in [!DNL Google Analytics] für Ihre [!DNL Facebook] Kampagnen.
 
 ## Verwandte
 
-* [Erneutes Authentifizieren von Integrationen](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Verbinden Sie Ihre [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
 * [Verweisquelle für Bestellungen verfolgen über [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Tracking der Verweisquelle von Benutzern in Ihrer Datenbank](../../analysis/google-track-user-acq.md)

@@ -2,9 +2,9 @@
 title: Erwartete QuickBooks-Daten
 description: Erfahren Sie, wie Sie relevante Datenfelder für die Analyse einfach nachverfolgen können.
 exl-id: a60996bd-e3d1-497d-abce-f02ef1444f1a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
@@ -62,4 +62,4 @@ Um alle für die Verfolgung verfügbaren Felder anzuzeigen, klicken Sie auf die 
 ## Verwandte:
 
 * [Verbinden [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Erneutes Authentifizieren von Integrationen](https://support.magento.com/hc/en-us/articles/360016733151-Reauthenticating-integrations)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)

@@ -2,16 +2,16 @@
 title: Speichern von Daten in Commerce
 description: Erfahren Sie, wie Daten generiert werden, was genau dazu führt, dass eine neue Zeile in eine der Commerce-Kerntabellen eingefügt wird und wie Aktionen wie z. B. Einkäufe tätigen oder ein Konto erstellen, das in die Commerce-Datenbank aufgenommen wird.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 0%
+source-wordcount: '960'
+ht-degree: 3%
 
 ---
 
-# Speichern von Daten in [!DNL Magento]
+# Speichern von Daten in [!DNL Adobe Commerce]
 
-Die Commerce-Plattform zeichnet und organisiert eine Vielzahl wertvoller Commerce-Daten aus Hunderten von Tabellen. In diesem Thema erfahren Sie, wie diese Daten generiert werden und was genau bewirkt, dass eine neue Zeile in eine der [Commerce-Haupttabellen](../data-warehouse-mgr/common-mage-tables.md)und wie werden Aktionen wie der Kauf oder die Erstellung eines Kontos in der Commerce-Datenbank aufgezeichnet. Diese Konzepte werden im folgenden Beispiel erläutert:
+Die Adobe Commerce-Plattform erfasst und organisiert eine Vielzahl wertvoller Commerce-Daten aus Hunderten von Tabellen. In diesem Thema erfahren Sie, wie diese Daten generiert werden und was genau bewirkt, dass eine neue Zeile in eine der [Commerce-Haupttabellen](../data-warehouse-mgr/common-mage-tables.md)und wie werden Aktionen wie der Kauf oder die Erstellung eines Kontos in der Commerce-Datenbank aufgezeichnet. Diese Konzepte werden im folgenden Beispiel erläutert:
 
 `Clothes4U` ist ein Bekleidungshändler mit sowohl einer Online-Präsenz als auch einer Ziegel- und Mörtelpräsenz. Es nutzt die Magento Open Source hinter seiner Website, um Daten zu sammeln und zu organisieren.
 
@@ -23,22 +23,22 @@ Mit allen Einstellungen für `Throwback Bellbottoms`, klickt der Mitarbeiter auf
 
 | **`entity\_id`** | **`entity\_type\_id`** | **`attribute\_set\_id`** | **`sku`** | **`created\_at`** |
 |---|---|---|---|---|
-| 205 | 4 | 8 | Pants10 | 22.09.2016.:15:43 |
-| 206 | 4 | 8 | Pants11 | 22.09.2016.:18:17 |
-| 207 | 4 | 12 | Shirts6 | 22.09.2016.:24:02 |
+| 205 | 4 | 8 | Pants10 | 2016/09/22 09:15:43 |
+| 206 | 4 | 8 | Pants11 | 2016/09/22 09:18:17 |
+| 207 | 4 | 12 | Shirts6 | 2016/09/22 09:24:02 |
 
 * `entity_id` - Dies ist der Primärschlüssel der `catalog_product_entity` -Tabelle, d. h. jede Tabellenzeile muss eine andere `entity_id`. Jeder `entity_id` auf dieser Tabelle kann nur mit einem Produkt verknüpft werden und jedes Produkt kann nur mit einem `entity_id`
    * die oberste Zeile der obigen Tabelle, `entity_id` = 205, ist die neue Zeile, die für &quot;Throwback Bellbottom&quot;erstellt wurde. Wherever `entity_id` = 205 in der Commerce-Plattform angezeigt wird, wird es auf das Produkt &quot;Throwback Bellbottom&quot;verweisen
 * `entity_type_id` - Commerce hat mehrere Objektkategorien (z. B. Kunden, Adressen und Produkte, um einige zu nennen). Diese Spalte dient zur Bezeichnung der Kategorie, in die diese bestimmte Zeile fällt.
-   * Dies ist die `catalog_product_entity` -Tabelle verwenden, weist jede Zeile denselben Entitätstyp auf: Produkt. Im Magento wird die `entity_type_id` für das Produkt ist 4, weshalb alle drei neu erstellten Produkte 4 für diese Spalte zurückgeben.
+   * Dies ist die `catalog_product_entity` -Tabelle verwenden, weist jede Zeile denselben Entitätstyp auf: Produkt. In Adobe Commerce wird die `entity_type_id` für das Produkt ist 4, weshalb alle drei neu erstellten Produkte 4 für diese Spalte zurückgeben.
 * `attribute_set_id` - Attributsätze werden verwendet, um Produkte zu identifizieren, die dieselben Deskriptoren aufweisen.
    * Die oberen beiden Zeilen der Tabelle sind die `Throwback Bellbottoms` und `Straight Leg Jeans` Produkte, bei denen es sich jeweils um Hosen handelt. Diese Produkte hätten dieselben Deskriptoren (z. B. Name, inseam, waistline) und hätten daher die gleichen `attribute_set_id`. dritter Punkt, `V-Neck T-Shirt` hat eine andere `attribute_set_id` weil sie nicht dieselben Deskriptoren wie die Hosen hätte; Hemden haben keine Bänder oder Inseams.
-* `sku` - Dies sind eindeutige Werte, die dem jeweiligen Produkt vom Benutzer beim Erstellen eines neuen Produkts in Magento zugewiesen werden.
+* `sku` - Hierbei handelt es sich um eindeutige Werte, die dem jeweiligen Produkt vom Benutzer beim Erstellen eines neuen Produkts in Adobe Commerce zugewiesen werden.
 * `created_at` - Diese Spalte gibt den Zeitstempel zurück, zu dem die einzelnen Produkte erstellt wurden.
 
 ## `customer\_entity`
 
-Kurz nach dem Hinzufügen der drei neuen Produkte hat ein neuer Kunde `Sammy Customer`, Besuche `Clothes4U`ist zum ersten Mal auf der Website. Seit `Clothes4U` nicht [Gastaufträge zulassen](https://support.magento.com/hc/en-us/articles/360016729951-Common-Magento-Misconceptions), `Sammy Customer` muss zunächst ein Konto auf der Website erstellen. Sie gibt ihre Anmeldeinformationen ein und klickt auf &quot;Senden&quot;, was zu einem neuen Eintrag in der [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
+Kurz nach dem Hinzufügen der drei neuen Produkte hat ein neuer Kunde `Sammy Customer`, Besuche `Clothes4U`ist zum ersten Mal auf der Website. Seit `Clothes4U` erlaubt keine Gastaufträge, `Sammy Customer` muss zunächst ein Konto auf der Website erstellen. Sie gibt ihre Anmeldeinformationen ein und klickt auf &quot;Senden&quot;, was zu einem neuen Eintrag in der [`customer\_entity table`](../data-warehouse-mgr/cust-ent-table.md):
 
 | **`entity id`** | **`entity type id`** | **`email`** | **`created at`** |
 |---|---|---|---|
@@ -57,7 +57,7 @@ Nachdem die Kontoerstellung abgeschlossen wurde, `Sammy Customer` ist bereit, ih
 
 | **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
 |---|---|---|---|
-| 227 | 214 | 94,85 | 23.09.2016 15:41:39 |
+| 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 
 * `entity_id` - dies ist der Primärschlüssel der `sales_flat_order` Tabelle.
    * Als Sammy Customer diese Bestellung aufgab und die obige Zeile in die `sales_flat_order` -Tabelle, wurde die Reihenfolge zugewiesen. `entity_id` = 227.
@@ -73,8 +73,8 @@ Zusätzlich zur einzelnen Zeile auf der `Sales\_flat\_order` Tabelle, wann `Samm
 
 | **`item\_id`** | **`name`** | **`product\_id`** | **`order\_id`** | **`qty\_ordered`** | **`price`** |
 |---|---|---|---|---|---|
-| 822 | `Throwback Bellbottoms` | 205 | 227 | 2 | 39,95 |
-| 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14,95 |
+| 822 | `Throwback Bellbottoms` | 205 | 227 | 2 | 39.95 |
+| 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14.95 |
 
 * `item_id` - Diese Spalte ist der Primärschlüssel der `sales_flat_order_item` table
    * `Sammy Customer`&#39;s Reihenfolge hat zwei Zeilen auf dieser Tabelle erstellt, weil ihre Bestellung zwei verschiedene Produkte enthielt

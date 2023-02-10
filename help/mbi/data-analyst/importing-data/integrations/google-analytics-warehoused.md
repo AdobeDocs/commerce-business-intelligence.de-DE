@@ -2,9 +2,9 @@
 title: Google Analytics Warehouse verbinden
 description: Erfahren Sie, wie Besucher Ihre Site nutzen, welche Inhalte attraktiv sind, wo Besucher aussteigen und vieles mehr.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Mit dem [!DNL Google Analytics Live] Integration, [!DNL Google Analytics] Diagra
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] ist `Premium` Integration. [Support kontaktieren](../../../guide-overview.md) , wenn Sie Interesse daran haben, diese Integration Ihrem Abonnement hinzuzufügen.
+>[!DNL Google Analytics Warehoused] ist `Premium` Integration. [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) , wenn Sie Interesse daran haben, diese Integration Ihrem Abonnement hinzuzufügen.
 
 1. Navigieren Sie zu `Connections` Seite unter **[!UICONTROL Admin** > **Integrations]**.
 1. Klicken **[!UICONTROL Add a Add Integration]** auf der rechten Seite des Bildschirms.
@@ -61,8 +61,7 @@ So identifizieren Sie die [!DNL Google Analytics] Profil-ID:
 
 ## Verwandte Dokumentation
 
-* [Erneutes Authentifizieren von Integrationen](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Verbinden [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analyse der Website-Aktivität und der Kundenkonversionsraten](../../analysis/web-act-cust-conversion.md)
 * [Tracking von Benutzerakquise-Daten mithilfe von [!DNL Google Analytics] Cookies](../../analysis/google-track-user-acq.md)
-* [Tracking von Benutzergeräte- und Browserdaten mithilfe von [!DNL Google Analytics] Cookies](https://support.magento.com/hc/en-us/articles/360016732911)

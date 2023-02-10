@@ -2,9 +2,9 @@
 title: Google Adwords verbinden
 description: Erfahren Sie, wie Sie den ROI Ihrer Kampagne messen können, indem Sie Ihre Werbekosten und den Kundenlebenszeitwert (CLV) der durch Ihre Kampagnen erworbenen Benutzer miteinander verbinden.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,9 @@ Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem 
 
 ## Verwandte
 
-* [Erneutes Authentifizieren von Integrationen](https://support.magento.com/hc/en-us/articles/360016733151)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
 * [Verweisquelle für Bestellungen verfolgen über [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Tracking der Verweisquelle von Benutzern in Ihrer Datenbank](../../analysis/google-track-user-acq.md)
-* [Tracking von Benutzergeräte-, Browser- und Betriebssystemdaten in Ihrer Datenbank](https://support.magento.com/hc/en-us/articles/360016732911)
 * [Entdecken Sie Ihre wertvollsten Akquisequellen und -kanäle](../../analysis/most-value-source-channel.md)
 * [Erhöhen Sie den ROI Ihrer Werbekampagnen.](../../analysis/roi-ad-camp.md)
 * [Wie funktioniert [!DNL Google Analytics] UTM-Attribution funktioniert?](../../analysis/utm-attributes.md)

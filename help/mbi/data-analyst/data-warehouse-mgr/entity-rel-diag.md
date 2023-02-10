@@ -2,9 +2,9 @@
 title: Diagramme zur Entitätsbeziehung
 description: Erfahren Sie mehr über einige ER-Diagramme, die Ihnen dabei helfen, die Beziehung zwischen einer Handvoll gängiger Commerce-Datenbanktabellen zu visualisieren.
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Ein Kunde kann viele Bestellungen tätigen. Die Beziehung zwischen diesen beiden
 
 >[!IMPORTANT]
 >
->`customer\_entity.entity\_id` ist nicht gleich `sales\_flat\_order.entity\_id`. Die erste kann als `customer\_id` und die zweite als `order\_id.` Weitere Informationen hierzu finden Sie im Abschnitt [`entity\_id` Abschnitt](https://support.magento.com/hc/en-us/articles/360016729951) der _[!DNL Magento]: Häufige Missverständnisse_ Artikel.
+>`customer\_entity.entity\_id` ist nicht gleich `sales\_flat\_order.entity\_id`. Die erste kann als `customer\_id` und die zweite als `order\_id.`
 
 Within [!DNL MBI]Wenn der Pfad zwischen diesen beiden Tabellen noch nicht vorhanden ist, können Sie [Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse . Wenn Sie bereit sind, den Pfad zu erstellen, wird er wie folgt definiert:
 
