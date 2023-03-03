@@ -2,7 +2,7 @@
 title: Zugriff auf [!DNL MBI] Konto
 description: Informationen zum Anmelden bei [!DNL MBI] -Konto.
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Zugriff auf die aktivierte [!DNL MBI] account
 
-Nachdem Sie die [!DNL MBI] entweder für [On-Premise](../getting-started/onpremise-activation.md) oder [cloud](../getting-started/cloud-activation.md) und haben mit Ihrem Customer Success Manager zusammengearbeitet, um die Konfigurationsschritte abzuschließen, können Sie sich jetzt bei Ihrem Konto anmelden.
+Nachdem Sie die [!DNL MBI] entweder für [On-Premise](../getting-started/onpremise-activation.md) oder [cloud](../getting-started/cloud-activation.md) und mit Ihrem Adobe Account Team zusammengearbeitet haben, um die Konfigurationsschritte abzuschließen, können Sie sich jetzt bei Ihrem Konto anmelden.
 
 Sie können sich mit Ihrer [!DNL Adobe ID] oder verwenden Sie [!DNL MBI] E-Mail-Adresse und Passwort.
 

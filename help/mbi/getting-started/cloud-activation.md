@@ -2,7 +2,7 @@
 title: Aktivieren Ihrer [!DNL MBI] Konto für Cloud Starter-Abonnements
 description: Erfahren Sie, wie Sie [!DNL MBI] für Cloud Starter-Projekte.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -15,7 +15,7 @@ So aktivieren [!DNL MBI] für `Cloud Starter` Projekte, erstellen Sie zunächst 
 
 >[!NOTE]
 >
->Hilfe bei der Aktivierung [!DNL MBI] für `Cloud Pro` Projekte, wenden Sie sich an Ihren Customer Success Manager oder technischen Kundenberater.
+>Hilfe bei der Aktivierung [!DNL MBI] für `Cloud Pro` Projekte, wenden Sie sich an Ihr Adobe Account Team oder an den technischen Kundenberater.
 
 1. Erstellen Sie Ihre [!DNL MBI] Konto.
 
@@ -23,7 +23,7 @@ So aktivieren [!DNL MBI] für `Cloud Starter` Projekte, erstellen Sie zunächst 
 
    - Navigieren Sie zu **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
 
-   - Klicken **[!UICONTROL Create Instance]**. Wenn diese Schaltfläche nicht angezeigt wird, wenden Sie sich an Ihren Customer Success Manager oder technischen Kundenberater.
+   - Klicken **[!UICONTROL Create Instance]**. Wenn diese Schaltfläche nicht angezeigt wird, wenden Sie sich an Ihr Adobe Account Team oder an den technischen Kundenberater.
 
    - Wählen Sie Ihre `Cloud Starter` Abonnement. Wenn Sie nur `cloud starter` Abonnement wird automatisch ausgewählt.
 
@@ -198,6 +198,6 @@ So aktivieren [!DNL MBI] für `Cloud Starter` Projekte, erstellen Sie zunächst 
 
 1. Sie haben jetzt erfolgreich eine Verbindung zu Ihrem [!DNL MBI] -Konto.
 
-1. Nachdem Sie erfolgreich eine Verbindung hergestellt haben [!DNL MBI] Wenden Sie sich an Ihren Customer Success Manager, um die nächsten Schritte zu koordinieren, z. B. das Einrichten von Integrationen und anderen Konfigurationsschritten.
+1. Nachdem Sie erfolgreich eine Verbindung hergestellt haben [!DNL MBI] Wenden Sie sich an Ihr Adobe Account Team, um die nächsten Schritte zu koordinieren, z. B. das Einrichten von Integrationen und anderen Konfigurationsschritten.
 
 1. Wenn Sie die Konfiguration abgeschlossen haben, können Sie [Anmelden](../getting-started/sign-in.md) auf [!DNL MBI] -Konto.

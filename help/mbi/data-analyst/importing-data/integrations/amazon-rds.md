@@ -2,9 +2,9 @@
 title: Amazon RDS verbinden
 description: Erfahren Sie mehr über die Schritte zum Verbinden Ihrer RDS-Instanz.
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -37,9 +37,9 @@ Dies ist der Teil des Prozesses, in dem die Schritte je nach verwendeter Datenba
 
 ## Verbindungsinformationen in MBI eingeben
 
-Nachdem Sie [!DNL MBI] Zugriff auf Ihre Instanz und Erstellung eines Benutzers für uns. Das Letzte, was Sie tun müssen, ist die Angabe der Verbindungsinformationen in [!DNL MBI].
+Nachdem Sie die [!DNL MBI] Zugriff auf Ihre Instanz und Erstellung eines Benutzers für uns. Das Letzte, was Sie tun müssen, ist die Angabe der Verbindungsinformationen in [!DNL MBI].
 
-Die Berechtigungsseiten für `MySQL`, `Microsoft SQL`und `PostgreSQL` auf die über `Integrations` page (**[!UICONTROL Manage Data** > **Integrations]**) durch Klicken auf **[!UICONTROL Add Integration]**. Wenn die Liste der Integrationen angezeigt wird, klicken Sie auf das Symbol für die Datenbank, die Sie verwenden, um zur Seite &quot;Anmeldeinformationen&quot;zu gelangen. Wenn Sie derzeit keinen Zugriff auf die benötigte Integration haben, wenden Sie sich an Ihren CSM.
+Die Berechtigungsseiten für `MySQL`, `Microsoft SQL`und `PostgreSQL` auf die über `Integrations` page (**[!UICONTROL Manage Data** > **Integrations]**) durch Klicken auf **[!UICONTROL Add Integration]**. Wenn die Liste der Integrationen angezeigt wird, klicken Sie auf das Symbol für die Datenbank, die Sie verwenden, um zur Seite &quot;Anmeldeinformationen&quot;zu gelangen. Wenn Sie derzeit keinen Zugriff auf die benötigte Integration haben, wenden Sie sich an Ihr Adobe Account Team.
 
 Um die Verbindung zu erstellen, benötigen wir die folgenden Informationen:
 
