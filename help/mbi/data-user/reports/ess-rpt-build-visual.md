@@ -2,9 +2,9 @@
 title: Visual Report Builder
 description: Erfahren Sie, wie Sie Visual Report Builder verwenden.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
       ![Gruppieren nach](../../assets/magento-bi-report-builder-group-by-dimensions.png)
 
-      Die `Group By` detail listet jeden von Kunden verwendeten Gutschein auf. Die Gutscheine, die zum Platzieren der ursprünglichen Bestellung verwendet wurden, sind mit einem Kontrollkästchen markiert. Das Diagramm enthält jetzt mehrere farbige Linien, die den jeweiligen Gutschein darstellen, der für eine erste Bestellung verwendet wurde. Die Legende ist farbcodiert und entspricht jeder Datenzeile.
+      Die `Group By` detail listet jeden von Kunden verwendeten Gutschein auf. Die Gutscheine, die zum Platzieren der ursprünglichen Bestellung verwendet wurden, sind mit einem Kontrollkästchen markiert. Das Diagramm enthält jetzt mehrere farbige Linien, die jeden Gutschein darstellen, der für eine erste Bestellung verwendet wurde. Die Legende ist farbcodiert und entspricht jeder Datenzeile.
 
    * Klicken **[!UICONTROL Apply]** um die Gruppe nach Detail zu schließen.
 
@@ -100,7 +100,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
       | ![](../../assets/magento-bi-btn-chart-area.png) | Bereich |
       | ![](../../assets/magento-bi-btn-chart-funnel.png) | Trichter |
 
-      {style=&quot;table-layout:auto&quot;}
+      {style="table-layout:auto"}
 
 
 

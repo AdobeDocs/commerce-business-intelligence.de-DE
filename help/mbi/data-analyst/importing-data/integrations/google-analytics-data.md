@@ -2,24 +2,24 @@
 title: Erwartete Google Analytics-Daten
 description: Erfahren Sie, wie Sie mit Ihren Google Analytics-Metriken interagieren.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
 # Erwartet [!DNL Google Analytics] data
 
-Nachdem Sie eine Verbindung hergestellt haben, [!DNL Google Analytics] Integration, können Sie mit Ihrer [!DNL Google Analytics] Metriken *unmittelbar im`Visual Report Builder`*. Wenn Sie `Visual Report Builder`, wenn Sie auf **[!UICONTROL Add a Metric]**, eine Reihe von Metriken aus Ihrer [!DNL Google Analytics] Profile werden direkt unter den Metriken in Ihrem Data Warehouse in einer Dropdown-Liste angezeigt.
+Nachdem Sie eine Verbindung hergestellt haben, [!DNL Google Analytics] Integration, können Sie mit Ihrer [!DNL Google Analytics] Metriken *unmittelbar im`Visual Report Builder`*. Wenn Sie `Visual Report Builder`, wenn Sie auf **[!UICONTROL Add a Metric]**, eine Reihe von Metriken aus Ihrer [!DNL Google Analytics] Profil wird in einer Dropdown-Liste direkt unter den Metriken in Ihrer Data Warehouse angezeigt.
 
 Die [!DNL Google Analytics] Integration *live* — das bedeutet, dass die `Report Builder` Daten anfordern von [!DNL Google Analytics] *sofort* wenn Sie eine Metrik zum Bericht hinzufügen. Dies bedeutet auch, dass die Metriken, auf die Sie zugreifen können, genau so definiert sind, wie sie sich in [!DNL Google Analytics]und dass diese Werte nicht *Warehouse* in [!DNL MBI] -Konto - nur visuell in Ihren Berichten angezeigt.
 
-[!DNL Google Analytics] Integrationen in [!DNL MBI] nutzen Sie die [!DNL Google Analytics] [Core Reporting-API](https://developers.google.com/analytics/devguides/reporting/core/v3/)und unterstützen die folgenden Metriken und Dimensionen.
+[!DNL Google Analytics] Integrationen in [!DNL MBI] die [!DNL Google Analytics] [Core Reporting-API](https://developers.google.com/analytics/devguides/reporting/core/v3/)und unterstützen die folgenden Metriken und Dimensionen.
 
 >[!NOTE]
 >
->Bestätigen Sie, dass alle verwendeten Dimensionen mit den Metriken kompatibel sind, die Sie in der Variablen `Report Builder`. Sie können [here](https://developers.google.com/analytics/devguides/reporting/core/dimsmets).
+>Bestätigen Sie, dass alle verwendeten Dimensionen mit einer oder mehreren Metriken kompatibel sind, die Sie in der Variablen `Report Builder`. Sie können [here](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Unterstützte Metriken
 
@@ -73,7 +73,7 @@ Die [!DNL Google Analytics] Integration *live* — das bedeutet, dass die `Repor
 | `All Goals Conversion Rate` | `ga:goalConversionRateAll` |
 | `Total Goal Value` | `ga:goal1ValueAll` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Unterstützte Dimensionen
 
@@ -142,4 +142,4 @@ Die [!DNL Google Analytics] Integration *live* — das bedeutet, dass die `Repor
 | `Custom (User Defined) Value` | `ga:userDefinedValue` | `Yes` |
 | `Year` | `ga:year` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

@@ -2,9 +2,9 @@
 title: Google Analytics-Diagramme erstellen
 description: Erfahren Sie, wie Sie Diagramme aus Ihren Google Analytics-Daten erstellen.
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Nachdem Sie Ihre [[!DNL Google Analytics] account](../../data-analyst/importing-
 
 1. Klicken **[!UICONTROL Add Chart** > **Create New Chart]**.
 
-1. Bei der Auswahl einer Metrik im `Chart Builder`, scrollen Sie zum unteren Rand der Liste, um einen Abschnitt mit Ihrer [!DNL Google Analytics] Profile. Eine zweite Metrik-Dropdown-Liste wird angezeigt. Hier können Sie die Metrik auswählen, die Sie analysieren möchten.
+1. Bei der Auswahl einer Metrik im `Chart Builder`, scrollen Sie zum unteren Rand der Liste, um einen Abschnitt mit Ihrer [!DNL Google Analytics] Profile. Ein zweites Metrik-Dropdown wird angezeigt. Hier können Sie die Metrik auswählen, die Sie analysieren möchten.
 
 1. Nachdem Sie die Metrik ausgewählt haben, können Sie mit diesem Diagramm wie einem anderen Diagramm fortfahren, indem Sie die `time period`, `interval`und Daten `perspectives` das Sie gerne sehen würden.
 
@@ -35,4 +35,4 @@ Nachdem Sie Ihre [[!DNL Google Analytics] account](../../data-analyst/importing-
 | `)` | `.` | `{` | `}` | `*` |
 | `+` | `?` | `\` | `\` | `-` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

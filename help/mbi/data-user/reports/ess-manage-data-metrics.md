@@ -2,9 +2,9 @@
 title: Metriken erstellen
 description: Erfahren Sie, wie Sie mit Metriken Diagramme erstellen können.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
 
-Einfach gesagt, eine Metrik ist eine Messung. In SQL- und Datenbankstrukturen entspricht eine Metrik einer gespeicherten Abfrage über einen variablen Zeitraum.
+Kurz gesagt, eine Metrik ist eine Messung. In SQL- und Datenbankstrukturen entspricht eine Metrik einer gespeicherten Abfrage über einen Variablenzeitraum.
 
-In [!DNL MBI], können Sie Metriken für [Grafiken erstellen](../../data-user/reports/ess-rpt-build-visual.md). Beispielsweise wird die Metrik `revenue` die Gesamtbestellmenge. Die Metrik `average customer revenue per order` ist das, was der durchschnittliche Kunde pro Bestellung ausgibt.
+In [!DNL MBI], können Sie Metriken für [Grafiken erstellen](../../data-user/reports/ess-rpt-build-visual.md). Beispielsweise wird die Metrik `revenue` die Gesamtzahl der Bestellungen. Die Metrik `average customer revenue per order` ist das, was der durchschnittliche Kunde pro Bestellung ausgibt.
 
 Bei Verwendung in Berichten können Metriken über einen bestimmten Zeitraum analysiert werden und [gefiltert oder segmentiert](../../best-practices/segment-filter.md) nach verschiedenen Kategorien. Erwägen Sie die Analyse des durchschnittlichen Kundenumsatzes nach Geschlecht - in diesem Fall: `average customer revenue per order` ist die Metrik und Geschlecht ist die Gruppierung.
 
 ## Definieren der Metrik {#define}
 
-1. Um eine neue Metrik zu erstellen, klicken Sie auf **[!UICONTROL Data** > **Metrics]**.
+1. Um eine Metrik zu erstellen, klicken Sie auf **[!UICONTROL Data** > **Metrics]**.
 
 1. Klicken **[!UICONTROL Create New Metric]**.
 
@@ -31,7 +31,7 @@ Bei Verwendung in Berichten können Metriken über einen bestimmten Zeitraum ana
 
 1. Benennen Sie Ihre Metrik.
 
-   Wir empfehlen einen Namen, der Ihnen auf einen Blick mitteilt, was die Metrik ist. Beispiel: `Average Order Revenue`.
+   Adobe empfiehlt einen Namen, der Ihnen auf einen Blick angibt, was die Metrik ist. Beispiel: `Average Order Revenue`.
 
 1. Der nächste Schritt besteht darin, zu definieren, was Ihre Metrik bewirkt. Definieren Sie mithilfe der Dropdown-Menüs den Vorgang der Metrik, die `operation` und eine `date` Dimension:
 
@@ -54,9 +54,9 @@ Bei Verwendung in Berichten können Metriken über einen bestimmten Zeitraum ana
 
 ## Filter hinzufügen {#filters}
 
-Die `Filter` -Bereich können Sie einen neuen Filter erstellen oder einen [gespeicherten Filtersatz](../../data-user/reports/ess-manage-data-filters.md) zu Ihrer Metrik hinzufügen.
+Die `Filter` -Bereich können Sie Filter erstellen oder einen [gespeicherten Filtersatz](../../data-user/reports/ess-manage-data-filters.md) zu Ihrer Metrik hinzufügen.
 
-Für unsere `average order revenue` -Metrik, würden wir keine Testaufträge einbeziehen wollen, die möglicherweise bei der Einrichtung unseres Stores durchgeführt wurden - dies würde uns ein ungenaues Ergebnis liefern. Wir können einen Filtersatz anwenden, um diese Bestellungen aus dem Datensatz zu entfernen. Nach der Erstellung des Filters wird er auf alle Diagramme angewendet, die mit dieser Metrik erstellt wurden.
+Für `average order revenue` -Metrik, würden Sie keine Testaufträge einbeziehen, die möglicherweise bei der Einrichtung Ihres Stores durchgeführt wurden. Dies würde uns ein ungenaues Ergebnis liefern. Kann einen Filtersatz anwenden, um diese Bestellungen aus dem Datensatz zu entfernen. Nach der Erstellung des Filters wird er auf alle Diagramme angewendet, die mit dieser Metrik erstellt wurden.
 
 Die `Filter Logic` -Abschnitt enthält, können Sie weiter definieren, wie sich eine Metrik verhalten soll.
 
@@ -66,9 +66,9 @@ Die `Filter Logic` -Abschnitt enthält, können Sie weiter definieren, wie sich 
 
 ## Dimensionen hinzufügen {#dimensions}
 
-Die [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) zeigt alle verfügbaren Datendimensionen für die Filterung oder Gruppierung an. Standardmäßig werden alle verfügbaren Datenspalten als Dimensionen aufgelistet. Wenn wir unser Beispiel fortsetzen und unseren Umsatz nach Verweisquelle segmentieren möchten, könnten wir das hier tun.
+Die [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) zeigt alle verfügbaren Datendimensionen für die Filterung oder Gruppierung an. Standardmäßig werden alle verfügbaren Datenspalten als Dimensionen aufgelistet. Wenn Sie im Beispiel Ihren Umsatz nach Verweisquelle segmentieren möchten, können Sie dies hier vornehmen.
 
-Zusätzlich zur Auflistung aller verfügbaren Datenspalten als Dimensionen, [!DNL MBI] schätzt auch, welche Spalten gruppierbar sind. *So segmentieren oder gruppieren Sie Daten in Berichten*, müssen Spalten als gruppierbar markiert werden.
+Zusätzlich zur Auflistung aller verfügbaren Datenspalten als Dimensionen, [!DNL MBI] schätzt, in welchen Spalten gruppierbar sind. *So segmentieren oder gruppieren Sie Daten in Berichten*, müssen Spalten als gruppierbar markiert werden.
 
 ## Fertigstellung {#finish}
 

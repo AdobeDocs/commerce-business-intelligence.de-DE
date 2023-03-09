@@ -2,9 +2,9 @@
 title: Verbinden von Facebook-Anzeigen
 description: Erfahren Sie, wie Sie Ihre Anzeigenausgabedaten analysieren und feststellen können, ob Ihr Geld effektiv ausgegeben wird.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---

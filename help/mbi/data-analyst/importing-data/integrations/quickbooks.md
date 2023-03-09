@@ -2,9 +2,9 @@
 title: QuickBooks verbinden
 description: Erfahren Sie, wie Ihre Unternehmensfinanzen jetzt neben Ihren Verkaufs- und Marketingdaten leben können. So können Sie schnell und einfach Ihre Ausgaben im Auge behalten, Überausgaben identifizieren und vieles mehr.
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Nach dem Klicken **[!UICONTROL Connect to Quickbooks]** Melden Sie sich bei [!DN
 ![](../../../assets/QuickBooks_App_Store_1.jpg)
 
 1. Im `Search for a company` und wählen Sie Ihr Unternehmen aus.
-1. Klicken **[!UICONTROL Next]**. Sie werden zu [!DNL MBI] und *Verbindung erfolgreich!* wird oben auf dem Bildschirm angezeigt.
+1. Klicken **[!UICONTROL Next]**. Sie werden zu [!DNL MBI] und *Verbindung erfolgreich!* wird oben im Bildschirm angezeigt.
 
 ## Verwandte
 

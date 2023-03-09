@@ -2,9 +2,9 @@
 title: Erweiterte berechnete Spaltentypen
 description: Lernen Sie die Grundlagen für die meisten Anwendungsspaltenfälle kennen - Sie können jedoch eine berechnete Spalte wünschen, die etwas komplexer ist als das, was der Data Warehouse Manager erstellen kann.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '900'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 Viele Analysen, die Sie erstellen möchten, erfordern die Verwendung einer **neue Spalte** die Sie `group by` oder `filter by`. Die [Erstellen berechneter Spalten](../data-warehouse-mgr/creating-calculated-columns.md) In diesem Tutorial werden die Grundlagen für die meisten Anwendungsfälle behandelt. Sie können jedoch eine berechnete Spalte wünschen, die etwas komplexer ist als das, was der Data Warehouse Manager erstellen kann.
 {: #top}
 
-Diese Spaltenarten können von unserem Team von Data Warehouse-Analytikern erstellt werden. Um eine neue berechnete Spalte zu definieren, geben Sie die folgenden Informationen an:
+Diese Spaltenarten können vom Adobe-Team der Data Warehouse-Analytiker erstellt werden. Um eine neue berechnete Spalte zu definieren, geben Sie die folgenden Informationen an:
 
 1. Die **`definition`** dieser Spalte (einschließlich Eingabe, Formeln oder Formatierung)
 1. Die **`table`** die Spalte erstellen möchten, auf der
@@ -31,7 +31,7 @@ Im Folgenden finden Sie einige gängige Beispiele für erweiterte berechnete Spa
 
 ## Ich versuche, Ereignisse sequenziell zu ordnen {#compareevents}
 
-Wir nennen das **Ereignisnummer** berechnete Spalte. Das bedeutet, dass wir versuchen, die Sequenz zu finden, in der Ereignisse für einen bestimmten Ereigniseigentümer aufgetreten sind, z. B. einen Kunden oder Benutzer.
+Dies wird als **Ereignisnummer** berechnete Spalte. Das bedeutet, dass Sie versuchen, die Sequenz zu finden, in der Ereignisse für einen bestimmten Ereigniseigentümer aufgetreten sind, z. B. einen Kunden oder Benutzer.
 
 Im Folgenden finden Sie ein Beispiel:
 
@@ -43,7 +43,7 @@ Im Folgenden finden Sie ein Beispiel:
 | 4 | `A` | 2015-01-02 13:00:00 | 3 |
 | 5 | `B` | 2015-01-03 13:00:00 | 2 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Eine Spalte mit der berechneten Ereignisnummer kann verwendet werden, um Unterschiede im Verhalten zwischen Erstereignissen, Wiederholungsereignissen oder n Ereignissen in Ihren Daten zu erkennen.
 
@@ -51,17 +51,17 @@ Möchten Sie die Spalte mit der Bestellnummer des Kunden in Aktion sehen? Klicke
 
 ![Verwendung einer Spalte mit der berechneten Ereignisnummer zur Gruppierung nach der Bestellnummer des Kunden.](../../assets/EventNumber.gif)<!--{: style="max-width: 500px;"}-->
 
-Um diesen Typ berechneter Spalten zu erstellen, müssen wir Folgendes wissen:
+Um diesen Typ berechneter Spalten zu erstellen, müssen Sie Folgendes wissen:
 
 * Die Tabelle, auf der Sie diese Spalte erstellen möchten
 * Das Feld, das den Eigentümer der Ereignisse angibt (`owner\_id` in diesem Beispiel)
 * Das Feld, nach dem die Ereignisse sortiert werden sollen (`timestamp` in diesem Beispiel)
 
-[nach oben](#top)
+[Zurück zum Anfang](#top)
 
 ## Ich versuche, die Zeit zwischen zwei Ereignissen zu finden. {#twoevents}
 
-Wir nennen das `date difference` berechnete Spalte. Das bedeutet, dass wir versuchen, die Zeit zwischen zwei Ereignissen zu finden, die zu einem einzigen Datensatz gehören, basierend auf den Ereignis-Zeitstempeln.
+Dies wird als `date difference` berechnete Spalte. Dies bedeutet, dass Sie versuchen, die Zeit zwischen zwei Ereignissen zu finden, die zu einem einzigen Datensatz gehören, basierend auf den Ereignis-Zeitstempeln.
 
 Im Folgenden finden Sie ein Beispiel:
 
@@ -70,22 +70,22 @@ Im Folgenden finden Sie ein Beispiel:
 | `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
 | `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Eine berechnete Datumsdifferenz -Spalte kann verwendet werden, um eine Metrik zu erstellen, die die durchschnittliche oder mittlere Zeit zwischen zwei Ereignissen berechnet. Klicken Sie auf das folgende Bild, um zu sehen, wie die `Average time to first order` wird in einem Bericht verwendet.
 
 ![Berechnung der durchschnittlichen Zeit bis zur ersten Bestellung mithilfe einer Spalte mit der Datumsdifferenz](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
 
-Um diesen Typ berechneter Spalten zu erstellen, müssen wir Folgendes wissen:
+Um diesen Typ berechneter Spalten zu erstellen, müssen Sie Folgendes wissen:
 
 * Die Tabelle, auf der Sie diese Spalte erstellen möchten
 * Die beiden Zeitstempel, zwischen denen Sie den Unterschied kennen möchten
 
-[nach oben](#top)
+[Zurück zum Anfang](#top)
 
 ## Ich versuche, sequenzielle Ereigniswerte zu vergleichen. {#sequence}
 
-Wir nennen das **Vergleich sequenzieller Ereignisse**. Das bedeutet, dass wir versuchen, die Differenz zwischen einem Wert (Währung, Zahl, Zeitstempel) und dem entsprechenden Wert für das vorherige Ereignis des Eigentümers zu finden.
+Dies wird als **Vergleich sequenzieller Ereignisse**. Das bedeutet, dass Sie versuchen, die Differenz zwischen einem Wert (Währung, Zahl, Zeitstempel) und dem entsprechenden Wert für das vorherige Ereignis des Eigentümers zu finden.
 
 Im Folgenden finden Sie ein Beispiel:
 
@@ -97,19 +97,19 @@ Im Folgenden finden Sie ein Beispiel:
 | 4 | `A` | 2015-01-02 13:00:00 | 126000 |
 | 5 | `B` | 2015-01-03 13:00:00 | 217800 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Ein sequenzieller Ereignisvergleich kann verwendet werden, um die durchschnittliche oder mittlere Zeit zwischen den einzelnen sequenziellen Ereignissen zu ermitteln. Klicken Sie auf das folgende Bild, um die **Durchschnittliche und mittlere Zeit zwischen Bestellungen** Metriken in Aktion.
 
 =![Verwenden einer Spalte für den sequenziellen Ereignisvergleich, um die durchschnittliche und die mittlere Zeit zwischen den Bestellungen zu berechnen.](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
 
-Um diesen Typ berechneter Spalten zu erstellen, müssen wir Folgendes wissen:
+Um diesen Typ berechneter Spalten zu erstellen, müssen Sie Folgendes wissen:
 
 * Die Tabelle, auf der Sie diese Spalte erstellen möchten
 * Das Feld, das den Eigentümer der Ereignisse angibt (`owner\_id` im Beispiel)
 * Das Wertfeld, das den Unterschied zwischen den einzelnen sequenziellen Ereignissen anzeigen soll (`timestamp` in diesem Beispiel)
 
-[nach oben](#top)
+[Zurück zum Anfang](#top)
 
 ## Ich versuche, die Währung umzurechnen. {#currency}
 
@@ -122,16 +122,16 @@ Im Folgenden finden Sie ein Beispiel:
 | `1` | 2015-01-01 00:00:00 | 30 | 33.57 |
 | `2` | 2015-01-02 00:00:00 | 50 | 55.93 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Um diesen Typ berechneter Spalten zu erstellen, müssen wir Folgendes wissen:
+Um diesen Typ berechneter Spalten zu erstellen, müssen Sie Folgendes wissen:
 
 * Die Tabelle, auf der Sie diese Spalte erstellen möchten
 * Die Spalte des Transaktionsbetrags, die konvertiert werden soll
 * Die Spalte, die die Währung angibt, in der die Daten aufgezeichnet wurden (normalerweise ein ISO-Code)
 * Die bevorzugte Berichtswährung
 
-[nach oben](#top)
+[Zurück zum Anfang](#top)
 
 ## Ich versuche, Zeitzonen zu konvertieren. {#timezone}
 
@@ -144,20 +144,20 @@ Im Folgenden finden Sie ein Beispiel:
 | `1` | 2015-01-01 00:00:00 | 2014-12-31 19:00:00 |
 | `2` | 2015-01-01 12:00:00 | 2015-01-01 07:00:00 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Um diesen Typ berechneter Spalten zu erstellen, müssen wir Folgendes wissen:
+Um diesen Typ berechneter Spalten zu erstellen, müssen Sie Folgendes wissen:
 
 * Die Tabelle, auf der Sie diese Spalte erstellen möchten
 * Die Zeitstempelspalte, die konvertiert werden soll
 * Die Zeitzone, in der die Daten aufgezeichnet wurden
 * Die bevorzugte Zeitzone für die Berichterstellung
 
-[nach oben](#top)
+[Zurück zum Anfang](#top)
 
 ## Ich versuche, etwas zu tun, das hier nicht aufgeführt ist. {#else}
 
-Keine Sorge. Nur weil es hier nicht aufgeführt ist, bedeutet das nicht, dass es nicht möglich ist. Unser Team von Data Warehouse Analysten hat Sie behandelt.
+Keine Sorge. Nur weil es hier nicht aufgeführt ist, bedeutet das nicht, dass es nicht möglich ist. Das Adobe-Team von Data Warehouse-Analysten kann helfen.
 
 So definieren Sie eine neue berechnete Spalte: [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) mit Details zu dem, was Sie erstellen möchten.
 

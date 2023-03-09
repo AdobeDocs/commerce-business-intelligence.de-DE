@@ -2,9 +2,9 @@
 title: Berechnete Spaltentypen
 description: Erfahren Sie, wie Sie Spalten erstellen, um Ihre Daten für die Analyse zu erweitern und zu optimieren.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Innerhalb der [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)können Sie Spalten erstellen, um Ihre Daten für die Analyse zu erweitern und zu optimieren. [Diese Funktion](../data-warehouse-mgr/creating-calculated-columns.md) Sie können auf eine beliebige Tabelle im Data Warehousen-Manager zugreifen, indem Sie auf **[!UICONTROL Create New Column]**.
 
-In diesem Artikel werden die Spaltentypen beschrieben, die Sie mit dem Data Warehousen-Manager erstellen können, sowie eine Beschreibung, einen visuellen Verlauf dieser Spalte und eine [Referenzkarte](#map) aller Eingaben, die zum Erstellen einer Spalte erforderlich sind. Es gibt drei Möglichkeiten, berechnete Spalten zu erstellen:
+In diesem Artikel werden die Spaltentypen beschrieben, die Sie mit dem Data Warehouse Manager erstellen können. Sie umfasst auch die Beschreibung, einen visuellen Durchgang dieser Spalte und eine [Referenzkarte](#map) aller Eingaben, die zum Erstellen einer Spalte erforderlich sind. Es gibt drei Möglichkeiten, berechnete Spalten zu erstellen:
 
 * [Dieselbe Tabelle berechnete Spalten](#sametable)
 * [Eins-zu-viele berechnete Spalten](#onetomany)
@@ -33,7 +33,7 @@ Diese Spalten werden mithilfe von Eingabespalten aus derselben Tabelle erstellt.
 
 Eine Spalte mit dem berechneten Alter gibt die Anzahl der Sekunden zwischen der aktuellen Zeit und einer bestimmten Eingabezeit zurück.
 
-Im folgenden Beispiel haben wir `Seconds since customer's most recent order` im `customers` Tabelle. Dies kann genutzt werden, um Benutzerlisten von Kunden zu erstellen, die innerhalb von keine Käufe getätigt haben (manchmal auch als Kuratierung bezeichnet). `X days`.
+Im folgenden Beispiel wird `Seconds since customer's most recent order` im `customers` Tabelle. Dies kann verwendet werden, um Benutzerlisten von Kunden zu erstellen, die keine Käufe getätigt haben (manchmal auch als &quot;Kurven&quot;bezeichnet) in `X days`.
 
 ![](../../assets/age.gif)
 
@@ -41,7 +41,7 @@ Im folgenden Beispiel haben wir `Seconds since customer's most recent order` im 
 
 Eine Spalte mit Währungsumrechnern konvertiert die native Währung einer Spalte in eine gewünschte neue Währung.
 
-Im folgenden Beispiel haben wir `base\_grand\_total In AED`, wodurch die `base\_grand\_total` von der nativen Währung zu AED in `sales\_flat\_order` Tabelle. Diese Spalte eignet sich gut für Geschäfte mit mehreren Währungen, die in ihrer Landeswährung gemeldet werden möchten.
+Im folgenden Beispiel wird `base\_grand\_total In AED`, wodurch die `base\_grand\_total` von der nativen Währung zu AED in `sales\_flat\_order` Tabelle. Diese Spalte eignet sich gut für Geschäfte mit mehreren Währungen, die in ihrer Landeswährung gemeldet werden möchten.
 
 Bei Commerce-Clients wird die `base\_currency\_code` -Feld speichert normalerweise die nativen Währungen. Die `Spot Time` sollte mit dem Datum übereinstimmen, das in Ihren Metriken verwendet wird.
 
@@ -85,7 +85,7 @@ Dies kann zum Erstellen von Dimensionen auf Kundenebene wie `Customer's first or
 
 ### Exists {#exists}
 
-Eine berechnete Spalte ist ein Binärtest, der bestimmt, ob ein Datensatz auf einer Vielzahl von Seiten vorhanden ist. Mit anderen Worten, die neue Spalte gibt einen `1` wenn der Pfad mindestens eine Zeile in jeder Tabelle verbindet und `0` , wenn keine Verbindung hergestellt werden kann.
+Eine berechnete Spalte ist ein Binärtest, der bestimmt, ob ein Datensatz auf einer Vielzahl von Seiten vorhanden ist. Mit anderen Worten: Die neue Spalte gibt eine `1` wenn der Pfad mindestens eine Zeile in jeder Tabelle verbindet und `0` , wenn keine Verbindung hergestellt werden kann.
 
 Diese Art von Dimension kann beispielsweise bestimmen, ob ein Kunde ein bestimmtes Produkt erworben hat. Verwenden eines Joins zwischen einem `customers` Tabelle und `orders` Tabelle, Filter für ein bestimmtes Produkt, Dimension `Customer has purchased Product X?` kann erstellt werden.
 
@@ -97,9 +97,9 @@ Wenn Sie bei der Erstellung einer berechneten Spalte ein wenig Schwierigkeiten d
 
 ## Erweiterte berechnete Spalten {#advanced}
 
-Bei Ihrer Suche nach einer Analyse und Beantwortung von Fragen zu Ihrem Unternehmen kann es vorkommen, dass Sie nicht in der Lage sind, die exakte Spalte zu erstellen, die Sie benötigen. In diesen Fällen haben wir Sie abgedeckt!
+Bei Ihrer Suche nach einer Analyse und Beantwortung von Fragen zu Ihrem Unternehmen kann es vorkommen, dass Sie nicht in der Lage sind, die exakte Spalte zu erstellen, die Sie benötigen.
 
-Um eine schnelle Umgehung zu gewährleisten, empfehlen wir, die [Erweiterte berechnete Spaltentypen](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) Anleitung, um zu sehen, welche Spalten unser Support-Team erstellen kann. In diesem Artikel behandeln wir auch die Informationen, die wir von Ihnen benötigen, um die Spalte zu erstellen - bitte fügen Sie sie in Ihre Anfrage ein.
+Um eine schnelle Umgehung zu gewährleisten, empfiehlt Adobe, die [Erweiterte berechnete Spaltentypen](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) Anleitung, um zu sehen, welche Spalten das Adobe-Support-Team erstellen kann. In diesem Artikel werden auch die Informationen behandelt, die Sie zum Erstellen der Spalte benötigen - schließen Sie sie in Ihre Anfrage ein.
 
 ## Verwandte Dokumentation
 

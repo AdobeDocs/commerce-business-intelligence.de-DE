@@ -2,7 +2,7 @@
 title: Filtersätze für Metriken erstellen
 description: Erfahren Sie, wie Sie gespeicherte Filtersätze erstellen und auf die Metriken anwenden.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Siehe [Schulungsvideo](https://experienceleague.adobe.com/docs/commerce-knowledg
 
 1. Fügen Sie alle relevanten Filter hinzu.
 
-   Wenn wir beispielsweise nur Bestellungen mit dem Status &quot;complete&quot;in die `Total number of orders` Metrik, würden wir einen Filter anwenden, der alle Bestellungen ausschließt, die nicht über den Status = verfügen. `complete`.
+   Wenn Sie beispielsweise nur Bestellungen mit dem Status &quot;complete&quot;in Ihre `Total number of orders` Metrik, würden Sie einen Filter anwenden, der alle Bestellungen ausschließt, die nicht über den Status = verfügen. `complete`.
 
 1. Überprüfen Sie die Filterlogik und stellen Sie sicher, dass Klammern und Operatoren richtig platziert sind: Beispiel: `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 

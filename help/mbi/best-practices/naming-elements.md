@@ -2,26 +2,26 @@
 title: Berichte und Elemente in MBI benennen
 description: Best Practices für die Benennung von Berichten und Elementen in [!DNL MBI].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
 
 # Berichte und Elemente benennen
 
-Bevor Sie mit dem Erstellen beginnen in[!DNL MBI], wollen wir einige unserer Geheimnisse für den Erfolg teilen. Es ist wichtig zu wissen, wie man Metriken, Filter usw. erstellt, aber alles, was funktioniert, ist unnötig, wenn man nicht finden kann, was man braucht, oder wenn es Unklarheiten gibt.
+Bevor Sie mit dem Erstellen beginnen in[!DNL MBI], möchte Adobe einige Geheimnisse für den Erfolg teilen. Es ist wichtig zu wissen, wie Sie Metriken, Filter usw. erstellen, aber Ihre gesamte Arbeit kann unnötig sein, wenn Sie nicht finden können, was Sie benötigen, oder wenn es Unklarheiten gibt.
 
 ## Warum ist die Nomenklatur wichtig? {#why}
 
 Die Art und Weise, wie Sie berechnete Spalten, Metriken und Berichte benennen, macht es erforderlich, dass verschiedene Benutzer durch Ihre [!DNL MBI] -Konto. Beachten Sie bei der Benennung dieser Funktionen die drei CSS:
 
 * **KLARHEIT** - So können Sie auf einen Blick feststellen, was ein Bericht zeigt, was eine Metrik bewirkt usw.
-* **KONSISTENZ** - damit Sie (und unser Supportteam) Elemente und Berichte in Ihrem Konto leicht finden und verstehen können.
+* **KONSISTENZ** - damit Sie (und das Adobe-Supportteam) Elemente und Berichte in Ihrem Konto leicht finden und verstehen können.
 * **GLAUBWÜRDIGKEIT** - um andere datengestützte Dienste anzuregen und zu stärken [!DNL MBI] Benutzer, müssen Sie sich darauf verlassen, wie sie die Daten verstehen und verwenden!
 
-Lesen Sie weiter für unsere bewährten und wahren Nomenklatur Tipps!
+Lesen Sie weiter für bewährte und wahre Nomenklatur Tipps!
 
 ## Allgemeine Best Practices {#general}
 
@@ -41,7 +41,7 @@ Diese Beispiele sind spezifisch, was das Verwirrungspotenzial verringert.
 
 ### Konsistent mit Großschreibung sein {#capitalize}
 
-Wir sind große Fans des ersten Buchstabens Großbuchstabe, Rest der Zeichen Kleinbuchstaben, es sei denn, der richtige Substantiv-Stil der Großschreibung. Beispiel: **Bestellnummer des Benutzers** anstelle von **Bestellnummer des Benutzers.**
+Adobe empfiehlt die Groß-/Kleinschreibung des ersten Buchstabens mit dem Rest der Zeichen in Kleinbuchstaben, es sei denn, es handelt sich um einen richtigen Schreibstil der Groß-/Kleinschreibung. Beispiel: **Bestellnummer des Benutzers** anstelle von **Bestellnummer des Benutzers.**
 
 Das ist wirklich eine Frage der Präferenz, aber die Sache, die man sich merken muss, ist, mit dem, was man wählt, konsistent zu sein.
 
@@ -59,7 +59,7 @@ Achten Sie darauf, die Rechtschreibung zu überprüfen und nicht die pesky Besit
 
 ## Diagramme {#charts}
 
-Beim Benennen [charts](../tutorials/using-visual-report-builder.md), ist es für uns am nützlichsten, diese Formel zu verwenden: **(Datenperspektive) + (Metrik) + (Zeitraum) + (Zeitintervall)**
+Beim Benennen [charts](../tutorials/using-visual-report-builder.md)ist es am nützlichsten, diese Formel zu verwenden: **(Datenperspektive) + (Metrik) + (Zeitraum) + (Zeitintervall)**
 
 **Schlechtes Beispiel:**
 Umsatz
@@ -79,7 +79,7 @@ Wenn Ihr Dashboard dagegen ein Ort ist, an dem Sie mit verschiedenen Berichten e
 
 ## Dimensionen (berechnete Spalten) {#dimensions}
 
-Beim Benennen neuer [Dimensionen](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md), ist es für uns am nützlichsten, diese Formel zu verwenden: **(Entität) + (Nth) + (Zeitrahmen) + (Berechnung) + (Kommentare)**. Beispiel:
+Beim Benennen neuer [Dimensionen](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)ist es am nützlichsten, diese Formel zu verwenden: **(Entität) + (Nth) + (Zeitrahmen) + (Berechnung) + (Kommentare)**. Beispiel:
 
 Erster 30-Tage-Umsatz des Benutzers
 * Bestellnummer des Benutzers
@@ -91,14 +91,14 @@ Erster 30-Tage-Umsatz des Benutzers
 
 ## Metriken {#metrics}
 
-[Metriken](../data-user/reports/ess-manage-data-metrics.md) sind im Wesentlichen Fragen, auf die Sie regelmäßig antworten möchten. Wie viele Bestellungen gab es im letzten Monat? Wie hoch ist der durchschnittliche Lebenszeitwert unserer Kunden? Es ist im Allgemeinen Best Practice, Metriken zu benennen, die die Antwort widerspiegeln, die sie Benutzern geben. Wenn dieselbe Metrik für einen bestimmten Store oder eine bestimmte Abteilung gefiltert wurde, sollte sie als solche gekennzeichnet werden. Beispiel:
+[Metriken](../data-user/reports/ess-manage-data-metrics.md) sind im Wesentlichen Fragen, auf die Sie regelmäßig antworten möchten. Wie viele Bestellungen gab es im letzten Monat? Welchen durchschnittlichen Lebenszeitwert haben Ihre Kunden? Es ist Best Practice, Metriken zu benennen, die die Antwort widerspiegeln, die sie Benutzern geben. Wenn dieselbe Metrik für einen bestimmten Store oder eine bestimmte Abteilung gefiltert wurde, sollte sie als solche gekennzeichnet werden. Beispiel:
 
 Durchschnittlicher LTV-Nutzer (erste 30 Tage) Store-Name - Umsatz
 
-Schließlich kann dieselbe Metrik manchmal nach verschiedenen Zeitstempeln organisiert werden, je nachdem, wie einzelne Benutzer sie berechnen. Ist dies der Fall, stellen Sie sicher, dass Sie den Zeitstempel in den Namen einschließen:
+Schließlich kann dieselbe Metrik manchmal nach verschiedenen Zeitstempeln organisiert werden, je nachdem, wie einzelne Benutzer sie berechnen. Wenn ja, stellen Sie sicher, dass Sie den Zeitstempel in den Namen aufnehmen:
 
 Umsatz (ausgeliefert\_at) Umsatz (erstellt\_at)
 
 ## Aufbrechen {#wrapup}
 
-Die frühzeitige Festlegung von Stil- und Benennungskonventionen hilft Ihnen bei der erfolgreichen Einrichtung Ihrer [!DNL MBI] -Konto. Denken Sie an die drei Cs: Klarheit, Kohärenz und Glaubwürdigkeit.
+Die frühzeitige Festlegung von Stil- und Benennungskonventionen hilft Ihnen bei der erfolgreichen Einrichtung Ihrer [!DNL MBI] -Konto. Beachten Sie die drei CSS: Klarheit, Kohärenz und Glaubwürdigkeit.

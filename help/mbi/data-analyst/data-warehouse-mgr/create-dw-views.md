@@ -1,21 +1,21 @@
 ---
 title: Erstellen und Verwenden von Data Warehouse-Ansichten
-description: Erfahren Sie mehr über eine Methode zum Erstellen neuer Warehouse-Tabellen durch Ändern einer vorhandenen Tabelle oder durch Zusammenführen oder Konsolidieren mehrerer Tabellen mithilfe von SQL.
+description: Erfahren Sie mehr über eine Methode zum Erstellen neuer in Lagern gespeicherter Tabellen durch Ändern einer vorhandenen Tabelle oder durch Zusammenführen oder Konsolidieren mehrerer Tabellen mithilfe von SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1064'
 ht-degree: 9%
 
 ---
 
 # Arbeiten mit Data Warehouse-Ansichten
 
-In diesem Dokument werden der Zweck und die Verwendung von `Data Warehouse Views` durch Navigieren zu **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. Im Folgenden finden Sie eine Erläuterung der Funktion und der Erstellung neuer Ansichten sowie ein Beispiel für die Verwendung von `Data Warehouse Views` zur Konsolidierung [!DNL Facebook] und [!DNL AdWords] Daten ausgeben.
+In diesem Dokument werden der Zweck und die Verwendung von `Data Warehouse Views` durch Navigieren zu **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. Im Folgenden finden Sie eine Erläuterung der Funktion und der Erstellung von Ansichten sowie ein Beispiel für die Verwendung von `Data Warehouse Views` zur Konsolidierung [!DNL Facebook] und [!DNL AdWords] Daten ausgeben.
 
 ## Allgemeiner Zweck
 
-Die `Data Warehouse Views` -Funktion ist eine Methode zum Erstellen neuer, in Lagern gespeicherter Tabellen durch Ändern einer vorhandenen Tabelle oder durch Zusammenführen oder Konsolidieren mehrerer Tabellen mithilfe von SQL. Einmal `Data Warehouse View` von einem Aktualisierungszyklus erstellt und verarbeitet wurde, wird es in Ihrer Data Warehouse als neue Tabelle unter `Data Warehouse Views` wie unten gezeigt:
+Die `Data Warehouse Views` -Funktion ist eine Methode zum Erstellen neuer, in Lagern gespeicherter Tabellen durch Ändern einer vorhandenen Tabelle oder durch Zusammenführen oder Konsolidieren mehrerer Tabellen mithilfe von SQL. Einmal `Data Warehouse View` von einem Aktualisierungszyklus erstellt und verarbeitet wurde, wird sie in Ihrer Data Warehouse als neue Tabelle unter `Data Warehouse Views` wie unten gezeigt:
 
 ![](../../assets/Data_Warehouse.png)
 
@@ -31,7 +31,7 @@ Neu `Data Warehouse Views` kann erstellt werden und vorhandene Ansichten können
 
 ![](../../assets/Data_Warehouse_Views.png)
 
-Von hier aus können Sie eine neue Ansicht erstellen, indem Sie die folgenden Beispielanweisungen befolgen:
+Von hier aus können Sie eine Ansicht erstellen, indem Sie die folgenden Beispielanweisungen befolgen:
 
 1. Wenn Sie eine vorhandene Ansicht beobachten, klicken Sie auf **[!UICONTROL New Data Warehouse View]** um ein leeres Abfragefenster zu öffnen. Wenn bereits ein leeres Abfragefenster geöffnet ist, fahren Sie mit dem nächsten Schritt fort.
 1. Geben Sie der Ansicht einen Namen, indem Sie die `View Name` -Feld. Der hier angegebene Name bestimmt den Anzeigenamen für die Ansicht in der Data Warehouse. `View names` sind auf Kleinbuchstaben, Zahlen und Unterstriche (_) beschränkt. Alle anderen Zeichen sind verboten.
@@ -40,13 +40,13 @@ Von hier aus können Sie eine neue Ansicht erstellen, indem Sie die folgenden Be
    >
    >Ihre Abfrage muss auf bestimmte Spaltennamen verweisen. Die Verwendung der `*`-Zeichen, um alle Spalten auszuwählen, ist nicht zulässig.
 
-1. Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save]** , um Ihre Ansicht zu speichern. Beachten Sie, dass Ihre Ansicht vorübergehend über eine `Pending` -Status bis zur Verarbeitung durch den nächsten vollständigen Aktualisierungszyklus; ab diesem Zeitpunkt ändert sich der Status in `Active`. Nach der Verarbeitung durch eine Aktualisierung kann Ihre Ansicht in Berichten verwendet werden.
+1. Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save]** , um Ihre Ansicht zu speichern. Ihre Ansicht verfügt vorübergehend über `Pending` -Status bis zur Verarbeitung durch den nächsten vollständigen Aktualisierungszyklus, an dem sich der Status in `Active`. Nach der Verarbeitung durch eine Aktualisierung kann Ihre Ansicht in Berichten verwendet werden.
 
-Es ist wichtig zu erwähnen, dass nach dem Speichern die zugrunde liegende Abfrage, die zum Generieren einer `Data Warehouse View` kann nicht bearbeitet werden. Wenn Sie aus irgendeinem Grund die Struktur eines `Data Warehouse View`müssen Sie eine neue Ansicht erstellen und alle berechneten Spalten, Metriken oder Berichte manuell von der ursprünglichen Ansicht zur neuen migrieren. Nach Abschluss der Migration können Sie die Originalansicht sicher löschen. weil `Data Warehouse Views` nicht bearbeitbar sind, empfehlen wir dringend, die Ausgabe Ihrer Abfrage mit der `SQL Report Builder` vor dem Speichern Ihrer Abfrage als Data Warehouse View.
+Es ist wichtig zu erwähnen, dass nach dem Speichern die zugrunde liegende Abfrage, die zum Generieren einer `Data Warehouse View` kann nicht bearbeitet werden. Wenn Sie die Struktur eines `Data Warehouse View`müssen Sie eine Ansicht erstellen und berechnete Spalten, Metriken oder Berichte manuell von der ursprünglichen Ansicht zur neuen migrieren. Nach Abschluss der Migration können Sie die Originalansicht sicher löschen. weil `Data Warehouse Views` nicht bearbeitbar sind, empfiehlt Adobe, die Ausgabe Ihrer Abfrage mithilfe der `SQL Report Builder` vor dem Speichern Ihrer Abfrage als Data Warehouse View.
 
 ## Beispiel: [!DNL Facebook] und [!DNL Google AdWords] data
 
-Sehen wir uns eines der oben in diesem Artikel erwähnten Beispiele genauer an: konsolidieren [!DNL Facebook] und [!DNL AdWords] Daten in eine neue konsolidierte Anzeigentabelle investieren. In den meisten Fällen umfasst dies die Konsolidierung von zwei Tabellen mit unten stehenden Beispieldatensätzen:
+Sehen Sie sich eines der oben in diesem Artikel erwähnten Beispiele genauer an: konsolidieren [!DNL Facebook] und [!DNL AdWords] Daten in eine neue konsolidierte Anzeigentabelle investieren. In den meisten Fällen umfasst dies die Konsolidierung von zwei Tabellen mit unten stehenden Beispieldatensätzen:
 
 `Ad source: Google AdWords`
 
@@ -76,7 +76,7 @@ Sehen wir uns eines der oben in diesem Artikel erwähnten Beispiele genauer an: 
 | 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
-So erstellen Sie eine Ausgabentabelle für eine einzelne Anzeige, die beide [!DNL Facebook] und [!DNL AdWords] Kampagnen, müssen wir eine SQL-Abfrage schreiben und die `UNION ALL` -Funktion. A `UNION ALL` -Anweisung wird meist verwendet, um mehrere verschiedene SQL-Abfragen zu kombinieren und gleichzeitig die Ergebnisse jeder Abfrage an eine einzelne Ausgabe anzuhängen.
+So erstellen Sie eine Ausgabentabelle für eine einzelne Anzeige, die beide [!DNL Facebook] und [!DNL AdWords] Kampagnen, müssen Sie eine SQL-Abfrage schreiben und die `UNION ALL` -Funktion. A `UNION ALL` -Anweisung wird meist verwendet, um mehrere verschiedene SQL-Abfragen zu kombinieren und gleichzeitig die Ergebnisse jeder Abfrage an eine einzelne Ausgabe anzuhängen.
 
 Es gibt einige Anforderungen an `UNION` -Anweisung, die erwähnt werden muss, wie in PostgreSQL beschrieben [Dokumentation](https://www.postgresql.org/docs/8.3/queries-union.html):
 
@@ -85,7 +85,7 @@ Es gibt einige Anforderungen an `UNION` -Anweisung, die erwähnt werden muss, wi
 
 Beim Ausführen einer `UNION` oder `UNION ALL` -Anweisung, spiegeln die Namen der Spalten in der endgültigen Ausgabe die Spaltenbenennung in Ihrer ersten Abfrage wider.
 
-In den meisten Fällen wird die [!DNL Facebook] und [!DNL Google AdWords] Daten in `Data Warehouse View` erfordert die Erstellung einer Tabelle mit sieben Spalten, deren Abfrage der folgenden ähnelt:
+Normalerweise wird die [!DNL Facebook] und [!DNL Google AdWords] Daten in `Data Warehouse View` die Erstellung einer Tabelle mit sieben Spalten erforderlich, deren Abfrage der folgenden ähnelt:
 
 ```sql
     SELECT
@@ -112,9 +112,9 @@ In den meisten Fällen wird die [!DNL Facebook] und [!DNL Google AdWords] Daten 
 Einige wichtige Punkte zu den oben genannten Themen:
 
 * Aus Gründen der Klarheit werden alle Spalten oberhalb so alidiert, dass die Namen in allen Abfragen übereinstimmen. Dies ist jedoch nicht erforderlich. Die Reihenfolge, in der Spalten in den SELECT-Abfragen aufgerufen werden, bestimmt, wie sie in der Warteschlange angeordnet sind.
-* Eine neue Spalte namens `ad_source` wurde erstellt, um die Filterung nach [!DNL AdWords] oder [!DNL Facebook] Daten. Beachten Sie, dass diese Abfrage alle Daten aus beiden Tabellen kombiniert. Wenn Sie keine Spalte wie `ad_source`, wird es keine einfache Möglichkeit geben, Ausgaben aus einer bestimmten Quelle zu identifizieren.
+* Eine neue Spalte namens `ad_source` wurde erstellt, um die Filterung nach [!DNL AdWords] oder [!DNL Facebook] Daten. Beachten Sie, dass diese Abfrage alle Daten aus beiden Tabellen kombiniert. Wenn Sie keine Spalte wie `ad_source`gibt es keine einfache Möglichkeit, Ausgaben aus einer bestimmten Quelle zu identifizieren.
 
-Speichern der obigen Abfrage als `Data Warehouse View` erstellt eine neue Tabelle mit [!DNL Facebook] und [!DNL AdWords] Ausgaben, ähnlich wie im Folgenden:
+Speichern der obigen Abfrage als `Data Warehouse View` erstellt eine Tabelle mit beiden [!DNL Facebook] und [!DNL AdWords] Ausgaben, ähnlich wie im Folgenden:
 
 | **`id`** | **`ad_source`** | **`date`** | **`campaign`** | **`spend`** | **`impressions`** | **`clicks`** |
 |--- |--- |--- |--- |--- |--- |--- |
@@ -133,11 +133,11 @@ Anstatt für jede Anzeigenquelle einen separaten Satz von Marketing-Metriken zu 
 
 **Suchen Sie weitere Hilfe?**
 
-Schreiben von SQL und Erstellen `Data Warehouse Views` ist nicht im technischen Support enthalten.  Das Services-Team bietet jedoch Unterstützung bei der Erstellung von Ansichten an. Für alles von der Migration und Konsolidierung einer alten Datenbank mit einer neuen Data Warehouse bis hin zur Erstellung einer einzigen Datenbankansicht für eine spezifische Analyse sind sie bestens in der Kuratierung SQL-basierter Lösungen für alle Ihre Datenstrukturprobleme gerüstet.
+Schreiben von SQL und Erstellen `Data Warehouse Views` ist nicht im technischen Support enthalten. Das Services-Team bietet jedoch Unterstützung bei der Erstellung von Ansichten an. Von der Migration einer alten Data Warehouse mit einer neuen Datenbank bis hin zur Erstellung einer einzigen Analyseansicht kann das Supportteam Ihnen helfen.
 
-In den meisten Fällen ist die Erstellung eines `Data Warehouse View` Für die Konsolidierung von 2-3 ähnlich strukturierten Tabellen sind 5 Stunden Dienstzeit erforderlich, was etwa 1250 Dollar Arbeitszeit entspricht. Im Folgenden finden Sie jedoch einige gemeinsame Faktoren, durch die sich die erforderlichen Investitionen erhöhen können:
+Normalerweise wird durch die Erstellung eines `Data Warehouse View` Für die Konsolidierung von 2-3 ähnlich strukturierten Tabellen sind fünf Stunden Dienstzeit erforderlich, was etwa 1250 Dollar Arbeitszeit entspricht. Im Folgenden finden Sie jedoch einige gemeinsame Faktoren, durch die sich die erforderlichen Investitionen erhöhen können:
 
-* Konsolidierung von mehr als 3 Tabellen in einer einzigen Ansicht
-* Erstellung von mehr als einer Data Warehouse-Ansicht
+* Konsolidierung von mehr als drei Tabellen in einer einzigen Ansicht
+* Erstellen von mehr als einer Data Warehouse-Ansicht
 * Komplexe Fügelogik oder Filterbedingungen
-* Konsolidierung von 2 oder mehr Tabellen mit unterschiedlichen Datenstrukturen
+* Konsolidierung von zwei oder mehr Tabellen mit unterschiedlichen Datenstrukturen

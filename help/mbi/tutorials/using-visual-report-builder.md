@@ -2,9 +2,9 @@
 title: Visual Report Builder verwenden
 description: Hier erfahren Sie, wie Sie die Daten in Ihrem Bericht für einen bestimmten Zeitraum analysieren.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ Die [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) erm�
 
 ## Schritt 1: Erstellen eines Berichts
 
-Um mit der Erstellung eines neuen Berichts zu beginnen, klicken Sie auf **[!UICONTROL Report Builder]** auf der Seitenleiste oder **[!UICONTROL Add Report]** oben in jedem Dashboard. Wenn die `Report Builder` Die Auswahlseite wird angezeigt. Klicken Sie auf die **[!UICONTROL Visual Report Builder]** -Option.
+Um mit der Erstellung eines Berichts zu beginnen, klicken Sie auf **[!UICONTROL Report Builder]** auf der Seitenleiste oder **[!UICONTROL Add Report]** oben in jedem Dashboard. Wenn die `Report Builder` Die Auswahlseite wird angezeigt. Klicken Sie auf die **[!UICONTROL Visual Report Builder]** -Option.
 
-So bearbeiten Sie einen Bericht, der im `Visual Report Builder`klicken Sie auf das Zahnradsymbol (Optionen) oben rechts in einem beliebigen Diagramm und klicken Sie dann auf **[!UICONTROL Edit]**.
+So bearbeiten Sie einen Bericht, der im `Visual Report Builder`klicken Sie auf das Zahnradsymbol (Optionen) in der oberen rechten Ecke eines beliebigen Diagramms und klicken Sie dann auf **[!UICONTROL Edit]**.
 
 ## Schritt 2: Hinzufügen von Metriken
 
@@ -33,7 +33,7 @@ Sie können nach Auswahl der ursprünglichen Metrik zusätzliche Metriken hinzuf
 
 `Formulas` zu Berichten hinzugefügt werden, indem Sie auf **[!UICONTROL Add Formula]**, direkt über der Liste der Metriken im Bericht. Im [Formeleditor](../data-analyst/dev-reports/formulas-in-rpt-bldr.md)können alle im Bericht enthaltenen Metriken als Eingaben verwendet werden. Grundlegende mathematische Operatoren werden verwendet, um die verschiedenen Metriken zu bearbeiten.
 
-Angenommen, wir wollten einen Bericht erstellen, der uns den durchschnittlichen Umsatz pro Bestellung zeigt. In diesem Fall würden wir die `Revenue` Metrik nach `Number of orders` Metrik.
+Angenommen, Sie möchten einen Bericht erstellen, der uns den durchschnittlichen Umsatz pro Bestellung zeigt. In diesem Fall würden Sie die `Revenue` Metrik nach `Number of orders` Metrik.
 
 ![](../assets/ave-rev-per-order.png)
 
@@ -45,7 +45,7 @@ Wenn Sie einen bestimmten Zeitraum nicht einbeziehen möchten, können Sie den Z
 
 Stellen Sie beim Festlegen eines bestimmten Datumsbereichs für den Zeitraum sicher, dass sich das Startdatum am Anfang des Intervalls befindet und das Enddatum am Ende Ihres Intervalls liegt.
 
-Beispielsweise können Sie einen Zeitraum von `January 1st to March 1st` und wählen Sie eine `monthly` zeigt `March` als Datenpunkt verwenden, jedoch jeden Tag in `March` Ausnahme `March 1`. In diesem Fall sollten Sie Ihre `Time Period` von `January 1 to March 31`.
+Beispielsweise können Sie einen Zeitraum von `January 1st to March 1st` und wählen Sie eine `monthly` interval zeigt `March` als Datenpunkt verwenden, jedoch jeden Tag in `March` Ausnahme `March 1`. In diesem Fall sollten Sie Ihre `Time Period` von `January 1 to March 31`.
 
 ## Schritt 5: `Group by` / `Segmenting the Analysis` {#groupby}
 
@@ -53,11 +53,11 @@ Beispielsweise können Sie einen Zeitraum von `January 1st to March 1st` und wä
 
 Sie können `None` , um zu verhindern, dass eine Metrik segmentiert wird. So könnten Sie beispielsweise eine Metrik wünschen, die den Gesamtumsatz ohne Segmentierung zurückgibt, während eine andere Umsatzmetrik nach Region segmentiert ist.
 
-Kehren Sie zu unserem Beispiel für den durchschnittlichen Umsatz pro Bestellung zurück und legen Sie die Gruppe auf Angebotscode fest. Dies zeigt uns den durchschnittlichen Umsatz pro Bestellung für Bestellungen mit und ohne Sonderangebotscode.
+Kehren Sie zu Ihrem Beispiel für den durchschnittlichen Umsatz pro Bestellung zurück und legen Sie die Gruppe auf den Angebotscode fest. Dies zeigt Ihnen den durchschnittlichen Umsatz pro Bestellung für Bestellungen mit und ohne Sonderangebotscode.
 
 ![](../assets/Group_By_Report_Builder.png)
 
-Wenn die in der Analyse enthaltenen Metriken auf unterschiedlichen Datentabellen basieren, können Sie in einem Popup-Fenster die passende Datendimension in jeder Tabelle auswählen. Das Ziel besteht hier darin, Dimensionen zu finden, die denselben Typ von Werten für die Segmentierung aufweisen:
+Wenn die in der Analyse enthaltenen Metriken auf unterschiedlichen Datentabellen basieren, können Sie in einem Popup-Fenster die passende Datendimension in jeder Tabelle auswählen. Das Ziel besteht hier darin, Dimensionen zu finden, die den Typ von Werten für die Segmentierung teilen:
 
 ![](../assets/Dimension_Editor.png)
 
@@ -69,11 +69,11 @@ Für jede zur Analyse hinzugefügte Metrik können Sie Filter hinzufügen, die r
 
 ### `Filters`
 
-`Filters` den in der Analyse enthaltenen Datensatz zu begrenzen. Filter sind äußerst nützlich, z. B. bei der Bewertung einzelner Akquisekanäle und beim Entfernen von Ausreißern.
+`Filters` den in der Analyse enthaltenen Datensatz zu begrenzen. Filter sind beispielsweise beim Auswerten einzelner Akquisekanäle und beim Entfernen von Ausreißern nützlich.
 
 Zusätzlich zu den Dropdown-Menüs und dem Textfeld können Sie auch spezielle Filteroperatoren wie `LIKE` oder `IN` , um Filter zu erstellen.
 
-Die Verwendung von Platzhaltern (`%` oder `_`) in Verbindung mit `LIKE` -Anweisungen unterstützt. Die `%` mit Platzhalterzeichen übereinstimmen, während `_` entspricht nur einem einzelnen Zeichen. Beispiel:
+Die Verwendung von Platzhaltern (`%` oder `_`) mit `LIKE` -Anweisungen unterstützt. Die `%` Platzhalter entspricht mehreren Zeichen, während `_` entspricht nur einem einzelnen Zeichen. Beispiel:
 
 - `affiliate's name Like B%` erlaubt nur Daten von Kunden, deren Name mit `B`.
 
@@ -85,13 +85,13 @@ Durch das Hinzufügen mehrerer Filter können die Daten der Grafik genau gesteue
 
 ### `Perspectives`
 
-`Perspectives` können Sie einfach zwischen verschiedenen Ansichten Ihrer Daten wechseln. Sehen wir uns die verfügbaren Funktionen an:
+`Perspectives` Ermöglicht Ihnen den einfachen Umschalter zwischen verschiedenen Ansichten Ihrer Daten. Sehen Sie sich an, was verfügbar ist:
 
-- `Standard perspective`: Die Standardperspektive zeigt Ihnen das Ergebnis für das entsprechende Datum auf der X-Achse (z. B. Umsatz im Januar). Dies ist die Perspektive, die wir in unserem Beispiel Durchschnittlicher Umsatz pro Bestellungen verwenden.
+- `Standard perspective`: Die Standardperspektive zeigt Ihnen das Ergebnis für das entsprechende Datum auf der X-Achse (z. B. Umsatz im Januar). Dies ist die Perspektive, die Sie in Ihrem Beispiel Durchschnittlicher Umsatz pro Bestellung verwenden.
 
 ![](../assets/Standard.png)
 
-- `Amount` ODER `Percent Change` versus `Previous Period` Perspektive: Diese Perspektive zeigt die Menge oder prozentuale Veränderung von einem Intervall zum nächsten und ist nützlich zur Messung der Änderungsrate in schnell wechselnden Metriken. Es gibt auch eine Perspektive, das Intervall mit dem gleichen Zeitraum im letzten Jahr zu vergleichen, um das Wachstum von Jahr zu Jahr anzuzeigen.
+- `Amount` ODER `Percent Change` versus `Previous Period` Perspektive: Diese Perspektive zeigt die Menge oder prozentuale Veränderung von einem Intervall zum nächsten und ist nützlich zur Messung der Änderungsrate bei schnell wechselnden Metriken. Es gibt auch eine Perspektive, um das Intervall mit dem gleichen Zeitraum im letzten Jahr zu vergleichen und das Wachstum im Jahresvergleich anzuzeigen.
 
 ![](../assets/Amt_or_Percent_Change.png)
 
@@ -99,11 +99,11 @@ Durch das Hinzufügen mehrerer Filter können die Daten der Grafik genau gesteue
 
 ![](../assets/Cumulative_Perspective.png)
 
-- `Percent of First Value perspective`: Diese Perspektive zeigt die Daten als Prozentsatz des ersten in der Analyse enthaltenen Intervalls. Dies ist hilfreich bei der Messung der Effektivität spezifischer Aktionen im Vergleich zur Leistung des ersten Zeitraums.
+- `Percent of First Value perspective`: Diese Perspektive zeigt die Daten als Prozentsatz des in der Analyse enthaltenen Erstintervalls. Dies ist hilfreich bei der Messung der Effektivität spezifischer Aktionen im Vergleich zur Leistung des ersten Zeitraums.
 
 ![](../assets/Percent_of_First_Value.png)
 
-- `Rolling averages window perspective`: Die Perspektive &quot;Rollierende Durchschnittswerte&quot;zeigt den rollierenden Durchschnittswert einer Metrik über den angegebenen Zeitraum. Das Intervall muss mit dem auf Berichtsebene festgelegten Intervall übereinstimmen. Wenn der Bericht beispielsweise das letzte vollständige Quartal des Umsatzes pro Woche anzeigt, können Sie den rollierenden durchschnittlichen Fensterzeitbereich auf 4 Wochen festlegen. Die ersten drei Werte sind null und der vierte Wert stellt den Durchschnitt der ersten 4 Wochen des Umsatzes dar. Stellen Sie für mehr Klarheit sicher, dass Sie die `Multiple Y-Axes` aktivieren, wenn Sie dieselbe Metrik mit einem rollierenden Durchschnitt anzeigen, wie im Beispiel unten.
+- `Rolling averages window perspective`: Die Perspektive &quot;Rollierende Durchschnittswerte&quot;zeigt den rollierenden Durchschnittswert einer Metrik über den angegebenen Zeitraum. Das Intervall muss mit dem auf Berichtsebene festgelegten Intervall übereinstimmen. Wenn der Bericht beispielsweise das letzte vollständige Quartal des Umsatzes pro Woche anzeigt, können Sie den rollierenden durchschnittlichen Fensterzeitbereich auf vier Wochen festlegen. Dadurch sind die ersten drei Werte null und der vierte Wert stellt den Durchschnitt der ersten vier Umsatzwochen dar. Stellen Sie für mehr Klarheit sicher, dass Sie die `Multiple Y-Axes` aktivieren, wenn Sie dieselbe Metrik mit einem rollierenden Durchschnitt anzeigen, wie im Beispiel unten.
 
 ![](../assets/rolling_avg_window.png)
 
@@ -111,19 +111,19 @@ Durch das Hinzufügen mehrerer Filter können die Daten der Grafik genau gesteue
 
 Für in Berichten verwendete Metriken gibt es zwei Optionen: sie können einen Trend im Zeitverlauf entsprechend den globalen Zeitoptionen aufweisen oder nicht, wodurch sie als Skalarzahl angezeigt werden.
 
-Ändern eines Metrikzeitintervalls in `None` gibt eine `scalar` Zahl, was beim Erstellen von Formeln nützlich ist, bei denen eine Metrik mit Trends in der Zeit durch eine `scalar` Zahl. Darüber hinaus können Sie auch den Zeitbereich der `scalar` auf einen Zeitraum, der unabhängig von dem für den Bericht ist.
+Ändern eines Metrikzeitintervalls in `None` gibt eine `scalar` Zahl, was beim Erstellen von Formeln nützlich ist, bei denen eine Metrik mit Trends in der Zeit durch eine `scalar` Zahl. Sie können auch den Zeitbereich der `scalar` auf einen Zeitraum, der unabhängig von dem für den Bericht ist.
 
-Nehmen wir beispielsweise an, wir wollten, dass die monatlichen Einnahmen für 2019 in Prozent des Gesamtumsatzes für 2019 ausgedrückt werden. Wir können zwei hinzufügen `Revenue` Metriken zu einem Bericht mit einem globalen Zeitraum vom 1. Januar 2019 bis zum 31. Dezember 2019, segmentiert nach Monatsintervall.
+Nehmen wir beispielsweise an, Sie wollten sehen, dass der monatliche Umsatz von 2019 in Prozent des Gesamtumsatzes von 2019 ausgedrückt wird. Sie können zwei `Revenue` Metriken zu einem Bericht mit einem globalen Zeitbereich vom 1. Januar 2019 bis zum 31. Dezember 2019, segmentiert nach Monatsintervall.
 
 >[!NOTE]
 >
->Wenn Sie `group by` Dimensionen, wählen Sie eine neue Visualisierung aus oder passen Sie das Zeitintervall an und speichern Sie dann nur die Zahl (`scalar`), werden diese Anpassungen nicht beibehalten, wenn Sie den Bericht das nächste Mal über ein Dashboard öffnen - es wird nur der Zeitraum beibehalten.
+>Wenn Sie `group by` Dimensionen, wählen Sie eine neue Visualisierung aus oder passen Sie das Zeitintervall an und speichern Sie dann nur die Zahl (`scalar`). Diese Anpassungen werden nicht beibehalten, wenn Sie den Bericht das nächste Mal über ein Dashboard öffnen - es wird nur der Zeitraum beibehalten.
 
 Weitere Informationen zur Verwendung von Zeitoptionen in Berichten finden Sie in diesem [Tutorial](../tutorials/time-options-visual-rpt-bldr.md).
 
 ## Schritt 7: Speichern des Berichts
 
-Wenn Sie ein neues Diagramm erstellen, können Sie es speichern, indem Sie auf **[!UICONTROL Save]** oben rechts im `Visual Report Builder`.
+Wenn Sie ein Diagramm erstellen, können Sie es speichern, indem Sie auf **[!UICONTROL Save]** oben rechts im `Visual Report Builder`.
 
 Sie können ein Diagramm, eine Tabelle oder eine Zahl (`scalar`) mithilfe der `Type` und das Dashboard, in dem der Bericht gespeichert werden soll, mithilfe der `Location` Dropdown-Liste.
 

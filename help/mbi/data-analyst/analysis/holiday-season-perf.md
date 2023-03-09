@@ -2,9 +2,9 @@
 title: Analysieren der Leistung der Weihnachtszeit
 description: Erfahren Sie, wie sich das diesjährige Wachstum im Vergleich zu den Vorjahren entwickelt.
 exl-id: 328f30b8-0db6-48fd-8d97-95f0bc7e4803
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Für Ihr Unternehmen ist der Urlaub vielleicht eine der geschäftigsten Zeiten des Jahres. Für Einzelhändler mit einem großen amerikanischen Kundenstamm erstreckt sich die Weihnachtszeit in der Regel über die Monate zwischen dem Erntedankfest und dem Neujahr.
 
-Rushes können jederzeit während des Jahres auftreten. Wenn Ihr Unternehmen z. B. Shorts oder Poolvorräte verkauft, kann es im Sommer zu einer Eile kommen. In diesem Thema untersuchen wir Analysen, die Ihnen helfen, Ihre hohen Jahreszeiten über verschiedene Jahre hinweg zu vergleichen.
+Rushes können jederzeit während des Jahres auftreten. Wenn Ihr Unternehmen z. B. Shorts oder Poolvorräte verkauft, kann es im Sommer zu einer Eile kommen. Dieses Thema untersucht Analysen, die Ihnen helfen, Ihre hohen Jahreszeiten über verschiedene Jahre hinweg zu vergleichen.
 
 ## Empfohlene Metriken
 
@@ -21,7 +21,7 @@ Bei der Analyse der Leistung in der Weihnachtszeit sollten Sie die Analyse in Er
 
 ### Anzahl neuer Kunden, Anzahl Bestellungen, Umsatz
 
-Um zu verstehen, wie sich das diesjährige Wachstum im Vergleich zu den Vorjahren entwickelt, sollten Sie diese Maßnahmen analysieren. Die Anzahl neuer Kunden, die Anzahl neuer Bestellungen und der Umsatz zeigen Ihnen die tägliche Performance Ihres Unternehmens in dem von Ihnen festgelegten Zeitraum (Weihnachtszeit). Sie können diese Kennzahlen auch mithilfe einer kumulativen Perspektive analysieren, um zu sehen, wie sich die Metrik im Laufe der Zeit ändert.
+Um zu verstehen, wie sich das diesjährige Wachstum im Vergleich zu den Vorjahren entwickelt, sollten Sie diese Maßnahmen analysieren. Die Anzahl neuer Kunden, die Anzahl neuer Bestellungen und der Umsatzbetrag zeigen Ihnen die tägliche Leistung Ihres Unternehmens für den von Ihnen festgelegten Zeitraum (Weihnachtszeit). Sie können diese Kennzahlen auch mithilfe einer kumulativen Perspektive analysieren, um zu sehen, wie sich die Metrik im Laufe der Zeit ändert.
 
 ### Durchschnittlicher Bestellwert
 
@@ -29,7 +29,7 @@ Diese Kennzahl zeigt den durchschnittlichen Gesamtbestellwert während Ihrer Url
 
 ## Beispiel: Täglicher Umsatz in der Weihnachtszeit
 
-Nachdem wir nun wissen, welche Metriken analysiert werden sollen, betrachten wir einige Beispielumsatzdaten während der Weihnachtsmonate November und Dezember für 2014 und 2015.
+Nachdem Sie nun wissen, welche Metriken analysiert werden sollen, sehen Sie sich einige Beispielumsatzdaten während der Weihnachtsmonate November und Dezember für 2014 und 2015 an.
 
 ![Tägliche Weihnachtseinnahmen für 2014 und 2015](../../assets/Analyzing_holiday_season.png)
 

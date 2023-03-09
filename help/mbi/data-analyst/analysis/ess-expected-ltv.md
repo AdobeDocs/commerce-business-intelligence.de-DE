@@ -1,10 +1,10 @@
 ---
 title: Erwartete Lebenszeitwert-Analyse (Basis)
-description: Erfahren Sie, wie Sie Analysen erstellen, um den Lebenszeitwert Ihrer aktuellen Kunden zu verstehen und vorherzusagen, wie der Lebenszeitwert mit mehr Bestellungen steigt.
+description: Erfahren Sie, wie Sie Analysen erstellen, um den Lebenszeitwert Ihrer aktuellen Kunden zu verstehen und vorherzusagen, wie der Lebenszeitwert mit mehr Bestellungen zunimmt.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,13 @@ Nachdem die Metrik erstellt wurde, können Sie **Dashboard erstellen** indem Sie
 * Navigieren Sie zu **[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
 * Benennen Sie das Dashboard, z. B. `Expected LTV`.
 
-* Hier werden wir alle Berichte erstellen und hinzufügen.
+* Hier können Sie alle Berichte erstellen und hinzufügen.
 
 ## Erstellen von Berichten
 
 >[!NOTE]
 >
->on **[!UICONTROL Time Period:]** festgelegt ist, wird der Zeitraum für jeden Bericht als `All-time`. Sie können dies nach Ihren Analyseanforderungen ändern. Wir empfehlen, alle Berichte in diesem Dashboard für denselben Zeitraum abzudecken, z. B. `All time`, `Year-to-date`oder `Last 365 days`.
+>on **[!UICONTROL Time Period:]** festgelegt ist, wird der Zeitraum für jeden Bericht als `All-time`. Sie können dies nach Ihren Analyseanforderungen ändern. Adobe empfiehlt, dass alle Berichte in diesem Dashboard den gleichen Zeitraum abdecken, z. B. `All time`, `Year-to-date`oder `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
@@ -88,7 +88,7 @@ Nachdem die Metrik erstellt wurde, können Sie **Dashboard erstellen** indem Sie
       [!UICONTROL Diagrammtyp]: `Line`
    >[!NOTE]
    >
-   >Fügen Sie nicht alle Werte für `Customer's lifetime number of orders`, sehen Sie sich stattdessen einen Punkt an, an dem die Anzahl neuer Kunden eine kleine Zahl erreicht, und fügen Sie manuell die Anzahl der Bestellwerte für die gesamte Lebensdauer jedes Kunden zu diesem Punkt hinzu. Wenn es beispielsweise 200 Kunden bei einer Bestellung gibt, 75 bei zwei, 15 bei drei und 3 bei vier, fügen Sie *1, 2 und 3*.
+   >Fügen Sie nicht alle Werte für `Customer's lifetime number of orders`. Sehen Sie sich stattdessen einen Punkt an, an dem die Anzahl neuer Kunden eine kleine Zahl erreicht, und fügen Sie manuell die Anzahl der Bestellwerte für die gesamte Lebensdauer jedes Kunden zu diesem Punkt hinzu. Wenn es beispielsweise 200 Kunden bei einer Bestellung gibt, 75 bei zwei, 15 bei drei und 3 bei vier, fügen Sie *1, 2 und 3*.
 
 * Vorhandenen hinzufügen [!UICONTROL Avg customer lifetime revenue by cohort] Bericht.
 

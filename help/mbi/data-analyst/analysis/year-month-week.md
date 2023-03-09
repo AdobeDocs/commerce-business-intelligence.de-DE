@@ -2,9 +2,9 @@
 title: Jährliche, monatliche und wöchentliche Berichte
 description: Erfahren Sie, wie Sie Trends im Zeitverlauf einfach erkennen und die Perspektive für Zeiträume ändern können, die Sie vergleichen möchten.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 >
 >Dieser Artikel enthält Anweisungen für Clients, die die ursprüngliche Architektur und die neue Architektur verwenden. Sie befinden sich auf der [neue Architektur](../../administrator/account-management/new-architecture.md) Wenn Sie über _Data Warehouse-Ansichten_ -Bereich nach Auswahl `Manage Data` aus der Hauptsymbolleiste.
 
-Mit ReportBuilder können Sie Trends im Zeitverlauf einfach anzeigen und die Perspektive für Zeiträume ändern, die Sie vergleichen möchten. In diesem Artikel erfahren Sie, wie Sie ein Dashboard einrichten, das eine Ebene tiefer geht und es Ihnen ermöglicht, Berichte für die Analyse von Woche zu Woche, Monat zu Jahr und Jahr zu Jahr zu erstellen.
+Mit ReportBuilder können Sie Trends im Zeitverlauf einfach anzeigen und die Perspektive für Zeiträume ändern, die Sie vergleichen möchten. Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, das eine Ebene tiefer geht und es Ihnen ermöglicht, Berichte für die Analyse von Woche zu Woche, Monat zu Monat und Jahr zu Jahr zu erstellen.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-Bevor Sie beginnen, möchten Sie sich mit Perspektiven im Detail vertraut machen [here](../../tutorials/using-visual-report-builder.md) sowie unabhängige Zeitoptionen [here](../../tutorials/time-options-visual-rpt-bldr.md).
+Bevor Sie beginnen, möchten Sie sich mit Perspektiven im Detail vertraut machen [here](../../tutorials/using-visual-report-builder.md) und unabhängige Zeitoptionen [here](../../tutorials/time-options-visual-rpt-bldr.md).
 
 Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -79,7 +79,7 @@ Keine.
 
 * Metrik `A`: Dieser Monat*
 * Metrik `B`: Letzter Monat*
-* [!UICONTROL Time period]: Vor 1 Monat bis 0 Monaten
+* [!UICONTROL Time period]: vor einem Monat vor 0 Monaten
 * 
    [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
@@ -120,4 +120,4 @@ Keine.
 * 
    [!UICONTROL Chart Type]: `Line`
 
-Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Endergebnis kann wie das Bild oben auf dieser Seite aussehen.
+Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie das Bild oben auf dieser Seite aussehen.

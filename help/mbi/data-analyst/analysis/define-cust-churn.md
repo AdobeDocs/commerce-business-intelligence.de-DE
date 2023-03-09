@@ -2,16 +2,16 @@
 title: Kundenabwanderung definieren
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie die Abwanderung Ihrer Transaktionskunden definieren können.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
 
 # Abwanderung von Transaktionskunden
 
-In diesem Artikel zeigen wir, wie Sie ein Dashboard einrichten, mit dem Sie die Abwanderung Ihrer Transaktionskunden definieren können.
+Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, mit dem Sie die Abwanderung Ihrer Transaktionskunden definieren können.
 
 ![](../../assets/churn-deashboard.png)
 
@@ -28,7 +28,7 @@ Zu erstellende Spalten
 * Wählen Sie eine [!UICONTROL column]: **`entity_id`**
 * [!UICONTROL Path]: sales_flach_order.customer_id = customer_entity.entity_id
 * [!UICONTROL Filter]:
-* Bestellungen, die wir zählen
+* Bestellungen, die gezählt werden
 
 * `sales_flat_order` table
 * `Customer's lifetime number of orders`
@@ -42,11 +42,11 @@ Zu erstellende Spalten
 * Wählen Sie eine Definition aus: `Age`
 * Wählen Sie eine [!UICONTROL column]: `created_at`
 
-* **`Customer's order number`** wird von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
-* **`Is customer's last order`** wird von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
-* **`Seconds since previous order`** wird von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
-* **`Months since order`** wird von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
-* **`Months since previous order`** wird von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
+* **`Customer's order number`** von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
+* **`Is customer's last order`** von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
+* **`Seconds since previous order`** von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
+* **`Months since order`** von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
+* **`Months since previous order`** von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
 
 ## Metriken
 
@@ -59,11 +59,11 @@ Keine neuen Metriken!
 ## Berichte
 
 * **anfängliche Wiederholungsreihenwahrscheinlichkeit**
-* Metrik A: Alle Wiederholungsaufträge
+* Metrik A: Wiederholungsaufträge mit All-Time
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* Metrik B: Alle Zeitaufträge
+* Metrik B: All-time-Bestellungen
 * [!UICONTROL Metric]: Anzahl Bestellungen
 
 * [!UICONTROL Formula]: anfängliche Wiederholungsreihenwahrscheinlichkeit
@@ -101,7 +101,7 @@ Keine neuen Metriken!
 
    [!UICONTROL Gruppe von]: `Independent`
 
-* Metrik D: Alle letzten Bestellungen (ausblenden)
+* Metrik D: Letzte Bestellungen (ausblenden)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -128,12 +128,12 @@ Keine neuen Metriken!
 
 Der Bericht zur anfänglichen Wiederholungsbestellwahrscheinlichkeit stellt die Gesamtanzahl wiederholter Bestellungen/Gesamtbestellungen dar. Jede Bestellung bietet die Möglichkeit, eine Wiederholungsbestellung vorzunehmen. die Anzahl der Wiederholungsaufträge ist die Teilmenge der tatsächlich ausgeführten Bestellungen.
 
-Die von uns verwendete Formel vereinfacht (Gesamtanzahl der Wiederholungsaufträge, die nach X Monaten erfolgten)/ (Gesamtbestellungen, die mindestens X Monate alt sind). Es zeigt uns, dass historisch gesehen, da es X Monate seit einer Bestellung ist, gibt es eine Y% Chance, dass der Benutzer eine andere Bestellung aufgibt.
+Die Formel, die Sie verwenden, vereinfacht die Verwendung von (Gesamtanzahl der Wiederholungsaufträge, die nach X Monaten erfolgten)/ (Gesamtbestellungen, die mindestens X Monate alt sind). Es zeigt uns, dass es historisch gesehen, da es seit einer Bestellung X Monate sind, eine Y% Chance gibt, dass der Benutzer eine andere Bestellung aufgibt.
 
-Nachdem Sie Ihr Dashboard erstellt haben, erhalten wir am häufigsten folgende Frage: Wie kann ich dies verwenden, um eine Abwanderungsschwelle zu bestimmen?
+Nachdem Sie Ihr Dashboard erstellt haben, lautet die häufigste Frage: Wie kann ich dies verwenden, um eine Abwanderungsschwelle zu bestimmen?
 
-**Darauf gibt es keine &quot;richtige Antwort&quot;.** Es wird jedoch empfohlen, den Punkt zu ermitteln, an dem die Zeile den Wert überschreitet, der der Hälfte der anfänglichen Wiederholwahrscheinlichkeitsrate entspricht. Dies ist der Punkt, an dem wir sagen können: &quot;Wenn ein Benutzer eine Wiederholungsreihenfolge vornehmen würde, hätte er dies wahrscheinlich bis jetzt getan.&quot; Letztlich besteht das Ziel darin, die Schwelle auszuwählen, an der es sinnvoll ist, von &quot;Bindung&quot;zu &quot;Reaktivierung&quot;zu wechseln.
+**Darauf gibt es keine &quot;richtige Antwort&quot;.** Adobe empfiehlt jedoch, den Punkt zu ermitteln, an dem die Linie den Wert überschreitet, der der Hälfte der anfänglichen Wiederholwahrscheinlichkeitsrate entspricht. An dieser Stelle können Sie sagen: &quot;Wenn ein Benutzer eine Wiederholungsreihenfolge durchführt, hätte er dies wahrscheinlich bis jetzt getan.&quot; Letztlich besteht das Ziel darin, die Schwelle auszuwählen, an der es sinnvoll ist, von &quot;Bindung&quot;zu &quot;Reaktivierung&quot;zu wechseln.
 
-Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Endergebnis kann wie das Bild oben auf der Seite aussehen
+Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie das Bild oben auf der Seite aussehen
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach unser Professional Services-Team einbinden möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

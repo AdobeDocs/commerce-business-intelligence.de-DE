@@ -2,16 +2,16 @@
 title: Erstellen eines Dashboards für Anleger
 description: Erfahren Sie, wie Sie ein Dashboard für Investoren erstellen.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
 # Erstellen des Anleger-Dashboards
 
-Viele unserer Kunden arbeiten mit Anlegern zusammen und müssen Informationen aus der Plattform mit ihnen teilen, aber die Dashboards, die Sie für alltägliche Geschäftsentscheidungen erstellen, sind möglicherweise nicht das, wonach ein Investor sucht. Hier werden einige Best Practices für die Erstellung eines Dashboards vorgestellt, das umfassend, aber einfach ist und sich ideal für die gemeinsame Nutzung mit aktiven und potenziellen Investoren eignet.
+Viele Kunden arbeiten mit Anlegern zusammen und müssen Informationen aus der Plattform austauschen. Die Dashboards, die Sie für tägliche Geschäftsentscheidungen erstellen, sind jedoch möglicherweise nicht das, wonach ein Investor sucht. Im Folgenden werden einige Best Practices für die Erstellung eines Dashboards beschrieben, das umfassend, aber einfach ist und ideal für die gemeinsame Nutzung mit aktiven und potenziellen Investoren geeignet ist.
 
 Im Folgenden finden Sie Informationen zum Erstellen von Berichten für Ihr Investor-Dashboard:
 
@@ -28,7 +28,7 @@ Im Folgenden finden Sie Informationen zum Erstellen von Berichten für Ihr Inves
 * **[!UICONTROL Revenue by quarter]**
    * Metrik - Umsatz
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
-   * Metrik - Umsatz der ersten Bestellung
+   * Metrik - Umsatz der Erstbestellung
    * Filter - Die Ordnungsnummer des Benutzers ist gleich 1
    * Metrik 2 - Auftragsumsatz wiederholen
       * Filter - Die Bestellnummer des Benutzers ist größer als 1
@@ -71,7 +71,7 @@ Mit dem [Commerce-Datenanreicherungsdienste](https://business.adobe.com/products
 * Verwenden Sie eine klare und knappe [Namenskonvention](../best-practices/naming-elements.md)
 * Dashboard für Anleger-Benutzer freigeben
 * Oder senden Sie es über **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
-* Erstellen Sie nur ein Dashboard. Dies erleichtert die Pflege des Inhalts, und Sie werden genau wissen, was Ihre Investoren sehen.
+* Erstellen Sie nur ein Dashboard. Dies erleichtert die Pflege des Inhalts und Sie wissen genau, was Ihre Investoren sehen.
 
 Organisieren Sie Ihre Berichte sorgfältig und achten Sie auf Details. Nach Abschluss sieht das Dashboard wie folgt aus:
 

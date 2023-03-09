@@ -2,7 +2,7 @@
 title: Dashboards für andere Benutzer freigeben
 description: Erfahren Sie, wie Sie Dashboards für andere Benutzer freigeben können.
 exl-id: 6279b049-d1b2-4d40-b30b-ee8772e990f4
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Dashboards für andere Benutzer freigeben
 
-Die Freigabe von Dashboards ist eine hervorragende Möglichkeit, Ihr Team in der Warteschlange zu halten und eine partizipative Diskussion zu fördern. Durch die Erstellung und Freigabe eines zentralen Dashboards können Sie Ihrem Team die benötigten Informationen bereitstellen und gleichzeitig die Kontrolle behalten. [Wir empfehlen](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;}, das Sie gewähren `Edit` Rechte an ausgewählte Personen festzulegen, um versehentliche Änderungen zu minimieren.
+Die Freigabe von Dashboards ist eine hervorragende Möglichkeit, Ihr Team in der Warteschlange zu halten und eine partizipative Diskussion zu fördern. Durch die Erstellung und Freigabe eines zentralen Dashboards können Sie Ihrem Team die benötigten Informationen bereitstellen und gleichzeitig die Kontrolle behalten. [Adobe empfiehlt](../../best-practices/share-dashboard-best-practice.md){: target=&quot;_blank&quot;}, das Sie gewähren `Edit` Rechte an ausgewählte Personen festzulegen, um versehentliche Änderungen zu minimieren.
 
 >[!NOTE]
 >

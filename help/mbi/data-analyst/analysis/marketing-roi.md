@@ -2,9 +2,9 @@
 title: Marketing-ROI
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, das Ihre Kanalanalyse verfolgt - einschließlich ROI insgesamt und nach Kampagne.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -15,24 +15,24 @@ ht-degree: 0%
 >
 >Dieser Artikel enthält Anweisungen für Clients, die die ursprüngliche Architektur und die neue Architektur verwenden. Sie befinden sich auf der [neue Architektur](../../administrator/account-management/new-architecture.md) Wenn Sie den Bereich &quot;Datenansichten&quot;nach Auswahl von &quot;Data Warehousen verwalten&quot;in der Hauptsymbolleiste verfügbar haben.
 
-Wenn Sie Geld für Online-Werbung ausgeben, möchten Sie unweigerlich Ihre Rendite aus diesen Ausgaben nachverfolgen und datenbasierte Entscheidungen über weitere Investitionen treffen. In diesem Artikel erfahren Sie, wie Sie ein Dashboard einrichten, das Ihre Kanalanalyse verfolgt - einschließlich des ROI insgesamt und nach Kampagnen.
+Wenn Sie Geld für Online-Werbung ausgeben, möchten Sie Ihre Rendite aus diesen Ausgaben nachverfolgen und datenbasierte Entscheidungen über weitere Investitionen treffen. Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, das Ihre Kanalanalyse verfolgt - einschließlich des ROI insgesamt und nach Kampagne.
 
 ![](../../assets/Marketing_dashboard_example.png)
 
-Bevor Sie beginnen, möchten Sie Ihre [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)und [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) -Konten sowie alle zusätzlichen Daten zu den Ausgaben für Online-Werbung einbringen. Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
+Bevor Sie beginnen, möchten Sie Ihre [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)und [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) und fügen Sie zusätzliche Daten zu den Ausgaben für Online-Werbung hinzu. Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Konsolidierte Tabellen
 
-**Originalarchitektur:** Zusammenführen Ihrer Ausgaben aus verschiedenen Quellen (z. B. [!DNL Facebook Ads] oder [!DNL Google Adwords]), empfehlen wir, eine **konsolidierte Tabelle** der Werbeausgaben. Sie benötigen einen Analysten, um diesen Schritt für Sie abzuschließen. Falls noch nicht geschehen, [Support-Anfrage einreichen](../../guide-overview.md) mit dem Betreff `[MARKETING ROI ANALYSIS]`und ein Analyst erstellt diese Tabelle.
+**Originalarchitektur:** Zusammenführen Ihrer Ausgaben aus verschiedenen Quellen (z. B. [!DNL Facebook Ads] oder [!DNL Google Adwords]), empfiehlt Adobe, eine **konsolidierte Tabelle** der Werbeausgaben. Sie benötigen einen Analysten, um diesen Schritt für Sie abzuschließen. Wenn nicht, [Support-Anfrage einreichen](../../guide-overview.md) mit dem Betreff `[MARKETING ROI ANALYSIS]`, und ein Analytiker erstellt diese Tabelle.
 
-**Neue Architektur:** Sie können dem Beispiel folgen, das unter [Diese Analysebibliothek](../../data-analyst/data-warehouse-mgr/create-dw-views.md) Thema. Konsolidierte Tabellen werden jetzt als Data Warehousen-Ansichten für die neue Architektur bezeichnet.
+**Neue Architektur:** Sie können dem Beispiel in [Diese Analysebibliothek](../../data-analyst/data-warehouse-mgr/create-dw-views.md) Thema. Konsolidierte Tabellen werden jetzt als Data Warehousen-Ansichten für die neue Architektur bezeichnet.
 
 ## Berechnete Spalten
 
 Zu erstellende Spalten
 
 * **`Consolidated Digital Ad Spend`** table
-* **`Campaign name`** wird von einem Analytiker im Rahmen Ihrer **[MARKETING-ROI-ANALYSE]** Ticket
+* **`Campaign name`** von einem Analytiker im Rahmen Ihrer **[MARKETING-ROI-ANALYSE]** Ticket
 
 >[!NOTE]
 >
@@ -295,7 +295,7 @@ Zu erstellende Spalten
 
    [!UICONTROL Chart Type]: `Table`
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach unser Professional Services-Team einbinden möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### Verwandte
 

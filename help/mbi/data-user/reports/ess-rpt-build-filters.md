@@ -2,9 +2,9 @@
 title: Filter
 description: Erfahren Sie, wie Sie Filter verwenden.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ MBI enthält eine Auswahl von Filtern, die Sie &quot;vorkonfiguriert&quot;(OOTB)
 
    * Wenn der Filter abgeschlossen ist, klicken Sie auf **[!UICONTROL Apply]**.
 
-      Der Bericht enthält jetzt nur noch wiederkehrende Kunden, und die Anzahl der für den Bericht abgerufenen Kundendatensätze wurde von 33.000 auf 12.6.000 verringert.
+      Der Bericht enthält jetzt nur noch wiederkehrende Kunden, und die Anzahl der für den Bericht abgerufenen Kundendatensätze wurde von 33.000 auf 12.600 reduziert.
 
       ![Gefilterter Bericht](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 

@@ -2,9 +2,9 @@
 title: Dauerhaftes Löschen von Diagrammen
 description: Erfahren Sie, wie Sie ein Diagramm dauerhaft löschen.
 exl-id: 34234ff6-b258-4369-9774-946d8423d4da
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ So löschen Sie ein Diagramm dauerhaft:
 
 1. Klicken **[!UICONTROL Charts]**.
 
-1. Die Diagramme, die Sie löschen können (basierend auf den Benutzerberechtigungen und der Diagrammeigenschaft), werden rechts auf dem Bildschirm angezeigt.
+1. Die Grafiken, die Sie löschen können (basierend auf den Benutzerberechtigungen und dem Diagrammeigentum), werden rechts im Bildschirm angezeigt.
 
 1. Aktivieren Sie das Kontrollkästchen neben der Diagrammzeile, die Sie löschen möchten.
 

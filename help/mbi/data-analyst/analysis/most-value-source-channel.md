@@ -2,9 +2,9 @@
 title: Identifizieren Ihrer wertvollsten Marketing-Quellen und -Kanäle
 description: Erfahren Sie mehr über einige Berichte, mit denen Sie Ihre wertvollsten Marketing-Kanäle entdecken können.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Sie haben Ihre Zielgruppe recherchiert, Ihre Kampagne erstellt, in einige Marketing-Kanäle investiert. Wie funktionieren diese Kanäle jetzt, da einige Zeit vergangen ist? Welcher Kanal hat die meisten neuen Benutzer eingebracht? Welche Quelle hat am meisten zu Ihrem Gesamtumsatz beigetragen?
 
-Mit [!DNL MBI]können Sie Ihre Umsätze und Benutzer einfach nach der Verweisquelle segmentieren, ob sie [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern. Diese Segmentierung ermöglicht es Ihnen, Ihre leistungsstärksten Kanäle zu finden und Ihr Marketing-Budget besser zu investieren.
+Mit [!DNL MBI]können Sie Ihre Umsätze und Benutzer einfach nach der Verweisquelle segmentieren, ob sie [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern. Mit dieser Segmentierung können Sie Ihre leistungsstärksten Kanäle finden und Ihr Marketing-Budget besser investieren.
 
-In diesem Artikel werden einige Berichte vorgestellt, mit denen Sie Ihre wertvollsten Marketing-Kanäle ermitteln können:
+In diesem Artikel werden einige Berichte untersucht, mit denen Sie Ihre wertvollsten Marketing-Kanäle ermitteln können:
 
 * [Neue Benutzer nach Quellen](#newusersbysource)
 * [Durchschnittlicher Umsatz während der Lebensdauer nach Benutzerquelle](#avglifetimerev)
@@ -36,9 +36,9 @@ So erstellen Sie diesen Bericht im [Report Builder](../../tutorials/using-visual
 1. Legen Sie die [!UICONTROL Time Period] in den Registrierungszeitraum, den Sie analysieren möchten.
 1. Legen Sie die [!UICONTROL Interval] auf monatlich.
 1. Satz [!UICONTROL Group By] zur Akquise- (oder Verweisquelle) und wählen Sie die Quellen aus, die Sie einbeziehen möchten.
-1. Für dieses Beispiel haben wir die Variable `stacked columns` [!UICONTROL chart type].
+1. In diesem Beispiel wird die `stacked columns` [!UICONTROL chart type].
 
-Hier ist ein visueller Durchgang:
+Im Folgenden finden Sie eine visuelle exemplarische Vorgehensweise:
 
 ![Erstellen eines Berichts &quot;Neue Benutzer nach Quelle&quot;.](../../assets/New_Users_by_source.gif)
 
@@ -51,7 +51,7 @@ Um diesen Bericht im Report Builder zu erstellen, fügen Sie die **Durchschnittl
 1. Legen Sie die [!UICONTROL Time Period] auf den Zeitraum, den Sie analysieren möchten.
 1. Legen Sie die [!UICONTROL Interval] auf monatlich.
    [!UICONTROL Group By] zur Akquise- (oder Verweisquelle) und wählen Sie die Quellen aus, die Sie einbeziehen möchten.
-1. Für dieses Beispiel haben wir die Variable `line chart` Typ.
+1. In diesem Beispiel wird die `line chart` Typ.
 
 Im Folgenden finden Sie eine visuelle exemplarische Vorgehensweise:
 
@@ -68,7 +68,7 @@ Um diesen Bericht im Report Builder zu erstellen, fügen Sie die **Durchschnittl
 1. Legen Sie die [!UICONTROL Time Period] in den Registrierungszeitraum, den Sie analysieren möchten.
 1. Legen Sie die [!UICONTROL Time Interval] auf monatlich.
 1. Satz [!UICONTROL Group By] zur Akquise- (oder Verweisquelle) und wählen Sie die Quellen aus, die Sie einbeziehen möchten.
-1. Für dieses Beispiel haben wir die Variable **gestapelte Spalten** Diagrammtyp.
+1. In diesem Beispiel wird die **gestapelte Spalten** Diagrammtyp.
 
 Im Folgenden finden Sie eine visuelle exemplarische Vorgehensweise:
 
@@ -76,14 +76,14 @@ Im Folgenden finden Sie eine visuelle exemplarische Vorgehensweise:
 
 ## Gesamtumsatz nach Datum der Benutzerregistrierung und Quelle {#revbyregdateandsource}
 
-Mit der Analyse des Lebensdauerumsatzes, die wir früher durchgeführt haben, können Sie den durchschnittlichen Umsatz der Benutzer über verschiedene Quellen ermitteln, aber was ist mit dem Gesamtumsatz während der Lebensdauer? Mit diesem Bericht können Sie ermitteln, wie viel Gesamtumsatz Benutzer generieren, die sich während eines bestimmten Zeitraums und aus einer bestimmten Quelle registriert haben.
+Mit der zuvor behandelten Analyse des Lebensdauerumsatzes können Sie den durchschnittlichen Umsatz von Benutzern aus verschiedenen Quellen anzeigen, aber was ist mit dem Gesamtumsatz während der Lebensdauer? Mit diesem Bericht können Sie ermitteln, wie viel Gesamtumsatz Benutzer generieren, die sich während eines bestimmten Zeitraums und aus einer bestimmten Quelle registriert haben.
 
 Um diesen Bericht im Report Builder zu erstellen, fügen Sie die `Revenue by user registration date` Metrik. Wenn Sie [diese Metrik erstellt hat](../../data-user/reports/ess-manage-data-metrics.md) Sie können dies bereits tun, indem Sie die `Revenue` Metrik und ändern Sie die `time stamp` auf `creation date`. Gehen Sie nach dem Hinzufügen der Metrik wie folgt vor:
 
 1. Legen Sie die [!UICONTROL Time Period] in den Registrierungszeitraum, den Sie analysieren möchten.
 1. Legen Sie die [!UICONTROL Time Interval] auf monatlich.
 1. Satz [!UICONTROL Group By] zur Akquise- (oder Verweisquelle) und wählen Sie die Quellen aus, die Sie einbeziehen möchten.
-1. Für dieses Beispiel haben wir die Variable `stacked columns` Diagrammtyp.
+1. In diesem Beispiel wird die `stacked columns` Diagrammtyp.
 
 Im Folgenden finden Sie eine visuelle exemplarische Vorgehensweise:
 
@@ -102,7 +102,7 @@ So erstellen Sie diesen Bericht im [Report Builder](../../tutorials/using-visual
    Bestellnummer des Benutzers größer als 1
 
 1. Satz [!UICONTROL Group By] zur Akquise- (oder Verweisquelle) und wählen Sie die Quellen aus, die Sie einbeziehen möchten.
-1. Für dieses Beispiel haben wir die Variable `stacked columns` Diagrammtyp.
+1. In diesem Beispiel wird die `stacked columns` Diagrammtyp.
 
 Im Folgenden finden Sie eine visuelle exemplarische Vorgehensweise:
 
@@ -111,7 +111,7 @@ Im Folgenden finden Sie eine visuelle exemplarische Vorgehensweise:
 
 ## Aufbrechen {#wrapup}
 
-In diesem Artikel haben wir nur einige Analysen angesprochen, mit denen Sie den Wert Ihrer Akquise- und Marketingkanäle analysieren können, aber das ist nur die Spitze des Eisbergs. Wenn Sie eine aussagekräftige Analyse erstellt haben, die wir hier nicht behandelt haben, sollten Sie uns in die Kommentare einbeziehen, was Sie tun.
+In diesem Artikel wurden nur einige Analysen behandelt, mit denen Sie den Wert Ihrer Akquise- und Marketingkanäle analysieren können, aber dies ist nur die Spitze des Eisbergs.
 
 ## Verwandte {#related}
 

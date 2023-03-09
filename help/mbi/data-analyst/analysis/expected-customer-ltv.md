@@ -2,22 +2,22 @@
 title: Erwartete Lebenszeitwert-Analyse (LTV) für Pro
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, das Ihnen dabei hilft, das Wachstum des Kundenlebenszeitwerts und den erwarteten Lebenszeitwert Ihrer Kunden zu verstehen.
 exl-id: e353b92a-ff3b-466b-b519-4f86d054c0bc
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
 # Erwartete Lebenszeitwertanalyse
 
-In diesem Artikel zeigen wir, wie Sie ein Dashboard einrichten, das Ihnen dabei hilft, das Lebenszeitwertwachstum und den erwarteten Lebenszeitwert Ihrer Kunden zu verstehen.
+Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, das Ihnen dabei hilft, das Wachstum des Kundenlebenszeitwerts und den erwarteten Lebenszeitwert Ihrer Kunden zu verstehen.
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
 Diese Analyse steht nur Pro-Konto-Kunden in der neuen Architektur zur Verfügung. Wenn Ihr Konto Zugriff auf die `Persistent Views` -Funktion unter `Manage Data` Seitenleiste, befinden Sie sich in der neuen Architektur und können den hier aufgeführten Anweisungen folgen, um diese Analyse selbst zu erstellen.
 
-Bevor Sie beginnen, sollten Sie sich mit unserer [Kohorten-ReportBuilder.](../dev-reports/cohort-rpt-bldr.md)
+Bevor Sie beginnen, möchten Sie sich mit dem [Kohorten-ReportBuilder.](../dev-reports/cohort-rpt-bldr.md)
 
 ## Berechnete Spalten
 
@@ -151,6 +151,6 @@ Weitere Diagrammdetails
 * [!UICONTROL Cohort date]: `Customer's first order date`
 * [!UICONTROL Perspective]: `Cumulative average value per cohort member`
 
-Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Endergebnis kann wie das Bild oben auf der Seite aussehen.
+Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie das Bild oben auf der Seite aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach unser Professional Services-Team einbinden möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

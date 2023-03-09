@@ -2,7 +2,7 @@
 title: Erstellen automatisierter E-Mail-Zusammenfassungen
 description: Erfahren Sie, wie Sie automatisierte E-Mail-Zusammenfassungen erstellen.
 exl-id: a9aea4fc-9193-467f-8554-3ad77ac3fa73
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Erstellen automatisierter E-Mail-Zusammenfassungen
 
-E-Mail-Zusammenfassungen sind ein leistungsstarkes Kommunikationswerkzeug, mit dem Sie den aktuellen Status und die Trends Ihres Unternehmens mit wichtigen Interessengruppen teilen können. Mit E-Mail-Zusammenfassungen können Sie:
+E-Mail-Zusammenfassungen sind ein leistungsstarkes Kommunikationswerkzeug, mit dem Sie den Status und die Trends Ihres Unternehmens mit wichtigen Interessengruppen teilen können. Mit E-Mail-Zusammenfassungen können Sie:
 
 * Grafische E-Mail-Zusammenfassungen mit Berichten
 * Schließen Sie den Autor der E-Mail-Zusammenfassung ein oder aus, damit er die E-Mail erhält
@@ -32,7 +32,7 @@ E-Mail-Zusammenfassungen sind ein leistungsstarkes Kommunikationswerkzeug, mit d
 
 1. Im `Choose Content` auswählen, die Berichte, die Sie in die Zusammenfassung aufnehmen möchten.
 
-   Sie können bis zu 10 Berichte auswählen, deren Inhaber Sie sind. Nachdem Sie einen Bericht ausgewählt haben, verwenden Sie die angezeigten Symbole, um auszuwählen, ob der Bericht als Tabelle oder Diagramm gesendet werden soll. Wenn Sie den Bericht als Zahl gespeichert haben, können Sie ihn nur als Zahl senden. Informationen zum Senden einer E-Mail-Zusammenfassung mit einem Bericht mit veralteten Daten finden Sie unter [Kontoeinstellungen verwalten](../../administrator/account-management/managing-account-settings.md).
+   Sie können bis zu zehn Berichte auswählen, deren Inhaber Sie sind. Nachdem Sie einen Bericht ausgewählt haben, verwenden Sie die angezeigten Symbole, um auszuwählen, ob der Bericht als Tabelle oder Diagramm gesendet werden soll. Wenn Sie den Bericht als Zahl gespeichert haben, können Sie ihn nur als Zahl senden. Informationen zum Senden einer E-Mail-Zusammenfassung mit einem Bericht mit veralteten Daten finden Sie unter [Kontoeinstellungen verwalten](../../administrator/account-management/managing-account-settings.md).
 
    >[!NOTE]
    >

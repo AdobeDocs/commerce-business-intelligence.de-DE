@@ -1,10 +1,10 @@
 ---
 title: Erwartete Facebook Ads-Daten
-description: Hier erhalten Sie einen kurzen Überblick über die Tabellen, für die eine Synchronisierung mit Ihrem Data Warehouse empfohlen wird.
+description: Hier erhalten Sie einen kurzen Überblick über die Tabellen, für die eine Synchronisierung mit Ihrer Data Warehouse empfohlen wird.
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -15,27 +15,27 @@ ht-degree: 0%
 
 Nachdem Sie [mit [!DNL Facebook Ads] account](../integrations/facebook-ads.md), können Sie die [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) zur einfachen Nachverfolgung relevanter Datenfelder für die Analyse.
 
-In diesem Artikel erhalten Sie einen kurzen Überblick über die Tabellen, für die eine Synchronisierung mit Ihrem Data Warehouse empfohlen wird. Dies ist keine vollständige Liste, da es einige Untertabellen gibt. Wir heben nur die Kerntabellen hervor.
+In diesem Artikel erhalten Sie einen kurzen Überblick über die Tabellen. Die Adobe empfiehlt die Synchronisierung mit Ihrer Data Warehouse. Dies ist keine vollständige Liste, da es einige Untertabellen gibt. Es werden nur die Kerntabellen hervorgehoben.
 
 ## Kernkampagnentabellen
 
 Diese Tabellen enthalten Daten zu Kernkomponenten der Anzeigenkampagne.
 
-### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcampaign/)
+### [`facebook _campaigns_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group)
 
 Diese Tabelle enthält die Kerntabelle der Kampagnen in einer [!DNL Facebook Ads] -Konto. Spalten enthalten `campaign id`, `name`, `status (active/paused)`, `objective`.
 
 ### [`facebook _adsets_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign)
 
-Diese Tabellendatensätze sind die Kerntabelle von [!DNL Facebook Ads] Sets in [!DNL Facebook Ads] -Konto. Spalten beinhalten die Anzeige `Campaign id/name` das Anzeigenset gehört, die Budgetierung, den Angebotstyp, die Planung und die Zielgruppen-Targeting-Informationen.
+Dieser Tabellendatensatz ist die Kerntabelle von [!DNL Facebook Ads] Sets in [!DNL Facebook Ads] -Konto. Spalten beinhalten die Anzeige `Campaign id/name` das Anzeigenset gehört, die Budgetierung, den Angebotstyp, die Planung und die Zielgruppen-Targeting-Informationen.
 
-### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adgroup/)
+### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
-Diese Tabelle enthält alle Anzeigen in einer [!DNL Facebook Ads] -Konto. Die Spalten enthalten die Anzeigeninformationen einschließlich des Anzeigensets und der Anzeigenkampagne, zu der es gehört, das Anzeigenangebot, das Anzeigen-Targeting und den Verweis auf bestimmte kreative Elemente (Bild/Text), die die Anzeige verwendet.
+Diese Tabelle enthält alle Anzeigen in einer [!DNL Facebook Ads] -Konto. Die Spalten enthalten die Anzeigeninformationen, darunter das Anzeigenset und die Anzeigenkampagne, zu der es gehört, das Anzeigenangebot, das Anzeigen-Targeting und den Verweis auf bestimmte kreative Inhalte (Bild/Text), die von der Anzeige verwendet werden.
 
-### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/reference/ads-api/adcreative/)
+### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
-In dieser Tabelle werden alle in [!DNL Facebook Ads]. Dazu gehören kreative Namen, Beschreibungen und ggf. relevante Bild-URLs.
+In dieser Tabelle werden kreative Elemente aufgeführt, die in [!DNL Facebook Ads]. Kreative Elemente umfassen ggf. kreative Namen, Beschreibungen und relevante Bild-URLs.
 
 ## Segmentierte Kampagnentabellen
 

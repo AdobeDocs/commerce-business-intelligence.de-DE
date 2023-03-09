@@ -2,9 +2,9 @@
 title: Grundlegende Analysen verstehen und erstellen
 description: Erfahren Sie, wie Sie die Analyse der Grundlagen verstehen und erstellen.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '3153'
+source-wordcount: '3117'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Sobald Sie mit dem [!DNL MBI] und über grundlegende Kenntnisse des Tools verfügen, sollten Sie mit der Erstellung von Berichten beginnen. Eine der häufigsten Fragen, die Sie möglicherweise haben, ist &quot;Was sollte ich mir ansehen?&quot;
 
-Die folgenden Informationen beschreiben einige der gängigen Metriken und Berichte, die Sie möglicherweise als nützlich empfinden. Einige dieser Berichte sind bereits in Ihrem Konto vorhanden. Überprüfen Sie daher die Metriken und Berichte, die in Ihrem Konto vorhanden sind, um Duplikate zu vermeiden.
+Die folgenden Informationen beschreiben einige der häufig verwendeten Metriken und Berichte, die Sie möglicherweise für nützlich halten. Einige dieser Berichte sind in Ihrem Konto vorhanden. Überprüfen Sie daher die Metriken und Berichte, die in Ihrem Konto vorhanden sind, um Duplikate zu vermeiden.
 
 ## Tabellen und Spalten, die Sie verstehen möchten
 
@@ -24,13 +24,13 @@ Beim Erstellen einer Metrik müssen Sie vier Informationen kennen:
 1. Die Spalte, für die Sie diese Aktion durchführen möchten, und
 1. Der Zeitstempel, den Sie zum Tracking dieser Daten verwenden möchten.
 
-Wahrscheinlich unterscheiden sich die Namen der Tabellen, die wir in diesen Beispielen verwenden, geringfügig von den Spaltennamen und Tabellennamen in Ihrer Datenbank, da jede Datenbank eindeutig ist. Referenzieren Sie die folgenden Definitionen, wenn Sie Hilfe bei der Identifizierung einer entsprechenden Tabelle oder Spalte in Ihrer Datenbank benötigen.
+Wahrscheinlich unterscheiden sich die Namen der in diesen Beispielen verwendeten Tabellen geringfügig von den Spaltennamen und Tabellennamen in Ihrer Datenbank, da jede Datenbank eindeutig ist. Referenzieren Sie die folgenden Definitionen, wenn Sie Hilfe bei der Identifizierung einer entsprechenden Tabelle oder Spalte in Ihrer Datenbank benötigen.
 
 ## Kundentabelle
 
-Diese Tabelle enthält die wichtigsten Informationen zu den einzelnen Kunden, z. B. eine eindeutige Kunden-ID, E-Mail-Adresse, Erstellungsdatum des Kontos usw. In den folgenden Beispielen werden wir **[!UICONTROL customer_entity]** als Name einer Beispiel-Kundentabelle.
+Diese Tabelle enthält die wichtigsten Informationen zu den einzelnen Kunden, z. B. eine eindeutige Kunden-ID, E-Mail-Adresse usw. Die folgenden Beispiele verwenden **[!UICONTROL customer_entity]** als Name einer Beispiel-Kundentabelle.
 
-Wenn einige dieser Berechnungen derzeit nicht in Ihrer Datenbank vorhanden sind, können sie von jedem Administrator in Ihrem Konto erstellt werden. Darüber hinaus möchten Sie sicherstellen, dass diese Dimensionen für alle zutreffenden Metriken gruppierbar sind.
+Wenn einige dieser Berechnungen derzeit nicht in Ihrer Datenbank vorhanden sind, können sie von jedem Administrator in Ihrem Konto erstellt werden. Außerdem sollten Sie sicherstellen, dass diese Dimensionen für alle zutreffenden Metriken gruppierbar sind.
 
 **Dimensionen**
 
@@ -44,28 +44,28 @@ Wenn einige dieser Berechnungen derzeit nicht in Ihrer Datenbank vorhanden sind,
 
 **Akzeptieren Sie Gastbestellungen?**
 
-*Wenn ja, enthält diese Tabelle möglicherweise nicht alle Ihre Kunden. Kontakt [Supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) , um sicherzustellen, dass Ihre Kundenanalysen alle Kunden einschließen.*
+*Wenn ja, enthält diese Tabelle möglicherweise nicht alle Ihre Kunden. Kontaktieren Sie die [Supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) , um sicherzustellen, dass Ihre Kundenanalysen alle Kunden einschließen.*
 
 *Sind Sie nicht sicher, ob Sie Gastbestellungen annehmen? Siehe [dieses Thema](../data-warehouse-mgr/guest-orders.md) um mehr zu erfahren!*
 
 ## Bestelltabelle
 
-In dieser Tabelle stellt jede Zeile eine Reihenfolge dar. Die Spalten in dieser Tabelle enthalten grundlegende Informationen zu den einzelnen Bestellungen, wie z. B. die Kennung der Bestellung, das Erstellungsdatum, den Status, die Kennung des Kunden, der die Bestellung aufgegeben hat, usw. In den folgenden Beispielen verwenden wir **[!UICONTROL sales_flat_order]** als Name einer Beispielbestellungstabelle.
+In dieser Tabelle stellt jede Zeile eine Reihenfolge dar. Die Spalten in dieser Tabelle enthalten grundlegende Informationen zu den einzelnen Bestellungen, wie z. B. die Kennung der Bestellung, das Erstellungsdatum, den Status, die Kennung des Kunden, der die Bestellung aufgegeben hat, usw. Die folgenden Beispiele verwenden **[!UICONTROL sales_flat_order]** als Name einer Beispielbestellungstabelle.
 
 **Dimensionen**
 
-* **[!UICONTROL Customer_id]**: Eine eindeutige Kennung für den Kunden, der die Bestellung aufgegeben hat. Dies wird häufig verwendet, um Informationen zwischen den Kunden- und Auftragstabellen zu verschieben. In unseren Beispielen erwarten wir die customer_id auf der **[!UICONTROL sales_flat_order]** -Tabelle, die mit der **[!UICONTROL entitiy_id]** auf **[!UICONTROL customer_entity]** Tabelle.
+* **[!UICONTROL Customer_id]**: Eine eindeutige Kennung für den Kunden, der die Bestellung aufgegeben hat. Dies wird häufig verwendet, um Informationen zwischen den Kunden- und Auftragstabellen zu verschieben. In diesen Beispielen erwarten Sie die customer_id auf der **[!UICONTROL sales_flat_order]** -Tabelle, die mit der **[!UICONTROL entitiy_id]** auf **[!UICONTROL customer_entity]** Tabelle.
 * **[!UICONTROL Created_at]**: Das Datum, an dem die Bestellung erstellt oder platziert wurde.
 * **[!UICONTROL Customer_email]**: Die E-Mail-Adresse des Kunden, der die Bestellung aufgegeben hat. Dies kann auch die eindeutige Kennung für den Kunden sein.
 * **[!UICONTROL Customer's lifetime number of orders]**: Eine Kopie der Spalte mit demselben Namen auf Ihrer `Customers` Tabelle.
-* **[!UICONTROL Customer's order number]**: Die sequenzielle Bestellnummer des Kunden, die der Bestellung zugeordnet ist. Wenn die Zeile, die Sie sich ansehen, beispielsweise die erste Bestellung eines Kunden ist, lautet diese Spalte &quot;1&quot;. Wenn dies jedoch die 15. Bestellung des Kunden war, zeigt diese Spalte &quot;15&quot;für diese Bestellung an. Wenn diese Dimension nicht in Ihrer `Customers` Tabelle, fragen Sie unsere [Supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) um Ihnen beim Erstellen zu helfen.
+* **[!UICONTROL Customer's order number]**: Die sequenzielle Bestellnummer des Kunden, die der Bestellung zugeordnet ist. Wenn die Zeile, die Sie sich ansehen, beispielsweise die erste Bestellung eines Kunden ist, lautet diese Spalte &quot;1&quot;. Wenn dies jedoch die 15. Bestellung des Kunden war, zeigt diese Spalte &quot;15&quot;für diese Bestellung an. Wenn diese Dimension nicht in Ihrer `Customers` Tabelle, fragen Sie die [Supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) um Ihnen beim Erstellen zu helfen.
 * **[!UICONTROL Customer's order number (previous-current)]**: Eine Verkettung von zwei Werten im **[!UICONTROL Customer's order number]** Spalte. Er wird in einem Beispielbericht unten verwendet, um die verstrichene Zeit zwischen zwei beliebigen Bestellungen anzuzeigen. Beispielsweise wird die Zeit zwischen dem ersten Bestelldatum eines Kunden und dem zweiten Bestelldatum mit dieser Berechnung als &quot;1-2&quot;dargestellt.
-* **[!UICONTROL Coupon_code]**: Zeigt an, welche Gutscheine bei jeder Bestellung verwendet wurden.
+* **[!UICONTROL Coupon_code]**: Zeigt, welche Gutscheine bei jeder Bestellung verwendet wurden.
 * **[!UICONTROL Seconds since previous order]**: Die Zeit (in Sekunden) zwischen den Bestellungen eines Kunden.
 
 ## Auftragselementtabelle
 
-In dieser Tabelle steht jede Zeile für einen verkauften Artikel. Diese Tabelle enthält Informationen zu den in den einzelnen Bestellungen verkauften Artikeln, wie z. B. Referenznummer, Produktnummer, Menge usw. In den folgenden Beispielen verwenden wir `sales_flat_order_item` als Name einer Beispielsortierungselementtabelle.
+In dieser Tabelle steht jede Zeile für einen verkauften Artikel. Diese Tabelle enthält Informationen zu den in den einzelnen Bestellungen verkauften Artikeln, wie z. B. Referenznummer, Produktnummer, Menge usw. Die folgenden Beispiele verwenden `sales_flat_order_item` als Name einer Beispielsortierungselementtabelle.
 
 **Dimensionen**
 
@@ -81,12 +81,12 @@ Diese Tabelle dient zur Verwaltung Ihrer Abonnementinformationen, wie z. B. Anme
 
 **Dimensionen**
 
-* **[!UICONTROL Customer_id]**: Eine eindeutige Kennung für den Kunden, der die Bestellung aufgegeben hat. Dies ist eine gängige Methode zum Erstellen eines Pfads zwischen der Tabelle &quot;Customers&quot;und der Tabelle &quot;Bestellungen&quot;. In unseren Beispielen erwarten wir die customer_id auf der **sales_flach_order** -Tabelle, die mit der `entitiy_id` auf `customer_entity` Tabelle.
+* **[!UICONTROL Customer_id]**: Eine eindeutige Kennung für den Kunden, der die Bestellung aufgegeben hat. Dies ist eine gängige Methode zum Erstellen eines Pfads zwischen der Tabelle &quot;Customers&quot;und der Tabelle &quot;Bestellungen&quot;. In diesen Beispielen erwarten Sie die customer_id auf der **sales_flach_order** -Tabelle, die mit der `entitiy_id` auf `customer_entity` Tabelle.
 * **[!UICONTROL Start date]**: Das Datum, an dem das Abonnement eines Kunden begonnen hat.
 
 ## Tabelle für Marketing-Ausgaben
 
-Bei der Analyse Ihrer Marketing-Ausgaben können Sie Folgendes einbeziehen: [!DNL Facebook], [!DNL Google AdWords]oder anderen Quellen in Ihren Analysen. Wenn Sie über mehrere Marketing-Ausgabenquellen verfügen, wenden Sie sich an unsere [Managed Services-Team](https://business.adobe.com/products/magento/fully-managed-service.html) für Hilfe bei der Einrichtung einer konsolidierten Tabelle für Ihre Marketing-Kampagnen.
+Bei der Analyse Ihrer Marketing-Ausgaben können Sie Folgendes einbeziehen: [!DNL Facebook], [!DNL Google AdWords]oder anderen Quellen in Ihren Analysen. Wenn Sie über mehrere Marketing-Ausgabenquellen verfügen, wenden Sie sich an den [Managed Services-Team](https://business.adobe.com/products/magento/fully-managed-service.html) Hilfe beim Einrichten einer konsolidierten Tabelle für Ihre Marketing-Kampagnen.
 
 **Dimensionen**
 
@@ -95,14 +95,14 @@ Bei der Analyse Ihrer Marketing-Ausgaben können Sie Folgendes einbeziehen: [!DN
 * **[!UICONTROL Clicks]**: Die Gesamtanzahl der Klicks. In [!DNL Facebook], wäre dies die Klickspalte im `facebook_ads_insights_####` Tabelle. In [!DNL Google AdWords]würde dies die Spalte adClicks im `campaigns####` Tabelle.
 * **[!UICONTROL Impressions]**: Die Gesamtzahl der Impressionen. In [!DNL Facebook], wären dies die Impressionen in der `facebook_ads_insights_####` Tabelle. In [!DNL Google AdWords], wären dies die Impressionen der `campaigns####` Tabelle.
 * **[!UICONTROL Campaign]**: Die Gesamtanzahl der Klicks. In [!DNL Facebook], wäre dies die Spalte campaign_name in der `facebook_ads_insights_####` Tabelle. In [!DNL Google AdWords], wäre dies die Kampagnenspalte im `campaigns####` Tabelle.
-* **[!UICONTROL Date]**: Der Zeitstempel, mit dem Ausgaben, Klicks oder Impressionen für eine bestimmte Kampagne durchgeführt wurden. In [!DNL Facebook], würde dies `date_start` in der Spalte `facebook_ads_insights_####` Tabelle. In [!DNL Google AdWords], wäre dies die Datumsspalte in der `campaigns####` Tabelle.
+* **[!UICONTROL Date]**: Die Zeit und das Datum, an dem die Aktivität (Ausgaben, Klicks oder Impressionen) für eine bestimmte Kampagne aufgetreten ist. In [!DNL Facebook], würde dies `date_start` in der Spalte `facebook_ads_insights_####` Tabelle. In [!DNL Google AdWords], wäre dies die Datumsspalte in der `campaigns####` Tabelle.
 * **[!UICONTROL Customer's first order's source]**: Die Quelle der Bestellung aus der ersten Bestellung eines Kunden. Überprüfen Sie zunächst, ob Sie über eine Spalte mit dem Namen `customer's first order's source` in Ihrem Konto. Wenn diese Spalte nicht angezeigt wird, können Sie die gewünschte Spalte mit diesen Anweisungen erstellen.
 * **[!UICONTROL Customer's first order's medium]**: Das Bestellmedium stammt aus der ersten Bestellung eines Kunden. Überprüfen Sie zunächst, ob Sie über eine Spalte mit dem Namen `customer's first order's source` in Ihrem Konto. Wenn diese Spalte nicht angezeigt wird, können Sie die gewünschte Spalte mit diesen Anweisungen erstellen.
 * **[!UICONTROL Customer's first order's campaign]**: Die Kampagne der Bestellung aus der ersten Bestellung eines Kunden. Überprüfen Sie zunächst, ob Sie über eine Spalte mit dem Namen `customer's first order's source` in Ihrem Konto. Wenn diese Spalte nicht angezeigt wird, können Sie die gewünschte Spalte mit diesen Anweisungen erstellen.
 
 ## Allgemeine Berichte und Metriken
 
-Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, die Sie möglicherweise für nützlich halten:
+Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, die Sie möglicherweise als nützlich erachten:
 
 * [Customer Analytics](#customeranalytics)
 * [Auftragsanalyse](#orderanalytics)
@@ -123,7 +123,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
 
 ### Unique Customers
 
-* **Beschreibung**: Zählung der Gesamtanzahl unterschiedlicher Kunden in einem bestimmten Zeitraum. Dies unterscheidet sich von `New Users`, da nur Kunden verfolgt werden, die mindestens eine Bestellung aufgegeben haben. Ein bestimmter Kundenbericht verfolgt einen Kunden in einem bestimmten Zeitintervall nur einmal. Wenn Sie das Zeitintervall auf `By Day` und ein Kunde mehr als einen Kauf an diesem Tag tätigt, wird der Kunde nur einmal gezählt. Wenn Sie die Gesamtanzahl der Käufe im Allgemeinen anzeigen möchten, sehen Sie sich Folgendes an: `Number of Orders`.
+* **Beschreibung**: Zählung der Unique Customers-Anzahl über einen bestimmten Zeitraum. Dies unterscheidet sich von `New Users`, da nur Kunden verfolgt werden, die mindestens eine Bestellung aufgegeben haben. Der Bericht eines bestimmten Kunden verfolgt einen Kunden nur einmal in einem bestimmten Zeitintervall. Wenn Sie das Zeitintervall auf `By Day` und ein Kunde mehr als einen Kauf an diesem Tag tätigt, wird der Kunde nur einmal gezählt. Wenn Sie die Gesamtanzahl der Käufe im Allgemeinen anzeigen möchten, sehen Sie sich Folgendes an: `Number of Orders`.
 * **Metrikdefinition**: Diese Metrik führt eine **Count Distinct** von `customer_id` von `sales_flat_order` Tabelle geordnet nach `created_at`.
 * **Berichtsbeispiel**: Unique Customers pro Woche in den letzten 90 Tagen
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -145,7 +145,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
 
 ### Kunden wiederholen
 
-* **Beschreibung**: Die Gesamtzahl der Kunden, die in einem bestimmten Zeitraum mehr als eine Bestellung aufgegeben haben. In einem Kundenbericht für wiederholte Kunden können Sie die Variable `Distinct Customers` und die `Customer's Order Number` Dimension aus Ihrer `orders` Tabelle.
+* **Beschreibung**: Die Gesamtzahl der Kunden, die in einem Zeitraum mehr als eine Bestellung aufgegeben haben. In einem Kundenbericht für wiederholte Kunden können Sie die Variable `Distinct Customers` und die `Customer's Order Number` Dimension aus Ihrer `orders` Tabelle.
 * **Verwendete Metrik**: `Distinct Customers`
 * **Berichtsbeispiel**: Anzahl der im letzten Jahr getätigten zweiten und dritten Käufe
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -155,7 +155,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
 
    ![](../../assets/2nd_and_3rd_purchases_last_year.png)
 
-* **Berichtsbeispiel 2**: Anzahl der wiederkehrenden Kunden im letzten Jahr
+* **Berichtsbeispiel 2**: Die Anzahl der wiederholten Kunden in den letzten Jahren
    * **[!UICONTROL Metric]**: `Distinct Customers`
    * **[!UICONTROL Filters]**: `Customer's Order Number Greater Than 1`
    * **[!UICONTROL Time Range]**: `Moving range > Last Year`
@@ -191,13 +191,13 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
 
 ### Durchschnittlicher Umsatz nach Kohorte
 
-* **Beschreibung**: Verfolgen Sie die [durchschnittlicher Lebenszeitumsatz bestimmter Kohorten](../dev-reports/lifetime-rev-cohort-analysis.md) der Benutzer über einen bestimmten Zeitraum hinweg, um die leistungsstärksten Kohorten zu identifizieren. Kohorten werden nach einem gemeinsamen Datum gruppiert, z. B. nach dem Datum der ersten Bestellung oder dem Erstellungsdatum.
+* **Beschreibung**: Verfolgen Sie die [durchschnittlicher Lebenszeitumsatz bestimmter Kohorten](../dev-reports/lifetime-rev-cohort-analysis.md) der Benutzer über einen bestimmten Zeitraum hinweg, um die leistungsstärksten Kohorten zu identifizieren. Kohorten werden nach einem gemeinsamen Datum gruppiert, z. B. dem Erstellungsdatum der ersten Bestellung oder dem Erstellungsdatum.
 * **Verwendete Metrik**: `Revenue`
 * **Berichtsbeispiel**: Durchschnittlicher Kundenlebenszeitumsatz nach Kohorte
    * **[!UICONTROL Metric]**: `Revenue`
    * **[!UICONTROL Cohort Date]**: `Customer's first order date`
    * **[!UICONTROL Time Interval]**: `Month`
-   * **[!UICONTROL Time Period]**: Verschieben des Kohortensatzes der letzten 8 Kohorten mit mindestens 4 Monaten Daten
+   * **[!UICONTROL Time Period]**: Verschieben des Kohortensatzes der letzten acht Kohorten mit mindestens vier Monaten Daten
    * **[!UICONTROL Duration]**: `12 Month(s)`
    * **[!UICONTROL Table]**: `Customer_entity`
    * **[!UICONTROL Perspective]**: Kumulativer Durchschnittswert pro Kohortenmitglied
@@ -241,7 +241,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
 
 * **Beschreibung**: Der durchschnittliche Betrag des Umsatzes, der von Kunden innerhalb ihrer ersten 30 Tage als Kunde generiert wurde.
 * **Metrikbeschreibung**: Diese Metrik führt eine **Durchschnittlich** von `Customer's First 30 Day Revenue` von `customer_entity` Tabelle geordnet nach `created_at`.
-* **Berichtbeschreibung**: Gesamtdurchschnittswert des ersten Umsatzes von 30 Tagen des Kunden
+* **Berichtbeschreibung**: Zeitlicher Durchschnitt des ersten Umsatzes des Kunden mit 30 Tagen
 * **[!UICONTROL Metric]**: `Average First 30 Day Revenue`
 * **[!UICONTROL Time Range]**: `All Time`
 * **[!UICONTROL Time Interval]**: `None`
@@ -252,7 +252,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
 
 * **Beschreibung**: Der durchschnittliche Umsatz, den Ihre Kunden über ihre gesamte Lebensdauer generiert haben.
 * **Metrikbeschreibung**: Diese Metrik führt eine **Durchschnittlich** des `Customer's Lifetime Revenue` in der Spalte `customer_entity` -Tabelle basierend auf der `created_at`.
-* **Berichtbeschreibung**: Gesamtdurchschnittswert des Lebenszeitumsatzes des Kunden
+* **Berichtbeschreibung**: Gesamtdurchschnittswert des Lebensdauerumsatzes des Kunden
    * **[!UICONTROL Metric]**: `Average Customer Lifetime Revenue`
    * **[!UICONTROL Time Range]**: `All Time`
    * **[!UICONTROL Time Interval]**: `None`
@@ -272,13 +272,13 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
 
 >[!TIP]
 >
->Stellen Sie sicher, dass die Berechnung Ihrer Umsatzmetrik mit der Definition übereinstimmt, die Sie intern besprechen. So können Sie beispielsweise nur Umsätze aus versandten Bestellungen zählen, Währungen aus verschiedenen Regionen umrechnen und Steuern ausschließen. Darüber hinaus können Sie [Filtersätze](../../data-user/reports/ess-manage-data-filters.md) , um die Konsistenz aller auf derselben Tabelle erstellten Metriken sicherzustellen.
+>Stellen Sie sicher, dass die Berechnung Ihrer Umsatzmetrik mit der Definition übereinstimmt, die Sie intern besprechen. Sie können beispielsweise Umsätze aus versandten Bestellungen zählen, Währungen aus verschiedenen Regionen umrechnen oder Steuern ausschließen. Außerdem können Sie [Filtersätze](../../data-user/reports/ess-manage-data-filters.md) , um die Konsistenz aller auf derselben Tabelle erstellten Metriken sicherzustellen.
 
 ![Umsatz](../../assets/revenue.png)<!--{: width="929"}-->
 
 ### Bestellungen
 
-* **Beschreibung**: Zählung aller Bestellungen über einen bestimmten Zeitraum. Ein Bestellbericht verfolgt Änderungen des Bestellvolumens, die durch neue Produktangebote, Promotions oder andere Faktoren verursacht werden, die das Transaktionsvolumen erhöhen (oder verringern) können. Sie können diese Metrik oft nach einer Reihe von Variablen segmentieren, um Ihre Fragen zu beantworten.
+* **Beschreibung**: Zählung aller Bestellungen über einen bestimmten Zeitraum. Der Bericht &quot;Bestellungen&quot;verfolgt Änderungen des Bestellvolumens, die durch neue Produktangebote, Promotions oder andere Faktoren verursacht werden, die das Transaktionsvolumen erhöhen (oder verringern) können. Sie können diese Metrik oft nach Variablen segmentieren, um Ihre Fragen zu beantworten.
 * **Metrikdefinition**: Diese Metrik führt eine **Count** von `entity_id` von `sales_flat_order` Tabelle geordnet nach `created_at`.
 * **Berichtsbeispiel**: Bestellungen nach Monat, YTD
    * **[!UICONTROL Metric]**: `number of orders`
@@ -303,11 +303,11 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
    ![Bestellte Produkte](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
 
 * Kombinieren Sie diese Metrik mit Ihrer Anzahl an Bestellungen-Metrik, um die Anzahl der Elemente pro Bestellung zu berechnen. Fügen Sie anschließend Gutscheincodes zum Bericht hinzu, um festzustellen, wie sich Ihre Promotions auf die Warenkorbgröße auswirken, oder um nach neuen oder wiederholten Bestellungen zu segmentieren, um Ihr Kundenverhalten besser zu verstehen.
-* **Berichtsbeispiel**: Produkte pro Bestellung: 1. Bestellung vs. Wiederholungen
-   * **[!UICONTROL Metric A]**: Sortierte Produkte: 1. Bestellung
+* **Berichtsbeispiel**: Produkte pro Bestellung: Erstbestellung vs. Wiederholung von Bestellungen
+   * **[!UICONTROL Metric A]**: Sortierte Produkte: Erstbestellung
       * **[!UICONTROL Metric]**: `Products ordered`
       * **[!UICONTROL Filter]**: `Customer's order number = 1`
-   * **[!UICONTROL Metric B]**: Bestellungen: 1. Bestellung
+   * **[!UICONTROL Metric B]**: Bestellungen: Erstbestellung
       * **[!UICONTROL Metric]**: `Orders`
       * **[!UICONTROL Filter]**: `Customer's order number = 1`
    * **[!UICONTROL Metric C]**: Sortierte Produkte: Wiederholungsaufträge
@@ -329,7 +329,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
 
 ### Durchschnittlicher Bestellwert
 
-* **Beschreibung**: Verfolgen Sie den Durchschnittswert der über einen bestimmten Zeitraum aufgegebenen Bestellungen. Verwenden Sie diese Metrik, um schnell festzustellen, wie Ihr durchschnittlicher Bestellwert (AOV) aufgrund Ihrer Marketing-Maßnahmen, Ihres Produktangebots und/oder anderer Änderungen in Ihrem Unternehmen schwankte.
+* **Beschreibung**: Verfolgen Sie den Durchschnittswert der über einen Zeitraum aufgegebenen Bestellungen. Verwenden Sie diese Metrik, um schnell festzustellen, wie Ihr durchschnittlicher Bestellwert (AOV) aufgrund Ihrer Marketing-Maßnahmen, Ihres Produktangebots und/oder anderer Änderungen in Ihrem Unternehmen schwankte.
 * **Metrikdefinition**: Diese Metrik führt eine **average** von `grand_total` von `sales_flat_order` Tabelle geordnet nach `created_at`.
 * **Berichtsbeispiel**: AOV im Vergleich zum Vorjahr, YTD
    * **[!UICONTROL Metric]**: `Average order value`
@@ -438,7 +438,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
 
 ### Kunden nach Akquisequelle
 
-* **Beschreibung**: Wenn Sie die Quelle, das Medium und die Kampagne einer Bestellung mithilfe von [!DNL Google eCommerce]können Sie Ihre Kunden anhand ihrer Akquise-Quelle analysieren. Auf diese Weise können Sie ermitteln, welche Marketing-Quellen Kunden gewinnen, und Fragen beantworten, wie z. B. &quot;sind die meisten Ihrer Kunden, die ihre ersten Bestellungen tätigen, über [!DNL Google], [!DNL Facebook]oder eine andere Quelle?&quot;
+* **Beschreibung**: Wenn Sie die Quelle, das Medium und die Kampagne einer Bestellung mithilfe von [!DNL Google eCommerce]können Sie Ihre Kunden anhand ihrer Akquise-Quelle analysieren. Auf diese Weise können Sie ermitteln, welche Marketing-Quellen Kunden gewinnen, und Fragen beantworten, wie z. B. &quot;die meisten Ihrer Kunden, die ihre ersten Bestellungen tätigen, über [!DNL Google], [!DNL Facebook]oder eine andere Quelle?&quot;
 * **Berichtsbeispiel**: Kunden nach Akquisequelle
    * **[!UICONTROL Metric Used]**: `New Customers`
    * **[!UICONTROL Time Range]**: `All-Time`
@@ -494,7 +494,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
 
 ### Lebenszeitwert nach Akquisequelle, Medium und Kampagne
 
-* **Beschreibung**: Neben der Analyse der Anzahl der von jeder Kampagne erworbenen Kunden können Sie den durchschnittlichen Umsatz dieser Kunden über die gesamte Lebensdauer analysieren. Auf diese Weise können Sie Folgendes identifizieren:
+* **Beschreibung**: Neben der Analyse der Anzahl der von jeder Kampagne erworbenen Kunden können Sie den durchschnittlichen Umsatz dieser Kunden über die gesamte Lebensdauer analysieren. Dies hilft Ihnen bei der Identifizierung:
    * Wenn bestimmte Kampagnen eine große Anzahl von Kunden anziehen, diese Kunden jedoch einen niedrigen Lebenszeitwert haben.
    * Wenn bestimmte Kampagnen ein geringes Kundenvolumen anziehen, diese Kunden jedoch einen hohen Lebenszeitwert haben.
 * **Berichtsbeispiel**: Fügen Sie zuerst hinzu. `New customers` Metrik. Fügen Sie dann die `Average lifetime revenue` Metrik. Wählen Sie den gewünschten Zeitraum aus und wählen Sie die `interval` as `None`. Wählen Sie abschließend die `group by` Option als`Customer's first order's campaign`.
@@ -510,7 +510,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
 
 >[!NOTE]
 >
->Für die beiden Filter können Sie alle anderen Medien hinzufügen, die als &quot;gebührenpflichtige&quot;Medien für Ihr Unternehmen gelten, z. B. cpc oder Paid Search, und Sie können alle anderen Quellen hinzufügen, die Sie analysieren möchten, z. B. Facebook. Auschecken [diesem Artikel](../analysis/roi-ad-camp.md) Weitere Informationen zu CAC, LTV und ROI.
+>Für die beiden Filter können Sie alle anderen Medien hinzufügen, die als &quot;bezahlte&quot;Medien für Ihr Unternehmen gelten (z. B. CPC oder Paid Search). Sie können auch andere Quellen hinzufügen, die Sie analysieren möchten, z. B. Facebook. Checkout [diesem Artikel](../analysis/roi-ad-camp.md) Weitere Informationen zu CAC, LTV und ROI.
 
 ![Lebenszeitwert nach Akquisequelle, Medium und Kampagne](../../assets/LTV_2.png)<!--{: width="929"}-->
 

@@ -2,9 +2,9 @@
 title: Vordefinierte Dashboards
 description: Erfahren Sie mehr über vordefinierte Dashboards, um Einblicke in Ihr Unternehmen zu erhalten.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '2245'
+source-wordcount: '2240'
 ht-degree: 0%
 
 ---
@@ -33,10 +33,10 @@ Das Dashboard Kunden (Gastkasse erlaubt) enthält Informationen zu Ihrer Kundenb
 | `Orders by Existing Customers (Past 30 Days)` | Bestellungen von Kunden, die in den letzten 30 Tagen mindestens eine Bestellung aufgegeben haben. |
 | `Total Unique Customers (Past 30 Days)` | Anzahl der Unique Customers, die in den letzten 30 Tagen Bestellungen aufgegeben haben. |
 | `Orders by New vs Existing Customers` | Anzahl der Bestellungen von Kunden ohne vorherige Bestellungen im Vergleich zu Kunden mit mindestens einer vorherigen Bestellung. |
-| `Subsequent Order Probability (All Time)` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere aufgeben. |
+| `Subsequent Order Probability (All Time)` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere platzieren. |
 | `% of Customers with Multiple Orders (All Time)` | Prozent aller Kunden, die mehr als eine Bestellung aufgegeben haben. |
 | `Median Time Between Orders (All Time)` | Mediane Zeit, die jeder Kunde zwischen der Bestellung und der nächsten benötigt. |
-| `Subsequent Order Probability` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine weitere aufgeben, aufgeschlüsselt nach Bestellnummer (d. h. Prozentsatz der Kunden mit einer Bestellung, die eine zweite aufgeben, Prozent mit zwei, die eine dritte aufgeben usw.). |
+| `Subsequent Order Probability` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere Bestellung aufgeben, aufgeschlüsselt nach Bestellnummer. Das heißt, der Prozentsatz der Kunden mit einer Bestellung, die eine Sekunde aufgeben, der Prozentsatz mit zwei, die eine dritte aufgeben usw.). |
 | `Time Between Orders` | Die durchschnittliche und mittlere Zeit, die Kunden zwischen Bestellungen nehmen, aufgegliedert nach Bestellnummer (d. h. die Zeit zwischen Bestellungen 1 und 2, 2 und 3 usw.). |
 | `Number of Customers - Lifetime Orders` | Für eine bestimmte Anzahl von Bestellungen, die während der Lebensdauer eines Kunden aufgegeben werden, stellt die Anzahl der Kunden, die so viele Bestellungen aufgegeben haben, und der Prozentsatz des gesamten Kundenstamms dar, den diese Zahl darstellt. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Kunden, die vor drei bis sechs Monaten ihren ersten Kauf getätigt haben. |
@@ -56,10 +56,10 @@ Das Dashboard Kunden (kein Gastkauf erlaubt) enthält Informationen zu Ihrer Kun
 | Konversion von der Registrierung in die erste Bestellung (vergangene 30 Tage) | Prozentsatz der Konten, die in den letzten 30 Tagen registriert wurden und eine Bestellung aufgegeben haben. |
 | % Konversion von der Registrierung in die erste Bestellung | Prozentsatz der registrierten Konten, die eine Bestellung getätigt haben, nach Monat der Registrierung. |
 | Bestellungen neuer und bestehender Kunden | Anzahl der Bestellungen von Kunden ohne vorherige Bestellungen im Vergleich zu Kunden mit mindestens einer vorherigen Bestellung. |
-| Nachfolgende Bestellwahrscheinlichkeit (alles Zeit) | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere aufgeben. |
+| Nachfolgende Bestellwahrscheinlichkeit (alles Zeit) | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere platzieren. |
 | % der Kunden mit mehreren Bestellungen (Gesamtdauer) | Prozent aller Kunden, die mehr als eine Bestellung aufgegeben haben. |
 | Mediane Zeit zwischen Bestellungen (gesamte Zeit) | Mediane Zeit, die jeder Kunde zwischen der Bestellung und der nächsten benötigt. |
-| Nachfolgende Bestellwahrscheinlichkeit | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine weitere aufgeben, aufgeschlüsselt nach Bestellnummer (d. h. Prozentsatz der Kunden mit einer Bestellung, die eine zweite aufgeben, Prozent mit zwei, die eine dritte aufgeben usw.). |
+| Nachfolgende Bestellwahrscheinlichkeit | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere platzieren, aufgeschlüsselt nach Auftragsnummer. Das heißt, Prozent der Kunden mit einer Bestellung, die eine Sekunde aufgeben, Prozent mit zwei, die eine dritte platzieren usw. |
 | Zeit zwischen Bestellungen | Die durchschnittliche und mittlere Zeit, die Kunden zwischen Bestellungen nehmen, aufgegliedert nach Bestellnummer (d. h. die Zeit zwischen Bestellungen 1 und 2, 2 und 3 usw.). |
 | Anzahl der Kunden - Bestellungen während der Lebensdauer | Für eine bestimmte Anzahl von Bestellungen, die während der Lebensdauer eines Kunden aufgegeben werden, stellt die Anzahl der Kunden, die so viele Bestellungen aufgegeben haben, und der Prozentsatz des gesamten Kundenstamms dar, den diese Zahl darstellt. |
 | Einmalige Kunden, die vor 3-6 Monaten gekauft haben | Kunden, die vor drei bis sechs Monaten ihren ersten Kauf getätigt haben. |
@@ -106,7 +106,7 @@ Das Dashboard &quot;Executive Summary&quot;(kein Gast-Checkout erlaubt) gibt Ihn
 
 ## Bestellungen
 
-Das Dashboard &quot;Bestellungen&quot;bietet Einblicke in das Transaktionsvolumen von Bestellungen, ihren Status, die verwendeten Couponcodes, den erzielten Umsatz und die verwendeten Zahlungsmethoden. Sie können beispielsweise den Ausführungsprozess verfolgen und sicherstellen, dass keine Probleme oder Engpässe auftreten.
+Das Dashboard &quot;Bestellungen&quot;bietet Einblicke in das Transaktionsvolumen von Bestellungen, ihren Status, die verwendeten Couponcodes, den erzielten Umsatz und die verwendeten Zahlungsmethoden. Sie können beispielsweise den Ausführungsprozess verfolgen und sicherstellen, dass es keine Probleme oder Engpässe gibt.
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Das Dashboard &quot;Bestellungen&quot;bietet Einblicke in das Transaktionsvolume
 
 ## Produkte
 
-Das Produkt-Dashboard zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Brutto-Merchandise-Wert (GMV) sowie die am häufigsten gekauften und erstatteten Produkte an. Es kann Ihnen dabei helfen, Käufe und Renditen auszugleichen und den Erfolg und die Beliebtheit des Produkts zu bestimmen. Ihr Geschäft muss [zur Rückverfolgung der Erstattungen konfiguriert wurde](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) für diese Diagramme.
+Das Produkt-Dashboard zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Brutto-Merchandise-Wert (GMV) sowie die wichtigsten gekauften und erstatteten Produkte an. Es kann Ihnen dabei helfen, Käufe und Renditen auszugleichen und den Erfolg und die Beliebtheit des Produkts zu bestimmen. Ihr Geschäft muss [zur Rückverfolgung der Erstattungen konfiguriert wurde](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) für diese Diagramme.
 
 >[!NOTE]
 >

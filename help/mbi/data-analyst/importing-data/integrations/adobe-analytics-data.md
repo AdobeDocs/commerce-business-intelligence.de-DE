@@ -2,9 +2,9 @@
 title: Erwartet [!DNL Adobe Analytics] Daten
 description: Erfahren Sie mehr über die Schritte zum Verbinden Ihrer RDS-Instanz.
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Die Tabelle würde die folgenden Spalten enthalten:
 | `_id` | Diese Spalte ist der Primärschlüssel. |
 | `_item_hash` | [!DNL MBI] eindeutige Kennung. Diese Spalte wird von [!DNL MBI]. |
 | `_updated_at` | Diese Spalte enthält das letzte Mal, dass die Datenzeile aktualisiert wurde. Sie wird von [!DNL MBI]. |
-| `start_date` | Startdatum der eingeschlossenen Daten für die Zeile. `start_date` ist immer 00:00 Uhr des gleichen Tages innerhalb einer Zeile. |
+| `start_date` | Startdatum der eingeschlossenen Daten für die Zeile. `start_date` ist immer 00:00 Uhr desselben Tages innerhalb einer Zeile. |
 | `end_date` | Enddatum der eingeschlossenen Daten für die Zeile. `end_date` ist immer 23:59 des gleichen Tages innerhalb einer Zeile. |
 | `page_views` | Ausgewählte Metrik: Die Gesamtzahl der Seitenansichten für den angegebenen Zeitraum. |
 | `page` | Ausgewählte Dimension: Einzelne Seitennamen mit verfolgten Ansichten. |
@@ -46,6 +46,6 @@ In diesem Abschnitt werden die Einschränkungen der [!DNL Adobe Analytics] Integ
 | Einschränkung | Beschreibung |
 | --- | --- |
 | `Historical data period` | Wie bei anderen Drittanbieterintegrationen muss die Variable [!DNL Adobe Analytics] -Integration ruft eine begrenzte Anzahl historischer Daten ab und aktualisiert dann weiterhin Daten. Der historische Zeitraum ist auf 2 Wochen konfiguriert. |
-| `Empty component combinations` | Einige Kombinationen aus Metriken und Dimensionen enthalten keine Daten. Wenn eine solche Kombination für die Replikation ausgewählt wird, [!DNL MBI] schließt die Spalte aus der replizierten Tabelle aus. Um die Auswahl einer solchen Kombination zu vermeiden, können Sie zunächst einen Bericht im [[!DNL Adobe Analytics] Arbeitsbereich](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en) um zu überprüfen, dass Sie die erwarteten Daten erhalten. |
-| `Re-authorization cadence` | Wiederzulassung der [!DNL Adobe Analytics] Die Integration ist derzeit alle zwei Wochen erforderlich. Um eine erneute Autorisierung vorzunehmen, navigieren Sie zur Seite Bearbeiten für die Integration und klicken Sie auf **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**. |
+| `Empty component combinations` | Einige Kombinationen aus Metriken und Dimensionen enthalten keine Daten. Wenn eine solche Kombination für die Replikation ausgewählt wird, [!DNL MBI] schließt die Spalte aus der replizierten Tabelle aus. Um die Auswahl einer solchen Kombination zu vermeiden, können Sie zunächst einen Bericht im [[!DNL Adobe Analytics] Arbeitsbereich](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en) um zu überprüfen, ob Sie die erwarteten Daten erhalten. |
+| `Re-authorization cadence` | Neuautorisierung der [!DNL Adobe Analytics] Die Integration ist alle zwei Wochen erforderlich. Um eine erneute Autorisierung vorzunehmen, navigieren Sie zur Seite Bearbeiten für die Integration und klicken Sie auf **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**. |
 | `One dimension per row` | [!DNL Adobe Analytics] stellt Metrikdaten für jeweils eine Dimension bereit. Wenn Sie während der Einrichtung mehrere Dimensionen auswählen, wird jede Zeile in Ihrer [!DNL MBI] -Tabelle enthält einen einzelnen Dimensionswert und Nullen für jede andere Dimension. |

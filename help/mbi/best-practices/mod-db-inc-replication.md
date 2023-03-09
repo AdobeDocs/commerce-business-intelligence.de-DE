@@ -2,9 +2,9 @@
 title: Ändern der Datenbank zur Unterstützung der inkrementellen Replikation
 description: Erfahren Sie, wie Sie Ihre Datenbank ändern, um die inkrementelle Replikation zu unterstützen.
 exl-id: c9a38892-6096-4eb5-8a53-35b8b7b083dc
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ Beachten Sie, dass Tabellen, die diese Methode verwenden, eine einzelne Spalte s
 
 ## Aufbrechen
 
-Durch geringfügige Änderungen an Ihren Tabellen können Sie die schnelleren und effizienteren inkrementellen Replikationsmethoden nutzen. Ist dies jedoch weiterhin nicht möglich, können Sie weitere Schritte ausführen, um [Verkürzen der Aktualisierungszeit](../best-practices/reduce-update-cycle-time.md) und [Datenbank optimieren](../best-practices/opt-db-analysis.md).
+Durch geringfügige Änderungen an Ihren Tabellen können Sie die schnelleren und effizienteren Methoden für die inkrementelle Replikation nutzen. Ist dies jedoch nicht möglich, können Sie weitere Schritte ausführen, um [Verkürzen der Aktualisierungszeit](../best-practices/reduce-update-cycle-time.md) und [Datenbank optimieren](../best-practices/opt-db-analysis.md).

@@ -2,9 +2,9 @@
 title: Google Adwords-Daten überprüfen
 description: Erfahren Sie mehr über die Schritte zum Exportieren Ihrer Google Adwords-Daten.
 exl-id: f619801f-e789-44ad-945e-268d430bf583
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,6 @@ Etwas Seltsames gefunden in [[!DNL Google Adwords]](../integrations/google-adwo
 1. Geben Sie Ihre [!DNL Google Adwords] Kontoinformationen.
 1. Nachdem Ihr Konto hinzugefügt wurde [!DNL Google Adwords] Editor, wählen Sie **[!UICONTROL File** > ** Tabelle exportieren (CSV)**> **Gesamtes Exportkonto]**
 
-Dadurch wird ein `.csv` Datei mit allen in der aktuellen [!DNL Google Adwords] -Konto. Senden Sie an dieser Stelle ein Support-Ticket (fügen Sie diese Datei hinzu!) damit wir Ihre Daten genauer betrachten können. Wenn die Datei zu groß ist, teilen Sie sie mit der [!DNL MBI] Team via [!DNL Dropbox] oder [!DNL Google Drive].
+Dadurch wird eine `.csv` Datei mit allen in der aktuellen [!DNL Google Adwords] -Konto. Senden Sie an dieser Stelle ein Support-Ticket (fügen Sie diese Datei hinzu!) damit Sie Ihre Daten genauer betrachten können. Wenn die Datei zu groß ist, teilen Sie sie mit der [!DNL MBI] Team via [!DNL Dropbox] oder [!DNL Google Drive].
 
-Weitere Informationen finden Sie unter [!DNL Google Adwords] `.csv` Dateiexporte, siehe [[!DNL Google Adwords] Dokumentation](https://support.google.com/adwords/editor/answer/38657?hl=en).
+Weitere Informationen finden Sie unter [!DNL Google Adwords] `.csv` Dateiexporte, siehe [[!DNL Google Adwords] Dokumentation](https://support.google.com/google-ads/editor/answer/38657?hl=en).

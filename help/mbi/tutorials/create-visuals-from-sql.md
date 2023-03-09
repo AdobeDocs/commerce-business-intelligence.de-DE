@@ -2,9 +2,9 @@
 title: Erstellen von Visualisierungen aus SQL-Abfragen
 description: Lernen Sie die im SQL Report Builder verwendete Terminologie kennen und erhalten Sie eine solide Grundlage für die Erstellung von SQL-Visualisierungen.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Bevor Sie mit diesem Tutorial beginnen, lesen Sie die folgende in der `SQL Repor
 >
 >Daten und Zeitstempel können auch als `Categories`. Es handelt sich lediglich um eine weitere Datenspalte in Ihrer Abfrage, die in der Abfrage selbst nach Bedarf formatiert und sortiert werden muss.
 
-- `Labels`: Diese werden als X-Achsen-Beschriftungen angewendet. Bei der Analyse von Datentrends im Zeitverlauf werden die Spalten für Jahr und Monat im Allgemeinen als Titel angegeben. Es kann mehr als eine Spalte als Titel festgelegt werden.
+- `Labels`: Diese werden als X-Achsen-Beschriftungen angewendet. Bei der Analyse von Datentrends im Zeitverlauf werden die Spalten für Jahr und Monat als Titel angegeben. Es kann mehr als eine Spalte als Titel festgelegt werden.
 
 ## Schritt 1: Schreiben der Abfrage
 
@@ -66,11 +66,11 @@ Wenn eine Abfrage zum ersten Mal ausgeführt wird, kann der Bericht undurchsicht
 
 ![](../assets/SQL_initial_report_results.png)
 
-Für dieses Beispiel möchten wir, dass dies ein Liniendiagramm ist, das Trends im Zeitverlauf aufweist. Verwenden Sie zum Erstellen die folgenden Einstellungen:
+In diesem Beispiel soll es sich um ein Liniendiagramm handeln, das sich im Zeitverlauf entwickelt. Verwenden Sie zum Erstellen die folgenden Einstellungen:
 
-- `Series`: Wählen Sie die `Items sold` als `Series` da wir es messen wollen. Nachdem Sie die `Series` -Spalte wird eine einzelne Zeile im Bericht angezeigt.
+- `Series`: Wählen Sie die `Items sold` als `Series` da Sie es messen möchten. Nachdem Sie die `Series` -Spalte wird eine einzelne Zeile im Bericht angezeigt.
 
-- `Category`: In diesem Beispiel möchten wir jedes Produkt als eine andere Zeile im Bericht anzeigen. Dazu setzen wir `Product name` als `Category`.
+- `Category`: In diesem Beispiel möchten Sie jedes Produkt als eine andere Zeile im Bericht anzeigen. Dazu legen Sie `Product name` als `Category`.
 
 - `Labels`: Spalten verwenden `year` und `month` als Beschriftungen auf der X-Achse, um sie anzeigen zu können `Items Sold` als Trend im Zeitverlauf.
 
@@ -78,7 +78,7 @@ Für dieses Beispiel möchten wir, dass dies ein Liniendiagramm ist, das Trends 
 >
 >Die Abfrage muss eine `ORDER BY` -Klausel auf den Bezeichnungen, wenn sie `date`/`time` Spalten.
 
-Hier sehen Sie, wie wir diese Visualisierung erstellt haben, von der Ausführung der Abfrage bis zur Einrichtung des Berichts:
+Im Folgenden sehen Sie, wie Sie diese Visualisierung erstellt haben, von der Ausführung der Abfrage bis zur Einrichtung des Berichts:
 
 ![](../assets/SQL_report_settings.gif)
 

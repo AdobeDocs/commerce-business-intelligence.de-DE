@@ -2,9 +2,9 @@
 title: Enterprise_Rma_Item_Entity-Tabelle
 description: Erfahren Sie, wie Sie Informationen zu einem bestimmten Element aus einer angeforderten Rückgabe analysieren.
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ Jede Zeile im `enterprise_rma_item_entity` Tabelle (häufig `magento_rma_item_en
 |---|---|
 | `entity\_id` | Eindeutige Kennung für die Tabelle. Jeder `entity\_id` stellt ein Element dar, das zur Rückgabe angefordert wurde. |
 | `rma\_entity\_id` | Fremdschlüssel, der mit dem `enterprise\_rma` Tabelle. |
-| `status` | Der Status der Rückgabe des Elements. Zu den Werten gehören u. a. &quot;empfangen&quot;, &quot;ausstehend&quot;, &quot;autorisiert&quot;. Die Werte in diesem Status stimmen nicht notwendigerweise mit dem Wert des Status des Gesamt-Trackings überein. |
+| `status` | Der Status der Rückgabe des Elements. Zu den Werten gehören u. a. &quot;empfangen&quot;, &quot;ausstehend&quot;, &quot;autorisiert&quot;. Die Werte in diesem Status stimmen möglicherweise nicht mit dem Wert des Status des Gesamt-Trackings überein. |
 | `qty\_requested` | Die Menge, die der Kunde zur Rückgabe anfordert. |
-| `qty\_approved` | Die Menge, für die die Rückgabe genehmigt wurde. |
-| `qty\_returned` | Die tatsächlich zurückgegebene Menge. |
+| `qty\_approved` | Die zur Rückgabe genehmigte Menge. |
+| `qty\_returned` | Die zurückgegebene Menge. |
 | `order\_item\_id` | Fremdschlüssel, der mit dem `sales\_flat\_order\_item` Tabelle. |
 | `product\_sku` | Die Sku, die zurückgegeben wird. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Allgemeine berechnete Spalten
 
@@ -40,7 +40,7 @@ Jede Zeile im `enterprise_rma_item_entity` Tabelle (häufig `magento_rma_item_en
 | `Item price` | Der Preis des Artikels. |
 | `Return item's total value (qty\_returned * price)` | Dies ist der Gesamtgeldwert der zurückgegebenen Elemente. Dies wird verwendet, um die Gesamtrendite für die `enterprise\_rma` Tabelle. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Allgemeine Metriken
 
@@ -49,7 +49,7 @@ Jede Zeile im `enterprise_rma_item_entity` Tabelle (häufig `magento_rma_item_en
 | `Number of items returned` | Die Anzahl der zurückgegebenen Elemente. | Vorgangsspalte: zurückgegebene Menge<br>Vorgang: Summe<br>Zeitstempelspalte: Rückkehrtermin angefordert |
 | `Returned items' total value` | Der zurückgegebene Geldbetrag. | Vorgangsspalte: Gesamtwert des Rückkehrartikels (zurückgegebene Menge * Preis)<br>Vorgang: Summe<br>Zeitstempelspalte: Rückkehrtermin angefordert |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Verbindungen zu anderen Tabellen
 

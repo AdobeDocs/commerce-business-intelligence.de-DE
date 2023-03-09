@@ -2,16 +2,20 @@
 title: Neuigkeit, Häufigkeit, monetäre (RFM) Analyse
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Kunden nach Neuigkeit, Häufigkeit und Geldwert segmentieren können.
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # RFM-Analyse
 
-In diesem Artikel zeigen wir, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Kunden nach Neuigkeit, Häufigkeit und Geldwert segmentieren können. Die RFM-Analyse ist eine Marketing-Technik, die das Kundenverhalten berücksichtigt, um Sie bei der Bestimmung der Segmentierung für die Reichweite zu unterstützen. Dabei werden drei Aspekte berücksichtigt: Neuigkeit darüber, wie kürzlich ein Kunde in Ihrem Geschäft eingekauft hat, Häufigkeit, mit der er bei Ihnen einkauft, und Geldmenge, in welcher Höhe der Kunde ausgegeben wird.
+Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Kunden nach Neuigkeit, Häufigkeit und Geldwert segmentieren können. Die RFM-Analyse ist eine Marketing-Technik, die das Kundenverhalten berücksichtigt, um Sie bei der Bestimmung der Segmentierung für die Reichweite zu unterstützen. Er umfasst drei Aspekte:
+
+* Neuigkeit darüber, wie kürzlich ein Kunde in Ihrem Geschäft gekauft hat
+* Häufigkeit des Kaufs bei Ihnen
+* Geldbetrag in der Höhe, die der Kunde ausgibt
 
 ![](../../assets/blobid0.png)
 
@@ -19,9 +23,9 @@ Die RFM-Analyse kann nur konfiguriert werden, wenn Sie über die [!DNL MBI] Plan
 
 ## Erste Schritte
 
-Zunächst müssen Sie eine Datei hochladen, die nur einen Primärschlüssel mit dem Wert 1 enthält. Dies ermöglicht die Erstellung einiger für die Analyse erforderlicher berechneter Spalten.
+Sie müssen zunächst eine Datei hochladen, die nur einen Primärschlüssel mit dem Wert 1 enthält. Dies ermöglicht die Erstellung einiger erforderlicher berechneter Spalten für die Analyse.
 
-Sie können diese [Hilfezentrum-Artikel](../importing-data/connecting-data/using-file-uploader.md) sowie das folgende Bild, um Ihre Datei zu formatieren.
+Sie können dies [Hilfezentrum-Artikel](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild, um Ihre Datei zu formatieren.
 
 ## Berechnete Spalten
 
@@ -51,7 +55,7 @@ Zu erstellende Spalten
 
    [!UICONTROL Datatype]: `Integer`
 
-* **Count reference** table (dies ist die Datei, die Sie gerade mit der Zahl &quot;1&quot;hochgeladen haben)
+* **Count reference** table (dies ist die Datei, die Sie mit der Zahl &quot;1&quot;hochgeladen haben)
 * Anzahl der Kunden
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` ODER `customer_entity.(input)reference > Count Reference`. `Primary Key`
@@ -196,7 +200,7 @@ Keine neuen Metriken!
 
    [!UICONTROL Chart type]: `Table`
 
-* **Kunden mit 5 Neuigkeiten**
+* **Kunden mit fünf Neuigkeitsergebnissen**
 * Metrik `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 5`
@@ -214,7 +218,7 @@ Keine neuen Metriken!
 
    [!UICONTROL Chart type]: `Table`
 
-* **Kunden mit 1 Neuigkeitsbewertung**
+* **Kunden mit einer Neuigkeitsbewertung**
 * Metrik `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`
@@ -232,4 +236,4 @@ Keine neuen Metriken!
 
    [!UICONTROL Chart type]: `Table`
 
-Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Endergebnis kann wie das obige Beispiel-Dashboard aussehen, aber die drei generierten Tabellen sind nur Beispiele für die Arten der Kundensegmentierung, die Sie durchführen können.
+Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie das obige Beispiel-Dashboard aussehen, aber die drei generierten Tabellen sind nur Beispiele für die Arten der Kundensegmentierung, die Sie durchführen können.

@@ -2,9 +2,9 @@
 title: SQL-berechnete Spalte erstellen und verwenden
 description: Erfahren Sie, wie erweiterte Spalten in Form von SQL-Berechnungsspalten in der neuen MBI-Architektur erstellt werden können.
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '817'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ In diesem Thema werden Zweck und Verwendung der `Calculation` Spaltentyp: , die 
 
 In der Vergangenheit wurden Spalten `advanced` kann nur von einem Analytiker des Customer Success-Teams hier unter [!DNL MBI]. Jetzt liegt die gesamte Leistung in den Händen des Endbenutzers, und erweiterte Spalten können in Form von `SQL Calculation` Spalten in der neuen [!DNL MBI] Architektur.
 
-Die `Calculation` Der jetzt im Data Warehouse Manager als Option verfügbare Spaltentyp ist derselbe Tabellenvorgang, mit dem Sie die Tabellenspalten mithilfe der PostgreSQL-Logik umwandeln können. Dokumentation zu den Funktionen und Operatoren, die in der `Calculatio`Ein Spaltentyp ist auf der PostgreSQL-Website zu finden. [here](https://www.postgresql.org/docs/9.6/static/functions.html).
+Die `Calculation` Der jetzt im Data Warehouse Manager als Option verfügbare Spaltentyp ist derselbe Tabellenvorgang, mit dem Sie die Tabellenspalten mithilfe der PostgreSQL-Logik umwandeln können. Dokumentation zu den Funktionen und Operatoren, die in der `Calculatio`Ein Spaltentyp ist auf der PostgreSQL-Website zu finden. [here](https://www.postgresql.org/docs/9.6/functions.html).
 
-Die verschiedenen Spalten, die mit der `Calculation` -Spalte ist fast unbegrenzt, aber die meisten Spalten können mit IF-THEN -Anweisungen und Basisarithmetik erstellt werden, die in den Beispielen unten verwendet werden.
+Die verschiedenen Spalten, die mit der `Calculation` -Spalte ist fast unbegrenzt, aber die meisten Spalten können mit IF-THEN -Anweisungen und Arithmetik erstellt werden, die in den Beispielen unten verwendet wird.
 
 **Beispiel 1: Ist die letzte Bestellung des Kunden?**
 
@@ -41,7 +41,7 @@ Die möglichen Werte, die von dieser Spalte zurückgegeben werden können (`NULL
 
 **Beispiel 2: Bestellartikelgesamtwert (Menge * Preis)**
 
-Viele unserer Kunden analysieren gerne den Umsatz auf Artikelebene und teilen ihn nach Feldern wie `product name` oder `category`. Die meisten Datenbanken geben Ihnen nicht den Umsatz aus einem Produkt in einer Bestellung. Stattdessen geben sie die in der Bestellung verkaufte Menge und den Preis des Artikels an.
+Viele Kunden analysieren gerne den Umsatz auf Artikelebene und teilen ihn nach Feldern wie `product name` oder `category`. Die meisten Datenbanken geben Ihnen nicht den Umsatz aus einem Produkt in einer Bestellung. Stattdessen geben sie die in der Bestellung verkaufte Menge und den Preis des Artikels an.
 
 Um Produktumsatzanalysen zu ermöglichen, verfügen die meisten Konten über eine Spalte mit dem Namen `Order item total value (quantity * price)` auf `Orders Items` Tabelle. Wenn Ihr Konto auf der neuen Architektur basiert, wird diese Spalte auch mithilfe einer `Calculation` und im folgenden Screenshot angezeigt werden:
 
@@ -49,7 +49,7 @@ Um Produktumsatzanalysen zu ermöglichen, verfügen die meisten Konten über ein
 
 Im Commerce-Schema wird die `Order item total value (quantity * price)` -Spalte verwendet die Eingaben `qty ordered` und `base price` Alias `A` und `B` bzw.
 
-Die Werte, die von dieser neuen Spalte zurückgegeben werden, sind in Dollar und Cent angegeben, sodass der richtige Datentyp `Decimal(10,2)`.
+Die Werte, die von dieser neuen Spalte zurückgegeben werden, sind in Dollar und Cent angegeben. Daher ist der richtige Datentyp `Decimal(10,2)`.
 
 **Mechanik**
 
@@ -57,20 +57,20 @@ Eine neue `Calculation` kann einer Tabelle durch Navigieren zu **[!DNL Manage Da
 
 ![](../../assets/blobid2.png)
 
-Hier können Sie eine neue `Calculation` durch die folgenden Schritte aus:
+Hier können Sie eine `Calculation` durch die folgenden Schritte aus:
 
 1. Wählen Sie die Tabelle aus, der Sie die `Calculation` Spalte.
 1. Klicken Sie auf der richtigen Tabelle auf **[!UICONTROL Create New Column]** oben rechts auf dem Bildschirm.
 1. Aus dem `Select a definition` Dropdown-Liste auswählen `Same Table`.
 1. Auswählen `Calculation` als `column definition equation`.
 1. Geben Sie den Spaltennamen ein.
-1. Wählen Sie die `input` Spalten aus der Tabelle, die in der Logik für die neue Spalte verwendet werden. Jede Spalte, die Sie hinzufügen, erhält einen Briefalias, sodass die erste Spalte `A`, wird die zweite `B` und so weiter.
-1. Geben Sie im Fenster die PostgreSQL-Logik für Ihre neue Spalte mit den Briefaliasen Ihrer Eingaben ein. Die SQL-Berechnung sollte auf eine einzige Spaltendefinition beschränkt sein, einschließlich der gesamten Logik zwischen den SELECT- und FROM-Anweisungen einer SQL-Abfrage. Beachten Sie, dass SQL-Schlüsselwörter, die einen der eingegebenen Buchstaben verwenden, in Kleinbuchstaben geschrieben werden sollten. Wenn Sie beispielsweise die `CASE` -Anweisung, sollte es in Kleinbuchstaben geschrieben werden - `case`. Das System geht davon aus, dass ein Großbuchstabe `A` bezieht sich auf eine der Eingaben.
+1. Wählen Sie die `input` Spalten aus der Tabelle, die in der Logik für die neue Spalte verwendet werden. Jede hinzugefügte Spalte erhält einen Briefalias, sodass die erste Spalte `A`, ist der zweite `B` und so weiter.
+1. Geben Sie im Fenster die PostgreSQL-Logik für Ihre neue Spalte mit den Briefaliasen Ihrer Eingaben ein. Die SQL-Berechnung sollte auf eine einzige Spaltendefinition beschränkt sein, einschließlich der gesamten Logik zwischen den SELECT- und FROM-Anweisungen einer SQL-Abfrage. SQL-Schlüsselwörter, die einen der eingegebenen Buchstaben verwenden, sollten in Kleinbuchstaben eingegeben werden. Wenn Sie beispielsweise die `CASE` -Anweisung, sollte es in Kleinbuchstaben geschrieben werden - `case`. Das System geht davon aus, dass ein Großbuchstabe `A` bezieht sich auf eine der Eingaben.
 1. Wählen Sie den entsprechenden Datentyp aus.
    * `Integer` - Ganzzahl
    * `Decimal(10,2)` - eine Dezimalzahl mit 10 Gesamtzahlen, von denen 2 rechts neben dem Dezimalpunkt liegen
    * `String` - Beliebiger Text- oder Zeichensatztyp, der keine Zahlen verwendet
    * `Datetime` - yyyy-MM-dd hh:mm:ss format
 
-1. Klicken **[!UICONTROL test column]**. Dadurch wird eine Liste mit 5 Testwerten für jede Ihrer Eingaben generiert und das Ergebnis der Logik aus Schritt 6 für jeden Satz von Testwerten angezeigt. Wenn ein Teil der SQL einen Fehler erzeugt, wird die entsprechende Fehlermeldung zurückgegeben. Beachten Sie, dass Beispielergebnisse nur generiert werden können, wenn alle Eingabespalten native Felder sind. Wenn eine der Eingabespalten berechnete Spalten ist, müssen Sie die Ergebnisse validieren, indem Sie die Spalte zu einer Metrik hinzufügen und im Visual Report Builder anzeigen
-1. Wenn Sie mit den Ergebnissen zufrieden sind, klicken Sie auf **[!UICONTROL Save]** und Ihre Spalte ist verfügbar.
+1. Klicken **[!UICONTROL test column]**. Dadurch wird eine Liste mit fünf Testwerten für jede Ihrer Eingaben generiert und das Ergebnis der Logik aus Schritt 6 für jeden Satz von Testwerten angezeigt. Wenn ein Teil der SQL einen Fehler erzeugt, wird die entsprechende Fehlermeldung zurückgegeben. Beispielergebnisse können nur generiert werden, wenn alle Eingabespalten native Felder sind. Wenn eine der Eingabespalten berechnete Spalten ist, müssen Sie die Ergebnisse validieren, indem Sie die Spalte zu einer Metrik hinzufügen und im Visual Report Builder anzeigen
+1. Wenn Sie mit den Ergebnissen zufrieden sind, klicken Sie auf **[!UICONTROL Save]**. Die Spalte ermöglicht die Verwendung.

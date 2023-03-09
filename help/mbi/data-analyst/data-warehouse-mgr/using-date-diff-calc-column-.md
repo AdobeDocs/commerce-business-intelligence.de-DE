@@ -2,9 +2,9 @@
 title: Verwenden der Spalte "Datumsdifferenz berechnet"
 description: Erfahren Sie mehr über den Zweck und die Verwendung der Spalte Datumsdifferenz berechnet .
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ In diesem Thema werden Zweck und Verwendung der `Date Difference` in der Spalte 
 
 **Erklärung**
 
-Die `Date Difference` Spaltentyp: findet die Zeit zwischen zwei Ereignissen, die zu einem einzelnen Datensatz gehören, basierend auf den Ereignis-Zeitstempeln. Der in dieser Spalte berechnete Rohwert wird in Sekunden angegeben. Er wird jedoch für die Anzeige in Berichten automatisch in Minuten, Stunden, Tage usw. umgewandelt. Bei Verwendung als Filter/Gruppe von möchten Sie den Wert jedoch in Sekunden verwenden.
+Die `Date Difference` Spaltentyp: findet die Zeit zwischen zwei Ereignissen, die zu einem einzelnen Datensatz gehören, basierend auf den Ereignis-Zeitstempeln. Der in dieser Spalte berechnete Rohwert wird in Sekunden angegeben. Er wird jedoch automatisch in Minuten, Stunden, Tage usw. umgewandelt, um in Berichten angezeigt zu werden. Wenn Sie den Wert jedoch als Filter/Gruppe von verwenden, möchten Sie ihn in Sekunden verwenden.
 
 A `date difference` Eine berechnete Spalte kann verwendet werden, um eine Metrik zu erstellen, die die durchschnittliche oder mittlere Zeit zwischen zwei Ereignissen berechnet, z. B. die durchschnittliche Zeit zwischen der Registrierung eines Kunden und seinen ersten Bestellungen.
 
@@ -26,7 +26,7 @@ A `date difference` Eine berechnete Spalte kann verwendet werden, um eine Metrik
 | `A` | 2015-01-01 00:00:00 | 2015-01-01 12:30:00 | 45000 |
 | `B` | 2015-01-01 08:00:00 | 2015-01-01 10:00:00 | 7200 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 
 Im obigen Beispiel wird die `Date Difference` Spalte ist `Seconds between timestamp_2 and timestamp_1` Spalte. Er führt die Berechnung durch `timestamp_2 minus timestamp_1`.

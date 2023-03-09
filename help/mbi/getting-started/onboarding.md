@@ -2,16 +2,16 @@
 title: Onboarding
 description: Erfahren Sie mehr über das Onboarding.
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
 # Onboarding
 
-Die Onboarding-Fragen im Zusammenhang mit `store` und `database` -Einstellungen sicherstellen, dass wir Ihre Berichterstellung korrekt einrichten. Mit diesen Antworten werden wir Ihre Berichte liefern, die genau auf die Einrichtung Ihres Stores zugeschnitten sind.
+Die Onboarding-Fragen im Zusammenhang mit `store` und `database` -Einstellungen sicherstellen, dass Sie die Berichterstellung korrekt einrichten. Mit diesen Antworten stellt Adobe Ihre Berichte bereit, die genau auf das Setup Ihres Stores zugeschnitten sind.
 
 ## Speichereinstellungen
 
@@ -25,7 +25,7 @@ Die Onboarding-Fragen im Zusammenhang mit `store` und `database` -Einstellungen 
 
 - *Welche Commerce-Version verwenden Sie?* - Wählen Sie die `currency` , in dem Ihr Geschäft tätig ist.
 
-- *Ist Ihr Geschäft in der Europäischen Union ansässig?* - Wenn Sie antworten `Yes` Auf diese Frage werden wir Ihre Data Warehouse und alle Ihre Daten in der Europäischen Union gemäß der DSGVO hosten.
+- *Ist Ihr Geschäft in der Europäischen Union ansässig?* - Wenn Sie antworten `Yes` zu dieser Frage: Adobe hostet Ihre Data Warehouse und all Ihre Daten in der Europäischen Union unter Einhaltung der DSGVO.
 
 ## Datenbankeinstellungen
 

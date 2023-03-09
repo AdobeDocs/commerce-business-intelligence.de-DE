@@ -2,16 +2,16 @@
 title: Unterschiede zwischen SQL und Data Warehouse Manager
 description: Lernen Sie die Unterschiede zwischen SQL und Data Warehouse Manager kennen.
 exl-id: 31dd7a04-5c03-4399-b67e-f51703eb9fea
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # Unterschiede zwischen SQL und Data Warehouse Manager
 
-Es gibt zwei wesentliche Unterschiede zwischen Spalten, die in der [SQL-Report Builder](../dev-reports/sql-rpt-bldr.md) und denen, die mithilfe der [Data Warehouse Manager](../data-warehouse-mgr/creating-calculated-columns.md): eine ist die Abhängigkeit von Aktualisierungszyklen, die andere ist, wie Spalten in Ihrem Konto gespeichert werden.
+Es gibt zwei wesentliche Unterschiede zwischen Spalten, die in der [SQL-Report Builder](../dev-reports/sql-rpt-bldr.md) und denen, die mithilfe der [Data Warehouse Manager](../data-warehouse-mgr/creating-calculated-columns.md). Das eine ist die Abhängigkeit von Aktualisierungszyklen, das andere ist, wie Spalten in Ihrem Konto gespeichert werden.
 
 ## Spalten im `SQL Report Builder`
 
@@ -23,4 +23,4 @@ Spalten hängen nicht von Aktualisierungszyklen ab. Sie müssen also nicht mehr 
 
 ## Spalten im Data Warehousen-Manager
 
-Spalten hängen von Aktualisierungszyklen ab. Daher muss ein vollständiger Zyklus abgeschlossen sein, bevor sie bearbeitet werden können. Diese Spalten werden im Data Warehouse Manager gespeichert und können im herkömmlichen Modus verwendet werden `Report Builder` oder `SQL Report Builder`.
+Die Spalten hängen von den Aktualisierungszyklen ab. Daher muss ein vollständiger Zyklus abgeschlossen sein, bevor sie bearbeitet werden können. Diese Spalten werden im Data Warehouse Manager gespeichert und können im herkömmlichen Modus verwendet werden `Report Builder` oder `SQL Report Builder`.

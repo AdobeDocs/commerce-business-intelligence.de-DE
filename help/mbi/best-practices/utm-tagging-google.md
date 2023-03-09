@@ -2,18 +2,18 @@
 title: UTM-Tracking in Google Analytics
 description: Erfahren Sie mehr über Best Practices für das UTM-Tracking (Tagging) in Google Analytics.
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
 
 # UTM-Tracking
 
-`UTM` Tracking ist eine Tagging-Konvention für URLs, mit der Sie analysieren können, woher Ihre Benutzer kommen. Wenn Sie sich die URLs ansehen, auf die Sie in den meisten Marketing-E-Mail- oder Banneranzeigen klicken, wird das UTM-Tagging angezeigt. Es sind die langen Verknüpfungen, die mit Dingen wie `utm\_source` und `utm\_medium`.
+`UTM` Tracking ist eine Tagging-Konvention für URLs, mit der Sie analysieren können, woher Ihre Benutzer kommen. Wenn Sie sich die URLs ansehen, auf die Sie in den meisten Marketing-E-Mail- oder Banneranzeigen klicken, sehen Sie das UTM-Tagging. Es sind die langen Verknüpfungen, die mit Dingen wie `utm\_source` und `utm\_medium`.
 
-[!DNL Google Analytics] uses `UTM` Tagging, um zu erfahren, woher Ihr Traffic stammt. Einige dieser Informationen stammen aus dem [HTTP-Referenz](https://en.wikipedia.org/wiki/HTTP_referer) aber der Rest muss man sich selbst versorgen `UTM` Parameter. Wenn `google adwords` oder `email marketing` bedeutet `UTM` -Parameter, die vom ursprünglichen Link-Klick aufgezeichnet und dann in den Cookies der Benutzer gespeichert werden. Von dort aus: [!DNL Google Analytics] verwendet diese Daten für [Attribut interessanter Verhaltensweisen](../data-analyst/analysis/google-track-user-acq.md) auf Ihrer Site. Wenn Sie wissen, wofür diese Parameter sind, können Sie nachvollziehen, wie Sie das UTM-Tagging am besten einrichten und verwenden.
+[!DNL Google Analytics] uses `UTM` Tagging, um zu erfahren, woher Ihr Traffic stammt. Einige dieser Informationen stammen aus dem [HTTP-Referrer](https://en.wikipedia.org/wiki/HTTP_referer) aber der Rest muss man sich selbst versorgen `UTM` Parameter. Wenn `google adwords` oder `email marketing`bezeichnet `UTM` -Parameter, die vom ursprünglichen Link-Klick aufgezeichnet und dann in den Cookies der Benutzer gespeichert werden. Von dort aus: [!DNL Google Analytics] verwendet diese Daten für [Attribut interessanter Verhaltensweisen](../data-analyst/analysis/google-track-user-acq.md) auf Ihrer Site. Wenn Sie wissen, wofür diese Parameter sind, können Sie nachvollziehen, wie Sie das UTM-Tagging am besten einrichten und verwenden.
 
 ## Best Practices für UTM-Tagging
 
@@ -25,7 +25,7 @@ Jedes Mal, wenn Sie Personen auffordern, auf einen Link zu klicken, sollten Sie 
 
 ### 2. Verwenden Sie ein Tool, um die URL zu erstellen
 
-`UTM`-getaggte URLs können sehr umständlich sein. Verwenden Sie ein Tool, anstatt zu versuchen, sie einseitig einzugeben. [wie folgt](https://support.google.com/analytics/answer/1033867?hl=en) um Ihnen zu helfen. Dadurch wird sichergestellt, dass Sie alle sinnvollen Parameter zur URL hinzufügen und die URL direkt kopieren und einfügen können. Zum Verwalten von Social-Links, Tools wie [!DNL Hootsuite] enthalten die Option zum Hinzufügen benutzerdefinierter URL-Parameter zu allen Links.
+`UTM`-getaggte URLs können schwerfällig sein. Verwenden Sie ein Tool, anstatt zu versuchen, sie einseitig einzugeben. [wie folgt](https://support.google.com/analytics/answer/1033867?hl=en) um Ihnen zu helfen. Dadurch wird sichergestellt, dass Sie alle sinnvollen Parameter zur URL hinzufügen und die URL direkt kopieren und einfügen können. Zum Verwalten von Social-Links, Tools wie [!DNL Hootsuite] enthalten die Option zum Hinzufügen benutzerdefinierter URL-Parameter zu allen Links.
 
 ### 3. Achten Sie bei den Parameterwerten auf die Groß-/Kleinschreibung.
 

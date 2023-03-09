@@ -2,9 +2,9 @@
 title: Dashboards
 description: Erfahren Sie, wie Sie ein Dashboard erstellen und verwenden.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 [!DNL MBI] Dashboards bieten einen Überblick über die Leistung und Verkaufsaktivitäten Ihres Stores. Einzelne Dashboards können für andere Benutzer freigegeben und in logische Gruppen unterteilt werden. Sie können auch verschiedene Berechtigungsstufen für andere Benutzer festlegen.
 
-Es ist einfach, einen neuen Bericht zu erstellen, ihn einem Dashboard hinzuzufügen und die Daten nach Excel zu exportieren. Grafiken und Berichte können in der Größe angepasst und in die Position des Dashboards gezogen werden.
+Es ist einfach, einen Bericht zu erstellen, ihn einem Dashboard hinzuzufügen und die Daten nach Excel zu exportieren. Grafiken und Berichte können in der Größe angepasst und in die Position des Dashboards gezogen werden.
 
 ![Dashboard](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## Erstellen von Dashboards {#createdash}
 
-Dashboards sind im Wesentlichen freigegebene Themenbehälter für die Analysen, die Sie in den Report Buildern erstellen. Auf diese Weise können Sie Ihr Team ermutigen, zusammenzuarbeiten und eine einzige Quelle der Wahrheit in Ihrem Unternehmen zu erhalten.
+Dashboards sind freigebbare thematische Behälter für die Analysen, die Sie in den Report Buildern erstellen. Auf diese Weise können Sie Ihr Team ermutigen, zusammenzuarbeiten und eine einzige Quelle der Wahrheit in Ihrem Unternehmen zu erhalten.
 
 *Wenn Sie Administrator oder Standardbenutzer sind*, können Sie ein Dashboard erstellen, indem Sie auf `Dashboard Options` Dropdown und Auswählen `Create New dashboard`.
 
@@ -27,7 +27,7 @@ Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie kön
 
 ![Dashboard-Element zur Größenanpassung anordnen](../../assets/arrange_resize_dashboard_element.gif)
 
-### Neues Dashboard erstellen
+### Dashboard erstellen
 
 1. Klicken Sie im Menü auf **[!UICONTROL Dashboards]**.
 
@@ -39,7 +39,7 @@ Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie kön
 
    * Geben Sie einen `Name` für Ihr Dashboard.
 
-   * So erstellen Sie eine neue `Group` Geben Sie für das Dashboard den Namen der Gruppe ein.
+   * So erstellen Sie eine `Group` Geben Sie für das Dashboard den Namen der Gruppe ein.
 
       Wenn Ihre Commerce-Installation beispielsweise über mehrere Store-Ansichten verfügt, können Sie für jede Store-Ansicht eine Gruppe erstellen.
 
@@ -76,7 +76,7 @@ In **[!DNL Manage Data** > **Dashboards]** können Sie Benutzerberechtigungen f�
 
 ### Dashboards freigeben {#sharingdash}
 
-Skalierung [!DNL MBI] Wir empfehlen Ihnen, innerhalb Ihrer Organisation wertvolle Einblicke zu erhalten und Dashboards, die Sie erstellen, mit anderen Team-Mitgliedern zu teilen. *Sie können eigene Dashboards freigeben* durch Klicken auf `Share Dashboard` -Option oben auf der Seite.
+Skalierung [!DNL MBI] Adobe bietet wertvolle Einblicke in Ihr Unternehmen und ermutigt Sie, Dashboards, die Sie erstellen, mit anderen Team-Mitgliedern zu teilen. *Sie können eigene Dashboards freigeben* durch Klicken auf `Share Dashboard` -Option oben auf der Seite.
 
 Wenn Sie ein Dashboard freigeben, können Sie Ihrer gesamten Organisation ODER individuell Berechtigungen zuweisen, sodass Sie entscheiden können, wer Ihre Berichte anzeigen und bearbeiten kann.
 

@@ -2,20 +2,20 @@
 title: Spezielle Filteroperatoren
 description: Erfahren Sie mehr über einige spezielle Operatoren, die in Filtern beim Erstellen eines Berichts oder bei der Erstellung einer Metrik verwendet werden.
 exl-id: 12837490-b9ca-4040-bb71-8988b5dde485
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
 
 # Filteroptionen
 
-In diesem Artikel werden wir einige spezielle `operators` verwendet in `filters` when [Berichterstellung](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} oder [Erstellen einer Metrik](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
+In diesem Artikel werden einige spezielle `operators` verwendet in `filters` when [Berichterstellung](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} oder [Erstellen einer Metrik](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
 
 ## `Filter Operators`
 
-* `LIKE` für Musterzuordnung. Dies muss in Verbindung mit den Platzhalterzeichen % (für einen Platzhalter mit einer variablen Anzahl von Buchstaben) oder _ (für einen einzelnen Platzhalterbuchstaben) verwendet werden.  Beispielsweise die Beschränkung `LIKE \_ake%` gibt true zurück für `Jake Stein`, `Jake Smith`oder `Fake Smith`.  Sie gibt &quot;false&quot;zurück für `Drake Smith`.
+* `LIKE` für Musterzuordnung. Dies muss mit den Platzhalterzeichen % (für einen Platzhalter mit einer variablen Anzahl von Buchstaben) oder _ (für einen einzelnen Platzhalterbuchstaben) verwendet werden.  Beispielsweise die Beschränkung `LIKE \_ake%` gibt true zurück für `Jake Stein`, `Jake Smith`oder `Fake Smith`.  Sie gibt &quot;false&quot;zurück für `Drake Smith`.
 
 * `NOT LIKE` ähnelt dem oben aufgeführten Musterabgleich, überprüft jedoch, auf welche Muster nicht übereinstimmen.
 

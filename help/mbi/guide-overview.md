@@ -5,9 +5,9 @@ breadcrumb-title: Guide Overview
 seo-title: MBI User Guide
 seo-description: Describes how to use the MBI features used to gain insights from Adobe Commerce or Magento Open Source data.
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -34,15 +34,15 @@ Zusätzlich zu den oben genannten rollenbasierten Workflows enthält dieses Hand
 
 ## Hilfe erhalten
 
-Greifen Sie auf unser Support-Team zu, wenn Sie Fragen haben oder von einigen unserer professionellen Services profitieren möchten oder Probleme mit unserem Konto auftreten und erfahren möchten, welche Ressourcen Ihnen bei der Behebung des Problems zur Verfügung stehen.
+Wenden Sie sich an den Support, wenn Sie Fragen haben, einige Ihrer Professional Services nutzen möchten oder Probleme mit Ihrem Konto haben.
 
 ### Service-Richtlinien
 
-Siehe [Liste der von unserem Support-Team angebotenen Dienstleistungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Siehe [Liste der vom Support-Team bereitgestellten Dienste](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ### Senden eines Support-Tickets
 
-Benötigen Sie Hilfe beim Erstellen einer erweiterten berechneten Spalte? Fehlerkorrektur - kein Verbindungsproblem mehr aufgetreten? Sollten Sie Kontakt mit unserem Support-Team benötigen, bitten wir Sie, unsere [Support-Ticketrichtlinien] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en). In diesen Leitlinien wird beschrieben, welche Informationen die Adobe zur Lösung des Problems benötigt.
+Benötigen Sie Hilfe beim Erstellen einer erweiterten berechneten Spalte? Fehlerkorrektur - kein Verbindungsproblem mehr aufgetreten? Sollten Sie mit dem Support-Team in Kontakt treten müssen, bittet Adobe Sie, die [Support-Ticketrichtlinien] (https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en). In diesen Leitlinien wird beschrieben, welche Informationen die Adobe zur Lösung des Problems benötigt.
 
 ## Verfügbare Dokumentation
 
@@ -53,4 +53,4 @@ Benötigen Sie Hilfe beim Erstellen einer erweiterten berechneten Spalte? Fehler
 | [Adobe Commerce 2.4-Operationshandbücher](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Systemdokumentation zu Konzepten, Prozessen, Tools und Best Practices zur Entwicklung, Bereitstellung und Wartung von Projekten, die auf Adobe Commerce- und Magento Open Source-Plattformen bereitgestellt werden. |
 | [Adobe Commerce 2.4-Entwicklerdokumentation](https://developer.adobe.com/commerce/) | Entwickerorientierte Dokumentation zum Erstellen und Anpassen von Adobe Commerce oder Magento Open Source |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

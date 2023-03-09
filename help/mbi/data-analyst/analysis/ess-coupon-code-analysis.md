@@ -2,9 +2,9 @@
 title: Analyse des Couponcodes (allgemein)
 description: Informieren Sie sich über die Couponleistung Ihres Unternehmens, um Ihre Bestellungen zu segmentieren und Kundengewohnheiten besser zu verstehen.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Das Verständnis der Couponleistung Ihres Unternehmens ist eine interessante Möglichkeit, Ihre Bestellungen zu unterteilen und Kundengewohnheiten besser zu verstehen.
 
-Wir haben die Schritte dokumentiert, die zur Erstellung dieser Analyse erforderlich sind, um zu verstehen, wie gutscheinerworbene Kunden die Leistung erbringen, Trends sehen und die Nutzung einzelner Gutscheincodes verfolgen.
+In diesem Artikel werden die Schritte beschrieben, die für die Erstellung dieser Analyse erforderlich sind, um zu verstehen, wie gutscheinerworbene Kunden die Leistung erbringen, Trends sehen und die Nutzung einzelner Gutscheincodes verfolgen.
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
@@ -45,7 +45,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
    * Navigieren Sie zu [!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
    * Benennen Sie das Dashboard, z. B. `_Coupon Analysis_`.
 
-* Hier werden wir alle Berichte erstellen und hinzufügen.
+* Hier können Sie alle Berichte erstellen und hinzufügen.
 
 ## Erstellen von Berichten
 
@@ -53,7 +53,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
 
 >[!NOTE]
 >
->Die [!UICONTROL Time Period]** für jeden Bericht aufgeführt als `All-time`. Sie können dies nach Ihren Analyseanforderungen ändern. Wir empfehlen, alle Berichte in diesem Dashboard für denselben Zeitraum abzudecken, z. B. `All time`, `Year-to-date`oder `Last 365 days`.
+>Die [!UICONTROL Time Period]** für jeden Bericht aufgeführt als `All-time`. Sie können dies nach Ihren Analyseanforderungen ändern. Adobe empfiehlt, dass alle Berichte in diesem Dashboard den gleichen Zeitraum abdecken, z. B. `All time`, `Year-to-date`oder `Last 365 days`.
 
 * **Bestellungen mit Coupons**
    * 
@@ -129,15 +129,15 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
       * Filter hinzufügen:
          * [`A`] `coupon_code` **IST NICHT**`[NULL]`
          * [`B`] `Customer's order number` **Gleich** `1`
-   * Neue Formel erstellen: `Gross revenue`
+   * Formel erstellen: `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
       * 
          [!UICONTROL Format]: `Currency`
-   * Neue Formel erstellen:**% diskontiert**
+   * Formel erstellen:**% diskontiert**
       * Formel: `(C / (B - C))`
       * 
          [!UICONTROL Format]: `Percentage`
-   * Neue Formel erstellen: `Average order discount`
+   * Formel erstellen: `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
       * 
          [!UICONTROL Format]: `Percentage`

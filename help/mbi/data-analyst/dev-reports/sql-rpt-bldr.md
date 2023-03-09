@@ -2,9 +2,9 @@
 title: Verwenden von SQL Report Builder
 description: Lernen Sie die In- und Outs der Verwendung von SQL Report Builder kennen.
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1461'
 ht-degree: 0%
 
 ---
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 Siehe [Schulungsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) , um mehr zu erfahren.
 
-`SQL`, oder Structured Query Language, ist eine Programmiersprache, die zur Kommunikation mit Datenbanken verwendet wird. In [!DNL MBI], wird SQL verwendet, um Daten aus Ihrem Data Warehouse abzufragen oder abzurufen. Sehen Sie sich die Berichte in Ihrem Dashboard an - hinter den Kulissen basiert jeder auf einer SQL-Abfrage.
+`SQL`, oder Structured Query Language, ist eine Programmiersprache, die zur Kommunikation mit Datenbanken verwendet wird. In [!DNL MBI], wird SQL zum Abfragen oder Abrufen von Daten aus Ihrer Data Warehouse verwendet. Sehen Sie sich die Berichte in Ihrem Dashboard an - hinter den Kulissen basiert jeder auf einer SQL-Abfrage.
 
-Sie können die [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) um Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und in ein Diagramm umzuwandeln. Sie können mit der Erstellung eines Berichts beginnen, indem Sie `SQL Report Builder` durch Navigation zu **[!UICONTROL Report Builder** > **SQL Report Builder]**.
+Sie können die [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) um Ihre Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und in ein Diagramm umzuwandeln. Sie können mit der Erstellung eines Berichts beginnen, indem Sie `SQL Report Builder` durch Navigation zu **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
 Siehe [Schulungsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=en) , um mehr zu erfahren.
 
-Die `SQL Report Builder` ermöglicht Ihnen, Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und sie schnell in ein Diagramm umzuwandeln. Das Beste an der Verwendung von SQL zum Erstellen von Berichten besteht darin, dass Sie nicht auf Aktualisierungszyklen warten müssen, um die von Ihnen erstellten Spalten zu iterieren. Wenn die Ergebnisse nicht richtig aussehen, können Sie die Abfrage schnell bearbeiten und erneut ausführen, bis die Ergebnisse Ihren Erwartungen entsprechen.
+Die `SQL Report Builder` ermöglicht Ihnen, Ihre Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und sie schnell in ein Diagramm umzuwandeln. Das Beste an der Verwendung von SQL zum Erstellen von Berichten besteht darin, dass Sie nicht auf Aktualisierungszyklen warten müssen, um die von Ihnen erstellten Spalten zu iterieren. Wenn die Ergebnisse nicht richtig aussehen, können Sie die Abfrage schnell bearbeiten und erneut ausführen, bis die Ergebnisse Ihren Erwartungen entsprechen.
 
-In diesem Artikel führen wir Sie durch die Verwendung der `SQL Report Builder`. Nachdem Sie Ihren Umweg kennen, sehen Sie sich unser Tutorial SQL für Visualisierungen an oder versuchen Sie, einige der von Ihnen geschriebenen Abfragen zu optimieren.
+In diesem Artikel erfahren Sie, wie Sie die `SQL Report Builder`. Nachdem Sie Ihren Umweg kennen, sehen Sie sich das Tutorial SQL für Visualisierungen an oder versuchen Sie, einige der von Ihnen geschriebenen Abfragen zu optimieren.
 
-Hier finden Sie eine Übersicht darüber, was wir in diesem Artikel behandeln:
+In diesem Artikel behandelt:
 
 1. [Schreiben von Abfragen](#writing)
 
@@ -39,9 +39,9 @@ Hier finden Sie eine Übersicht darüber, was wir in diesem Artikel behandeln:
 
 ## SQL Report Builder-Integrationen
 
-Im gegenwärtigen Zustand der Welt [[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) ist die einzige Integration, die nicht für die Verwendung mit der [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md). Wir arbeiten daran, diese Funktion in eine spätere Version aufzunehmen.
+Im gegenwärtigen Zustand der Welt [[!DNL Google Analytics]](../importing-data/integrations/google-analytics.md) ist die einzige Integration, die nicht für die Verwendung mit der [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md). Diese Funktion befindet sich in der Entwicklung.
 
-Um mit der Erstellung eines neuen SQL-Berichts zu beginnen, klicken Sie auf **[!UICONTROL Report Builder]** oder **[!UICONTROL Add Report]** oben in jedem Dashboard. Im `Report Picker` Bildschirm, klicken Sie auf **[!UICONTROL SQL Report Builder]** , um den SQL-Editor zu öffnen.
+Um mit der Erstellung eines SQL-Berichts zu beginnen, klicken Sie auf **[!UICONTROL Report Builder]** oder **[!UICONTROL Add Report]** oben in jedem Dashboard. Im `Report Picker` Bildschirm, klicken Sie auf **[!UICONTROL SQL Report Builder]** , um den SQL-Editor zu öffnen.
 
 ## Erste Schritte
 
@@ -57,7 +57,7 @@ Im Folgenden [Richtlinien zur Abfrageoptimierung](../../best-practices/optimizin
 
 >[!IMPORTANT]
 >
->**Metriken in SQL-Berichten** - Wenn Sie eine Metrik in einen SQL-Bericht einfügen, wird die `current definition` verwendet.
+>**Metriken in SQL-Berichten** - Wenn Sie eine Metrik in einen SQL-Bericht einfügen, wird die `current definition` verwendet wird.
 
 Wenn die Metrik in der Zukunft aktualisiert wird, wird der SQL-Bericht *nicht* die Änderungen widerspiegeln. Sie müssen den Bericht manuell bearbeiten, damit die Änderungen wirksam werden.
 
@@ -71,7 +71,7 @@ Sie können auch die Seitenleiste im SQL-Editor verwenden, um Metriken, Tabellen
 >
 >Alle [SELECT-Funktion](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST)oder einer Funktion, die keine Daten mutiert, die von PostgreSQL unterstützt wird, wird im SQL-Report Builder unterstützt. Dazu gehören AVG, COUNT, COUNT, COUNT DISTINCT, MIN/MAX und SUM.
 
-Auch jeder JOIN-Typ wird unterstützt. Wir empfehlen jedoch nur die Verwendung von INNER JOIN, da dies der kostengünstigste der JOIN-Typen ist.
+Auch jeder JOIN-Typ wird unterstützt, aber Adobe empfiehlt nur die Verwendung von INNER JOIN, da dies der kostengünstigste der JOIN-Typen ist.
 
 ## Ausführen der Abfrage und Anzeigen der Ergebnisse {#runquery}
 
@@ -87,7 +87,7 @@ Nachdem Sie die Bearbeitung Ihrer Abfrage abgeschlossen haben, können Sie entwe
 
 ## Erstellen einer Visualisierung {#createviz}
 
-Um eine Visualisierung mit Ihren Abfrageergebnissen zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Chart]** im `Results` -Bereich. Auf dieser Registerkarte wählen Sie Folgendes aus:
+Um eine Visualisierung mit Ihren Abfrageergebnissen zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Chart]** im `Results` -Bereich. Wählen Sie auf dieser Registerkarte Folgendes aus:
 
 * Die `Series`oder der Spalte, die Sie messen möchten, z. B. **Verkaufte Artikel**.
 * Die `Category`oder der Spalte, die Sie zur Segmentierung Ihrer Daten verwenden möchten, z. B. **Akquisequelle**.
@@ -97,7 +97,7 @@ Hier sehen Sie, wie der Visualisierungsprozess aussieht:
 
 ![](../../assets/SQL_RB_viz_overview.gif)
 
-Eine ausführliche Anleitung zum Erstellen einer Visualisierung finden Sie in unserer [Tutorial zum Erstellen von Visualisierungen aus SQL-Abfragen](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;}.
+Eine ausführliche Anleitung zum Erstellen einer Visualisierung finden Sie im Abschnitt [Tutorial zum Erstellen von Visualisierungen aus SQL-Abfragen](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;}.
 
 ## Bericht speichern {#save}
 
@@ -111,9 +111,9 @@ Klicken **[!UICONTROL Save]** oben rechts im SQL-Editor und wählen Sie den Beri
 
 #### `SQL Report Builder`
 
-[`The SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) bietet Ihnen die Möglichkeit, Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und sie schnell in einen Bericht umzuwandeln. Mit SQL können Sie auch [zur Verwendung nicht verfügbarer SQL-Funktionen](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) im `Visual` oder `Cohort` Report Builder, sodass Sie mehr Kontrolle über Ihre Daten haben.
+[`The SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) bietet Ihnen die Möglichkeit, Ihre Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und sie schnell in einen Bericht umzuwandeln. Mit SQL können Sie auch [zur Verwendung nicht verfügbarer SQL-Funktionen](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) im `Visual` oder `Cohort` Report Builder, sodass Sie mehr Kontrolle über Ihre Daten haben.
 
-Wir möchten erwähnen, dass berechnete Spalten, die mit SQL erstellt wurden, nicht von Aktualisierungszyklen abhängig sind, d. h., Sie können sie wie gewünscht durchlaufen und sofort Ergebnisse sehen.
+Berechnete Spalten, die mit SQL erstellt wurden, hängen nicht von Aktualisierungszyklen ab, d. h., Sie können sie wie gewünscht durchlaufen und sofort Ergebnisse anzeigen.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Wir möchten erwähnen, dass berechnete Spalten, die mit SQL erstellt wurden, ni
 |---|---|
 | Vermittelnde/erweiterte Analysten | Anfänger - Sie müssen SQL kennen. |
 | SQL-Speicherung | Einfache Analysen - das Schreiben einer Abfrage kann mehr als nur die Verwendung des Visual Report Builder sein. |
-| Erstellen von einmaligen berechneten Spalten | Freigabe für andere - denken Sie an Ihre Zielgruppe: Verstehen sie SQL? Andernfalls kann die Erstellung des Berichts verwirrt sein. |
+| Erstellen von einmaligen berechneten Spalten | Freigabe für andere - denken Sie an Ihre Zielgruppe: Verstehen sie SQL? Andernfalls könnten sie durch die Erstellung des Berichts verwirrt werden. |
 | Daten mit `one-to-many` Beziehungen |  |
 | Testen einer neuen Spalte oder Analyse |  |
 
@@ -139,14 +139,14 @@ Wenn all Ihre Integrationen erfolgreich verbunden sind und Sie sich nicht mitten
 
 Nein, Sie verlieren keine Spalten aus Ihrer Data Warehouse, unabhängig davon, wie Sie sie erstellt haben.
 
-Spalten, die mit der `Data Warehouse Manager` wird nicht beeinträchtigt, wenn Sie einen Bericht oder eine Abfrage löschen, die diese Daten verwendet.
+Spalten, die mit der `Data Warehouse Manager` sind nicht betroffen, wenn Sie einen Bericht oder eine Abfrage löschen, die/die sie verwendet.
 
 Spalten, die mit der `SQL Report Builder` nicht in Ihrer Data Warehouse gespeichert werden.
 
 
 #### `Report Builder` versus `SQL Report Builder`
 
-Die `SQL Report Builder` bietet Ihnen mehr Flexibilität bei der Erstellung und Strukturierung Ihrer Diagramme - Sie können beispielsweise auswählen, welche Werte auf der `X` und `Y` Achsen. Weitere Informationen zum Erstellen von Diagrammen finden Sie im `SQL Report Builder`, sehen Sie sich unsere [Erstellen von Visualisierungen aus SQL-Abfragen](../../tutorials/create-visuals-from-sql.md) Tutorial.
+Die `SQL Report Builder` bietet Ihnen mehr Flexibilität bei der Erstellung und Strukturierung Ihrer Diagramme - Sie können beispielsweise auswählen, welche Werte auf der `X` und `Y` Achsen. Weitere Informationen zum Erstellen von Diagrammen finden Sie im `SQL Report Builder`, sehen Sie sich die [Erstellen von Visualisierungen aus SQL-Abfragen](../../tutorials/create-visuals-from-sql.md) Tutorial.
 
 #### `Cohort Report Builder` {#cohortrb}
 
@@ -154,21 +154,21 @@ Im Gegensatz zu `Visual Report Builder`, die [`Cohort Report Builder`](../dev-re
 
 | **Das ist perfekt für ...** | **Das ist nicht so toll für ...** |
 |---|---|
-| Vermittelnde/erweiterte Analysten | Anfänger - Sie müssen Kohorten definieren. |
-| Identifizieren von Verhaltenstrends im Zeitverlauf | Qualitative Analyse - sie kann [done](../dev-reports/create-qual-cohort-analysis.md), erfordert jedoch unsere Hilfe. |
+| Vermittelnde/erweiterte Analysten | Anfänger - Sie benötigen praxisdefinierte Kohorten. |
+| Identifizieren von Verhaltenstrends im Zeitverlauf | Qualitative Analyse - sie kann [done](../dev-reports/create-qual-cohort-analysis.md), erfordert jedoch Hilfe von Adoben. |
 
 ## Neuerstellen von Abfragen nach dem Aktualisierungszyklus
 
-Sie müssen Ihre Abfragen nicht neu erstellen. Mit der Variablen [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) werden so gespeichert, wie sie im traditionellen `Report Builder`. Der Aktualisierungsprozess für SQL-Diagramme ist genau derselbe. Nach der Aktualisierung Ihrer Daten werden die Werte in Ihren Diagrammen neu berechnet und angezeigt.
+Sie müssen Ihre Abfragen nicht neu erstellen. Mit der Variablen [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) werden so gespeichert, wie sie im traditionellen `Report Builder`. Der Aktualisierungsprozess für SQL-Diagramme ist derselbe - nach der Aktualisierung Ihrer Daten werden die Werte in Ihren Diagrammen neu berechnet und neu angezeigt.
 
 >[!NOTE]
 >
->Beim Löschen eines SQL-Berichts/einer SQL-Abfrage werden die zugrunde liegenden Spalten nicht aus Ihrer Data Warehouse gelöscht. Sie werden keine Spalten verlieren, unabhängig davon, wie Sie sie erstellt haben.
+>Beim Löschen eines SQL-Berichts/einer SQL-Abfrage werden die zugrunde liegenden Spalten nicht aus Ihrer Data Warehouse gelöscht. Sie verlieren keine Spalten, unabhängig davon, wie Sie sie erstellt haben.
 
-* Spalten, die mit dem Data Warehousen-Manager erstellt wurden, sind nicht betroffen, wenn Sie einen Bericht oder eine Abfrage löschen, die bzw. die sie verwendet.
+* Spalten, die mit dem Data Warehousen-Manager erstellt wurden, sind nicht betroffen, wenn Sie einen Bericht oder eine Abfrage löschen, die/die diese verwendet.
 
 * Spalten, die mit SQL Report Builder erstellt wurden, werden nicht in Ihrer Data Warehouse gespeichert.
 
 ## Aufbrechen {#wrapup}
 
-Wenn Sie etwas herausforderndes ausprobieren möchten, warum versuchen Sie nicht, eine für die Visualisierung optimierte Abfrage zu schreiben? Sehen Sie sich unsere [Tutorial zum Erstellen von Visualisierungen aus SQL-Abfragen](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;}, um zu beginnen.
+Wenn Sie etwas herausforderndes ausprobieren möchten, warum versuchen Sie nicht, eine für die Visualisierung optimierte Abfrage zu schreiben? Sehen Sie sich die [Tutorial zum Erstellen von Visualisierungen aus SQL-Abfragen](../../tutorials/create-visuals-from-sql.md){: target=&quot;_blank&quot;}, um zu beginnen.

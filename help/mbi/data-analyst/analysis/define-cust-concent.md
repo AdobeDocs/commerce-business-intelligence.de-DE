@@ -1,29 +1,29 @@
 ---
 title: Kundenkonzentration definieren
-description: Erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie messen können, wie der Gesamtumsatz auf Ihre Kundenbasis verteilt wird.
+description: Erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie messen können, wie der Gesamtumsatz auf Ihre Kundenbasis verteilt ist.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
 # Kundenkonzentration
 
-In diesem Artikel erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie messen können, wie der Gesamtumsatz auf Ihre Kundenbasis verteilt wird. Erfahren Sie, welcher Prozentsatz der Kunden zu welchem Prozentsatz des Umsatzes beitragen, und erstellen Sie segmentierte Listen, um Ihre wichtigsten Kunden am besten zu vermarkten und zu halten.
+Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, mit dem Sie messen können, wie der Gesamtumsatz auf Ihre Kundenbasis verteilt wird. Erfahren Sie, welcher Prozentsatz der Kunden zu welchem Prozentsatz des Umsatzes beitragen, und erstellen Sie segmentierte Listen, um Ihre wichtigsten Kunden am besten zu vermarkten und zu halten.
 
 Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Erste Schritte
 
-Zunächst müssen Sie eine Datei hochladen, die nur einen Primärschlüssel mit dem Wert 1 enthält. Dies ermöglicht die Erstellung einiger für die Analyse erforderlicher berechneter Spalten.
+Sie müssen zunächst eine Datei hochladen, die nur einen Primärschlüssel mit dem Wert 1 enthält. Dies ermöglicht die Erstellung einiger erforderlicher berechneter Spalten für die Analyse.
 
-Sie können [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) sowie das folgende Bild, um Ihre Datei zu formatieren.
+Sie können [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild, um Ihre Datei zu formatieren.
 
 ## Berechnete Spalten
 
-Wenn Sie sich in der ursprünglichen Architektur befinden (z. B. wenn Sie nicht über die `Data Warehouse Views` Option unter `Manage Data` ), kontaktieren Sie unser Supportteam, um die unten stehenden Spalten zu erstellen. In der neuen Architektur können diese Spalten aus dem `Manage Data > Data Warehouse` Seite. Im Folgenden finden Sie ausführliche Anweisungen.
+Wenn Sie sich in der ursprünglichen Architektur befinden (z. B. wenn Sie nicht über die `Data Warehouse Views` Option unter `Manage Data` ), sollten Sie sich an das Supportteam wenden, um die folgenden Spalten zu erstellen. In der neuen Architektur können diese Spalten aus dem `Manage Data > Data Warehouse` Seite. Im Folgenden finden Sie ausführliche Anweisungen.
 
 Eine weitere Unterscheidung wird getroffen, wenn Ihr Unternehmen Gastaufträge zulässt. Wenn dies der Fall ist, können Sie alle Schritte für die `customer_entity` Tabelle. Wenn Gastaufträge nicht zulässig sind, ignorieren Sie alle Schritte für die `sales_flat_order` Tabelle.
 
@@ -36,7 +36,7 @@ Zu erstellende Spalten
 * [!UICONTROL Calculation]: - **Wenn A null ist, dann null else 1 end**
 * [!UICONTROL Datatype]: – `Integer`
 
-* `Customer concentration` Tabelle (dies ist die Datei, die Sie gerade mit der Nummer hochgeladen haben) `1`)
+* `Customer concentration` table (dies ist die Datei, die Sie mit der Nummer hochgeladen haben `1`)
 * Anzahl der Kunden
 * [!UICONTROL Column type]: – `Many to One > Count Distinct`
 * Pfad - `sales_flat_order.(input) reference > Customer Concentration.Primary Key` ODER `customer_entity.(input)reference > Customer Concentration.Primary Key`
@@ -79,7 +79,7 @@ Zu erstellende Spalten
 
 >[!NOTE]
 >
->Die verwendeten Perzentile sind sogar Kundenaufteilungen, die das Xte Perzentil Ihrer Kundenbasis darstellen. Jeder Kunde wird mit einer Ganzzahl von 1 bis 100 verknüpft, die als Umsatz für die gesamte Lebensdauer betrachtet werden kann *rank*. Wenn beispielsweise das Umsatzperzentil des Kunden für einen bestimmten Kunden **5**, befindet sich dieser Kunde im ***5. Perzentil*** des Gesamtumsatzes aller Kunden.
+>Die verwendeten Perzentile sind sogar Kundenaufteilungen, die das Xte Perzentil Ihrer Kundenbasis darstellen. Jeder Kunde ist mit einer Ganzzahl von 1 bis 100 verknüpft, die als Lebensdauerumsatz betrachtet werden kann *rank*. Wenn beispielsweise das Umsatzperzentil des Kunden für einen bestimmten Kunden **5**, befindet sich dieser Kunde im ***fünftes Perzentil*** des Gesamtumsatzes aller Kunden.
 
 ## Metriken
 
@@ -156,6 +156,6 @@ Zu erstellende Spalten
 
    [!UICONTROL Chart type]: `Table`
 
-Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Endergebnis kann wie das obige Beispiel-Dashboard aussehen.
+Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie im obigen Beispiel-Dashboard aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach unser Professional Services-Team einbinden möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

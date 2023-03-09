@@ -2,9 +2,9 @@
 title: Verbindungsstreifen
 description: Erfahren Sie, wie Sie die Zahlungs- und Rechnungsdaten Ihres Unternehmens verwalten und verfolgen können.
 exl-id: c038f2a9-b2bd-4e45-93f9-12d2e5077b31
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---

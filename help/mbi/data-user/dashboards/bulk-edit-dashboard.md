@@ -1,10 +1,10 @@
 ---
 title: Grafiken zur Massenbearbeitung in Dashboards
-description: Erfahren Sie, wie Sie die Massenbearbeitung in [!DNL MBI].
+description: Erfahren Sie, wie Sie die Massenbearbeitungsfunktion in [!DNL MBI].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Beachten Sie jedoch Folgendes: *Müssen diese Änderungen dauerhaft sein?* Wenn 
 
 >[!NOTE]
 >
->Wenn Sie Änderungen an vielen Berichten vornehmen, kann der Aktualisierungsprozess einige Zeit in Anspruch nehmen.
+>Wenn Sie zahlreiche Berichte ändern, kann der Aktualisierungsprozess einige Zeit in Anspruch nehmen.
 
 ## Verwenden `Find/Replace` {#findreplace}
 

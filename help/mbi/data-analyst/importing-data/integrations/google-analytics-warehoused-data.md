@@ -2,9 +2,9 @@
 title: Erwartete Google Analytics Warehouse-Daten
 description: Erfahren Sie, wie Sie mit Ihren in Google Analytics gespeicherten Daten interagieren.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Einige Informationen wurden mit Zustimmung unserer Freunde unter [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
+>Einige Informationen wurden mit Zustimmung Ihrer Freunde unter [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
 
-[!DNL Google Analytics Warehoused] Integration in [!DNL MBI] nutzt das [!DNL Google Analytics] [Core Reporting-API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
+[!DNL Google Analytics Warehoused] Integration in [!DNL MBI] verwendet die [!DNL Google Analytics] [Core Reporting-API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
 
 >[!NOTE]
 >
->Bestätigen Sie, dass alle verwendeten Dimensionen [kompatibel mit den Metriken](https://developers.google.com/analytics/devguides/reporting/core/dimsmets) Sie verwenden in `Report Builder`.
+>Bestätigen Sie, dass alle verwendeten Dimensionen [mit einer oder mehreren Metriken kompatibel](https://ga-dev-tools.google/dimensions-metrics-explorer/) Sie verwenden in `Report Builder`.
 
 Eine einzige Tabelle namens `report` - wird in Ihrer Data Warehouse erstellt.
 
@@ -46,13 +46,13 @@ Die Tabelle würde wie im folgenden Beispiel aussehen.
 | `month` | Ausgewählte Dimension: Monat der Sitzung, eine zweistellige Ganzzahl von 01 bis 12. |
 | `users` | Ausgewählte Metrik: Die Gesamtzahl der Benutzer für den angeforderten Zeitraum. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Erinnerung: Unterschied zwischen Google Analytics Warehouse und Live-Integration
 
-Der Hauptunterschied besteht darin, dass eine Integration gespeichert wird ([!DNL Google Analytics Warehoused]) und der andere nicht ([!DNL Google Analytics Live]). Im Falle von [!DNL Google Analytics Warehoused], ermöglicht dies die Manipulation Ihrer [!DNL Google Analytics] Daten und bietet Ihnen die Möglichkeit, [!DNL Google Analytics] und anderen Datenquellen, um eine aufschlussreiche Berichterstellung zu erstellen.
+Der Hauptunterschied besteht darin, dass eine Integration gespeichert wird ([!DNL Google Analytics Warehoused]) und der andere nicht ([!DNL Google Analytics Live]). In den Fällen von [!DNL Google Analytics Warehoused], ermöglicht dies die Manipulation Ihrer [!DNL Google Analytics] Daten und bietet Ihnen die Möglichkeit, [!DNL Google Analytics] und anderen Datenquellen, um eine aufschlussreiche Berichterstellung zu erstellen.
 
-Schauen wir uns das einmal an [!DNL Google Analytics] Anzeigenkampagnen für ein Beispiel dessen, was aus Sicht der Manipulation möglich ist. Angenommen, Sie hatten mehrere Werbekampagnen für Q4 mit unterschiedlichen Namen. Die Kampagnen waren das Ergebnis einer spezifischen Marketinginitiative. Mit gespeicherten Daten können wir eine neue Spalte erstellen, die die betreffenden Kampagnennamen sucht und den Namen der Initiative für das 4. Quartal von `Operation Dumbo`.
+Sehen Sie sich an [!DNL Google Analytics] Anzeigenkampagnen für ein Beispiel dessen, was aus Sicht der Manipulation möglich ist. Angenommen, Sie hatten mehrere Werbekampagnen für Q4 mit unterschiedlichen Namen. Die Kampagnen waren das Ergebnis einer spezifischen Marketinginitiative. Mit gespeicherten Daten können Sie eine Spalte erstellen, die die betreffenden Kampagnennamen sucht und den Initiativnamen für Q4 zurückgibt: `Operation Dumbo`.
 
 Der Kombinationsaspekt ermöglicht Folgendes: [!DNL Google Analytics] Daten, die mit anderen Daten verknüpft werden sollen, um Analysen durchzuführen. Nehmen Sie beispielsweise `Total Time On Site By Ad Campaign` Daten aus [!DNL Google Analytics] und verbinden Sie es mit `Total Spent Per Campaign` Daten aus [!DNL Facebook Ads] um ein vollständiges Bild davon zu erhalten, wie viel Interaktion Sie kostet.
 

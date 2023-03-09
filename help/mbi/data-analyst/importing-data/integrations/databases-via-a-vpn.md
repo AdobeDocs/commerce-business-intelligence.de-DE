@@ -2,42 +2,40 @@
 title: Datenbanken über VPN verbinden
 description: Erfahren Sie, wie Sie Datenbanken über VPN anstatt über SSH-Tunnel verbinden.
 exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # Datenbanken über VPN verbinden
 
-Wir empfehlen Ihnen, Ihre Datenbanken mithilfe eines SSH-Tunnels zu verbinden. Sie können aber auch eine verschlüsselte VPN-Verbindung verwenden, um die Sicherheit zu gewährleisten. A `VPN` kann für jede unserer Datenbankintegrationen verwendet werden. Um die Dinge einfach zu halten, entspricht der Prozess ungefähr der Einrichtung einer `SSH tunnel`:
+Während Adobe empfiehlt, Ihre Datenbanken mithilfe eines SSH-Tunnels zu verbinden, können Sie auch eine verschlüsselte VPN-Verbindung verwenden, um die Sicherheit zu gewährleisten. A `VPN` kann für beliebige Datenbankintegrationen verwendet werden. Um die Dinge einfach zu halten, entspricht der Prozess ungefähr der Einrichtung einer `SSH tunnel`:
 
 1. [Erstellen Sie eine [!DNL MBI] Datenbankbenutzer](#database)
 1. [Erstellen Sie eine [!DNL MBI] VPN-Benutzer](#vpn)
 1. [Zugriff auf [!DNL MBI] IP-Adresse](#allowlist)
 1. [Geben Sie die Verbindung und VPN-Benutzerinformationen in MBI ein.](#finish)
 
-Zusätzlich zu den Datenbankanmeldeinformationen müssen Sie die Anmeldeinformationen eingeben, damit ein VPN-Benutzer die Elemente einschließen kann. Jeder VPN-Benutzer funktioniert, aber wir empfehlen Ihnen, eine [!DNL MBI] user - es erleichtert Ihnen, die Benutzer in Ihrem Konto zu verfolgen.
-
-Fangen wir an!
+Zusätzlich zu den Datenbankberechtigungen müssen Sie die Anmeldeinformationen eingeben, damit ein VPN-Benutzer die Elemente einschließen kann. Jeder VPN-Benutzer funktioniert, aber Adobe empfiehlt, eine [!DNL MBI] user - es erleichtert Ihnen das Tracking der Benutzer in Ihrem Konto.
 
 ## Erstellen eines Datenbankbenutzers für [!DNL MBI] {#database}
 
 Der Prozess zum Erstellen eines Datenbankbenutzers variiert je nach dem Datenbanktyp, den Sie verbinden. Um die Anweisungen für jeden Datenbanktyp anzuzeigen, klicken Sie auf die unten stehenden Links.
 
-* [Microsoft SQL](../integrations/microsoft-sql-server.md)
+* [Microsoft](../integrations/microsoft-sql-server.md)
 * [MongoDB](../integrations/databases-via-a-vpn.md)
 * [MySQL](../integrations/mysql-via-a-direct-connection.md)
 * [PostgreSQL](../integrations/postgresql.md)
 
 ## Erstellen einer `VPN` Benutzer für [!DNL MBI] {#vpn}
 
-Wie wir bereits erwähnt haben, sind alle gültigen `VPN` -Benutzer funktioniert. Wir empfehlen jedoch dringend, einen Benutzer ausschließlich für [!DNL MBI] verwenden.
+Wie bereits erwähnt, sind alle gültigen `VPN` -Benutzer funktioniert, aber Adobe empfiehlt, einen Benutzer ausschließlich für [!DNL MBI] verwenden.
 
 ## Zugriff auf [!DNL MBI] IP-Adressen {#allowlist}
 
-Damit die Verbindung erfolgreich hergestellt werden kann, muss Ihre Firewall so konfiguriert werden, dass sie den Zugriff von unseren IP-Adressen aus gestattet. Sie sind `54.88.76.97` und `34.250.211.151`, aber es befindet sich auch auf der `credentials` Seite für jede Datenbankintegration:
+Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firewall so konfigurieren, dass der Zugriff von Ihren IP-Adressen aus gestattet wird. Sie sind `54.88.76.97` und `34.250.211.151`, aber es befindet sich auch auf der `credentials` Seite für jede Datenbankintegration:
 
 ![MBI_Allow_Access_IPs.png](../../../assets/MBI_allow_access_IPs.png)
 

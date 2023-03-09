@@ -2,9 +2,9 @@
 title: Anbinden von PostgreSQL über den SSH-Tunnel
 description: Erfahren Sie, wie Sie Ihre PostgreSQL-Datenbank mit [!DNL MBI] über einen SSH-Tunnel.
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Um eine Verbindung herzustellen `PostgreSQL` Datenbank zu [!DNL MBI] über eine 
 
 1. [Rufen Sie die [!DNL MBI] öffentlicher Schlüssel](#retrieve)
 1. [Zugriff auf [!DNL MBI] IP-Adresse](#allowlist)
-1. [Erstellen eines Linux-Benutzers für [!DNL MBI] ](#linux)
+1. [Linux erstellen](#linux)
 1. [Erstellen eines Postgres-Benutzers für [!DNL MBI] ](#postgres)
 1. [Verbindung und Benutzerinformationen in MBI eingeben](#finish)
 
@@ -23,7 +23,7 @@ Es ist nicht so kompliziert, wie es klingen könnte. Erste Schritte.
 
 ## Abrufen der [!DNL MBI] `public key` {#retrieve}
 
-Die `public key` wird verwendet, um die [!DNL MBI] Linux-Benutzer. Im nächsten Abschnitt erstellen wir den Benutzer und importieren den Schlüssel.
+Die `public key` wird verwendet, um die [!DNL MBI] Linux®-Benutzer. Im nächsten Abschnitt erstellen Sie den Benutzer und importieren den Schlüssel.
 
 1. Navigieren Sie zu **[!UICONTROL Manage Data** > **Connections]** und klicken Sie auf **[!UICONTROL Add a Data Source]**.
 1. Klicken Sie auf `PostgreSQL` Symbol.
@@ -38,7 +38,7 @@ Wenn Sie etwas verloren sind, können Sie hier navigieren [!DNL MBI] , um den Sc
 
 ## Zugriff auf [!DNL MBI] IP-Adresse {#allowlist}
 
-Damit die Verbindung erfolgreich hergestellt werden kann, muss Ihre Firewall so konfiguriert werden, dass sie den Zugriff von unserer IP-Adresse aus gestattet. it `54.88.76.97/32`, aber es befindet sich auch auf der `PostgreSQL` Seite mit Anmeldeinformationen. Sehen Sie die blaue Box in der GIF oben? Das ist es!
+Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firewall so konfigurieren, dass der Zugriff von Ihrer IP-Adresse aus gestattet wird. Es ist `54.88.76.97/32`, aber es befindet sich auch auf der `PostgreSQL` Seite mit Anmeldeinformationen. Sehen Sie die blaue Box in der GIF oben? Das ist es!
 
 ## Erstellen einer `Linux` Benutzer für [!DNL MBI] {#linux}
 
@@ -52,7 +52,7 @@ Dabei kann es sich um eine Produktions- oder Sekundärmaschine handeln, sofern d
         mkdir /home/rjmetric/.ssh
 ```
 
-1. Speichern Sie die `public key` haben wir im ersten Abschnitt abgerufen? Um sicherzustellen, dass der Benutzer Zugriff auf die Datenbank hat, müssen wir den Schlüssel in `authorized\_keys`.
+1. Speichern Sie die `public key` Sie haben im ersten Abschnitt abgerufen? Um sicherzustellen, dass der Benutzer Zugriff auf die Datenbank hat, müssen Sie den Schlüssel in `authorized\_keys`.
 
    Kopieren Sie den gesamten Schlüssel in die `authorized\_keys` Datei wie folgt:
 
@@ -70,7 +70,7 @@ Dabei kann es sich um eine Produktions- oder Sekundärmaschine handeln, sofern d
 
 >[!IMPORTANT]
 >
->Wenn die Variable `sshd\_config` -Datei, die mit dem Server verknüpft ist, nicht auf die Standardoption festgelegt ist, haben nur bestimmte Benutzer Zugriff auf den Server. Dadurch wird verhindert, dass eine erfolgreiche Verbindung zu [!DNL MBI]. In diesen Fällen ist es erforderlich, einen Befehl wie `AllowUsers` , um dem rjmetric-Benutzer Zugriff auf den Server zu gewähren.
+>Wenn die Variable `sshd\_config` -Datei, die mit dem Server verknüpft ist, nicht auf die Standardoption festgelegt, sondern nur bestimmte Benutzer haben Serverzugriff. Dies verhindert eine erfolgreiche Verbindung zu [!DNL MBI]. In diesen Fällen ist es erforderlich, einen Befehl wie `AllowUsers` , um dem rjmetric-Benutzer Zugriff auf den Server zu gewähren.
 
 ## Erstellen einer [!DNL MBI] Postgres-Benutzer {#postgres}
 
@@ -80,7 +80,7 @@ Ihr Unternehmen erfordert möglicherweise einen anderen Prozess. Die einfachste 
     GRANT CONNECT ON DATABASE <database name> TO rjmetric WITH PASSWORD <secure password>;GRANT USAGE ON SCHEMA <schema name> TO rjmetric;GRANT SELECT ON ALL TABLES IN SCHEMA <schema name> TO rjmetric;ALTER DEFAULT PRIVILEGES IN SCHEMA <schema name> GRANT SELECT ON TABLES TO rjmetric;
 ```
 
-Ersetzen `secure password` mit Ihrem eigenen sicheren Kennwort, das sich vom SSH-Kennwort unterscheiden kann. Stellen Sie außerdem sicher, dass Sie `database name` und `schema name` mit den entsprechenden Namen in Ihrer Datenbank.
+Ersetzen `secure password` mit Ihrem eigenen sicheren Kennwort, das vom SSH-Kennwort abweichen kann. Stellen Sie außerdem sicher, dass Sie `database name` und `schema name` mit den entsprechenden Namen in Ihrer Datenbank.
 
 Wenn Sie mehrere Datenbanken oder Schemata verbinden möchten, wiederholen Sie diesen Vorgang nach Bedarf.
 
@@ -97,8 +97,8 @@ Geben Sie die folgenden Informationen auf dieser Seite ein, beginnend mit dem Ab
 
 under `SSH Connection`:
 
-* `Remote Address`: Die IP-Adresse oder der Hostname des Servers, in den wir SSH durchführen werden
-* `Username`: Unser SSH-Anmeldename (sollte rjmetric sein)
+* `Remote Address`: Die IP-Adresse oder der Hostname des Servers, auf dem SSH ausgeführt wird
+* `Username`: Ihr SSH-Anmeldename (sollte rjmetric sein)
 * `SSH Port`: SSH-Anschluss auf Ihrem Server (standardmäßig 22)
 
 Das ist es! Wenn Sie fertig sind, klicken Sie auf **Speichern und testen** , um das Setup abzuschließen.

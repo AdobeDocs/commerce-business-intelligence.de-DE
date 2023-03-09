@@ -2,9 +2,9 @@
 title: Berichtkopie erstellen
 description: Erfahren Sie, wie Sie eine Kopie eines Berichts erstellen.
 exl-id: c57783b4-32ae-4054-a85a-5ddf63cfd34b
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '88'
 ht-degree: 0%
 
 ---

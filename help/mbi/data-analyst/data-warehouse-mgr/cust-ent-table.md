@@ -2,16 +2,16 @@
 title: customer_entity table
 description: Erfahren Sie, wie Sie auf Datensätze aller registrierten Konten zugreifen können.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
 # customer_entity_table
 
-Die `customer_entity` enthält die Datensätze aller registrierten Konten. Ein Konto gilt als registriert, wenn er sich für ein Konto anmeldet, unabhängig davon, ob er einen Kauf tätigt oder nicht. Jede Zeile entspricht einem eindeutigen registrierten Konto, wie durch das `entity_id`.
+Die `customer_entity` enthält die Datensätze aller registrierten Konten. Ein Konto gilt als registriert, wenn er sich für ein Konto anmeldet, unabhängig davon, ob er einen Kauf tätigt. Jede Zeile entspricht einem eindeutigen registrierten Konto, wie durch das `entity_id`.
 
 Diese Tabelle enthält keine Datensätze zu Kunden, die eine Bestellung über einen Gastkasse aufgeben. Wenn Ihr Geschäft einen Gast-Checkout akzeptiert, [Erfahren Sie, wie Sie](../data-warehouse-mgr/guest-orders.md) für diese Kunden.
 
@@ -19,13 +19,13 @@ Diese Tabelle enthält keine Datensätze zu Kunden, die eine Bestellung über ei
 
 | **Spaltenname** | **Beschreibung** |
 |---|---|
-| `created_at` | Zeitstempel, der dem Registrierungsdatum des Kontos entspricht, in der Regel lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL MBI], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL MBI] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
+| `created_at` | Zeitstempel, der dem Registrierungsdatum des Kontos entspricht und lokal in UTC gespeichert ist. Abhängig von Ihrer Konfiguration in [!DNL MBI], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL MBI] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
 | `email` | Mit dem Konto verknüpfte E-Mail-Adresse |
 | `entity_id` (PK) | Eindeutige Kennung für die Tabelle und wird häufig in Joins zum `customer_id` in anderen Tabellen innerhalb der Instanz |
 | `group_id` | Fremdschlüssel, der mit dem `customer_group` Tabelle. Mitglied werden `customer_group.customer_group_id` zur Bestimmung der Kundengruppe, die mit dem registrierten Konto verknüpft ist |
 | `store_id` | Fremdschlüssel, der mit dem `store` Tabelle. Mitglied werden `store`.`store_id` , um zu bestimmen, welche Commerce Store-Ansicht mit dem registrierten Konto verknüpft ist |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Allgemeine berechnete Spalten
 
@@ -42,7 +42,7 @@ Diese Tabelle enthält keine Datensätze zu Kunden, die eine Bestellung über ei
 | `Seconds since customer's first order date` | Verstrichene Zeit zwischen dem ersten Bestelldatum des Kunden und jetzt. Berechnet durch Subtraktion `Customer's first order date` vom Server-Zeitstempel zum Zeitpunkt der Ausführung der Abfrage zurückgegeben, als ganzzahlige Anzahl von Sekunden |
 | `Store name` | Der Name des mit diesem registrierten Konto verknüpften Commerce-Stores. Errechnet durch Verbinden `customer_entity.store_id` nach `store.store_id` und die `name` field |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Allgemeine Metriken
 
@@ -53,18 +53,18 @@ Diese Tabelle enthält keine Datensätze zu Kunden, die eine Bestellung über ei
 | `Avg lifetime orders` | Durchschnittliche Anzahl der Bestellungen pro Kunde über seine Lebensdauer | Vorgang: Durchschnittlich<br/>Operand: `Customer's lifetime number of orders`<br/>Zeitstempel: `created_at` |
 | `Avg lifetime revenue` | Durchschnittlicher Gesamtumsatz pro Kunde für alle Bestellungen, die über seine Lebensdauer aufgegeben wurden | Vorgang: Durchschnittlich<br/>Operand: `Customer's lifetime revenue`<br/>Zeitstempel: `created_at` |
 | `New customers` | Die Anzahl der Kunden mit mindestens einer Bestellung, die zum Datum ihrer ersten Bestellung gezählt werden. Schließt Konten aus, die sich registrieren, aber nie eine Bestellung aufgeben | Vorgang: Count<br/>Operand: `entity_id`<br/>Zeitstempel: `Customer's first order date` |
-| `Registered accounts` | Die Anzahl der registrierten Konten. Umfasst alle registrierten Konten, unabhängig davon, ob das Konto jemals eine Bestellung aufgegeben hat oder nicht | Vorgang: Count<br/>Operand: `entity_id`<br/>Zeitstempel: `created_at` |
+| `Registered accounts` | Die Anzahl der registrierten Konten. Umfasst alle registrierten Konten, unabhängig davon, ob das Konto jemals eine Bestellung aufgegeben hat | Vorgang: Count<br/>Operand: `entity_id`<br/>Zeitstempel: `created_at` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Verbindungswege für Fremdschlüssel
 
 `customer_group`
 
-* Mitglied werden `customer_group` -Tabelle, um neue Spalten zu erstellen, die den Kundengruppennamen des registrierten Kontos zurückgeben.
+* Mitglied werden `customer_group` -Tabelle, um Spalten zu erstellen, die den Kundengruppennamen des registrierten Kontos zurückgeben.
    * Pfad: `customer_entity.group_id` (viele) => `customer_group.customer_group_id` (eins)
 
 `store`
 
-* Mitglied werden `store` -Tabelle, um neue Spalten zu erstellen, die Details zum Store zurückgeben, der mit dem registrierten Konto verknüpft ist.
+* Mitglied werden `store` -Tabelle verwenden, um Spalten zu erstellen, die Details zum Store zurückgeben, der mit dem registrierten Konto verknüpft ist.
    * Pfad: `customer_entity.store_id` (viele) => `store.store_id` (eins)

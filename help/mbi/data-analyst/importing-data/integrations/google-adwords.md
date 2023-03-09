@@ -2,9 +2,9 @@
 title: Google Adwords verbinden
 description: Erfahren Sie, wie Sie den ROI Ihrer Kampagne messen können, indem Sie Ihre Werbekosten und den Kundenlebenszeitwert (CLV) der durch Ihre Kampagnen erworbenen Benutzer miteinander verbinden.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 Sie haben Ihre Recherchen durchgeführt, Ihre Anzeigen erstellt und Ihre Kampagne gestartet. Jetzt ist es an der Zeit, Ihre Anzeigenausgabedaten zu analysieren und festzustellen, ob Ihr Geld effektiv ausgegeben wird. Mithilfe Ihrer Anzeigenausgabedaten können Sie [Messen Sie den Kampagnen-ROI durch die Verknüpfung Ihrer Werbe- und des Kundenlebenszeitwerts (CLV).](../../analysis/roi-ad-camp.md) der Benutzer, die durch Ihre Kampagnen erworben wurden.
 
-Beginnen wir mit der Eingabe von [!DNL Google Adwords] Anmeldedaten [!DNL MBI]:
+Erste Schritte mit der Eingabe Ihrer [!DNL Google Adwords] Anmeldedaten [!DNL MBI]:
 
 1. Navigieren Sie zur Seite Verbindungen unter **Daten verwalten > Integrationen**.
 1. Klicken **Integration hinzufügen**, rechts oben auf dem Bildschirm.
 1. Klicken Sie auf **[!DNL Google Adwords]** Symbol. Dadurch wird die [!DNL Google Adwords] Seite mit Anmeldeinformationen.
-1. Geben Sie Ihre [!DNL Google Analytics] Anmeldedaten. Nach Abschluss des Autorisierungsprozesses werden Sie zu [!DNL MBI].
-1. Daraufhin wird eine Liste der Profil-IDs angezeigt. Überprüfen Sie die Profile, mit denen Sie eine Verbindung herstellen möchten. [!DNL MBI].
+1. Geben Sie Ihre [!DNL Google Analytics] Anmeldedaten. Nach Abschluss des Autorisierungsprozesses werden Sie zurück zu [!DNL MBI].
+1. Eine Liste der Profil-IDs wird angezeigt. Überprüfen Sie die Profile, mit denen Sie eine Verbindung herstellen möchten. [!DNL MBI].
 
    ![](../../../assets/cnnct-profile.png)
 
@@ -35,19 +35,19 @@ Wenn Sie mehrere Profile haben und dabei behilflich sein müssen, welche Profile
 
 ## `Connecting multiple Google Analytics profiles`
 
-Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem [!DNL Google Analytics] Profil-ID. In diesem Fall können Sie alle Ihre Profil-IDs in [!DNL MBI]. Überprüfen Sie einfach die Profil-IDs, die Sie während des Profilauswahlschritts einbeziehen möchten.
+Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem [!DNL Google Analytics] Profil-ID. In diesem Fall können Sie alle Ihre Profil-IDs in [!DNL MBI]. Überprüfen Sie die Profil-IDs, die Sie während des Schritts zur Profilauswahl einbeziehen möchten.
 
 **So identifizieren Sie die Google Analytics-ID einer bestimmten Website:**
 
 1. Anmelden [!DNL Google Analytics]
 1. Rufen Sie die Website auf [!DNL Google Analytics] Dashboard
-1. Sehen Sie sich die URL an - die Profil-ID entspricht den acht Zahlen im Folgenden `p` am Ende der Zeile:
+1. Sehen Sie sich die URL an - die Profil-ID entspricht den acht folgenden Zahlen `p` am Ende der Zeile:
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**`
 
 ## Verbindung [!DNL Google Adwords]
 
-1. Besuchen Sie Ihre [!DNL Google] [Kontoeinstellungen](https://www.google.com/accounts/) Seite.
+1. Besuchen Sie Ihre [!DNL Google] [Kontoeinstellungen](https://www.google.com/account/about/?hl=en) Seite.
 1. Unter dem `Security` und klicken Sie auf **[!UICONTROL edit]** neben `Authorizing` Anwendungen und Sites.
 1. Klicken **[!UICONTROL revoke access]** neben [!DNL MBI].
 

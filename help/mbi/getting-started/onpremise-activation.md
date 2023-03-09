@@ -2,9 +2,9 @@
 title: Aktivieren Ihrer [!DNL MBI] Konto für On-Premise-Abonnements
 description: Erfahren Sie mehr über das Aktivieren Ihrer [!DNL MBI] für On-Premise-Abonnements.
 exl-id: 0efac7b4-2457-48c7-947a-d2776b90a1dd
-source-git-commit: 6f018ab220f2ae573cbc9016f9efb83c27a254be
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ So aktivieren [!DNL MBI] für On-Premise-Abonnements erstellen Sie zunächst ein
 
    ![](../assets/create-account-4.png)
 
-   - Nachdem Sie Ihr Konto erstellt haben, haben Sie die Möglichkeit, Ihrem neuen Konto Benutzer hinzuzufügen. Technische Administratoren können nun hinzugefügt werden, um die folgenden Schritte auszuführen.
+   - Nachdem Sie Ihr Konto erstellt haben, können Sie Ihrem neuen Konto Benutzer hinzufügen. Technische Administratoren können nun hinzugefügt werden, um die folgenden Schritte auszuführen.
 
    ![](../assets/create-account-5.png)
 

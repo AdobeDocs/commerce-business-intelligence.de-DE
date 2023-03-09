@@ -2,31 +2,31 @@
 title: Analysieren des Kundenrückkaufverhaltens
 description: Erfahren Sie, wie Sie das Verhalten von Kunden bei der Rücknahme analysieren.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '855'
 ht-degree: 1%
 
 ---
 
 # Kundenrückkaufverhalten
 
-Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt kaufen, im Laufe der Zeit anders verhalten als andere Kunden. In diesem Artikel untersuchen wir Analysen, die Ihnen bei der Beantwortung der folgenden Fragen helfen können:
+Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt kaufen, im Laufe der Zeit anders verhalten als andere Kunden. In diesem Artikel werden Analysen untersucht, die Ihnen bei der Beantwortung der folgenden Fragen helfen können:
 
 Von Kunden, die eine *spezifisches Element*,
 
-* Wie wahrscheinlich ist es, dass sie einen weiteren Kauf tätigen?
+* Wie hoch ist die Wahrscheinlichkeit, dass sie einen weiteren Kauf tätigen?
 * Wie lange dauert es, bis sie einen weiteren Kauf tätigen?
 * Wie viele Bestellungen haben Kunden im Schnitt kurz-/langfristig aufgegeben?
 * Welchen durchschnittlichen Umsatz erzielen Kunden kurz-/langfristig?
 
 ## Empfohlene Metriken
 
-Bei der Erstellung von Kundenanalysen zur Neukauf-Aktivität empfehlen wir die Verwendung der folgenden Metriken:
+Bei der Erstellung von Kundenanalysen zur Neukauf-Aktivität empfiehlt Adobe die Verwendung der folgenden Metriken:
 
 ### Wiederholungsreihenwahrscheinlichkeit
 
-Diese Kennzahl ist definiert als die Gesamtzahl der wiederkehrenden Bestellungen in Prozent der Gesamtbestellungen. Mit anderen Worten, dies ist die Wahrscheinlichkeit, dass eine Bestellung von einer anderen Bestellung gefolgt wird. Diese Kennzahl identifiziert Elemente, die Kunden wahrscheinlich dazu verleiten, zu Ihrem Geschäft zurückzukehren.
+Diese Kennzahl ist definiert als die Gesamtzahl der wiederkehrenden Bestellungen in Prozent der Gesamtbestellungen. Mit anderen Worten, dies ist die Wahrscheinlichkeit, dass einer Bestellung eine andere Bestellung folgt. Diese Kennzahl identifiziert Elemente, die Kunden wahrscheinlich dazu verleiten, zu Ihrem Geschäft zurückzukehren.
 
 ### Durchschnittliche Anzahl der aufgegebenen Bestellungen
 
@@ -42,7 +42,7 @@ Diese Kennzahl zeigt die Bestellfrequenz des Kunden oder die Zeit an, die es dau
 
 ## Das heutige Beispiel: Kaffeeprodukte
 
-Beachten Sie die oben genannten Metriken. Sehen wir uns ein Beispiel für Kaffeeprodukte an.
+Beachten Sie die oben genannten Metriken und sehen Sie sich ein Beispiel für Kaffeeprodukte an.
 
 | **Produktname** | **Wiederholungsreihenwahrscheinlichkeit** | **Durchschnittliche Anzahl der Bestellungen über die Lebensdauer** | **Durchschnittlicher Umsatz während der Lebensdauer** | **Mittlere Zeit bis nächste Bestellung** |
 |-----|-----|-----|-----|-----|
@@ -50,9 +50,9 @@ Beachten Sie die oben genannten Metriken. Sehen wir uns ein Beispiel für Kaffee
 | Kaffeekapseln | 93.82% | 8.68 | $479.98 | 63.48 Tage |
 | Kaffeebohnen | 41.92% | 6.07 | $99.82 | 27.31 Tage |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-Nachdem wir nun über unsere Daten verfügen, sollten wir uns ansehen, was dies für jede unserer Metriken bedeuten könnte.
+Nachdem Sie nun über Ihre Daten verfügen, sollten Sie sich ansehen, was dies für jede Ihrer Metriken bedeuten könnte.
 
 ### Wiederholungsreihenwahrscheinlichkeit
 
@@ -62,7 +62,7 @@ Da sich Kunden, die die Brauerei kaufen, verpflichtet fühlen, in Zukunft die en
 
 ### Durchschnittliche Anzahl der Bestellungen über die Lebensdauer
 
-Auf der Grundlage der oben genannten Daten können wir feststellen, dass Personen, die die Brauerei oder Kapseln kaufen, im Durchschnitt mehr Käufe getätigt haben als Kunden, die Kaffeebohnen gekauft haben.
+Auf der Grundlage der oben genannten Daten können Sie sehen, dass Personen, die die Brauerei oder Kapseln kaufen, im Durchschnitt mehr Einkäufe getätigt haben als Kunden, die Kaffeebohnen gekauft haben.
 
 ### Durchschnittlicher Umsatz während der Kundenlebensdauer
 
@@ -70,14 +70,14 @@ Kunden, die die Brauerei erwerben, haben den höchsten durchschnittlichen Umsatz
 
 ### Zeit bis zur nächsten Bestellung
 
-Bei Kunden, die Kaffeekapseln gekauft haben, kann die Hälfte innerhalb von 2 Monaten eine Wiederholungsbestellung tätigen. Bei Kunden, die Kaffeebohnen gekauft haben, kann die Hälfte jedoch innerhalb von etwa 1 Monat eine erneute Bestellung tätigen. Dies kann daran liegen, dass Menschen, die Kapseln bestellen, entweder (1) nicht so viel Kaffee trinken oder (2) Bestellungen in loser Schüttung aufgeben (z. B. indem sie zwei Monate Kaffee in einer Bestellung kaufen).
+Bei Kunden, die Kaffeekapseln gekauft haben, kann die Hälfte innerhalb von etwa zwei Monaten eine Wiederholungsbestellung tätigen. Bei Kunden, die Kaffeebohnen gekauft haben, kann die Hälfte jedoch innerhalb von etwa einem Monat wieder bestellen. Dies kann daran liegen, dass Menschen, die Kapseln bestellen, entweder (1) nicht so viel Kaffee trinken oder (2) Bestellungen in loser Schüttung aufgeben (z. B. zwei Monate Kaffee in einer Bestellung kaufen).
 
 ## Welche anderen Analysen kann ich erstellen?
 
-Mithilfe der in diesem Artikel beschriebenen Metriken können Sie auch weitere nützliche Repkaufanalyse erstellen. Beispielsweise können wir auch sehen, wie Kunden zurückkaufen **dasselbe Element** - wenn sie beispielsweise regelmäßig Nachfüllungen kaufen. Kapseln und Kaffeebohnen können regelmäßig neu gekauft werden, es wäre jedoch unerwartet, wenn Kunden den Kaffee-Brauer erneut kaufen würden. Wenn sich Ihr Unternehmen auf Nachbearbeitung oder Wiederaufstockung konzentriert, wäre diese Analyse äußerst nützlich.
+Mithilfe der in diesem Artikel beschriebenen Metriken können Sie auch weitere nützliche Neukaufsanalysen erstellen. Sie können beispielsweise auch sehen, wie Kunden zurückkaufen **dasselbe Element** - wenn sie beispielsweise regelmäßig Nachfüllungen kaufen. Kapseln und Kaffeebohnen können regelmäßig neu gekauft werden, es wäre jedoch unerwartet, wenn Kunden den Kaffee-Brauer erneut kaufen würden. Wenn sich Ihr Unternehmen auf Nachbearbeitung oder Wiederaufstockung konzentriert, wäre diese Analyse nützlich.
 
 Zusätzlich zur Analyse des Kaufverhaltens Ihrer Kunden können Sie auch Analysen erstellen, die sich auf die Kundenloyalität beziehen. Erwägen Sie die Analyse von Mustern in der Kundenabwanderung - wo verlassen Ihre Kunden Ihre Site und kommen nicht zurück? Wie schnell ist das passiert?
 
-Nachdem Sie ermittelt haben, warum die Abwanderung stattfindet, können Sie Ihre Analyse verwenden, um eine `reactivation` Kampagne. Mithilfe dieser Daten können Sie Benutzer identifizieren, die inaktiv geworden sind, wie lange es seit ihrem letzten Besuch ist, was ihr letzter Kauf war usw. Auf diese Weise können Sie umsetzbare Entscheidungen treffen, die Ihre Kunden zur Rückkehr bewegen.
+Nachdem Sie ermittelt haben, warum die Abwanderung stattfindet, können Sie Ihre Analyse verwenden, um eine `reactivation` Kampagne. Mithilfe dieser Daten können Sie Benutzer identifizieren, die inaktiv geworden sind, wie lange es seit ihrem letzten Besuch ist, was ihr letzter Kauf war usw. Auf diese Weise können Sie umsetzbare Entscheidungen treffen, die Ihre Kunden dazu verleiten, zurückzukehren.
 
 Hilfe zur Analyse: [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

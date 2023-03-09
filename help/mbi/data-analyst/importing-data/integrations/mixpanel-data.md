@@ -2,9 +2,9 @@
 title: Erwartete Mixpanel-Daten
 description: Die wichtigsten Datentabellen, die Sie aus Mixpanel in Ihre [!DNL MBI] -Konto.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Nachher [Sie haben Ihre [!DNL Mixpanel] account](../integrations/mixpanel.md), können Sie die [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) zur einfachen Nachverfolgung relevanter Datenfelder für die Analyse.
 
-In diesem Artikel untersuchen wir die wichtigsten Datentabellen, aus denen Sie importieren können [!DNL Mixpanel] in [!DNL MBI] -Konto. Die folgenden Tabellen werden in Ihrem Data Warehouse erstellt, nachdem Mixpanel verbunden wurde. Um alle für die Verfolgung verfügbaren Felder anzuzeigen, klicken Sie auf die Links in der Tabellennamenspalte.
+In diesem Artikel werden die wichtigsten Datentabellen untersucht, aus denen Sie importieren können. [!DNL Mixpanel] in [!DNL MBI] -Konto. Die folgenden Tabellen werden in Ihrer Data Warehouse erstellt, nachdem Mixpanel verbunden wurde. Um alle für die Verfolgung verfügbaren Felder anzuzeigen, klicken Sie auf die Links in der Tabellennamenspalte.
 
 >[!NOTE]
 >
@@ -21,11 +21,11 @@ In diesem Artikel untersuchen wir die wichtigsten Datentabellen, aus denen Sie i
 
 | **Tabellenname** | **Beschreibung** |
 |-----|-----|
-| [`mixpanel\_export`](https://mixpanel.com/docs/api-documentation/exporting-raw-data-you-inserted-into-mixpanel#datafeed) | Diese Tabelle enthält Rohdaten zu Ereignissen, einschließlich Ereignis-, Ereignis- und Plattform-Bucket. |
-| [`mixpanel\_funnels`](https://mixpanel.com/docs/api-documentation/data-export-api#funnels-default) | Diese Tabelle enthält Daten zu Ihren Trichter, einschließlich der Trichterkennung, der Trichterlänge (Anzahl der Tage, die der Benutzer den Trichter abschließen muss) sowie des Start- und Enddatums des Trichters. |
-| [`mixpanel\_engage`](https://mixpanel.com/docs/api-documentation/data-export-api#engage-default) | Dies enthält Daten aus People Analytics, einschließlich Sitzungs-IDs, Seiten- und Benutzerinformationen sowie Datum/Uhrzeit der letzten Anzeige des Benutzers. |
+| [`mixpanel\_export`](https://developer.mixpanel.com/reference/raw-data-export-api#datafeed) | Diese Tabelle enthält Rohdaten zu Ereignissen, einschließlich Ereignis-, Ereignis- und Plattform-Bucket. |
+| [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | Diese Tabelle enthält Daten zu Ihren Trichter, einschließlich der Trichterkennung, der Trichterlänge (Anzahl der Tage, die der Benutzer den Trichter abschließen muss) sowie des Start- und Enddatums des Trichters. |
+| [`mixpanel\_engage`](https://developer.mixpanel.com/reference/raw-data-export-api#engage-default) | Dies enthält Daten aus People Analytics, einschließlich Sitzungs-IDs, Seiten- und Benutzerinformationen sowie Datum/Uhrzeit der letzten Anzeige des Benutzers. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Verwandte Dokumentation
 

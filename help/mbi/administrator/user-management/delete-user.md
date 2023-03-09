@@ -2,9 +2,9 @@
 title: Benutzer löschen oder reaktivieren
 description: Erfahren Sie, wie Sie eine [!DNL MBI] Benutzer.
 exl-id: 0590275d-3329-40fb-8be1-4a700438338d
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ Benutzer können gelöscht werden, indem Sie oben rechts in das Dropdown-Menü &
 
 >[!NOTE]
 >
->Bevor Sie jemanden löschen, sollten Sie überprüfen, ob Sie Grafiken behalten möchten. [!DNL MBI] -Support kann entweder die Dashboards des Benutzers für Sie freigeben, sodass Sie nur das speichern können, was Sie benötigen, oder wir können alle Dashboards auf Ihr Konto übertragen, wodurch Sie das Eigentum übertragen. [Kontakt](../../guide-overview.md) und wir helfen Ihnen dabei, die beste Option zu finden.
+>Bevor Sie jemanden löschen, sollten Sie überprüfen, ob Sie Grafiken behalten möchten. [!DNL MBI] -Unterstützung kann die Dashboards des Benutzers für Sie freigeben, sodass Sie nur das speichern können, was Sie benötigen. Der Support kann auch alle Dashboards auf Ihr Konto übertragen, wodurch das Eigentum an Sie übertragen wird. [Kontakt](../../guide-overview.md) für Hilfe.
 
 ## Gelöschte Benutzer erneut aktivieren
 
-Sie können den Benutzer reaktivieren, indem Sie einen neuen Benutzer mit derselben E-Mail-Adresse erstellen. Sie erhalten eine E-Mail, um ein neues Kennwort zu erstellen. Ihre Dashboards und Einstellungen werden bei der Anmeldung wiederhergestellt.
+Sie können den Benutzer reaktivieren, indem Sie einen Benutzer mit derselben E-Mail-Adresse erstellen. Sie erhalten eine E-Mail, um ein neues Kennwort zu erstellen. Ihre Dashboards und Einstellungen werden bei der Anmeldung wiederhergestellt.
 
 Wenn Sie nur die Dashboards dieses Benutzers in ein anderes Benutzerkonto übertragen müssen, gehen Sie wie folgt vor:
 

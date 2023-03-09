@@ -2,24 +2,24 @@
 title: Überprüfen des Aktualisierungszyklusstatus
 description: Erfahren Sie, wie Sie den Status des Aktualisierungszyklus überprüfen.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
 # Fortschritt des Aktualisierungszyklus
 
-Wenn Sie sich bei Ihrem [!DNL MBI] Dashboard gibt es mehrere Möglichkeiten, den Status Ihres letzten Aktualisierungszyklus zu überprüfen. Alles hängt vom Typ [Benutzerberechtigungen](../administrator/user-management/user-management.md) haben.
+Wenn Sie sich bei Ihrem [!DNL MBI] Dashboard gibt es mehrere Möglichkeiten, den Status Ihres letzten Aktualisierungszyklus zu überprüfen. Alles hängt vom Typ [Benutzerberechtigungen](../administrator/user-management/user-management.md) das du hast.
 
 ## Warum sollte ich den Status des Aktualisierungszyklus überprüfen?
 
-Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die Daten in Ihrem [!DNL MBI] -Konto. Wenn [Ergebnisse, die nicht Ihren Erwartungen entsprechen](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)z. B. täglicher Umsatz in [!DNL MBI] nicht mit dem übereinstimmen, was Sie in Ihrer E-Commerce-Plattform oder in Ihrer [[!DNL Google] E-Commerce-Umsätze](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) Sie können den letzten Datenpunkt überprüfen, um festzustellen, ob das Problem nach Abschluss einer Aktualisierung behoben wird.
+Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die Daten in Ihrem [!DNL MBI] -Konto. Wenn [Ergebnisse, die nicht Ihren Erwartungen entsprechen](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)z. B. täglicher Umsatz in [!DNL MBI] nicht mit dem übereinstimmen, was Sie in Ihrer E-Commerce-Plattform oder in Ihrer [[!DNL Google] E-Commerce-Umsätze](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) Sie können den letzten Datenpunkt überprüfen, um festzustellen, ob das Problem nach Abschluss einer Aktualisierung behoben wurde.
 
 ## [!UICONTROL Read-Only] und [!UICONTROL Standard]** Benutzer
 
-`Read-only` -Benutzer können sich bei ihrem Dashboard anmelden und sehen, wie kürzlich die Daten aktualisiert wurden, indem sie den Mauszeiger über das Symbol oben rechts auf der Seite bewegen. Dadurch wird angezeigt, wann der letzte Datenpunkt abgerufen wurde.
+`Read-only` -Benutzer können sich bei ihrem Dashboard anmelden und sehen, wie kürzlich die Daten aktualisiert wurden, indem sie den Mauszeiger über das Symbol oben rechts auf der Seite bewegen. Dies zeigt, wann der letzte Datenpunkt abgerufen wurde.
 
 ![](../../mbi/assets/last-success-data.png)
 
@@ -33,7 +33,7 @@ Für weitere Details können Admin-Benutzer auf **[!UICONTROL Manage Data]** > *
 
 Auf dieser Seite werden der aktuelle Aktualisierungsstatus und der Zeitpunkt der letzten abgeschlossenen Aktualisierung angezeigt.
 
-Wenn derzeit eine Aktualisierung durchgeführt wird, wird ein Link angezeigt, über den nach Abschluss der Aktualisierung eine E-Mail-Benachrichtigung angefordert werden kann.
+Wenn eine Aktualisierung ausgeführt wird, wird ein Link angezeigt, über den nach Abschluss der Aktualisierung eine E-Mail-Benachrichtigung angefordert werden kann.
 
 Wenn keine Aktualisierung ausgeführt wird, wird ein Link angezeigt, über den das Starten einer Aktualisierung erzwungen werden kann.
 

@@ -2,9 +2,9 @@
 title: Spalte "Ereignisnummer berechnet"
 description: Erfahren Sie mehr über den Zweck und die Verwendung der Spalte Ereignisnummer berechnet .
 exl-id: c234621e-2e68-4e63-8b0d-7034d1b5fe1f
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ In diesem Thema werden Zweck und Verwendung der `Event Number` in der Spalte **[
 
 Die `Event Number` Spaltentyp: identifiziert die Sequenz, in der Ereignisse für eine bestimmte **Ereignisinhaber**, wie z. B. `customer` oder `user`. Wenn Sie mit SQL vertraut sind, ist dieser Spaltentyp mit dem Szenario `RANK` -Funktion. Sie kann verwendet werden, um Unterschiede im Verhalten zwischen Erstereignissen, Wiederholungsereignissen oder n-ten Ereignissen in Ihren Daten zu beobachten.
 
-Bei &quot;ties&quot;enthält diese Spalte die gleichen **rank** für die verknüpften Ereignisse und überspringt die nachfolgenden Zahlen. Wenn sie beispielsweise die Zahlen 5,8,10,10,12 einstuft, wären die Ränge 1,2,3,3,5.
+Im Falle einer Krawatte enthält diese Spalte die gleiche **rank** für die verknüpften Ereignisse und überspringt die nachfolgenden Zahlen. Wenn sie beispielsweise die Zahlen 5,8,10,10,12 einstuft, wären die Ränge 1,2,3,3,5.
 
 Der häufigste Anwendungsfall dieser Spalte ist die Analyse von Erstkäufern und Wiederholungskäufern. Erstmalige Käufer werden durch Hinzufügen eines Filters (zu einer Metrik oder einem Bericht) zu `Customer's order number` = 1. `Customer's order number` ist eine Spalte des Typs `Event Number`.
 
@@ -42,8 +42,8 @@ Im Folgenden finden Sie einige Anweisungen zum Erstellen eines `Event Number` co
 1. Navigieren Sie zum **[!UICONTROL Manage Data > Data Warehouse]** Seite.
 1. Navigieren Sie zu der Tabelle, für die Sie diese Spalte erstellen möchten.
 1. Klicken **[!UICONTROL Create a Column]** und wählen Sie die `EVENT_NUMBER (…)` Spaltentyp: unter `Same Table` Abschnitt.
-1. Das erste Dropdown-Menü `Event Owner` gibt die Entität an, für die der Rang bestimmt werden soll. Im Falle von `Customer's order number`, eine Kunden-ID wie `customer_id` oder `customer_email` wäre `Event Owner`.
-1. Das zweite Dropdown-Menü `Event Rank` gibt die Spalte an, die die Sequenz erzwingt, die den Rang der Zeile bestimmt. Im Falle von `Customer's order number`, die `created_at` timestamp `Event Rank`.
+1. Das erste Dropdown-Menü `Event Owner` gibt die Entität an, für die der Rang bestimmt werden soll. In dem Fall, in dem `Customer's order number`, eine Kunden-ID wie `customer_id` oder `customer_email` wäre `Event Owner`.
+1. Das zweite Dropdown-Menü `Event Rank` gibt die Spalte an, die die Sequenz erzwingt, die den Rang der Zeile bestimmt. In dem Fall, in dem `Customer's order number`, die `created_at` timestamp `Event Rank`.
 1. Unter dem `Options` Dropdown-Liste können Sie Filter hinzufügen, um Zeilen von der Berücksichtigung auszuschließen. Die ausgeschlossenen Zeilen haben eine `NULL` -Wert für diese Spalte.
 1. Geben Sie der Spalte einen Namen und klicken Sie auf **[!UICONTROL Save]**.
 1. Die Spalte kann verwendet werden _sofort._

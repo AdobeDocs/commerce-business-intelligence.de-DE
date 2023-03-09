@@ -2,9 +2,9 @@
 title: MySQL über cPanel verbinden
 description: Erfahren Sie, wie Sie MySQL über cPanel verbinden.
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: e4ac176492913623ae461484c8ef2abe034e5f62
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Es wird dringend empfohlen, SSH oder eine andere Form der Verschlüsselung zu verwenden, um Ihre Daten zu schützen! Wenn dies keine Option ist, können Sie weiterhin direkt eine Verbindung herstellen [!DNL MBI] zu Ihrer Datenbank mithilfe der Anweisungen in diesem Artikel.
+>Adobe empfiehlt die Verwendung von SSH oder einer anderen Verschlüsselungsform zur Sicherung Ihrer Daten! Wenn dies keine Option ist, können Sie weiterhin direkt eine Verbindung herstellen [!DNL MBI] zu Ihrer Datenbank mithilfe der Anweisungen in diesem Artikel.
 
-In diesem Artikel führen wir Sie durch die direkte Verbindung Ihrer MySQL-Datenbank zu [!DNL MBI] unter Verwendung von cPanel&quot;. Dieser Prozess kann auch verwendet werden, um eine Verbindung herzustellen [!DNL Adobe Commerce] und anderen MySQL-basierten eCommerce-Datenbanken, um [!DNL MBI].
+Dieser Artikel führt Sie durch die direkte Verbindung Ihrer MySQL-Datenbank mit [!DNL MBI] using `cPanel`. Dieser Prozess kann auch verwendet werden, um eine Verbindung herzustellen [!DNL Adobe Commerce] und anderen MySQL-basierten eCommerce-Datenbanken, um [!DNL MBI].
 
 1. Erstellen Sie eine [!DNL MBI] MySQL-Benutzer in `cPanel`
 1. Eingabe von Verbindungs- und Benutzerinformationen in [!DNL MBI]
@@ -41,7 +41,7 @@ Erste Schritte.
    ![](../../../assets/create-mbi-mysql-user-cpanel.png)
 
 1. Klicken **[!UICONTROL Create User]**.
-1. Nachdem Sie den Benutzer erstellt haben, müssen Sie ihn mit einer Datenbank verknüpfen. Gehen Sie zurück zu `Add New User` -Abschnitt - siehe Einstellungen für `Add User to Database?` Das brauchen wir.
+1. Nachdem Sie den Benutzer erstellt haben, müssen Sie ihn mit einer Datenbank verknüpfen. Gehen Sie zurück zu `Add New User` -Abschnitt - siehe Einstellungen für `Add User to Database?` Das ist es, was du brauchst.
 1. Im `User` in diesem Abschnitt den von Ihnen erstellten Benutzer auswählen.
 1. Im `Database` in diesem Abschnitt die Datenbank auswählen, zu der Sie eine Verbindung herstellen möchten [!DNL MBI].
 1. Klicken **[!UICONTROL Add]**.
@@ -56,9 +56,9 @@ Geben Sie die folgenden Informationen auf dieser Seite im `Database Connection` 
 * `Username`: Der Benutzername für die [!DNL MBI] MySQL-Benutzer
 * `Password`: Das Kennwort für die [!DNL MBI] MySQL-Benutzer
 * `Port`: MySQL-Port auf Ihrem Server (`3306` standardmäßig)
-* `Host`: Die öffentliche Adresse der `MySQL` server [!DNL MBI] wird eine Verbindung zu herstellen. Dies ist normalerweise die URL, mit der Sie sich anmelden `cPanel`.
+* `Host`: Die öffentliche Adresse der `MySQL` server [!DNL MBI] stellt Verbindungen her. Dies ist normalerweise die URL, mit der Sie sich anmelden `cPanel`.
 
-Wenn Sie eine [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)müssen Sie auch die Verschlüsselungsinformationen eingeben. Legen Sie die `Encrypted` Umschalten auf `Yes` , um das Formular anzuzeigen.
+Wenn Sie eine [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)müssen Sie die Verschlüsselungsinformationen eingeben. Legen Sie die `Encrypted` Umschalten auf `Yes` , um das Formular anzuzeigen.
 
 * `Connection Type`: Legen Sie hier fest `SSH Tunnel`
 * `Remote Address`: Die IP-Adresse oder der Hostname des Servers [!DNL MBI] in den

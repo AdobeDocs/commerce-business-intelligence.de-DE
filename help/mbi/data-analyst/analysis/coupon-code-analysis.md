@@ -2,16 +2,16 @@
 title: Couponleistung
 description: Erfahren Sie mehr über die Analyse Ihrer Couponleistung.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
 
 # Erweiterte Coupon-Code-Analyse
 
-Das Verständnis der Couponleistung Ihres Unternehmens ist eine interessante Möglichkeit, Ihre Bestellungen zu unterteilen und auch Ihre Kunden besser zu verstehen. Dieser Artikel führt Sie durch die Schritte zum Erstellen von Analysen, um zu verstehen, welche Kunden Sie durch die Verwendung von Coupons erwerben, wie sie die allgemeine Nutzung von Coupons durchführen und verfolgen.
+Das Verständnis der Couponleistung Ihres Unternehmens ist eine interessante Möglichkeit, Ihre Bestellungen zu unterteilen und auch Ihre Kunden besser zu verstehen. Dieser Artikel führt Sie durch die Schritte zum Erstellen von Analysen, um zu verstehen, welche Kunden Sie mit Coupons erwerben, wie sie die allgemeine Nutzung von Coupons durchführen und verfolgen.
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
@@ -34,7 +34,8 @@ Spalten, die unabhängig von der Gastbestellungsrichtlinie erstellt werden solle
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
-   * [!UICONTROL Datatype]:: `String`
+   * 
+      [!UICONTROL Datatype]: `String`
    * [!UICONTROL Calculation]: Fall, wenn `A` null ist then `No coupon` else `Coupon` end
 
 
@@ -43,8 +44,8 @@ Spalten, die unabhängig von der Gastbestellungsrichtlinie erstellt werden solle
    * [!UICONTROL Inputs]:
       * `A`: `customer\_id`
       * `B`: `coupon\_code`
-   * [!UICONTROL Datatype]: Zeichenfolge
-   * [!UICONTROL Calculation]:: `concat(A,' - ',B)`
+   * [!UICONTROL Datatype] Zeichenfolge
+   * [!UICONTROL Calculation]: `concat(A,' - ',B)`
 
 
 * **Anzahl der Bestellungen mit diesem Gutschein**
@@ -76,24 +77,27 @@ Zusätzliche Spalten, die erstellt werden, wenn Gastaufträge NICHT unterstützt
       * [!UICONTROL Filter]:
          * `A`: `Orders we count`
          * `B`: `Order has coupon applied? (Coupon/No coupon) = Coupon`
-   * **Coupon-Akquise-Kunde oder Nicht-Coupon-Akquise-Kunde**
+   * **Gutscheinakquise-Kunde oder Nicht-Gutschein-Akquise-Kunde**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-      * [!UICONTROL Datatype]:: `String`
-      * [!UICONTROL Calculation]: **Fall, in dem A=&#39;Coupon&#39;, dann &#39;Coupon-Akquise-Kunde&#39; und anschließend &#39;Nicht Coupon-Akquise-Kunde&#39; enden**
+      * 
+         [!UICONTROL Datatype]: `String`
+      * [!UICONTROL Calculation]: **Fall, in dem A=&#39;Coupon&#39;, dann der &#39;Coupon-Akquise-Kunde&#39; und der &#39;Nicht-Coupon-Akquise-Kunde&#39; enden**
    * **Prozentsatz der Bestellungen des Kunden mit Coupon**
       * [!UICONTROL Column type]: `Same Table => CALCULATION`
       * [!UICONTROL Inputs]:
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
-      * [!UICONTROL Datatype]:: `Decimal`
+      * 
+         [!UICONTROL Datatype]: `Decimal`
       * [!UICONTROL Calculation]: **Wenn A null oder B null oder B=0 ist, dann null andernfalls A/B-Ende**
    * **Verwendung des Gutscheins des Kunden**
       * [!UICONTROL Column type]: `Same Table => Calculation`
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
-      * [!UICONTROL Datatype]:: `String`
+      * 
+         [!UICONTROL Datatype]: `String`
       * [!UICONTROL Calculation]: **Wenn A null ist, dann null, wenn A=0 ist, dann &quot;Coupon nie verwendet&quot;, wenn A&lt;0.5, dann &quot;Nahezu vollständiger Preis&quot;, wenn A=0.5, dann &quot;50/50&quot;, wenn A=1, dann &quot;Coupons only&quot;, wenn A>0.5 und dann &quot;Meist Coupon&quot;, sonst &quot;Nicht definiert&quot; enden**
 
 
@@ -123,12 +127,13 @@ Zusätzliche Spalten, die erstellt werden, wenn Gastaufträge NICHT unterstützt
    * **Coupon des Kunden der ersten Bestellung**{::}**-** , die von einem Analytiker im Rahmen Ihres \[COUPON ANALYSIS\]-Tickets erstellt wurden
 
 * **Anzahl der verwendeten Gutscheine während der Lebensdauer des Kunden**{::}**-** , die von einem Analytiker im Rahmen Ihres \[COUPON ANALYSIS\]-Tickets erstellt wurden
-* **Coupon-Akquise-Kunde oder Nicht-Coupon-Akquise-Kunde**
+* **Gutscheinakquise-Kunde oder Nicht-Gutschein-Akquise-Kunde**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
-   * [!UICONTROL Datatype]:: `String`
-   * [!UICONTROL Calculation]: **Fall, in dem A=&#39;Coupon&#39;, dann &#39;Coupon-Akquise-Kunde&#39; und anschließend &#39;Nicht Coupon-Akquise-Kunde&#39; enden**
+   * 
+      [!UICONTROL Datatype]: `String`
+   * [!UICONTROL Calculation]: **Fall, in dem A=&#39;Coupon&#39;, dann der &#39;Coupon-Akquise-Kunde&#39; und der &#39;Nicht-Coupon-Akquise-Kunde&#39; enden**
 
 
 * **Prozentsatz der Bestellungen des Kunden mit Coupon**
@@ -136,7 +141,8 @@ Zusätzliche Spalten, die erstellt werden, wenn Gastaufträge NICHT unterstützt
    * [!UICONTROL Inputs]:
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
-   * [!UICONTROL Datatype]:: `Decimal`
+   * 
+      [!UICONTROL Datatype]: `Decimal`
    * [!UICONTROL Calculation]: **Wenn A null oder B null oder B=0 ist, dann null andernfalls A/B-Ende**
 
 
@@ -144,7 +150,8 @@ Zusätzliche Spalten, die erstellt werden, wenn Gastaufträge NICHT unterstützt
    * [!UICONTROL Column type]: `Same Table => Calculation`
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
-   * [!UICONTROL Datatype]:: `String`
+   * 
+      [!UICONTROL Datatype]: `String`
    * [!UICONTROL Calculation]: **Wenn A null ist, dann null, wenn A=0 ist, dann &quot;Coupon nie verwendet&quot;, wenn A&lt;0.5, dann &quot;Nahezu vollständiger Preis&quot;, wenn A=0.5, dann &quot;50/50&quot;, wenn A=1, dann &quot;Coupons only&quot;, wenn A>0.5 und dann &quot;Meist Coupon&quot;, sonst &quot;Nicht definiert&quot; enden**
 
 
@@ -237,7 +244,7 @@ Zusätzliche Spalten, die erstellt werden, wenn Gastaufträge NICHT unterstützt
 
 >[!NOTE]
 >
->Wenn Sie eine große Anzahl von Couponcodes haben, wie es viele unserer Kunden tun, sollten Sie einen Top-/Bottom-Ansatz anwenden, z. B. Top 10, sortiert nach durchschnittlichem Umsatz während der Lebensdauer
+>Wenn Sie wie viele Kunden über viele Couponcodes verfügen, sollten Sie einen Top-/Bottom-Ansatz (z. B. Top 10) anwenden, der nach dem durchschnittlichen Umsatz während der Lebensdauer sortiert ist.
 
 * **Wiederholungsbestellwahrscheinlichkeit: Couponakquisitionen**
    * [!UICONTROL Metric]: `Number of orders`
@@ -251,7 +258,7 @@ Zusätzliche Spalten, die erstellt werden, wenn Gastaufträge NICHT unterstützt
       [!UICONTROL Formel]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
-   * Wählen Sie eine statistisch signifikante Zahl aus `Customer's by lifetime orders` Diagramm. Wenn wir uns die Grafik ansehen, suchen wir in der Regel nach Bestellnummern mit 30 oder mehr Kunden im Behälter. Je nach Datensatz kann dies eine große Zahl sein. Sie können also 1-10 hinzufügen.
+   * Wählen Sie eine statistisch signifikante Zahl aus `Customer's by lifetime orders` Diagramm. Wenn Sie sich die Grafik ansehen, besteht eine gute Regel darin, nach Bestellnummern mit 30 oder mehr Kunden im Behälter zu suchen. Je nach Datensatz kann dies eine große Zahl sein. Sie können also 1-10 hinzufügen.
 
 
 * Metrik `A`: `Number of orders`
@@ -291,7 +298,7 @@ Zusätzliche Spalten, die erstellt werden, wenn Gastaufträge NICHT unterstützt
 * **Couponverwendungsrate von Coupons erworbener Kunden (Wiederholungsaufträge)**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filter]:
-      * Gutscheinakquise-Kunde oder Nicht-Gutscheinakquise-Kunde = Couponakquise-Akquise
+      * Couponakquise-Kunde oder Nicht-Couponakquise-Kunde = Couponakquise-Akquise
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Filter]:
       * Kundennummer > 1
@@ -510,6 +517,6 @@ Zusätzliche Spalten, die erstellt werden, wenn Gastaufträge NICHT unterstützt
 >
 >Die Menge von 10 für &quot;Anzahl der Bestellungen mit diesem Gutschein&quot;ist willkürlich. Sie können die für diesen Filter am besten geeignete Menge verwenden.
 
-Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Endergebnis kann wie das Bild oben auf der Seite aussehen.
+Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie das Bild oben auf der Seite aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach unser Professional Services-Team einbinden möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

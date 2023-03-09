@@ -2,9 +2,9 @@
 title: sales_order_item table
 description: Erfahren Sie, wie Sie mit der Tabelle sales_order_item arbeiten.
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
-source-git-commit: 9974cc5c5cf89829ca522ba620b8c0c2d509610c
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -29,19 +29,19 @@ Daher ist es möglich, über den Verkauf von Produkten entweder auf einfacher Eb
 
 | **Spaltenname** | **Beschreibung** |
 |----|----|
-| `base_price` | Preis einer einzelnen Einheit eines Erzeugnisses zum Zeitpunkt des Verkaufs nach [Katalogpreisregeln, gestaffelte Rabatte und Sonderpreise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) vor Anwendung von Steuern, Versand- oder Warenkorbrabatten in der Basiswährung des Stores |
-| `created_at` | Erstellungszeitstempel des Bestellelements, der normalerweise lokal in UTC gespeichert wird. Abhängig von Ihrer Konfiguration in [!DNL MBI], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL MBI] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
+| `base_price` | Preis einer einzelnen Einheit eines Erzeugnisses zum Zeitpunkt des Verkaufs nach [Katalogpreisregeln, gestaffelte Rabatte und Sonderpreise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) werden angewendet und bevor Steuern, Versand- oder Warenkorbrabatte angewendet werden. Dies wird in der Basiswährung des Stores dargestellt |
+| `created_at` | Erstellungszeitstempel des Bestellelements, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL MBI], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL MBI] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
 | `item_id` (PK) | Eindeutige Kennung für die Tabelle |
 | `name` | Textname des Bestellelements |
 | `order_id` | `Foreign key` mit `sales_order` Tabelle. Mitglied werden `sales_order.entity_id` zur Bestimmung der mit dem Bestellelement verknüpften Bestellattribute |
-| `parent_item_id` | `Foreign key` , das ein einfaches Produkt mit seinem übergeordneten Bundle oder konfigurierbaren Produkt verknüpft. Mitglied werden `sales_order_item.item_id` , um übergeordnete Produktattribute zu bestimmen, die mit einem einfachen Produkt verknüpft sind. Bei übergeordneten Bestellelementen (d. h. Bundle- oder konfigurierbaren Produktarten) muss die `parent_item_id` wird `NULL` |
+| `parent_item_id` | `Foreign key` , das ein einfaches Produkt mit seinem übergeordneten Bundle oder konfigurierbaren Produkt verknüpft. Mitglied werden `sales_order_item.item_id` , um übergeordnete Produktattribute zu bestimmen, die mit einem einfachen Produkt verknüpft sind. Bei übergeordneten Bestellelementen (d. h. Bundle- oder konfigurierbaren Produktarten) muss die `parent_item_id` is `NULL` |
 | `product_id` | `Foreign key` mit `catalog_product_entity` Tabelle. Mitglied werden `catalog_product_entity.entity_id` zur Bestimmung der Produktattribute, die mit dem Bestellelement verknüpft sind |
 | `product_type` | Typ des verkauften Produkts. Potenzial [Produkttypen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html#product-types) include: einfach, konfigurierbar, gruppiert, virtuell, gebündelt und herunterladbar |
 | `qty_ordered` | Menge der zum Zeitpunkt des Verkaufs im Warenkorb für die jeweilige Bestellung enthaltenen Einheiten |
 | `sku` | Eindeutige Kennung für den gekauften Bestellartikel |
 | `store_id` | `Foreign key` mit `store` Tabelle. Mitglied werden `store.store_id` , um zu bestimmen, welche Commerce Store-Ansicht mit dem Bestellelement verknüpft ist |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Allgemeine berechnete Spalten
 
@@ -57,7 +57,7 @@ Daher ist es möglich, über den Verkauf von Produkten entweder auf einfacher Eb
 | `Order's status` | Status der Bestellung. Errechnet durch Verbinden `sales_order_item.order_id` nach `sales_order.entity_id` und die `status` field |
 | `Store name` | Name des Commerce-Stores, der mit dem Bestellelement verknüpft ist. Errechnet durch Verbinden `sales_order_item.store_id` nach `store.store_id` und die `name` field |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Allgemeine Metriken
 
@@ -66,13 +66,13 @@ Daher ist es möglich, über den Verkauf von Produkten entweder auf einfacher Eb
 | `Products ordered` | Die Gesamtmenge der zum Zeitpunkt des Verkaufs in den Warenkörben enthaltenen Erzeugnisse | `Operation: Sum`<br>`Operand: qty_ordered`<br>`Timestamp: created_at` |
 | `Revenue by products ordered` | Gesamtwert der Produkte, die zum Zeitpunkt des Verkaufs im Warenkorb enthalten waren, nach Anwendung von Katalogpreisregeln, gestaffelten Rabatten und Sonderpreisen sowie vor Anwendung von Steuern, Versand- oder Warenkorbrabatten | `Operation: Sum`<br>`Operand: Order item total value (quantity * price)`<br>`Timestamp: created_at` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## `Foreign Key` Verknüpfungspfade
 
 `catalog_product_entity`
 
-* Mitglied werden `catalog_product_entity` , um neue Spalten zu erstellen, die Produktattribute zurückgeben, die mit dem Bestellelement verknüpft sind.
+* Mitglied werden `catalog_product_entity` -Tabelle verwenden, um Spalten zu erstellen, die mit dem Bestellelement verknüpfte Produktattribute zurückgeben.
    * Pfad: `sales_order_item.product_id` (viele) => `catalog_product_entity.entity_id` (eins)
 
 `sales_order`
@@ -82,10 +82,10 @@ Daher ist es möglich, über den Verkauf von Produkten entweder auf einfacher Eb
 
 `sales_order_item`
 
-* Mitglied werden `sales_order_item` , um neue Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. Beachten Sie, dass Sie [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) Hilfe bei der Konfiguration dieser Berechnungen, wenn sie im Data Warehousen-Manager erstellt werden.
+* Mitglied werden `sales_order_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) Hilfe bei der Konfiguration dieser Berechnungen, wenn sie im Data Warehousen-Manager erstellt werden.
    * Pfad: `sales_order_item.parent_item_id` (viele) => `sales_order_item.item_id` (eins)
 
 `store`
 
-* Mitglied werden `store` , um neue Spalten zu erstellen, die Details zum Commerce-Store zurückgeben, der mit dem Bestellelement verknüpft ist.
+* Mitglied werden `store` -Tabelle verwenden, um Spalten zu erstellen, die Details zum Commerce-Store zurückgeben, der mit dem Bestellelement verknüpft ist.
    * Pfad: `sales_order_item.store_id` (viele) => `store.store_id` (eins)

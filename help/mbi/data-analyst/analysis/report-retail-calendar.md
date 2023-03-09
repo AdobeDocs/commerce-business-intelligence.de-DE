@@ -2,26 +2,26 @@
 title: Berichterstellung für einen Einzelhandelskalender
 description: Erfahren Sie, wie Sie die Struktur für die Verwendung eines 4-5-4-Einzelhandelskalenders in Ihrem [!DNL MBI] -Konto.
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 82882479d4d6bea712e8dd7c6b2e5b7715022cc3
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
 
 # Berichterstellung für einen Einzelhandelskalender
 
-In diesem Artikel zeigen wir, wie die Struktur für die Verwendung einer [4-5-4 Einzelhandelskalender](https://nrf.com/resources/4-5-4-calendar) in [!DNL MBI] -Konto. Der visuelle ReportBuilder bietet unglaublich flexible Zeiträume, Intervalle und unabhängige Einstellungen. Unser Team kann Ihnen auch helfen, den Starttag der Woche entsprechend Ihren Geschäftsvorlieben zu ändern. Diese Einstellungen funktionieren jedoch mit dem herkömmlichen Monatskalender.
+Dieser Artikel zeigt, wie die Struktur für die Verwendung einer [4-5-4 Einzelhandelskalender](https://nrf.com/resources/4-5-4-calendar) in [!DNL MBI] -Konto. Der visuelle ReportBuilder bietet unglaublich flexible Zeiträume, Intervalle und unabhängige Einstellungen. Diese Einstellungen funktionieren jedoch mit dem herkömmlichen Monatskalender.
 
-Da viele unserer Kunden ihren Kalender ändern, um Einkaufs- oder Rechnungsdaten zu verwenden, veranschaulichen die folgenden Schritte, wie Sie mit Ihren Daten arbeiten und Berichte mithilfe von Einzelhandelsterminen erstellen. Obwohl die folgenden Anweisungen auf den 4-5-4-Einzelhandelskalender verweisen, können Sie sie für jeden bestimmten Kalender ändern, den Ihr Team verwendet, egal ob es sich um einen finanziellen oder nur einen benutzerdefinierten Zeitrahmen handelt.
+Da viele Kunden ihren Kalender ändern, um Handels- oder Rechnungsdaten zu verwenden, veranschaulichen die folgenden Schritte, wie Sie mit Ihren Daten arbeiten und Berichte mithilfe von Einzelhandelsdaten erstellen. Obwohl die folgenden Anweisungen auf den 4-5-4-Einzelhandelskalender verweisen, können Sie sie für jeden bestimmten Kalender ändern, den Ihr Team verwendet, egal ob es sich um einen finanziellen oder nur einen benutzerdefinierten Zeitrahmen handelt.
 
-Bevor Sie beginnen, möchten Sie sich mit [Datei-Uploader](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) und stellen Sie sicher, dass Sie die `.csv` -Datei, sodass die Daten alle historischen Daten abdecken und die Daten in die Zukunft verschieben.
+Bevor Sie beginnen, müssen Sie sich mit [Datei-Uploader](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) und stellen Sie sicher, dass Sie die `.csv` -Datei. Dadurch wird sichergestellt, dass die Daten alle Ihre historischen Daten abdecken und die Daten in die Zukunft verschieben.
 
 Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Erste Schritte
 
-Sie können [herunterladen](../../assets/454-calendar.csv) a `.csv` Version des 4-5-4 Einzelhandelskalenders für die Einzelhandelsjahre 2014 bis 2017. Beachten Sie, dass Sie diese Datei möglicherweise entsprechend Ihrem internen Einzelhandelskalender anpassen und den Datumsbereich erweitern müssen, um Ihren historischen und aktuellen Zeitrahmen zu unterstützen. Verwenden Sie nach dem Herunterladen der Datei den Datei-Uploader, um eine Einzelhandelskalender-Tabelle in Ihrer [!DNL MBI] Data Warehouse. Wenn Sie eine unveränderte Version des 4-5-4-Einzelhandelskalenders verwenden, stellen Sie sicher, dass die Struktur und die Datentypen der Felder in dieser Tabelle mit Folgendem übereinstimmen:
+Sie können [herunterladen](../../assets/454-calendar.csv) a `.csv` Version des 4-5-4 Einzelhandelskalenders für die Einzelhandelsjahre 2014 bis 2017. Möglicherweise müssen Sie diese Datei entsprechend Ihrem internen Einzelhandelskalender anpassen und den Datumsbereich erweitern, um Ihren historischen und aktuellen Zeitrahmen zu unterstützen. Verwenden Sie nach dem Herunterladen der Datei den Datei-Uploader, um eine Einzelhandelskalender-Tabelle in Ihrer [!DNL MBI] Data Warehouse. Wenn Sie eine unveränderte Version des 4-5-4-Einzelhandelskalenders verwenden, stellen Sie sicher, dass die Struktur und die Datentypen der Felder in dieser Tabelle mit Folgendem übereinstimmen:
 
 | Spaltenname | Spaltendatentyp | Primärer Schlüssel |
 | --- | --- | --- |
@@ -33,7 +33,7 @@ Sie können [herunterladen](../../assets/454-calendar.csv) a `.csv` Version des 
 | `Month Name Retail` | `Text` (Bis zu 255 Zeichen) | `No` |
 | `Week Number of Month Retail` | `Whole Number` | `No` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Zu erstellende Spalten
 
@@ -91,8 +91,8 @@ Sie können [herunterladen](../../assets/454-calendar.csv) a `.csv` Version des 
    * **Erstellt\_at (Einzelhandelswoche)**
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
       * Pfad -
-         * [!UICONTROL Many]:sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00
-         * [!UICONTROL One]:Retail Calendar.Date Retail
+         * [!UICONTROL Many]: sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00
+         * [!UICONTROL One]: Einzelhandelskalender.Datum Einzelhandel
       * Wählen Sie eine [!UICONTROL table]: `Retail Calendar`
       * Wählen Sie eine [!UICONTROL column]: `Week Retail`
    * **Erstellt\_at (Einzelhandelsmonat)**
@@ -199,8 +199,8 @@ Hinweis: Für diese Analyse sind keine neuen Metriken erforderlich. Stellen Sie 
 
 ## Nächste Schritte
 
-Im obigen Abschnitt wird beschrieben, wie Sie einen Einzelhandelskalender so konfigurieren, dass er mit einer beliebigen Metrik kompatibel ist, die auf Ihrer `sales\_order` -Tabelle (z. B.`Revenue` und `Orders`), können Sie dies aber auch erweitern, um den Einzelhandelskalender für Metriken zu unterstützen, die auf einer beliebigen Tabelle basieren. Die einzige Anforderung besteht darin, dass diese Tabelle über ein gültiges Datum-Uhrzeit-Feld verfügt, das verwendet werden kann, um zur Einzelhandelskalender-Tabelle beizutreten.
+Im obigen Abschnitt wird beschrieben, wie Sie einen Einzelhandelskalender so konfigurieren, dass er mit einer beliebigen Metrik kompatibel ist, die auf Ihrer `sales\_order` -Tabelle (z. B. `Revenue` oder `Orders`). Sie können dies auch erweitern, um den Einzelhandelskalender für Metriken zu unterstützen, die auf einer beliebigen Tabelle basieren. Die einzige Anforderung besteht darin, dass diese Tabelle über ein gültiges Datum-Uhrzeit-Feld verfügt, das verwendet werden kann, um zur Einzelhandelskalender-Tabelle beizutreten.
 
-Um beispielsweise Metriken auf Kundenebene in einem 4-5-4 Einzelhandelskalender anzuzeigen, erstellen Sie eine neue `Same Table` der `customer\_entity` -Tabelle ähnlich `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` weiter oben beschrieben. Sie können diese Spalte dann verwenden, um alle `One to Many` JOINED\_COLUMN-Berechnungen (z. B. `Created_at (retail year)` und `Include in previous retail year? (Yes/No)` durch Teilnahme an `customer\_entity` -Tabelle `Retail Calendar` Tabelle.
+Um beispielsweise Metriken auf Kundenebene in einem 4-5-4 Einzelhandelskalender anzuzeigen, erstellen Sie eine `Same Table` der `customer\_entity` -Tabelle ähnlich `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` weiter oben beschrieben. Diese Spalte kann dann zum Reproduzieren der `One to Many` JOINED\_COLUMN-Berechnungen (z. B. `Created_at (retail year)` und `Include in previous retail year? (Yes/No)` durch Teilnahme an `customer\_entity` -Tabelle `Retail Calendar` Tabelle.
 
 Vergessen Sie nicht, [Metriken alle neuen Spalten als Dimensionen hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) vor der Erstellung neuer Berichte.

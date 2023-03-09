@@ -2,16 +2,16 @@
 title: Commerce-Abwanderung
 description: Erfahren Sie, wie Sie Ihre Commerce-Abwanderungsrate generieren und analysieren.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '330'
 ht-degree: 2%
 
 ---
 
 # Abwanderungsrate
 
-In diesem Thema zeigen wir, wie eine **Abwanderungsrate** für Ihre **Commerce-Kunden**. Im Gegensatz zu SaaS oder traditionellen Abonnementunternehmen verfügen Commerce-Kunden in der Regel nicht über einen konkreten **&quot;Abwanderungsereignis&quot;** um Ihnen zu zeigen, dass sie nicht mehr mit Ihren aktiven Kunden zählen sollten. Aus diesem Grund können Sie mit den folgenden Anweisungen einen Kunden anhand einer bestimmten Zeit, die seit seiner letzten Bestellung vergangen ist, als &quot;gebündelt&quot;definieren.
+Dieses Thema zeigt, wie Sie eine **Abwanderungsrate** für Ihre **Commerce-Kunden**. Im Gegensatz zu SaaS oder traditionellen Abonnementunternehmen verfügen Commerce-Kunden in der Regel nicht über einen konkreten **&quot;Abwanderungsereignis&quot;** um Ihnen zu zeigen, dass sie nicht mehr mit Ihren aktiven Kunden zählen sollten. Aus diesem Grund können Sie mit den folgenden Anweisungen einen Kunden anhand einer bestimmten Zeit, die seit seiner letzten Bestellung vergangen ist, als &quot;gebündelt&quot;definieren.
 
 ![](../../assets/Churn_rate_image.png)
 
@@ -40,11 +40,11 @@ Zu erstellende Spalten
 ## Metriken
 
 * **Neue Kunden (nach Datum der ersten Bestellung)**
-   * Kunden, die wir zählen
+   * Kunden, die gezählt werden
 
 >[!NOTE]
 >
->Diese Metrik ist möglicherweise bereits in Ihrem Konto vorhanden.
+>Diese Metrik kann in Ihrem Konto vorhanden sein.
 
 * Im **`customer_entity`** table
 * Diese Metrik führt eine **Count**
@@ -53,11 +53,11 @@ Zu erstellende Spalten
 * [!UICONTROL Filter]:
 
 * **Neue Kunden (nach letztem Bestelldatum)**
-   * Kunden, die wir zählen
+   * Kunden, die gezählt werden
 
 >[!NOTE]
 >
->Diese Metrik ist möglicherweise bereits in Ihrem Konto vorhanden.
+>Diese Metrik kann in Ihrem Konto vorhanden sein.
 
 * Im **`customer_entity`** table
 * Diese Metrik führt eine **Count**
@@ -107,4 +107,4 @@ Unten finden Sie einige gängige Konvertierungen vom Typ Monat > Sekunde , Googl
 | 9 | 23,328,000 |
 | 12 | 31,104,000 |
 
-Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Endergebnis kann wie das obige Beispiel-Dashboard aussehen.
+Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie im obigen Beispiel-Dashboard aussehen.

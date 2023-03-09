@@ -2,7 +2,7 @@
 title: Google Analytics - Tracking von Benutzergeräte- und Browserdaten in Ihrer Datenbank
 description: Erfahren Sie, wie viele Benutzer sich tatsächlich über Mobilgeräte anmelden und wie sich dies auf den Lebenszeitwert dieser Benutzer auswirkt.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Auf diese Informationen kann Ihr Server bei jeder Anfrage zugreifen. In PHP wird
 
 ### Wann sollten Sie diese Daten aufzeichnen?
 
-Es wird empfohlen, ein neues Feld mit dem Namen `Platform` oder `User-Agent` auf `Customers` und `Orders` Datenbanktabellen zum Speichern dieser Informationen bei jeder Erstellung eines Benutzers oder bei einer Bestellung. Wenn Sie eine SQL-Datenbank verwenden, sollte dieses Feld ein `VARCHAR(255)`. 
+Adobe empfiehlt, ein neues Feld mit dem Namen `Platform` oder `User-Agent` auf `Customers` und `Orders` Datenbanktabellen zum Speichern dieser Informationen bei jeder Erstellung eines Benutzers oder bei einer Bestellung. Wenn Sie eine SQL-Datenbank verwenden, sollte dieses Feld ein `VARCHAR(255)`. 
 
 >[!NOTE]
 >

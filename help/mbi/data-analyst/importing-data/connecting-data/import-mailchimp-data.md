@@ -2,9 +2,9 @@
 title: Importieren von MailChimp-Daten
 description: Informationen zum Importieren von MailChimp-Daten in [!DNL MBI].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre
 
 1. Klicken **[!UICONTROL Export]** und speichern Sie die `.csv` -Datei.
 
-   Sie müssen `Primary Key`, `date (mm/dd/yyyy)`, `campaign name`und `URL` -Spalten zu dieser Datei. Sie müssen nicht die vollständige URL hinzufügen, sondern nur etwas, das Ihnen mitteilt, was angeklickt wurde.
+   Sie müssen `Primary Key`, `date (mm/dd/yyyy)`, `campaign name`und `URL` -Spalten zu dieser Datei. Sie müssen nicht die vollständige URL hinzufügen, sondern nur etwas, das Ihnen mitteilt, worauf geklickt wurde.
 
    ![import mailchimp 7](../../../assets/import-mailchimp-7.png)
 
@@ -71,6 +71,6 @@ Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre
 
 ## Vorbereiten von Dateien auf den Upload in [!DNL MBI] {#upload}
 
-Jede Datei - `Opens`, `Clicks`und `Sent` - sollte in hochgeladen werden. [!DNL MBI] als separate Datei. Es wird außerdem empfohlen, die Dateien mit dieser Namenskonvention zu benennen: `MailChimp\_ACTION\_DATE`. Ersetzen `ACTION` mit `Open`, `Click`oder `Sent`und ersetzen `DATE` mit dem Datum der Ausfuhr.
+Jede Datei - `Opens`, `Clicks`und `Sent` - sollte in hochgeladen werden. [!DNL MBI] als separate Datei. Adobe empfiehlt, die Dateien mithilfe dieser Benennungsregel zu benennen: `MailChimp\_ACTION\_DATE`. Ersetzen `ACTION` mit `Open`, `Click`oder `Sent`und ersetzen `DATE` mit dem Datum der Ausfuhr.
 
-Wenn Sie zum Hochladen der Dateien bereit sind, verwenden Sie die [`File Upload` Funktion](../connecting-data/using-file-uploader.md) , um die Daten in Ihr Data Warehouse zu übertragen.
+Wenn Sie zum Hochladen der Dateien bereit sind, verwenden Sie die [`File Upload` Funktion](../connecting-data/using-file-uploader.md) , um die Daten in Ihre Data Warehouse zu übertragen.

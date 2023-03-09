@@ -2,7 +2,7 @@
 title: Adobe Analytics verbinden
 description: Erfahren Sie, wie Sie den Journey-Schwerpunkt von End-to-End-Kunden zusammenführen können. [!DNL Adobe Analytics] und dem eCommerce-Fokus, auf den Sie sich verlassen [!DNL MBI].
 exl-id: 824e1ee4-6b88-42f7-b265-29330dbc4407
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ![](../../../assets/adobe-analytic-slogo.png)
 
-Die [!DNL Adobe Analytics] Integration für [!DNL MBI] ermöglicht es Ihnen, den End-to-End-Journey-Fokus von [!DNL Adobe Analytics] und dem eCommerce-Fokus, auf den Sie sich verlassen [!DNL MBI], um ein vollständiges Bild der Gesamtleistung Ihres Stores zu erhalten.
+Die [!DNL Adobe Analytics] Integration für [!DNL MBI] ermöglicht es Ihnen, den End-to-End-Journey-Fokus von [!DNL Adobe Analytics] und dem eCommerce-Fokus, auf den Sie sich verlassen [!DNL MBI]. Damit erhalten Sie ein vollständiges Bild der Gesamtleistung Ihres Stores.
 
 Genauer gesagt, wird die [!DNL Adobe Analytics] Integration für [!DNL MBI] bietet Händlern Funktionen, mit denen sie ihre Commerce- und Analytics-Datensätze kombinieren können.
 - Erstellen Sie eine Verbindung aus Ihrer bestehenden [!DNL Adobe Analytics] Konto [!DNL MBI].
@@ -41,6 +41,6 @@ Die folgenden Informationen sind erforderlich, um eine Verbindung herzustellen:
 1. Eine Liste der verfügbaren Report Suites wird angezeigt. Wählen Sie die Report Suite aus, aus der Sie die Daten importieren möchten, und klicken Sie auf **[!UICONTROL Continue]**.
 1. Der Bildschirm zur Auswahl der Metriken und Dimensionen wird angezeigt. Wählen Sie mindestens eine Metrik und mindestens eine Dimension bis zu einer Gesamtsumme von 25 Metriken und Dimensionen aus. Suchen Sie nach Namen oder scrollen Sie nach Ihren Komponenten, und klicken Sie dann auf die Kontrollkästchen, um sie auszuwählen. Klicken **[!UICONTROL Continue]**.
 1. Die ausgewählte Report Suite wird in einer Tabelle angezeigt. Klicken **[!UICONTROL Save]** um Ihre Auswahl zu bestätigen.
-1. Informieren Sie die [!DNL MBI] Support-Team, das für Ihre Integration autorisiert ist und den anfänglichen Verbindungsprozess für Sie durchführt.
+1. Informieren Sie die [!DNL MBI] Support-Team, das über die Berechtigung für Ihre Integration verfügt und das den anfänglichen Verbindungsprozess für Sie durchführt.
 
-Nach Ausführung des anfänglichen Verbindungsprozesses ist Ihre Tabelle auf der Seite &quot;Data Warehouse&quot;unter der `All Tables` Registerkarte. Wählen Sie die Spalten aus, die repliziert werden sollen. Die Daten werden nach der nächsten vollständigen Aktualisierung angezeigt.
+Nach Ausführung des anfänglichen Verbindungsprozesses ist Ihre Tabelle auf der Seite &quot;Data Warehouse&quot;unter der `All Tables` Registerkarte. Wählen Sie die Spalten aus, die Sie replizieren möchten. Die Daten werden nach der nächsten vollständigen Aktualisierung angezeigt.

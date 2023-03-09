@@ -2,16 +2,16 @@
 title: Importieren von Marketing-Daten für CJ Affiliate (Dienststelle der Kommission)
 description: Erfahren Sie, wie Sie CJ Affiliate-Daten (Commission Junktion) in importieren [!DNL MBI].L MBI].
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
 
 # Import `CJ Affiliate` data
 
-Zu importieren `CJ Affiliate` (Anordnung der Kommission) [!DNL MBI]folgen Sie einfach den unten stehenden Schritten und hängen Sie die resultierende Datei an ein Support-Ticket an. Wir richten die Datentabelle für Ihr Konto ein und ermöglichen Ihnen, das Hochladen von Daten unabhängig voneinander fortzusetzen.
+Zu importieren `CJ Affiliate` (Anordnung der Kommission) [!DNL MBI]folgen Sie einfach den unten stehenden Schritten und hängen Sie die resultierende Datei an ein Support-Ticket an. Adobe richtet die Datentabelle für Ihr Konto ein und ermöglicht es Ihnen, das Hochladen von Daten unabhängig voneinander fortzusetzen.
 
 ## Export `CJ Affiliate` Daten
 
@@ -31,4 +31,4 @@ Zu importieren `CJ Affiliate` (Anordnung der Kommission) [!DNL MBI]folgen Sie ei
 
 1. Nachdem Sie die Datei heruntergeladen haben, können Sie [Datei hochladen](../connecting-data/using-file-uploader.md) auf [!DNL MBI] Data Warehouse.
 
-   Dadurch wird eine neue Tabelle in Ihrem [!DNL MBI] Data Warehouse, in das Sie weiterhin neue Daten regelmäßig hochladen können. Achten Sie beim Hochladen der Datei auf die Formatierungsanforderungen, die unter [Verwenden des Datei-Uploaders](../connecting-data/using-file-uploader.md).
+   Dadurch wird eine Tabelle in Ihrem [!DNL MBI] Data Warehouse, dass Sie weiterhin neue Daten in regelmäßig hochladen können. Achten Sie beim Hochladen der Datei auf die Formatierungsanforderungen, die unter [Verwenden des Datei-Uploaders](../connecting-data/using-file-uploader.md).

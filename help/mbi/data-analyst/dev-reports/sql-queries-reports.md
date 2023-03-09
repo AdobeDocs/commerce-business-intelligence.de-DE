@@ -2,20 +2,20 @@
 title: SQL-Abfragen in übersetzen [!DNL MBI] Berichte
 description: Erfahren Sie, wie SQL-Abfragen in berechnete Spalten und Metriken übersetzt werden, die Sie in [!DNL MBI].
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
 
 # SQL-Abfragen in MBI übersetzen
 
-Haben Sie sich schon immer gefragt, wie SQL-Abfragen in die [berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md), [Metriken](../../data-user/reports/ess-manage-data-metrics.md)und [Berichte](../../tutorials/using-visual-report-builder.md) Sie verwenden [!DNL MBI]? Wenn Sie ein starker SQL-Benutzer sind, sollten Sie wissen, wie SQL übersetzt wird in [!DNL MBI] ermöglicht Ihnen eine intelligentere Arbeit im [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) und das Beste aus dem [!DNL MBI] Plattform.
+Haben Sie sich schon immer gefragt, wie SQL-Abfragen in die [berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md), [Metriken](../../data-user/reports/ess-manage-data-metrics.md)und [Berichte](../../tutorials/using-visual-report-builder.md) Sie verwenden [!DNL MBI]? Wenn Sie ein starker SQL-Benutzer sind, sollten Sie wissen, wie SQL übersetzt wird in [!DNL MBI] ermöglicht es Ihnen, im [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) und das Beste aus dem [!DNL MBI] Plattform.
 
-Am Ende dieses Artikels haben wir eine **Übersetzungsmatrix** für SQL-Abfrageklauseln und [!DNL MBI] -Elemente.
+Am Ende dieses Artikels finden Sie eine **Übersetzungsmatrix** für SQL-Abfrageklauseln und [!DNL MBI] -Elemente.
 
-Zunächst wird eine allgemeine Abfrage untersucht:
+Sehen Sie sich zunächst eine allgemeine Abfrage an:
 
 |  |  |
 |--- |--- |
@@ -28,19 +28,19 @@ Zunächst wird eine allgemeine Abfrage untersucht:
 | `AND time < X`<br><br> `AND time >= Y` | Bericht `time frame` |
 | `GROUP BY a` | Bericht `group by` |
 
-In diesem Beispiel werden die meisten Übersetzungsfälle behandelt, es gibt jedoch einige Ausnahmen. Lassen Sie uns eintauchen, beginnend mit dem `aggregate` -Funktion übersetzt wird.
+In diesem Beispiel werden die meisten Übersetzungsfälle behandelt, es gibt jedoch einige Ausnahmen. Eintauchen, beginnend mit dem `aggregate` -Funktion übersetzt wird.
 
 ## Aggregat-Funktionen
 
-Aggregatfunktionen (z. B. `count`, `sum`, `average`, `max`, `min`) in Abfragen entweder in folgender Form: **Metrikaggregationen** oder **Spaltenaggregationen** in [!DNL MBI]. Der Differenzierungsfaktor besteht darin, ob für die Aggregation ein Join erforderlich ist.
+Aggregatfunktionen (z. B. `count`, `sum`, `average`, `max`, `min`) in Abfragen entweder in folgender Form: **Metrikaggregationen** oder **Spaltenaggregationen** in [!DNL MBI]. Der Differenzierungsfaktor ist, ob ein Join erforderlich ist, um die Aggregation durchzuführen.
 
-Sehen wir uns ein Beispiel für die oben genannten Punkte an.
+Sehen Sie sich für jeden der oben genannten Beispiele an.
 
 ## Metrikaggregationen {#aggregate}
 
 Bei der Aggregation von `within a single table`. Beispielsweise wird die `SUM(b)` Aggregatfunktion aus der obigen Abfrage würde höchstwahrscheinlich durch eine Metrik dargestellt, die die Spalte summiert `B`. 
 
-Sehen wir uns ein konkretes Beispiel an, wie ein `Total Revenue` Metriken können in [!DNL MBI]. Sehen Sie sich die unten stehende Abfrage an, um zu versuchen, zu übersetzen:
+Sehen Sie sich ein bestimmtes Beispiel an, wie ein `Total Revenue` Metriken können in [!DNL MBI]. Sehen Sie sich die unten stehende Abfrage an, mit der Sie versuchen, zu übersetzen:
 
 |  |  |
 |--- |--- |
@@ -51,7 +51,7 @@ Sehen wir uns ein konkretes Beispiel an, wie ein `Total Revenue` Metriken könne
 | `email NOT LIKE '%@magento.com'` | Metrik `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Metrik `timestamp` (und Berichterstattung) `time range`) |
 
-Navigieren zum Metrikaufbau durch Klicken auf **[!UICONTROL Manage Data** > ** Metriken **> **Neue Metrik erstellen]**, müssen wir zunächst die entsprechenden `source` -Tabelle, die in diesem Fall der `orders` Tabelle. Anschließend würde die Metrik wie folgt eingerichtet:
+Navigieren zum Metrikaufbau durch Klicken auf **[!UICONTROL Manage Data** > ** Metriken **> **Neue Metrik erstellen]**, müssen Sie zuerst die entsprechende `source` -Tabelle, die in diesem Fall der `orders` Tabelle. Anschließend würde die Metrik wie folgt eingerichtet:
 
 ![Metrikaggregation](../../assets/Metric_aggregation.png)
 
@@ -71,25 +71,25 @@ Die Abfrage für diese Aggregation kann etwa wie folgt aussehen:
 | `ON c.customer_id = o.customer_id` | Pfad |
 | `WHERE o.status = 'success'` | Aggregat-Filter |
 
-Einrichten des [!DNL MBI] erfordert die Verwendung Ihres Data Warehouse-Managers, in dem Sie einen Pfad zwischen Ihrem `orders` und `customers` und erstellen Sie dann eine neue Spalte mit dem Namen `Customer LTV` in der Tabelle Ihres Kunden.
+Einrichten des [!DNL MBI] erfordert die Verwendung Ihres Data Warehouse-Managers, in dem Sie einen Pfad zwischen Ihrem `orders` und `customers` und erstellen Sie dann eine Spalte namens `Customer LTV` in der Tabelle Ihres Kunden.
 
-Lassen Sie uns zunächst untersuchen, wie ein neuer Weg zwischen den `customers` und `orders`. Unser Ziel ist es, eine neue aggregierte Spalte im `customers` -Tabelle, also navigieren Sie zuerst zur `customers` in der Data Warehouse angezeigt werden, klicken Sie auf **[!UICONTROL Create a Column** > ** Definition auswählen **> **SUM]**.
+Untersuchen Sie, wie Sie einen neuen Pfad zwischen dem `customers` und `orders`. Das Endziel besteht darin, eine neue aggregierte Spalte im `customers` -Tabelle, also navigieren Sie zuerst zur `customers` in der Data Warehouse angezeigt werden, klicken Sie auf **[!UICONTROL Create a Column** > ** Definition auswählen **> **SUM]**.
 
-Wählen Sie anschließend die Quelltabelle aus. Wenn bereits ein Pfad zu Ihrer `orders` -Tabelle aus, wählen Sie sie einfach aus der Dropdown-Liste aus. Wenn Sie jedoch einen neuen Pfad erstellen, klicken Sie auf **[!UICONTROL Create new path]** und Sie erhalten den folgenden Bildschirm:
+Wählen Sie anschließend die Quelltabelle aus. Wenn ein Pfad zu Ihrer `orders` -Tabelle aus, wählen Sie sie einfach aus der Dropdown-Liste aus. Wenn Sie jedoch einen neuen Pfad erstellen, klicken Sie auf **[!UICONTROL Create new path]** und Ihnen wird der folgende Bildschirm angezeigt:
 
 ![Neuen Pfad erstellen](../../assets/Create_new_path.png)
 
-Hier müssen Sie die Beziehung zwischen den beiden Tabellen, die Sie verbinden wollen, sorgfältig überdenken. In diesem Fall gibt es `Many` Bestellungen, die mit `One` -Kunde, also `orders` ist auf der `Many` Seite, während die `customers` auf der `One` Seite.
+Hier müssen Sie die Beziehung zwischen den beiden Tabellen, denen Sie beitreten möchten, sorgfältig überdenken. In diesem Fall gibt es `Many` Bestellungen, die mit `One` -Kunde, also `orders` ist auf der `Many` Seite, während die `customers` auf der `One` Seite.
 
 >[!NOTE]
 >
 >In [!DNL MBI], *path* entspricht einem `Join` in SQL.
 
-Nachdem der Pfad gespeichert wurde, können Sie alle neue `Customer LTV` column! Sehen Sie sich das folgende Beispiel an:
+Nachdem der Pfad gespeichert wurde, erstellen Sie alle `Customer LTV` column! Sehen Sie sich Folgendes an:
 
 ![](../../assets/Customer_LTV.gif)
 
-Jetzt, da Sie die neue `Customer LTV` in der Spalte `customers` -Tabelle, können Sie eine [Metrikaggregation](#aggregate) die Verwendung dieser Spalte (z. B. um die durchschnittliche LTV-Rate pro Kunde zu ermitteln) oder einfach `group by` oder `filter` durch die berechnete Spalte in einem Bericht mit vorhandenen Metriken, die auf der `customers` Tabelle.
+Jetzt, da Sie die neue `Customer LTV` in der Spalte `customers` -Tabelle, können Sie eine [Metrikaggregation](#aggregate) Verwendung dieser Spalte (z. B. zur Ermittlung der durchschnittlichen LTV-Anzahl pro Kunde). Sie können auch `group by` oder `filter` durch die berechnete Spalte in einem Bericht mit vorhandenen Metriken, die auf der `customers` Tabelle.
 
 >[!NOTE]
 >
@@ -99,9 +99,9 @@ Siehe [berechnete Spalten erstellen](../data-warehouse-mgr/creating-calculated-c
 
 ## `Group By` Klauseln
 
-`Group By` Funktionen in Abfragen werden häufig in [!DNL MBI] als Spalte zur Segmentierung oder Filterung eines visuellen Berichts. Beispiel: `Total Revenue` Abfrage, die wir zuvor erforscht haben, aber diesmal den Umsatz nach `coupon\_code` um ein besseres Verständnis davon zu gewinnen, welche Gutscheine den meisten Umsatz generieren.
+`Group By` Funktionen in Abfragen werden häufig in [!DNL MBI] als Spalte zur Segmentierung oder Filterung eines visuellen Berichts. Beispiel: `Total Revenue` Abfrage, die Sie zuvor untersucht haben, aber diesmal den Umsatz nach `coupon\_code` um ein besseres Verständnis davon zu gewinnen, welche Gutscheine den meisten Umsatz generieren.
 
-Zuerst beginnen wir mit der folgenden Abfrage:
+Beginnen Sie mit der folgenden Abfrage:
 
 |  |  |
 |--- |--- |
@@ -115,22 +115,22 @@ Zuerst beginnen wir mit der folgenden Abfrage:
 
 >[!NOTE]
 >
->Der einzige Unterschied zu der Abfrage, mit der wir zuvor begonnen haben, besteht darin, dass &quot;coupon\_code&quot;als Gruppe von hinzugefügt wird._
+>Der einzige Unterschied zu der Abfrage, mit der Sie zuvor begonnen haben, besteht darin, dass &quot;coupon\_code&quot;als Gruppe von hinzugefügt wird._
 
-Verwenden des gleichen `Total Revenue` -Metrik, die wir zuvor erstellt haben, können wir nun unseren Bericht über den Umsatz erstellen, der nach Couponcode segmentiert ist! Sehen Sie sich das unten stehende GIF an, in dem gezeigt wird, wie dieser visuelle Bericht mit Daten von September bis November eingerichtet wird:
+Verwenden des gleichen `Total Revenue` Metrik, die Sie zuvor erstellt haben, können Sie jetzt Ihren Bericht mit dem Umsatz erstellen, der durch Couponcode segmentiert wurde! Sehen Sie sich das unten stehende GIF an, in dem gezeigt wird, wie dieser visuelle Bericht mit Daten von September bis November eingerichtet wird:
 
 ![Umsatz nach Couponcode](../../assets/Revenue_by_coupon_code.gif)
 
 ## Formeln
 
-In einigen Fällen kann eine Abfrage mehrere Aggregationen umfassen, um die Beziehung zwischen getrennten Spalten zu berechnen. Sie können beispielsweise den durchschnittlichen Bestellwert in einer Abfrage auf zwei Arten berechnen:
+Manchmal kann eine Abfrage mehrere Aggregationen umfassen, um die Beziehung zwischen verschiedenen Spalten zu berechnen. Sie können beispielsweise den durchschnittlichen Bestellwert in einer Abfrage auf zwei Arten berechnen:
 
 * `AVG('order\_total')` ODER
 * `SUM('order\_total')/COUNT('order\_id')`
 
 Die frühere Methode würde die Erstellung einer neuen Metrik beinhalten, die einen Durchschnittswert für die `order\_total` Spalte. Die letztgenannte Methode kann jedoch direkt im ReportBuilder erstellt werden, vorausgesetzt, Sie verfügen bereits über Metriken zur Berechnung der `Total Revenue` und `Number of orders`.
 
-Lassen Sie uns einen Schritt zurückgehen und die Gesamtabfrage für `Average order value`:
+Gehen Sie einen Schritt zurück und prüfen Sie die Gesamtabfrage für `Average order value`:
 
 |  |  |
 |--- |--- |
@@ -143,13 +143,13 @@ Lassen Sie uns einen Schritt zurückgehen und die Gesamtabfrage für `Average or
 | `email NOT LIKE '%@magento.com'` | Metrik `filter` |
 | `AND created_at < '2016-12-01'`<br><br>`AND created_at >= '2016-09-01'` | Metrikzeitstempel (und Berichtszeitbereich) |
 
-Nehmen wir auch an, dass bereits Metriken zur Berechnung der `Total Revenue` und `Number of orders`. Da diese Metriken bereits vorhanden sind, können wir einfach die `Report Builder` und erstellen Sie eine Ad-hoc-Berechnung mithilfe der `Formula` Funktion:
+Nehmen Sie nun an, dass Sie bereits Metriken zur Berechnung der `Total Revenue` und `Number of orders`. Da diese Metriken vorhanden sind, können Sie einfach die `Report Builder` und erstellen Sie eine On-Demand-Berechnung mithilfe der Variablen `Formula` Funktion:
 
 ![AOV-Forumula](../../assets/AOV_forumula.gif)
 
 ## Aufbrechen
 
-Wie wir am Anfang dieses Artikels erwähnt haben, wenn Sie ein starker SQL-Benutzer sind und darüber nachdenken, wie Abfragen in übersetzt werden [!DNL MBI] ermöglicht Ihnen die Erstellung berechneter Spalten, Metriken und Berichte.
+Wenn Sie ein starker SQL-Benutzer sind, denken Sie darüber nach, wie Abfragen in übersetzt werden. [!DNL MBI] ermöglicht die Erstellung berechneter Spalten, Metriken und Berichte.
 
 Sehen Sie sich die folgende Matrix für einen schnellen Überblick an. Dies zeigt die Entsprechung einer SQL-Klausel [!DNL MBI] -Element und wie es mehreren Elementen zugeordnet werden kann, je nachdem, wie es in der Abfrage verwendet wird.
 

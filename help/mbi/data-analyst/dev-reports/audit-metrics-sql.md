@@ -2,9 +2,9 @@
 title: Arbeiten mit SQL Report Builder
 description: Erfahren Sie, wie Sie Daten und Metriken mithilfe von SQL Report Builder überprüfen können, damit Sie die Ergebnisse mit den Daten aus Ihrer lokalen Datenbank vergleichen können.
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ Wenn Sie eine genauere Ansicht der Abfrage wünschen, können Sie die Darstellun
 
 ## Einschränkung der Abfrage
 
-Wenn Sie versuchen, eine bestimmte Diskrepanz oder einen bestimmten Datensatz zu ermitteln, sollten Sie die Abfrage auf ein bestimmtes Beispiel beschränken, um es mit Ihrer lokalen Datenbank abgleichen zu können. Bearbeiten Sie dazu die Abfrage entsprechend Ihren gewünschten Einschränkungen. Im folgenden Beispiel wird die Abfrage so eingeschränkt, dass nur der Umsatz ab dem 1. Januar 2013 oder höher erfasst wird. Nachdem Sie die Abfrage aktualisiert haben, wählen Sie **[!UICONTROL Run Query]** erneut, um die Ergebnisse zu aktualisieren.
+Wenn Sie versuchen, eine bestimmte Diskrepanz oder einen bestimmten Datensatz zu ermitteln, sollten Sie die Abfrage auf ein bestimmtes Beispiel beschränken, um es mit Ihrer lokalen Datenbank abgleichen zu können. Bearbeiten Sie dazu die Abfrage entsprechend Ihren gewünschten Einschränkungen. Im folgenden Beispiel beschränken Sie die Abfrage so, dass nur der Umsatz ab dem 1. Januar 2013 oder höher erfasst wird. Nachdem Sie die Abfrage aktualisiert haben, wählen Sie **[!UICONTROL Run Query]** erneut, um die Ergebnisse zu aktualisieren.
 
 ![](../../assets/restricting-query.gif)
 
 ## Speichern und exportieren
 
-Wenn der Bericht Ihren Anforderungen entspricht, speichern Sie ihn in einem Dashboard, indem Sie ihm einen eindeutigen Namen geben und auf **[!UICONTROL Save]** und wählen Sie den Berichtstyp aus, den Sie speichern möchten, sowie das Dashboard. Bei der Prüfung von Metriken wird empfohlen, den Bericht als `Table` und speichern Sie sie in einem Test-Dashboard.
+Wenn der Bericht Ihren Anforderungen entspricht, speichern Sie ihn in einem Dashboard, indem Sie ihm einen eindeutigen Namen geben und auf **[!UICONTROL Save]** und wählen Sie den Berichtstyp aus, den Sie speichern möchten, sowie das Dashboard. Bei der Prüfung von Metriken empfiehlt Adobe, den Bericht als `Table` und speichern Sie sie in einem Test-Dashboard.
 
 Navigieren Sie nach dem Speichern des Berichts zu diesem Dashboard, indem Sie `Go to Dashboard`. Dort können Sie die Daten exportieren, indem Sie den Bericht suchen und **[!UICONTROL Options gear > Full `.csv`Export]** oder **[!UICONTROL Full Excel Export]**.
 
@@ -46,4 +46,4 @@ Sie können auch benutzerdefinierte Abfragen schreiben und die Ergebnisse export
 
 ### Ist noch nicht da?
 
-Wenn Sie nach der Prüfung Ihrer Daten eine Diskrepanz feststellen, sehen Sie sich die [Support kontaktieren: Datendiskrepanzen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=en) Support-Artikel für weitere Informationen zu den nächsten Schritten.
+Wenn Sie nach der Prüfung Ihrer Daten eine Diskrepanz feststellen, überprüfen Sie die [Support kontaktieren: Datendiskrepanzen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=en) Support-Artikel für weitere Informationen zu den nächsten Schritten.

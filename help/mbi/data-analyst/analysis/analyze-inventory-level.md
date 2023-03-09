@@ -2,9 +2,9 @@
 title: Analysieren der Lagerbestandsebenen
 description: Erfahren Sie, wie Sie Lagerbestandsstufen analysieren.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihren akt
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
    * **`Avg products sold per week (all time)`**
-      * Wird von einem Analysten erstellt, wenn Sie die Datei senden **[INVENTORANALYSE]** Support-Anfrage
+      * Wird von einem Analytiker erstellt, wenn Sie die Datei senden **[INVENTORANALYSE]** Support-Anfrage
 
 
 
@@ -183,7 +183,7 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihren akt
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
       * Wählen Sie eine [!UICONTROL column]: `Avg products sold per week (all time)`
    * **`Weeks on hand`**
-      * Wird von einem Analysten erstellt, wenn Sie die Datei senden **[!UICONTROL INVENTORY ANALYSIS]** Support-Anfrage
+      * Wird von einem Analytiker erstellt, wenn Sie die Datei senden **[!UICONTROL INVENTORY ANALYSIS]** Support-Anfrage
 
 
 
@@ -240,4 +240,4 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihren akt
       [!UICONTROL Chart type]: `Table`
 
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach unser Professional Services-Team einbinden möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).

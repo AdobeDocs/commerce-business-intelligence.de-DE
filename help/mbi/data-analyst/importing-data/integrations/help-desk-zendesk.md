@@ -2,9 +2,9 @@
 title: Helpdesk Reporting für Zendesk
 description: Erfahren Sie mehr über Ihre bevorzugten Verweiskanäle.
 exl-id: b6142ef2-2be8-401f-ac35-f86fc68d204e
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Dies ist nur für Kunden verfügbar, die sich auf der `Pro` Planen und Verwenden der neuen Architektur. Sie befinden sich in der neuen Architektur, wenn Sie über die `Data Warehouse Views` -Bereich nach Auswahl `Manage Data` aus der Hauptsymbolleiste.
 
-Konsolidierung Ihrer [!DNL Zendesk] -Daten mit Ihrer Transaktionsdatenbank sind eine hervorragende Möglichkeit, um besser zu verstehen, wie Ihre Kunden mit Ihren Vertriebs- oder Kundenerfolgsteams interagieren und welche Art von Kunden Ihre Support-Plattform nutzen. In diesem Artikel zeigen wir, wie wir ein Dashboard einrichten, um detaillierte Berichte über Ihre [!DNL Zendesk] Leistung und Bindung Ihrer Transaktionskunden.
+Konsolidierung Ihrer [!DNL Zendesk] -Daten mit Ihrer Transaktionsdatenbank sind eine hervorragende Möglichkeit, um besser zu verstehen, wie Ihre Kunden mit Ihren Vertriebs- oder Kundenerfolgsteams interagieren. Außerdem erfahren Sie, welche Art von Kunden Ihre Support-Plattform verwenden. Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, um detaillierte Berichte über Ihre [!DNL Zendesk] Leistung und Bindung Ihrer Transaktionskunden.
 
-Bevor Sie beginnen, sollten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.md). Diese Analyse enthält [Erweiterte berechnete Spalten](../../data-warehouse-mgr/adv-calc-columns.md).
+Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.md). Diese Analyse enthält [Erweiterte berechnete Spalten](../../data-warehouse-mgr/adv-calc-columns.md).
 
 <!-- Getting Started -->
 
@@ -272,7 +272,7 @@ Bevor Sie beginnen, sollten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.md
 * [!UICONTROL Filter]:
 
 * **[!DNL Zendesk]Durchschnittliche/mittlere Zeit bis erste Antwort**
-   * Anzahl der Tickets
+   * Zu zählende Tickets
    * Status IN geschlossen, gelöst
 
 * Im **`[Zendesk] tickets`** table

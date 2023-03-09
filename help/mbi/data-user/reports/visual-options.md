@@ -2,9 +2,9 @@
 title: Visualisierungsoptionen im Visual Report Builder
 description: Erfahren Sie, wie Sie die Visualisierungsoptionen im Visual Report Builder verwenden.
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Die Auswahl der richtigen Visualisierung für einen bestimmten Datensatz ist ein wichtiger Teil des Analyseprozesses. Jeder Datensatz hat eine Geschichte zu erzählen, aber die Wirkung dieser Geschichte wird durch ihre visuelle Wirkung und Lesbarkeit betont.
 
-Die [!DNL MBI] `Visual Report Builder` bietet 12 verschiedene Visualisierungsoptionen mit jeweils eigenen Vorteilen und Anwendungsfällen. In diesem Artikel werden die verschiedenen Visualisierungsoptionen in [!DNL MBI], einschließlich ggf. erforderlicher Berichtskonfigurationen, sowie ein Anwendungsbeispiel. Die folgenden Visualisierungen sind in MBI verfügbar:
+Die [!DNL MBI] `Visual Report Builder` bietet 12 verschiedene Visualisierungsoptionen mit jeweils eigenen Vorteilen und Anwendungsfällen. In diesem Artikel werden die verschiedenen Visualisierungsoptionen in [!DNL MBI], einschließlich ggf. erforderlicher Berichtskonfigurationen, und ein Beispiel für einen Anwendungsfall. Die folgenden Visualisierungen sind in MBI verfügbar:
 
 * `Scalar`
 * `Table`
@@ -47,7 +47,7 @@ Um einen Bericht als Skalar zu speichern, konfigurieren Sie Ihre Filter und Zeit
 
 ## `Table`
 
-Wie der Name nahe legt, `table` -Berichte eignen sich hervorragend für die Anzeige von Tabellendetails. Wenn eine große Anzahl von Gruppen nach Werten oder Metriken in einem einzelnen Bericht angezeigt werden muss, ist eine Tabelle häufig der beste Weg. Unten finden Sie eine Tabelle mit &quot;Kundendetails&quot;, in der Bestellungen und Umsatz nach E-Mail-Adresse des Kunden gruppiert sind:
+Wie der Name nahe legt, `table` -Berichte eignen sich hervorragend für die Anzeige von Tabellendetails. Wenn viele Gruppen nach Werten oder Metriken in einem Bericht angezeigt werden müssen, ist eine Tabelle häufig der beste Weg. Unten finden Sie eine Tabelle mit &quot;Kundendetails&quot;, in der Bestellungen und Umsatz nach E-Mail-Adresse des Kunden gruppiert sind:
 
 ![](../../assets/blobid2.png)
 
@@ -95,7 +95,7 @@ Um einen Bericht als Balkendiagramm zu speichern, passen Sie den Bericht an `Typ
 
 `Stacked bar` -Diagramme ähneln ihren Balkendiagrammbrüchen, mit der zusätzlichen Möglichkeit, die proportionale Aufschlüsselung der einzelnen Balken anzuzeigen. In den meisten Fällen werden gestapelte Balkendiagramme mit zwei oder mehr Metriken und einer einzigen Gruppe nach eingerichtet, sodass jede Leiste eine eindeutige Gruppe nach Wert darstellt, die auf die Metrikkomponenten aufgeteilt ist.
 
-Beispielsweise weist der unten stehende Bericht zwei identische Umsatzmetriken auf: eine für Erstbestellungen gefiltert und die andere für Wiederholungsbestellungen gefiltert. Nach der Gruppierung nach Geschäft können Sie sowohl den Gesamtumsatzbeitrag für jeden Store (dargestellt durch die Gesamtbreite der Leiste) als auch die erstmalige und wiederholte Aufschlüsselung des Umsatzes für jeden Store sehen:
+Beispielsweise weist der unten stehende Bericht zwei identische Umsatzmetriken auf, von denen eine für Erstbestellungen gefiltert und die andere für Wiederholungsbestellungen gefiltert ist. Nach der Gruppierung nach Geschäft können Sie sowohl den Gesamtumsatzbeitrag für jeden Store (dargestellt durch die Gesamtbreite des Balkens) als auch die erstmalige Aufschlüsselung des Umsatzes für jeden Store im Vergleich sehen.
 
 ![](../../assets/blobid4.png)
 
@@ -111,9 +111,9 @@ Um einen Bericht als gestapeltes Balkendiagramm zu speichern, passen Sie den Ber
 
 ## `Column`
 
-`Column` -Diagramme stellen jeden Datenpunkt als vertikale Spalte dar und eignen sich im Allgemeinen besser für die Anzeige von Trend-Zeitdaten als für die horizontale Balkendiagrammvisualisierung. Da jede individuelle Metrik und Gruppe durch Kombination in einer eigenen Balkenreihe dargestellt wird, ist ein Spaltenbericht im Allgemeinen für Berichte mit drei oder weniger Metriken oder einer Metrik mit einer einzelnen Gruppe am besten geeignet, indem er 1-3 Gruppen nach Werten enthält.
+`Column` -Diagramme stellen jeden Datenpunkt als vertikale Spalte dar und eignen sich besser für die Anzeige von Trend-Daten als für die horizontale Balkendiagrammvisualisierung. Jede einzelne Metrik und Gruppe nach Kombination wird in einer eigenen Serie von Balken dargestellt. Ein Spaltenbericht eignet sich am besten für Berichte mit drei oder weniger Metriken oder einer Metrik mit einer einzelnen Gruppe, indem er 1-3 Gruppen nach Werten enthält.
 
-Im folgenden Beispiel werden zwei Umsatzmetriken angezeigt: eine für den ersten Umsatz und die andere für den wiederholten Umsatz, wobei die Trends über einen Zeitraum nach Monaten verteilt sind:
+Im folgenden Beispiel sehen Sie zwei Umsatzmetriken: eine für den Erstumsatz und die andere für den wiederholten Umsatz, wobei die Trends im Zeitverlauf nach Monaten gefiltert werden:
 
 ![](../../assets/blobid6.png)
 
@@ -182,7 +182,7 @@ Um einen Bericht als Flächendiagramm zu speichern, passen Sie die `Type` nach `
 
 ![](../../assets/blobid4.png)
 
-In einem Trichterbericht spiegelt sich der relative Wert eines bestimmten Schritts des Trichters in der Höhe des Schritts wider, und die Reihenfolge, in der die Schritte angezeigt werden, wird durch die Berichtkonfiguration bestimmt. Es gibt zwei Möglichkeiten, einen Trichterbericht zu konfigurieren:
+In einem Trichterbericht spiegelt sich der relative Wert eines bestimmten Schritts des Trichters in der Höhe des Schritts wider. Die Berichtskonfiguration bestimmt die Reihenfolge, in der die Schritte angezeigt werden. Es gibt zwei Möglichkeiten, einen Trichterbericht zu konfigurieren:
 
 * `Single metric with one group by`: - Die Reihenfolge der Schritte wird durch die Einstellung &quot;Oben/Unten anzeigen&quot;der Gruppe von bestimmt. Standardmäßig werden Trichterschritte in der Reihenfolge vom größten zum kleinsten Wert angezeigt. Sie können sie aber auch alphabetisch nach Name sortieren.
 
@@ -227,7 +227,7 @@ Option 2:
 
 ## `Bubble` Diagramm
 
-A `bubble` kann bis zu vier Datendimensionen anzeigen, wobei die `X` und `Y` Achsen bestimmen die Position der Blasen, die `Z` Achse ist die Größe der Blasen, und durch die Einbeziehung von zwei Gruppen Bys können Sie Farbe zu den Blasen hinzufügen. Diese Art der Visualisierung eignet sich am besten, wenn Sie mehrere Datendimensionen in einem Diagramm darstellen möchten.
+A `bubble` kann bis zu vier Datendimensionen anzeigen, wobei die `X` und `Y` Achsen geben die Position der Blasen an. Die `Z` Achse ist die Größe der Blasen, und durch die Einbeziehung von zwei Gruppen Bys können Sie Farbe zu den Blasen hinzufügen. Diese Art der Visualisierung eignet sich am besten, wenn Sie mehrere Datendimensionen in einem Diagramm darstellen möchten.
 
 Die folgende Tabelle zeigt beispielsweise die Anzahl der Kunden (Punktgröße), gruppiert nach einer bestimmten Akquise-Quelle (Blasenfarbe) und Status (verschiedene Blasen in einer bestimmten Farbe), gezeichnet anhand des Gesamtumsatzes und der durchschnittlichen Bestellungen während der Lebensdauer.
 
@@ -251,7 +251,7 @@ Option 2
 * Nein `group by`
 * Satz `time interval`
 
-**Anforderungen für ein mehrreihenweises Punktdiagramm:**
+**Anforderungen an ein mehrreihenweises Punktdiagramm:**
 
 * Drei `metrics`
 * Zwei `group by`

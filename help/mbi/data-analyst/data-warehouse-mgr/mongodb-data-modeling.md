@@ -2,9 +2,9 @@
 title: MongoDB-Datenmodellierung
 description: Erfahren Sie, wie Sie Datenmuster vermeiden, die ein Problem darstellen.
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Die schlechte Nachricht: Obwohl die meisten Datenmuster kein Problem darstellen,
 
 Die gute Nachricht: All diese Muster lassen sich vermeiden.
 
-## Unter verschachtelte Arrays {#subnested}
+## Übergeordnete Arrays {#subnested}
 
 Wenn Ihre Sammlung wie im folgenden Beispiel aussieht: [!DNL MBI] repliziert nur die Daten im Elemente-Array. Daten aus dem Array der Unterelemente werden nicht abgerufen.
 
@@ -54,7 +54,7 @@ Sammlungen, die Objekte mit variablen Objektschlüsseln enthalten, werden nicht 
     }
 ```
 
-Dies tritt normalerweise dann auf, wenn ein Objekt verwendet wird und ein Array angemessener wäre. Nun werden wir das obige Beispiel überarbeiten:
+Dies tritt normalerweise dann auf, wenn ein Objekt verwendet wird und ein Array angemessener wäre. Nacharbeiten Sie nun das obige Beispiel:
 
 ```bash
     {

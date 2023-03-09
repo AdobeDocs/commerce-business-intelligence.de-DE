@@ -2,9 +2,9 @@
 title: Dashboards verwalten
 description: Erfahren Sie, wie Sie Benutzerberechtigungen für Dashboards verwalten, die Ihnen gehören, Dashboards löschen, die Sie nicht mehr benötigen, und ein Standard-Dashboard einrichten.
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
 
-In **[!DNL Manage Data** > **Dashboards]** können Sie Benutzerberechtigungen für Dashboards verwalten, die Ihnen gehören, Dashboards löschen, die Sie nicht mehr benötigen, und ein Standard-Dashboard einrichten. Hier ist ein kurzer Blick darauf, was wir in diesem Artikel behandeln:
+In **[!DNL Manage Data** > **Dashboards]** können Sie Benutzerberechtigungen für Dashboards verwalten, die Ihnen gehören, Dashboards löschen, die Sie nicht mehr benötigen, und ein Standard-Dashboard einrichten. In diesem Artikel behandelt:
 
 1. [Umbenennen von Dashboards](#rename)
 
@@ -53,7 +53,7 @@ Benutzerberechtigungen können auf zwei Arten geändert werden - für alle Benut
 
 So ändern Sie Ihr Standard-Dashboard für das Konto:
 
-1. Klicken Sie auf den Namen des Dashboards, das Sie standardmäßig verwenden möchten.
+1. Klicken Sie auf den Namen des Dashboards, das Sie als Standard festlegen möchten.
 
 1. Klicken **[!UICONTROL Make Default]**.
 
