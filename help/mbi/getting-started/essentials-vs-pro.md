@@ -2,20 +2,16 @@
 title: MBI Essentials vs. Pro
 description: Erfahren Sie, wie sich MBI Essentials von MBI Pro unterscheidet.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
-source-git-commit: f358f11586e4b7c44e9192584ea0fdeff5526287
+source-git-commit: 23177d8235987354e17cca72d753b5c4afa0dcc9
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '86'
 ht-degree: 4%
 
 ---
 
 # [!DNL MBI Essentials] vs [!DNL MBI Pro]
 
->[!NOTE]
->
->Dies ist die archivierte Dokumentation für [!DNL MBI].
-
-In der folgenden Tabelle wird beschrieben, was in Essentials und Pro enthalten ist.
+In der folgenden Tabelle werden die Elemente beschrieben, die in älteren Versionen enthalten sind `Essentials` -Konto und ein aktuelles MBI-Konto. Adobe bietet keine Angebote mehr an `Essentials`.
 
 |  | **`MBI Essentials`** | **`MBI Pro`** |
 |-----|-----|-----|
