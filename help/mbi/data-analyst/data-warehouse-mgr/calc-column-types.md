@@ -2,9 +2,9 @@
 title: Berechnete Spaltentypen
 description: Erfahren Sie, wie Sie Spalten erstellen, um Ihre Daten für die Analyse zu erweitern und zu optimieren.
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 Innerhalb der [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)können Sie Spalten erstellen, um Ihre Daten für die Analyse zu erweitern und zu optimieren. [Diese Funktion](../data-warehouse-mgr/creating-calculated-columns.md) Sie können auf eine beliebige Tabelle im Data Warehousen-Manager zugreifen, indem Sie auf **[!UICONTROL Create New Column]**.
 
-In diesem Artikel werden die Spaltentypen beschrieben, die Sie mit dem Data Warehouse Manager erstellen können. Sie umfasst auch die Beschreibung, einen visuellen Durchgang dieser Spalte und eine [Referenzkarte](#map) aller Eingaben, die zum Erstellen einer Spalte erforderlich sind. Es gibt drei Möglichkeiten, berechnete Spalten zu erstellen:
+Hier werden die Spaltentypen beschrieben, die Sie mit dem Data Warehouse Manager erstellen können. Sie umfasst auch die Beschreibung, einen visuellen Durchgang dieser Spalte und eine [Referenzkarte](#map) aller Eingaben, die zum Erstellen einer Spalte erforderlich sind. Es gibt drei Möglichkeiten, berechnete Spalten zu erstellen:
 
-* [Dieselbe Tabelle berechnete Spalten](#sametable)
-* [Eins-zu-viele berechnete Spalten](#onetomany)
-* [Zahlreiche berechnete Spalten](#manytoone)
+1. [Dieselbe Tabelle berechnete Spalten](#sametable)
+1. [Eins-zu-viele berechnete Spalten](#onetomany)
+1. [Zahlreiche berechnete Spalten](#manytoone)
 
 ## Dieselbe Tabelle berechnete Spalten {#sametable}
 
@@ -91,7 +91,7 @@ Diese Art von Dimension kann beispielsweise bestimmen, ob ein Kunde ein bestimmt
 
 ## Praktische Referenzzuordnung {#map}
 
-Wenn Sie bei der Erstellung einer berechneten Spalte ein wenig Schwierigkeiten dabei haben, sich zu merken, was alle Eingaben enthalten, sollten Sie diese Referenzkarte beim Erstellen verwenden:
+Wenn Sie beim Erstellen einer berechneten Spalte Schwierigkeiten haben, sich vorzumerken, was alle Eingaben enthalten, halten Sie diese Referenzkarte beim Erstellen bereit:
 
 ![](../../assets/merged_reference_map.png)
 
@@ -99,7 +99,7 @@ Wenn Sie bei der Erstellung einer berechneten Spalte ein wenig Schwierigkeiten d
 
 Bei Ihrer Suche nach einer Analyse und Beantwortung von Fragen zu Ihrem Unternehmen kann es vorkommen, dass Sie nicht in der Lage sind, die exakte Spalte zu erstellen, die Sie benötigen.
 
-Um eine schnelle Umgehung zu gewährleisten, empfiehlt Adobe, die [Erweiterte berechnete Spaltentypen](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) Anleitung, um zu sehen, welche Spalten das Adobe-Support-Team erstellen kann. In diesem Artikel werden auch die Informationen behandelt, die Sie zum Erstellen der Spalte benötigen - schließen Sie sie in Ihre Anfrage ein.
+Um eine schnelle Umgehung zu gewährleisten, empfiehlt Adobe, die [Erweiterte berechnete Spaltentypen](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) Anleitung, um zu sehen, welche Spalten das Adobe-Support-Team erstellen kann. Dieses Thema behandelt auch die Informationen, die Sie zur Erstellung der Spalte benötigen - schließen Sie sie in Ihre Anfrage ein.
 
 ## Verwandte Dokumentation
 

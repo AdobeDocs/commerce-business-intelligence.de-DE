@@ -1,19 +1,19 @@
 ---
 title: Allgemeine Commerce-Tabellen
-description: Erfahren Sie mehr über einige der häufigsten Tabellen, die [!DNL MBI] -Kunden verwenden.
+description: Erfahren Sie mehr über einige der häufigsten Tabellen, die [!DNL Commerce Intelligence] -Kunden verwenden.
 exl-id: 8b316130-55c6-4771-ae6e-97ac605fc6cc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
 # Allgemeine Commerce-Tabellen
 
-Wenn Sie eine Commerce-Instanz zum ersten Mal mit [[!DNL MBI]](../importing-data/integrations/magento.md), [!DNL MBI] repliziert automatisch Daten aus einigen Ihrer Commerce-Tabellen (normalerweise 4 bis 6 Tabellen), um den anfänglichen Satz von Dashboards und Berichten zu konfigurieren. Dies ist zwar ein guter Ausgangspunkt, aber die meisten Store-Instanzen generieren zehnte, wenn nicht gar Hunderte zusätzlicher Tabellen, die wichtige Einblicke in die Leistung Ihres Unternehmens bieten können.
+Wenn Sie zum ersten Mal eine [!DNL Adobe Commerce] Instanz zu [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md), [!DNL Commerce Intelligence] repliziert automatisch Daten aus einigen Ihrer Commerce-Tabellen (normalerweise 4 bis 6 Tabellen), um den anfänglichen Satz von Dashboards und Berichten zu konfigurieren. Dies ist zwar ein guter Ausgangspunkt, aber die meisten Store-Instanzen generieren zehnte, wenn nicht gar Hunderte zusätzlicher Tabellen, die wichtige Einblicke in die Leistung Ihres Unternehmens bieten können.
 
-Nachfolgend finden Sie eine Liste der häufigsten Tabellen, die [!DNL MBI] -Kunden verwenden. Nach [Ihre Commerce-Instanz mit MBI verbinden](../../data-analyst/importing-data/integrations/magento.md), können Sie die [Data Warehouse Manager](../../data-analyst/data-warehouse-mgr/tour-dwm.md) , um relevante Datenfelder zu verfolgen.
+Nachfolgend finden Sie eine Liste der häufigsten Tabellen, die [!DNL Commerce Intelligence] -Kunden verwenden. Nach [Ihre Commerce-Instanz mit Commerce Intelligence verbinden](../../data-analyst/importing-data/integrations/magento.md), können Sie die [Data Warehouse Manager](../../data-analyst/data-warehouse-mgr/tour-dwm.md) , um relevante Datenfelder zu verfolgen.
 
 | Tabellenname | Beschreibung |
 |---|---|

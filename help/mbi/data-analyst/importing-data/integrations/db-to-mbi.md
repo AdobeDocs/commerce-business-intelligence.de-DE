@@ -1,14 +1,14 @@
 ---
-title: MySQL-Datenbank verbinden
-description: Sehen Sie sich an, wie Sie Ihre MySQL-Datenbanken mit [!DNL MBI].
+title: Verbinden Sie Ihre [!DNL MySQL] Datenbank
+description: Sehen Sie sich an, wie Sie Ihre [!DNL MySQL] Datenbanken mit [!DNL Commerce Intelligence].
 exl-id: 22632cab-3c44-4a1b-8809-ac6cba5f655a
-source-git-commit: 03a5161930cafcbe600b96465ee0fc0ecb25cae8
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '18'
+source-wordcount: '15'
 ht-degree: 0%
 
 ---
 
 # Verbinden Sie Ihre `MySQL` Datenbank
 
-Info in Kürze verfügbar.
+Informationen kommen.

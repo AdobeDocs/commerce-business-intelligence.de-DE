@@ -2,9 +2,9 @@
 title: Formeln
 description: Erfahren Sie, wie Sie Formeln verwenden.
 exl-id: b6432d93-739f-410c-b732-e09a278f8dae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Eine Formel kombiniert mehrere Metriken und mathematische Logik, um eine Frage z
 
    Gehen Sie wie folgt vor:
 
-   * Im `Enter your Formul` Eingabefeld, Eingabe `A/B`.
+   * Im `Enter your Formula` Eingabefeld, Eingabe `A/B`.
 
       Dadurch wird der Umsatz durch die bestellten Produkte durch die Anzahl neuer Kunden dividiert.
 
@@ -71,7 +71,7 @@ Eine Formel kombiniert mehrere Metriken und mathematische Logik, um eine Frage z
 
    * Wählen Sie in den Kalendern den Datumsbereich aus.
 
-      In diesem Beispiel dauert die Weihnachtszeit vom 1. November bis zum 31. Dezember.
+      In diesem Beispiel stammt die Weihnachtszeit von `November 1` bis `December 31`.
 
    * under `Select Time Interval`auswählen `Day`.
 

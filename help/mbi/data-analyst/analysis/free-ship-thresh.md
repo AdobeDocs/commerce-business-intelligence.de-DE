@@ -2,9 +2,9 @@
 title: Schwelle für kostenlosen Versand
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, das die Leistung Ihrer Schwelle für den kostenlosen Versand verfolgt.
 exl-id: a90ad89b-96d3-41f4-bfc4-f8c223957113
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dieser Artikel enthält Anweisungen für Clients, die die ursprüngliche Architektur und die neue Architektur verwenden. Sie befinden sich in der neuen Data Warehouse, wenn der Bereich &quot;Datenansichten&quot;nach Auswahl von &quot;Daten verwalten&quot;in der Hauptsymbolleiste verfügbar ist.
+>Dieses Thema enthält Anweisungen für Clients, die die ursprüngliche Architektur und die neue Architektur verwenden. Sie befinden sich in der neuen Architektur, wenn Sie über die `Data Warehouse Views` -Bereich nach Auswahl `Manage Data` aus der Hauptsymbolleiste.
 
-Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, das die Leistung Ihrer Schwelle für den kostenlosen Versand verfolgt. Dieses Dashboard, wie unten gezeigt, eignet sich hervorragend zum A/B-Test von zwei kostenlosen Versandschwellen. Ihr Unternehmen kann beispielsweise unsicher sein, ob Sie kostenlosen Versand zu 50 US-Dollar oder 100 US-Dollar anbieten sollten. Sie sollten einen A/B-Test mit zwei zufälligen Untergruppen Ihrer Kunden durchführen und die Analyse in [!DNL MBI].
+In diesem Thema erfahren Sie, wie Sie ein Dashboard einrichten, das die Leistung Ihrer Schwelle für den kostenlosen Versand verfolgt. Dieses Dashboard, wie unten gezeigt, eignet sich hervorragend zum A/B-Test von zwei kostenlosen Versandschwellen. Ihr Unternehmen kann beispielsweise unsicher sein, ob Sie kostenlosen Versand zu 50 US-Dollar oder 100 US-Dollar anbieten sollten. Sie sollten einen A/B-Test mit zwei zufälligen Untergruppen Ihrer Kunden durchführen und die Analyse in [!DNL Commerce Intelligence].
 
 Bevor Sie beginnen, möchten Sie zwei separate Zeiträume identifizieren, in denen Sie unterschiedliche Werte für die Schwelle für den kostenlosen Versand in Ihrem Geschäft hatten.
 

@@ -2,24 +2,24 @@
 title: Zeitoptionen in Visual Report Builder verwenden
 description: Hier erfahren Sie, wie Sie die Daten in Ihrem Bericht für einen bestimmten Zeitraum analysieren.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
 
-# Verwendung `Time` Optionen in `Visual Report Builder`
+# Verwendung [!DNL Time] Optionen in [!DNL Visual Report Builder]
 
-Eines der Merkmale der `Visual Report Builder` ist der globale `Time Range` und `Interval` -Einstellungen. Mit diesen Einstellungen können Sie die Daten in Ihrem Bericht für einen bestimmten Zeitraum analysieren.
+Eines der Merkmale der [!DNL Visual Report Builder] ist der globale `Time Range` und `Interval` -Einstellungen. Mit diesen Einstellungen können Sie die Daten in Ihrem Bericht für einen bestimmten Zeitraum analysieren.
 
-Bei einigen Analysen müssen Sie jedoch möglicherweise verschiedene Zeitbereiche oder Zeitintervalle im selben Bericht berücksichtigen. Dort `Time` Optionen werden angezeigt. So erhalten Sie eine bessere Vorstellung von der Verwendung von `Time` Optionen in Ihren Berichten verwenden, werden in diesem Tutorial die folgenden Anwendungsfälle behandelt:
+Bei einigen Analysen müssen Sie jedoch möglicherweise verschiedene Zeitbereiche oder Zeitintervalle im selben Bericht berücksichtigen. Dort `Time` Optionen werden angezeigt. So erhalten Sie eine bessere Vorstellung von der Verwendung von `Time` -Optionen in Ihren Berichten verwenden, werden in diesem Tutorial die folgenden Anwendungsfälle behandelt:
 
 * [Analysieren von Metriken ohne Zeitstempel](#notimestamp)
 * [Geben einer Metrik ein unabhängiges Zeitintervall](#independenttimeinterval)
 * [Vergleichen derselben Metrik über verschiedene Zeiträume hinweg](#difftimerange)
 
-Wenn Sie einige der in diesem Thema besprochenen Beispielberichte befolgen möchten, öffnen Sie die [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) vor dem Fortfahren.
+Wenn Sie einige der in diesem Thema besprochenen Beispielberichte befolgen möchten, öffnen Sie die [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) vor dem Fortfahren.
 
 ## Analysieren von Metriken ohne Zeitstempel {#notimestamp}
 
@@ -64,7 +64,7 @@ Nun können Sie sehen, wie effektiv jeder Monat im letzten Jahr war:
 
 ## Vergleichen derselben Metrik über verschiedene Zeiträume hinweg {#difftimerange}
 
-In diesem Beispiel wird eine benutzerdefinierte Dimension namens `Day number of the month`. Wenn Sie diesen Bericht erstellen möchten und diese Dimension noch nicht in Ihrer Data Warehouse haben, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) Hilfe.
+In diesem Beispiel wird eine benutzerdefinierte Dimension namens `Day number of the month`. Wenn Sie diesen Bericht erstellen möchten und diese Dimension noch nicht in Ihrer Data Warehouse haben, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) Hilfe.
 
 Die beiden häufigsten Beispiele in dieser Kategorie sind (1) der Vergleich von Wachstumsmetriken (Umsatz im Jahr oder Monat im Monat) und (2) ein besseres Verständnis aktueller Inventar- oder Artikelverkaufstrends.
 

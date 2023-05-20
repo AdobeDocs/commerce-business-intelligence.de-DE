@@ -2,7 +2,7 @@
 title: Suchen nach Dashboards
 description: Erfahren Sie, wie Sie mit der Funktion "Globale Suche"nach Dashboards suchen und nach Dashboards anderer Benutzer suchen können.
 exl-id: eea09ee5-e7ec-4002-8257-a35a64c900a9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Suchen nach einem Dashboard
 
-In diesem Artikel erfahren Sie, wie Sie die [`Global Search` Funktion](#global) , um nach Dashboards zu suchen und nach [Dashboards im Besitz anderer Benutzer](#other).
+In diesem Thema erfahren Sie, wie Sie die [[!DNL Global Search] Funktion](#global) , um nach Dashboards zu suchen und nach [Dashboards im Besitz anderer Benutzer](#other).
 
 ## Globale Suche {#global}
 
-Die `Global Search` können Sie nach Dashboards suchen und diese zur Ansicht auswählen.
+Die [!DNL Global Search] können Sie nach Dashboards suchen und diese zur Ansicht auswählen.
 
 * *So zeigen Sie eine Liste Ihrer vorhandenen Dashboards an* klicken Sie auf das Dashboard.
 

@@ -2,30 +2,30 @@
 title: Replizieren von Google Analytics-Kanälen mithilfe von Akquisequellen
 description: Erfahren Sie, wie Sie Google Analytics-Kanäle mithilfe von Akquise-Quellen replizieren.
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
-# Google Analytics, die Akquise-Quellen verwenden
+# [!DNL Google Analytics] mithilfe von Akquise-Quellen
 
 ## Was sind Kanäle? {#channels}
 
-Das Erstellen benutzerdefinierter Segmente, um zu sehen, wie unterschiedliche Traffic-Aufrufe funktionieren und Trends beobachten, ist eine der leistungsstärksten Anwendungen für  [!DNL Google Analytics ]. Eine Klasse von Segmenten, die standardmäßig in [!DNL Google Analytics ] are `Channels`. Kanäle sind eine Gruppierung der gängigen Wege, wie Besucher zu Ihrer Site gelangen.  [!DNL Google Analytics ] sortiert automatisch die vielen Möglichkeiten, einen Benutzer zu gewinnen - egal ob es sich um Social Media, Pay-per-Click, E-Mail oder Verweislinks handelt - und fasst ihn in einem Behälter oder Kanal zusammen.
+Das Erstellen benutzerdefinierter Segmente, um zu sehen, wie unterschiedliche Traffic-Aufrufe funktionieren und Trends beobachten, ist eine der leistungsstärksten Anwendungen für [!DNL Google Analytics]. Eine Klasse von Segmenten, die standardmäßig in [!DNL Google Analytics] are `Channels`. Kanäle sind eine Gruppierung der gängigen Wege, wie Besucher zu Ihrer Site gelangen.  [!DNL Google Analytics] sortiert automatisch die vielen Möglichkeiten, einen Benutzer zu gewinnen - egal ob es sich um Social Media, Pay-per-Click, E-Mail oder Verweislinks handelt - und fasst ihn in einem Behälter oder Kanal zusammen.
 
-## Warum sehe ich meine `channels` in MBI? {#nochannels}
+## Warum sehe ich meine `channels` in Commerce Intelligence? {#nochannels}
 
-`Channels` sind einfache, aggregierte Datenbehälter. Um Ihre Akquisen in Channel-Buckets zu sortieren, legt Google mithilfe bestimmter Parameter unterschiedliche Regeln und Definitionen fest: eine Kombination aus Akquisition [Quelle](https://support.google.com/analytics/answer/1033173?hl=en) (die Herkunft Ihres Traffics) und die Akquise [Mittel](https://support.google.com/analytics/answer/6099206?hl=en) (allgemeine Kategorie der Quelle).
+`Channels` sind einfache, aggregierte Datenbehälter. So sortieren Sie Ihre Akquisen in Kanalbehälter: [!DNL Google] legt mithilfe spezifischer Parameter unterschiedliche Regeln und Definitionen fest: eine Kombination aus Akquisition [Quelle](https://support.google.com/analytics/answer/1033173?hl=en) (die Herkunft Ihres Traffics) und die Akquise [Mittel](https://support.google.com/analytics/answer/6099206?hl=en) (allgemeine Kategorie der Quelle).
 
-Diese Behälter können Ihnen dabei helfen, den Ursprung Ihres Traffics zu ermitteln. Diese Daten werden jedoch nicht nach Kanal, sondern durch eine Kombination aus Quelle und Medium getaggt. Da Google Kanalinformationen als zwei separate Datenpunkte sendet, werden Kanalgruppierungen nicht automatisch in [!DNL MBI].
+Diese Behälter können Ihnen dabei helfen, den Ursprung Ihres Traffics zu ermitteln. Diese Daten werden jedoch nicht nach Kanal, sondern durch eine Kombination aus Quelle und Medium getaggt. weil [!DNL Google] Sendet Kanalinformationen als zwei separate Datenpunkte, werden Kanalgruppierungen nicht automatisch in [!DNL Commerce Intelligence].
 
 ## Was sind die standardmäßigen Kanalgruppierungen? Wie werden sie erstellt?
 
-Google bietet standardmäßig acht Kanäle. Sehen Sie sich die Regeln an, die bestimmen, wie sie erstellt werden:
+Standardmäßig [!DNL Google] richtet acht verschiedene Kanäle ein. Die Regeln, die bestimmen, wie Kanäle erstellt werden, sind unten aufgeführt.
 
-| Kanal | Was ist es? | Wie wird es erstellt? |
+| **Kanal** | **Was ist es?** | **Wie wird es erstellt?** |
 |---|---|---|
 | Direkt | Jeder, der direkt auf Ihre Site gelangt. | Quelle = `Direct`<br>AND Medium = `(not set); OR Medium = (none)` |
 | Organische Suche | Traffic, der organisch in unbezahlten Suchmaschinen eingestuft wurde. | Medium = `organic` |
@@ -44,13 +44,13 @@ Da Sie wissen, dass Kanäle nur eine Kombination aus Quellen und Medien sind, is
 
 1. **Aktivieren Sie Ihre[!DNL Google ECommerce]Integration**
 
-   [Einmal aktiviert](../importing-data/integrations/google-ecommerce.md), stellen Sie sicher, dass [Synchronisieren](.../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) die **medium** und **source** -Felder in Ihrer Data Warehouse. Nach Abschluss werden Medium- und Quellakquisedaten in Ihre Data Warehouse übertragen.
+   [Bei Aktivierung](../importing-data/integrations/google-ecommerce.md), stellen Sie sicher, dass [Synchronisieren](.../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) die **medium** und **source** -Felder in Ihrer Data Warehouse. Nach Abschluss werden Medium- und Quellakquisedaten in Ihre Data Warehouse übertragen.
 
 1. **Hochladen einer Zuordnung der Kanalgruppierungen von Google**
 
-   Um Zeit zu sparen, hat Commerce bereits eine Tabelle mit den Standardgruppierungen erstellt, die als Datei zugeordnet sind und die Sie [herunterladen](../../assets/ga-channel-mapping.csv).
+   Adobe Commerce erstellt eine Tabelle mit den Standardgruppierungen, die als Datei zugeordnet sind und die Sie [herunterladen](../../assets/ga-channel-mapping.csv).
 
-   Wenn Sie Google Analytics sind und eigene Kanäle erstellt haben, möchten Sie Ihre spezifischen Regeln zur Zuordnungstabelle hinzufügen, bevor Sie die Datei in hochladen. [!DNL MBI].
+   Wenn Sie [!DNL Google Analytics] Pro und Ihre eigenen Kanäle erstellt haben, möchten Sie Ihre spezifischen Regeln zur Zuordnungstabelle hinzufügen, bevor Sie die Datei in hochladen. [!DNL Commerce Intelligence].
 
    Einbinden in Ihre Data Warehouse als [Datei-Upload](../importing-data/connecting-data/using-file-uploader.md).
 
@@ -58,13 +58,13 @@ Da Sie wissen, dass Kanäle nur eine Kombination aus Quellen und Medien sind, is
 
 1. **Beziehung herstellen zwischen[!DNL Google ECommerce]und Mappings-Datei-Upload**
 
-   So erstellen Sie eine Beziehung zwischen[!DNL Google ECommerce]und der Zuordnungstabelle, [Support-Anfrage senden](../../guide-overview.md) an Ihr Data Analyst-Team weiterleiten und auf diesen Artikel verweisen. Der Analyst erstellt eine neue berechnete Spalte mit dem Namen **Kanal** in der EG-Commerce-Tabelle. **Nach einem vollständigen Aktualisierungszyklus**, kann diese Spalte in einem Filter oder einer Gruppe nach verwendet werden.
+   So erstellen Sie eine Beziehung zwischen[!DNL Google ECommerce] und der Zuordnungstabelle, [Support-Anfrage senden](../../guide-overview.md#Submitting-a-Support-Ticket) an Ihr Data Analyst-Team weiterleiten und auf dieses Thema verweisen. Der Analyst erstellt eine neue berechnete Spalte mit dem Namen **Kanal** in der EG-Commerce-Tabelle. **Nach einem vollständigen Aktualisierungszyklus**, kann diese Spalte in einer `Filter` oder `Group by`.
 
-Herzlichen Glückwunsch! Jetzt befinden sich in Ihrer Data Warehouse Google Analytics-Kanalgruppierungen, sodass Sie Ihre Daten aus einer neuen Perspektive analysieren können:
+Sie haben jetzt [!DNL Google Analytics Channel] -Gruppierungen in Ihrer Data Warehouse verwenden, sodass Sie Ihre Daten aus einer neuen Perspektive analysieren können:
 
 ![Segmentieren der Metrik Anzahl Bestellungen nach Kanal](../../assets/GA_Channel_Gif.gif)
 
-In diesem Beispiel haben Sie mit simple - Segmentierung der **Anzahl Bestellungen** Metrik nach **Kanal**. Jetzt sind Sie an der Reihe - testen Sie Ihre neue Spalte und sehen Sie, welche Trends Sie in Ihren Google Analytics-Kanaldaten identifizieren können!
+In diesem Beispiel haben Sie mit der Segmentierung der **Anzahl Bestellungen** Metrik nach **Kanal**. Testen Sie Ihre neue Spalte und sehen Sie, welche Trends Sie in Ihrer [!DNL Google Analytics Channel] data!
 
 ## Verwandte Dokumentation
 

@@ -2,16 +2,16 @@
 title: quote_item-Tabelle
 description: Erfahren Sie, wie Sie mit der Tabelle "quote_item"arbeiten.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
 # quote_item-Tabelle
 
-Die `quote_item` table (`sales_flat_quote_item` auf M1) 1) enthält Einträge zu jedem Artikel, der einem Warenkorb hinzugefügt wird, unabhängig davon, ob der Warenkorb abgebrochen oder in einen Kauf umgewandelt wurde. Jede Zeile stellt ein Warenkorbelement dar. Aufgrund der potenziellen Größe dieser Tabelle empfiehlt Adobe, Datensätze regelmäßig zu löschen, wenn bestimmte Kriterien erfüllt sind, z. B. wenn nicht konvertierte Warenkörbe älter als 60 Tage sind.
+Die `quote_item` table (`sales_flat_quote_item` auf M1) enthält Datensätze zu jedem Artikel, der einem Warenkorb hinzugefügt wird, unabhängig davon, ob der Warenkorb abgebrochen oder in einen Kauf umgewandelt wurde. Jede Zeile stellt ein Warenkorbelement dar. Aufgrund der potenziellen Größe dieser Tabelle empfiehlt Adobe, Datensätze regelmäßig zu löschen, wenn bestimmte Kriterien erfüllt sind, z. B. wenn nicht konvertierte Warenkörbe älter als 60 Tage sind.
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ Die `quote_item` table (`sales_flat_quote_item` auf M1) 1) enthält Einträge z
 | **Spaltenname** | **Beschreibung** |
 |---|---|
 | `base_price` | Preis einer einzelnen Einheit eines Produkts zum Zeitpunkt der Hinzufügung des Artikels zum Warenkorb nach [Katalogpreisregeln, gestaffelte Rabatte und Sonderpreise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) werden angewendet und bevor Steuern, Versand- oder Warenkorbrabatte angewendet werden. Dies wird in der Basiswährung des Stores dargestellt. |
-| `created_at` | Erstellungszeitstempel des Warenkorbelements, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL MBI], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL MBI] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
+| `created_at` | Erstellungszeitstempel des Warenkorbelements, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL Commerce Intelligence], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL Commerce Intelligence] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
 | `item_id` (PK) | Eindeutige Kennung für die Tabelle |
 | `name` | Textname des Bestellelements |
 | `parent_item_id` | `Foreign key` , das ein einfaches Produkt mit seinem übergeordneten Bundle oder konfigurierbaren Produkt verknüpft. Mitglied werden `quote_item.item_id` , um übergeordnete Produktattribute zu bestimmen, die mit einem einfachen Produkt verknüpft sind. Bei übergeordneten Warenkorbelementen (d. h. Bundle oder konfigurierbare Produktarten) muss die `parent_item_id` is `NULL` |
@@ -70,7 +70,7 @@ Die `quote_item` table (`sales_flat_quote_item` auf M1) 1) enthält Einträge z
 
 `quote_item`
 
-* Mitglied werden `quote_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) Hilfe bei der Konfiguration dieser Berechnungen, wenn sie im Data Warehousen-Manager erstellt werden.
+* Mitglied werden `quote_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) Hilfe bei der Konfiguration dieser Berechnungen, wenn sie im Data Warehousen-Manager erstellt werden.
    * Pfad: `quote_item.parent_item_id` (viele) => `quote_item.item_id` (eins)
 
 `store`

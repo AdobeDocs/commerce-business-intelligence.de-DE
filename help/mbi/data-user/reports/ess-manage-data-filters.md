@@ -2,18 +2,18 @@
 title: Filtersätze für Metriken erstellen
 description: Erfahren Sie, wie Sie gespeicherte Filtersätze erstellen und auf die Metriken anwenden.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
 # Erstellen von Filtersätzen
 
-Wenn Sie mehrere Metriken in [!DNL MBI] die auf ähnliche Weise gefiltert werden müssen (z. B. um Testaufträge herauszufiltern), können Sie gespeicherte Filtersätze erstellen und auf die Metriken anwenden. So sparen Sie Zeit, da Sie beim Erstellen oder Bearbeiten einer Metrik keine individuellen Filter hinzufügen müssen.
+Wenn Sie mehrere Metriken in [!DNL Commerce Intelligence] die auf ähnliche Weise gefiltert werden müssen (z. B. um Testaufträge herauszufiltern), können Sie gespeicherte Filtersätze erstellen und auf die Metriken anwenden. So sparen Sie Zeit, da Sie beim Erstellen oder Bearbeiten einer Metrik keine individuellen Filter hinzufügen müssen.
 
-Siehe [Schulungsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=en) , um mehr zu erfahren.
+Siehe [Schulungsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) für weitere Informationen.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Siehe [Schulungsvideo](https://experienceleague.adobe.com/docs/commerce-knowledg
 
 1. Überprüfen Sie die Filterlogik und stellen Sie sicher, dass Klammern und Operatoren richtig platziert sind: Beispiel: `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 
-   Ein falscher Filter ist häufig die Ursache für Datendiskrepanzen zwischen [!DNL MBI] Berichte und die erwarteten Ergebnisse.
+   Ein falscher Filter ist häufig die Ursache für Datendiskrepanzen zwischen [!DNL Commerce Intelligence] Berichte und die erwarteten Ergebnisse.
 
 1. Speichern Sie die `Filter Set`.
 
@@ -45,7 +45,7 @@ Nachdem ein Filtersatz gespeichert wurde, können Sie ihn auf jede Metrik anwend
 
 >[!NOTE]
 >
->`Filter Sets` kann auch auf berechnete Spalten in [!DNL MBI]. Sie können die Anwendung eines Filtersatzes auf eine Datendimension anfordern, die in [!DNL MBI] über kontaktieren Sie den Support.
+>`Filter Sets` kann auch auf berechnete Spalten in [!DNL Commerce Intelligence]. Sie können die Anwendung eines Filtersatzes auf eine Datendimension anfordern, die in [!DNL Commerce Intelligence] über kontaktieren Sie den Support.
 
 ## Verwandte
 

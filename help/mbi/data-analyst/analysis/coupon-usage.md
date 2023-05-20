@@ -2,24 +2,22 @@
 title: Nutzung von Gutscheinen analysieren
 description: Erfahren Sie, wie Sie die Nutzung von Gutscheinen beim Akquise und Kundenbindung analysieren.
 exl-id: d4d1393f-1695-43f2-980a-84525f84031e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1141'
 ht-degree: 2%
 
 ---
 
 # Nutzung des Gutscheins
 
-Sie fragen sich je, wie das Anbieten von Coupons Ihr Geschäft beeinflusst? Möchten Sie wissen, welche Coupons die Performance unterstützen oder beeinträchtigen? In diesem Artikel werden Analysen untersucht, die Ihnen ein gutes Bild von der Nutzung von Coupons Ihrer Kunden vermitteln, indem Sie diese Fragen beantworten:
+Sie fragen sich je, wie das Anbieten von Coupons Ihr Geschäft beeinflusst? Möchten Sie wissen, welche Coupons die Performance unterstützen oder beeinträchtigen? In diesem Thema werden Analysen untersucht, die Ihnen einen guten Überblick über die Nutzung von Coupons Ihrer Kunden verschaffen, indem Sie diese Fragen beantworten:
 
 * Wie viele Kunden verwenden Coupons?
 * Wie viele Coupons werden verwendet?
 * Wie hoch ist Ihr Umsatz vor und nach der Anwendung von Coupons?
 * Wie hoch ist der durchschnittliche Bestellwert vor und nach der Anwendung von Gutscheinen?
 * Was für Kunden ziehen Sie mit Coupons an?
-
-Lasst uns loslegen!
 
 ## Empfohlene Metriken {#metrics}
 
@@ -109,7 +107,7 @@ Für den durchschnittlichen Umsatz während der Lebensdauer können Sie erkennen
 
 ## Was kann ich sonst noch analysieren? {#otheranalyses}
 
-Die in diesem Artikel erwähnten Analysen geben Ihnen wertvolle Einblicke in die Verwendung Ihrer Gutscheine durch Ihre Kunden. Es gibt jedoch eine Vielzahl weiterer Analysen, die Ihnen erlauben, ein wenig tiefer zu gehen.
+Die in diesem Thema erwähnten Analysen geben Ihnen wertvolle Einblicke in die Verwendung Ihrer Gutscheine durch Ihre Kunden. Es gibt jedoch eine Vielzahl weiterer Analysen, die Ihnen erlauben, ein wenig tiefer zu gehen.
 
 **Sie können Ihre Kundenakquise aus Gutscheinen analysieren.**
 

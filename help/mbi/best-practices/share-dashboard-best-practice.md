@@ -2,7 +2,7 @@
 title: Freigeben von Dashboards
 description: Erfahren Sie, wie Sie mit Ihren Dashboards arbeiten und diese freigeben können.
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Dashboard freigeben
 
-Die Freigabe von Dashboards bedeutet, dass Sie und Ihr Team jederzeit über die gleichen Informationen verfügen, die eine Zusammenarbeit und Diskussion ermöglichen. Im Folgenden finden Sie einige Empfehlungen zum Freigeben von Dashboards und zum Beibehalten Ihrer [!DNL MBI] unübersichtlich.
+Die Freigabe von Dashboards bedeutet, dass Sie und Ihr Team jederzeit über die gleichen Informationen verfügen, die eine Zusammenarbeit und Diskussion ermöglichen. Im Folgenden finden Sie einige Empfehlungen zum Freigeben von Dashboards und zum Beibehalten Ihrer [!DNL Adobe Commerce Intelligence] unübersichtlich.
 
 ## Vermeiden doppelter Dashboards
 
 Manchmal finden Sie mehrere Dashboards mit demselben Namen. Dies liegt in der Regel daran, dass andere Benutzer ähnliche Dashboards erstellt und für Sie freigegeben haben. Bei diesen Dashboards kann es sich um Duplikate einer primären Kopie handeln. In diesem Fall empfiehlt Adobe, dass ein Benutzer die Hauptkopie des Dashboards freigibt und dann alle doppelten Dashboards entfernt.
 
-Um zu sehen, wem ein Dashboard gehört, klicken Sie links oben im Dashboard auf das Dropdown-Menü . Alle Dashboards, die keinen Namen darunter haben, gehören zu Ihnen.
+Um zu sehen, wer Inhaber eines Dashboards ist, klicken Sie in der oberen linken Ecke auf das Dropdown-Menü Dashboard . Alle Dashboards, die keinen Namen darunter haben, gehören zu Ihnen.
 
 ![](../../mbi/assets/Dash_ownership.gif)
 
@@ -30,7 +30,7 @@ So entfernen Sie alle doppelten Dashboards:
 
 ## Erstellen eines Kernsatzes von Dashboards
 
-Wenn neue Benutzer erstellt werden, besitzen sie keine Dashboards oder Diagramme. Er wird jedoch nach der ersten Anmeldung eine Liste der beliebtesten Dashboards in Ihrem Unternehmen (mit Anzeigen- oder Bearbeitungsrechten für das gesamte Team) sehen. Stellen Sie sicher, dass sich Dashboards immer in dieser Liste befinden, damit neue Benutzer einbezogen werden können.
+Wenn neue Benutzer erstellt werden, besitzen sie keine Dashboards oder Diagramme. Nach der ersten Anmeldung wird ihnen jedoch eine Liste der beliebtesten Dashboards in Ihrer Organisation angezeigt (mit Anzeigen- oder Bearbeitungsrechten für das gesamte Team). Stellen Sie sicher, dass sich Dashboards immer in dieser Liste befinden, damit neue Benutzer einbezogen werden können.
 
 ## Dashboards für neue Benutzer freigeben
 

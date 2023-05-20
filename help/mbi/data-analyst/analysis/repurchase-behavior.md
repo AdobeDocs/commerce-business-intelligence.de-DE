@@ -2,16 +2,16 @@
 title: Analysieren des Kundenrückkaufverhaltens
 description: Erfahren Sie, wie Sie das Verhalten von Kunden bei der Rücknahme analysieren.
 exl-id: 62666d08-5240-4f19-bf8e-e5b2d79a25c4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
 
 # Kundenrückkaufverhalten
 
-Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt kaufen, im Laufe der Zeit anders verhalten als andere Kunden. In diesem Artikel werden Analysen untersucht, die Ihnen bei der Beantwortung der folgenden Fragen helfen können:
+Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt kaufen, im Laufe der Zeit anders verhalten als andere Kunden. In diesem Thema werden Analysen untersucht, die Ihnen bei der Beantwortung der folgenden Fragen helfen können.
 
 Von Kunden, die eine *spezifisches Element*,
 
@@ -52,7 +52,7 @@ Beachten Sie die oben genannten Metriken und sehen Sie sich ein Beispiel für Ka
 
 {style="table-layout:auto"}
 
-Nachdem Sie nun über Ihre Daten verfügen, sollten Sie sich ansehen, was dies für jede Ihrer Metriken bedeuten könnte.
+Was bedeutet dies für jede Ihrer Metriken, nachdem Sie über Ihre Daten verfügen?
 
 ### Wiederholungsreihenwahrscheinlichkeit
 
@@ -66,7 +66,7 @@ Auf der Grundlage der oben genannten Daten können Sie sehen, dass Personen, die
 
 ### Durchschnittlicher Umsatz während der Kundenlebensdauer
 
-Kunden, die die Brauerei erwerben, haben den höchsten durchschnittlichen Umsatz während der Lebensdauer; Dies ist sinnvoll, da die Kosten der Brauerei in diese Maßnahme einbezogen werden. Im Gegensatz dazu kaufen Kunden, die Kaffeebohnen kaufen, normalerweise nur kostengünstige Artikel.
+Kunden, die die Brauerei erwerben, haben den höchsten durchschnittlichen Lebensdauerumsatz, was angesichts der Tatsache, dass die Kosten der Brauerei in diese Maßnahme einbezogen werden, sinnvoll ist. Im Gegensatz dazu kaufen Kunden, die Kaffeebohnen kaufen, normalerweise nur kostengünstige Artikel.
 
 ### Zeit bis zur nächsten Bestellung
 
@@ -74,10 +74,10 @@ Bei Kunden, die Kaffeekapseln gekauft haben, kann die Hälfte innerhalb von etwa
 
 ## Welche anderen Analysen kann ich erstellen?
 
-Mithilfe der in diesem Artikel beschriebenen Metriken können Sie auch weitere nützliche Neukaufsanalysen erstellen. Sie können beispielsweise auch sehen, wie Kunden zurückkaufen **dasselbe Element** - wenn sie beispielsweise regelmäßig Nachfüllungen kaufen. Kapseln und Kaffeebohnen können regelmäßig neu gekauft werden, es wäre jedoch unerwartet, wenn Kunden den Kaffee-Brauer erneut kaufen würden. Wenn sich Ihr Unternehmen auf Nachbearbeitung oder Wiederaufstockung konzentriert, wäre diese Analyse nützlich.
+Mithilfe der in diesem Thema beschriebenen Metriken können Sie auch weitere nützliche Neukaufsanalysen erstellen. Sie können beispielsweise auch sehen, wie Kunden zurückkaufen **dasselbe Element** - wenn sie beispielsweise regelmäßig Nachfüllungen kaufen. Kapseln und Kaffeebohnen können regelmäßig neu gekauft werden, es wäre jedoch unerwartet, wenn Kunden den Kaffee-Brauer erneut kaufen würden. Wenn sich Ihr Unternehmen auf Nachbearbeitung oder Wiederaufstockung konzentriert, wäre diese Analyse nützlich.
 
 Zusätzlich zur Analyse des Kaufverhaltens Ihrer Kunden können Sie auch Analysen erstellen, die sich auf die Kundenloyalität beziehen. Erwägen Sie die Analyse von Mustern in der Kundenabwanderung - wo verlassen Ihre Kunden Ihre Site und kommen nicht zurück? Wie schnell ist das passiert?
 
 Nachdem Sie ermittelt haben, warum die Abwanderung stattfindet, können Sie Ihre Analyse verwenden, um eine `reactivation` Kampagne. Mithilfe dieser Daten können Sie Benutzer identifizieren, die inaktiv geworden sind, wie lange es seit ihrem letzten Besuch ist, was ihr letzter Kauf war usw. Auf diese Weise können Sie umsetzbare Entscheidungen treffen, die Ihre Kunden dazu verleiten, zurückzukehren.
 
-Hilfe zur Analyse: [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Hilfe zur Analyse: [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

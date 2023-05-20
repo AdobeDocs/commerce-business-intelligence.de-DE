@@ -2,9 +2,9 @@
 title: Jährliche, monatliche und wöchentliche Berichte
 description: Erfahren Sie, wie Sie Trends im Zeitverlauf einfach erkennen und die Perspektive für Zeiträume ändern können, die Sie vergleichen möchten.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dieser Artikel enthält Anweisungen für Clients, die die ursprüngliche Architektur und die neue Architektur verwenden. Sie befinden sich auf der [neue Architektur](../../administrator/account-management/new-architecture.md) Wenn Sie über _Data Warehouse-Ansichten_ -Bereich nach Auswahl `Manage Data` aus der Hauptsymbolleiste.
+>Dieses Thema enthält Anweisungen für Clients, die die ursprüngliche Architektur und die neue Architektur verwenden. Sie befinden sich auf der [neue Architektur](../../administrator/account-management/new-architecture.md) Wenn Sie über [!DNL _Data Warehouse-Ansichten_] -Bereich nach Auswahl [!DNL Manage Data] aus der Hauptsymbolleiste.
 
-Mit ReportBuilder können Sie Trends im Zeitverlauf einfach anzeigen und die Perspektive für Zeiträume ändern, die Sie vergleichen möchten. Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, das eine Ebene tiefer geht und es Ihnen ermöglicht, Berichte für die Analyse von Woche zu Woche, Monat zu Monat und Jahr zu Jahr zu erstellen.
+Mit ReportBuilder können Sie Trends im Zeitverlauf einfach anzeigen und die Perspektive für Zeiträume ändern, die Sie vergleichen möchten. In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das eine Ebene tiefer geht und es Ihnen ermöglicht, Berichte für die Analyse von Woche zu Woche, Monat zu Jahr und Jahr zu Jahr zu erstellen.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-Bevor Sie beginnen, möchten Sie sich mit Perspektiven im Detail vertraut machen [here](../../tutorials/using-visual-report-builder.md) und unabhängige Zeitoptionen [here](../../tutorials/time-options-visual-rpt-bldr.md).
+Bevor Sie beginnen, sollten Sie die Perspektiven genauer untersuchen [here](../../tutorials/using-visual-report-builder.md) und unabhängige Zeitoptionen [here](../../tutorials/time-options-visual-rpt-bldr.md).
 
 Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 

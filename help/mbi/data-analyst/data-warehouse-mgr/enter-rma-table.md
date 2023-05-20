@@ -2,20 +2,20 @@
 title: enterprise_rma-Tabelle
 description: Erfahren Sie, wie Sie Informationen zu einer bestimmten Rückgabeanforderung analysieren.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # enterprise_rma-Tabelle
 
-Jede Zeile im `enterprise_rma` Tabelle (häufig `magento_rma` in Commerce 2.x, der Name kann jedoch angepasst werden) enthält Informationen zu einer bestimmten Rückkehranforderung.
+Jede Zeile im `enterprise_rma` Tabelle (häufig `magento_rma` in Adobe Commerce 2.x, der Name kann jedoch angepasst werden) enthält Informationen zu einer bestimmten Rückkehranforderung.
 
 >[!NOTE]
 >
->Diese Tabelle ist nur dann standardmäßig in Ihrem Commerce-Konto enthalten, wenn Sie `Enterprise Edition` oder `Enterprise Cloud Edition` -Kunden.
+>Diese Tabelle ist nur mit Ihrem Adobe Commerce-Konto kompatibel, wenn Sie `Enterprise Edition` oder `Enterprise Cloud Edition` -Kunden.
 
 ## Allgemeine native Spalten
 

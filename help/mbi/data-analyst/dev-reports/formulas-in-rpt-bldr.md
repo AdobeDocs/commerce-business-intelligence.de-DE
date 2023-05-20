@@ -2,16 +2,16 @@
 title: Formeln im Report Builder
 description: Erfahren Sie, wie Formeln im Report Builder verwendet werden können.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 # Formeln im `Report Builder`
 
-Im [`Report Builder`](../../tutorials/using-visual-report-builder.md), können Sie leistungsstarke Visualisierungen mithilfe der [definierte Metriken](../../data-user/reports/ess-manage-data-metrics.md) in Ihrem Konto. Durch die Kombination dieser Metriken mit einer Formel können Sie zusätzliche Einblicke aus Ihren Daten gewinnen. In diesem Artikel wird erläutert, wie Formeln im `Report Builder` - springen Sie ein!
+Im [`Report Builder`](../../tutorials/using-visual-report-builder.md), können Sie leistungsstarke Visualisierungen mithilfe der [definierte Metriken](../../data-user/reports/ess-manage-data-metrics.md) in Ihrem Konto. Durch die Kombination dieser Metriken mit einer Formel können Sie zusätzliche Einblicke aus Ihren Daten gewinnen. In diesem Thema wird erläutert, wie Formeln im `Report Builder` - springen Sie ein!
 
 ## Was ist ein `formula`? {#what}
 
@@ -63,4 +63,4 @@ In diesem Beispiel haben Sie die Variable `Stacked Columns` um die Ergebnisse na
 
 Haben Sie in den obigen Beispielen bemerkt, dass die Formel `timestamp`, `groupings`, `perspectives`und `filters` von den Eingabemetriken vererbt werden? Beachten Sie, dass Formeln zur Verwendung von `perspectives` und [unabhängige Zeitoptionen](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, genau wie Metriken.
 
-Wenn Sie weitere Fragen zur Verwendung von Formeln im `Report Builder`, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Sie weitere Fragen zur Verwendung von Formeln im `Report Builder`, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

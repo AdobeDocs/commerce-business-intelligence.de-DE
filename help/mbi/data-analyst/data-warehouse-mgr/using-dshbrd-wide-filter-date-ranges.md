@@ -2,16 +2,16 @@
 title: Dashboard-weite Filterung
 description: Erfahren Sie, wie Sie Massenbearbeitungen aller Berichte in einem bestimmten Dashboard durchführen.
 exl-id: 379d0027-8a7a-4062-a66a-4f06c37b806c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # Dashboard-weite Filterung
 
-Mit einer Dashboard-weiten Filterung können Sie Massenbearbeitungen aller Berichte in einem bestimmten Dashboard vornehmen. Sie können dieselbe Analyse schnell über verschiedene Zeiträume oder für verschiedene Geschäfte anzeigen. Sie können die Leistung eines Vorjahres, Monats oder einer Woche einfach pro Geschäft vergleichen. Außerdem können Sie ein ganzes Dashboard aktualisieren, um eine neu gestartete Kampagne aufzunehmen.
+Mit einer Dashboard-weiten Filterung können Sie Massenbearbeitungen aller Berichte in einem bestimmten Dashboard vornehmen. Sie können dieselbe Analyse schnell über verschiedene Zeiträume oder für verschiedene Geschäfte anzeigen. Sie können die Leistung eines Vorjahres, Monats oder einer Woche einfach pro Geschäft vergleichen. Sie können ein komplettes Dashboard aktualisieren, um eine neu gestartete Kampagne aufzunehmen.
 
 ## Datumsfilter
 
@@ -45,7 +45,7 @@ Um die Leistung eines bestimmten Stores zu analysieren, klicken Sie auf das Stor
 
 >[!NOTE]
 >
->Ein Store-Filter ist für eine ganze [!DNL MBI] -Konto. Wenn ein Dashboard Berichte enthält, die nicht vom Filter betroffen sind (z. B. Berichte, die nicht auf Commerce-Daten basieren), werden diese Berichte bei Anwendung des Store-Filters nicht aktualisiert. Sie können [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) wenn Sie der Ansicht sind, dass ein Bericht auf der Grundlage der Store-Auswahl aktualisiert werden sollte, oder wenn Sie glauben, dass Ihr Konto-Store-Filter versehentlich deaktiviert ist.
+>Ein Store-Filter ist für eine ganze [!DNL Commerce Intelligence] -Konto. Wenn ein Dashboard Berichte enthält, die nicht vom Filter betroffen sind (z. B. Berichte, die nicht auf [!DNL Adobe Commerce] -Daten), werden diese Berichte nicht aktualisiert, wenn der Store-Filter angewendet wird. Sie können [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) wenn Sie der Ansicht sind, dass ein Bericht auf der Grundlage der Store-Auswahl aktualisiert werden sollte, oder wenn Sie glauben, dass Ihr Konto-Store-Filter versehentlich deaktiviert ist.
 
 Wenn Sie einen Store aus dem `Store Filter`festgelegt ist, behält der Filter Ihre Auswahl bei, wenn Sie zwischen Dashboards navigieren. Durch die Beibehaltung Ihrer Auswahl können Sie die Daten für den ausgewählten Store überall anzeigen, bis Sie `All Stores`.
 

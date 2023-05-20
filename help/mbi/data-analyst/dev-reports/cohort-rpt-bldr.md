@@ -2,7 +2,7 @@
 title: Report Builder der Kohorte
 description: Erfahren Sie mehr über die Analyse von Benutzergruppen, die über ihre Lebenszyklen ähnliche Merkmale aufweisen.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 # Report Builder der Kohorte
 
-Wollten Sie schon einmal untersuchen, wie sich unterschiedliche Untergruppen Ihrer Benutzer im Laufe der Zeit verhalten? Haben Sie sich beispielsweise schon einmal gefragt, ob Benutzer, die sich während eines Promo-Zeitraums registrieren, einen höheren durchschnittlichen Lebenszeitumsatz haben als diejenigen, die dies nicht tun? Wenn die Antwort `Yes`, dann `Cohort Report Builder` ist das perfekte Werkzeug für Sie. [!DNL MBI] wurde optimiert, um diese Analyse durchzuführen und sie für Ihr Unternehmen relevant zu machen.
+Wollten Sie schon einmal untersuchen, wie sich unterschiedliche Untergruppen Ihrer Benutzer im Laufe der Zeit verhalten? Haben Sie sich beispielsweise schon einmal gefragt, ob Benutzer, die sich während eines Promo-Zeitraums registrieren, einen höheren durchschnittlichen Lebenszeitumsatz haben als diejenigen, die dies nicht tun? Wenn die Antwort `Yes`, dann `Cohort Report Builder` ist das perfekte Werkzeug für Sie. [!DNL Adobe Commerce Intelligence] wurde optimiert, um diese Analyse durchzuführen und sie für Ihr Unternehmen relevant zu machen.
 
 ## Was ist eine Kohortenanalyse? {#what}
 
 `Cohort` Analyse kann allgemein definiert werden als die Analyse von Benutzergruppen, die über ihre Lebenszyklen ähnliche Merkmale aufweisen. Damit können Sie Verhaltenstrends über verschiedene Benutzergruppen hinweg identifizieren.
 
-Für eine tiefergehende Einführung in `cohort` Analyse, [hier sehen](https://www.cohortanalysis.com/).
+Für eine ausführliche Einführung in `cohort` Analyse, Überprüfung [diese Seite](https://www.cohortanalysis.com/).
 
-In [!DNL MBI] Dashboard, ist es einfach, Benutzer zu erstellen `cohorts` auf der Grundlage einer `cohort` Datum und eine Metrik in Ihrem Konto.
+In [!DNL Commerce Intelligence] Dashboard, ist es einfach, Benutzer zu erstellen `cohorts` auf der Grundlage einer `cohort` Datum und eine Metrik in Ihrem Konto.
 
 ## Warum ist die Kohortenanalyse wichtig? {#important}
 
-Wie oben erwähnt, `cohort` Mithilfe der Analyse können Sie Verhaltenstrends zwischen verschiedenen Benutzergruppen identifizieren. Mit einem soliden Verständnis, wie sich bestimmte Gruppen verhalten, können Sie Ihre Entscheidungen und Ausgaben so anpassen, dass Sie Ihren Umsatz maximieren können. Nehmen wir beispielsweise einen Lebensdauerumsatz `cohort` Analyse - obwohl diese Art von Analyse aus vielen Gründen von Vorteil ist, ist die unmittelbare, bessere Entscheidungen über die Kundenakquise.
+Wie oben erwähnt, `cohort` Mithilfe der Analyse können Sie Verhaltenstrends zwischen verschiedenen Benutzergruppen identifizieren. Mit einem soliden Verständnis, wie sich bestimmte Gruppen verhalten, können Sie Ihre Entscheidungen und Ausgaben so anpassen, dass Sie Ihren Umsatz maximieren können. Nehmen wir beispielsweise einen Umsatz über die gesamte Lebensdauer `cohort` Analyse - obwohl diese Art von Analyse aus vielen Gründen von Vorteil ist, ist die unmittelbare, bessere Entscheidungen über die Kundenakquise.
 
 ## Wie erstelle ich eine eigene `cohort` Analyse?
 
@@ -99,7 +99,7 @@ Hier ist ein Beispiel, um alles zusammenzuziehen. In diesem Beispiel möchte ich
 
 #### Alte Architektur {#personalinfo}
 
-Im Folgenden finden Sie Anweisungen zur älteren Version der `Cohort Report Builder`. Wenn Sie an der Verwendung der neuen Version interessiert sind, lesen Sie [Neue Architektur](../../administrator/account-management/new-architecture.md) Weitere Informationen zur Migration zu einer [!DNL MBI] Neues Architekturkonto.
+Im Folgenden finden Sie Anweisungen zur älteren Version der `Cohort Report Builder`. Wenn Sie an der Verwendung der neuen Version interessiert sind, lesen Sie [Neue Architektur](../../administrator/account-management/new-architecture.md) Weitere Informationen zur Migration zu einer [!DNL Commerce Intelligence] Neues Architekturkonto.
 
 #### Wie erstelle ich eine eigene `cohort` Analyse? {#create}
 
@@ -107,7 +107,7 @@ Im Folgenden finden Sie Anweisungen zur älteren Version der `Cohort Report Buil
 
 `Cohort` Analyse in Aktion! Hier können Sie sehen, dass der Umsatz im Laufe der Zeit kumuliert und pro Benutzer zunimmt.
 
-In diesem Abschnitt erfahren Sie, wie Sie Ihre eigene `cohort` Analyse. Beispiele (und animierte GIF, die den Prozess demonstrieren) finden Sie im [Beispielabschnitt](#examples) dieses Artikels.
+In diesem Abschnitt erfahren Sie, wie Sie Ihre eigene `cohort` Analyse. Beispiele (und animierte GIF, die den Prozess demonstrieren) finden Sie im [Beispielabschnitt](#examples) dieses Themas.
 
 1. Klicken **[!UICONTROL Report Builder]** auf der linken Registerkarte oder **[!UICONTROL Add Report** > **Create Report]** in jedem Dashboard.
 

@@ -1,15 +1,15 @@
 ---
-title: Neuen Benutzer hinzufügen/bearbeiten
-description: Erfahren Sie, wie Sie eine neue [!DNL MBI] und wie Sie Ihren Benutzernamen oder Ihr Kennwort aktualisieren können.
+title: Neuen Adobe Commerce Intelligence-Benutzer hinzufügen
+description: Erfahren Sie, wie Sie eine neue [!DNL Commerce Intelligence] und wie Sie Ihren Benutzernamen oder Ihr Kennwort aktualisieren können.
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-# Benutzer hinzufügen
+# Hinzufügen neuer [!DNL Adobe Commercer Intelligence] Benutzer
 
 1. Klicken Sie oben rechts auf den Namen Ihres Unternehmens und wählen Sie **[!UICONTROL Invite User]** aus dem Dropdown-Menü aus.
 1. Geben Sie den Namen und die E-Mail-Adresse des Benutzers ein.
@@ -30,12 +30,12 @@ Der neue Benutzer erhält eine E-Mail mit Anmelde- und Kennwortdetails.
 
 ## E-Mail-Adresse oder Passwort aktualisieren
 
-Sie können Ihre E-Mail-Adresse und/oder Ihr Passwort aktualisieren, indem Sie in der oberen rechten Ecke auf den Firmennamen klicken und dann auf Klicken klicken **[!UICONTROL Edit Profile]**.
+Sie können Ihre E-Mail-Adresse und/oder Ihr Passwort aktualisieren, indem Sie oben rechts auf den Firmennamen klicken und dann auf **[!UICONTROL Edit Profile]**.
 
 ## Einladung erneut senden
 
-Wenn Sie die Einladung erneut an den neuen Benutzer senden müssen, muss die [Anmeldeseite](https://dashboard.rjmetrics.com/v2/session/create)klicken **[!UICONTROL Forgot?]**, geben Sie die E-Mail-Adresse des neuen Benutzers ein und klicken Sie auf **[!UICONTROL Reset Password]**. Dadurch wird die Einladung erneut gesendet und der Benutzer kann sich anmelden.
+Wenn Sie die Einladung erneut senden müssen, muss die [Anmeldeseite](https://dashboard.rjmetrics.com/v2/session/create)klicken **[!UICONTROL Forgot?]**, geben Sie die E-Mail-Adresse des neuen Benutzers ein und klicken Sie auf **[!UICONTROL Reset Password]**. Dadurch wird die Einladung erneut gesendet und der Benutzer kann sich anmelden.
 
 >[!IMPORTANT]
 >
->Jedes Konto verfügt über eine vertraglich festgelegte Anzahl von Lizenzen oder Sitzen. Wenn Sie Ihr Limit erreichen oder mehr erfahren möchten, [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+>Jedes Konto verfügt über eine vertraglich festgelegte Anzahl von Lizenzen oder Sitzen. Wenn Sie Ihr Limit erreichen oder mehr erfahren möchten, [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

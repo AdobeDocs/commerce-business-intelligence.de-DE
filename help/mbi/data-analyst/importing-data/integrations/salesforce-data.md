@@ -2,16 +2,16 @@
 title: Erwartete Salesforce-Daten
 description: Erfahren Sie mehr über unterstützte und nicht unterstützte Objekte in Salesforce-Daten.
 exl-id: 6625349f-2ec0-402d-8635-889a1f29811c
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
 
 # Erwartet [!DNL Salesforce] data
 
-[Nach dem [!DNL Salesforce] Einrichtung abgeschlossen](../integrations/salesforce.md), eine Tabelle für jede Abfrageoption [Objekt](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - benannt `sf_/\{sobject-name}` - wird in Ihrer Data Warehouse erstellt.
+Nach dem [[!DNL Salesforce] Setup](../integrations/salesforce.md) ist abgeschlossen, eine Tabelle für jede Abfrageoption [Objekt](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - benannt `sf_/\{sobject-name}` - wird in Ihrer Data Warehouse erstellt.
 
 >[!NOTE]
 >
@@ -48,4 +48,4 @@ Zurzeit [!DNL Salesforce] stellt die folgenden Objekte derzeit nicht in ihrer AP
 ## Verwandte:
 
 * [Verbinden [!DNL Salesforce]](../integrations/salesforce.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -1,10 +1,10 @@
 ---
 title: Erwartete Mixpanel-Daten
-description: Die wichtigsten Datentabellen, die Sie aus Mixpanel in Ihre [!DNL MBI] -Konto.
+description: Die wichtigsten Datentabellen, die Sie aus Mixpanel in Ihre [!DNL Commerce Intelligence] -Konto.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Nachher [Sie haben Ihre [!DNL Mixpanel] account](../integrations/mixpanel.md), können Sie die [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) zur einfachen Nachverfolgung relevanter Datenfelder für die Analyse.
 
-In diesem Artikel werden die wichtigsten Datentabellen untersucht, aus denen Sie importieren können. [!DNL Mixpanel] in [!DNL MBI] -Konto. Die folgenden Tabellen werden in Ihrer Data Warehouse erstellt, nachdem Mixpanel verbunden wurde. Um alle für die Verfolgung verfügbaren Felder anzuzeigen, klicken Sie auf die Links in der Tabellennamenspalte.
+In diesem Thema werden die wichtigsten Datentabellen untersucht, aus denen Sie importieren können. [!DNL Mixpanel] in [!DNL Commerce Intelligence] -Konto. Die folgenden Tabellen werden in Ihrer Data Warehouse erstellt, nachdem Sie eine Verbindung hergestellt haben [!DNL Mixpanel]. Um alle für die Verfolgung verfügbaren Felder anzuzeigen, klicken Sie auf die Links in der Tabellennamenspalte.
 
 >[!NOTE]
 >
->Aufgrund der Einschränkungen der [!DNL Mixpanel] API, historische Daten - Daten, die älter als sieben (7) Tage ab dem Datum der Verbindung zu [!DNL MBI] - wird nicht repliziert.
+>Aufgrund der Einschränkungen der [!DNL Mixpanel] API, historische Daten - Daten, die älter als sieben (7) Tage ab dem Datum der Verbindung zu [!DNL Commerce Intelligence] - wird nicht repliziert.
 
 | **Tabellenname** | **Beschreibung** |
 |-----|-----|
@@ -30,4 +30,4 @@ In diesem Artikel werden die wichtigsten Datentabellen untersucht, aus denen Sie
 ## Verwandte Dokumentation
 
 * [Verbinden [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

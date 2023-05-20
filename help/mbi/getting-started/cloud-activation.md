@@ -1,204 +1,204 @@
 ---
-title: Aktivieren Ihrer [!DNL MBI] Konto für Cloud Starter-Abonnements
-description: Erfahren Sie, wie Sie [!DNL MBI] für Cloud Starter-Projekte.
+title: Aktivieren Sie Ihr Commerce Intelligence-Konto für Cloud Starter-Abonnements
+description: Erfahren Sie, wie Sie Commerce Intelligence für Cloud Starter-Projekte aktivieren.
 exl-id: 172439ee-fa1d-4872-b6a9-c61a212a7cbe
 redirect_to: https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/start/onpremise-activation.html
-source-git-commit: f358f11586e4b7c44e9192584ea0fdeff5526287
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '19'
 ht-degree: 0%
 
 ---
 
-# Aktivieren Ihrer [!DNL MBI] Konto für `Cloud Starter` Abonnements
+<!---# Activate your [!DNL Commerce Intelligence] Account for `Cloud Starter` Subscriptions
 
-So aktivieren [!DNL MBI] für `Cloud Starter` Projekte, erstellen Sie zunächst eine [!DNL MBI] -Konto und erstellen Sie dann eine `SSH` und dann schließlich eine Verbindung zu Ihrer Commerce-Datenbank herstellen. Siehe [Aktivieren von On-Premise-Abonnements](../getting-started/onpremise-activation.md).
+To activate [!DNL Commerce Intelligence] for `Cloud Starter` projects, first create an [!DNL Commerce Intelligence] account, then create a `SSH` key, then finally connect to your Commerce database. See [activating on-premise subscriptions](../getting-started/onpremise-activation.md).
 
 >[!NOTE]
 >
->Hilfe zur Aktivierung [!DNL MBI] für `Cloud Pro` Projekte, wenden Sie sich an Ihr Adobe Account Team oder an den technischen Kundenberater.
+>For help with activation [!DNL Commerce Intelligence] for `Cloud Pro` projects, contact your Adobe Account Team or Customer Technical Advisor.
 
-1. Erstellen Sie Ihre [!DNL MBI] Konto.
+1. Create your [!DNL Commerce Intelligence] Account.
 
-   - Navigieren Sie zu [Anmeldung für Adobe Commerce-Konten](https://account.magento.com/customer/account/login)
+    - Go to [Adobe Commerce account login](https://account.magento.com/customer/account/login)
 
-   - Navigieren Sie zu **[!UICONTROL My Account** > **My [!DNL MBI] Instances]**.
+    - Go to **[!UICONTROL My Account** > **My [!DNL Commerce Intelligence] Instances]**.
 
-   - Klicken **[!UICONTROL Create Instance]**. Wenn diese Schaltfläche nicht angezeigt wird, wenden Sie sich an Ihr Adobe Account Team oder an den technischen Kundenberater.
+    - Click **[!UICONTROL Create Instance]**. If you do not see this button, contact your Adobe Account Team or Customer Technical Advisor.
 
-   - Wählen Sie Ihre `Cloud Starter` Abonnement. Wenn Sie nur `cloud starter` -Abonnement, dies ist die Standardauswahl.
+    - Select your `Cloud Starter` subscription. If you only have a `cloud starter` subscription, this is the default selection.
 
-   - Klicken **[!UICONTROL Continue]**.
+    - Click **[!UICONTROL Continue]**.
 
-   - Geben Sie Ihre Informationen ein, um Ihr Konto zu erstellen.
+    - Input your information to create your account.
 
-   ![](../assets/create-account-2.png)
+     ![](../assets/create-account-2.png)
 
-   - Gehen Sie in Ihren Posteingang und überprüfen Sie Ihre E-Mail-Adresse.
+    - Go to your inbox and verify your email address.
 
-   ![](../assets/create-account-3.png)
+    ![](../assets/create-account-3.png)
 
-   - Erstellen Sie Ihr Kennwort.
+    - Create your password.
 
-   ![](../assets/create-account-4.png)
+    ![](../assets/create-account-4.png)
 
-   - Nachdem Sie Ihr Konto erstellt haben, können Sie Ihrem neuen Konto Benutzer hinzufügen. Technische Administratoren können nun hinzugefügt werden, um die folgenden Schritte auszuführen.
+    - After creating your account, you can add users to your new account. Technical admins can now be added to carry out the following steps.
 
-   ![](../assets/create-account-5.png)
+     ![](../assets/create-account-5.png)
 
-1. Geben Sie Informationen zu Ihrem Store ein, um Ihre Voreinstellungen festzulegen.
+1. Input information about your store to set your preferences.
 
-   ![](../assets/create-account-6.png)
+    ![](../assets/create-account-6.png)
 
-   Erfassen Sie einige Informationen, bevor Sie Ihre Datenbank für den dritten Schritt im Onboarding-Prozess verbinden können. Sie schließen die `Connect your database` Seite in Schritt 9.
+    Gather some information before you can connect your database for the third step in the onboarding flow. You complete the `Connect your database` page in Step 9.
 
-1. Erstellen eines dedizierten [!DNL MBI] Benutzer.
+1. Create dedicated [!DNL Commerce Intelligence] User.
 
-   - Erstellen Sie einen Benutzer in Ihrem [Adobe Commerce-Konto](https://account.magento.com/customer/account/login).
+    - Create a user in your [Adobe Commerce account](https://account.magento.com/customer/account/login).
 
-   - _Warum ein neuer Benutzer?_ [!DNL MBI] benötigt einen Benutzer, der zum Projekt hinzugefügt wurde, um kontinuierlich neue Daten abzurufen, die an das Konto übertragen werden. [!DNL MBI] Data Warehouse. Dieser Benutzer dient als diese Verbindung. Das Hinzufügen dieses Benutzers zum Projekt wird in Schritt 4 behandelt.
+    - _Why a new user?_ [!DNL Commerce Intelligence] needs a user added to the project to continuously fetch new data to be transferred to the account's [!DNL Commerce Intelligence] Data Warehouse. This user serves as that connection. Adding this user to the project is covered in Step 4.
 
-   - Der Grund für die Verwendung einer [!DNL MBI] Der Benutzer soll verhindern, dass der hinzugefügte Benutzer versehentlich deaktiviert oder gelöscht wird und die [!DNL MBI] Verbindung.
+    - The reason for having a dedicated [!DNL Commerce Intelligence] user is to prevent the added user from inadvertently being deactivated or deleted and stopping the [!DNL Commerce Intelligence] connection.
 
-1. Fügen Sie den neu erstellten Benutzer zur primären Umgebung des Projekts als `Contributor`.
+1. Add the newly created user to the project's primary environment as a `Contributor`.
 
-   ![](../assets/create-account-7.png)
+    ![](../assets/create-account-7.png)
 
-1. Holen Sie sich [!DNL MBI] `SSH` Schlüssel.
+1. Get your [!DNL Commerce Intelligence] `SSH` keys.
 
-   - Navigieren Sie zu `Connect your database` der [!DNL MBI] Einrichten der Benutzeroberfläche und Scrollen nach unten `Encryption settings`.
+    - Go to the `Connect your database` page of the [!DNL Commerce Intelligence] setup user interface and scroll down to `Encryption settings`.
 
-   - Für `Encryption Type` Feld, wählen Sie `SSH Tunnel`.
+    - For the `Encryption Type` field, choose `SSH Tunnel`.
 
-   - Sie können die bereitgestellte [!DNL MBI] `Public Key`.
+    - From the dropdown, you can copy and paste the provided [!DNL Commerce Intelligence] `Public Key`.
 
-   ![](../assets/create-account-8.png)
+    ![](../assets/create-account-8.png)
 
-1. Neue hinzufügen [!DNL MBI] `Public key` der [!DNL MBI] Benutzer, der in Schritt 5 erstellt wurde.
+1. Add your new [!DNL Commerce Intelligence] `Public key` to the [!DNL Commerce Intelligence] user created in Step 5.
 
-   - Navigieren Sie zu [Ihr Cloud Adobe Commerce-Konto](https://account.magento.com/cloud/customer/login/). Melden Sie sich mit Ihren Kontoanmeldeinformationen für die neue [!DNL MBI] Benutzer erstellt. Gehen Sie dann zu `Account Settings` Registerkarte.
+    - Go to [your cloud Adobe Commerce account](https://account.magento.com/cloud/customer/login/). Sign in with your account login information for the new [!DNL Commerce Intelligence] user created. Then go to the `Account Settings` tab.
 
-   - Scrollen Sie nach unten und erweitern Sie das Dropdown-Menü für `SSH` Schlüssel. Klicken Sie anschließend auf **[!UICONTROL Add a public key]**.
+    - Scroll down the page and expand the dropdown for `SSH` keys. Then click **[!UICONTROL Add a public key]**.
 
-   ![](../assets/create-account-9.png)
+    ![](../assets/create-account-9.png)
 
-   - Fügen Sie die [!DNL MBI] `SSH Public Key` von oben.
+    - Add the [!DNL Commerce Intelligence] `SSH Public Key` from above.
 
-   ![](../assets/create-account-10.png)
+    ![](../assets/create-account-10.png)
 
-1. Bereitstellung [!DNL MBI] MySQL-Anmeldeinformationen.
+1. Provide [!DNL Commerce Intelligence] [!DNL MySQL] credentials.
 
-   - Aktualisieren Sie Ihre `.magento/services.yaml`
+    - Update your `.magento/services.yaml`
 
-   ```sql
-   mysql:
-       type: mysql:10.0
-       disk: 2048
-       configuration:
-           schemas:
-               - main
-           endpoints:
-               mysql:
-                   default_schema: main
-                   privileges:
-                       main: admin
-               mbi:
-                   default_schema: main
-                   privileges:
-                       main: ro
-   ```
+    ```sql
+    mysql:
+        type: mysql:10.0
+        disk: 2048
+        configuration:
+            schemas:
+                - main
+            endpoints:
+                mysql:
+                    default_schema: main
+                    privileges:
+                        main: admin
+                mbi:
+                    default_schema: main
+                    privileges:
+                        main: ro
+    ```
 
-   - Aktualisieren Sie Ihre `.magento.app.yaml`
+    - Update your `.magento.app.yaml`
 
-   ```sql
-           relationships:
-               database: "mysql:mysql"
-               mbi: "mysql:mbi"
-               redis: "redis:redis"
-   ```
+    ```sql
+            relationships:
+                database: "mysql:mysql"
+                mbi: "mysql:mbi"
+                redis: "redis:redis"
+    ```
 
-1. Informationen zum Verbinden Ihrer Datenbank mit [!DNL MBI].
+1. Get information for connecting your database to [!DNL Commerce Intelligence].
 
-   Ausführen
-   `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 --decode | json_pp`
+    Run
+    `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 --decode | json_pp`
 
-   um Informationen zum Verbinden Ihrer Datenbank zu erhalten.
+    to get information on connecting your database.
 
-   Sie sollten Informationen erhalten, die der folgenden Ausgabe ähneln:
+    You should receive information similar to the output below:
 
-   ```json
-           "mbi" : [
-                 {
-                    "scheme" : "mysql",
-                    "rel" : "mbi",
-                    "cluster" : "vfbfui4vmfez6-master-7rqtwti",
-                    "query" : {
-                       "is_master" : true
-                    },
-                    "ip" : "169.254.169.143",
-                    "path" : "main",
-                    "host" : "[!DNL MBI].internal",
-                    "hostname" : "3m7xizydbomhnulyglx2ku4wpq.mysql.service._.magentosite.cloud",
-                    "username" : "mbi",
-                    "service" : "mysql",
-                    "port" : 3306,
-                    "password" : "[password]"
-                 }
-              ],
-   ```
+    ```json
+            "mbi" : [
+                  {
+                     "scheme" : "mysql",
+                     "rel" : "mbi",
+                     "cluster" : "vfbfui4vmfez6-master-7rqtwti",
+                     "query" : {
+                        "is_master" : true
+                     },
+                     "ip" : "169.254.169.143",
+                     "path" : "main",
+                     "host" : "[!DNL Commerce Intelligence].internal",
+                     "hostname" : "3m7xizydbomhnulyglx2ku4wpq.mysql.service._.magentosite.cloud",
+                     "username" : "mbi",
+                     "service" : "mysql",
+                     "port" : 3306,
+                     "password" : "[password]"
+                  }
+               ],
+    ```
 
-1. Commerce-Datenbank verbinden
+1. Connect your Commerce Database
 
    ![](../assets/create-account-11.png)
 
-   - `Integration Name`: [Wählen Sie einen Namen für Ihre Integration aus.]
+    - `Integration Name`: [Choose a name for your integration.]
 
-   - `Host`: `[!DNL MBI].internal`
+    - `Host`: `[!DNL Commerce Intelligence].internal`
 
-   - `Port`: `3306`
+    - `Port`: `3306`
 
-   - `Username`: `mbi`
+    - `Username`: `mbi`
 
-   - `Password`: [Eingabe-Kennwort, das in der Ausgabe für Schritt 8 angegeben ist.]
+    - `Password`: [input password provided in the output for Step 8.]
 
-   - `Database Name`: `main`
+    - `Database Name`: `main`
 
-   - `Table Prefixes`: [leer lassen, wenn keine Tabellenpräfixe vorhanden sind]
+    - `Table Prefixes`: [leave blank if there are no table prefixes]
 
-1. Legen Sie Ihre Zeitzoneneinstellungen fest.
+1. Set your Timezone Settings.
 
-   ![Eingaben](../assets/create-account-12.png)
+    ![Inputs](../assets/create-account-12.png)
 
-   - `Database`: `Timezone: UTC`
+     - `Database`: `Timezone: UTC`
 
-   - `Desired Timezone`: [Wählen Sie die Zeitzone aus, in der Ihre Daten angezeigt werden sollen.]
+     - `Desired Timezone`: [Choose the time zone for which you want your data to display in.]
 
-1. Hier erhalten Sie Informationen zu Ihren Verschlüsselungseinstellungen.
+1. Get information for your encryption settings.
 
-   - Die Projektoberfläche bietet eine `SSH` Zugriffszeichenfolge. Diese Zeichenfolge kann zum Erfassen der für `Remote Address` und `Username` bei der Einrichtung der `Encryption` -Einstellungen. Verwenden Sie die `SSH Access` durch Klicken auf die Schaltfläche für den Zugriff auf die Website in Ihrem Primären Zweig der Projektoberfläche gefundene Zeichenfolge und suchen Sie Ihre `User Name` und `Remote Address` wie unten dargestellt.
+    - The project UI provides an `SSH` access string. This string can be used for gathering the information needed for `Remote Address` and `Username` in setting up your `Encryption` settings. Use the `SSH Access` string found by clicking the access site button on your Primary branch of your Project UI and find your `User Name` and `Remote Address` as shown below.
 
-   ![](../assets/create-account-13.png)
+    ![](../assets/create-account-13.png)
 
-   ![](../assets/create-account-14.png)
+    ![](../assets/create-account-14.png)
 
-1. Eingabedaten für Ihre `Encryption` settings
+1. Input information for your `Encryption` settings
 
-   ![](../assets/create-account-15.png)
+    ![](../assets/create-account-15.png)
 
-   **Eingaben**
+    **Inputs**
 
-   - `Encryption Type`: `SSH Tunnel`
+     - `Encryption Type`: `SSH Tunnel`
 
-   - `Remote Address`: `ssh.us-3.magento.cloud`
+     - `Remote Address`: `ssh.us-3.magento.cloud`
 
-   - `Username`: `vfbfui4vmfez6-master-7rqtwti--mymagento`
+     - `Username`: `vfbfui4vmfez6-master-7rqtwti--mymagento`
 
-   - `Port`: `22`
+     - `Port`: `22`
 
-1. Klicken **[!UICONTROL Save Integration]**.
+1. Click **[!UICONTROL Save Integration]**.
 
-1. Sie haben jetzt erfolgreich eine Verbindung zu Ihrem [!DNL MBI] -Konto.
+1. You have now successfully connected to your [!DNL Commerce Intelligence] account.
 
-1. Nachdem Sie erfolgreich eine Verbindung hergestellt haben [!DNL MBI] Wenden Sie sich an Ihr Adobe Account Team, um die nächsten Schritte zu koordinieren, z. B. das Einrichten von Integrationen und anderen Konfigurationsschritten.
+1. After you have successfully connected [!DNL Commerce Intelligence] to your Commerce database, contact your Adobe Account Team to coordinate the next steps, such as setting up integrations and other configuration steps.
 
-1. Wenn Sie die Konfiguration abgeschlossen haben, können Sie [Anmelden](../getting-started/sign-in.md) auf [!DNL MBI] -Konto.
+1. When you finish configuration, you can [sign in](../getting-started/sign-in.md) to your [!DNL Commerce Intelligence] account.--->

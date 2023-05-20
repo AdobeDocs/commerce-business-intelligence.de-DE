@@ -2,16 +2,16 @@
 title: Erweiterte berechnete Spaltentypen
 description: Lernen Sie die Grundlagen für die meisten Anwendungsspaltenfälle kennen - Sie können jedoch eine berechnete Spalte wünschen, die etwas komplexer ist als das, was der Data Warehouse Manager erstellen kann.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 4%
 
 ---
 
 # Erweiterte berechnete Spaltentypen
 
-Viele Analysen, die Sie erstellen möchten, erfordern die Verwendung einer **neue Spalte** die Sie `group by` oder `filter by`. Die [Erstellen berechneter Spalten](../data-warehouse-mgr/creating-calculated-columns.md) In diesem Tutorial werden die Grundlagen für die meisten Anwendungsfälle behandelt. Sie können jedoch eine berechnete Spalte wünschen, die etwas komplexer ist als das, was der Data Warehouse Manager erstellen kann.
+Viele Analysen, die Sie erstellen möchten, umfassen die Verwendung einer **neue Spalte** die Sie `group by` oder `filter by`. Die [Erstellen berechneter Spalten](../data-warehouse-mgr/creating-calculated-columns.md) In diesem Tutorial werden die Grundlagen für die meisten Anwendungsfälle behandelt. Sie können jedoch eine berechnete Spalte wünschen, die etwas komplexer ist als das, was der Data Warehouse Manager erstellen kann.
 {: #top}
 
 Diese Spaltenarten können vom Adobe-Team der Data Warehouse-Analytiker erstellt werden. Um eine neue berechnete Spalte zu definieren, geben Sie die folgenden Informationen an:
@@ -159,7 +159,7 @@ Um diesen Typ berechneter Spalten zu erstellen, müssen Sie Folgendes wissen:
 
 Keine Sorge. Nur weil es hier nicht aufgeführt ist, bedeutet das nicht, dass es nicht möglich ist. Das Adobe-Team von Data Warehouse-Analysten kann helfen.
 
-So definieren Sie eine neue berechnete Spalte: [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) mit Details zu dem, was Sie erstellen möchten.
+So definieren Sie eine neue berechnete Spalte: [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) mit Details zu dem, was Sie erstellen möchten.
 
 ## Verwandte Dokumentation
 

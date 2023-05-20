@@ -2,9 +2,9 @@
 title: Dashboards verwalten
 description: Erfahren Sie, wie Sie Benutzerberechtigungen für Dashboards verwalten, die Ihnen gehören, Dashboards löschen, die Sie nicht mehr benötigen, und ein Standard-Dashboard einrichten.
 exl-id: 32c21093-2a7d-4d8e-afc0-19bd702f9b36
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
 
-In **[!DNL Manage Data** > **Dashboards]** können Sie Benutzerberechtigungen für Dashboards verwalten, die Ihnen gehören, Dashboards löschen, die Sie nicht mehr benötigen, und ein Standard-Dashboard einrichten. In diesem Artikel behandelt:
+In **[!DNL Manage Data** > **Dashboards]** können Sie Benutzerberechtigungen für Dashboards verwalten, die Ihnen gehören, Dashboards löschen, die Sie nicht mehr benötigen, und ein Standard-Dashboard einrichten. Dieses Thema behandelt:
 
 1. [Umbenennen von Dashboards](#rename)
 
@@ -35,7 +35,7 @@ So benennen Sie ein Dashboard um:
 
 ## Verwalten von Benutzerberechtigungen {#userperm}
 
-Es gibt drei Zugriffsebenen in [!DNL MBI] für Dashboards - `View`, `Edit`und `None`.
+Es gibt drei Zugriffsebenen in [!DNL Commerce Intelligence] für Dashboards - `View`, `Edit`und `None`.
 
 * `View` ermöglicht ausgewählten Benutzern, das Dashboard anzuzeigen, es jedoch nicht zu bearbeiten. Benutzer können auch die Größe von Diagrammen ändern, Daten exportieren und die Diagramme mithilfe der Funktion Speichern unter in ihre eigenen Dashboards kopieren, sofern sie über Standard- oder Administratorberechtigungen verfügen.
 

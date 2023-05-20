@@ -2,9 +2,9 @@
 title: Analyse des Couponcodes (allgemein)
 description: Informieren Sie sich über die Couponleistung Ihres Unternehmens, um Ihre Bestellungen zu segmentieren und Kundengewohnheiten besser zu verstehen.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Das Verständnis der Couponleistung Ihres Unternehmens ist eine interessante Möglichkeit, Ihre Bestellungen zu unterteilen und Kundengewohnheiten besser zu verstehen.
 
-In diesem Artikel werden die Schritte beschrieben, die für die Erstellung dieser Analyse erforderlich sind, um zu verstehen, wie gutscheinerworbene Kunden die Leistung erbringen, Trends sehen und die Nutzung einzelner Gutscheincodes verfolgen.
+In diesem Thema werden die Schritte beschrieben, die zur Erstellung dieser Analyse erforderlich sind, um die Leistung von mit Gutscheinen erworbenen Kunden zu verstehen, Trends zu sehen und die Verwendung von individuellen Gutscheincodes zu verfolgen.
 
 ![](../../assets/coupon_analysis_dash_720.png)<!--{: width="807" height="471"}-->
 
@@ -21,7 +21,7 @@ In diesem Artikel werden die Schritte beschrieben, die für die Erstellung diese
 
 Zunächst ein Hinweis zur Verfolgung von Coupon-Codes. Wenn ein Kunde einen Gutschein auf eine Bestellung angewendet hat, geschieht Folgendes:
 
-* Ein Rabatt wird im Abschnitt `base_grand_total` Betrag (Ihre `Revenue` Metrik in MBI)
+* Ein Rabatt wird im Abschnitt `base_grand_total` Betrag (Ihre `Revenue` Metrik in Commerce Intelligence)
 * Der Gutscheincode wird im `coupon_code` -Feld. Wenn dieses Feld NULL (leer) ist, ist der Bestellung kein Gutschein zugeordnet.
 * Der abgezinste Betrag wird in `base_discount_amount`. Dieser Wert kann je nach Konfiguration negativ oder positiv aussehen.
 

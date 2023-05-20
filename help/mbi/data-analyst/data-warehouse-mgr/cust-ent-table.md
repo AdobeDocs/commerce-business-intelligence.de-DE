@@ -2,9 +2,9 @@
 title: customer_entity table
 description: Erfahren Sie, wie Sie auf Datensätze aller registrierten Konten zugreifen können.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Die `customer_entity` enthält die Datensätze aller registrierten Konten. Ein Konto gilt als registriert, wenn er sich für ein Konto anmeldet, unabhängig davon, ob er einen Kauf tätigt. Jede Zeile entspricht einem eindeutigen registrierten Konto, wie durch das `entity_id`.
 
-Diese Tabelle enthält keine Datensätze zu Kunden, die eine Bestellung über einen Gastkasse aufgeben. Wenn Ihr Geschäft einen Gast-Checkout akzeptiert, [Erfahren Sie, wie Sie](../data-warehouse-mgr/guest-orders.md) für diese Kunden.
+Diese Tabelle enthält keine Datensätze zu Kunden, die eine Bestellung über einen Gastkasse aufgeben. Wenn Ihr Geschäft einen Gast-Checkout akzeptiert, lesen Sie [Wie werden Gastbestellungen erfasst?](../data-warehouse-mgr/guest-orders.md) für diese Aufträge.
 
 ## Allgemeine Spalten
 
 | **Spaltenname** | **Beschreibung** |
 |---|---|
-| `created_at` | Zeitstempel, der dem Registrierungsdatum des Kontos entspricht und lokal in UTC gespeichert ist. Abhängig von Ihrer Konfiguration in [!DNL MBI], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL MBI] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
+| `created_at` | Zeitstempel, der dem Registrierungsdatum des Kontos entspricht und lokal in UTC gespeichert ist. Abhängig von Ihrer Konfiguration in [!DNL Commerce Intelligence], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL Commerce Intelligence] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
 | `email` | Mit dem Konto verknüpfte E-Mail-Adresse |
 | `entity_id` (PK) | Eindeutige Kennung für die Tabelle und wird häufig in Joins zum `customer_id` in anderen Tabellen innerhalb der Instanz |
 | `group_id` | Fremdschlüssel, der mit dem `customer_group` Tabelle. Mitglied werden `customer_group.customer_group_id` zur Bestimmung der Kundengruppe, die mit dem registrierten Konto verknüpft ist |

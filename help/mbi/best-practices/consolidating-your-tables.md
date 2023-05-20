@@ -2,7 +2,7 @@
 title: Tabellen zusammenfassen
 description: Erfahren Sie, wie Sie Ihre Tabellen und Datenbanken konsolidieren.
 exl-id: 6065bed3-fb84-4147-a223-92dc3e1b15a5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Tabellen zusammenfassen
 
-Wenn Sie mehrere Storefronts oder mehrere Märkte betreiben, können ähnliche Datenbanken separat gespeichert werden. In [!DNL MBI]ist es einfach, ähnliche Tabellen aus verschiedenen Datenbanken zusammenzuführen.
+Wenn Sie mehrere Storefronts oder mehrere Märkte betreiben, können ähnliche Datenbanken separat gespeichert werden. In [!DNL Adobe Commerce Intelligence]ist es einfach, ähnliche Tabellen aus verschiedenen Datenbanken zusammenzuführen.
 
-Sie können beispielsweise eine `orders` Tabelle für `Market A`und ähnliche `orders` Tabelle für `Market B`. [!DNL MBI] kann beide Tabellen zusammenfassen und die aggregierten Bestelldaten aus beiden anzeigen `Market A` und `B`, zusätzlich zur Segmentierung nach spezifischen Märkten.
+Sie können beispielsweise eine `orders` Tabelle für `Market A`und ähnliche `orders` Tabelle für `Market B`. [!DNL Commerce Intelligence] kann beide Tabellen zusammenfassen und die aggregierten Bestelldaten aus beiden anzeigen `Market A` und `B`, zusätzlich zur Segmentierung nach spezifischen Märkten.
 
 Damit die Tabellen konsolidiert werden können, müssen Eingabetabellen **ähnlich strukturiert**. Anders ausgedrückt: Alle Eingabetabellen müssen die in der konsolidierten Tabelle erforderlichen Datenspalten enthalten.
 
@@ -43,8 +43,8 @@ Wie bei allen anderen Tabellen in Ihrer Data Warehouse können Sie zusätzliche 
 
 ## Erstellen, Anzeigen oder Aktualisieren einer konsolidierten Tabelle
 
-Wenn Sie eine konsolidierte Tabelle zu Ihrer Data Warehouse hinzufügen möchten, wenden Sie sich an [!DNL MBI] [Support](../guide-overview.md).
+Wenn Sie eine konsolidierte Tabelle zu Ihrer Data Warehouse hinzufügen möchten, wenden Sie sich an [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >
->Da konsolidierte Tabellen nicht im `Data Warehouse Manager`, können Sie diese Tabellen nur anzeigen und aktualisieren, indem Sie [!DNL MBI] unterstützen.
+>Da konsolidierte Tabellen nicht im `Data Warehouse Manager`, können Sie diese Tabellen nur anzeigen und aktualisieren, indem Sie [!DNL Commerce Intelligence] unterstützen.

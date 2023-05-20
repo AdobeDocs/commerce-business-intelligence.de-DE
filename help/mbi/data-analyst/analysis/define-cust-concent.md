@@ -2,16 +2,16 @@
 title: Kundenkonzentration definieren
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie messen können, wie der Gesamtumsatz auf Ihre Kundenbasis verteilt ist.
 exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
 
 # Kundenkonzentration
 
-Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, mit dem Sie messen können, wie der Gesamtumsatz auf Ihre Kundenbasis verteilt wird. Erfahren Sie, welcher Prozentsatz der Kunden zu welchem Prozentsatz des Umsatzes beitragen, und erstellen Sie segmentierte Listen, um Ihre wichtigsten Kunden am besten zu vermarkten und zu halten.
+Dieses Thema zeigt, wie Sie ein Dashboard einrichten, mit dem Sie messen können, wie der Gesamtumsatz auf Ihre Kundenbasis verteilt wird. Erfahren Sie, welcher Prozentsatz der Kunden zu welchem Prozentsatz des Umsatzes beitragen, und erstellen Sie segmentierte Listen, um Ihre wichtigsten Kunden am besten zu vermarkten und zu halten.
 
 Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -158,4 +158,4 @@ Zu erstellende Spalten
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie im obigen Beispiel-Dashboard aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

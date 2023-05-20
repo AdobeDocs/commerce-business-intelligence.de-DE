@@ -1,41 +1,39 @@
 ---
-title: MySQL über SSH-Tunnel verbinden
-description: Erfahren Sie, wie Sie MySQL über den SSH-Tunnel verbinden.
+title: Verbinden [!DNL MySQL] über SSH-Tunnel
+description: Erfahren Sie, wie Sie eine Verbindung herstellen [!DNL MySQL] über SSH-Tunnel.
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
 
-# Verbinden `MySQL` via `SSH Tunnel`
+# Verbinden [!DNL MySQL] via [!DNL SSH Tunnel]
 
-* [Rufen Sie die [!DNL MBI] öffentlicher Schlüssel](#retrieve)
-* [Zugriff auf [!DNL MBI] IP-Adresse](#allowlist)
-* [Linux erstellen](#linux)
-* [Erstellen eines MySQL-Benutzers für [!DNL MBI]](#mysql)
-* [Geben Sie die Verbindung und Benutzerinformationen in [!DNL MBI]](#finish)
+* [Rufen Sie die [!DNL Commerce Intelligence] öffentlicher Schlüssel](#retrieve)
+* [Zugriff auf [!DNL Commerce Intelligence] IP-Adresse](#allowlist)
+* [Erstellen eines Linux-Benutzers für [!DNL Commerce Intelligence]](#linux)
+* [Erstellen Sie eine [!DNL MySQL] Benutzer für [!DNL Commerce Intelligence]](#mysql)
+* [Geben Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]](#finish)
 
 ## SPRINGEN ZU
 
-* `MySQL via SSH tunnel`
-* [&quot;MySQL&quot;](../integrations/mysql-via-a-direct-connection.md)
-* [&quot;MySQL&quot;](../integrations/mysql-via-cpanel.md)
+* [[!DNL MySQL] via ](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] via [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
-Um eine Verbindung herzustellen `MySQL` Datenbank zu [!DNL MBI] über eine `SSH tunnel`, müssen Sie (oder Ihr Team, falls Sie kein Techie sind) einige Dinge tun:
+Um eine Verbindung herzustellen [!DNL MySQL] Datenbank zu [!DNL Commerce Intelligence] über eine `SSH tunnel`müssen Sie einige Schritte ausführen:
 
-1. Rufen Sie die [!DNL MBI] `public key`
-1. Zugriff auf [!DNL MBI] `IP address`
-1. Erstellen Sie eine `Linux` Benutzer für [!DNL MBI]
-1. Erstellen Sie eine `MySQL` Benutzer für [!DNL MBI]
-1. Geben Sie die Verbindung und Benutzerinformationen in [!DNL MBI]
+1. Rufen Sie die [!DNL Commerce Intelligence] `public key`
+1. Zugriff auf [!DNL Commerce Intelligence] `IP address`
+1. Erstellen Sie eine `Linux` Benutzer für [!DNL Commerce Intelligence]
+1. Erstellen Sie eine `MySQL` Benutzer für [!DNL Commerce Intelligence]
+1. Geben Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]
 
-Erste Schritte.
 
-## Abrufen der [!DNL MBI] öffentlicher Schlüssel {#retrieve}
+## Abrufen der [!DNL Commerce Intelligence] öffentlicher Schlüssel {#retrieve}
 
-Die `public key` wird verwendet, um die [!DNL MBI] `Linux` Benutzer. Im nächsten Abschnitt erstellen Sie den Benutzer und importieren den Schlüssel.
+Die `public key` wird verwendet, um die [!DNL Commerce Intelligence] `Linux` Benutzer. Im nächsten Abschnitt erstellen Sie den Benutzer und importieren den Schlüssel.
 
 1. Navigieren Sie zu **[!UICONTROL Manage Data** > **Connections]** und klicken Sie auf **[!UICONTROL Add New Data Source]**.
 1. Klicken Sie auf `MySQL` Symbol.
@@ -44,19 +42,19 @@ Die `public key` wird verwendet, um die [!DNL MBI] `Linux` Benutzer. Im nächste
 
 Lassen Sie diese Seite während des Tutorials geöffnet - Sie benötigen sie im nächsten Abschnitt und am Ende.
 
-Wenn Sie etwas verloren sind, können Sie hier navigieren [!DNL MBI] , um den Schlüssel abzurufen:
+So navigieren Sie durch [!DNL Commerce Intelligence] , um den Schlüssel abzurufen:
 
 ![](../../../assets/MySQL_SSH.gif)<!--{: width="770"}-->
 
-## Zugriff auf [!DNL MBI] IP-Adresse {#allowlist}
+## Zugriff auf [!DNL Commerce Intelligence] IP-Adresse {#allowlist}
 
-Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firewall so konfigurieren, dass der Zugriff von Ihren IP-Adressen aus gestattet wird. Sie sind `54.88.76.97` und `34.250.211.151` aber sie sind auch auf der `MySQL credentials` Seite. Sehen Sie die blaue Box in der GIF oben? Das ist es!
+Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firewall so konfigurieren, dass der Zugriff von Ihren IP-Adressen aus gestattet wird. Sie sind `54.88.76.97` und `34.250.211.151` aber sie befinden sich auch auf der `MySQL credentials` Seite. Siehe blaue Box in der obigen GIF.
 
-## Erstellen einer `Linux` Benutzer für [!DNL MBI] {#linux}
+## Erstellen einer [!DNL Linux] Benutzer für [!DNL Commerce Intelligence] {#linux}
 
 Dabei kann es sich um eine Produktions- oder Sekundärmaschine handeln, sofern diese Daten in Echtzeit (oder häufig aktualisiert) enthält. Sie können [diesen Benutzer einschränken](../../../administrator/account-management/restrict-db-access.md) wie Sie möchten, solange es das Recht behält, eine Verbindung mit dem `MySQL` Server.
 
-1. Um den neuen Benutzer hinzuzufügen, führen Sie die folgenden Befehle als Stamm auf Ihrem `Linux` server:
+1. Um den neuen Benutzer hinzuzufügen, führen Sie die folgenden Befehle als Stamm auf Ihrem [!DNL Linux] server:
 
 ```bash
         adduser rjmetric -p<password>
@@ -83,11 +81,11 @@ Dabei kann es sich um eine Produktions- oder Sekundärmaschine handeln, sofern d
 
 >[!IMPORTANT]
 >
->Wenn die Variable `sshd\_config` -Datei, die mit dem Server verknüpft ist, nicht auf die Standardoption festgelegt, sondern nur bestimmte Benutzer haben Serverzugriff. Dies verhindert eine erfolgreiche Verbindung zu [!DNL MBI]. In diesen Fällen ist es erforderlich, einen Befehl wie `AllowUsers` , um `rjmetric` Benutzerzugriff auf den Server.
+>Wenn die Variable `sshd\_config` -Datei, die mit dem Server verknüpft ist, nicht auf die Standardoption festgelegt, sondern nur bestimmte Benutzer haben Serverzugriff. Dies verhindert eine erfolgreiche Verbindung zu [!DNL Commerce Intelligence]. In diesen Fällen ist es erforderlich, einen Befehl wie `AllowUsers` , um `rjmetric` Benutzerzugriff auf den Server.
 
-## Erstellen einer `MySQL` Benutzer für [!DNL MBI] {#mysql}
+## Erstellen einer [!DNL MySQL] Benutzer für [!DNL Commerce Intelligence] {#mysql}
 
-Ihr Unternehmen erfordert möglicherweise einen anderen Prozess, aber die einfachste Möglichkeit, diesen Benutzer zu erstellen, besteht darin, die folgende Abfrage auszuführen, wenn Sie sich bei anmelden `MySQL` als Benutzer mit dem Recht, Berechtigungen zu gewähren:
+Ihr Unternehmen erfordert möglicherweise einen anderen Prozess, aber die einfachste Möglichkeit, diesen Benutzer zu erstellen, besteht darin, die folgende Abfrage auszuführen, wenn Sie sich bei anmelden [!DNL MySQL] als Benutzer mit dem Recht, Berechtigungen zu gewähren:
 
 ```sql
     GRANT SELECT ON *.* TO 'rjmetric'@'localhost' IDENTIFIED BY '<secure password here>';
@@ -97,27 +95,27 @@ Ersetzen `secure password here` mit einem sicheren Kennwort, das sich von der `S
 
 Um den Zugriff dieses Benutzers auf Daten in bestimmten Datenbanken, Tabellen oder Spalten zu beschränken, können Sie stattdessen GRANT-Abfragen ausführen, die nur den Zugriff auf die Daten ermöglichen, die Sie zulassen.
 
-## Eingabe der Verbindung und Benutzerinformationen in [!DNL MBI] {#finish}
+## Eingabe der Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence] {#finish}
 
-Um Elemente einzuschließen, müssen Sie die Verbindung und Benutzerinformationen in [!DNL MBI]. Hast du die `MySQL credentials` Seite öffnen? Wenn nicht, gehen Sie zu **[!UICONTROL Data** > **Connections]** und klicken Sie auf **[!UICONTROL Add New Data Source]**, dann das MySQL-Symbol. Vergessen Sie nicht, die `Encrypted` Umschalten auf `Yes`.
+Um Elemente einzuschließen, müssen Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]. Hast du die `MySQL credentials` Seite öffnen? Wenn nicht, gehen Sie zu **[!UICONTROL Data** > **Connections]** und klicken Sie auf **[!UICONTROL Add New Data Source]**, dann [!DNL MySQL] Symbol. Vergessen Sie nicht, die `Encrypted` Umschalten auf `Yes`.
 
-Geben Sie die folgenden Informationen auf dieser Seite ein, beginnend mit dem Abschnitt Datenbankverbindung :
+Geben Sie die folgenden Informationen auf dieser Seite ein, beginnend mit dem `Database Connection` Abschnitt:
 
-* `Username`: Der Benutzername für die [!DNL MBI] MySQL-Benutzer
-* `Password`: Das Kennwort für die [!DNL MBI] MySQL-Benutzer
-* `Port`: MySQL-Port auf Ihrem Server (standardmäßig 3306)
-* `Host` Standardmäßig ist dies localhost. Im Allgemeinen ist dies der bind-address-Wert für Ihren MySQL-Server, der standardmäßig `127.0.0.1 (localhost)`, kann aber auch eine lokale Netzwerkadresse sein (z. B. `192.168.0.1`) oder der öffentlichen IP-Adresse Ihres Servers.
+* `Username`: Der Benutzername für die [!DNL Commerce Intelligence] [!DNL MySQL] Benutzer
+* `Password`: Das Kennwort für die [!DNL Commerce Intelligence] [!DNL MySQL] Benutzer
+* `Port`: [!DNL MySQL] Anschluss auf Ihrem Server (standardmäßig 3306)
+* `Host` Standardmäßig ist dies localhost. Im Allgemeinen ist dies der bind-address-Wert für Ihre [!DNL MySQL] server, der standardmäßig `127.0.0.1 (localhost)`, kann aber auch eine lokale Netzwerkadresse sein (z. B. `192.168.0.1`) oder der öffentlichen IP-Adresse Ihres Servers.
 
    Der Wert befindet sich in der `my.cnf` Datei (befindet sich unter `/etc/my.cnf`) unter der Zeile, die lautet `\[mysqld\]`. Wenn die bind-address-Zeile in dieser Datei auskommentiert ist, wird Ihr Server vor externen Verbindungsversuchen geschützt.
 
 Im `SSH Connection` Abschnitt:
 
-* `Remote Address`: Die IP-Adresse oder der Hostname des Servers [!DNL MBI] in den
-* `Username`: Der Benutzername für die [!DNL MBI] SSH-Benutzer (Linux®)
+* `Remote Address`: Die IP-Adresse oder der Hostname des Servers [!DNL Commerce Intelligence] in den
+* `Username`: Der Benutzername für die [!DNL Commerce Intelligence] SSH ([!DNL Linux]) Benutzer
 * `SSH Port`: SSH-Anschluss auf Ihrem Server (standardmäßig 22)
 
-Das ist es! Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um das Setup abzuschließen.
+Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um das Setup abzuschließen.
 
 ## Verwandte:
 
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

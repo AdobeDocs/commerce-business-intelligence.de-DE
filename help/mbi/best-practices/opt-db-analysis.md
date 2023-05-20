@@ -2,16 +2,16 @@
 title: Datenbank für Analysen optimieren
 description: Erfahren Sie, wie Sie Ihre Datenbank für die Analyse optimieren können.
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
 # Datenbank optimieren
 
-Der Hauptvorteil der Nutzung einer operativen Datenbank für Business Intelligence besteht darin, dass nichts erstellt oder geändert werden muss, um Daten zu erfassen. Es gibt bereits wertvolle Informationen. Du musst nichts weiter tun, als es zu entsperren.
+Der Hauptvorteil der Verwendung einer operativen Datenbank für [!DNL Adobe Commerce Intelligence] ist, dass nichts erstellt oder geändert werden muss, um Daten zu erfassen. Wertvolle Informationen sind bereits vorhanden - Sie müssen sie nur freischalten.
 
 Dieses Thema enthält einige Empfehlungen, mit denen Sie Ihre Datenbank für die Analyse optimieren und aus Rohdaten umsetzbare Einblicke gewinnen können.
 
@@ -51,16 +51,16 @@ Zu viele Unternehmen konzentrieren sich ausschließlich auf die Suche nach Kanä
 
 ### Festlegen eines Primären Schlüssels
 
-A [Primärschlüssel](https://en.wikipedia.org/wiki/Unique_key) ist eine unveränderliche Spalte (oder ein Satz von Spalten), die eindeutige Werte in einer Tabelle erzeugt. Primäre Schlüssel sind sehr wichtig, da sie sicherstellen, dass Ihre Tabellen ordnungsgemäß repliziert werden in [!DNL MBI].
+A [Primärschlüssel](https://en.wikipedia.org/wiki/Unique_key) ist eine unveränderliche Spalte (oder ein Satz von Spalten), die eindeutige Werte in einer Tabelle erzeugt. Primäre Schlüssel sind sehr wichtig, da sie sicherstellen, dass Ihre Tabellen ordnungsgemäß repliziert werden in [!DNL Commerce Intelligence].
 
 Verwenden Sie beim Erstellen von Primärschlüsseln einen ganzzahligen Datentyp für die Spalte, die automatisch erhöht wird. Adobe empfiehlt, die Verwendung von mehrspaltigen Primärschlüsseln möglichst zu vermeiden.
 
-Wenn es sich bei Ihrer Tabelle um eine SQL-Ansicht handelt, fügen Sie eine Spalte hinzu, die als Primärschlüssel dienen kann. [!DNL MBI] kann diese Spalte automatisch als Primärschlüssel identifizieren.
+Wenn es sich bei Ihrer Tabelle um eine SQL-Ansicht handelt, fügen Sie eine Spalte hinzu, die als Primärschlüssel dienen kann. [!DNL Commerce Intelligence] kann diese Spalte automatisch als Primärschlüssel identifizieren.
 
 ### Datentyp zu Ihrer Datenspalte zuweisen
 
-Wenn einer Datenspalte keine [Datentyp](https://en.wikipedia.org/wiki/Data_type), [!DNL MBI] rät, welcher Datentyp verwendet werden soll. Wenn das System falsch einschätzt, können Sie die entsprechenden Analysen erst dann durchführen, wenn das Adobe Support-Team die Spalte an den entsprechenden Datentyp anpasst. Wenn beispielsweise eine Datumsspalte als numerischer Datentyp betrachtet wird, können Sie mithilfe dieser Datumsdimension einen Trend im Zeitverlauf erstellen.
+Wenn einer Datenspalte keine [Datentyp](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] rät, welcher Datentyp verwendet werden soll. Wenn das System falsch einschätzt, können Sie die entsprechenden Analysen erst dann durchführen, wenn das Adobe Support-Team die Spalte an den entsprechenden Datentyp anpasst. Wenn beispielsweise eine Datumsspalte als numerischer Datentyp betrachtet wird, können Sie mithilfe dieser Datumsdimension einen Trend im Zeitverlauf erstellen.
 
 ### Hinzufügen von Präfixen zu Ihren Datentabellen, wenn mehrere Datenbanken vorhanden sind
 
-Wenn mehrere Datenbanken mit [!DNL MBI]empfiehlt Adobe, den Tabellen Präfixe hinzuzufügen, um Verwirrung zu vermeiden. Mit Präfixen können Sie sich merken, woher Metriken oder Datendimensionen stammen.
+Wenn mehrere Datenbanken mit [!DNL Commerce Intelligence]empfiehlt Adobe, den Tabellen Präfixe hinzuzufügen, um Verwirrung zu vermeiden. Mit Präfixen können Sie sich merken, woher Metriken oder Datendimensionen stammen.

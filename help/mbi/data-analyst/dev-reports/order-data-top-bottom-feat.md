@@ -2,9 +2,9 @@
 title: Sortieren von Daten mithilfe der Funktion "Oben/Unten anzeigen"
 description: Erfahren Sie, wie Sie Ihre Daten mithilfe der Funktion "Oben/Unten anzeigen"sortieren können.
 exl-id: d47119f4-cdc5-4fa7-a606-d4b8555a8843
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Diese Art der Sortierung und Sortierung von Daten kann in Berichten vorgenommen 
 
 ## Wie verwende ich das? {#how}
 
-Nachdem Sie auf **[!UICONTROL Show Top/Bottom link]**, wird ein Fenster angezeigt, in dem Sie die Anzeige- und Sortierparameter festlegen können. Die Zahl im Textfeld kann entweder eine ganze Zahl sein (z. B. `5`) oder `ALL`. Als Nächstes können Sie den Bericht entweder nach Metrik ODER nach Gruppierung sortieren.
+Klicken Sie auf **[!UICONTROL Show Top/Bottom link]** , um die Anzeige- und Sortierparameter festzulegen. Die Zahl im Textfeld kann entweder eine ganze Zahl sein (z. B. `5`) oder `ALL`. Als Nächstes können Sie den Bericht entweder nach Metrik ODER nach Gruppierung sortieren.
 
 Wenn Sie z. B. die fünf Verweisquellen anzeigen möchten, die den meisten Umsatz gebracht haben, gehen Sie folgendermaßen vor:
 

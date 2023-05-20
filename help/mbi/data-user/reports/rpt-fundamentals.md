@@ -2,7 +2,7 @@
 title: Verwenden eines Berichts
 description: Erfahren Sie, wie Sie Ihre Berichtsdaten verwenden.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Verwenden eines Berichts
 
-Verwenden von Berichten in [!DNL MBI] um Ihnen bei der Beantwortung von Geschäftsfragen zu helfen - ob Sie einfach den Umsatz dieses Monats im Vergleich zum letzten Jahr sehen oder Ihre Akquisekosten für Ihre neuesten [!DNL Google AdWords] Kampagne.
+Verwenden von Berichten in [!DNL Adobe Commerce Intelligence] um Ihnen bei der Beantwortung von Geschäftsfragen zu helfen - ob Sie einfach den Umsatz dieses Monats im Vergleich zum letzten Jahr sehen oder Ihre Akquisekosten für Ihre neuesten [!DNL Google AdWords] Kampagne.
 
 Wie sieht der Weg von Frage zu Antwort genau aus?
 
@@ -62,7 +62,7 @@ Dies wird dann zum Erstellen von Folgendem verwendet:
 
 Beide Felder müssen auf Benutzerebene erstellt werden (z. B. auf der `user` Tabelle). Dadurch kann die durchschnittliche Analyse von Benutzern normalisiert werden (d. h. der Nenner in dieser durchschnittlichen Berechnung ist die Anzahl der Benutzer).
 
-Hier [!DNL MBI] Schritte ein! Sie können Ihre [!DNL MBI] Data Warehouse zur Erstellung der obigen Spalten. Wenden Sie sich an das Analyseteam der Adobe und geben Sie uns die genaue Definition der neuen zu erstellenden Spalten an. Sie können auch die [Spalteneditor](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+Hier [!DNL Commerce Intelligence] Schritte ein! Sie können Ihre [!DNL Commerce Intelligence] Data Warehouse zur Erstellung der obigen Spalten. Wenden Sie sich an das Analyseteam der Adobe und geben Sie uns die genaue Definition der neuen zu erstellenden Spalten an. Sie können auch die [Spalteneditor](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 Es empfiehlt sich, diese berechneten Datenfelder nicht direkt in Ihrer Datenbank zu erstellen, da dies Ihre Produktionsserver unnötig belastet.
 
@@ -75,7 +75,7 @@ Hier wird die folgende Berechnung durchgeführt:
 
 _[SUM von `Time between a customer's registration date and first purchase date`] / [Gesamtzahl der Kunden, die sich registriert und gekauft haben]_
 
-Und Sie möchten diese Berechnung im Zeitverlauf bzw. im Trend sehen, je nach Registrierungsdatum des Kunden. Und hier sehen Sie, wie Sie [diese Metrik erstellen](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL MBI]:
+Und Sie möchten diese Berechnung im Zeitverlauf bzw. im Trend sehen, je nach Registrierungsdatum des Kunden. Und hier sehen Sie, wie Sie [diese Metrik erstellen](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
 
 1. Navigieren Sie zu **[!UICONTROL Data]** und wählen Sie die `Metrics` Registerkarte.
 1. Klicken **[!UICONTROL Add New Metric]** und wählen Sie die `user` -Tabelle (in der Sie die oben genannten Dimensionen erstellt haben).

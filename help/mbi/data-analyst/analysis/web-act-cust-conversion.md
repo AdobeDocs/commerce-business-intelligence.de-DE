@@ -2,22 +2,22 @@
 title: Analyse der Website-Aktivität und der Kundenkonversionsraten
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, das Ihre Website-Aktivität - einschließlich Seitenansichten, Sitzungen und Benutzern - sowie Ihre Kundenkonversionsrate im Laufe der Zeit verfolgt.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
 
 # Analyse der Website-Aktivität
 
-[!DNL MBI] ermöglicht Ihnen die einfache Integration Ihrer Daten zu Werbekosten mit den übrigen Daten. Dadurch können Sie nicht nur die Aktivität Ihrer Website verstehen, sondern auch den Prozentsatz der Besucher Ihrer Website ableiten, die zu einem registrierten Benutzer werden oder einen Kauf tätigen.
+[!DNL Adobe Commerce Intelligence] ermöglicht Ihnen die einfache Integration Ihrer Daten zu Werbekosten mit den übrigen Daten. Dadurch können Sie nicht nur die Aktivität Ihrer Website verstehen, sondern auch den Prozentsatz der Besucher Ihrer Website ableiten, die zu einem registrierten Benutzer werden oder einen Kauf tätigen.
 
-Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, das Ihre Website-Aktivität - einschließlich Seitenansichten, Sitzungen und Benutzern - sowie Ihre Kundenkonversionsrate im Laufe der Zeit verfolgt.
+Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Ihre Website-Aktivität - einschließlich Seitenansichten, Sitzungen und Benutzern - sowie Ihre Kundenkonversionsrate im Zeitverlauf verfolgt.
 
 ## Voraussetzungen
 
-**Importieren von Daten zu Werbekosten** - Verbinden [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) nach [!DNL MBI] - Diese synchronisiert automatisch Ihre [!DNL AdWords] Ausgaben in MBI.
+**Importieren von Daten zu Werbekosten** - Verbinden [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) nach [!DNL Adobe Commerce Intelligence] - Diese synchronisiert automatisch Ihre [!DNL AdWords] Ausgaben für Commerce Intelligence.
 
 **Tracking der Benutzerakquisekanaldaten** - Verknüpfen Sie Ihre [!DNL Google AdWords] Daten für bestimmte Bestellungen in Ihrer Datenbank, müssen Sie [Benutzerakquise verfolgen](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. Dadurch können Sie jede Bestellung mit einer UTM-Quelle und einem Medium verbinden.
 
@@ -103,4 +103,4 @@ Diese Berichtserstellung basiert auf Folgendem:
 
 Nachdem Sie nun Zugriff auf Daten zu Ihrem Web-Traffic und Ihren Konversionsraten haben, können Sie damit beginnen, Geschäftsentscheidungen zu fördern, z. B. Welche Sites am besten geeignet sind, Traffic zu Ihrer Site zu leiten? Oder welche Ihrer Kampagnen am effektivsten sind, um Kunden mit dem hohen Lebenszeitwert zu gewinnen?
 
-Bei der Anpassung der Werbeausgaben und der Marketingstrategie können Sie die Ergebnisse in [!DNL MBI], die auf diesem Dashboard zur Erfüllung der sich entwickelnden Prioritäten Ihres Unternehmens verwendet wird.
+Bei der Anpassung der Werbeausgaben und der Marketingstrategie können Sie die Ergebnisse in [!DNL Commerce Intelligence], die auf diesem Dashboard zur Erfüllung der sich entwickelnden Prioritäten Ihres Unternehmens verwendet wird.

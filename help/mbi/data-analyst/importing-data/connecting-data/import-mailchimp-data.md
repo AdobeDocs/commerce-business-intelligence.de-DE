@@ -1,21 +1,21 @@
 ---
 title: Importieren von MailChimp-Daten
-description: Informationen zum Importieren von MailChimp-Daten in [!DNL MBI].
+description: Informationen zum Importieren von MailChimp-Daten in [!DNL Commerce Intelligence].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
-# Import `MailChimp` data
+# Import [!DNL Mailchimp] data
 
-Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre `MailChimp` E-Mail-Kampagnendaten in [!DNL MBI]. Um den Import abzuschließen, müssen Sie für jede `MailChimp` Kampagne:
+Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre [!DNL Mailchimp] E-Mail-Kampagnendaten in [!DNL Commerce Intelligence]. Um den Import abzuschließen, müssen Sie für jede [!DNL Mailchimp] Kampagne:
 
 ## Exportieren von Daten zu Öffnungen {#opens}
 
-1. Nach der Anmeldung bei `MailChimp`, navigieren Sie zu `Campaigns` Registerkarte.
+1. Nach der Anmeldung bei [!DNL Mailchimp], navigieren Sie zu `Campaigns` Registerkarte.
 
    ![import mailchimp 1](../../../assets/import-mailchimp-1.png)
 
@@ -41,7 +41,7 @@ Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre
 
    ![import mailchimp 5](../../../assets/import-mailchimp-5.png)
 
-1. Klicken Sie auf ENTWEDER auf die Zahl unter `Total Clicks` ODER `Unique Clicks` Spalte.
+1. Klicken Sie auf die Zahl unter der `Total Clicks` ODER `Unique Clicks` Spalte.
 
    ![import mailchimp 6](../../../assets/import-mailchimp-6.png)
 
@@ -55,7 +55,7 @@ Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre
 
 ## Versanddaten exportieren {#sent}
 
-1. Wechseln Sie zu `Campaigns` Registerkarte von MailChimp.
+1. Wechseln Sie zu `Campaigns` Tab von [!DNL Mailchimp].
 
 1. Klicken **[!UICONTROL View Report]** neben dem Kampagnennamen.
 
@@ -69,8 +69,8 @@ Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre
 
    ![import mailchimp 9](../../../assets/import-mailchimp-9.png)
 
-## Vorbereiten von Dateien auf den Upload in [!DNL MBI] {#upload}
+## Vorbereiten von Dateien auf den Upload in [!DNL Commerce Intelligence] {#upload}
 
-Jede Datei - `Opens`, `Clicks`und `Sent` - sollte in hochgeladen werden. [!DNL MBI] als separate Datei. Adobe empfiehlt, die Dateien mithilfe dieser Benennungsregel zu benennen: `MailChimp\_ACTION\_DATE`. Ersetzen `ACTION` mit `Open`, `Click`oder `Sent`und ersetzen `DATE` mit dem Datum der Ausfuhr.
+Jede Datei - `Opens`, `Clicks`und `Sent` - sollte in hochgeladen werden. [!DNL Commerce Intelligence] als separate Datei. Adobe empfiehlt, die Dateien mithilfe dieser Benennungsregel zu benennen: `MailChimp\_ACTION\_DATE`. Ersetzen `ACTION` mit `Open`, `Click`oder `Sent`und ersetzen `DATE` mit dem Datum der Ausfuhr.
 
 Wenn Sie zum Hochladen der Dateien bereit sind, verwenden Sie die [`File Upload` Funktion](../connecting-data/using-file-uploader.md) , um die Daten in Ihre Data Warehouse zu übertragen.

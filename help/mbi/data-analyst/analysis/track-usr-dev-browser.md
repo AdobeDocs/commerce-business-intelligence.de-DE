@@ -2,16 +2,16 @@
 title: Google Analytics - Tracking von Benutzergeräte- und Browserdaten in Ihrer Datenbank
 description: Erfahren Sie, wie viele Benutzer sich tatsächlich über Mobilgeräte anmelden und wie sich dies auf den Lebenszeitwert dieser Benutzer auswirkt.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Google Analytics] Tracking
 
-Mit [!UICONTROL Google Analytics] Sie können [Verweisquelleninformationen speichern](../analysis/google-track-user-acq.md) um zu verstehen, woher Ihre wertvollsten Benutzer kommen. In diesem Thema erfahren Sie mehr über die Plattform (z. B. Gerät oder Browser), an der Ihre Benutzer arbeiten. Dadurch können Sie erkennen, wie viele Benutzer sich tatsächlich über Mobilgeräte anmelden und wie sich dies auf den Lebenszeitwert dieser Benutzer auswirkt.
+Mit [!UICONTROL Google Analytics] Sie können [Verweisquelleninformationen speichern](../analysis/google-track-user-acq.md) um zu verstehen, woher Ihre wertvollsten Benutzer kommen. Dieses Thema behandelt die Plattform (z. B. Gerät oder Browser), an der Ihre Benutzer arbeiten. Dadurch können Sie erkennen, wie viele Benutzer sich tatsächlich über Mobilgeräte anmelden und wie sich dies auf den Lebenszeitwert dieser Benutzer auswirkt.
 
 ## Speichern von Benutzergeräten und Browserdaten
 
@@ -30,7 +30,7 @@ Auf diese Informationen kann Ihr Server bei jeder Anfrage zugreifen. In PHP wird
 
 ### Wann sollten Sie diese Daten aufzeichnen?
 
-Adobe empfiehlt, ein neues Feld mit dem Namen `Platform` oder `User-Agent` auf `Customers` und `Orders` Datenbanktabellen zum Speichern dieser Informationen bei jeder Erstellung eines Benutzers oder bei einer Bestellung. Wenn Sie eine SQL-Datenbank verwenden, sollte dieses Feld ein `VARCHAR(255)`. 
+[!DNL Adobe] empfiehlt, ein neues Feld mit dem Namen `Platform` oder `User-Agent` auf `Customers` und `Orders` Datenbanktabellen zum Speichern dieser Informationen bei jeder Erstellung eines Benutzers oder bei einer Bestellung. Wenn Sie eine SQL-Datenbank verwenden, sollte dieses Feld ein `VARCHAR(255)`. 
 
 >[!NOTE]
 >

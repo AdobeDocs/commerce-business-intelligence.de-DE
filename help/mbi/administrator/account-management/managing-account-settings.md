@@ -2,9 +2,9 @@
 title: Kontoeinstellungen verwalten
 description: Erfahren Sie, wie Sie Ihre Kontoeinstellungen für Ihre Data Warehouse anpassen können.
 exl-id: 847d51b1-287e-4c14-b64e-0bd9bfcccedc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen.](../../administrator/user-management/user-management.md)
 
-In [!DNL MBI] -Konto können Sie Ihre Kontoeinstellungen für Ihre Data Warehouse anpassen. Sie können darauf zugreifen, indem Sie Ihren Organisationsnamen in der oberen rechten Ecke eines beliebigen Bildschirms auswählen und dann **[!UICONTROL Account Settings]** aus dem Dropdown-Menü aus.
+In [!DNL Commerce Intelligence] -Konto können Sie Ihre Kontoeinstellungen für Ihre Data Warehouse anpassen. Sie können darauf zugreifen, indem Sie Ihren Organisationsnamen in der oberen rechten Ecke eines beliebigen Bildschirms auswählen und dann **[!UICONTROL Account Settings]** aus dem Dropdown-Menü aus.
 
-* **[!UICONTROL Client Name:]** Diese Einstellung wird in der oberen rechten Ecke aller Dashboards und an anderer Stelle in Ihrem Konto angezeigt. Wenn Sie sich ändern möchten **[!UICONTROL "Vandelay Industries Co., Ltd]** nur **[!UICONTROL "Vandelay]**, ist dies der Ort, um dies zu tun.
+* **[!UICONTROL Client Name:]** Diese Einstellung wird in der rechten oberen Ecke aller Dashboards und an anderer Stelle in Ihrem Konto angezeigt. Wenn Sie sich ändern möchten **[!UICONTROL "Vandelay Industries Co., Ltd]** nur **[!UICONTROL "Vandelay]**, ist dies der Ort, um dies zu tun.
 
 * **[!UICONTROL Currency:]** Dies ist die *Standardwährung* für alle Geldwerte in Ihrem Konto. Jedes Mal, wenn ein Dezimalwert oder ein Währungswert mit Ihrer Data Warehouse synchronisiert wird, bestimmt diese Einstellung das Symbol, das vor diesem Wert in Ihren Berichten platziert wird.
 

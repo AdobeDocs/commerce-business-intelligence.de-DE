@@ -1,30 +1,30 @@
 ---
 title: Importieren von Linkshare-Daten
-description: Erfahren Sie, wie Sie Linkshare-Daten in importieren [!DNL MBI].
+description: Erfahren Sie, wie Sie Linkshare-Daten in importieren [!DNL Commerce Intelligence].
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
 
-# Import `Linkshare` data
+# Import [!DNL Linkshare] data
 
-Mit `Linkshare` Daten in [!DNL MBI]müssen Sie zwei Dinge tun:
+Mit [!DNL Linkshare] Daten in [!DNL Adobe Commerce Intelligence]müssen Sie zwei Dinge tun:
 
 1. [Exportieren Sie die Linkshare-Daten in ](#export)
-1. [Hochladen der Tabelle in [!DNL MBI]](../connecting-data/using-file-uploader.md)
+1. [Hochladen der Tabelle in [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Daten aus Linkshare exportieren {#export}
 
-1. In `Linkshare` Konto, gehen Sie zu **[!UICONTROL Reports** > **Run Reports].**
+1. In [!DNL Linkshare] Konto, gehen Sie zu **[!UICONTROL Reports** > **Run Reports].**
 
 1. Im `Report` Dropdown-Liste auswählen **[!UICONTROL Sales & Activity Report]**.
 
 1. Behalten Sie alle anderen Dropdown-Optionen als Standardauswahl bei.
 
-1. Im `Date Range` Dropdown-Liste auswählen, welche Option (`Sun - Sat`, `Mon - Sun`) stimmt mit Ihrer `Start of Week` Einstellungen in [!DNL MBI].
+1. Im `Date Range` Dropdown-Liste auswählen, welche Option (`Sun - Sat`, `Mon - Sun`) stimmt mit Ihrer `Start of Week` Einstellungen in [!DNL Commerce Intelligence].
 
 1. Löschen Sie die `Compare Year-Over-Year Data` aktivieren.
 
@@ -38,4 +38,4 @@ Mit `Linkshare` Daten in [!DNL MBI]müssen Sie zwei Dinge tun:
 
    An dieser Stelle wird ein `.csv` und heruntergeladen.
 
-Nachdem die Datei heruntergeladen wurde, können Sie sie in [!DNL MBI] mithilfe der [`File Upload` Funktion](../connecting-data/using-file-uploader.md).
+Nachdem die Datei heruntergeladen wurde, können Sie sie in [!DNL Commerce Intelligence] mithilfe der [`File Upload` Funktion](../connecting-data/using-file-uploader.md).

@@ -2,7 +2,7 @@
 title: Anzeigen von Dashboards auf mehreren Bildschirmen
 description: Erfahren Sie, wie Sie Ihre Dashboards im Büro anzeigen können.
 exl-id: aabe5c8f-0809-467c-9713-099aed6926b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Anzeigen von Dashboards im Büro
 
-Für [!DNL MBI] Benutzern, die Interesse daran haben, ihre Dashboards und Berichte auf Bildschirmen im gesamten Büro anzuzeigen, stehen verschiedene Hardware-Optionen zur Verfügung, mit deren Hilfe diese Einrichtung einfach möglich ist.
+Für [!DNL Commerce Intelligence] Benutzern, die Interesse daran haben, ihre Dashboards und Berichte auf Bildschirmen im gesamten Büro anzuzeigen, stehen verschiedene Hardware-Optionen zur Verfügung, mit deren Hilfe diese Einrichtung einfach möglich ist.
 
 Im Folgenden finden Sie die empfohlene Liste der Elemente, die Sie für die Option benötigen:
 

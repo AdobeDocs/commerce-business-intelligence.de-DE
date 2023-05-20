@@ -2,18 +2,18 @@
 title: Optimieren Ihrer SQL-Abfragen
 description: Erfahren Sie, wie Sie Ihre SQL-Abfragen optimieren können.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
 
 # SQL-Abfragen optimieren
 
-Der SQL-Report Builder ermöglicht es Ihnen, diese Abfragen jederzeit abzufragen und zu wiederholen. Dies ist nützlich, wenn Sie eine Abfrage ändern müssen, ohne warten zu müssen, bis ein Aktualisierungszyklus abgeschlossen ist, bevor Sie eine von Ihnen erstellte Spalte oder einen erstellten Bericht realisieren können, die aktualisiert werden muss.
+Die [!DNL SQL Report Builder] ermöglicht es Ihnen, diese Abfragen jederzeit abzufragen und zu wiederholen. Dies ist nützlich, wenn Sie eine Abfrage ändern müssen, ohne warten zu müssen, bis ein Aktualisierungszyklus abgeschlossen ist, bevor Sie eine von Ihnen erstellte Spalte oder einen erstellten Bericht realisieren können, die aktualisiert werden muss.
 
-Vor der Ausführung einer Abfrage [[!DNL MBI] Kostenschätzungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=en). Kosten berücksichtigt die Dauer und die Anzahl der Ressourcen, die zur Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch gelten oder die Anzahl der zurückgegebenen Zeilen die MBI-Grenzwerte überschreitet, schlägt die Abfrage fehl. Für die Abfrage Ihrer Data Warehouse, die sicherstellt, dass Sie möglichst rationalisierte Abfragen erstellen, empfiehlt Adobe Folgendes.
+Vor der Ausführung einer Abfrage [[!DNL Commerce Intelligence] Kostenschätzungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Kosten berücksichtigt die Dauer und die Anzahl der Ressourcen, die zur Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch betrachtet werden oder wenn die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] -Beschränkungen, schlägt die Abfrage fehl. Zur Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), wodurch sichergestellt wird, dass Sie möglichst rationalisierte Abfragen erstellen, empfiehlt Adobe Folgendes.
 
 ## Verwenden von SELECT oder Auswählen aller Spalten
 

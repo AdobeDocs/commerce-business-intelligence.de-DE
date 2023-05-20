@@ -2,9 +2,9 @@
 title: Verbinden von Facebook-Anzeigen
 description: Erfahren Sie, wie Sie Ihre Anzeigenausgabedaten analysieren und feststellen können, ob Ihr Geld effektiv ausgegeben wird.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -15,30 +15,30 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Facebook_Logo.png)
+![](../../../assets/facebook-ads-logo.png)
 
 Sie haben Ihre Forschung durchgeführt, Ihre Anzeigen erstellt, Ihre Kampagne gestartet, [!DNL Facebook]. Jetzt ist es an der Zeit, Ihre Anzeigenausgabedaten zu analysieren und festzustellen, ob Ihr Geld effektiv ausgegeben wird. Mithilfe Ihrer Anzeigenausgabedaten können Sie [Messen Sie den Kampagnen-ROI durch die Verknüpfung Ihrer Werbe- und des Kundenlebenszeitwerts (CLV).](../../../data-analyst/analysis/roi-ad-camp.md) der Benutzer, die durch Ihre Kampagnen erworben wurden.
 
-Verbinden Ihrer Facebook-Anzeigendaten mit [!DNL MBI] ist ein einfacher dreistufiger Prozess:
+Verbinden Ihrer [!DNL Facebook Ad] Daten an [!DNL Commerce Intelligence] ist ein einfacher dreistufiger Prozess:
 
-1. [Hinzufügen [!DNL Facebook] als Datenquelle in [!DNL MBI]](#stepone)
-1. [Zulassen [!DNL MBI] Zugriff auf Ihre [!DNL Facebook Ads] data](#steptwo)
+1. [Hinzufügen [!DNL Facebook] als Datenquelle in [!DNL Commerce Intelligence]](#stepone)
+1. [Zulassen [!DNL Commerce Intelligence] Zugriff auf Ihre [!DNL Facebook Ads] data](#steptwo)
 1. [Auswählen [!DNL Facebook Ads] Konten zum Abrufen von Daten](#stepthree)
 
-## Hinzufügen [!DNL Facebook] als Datenquelle in [!DNL MBI] {#stepone}
+## Hinzufügen [!DNL Facebook] als Datenquelle in [!DNL Commerce Intelligence] {#stepone}
 
-1. So fügen Sie die [!DNL Facebook] -Integration zu Ihrem Konto hinzufügen, navigieren Sie zu `Connections` Seite unter **[!UICONTROL Manage Data** > **Integrations]**.
-1. Klicken **[!UICONTROL Add Integration]** auf der rechten Seite des Bildschirms über den Daten `Sources` Tabelle.
+1. So fügen Sie die [!DNL Facebook] Integration in Ihre [!DNL Commerce Intelligence]-Konto, navigieren Sie zum `Connections` Seite unter **[!UICONTROL Manage Data** > **Integrations]**.
+1. Klicken **[!UICONTROL Add Integration]**, auf der rechten Seite.
 1. Klicken Sie auf [!DNL Facebook] Symbol. Dadurch wird die [!DNL Facebook] Autorisierungsseite.
 1. Klicken **[!UICONTROL Authorize]**.
 
-## Zulassen [!DNL MBI] Zugriff auf Ihre [!DNL Facebook Ads] data {#steptwo}
+## Zulassen [!DNL Commerce Intelligence] Zugriff auf Ihre [!DNL Facebook Ads] data {#steptwo}
 
 Nach dem Klicken **[!DNL Facebook Authorize]**, wird ein kleines Popup-Fenster angezeigt:
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-Führen Sie eine Reihe von Schritten aus, um [!DNL MBI] , um auf Daten aus Ihrem öffentlichen Profil zuzugreifen, [!DNL Facebook Ads] und zugehörige Statistiken. Klicken **[!UICONTROL OK]** auf diese Schritte folgen, um fortzufahren.
+Führen Sie eine Reihe von Schritten aus, um [!DNL Commerce Intelligence] , um auf Daten aus Ihrem öffentlichen Profil zuzugreifen, [!DNL Facebook Ads] und zugehörige Statistiken. Klicken **[!UICONTROL OK]** auf diese Schritte folgen, um fortzufahren.
 
 ## Auswählen [!DNL Facebook Ads] Konten zum Abrufen von Daten {#stepthree}
 
@@ -56,7 +56,7 @@ Vergewissern Sie sich, dass Sie das Tracking durchführen [!DNL Facebook] Kampag
 
 ## Verwandte
 
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Verbinden Sie Ihre [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
 * [Verweisquelle für Bestellungen verfolgen über [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Tracking der Verweisquelle von Benutzern in Ihrer Datenbank](../../analysis/google-track-user-acq.md)

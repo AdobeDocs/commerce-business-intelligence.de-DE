@@ -1,8 +1,8 @@
 ---
 title: Erwartete Stripdaten
-description: Wichtigste Datentabellen, die Sie aus der Vorlage Stripe in importieren können [!DNL MBI].
+description: Durchsuchen Sie die wichtigsten Datentabellen, die Sie aus "Stripe"in "Commerce Intelligence"importieren können.
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Nachher [Sie haben Ihre [!DNL Stripe] account](../integrations/stripe.md), können Sie die [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) zur einfachen Nachverfolgung relevanter Datenfelder für die Analyse.
 
-In diesem Artikel werden die wichtigsten Datentabellen untersucht, aus denen Sie importieren können. [!DNL Stripe] in [!DNL MBI]. Nach Abschluss der Einrichtung werden die folgenden Tabellen in Ihrer Data Warehouse erstellt. Klicken Sie auf die Links in der Spalte Tabellenname , um mehr über die Attribute in den einzelnen Tabellen zu erfahren.
+In diesem Thema werden die wichtigsten Datentabellen untersucht, aus denen Sie importieren können. [!DNL Stripe] in [!DNL Commerce Intelligence]. Nach Abschluss der Einrichtung werden die folgenden Tabellen in Ihrer Data Warehouse erstellt. Klicken Sie auf die Links in der Spalte Tabellenname , um mehr über die Attribute in den einzelnen Tabellen zu erfahren.
 
 | **Tabellenname** | **Beschreibung** |
 |-----|-----|
@@ -34,4 +34,4 @@ In diesem Artikel werden die wichtigsten Datentabellen untersucht, aus denen Sie
 ## Verwandte:
 
 * [Verbinden [!DNL Stripe]](../integrations/stripe.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

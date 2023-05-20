@@ -1,25 +1,25 @@
 ---
-title: Speichern von Daten in Commerce
-description: Erfahren Sie, wie Daten generiert werden, was dazu führt, dass eine neue Zeile eingefügt wird und wie Aktionen in die Commerce-Datenbank aufgenommen werden.
+title: Speichern von Daten in Adobe Commerce
+description: Erfahren Sie, wie Daten generiert werden, was dazu führt, dass eine neue Zeile eingefügt wird und wie Aktionen in die Adobe Commerce-Datenbank aufgenommen werden.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '928'
 ht-degree: 3%
 
 ---
 
 # Speichern von Daten in [!DNL Adobe Commerce]
 
-Die Adobe Commerce-Plattform erfasst und organisiert eine Vielzahl wertvoller Commerce-Daten aus Hunderten von Tabellen. Dieses Thema beschreibt:
+Die [!DNL Adobe Commerce] Plattform erfasst und organisiert eine Vielzahl wertvoller Commerce-Daten über Hunderte von Tabellen hinweg. Dieses Thema beschreibt:
 
 * wie diese Daten generiert werden
-* was genau bewirkt, dass eine neue Zeile in eine der [Commerce-Haupttabellen](../data-warehouse-mgr/common-mage-tables.md)
-* die Aufzeichnung von Aktionen wie Kauf oder Erstellung eines Kontos in der Commerce-Datenbank
+* was dazu führt, dass eine neue Zeile in eine der [Commerce-Haupttabellen](../data-warehouse-mgr/common-mage-tables.md)
+* wie Aktionen wie der Kauf oder die Erstellung eines Kontos in der Variablen [!DNL Adobe Commerce] Datenbank
 
-Diese Konzepte werden im folgenden Beispiel erläutert:
+Weitere Informationen zu diesen Konzepten finden Sie im folgenden Beispiel:
 
-`Clothes4U` ist ein Bekleidungshändler mit sowohl einer Online-Präsenz als auch einer Ziegel- und Mörtelpräsenz. Es nutzt die Magento Open Source hinter seiner Website, um Daten zu sammeln und zu organisieren.
+`Clothes4U` ist ein Bekleidungshändler, der sowohl online als auch über eine Vorstellung von Ziegelsteinen und Mörtel verfügt. Sie verwendet [!DNL Magento Open Source] hinter der Website, um Daten zu sammeln und zu organisieren.
 
 ## `catalog\_product\_entity`
 
@@ -57,7 +57,7 @@ Kurz nach dem Hinzufügen der drei neuen Produkte hat ein neuer Kunde `Sammy Cus
 * `email` - Dieses Feld wird durch die E-Mail-Adresse gefüllt, die ein neuer Kunde bei der Kontoerstellung eingibt.
 * `created_at` - Diese Spalte gibt den Zeitstempel für den Zeitpunkt zurück, zu dem jeder Benutzer Mitglied wurde
 
-## `sales\_flat\_order (or Sales\_order` wenn Sie Commerce 2.0 oder höher haben)
+## `sales\_flat\_order (or Sales\_order` wenn Sie [!DNL Adobe Commerce 2.x]
 
 Mit Abschluss der Kontoerstellung `Sammy Customer` ist bereit, einen Kauf zu tätigen. Auf der Website fügt der Kunde zwei Paare der `Throwback Bellbottoms` und einem `V-Neck T-Shirt` in den Warenkorb. Mit der Auswahl zufrieden, wechselt der Kunde zum Checkout und sendet die Bestellung, wodurch der folgende Eintrag auf der [Verkaufstabelle](../data-warehouse-mgr/sales-flat-order-table.md):
 
@@ -73,7 +73,9 @@ Mit Abschluss der Kontoerstellung `Sammy Customer` ist bereit, einen Kauf zu tä
    * Die beiden Paare von &quot;Throwback Bellboden&quot;und &quot;V-Neck T-Shirt&quot;kosten insgesamt 94,85 Dollar
 * `created_at` - Diese Spalte gibt den Zeitstempel für den Zeitpunkt der Erstellung jeder Bestellung zurück.
 
-## `sales\_flat\_order\_item ( or Sales\_order\_item` wenn Sie Commerce 2.0 oder höher haben)
+## `sales\_flat\_order\_item ( or Sales\_order\_item`
+
+(bei Commerce 2.0 oder höher)
 
 Zusätzlich zur einzelnen Zeile auf der `Sales\_flat\_order` Tabelle, wann `Sammy Customer` sendet die Reihenfolge. Eine Zeile für jedes eindeutige Element in dieser Reihenfolge wird in die [`sales\_flat\_order\_item` table](../data-warehouse-mgr/sales-flat-order-item-table.md):
 

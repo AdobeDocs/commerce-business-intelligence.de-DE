@@ -2,24 +2,24 @@
 title: MongoDB-Datenmodellierung
 description: Erfahren Sie, wie Sie Datenmuster vermeiden, die ein Problem darstellen.
 exl-id: 556c854b-5d7c-4f72-8ed7-5bc08d9ee5b9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
 # [!DNL MongoDB] Datenmodellierung
 
-Wann [!DNL MBI] abruft [!DNL MongoDB] -Daten in ein relationales Modell übersetzt werden.
+Wann [!DNL Adobe Commerce Intelligence] abruft [!DNL MongoDB] -Daten in ein relationales Modell übersetzt werden.
 
-Die schlechte Nachricht: Obwohl die meisten Datenmuster kein Problem darstellen, gibt es einige, die aufgrund der Übersetzung in ein relationales Modell [!DNL MBI] unterstützt nicht.
+Die schlechte Nachricht: Die meisten Datenmuster werfen zwar kein Problem auf, es gibt jedoch einige, die von [!DNL Commerce Intelligence], da die Übersetzung in ein relationales Modell erfolgt.
 
 Die gute Nachricht: All diese Muster lassen sich vermeiden.
 
 ## Übergeordnete Arrays {#subnested}
 
-Wenn Ihre Sammlung wie im folgenden Beispiel aussieht: [!DNL MBI] repliziert nur die Daten im Elemente-Array. Daten aus dem Array der Unterelemente werden nicht abgerufen.
+Wenn Ihre Sammlung wie im folgenden Beispiel aussieht: [!DNL Commerce Intelligence] repliziert nur die Daten im Elemente-Array. Daten aus dem Array der Unterelemente werden nicht abgerufen.
 
 ```bash
     {
@@ -41,7 +41,7 @@ Wenn Ihre Sammlung wie im folgenden Beispiel aussieht: [!DNL MBI] repliziert nur
 
 ## Variablenobjektschlüssel {#varobjectkeys}
 
-Sammlungen, die Objekte mit variablen Objektschlüsseln enthalten, werden nicht repliziert in [!DNL MBI]. Beispiel:
+Sammlungen, die Objekte mit variablen Objektschlüsseln enthalten, werden nicht repliziert in [!DNL Commerce Intelligence]. Beispiel:
 
 ```bash
     {

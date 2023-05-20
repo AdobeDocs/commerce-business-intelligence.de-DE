@@ -2,16 +2,16 @@
 title: Verringern der Aktualisierungszyklusdauer
 description: Erfahren Sie, wie Sie die Aktualisierungszyklusdauer verkürzen.
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # Verringern der Verarbeitungszeit für den Aktualisierungszyklus
 
-[!DNL MBI] synchronisiert täglich mit Ihrer Datenbank, um neue Daten zu replizieren, sodass in Ihren Dashboards immer die neuesten Informationen angezeigt werden.
+[!DNL Adobe Commerce Intelligence] synchronisiert täglich mit Ihrer Datenbank, um neue Daten zu replizieren, sodass in Ihren Dashboards immer die neuesten Informationen angezeigt werden.
 
 Viele Faktoren können zu einer bereits langen Aktualisierungszeit beitragen. Bestimmte Replikationsmethoden, höhere Wiederaufnahmefrequenzen und die Anzahl der Dashboards und Diagramme sind nur ein paar Mitwirkende. In diesen Themen werden einige Best Practices zur Verkürzung der Aktualisierungszeiten besprochen.
 
@@ -19,7 +19,7 @@ Viele Faktoren können zu einer bereits langen Aktualisierungszeit beitragen. Be
 
 In einer Datenbanktabelle können Datenspalten mit veränderlichen Werten vorhanden sein. Beispiel: in einer **Bestellungen** Tabelle gibt es möglicherweise eine Spalte namens **status**. Wenn eine Bestellung ursprünglich in die Datenbank geschrieben wurde, kann die Statusspalte den Wert enthalten `pending`. Die Bestellung wird in Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) mit diesem `pending` -Wert.
 
-Die veränderlichen Spalten müssen [auf aktualisierte Werte erneut geprüft werden](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) über einen bestimmten Zeitraum. Standardmäßig [!DNL MBI] Diese Spalten werden bei jeder Aktualisierung erneut überprüft. Wenn jedoch eine große Datenmenge erneut geprüft und repliziert werden muss, kann dies die Aktualisierungszeit beeinträchtigen. Anstatt bei jeder Aktualisierung eine erneute Überprüfung durchzuführen, empfiehlt Adobe, die Wiederholungshäufigkeit auf täglich, wöchentlich oder monatlich festzulegen.
+Die veränderlichen Spalten müssen [auf aktualisierte Werte erneut geprüft werden](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) über einen bestimmten Zeitraum. Standardmäßig [!DNL Commerce Intelligence] Diese Spalten werden bei jeder Aktualisierung erneut überprüft. Wenn jedoch eine große Datenmenge erneut geprüft und repliziert werden muss, kann dies die Aktualisierungszeit beeinträchtigen. Anstatt bei jeder Aktualisierung eine erneute Überprüfung durchzuführen, empfiehlt Adobe, die Wiederholungshäufigkeit auf täglich, wöchentlich oder monatlich festzulegen.
 
 ## Inkrementelle Replikationsmethoden verwenden
 
@@ -27,9 +27,9 @@ Wie bereits erwähnt, stehen lange Aktualisierungszeiten in direktem Zusammenhan
 
 ## Nicht verwendete Diagramme aus Dashboards entfernen
 
-Am Ende des Aktualisierungszyklus [!DNL MBI] führt einen Cache-Vorgang für alle Diagramme aus. Ein Cache speichert Daten, damit zukünftige Informationsanfragen schneller abgeschlossen werden können. In [!DNL MBI]bedeutet dies, dass Dashboards schnell geladen werden, da Diagramme nicht jedes Mal, wenn sie geladen werden, Daten abfragen müssen.
+Am Ende des Aktualisierungszyklus [!DNL Commerce Intelligence] führt einen Cache-Vorgang für alle Diagramme aus. Ein Cache speichert Daten, damit zukünftige Informationsanfragen schneller abgeschlossen werden können. In [!DNL Commerce Intelligence]bedeutet dies, dass Dashboards schnell geladen werden, da Diagramme nicht jedes Mal, wenn sie geladen werden, Daten abfragen müssen.
 
-Seit [!DNL MBI] Führt nur Cache-Vorgänge für Diagramme in einem Dashboard aus. Durch das Entfernen nicht verwendeter Diagramme aus Ihren Dashboards wird die Aktualisierungszeit verkürzt. Beachten Sie, dass sich dasselbe Diagramm möglicherweise in mehreren Dashboards befindet. Wenden Sie sich an Ihr Team, um sicherzustellen, dass auch nicht verwendete Diagramme entfernt wurden.
+Seit [!DNL Commerce Intelligence] Führt nur Cache-Vorgänge für Diagramme in einem Dashboard aus. Durch das Entfernen nicht verwendeter Diagramme aus Ihren Dashboards wird die Aktualisierungszeit verkürzt. Beachten Sie, dass sich dasselbe Diagramm möglicherweise in mehreren Dashboards befindet. Wenden Sie sich an Ihr Team, um sicherzustellen, dass auch nicht verwendete Diagramme entfernt wurden.
 
 >[!NOTE]
 >
@@ -41,4 +41,4 @@ Zusätzlich zur Neubewertung von Wiederholungsfrequenzen, Replikationsmethoden u
 
 ## Aufbrechen
 
-Wenn Ihre Aktualisierungszeit auch nach der Implementierung dieser Empfehlungen immer noch langsam scheint [das Supportteam kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Ihre Aktualisierungszeit auch nach der Implementierung dieser Empfehlungen immer noch langsam scheint [das Supportteam kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

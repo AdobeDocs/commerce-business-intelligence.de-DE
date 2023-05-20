@@ -1,25 +1,25 @@
 ---
-title: Deklarieren der [!DNL MBI] Konto
-description: Erfahren Sie, wie Sie Ihre [!DNL MBI] -Konto.
+title: Deklarieren der [!DNL Commerce Intelligence] Konto
+description: Erfahren Sie, wie Sie Ihre [!DNL Commerce Intelligence] -Konto.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# Bereinigen Sie Ihre [!DNL MBI] Konto
+# Bereinigen Sie Ihre [!DNL Adobe Commerce Intelligence] Konto
 
-Ob Sie mit [!DNL MBI] Für sechs Monate oder sechs Jahre ist die Führung eines ordentlichen Kontos von größter Bedeutung, damit Ihr Unternehmen die Plattform optimal nutzen kann. Im Laufe der Zeit ist es natürlich, dass es Benutzer, Dashboards, Berichte, Metriken und Spalten gibt, die nicht mehr benötigt werden. Vielleicht haben Sie einen Bericht für die einmalige Verwendung erstellt und ihn vergessen, oder ein Benutzer, der Ihr Unternehmen verlassen hat, hat sein Konto nie deaktiviert.
+Ob Sie mit [!DNL Commerce Intelligence] Für sechs Monate oder sechs Jahre ist die Führung eines ordentlichen Kontos von größter Bedeutung, damit Ihr Unternehmen die Plattform optimal nutzen kann. Im Laufe der Zeit ist es natürlich, dass es Benutzer, Dashboards, Berichte, Metriken und Spalten gibt, die nicht mehr benötigt werden. Vielleicht haben Sie einen Bericht für die einmalige Verwendung erstellt und ihn vergessen, oder ein Benutzer, der Ihr Unternehmen verlassen hat, hat sein Konto nie deaktiviert.
 
-Mit [standardisierte, eindeutige Benennung aller Elemente](../best-practices/naming-elements.md)) Ihrer [!DNL MBI] -Konto verwenden, helfen Ihnen die nachfolgenden Schritte zur Kontoprüfung dabei, die Übersichtlichkeit und unnötige Analysen für Ihre Benutzer zu reduzieren. Ein weiterer Vorteil umfasst [potenziell schnellere Aktualisierungszyklen](../best-practices/reduce-update-cycle-time.md).
+Mit [standardisierte, eindeutige Benennung aller Elemente](../best-practices/naming-elements.md)) Ihrer [!DNL Commerce Intelligence] -Konto verwenden, helfen Ihnen die nachfolgenden Schritte zur Kontoprüfung dabei, die Übersichtlichkeit und unnötige Analysen für Ihre Benutzer zu reduzieren. Ein weiterer Vorteil umfasst [potenziell schnellere Aktualisierungszyklen](../best-practices/reduce-update-cycle-time.md).
 
 ## Schritt 1: Nicht aktive Benutzer identifizieren
 
-Der erste Schritt bei der Bereinigung Ihres Kontos besteht darin, die Konten Ihrer nicht aktiven Benutzer zu deaktivieren, z. B. Personen, die das Unternehmen verlassen oder nicht mehr verwenden [!DNL MBI] in ihren aktuellen Rollen.
+Der erste Schritt bei der Bereinigung Ihres Kontos besteht darin, die Konten Ihrer nicht aktiven Benutzer zu deaktivieren, z. B. Personen, die das Unternehmen verlassen oder nicht mehr verwenden [!DNL Commerce Intelligence] in ihren aktuellen Rollen.
 
-Klicken Sie dazu in der oberen rechten Ecke der Navigationsleiste auf den Namen Ihres Unternehmens und wählen Sie **[!UICONTROL Manage Users]**. Wählen Sie anschließend den Benutzer aus, den Sie deaktivieren möchten, und klicken Sie auf **[!UICONTROL Deactivate User]**.
+Klicken Sie dazu in der Navigationsleiste oben rechts auf den Namen Ihres Unternehmens und wählen Sie **[!UICONTROL Manage Users]**. Wählen Sie anschließend den Benutzer aus, den Sie deaktivieren möchten, und klicken Sie auf **[!UICONTROL Deactivate User]**.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Klicken Sie dazu in der oberen rechten Ecke der Navigationsleiste auf den Namen 
 
 >[!WARNING]
 >
->Durch das Deaktivieren eines Benutzers werden die Diagramme, Dashboards und anderen von diesem Benutzer erstellten Assets entfernt. Wenn Sie diese Assets beibehalten möchten, wenden Sie sich an die [!DNL MBI] [Support](../guide-overview.md) Team vor der Deaktivierung des Benutzers. Die Unterstützung kann Ihnen dabei helfen, diese Assets an einen anderen Benutzer zu übertragen.
+>Durch das Deaktivieren eines Benutzers werden die Diagramme, Dashboards und anderen von diesem Benutzer erstellten Assets entfernt. Wenn Sie diese Assets beibehalten möchten, wenden Sie sich an die [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket) Team vor der Deaktivierung des Benutzers. Die Unterstützung kann Ihnen dabei helfen, diese Assets an einen anderen Benutzer zu übertragen.
 
 ### Benutzer erneut aktivieren
 
@@ -89,7 +89,7 @@ Nachdem Sie die Benutzerliste, die Dashboards und Berichte bereinigt haben, kön
 1. Um eine Liste der abhängigen Berichte für eine Metrik zu erstellen, gehen Sie zu **[!DNL Manage Data]** Klicken Sie auf Klicken **[!UICONTROL Metrics]**.
 1. Klicken **[!UICONTROL Edit]** neben einer Metrik.
 1. Unten auf der Seite sehen Sie einen Abschnitt mit dem Namen **[!UICONTROL Dependent Charts]**. Klicken Sie auf den Link, um eine Liste der abhängigen Berichte für diese Metrik zu erstellen.
-1. Nachdem das System die Prüfung abgeschlossen hat, [!DNL MBI] zeigt eine Liste der Dashboards, Berichte und Benutzer an, die diese Metrik verwenden.
+1. Nachdem das System die Prüfung abgeschlossen hat, [!DNL Commerce Intelligence] zeigt eine Liste der Dashboards, Berichte und Benutzer an, die diese Metrik verwenden.
 
 ![](../../mbi/assets/report_dependecies.png)
 
@@ -99,7 +99,7 @@ Wenn Sie entscheiden, dass die Metrik nicht mehr benötigt wird, navigieren Sie 
 
 Der letzte Schritt besteht darin, die derzeit in Ihrer Data Warehouse synchronisierten Spalten zu bewerten. Die Aufhebung der Synchronisierung von Spalten kann Ihr Konto nicht nur deklarieren, sondern auch die Aktualisierungszeit verkürzen.
 
-Wenn Sie dies fortsetzen möchten, wenden Sie sich an [!DNL MBI] [Support](../guide-overview.md). Das Supportteam kann einen Bericht erstellen, der alle Spalten enthält, die in keinem Dashboard für einen Benutzer verwendet werden und nicht in E-Mail-Zusammenfassungen verwendet werden, mit Ausnahme von SQL-Berichten. Anschließend können Sie diesen Bericht als Anleitung zur Auswahl der Spalten verwenden, die über den Data Warehousen-Manager aufgehoben werden sollen.
+Wenn Sie dies fortsetzen möchten, wenden Sie sich an [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket). Das Supportteam kann einen Bericht erstellen, der alle Spalten enthält, die in keinem Dashboard für einen Benutzer verwendet werden und nicht in E-Mail-Zusammenfassungen verwendet werden, mit Ausnahme von SQL-Berichten. Anschließend können Sie diesen Bericht als Anleitung zur Auswahl der Spalten verwenden, die über den Data Warehousen-Manager aufgehoben werden sollen.
 
 >[!NOTE]
 >
@@ -122,4 +122,4 @@ Im Folgenden finden Sie einen Überblick über den gesamten Prozess:
 
 ## Aufbrechen
 
-Das ist es! Ihre [!DNL MBI] -Konto sollte jetzt tidier und einfacher zu navigieren für Sie und Ihr Team.
+Ihre [!DNL Commerce Intelligence] -Konto sollte jetzt tidier und einfacher zu navigieren für Sie und Ihr Team.

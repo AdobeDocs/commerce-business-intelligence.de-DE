@@ -2,26 +2,26 @@
 title: Tracking von Zielen mit Metriken
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Geschäftsziele anhand Ihrer tatsächlichen Daten verfolgen können, einschließlich Umsatz, neu registrierten Benutzern und Bestellungen im Laufe der Zeit.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
 # Tracking von Zielen mit Leistungsmetriken
 
-Die meisten Kunden möchten ihre **Geschäftsziele**, aber nicht erkennen, dass dies möglich ist in [!DNL MBI]. Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Geschäftsziele anhand Ihrer tatsächlichen Daten verfolgen können - einschließlich Umsatz, neu registrierten Benutzern und Bestellungen im Zeitverlauf. Außerdem erfahren Sie, wie Sie die Leistung von Jahr zu Jahr in einem Dashboard wie folgt vergleichen:
+Die meisten Kunden möchten ihre **Geschäftsziele**, aber nicht erkennen, dass dies möglich ist in [!DNL Adobe Commerce Intelligence]. In diesem Thema erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Geschäftsziele anhand Ihrer tatsächlichen Daten verfolgen können - einschließlich Umsatz, neu registrierten Benutzern und Bestellungen im Zeitverlauf. Außerdem erfahren Sie, wie Sie die Leistung von Jahr zu Jahr in einem Dashboard wie folgt vergleichen:
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Bevor Sie beginnen, möchten Sie sich mit dem [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) und stellen Sie sicher, dass Sie Ihre Geschäftsziele für einen bestimmten Zeitraum definiert haben.
+Bevor Sie beginnen, sollten Sie die [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) und stellen Sie sicher, dass Sie Ihre Geschäftsziele für einen bestimmten Zeitraum definiert haben.
 
 ## Erste Schritte
 
 Sie müssen zunächst eine Datei hochladen, die bestimmte tägliche/monatliche/vierteljährliche Ziele für Ihr Unternehmen enthält.
 
-Sie können die [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild, um Ihre Datei zu formatieren. Die gängigsten Ziele, die Kunden in verfolgen [!DNL MBI] umfassen Bestellungen, Umsatz und neue registrierte Konten.
+Sie können die [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild, um Ihre Datei zu formatieren. Die gängigsten Ziele, die Kunden in verfolgen [!DNL Commerce Intelligence] umfassen Bestellungen, Umsatz und neue registrierte Konten.
 
 ![](../../assets/Goals-_Excel.png)
 
@@ -49,7 +49,7 @@ Erstellen Sie für jedes Ziel eine neue Metrik. Wenn Sie beispielsweise monatlic
 
 ## Berichte
 
-Wie immer ist es hilfreich, bei der Analyse Ihrer Ziele eine Mischung aus statischen Werten und visuellen Diagrammen zu verwenden. Im Folgenden finden Sie drei Beispielberichte, mit denen Sie Ihre Umsatzleistung verfolgen können.
+Es ist hilfreich, bei der Analyse Ihrer Ziele eine Mischung aus statischen Werten und visuellen Diagrammen zu verwenden. Im Folgenden finden Sie drei Beispielberichte, mit denen Sie Ihre Umsatzleistung verfolgen können.
 
 * **Erzielter Umsatz**
 * Metrik `A`: `Revenue`

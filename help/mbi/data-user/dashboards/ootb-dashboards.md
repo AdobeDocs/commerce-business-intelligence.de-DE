@@ -2,22 +2,22 @@
 title: Einbezogene Dashboards
 description: Erfahren Sie, wie Sie die Gesundheit wichtiger Metriken wie den Umsatz während der Nutzungsdauer, die Anzahl wiederholter Käufe und mehr überprüfen und so eine solide Grundlage für die zukünftige Exploration schaffen können.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
 # Einbezogene Dashboards
 
-Adobe bietet E-Commerce und `SaaS` Starter-Pakete. Diese von Adobe-Analysten erstellten Packages enthalten einen benutzerdefinierten Satz von Dashboards und Berichten für Ihren Datensatz. Die in diesen Packages enthaltenen Analysen ermöglichen es Ihnen, die Gesundheit wichtiger Metriken wie der Umsatz der Nutzer über die Lebensdauer, die Anzahl wiederholter Käufe und mehr zu überprüfen und so eine solide Grundlage für die zukünftige Erforschung zu schaffen.
+[!DNL Adobe] Angebote `eCommerce` und `SaaS` Starter-Pakete. Diese von Adobe-Analysten erstellten Packages enthalten einen benutzerdefinierten Satz von Dashboards und Berichten für Ihren Datensatz. Die in diesen Packages enthaltenen Analysen ermöglichen es Ihnen, die Gesundheit wichtiger Metriken wie der Umsatz der Nutzer über die Lebensdauer, die Anzahl wiederholter Käufe und mehr zu überprüfen und so eine solide Grundlage für die zukünftige Erforschung zu schaffen.
 
 >[!NOTE]
 >
 >Die Verfügbarkeit einiger Dashboards hängt von Ihrem Datensatz ab.
 
-Wenn Sie Fragen haben oder ein Package zu Ihrem Konto hinzufügen möchten, senden Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) für Hilfe.
+Wenn Sie Fragen haben oder ein Package zu Ihrem Konto hinzufügen möchten, senden Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) für Hilfe.
 
 ## Übersicht über das Unternehmen
 

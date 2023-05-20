@@ -2,16 +2,16 @@
 title: Daten mit Zuordnungstabellen standardisieren
 description: Erfahren Sie, wie Sie mit Zuordnungstabellen arbeiten.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
 # Daten mit Zuordnungstabellen standardisieren
 
-Stellen Sie sich Folgendes vor: Sie sich im `Report Builder`, erstellen Sie eine `Revenue by State` Bericht. Du bist in der Zone. Alles läuft gut, bis Sie eine `billing state` -Gruppierung zu Ihrem Bericht hinzufügen, wird dies angezeigt:
+Stellen Sie sich vor, Sie befinden sich im `Report Builder` Erstellen eines `Revenue by State` Bericht. Alles läuft gut, bis Sie versuchen, eine `billing state` -Gruppierung zu Ihrem Bericht hinzufügen, wird dies angezeigt:
 
 ![](../../assets/Messy_State_Segments.png)
 
@@ -45,9 +45,9 @@ Geben Sie in der zweiten Spalte an, welche Werte diese Werte aufweisen sollen **
 
 ![](../../assets/Mapping_table_examples.jpg)
 
-## Was muss ich tun? [!DNL MBI] verwenden? {#use}
+## Was muss ich tun? [!DNL Commerce Intelligence] verwenden? {#use}
 
-Nachdem Sie die Zuordnungstabelle erstellt haben, müssen Sie [Datei hochladen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) in [!DNL MBI] und [eine verbundene Spalte erstellen](../../data-analyst/data-warehouse-mgr/calc-column-types.md) , das das neue Feld in die gewünschte Tabelle verschiebt. Sie können dies tun, nachdem die Datei mit Ihrer Data Warehouse synchronisiert wurde.
+Nachdem Sie die Erstellung der Zuordnungstabelle abgeschlossen haben, müssen Sie [Datei hochladen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) in [!DNL Commerce Intelligence] und [eine verbundene Spalte erstellen](../../data-analyst/data-warehouse-mgr/calc-column-types.md) , das das neue Feld in die gewünschte Tabelle verschiebt. Sie können dies tun, nachdem die Datei mit Ihrer Data Warehouse synchronisiert wurde.
 
 Im folgenden Beispiel wird die Spalte verschoben, die Sie für die `mapping_state` table (`state_input`) auf `customer_address` -Tabelle mit einer verbundenen Spalte. Dies ermöglicht es uns, nach der Sauberkeit zu gruppieren `state_input` in Ihren Berichten anstelle der `state` Spalte.
 
@@ -70,15 +70,13 @@ So erstellen Sie die `joined` Navigieren Sie im Data Warehousen-Manager zu der T
 1. Der Pfad wird möglicherweise nicht sofort nach dem Speichern aufgefüllt. Klicken Sie in diesem Fall auf die `Path` und wählen Sie den erstellten Pfad aus.
 1. Klicken **[!UICONTROL Save]** , um die Spalte zu erstellen.
 
-Das ist es!
-
 ## Was mache ich jetzt? {#wrapup}
 
 Nach Abschluss eines Aktualisierungszyklus können Sie Ihre neue zugeordnete Spalte verwenden, um Ihre Daten ordnungsgemäß zu segmentieren, anstatt die unrichtige Spalte aus Ihrer Datenbank zu verwenden. Sehen Sie sich Ihre Gruppierungsoptionen jetzt an - kein Stressversagen mehr:
 
 ![](../../assets/Clean_State_Segments.png)
 
-Zuordnungstabellen sind jederzeit praktisch, wenn Sie einige potenziell unsaubere Daten in Ihrer Data Warehouse bereinigen möchten. Zuordnungstabellen können jedoch auch für einige andere coole Anwendungsfälle verwendet werden, z. B. [Replizieren Ihrer Google Analytics-Kanäle in MBI](../data-warehouse-mgr/rep-google-analytics-channels.md).
+Zuordnungstabellen sind jederzeit praktisch, wenn Sie einige potenziell unsaubere Daten in Ihrer Data Warehouse bereinigen möchten. Zuordnungstabellen können jedoch auch für einige andere coole Anwendungsfälle verwendet werden, z. B. [Replizieren Ihrer [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### Verwandte
 

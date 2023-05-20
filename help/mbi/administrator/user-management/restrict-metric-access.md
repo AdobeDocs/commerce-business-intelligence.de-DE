@@ -2,9 +2,9 @@
 title: Zugriff auf Metriken beschränken
 description: Erfahren Sie, wie Sie mit dem Zugriff auf Metriken und Einschränkungen arbeiten.
 exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ Nachdem Sie die Berechtigungsebene festgelegt haben, können Sie die Metriken a 
 
 1. Navigieren Sie zu **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
 1. Wählen Sie das gewünschte Benutzerkonto aus.
-1. Die **[!UICONTROL Metrics]** zeigt eine Liste der verfügbaren Metriken an. Überprüfen Sie die Metriken, auf die der Benutzer Zugriff haben soll. Heben Sie die Auswahl auf, auf die der Benutzer keinen Zugriff haben sollte.
-1. [!DNL MBI] speichert die Änderungen automatisch. Wenn die Änderung erfolgreich ist, [!DNL MBI] Displays **[!UICONTROL Saved!]** oben auf der Seite.
+1. Die **[!UICONTROL Metrics]** zeigt eine Liste der verfügbaren Metriken an. Überprüfen Sie die Metriken, auf die der Benutzer Zugriff haben soll, und heben Sie die Auswahl für die Metriken auf, auf die der Benutzer keinen Zugriff haben soll.
+1. [!DNL Adobe Commerce Intelligence] speichert die Änderungen automatisch. Wenn die Änderung erfolgreich ist, [!DNL Commerce Intelligence] Displays **[!UICONTROL Saved!]** oben auf der Seite.
 
 >[!NOTE]
 >
@@ -30,4 +30,4 @@ Sie können den Zugriff auf eine Metrik auch beschränken, indem Sie die Metrik 
 
 >[!NOTE]
 >
->Wenn Sie eine Metrik duplizieren, [!DNL MBI] kopiert die in der ursprünglichen Metrik festgelegten Benutzerberechtigungen.
+>Wenn Sie eine Metrik duplizieren, [!DNL Commerce Intelligence] kopiert die in der ursprünglichen Metrik festgelegten Benutzerberechtigungen.

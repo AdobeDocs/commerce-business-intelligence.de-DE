@@ -2,9 +2,9 @@
 title: Metriken erstellen
 description: Erfahren Sie, wie Sie mit Metriken Diagramme erstellen können.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
 
-Kurz gesagt, eine Metrik ist eine Messung. In SQL- und Datenbankstrukturen entspricht eine Metrik einer gespeicherten Abfrage über einen Variablenzeitraum.
+Eine Metrik ist eine Messung. In SQL- und Datenbankstrukturen entspricht eine Metrik einer gespeicherten Abfrage über einen Variablenzeitraum.
 
-In [!DNL MBI], können Sie Metriken für [Grafiken erstellen](../../data-user/reports/ess-rpt-build-visual.md). Beispielsweise wird die Metrik `revenue` die Gesamtzahl der Bestellungen. Die Metrik `average customer revenue per order` ist das, was der durchschnittliche Kunde pro Bestellung ausgibt.
+In [!DNL Commerce Intelligence], können Sie Metriken für [Grafiken erstellen](../../data-user/reports/ess-rpt-build-visual.md). Beispielsweise wird die Metrik `revenue` die Gesamtzahl der Bestellungen. Die Metrik `average customer revenue per order` ist das, was der durchschnittliche Kunde pro Bestellung ausgibt.
 
 Bei Verwendung in Berichten können Metriken über einen bestimmten Zeitraum analysiert werden und [gefiltert oder segmentiert](../../best-practices/segment-filter.md) nach verschiedenen Kategorien. Erwägen Sie die Analyse des durchschnittlichen Kundenumsatzes nach Geschlecht - in diesem Fall: `average customer revenue per order` ist die Metrik und Geschlecht ist die Gruppierung.
 
@@ -68,7 +68,7 @@ Die `Filter Logic` -Abschnitt enthält, können Sie weiter definieren, wie sich 
 
 Die [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) zeigt alle verfügbaren Datendimensionen für die Filterung oder Gruppierung an. Standardmäßig werden alle verfügbaren Datenspalten als Dimensionen aufgelistet. Wenn Sie im Beispiel Ihren Umsatz nach Verweisquelle segmentieren möchten, können Sie dies hier vornehmen.
 
-Zusätzlich zur Auflistung aller verfügbaren Datenspalten als Dimensionen, [!DNL MBI] schätzt, in welchen Spalten gruppierbar sind. *So segmentieren oder gruppieren Sie Daten in Berichten*, müssen Spalten als gruppierbar markiert werden.
+Zusätzlich zur Auflistung aller verfügbaren Datenspalten als Dimensionen, [!DNL Commerce Intelligence] schätzt, in welchen Spalten gruppierbar sind. *So segmentieren oder gruppieren Sie Daten in Berichten*, müssen Spalten als gruppierbar markiert werden.
 
 ## Fertigstellung {#finish}
 

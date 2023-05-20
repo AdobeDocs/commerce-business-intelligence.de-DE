@@ -1,17 +1,17 @@
 ---
 title: Kohortenanalyse zum Lebensdauerumsatz
-description: Erkunden Sie die Leistungsfähigkeit von [!DNL MBI] Kohortenanalyse.
+description: Erkunden Sie die Leistungsfähigkeit der Commerce Intelligence-Kohortenanalyse.
 exl-id: f2b55745-d364-4ba6-9857-ce9cee05c3ae
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
-# `Lifetime Revenue Cohort` Analyse
+# [!DNL Lifetime Revenue Cohort] Analyse
 
-Es gibt verschiedene Möglichkeiten, Ihre Daten anzuzeigen in [!DNL MBI]und Sie wissen, dass Interpretation und Verständnis ebenso wichtig sind wie Berechnung und Visualisierung. In diesem Artikel wird die Leistungsfähigkeit von [!DNL MBI] `cohort` Analyse.
+Es gibt verschiedene Möglichkeiten, Ihre Daten anzuzeigen in [!DNL Adobe Commerce Intelligence]und Sie wissen, dass Interpretation und Verständnis ebenso wichtig sind wie Berechnung und Visualisierung. Dieses Thema untersucht die Leistungsfähigkeit von [!DNL Commerce Intelligence] `cohort` Analyse.
 
 ## Funktion `lifetime revenue cohort` Analyse bedeuten?
 

@@ -2,14 +2,14 @@
 title: Grundlegendes zu Ergebnissen zwischen Datenbank und SQL-Editor
 description: Erfahren Sie mehr über die Ergebnisse zwischen Datenbank und SQL-Editor.
 exl-id: f31f3eef-791a-4984-901e-bc10554031bd
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
-# Datenbankergebnisse vs. `SQL Editor` Ergebnisse
+# Datenbankergebnisse vs. [!DNL SQL Editor] Ergebnisse
 
 Sie können neugierig sein, was die `Last successful update began` -Feld in Ihrer `Integrations` Seite:
 
@@ -24,9 +24,9 @@ Er zeigt den Start an `timestamp` (in der in Ihrem Konto festgelegten Zeitzone
 
 ## Identifizieren des letzten &quot;echten&quot;Datenpunkts
 
-Der neueste Datenpunkt für eine bestimmte Integration wird durch die Variable `Last Data Point Received` `timestamp` befindet sich rechts neben jeder Integration. Dieser Zeitstempel bezieht sich auf den letzten Punkt, an dem Ihre Data Warehouse erfolgreich Datenpunkte von dieser Quelle erhalten hat, unabhängig davon, ob es sich um eine Datenbank-, API- oder Drittanbieterintegration handelt.
+Der neueste Datenpunkt für eine bestimmte Integration wird durch die Variable `Last Data Point Received` Zeitstempel rechts neben jeder Integration. Dieser Zeitstempel bezieht sich auf den letzten Punkt, an dem Ihre Data Warehouse erfolgreich Datenpunkte von dieser Quelle erhalten hat, unabhängig davon, ob es sich um eine Datenbank-, API- oder Drittanbieterintegration handelt.
 
-So überprüfen Sie die Aktualisierung von Daten aus *Spezifische Tabellen* empfiehlt Adobe, eine schnelle [SQL-Bericht](../../dev-reports/sql-rpt-bldr.md) , die eine `MAX(timestamp)` auf der wichtigsten Tabelle Ihres Kontos. Vergleich dieses Zeitstempels mit dem `Last Data Point` gibt an, ob das Problem das gesamte Konto oder eine Untergruppe der Tabellen beeinflusst hat. Adobe empfiehlt dies für drei bis vier wichtige, häufig verwendete Tabellen.
+So überprüfen Sie die Aktualisierung von Daten aus *Spezifische Tabellen* empfiehlt Adobe, eine schnelle [[!DNL SQL] Bericht](../../dev-reports/sql-rpt-bldr.md) , die eine `MAX(timestamp)` auf der wichtigsten Tabelle Ihres Kontos. Vergleich dieses Zeitstempels mit dem `Last Data Point` gibt an, ob das Problem das gesamte Konto oder eine Untergruppe der Tabellen beeinflusst hat. Adobe empfiehlt dies für drei bis vier wichtige, häufig verwendete Tabellen.
 
 - Wenn die Variable `MAX(timestamp)` Werte, die aktueller sind als `Last Data Point Received`bedeutet dies, dass eine Teilmenge der Tabellen betroffen war, der Aktualisierungszyklus des Gesamtkontos jedoch stabil ist.
-- Wenn die Variable `MAX(timestamp)` Werte sind gleich oder bevor `Last Data Point Received`bedeutet dies, dass der Aktualisierungszyklus des Kontos betroffen war. In diesem Fall [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+- Wenn die Variable `MAX(timestamp)` Werte sind gleich oder bevor `Last Data Point Received`bedeutet dies, dass der Aktualisierungszyklus des Kontos betroffen war. In diesem Fall [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

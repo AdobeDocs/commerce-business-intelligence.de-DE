@@ -2,9 +2,9 @@
 title: Empfohlene Daten-Dimensionen für Segmentierung und Filterung
 description: Erfahren Sie mehr über Best Practices für die Segmentierung und Filterung.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Eine gute Segmentierung macht aus einer oberflächlichen Statistik eine Geschäf
 
 Möchten Sie wissen, wer Ihre wertvollsten Kunden sind? Was sind Ihre wertvollsten Marketing-Kanäle? Welche Ihrer Produkte bewegen sich schneller und warum? Um zu einer dieser Antworten zu gelangen, müssen Sie zunächst Ihre Daten segmentieren.
 
-Dieser Artikel behandelt wichtige Segmente, die häufig Kunden empfohlen werden. Außerdem wird im Detail erläutert, auf welche Fragen diese Segmente Ihnen bei der Beantwortung helfen können. Technisch gesehen sind Segmente Datenspalten in Ihrer Datenbank. In [!DNL MBI], werden sie als Dimensionen bezeichnet.
+Dieses Thema behandelt wichtige Segmente, die häufig Kunden empfohlen werden. Außerdem wird im Detail erläutert, auf welche Fragen diese Segmente Ihnen bei der Beantwortung helfen können. Technisch gesehen sind Segmente Datenspalten in Ihrer Datenbank. In [!DNL Adobe Commerce Intelligence], werden sie als Dimensionen bezeichnet.
 
 ![](../../mbi/assets/mbi-critical-segments.png)
 
@@ -28,7 +28,7 @@ Benutzersegmente helfen Ihnen dabei zu verstehen, wer Ihre Benutzer sind und wie
 * **Geschlecht**: Interagieren unterschiedliche Geschlechter mit Ihrer Website unterschiedlich?
 * **Adresse**: Woher kommen Ihre Benutzer? Sollten Sie Ihre Marketing-Maßnahmen auf eine bestimmte Region ausrichten? Haben Ihre jüngsten Werbekampagnen in Ihren Zielregionen wie erwartet ausgeführt?
 * **Quelle der Kundenakquise**\: Wissen Sie, von welchem Marketing-Kanal Ihre Benutzer stammen? Haben sie auf eine Anzeige geklickt oder Sie über eine Suche gefunden? [Segmentieren Ihrer Daten nach der Benutzerakquise-Quelle](../data-analyst/analysis/google-track-user-acq.md) ist der erste Schritt zur Optimierung Ihrer neuen Kundenakquise. Schritt zwei besteht darin, mehr Geld für das auszugeben, was funktioniert, und das zu töten, was nicht ist.
-* **Registrierungsgerät**: Haben sich Benutzer über Ihre App oder Ihre Website registriert? iOS oder Android™? Ist Ihre mobile Benutzerbasis groß genug, um mehr Ressourcen für die Entwicklung Ihres mobilen Produkts bereitzustellen? (Wenn Sie dies noch nicht verfolgen, lesen Sie dieses Thema . [zum Tracking von Benutzergeräten](../data-analyst/analysis/track-usr-dev-browser.md).
+* **Registrierungsgerät**: Haben sich Benutzer über Ihre App oder Ihre Website registriert? iOS oder Android™? Ist Ihre mobile Benutzerbasis groß genug, um mehr Ressourcen für die Entwicklung Ihres mobilen Produkts bereitzustellen? Wenn Sie dies noch nicht verfolgen, lesen Sie dieses Thema . [zum Tracking von Benutzergeräten](../data-analyst/analysis/track-usr-dev-browser.md).
 * **Verwiesen von**: Wer sind Ihre wichtigsten Einflussnehmer? Wie viele Benutzer wurden direkt von anderen weitergeleitet?
 * **Branche**: Wenn Sie ein B2B-Unternehmen sind, in welchen Branchen arbeiten Ihre Benutzer? Welche Handelsorganisationen sind es wert, Mitglied zu werden?
 * **Umfrageantworten**: Wenn Sie Kundenumfragen durchführen, verwenden Sie die Antworten als Segmente, um eine tiefere Profilerstellung zu erzielen. Sie können Fragen stellen, die das, was Sie über Ihre Benutzer wissen, ergänzen oder Ihre Ratschläge bestätigen.
@@ -63,13 +63,13 @@ Wenn Sie an Merchandising interessiert sind, besuchen Sie das [wie Sie Produktse
 
 Experten für Segmentierung möchten möglicherweise über eindimensionale Segmente hinausgehen und mit der Erstellung echter Kundenprofile beginnen. Beispielsweise werden Personen zwischen 13 und 24 Jahren, die sich über ein Mobilgerät registriert haben, in die Gruppe &quot;Young &amp; Mobile&quot;aufgenommen. Wie unterscheidet sich das Verhalten dieser Gruppe vom Rest Ihrer Benutzerbasis?
 
-Diese Art von Analyse machen Marketer in Fortune 1000-Unternehmen den ganzen Tag. Vor der Einführung Cloud-basierter Business Intelligence-Plattformen wie [!DNL MBI], war es für den Rest von uns weitgehend außer Reichweite. Zum Glück ist dies nicht mehr der Fall.
+Diese Art von Analyse machen Marketer in Fortune 1000-Unternehmen den ganzen Tag. Vor der Einführung Cloud-basierter Business Intelligence-Plattformen wie [!DNL Commerce Intelligence], war es für den Rest von uns weitgehend außer Reichweite. Zum Glück ist dies nicht mehr der Fall.
 
 ## Verfolgen neuer Segmente
 
 Der erste Schritt zur Segmentierung Ihrer Metriken nach den oben genannten Dimensionen besteht darin sicherzustellen, dass Sie diese Daten in Ihrer Datenbank verfolgen. Wenn sie nicht verfolgt wird, wenden Sie sich an Ihr Technikerteam und finden Sie eine Möglichkeit, das Tracking dieser Daten zu starten.
 
-Nachdem Sie bestätigt haben, dass die Daten in Ihrer Datenbank nachverfolgt werden, [das Supportteam kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) um die Dimensionen an Ihre [!DNL MBI] Metriken und Diagrammen. Sie können auch die *Feldverwaltung* Tool zum Verfolgen dieser Felder in [!DNL MBI].
+Nachdem Sie bestätigt haben, dass die Daten in Ihrer Datenbank nachverfolgt werden, [das Supportteam kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) um die Dimensionen an Ihre [!DNL Commerce Intelligence] Metriken und Diagrammen. Sie können auch die *Feldverwaltung* Tool zum Verfolgen dieser Felder in [!DNL Commerce Intelligence].
 
 ## Verwandte
 

@@ -2,14 +2,14 @@
 title: Erwartete Google Analytics Warehouse-Daten
 description: Erfahren Sie, wie Sie mit Ihren in Google Analytics gespeicherten Daten interagieren.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
-# Erwartet [!DNL Google Analytics] Warehouse-Daten
+# Erwartet [!DNL Google Analytics Warehoused] Daten
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Einige Informationen wurden mit Zustimmung Ihrer Freunde unter [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics).
 
-[!DNL Google Analytics Warehoused] Integration in [!DNL MBI] verwendet die [!DNL Google Analytics] [Core Reporting-API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
+[!DNL Google Analytics Warehoused] Integration in [!DNL Commerce Intelligence] verwendet die [!DNL Google Analytics] [Core Reporting-API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
 
 >[!NOTE]
 >
@@ -39,8 +39,8 @@ Die Tabelle würde wie im folgenden Beispiel aussehen.
 | **Spaltenname** | **Beschreibung** |
 |-----|-----|
 | `\_id` | Diese Spalte ist `primary key`. |
-| `\_rjm\_record\_hash` | [!DNL MBI] eindeutige Kennung. Diese Spalte wird von [!DNL MBI]. |
-| `\_updated\_at` | Diese Spalte enthält das letzte Mal, dass die Datenzeile aktualisiert wurde. Diese Spalte wird von [!DNL MBI]. |
+| `\_rjm\_record\_hash` | [!DNL Commerce Intelligence] eindeutige Kennung. Diese Spalte wird von [!DNL Commerce Intelligence]. |
+| `\_updated\_at` | Diese Spalte enthält das letzte Mal, dass die Datenzeile aktualisiert wurde. Diese Spalte wird von [!DNL Commerce Intelligence]. |
 | `start-date` | Identifikation des Tages, für den die Zeile ist. |
 | `end-date` | Identifikation des Tages, für den die Zeile ist. |
 | `month` | Ausgewählte Dimension: Monat der Sitzung, eine zweistellige Ganzzahl von 01 bis 12. |
@@ -48,7 +48,7 @@ Die Tabelle würde wie im folgenden Beispiel aussehen.
 
 {style="table-layout:auto"}
 
-## Erinnerung: Unterschied zwischen Google Analytics Warehouse und Live-Integration
+## Was ist der Unterschied zwischen [!DNL Google Analytics Warehoused] und [!DNL Live Integration]
 
 Der Hauptunterschied besteht darin, dass eine Integration gespeichert wird ([!DNL Google Analytics Warehoused]) und der andere nicht ([!DNL Google Analytics Live]). In den Fällen von [!DNL Google Analytics Warehoused], ermöglicht dies die Manipulation Ihrer [!DNL Google Analytics] Daten und bietet Ihnen die Möglichkeit, [!DNL Google Analytics] und anderen Datenquellen, um eine aufschlussreiche Berichterstellung zu erstellen.
 
@@ -56,7 +56,7 @@ Sehen Sie sich an [!DNL Google Analytics] Anzeigenkampagnen für ein Beispiel de
 
 Der Kombinationsaspekt ermöglicht Folgendes: [!DNL Google Analytics] Daten, die mit anderen Daten verknüpft werden sollen, um Analysen durchzuführen. Nehmen Sie beispielsweise `Total Time On Site By Ad Campaign` Daten aus [!DNL Google Analytics] und verbinden Sie es mit `Total Spent Per Campaign` Daten aus [!DNL Facebook Ads] um ein vollständiges Bild davon zu erhalten, wie viel Interaktion Sie kostet.
 
-Mit dem [!DNL Google Analytics Live] Integration, [!DNL Google Analytics] Diagramm ist wie ein kleines Silo, das nicht in Ihrem [!DNL MBI] Data Warehouse.
+Mit dem [!DNL Google Analytics Live] Integration, [!DNL Google Analytics] Diagramm ist wie ein kleines Silo, das nicht in Ihrem [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Verwandte:
 

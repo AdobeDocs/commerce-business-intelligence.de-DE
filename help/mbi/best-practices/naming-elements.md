@@ -1,25 +1,25 @@
 ---
-title: Berichte und Elemente in MBI benennen
-description: Best Practices für die Benennung von Berichten und Elementen in [!DNL MBI].
+title: Benennen von Berichten und Elementen in Commerce Intelligence
+description: Best Practices für die Benennung von Berichten und Elementen in [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
 # Berichte und Elemente benennen
 
-Bevor Sie mit dem Erstellen beginnen in[!DNL MBI], möchte Adobe einige Geheimnisse für den Erfolg teilen. Es ist wichtig zu wissen, wie Sie Metriken, Filter usw. erstellen, aber Ihre gesamte Arbeit kann unnötig sein, wenn Sie nicht finden können, was Sie benötigen, oder wenn es Unklarheiten gibt.
+Bevor Sie mit dem Erstellen beginnen in[!DNL Adobe Commerce Intelligence], möchte Adobe einige Geheimnisse für den Erfolg teilen. Es ist wichtig zu wissen, wie Sie Metriken, Filter usw. erstellen, aber Ihre gesamte Arbeit kann unnötig sein, wenn Sie nicht finden können, was Sie benötigen, oder wenn es Unklarheiten gibt.
 
 ## Warum ist die Nomenklatur wichtig? {#why}
 
-Die Art und Weise, wie Sie berechnete Spalten, Metriken und Berichte benennen, macht es erforderlich, dass verschiedene Benutzer durch Ihre [!DNL MBI] -Konto. Beachten Sie bei der Benennung dieser Funktionen die drei CSS:
+Die Art und Weise, wie Sie berechnete Spalten, Metriken und Berichte benennen, macht es erforderlich, dass verschiedene Benutzer durch Ihre [!DNL Commerce Intelligence] -Konto. Beachten Sie bei der Benennung dieser Funktionen die drei CSS:
 
 * **KLARHEIT** - So können Sie auf einen Blick feststellen, was ein Bericht zeigt, was eine Metrik bewirkt usw.
 * **KONSISTENZ** - damit Sie (und das Adobe-Supportteam) Elemente und Berichte in Ihrem Konto leicht finden und verstehen können.
-* **GLAUBWÜRDIGKEIT** - um andere datengestützte Dienste anzuregen und zu stärken [!DNL MBI] Benutzer, müssen Sie sich darauf verlassen, wie sie die Daten verstehen und verwenden!
+* **GLAUBWÜRDIGKEIT** - um andere datengestützte Dienste anzuregen und zu stärken [!DNL Commerce Intelligence] Benutzer, müssen Sie sich darauf verlassen, wie sie die Daten verstehen und verwenden!
 
 Lesen Sie weiter für bewährte und wahre Nomenklatur Tipps!
 
@@ -41,7 +41,7 @@ Diese Beispiele sind spezifisch, was das Verwirrungspotenzial verringert.
 
 ### Konsistent mit Großschreibung sein {#capitalize}
 
-Adobe empfiehlt die Groß-/Kleinschreibung des ersten Buchstabens mit dem Rest der Zeichen in Kleinbuchstaben, es sei denn, es handelt sich um einen richtigen Schreibstil der Groß-/Kleinschreibung. Beispiel: **Bestellnummer des Benutzers** anstelle von **Bestellnummer des Benutzers.**
+[!DNL Adobe] empfiehlt die Groß-/Kleinschreibung des ersten Buchstabens mit dem Rest der Zeichen in Kleinbuchstaben, es sei denn, es handelt sich um einen ordnungsgemäßen Schreibstil der Groß-/Kleinschreibung. Beispiel: **Bestellnummer des Benutzers** anstelle von **Bestellnummer des Benutzers.**
 
 Das ist wirklich eine Frage der Präferenz, aber die Sache, die man sich merken muss, ist, mit dem, was man wählt, konsistent zu sein.
 
@@ -55,7 +55,7 @@ Wahrscheinlich haben Sie bereits eine Nomenklatur in Ihrem Unternehmen. Halten S
 
 ### Rechtschreibung und Grammatik {#spelling}
 
-Achten Sie darauf, die Rechtschreibung zu überprüfen und nicht die pesky Besitzungen zu vergessen!
+Vergewissern Sie sich, dass Sie Ihre Rechtschreibung überprüfen und nicht die pesky Besitzungen vergessen!
 
 ## Diagramme {#charts}
 
@@ -101,4 +101,4 @@ Umsatz (ausgeliefert\_at) Umsatz (erstellt\_at)
 
 ## Aufbrechen {#wrapup}
 
-Die frühzeitige Festlegung von Stil- und Benennungskonventionen hilft Ihnen bei der erfolgreichen Einrichtung Ihrer [!DNL MBI] -Konto. Beachten Sie die drei CSS: Klarheit, Kohärenz und Glaubwürdigkeit.
+Die frühzeitige Festlegung von Stil- und Benennungskonventionen hilft Ihnen bei der erfolgreichen Einrichtung Ihrer [!DNL Commerce Intelligence] -Konto. Beachten Sie die drei CSS: Klarheit, Kohärenz und Glaubwürdigkeit.

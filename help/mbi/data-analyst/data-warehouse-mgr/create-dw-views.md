@@ -2,9 +2,9 @@
 title: Erstellen und Verwenden von Data Warehouse-Ansichten
 description: Erfahren Sie mehr über eine Methode zum Erstellen neuer in Lagern gespeicherter Tabellen durch Ändern einer vorhandenen Tabelle oder durch Zusammenführen oder Konsolidieren mehrerer Tabellen mithilfe von SQL.
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1071'
 ht-degree: 9%
 
 ---
@@ -36,6 +36,7 @@ Von hier aus können Sie eine Ansicht erstellen, indem Sie die folgenden Beispie
 1. Wenn Sie eine vorhandene Ansicht beobachten, klicken Sie auf **[!UICONTROL New Data Warehouse View]** um ein leeres Abfragefenster zu öffnen. Wenn bereits ein leeres Abfragefenster geöffnet ist, fahren Sie mit dem nächsten Schritt fort.
 1. Geben Sie der Ansicht einen Namen, indem Sie die `View Name` -Feld. Der hier angegebene Name bestimmt den Anzeigenamen für die Ansicht in der Data Warehouse. `View names` sind auf Kleinbuchstaben, Zahlen und Unterstriche (_) beschränkt. Alle anderen Zeichen sind verboten.
 1. Geben Sie Ihre Abfrage in das Fenster mit dem Titel `Select Query`, unter Verwendung der standardmäßigen PostgreSQL-Syntax.
+
    >[!NOTE]
    >
    >Ihre Abfrage muss auf bestimmte Spaltennamen verweisen. Die Verwendung der `*`-Zeichen, um alle Spalten auszuwählen, ist nicht zulässig.
@@ -76,7 +77,7 @@ Sehen Sie sich eines der oben in diesem Artikel erwähnten Beispiele genauer an:
 | 4 | aaa | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
 | 5 | ccc | 5 | 2017-07-06 00:00:00 | 300 | 1.2 |
 
-So erstellen Sie eine Ausgabentabelle für eine einzelne Anzeige, die beide [!DNL Facebook] und [!DNL AdWords] Kampagnen, müssen Sie eine SQL-Abfrage schreiben und die `UNION ALL` -Funktion. A `UNION ALL` -Anweisung wird meist verwendet, um mehrere verschiedene SQL-Abfragen zu kombinieren und gleichzeitig die Ergebnisse jeder Abfrage an eine einzelne Ausgabe anzuhängen.
+So erstellen Sie eine Ausgabentabelle für eine einzelne Anzeige, die beide [!DNL Facebook] und [!DNL Google AdWords] Kampagnen, müssen Sie eine SQL-Abfrage schreiben und die `UNION ALL` -Funktion. A `UNION ALL` -Anweisung wird meist verwendet, um mehrere verschiedene SQL-Abfragen zu kombinieren und gleichzeitig die Ergebnisse jeder Abfrage an eine einzelne Ausgabe anzuhängen.
 
 Es gibt einige Anforderungen an `UNION` -Anweisung, die erwähnt werden muss, wie in PostgreSQL beschrieben [Dokumentation](https://www.postgresql.org/docs/8.3/queries-union.html):
 
@@ -129,13 +130,13 @@ Speichern der obigen Abfrage als `Data Warehouse View` erstellt eine Tabelle mit
 | **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | ccc | 1.2 | 300 | 5 |
 | **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | fff | 28.5 | 10200 | 280 |
 
-Anstatt für jede Anzeigenquelle einen separaten Satz von Marketing-Metriken zu erstellen, können Sie jetzt nur einen einzigen Metriksatz mit der obigen Tabelle erstellen, um alle Ihre Anzeigen zu erfassen.
+Anstatt für jede Anzeigenquelle einen separaten Satz von Marketing-Metriken zu erstellen, können Sie mit der obigen Tabelle nur einen einzigen Metriksatz erstellen, um alle Ihre Anzeigen zu erfassen.
 
 **Suchen Sie weitere Hilfe?**
 
-Schreiben von SQL und Erstellen `Data Warehouse Views` ist nicht im technischen Support enthalten. Das Services-Team bietet jedoch Unterstützung bei der Erstellung von Ansichten an. Von der Migration einer alten Data Warehouse mit einer neuen Datenbank bis hin zur Erstellung einer einzigen Analyseansicht kann das Supportteam Ihnen helfen.
+Schreiben von SQL und Erstellen `Data Warehouse Views` ist nicht im technischen Support enthalten. Die Variable [Serviceteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) bietet Unterstützung bei der Erstellung von Ansichten. Von der Migration einer alten Data Warehouse mit einer neuen Datenbank bis hin zur Erstellung einer einzigen Analyseansicht kann das Supportteam Ihnen helfen.
 
-Normalerweise wird durch die Erstellung eines `Data Warehouse View` Für die Konsolidierung von 2-3 ähnlich strukturierten Tabellen sind fünf Stunden Dienstzeit erforderlich, was etwa 1250 Dollar Arbeitszeit entspricht. Im Folgenden finden Sie jedoch einige gemeinsame Faktoren, durch die sich die erforderlichen Investitionen erhöhen können:
+Normalerweise wird durch die Erstellung eines `Data Warehouse View` Für die Konsolidierung von 2-3 ähnlich strukturierten Tabellen ist eine fünfstündige Dienstzeit erforderlich, was etwa 1.250 Dollar Arbeitszeit entspricht. Im Folgenden finden Sie jedoch einige gemeinsame Faktoren, durch die sich die erforderlichen Investitionen erhöhen können:
 
 * Konsolidierung von mehr als drei Tabellen in einer einzigen Ansicht
 * Erstellen von mehr als einer Data Warehouse-Ansicht

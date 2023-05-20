@@ -2,7 +2,7 @@
 title: Analysieren von Wiederholwahrscheinlichkeitsabfall und Abwanderung
 description: Erfahren Sie, wie die Zeit zwischen Bestellungen verfällt und wann mit einer Abwanderung der Kunden zu rechnen ist.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,13 +39,13 @@ Wenn Sie den Prozentsatz der Kunden verstehen, von denen erwartet wird, dass sie
 
 ## Das heutige Beispiel
 
-Sehen Sie sich den Rückgang der Wiederholungswahrscheinlichkeit für ein typisches E-Commerce-Geschäft an.
+Sehen Sie sich den Rückgang der Wiederholwahrscheinlichkeit für ein typisches E-Commerce-Geschäft an.
 
 ![Anfängliche Wiederholungsauftragswahrscheinlichkeit Wiederholungsauftragswahrscheinlichkeit in den Monaten seit der Bestellung.](../../assets/Order_probability_reports.png)
 
 ### anfängliche Wiederholungsreihenwahrscheinlichkeit
 
-In diesem Beispiel beträgt die anfängliche Wiederholungsbestellwahrscheinlichkeit - oder die Wahrscheinlichkeit, dass ein Kunde einen Wiederholungskauf tätigt - 60 %. Das bedeutet, dass 60% aller bei diesem Geschäft aufgegebenen Bestellungen von einer nachfolgenden Bestellung gefolgt werden.
+In diesem Beispiel beträgt die anfängliche Wiederholungsbestellwahrscheinlichkeit - oder die Wahrscheinlichkeit, dass ein Kunde einen Wiederholungskauf tätigt - 60 Prozent. Das bedeutet, dass 60 Prozent aller bei diesem Geschäft aufgegebenen Bestellungen von einer nachfolgenden Bestellung gefolgt werden.
 
 ### Wiederholungsbestellwahrscheinlichkeit seit Bestellung in Monaten
 
@@ -76,7 +76,7 @@ Nachdem Sie die obige Analyse erstellt und einen Abwanderungsschwellenwert ermit
 
 Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt kaufen, im Laufe der Zeit anders verhalten als andere Kunden. Möchten Sie mehr erfahren? Sehen Sie sich dieses Tutorial an, um das lebenslange Kaufverhalten von Kundenkohorten basierend auf bestimmten Produkten, die sie gekauft haben, zu untersuchen.
 
-Diese Best Practice wird von [!DNL MBI] Data Analysis Services (DAS). [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) für weitere Informationen.
+Diese Best Practice wird von [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) für weitere Informationen.
 
 ### Verwandte
 

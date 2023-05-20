@@ -2,22 +2,22 @@
 title: Überprüfen des Aktualisierungszyklusstatus
 description: Erfahren Sie, wie Sie den Status des Aktualisierungszyklus überprüfen.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
 # Fortschritt des Aktualisierungszyklus
 
-Wenn Sie sich bei Ihrem [!DNL MBI] Dashboard gibt es mehrere Möglichkeiten, den Status Ihres letzten Aktualisierungszyklus zu überprüfen. Alles hängt vom Typ [Benutzerberechtigungen](../administrator/user-management/user-management.md) das du hast.
+Wenn Sie sich bei Ihrem [!DNL Adobe Commerce Intelligence] Dashboard gibt es mehrere Möglichkeiten, den Status Ihres letzten Aktualisierungszyklus zu überprüfen. Alles hängt vom Typ [Benutzerberechtigungen](../administrator/user-management/user-management.md) das du hast.
 
 ## Warum sollte ich den Status des Aktualisierungszyklus überprüfen?
 
-Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die Daten in Ihrem [!DNL MBI] -Konto. Wenn [Ergebnisse, die nicht Ihren Erwartungen entsprechen](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)z. B. täglicher Umsatz in [!DNL MBI] nicht mit dem übereinstimmen, was Sie in Ihrer E-Commerce-Plattform oder in Ihrer [[!DNL Google] E-Commerce-Umsätze](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=en) Sie können den letzten Datenpunkt überprüfen, um festzustellen, ob das Problem nach Abschluss einer Aktualisierung behoben wurde.
+Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die Daten in Ihrem [!DNL Commerce Intelligence] -Konto. Wenn [Ergebnisse, die nicht Ihren Erwartungen entsprechen](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md)z. B. täglicher Umsatz in [!DNL Commerce Intelligence] nicht mit dem übereinstimmen, was Sie in Ihrer E-Commerce-Plattform oder in Ihrer [[!DNL Google] E-Commerce-Umsätze](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) Sie können den letzten Datenpunkt überprüfen, um festzustellen, ob das Problem nach Abschluss einer Aktualisierung behoben wurde.
 
-## [!UICONTROL Read-Only] und [!UICONTROL Standard]** Benutzer
+## [!UICONTROL Read-Only] und [!UICONTROL Standard] Benutzer
 
 `Read-only` -Benutzer können sich bei ihrem Dashboard anmelden und sehen, wie kürzlich die Daten aktualisiert wurden, indem sie den Mauszeiger über das Symbol oben rechts auf der Seite bewegen. Dies zeigt, wann der letzte Datenpunkt abgerufen wurde.
 
@@ -39,4 +39,4 @@ Wenn keine Aktualisierung ausgeführt wird, wird ein Link angezeigt, über den d
 
 >[!NOTE]
 >
->Wenn Sie Stunden des Ausfalls haben (Uhrzeit, zu der Sie nicht möchten [!DNL MBI] zum Aktualisieren Ihrer Daten), wird beim Erzwingen einer Aktualisierung ein Aktualisierungszyklus gestartet, der die Einschränkungen dieser Blackout-Zeiten nicht berücksichtigt.
+>Wenn Sie Stunden des Ausfalls haben (Uhrzeit, zu der Sie nicht möchten [!DNL Commerce Intelligence] zum Aktualisieren Ihrer Daten), wird beim Erzwingen einer Aktualisierung ein Aktualisierungszyklus gestartet, der die Einschränkungen dieser Blackout-Zeiten nicht berücksichtigt.

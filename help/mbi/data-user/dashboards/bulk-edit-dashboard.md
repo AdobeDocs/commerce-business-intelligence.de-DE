@@ -1,23 +1,23 @@
 ---
 title: Grafiken zur Massenbearbeitung in Dashboards
-description: Erfahren Sie, wie Sie die Massenbearbeitungsfunktion in [!DNL MBI].
+description: Erfahren Sie, wie Sie die Massenbearbeitungsfunktion in [!DNL Commerce Intelligence].
 exl-id: 576ffabb-5e5d-4251-9662-951e2cd30f31
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
 # Diagramme für die Massenbearbeitung in Dashboards
 
-Dank der Massenbearbeitung können Sie die Namen und Daten von Diagrammen in Ihren Dashboards einfach ändern. Sie möchten beispielsweise, dass alle Diagramme in einem bestimmten Dashboard auf einen einzigen Store verweisen und monatlich anstatt vierteljährlich einen Bericht erstellen. Anstatt alles manuell zu ändern, lassen Sie die `bulk-editing` -Funktion die Arbeit erledigen. In diesem Artikel erfahren Sie, wie Sie Folgendes verwenden:
+Dank der Massenbearbeitung können Sie die Namen und Daten von Diagrammen in Ihren Dashboards einfach ändern. Sie möchten beispielsweise, dass alle Diagramme in einem bestimmten Dashboard auf einen einzigen Store verweisen und monatlich anstatt vierteljährlich einen Bericht erstellen. Anstatt alles manuell zu ändern, lassen Sie die `bulk-editing` -Funktion die Arbeit erledigen. In diesem Thema erfahren Sie, wie Sie Folgendes verwenden:
 
-* [Die ](#findreplace)
+* [Die [!DNL Find/Replace] Funktion](#findreplace)
 
-* [Die ](#prepend)
+* [Die [!DNL Prepend Name] Funktion](#prepend)
 
-* [Die ](#dates)
+* [Die [!DNL Change Dates] Funktion](#dates)
 
 Beachten Sie jedoch Folgendes: *Müssen diese Änderungen dauerhaft sein?* Wenn nicht, sollten Sie das Dashboard klonen und dann die Daten im neuen Dashboard ändern. Auf diese Weise können Sie Ihr ursprüngliches Dashboard beibehalten und gleichzeitig die gewünschten Änderungen vornehmen.
 
@@ -25,7 +25,7 @@ Beachten Sie jedoch Folgendes: *Müssen diese Änderungen dauerhaft sein?* Wenn 
 >
 >Wenn Sie zahlreiche Berichte ändern, kann der Aktualisierungsprozess einige Zeit in Anspruch nehmen.
 
-## Verwenden `Find/Replace` {#findreplace}
+## Verwenden [!DNL Find/Replace] {#findreplace}
 
 1. Klicken Sie auf das Zahnrad (![](../../assets/gear-icon.png)) neben dem Namen Ihres Dashboards angezeigt wird, können Sie die [!UICONTROL Bulk Edit Reports] Fenster.
 
@@ -57,7 +57,7 @@ Beispiel:
 
 ## Ändern `Dates` {#dates}
 
-1. Klicken Sie auf das Zahnrad (![](../../assets/gear-icon.png)) neben dem Namen Ihres Dashboards angezeigt werden, und wählen Sie dann die `!UICONTROL Bulk Edit Reports` Fenster.
+1. Klicken Sie auf das Zahnrad (![](../../assets/gear-icon.png)) neben dem Namen Ihres Dashboards angezeigt werden, und wählen Sie dann die [!UICONTROL Bulk Edit Reports] Fenster.
 
 1. Klicken **[!UICONTROL Change Dates]** im Popup-Fenster.
 

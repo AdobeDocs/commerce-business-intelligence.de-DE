@@ -2,16 +2,16 @@
 title: Analysieren der Lagerbestandsebenen
 description: Erfahren Sie, wie Sie Lagerbestandsstufen analysieren.
 exl-id: 620156c5-7bea-4b36-84c7-e0cb4b5cc8be
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # Inventarebenen analysieren
 
-Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihren aktuellen Bestand bietet. Dieses Thema enthält Anweisungen für Clients sowohl zur alten Architektur als auch zur neuen Architektur. Sie befinden sich in der alten Architektur, wenn Sie nicht über die **[!UICONTROL Data Warehouse Views]** Option unter **[!UICONTROL Manage Data]** Menü). Wenn Sie sich in der alten Architektur befinden, senden Sie eine [neue Supportanfrage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) mit dem Betreff **[!UICONTROL INVENTORY ANALYSIS]** Sobald Sie den vorgesehenen Abschnitt im _Berechnete Spalten_ Anweisungen unten.
+In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke in Ihr aktuelles Inventar bietet und Anweisungen für Kunden zur alten Architektur oder zur neuen Architektur enthält. Sie befinden sich in der alten Architektur, wenn Sie nicht über die **[!UICONTROL Data Warehouse Views]** Option unter **[!UICONTROL Manage Data]** Menü. Wenn Sie sich in der alten Architektur befinden, senden Sie eine [neue Supportanfrage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) mit dem Betreff **[!UICONTROL INVENTORY ANALYSIS]** Sobald Sie den vorgesehenen Abschnitt im _Berechnete Spalten_ Anweisungen unten.
 
 ## Zu verfolgende Spalten:
 
@@ -29,7 +29,7 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihren akt
 
 ## Berechnete Spalten:
 
-### Neue Architektur
++++ Neue Architektur
 
 * **[!UICONTROL catalog_product_entity]** table:
    * **`Product's most recent order date`**
@@ -118,7 +118,8 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihren akt
 
 
 
-### Alte Architektur
++++
++++ Alte Architektur
 
 * **[!UICONTROL catalog_product_entity]** table:
    * **`Product's most recent order date`**
@@ -189,6 +190,8 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihren akt
 
 
 
++++
+
 ## Metriken
 
 ### Metrikanweisungen
@@ -240,4 +243,4 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihren akt
       [!UICONTROL Chart type]: `Table`
 
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

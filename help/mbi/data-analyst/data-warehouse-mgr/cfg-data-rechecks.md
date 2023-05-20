@@ -2,31 +2,32 @@
 title: Konfigurieren von Datenprüfungen
 description: Erfahren Sie, wie Sie Datenspalten mit veränderlichen Werten konfigurieren.
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
 # Konfigurieren von Datenprüfungen
 
-In einer Datenbanktabelle können Datenspalten mit veränderlichen Werten vorhanden sein. Beispiel: in einer `orders`) kann eine Spalte namens `status`. Wenn eine Bestellung ursprünglich in die Datenbank geschrieben wurde, kann die Statusspalte den Wert enthalten _pending_. Die Bestellung wird in Ihrer [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) mit diesem `pending` -Wert.
+In einer Datenbanktabelle können Datenspalten mit veränderlichen Werten vorhanden sein. Beispiel: in einer `orders` Tabelle gibt es möglicherweise eine Spalte namens `status`. Wenn eine Bestellung ursprünglich in die Datenbank geschrieben wurde, kann die Statusspalte den Wert enthalten _pending_. Die Bestellung wird in Ihrer [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) mit diesem `pending` -Wert.
 
-Der Auftragsstatus kann sich jedoch ändern - sie befinden sich nicht immer in einer `pending` Status. Letztlich könnte es `complete` oder `cancelled`. Um sicherzustellen, dass Ihre Data Warehouse diese Änderung synchronisiert, muss die Spalte auf neue Werte überprüft werden.
+Der Bestellstatus kann sich ändern, ist jedoch nicht immer in einer `pending` Status. Letztlich könnte es `complete` oder `cancelled`. Um sicherzustellen, dass Ihre Data Warehouse diese Änderung synchronisiert, muss die Spalte auf neue Werte überprüft werden.
 
 Wie passt dies in die [Replikationsmethoden](../data-warehouse-mgr/cfg-replication-methods.md) darüber diskutiert wurde? Die Verarbeitung der Überprüfungen variiert je nach ausgewählter Replikationsmethode. Die `Modified\_At` Die Replikationsmethode eignet sich am besten für die Verarbeitung von sich ändernden Werten, da keine erneuten Überprüfungen konfiguriert werden müssen. Die `Auto-Incrementing Primary Key` und `Primary Key Batch Monitoring` -Methoden müssen erneut konfiguriert werden.
 
 Bei Verwendung einer dieser Methoden müssen veränderliche Spalten zur erneuten Überprüfung gekennzeichnet werden. Hierfür gibt es drei Möglichkeiten:
 
-* Ein Auditing-Prozess, der als Teil der Aktualisierungsmarkierungen ausgeführt wird und erneut überprüft werden soll.
+1. Ein Auditing-Prozess, der als Teil der Aktualisierungsmarkierungen ausgeführt wird und erneut überprüft werden soll.
 
    >[!NOTE]
    >
    >Der Prüfer stützt sich auf ein Probenahmeverfahren, und die sich ändernden Spalten dürfen nicht sofort erfasst werden.
 
-* Sie können sie selbst festlegen, indem Sie das Kontrollkästchen neben der Data Warehouse im Spaltenmanager aktivieren und auf **[!UICONTROL Set Recheck Frequency]** und wählen Sie ein passendes Zeitintervall für den Zeitpunkt aus, zu dem Sie nach Änderungen suchen sollten.
-* Ein Mitglied der [!DNL MBI] Das Data Warehouse-Team kann die Spalten manuell markieren, um sie in Ihrer Data Warehouse erneut zu überprüfen. Wenn Sie über veränderliche Spalten informiert sind, wenden Sie sich an das Team, um anzufordern, dass die Überprüfungen durchgeführt werden. Fügen Sie Ihrer Anforderung eine Liste von Spalten sowie die Häufigkeit bei.
+1. Sie können sie selbst festlegen, indem Sie das Kontrollkästchen neben der Data Warehouse im Spaltenmanager aktivieren und auf **[!UICONTROL Set Recheck Frequency]** und wählen Sie ein passendes Zeitintervall für den Zeitpunkt aus, zu dem Sie nach Änderungen suchen sollten.
+
+1. Ein Mitglied der [!DNL Adobe Commerce Intelligence] Das Data Warehouse-Team kann die Spalten manuell markieren, um sie in Ihrer Data Warehouse erneut zu überprüfen. Wenn Sie über veränderliche Spalten informiert sind, wenden Sie sich an das Team, um anzufordern, dass die Überprüfungen durchgeführt werden. Fügen Sie Ihrer Anforderung eine Liste von Spalten sowie die Häufigkeit bei.
 
 ## Recherche-Frequenzen {#frequency}
 
@@ -55,7 +56,7 @@ Um die Häufigkeit der erneuten Überprüfungen zu ändern, aktivieren Sie das K
 
 Manchmal wird `Paused` im `Changes?` Spalte. Dieser Wert wird angezeigt, wenn die [Replikationsmethode](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) auf `Paused`.
 
-Adobe empfiehlt, diese Spalten zu überprüfen, um sowohl Ihre Aktualisierungen zu optimieren als auch sicherzustellen, dass veränderliche Spalten erneut überprüft werden. Wenn die Wiederholungshäufigkeit für eine Spalte angesichts der Häufigkeit der Datenänderungen hoch ist, empfiehlt Adobe, sie zu reduzieren, um Ihre Aktualisierungen zu optimieren.
+[!DNL Adobe] empfiehlt, diese Spalten zu überprüfen, um sowohl Ihre Aktualisierungen zu optimieren als auch sicherzustellen, dass veränderliche Spalten erneut überprüft werden. Wenn die Wiederholungshäufigkeit für eine Spalte angesichts der Häufigkeit der Datenänderungen hoch ist, empfiehlt Adobe, sie zu reduzieren, um Ihre Aktualisierungen zu optimieren.
 
 Kontaktieren Sie uns bei Fragen oder um aktuelle Replikationsmethoden oder Nachprüfungen zu erhalten.
 

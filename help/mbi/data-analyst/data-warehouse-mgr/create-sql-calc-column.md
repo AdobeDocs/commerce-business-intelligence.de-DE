@@ -1,23 +1,23 @@
 ---
 title: SQL-berechnete Spalte erstellen und verwenden
-description: Erfahren Sie, wie erweiterte Spalten in Form von SQL-Berechnungsspalten in der neuen MBI-Architektur erstellt werden können.
+description: Erfahren Sie, wie erweiterte Spalten in Form von SQL-Berechnungsspalten in der neuen Adobe Commerce Intelligence-Architektur erstellt werden können.
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
 
 # SQL-berechnete Spalte erstellen
 
-In diesem Thema werden Zweck und Verwendung der `Calculation` Spaltentyp: , die mithilfe der [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md). Im Folgenden finden Sie eine Erläuterung der Funktionsweise von SQL-Berechnungen, ihrer Verwendung, des Prozesses zum Erstellen einer SQL-Berechnung sowie zwei Beispiele.
+In diesem Thema werden Zweck und Verwendung der `Calculation` Spaltentyp, der Tabellen mithilfe der [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md). Im Folgenden werden die Funktionsweise von SQL-Berechnungen, ihre Verwendung, der Prozess zur Erstellung einer SQL-Berechnung und zwei Beispiele erläutert.
 
 **Erklärung**
 
-In der Vergangenheit wurden Spalten `advanced` kann nur von einem Analytiker des Customer Success-Teams hier unter [!DNL MBI]. Jetzt liegt die gesamte Leistung in den Händen des Endbenutzers, und erweiterte Spalten können in Form von `SQL Calculation` Spalten in der neuen [!DNL MBI] Architektur.
+In der Vergangenheit wurden Spalten `advanced` kann nur von einem Analytiker des Customer Success-Teams hier unter [!DNL Adobe Commerce Intelligence]. Jetzt liegt die gesamte Leistung in den Händen des Endbenutzers, und erweiterte Spalten können in Form von `SQL Calculation` Spalten in der neuen [!DNL Commerce Intelligence] Architektur.
 
-Die `Calculation` Der jetzt im Data Warehouse Manager als Option verfügbare Spaltentyp ist derselbe Tabellenvorgang, mit dem Sie die Tabellenspalten mithilfe der PostgreSQL-Logik umwandeln können. Dokumentation zu den Funktionen und Operatoren, die in der `Calculatio`Ein Spaltentyp ist auf der PostgreSQL-Website zu finden. [here](https://www.postgresql.org/docs/9.6/functions.html).
+Die `Calculation` Der jetzt im Data Warehouse Manager als Option verfügbare Spaltentyp ist derselbe Tabellenvorgang, mit dem Sie die Tabellenspalten mithilfe der PostgreSQL-Logik umwandeln können. Dokumentation zu den Funktionen und Operatoren, die in der `Calculation` Spaltentyp finden Sie auf der PostgreSQL-Website. [here](https://www.postgresql.org/docs/9.6/functions.html).
 
 Die verschiedenen Spalten, die mit der `Calculation` -Spalte ist fast unbegrenzt, aber die meisten Spalten können mit IF-THEN -Anweisungen und Arithmetik erstellt werden, die in den Beispielen unten verwendet wird.
 
@@ -73,4 +73,5 @@ Hier können Sie eine `Calculation` durch die folgenden Schritte aus:
    * `Datetime` - yyyy-MM-dd hh:mm:ss format
 
 1. Klicken **[!UICONTROL test column]**. Dadurch wird eine Liste mit fünf Testwerten für jede Ihrer Eingaben generiert und das Ergebnis der Logik aus Schritt 6 für jeden Satz von Testwerten angezeigt. Wenn ein Teil der SQL einen Fehler erzeugt, wird die entsprechende Fehlermeldung zurückgegeben. Beispielergebnisse können nur generiert werden, wenn alle Eingabespalten native Felder sind. Wenn eine der Eingabespalten berechnete Spalten ist, müssen Sie die Ergebnisse validieren, indem Sie die Spalte zu einer Metrik hinzufügen und im Visual Report Builder anzeigen
+
 1. Wenn Sie mit den Ergebnissen zufrieden sind, klicken Sie auf **[!UICONTROL Save]**. Die Spalte ermöglicht die Verwendung.

@@ -2,16 +2,16 @@
 title: Visual Report Builder verwenden
 description: Hier erfahren Sie, wie Sie die Daten in Ihrem Bericht für einen bestimmten Zeitraum analysieren.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# Verwenden Sie die `Visual Report Builder`
+# Verwenden Sie die [!DNL Visual Report Builder]
 
-Die [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) ermöglicht es Ihnen, Ihre Daten visuell zu untersuchen, um Erkenntnisse zu gewinnen und geschäftliche Entscheidungen zu fördern. Dieses Tutorial führt Sie durch den Prozess der Erstellung eines Basisberichts.
+Die [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md) ermöglicht es Ihnen, Ihre Daten visuell zu untersuchen, um Erkenntnisse zu gewinnen und geschäftliche Entscheidungen zu fördern. Dieses Tutorial führt Sie durch den Prozess der Erstellung eines Basisberichts.
 
 >[!NOTE]
 >
@@ -19,9 +19,9 @@ Die [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md) erm�
 
 ## Schritt 1: Erstellen eines Berichts
 
-Um mit der Erstellung eines Berichts zu beginnen, klicken Sie auf **[!UICONTROL Report Builder]** auf der Seitenleiste oder **[!UICONTROL Add Report]** oben in jedem Dashboard. Wenn die `Report Builder` Die Auswahlseite wird angezeigt. Klicken Sie auf die **[!UICONTROL Visual Report Builder]** -Option.
+Um mit der Erstellung eines Berichts zu beginnen, klicken Sie auf **[!UICONTROL Report Builder]** auf der Seitenleiste oder **[!UICONTROL Add Report]** oben in jedem Dashboard. Wenn die `Report Builder` angezeigt wird, klicken Sie auf die **[!UICONTROL Visual Report Builder]** -Option.
 
-So bearbeiten Sie einen Bericht, der im `Visual Report Builder`klicken Sie auf das Zahnradsymbol (Optionen) in der oberen rechten Ecke eines beliebigen Diagramms und klicken Sie dann auf **[!UICONTROL Edit]**.
+So bearbeiten Sie einen Bericht, der im [!DNL Visual Report Builder], klicken Sie auf das Zahnradsymbol (Optionen) in der oberen rechten Ecke eines beliebigen Diagramms und klicken Sie dann auf **[!UICONTROL Edit]**.
 
 ## Schritt 2: Hinzufügen von Metriken
 
@@ -45,7 +45,7 @@ Wenn Sie einen bestimmten Zeitraum nicht einbeziehen möchten, können Sie den Z
 
 Stellen Sie beim Festlegen eines bestimmten Datumsbereichs für den Zeitraum sicher, dass sich das Startdatum am Anfang des Intervalls befindet und das Enddatum am Ende Ihres Intervalls liegt.
 
-Beispielsweise können Sie einen Zeitraum von `January 1st to March 1st` und wählen Sie eine `monthly` interval zeigt `March` als Datenpunkt verwenden, jedoch jeden Tag in `March` Ausnahme `March 1`. In diesem Fall sollten Sie Ihre `Time Period` von `January 1 to March 31`.
+Beispielsweise können Sie einen Zeitraum von `January 1st` nach `March 1st` und wählen Sie eine `monthly` interval zeigt `March` als Datenpunkt verwenden, jedoch jeden Tag in `March` Ausnahme `March 1`. In diesem Fall sollten Sie Ihre `Time Period` von `January 1 to March 31`.
 
 ## Schritt 5: `Group by` / `Segmenting the Analysis` {#groupby}
 

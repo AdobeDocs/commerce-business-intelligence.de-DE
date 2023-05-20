@@ -2,9 +2,9 @@
 title: sales_order-Tabelle
 description: Erfahren Sie, wie Sie mit der Tabelle sales_order arbeiten.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Diese Tabelle enthält alle Kundenbestellungen, unabhängig davon, ob diese Best
 | `base_tax_amount` | Auf Bestellung angewendeter Steuerwert |
 | `billing_address_id` | `Foreign key` mit `sales_order_address` Tabelle. Mitglied werden `sales_order_address.entity_id` zur Bestimmung der Rechnungsadressen, die mit der Bestellung verbunden sind |
 | `coupon_code` | Auf Bestellung angewendeter Coupon. Wenn kein Coupon angewendet wird, wird dieses Feld `NULL` |
-| `created_at` | Erstellungszeitstempel der Bestellung, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL MBI], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL MBI] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
+| `created_at` | Erstellungszeitstempel der Bestellung, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL Commerce Intelligence], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL Commerce Intelligence] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
 | `customer_email` | E-Mail-Adresse des Kunden, der die Bestellung aufgibt. Dies wird in allen Situationen aufgefüllt, einschließlich der Bestellungen, die über den Gast-Checkout verarbeitet werden |
 | `customer_group_id` | Fremdschlüssel, der mit dem `customer_group` Tabelle. Mitglied werden `customer_group.customer_group_id` zur Bestimmung der Kundengruppe, die der Bestellung zugeordnet ist |
 | `customer_id` | `Foreign key` mit `customer_entity` -Tabelle, wenn der Kunde registriert ist. Mitglied werden `customer_entity.entity_id` , um Kundenattribute zu bestimmen, die mit der Bestellung verknüpft sind. Wenn die Bestellung über einen Gastkasse aufgegeben wurde, lautet dieses Feld `NULL` |
@@ -55,7 +55,7 @@ Diese Tabelle enthält alle Kundenbestellungen, unabhängig davon, ob diese Best
 | `Customer's lifetime revenue` | Summe des Umsatzes für alle von diesem Kunden aufgegebenen Bestellungen. Wird durch Addition der `base_grand_total` Feld für alle Bestellungen für jeden Unique Customer |
 | `Customer's order number` | Sequenzieller Bestellrang für die Bestellung dieses Kunden. Wird berechnet, indem alle von einem Kunden aufgegebenen Bestellungen identifiziert und in aufsteigender Reihenfolge von der `created_at` Zeitstempel und Zuweisen eines inkrementellen ganzzahligen Werts zu jeder Bestellung. Beispielsweise gibt die erste Bestellung des Kunden eine `Customer's order number` von 1 gibt die zweite Bestellung des Kunden eine `Customer's order number` von 2 usw. |
 | `Customer's order number (previous-current)` | Rang der vorherigen Bestellung des Kunden, verkettet mit dem Rang dieser Bestellung, getrennt durch eine `-` Zeichen. Wird durch Verkettung (&quot;`Customer's order number` - 1&quot;) mit &quot;`-`&quot;, gefolgt von &quot;`Customer's order number`&quot;. Beispielsweise gibt diese Spalte für die Bestellung, die mit dem zweiten Kauf des Kunden verknüpft ist, den Wert `1-2`. Wird am häufigsten verwendet, wenn die Zeit zwischen zwei Bestellereignissen dargestellt wird (d. h. im Diagramm &quot;Zeit zwischen Bestellungen&quot;) |
-| `Is customer's last order?` | Bestimmt, ob die Bestellung der letzten oder letzten Bestellung des Kunden entspricht. Wird durch Vergleich der `Customer's order number` Wert mit `Customer's lifetime number of orders`. Wenn diese beiden Felder für die angegebene Reihenfolge gleich sind, gibt diese Spalte &quot;Ja&quot;zurück. sonst &quot;Nein&quot; |
+| `Is customer's last order?` | Bestimmt, ob die Bestellung der letzten oder letzten Bestellung des Kunden entspricht. Wird durch Vergleich der `Customer's order number` Wert mit `Customer's lifetime number of orders`. Wenn diese beiden Felder für die angegebene Reihenfolge gleich sind, gibt diese Spalte `Yes`; gibt andernfalls `No` |
 | `Number of items in order` | Gesamtzahl der in der Bestellung enthaltenen Artikel. Errechnet durch Verbinden `sales_order`.`entity_id` nach `sales_order_item`.`order_id` und die `sales_order_item`.`qty_ordered` field |
 | `Seconds between customer's first order date and this order` | Verstrichene Zeit zwischen dieser Bestellung und der ersten Bestellung des Kunden. Berechnet durch Subtraktion `Customer's first order date` von `created_at` für jede Bestellung, die als ganzzahlige Anzahl von Sekunden zurückgegeben wird |
 | `Seconds since previous order` | Verstrichene Zeit zwischen dieser Bestellung und dem unmittelbar vorhergehenden Auftrag des Kunden. Berechnet durch Subtraktion der `created_at` für die vorherige Bestellung der `created_at` dieser Reihenfolge, die als ganzzahlige Anzahl von Sekunden zurückgegeben wird. Beispielsweise gibt diese Spalte für den Bestelldatensatz, der der dritten Bestellung eines Kunden entspricht, die Anzahl der Sekunden zwischen der zweiten und dritten Bestellung des Kunden zurück. Bei der ersten Bestellung des Kunden gibt dieses Feld `NULL` |

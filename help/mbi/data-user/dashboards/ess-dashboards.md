@@ -2,7 +2,7 @@
 title: Dashboards
 description: Erfahren Sie, wie Sie ein Dashboard erstellen und verwenden.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Dashboards
 
-[!DNL MBI] Dashboards bieten einen Überblick über die Leistung und Verkaufsaktivitäten Ihres Stores. Einzelne Dashboards können für andere Benutzer freigegeben und in logische Gruppen unterteilt werden. Sie können auch verschiedene Berechtigungsstufen für andere Benutzer festlegen.
+[!DNL Adobe Commerce Intelligence] Dashboards bieten einen Überblick über die Leistung und Verkaufsaktivitäten Ihres Stores. Einzelne Dashboards können für andere Benutzer freigegeben und in logische Gruppen unterteilt werden. Sie können auch verschiedene Berechtigungsstufen für andere Benutzer festlegen.
 
 Es ist einfach, einen Bericht zu erstellen, ihn einem Dashboard hinzuzufügen und die Daten nach Excel zu exportieren. Grafiken und Berichte können in der Größe angepasst und in die Position des Dashboards gezogen werden.
 
@@ -76,7 +76,7 @@ In **[!DNL Manage Data** > **Dashboards]** können Sie Benutzerberechtigungen f�
 
 ### Dashboards freigeben {#sharingdash}
 
-Skalierung [!DNL MBI] Adobe bietet wertvolle Einblicke in Ihr Unternehmen und ermutigt Sie, Dashboards, die Sie erstellen, mit anderen Team-Mitgliedern zu teilen. *Sie können eigene Dashboards freigeben* durch Klicken auf `Share Dashboard` -Option oben auf der Seite.
+Skalierung [!DNL Commerce Intelligence] Adobe bietet wertvolle Einblicke in Ihr Unternehmen und ermutigt Sie, Dashboards, die Sie erstellen, mit anderen Team-Mitgliedern zu teilen. *Sie können eigene Dashboards freigeben* durch Klicken auf `Share Dashboard` -Option oben auf der Seite.
 
 Wenn Sie ein Dashboard freigeben, können Sie Ihrer gesamten Organisation ODER individuell Berechtigungen zuweisen, sodass Sie entscheiden können, wer Ihre Berichte anzeigen und bearbeiten kann.
 
@@ -113,7 +113,7 @@ Wenn Sie ein Dashboard freigeben, können Sie Ihrer gesamten Organisation ODER i
 
    **`Default`**
 
-   1. Damit dieses Dashboard zum Standard für Ihre [!DNL MBI] Konto, klicken Sie auf **[!UICONTROL Make Default]**.
+   1. Damit dieses Dashboard zum Standard für Ihre [!DNL Commerce Intelligence] Konto, klicken Sie auf **[!UICONTROL Make Default]**.
 
    **`Remove`**
 

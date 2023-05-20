@@ -1,19 +1,19 @@
 ---
-title: SQL-Abfragen in übersetzen [!DNL MBI] Berichte
-description: Erfahren Sie, wie SQL-Abfragen in berechnete Spalten und Metriken übersetzt werden, die Sie in [!DNL MBI].
+title: SQL-Abfragen in Commerce Intelligence-Berichte übersetzen
+description: Erfahren Sie, wie SQL-Abfragen in die berechneten Spalten und Metriken übersetzt werden, die Sie in Commerce Intelligence verwenden.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
 
 ---
 
-# SQL-Abfragen in MBI übersetzen
+# SQL-Abfragen in Commerce Intelligence übersetzen
 
-Haben Sie sich schon immer gefragt, wie SQL-Abfragen in die [berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md), [Metriken](../../data-user/reports/ess-manage-data-metrics.md)und [Berichte](../../tutorials/using-visual-report-builder.md) Sie verwenden [!DNL MBI]? Wenn Sie ein starker SQL-Benutzer sind, sollten Sie wissen, wie SQL übersetzt wird in [!DNL MBI] ermöglicht es Ihnen, im [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) und das Beste aus dem [!DNL MBI] Plattform.
+Haben Sie sich schon immer gefragt, wie SQL-Abfragen in die [berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md), [Metriken](../../data-user/reports/ess-manage-data-metrics.md)und [Berichte](../../tutorials/using-visual-report-builder.md) Sie verwenden [!DNL Commerce Intelligence]? Wenn Sie ein starker SQL-Benutzer sind, sollten Sie wissen, wie SQL übersetzt wird in [!DNL Commerce Intelligence] ermöglicht es Ihnen, im [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) und das Beste aus dem [!DNL Commerce Intelligence] Plattform.
 
-Am Ende dieses Artikels finden Sie eine **Übersetzungsmatrix** für SQL-Abfrageklauseln und [!DNL MBI] -Elemente.
+Am Ende dieses Themas finden Sie eine **Übersetzungsmatrix** für SQL-Abfrageklauseln und [!DNL Commerce Intelligence] -Elemente.
 
 Sehen Sie sich zunächst eine allgemeine Abfrage an:
 
@@ -32,7 +32,7 @@ In diesem Beispiel werden die meisten Übersetzungsfälle behandelt, es gibt jed
 
 ## Aggregat-Funktionen
 
-Aggregatfunktionen (z. B. `count`, `sum`, `average`, `max`, `min`) in Abfragen entweder in folgender Form: **Metrikaggregationen** oder **Spaltenaggregationen** in [!DNL MBI]. Der Differenzierungsfaktor ist, ob ein Join erforderlich ist, um die Aggregation durchzuführen.
+Aggregatfunktionen (z. B. `count`, `sum`, `average`, `max`, `min`) in Abfragen entweder in folgender Form: **Metrikaggregationen** oder **Spaltenaggregationen** in [!DNL Commerce Intelligence]. Der Differenzierungsfaktor ist, ob ein Join erforderlich ist, um die Aggregation durchzuführen.
 
 Sehen Sie sich für jeden der oben genannten Beispiele an.
 
@@ -40,7 +40,7 @@ Sehen Sie sich für jeden der oben genannten Beispiele an.
 
 Bei der Aggregation von `within a single table`. Beispielsweise wird die `SUM(b)` Aggregatfunktion aus der obigen Abfrage würde höchstwahrscheinlich durch eine Metrik dargestellt, die die Spalte summiert `B`. 
 
-Sehen Sie sich ein bestimmtes Beispiel an, wie ein `Total Revenue` Metriken können in [!DNL MBI]. Sehen Sie sich die unten stehende Abfrage an, mit der Sie versuchen, zu übersetzen:
+Sehen Sie sich ein bestimmtes Beispiel an, wie ein `Total Revenue` Metriken können in [!DNL Commerce Intelligence]. Sehen Sie sich die nachstehende Abfrage an, mit der Sie versuchen zu übersetzen:
 
 |  |  |
 |--- |--- |
@@ -51,7 +51,7 @@ Sehen Sie sich ein bestimmtes Beispiel an, wie ein `Total Revenue` Metriken kön
 | `email NOT LIKE '%@magento.com'` | Metrik `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Metrik `timestamp` (und Berichterstattung) `time range`) |
 
-Navigieren zum Metrikaufbau durch Klicken auf **[!UICONTROL Manage Data** > ** Metriken **> **Neue Metrik erstellen]**, müssen Sie zuerst die entsprechende `source` -Tabelle, die in diesem Fall der `orders` Tabelle. Anschließend würde die Metrik wie folgt eingerichtet:
+Navigieren Sie zum Metrikaufbau durch Klicken auf **[!UICONTROL Manage Data** > ** Metriken **> **Neue Metrik erstellen]**, müssen Sie zuerst die entsprechende `source` -Tabelle, die in diesem Fall der `orders` Tabelle. Anschließend würde die Metrik wie folgt eingerichtet:
 
 ![Metrikaggregation](../../assets/Metric_aggregation.png)
 
@@ -71,7 +71,7 @@ Die Abfrage für diese Aggregation kann etwa wie folgt aussehen:
 | `ON c.customer_id = o.customer_id` | Pfad |
 | `WHERE o.status = 'success'` | Aggregat-Filter |
 
-Einrichten des [!DNL MBI] erfordert die Verwendung Ihres Data Warehouse-Managers, in dem Sie einen Pfad zwischen Ihrem `orders` und `customers` und erstellen Sie dann eine Spalte namens `Customer LTV` in der Tabelle Ihres Kunden.
+Einrichten des [!DNL Commerce Intelligence] erfordert die Verwendung Ihres Data Warehouse-Managers, in dem Sie einen Pfad zwischen Ihrem `orders` und `customers` und erstellen Sie dann eine Spalte namens `Customer LTV` in der Tabelle Ihres Kunden.
 
 Untersuchen Sie, wie Sie einen neuen Pfad zwischen dem `customers` und `orders`. Das Endziel besteht darin, eine neue aggregierte Spalte im `customers` -Tabelle, also navigieren Sie zuerst zur `customers` in der Data Warehouse angezeigt werden, klicken Sie auf **[!UICONTROL Create a Column** > ** Definition auswählen **> **SUM]**.
 
@@ -83,9 +83,9 @@ Hier müssen Sie die Beziehung zwischen den beiden Tabellen, denen Sie beitreten
 
 >[!NOTE]
 >
->In [!DNL MBI], *path* entspricht einem `Join` in SQL.
+>In [!DNL Commerce Intelligence], `path` entspricht einem `Join` in SQL.
 
-Nachdem der Pfad gespeichert wurde, erstellen Sie alle `Customer LTV` column! Sehen Sie sich Folgendes an:
+Nachdem der Pfad gespeichert wurde, können Sie die `Customer LTV` column! Siehe unten:
 
 ![](../../assets/Customer_LTV.gif)
 
@@ -99,7 +99,7 @@ Siehe [berechnete Spalten erstellen](../data-warehouse-mgr/creating-calculated-c
 
 ## `Group By` Klauseln
 
-`Group By` Funktionen in Abfragen werden häufig in [!DNL MBI] als Spalte zur Segmentierung oder Filterung eines visuellen Berichts. Beispiel: `Total Revenue` Abfrage, die Sie zuvor untersucht haben, aber diesmal den Umsatz nach `coupon\_code` um ein besseres Verständnis davon zu gewinnen, welche Gutscheine den meisten Umsatz generieren.
+`Group By` Funktionen in Abfragen werden häufig in [!DNL Commerce Intelligence] als Spalte zur Segmentierung oder Filterung eines visuellen Berichts. Beispiel: `Total Revenue` Abfrage, die Sie zuvor untersucht haben, aber diesmal den Umsatz nach `coupon\_code` um ein besseres Verständnis davon zu gewinnen, welche Gutscheine den meisten Umsatz generieren.
 
 Beginnen Sie mit der folgenden Abfrage:
 
@@ -149,10 +149,10 @@ Nehmen Sie nun an, dass Sie bereits Metriken zur Berechnung der `Total Revenue` 
 
 ## Aufbrechen
 
-Wenn Sie ein starker SQL-Benutzer sind, denken Sie darüber nach, wie Abfragen in übersetzt werden. [!DNL MBI] ermöglicht die Erstellung berechneter Spalten, Metriken und Berichte.
+Wenn Sie ein starker SQL-Benutzer sind, denken Sie darüber nach, wie Abfragen in übersetzt werden. [!DNL Commerce Intelligence] ermöglicht die Erstellung berechneter Spalten, Metriken und Berichte.
 
-Sehen Sie sich die folgende Matrix für einen schnellen Überblick an. Dies zeigt die Entsprechung einer SQL-Klausel [!DNL MBI] -Element und wie es mehreren Elementen zugeordnet werden kann, je nachdem, wie es in der Abfrage verwendet wird.
+Sehen Sie sich die folgende Matrix für einen schnellen Überblick an. Dies zeigt die Entsprechung einer SQL-Klausel [!DNL Commerce Intelligence] -Element und wie es mehreren Elementen zugeordnet werden kann, je nachdem, wie es in der Abfrage verwendet wird.
 
-## MBI-Elemente
+## Commerce Intelligence-Elemente
 
 |**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|-|X|-|-| |`FROM`|-|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-|-|-| |`WHERE` (mit Zeitelementen)|-|-|-|X|-|-|-| |`JOIN...ON`|-|X|-|-|X|X|-| |`GROUP BY`|-|-|X|-|-|-|-|-|

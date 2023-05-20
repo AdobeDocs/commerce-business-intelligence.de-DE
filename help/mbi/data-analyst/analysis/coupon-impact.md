@@ -2,16 +2,16 @@
 title: Auswirkungen des Gutscheins analysieren
 description: Erfahren Sie, wie Sie die Auswirkungen von Gutscheinen auf die Akquise und Kundenbindung analysieren können.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1359'
 ht-degree: 2%
 
 ---
 
 # Couponeffekt
 
-Die Analyse, wie Kunden Ihre Gutscheine verwenden, bietet wichtige Einblicke in Ihr Geschäft. Insbesondere wird analysiert, wie Sie Kunden über Coupons gewinnen und binden. In diesem Artikel werden Analysen untersucht, die Ihnen bei der Beantwortung der folgenden Fragen helfen können:
+Die Analyse, wie Kunden Ihre Gutscheine verwenden, bietet wichtige Einblicke in Ihr Geschäft. Insbesondere wird analysiert, wie Sie Kunden über Coupons gewinnen und binden. In diesem Thema werden Analysen untersucht, die Ihnen bei der Beantwortung der folgenden Fragen helfen können:
 
 * Wie viele Kunden erwerben Sie über Coupons?
 * Sind Kunden, die Gutscheine erworben haben, eher geneigt, Wiederholungskäufe zu tätigen als Kunden, die nicht über Gutscheine erworben wurden?
@@ -69,7 +69,7 @@ Die Anzahl der Wiederholungsaufträge für Nicht-Coupon-Akquise ist viel höher 
 
 Gleichermaßen ist die Anzahl wiederholter Bestellungen, die mit einem Coupon getätigt wurden, bei Nicht-Coupon-Akquisen höher.
 
-## #Percent of repeat orders with coupon
+## Prozentsatz der Wiederholungen von Bestellungen mit Coupon
 
 Kunden, die keinen Gutschein erworben haben, haben einen wesentlich geringeren Prozentsatz von Wiederholungsbestellungen mit einem Coupon als Kunden mit Coupon. Somit wird bei kupon-erworbenen Kunden fast die Hälfte der Wiederholungsaufträge mit einem Coupon belegt. In diesem Beispiel neigen Kunden, die Gutscheine erworben haben, dazu, Wiederholungskäufe mit Coupons zu tätigen.
 
@@ -149,4 +149,4 @@ Die größte Anzahl von Kunden wurde durch den &quot;20% Rabatt&quot;-Gutschein 
 
 ## Aufbrechen {#wrapup}
 
-Es gibt eine Vielzahl von Analysen, die Sie erstellen können, um besser zu verstehen, wie Ihre Kunden Coupons verwenden. Haben Sie schon einmal darüber nachgedacht zu analysieren, wie Ihre Kunden Ihre Gutscheine verwenden oder wie lange es dauert, bis Gutscheine verwendet werden? Wie sieht es mit der Suche nach dem optimalen Rabattbetrag aus - welcher Betrag ermutigt Wiederholungskäufer, einen höheren durchschnittlichen Bestellwert und höheren Lebenszeitumsatz? Für Hilfe zu diesen Fragen, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Es gibt eine Vielzahl von Analysen, die Sie erstellen können, um besser zu verstehen, wie Ihre Kunden Coupons verwenden. Haben Sie schon einmal darüber nachgedacht zu analysieren, wie Ihre Kunden Ihre Gutscheine verwenden oder wie lange es dauert, bis Gutscheine verwendet werden? Wie sieht es mit der Suche nach dem optimalen Rabattbetrag aus - welcher Betrag ermutigt Wiederholungskäufer, einen höheren durchschnittlichen Bestellwert und höheren Lebenszeitumsatz? Für Hilfe zu diesen Fragen, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

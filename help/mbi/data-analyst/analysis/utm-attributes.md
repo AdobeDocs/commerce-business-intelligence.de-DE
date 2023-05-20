@@ -2,16 +2,16 @@
 title: Google Analytics und UTM-Zuordnung
 description: Erfahren Sie mehr über den Quellzuordnungsprozess von Google Analytics.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Google Analytics und UTM-Zuordnung
+# [!DNL Google Analytics] und UTM-Attribution
 
-Es ist von entscheidender Bedeutung, [Benutzerakquise-Quelle verfolgen](../../data-analyst/analysis/google-track-user-acq.md) nach [Identifizieren von Werbekampagnen mit der besten Leistung](../../data-analyst/analysis/most-value-source-channel.md). In diesem Artikel wird der Quellzuordnungsprozess von Google Analytics untersucht. Mit anderen Worten, welche Information wird aufgezeichnet, wenn.
+Es ist von entscheidender Bedeutung, [Benutzerakquise-Quelle verfolgen](../../data-analyst/analysis/google-track-user-acq.md) nach [Identifizieren von Werbekampagnen mit der besten Leistung](../../data-analyst/analysis/most-value-source-channel.md). Dieses Thema untersucht die [!DNL Google Analytics] Quellattributionsprozess. Mit anderen Worten, welche Information wird aufgezeichnet, wenn.
 
 ## Was ist Attribution?
 
@@ -31,11 +31,11 @@ Wenn die UTM-Parameter in der URL angegeben sind, werden sie analysiert und in e
 
 Die Attribution des letzten Klicks ist das am häufigsten verwendete Attributionsmodell von [!DNL Google Analytics]. In diesem Fall wird die [!DNL Google Analytics] -Cookie stellt die UTM-Parameter für die neueste Quelle vor dem Konversionsereignis dar, und zwar [in der Datenbank aufgezeichnet](../../data-analyst/analysis/google-track-user-acq.md). Die [!DNL Google Analytics] -Cookie überschreibt nur die vorherigen UTM-Parameter, wenn der Benutzer auf eine neue URL klickt, die einen neuen Satz von UTM-Parametern enthält.
 
-Betrachten Sie beispielsweise einen Benutzer, der eine Website zum ersten Mal über besucht [!DNL Google Analytics][!DNL Google Analytics][!DNL Google Analytics] *Paid Search*, kehrt dann über zurück *organische Suche* und kehrt schließlich zur *Website direkt* oder über *E-Mail-Link* **ohne UTM-Parameter** vor dem Konversionsereignis. In diesem Beispiel wird die [!DNL Google Analytics] -Cookie sagt, dass die Quelle des Benutzers organisch ist, da dies die letzte Quelle vor der Konvertierung darstellt. Die *path* des Benutzers, bevor dieses endgültige Konversionsereignis ignoriert wird. Wenn der Benutzer stattdessen die Website über einen E-Mail-Link mit UTM besucht, wird die [!DNL Google Analytics] -Cookie würde sagen, dass die Quelle &quot;E-Mail&quot;lautet. Wenn im Cookie vorhandene UTM-Parameter vorhanden sind und der Benutzer über Direkt eingebunden wird, wird die [!DNL Google Analytics] -Cookie zeigt die UTM-Parameter anstelle von &quot;direkt&quot;an.
+Betrachten Sie beispielsweise einen Benutzer, der eine Website zum ersten Mal über besucht [!DNL Google Analytics] *Paid Search*, kehrt dann über zurück *organische Suche* und kehrt schließlich zur *Website direkt* oder über *E-Mail-Link* **ohne UTM-Parameter** vor dem Konversionsereignis. In diesem Beispiel wird die [!DNL Google Analytics] -Cookie sagt, dass die Quelle des Benutzers organisch ist, da dies die letzte Quelle vor der Konvertierung darstellt. Die *path* des Benutzers, bevor dieses endgültige Konversionsereignis ignoriert wird. Wenn der Benutzer stattdessen die Website über einen E-Mail-Link mit UTM besucht, wird die [!DNL Google Analytics] -Cookie würde sagen, dass die Quelle &quot;E-Mail&quot;lautet. Wenn im Cookie vorhandene UTM-Parameter vorhanden sind und der Benutzer über Direkt eingebunden wird, wird die [!DNL Google Analytics] -Cookie zeigt die UTM-Parameter anstelle von &quot;direkt&quot;an.
 
 >[!NOTE]
 >
->Ein bestimmter Benutzer [!DNL Google Analytics] Cookie-Parameter werden gelöscht, wenn das Cookie [expires](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)oder wenn ein Benutzer seine Cookies im Browser löscht.*)
+>Ein bestimmter Benutzer [!DNL Google Analytics] Cookie-Parameter werden gelöscht, wenn das Cookie [expires](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage)oder wenn ein Benutzer seine Cookies im Browser löscht.*
 
 ### Erstklick-Attribution
 
@@ -45,10 +45,10 @@ Einige gebührenpflichtige Zuordnungstools ermöglichen es Ihnen, den &quot;Panc
 
 [!DNL Google Analytics] verfügt über eine robuste Funktionalität in der Web-Oberfläche, mit der Sie vier verschiedene Attributionsmodelle durchführen können:
 
-* Erstklick
-* Letztklick
-* linear (Aufteilung des Umsatzes gleichmäßig auf alle Quellen im Pfad)
-* gewichtete (benutzerdefinierte Attribution)
+1. Erstklick
+1. Letztklick
+1. linear (Aufteilung des Umsatzes gleichmäßig auf alle Quellen im Pfad)
+1. gewichtete (benutzerdefinierte Attribution)
 
 Nachdem Sie nun verstanden haben, was das Attributionsmodell für jede Mikro- oder Makrokonversion ist, lautet die Frage &quot;Was machen Sie mit der Gesamtheit der Konversionen eines Benutzers?&quot;  Betrachten Sie beispielsweise die aufgezeichneten UTMs basierend auf der GA-Logik des letzten Klicks:
 

@@ -2,7 +2,7 @@
 title: Bericht zur Bestellwahrscheinlichkeit wiederholen
 description: Erfahren Sie mehr über den Bericht zur Wahrscheinlichkeit wiederholter Bestellungen.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Wann ist der `Incremental Event Probability` Perspektive verfügbar?
 
-Die `incremental event probability` ist nur verfügbar, wenn Filter Dimensionen verwenden, die für alle Bestellungen gleich sind (z. B. die `gender`, der `age` oder des Benutzers `source`)
+Die `incremental event probability` ist nur verfügbar, wenn Filter Dimensionen verwenden, die für alle Bestellungen gleich sind (z. B. die `gender`, der `age` oder des Benutzers `source`).
 
 Dies liegt daran, dass diese Perspektive auf einer Dimension mit dem Namen `User's order number` für die Segmentierung, die die Käufe eines Benutzers zählt (z. B. die 1., 2. und 3. Bestellungen von John).
 
@@ -23,7 +23,7 @@ Wenn Sie einen Filter hinzugefügt haben, der eine Dimension verwendet, die nich
 
 In bestimmten Fällen können Sie die `order-specific` Dimension in eine `user-specific` Dimension, die als Filter in der `Repeat Order Probability` Diagramm. In diesen Fällen geben Sie das Bestellattribut der ersten Bestellung oder der neuesten Bestellung eines Benutzers zurück (z. B. den Regionennamen der ersten Bestellung des Benutzers).
 
-Wenn Sie eine solche neue Dimension erstellen möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Sie eine solche neue Dimension erstellen möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Vergleich der Wiederholungswahrscheinlichkeit von Bestellungen mit unterschiedlichen Attributen
 
@@ -33,7 +33,7 @@ Die Zahlen, aus denen ein solches Diagramm besteht, können dann in Excel export
 
 ### Beispiel:
 
-|  |  |
+| Kategorie | Wert |
 |---|---|
 | Anzahl der Kunden, die in ihrer Lebensdauer einen Kauf getätigt haben | `90` |
 | Anzahl der Kunden, die während ihrer Lebensdauer zwei Käufe getätigt haben | `30` |

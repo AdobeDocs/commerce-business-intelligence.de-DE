@@ -2,16 +2,16 @@
 title: Sequenzieller Vergleich - berechnete Spalte
 description: Erfahren Sie mehr über den Zweck und die Verwendung der Spalte Sequenzieller Vergleich .
 exl-id: 625062b4-f05d-42aa-94c3-729b39c7d728
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 1%
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
 # Sequenzieller Vergleich - berechnete Spalte
 
-In diesem Thema werden Zweck und Verwendung der `Sequential Comparison` in der Spalte **[!DNL Manage Data > Data Warehouse]** Seite. Nachstehend finden Sie eine Erläuterung dessen, was es tut, gefolgt von einem Beispiel und der Methode, sie zu erstellen.
+In diesem Thema werden Zweck und Verwendung der `Sequential Comparison` in der Spalte **[!DNL Manage Data > Data Warehouse]** Seite. Nachstehend finden Sie eine Erläuterung der Funktionsweise, gefolgt von einem Beispiel und der Methode zur Erstellung.
 
 **Erklärung**
 
@@ -39,17 +39,25 @@ Für diesen berechneten Spaltentyp weist die Zeile, die dem ersten Ereignis des 
 
 So erstellen Sie eine **Ereignisnummer** column:
 
-1. Navigieren Sie zum **[!DNL Manage Data** > **Data Warehouse]** Seite.
+1. Navigieren Sie zum **[!DNL Manage Data > Data Warehouse]** Seite.
+
 1. Navigieren Sie zu der Tabelle, für die Sie diese Spalte erstellen möchten.
-1. Klicken **[!UICONTROL Create New Column]** oben rechts auf dem Bildschirm.
+
+1. Klicken **[!UICONTROL Create New Column]** in der oberen rechten Ecke.
+
 1. Auswählen `Same Table` als `Definition Type` (Wenn sich die zu vergleichenden Spalten nicht in derselben Tabelle befinden, müssen Sie sie möglicherweise umstellen.)
+
 1. Auswählen `SEQUENTIAL_COMPARISON` als `Column Definition Equation`.
+
 1. Wählen Sie die Eingaben wie oben beschrieben aus:
    - `Event Owner`
    - `Event Date`
    - `Value to Compare`
-1. Es können auch Filter hinzugefügt werden, um Zeilen von der Berücksichtigung auszuschließen. Die ausgeschlossenen Zeilen haben einen NULL-Wert für diese Spalte.
+
+1. Es können auch Filter hinzugefügt werden, um Zeilen von der Berücksichtigung auszuschließen. Die ausgeschlossenen Zeilen haben eine `NULL` -Wert für diese Spalte.
+
 1. Geben Sie oben auf der Seite einen Namen für die Spalte ein und klicken Sie auf **[!UICONTROL Save]**.
+
 1. Die Spalte kann verwendet werden *sofort*.
 
 ![SEK](../../assets/SEC_new.png)

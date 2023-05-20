@@ -2,7 +2,7 @@
 title: Festlegen eines Standard-Dashboards
 description: Erfahren Sie, wie Sie ein Standard-Dashboard einrichten.
 exl-id: a3fc64e3-b527-4c2c-848d-c0962cd20ff3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Standard-Dashboard einrichten
 
-Das Standard-Dashboard ist das erste Dashboard, das Sie beim Öffnen sehen [!DNL MBI].
+Das Standard-Dashboard ist das erste Dashboard, das Sie beim Öffnen sehen [!DNL Commerce Intelligence].
 
 1. Klicken Sie im Dashboard auf **[!UICONTROL Dashboard Options]** befindet sich oben auf dem Bildschirm.
 

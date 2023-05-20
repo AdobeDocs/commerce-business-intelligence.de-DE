@@ -2,7 +2,7 @@
 title: Datei-Uploader verwenden
 description: Erfahren Sie, wie Sie alle Ihre Daten in eine Data Warehouse einfügen können.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -15,14 +15,14 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../../administrator/user-management/user-management.md).
 
-[!DNL MBI] ist nicht nur wegen seiner Visualisierungsfunktionen leistungsstark, sondern auch weil Sie damit alle Ihre Daten in eine Data Warehouse setzen können. Auch Daten, die außerhalb Ihrer Datenbanken und Integrationen liegen, können in [!DNL MBI] mithilfe des Tools &quot;Datei-Upload&quot;im Data Warehouse Manager.
+[!DNL Adobe Commerce Intelligence] ist nicht nur wegen seiner Visualisierungsfunktionen leistungsstark, sondern auch weil Sie damit alle Ihre Daten in eine Data Warehouse setzen können. Auch Daten, die außerhalb Ihrer Datenbanken und Integrationen liegen, können in [!DNL Commerce Intelligence] mithilfe des Tools &quot;Datei-Upload&quot;im Data Warehouse Manager.
 
 Verwenden Sie Werbekampagnen als Beispiel. Wenn Sie sowohl Online- als auch Offline-Kampagnen ausführen, können Sie das gesamte Bild nicht abrufen, wenn Sie nur Daten aus einer Online-Integration analysieren. Durch das Hochladen einer Tabelle mit den Offline-Kampagnendaten können Sie beide Datensätze analysieren und ein tieferes Verständnis Ihrer Kampagnenleistung erhalten.
 
 ## Einschränkungen und Anforderungen {#require}
 
 1. **Das einzige unterstützte Format für Datei-Uploads ist `CSV` oder`comma separated values`**. Wenn Sie in Excel arbeiten, können Sie die Datei mit der Funktion Speichern unter in `.csv` Format.
-1. **`CSV`-Dateien müssen`UTF-8 encoding`**. Meistens ist dies kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, [Artikel zum Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=en).
+1. **`CSV`-Dateien müssen`UTF-8 encoding`**. Meistens ist dies kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, [Artikel zum Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Dateien dürfen nicht größer als 100 MB sein.**. Wenn die Datei größer ist, trennen Sie die Tabelle in Blöcke und speichern Sie sie als einzelne Dateien. Sie können die Daten anhängen, nachdem die erste Datei geladen wurde.
 1. **Alle Tabellen müssen über eine`primary key`**. Ihre Tabelle muss mindestens eine Spalte enthalten, die als `primary key`oder eine eindeutige Kennung für jede Zeile in der Tabelle. Jede Spalte, die als `primary key` can *never* null sein. A `primary key` kann so einfach sein, wie das Hinzufügen einer Spalte, die jeder Zeile eine Zahl gibt, oder zwei miteinander verkettete Spalten, um eine Spalte mit eindeutigen Werten zu bilden (z. B. `campaign name` und `date`).
 
@@ -30,7 +30,7 @@ Verwenden Sie Werbekampagnen als Beispiel. Wenn Sie sowohl Online- als auch Offl
 
 ## Formatieren von Daten für den Upload {#formatting}
 
-Vor dem Hochladen Ihrer Daten in [!DNL MBI], überprüfen Sie, ob die Formatierung den Richtlinien in diesem Abschnitt entspricht.
+Vor dem Hochladen Ihrer Daten in [!DNL Commerce Intelligence], überprüfen Sie, ob die Formatierung den Richtlinien in diesem Abschnitt entspricht.
 
 ### Kopfzeile {#header}
 
@@ -77,7 +77,7 @@ Für [!DNL Google Docs] und [!DNL Apple Numbers] Ressourcen, siehe [Verwandte](#
 
 ## Hochladen von Daten {#uploading}
 
-Jetzt, da Ihr Arbeitsblatt korrekt formatiert ist und [!DNL MBI]-friendly, fügen Sie es zu Ihrer Data Warehouse hinzu.
+Jetzt, da Ihr Arbeitsblatt korrekt formatiert ist und [!DNL Commerce Intelligence]-friendly, fügen Sie es zu Ihrer Data Warehouse hinzu.
 
 1. Gehen Sie zu **[!UICONTROL Data** > **File Uploads]**.
 
@@ -85,7 +85,7 @@ Jetzt, da Ihr Arbeitsblatt korrekt formatiert ist und [!DNL MBI]-friendly, füge
 
 1. Klicken **[!UICONTROL Choose File]** und wählen Sie die Datei aus. Klicken **[!UICONTROL Open]** , um den Upload zu starten.
 
-   Nach Abschluss des Uploads eine Liste der Spalten [!DNL MBI] angezeigt.
+   Nach Abschluss des Uploads eine Liste der Spalten [!DNL Commerce Intelligence] angezeigt.
 
 1. Überprüfen Sie, ob die Spaltennamen und Datentypen korrekt sind. Prüfen Sie insbesondere, ob Datumsspalten als Datumsangaben und nicht als Zahlen gelesen werden.
 
@@ -111,7 +111,7 @@ Hochgeladene Tabellen werden unter der **Datei-Uploads** -Abschnitt der Tabellen
 
 ## Aktualisieren oder Anhängen von Daten an eine vorhandene Tabelle {#appending}
 
-Haben Sie neue Daten, die Sie zu einer bereits hochgeladenen Datei hinzufügen können? Kein Problem - Sie können Daten einfach aktualisieren und anhängen in [!DNL MBI].
+Haben Sie neue Daten, die Sie zu einer bereits hochgeladenen Datei hinzufügen können? Kein Problem - Sie können Daten einfach aktualisieren und anhängen in [!DNL Commerce Intelligence].
 
 1. Gehen Sie zu **[!UICONTROL Manage Data** > **File Uploads]**.
 
@@ -121,7 +121,7 @@ Haben Sie neue Daten, die Sie zu einer bereits hochgeladenen Datei hinzufügen k
 
 1. Wählen Sie in der Dropdown-Liste die Option zum Umgang mit doppelten Zeilen aus:
 
-   |  |  |
+   | Option | Beschreibung |
    |---|---|
    | `Overwrite old row with new row` | Dadurch werden vorhandene Daten durch neue Daten überschrieben, wenn eine Zeile sowohl in der vorhandenen Tabelle als auch in der neuen Datei denselben Primärschlüssel enthält. Dies ist die Methode, die für Spalten mit Werten verwendet wird, die sich im Laufe der Zeit ändern - z. B. eine Statusspalte. Vorhandene Daten werden überschrieben und mit den neuen Daten aktualisiert. Zeilen mit Primärschlüsseln, die nicht in der vorhandenen Tabelle enthalten sind, werden als neue Zeilen hinzugefügt. |
    | `Retain old row; discard new row` | Dadurch werden neue Daten ignoriert, wenn eine Zeile sowohl in der vorhandenen Tabelle als auch in der neuen Datei denselben Primärschlüssel enthält. |
@@ -131,7 +131,7 @@ Haben Sie neue Daten, die Sie zu einer bereits hochgeladenen Datei hinzufügen k
 
 1. Klicken **[!UICONTROL Open]** , um den Upload zu starten.
 
-   Nach Abschluss des Uploads [!DNL MBI] validiert die Datenstruktur in der Datei. A *Erfolg!* wird oben im Bildschirm angezeigt, nachdem die Tabelle gespeichert wurde.
+   Nach Abschluss des Uploads [!DNL Commerce Intelligence] validiert die Datenstruktur in der Datei. A *Erfolg!* wird oben im Bildschirm angezeigt, nachdem die Tabelle gespeichert wurde.
 
 ## Datenverfügbarkeit {#availability}
 
@@ -139,9 +139,9 @@ Wie berechnete Spalten sind auch Daten aus Datei-Uploads nach Abschluss des näc
 
 ## Aufbrechen {#wrapup}
 
-In diesem Artikel wurden nur die Grundlagen für die Verwendung des Datenimports behandelt. Möglicherweise möchten Sie jedoch etwas erweitertes tun. In den entsprechenden Artikeln finden Sie Anleitungen zum Formatieren und Importieren von Finanzdaten, E-Commerce, Werbeausgaben und anderen Datentypen.
+In diesem Thema wurden nur die Grundlagen für die Verwendung des Datenimports behandelt. Möglicherweise möchten Sie jedoch etwas erweiterter vorgehen. In den entsprechenden Artikeln finden Sie Anleitungen zum Formatieren und Importieren von Finanzdaten, E-Commerce, Werbeausgaben und anderen Datentypen.
 
-Außerdem ist der Datei-Upload nicht die einzige Möglichkeit, Ihre Daten in [!DNL MBI]. Die [Datenimport-API](https://developer.adobe.com/commerce/services/reporting/import-api/) -Funktionen ermöglichen es Ihnen, beliebige Daten in Ihre [!DNL MBI] Data Warehouse.
+Außerdem ist der Datei-Upload nicht die einzige Möglichkeit, Ihre Daten in [!DNL Commerce Intelligence]. Die [Datenimport-API](https://developer.adobe.com/commerce/services/reporting/import-api/) -Funktionen ermöglichen es Ihnen, beliebige Daten in Ihre [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Verwandte {#related}
 

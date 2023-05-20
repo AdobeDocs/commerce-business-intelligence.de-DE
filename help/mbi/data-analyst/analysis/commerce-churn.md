@@ -2,7 +2,7 @@
 title: Commerce-Abwanderung
 description: Erfahren Sie, wie Sie Ihre Commerce-Abwanderungsrate generieren und analysieren.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -15,7 +15,7 @@ Dieses Thema zeigt, wie Sie eine **Abwanderungsrate** für Ihre **Commerce-Kunde
 
 ![](../../assets/Churn_rate_image.png)
 
-Viele Kunden möchten Unterstützung bei der Konzeption dessen, was **timeframe** sollten sie anhand ihrer Daten verwenden. Wenn Sie das Kundenverhalten aus der Vergangenheit zur Definition von **Abwanderungszeitrahmen**, sollten Sie sich mit der [Abwanderung definieren](../analysis/define-cust-churn.md) Artikel. Anschließend können Sie die Ergebnisse in der Formel für die Abwanderungsrate in den folgenden Anweisungen verwenden.
+Viele Kunden möchten Unterstützung bei der Konzeption dessen, was **timeframe** sollten sie anhand ihrer Daten verwenden. Wenn Sie das Kundenverhalten aus der Vergangenheit zur Definition von **Abwanderungszeitrahmen**, sollten Sie sich mit der [Abwanderung definieren](../analysis/define-cust-churn.md) Thema. Anschließend können Sie die Ergebnisse in der Formel für die Abwanderungsrate in den folgenden Anweisungen verwenden.
 
 ## Berechnete Spalten
 
@@ -55,9 +55,9 @@ Zu erstellende Spalten
 * **Neue Kunden (nach letztem Bestelldatum)**
    * Kunden, die gezählt werden
 
->[!NOTE]
->
->Diese Metrik kann in Ihrem Konto vorhanden sein.
+   >[!NOTE]
+   >
+   >Diese Metrik kann in Ihrem Konto vorhanden sein.
 
 * Im **`customer_entity`** table
 * Diese Metrik führt eine **Count**

@@ -2,7 +2,7 @@
 title: Diagramme zu Dashboards hinzufügen
 description: Erfahren Sie, wie Sie mit der Funktion Bericht hinzufügen Diagramme zu Dashboards hinzufügen.
 exl-id: 4a4f14c3-a6ab-4abc-9451-2a0f2fcf06a2
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Diagramme zu Dashboards hinzufügen
 
-Vorhandene Diagramme können Dashboards mit dem `Add Report` -Funktion, die sich oben rechts im Bildschirm befindet. Dieselbe Grafik kann mehreren Dashboards hinzugefügt werden, d. h. wenn das Diagramm bearbeitet wird, spiegeln alle Dashboards mit dieser Grafik die Änderung wider.
+Vorhandene Diagramme können Dashboards mit dem [!UICONTROL Add Report] -Funktion, die sich oben rechts im Bildschirm befindet. Dieselbe Grafik kann mehreren Dashboards hinzugefügt werden, d. h. wenn das Diagramm bearbeitet wird, spiegeln alle Dashboards mit dieser Grafik die Änderung wider.
 
 >[!NOTE]
 >

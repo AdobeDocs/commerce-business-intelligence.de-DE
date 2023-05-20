@@ -2,7 +2,7 @@
 title: Anführungstabelle
 description: Erfahren Sie, wie Sie mit der Anführungszeichentabelle arbeiten.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Die `quote` table (`sales_flat_quote` auf M1) enthält Datensätze zu jedem Ware
 | `base_currency_code` | Währung für alle Werte, die in `base_*` -Felder (d. h. `base_grand_total`, `base_subtotal`usw.). Dies spiegelt normalerweise die Standardwährung des Commerce-Stores wider |
 | `base_grand_total` | Endpreis, der dem Kunden für den Warenkorb angeboten wird, nach Anwendung aller Steuern, Versand und Rabatte. Obwohl die genaue Berechnung anpassbar ist, ist im Allgemeinen die `base_grand_total` berechnet als `base_subtotal` + `base_tax_amount` + `base_shipping_amount` + `base_discount_amount` - `base_gift_cards_amount` - `base_customer_balance_amount` |
 | `base_subtotal` | Bruttokaufwert aller im Warenkorb enthaltenen Artikel. Steuern, Versand, Rabatte usw. sind nicht inbegriffen |
-| `created_at` | Erstellungszeitstempel des Warenkorbs, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL MBI], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL MBI] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
+| `created_at` | Erstellungszeitstempel des Warenkorbs, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL Commerce Intelligence], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL Commerce Intelligence] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
 | `customer_email` | E-Mail-Adresse des Kunden, der den Warenkorb erstellt hat |
 | `customer_id` | `Foreign key` mit `customer_entity` -Tabelle, wenn der Kunde registriert ist. Mitglied werden `customer_entity.entity_id` , um Kundenattribute zu ermitteln, die mit dem Benutzer verknüpft sind, der den Warenkorb erstellt hat. Wenn der Warenkorb durch einen Gastkasse erstellt wurde, lautet dieses Feld `NULL` |
 | `entity_id` (PK) | Eindeutige Kennung für die Tabelle und wird häufig in Verknüpfungen zu anderen Tabellen innerhalb der Commerce-Instanz verwendet |

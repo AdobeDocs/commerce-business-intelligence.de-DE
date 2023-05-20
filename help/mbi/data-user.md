@@ -2,7 +2,7 @@
 title: Datenbenutzer
 description: Datenbenutzer
 exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 Sie verwenden Daten, um geschäftliche Entscheidungen zu treffen. Möglicherweise erhalten Sie Berichte und Dashboards von einem Datenanalytiker in Ihrem Team, aber Sie möchten auch erfahren, wie Sie diese Berichte und Dashboards erstellen.
 
 In diesem Abschnitt wird Folgendes veranschaulicht:
-* Daten erfassen und anzeigen in [!DNL MBI] Verwenden von Berichten und Dashboards
+* Daten erfassen und anzeigen in [!DNL Commerce Intelligence] Verwenden von Berichten und Dashboards
 * diese Daten per E-Mail an Interessenträger weitergeben und `.csv` files
 
 ## Verwandte

@@ -2,9 +2,9 @@
 title: Google Analytics - Übersicht über die Benutzerakquise-Quelldaten
 description: Erfahren Sie, wie Sie Ihre Daten nach Benutzerakquise-Quelle segmentieren.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
-source-git-commit: ad95a03193853eebf2b695cd6f5c3cb5a9837f93
+source-git-commit: af1e3839839b4c419beabb0cc666c996ea2179d4
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -13,27 +13,27 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Der folgende Prozess unterstützt nicht [!DNL GoogleUniversal Analytics].
+>Der folgende Prozess unterstützt nicht [!DNL Google Universal Analytics].
 
 Die Möglichkeit, Ihre Daten nach der Benutzerakquise zu segmentieren, ist für die effektive Verwaltung Ihres Marketingplans von entscheidender Bedeutung. Wenn Sie die Akquise-Quelle neuer Benutzer kennen, erfahren Sie, welche Kanäle die besten Renditen erzielen. Zudem können Sie Ihrem Team so Marketing-Dollars mit Sicherheit zuweisen.
 
-Wenn Sie die Benutzerakquise-Quellen noch nicht in Ihrer Datenbank verfolgen, [!DNL MBI] können Ihnen bei den ersten Schritten helfen:
+Wenn Sie die Benutzerakquise-Quellen noch nicht in Ihrer Datenbank verfolgen, [!DNL Adobe Commerce Intelligence] können Ihnen bei den ersten Schritten helfen:
 
 ## Tracking der Benutzerakquise-Quelle
 
-Adobe empfiehlt zwei Methoden, um Verweisquelldaten basierend auf Ihrer Einrichtung zu verfolgen:
+[!DNL Adobe] empfiehlt zwei Methoden zum Tracking von Verweisquelldaten basierend auf Ihrer Einrichtung:
 
 ### (Option 1) Verfolgen von Auftrags-Verweisquelldaten über [!DNL Google Analytics E-Commerce] (einschließlich [!DNL Shopify] Stores)
 
-Wenn Sie [!DNL Google Analytics E-Commerce] zur Nachverfolgung Ihrer Bestellungen- und Verkaufsdaten können Sie die [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) , um die Verweisquelldaten jeder Bestellung zu synchronisieren. Auf diese Weise können Sie Umsätze und Bestellungen nach Verweisquellen segmentieren (z. B. `utm_source` oder `utm_medium`). Sie erhalten auch ein Gefühl von Kundenakquise-Quellen über [!DNL MBI] benutzerdefinierte Dimensionen wie `User's first order source`.
+Wenn Sie [!DNL Google Analytics E-Commerce] zur Nachverfolgung Ihrer Bestellungen- und Verkaufsdaten können Sie die [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) , um die Verweisquelldaten jeder Bestellung zu synchronisieren. Auf diese Weise können Sie Umsätze und Bestellungen nach Verweisquellen segmentieren (z. B. `utm_source` oder `utm_medium`). Sie erhalten auch ein Gefühl von Kundenakquise-Quellen über [!DNL Commerce Intelligence] benutzerdefinierte Dimensionen wie `User's first order source`.
 
 >[!NOTE]
 >
->Für Shopify-Benutzer**: Aktivieren [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) vor dem Verbinden [!DNL Google Analytics E-Commerce] Konto [!DNL MBI].
+>**Für Shopify-Benutzer**: Aktivieren [!DNL [Google Analytics E-Commerce] tracking in Shopify](https://help.shopify.com/en/manual/reports-and-analytics/google-analytics#ecommerce-tracking) vor dem Verbinden [!DNL Google Analytics E-Commerce] Konto [!DNL Commerce Intelligence].
 
 ### (Option 2) Speichern [!DNL Google Analytics]&quot; Akquise-Quelldaten in Ihrer Datenbank
 
-In diesem Artikel wird erläutert, wie Sie speichern [!DNL Google Analytics] Akquise-Kanal-Informationen in Ihre eigene Datenbank - nämlich die `source`, `medium`, `term`, `content`, `campaign`und `gclid` Parameter, die beim ersten Besuch eines Benutzers auf Ihrer Website vorhanden waren. Eine Erläuterung dieser Parameter finden Sie in der [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Anschließend können Sie einige der leistungsstarken Marketing-Analysen untersuchen, die mit diesen Informationen unter [!DNL MBI].
+In diesem Thema wird erläutert, wie Sie speichern [!DNL Google Analytics] Akquise-Kanal-Informationen in Ihre eigene Datenbank - nämlich die `source`, `medium`, `term`, `content`, `campaign`und `gclid` Parameter, die beim ersten Besuch eines Benutzers auf Ihrer Website vorhanden waren. Eine Erläuterung dieser Parameter finden Sie in der [!DNL [Google Analytics] documentation](https://support.google.com/analytics/answer/1191184?hl=en#zippy=%2Cin-this-article). Anschließend können Sie einige der leistungsstarken Marketing-Analysen untersuchen, die mit diesen Informationen unter [!DNL Commerce Intelligence].
 
 #### Warum?
 
@@ -51,7 +51,7 @@ Was ist, wenn Sie allen Kunden, die von einer bestimmten E-Mail-Kampagne erworbe
 
 > `100000000.12345678.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=rj metrics`
 
-Es gibt eindeutig einige Akquise-Quelldaten, die in der Zeichenfolge kodiert sind. Dies wird getestet, um sicherzustellen, dass dies die neueste Akquisequelle und die damit verbundenen Kampagnendaten des Besuchers ist. Jetzt müssen Sie wissen, wie Sie die Daten extrahieren können. Zum Glück hat Justin Cutroni bereits beschrieben, wie diese Kodierung funktioniert, und hat JavaScript-Code freigegeben, um die wichtigsten Informationen zu extrahieren.
+Es gibt eindeutig einige Akquise-Quelldaten, die in der Zeichenfolge kodiert sind. Dies wird getestet, um sicherzustellen, dass dies die neueste Akquisequelle und die damit verbundenen Kampagnendaten des Besuchers ist. Jetzt müssen Sie wissen, wie Sie die Daten extrahieren können.
 
 Dieser Code wurde in eine [PHP-Bibliothek wird auf github gehostet](https://github.com/RJMetrics/referral-grabber-php). So verwenden Sie die Bibliothek: `include` einen Verweis auf `ReferralGrabber.php` und dann
 
@@ -59,7 +59,7 @@ Dieser Code wurde in eine [PHP-Bibliothek wird auf github gehostet](https://gith
 
 Die zurückgegebene `$data` array ist eine Zuordnung der Schlüssel `source`, `medium`, `term`, `content`, `campaign`, `gclid`und ihre jeweiligen Werte.
 
-Adobe empfiehlt, eine Tabelle zu Ihrer Datenbank hinzuzufügen, die beispielsweise `user_referral`, wobei die Spalten wie folgt lauten: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Wenn sich ein Benutzer anmeldet, rufen Sie die Verweisinformationen ab und speichern Sie sie in dieser Tabelle.
+[!DNL Adobe] empfiehlt das Hinzufügen einer Tabelle zu Ihrer Datenbank, die beispielsweise `user_referral`, wobei die Spalten wie folgt lauten: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Wenn sich ein Benutzer anmeldet, rufen Sie die Verweisinformationen ab und speichern Sie sie in dieser Tabelle.
 
 #### Verwendung dieser Daten
 

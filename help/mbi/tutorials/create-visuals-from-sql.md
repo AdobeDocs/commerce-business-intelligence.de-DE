@@ -2,18 +2,18 @@
 title: Erstellen von Visualisierungen aus SQL-Abfragen
 description: Lernen Sie die im SQL Report Builder verwendete Terminologie kennen und erhalten Sie eine solide Grundlage für die Erstellung von SQL-Visualisierungen.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
 
 # Erstellen von Visualisierungen aus SQL-Abfragen
 
-Ziel dieses Tutorials ist es, Sie mit der in der `SQL Report Builder` und geben Ihnen eine solide Grundlage für die Erstellung `SQL visualizations`.
+Ziel dieses Tutorials ist es, Sie mit der in der [!DNL SQL Report Builder] und geben Ihnen eine solide Grundlage für die Erstellung `SQL visualizations`.
 
-Die [`SQL Report Builder`](../data-analyst/dev-reports/sql-rpt-bldr.md) ist ein Report Builder mit Optionen: Sie können eine Abfrage ausführen, um nur eine Datentabelle abzurufen, oder Sie können diese Ergebnisse in einen Bericht umwandeln. In diesem Tutorial wird beschrieben, wie Sie eine Visualisierung aus einer SQL-Abfrage erstellen.
+Die [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) ist ein Report Builder mit Optionen: Sie können eine Abfrage ausführen, um nur eine Datentabelle abzurufen, oder Sie können diese Ergebnisse in einen Bericht umwandeln. In diesem Tutorial wird beschrieben, wie Sie eine Visualisierung aus einer SQL-Abfrage erstellen.
 
 ## Terminologie
 
@@ -33,13 +33,13 @@ Bevor Sie mit diesem Tutorial beginnen, lesen Sie die folgende in der `SQL Repor
 
 Beachten Sie Folgendes:
 
-- Die `SQL Report Builder` uses [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
+- Die [!DNL SQL Report Builder] uses [`Redshift SQL`](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-and-postgres-sql.html).
 
 - Wenn Sie einen Bericht mit einer Zeitreihe erstellen, stellen Sie sicher, dass `ORDER BY` die Zeitstempelspalte. Dadurch wird sichergestellt, dass die Zeitstempel im Bericht in der richtigen Reihenfolge dargestellt werden.
 
 - Die `EXTRACT` eignet sich hervorragend für die Analyse des Tages, der Woche, des Monats oder des Jahres des Zeitstempels. Dies ist nützlich, wenn die Variable `time interval` Sie für den Bericht verwenden möchten: `daily`, `weekly`, `monthly`oder `yearly`.
 
-Öffnen Sie zunächst die `SQL Report Builder` durch Klicken auf **[!UICONTROL Report Builder** > **SQL Report Builder]**.
+Öffnen Sie zunächst die [!DNL SQL Report Builder] durch Klicken auf **[!UICONTROL Report Builder** > **SQL Report Builder]**.
 
 Betrachten Sie als Beispiel diese Abfrage, die die monatliche Gesamtzahl der verkauften Artikel für jedes Produkt zurückgibt:
 
@@ -94,6 +94,6 @@ Wenn Sie diesen Bericht erneut verwenden möchten, geben Sie dem Bericht einen N
 
 Wählen Sie im Dropdown-Menü `Chart` als `Type` und dann ein Dashboard, in dem der Bericht gespeichert werden soll.
 
-## Herzlichen Glückwunsch! Du bist fertig.
+## Aufbrechen
 
 Willst du noch einen Schritt weiter gehen? Sehen Sie sich die [Best Practices zur Abfrageoptimierung](../best-practices/optimizing-your-sql-queries.md).

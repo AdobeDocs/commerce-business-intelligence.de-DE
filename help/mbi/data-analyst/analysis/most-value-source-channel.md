@@ -2,9 +2,9 @@
 title: Identifizieren Ihrer wertvollsten Marketing-Quellen und -Kanäle
 description: Erfahren Sie mehr über einige Berichte, mit denen Sie Ihre wertvollsten Marketing-Kanäle entdecken können.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Sie haben Ihre Zielgruppe recherchiert, Ihre Kampagne erstellt, in einige Marketing-Kanäle investiert. Wie funktionieren diese Kanäle jetzt, da einige Zeit vergangen ist? Welcher Kanal hat die meisten neuen Benutzer eingebracht? Welche Quelle hat am meisten zu Ihrem Gesamtumsatz beigetragen?
 
-Mit [!DNL MBI]können Sie Ihre Umsätze und Benutzer einfach nach der Verweisquelle segmentieren, ob sie [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern. Mit dieser Segmentierung können Sie Ihre leistungsstärksten Kanäle finden und Ihr Marketing-Budget besser investieren.
+Mit [!DNL Adobe Commerce Intelligence]können Sie Ihre Umsätze und Benutzer einfach nach der Verweisquelle segmentieren, ob sie [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern. Mit dieser Segmentierung können Sie Ihre leistungsstärksten Kanäle finden und Ihr Marketing-Budget besser investieren.
 
-In diesem Artikel werden einige Berichte untersucht, mit denen Sie Ihre wertvollsten Marketing-Kanäle ermitteln können:
+In diesem Thema werden einige Berichte untersucht, mit denen Sie Ihre wertvollsten Marketing-Kanäle ermitteln können:
 
 * [Neue Benutzer nach Quellen](#newusersbysource)
 * [Durchschnittlicher Umsatz während der Lebensdauer nach Benutzerquelle](#avglifetimerev)
@@ -25,7 +25,7 @@ In diesem Artikel werden einige Berichte untersucht, mit denen Sie Ihre wertvoll
 
 ## Voraussetzungen {#prereqs}
 
-Um die Analysen in diesem Artikel zu erstellen, benötigen Sie Zugriff auf Marketing-Akquise-/Verweisquelldaten. Wenn Sie es noch nicht verfolgen, müssen Sie [Bestellreferenz-Quelldaten aus [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) in [!DNL MBI] bevor Sie fortfahren können. Darüber hinaus können Sie durch das Hinzufügen von Benutzergeräteinformationen zu Ihren Analysen sehen, welche Technologie Ihre Referenzen verwenden.
+Um die Analysen in diesem Thema zu erstellen, benötigen Sie Zugriff auf Marketing-Akquise-/Verweisquelldaten. Wenn Sie es noch nicht verfolgen, müssen Sie [Bestellreferenz-Quelldaten aus [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) in [!DNL Adobe Commerce Intelligence] bevor Sie fortfahren können. Durch das Hinzufügen von Benutzergeräteinformationen zu Ihren Analysen können Sie außerdem sehen, welche Technologie Ihre Referenzen verwenden.
 
 ## Neue Benutzer nach Quelle {#newusersbysource}
 
@@ -111,7 +111,7 @@ Im Folgenden finden Sie eine visuelle exemplarische Vorgehensweise:
 
 ## Aufbrechen {#wrapup}
 
-In diesem Artikel wurden nur einige Analysen behandelt, mit denen Sie den Wert Ihrer Akquise- und Marketingkanäle analysieren können, aber dies ist nur die Spitze des Eisbergs.
+In diesem Thema wurden nur einige Analysen behandelt, mit denen Sie den Wert Ihrer Akquise- und Marketingkanäle analysieren können, aber dies ist nur die Spitze des Eisbergs.
 
 ## Verwandte {#related}
 

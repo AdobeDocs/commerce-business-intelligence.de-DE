@@ -2,16 +2,16 @@
 title: Grundlegende Analysen verstehen und erstellen
 description: Erfahren Sie, wie Sie die Analyse der Grundlagen verstehen und erstellen.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3113'
 ht-degree: 0%
 
 ---
 
 # Grundlegende Analytics
 
-Sobald Sie mit dem [!DNL MBI] und über grundlegende Kenntnisse des Tools verfügen, sollten Sie mit der Erstellung von Berichten beginnen. Eine der häufigsten Fragen, die Sie möglicherweise haben, ist &quot;Was sollte ich mir ansehen?&quot;
+Sobald Sie mit dem [!DNL Adobe Commerce Intelligence] und über grundlegende Kenntnisse des Tools verfügen, sollten Sie mit der Erstellung von Berichten beginnen. Eine der häufigsten Fragen, die Sie möglicherweise haben, ist &quot;Was sollte ich mir ansehen?&quot;
 
 Die folgenden Informationen beschreiben einige der häufig verwendeten Metriken und Berichte, die Sie möglicherweise für nützlich halten. Einige dieser Berichte sind in Ihrem Konto vorhanden. Überprüfen Sie daher die Metriken und Berichte, die in Ihrem Konto vorhanden sind, um Duplikate zu vermeiden.
 
@@ -44,7 +44,7 @@ Wenn einige dieser Berechnungen derzeit nicht in Ihrer Datenbank vorhanden sind,
 
 **Akzeptieren Sie Gastbestellungen?**
 
-*Wenn ja, enthält diese Tabelle möglicherweise nicht alle Ihre Kunden. Kontaktieren Sie die [Supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) , um sicherzustellen, dass Ihre Kundenanalysen alle Kunden einschließen.*
+*Wenn ja, enthält diese Tabelle möglicherweise nicht alle Ihre Kunden. Kontaktieren Sie die [Supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) , um sicherzustellen, dass Ihre Kundenanalysen alle Kunden einschließen.*
 
 *Sind Sie nicht sicher, ob Sie Gastbestellungen annehmen? Siehe [dieses Thema](../data-warehouse-mgr/guest-orders.md) um mehr zu erfahren!*
 
@@ -58,7 +58,7 @@ In dieser Tabelle stellt jede Zeile eine Reihenfolge dar. Die Spalten in dieser 
 * **[!UICONTROL Created_at]**: Das Datum, an dem die Bestellung erstellt oder platziert wurde.
 * **[!UICONTROL Customer_email]**: Die E-Mail-Adresse des Kunden, der die Bestellung aufgegeben hat. Dies kann auch die eindeutige Kennung für den Kunden sein.
 * **[!UICONTROL Customer's lifetime number of orders]**: Eine Kopie der Spalte mit demselben Namen auf Ihrer `Customers` Tabelle.
-* **[!UICONTROL Customer's order number]**: Die sequenzielle Bestellnummer des Kunden, die der Bestellung zugeordnet ist. Wenn die Zeile, die Sie sich ansehen, beispielsweise die erste Bestellung eines Kunden ist, lautet diese Spalte &quot;1&quot;. Wenn dies jedoch die 15. Bestellung des Kunden war, zeigt diese Spalte &quot;15&quot;für diese Bestellung an. Wenn diese Dimension nicht in Ihrer `Customers` Tabelle, fragen Sie die [Supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) um Ihnen beim Erstellen zu helfen.
+* **[!UICONTROL Customer's order number]**: Die sequenzielle Bestellnummer des Kunden, die der Bestellung zugeordnet ist. Wenn die Zeile, die Sie sich ansehen, beispielsweise die erste Bestellung eines Kunden ist, lautet diese Spalte &quot;1&quot;. Wenn dies jedoch die 15. Bestellung des Kunden war, zeigt diese Spalte &quot;15&quot;für diese Bestellung an. Wenn diese Dimension nicht in Ihrer `Customers` Tabelle, fragen Sie die [Supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) um Ihnen beim Erstellen zu helfen.
 * **[!UICONTROL Customer's order number (previous-current)]**: Eine Verkettung von zwei Werten im **[!UICONTROL Customer's order number]** Spalte. Er wird in einem Beispielbericht unten verwendet, um die verstrichene Zeit zwischen zwei beliebigen Bestellungen anzuzeigen. Beispielsweise wird die Zeit zwischen dem ersten Bestelldatum eines Kunden und dem zweiten Bestelldatum mit dieser Berechnung als &quot;1-2&quot;dargestellt.
 * **[!UICONTROL Coupon_code]**: Zeigt, welche Gutscheine bei jeder Bestellung verwendet wurden.
 * **[!UICONTROL Seconds since previous order]**: Die Zeit (in Sekunden) zwischen den Bestellungen eines Kunden.

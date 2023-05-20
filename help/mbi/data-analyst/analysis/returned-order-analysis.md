@@ -2,16 +2,16 @@
 title: Analyse zurückgegebener Bestellungen
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, das eine detaillierte Analyse der Ergebnisse Ihres Stores bietet.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: fa954868177b79d703a601a55b9e549ec1bd425e
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
 # Zurückgegebene Bestellungen
 
-In diesem Artikel erfahren Sie, wie Sie ein Dashboard einrichten, das eine detaillierte Analyse der Rückgaben Ihres Stores bietet.
+In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das eine detaillierte Analyse der Ergebnisse Ihres Stores bietet.
 
 ![](../../assets/detailed-returns-dboard.png)
 
@@ -248,4 +248,4 @@ Zu erstellende Spalten
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie im obigen Beispiel-Dashboard aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

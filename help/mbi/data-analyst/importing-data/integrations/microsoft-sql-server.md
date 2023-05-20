@@ -1,15 +1,15 @@
 ---
-title: Verbinden von Microsoft&reg;&reg; SQL Server
-description: Erfahren Sie, wie Sie Ihre Microsoft&reg verbinden. SQL-Datenbank zu [!DNL MBI] in einem vierstufigen Prozess.
+title: Microsoft SQL Server verbinden
+description: Erfahren Sie, wie Sie Ihre Microsoft SQL-Datenbank mit [!DNL Commerce Intelligence] in einem vierstufigen Prozess.
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
 
-# Microsoft® SQL Server verbinden
+# Verbinden [!DNL Microsoft SQL] Server
 
 >[!NOTE]
 >
@@ -17,15 +17,15 @@ ht-degree: 0%
 
 ![](../../../assets/MicrosoftSQLServer-logo.png)
 
-In diesem Artikel wird erläutert, wie Sie Ihre `Microsoft SQL` Datenbank zu [!DNL MBI] in einem vierstufigen Prozess. Dieser Prozess erfordert einige technische Kenntnisse im Zusammenhang mit Serververbindungen und SQL und kann Unterstützung von Entwicklern in Ihrem Team erfordern.
+In diesem Thema wird erläutert, wie Sie Ihre [!DNL Microsoft SQL] Datenbank zu [!DNL Commerce Intelligence] in einem vierstufigen Prozess. Dieser Prozess erfordert einige technische Kenntnisse im Zusammenhang mit Serververbindungen und SQL und kann Unterstützung von Entwicklern in Ihrem Team erfordern.
 
-MBI-Unterstützung [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft®; SQL Azure]und den meisten anderen Cloud-Server-Anbietern. Wenn Sie Fragen zu Ihrem bestimmten Host haben, [Support-Ticket einreichen](../../../guide-overview.md) Wir bitten um diese Information.
+[!DNL Commerce Intelligence] unterstützt [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure]und den meisten anderen Cloud-Server-Anbietern. Wenn Sie Fragen zu Ihrem bestimmten Host haben, [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) Wir bitten um diese Information.
 
 Ihr System muss SELECT-Abfragen für Ihre Datenbank ausführen. Dies geschieht zunächst, um eine Momentaufnahme Ihrer Datenbankstruktur zu erhalten und dann regelmäßig, um Ihre Daten auf dem neuesten Stand zu halten. Ihre Aktualisierungen sind inkrementell, und die Adobe beschränkt die Aktualisierungshäufigkeit und -zeit, um unerwünschte Serverlasten zu vermeiden.
 
-Die beste Möglichkeit, dies zu tun, besteht darin, dass wir über TCP/IP eine Verbindung zu Ihrem Datenbankserver herstellen. Erstellen Sie für uns einen Benutzer, der nur SELECT-Abfragen ausführen kann (und optional nur Daten aus den von Ihnen angegebenen Tabellen auswählen kann). Dies muss für jeden Ihrer Server erfolgen, mit dem Sie eine Verbindung herstellen. [!DNL MBI].
+Die beste Möglichkeit, dies zu tun, besteht darin, dass wir über TCP/IP eine Verbindung zu Ihrem Datenbankserver herstellen. Erstellen Sie für uns einen Benutzer, der nur SELECT-Abfragen ausführen kann (und optional nur Daten aus den von Ihnen angegebenen Tabellen auswählen kann). Dies muss für jeden Ihrer Server erfolgen, mit dem Sie eine Verbindung herstellen. [!DNL Commerce Intelligence].
 
-## Verbinden `Microsoft SQL` nach [!DNL MBI]:
+## Verbinden `Microsoft SQL` nach [!DNL Commerce Intelligence]:
 
 1. Stellen Sie sicher, dass Ihr Server Verbindungen über TCP/IP und die Authentifizierung im gemischten Modus zulässt.
 
@@ -37,7 +37,7 @@ Die beste Möglichkeit, dies zu tun, besteht darin, dass wir über TCP/IP eine V
    * `UI`
    * [`Query`](http://sqlserverplanet.com/security/add-user) (zweites Beispiel)
 
-1. Geben Sie die IP-Adresse, den Benutzernamen und das Kennwort des Servers ein in [!DNL MBI] under **[!UICONTROL Manage Data** > **Connections]**.
+1. Geben Sie die IP-Adresse, den Benutzernamen und das Kennwort des Servers ein in [!DNL Commerce Intelligence] under **[!UICONTROL Manage Data** > **Connections]**.
 
    ![](../../../assets/manage-data-connections.png)
 

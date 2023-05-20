@@ -2,16 +2,16 @@
 title: Couponleistung
 description: Erfahren Sie mehr über die Analyse Ihrer Couponleistung.
 exl-id: f6565e33-18ee-4f85-ade0-fd361854475b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
 # Erweiterte Coupon-Code-Analyse
 
-Das Verständnis der Couponleistung Ihres Unternehmens ist eine interessante Möglichkeit, Ihre Bestellungen zu unterteilen und auch Ihre Kunden besser zu verstehen. Dieser Artikel führt Sie durch die Schritte zum Erstellen von Analysen, um zu verstehen, welche Kunden Sie mit Coupons erwerben, wie sie die allgemeine Nutzung von Coupons durchführen und verfolgen.
+Das Verständnis der Couponleistung Ihres Unternehmens ist eine interessante Möglichkeit, Ihre Bestellungen zu unterteilen und auch Ihre Kunden besser zu verstehen. Dieses Thema führt Sie durch die Schritte zum Erstellen von Analysen, um zu verstehen, welche Kunden Sie mit Coupons erwerben, wie sie die allgemeine Nutzung von Coupons durchführen und verfolgen.
 
 ![](../../assets/coupon_analysis_-_analysis_library.png)<!--{: width="800" height="375"}-->
 
@@ -19,7 +19,7 @@ Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv
 
 ## Erste Schritte
 
-Als ersten Schritt müssen Sie sicherstellen, dass die folgenden Spalten mit Ihrer Data Warehouse synchronisiert werden. Ist dies nicht der Fall, verfolgen Sie sie, indem Sie zu &quot;Daten verwalten&quot;> &quot;Data Warehouse&quot;navigieren und Folgendes synchronisieren:
+Als ersten Schritt müssen Sie sicherstellen, dass die folgenden Spalten mit Ihrer Data Warehouse synchronisiert werden. Ist dies nicht der Fall, fahren Sie fort und verfolgen Sie sie, indem Sie zu `Manage Data` > `Data Warehouse`und Synchronisieren der folgenden Elemente:
 
 * **sales\_flach\_order** table
 * **coupon\_code**
@@ -519,4 +519,4 @@ Zusätzliche Spalten, die erstellt werden, wenn Gastaufträge NICHT unterstützt
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie das Bild oben auf der Seite aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

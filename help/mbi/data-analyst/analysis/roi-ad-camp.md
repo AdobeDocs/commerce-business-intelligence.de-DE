@@ -2,7 +2,7 @@
 title: Steigerung des ROI bei Werbekampagnen
 description: Erfahren Sie mehr über verschiedene Methoden zur Leistungsbewertung Ihrer Kampagne.
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # Werbekampagnen und ROI
 
-Mit MBI können Sie [Daten zu den Kosten und Umsatzdaten von Ehewerbung](../../data-analyst/importing-data/integrations/google-adwords.md) aus Ihrer Datenbank. Auf diese Weise können Sie erkennen, welche Kampagnen den höchsten ROI haben. In diesem Artikel werden verschiedene Methoden zur Bewertung der Kampagnenleistung beschrieben.
+[!DNL Adobe Commerce Intelligence] ermöglicht es Ihnen, [Daten zu den Kosten und Umsatzdaten von Ehewerbung](../../data-analyst/importing-data/integrations/google-adwords.md) aus Ihrer Datenbank. Auf diese Weise können Sie ermitteln, welche Kampagnen den höchsten ROI (Return on Investment) aufweisen. In diesem Thema werden verschiedene Methoden zur Bewertung der Kampagnenleistung untersucht.
 
 ## Voraussetzungen
 
 * Importieren Sie Ihre Daten zu Werbekosten:
-   * [Verbinden Sie Ihre [!DNL Google AdWords] nach [!DNL MBI]](../importing-data/integrations/google-adwords.md): Dadurch wird Ihre [!DNL Adwords] Ausgaben in [!DNL MBI]
-   * [Hochladen anderer Daten zu Werbekosten](../importing-data/connecting-data/import-offline-ad-data.md): Dies wird für Kanäle ohne direkten Connector empfohlen, um [!DNL MBI]
-   * Wenn Sie Kostendaten aus mehreren Quellen importieren, können Sie [Konsolidierung](../../best-practices/consolidating-your-tables.md) die Daten in [!DNL MBI]. Einfach [Support-Ticket einreichen](../../guide-overview.md).
+   * [Verbinden Sie Ihre [!DNL Google AdWords] nach [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): Dadurch wird Ihre [!DNL Adwords] Ausgaben in [!DNL Commerce Intelligence]
+   * [Hochladen anderer Daten zu Werbekosten](../importing-data/connecting-data/import-offline-ad-data.md): Dies wird für Kanäle ohne direkten Connector empfohlen, um [!DNL Commerce Intelligence]
+   * Wenn Sie Kostendaten aus mehreren Quellen importieren, können Sie [Konsolidierung](../../best-practices/consolidating-your-tables.md) die Daten in [!DNL Commerce Intelligence]. Einfach [Support-Ticket einreichen](../../guide-overview.md#Submitting-a-Support-Ticket).
 * [Tracking der Benutzerakquisekanaldaten](../analysis/google-track-user-acq.md)
 
 ## Benutzerakquise-Kampagnen
@@ -35,7 +35,7 @@ Die Analysen (1) und (2) oben werden in einem separaten Tutorial zu [die wichtig
 >
 >In diesem Beispiel wird davon ausgegangen, dass alle Kampagnenkosten ausschließlich zum Erwerb neuer Benutzer verwendet wurden. In der Realität werden Ihre Kampagnenkosten auch mit dem Erwerb nicht konvertierter Besuche, Wiederholungskäufern usw. geteilt. Wenn man davon ausgeht, dass alle Kosten für die Akquisition neuer registrierter Benutzer verwendet werden, berücksichtigt der resultierende ROI das Worst-Case-Szenario (höchste Kosten pro Akquise). Sie können sicher sein, dass Ihr tatsächlicher ROI höher ist als Ihre Berechnung.
 >
->Beispiel: Angenommen, Sie haben 20 USD für eine Kampagne ausgegeben, die 10 neue Benutzer und 10 wiederkehrende Käufer generiert hat, belaufen sich Ihre tatsächlichen Kosten pro neuer Benutzer auf 1 USD. Doch unter der Annahme, dass alle Kosten für den Erwerb neuer Benutzer anfielen, belaufen sich die Kosten pro Akquise auf 2 USD.)
+>Beispiel: Angenommen, Sie haben 20 USD für eine Kampagne ausgegeben, die 10 neue Benutzer und 10 wiederkehrende Käufer generiert hat, belaufen sich Ihre tatsächlichen Kosten pro neuer Benutzer auf 1 USD. Doch unter der Annahme, dass alle Kosten für den Erwerb neuer Benutzer anfielen, belaufen sich die Kosten pro Akquise auf 2 USD.
 
 **1. Erstellen Sie zunächst ein Diagramm, das Ihre Anzeigenkosten nach Kampagnen segmentiert:**
 
@@ -95,9 +95,9 @@ Führen Sie produktspezifische Werbung durch? Wenn ja, können Sie den ROI für 
 
 >[!NOTE]
 >
->In diesem Beispiel wird davon ausgegangen, dass alle Kampagnenkosten ausschließlich zur Generierung von Käufen für bestimmte Produkte verwendet wurden. Wenn man davon ausgeht, dass alle Kosten für die Generierung von Käufen ausgegeben wurden, berücksichtigt der resultierende ROI das Worst-Case-Szenario (höchste Kosten pro Kauf). Sie können sicher sein, dass Ihr tatsächlicher ROI höher ist als diese Berechnung. Beispiel: Angenommen, Sie haben 20 USD für eine Kampagne ausgegeben, aus der 10 neue Benutzer und 10 Käufe stammen, belaufen sich Ihre tatsächlichen Kosten pro Kauf auf 1 USD. Unter der Annahme, dass alle Kosten für den Erwerb neuer Benutzer anfielen, belaufen sich die Kosten pro Kauf auf 2 USD.)*
+>In diesem Beispiel wird davon ausgegangen, dass alle Kampagnenkosten ausschließlich zur Generierung von Käufen für bestimmte Produkte verwendet wurden. Wenn man davon ausgeht, dass alle Kosten für die Generierung von Käufen ausgegeben wurden, berücksichtigt der resultierende ROI das Worst-Case-Szenario (höchste Kosten pro Kauf). Sie können sicher sein, dass Ihr tatsächlicher ROI höher ist als diese Berechnung. Beispiel: Angenommen, Sie haben 20 USD für eine Kampagne ausgegeben, aus der 10 neue Benutzer und 10 Käufe stammen, belaufen sich Ihre tatsächlichen Kosten pro Kauf auf 1 USD. Unter der Annahme, dass alle Kosten für den Erwerb neuer Benutzer anfielen, belaufen sich die Kosten pro Kauf auf 2 USD.
 
-Bevor Sie beginnen, [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en) , um die folgenden Dimensionen mit der Tabelle der Zeileneinträge zu verknüpfen (`sales\_flat\_order\_item, order\_item`):
+Bevor Sie beginnen, [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) , um die folgenden Dimensionen mit der Tabelle der Zeileneinträge zu verknüpfen (`sales\_flat\_order\_item, order\_item`):
 
 * Quelle der Bestellung (wenn Sie nur die Verweisquelle auf Benutzerebene verfolgen und dann der Quelle des Benutzers beitreten)
 * Bestellungskampagne (wenn Sie nur die Verweisquelle auf Benutzerebene verfolgen und dann der Kampagne des Benutzers beitreten)

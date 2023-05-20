@@ -1,19 +1,19 @@
 ---
 title: Erwartete Zendesk-Daten
-description: Erfahren Sie mehr über die wichtigsten Datentabellen, die Sie aus Zendesk in MBI importieren können, einschließlich Links zur zusätzlichen Dokumentation zu Zendesk-Daten.
+description: Erfahren Sie mehr über die wichtigsten Datentabellen, die Sie aus Zendesk in Commerce Intelligence importieren können, einschließlich Links zur zusätzlichen Dokumentation zu Zendesk-Daten.
 exl-id: 838d8d13-e2e1-44c2-a416-f1792200ee6f
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
-# Erwartete Zendesk-Daten
+# Erwartet [!DNL Zendesk] data
 
 Nachher [Sie haben Ihre [!DNL Zendesk] account](../integrations/zendesk.md), können Sie die [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) zur einfachen Nachverfolgung relevanter Datenfelder für die Analyse.
 
-In diesem Artikel werden die wichtigsten Datentabellen untersucht, aus denen Sie importieren können. [!DNL Zendesk] in [!DNL MBI], einschließlich Links zur zusätzlichen Dokumentation zu [!DNL Zendesk] Daten.
+In diesem Thema werden die wichtigsten Datentabellen untersucht, aus denen Sie importieren können. [!DNL Zendesk] in [!DNL Adobe Commerce Intelligence], einschließlich Links zur zusätzlichen Dokumentation zu [!DNL Zendesk] Daten.
 
 | Tabellenname | Beschreibung |
 |-----|-----|
@@ -33,4 +33,4 @@ In diesem Artikel werden die wichtigsten Datentabellen untersucht, aus denen Sie
 ## Verwandte
 
 * [Zendesk verbinden](../integrations/zendesk.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

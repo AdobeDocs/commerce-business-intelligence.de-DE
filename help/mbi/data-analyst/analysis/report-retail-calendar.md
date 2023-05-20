@@ -1,27 +1,27 @@
 ---
 title: Berichterstellung für einen Einzelhandelskalender
-description: Erfahren Sie, wie Sie die Struktur für die Verwendung eines 4-5-4-Einzelhandelskalenders in Ihrem [!DNL MBI] -Konto.
+description: Erfahren Sie, wie Sie die Struktur für die Verwendung eines 4-5-4-Einzelhandelskalenders in Ihrem [!DNL Commerce Intelligence] -Konto.
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
 # Berichterstellung für einen Einzelhandelskalender
 
-Dieser Artikel zeigt, wie die Struktur für die Verwendung einer [4-5-4 Einzelhandelskalender](https://nrf.com/resources/4-5-4-calendar) in [!DNL MBI] -Konto. Der visuelle ReportBuilder bietet unglaublich flexible Zeiträume, Intervalle und unabhängige Einstellungen. Diese Einstellungen funktionieren jedoch mit dem herkömmlichen Monatskalender.
+Dieses Thema zeigt, wie die Struktur für die Verwendung einer [4-5-4 Einzelhandelskalender](https://nrf.com/resources/4-5-4-calendar) in [!DNL Adobe Commerce Intelligence] -Konto. Der visuelle ReportBuilder bietet unglaublich flexible Zeiträume, Intervalle und unabhängige Einstellungen. Diese Einstellungen funktionieren jedoch mit dem herkömmlichen Monatskalender.
 
 Da viele Kunden ihren Kalender ändern, um Handels- oder Rechnungsdaten zu verwenden, veranschaulichen die folgenden Schritte, wie Sie mit Ihren Daten arbeiten und Berichte mithilfe von Einzelhandelsdaten erstellen. Obwohl die folgenden Anweisungen auf den 4-5-4-Einzelhandelskalender verweisen, können Sie sie für jeden bestimmten Kalender ändern, den Ihr Team verwendet, egal ob es sich um einen finanziellen oder nur einen benutzerdefinierten Zeitrahmen handelt.
 
-Bevor Sie beginnen, müssen Sie sich mit [Datei-Uploader](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) und stellen Sie sicher, dass Sie die `.csv` -Datei. Dadurch wird sichergestellt, dass die Daten alle Ihre historischen Daten abdecken und die Daten in die Zukunft verschieben.
+Bevor Sie beginnen, sollten Sie [Datei-Uploader](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) und stellen Sie sicher, dass Sie die `.csv` -Datei. Dadurch wird sichergestellt, dass die Daten alle Ihre historischen Daten abdecken und die Daten in die Zukunft verschieben.
 
 Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Erste Schritte
 
-Sie können [herunterladen](../../assets/454-calendar.csv) a `.csv` Version des 4-5-4 Einzelhandelskalenders für die Einzelhandelsjahre 2014 bis 2017. Möglicherweise müssen Sie diese Datei entsprechend Ihrem internen Einzelhandelskalender anpassen und den Datumsbereich erweitern, um Ihren historischen und aktuellen Zeitrahmen zu unterstützen. Verwenden Sie nach dem Herunterladen der Datei den Datei-Uploader, um eine Einzelhandelskalender-Tabelle in Ihrer [!DNL MBI] Data Warehouse. Wenn Sie eine unveränderte Version des 4-5-4-Einzelhandelskalenders verwenden, stellen Sie sicher, dass die Struktur und die Datentypen der Felder in dieser Tabelle mit Folgendem übereinstimmen:
+Sie können [herunterladen](../../assets/454-calendar.csv) a `.csv` Version des 4-5-4 Einzelhandelskalenders für die Einzelhandelsjahre 2014 bis 2017. Möglicherweise müssen Sie diese Datei entsprechend Ihrem internen Einzelhandelskalender anpassen und den Datumsbereich erweitern, um Ihren historischen und aktuellen Zeitrahmen zu unterstützen. Verwenden Sie nach dem Herunterladen der Datei den Datei-Uploader, um eine Einzelhandelskalender-Tabelle in Ihrer [!DNL Commerce Intelligence] Data Warehouse. Wenn Sie eine unveränderte Version des 4-5-4-Einzelhandelskalenders verwenden, stellen Sie sicher, dass die Struktur und die Datentypen der Felder in dieser Tabelle mit Folgendem übereinstimmen:
 
 | Spaltenname | Spaltendatentyp | Primärer Schlüssel |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ Sie können [herunterladen](../../assets/454-calendar.csv) a `.csv` Version des 
 
          >[!NOTE]
          >
-         >Die `now()` -Funktion ist spezifisch für PostgreSQL. Obwohl [!DNL MBI] Data Warehouse wird auf PostgreSQL gehostet, einige werden möglicherweise auf Redshift gehostet. Wenn die obige Berechnung einen Fehler zurückgibt, müssen Sie möglicherweise die Redshift-Funktion verwenden `getdate()` anstelle von `now()`.
+         >Die `now()` -Funktion ist spezifisch für PostgreSQL. Obwohl [!DNL Commerce Intelligence] Data Warehouse wird auf PostgreSQL gehostet, einige werden möglicherweise auf Redshift gehostet. Wenn die obige Berechnung einen Fehler zurückgibt, müssen Sie möglicherweise die Redshift-Funktion verwenden `getdate()` anstelle von `now()`.
    * **Aktuelles Verkaufsjahr** (Muss von Support-Analyst erstellt werden)
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
@@ -201,6 +201,6 @@ Hinweis: Für diese Analyse sind keine neuen Metriken erforderlich. Stellen Sie 
 
 Im obigen Abschnitt wird beschrieben, wie Sie einen Einzelhandelskalender so konfigurieren, dass er mit einer beliebigen Metrik kompatibel ist, die auf Ihrer `sales\_order` -Tabelle (z. B. `Revenue` oder `Orders`). Sie können dies auch erweitern, um den Einzelhandelskalender für Metriken zu unterstützen, die auf einer beliebigen Tabelle basieren. Die einzige Anforderung besteht darin, dass diese Tabelle über ein gültiges Datum-Uhrzeit-Feld verfügt, das verwendet werden kann, um zur Einzelhandelskalender-Tabelle beizutreten.
 
-Um beispielsweise Metriken auf Kundenebene in einem 4-5-4 Einzelhandelskalender anzuzeigen, erstellen Sie eine `Same Table` der `customer\_entity` -Tabelle ähnlich `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` weiter oben beschrieben. Diese Spalte kann dann zum Reproduzieren der `One to Many` JOINED\_COLUMN-Berechnungen (z. B. `Created_at (retail year)` und `Include in previous retail year? (Yes/No)` durch Teilnahme an `customer\_entity` -Tabelle `Retail Calendar` Tabelle.
+Um beispielsweise Metriken auf Kundenebene in einem 4-5-4 Einzelhandelskalender anzuzeigen, erstellen Sie eine `Same Table` der `customer\_entity` -Tabelle ähnlich `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` weiter oben beschrieben. Diese Spalte kann dann zum Reproduzieren der `One to Many` JOINED\_COLUMN-Berechnungen (z. B. `Created_at (retail year)`) und `Include in previous retail year? (Yes/No)` durch Teilnahme an `customer\_entity` -Tabelle `Retail Calendar` Tabelle.
 
 Vergessen Sie nicht, [Metriken alle neuen Spalten als Dimensionen hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) vor der Erstellung neuer Berichte.

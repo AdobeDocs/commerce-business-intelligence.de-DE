@@ -2,7 +2,7 @@
 title: Erwartet[!DNL Google ECommerce]data
 description: Erfahren Sie, welche Datentypen für Google ECommerce freigegeben werden.
 exl-id: 8e5d8863-f003-4c38-95c5-660bcbff48da
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Erwartet[!DNL Google ECommerce] data
 
-Nach [!DNL Google ECommerce] -Konto erfolgreich mit [!DNL MBI], beginnt das System mit dem Import von Daten in eine Tabelle mit dem Titel `ecommerce`. Diese Tabelle zeichnet eine Datenzeile für jede Transaktion auf. Dazu gehören die folgenden Datenspalten auf Bestellebene:
+Nach [!DNL Google ECommerce] -Konto erfolgreich mit [!DNL Commerce Intelligence], beginnt das System mit dem Import von Daten in eine Tabelle mit dem Titel `ecommerce`. Diese Tabelle zeichnet eine Datenzeile für jede Transaktion auf. Dazu gehören die folgenden Datenspalten auf Bestellebene:
 
 | Spaltenname | Beschreibung |
 |-----|-----|

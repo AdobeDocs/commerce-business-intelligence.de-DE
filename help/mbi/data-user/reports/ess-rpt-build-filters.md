@@ -2,9 +2,9 @@
 title: Filter
 description: Erfahren Sie, wie Sie Filter verwenden.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: df81d2b036d00cd53274ec1ae22031dbf06cc948
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu beschrä
 >
 >Ein Bericht kann maximal 3.500 Datenpunkte enthalten. Um die Anzahl der Datenpunkte zu reduzieren, verwenden Sie einen Filter, um die Datenmenge zu reduzieren, die zum Generieren des Berichts verwendet wird.
 
-MBI enthält eine Auswahl von Filtern, die Sie &quot;vorkonfiguriert&quot;(OOTB) verwenden oder an Ihre Anforderungen anpassen können. Die Anzahl der Filter, die Sie erstellen können, ist unbegrenzt.
+[!DNL Adobe Commerce Intelligence] enthält eine Auswahl von Filtern, die Sie &quot;vorkonfiguriert&quot;(OOTB) verwenden oder an Ihre Anforderungen anpassen können. Die Anzahl der Filter, die Sie erstellen können, ist unbegrenzt.
 
 ## So fügen Sie einen Filter hinzu:
 

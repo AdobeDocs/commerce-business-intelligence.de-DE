@@ -2,30 +2,30 @@
 title: Neuigkeit, Häufigkeit, monetäre (RFM) Analyse
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Kunden nach Neuigkeit, Häufigkeit und Geldwert segmentieren können.
 exl-id: 8f0f08fd-710b-4810-9faf-3d0c3cc0a25d
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
 # RFM-Analyse
 
-Dieser Artikel zeigt, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Kunden nach Neuigkeit, Häufigkeit und Geldwert segmentieren können. Die RFM-Analyse ist eine Marketing-Technik, die das Kundenverhalten berücksichtigt, um Sie bei der Bestimmung der Segmentierung für die Reichweite zu unterstützen. Er umfasst drei Aspekte:
+In diesem Thema wird gezeigt, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Kunden nach Neuigkeit, Häufigkeit und geldlichem Rang segmentieren können. Die RFM-Analyse ist eine Marketing-Technik, die das Kundenverhalten berücksichtigt, um Sie bei der Bestimmung der Segmentierung für die Reichweite zu unterstützen. Er umfasst drei Aspekte:
 
-* Neuigkeit darüber, wie kürzlich ein Kunde in Ihrem Geschäft gekauft hat
-* Häufigkeit des Kaufs bei Ihnen
-* Geldbetrag in der Höhe, die der Kunde ausgibt
+1. Neuigkeit darüber, wie kürzlich ein Kunde in Ihrem Geschäft gekauft hat
+1. Häufigkeit des Kaufs bei Ihnen
+1. Geldbetrag in der Höhe, die der Kunde ausgibt
 
 ![](../../assets/blobid0.png)
 
-Die RFM-Analyse kann nur konfiguriert werden, wenn Sie über die [!DNL MBI] Planen Sie die neue Architektur (z. B. wenn Sie die Option &quot;Data Warehouse-Ansichten&quot;im Menü &quot;Daten verwalten&quot;haben). Diese Spalten können auf der Seite &quot;Daten verwalten > Data Warehouse&quot;erstellt werden. Im Folgenden finden Sie ausführliche Anweisungen.
+Die RFM-Analyse kann nur konfiguriert werden, wenn Sie über die [!DNL Adobe Commerce Intelligence] Pro Plan für die neue Architektur (z. B. wenn Sie über die `Data Warehouse Views` Option unter `Manage Data` Menü). Diese Spalten können aus der **[!DNL Manage Data > Data Warehouse]** Seite. Detaillierte Anweisungen finden Sie unten.
 
 ## Erste Schritte
 
 Sie müssen zunächst eine Datei hochladen, die nur einen Primärschlüssel mit dem Wert 1 enthält. Dies ermöglicht die Erstellung einiger erforderlicher berechneter Spalten für die Analyse.
 
-Sie können dies [Hilfezentrum-Artikel](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild, um Ihre Datei zu formatieren.
+Sie können dies [Artikel](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild, um Ihre Datei zu formatieren.
 
 ## Berechnete Spalten
 
@@ -174,13 +174,15 @@ Zu erstellende Spalten
 
 >[!NOTE]
 >
->Die verwendeten Perzentile sind sogar Aufspaltungen von Kunden (z. B. 20 % Behälter, um 1-5 zurückzugeben). Wenn Sie eine benutzerdefinierte Methode haben, wie Sie diese gewichten möchten, teilen Sie dies dem Analysten mit, wenn Sie das Ticket übermitteln.
+>Die verwendeten Perzentile sind sogar Aufspaltungen von Kunden (z. B. 20 Prozent Behälter, um 1-5 zurückzugeben). Wenn Sie eine benutzerdefinierte Methode haben, wie Sie diese gewichten möchten, teilen Sie dies dem Analysten mit, wenn Sie das Ticket übermitteln.
 
 ## Metriken
 
 Keine neuen Metriken!
 
-**Hinweis**: Stellen Sie sicher, dass [Metriken alle neuen Spalten als Dimensionen hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) vor der Erstellung neuer Berichte.
+>[!NOTE]
+>
+>Stellen Sie sicher, dass [Metriken alle neuen Spalten als Dimensionen hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) vor der Erstellung neuer Berichte.
 
 ## Berichte
 

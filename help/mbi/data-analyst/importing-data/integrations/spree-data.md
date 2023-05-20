@@ -1,10 +1,10 @@
 ---
 title: Erwartete Ersatzdaten
-description: Die wichtigsten Datentabellen, die Sie aus Spree in Ihre [!DNL MBI] -Konto.
+description: Die wichtigsten Datentabellen, die Sie aus Spree in Ihre [!DNL Commerce Intelligence] -Konto.
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Nachdem Sie [mit [!DNL Spree] store](../../../data-analyst/importing-data/integrations/spree.md), können Sie die [Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) die einfache Verfolgung relevanter Datenfelder über Ihre [!DNL Spree] Plattform zur Analyse.
 
-In diesem Artikel werden die wichtigsten Datentabellen untersucht, aus denen Sie importieren können. [!DNL Spree] in [!DNL MBI] -Konto, einschließlich Links zu [Zusätzliche Dokumentation](https://guides.spreecommerce.org/developer/addresses.html#address) about [!DNL Spree] Daten.
+In diesem Thema werden die wichtigsten Datentabellen untersucht, aus denen Sie importieren können. [!DNL Spree] in [!DNL Commerce Intelligence] -Konto, einschließlich Links zu [Zusätzliche Dokumentation](https://guides.spreecommerce.org/developer/addresses.html#address) about [!DNL Spree] Daten.
 
 | **Tabellenname** | **Beschreibung** |
 |-----|-----|
@@ -28,4 +28,4 @@ In diesem Artikel werden die wichtigsten Datentabellen untersucht, aus denen Sie
 ## Verwandte:
 
 * [Verbinden [!DNL Spree]](../integrations/spree.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=en)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

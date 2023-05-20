@@ -2,7 +2,7 @@
 title: Erwartete Lebenszeitwert-Analyse (Basis)
 description: Erfahren Sie, wie Sie Analysen erstellen, um den Lebenszeitwert Ihrer aktuellen Kunden zu verstehen und vorherzusagen, wie der Lebenszeitwert mit mehr Bestellungen zunimmt.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Die Vorhersage des Lebenszeitwerts von Kunden, die mehr Bestellungen aufgeben, ist einer der wichtigsten Aspekte jedes Geschäfts jeder Größe.
 
-Im Folgenden finden Sie die Schritte zum Erstellen von Analysen, um den Lebenszeitwert Ihrer aktuellen Kunden zu verstehen und vorherzusagen, wie der Lebenszeitwert mit mehr Bestellungen steigt:
+Im Folgenden finden Sie die Schritte zum Erstellen von Analysen, um den Lebenszeitwert Ihrer aktuellen Kunden zu verstehen und vorherzusagen, wie der Lebenszeitwert mit mehr Bestellungen steigt.
 
 ![erwarteter Lebenszeitwert](../../assets/expected_ltv_720.png)
 

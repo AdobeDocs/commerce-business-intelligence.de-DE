@@ -2,9 +2,9 @@
 title: Data Warehouse Manager
 description: Erfahren Sie, wie Sie die Synchronisierungseinstellungen für Tabellen und Spalten verwalten, einen Drilldown im Schema einer Tabelle durchführen und berechnete Spalten für die Verwendung in Berichten erstellen.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
-source-git-commit: 8de036e2717aedef95a8bb908898fd9b9bc9c3fa
+source-git-commit: c4094e780f83255846520d18f4d0806b1dd9a9ef
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md)
 
-Der Data Warehouse Manager, auf den Sie durch Klicken auf **[!UICONTROL Manage Data > Data Warehouse]** in der Seitenleiste ist das Portal zu Ihrer [!DNL MBI] Data Warehouse. Mithilfe des Data Warehousen-Managers können Sie Einstellungen für die Tabellen- und Spaltensynchronisierung verwalten, einen Drilldown im Tabellenschema durchführen und berechnete Spalten für die Verwendung in Berichten erstellen.
+Der Data Warehouse Manager, auf den Sie durch Klicken auf **[!UICONTROL Manage Data > Data Warehouse]**, ist das Portal zu Ihrem [!DNL Adobe Commerce Intelligence] Data Warehouse. Mithilfe des Data Warehousen-Managers können Sie Einstellungen für die Tabellen- und Spaltensynchronisierung verwalten, einen Drilldown im Tabellenschema durchführen und berechnete Spalten für die Verwendung in Berichten erstellen.
 
-Dieser Artikel behandelt:
+Dieses Thema behandelt:
 
 * [Weg lernen](#learning)
 * [Tabellen und Spalten synchronisieren](#syncing)
@@ -39,7 +39,7 @@ Die `Synced Tables` zeigt alle Tabellen an, die bereits zu Ihrer Data Warehouse 
 Die Tabelle, nach der Sie suchen, wird nicht im `All Tables` Liste? Dafür gibt es einige mögliche Gründe:
 
 * Die Datenquelle wurde noch nicht hinzugefügt
-* Die Datenquelle ist eine Datenbank und die [!DNL MBI] -Benutzer, den Sie erstellt haben, hat keinen Zugriff. In diesem Fall müssen Sie oder Ihr Datenbankadministrator den Zugriff gewähren.
+* Die Datenquelle ist eine Datenbank und die [!DNL Commerce Intelligence] -Benutzer, den Sie erstellt haben, hat keinen Zugriff. In diesem Fall müssen Sie oder Ihr Datenbankadministrator den Zugriff gewähren.
 * Die Datenquelle oder Tabelle wurde kürzlich hinzugefügt und noch nicht synchronisiert.
 
 ## Tabellen und Spalten synchronisieren {#syncing}
@@ -61,7 +61,7 @@ Der Data Warehouse Manager bietet Ihnen nicht nur die Möglichkeit, Ihre Datenqu
    Wenn Sie eine Tabelle synchronisieren, die direkt aus Ihrer Datenbank stammt, kann es sein, dass `Primary Keys` nicht bezeichnet werden. Wenden Sie sich in diesem Fall an Ihren Datenbankadministrator, um das Hinzufügen eines Primärschlüssels zur Tabelle anzufordern.
 1. Klicken Sie abschließend auf die ![button](../../assets/button.png) Schaltfläche.
 
-A *Erfolg!* wird angezeigt und der Status ändert sich in `Pending` für die ausgewählten Spalten. Nach Abschluss der nächsten vollständigen Aktualisierung sind die neu synchronisierten Tabellen und Spalten für die Verwendung in Berichten verfügbar. Sie können auch [Replikationsmethoden](./cfg-replication-methods.md) nach der ersten Synchronisierung.
+A *Erfolg!* wird angezeigt und der Status ändert sich in `Pending` für die ausgewählten Spalten. Nach Abschluss der nächsten vollständigen Aktualisierung stehen die neu synchronisierten Tabellen und Spalten zur Verwendung in Berichten zur Verfügung. Sie können auch neue [Replikationsmethoden](./cfg-replication-methods.md) nach der ersten Synchronisierung.
 
 Im Folgenden finden Sie einen kurzen Überblick über den gesamten Prozess:
 
@@ -119,6 +119,6 @@ Wenn Sie bereit sind, Ihre neuen Spalten in Berichten zu verwenden, [müssen Sie
 
 ## Aufbrechen
 
-In diesem Tutorial wurde viel Material behandelt. Inzwischen sollten Sie genau wissen, was eine Datenbank ist, wie Daten organisiert sind, wie Tabellen miteinander verknüpft sind und was Sie mit dem Data Warehouse Manager tun können.
+Dieser Artikel deckte eine Menge Material ab. Inzwischen sollten Sie genau wissen, was eine Datenbank ist, wie Daten organisiert sind, wie Tabellen miteinander verknüpft sind und was Sie mit dem Data Warehouse Manager tun können.
 
-Ausgezeichnet! Testen Sie Ihr neues Wissen durch [eine berechnete Spalte erstellen](../data-warehouse-mgr/creating-calculated-columns.md) oder [interessante Berichte erstellen](../../tutorials/using-visual-report-builder.md).
+Testen Sie Ihr Wissen durch [eine berechnete Spalte erstellen](../data-warehouse-mgr/creating-calculated-columns.md) oder [interessante Berichte erstellen](../../tutorials/using-visual-report-builder.md).
