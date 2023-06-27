@@ -2,7 +2,7 @@
 title: SQL-Abfragen in Commerce Intelligence-Berichte übersetzen
 description: Erfahren Sie, wie SQL-Abfragen in die berechneten Spalten und Metriken übersetzt werden, die Sie in Commerce Intelligence verwenden.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+source-git-commit: fa65bd909495d4d73cabbc264e9a47b3e0a0da3b
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Am Ende dieses Themas finden Sie eine **Übersetzungsmatrix** für SQL-Abfragekl
 
 Sehen Sie sich zunächst eine allgemeine Abfrage an:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `a,` | Bericht `group by` |
@@ -42,7 +42,7 @@ Bei der Aggregation von `within a single table`. Beispielsweise wird die `SUM(b
 
 Sehen Sie sich ein bestimmtes Beispiel an, wie ein `Total Revenue` Metriken können in [!DNL Commerce Intelligence]. Sehen Sie sich die nachstehende Abfrage an, mit der Sie versuchen zu übersetzen:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation` (Spalte) |
@@ -63,7 +63,7 @@ Die Abfrage für diese Aggregation kann etwa wie folgt aussehen:
 
 |  |  |
 |--- |--- |
-| `Select` |  |
+| `Select` | |
 | `c.customer_id` | Aggregat-Eigentümer |
 | `SUM(o.order_total) as "Customer LTV"` | Aggregat-Vorgang (Spalte) |
 | `FROM customers c` | Aggregat-Eigentümertabelle |
@@ -103,7 +103,7 @@ Siehe [berechnete Spalten erstellen](../data-warehouse-mgr/creating-calculated-c
 
 Beginnen Sie mit der folgenden Abfrage:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT coupon_code,` | Bericht `group by` |
 | `SUM(order_total) as "Total Revenue"` | `Metric operation`(Spalte) |
@@ -132,7 +132,7 @@ Die frühere Methode würde die Erstellung einer neuen Metrik beinhalten, die ei
 
 Gehen Sie einen Schritt zurück und prüfen Sie die Gesamtabfrage für `Average order value`:
 
-|  |  |
+| | |
 |--- |--- |
 | `SELECT` |  |
 | `SUM(order_total) as "Total Revenue"` | Metrik `operation` (Spalte) |
@@ -155,4 +155,11 @@ Sehen Sie sich die folgende Matrix für einen schnellen Überblick an. Dies zeig
 
 ## Commerce Intelligence-Elemente
 
-|**`SQL Clause`**|**`Metric`**|**`Filter`**|**`Report group by`**|**`Report time frame`**|**`Path`**|**`Calculated column inputs`**|**`Source table`**| |—|—|—|—|—|—|—|—|—| |`SELECT`|X|-|X|-|-|X|-|-| |`FROM`|-|-|-|-|-|-|X| |`WHERE`|-|X|-|-|-|-|-|-| |`WHERE` (mit Zeitelementen)|-|-|-|X|-|-|-| |`JOIN...ON`|-|X|-|-|X|X|-| |`GROUP BY`|-|-|X|-|-|-|-|-|
+| **`SQL Clause`** | **`Metric`** | **`Filter`** | **`Report group by`** | **`Report time frame`** | **`Path`** | **`Calculated column inputs`** | **`Source table`** |
+|---|---|---|---|---|---|---|---|
+| `SELECT` | X | - | X | - | - | X | - |
+| `FROM` | - | - | - | - | - | - | X |
+| `WHERE` | - | X | - | - | - | - | - |
+| `WHERE` (mit Zeitelementen) | - | - | - | X | - | - | - |
+| `JOIN...ON` | - | X | - | - | X | X | - |
+| `GROUP BY` | - | - | X | - | - | - | - |
