@@ -2,7 +2,9 @@
 title: Speichern von Daten in Adobe Commerce
 description: Erfahren Sie, wie Daten generiert werden, was dazu führt, dass eine neue Zeile eingefügt wird und wie Aktionen in die Adobe Commerce-Datenbank aufgenommen werden.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -61,7 +63,7 @@ Kurz nach dem Hinzufügen der drei neuen Produkte hat ein neuer Kunde `Sammy Cus
 
 Mit Abschluss der Kontoerstellung `Sammy Customer` ist bereit, einen Kauf zu tätigen. Auf der Website fügt der Kunde zwei Paare der `Throwback Bellbottoms` und einem `V-Neck T-Shirt` in den Warenkorb. Mit der Auswahl zufrieden, wechselt der Kunde zum Checkout und sendet die Bestellung, wodurch der folgende Eintrag auf der [Verkaufstabelle](../data-warehouse-mgr/sales-flat-order-table.md):
 
-| **`entity id`** | **`customer id**`**`subtotal`****`created at`** |
+| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94.85 | 2016/09/23 15:41:39 |
 

@@ -2,7 +2,9 @@
 title: Tracking von Zielen mit Metriken
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Geschäftsziele anhand Ihrer tatsächlichen Daten verfolgen können, einschließlich Umsatz, neu registrierten Benutzern und Bestellungen im Laufe der Zeit.
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -54,51 +56,46 @@ Es ist hilfreich, bei der Analyse Ihrer Ziele eine Mischung aus statischen Werte
 * **Erzielter Umsatz**
 * Metrik `A`: `Revenue`
 * 
-
-   [!UICONTROL Metrik]: `Revenue`
+  [!UICONTROL Metrik]: `Revenue`
 
 * Metrik `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
 * 
-   [!UICONTROL Formel]: `(B-A)`
+  [!UICONTROL Formel]: `(B-A)`
 * 
-
-   [!UICONTROL Format]: `Number`
+  [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (Welchen relevanten Zeitraum Sie wünschen)
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * 
-
-   [!UICONTROL Diagrammtyp]: `Scalar`
+  [!UICONTROL Diagrammtyp]: `Scalar`
 
 * **Umsatzziele**
 * Metrik `A`: `Revenue`
 * 
-
-   [!UICONTROL Metrik]: `Revenue`
+  [!UICONTROL Metrik]: `Revenue`
 
 * Metrik `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * Metrik `C`: `Revenue (amount change since previous year)` (ausblenden)
 * 
-   [!UICONTROL Metrik]: `Revenue`
+  [!UICONTROL Metrik]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Dieser Monat letztes Jahr)
 * 
-   [!UICONTROL Formel]: `(A-C)`
+  [!UICONTROL Formel]: `(A-C)`
 * 
-
-   [!UICONTROL Format]: `Currency`
+  [!UICONTROL Format]: `Currency`
 
 * Ausschalten `Multiple Y-Axes`
 * [!UICONTROL Time period]: (Welchen relevanten Zeitraum Sie wünschen)*
 * 
-   [!UICONTROL Interval]: `Month`
+  [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 
 Nachdem Sie die oben genannten Berichte für Umsatzziele abgeschlossen haben, können Sie identische Berichte für Ziele in Bezug auf Bestellungen, registrierte Konten oder andere Werte erstellen, die Sie in den Upload der Zieldatei aufgenommen haben.

@@ -2,7 +2,9 @@
 title: quote_item-Tabelle
 description: Erfahren Sie, wie Sie mit der Tabelle "quote_item"arbeiten.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -51,8 +53,8 @@ Die `quote_item` table (`sales_flat_quote_item` auf M1) enthält Datensätze zu
 
 | **Metrikname** | **Beschreibung** | **Bauwesen** |
 |---|---|---|
-| `Number of abandoned cart items` | Gesamtzahl der zum Warenkorb hinzugefügten Artikel, die bestimmte &quot;Abbruch&quot;-Bedingungen erfüllen | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>Filter:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, wobei &quot;x&quot;der verstrichenen Zeit (in Sekunden) seit der Erstellung des Warenkorbs entspricht, ab der ein Warenkorb als abgebrochen gilt |
-| `Abandoned cart item value` | Summe des Gesamtumsatzes, der mit Warenkörben verbunden ist, die bestimmte Bedingungen für den Abbruch erfüllen | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>Filter:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, wobei &quot;x&quot;der verstrichenen Zeit (in Sekunden) seit der Erstellung des Warenkorbs entspricht, ab der ein Warenkorb als abgebrochen gilt |
+| `Number of abandoned cart items` | Gesamtzahl der zum Warenkorb hinzugefügten Artikel, die bestimmte &quot;Abbruch&quot;-Bedingungen erfüllen | `Operation: Sum`<br/>`Operand: qty`<br/>`Timestamp: Cart creation date`<br>Filter:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, wobei &quot;x&quot;der verstrichenen Zeit (in Sekunden) seit der Erstellung des Warenkorbs entspricht, ab der ein Warenkorb als abgebrochen gilt |
+| `Abandoned cart item value` | Summe des Gesamtumsatzes, der mit Warenkörben verbunden ist, die bestimmte Bedingungen für den Abbruch erfüllen | `Operation: Sum`<br>`Operand: Cart item total value (qty * base_price)`<br>`Timestamp:` `Cart creation date`<br>Filter:<br><br>- \[`A`\] `Cart is active? (1/0)` = 1<br>- \[`B`\] `Seconds since cart creation` > x, wobei &quot;x&quot;der verstrichenen Zeit (in Sekunden) seit der Erstellung des Warenkorbs entspricht, ab der ein Warenkorb als abgebrochen gilt |
 
 {style="table-layout:auto"}
 

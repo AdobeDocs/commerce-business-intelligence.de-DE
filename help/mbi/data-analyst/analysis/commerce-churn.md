@@ -2,7 +2,9 @@
 title: Commerce-Abwanderung
 description: Erfahren Sie, wie Sie Ihre Commerce-Abwanderungsrate generieren und analysieren.
 exl-id: 8775cf0a-114d-4b48-8bd2-fc1700c59a12
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 2%
@@ -55,9 +57,9 @@ Zu erstellende Spalten
 * **Neue Kunden (nach letztem Bestelldatum)**
    * Kunden, die gezählt werden
 
-   >[!NOTE]
-   >
-   >Diese Metrik kann in Ihrem Konto vorhanden sein.
+  >[!NOTE]
+  >
+  >Diese Metrik kann in Ihrem Konto vorhanden sein.
 
 * Im **`customer_entity`** table
 * Diese Metrik führt eine **Count**
@@ -75,7 +77,7 @@ Zu erstellende Spalten
    * [!UICONTROL Metric]: Neue Kunden (nach Datum der ersten Bestellung)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
-      [!UICONTROL Perspective]: `Cumulative`
+     [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
    * Sekunden seit dem letzten Bestelldatum des Kunden >= [Ihr selbst definierter Cutoff für gedrehte Kunden ]**`^`**
@@ -84,11 +86,10 @@ Zu erstellende Spalten
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
    * 
-      [!UICONTROL Perspective]: Cumulative
+     [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
    * 
-
-      [!UICONTROL Format]: Percentage
+     [!UICONTROL Format]: Percentage
 
 * *Metrik `A`:`New customers cumulative`*
 * *Metrik `B`:`Churned customers by last order date`*

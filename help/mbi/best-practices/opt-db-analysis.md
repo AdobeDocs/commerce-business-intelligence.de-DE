@@ -2,7 +2,9 @@
 title: Datenbank für Analysen optimieren
 description: Erfahren Sie, wie Sie Ihre Datenbank für die Analyse optimieren können.
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Business Performance, Data Integration, Data Import/Export, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
@@ -23,7 +25,7 @@ Dieses Thema enthält einige Empfehlungen, mit denen Sie Ihre Datenbank für die
 
 Wenn eine Bestellung storniert, ein Benutzer sein Konto deaktiviert oder ein Produkt eingestellt wird, ist es versucht, die zugehörigen Informationen in der Datenbank zu löschen. Tabellen wachsen und beseitigen Unübersichtlichkeit scheint eine umsichtige Idee zu sein. Das Löschen von Zeilen bedeutet jedoch, dass diese Informationen für immer verloren gehen oder dass Sie alte Sicherungen durchsuchen müssen, um sie zu finden.
 
-Stattdessen können Sie der Tabelle eine Statusspalte hinzufügen, die angibt, wann die Zeile nicht mehr aktiv oder relevant ist. Es wird außerdem empfohlen, eine Spalte hinzuzufügen, in der das Datum der Änderung gespeichert wird, oder ein Protokoll für historische Änderungen zu erstellen. Wenn Tabellen so groß sind, dass die Leistung langsam zunimmt, sollten Sie die alten Daten in einer für Analysen verwendeten Tabelle archivieren.
+Stattdessen können Sie der Tabelle eine Statusspalte hinzufügen, die angibt, wann die Zeile nicht mehr aktiv oder relevant ist. Es wird außerdem empfohlen, eine Spalte hinzuzufügen, in der das Datum der Änderung gespeichert wird, oder ein Protokoll für historische Änderungen zu erstellen. Wenn Tabellen so groß sind, dass die Leistung langsam beeinträchtigt wird, sollten Sie die alten Daten in einer für Analysen verwendeten Tabelle archivieren.
 
 ## Daten selten überschreiben
 

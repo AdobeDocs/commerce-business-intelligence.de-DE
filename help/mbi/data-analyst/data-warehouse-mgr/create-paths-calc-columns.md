@@ -2,7 +2,9 @@
 title: Erstellen oder Löschen von Pfaden für berechnete Spalten
 description: Erfahren Sie, wie Sie einen Pfad definieren, der beschreibt, wie die Tabelle, in der Sie eine Spalte erstellen, mit der Tabelle zusammenhängt, aus der Sie Informationen abrufen.
 exl-id: 734a8046-8058-4f03-93a2-8d59b9be6d2d
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%

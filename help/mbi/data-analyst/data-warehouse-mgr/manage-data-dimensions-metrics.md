@@ -2,7 +2,9 @@
 title: Datendimensionen verwalten
 description: Erfahren Sie, was eine Dimension ist und wie sie zum Filtern oder Segmentieren von Diagrammen basierend auf einer Metrik verwendet werden kann.
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%

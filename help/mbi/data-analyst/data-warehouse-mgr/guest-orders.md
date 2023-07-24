@@ -2,7 +2,9 @@
 title: Gastaufträge
 description: Erfahren Sie mehr über die Auswirkungen von Gastaufträgen auf Ihre Daten und welche Optionen Sie für Gastaufträge in Ihren [!DNL Commerce Intelligence] Data Warehouse.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -21,13 +23,13 @@ In der typischen Commerce-Datenbank gibt es eine `orders` Tabelle, die mit einer
 
 * **Wenn alle Kunden registriert sind** und Gastaufträge sind nicht zulässig. Das bedeutet, dass jeder Datensatz in der Variablen `orders` -Tabelle einen Wert im `customer\_id` Spalte. Dadurch wird jede Bestellung wieder zum `customers` Tabelle.
 
-   ![](../../assets/guest-orders-4.png)
+  ![](../../assets/guest-orders-4.png)
 
 * **Wenn Gastaufträge zulässig sind** bedeutet dies, dass einige Bestellungen keinen Wert im `customer\_id` Spalte. Nur registrierte Kunden erhalten einen Wert für `customer\_id` in der Spalte `orders` Tabelle. Kunden, die nicht registriert sind, erhalten eine `NULL` (oder leer) für diese Spalte. Daher weisen nicht alle Bestelldatensätze übereinstimmende Datensätze in der `customers` Tabelle.
 
-   >[!NOTE]
-   >
-   >Um die eindeutige Person zu identifizieren, die die Bestellung aufgegeben hat, muss ein anderes eindeutiges Benutzerattribut vorhanden sein. `customer\_id` an eine Bestellung angehängt. In der Regel wird die E-Mail-Adresse des Kunden verwendet.
+  >[!NOTE]
+  >
+  >Um die eindeutige Person zu identifizieren, die die Bestellung aufgegeben hat, muss ein anderes eindeutiges Benutzerattribut vorhanden sein. `customer\_id` an eine Bestellung angehängt. In der Regel wird die E-Mail-Adresse des Kunden verwendet.
 
 ## Wie werden Gastaufträge bei der Einrichtung der Data Warehouse berücksichtigt?
 

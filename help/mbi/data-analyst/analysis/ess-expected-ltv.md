@@ -2,7 +2,9 @@
 title: Erwartete Lebenszeitwert-Analyse (Basis)
 description: Erfahren Sie, wie Sie Analysen erstellen, um den Lebenszeitwert Ihrer aktuellen Kunden zu verstehen und vorherzusagen, wie der Lebenszeitwert mit mehr Bestellungen zunimmt.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -23,17 +25,16 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
 * Navigieren Sie zu **[!UICONTROL Manage Data > Metrics]**
    * Vorhandene anzeigen **[!UICONTROL Avg lifetime revenue]**.
 
-   >[!NOTE]
-   >
-   >Die Tabelle, auf der diese Metrik erstellt wird (wahrscheinlich `customer_entity` oder `sales_order` abhängig von der Fähigkeit Ihres Stores, einen Gast-Checkout zu akzeptieren.)
+  >[!NOTE]
+  >
+  >Die Tabelle, auf der diese Metrik erstellt wird (wahrscheinlich `customer_entity` oder `sales_order` abhängig von der Fähigkeit Ihres Stores, einen Gast-Checkout zu akzeptieren.)
 
    * Klicken **[!UICONTROL Create New Metric]** und wählen Sie die Tabelle oben aus.
    * Diese Metrik führt eine **Median** auf `Customer's lifetime revenue` Spalte, sortiert nach `created_at`.
       * [!UICONTROL Filters]:
          * Fügen Sie die `Customers we count (Saved Filter Set)` (oder `Registered accounts we count`)
+
    * Geben Sie der Metrik einen Namen, z. B. `Median lifetime revenue`.
-
-
 
 ## Dashboard erstellen
 
@@ -53,7 +54,7 @@ Nachdem die Metrik erstellt wurde, können Sie **Dashboard erstellen** indem Sie
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervall]: `None`
+     [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
@@ -61,11 +62,11 @@ Nachdem die Metrik erstellt wurde, können Sie **Dashboard erstellen** indem Sie
       * Hinzufügen [!UICONTROL filters]:
          * [`A`] `Customer's group code` **Ungleich** `Not Logged In`
          * [`B`] `Customer's lifetime number of orders` **Größer als**`0`
+
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervall]: `None`
+     [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
-
 
 * **[!UICONTROL Average and Median LTV]**
    * Metrik `1`: `Avg lifetime revenue`
@@ -73,7 +74,7 @@ Nachdem die Metrik erstellt wurde, können Sie **Dashboard erstellen** indem Sie
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
    * 
-      [!UICONTROL Diagrammtyp]: `Line`
+     [!UICONTROL Diagrammtyp]: `Line`
    * Deaktivieren `Multiple Y-Axes`
 
 * **LTV nach Lebensdauer der Bestellungen**
@@ -81,14 +82,14 @@ Nachdem die Metrik erstellt wurde, können Sie **Dashboard erstellen** indem Sie
    * Metrik `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
    * 
-      [!UICONTROL Intervall]: `None`
+     [!UICONTROL Intervall]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
    * 
+     [!UICONTROL Diagrammtyp]: `Line`
 
-      [!UICONTROL Diagrammtyp]: `Line`
-   >[!NOTE]
-   >
-   >Fügen Sie nicht alle Werte für `Customer's lifetime number of orders`. Sehen Sie sich stattdessen einen Punkt an, an dem die Anzahl neuer Kunden eine kleine Zahl erreicht, und fügen Sie manuell die Anzahl der Bestellwerte für die gesamte Lebensdauer jedes Kunden zu diesem Punkt hinzu. Wenn es beispielsweise 200 Kunden bei einer Bestellung gibt, 75 bei zwei, 15 bei drei und 3 bei vier, fügen Sie *1, 2 und 3*.
+  >[!NOTE]
+  >
+  >Fügen Sie nicht alle Werte für `Customer's lifetime number of orders`. Sehen Sie sich stattdessen einen Punkt an, an dem die Anzahl neuer Kunden eine kleine Zahl erreicht, und fügen Sie manuell die Anzahl der Bestellwerte für die gesamte Lebensdauer jedes Kunden zu diesem Punkt hinzu. Wenn es beispielsweise 200 Kunden bei einer Bestellung gibt, 75 bei zwei, 15 bei drei und 3 bei vier, fügen Sie *1, 2 und 3*.
 
 * Vorhandenen hinzufügen [!UICONTROL Avg customer lifetime revenue by cohort] Bericht.
 

@@ -2,7 +2,9 @@
 title: Kontoeinstellungen verwalten
 description: Erfahren Sie, wie Sie Ihre Kontoeinstellungen für Ihre Data Warehouse anpassen können.
 exl-id: 847d51b1-287e-4c14-b64e-0bd9bfcccedc
-source-git-commit: 8d4e71363edad0613cc0ab277c2a43aad000965e
+role: Admin, User
+feature: Accounts
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%

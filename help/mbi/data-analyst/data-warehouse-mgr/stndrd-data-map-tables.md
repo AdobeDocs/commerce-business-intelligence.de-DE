@@ -2,7 +2,9 @@
 title: Daten mit Zuordnungstabellen standardisieren
 description: Erfahren Sie, wie Sie mit Zuordnungstabellen arbeiten.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -64,7 +66,7 @@ So erstellen Sie die `joined` Navigieren Sie im Data Warehousen-Manager zu der T
    * Im `One` und wählen Sie die `mapping` und `Primary key` Spalte. In diesem Fall wählen Sie die `state_input` aus der `mapping_state` Tabelle.
    * Hier sehen Sie, wie der Pfad aussieht:
 
-      ![](../../assets/State_Mapping_Path.png)
+     ![](../../assets/State_Mapping_Path.png)
 
 1. Klicken Sie abschließend auf **[!UICONTROL Save]** , um den Pfad zu erstellen.
 1. Der Pfad wird möglicherweise nicht sofort nach dem Speichern aufgefüllt. Klicken Sie in diesem Fall auf die `Path` und wählen Sie den erstellten Pfad aus.

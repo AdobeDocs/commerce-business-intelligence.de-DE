@@ -2,7 +2,9 @@
 title: Google Analytics - Tracking von Benutzergeräte- und Browserdaten in Ihrer Datenbank
 description: Erfahren Sie, wie viele Benutzer sich tatsächlich über Mobilgeräte anmelden und wie sich dies auf den Lebenszeitwert dieser Benutzer auswirkt.
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -20,8 +22,7 @@ Jedes Mal, wenn eine Anfrage an Ihre Website gesendet wird, sendet der Browser d
 1. `Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_8\_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36`
 1. `Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0 Firefox/17.0`
 1. `Mozilla/5.0 (iPhone; U; CPU iPhone OS 4\_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7`
-1.
-` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
+1.` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
 1. `Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
 
 Wenn Sie genau hinschauen, sehen Sie, dass die Zeichenfolge Informationen über das Betriebssystem, den Browser und den Namen des verwendeten Geräts enthält (sofern er einen Namen hat). Obwohl die Benutzeragenten-Zeichenfolgen von Plattform zu Plattform und sogar Versionen derselben Plattform stark variieren, ist es im Allgemeinen richtig, dass der Plattformname irgendwo in vorhanden ist. Beispiel: Nummer 1 oben ist eine Mac mit dem Chrome-Browser, Nummer 2 oben ist ein Windows-Computer mit dem Firefox-Browser, Nummer 3 ist ein iPhone, #4 ein iPad und #5 ein Android-Gerät.

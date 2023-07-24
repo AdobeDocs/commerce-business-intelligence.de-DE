@@ -2,7 +2,9 @@
 title: Analyse der Website-Aktivität und der Kundenkonversionsraten
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, das Ihre Website-Aktivität - einschließlich Seitenansichten, Sitzungen und Benutzern - sowie Ihre Kundenkonversionsrate im Laufe der Zeit verfolgt.
 exl-id: 2b57d5b3-3bbf-4ec9-86a6-9fa850c1c459
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 0%

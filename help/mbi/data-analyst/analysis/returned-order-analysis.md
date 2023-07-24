@@ -2,7 +2,9 @@
 title: Analyse zurückgegebener Bestellungen
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, das eine detaillierte Analyse der Ergebnisse Ihres Stores bietet.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -60,10 +62,9 @@ Zu erstellende Spalten
 * Wählen Sie eine Definition aus: `Joined Column`
 * [!UICONTROL Create Path]:
 * 
-   [!UICONTROL Many]: `enterprise_rma.order_id`
+  [!UICONTROL Many]: `enterprise_rma.order_id`
 * 
-
-   [!UICONTROL One]: `sales_flat_order.entity_id`
+  [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * Wählen Sie eine [!UICONTROL table]: `sales_flat_order`
 * Wählen Sie eine [!UICONTROL column]: `created_at`
@@ -82,10 +83,9 @@ Zu erstellende Spalten
 * Wählen Sie eine Definition aus: `Joined Column`
 * [!UICONTROL Create Path]:
    * 
-      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
+     [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
    * 
-
-      [!UICONTROL One]: `enterprise_rma.entity_id`
+     [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * Wählen Sie eine [!UICONTROL table]: `enterprise_rma`
 * Wählen Sie eine [!UICONTROL column]: `date_requested`
@@ -158,15 +158,14 @@ Zu erstellende Spalten
 * Formel: Wiederholungsreihenwahrscheinlichkeit
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Intervall]: `None`
+  [!UICONTROL Intervall]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * 
-   [!UICONTROL Diagrammtyp]: `Bar`
+  [!UICONTROL Diagrammtyp]: `Bar`
 
 * **Durchschnittliche Zeit bis zur Rückkehr (alle Zeit)**
 * Metrik `A`: `Avg time between order and return`
@@ -174,10 +173,9 @@ Zu erstellende Spalten
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Intervall]: `None`
+  [!UICONTROL Intervall]: `None`
 * 
-
-   [!UICONTROL Diagrammtyp]: `Number`
+  [!UICONTROL Diagrammtyp]: `Number`
 
 * **Prozentsatz der Bestellungen mit Rückgabe**
 * Metrik `A`: `Number of orders`
@@ -191,12 +189,11 @@ Zu erstellende Spalten
 * Formel: % der Bestellungen mit Rückgabe
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Intervall]: `None`
+  [!UICONTROL Intervall]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
 * **Nach Monat zurückgegebener Umsatz**
@@ -206,8 +203,7 @@ Zu erstellende Spalten
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
 * 
-
-   [!UICONTROL Diagrammtyp]: `Line`
+  [!UICONTROL Diagrammtyp]: `Line`
 
 * **Kunden, die eine Rückgabe getätigt und nicht erneut gekauft haben**
 * Metrik `A`: `Number of orders with returns`
@@ -218,12 +214,11 @@ Zu erstellende Spalten
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Intervall]: `None`
+  [!UICONTROL Intervall]: `None`
 * 
-   [!UICONTROL Gruppe von]: `Customer_email`
+  [!UICONTROL Gruppe von]: `Customer_email`
 * 
-
-   [!UICONTROL Diagrammtyp]: `Table`
+  [!UICONTROL Diagrammtyp]: `Table`
 
 * **Rückkehrrate nach Artikel**
 * Metrik `A`: `Returned items` (Ausblenden)
@@ -236,15 +231,14 @@ Zu erstellende Spalten
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
 * 
-
-   [!UICONTROL Format]: `Percentage`
+  [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Intervall]: `None`
+  [!UICONTROL Intervall]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
 * 
-   [!UICONTROL Diagrammtyp]: `Table`
+  [!UICONTROL Diagrammtyp]: `Table`
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie im obigen Beispiel-Dashboard aussehen.
 

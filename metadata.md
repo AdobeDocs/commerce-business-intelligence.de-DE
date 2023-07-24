@@ -1,15 +1,18 @@
 ---
-solution: Commerce
+solution: Commerce, Commerce Intelligence
 product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-business-intelligence.de-DE
 role: User
+feature-set: Commerce Intelligence
+level: Beginner, Intermediate
+topic: Commerce
 index: true
-source-git-commit: 8e4854e5b8820eb1fa0aee0d23f7e1ecd36c538b
+source-git-commit: c212256ff32e308cb67a84afd3fd86b0f756ae24
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '127'
 ht-degree: 0%
 
 ---
@@ -29,7 +32,7 @@ Die `metadata.md` -Datei enthält Metadaten auf Repo-Ebene, die an das Benutzerh
 | mini-toc-levels | Legt die Anzahl der Überschriftenebenen fest, die in der rechten Leiste angezeigt werden. Standardwert ist 2 |
 | git-repo | Gibt den Speicherort des Übergeordneten Repo für die interne Verwendung an |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 In der Datei TOC.md
 
@@ -38,4 +41,4 @@ In der Datei TOC.md
 | user-guide-title | Wird in der Artikelüberschrift als Link verwendet |
 | user-guide-url | Öffnet die Helpx-Hub-Seite |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

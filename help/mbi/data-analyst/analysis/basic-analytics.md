@@ -2,7 +2,9 @@
 title: Grundlegende Analysen verstehen und erstellen
 description: Erfahren Sie, wie Sie die Analyse der Grundlagen verstehen und erstellen.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Dashboards, Data Integration
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '3113'
 ht-degree: 0%
@@ -153,7 +155,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Group By]**: `Customer's Order Number`, wählen Sie `2` und `3`
 
-   ![](../../assets/2nd_and_3rd_purchases_last_year.png)
+  ![](../../assets/2nd_and_3rd_purchases_last_year.png)
 
 * **Berichtsbeispiel 2**: Die Anzahl der wiederholten Kunden in den letzten Jahren
    * **[!UICONTROL Metric]**: `Distinct Customers`
@@ -161,7 +163,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
    * **[!UICONTROL Time Range]**: `Moving range > Last Year`
    * **[!UICONTROL Time Interval]**: `By Month`
 
-   ![Kunden im letzten Jahr wiederholen](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
+  ![Kunden im letzten Jahr wiederholen](../../assets/Repeat_customers_last_year.png)<!--{: width="929"}-->
 
 ### Topkunden nach Lebensdauer der Bestellungen
 
@@ -174,7 +176,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top/Bottom]**: Top 25 sortiert nach Bestellungen
 
-   ![Top 25 Kunden nach Bestellungen](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
+  ![Top 25 Kunden nach Bestellungen](../../assets/Top_25_customers_by_lifetime_orders.png)<!--{: width="929"}-->
 
 ### Top-Kunden nach Lebensdauerumsatz
 
@@ -187,7 +189,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
    * **[!UICONTROL Group By]**: `customer_email`
    * **[!UICONTROL Show Top Bottom]**: Top 25 sortiert nach Lebensdauerumsatz
 
-   ![Die 25 wichtigsten Kunden nach Umsatz](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
+  ![Die 25 wichtigsten Kunden nach Umsatz](../../assets/top_25_customers_by_lifetime_revneue.png)<!--{: width="929"}-->
 
 ### Durchschnittlicher Umsatz nach Kohorte
 
@@ -202,7 +204,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
    * **[!UICONTROL Table]**: `Customer_entity`
    * **[!UICONTROL Perspective]**: Kumulativer Durchschnittswert pro Kohortenmitglied
 
-   ![Kundenlebenszeitumsatz nach Kohorte](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
+  ![Kundenlebenszeitumsatz nach Kohorte](../../assets/Avg_customer_lifetime_revenue_by_cohort.png)<!--{: width="929"}-->
 
 ### Kunden nach Verwendung des Gutscheins
 
@@ -218,7 +220,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
    * **[!UICONTROL Time range]**: `All Time`
    * **[!UICONTROL Time interval]**: `By Month`
 
-   ![Kunden nach Nutzung des Coupons](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
+  ![Kunden nach Nutzung des Coupons](../../assets/Customers_by_coupon_usage.png)<!--{: width="929"}-->
 
 * **Berichtsbeispiel 2**: Prozentsatz der Coupon- und Nicht-Coupon-Kunden nach Monat
    * **[!UICONTROL Metric A]**: `Non coupon customers` (Metrik ausblenden)
@@ -300,7 +302,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
    * **[!UICONTROL Time Range]**: `1 Year Ago to 1 Month Ago`
    * **[!UICONTROL Time Interval]**: `By Month`
 
-   ![Bestellte Produkte](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
+  ![Bestellte Produkte](../../assets/products_ordered_pic1.png)<!--{: width="929"}-->
 
 * Kombinieren Sie diese Metrik mit Ihrer Anzahl an Bestellungen-Metrik, um die Anzahl der Elemente pro Bestellung zu berechnen. Fügen Sie anschließend Gutscheincodes zum Bericht hinzu, um festzustellen, wie sich Ihre Promotions auf die Warenkorbgröße auswirken, oder um nach neuen oder wiederholten Bestellungen zu segmentieren, um Ihr Kundenverhalten besser zu verstehen.
 * **Berichtsbeispiel**: Produkte pro Bestellung: Erstbestellung vs. Wiederholung von Bestellungen
@@ -337,7 +339,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
    * **[!UICONTROL Time Interval]**: `By Month`
    * **[!UICONTROL Perspective]**: `Amount Change vs Previous Year`
 
-   ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
+  ![AOV](../../assets/aov_pic.png)<!--{: width="929"}-->
 
 ### Am häufigsten mit Coupons gekaufte Produkte
 
@@ -351,7 +353,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
    * **[!UICONTROL Group By**]: `name` (oder `SKU`oder eine andere Produktkennung)
    * **[!UICONTROL Show top/bottom]**: Die 25 beliebtesten Sortierungen nach bestellten Produkten
 
-   ![Produkte mit Coupons](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
+  ![Produkte mit Coupons](../../assets/prod_coupons_pic.png)<!--{: width="929"}-->
 
 ### Zeit zwischen Bestellungen
 
@@ -398,7 +400,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
    * **[!UICONTROL Time Range]**: `1 Year Ago to 3 Months Ago`
    * **[!UICONTROL Time Interval]**: `By Day`
 
-   ![Anzeigenimpressionen](../../assets/ad_impressions.png)<!--{: width="929"}-->
+  ![Anzeigenimpressionen](../../assets/ad_impressions.png)<!--{: width="929"}-->
 
 ### Clickthrough-Rate (CTR)
 
@@ -482,7 +484,7 @@ Im Folgenden finden Sie einige gängige Beispiele für Berichte und Metriken, di
       * Für Metriken `A`auswählen `Customer's first order's campaign`
       * Für Metriken `B`auswählen `campaign`
 
-   ![Neue Benutzer.](../../assets/New_Users_Last_Month.png)
+  ![Neue Benutzer.](../../assets/New_Users_Last_Month.png)
 
 >[!NOTE]
 >

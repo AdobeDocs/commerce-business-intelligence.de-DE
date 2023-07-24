@@ -2,7 +2,9 @@
 title: Enterprise_Rma_Item_Entity-Tabelle
 description: Erfahren Sie, wie Sie Informationen zu einem bestimmten Element aus einer angeforderten Rückgabe analysieren.
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
-source-git-commit: 14777b216bf7aaeea0fb2d0513cc94539034a359
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 0%
@@ -46,7 +48,7 @@ Jede Zeile im `enterprise_rma_item_entity` Tabelle (häufig `magento_rma_item_en
 
 | **Metrikname** | **Beschreibung** | **Bauwesen** |
 |---|---|---|
-| `Number of items returned` | Die Anzahl der zurückgegebenen Elemente. | Vorgangsspalte: zurückgegebene Menge<br>Vorgang: Summe<br>Zeitstempelspalte: Rückkehrtermin angefordert |
+| `Number of items returned` | Die Anzahl der zurückgegebenen Elemente. | Vorgangsspalte: zurückgegebene qty<br>Vorgang: Summe<br>Zeitstempelspalte: Rückkehrtermin angefordert |
 | `Returned items' total value` | Der zurückgegebene Geldbetrag. | Vorgangsspalte: Gesamtwert des Rückkehrartikels (zurückgegebene Menge * Preis)<br>Vorgang: Summe<br>Zeitstempelspalte: Rückkehrtermin angefordert |
 
 {style="table-layout:auto"}
@@ -64,4 +66,4 @@ Jede Zeile im `enterprise_rma_item_entity` Tabelle (häufig `magento_rma_item_en
 * Erstellen Sie verbundene Spalten auf der Seite  `enterprise_rma_item_entity` -Tabelle über den folgenden Join:
 
 * Commerce 1.x: `enterprise_rma_item_entity.order_item_id ` (viele) => `sales_flat_order_item.item_id` (eins)
-* Commerce 2.x: `magento_rma_item_entity.order_item_id ` (viele) => `sales_order_item.item_id` (eins)
+* Commerce 2.x: `magento_rma_item_entity.order_item_id ` (viele) => `sales_order_item.item_id` (eins)

@@ -2,7 +2,9 @@
 title: Auswirkungen des Gutscheins analysieren
 description: Erfahren Sie, wie Sie die Auswirkungen von Gutscheinen auf die Akquise und Kundenbindung analysieren können.
 exl-id: b0619365-fa75-49b5-a393-87f3364a390f
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: Data Warehouse Manager, Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 2%
@@ -122,10 +124,10 @@ Was kann daraus gemacht werden? Erstens hatte der Gutschein &quot;20 % Rabatt&qu
 * die Tageszeit/Woche/Monat/Jahr, zu der die Gutscheine angeboten wurden.
 * die Saison, in der die Gutscheine je nach Unternehmen angeboten wurden.
 
-   **Beispiel:** Der Gutschein &quot;20% Rabatt&quot; wurde in den Sommermonaten angeboten, aber das Unternehmen verkauft Winterkleidung.
+  **Beispiel:** Der Gutschein &quot;20% Rabatt&quot; wurde in den Sommermonaten angeboten, aber das Unternehmen verkauft Winterkleidung.
 * die Einschränkungen für die Gutscheine.
 
-   **Beispiel:** Der Gutschein &quot;10 % Rabatt&quot;wird nur Kunden angeboten, die einen Wintermantel in derselben Bestellung erwerben.
+  **Beispiel:** Der Gutschein &quot;10 % Rabatt&quot;wird nur Kunden angeboten, die einen Wintermantel in derselben Bestellung erwerben.
 
 Die **Bruttoeinnahmen** für den Coupon &quot;25 % Rabatt von 100 $ oder mehr&quot;ist viel höher als der Bruttoumsatz für den &quot;10 off&quot;-Coupon. Der Gutschein für &quot;$10 off&quot;ist jedoch viel größer **Anzahl der Bestellungen**. Analysieren der **durchschnittlicher Bestellwert** bietet Einblicke in diese Unterschiede. Obwohl der Coupon &quot;25 % Rabatt von 100 Euro oder mehr&quot;weniger Bestellungen aufwies, liegt der durchschnittliche Bestellwert über dem Dreifachen des &quot;10-Rabatt&quot;-Coupons. Somit wird ein größerer Bruttoumsatz dem Coupon &quot;25 % Rabatt von 100 $ oder mehr&quot;zugeordnet.
 

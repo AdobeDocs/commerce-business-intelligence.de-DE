@@ -2,7 +2,9 @@
 title: Verstehen Sie Ihre [!DNL Commerce Intelligence] Umgebung
 description: Erfahren Sie mehr über die Arbeit mit und die Verbesserung Ihrer [!DNL Commerce Intelligence] Umgebung.
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -19,7 +21,7 @@ Viele Ihrer Tabellen enthalten eine Spalte mit dem Namen `entity\_id`. In jeder
 
 Beispiel: Jede Zeile im `sales\_order` -Tabelle ist eine eindeutige Reihenfolge. Der Primärschlüssel in dieser Tabelle heißt `entity\_id`. Diese Spalte kann als `order\_id`. In einer separaten Tabelle `customer\_entity`, stellt jede Zeile einen Unique Customer dar. Der Primärschlüssel in dieser Tabelle wird auch als `entity\_id`, der als `customer\_id`.
 
-In diesen Tabellen wird `sales\_order.entity\_id` ist nicht gleich `customer\_entity.entity\_id`. Dies gilt für alle Tabellensätze mit `entity\_id`: `table\_A.entity\_id` ist nicht gleich `table\_B.entity\_id`.
+In diesen Tabellen wird `sales\_order.entity\_id` ist nicht gleich `customer\_entity.entity\_id`. Dies gilt für alle Tabellensätze mit `entity\_id`: `table\_A.entity\_id` ist nicht gleich `table\_B.entity\_id`.
 
 ## [!DNL Guest orders]
 

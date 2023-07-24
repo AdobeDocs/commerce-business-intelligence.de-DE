@@ -2,7 +2,9 @@
 title: Kundenabwanderung definieren
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie die Abwanderung Ihrer Transaktionskunden definieren können.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Warehouse Manager, Reports, Dashboards
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -68,29 +70,27 @@ Keine neuen Metriken!
 
 * [!UICONTROL Formula]: anfängliche Wiederholungsreihenwahrscheinlichkeit
 * 
-   [!UICONTROL Formel]: `A/B`
+  [!UICONTROL Formel]: `A/B`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * 
-
-   [!UICONTROL Chart type]: `Scalar`
+  [!UICONTROL Chart type]: `Scalar`
 
 * **Wiederholungsbestellwahrscheinlichkeit seit Bestellung in Monaten**
 * Metrik A: Bestellungen nach Monaten seit der vorherigen Bestellung wiederholen (ausblenden)
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Metrik B: Letzte Bestellungen nach Monaten seit Bestellung (ausblenden)
 * [!UICONTROL Metric]: `Number of orders`
 * 
-   [!UICONTROL Perspective]: `Cumulative`
+  [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * Metrik C: Wiederholungsreihenfolge (ausblenden)
@@ -98,33 +98,29 @@ Keine neuen Metriken!
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * 
-
-   [!UICONTROL Gruppe von]: `Independent`
+  [!UICONTROL Gruppe von]: `Independent`
 
 * Metrik D: Letzte Bestellungen (ausblenden)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
 * 
-
-   [!UICONTROL Gruppe von]: `Independent`
+  [!UICONTROL Gruppe von]: `Independent`
 
 * [!UICONTROL Formula]: anfängliche Wiederholungsreihenwahrscheinlichkeit
 * 
-   [!UICONTROL Formel]: `(C-A)/(C+D-A-B)`
+  [!UICONTROL Formel]: `(C-A)/(C+D-A-B)`
 * 
-
-   [!UICONTROL Format]: `Percent`
+  [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
 * 
-   [!UICONTROL Interval]: `None`
+  [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Show top.bottom: Top 24 Kategorien, sortiert nach Kategoriename
 
 * 
-
-   [!UICONTROL Chart type]: `Line`
+  [!UICONTROL Chart type]: `Line`
 
 Der Bericht zur anfänglichen Wiederholungsbestellwahrscheinlichkeit stellt die Gesamtanzahl wiederholter Bestellungen/Gesamtbestellungen dar. Jede Bestellung bietet die Möglichkeit, eine Wiederholungsbestellung vorzunehmen. die Anzahl der Wiederholungsaufträge ist die Teilmenge der tatsächlich ausgeführten Bestellungen.
 

@@ -2,7 +2,9 @@
 title: Verwalten von Adobe Commerce-Benutzern und -Berechtigungen
 description: Erfahren Sie, wie Sie Ihre Commerce Intelligence-Benutzer verwalten.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, User
+feature: User Management
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -23,25 +25,25 @@ In [!DNL Commerce Intelligence]gibt es drei allgemeine Berechtigungsebenen, die 
 
 Mit diesen Berechtigungen können Benutzer bestimmte Aktionen durchführen oder auf bestimmte Teile von [!DNL Commerce Intelligence]. Die folgende Tabelle zeigt, was die einzelnen Berechtigungsebenen in [!DNL Commerce Intelligence]:
 
-|  | `Admin` | `Standard` | `Read Only` |
+|   | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
-| **Benutzer erstellen/verwalten** | ✔ |  |  |
-| **E-Mail-Zusammenfassungen erstellen** | ✔ | ✔ |  |
-| **Dashboards erstellen/bearbeiten/freigeben** | ✔ | ✔ |  |
+| **Benutzer erstellen/verwalten** | ✔ |   |   |
+| **E-Mail-Zusammenfassungen erstellen** | ✔ | ✔ |   |
+| **Dashboards erstellen/bearbeiten/freigeben** | ✔ | ✔ |   |
 | **Anzeigen von Dashboards** | ✔ | ✔ | ✔ |
-| **Erstellen/Bearbeiten/Löschen visueller Berichte** | ✔ | ✔* |  |
-| **SQL-Berichte erstellen/bearbeiten/löschen** | ✔ |  |  |
-| **Dashboards klonen** | ✔ |  |  |
-| **Integrationen hinzufügen/verwalten** | ✔ |  |  |
-| **Zugriff auf Data Warehouse Manager** | ✔ |  |  |
-| **Synchronisieren/Aufheben der Synchronisierung von Tabellen und Spalten** | ✔ |  |  |
-| **Erstellen/Bearbeiten von Metriken** | ✔ |  |  |
-| **Erstellen und Bearbeiten von Filtersätzen** | ✔ |  |  |
-| **Berechnete Spalten erstellen/bearbeiten** | ✔ |  |  |
-| **Liste der abhängigen Berichte erstellen** | ✔ |  |  |
-| **Zugriffssystemzusammenfassung** | ✔ |  |  |
-| **Zeitzoneneinstellungen aufrufen** | ✔ |  |  |
-| **Abrechnung des Zugriffs** | ✔ | ✔** |  |
+| **Erstellen/Bearbeiten/Löschen visueller Berichte** | ✔ | ✔* |   |
+| **SQL-Berichte erstellen/bearbeiten/löschen** | ✔ |  |   |
+| **Dashboards klonen** | ✔ |   |   |
+| **Integrationen hinzufügen/verwalten** | ✔ |   |   |
+| **Zugriff auf Data Warehouse Manager** | ✔ |   |   |
+| **Synchronisieren/Aufheben der Synchronisierung von Tabellen und Spalten** | ✔ |   |   |
+| **Erstellen/Bearbeiten von Metriken** | ✔ |   |   |
+| **Erstellen und Bearbeiten von Filtersätzen** | ✔ |   |   |
+| **Berechnete Spalten erstellen/bearbeiten** | ✔ |   |   |
+| **Liste der abhängigen Berichte erstellen** | ✔ |   |   |
+| **Zugriffssystemzusammenfassung** | ✔ |   |   |
+| **Zeitzoneneinstellungen aufrufen** | ✔ |   |   |
+| **Abrechnung des Zugriffs** | ✔ | ✔** |   |
 | **Support kontaktieren** | ✔ | ✔ | ✔ |
 
 {style="table-layout:auto"}

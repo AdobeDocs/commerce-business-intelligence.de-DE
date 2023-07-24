@@ -2,7 +2,9 @@
 title: Benennen von Berichten und Elementen in Commerce Intelligence
 description: Best Practices für die Benennung von Berichten und Elementen in [!DNL Commerce Intelligence].
 exl-id: c662cedd-c779-4254-b04b-f3092a538c85
-source-git-commit: 4cad1e05502630e13f7a2d341f263140a02b3d82
+role: Admin, User
+feature: Reports
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -11,7 +13,7 @@ ht-degree: 0%
 
 # Berichte und Elemente benennen
 
-Bevor Sie mit dem Erstellen beginnen in[!DNL Adobe Commerce Intelligence], möchte Adobe einige Geheimnisse für den Erfolg teilen. Es ist wichtig zu wissen, wie Sie Metriken, Filter usw. erstellen, aber Ihre gesamte Arbeit kann unnötig sein, wenn Sie nicht finden können, was Sie benötigen, oder wenn es Unklarheiten gibt.
+Bevor Sie mit dem Erstellen beginnen in [!DNL Adobe Commerce Intelligence], möchte Adobe einige Geheimnisse für den Erfolg teilen. Es ist wichtig zu wissen, wie Sie Metriken, Filter usw. erstellen, aber Ihre gesamte Arbeit kann unnötig sein, wenn Sie nicht finden können, was Sie benötigen, oder wenn es Unklarheiten gibt.
 
 ## Warum ist die Nomenklatur wichtig? {#why}
 

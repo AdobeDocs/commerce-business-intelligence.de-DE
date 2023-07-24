@@ -2,7 +2,9 @@
 title: Replizieren von Google Analytics-Kanälen mithilfe von Akquisequellen
 description: Erfahren Sie, wie Sie Google Analytics-Kanäle mithilfe von Akquise-Quellen replizieren.
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%

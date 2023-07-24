@@ -2,7 +2,9 @@
 title: Tabellenbeziehungen verstehen und auswerten
 description: Erfahren Sie, wie Sie verstehen können, wie viele mögliche Vorkommen in einer Tabelle zu einer Entität in einer anderen gehören können.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
-source-git-commit: 2db58f4b612fda9bdb2570e582fcde89ddc18154
+role: Admin, Data Architect, Data Engineer, User
+feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
+source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -120,7 +122,7 @@ Wenn Tabellen mithilfe einer `Foreign key` auf einen `primary key`, beschreibt d
 Wenn einer der folgenden Werte wahr ist, lautet die Beziehung `many-to-many`:
 
 * `Non-primary key` verwendet, um zwei Tabellen zu verknüpfen
-   ![](../../assets/many-to-many1.png)
+  ![](../../assets/many-to-many1.png)
 * Teil eines Verbundes `primary key` wird verwendet, um zwei Tabellen zu verknüpfen
 
 ![](../../assets/many-to-mnay2.png)
