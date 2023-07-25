@@ -2,7 +2,9 @@
 title: ReportBuilder auswählen
 description: Erfahren Sie, wie Sie Ihren ReportBuilder auswählen.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
@@ -13,7 +15,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >>Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
-
 
 Da Sie jetzt mehr Möglichkeiten zum Erstellen von Analysen haben, kann es manchmal schwierig sein, genau zu wissen, welcher Geschmack des Report Builder Ihren Anforderungen entspricht. Dieses Thema führt Sie durch die Auswahl der besten Methode zum Erstellen Ihrer Analyse.
 

@@ -2,7 +2,9 @@
 title: Google Analytics Warehouse verbinden
 description: Erfahren Sie, wie Besucher Ihre Site nutzen, welche Inhalte attraktiv sind, wo Besucher aussteigen und vieles mehr.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
@@ -43,7 +45,7 @@ Mit dem [!DNL Google Analytics Live] Integration, [!DNL Google Analytics] -Diagr
 
 ## Mehrere Verbindungen herstellen [!DNL Google Analytics] profiles
 
-Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem Konto [!DNL Google Analytics] Profil-ID. In diesem Fall können Sie alle Ihre Profil-IDs in [!DNL Commerce Intelligence]. Überprüfen Sie die Profil-IDs, die Sie im Schritt zur Profilauswahl einbeziehen möchten.
+Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem [!DNL Google Analytics] Profil-ID. In diesem Fall können Sie alle Ihre Profil-IDs in [!DNL Commerce Intelligence]. Überprüfen Sie die Profil-IDs, die Sie im Schritt zur Profilauswahl einbeziehen möchten.
 
 So identifizieren Sie die [!DNL Google Analytics] Profil-ID:
 

@@ -2,7 +2,9 @@
 title: Metriken erstellen
 description: Erfahren Sie, wie Sie mit Metriken Diagramme erstellen können.
 exl-id: d4c25546-3c51-4d32-b9d8-c424ec103be5
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -45,12 +47,12 @@ Bei Verwendung in Berichten können Metriken über einen bestimmten Zeitraum ana
       * `Median` - Dieser Vorgang berechnet den Median der Datenspaltenwerte
       * `First and Third Quartiles` - Diese Vorgänge berechnen die 25. bzw. 75. Perzentile der Datenspaltenwerte
       * `Tenth and Ninetieth Percentiles` - Diese Vorgänge berechnen die 10. bzw. 90. Perzentile der Datenspaltenwerte
+
    * Wählen Sie eine Spalte aus, für die der Vorgang ausgeführt werden soll. Wenn Sie beispielsweise den Gesamtumsatz ermitteln möchten, führen Sie einen Summenvorgang für die `order total` Spalte.
 
-      Wenn Sie eine vorhandene Metrik bearbeiten, können Sie auch [die operationelle Tabelle der Metrik ändern](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) in diesem Abschnitt.
+     Wenn Sie eine vorhandene Metrik bearbeiten, können Sie auch [die operationelle Tabelle der Metrik ändern](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) in diesem Abschnitt.
 
    * Wählen Sie eine Datumsdimension aus, die für die Trendverfolgung der Metrik verwendet werden kann. Beispiel: `order date`.
-
 
 ## Filter hinzufügen {#filters}
 

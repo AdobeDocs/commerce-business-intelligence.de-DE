@@ -2,7 +2,9 @@
 title: Amazon RDS verbinden
 description: Erfahren Sie mehr über die Schritte zum Verbinden Ihrer RDS-Instanz.
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
-source-git-commit: 6b1bd96a0f9ae8bda3ae8db8ca78ad655079f2a4
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -41,7 +43,7 @@ Dies ist der Teil des Prozesses, in dem die Schritte je nach verwendeter Datenba
 
 ## Verbindungsinformationen eingeben in [!DNL Commerce Intelligence]
 
-Nachdem Sie die [!DNL Commerce Intelligence] Zugriff auf Ihre Instanz und Erstellung eines Benutzers für uns. Das Letzte, was Sie tun müssen, ist die Angabe der Verbindungsinformationen in [!DNL Commerce Intelligence].
+Nachdem Sie [!DNL Commerce Intelligence] Zugriff auf Ihre Instanz und Erstellung eines Benutzers für uns. Das Letzte, was Sie tun müssen, ist die Angabe der Verbindungsinformationen in [!DNL Commerce Intelligence].
 
 Die Berechtigungsseiten für `MySQL`, `Microsoft SQL`und `PostgreSQL` auf die über `Integrations` page (**[!UICONTROL Manage Data** > **Integrations]**) durch Klicken auf **[!UICONTROL Add Integration]**. Wenn die Liste der Integrationen angezeigt wird, klicken Sie auf das Symbol für die Datenbank, die Sie verwenden, um zur Seite &quot;Anmeldeinformationen&quot;zu gelangen. Wenn Sie derzeit keinen Zugriff auf die benötigte Integration haben, wenden Sie sich an Ihr Adobe Account Team.
 

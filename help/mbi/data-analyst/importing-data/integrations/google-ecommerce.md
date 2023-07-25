@@ -2,7 +2,9 @@
 title: Google ECommerce verbinden
 description: Erfahren Sie mehr über Ihre bevorzugten Verweiskanäle.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
@@ -39,7 +41,7 @@ Erste Schritte mit der Eingabe Ihrer [!DNL Google ECommerce] Anmeldedaten [!DNL 
 
 ## Mehrere Verbindungen herstellen [!DNL Google Analytics] Profile in [!DNL Commerce Intelligence]
 
-Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem [!DNL Google Analytics] Profil-ID. In diesem Fall können Sie alle Ihre Profil-IDs in [!DNL Commerce Intelligence]. Überprüfen Sie die Profil-IDs, die Sie im Schritt zur Profilauswahl einbeziehen möchten.
+Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem Konto [!DNL Google Analytics] Profil-ID. In diesem Fall können Sie alle Ihre Profil-IDs in [!DNL Commerce Intelligence]. Überprüfen Sie die Profil-IDs, die Sie im Schritt zur Profilauswahl einbeziehen möchten.
 
 So identifizieren Sie die [!DNL Google Analytics] Profil-ID:
 

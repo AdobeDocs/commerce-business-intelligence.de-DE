@@ -2,7 +2,9 @@
 title: Google Adwords verbinden
 description: Erfahren Sie, wie Sie den ROI Ihrer Kampagne messen können, indem Sie Ihre Werbekosten und den Kundenlebenszeitwert (CLV) der durch Ihre Kampagnen erworbenen Benutzer miteinander verbinden.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
@@ -35,7 +37,7 @@ Wenn Sie mehrere Profile haben und dabei behilflich sein müssen, welche Profile
 
 ## Mehrere Verbindungen herstellen [!DNL Google Analytics] profiles
 
-Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem Konto [!DNL Google Analytics] Profil-ID. In diesem Fall können Sie alle Ihre Profil-IDs in [!DNL Commerce Intelligence]. Überprüfen Sie die Profil-IDs, die Sie während des Schritts zur Profilauswahl einbeziehen möchten.
+Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem [!DNL Google Analytics] Profil-ID. In diesem Fall können Sie alle Ihre Profil-IDs in [!DNL Commerce Intelligence]. Überprüfen Sie die Profil-IDs, die Sie während des Schritts zur Profilauswahl einbeziehen möchten.
 
 **So identifizieren Sie die Google Analytics-ID einer bestimmten Website:**
 

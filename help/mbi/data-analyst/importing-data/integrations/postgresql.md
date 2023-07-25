@@ -2,7 +2,9 @@
 title: Anbinden von PostgreSQL über den SSH-Tunnel
 description: Erfahren Sie, wie Sie Ihre PostgreSQL-Datenbank über einen SSH-Tunnel mit Commerce Intelligence verbinden.
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -15,8 +17,8 @@ Um eine Verbindung herzustellen [!DNL PostgreSQL] Datenbank zu [!DNL Commerce In
 
 1. [Rufen Sie die [!DNL Commerce Intelligence] öffentlicher Schlüssel](#retrieve)
 1. [Zugriff auf [!DNL Commerce Intelligence] IP-Adresse](#allowlist)
-1. [Erstellen Sie eine [!DNL Linux] Benutzer für [!DNL Commerce Intelligence] ](#linux)
-1. [Erstellen Sie eine [!DNL PostgreSQL] Benutzer für [!DNL Commerce Intelligence] ](#postgres)
+1. [Erstellen Sie eine [!DNL Linux] Benutzer für [!DNL Commerce Intelligence]](#linux)
+1. [Erstellen Sie eine [!DNL PostgreSQL] Benutzer für [!DNL Commerce Intelligence]](#postgres)
 1. [Geben Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]](#finish)
 
 ## Abrufen der [!DNL Commerce Intelligence] [!DNL public key] {#retrieve}

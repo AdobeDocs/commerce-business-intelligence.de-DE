@@ -2,7 +2,9 @@
 title: Zeitoptionen in Visual Report Builder verwenden
 description: Hier erfahren Sie, wie Sie die Daten in Ihrem Bericht für einen bestimmten Zeitraum analysieren.
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 0%
@@ -82,6 +84,7 @@ Um diesen Anwendungsfall zu demonstrieren, sehen Sie sich den täglichen Umsatz 
    * `Time Interval`: setzen Sie dies auf `None`.
 
    * `Time Range`: setzen Sie dies auf `From 14 Months Ago To 13 Months Ago` durch erstmaliges Klicken **[!UICONTROL Custom]** then **[!UICONTROL Moving Range]**. Verwenden Sie die Felder und Dropdown-Listen oben im Menü, um den Bereich festzulegen. Diese Einstellung ermöglicht es uns, den Umsatz des Vormonats, aber des Vorjahres zu sehen.
+
    Machen Sie sich keine Gedanken, wenn die Metrik aus dem Bericht verschwindet. Durch Festlegen einer unabhängigen Zeitoption wird die Metrik automatisch aus dem Bericht ausgeblendet. Um es erneut anzuzeigen, klicken Sie auf **[!UICONTROL Show]** neben der Metrik.
 
    ![](../assets/Different_Time_Ranges.gif)
@@ -95,8 +98,6 @@ Um diesen Anwendungsfall zu demonstrieren, sehen Sie sich den täglichen Umsatz 
    ![](../assets/TO4.png)
 
    * Benennen Sie die Metriken um. Im Beispiel lautet die erste Metrik `Revenue - 2015` und der zweite `Revenue - 2014`.
-
-
 
 Weitere häufige Verwendung benutzerdefinierter `Time Options` ist die Bestimmung der Lieferwochen. Insbesondere während der Weihnachtszeit oder eines speziellen Werbezeitraums können Sie Artikel berücksichtigen, die in der letzten Woche, im letzten Monat und im vorherigen Werbezeitraum verkauft wurden, um fundierte Kaufentscheidungen treffen zu können.
 
@@ -129,13 +130,13 @@ Um die Formeln zu erstellen, klicken Sie auf **[!UICONTROL Add Formula]**. Geben
 * Für `last 7 days time period`, eingeben `D / A` im `Formula` -Feld.
 * Für `last 28 days time period`, eingeben `D / (B/4)` im `Formula` -Feld.
 
-   >[!NOTE]
-   >
-   >Es ist wichtig, die ausgewählten Zeiträume hier zu normalisieren. Teilen Sie in diesem Beispiel 28 Tage in vier Wochen auf. Möglicherweise müssen Sie eine andere Logik auf die Formel anwenden.
+  >[!NOTE]
+  >
+  >Es ist wichtig, die ausgewählten Zeiträume hier zu normalisieren. Teilen Sie in diesem Beispiel 28 Tage in vier Wochen auf. Möglicherweise müssen Sie eine andere Logik auf die Formel anwenden.
 
 * Für `last promo period`, eingeben `D / C` im `Formula` -Feld.
 
-   ![](../assets/Different_Time_Ranges_2.png)
+  ![](../assets/Different_Time_Ranges_2.png)
 
 * Passen Sie schließlich den Bericht an, indem Sie die Metriken ausblenden und eine `SKU` oder eine ähnliche Dimension wie der Bericht als `Group By`.
 

@@ -2,7 +2,9 @@
 title: Report Builder der Kohorte
 description: Erfahren Sie mehr über die Analyse von Benutzergruppen, die über ihre Lebenszyklen ähnliche Merkmale aufweisen.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
-source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Reports
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
@@ -181,7 +183,7 @@ In diesem Beispiel haben Sie die `Revenue` Metrik, gruppieren Sie Ihre Kohorten 
 
 ### Ich möchte im Durchschnitt wissen, wie viele Bestellungen ein Benutzer an verschiedenen Punkten seines Lebens tätigt.
 
-!![Average number of orders users make at different points in their lifetimes](../../assets/cohort2.gif
+(../../assets/cohort2.gif
 
 In diesem Beispiel haben Sie die `Number of orders` Metrik, gruppieren Sie Ihre Kohorten nach `customer's first order date`, und umfasste die acht neuesten Kohorten (definiert im `Time Period` ) in der Analyse. Um die durchschnittliche Anzahl der Bestellungen für jede Kohorte anzuzeigen, haben Sie die `perspective` nach `Average Value per Cohort Member`.
 

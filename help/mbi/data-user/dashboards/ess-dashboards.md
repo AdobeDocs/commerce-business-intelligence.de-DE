@@ -2,7 +2,9 @@
 title: Dashboards
 description: Erfahren Sie, wie Sie ein Dashboard erstellen und verwenden.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
-source-git-commit: 3bf4829543579d939d959753eb3017364c6465bd
+role: Admin, Data Architect, Data Engineer, User
+feature: Commerce Tables, Data Warehouse Manager, Dashboards
+source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -41,14 +43,13 @@ Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie kön
 
    * So erstellen Sie eine `Group` Geben Sie für das Dashboard den Namen der Gruppe ein.
 
-      Wenn Ihre Commerce-Installation beispielsweise über mehrere Store-Ansichten verfügt, können Sie für jede Store-Ansicht eine Gruppe erstellen.
+     Wenn Ihre Commerce-Installation beispielsweise über mehrere Store-Ansichten verfügt, können Sie für jede Store-Ansicht eine Gruppe erstellen.
 
    * Klicken **[!UICONTROL Create]**.
 
    ![Dashboard-Name](../../assets/magento-bi-dashboard-create-name.png)
 
    * Der Name Ihres neuen Dashboards wird oben links angezeigt. Klicken Sie auf den Abwärtspfeil (![](../../assets/magento-bi-btn-down.png)), um die Optionen anzuzeigen. Wenn Sie eine Gruppe erstellt haben, wird das neue Dashboard unter der Gruppe in der Liste angezeigt.
-
 
 ### Bericht hinzufügen
 
@@ -58,7 +59,7 @@ Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie kön
 
    * Klicken Sie in der Dashboard-Kopfzeile auf **[!UICONTROL Add Report]**.
 
-      ![Bericht hinzufügen](../../assets/magento-bi-dashboard-create-add-report.png)
+     ![Bericht hinzufügen](../../assets/magento-bi-dashboard-create-add-report.png)
 
 1. Klicken **[!UICONTROL Create Report]** , um **[!UICONTROL Report Builder Options]**.
 
@@ -107,6 +108,7 @@ Wenn Sie ein Dashboard freigeben, können Sie Ihrer gesamten Organisation ODER i
       * `View`
       * `Edit`
       * `None`
+
    1. Wenn Sie zur Bestätigung aufgefordert werden, klicken Sie auf **[!UICONTROL OK]** , um die Berechtigungsebene für jeden Benutzer zu aktualisieren.
 
    1. Um die Berechtigungsstufe einer Person zu ändern, suchen Sie den Benutzer in der Liste, um die Berechtigungsebene zu ändern. Die Änderung wird automatisch gespeichert.
