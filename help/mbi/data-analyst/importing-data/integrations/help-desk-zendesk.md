@@ -63,7 +63,7 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
 * `updated_at`
 * `_updated_at`
 
-### Zu erstellende Filtersätze
+### Sets filtern, um sie zu erstellen
 
 * `[!DNL Zendesk] Tickets` table
    * `status != deleted`

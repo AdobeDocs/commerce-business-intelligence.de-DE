@@ -19,14 +19,14 @@ ht-degree: 0%
 * [Erstellen Sie eine [!DNL MySQL] Benutzer für [!DNL Commerce Intelligence]](#steptwo)
 * [Verbindungsinformationen eingeben in [!DNL Commerce Intelligence]](#stepthree)
 
-## Sprung zu
+## Springen Sie zu
 
 * [[!DNL MySQL] via ](../integrations/mysql-via-ssh-tunnel.md)
 * [[!DNL MySQL] via [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
 >
->[!DNL Adobe] empfiehlt die Verwendung von [SSH](../integrations/mysql-via-ssh-tunnel.md) oder eine andere Form der Verschlüsselung, um Ihre Daten zu sichern! Wenn dies keine Option ist, können Sie weiterhin direkt eine Verbindung herstellen [!DNL Commerce Intelligence] zu Ihrer Datenbank mithilfe der Anweisungen in diesem Thema.
+>[!DNL Adobe] empfiehlt, [SSH](../integrations/mysql-via-ssh-tunnel.md) oder eine andere Form der Verschlüsselung, um Ihre Daten zu sichern! Wenn dies keine Option ist, können Sie weiterhin direkt eine Verbindung herstellen [!DNL Commerce Intelligence] zu Ihrer Datenbank mithilfe der Anweisungen in diesem Thema.
 
 Dieses Thema führt Sie durch die direkte Verbindung Ihrer [!DNL MySQL] Datenbank zu [!DNL Commerce Intelligence]. Diese Einstellungen können auch mit [!DNL Adobe Commerce] oder anderen eCommerce-Datenbanken, die MySQL verwenden.
 
@@ -38,7 +38,7 @@ Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firew
 
 ## Erstellen Sie eine [!DNL MySQL] Benutzer für [!DNL Commerce Intelligence]
 
-Die einfachste Methode zum Erstellen einer `MySQL` Benutzer für [!DNL Commerce Intelligence] führt die folgende Abfrage aus, wenn Sie angemeldet sind `MySQL` mit `GRANT` Berechtigungen. Ersetzen `Commerce Intelligence IP Address` mit dem [!DNL Commerce Intelligence] IP-Adresse und ersetzen `secure password` mit einem sicheren Kennwort Ihrer Wahl:
+Die einfachste Methode zum Erstellen einer `MySQL` Benutzer für [!DNL Commerce Intelligence] führt die folgende Abfrage aus, wenn Sie angemeldet sind `MySQL` mit `GRANT` -Berechtigungen. Ersetzen `Commerce Intelligence IP Address` mit dem [!DNL Commerce Intelligence] IP-Adresse und ersetzen `secure password` mit einem sicheren Kennwort Ihrer Wahl:
 
 ```sql
     GRANT SELECT ON *.* TO 'magentobi'@'<Commerce Intelligence IP address>' IDENTIFIED BY '<secure password>';
@@ -50,11 +50,11 @@ Um den Zugriff dieses Benutzers auf Daten in bestimmten Datenbanken, Tabellen od
 
 ## Verbindungsinformationen in Commerce Intelligence eingeben
 
-Um Elemente einzuschließen, müssen Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]. Hast du die [!DNL MySQL] Berechtigungsseite öffnen? Wenn nicht, gehen Sie zu **[!UICONTROL Data** > **Connections]** und klicken Sie auf **[!UICONTROL Add New Data Source]** und klicken Sie dann auf [!DNL MySQL] Symbol. Vergessen Sie nicht, die `Encrypted` Umschalten auf `Yes`.
+Um Elemente einzuschließen, müssen Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]. Hast du die [!DNL MySQL] Berechtigungsseite öffnen? Wenn nicht, gehen Sie zu **[!UICONTROL Data** > **Connections]** und klicken **[!UICONTROL Add New Data Source]** und klicken Sie dann auf [!DNL MySQL] Symbol. Vergessen Sie nicht, die `Encrypted` Umschalten auf `Yes`.
 
 Geben Sie die folgenden Informationen auf dieser Seite ein, beginnend mit dem `Database Connection` Abschnitt:
 
-* `Connection Nickname`: Geben Sie einen Namen für die Integration ein (z. B. Ecommerce Store)
+* `Connection Nickname`: Geben Sie einen Namen für die Integration ein (z. B. Ecommerce Store).
 * `Username`: Der Benutzername für die [!DNL Commerce Intelligence] [!DNL MySQL] Benutzer
 * `Password`: Das Kennwort für die [!DNL Commerce Intelligence] [!DNL MySQL] Benutzer
 * `Port`: MySQL-Port auf Ihrem Server (`3306` standardmäßig)
@@ -62,8 +62,8 @@ Geben Sie die folgenden Informationen auf dieser Seite ein, beginnend mit dem `D
 
   Der Wert befindet sich in der `my.cnf` Datei (befindet sich unter `/etc/my.cnf`) unter der Zeile, die lautet `\[mysqld\]`. Wenn die bind-address-Zeile in dieser Datei auskommentiert ist, wird Ihr Server vor externen Verbindungsversuchen geschützt.
 
-Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um das Setup abzuschließen.
+Klicken Sie abschließend auf **[!UICONTROL Save & Test]** , um das Setup abzuschließen.
 
 ## Verwandte Dokumentation
 
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

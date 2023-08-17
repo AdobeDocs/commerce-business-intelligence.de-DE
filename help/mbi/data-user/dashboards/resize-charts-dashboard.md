@@ -21,4 +21,4 @@ Skalarzahlen. Balkendiagramme. Diagramme, die sich über lange Zeiträume erstre
 
 *So verschieben Sie ein Diagramm*, bewegen Sie den Mauszeiger über den oberen Rand des Diagramms, bis die `Move` -Cursor angezeigt. Halten Sie die Maustaste gedrückt und ziehen Sie das Diagramm an die gewünschte Position. Klicken Sie auf Freigabe , um die Grafik zu platzieren.
 
-![Diagramm verschieben](../../assets/Move_Chart_in_Dashboard.gif)
+![Verschieben-Diagramm](../../assets/Move_Chart_in_Dashboard.gif)

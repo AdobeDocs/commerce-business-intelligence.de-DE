@@ -21,7 +21,7 @@ In diesem Thema werden die Analysen untersucht, die Ihnen bei der Beantwortung d
 * Wie variiert die Wahrscheinlichkeit einer Wiederholung der Bestellung je nach der Zeit seit dem letzten Kauf des Kunden?
 * Wann sollte ein Kunde berücksichtigt werden? Wann sollte also eine Reaktivierungskampagne starten?
 
-## Empfohlene Metriken
+## Empfehlungen für Metriken
 
 Bei der Analyse des Rückgangs und der Abwanderung von Wiederholungswahrscheinlichkeiten sollten Sie erwägen, ([oder Gebäude](../../data-user/reports/ess-manage-data-metrics.md)) diese Metriken:
 
@@ -31,7 +31,7 @@ Diese Kennzahl ist definiert als die Gesamtzahl der wiederkehrenden Bestellungen
 
 ### Wiederholungsbestellwahrscheinlichkeit seit Bestellung in Monaten
 
-Diese Kennzahl zeigt die Wahrscheinlichkeit, dass ein Benutzer eine erneute Bestellung tätigt, da seit seiner letzten Bestellung Monate vergangen sind. Die Formel, mit der diese Metrik generiert wird, vereinfacht Folgendes:
+Diese Kennzahl zeigt die Wahrscheinlichkeit, dass ein Benutzer eine erneute Bestellung aufgibt, da seit seiner letzten Bestellung Monate vergangen sind. Die Formel, mit der diese Metrik generiert wird, vereinfacht Folgendes:
 
 ![Formel für Wiederholungswahrscheinlichkeit](../../assets/Repeat_probability_formula.png)
 
@@ -55,7 +55,7 @@ Dieser Bericht zeigt die Wahrscheinlichkeit, dass ein Kunde erneut bestellt wird
 
 Da die anfängliche Wiederholungswahrscheinlichkeitsrate für dieses Beispiel 60 % beträgt, wäre das Abwanderungsdatum der Zeitpunkt, zu dem die Wiederholungsbestellwahrscheinlichkeit unter 60 %/2 = 30 % oder etwa 6 Monate absinkt. Von den 60 % der Bestellungen, die voraussichtlich mit einer weiteren Bestellung bestellt werden, wurde die Hälfte innerhalb der ersten sechs Monate aufgegeben.
 
-Anders ausgedrückt: Wenn ein Kunde eine Nachbestellung tätigt, ist es wahrscheinlicher, dass er dies innerhalb von sechs Monaten nach seiner letzten Bestellung getan hat als nach der Sechsmonatsfrist. Wenn ein Kunde nach sechs Monaten nicht zurückgekauft hat, sollte eine Reaktivierungskampagne gestartet werden, um diesen Kunden wieder einzuziehen.
+Anders ausgedrückt: Wenn ein Kunde eine Nachbestellung tätigt, ist es wahrscheinlicher, dass er dies innerhalb von sechs Monaten nach seiner letzten Bestellung getan hat, als nach der Sechsmonatsfrist. Wenn ein Kunde nach sechs Monaten nicht zurückgekauft hat, sollte eine Reaktivierungskampagne gestartet werden, um diesen Kunden wieder einzuziehen.
 
 Abhängig von Ihrem Geschäftsmodell können Sie stattdessen einen anderen Schwellenwert wählen, z. B. den Punkt, an dem die Wiederholungsbestellwahrscheinlichkeit unter 50 % oder 10 % sinkt. Wenn Ihr internes Wissen auf eine andere Zahl hinweist, dann sollten Sie sie auf jeden Fall verwenden!
 

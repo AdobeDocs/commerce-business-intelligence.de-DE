@@ -21,11 +21,11 @@ Siehe [Schulungsvideo](https://experienceleague.adobe.com/docs/commerce-knowledg
 >
 >Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
 
-1. Klicken **[!DNL Manage Data** > **Filter Sets]** in der Seitenleiste.
+1. Klicks **[!DNL Manage Data** > **Filter Sets]** in der Seitenleiste.
 
    ![](../../assets/create-filter-sets.png)
 
-1. Klicken **[!UICONTROL Add Filter Set]** oben auf der Seite.
+1. Klicks **[!UICONTROL Add Filter Set]** oben auf der Seite.
 
 1. Wählen Sie die Tabelle aus, die die Metriken enthält, die Sie filtern möchten.
 
@@ -37,9 +37,9 @@ Siehe [Schulungsvideo](https://experienceleague.adobe.com/docs/commerce-knowledg
 
    Wenn Sie beispielsweise nur Bestellungen mit dem Status &quot;complete&quot;in Ihre `Total number of orders` Metrik, würden Sie einen Filter anwenden, der alle Bestellungen ausschließt, die nicht über den Status = verfügen. `complete`.
 
-1. Überprüfen Sie die Filterlogik und stellen Sie sicher, dass Klammern und Operatoren richtig platziert sind: Beispiel: `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
+1. Überprüfen Sie die Filterlogik und stellen Sie sicher, dass Klammern und Operatoren richtig platziert sind, beispielsweise: `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 
-   Ein falscher Filter ist häufig die Ursache für Datendiskrepanzen zwischen [!DNL Commerce Intelligence] Berichte und die erwarteten Ergebnisse.
+   Ein falscher Filter verursacht häufig Datendiskrepanzen zwischen [!DNL Commerce Intelligence] Berichte und die erwarteten Ergebnisse erstellen.
 
 1. Speichern Sie die `Filter Set`.
 

@@ -48,6 +48,6 @@ Mit diesen neuen Informationen können Sie besser verstehen, wie Benutzer auf Ih
 * [Verweisquelle für Bestellungen verfolgen über [!DNL Google Anaytics] E-Commerce](../importing-data/integrations/google-ecommerce.md)
 * [Tracking der Verweisquelle von Benutzern in Ihrer Datenbank](../analysis/google-track-user-acq.md)
 * [Entdecken Sie Ihre wertvollsten Akquisequellen und -kanäle](../analysis/most-value-source-channel.md)
-* [Verbinden Sie Ihre [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)
-* [Erhöhen Sie den ROI Ihrer Werbekampagnen.](../analysis/roi-ad-camp.md)
+* [Verbinden Sie [!DNL Google Adwords] account](../importing-data/integrations/google-adwords.md)
+* [Steigerung des ROI bei Werbekampagnen](../analysis/roi-ad-camp.md)
 * [Wie funktioniert [!DNL Google Analytics] UTM-Attribution funktioniert?](../analysis/utm-attributes.md)

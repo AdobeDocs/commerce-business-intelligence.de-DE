@@ -29,7 +29,7 @@ So fügen Sie eine oder mehrere Dimensionen gleichzeitig zu mehreren Metriken hi
 
 1. Wählen Sie die Tabelle aus, die die Dimensionen enthält.
 
-1. Im `Choose Metric(s) to Add Dimensions` die Metriken, denen Sie Dimensionen hinzufügen möchten. Nach der Auswahl wird die `Choose Dimensions to Add` rechts angezeigt. Überprüfen Sie die Dimensionen, die Sie zur ausgewählten Metrik hinzufügen möchten.
+1. Im `Choose Metric(s) to Add Dimensions` auswählen, die Metriken, denen Sie Dimensionen hinzufügen möchten. Nach der Auswahl wird die `Choose Dimensions to Add` rechts angezeigt. Überprüfen Sie die Dimensionen, die Sie zur ausgewählten Metrik hinzufügen möchten.
 
    ![](../../assets/Add_Dimensions.png)
 
@@ -51,7 +51,7 @@ So löschen Sie eine oder mehrere Dimensionen aus mehreren Metriken:
 
 1. Klicken **[!UICONTROL Remove]**.
 
-1. Wenn die Dimensionen in Berichten verwendet werden, wird ein Warnhinweis mit der Liste der Diagramme angezeigt, die die Dimensionen verwenden. Klicken **[!UICONTROL Delete]** , um die aktivierten Dimensionen und alle abhängigen Elemente, einschließlich Berichten, zu löschen.
+1. Wenn die Dimensionen in Berichten verwendet werden, wird ein Warnhinweis mit der Liste der Diagramme angezeigt, die die Dimensionen verwenden. Klicks **[!UICONTROL Delete]** , um die aktivierten Dimensionen und alle abhängigen Elemente, einschließlich Berichten, zu löschen.
 
 ## Dimensionen in Metriken verwalten
 
@@ -59,26 +59,26 @@ So löschen Sie eine oder mehrere Dimensionen aus mehreren Metriken:
 
 1. Navigieren Sie zu **[!UICONTROL Data > Metrics]**.
 
-1. Klicken **[!UICONTROL Edit]** für die Metrik, die Sie eine neue Dimension wünschen.
+1. Klicks **[!UICONTROL Edit]** für die Metrik, die Sie eine neue Dimension wünschen.
 
-1. Im `Dimensions` -Abschnitt verwenden Sie die `Add a dimension` zur Auswahl einer hinzuzufügenden Dimension.
+1. Im `Dimensions` -Abschnitt verwenden Sie die `Add a dimension` Dropdown-Liste, um eine hinzuzufügende Dimension auszuwählen.
 
 >[!NOTE]
 >
->Jede Dimension, nach der Sie filtern oder gruppieren möchten, muss bereits nachverfolgt werden [!DNL Commerce Intelligence]. Wenn Sie die gewünschte Dimension nicht finden, müssen Sie möglicherweise mit dem Tracking einer neuen Datenspalte in Ihrer Datenbank über die [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) Seite.
+>Jede Dimension, nach der Sie filtern oder gruppieren möchten, muss bereits nachverfolgt werden [!DNL Commerce Intelligence]. Wenn Sie die gewünschte Dimension nicht finden, müssen Sie möglicherweise eine neue Datenspalte in Ihrer Datenbank über die [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) Seite.
 
 
 **So löschen Sie Dimensionen aus einer Metrik:**
 
 1. Navigieren Sie zu **[!UICONTROL Manage Data > Metrics]**.
 
-1. Klicken **[!UICONTROL Edit]** für die Metrik, die Sie eine neue Dimension wünschen.
+1. Klicks **[!UICONTROL Edit]** für die Metrik, die Sie eine neue Dimension wünschen.
 
 1. Unter dem `Dimensions` aktivieren, aktivieren Sie das Kontrollkästchen in der Spalte Löschen neben den Dimensionen, die Sie entfernen möchten.
 
 >[!NOTE]
 >
->Selbst nach dem Löschen einer Dimension ist sie weiterhin als Spalte auf Ihrer Tabelle in Ihrer Data Warehouse vorhanden. Sie können sie wieder zu einer beliebigen Metrik hinzufügen und mithilfe dieser Dimensionen neue Metriken erstellen. So entfernen Sie die Datenspalte, aus der eine Dimension stammt [!DNL Commerce Intelligence]die Datenspalte einfach über die [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) Seite.
+>Auch nach dem Löschen einer Dimension ist sie weiterhin als Spalte auf Ihrer Tabelle in Ihrer Data Warehouse vorhanden. Sie können sie wieder zu einer beliebigen Metrik hinzufügen und mithilfe dieser Dimensionen neue Metriken erstellen. So entfernen Sie die Datenspalte, aus der eine Dimension stammt [!DNL Commerce Intelligence]die Datenspalte einfach über die [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) Seite.
 
 ## Verwandte Dokumentation
 

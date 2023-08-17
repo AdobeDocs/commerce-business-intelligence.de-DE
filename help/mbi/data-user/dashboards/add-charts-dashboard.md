@@ -17,7 +17,7 @@ Vorhandene Diagramme können Dashboards mit dem [!UICONTROL Add Report] -Funktio
 
 >[!NOTE]
 >
->Klicken **[!UICONTROL Add Report]** ist nicht dasselbe wie Klicken **[!UICONTROL Save As]** im Diagrammeditor. `Add Report` fügt lediglich das Diagramm zum Dashboard hinzu, während `Save As` erstellt eine Version eines vorhandenen Diagramms.
+>Klicken **[!UICONTROL Add Report]** ist nicht dasselbe wie Klicken **[!UICONTROL Save As]** im Diagramm-Editor. `Add Report` fügt lediglich das Diagramm zum Dashboard hinzu, während `Save As` erstellt eine Version eines vorhandenen Diagramms.
 
 ## Diagramm hinzufügen
 

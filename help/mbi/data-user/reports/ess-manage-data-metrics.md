@@ -25,7 +25,7 @@ Bei Verwendung in Berichten können Metriken über einen bestimmten Zeitraum ana
 
 ## Definieren der Metrik {#define}
 
-1. Um eine Metrik zu erstellen, klicken Sie auf **[!UICONTROL Data** > **Metrics]**.
+1. Klicken Sie zum Erstellen einer Metrik auf **[!UICONTROL Data** > **Metrics]**.
 
 1. Klicken **[!UICONTROL Create New Metric]**.
 
@@ -33,7 +33,7 @@ Bei Verwendung in Berichten können Metriken über einen bestimmten Zeitraum ana
 
 1. Benennen Sie Ihre Metrik.
 
-   Adobe empfiehlt einen Namen, der Ihnen auf einen Blick angibt, was die Metrik ist. Beispiel: `Average Order Revenue`.
+   Adobe empfiehlt einen Namen, der Ihnen auf einen Blick mitteilt, was die Metrik ist. Beispiel: `Average Order Revenue`.
 
 1. Der nächste Schritt besteht darin, zu definieren, was Ihre Metrik bewirkt. Definieren Sie mithilfe der Dropdown-Menüs den Vorgang der Metrik, die `operation` und eine `date` Dimension:
 
@@ -52,11 +52,11 @@ Bei Verwendung in Berichten können Metriken über einen bestimmten Zeitraum ana
 
      Wenn Sie eine vorhandene Metrik bearbeiten, können Sie auch [die operationelle Tabelle der Metrik ändern](../../data-analyst/data-warehouse-mgr/change-metric-op-table.md) in diesem Abschnitt.
 
-   * Wählen Sie eine Datumsdimension aus, die für die Trendverfolgung der Metrik verwendet werden kann. Beispiel: `order date`.
+   * Wählen Sie eine Datumsdimension aus, die für die Trendverfolgung der Metrik verwendet werden kann. Beispiel, `order date`.
 
 ## Filter hinzufügen {#filters}
 
-Die `Filter` -Bereich können Sie Filter erstellen oder einen [gespeicherten Filtersatz](../../data-user/reports/ess-manage-data-filters.md) zu Ihrer Metrik hinzufügen.
+Die `Filter` -Bereich können Sie Filter erstellen oder einen [gespeicherter Filtersatz](../../data-user/reports/ess-manage-data-filters.md) zu Ihrer Metrik hinzufügen.
 
 Für `average order revenue` -Metrik, würden Sie keine Testaufträge einbeziehen, die möglicherweise bei der Einrichtung Ihres Stores durchgeführt wurden. Dies würde uns ein ungenaues Ergebnis liefern. Kann einen Filtersatz anwenden, um diese Bestellungen aus dem Datensatz zu entfernen. Nach der Erstellung des Filters wird er auf alle Diagramme angewendet, die mit dieser Metrik erstellt wurden.
 
@@ -68,7 +68,7 @@ Die `Filter Logic` -Abschnitt enthält, können Sie weiter definieren, wie sich 
 
 ## Dimensionen hinzufügen {#dimensions}
 
-Die [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) zeigt alle verfügbaren Datendimensionen für die Filterung oder Gruppierung an. Standardmäßig werden alle verfügbaren Datenspalten als Dimensionen aufgelistet. Wenn Sie im Beispiel Ihren Umsatz nach Verweisquelle segmentieren möchten, können Sie dies hier vornehmen.
+Die [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) zeigt alle verfügbaren Datendimensionen zum Filtern oder Gruppieren an. Standardmäßig werden alle verfügbaren Datenspalten als Dimensionen aufgelistet. Wenn Sie im Beispiel Ihren Umsatz nach Verweisquelle segmentieren möchten, können Sie dies hier vornehmen.
 
 Zusätzlich zur Auflistung aller verfügbaren Datenspalten als Dimensionen, [!DNL Commerce Intelligence] schätzt, in welchen Spalten gruppierbar sind. *So segmentieren oder gruppieren Sie Daten in Berichten*, müssen Spalten als gruppierbar markiert werden.
 

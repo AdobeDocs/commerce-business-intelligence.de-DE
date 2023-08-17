@@ -17,7 +17,7 @@ Die Freigabe von Dashboards bedeutet, dass Sie und Ihr Team jederzeit über die 
 
 ## Vermeiden doppelter Dashboards
 
-Manchmal finden Sie mehrere Dashboards mit demselben Namen. Dies liegt in der Regel daran, dass andere Benutzer ähnliche Dashboards erstellt und für Sie freigegeben haben. Bei diesen Dashboards kann es sich um Duplikate einer primären Kopie handeln. In diesem Fall empfiehlt Adobe, dass ein Benutzer die Hauptkopie des Dashboards freigibt und dann alle doppelten Dashboards entfernt.
+Manchmal finden Sie mehrere Dashboards mit demselben Namen. Dies liegt in der Regel daran, dass andere Benutzer ähnliche Dashboards erstellt und für Sie freigegeben haben. Bei diesen Dashboards kann es sich um Duplikate einer primären Kopie handeln. In diesem Fall empfiehlt Adobe, dass ein Benutzer die primäre Kopie des Dashboards gemeinsam nutzt und dann alle doppelten Dashboards entfernt.
 
 Um zu sehen, wer Inhaber eines Dashboards ist, klicken Sie in der oberen linken Ecke auf das Dropdown-Menü Dashboard . Alle Dashboards, die keinen Namen darunter haben, gehören zu Ihnen.
 
@@ -26,7 +26,7 @@ Um zu sehen, wer Inhaber eines Dashboards ist, klicken Sie in der oberen linken 
 So entfernen Sie alle doppelten Dashboards:
 
 1. Synchronisieren Sie mit Ihrem Team und identifizieren Sie die Person, die das Dashboard verwalten soll.
-1. [Selbstfreigabe aufheben](../data-user/dashboards/leave-dashboard.md) von allen ähnlichen Dashboards aus, mit Ausnahme des vom Hauptbenutzer freigegebenen Dashboards.
+1. [Selbstfreigabe](../data-user/dashboards/leave-dashboard.md) von allen ähnlichen Dashboards aus, mit Ausnahme des vom Hauptbenutzer freigegebenen Dashboards.
 1. Wenn Sie über eine Kopie des Dashboards verfügen, [Löschen](../data-user/dashboards/deleting-dashboard.md).
 1. Bitten Sie andere, ihre Version des Dashboards zu löschen.
 
@@ -36,7 +36,7 @@ Wenn neue Benutzer erstellt werden, besitzen sie keine Dashboards oder Diagramme
 
 ## Dashboards für neue Benutzer freigeben
 
-Neue Benutzer können auch vom Zugriff auf einige Dashboards profitieren, die nicht unternehmensweit freigegeben sind. In diesen Fällen empfiehlt Adobe, dass die Eigentümer des Dashboards [die entsprechenden Dashboards freigeben](../data-user/dashboards/share-dashboard-with-users.md) mit neuen Benutzern, wenn ihre Konten erstellt werden.
+Neue Benutzer können auch vom Zugriff auf einige Dashboards profitieren, die nicht unternehmensweit freigegeben sind. In diesen Fällen empfiehlt Adobe, dass Dashboard-Eigentümer [die entsprechenden Dashboards freigeben](../data-user/dashboards/share-dashboard-with-users.md) mit neuen Benutzern, wenn ihre Konten erstellt werden.
 
 ## Selektiv mit Berechtigungen bearbeiten
 
@@ -44,4 +44,4 @@ Neue Benutzer können auch vom Zugriff auf einige Dashboards profitieren, die ni
 
 ## Anmerkungen zu Diagrammen
 
-Durch die Freigabe eines Dashboards erhalten Benutzer lediglich Zugriff auf dieselben Informationen. Um sicherzustellen, dass Informationen verstanden werden, empfiehlt Adobe die Verwendung der Funktion &quot;Diagrammnotizen&quot;, um Wissen und Nuancen über einen bestimmten Datenpunkt auszutauschen oder den Analysezweck zu vermitteln.
+Durch die Freigabe eines Dashboards erhalten Benutzer lediglich Zugriff auf dieselben Informationen. Um sicherzustellen, dass Informationen verstanden werden, empfiehlt Adobe, mithilfe der Diagrammnotiz-Funktion Wissen und Nuancen zu einem bestimmten Datenpunkt auszutauschen oder den Zweck einer Analyse zu vermitteln.

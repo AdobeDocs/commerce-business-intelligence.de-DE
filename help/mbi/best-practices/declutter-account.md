@@ -17,7 +17,7 @@ Ob Sie mit [!DNL Commerce Intelligence] Für sechs Monate oder sechs Jahre ist d
 
 Mit [standardisierte, eindeutige Benennung aller Elemente](../best-practices/naming-elements.md)) Ihrer [!DNL Commerce Intelligence] -Konto verwenden, helfen Ihnen die nachfolgenden Schritte zur Kontoprüfung dabei, die Übersichtlichkeit und unnötige Analysen für Ihre Benutzer zu reduzieren. Ein weiterer Vorteil umfasst [potenziell schnellere Aktualisierungszyklen](../best-practices/reduce-update-cycle-time.md).
 
-## Schritt 1: Nicht aktive Benutzer identifizieren
+## Schritt 1: Identifizieren Ihrer nicht aktiven Benutzer
 
 Der erste Schritt bei der Bereinigung Ihres Kontos besteht darin, die Konten Ihrer nicht aktiven Benutzer zu deaktivieren, z. B. Personen, die das Unternehmen verlassen oder nicht mehr verwenden [!DNL Commerce Intelligence] in ihren aktuellen Rollen.
 
@@ -29,13 +29,13 @@ Klicken Sie dazu in der Navigationsleiste oben rechts auf den Namen Ihres Untern
 
 >[!WARNING]
 >
->Durch das Deaktivieren eines Benutzers werden die Diagramme, Dashboards und anderen von diesem Benutzer erstellten Assets entfernt. Wenn Sie diese Assets beibehalten möchten, wenden Sie sich an die [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket) Team vor der Deaktivierung des Benutzers. Die Unterstützung kann Ihnen dabei helfen, diese Assets an einen anderen Benutzer zu übertragen.
+>Durch das Deaktivieren eines Benutzers werden die Diagramme, Dashboards und anderen von diesem Benutzer erstellten Assets entfernt. Wenn Sie diese Assets beibehalten möchten, wenden Sie sich an die [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket) Team vor dem Deaktivieren des Benutzers. Die Unterstützung kann Ihnen dabei helfen, diese Assets an einen anderen Benutzer zu übertragen.
 
 ### Benutzer erneut aktivieren
 
 Um einen Benutzer zu reaktivieren, laden Sie ihn erneut ein, indem Sie sein Konto mit der deaktivierten E-Mail-Adresse neu erstellen und seinen Zugriff sowie die Daten, die ihm gehören, bei der Anmeldung wiederherstellen.
 
-## Schritt 2: Nicht verwendete Dashboards und Berichte löschen
+## Schritt 2: Löschen nicht verwendeter Dashboards und Berichte
 
 Der nächste Schritt bei der Prüfung Ihres Kontos besteht darin, nicht verwendete Dashboards und Berichte zu löschen.
 
@@ -88,8 +88,8 @@ Im Folgenden finden Sie einen Überblick über den nicht verwendeten Löschvorga
 
 Nachdem Sie die Benutzerliste, die Dashboards und Berichte bereinigt haben, können Sie zur Prüfung Ihrer Metrikenliste übergehen. Auf diese Weise können Sie alles identifizieren, was veraltet sein könnte - z. B. wurde eine neue Metrik mit einer anderen Definition erstellt - oder nicht verwendet wird.
 
-1. Um eine Liste der abhängigen Berichte für eine Metrik zu erstellen, gehen Sie zu **[!DNL Manage Data]** Klicken Sie auf Klicken **[!UICONTROL Metrics]**.
-1. Klicken **[!UICONTROL Edit]** neben einer Metrik.
+1. Um eine Liste der abhängigen Berichte für eine Metrik zu erstellen, gehen Sie zu **[!DNL Manage Data]** und klicken Sie auf Klicken **[!UICONTROL Metrics]**.
+1. Klicks **[!UICONTROL Edit]** neben einer Metrik.
 1. Unten auf der Seite sehen Sie einen Abschnitt mit dem Namen **[!UICONTROL Dependent Charts]**. Klicken Sie auf den Link, um eine Liste der abhängigen Berichte für diese Metrik zu erstellen.
 1. Nachdem das System die Prüfung abgeschlossen hat, [!DNL Commerce Intelligence] zeigt eine Liste der Dashboards, Berichte und Benutzer an, die diese Metrik verwenden.
 
@@ -101,11 +101,11 @@ Wenn Sie entscheiden, dass die Metrik nicht mehr benötigt wird, navigieren Sie 
 
 Der letzte Schritt besteht darin, die derzeit in Ihrer Data Warehouse synchronisierten Spalten zu bewerten. Die Aufhebung der Synchronisierung von Spalten kann Ihr Konto nicht nur deklarieren, sondern auch die Aktualisierungszeit verkürzen.
 
-Wenn Sie dies fortsetzen möchten, wenden Sie sich an [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket). Das Supportteam kann einen Bericht erstellen, der alle Spalten enthält, die in keinem Dashboard für einen Benutzer verwendet werden und nicht in E-Mail-Zusammenfassungen verwendet werden, mit Ausnahme von SQL-Berichten. Anschließend können Sie diesen Bericht als Anleitung zur Auswahl der Spalten verwenden, die über den Data Warehousen-Manager aufgehoben werden sollen.
+Wenn Sie dies fortsetzen möchten, wenden Sie sich an [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket). Das Supportteam kann einen Bericht erstellen, der alle Spalten enthält, die in keinem Dashboard für einen Benutzer verwendet werden und nicht in E-Mail-Zusammenfassungen verwendet werden, mit Ausnahme von SQL-Berichten. Anschließend können Sie diesen Bericht als Anleitung für die Auswahl von Spalten verwenden, die über den Data Warehouse-Manager aufgehoben werden sollen.
 
 >[!NOTE]
 >
->Sie können diese Spalten in Zukunft immer wieder synchronisieren. Durch das Aufheben der Synchronisierung einer Spalte werden alle Daten aus Ihrer Data Warehouse entfernt. Dies bedeutet nur, dass diese Spalte während des Aktualisierungszyklus nicht auf neue oder aktualisierte Werte überprüft wird.
+>Sie können diese Spalten in Zukunft immer wieder synchronisieren. Wenn Sie die Synchronisierung einer Spalte aufheben, werden alle Daten von Ihrer Data Warehouse entfernt. Dies bedeutet nur, dass diese Spalte während des Aktualisierungszyklus nicht auf neue oder aktualisierte Werte überprüft wird.
 
 **So heben Sie die Synchronisierung einer Spalte (oder Spalten) auf**
 
@@ -116,12 +116,12 @@ Wenn Sie dies fortsetzen möchten, wenden Sie sich an [!DNL Commerce Intelligenc
    >
    >Sie können die Synchronisierung einer Primären Schlüsselspalte nicht aufheben, ohne die gesamte Tabelle abzulegen.
 
-1. Klicken **[!UICONTROL Remove]** , um die Synchronisierung einer oder mehrerer Spalten aufzuheben.
+1. Klicks **[!UICONTROL Remove]** , um die Synchronisierung einer oder mehrerer Spalten aufzuheben.
 
 Im Folgenden finden Sie einen Überblick über den gesamten Prozess:
 
 ![](../../mbi/assets/drop_column.png)
 
-## Aufbrechen
+## Aufwischen
 
 Ihre [!DNL Commerce Intelligence] -Konto sollte jetzt tidier und einfacher zu navigieren für Sie und Ihr Team.

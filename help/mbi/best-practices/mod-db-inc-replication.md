@@ -17,11 +17,11 @@ Wenn Ihre Tabellen derzeit keine inkrementelle Replikation zulassen, finden Sie 
 
 ## Änderungen für geändert am
 
-Die `Modified At` -Methode, die die am besten geeignete Replikationsmethode ist, verwendet eine `datetime` um neue und/oder aktualisierte Daten zu erkennen. Beachten Sie, dass die `datetime` -Spalte in Tabellen, die diese Methode verwenden, muss indiziert sein und darf keine Nullwerte enthalten.
+Die `Modified At` -Methode, die die am besten geeignete Replikationsmethode ist, verwendet eine `datetime` um neue und/oder aktualisierte Daten zu erkennen. Beachten Sie, dass die Variable `datetime` -Spalte in Tabellen, die diese Methode verwenden, muss indiziert sein und darf keine Nullwerte enthalten.
 
-Wenn Ihre Tabelle keine `datetime` -Spalte können Sie einen Index hinzufügen `modified at` Spalte. Nullwerte sind in einer `modified at` Spalte. Überprüfen Sie, ob die Spalte für jede Zeile gefüllt ist.
+Wenn Ihre Tabelle keine `datetime` können Sie einen Index hinzufügen `modified at` Spalte. Nullwerte sind in einer `modified at` Spalte. Überprüfen Sie, ob die Spalte für jede Zeile gefüllt ist.
 
-Um sicherzustellen, dass `Modified At` -Methode wie gewünscht funktioniert, können Sie keine Zeilen aus der Tabelle löschen. Stattdessen sollten Sie die Zeile als ungültig markieren, indem Sie eine `deleted` in die Tabelle ein. Diese Spalte gibt eine `1` wenn die Zeile ungültig ist und `0` andernfalls. Anschließend können Sie diese Spalte verwenden, um ungültige Zeilen beim Erstellen von Metriken und Berichten herauszufiltern.
+Um die `Modified At` -Methode wie gewünscht funktioniert, können Sie keine Zeilen aus der Tabelle löschen. Stattdessen sollten Sie die Zeile als ungültig markieren, indem Sie eine `deleted` in die Tabelle ein. Diese Spalte gibt eine `1` wenn die Zeile ungültig ist und `0` andernfalls. Anschließend können Sie diese Spalte verwenden, um ungültige Zeilen beim Erstellen von Metriken und Berichten herauszufiltern.
 
 ## Änderungen für die automatische Erhöhung des Primären Schlüssels
 
@@ -32,6 +32,6 @@ Beachten Sie, dass Tabellen, die diese Methode verwenden, eine einzelne Spalte s
 * Wenn der Primärschlüssel entweder ein zusammengesetzter Schlüssel oder eine Nicht-Ganzzahl ist, ändern Sie den Primärschlüssel in eine automatisch inkrementierende Ganzzahl
 * Wenn der Primärschlüssel eine einzelne Ganzzahlspalte ist, Schlüssel jedoch nicht sequenziell zugewiesen werden können, ändern Sie den Primärschlüssel in automatische Inkrementierung
 
-## Aufbrechen
+## Aufwischen
 
 Durch geringfügige Änderungen an Ihren Tabellen können Sie die schnelleren und effizienteren Methoden für die inkrementelle Replikation nutzen. Ist dies jedoch nicht möglich, können Sie weitere Schritte ausführen, um [Verkürzen der Aktualisierungszeit](../best-practices/reduce-update-cycle-time.md) und [Datenbank optimieren](../best-practices/opt-db-analysis.md).

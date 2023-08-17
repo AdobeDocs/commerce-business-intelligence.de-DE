@@ -1,5 +1,5 @@
 ---
-title: Google Analytics-Diagramme erstellen
+title: Grafiken für Google Analytics erstellen
 description: Erfahren Sie, wie Sie Diagramme aus Ihren Google Analytics-Daten erstellen.
 exl-id: ee80fd0d-e3b1-4331-853d-3c2c11931d3f
 role: Admin, Data Architect, Data Engineer, User

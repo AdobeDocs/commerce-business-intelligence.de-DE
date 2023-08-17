@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -24,11 +24,11 @@ Mit dem [!DNL QuickBooks] -Integration, können Ihre Geschäftsfinanzen nun nebe
 ## Hinzufügen [!DNL QuickBooks] als Datenquelle in [!DNL Commerce Intelligence]
 
 1. Navigieren Sie zu `Integrations` Seite unter **[!UICONTROL Manage Data** > **Data Sources]**.
-1. Klicken **[!UICONTROL Add Integration]** auf der rechten Seite des Bildschirms über dem `Data Sources` Tabelle.
+1. Klicks **[!UICONTROL Add Integration]** auf der rechten Seite des Bildschirms über dem `Data Sources` Tabelle.
 1. Klicken Sie auf [!DNL QuickBooks] Symbol.
 1. Klicken **[!UICONTROL Connect to Quickbooks]**.
 
-## Förderung [!DNL Commerce Intelligence] Zugriff auf Ihre [!DNL QuickBooks] data
+## Zuschuss [!DNL Commerce Intelligence] Zugriff auf Ihre [!DNL QuickBooks] data
 
 Nach dem Klicken **[!UICONTROL Connect to Quickbooks]** Melden Sie sich bei Ihrem [!DNL Intuit] Konto erstellen und die Verbindung autorisieren:
 
@@ -40,4 +40,4 @@ Nach dem Klicken **[!UICONTROL Connect to Quickbooks]** Melden Sie sich bei Ihre
 ## Verwandte
 
 * [Erwartet [!DNL QuickBooks] data](../integrations/quickbooks-data.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

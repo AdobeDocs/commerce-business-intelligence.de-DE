@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Sie können nicht nur Benutzerberechtigungsstufen festlegen, sondern auch den Zugriff auf Metriken für einzelne Benutzer einschränken. Wenn Sie beispielsweise möchten, dass Ihre Buchhaltungsabteilung Zugriff auf umsatzbezogene Metriken hat, aber keine Benutzerakquise-Metriken, können Sie den Zugriff auf diese Metriken beschränken.
 
-In solchen Fällen empfiehlt Adobe, das Konto dieses Benutzers auf **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. **[!UICONTROL Standard]** -Berechtigungen sollten Benutzern erteilt werden, die keine Metriken, berechneten Spalten, Integrationen oder Benutzer erstellen oder ändern müssen, aber Zugriff auf Daten in der Data Warehouse benötigen. Wenn Sie den Datenzugriff vollständig beschränken möchten, verwenden Sie die **[!UICONTROL Read Only]** -Berechtigungen.
+In solchen Fällen empfiehlt Adobe, das Benutzerkonto auf **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)**. **[!UICONTROL Standard]** -Berechtigungen sollten Benutzern erteilt werden, die keine Metriken, berechneten Spalten, Integrationen oder Benutzer erstellen oder ändern müssen, aber Zugriff auf Daten im Data Warehouse benötigen. Wenn Sie den Zugriff auf Daten vollständig beschränken möchten, verwenden Sie die **[!UICONTROL Read Only]** -Berechtigungen.
 
 Nachdem Sie die Berechtigungsebene festgelegt haben, können Sie die Metriken a **[!UICONTROL Standard]** Der Benutzer kann wie folgt darauf zugreifen:
 

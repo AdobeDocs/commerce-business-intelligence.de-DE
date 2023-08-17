@@ -24,10 +24,10 @@ Sie recherchierten, erstellten Ihre Anzeigen, starteten Ihre [!DNL Google] Kampa
 Erste Schritte mit der Eingabe Ihrer [!DNL Google Adwords] Anmeldedaten [!DNL Commerce Intelligence].
 
 1. Navigieren Sie zu `Connections` Seite unter **Daten verwalten > Integrationen**.
-1. Klicken **Integration hinzufügen**, rechts oben auf dem Bildschirm.
+1. Klicks **Integration hinzufügen**, rechts oben auf dem Bildschirm.
 1. Klicken Sie auf **[!DNL Google Adwords]** Symbol. Dadurch wird die [!DNL Google Adwords] Seite mit Anmeldeinformationen.
 1. Geben Sie Ihre [!DNL Google Analytics] Anmeldedaten. Nach Abschluss des Autorisierungsprozesses werden Sie zurück zu [!DNL Commerce Intelligence].
-1. Eine Liste der Profil-IDs wird angezeigt. Überprüfen Sie die Profile, mit denen Sie eine Verbindung herstellen möchten. [!DNL Commerce Intelligence].
+1. Eine Liste der Profil-IDs wird angezeigt. Überprüfen Sie die Profile, mit denen Sie eine Verbindung herstellen möchten [!DNL Commerce Intelligence].
 
    ![](../../../assets/cnnct-profile.png)
 
@@ -35,9 +35,9 @@ Erste Schritte mit der Eingabe Ihrer [!DNL Google Adwords] Anmeldedaten [!DNL Co
 
 Wenn Sie mehrere Profile haben und dabei behilflich sein müssen, welche Profile identifiziert werden können, lesen Sie den Abschnitt `Connecting Multiple Google Analytics profiles` unten.
 
-## Mehrere Verbindungen herstellen [!DNL Google Analytics] profiles
+## Mehrere Verbindungen [!DNL Google Analytics] profiles
 
-Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem [!DNL Google Analytics] Profil-ID. In diesem Fall können Sie alle Ihre Profil-IDs in [!DNL Commerce Intelligence]. Überprüfen Sie die Profil-IDs, die Sie während des Schritts zur Profilauswahl einbeziehen möchten.
+Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem Konto [!DNL Google Analytics] Profil-ID. In diesem Fall können Sie alle Ihre Profil-IDs in [!DNL Commerce Intelligence]. Überprüfen Sie die Profil-IDs, die Sie während des Schritts zur Profilauswahl einbeziehen möchten.
 
 **So identifizieren Sie die Google Analytics-ID einer bestimmten Website:**
 
@@ -55,9 +55,9 @@ Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem 
 
 ## Verwandte
 
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Verweisquelle für Bestellungen verfolgen über [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Tracking der Verweisquelle von Benutzern in Ihrer Datenbank](../../analysis/google-track-user-acq.md)
 * [Entdecken Sie Ihre wertvollsten Akquisequellen und -kanäle](../../analysis/most-value-source-channel.md)
-* [Erhöhen Sie den ROI Ihrer Werbekampagnen.](../../analysis/roi-ad-camp.md)
+* [Steigerung des ROI bei Werbekampagnen](../../analysis/roi-ad-camp.md)
 * [Wie funktioniert [!DNL Google Analytics] UTM-Attribution funktioniert?](../../analysis/utm-attributes.md)

@@ -1,6 +1,6 @@
 ---
 title: Erwartete Lebenszeitwert-Analyse (Basis)
-description: Erfahren Sie, wie Sie Analysen erstellen, um den Lebenszeitwert Ihrer aktuellen Kunden zu verstehen und vorherzusagen, wie der Lebenszeitwert mit mehr Bestellungen zunimmt.
+description: Erfahren Sie, wie Sie Analysen erstellen, um den Lebenszeitwert Ihrer aktuellen Kunden zu verstehen und vorherzusagen, wie der Lebenszeitwert mit mehr Bestellungen steigt.
 exl-id: e6f02cf6-f542-4768-969c-3ec998a7caa9
 role: Admin, User
 feature: Data Warehouse Manager, Reports
@@ -29,12 +29,12 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
   >
   >Die Tabelle, auf der diese Metrik erstellt wird (wahrscheinlich `customer_entity` oder `sales_order` abhängig von der Fähigkeit Ihres Stores, einen Gast-Checkout zu akzeptieren.)
 
-   * Klicken **[!UICONTROL Create New Metric]** und wählen Sie die Tabelle oben aus.
+   * Klicks **[!UICONTROL Create New Metric]** und wählen Sie die Tabelle oben aus.
    * Diese Metrik führt eine **Median** auf `Customer's lifetime revenue` Spalte, sortiert nach `created_at`.
       * [!UICONTROL Filters]:
          * Fügen Sie die `Customers we count (Saved Filter Set)` (oder `Registered accounts we count`)
 
-   * Geben Sie der Metrik einen Namen, z. B. `Median lifetime revenue`.
+   * Geben Sie der Metrik einen Namen, beispielsweise `Median lifetime revenue`.
 
 ## Dashboard erstellen
 

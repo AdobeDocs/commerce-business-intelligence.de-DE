@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Erwartet [!DNL Adobe Commerce] Daten
 
-Nachdem Sie [mit [!DNL Adobe Commerce] store](../../../data-analyst/importing-data/integrations/magento.md)können Sie den Data Warehouse Manager verwenden, um relevante Datenfelder aus Ihrer Commerce-Datenbank einfach zur Analyse zu verfolgen.
+Nachdem Sie [mit [!DNL Adobe Commerce] store](../../../data-analyst/importing-data/integrations/magento.md)können Sie den Data Warehouse-Manager verwenden, um relevante Datenfelder aus Ihrer Commerce-Datenbank für die Analyse einfach zu verfolgen.
 
 Hier werden die wichtigsten Datentabellen untersucht, in die Commerce-Benutzer importieren. [!DNL Commerce Intelligence].
 
@@ -30,4 +30,4 @@ Hier werden die wichtigsten Datentabellen untersucht, in die Commerce-Benutzer i
 ## Verwandte
 
 * [Verbinden [!DNL Adobe Commerce]](../integrations/magento.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # [!DNL Cohort Report Builder] für nicht datumsbasierte Kohorten
 
-Die [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) ist eine großartige Möglichkeit für Händler, zu untersuchen, wie sich verschiedene Teilmengen von Benutzern im Laufe der Zeit verhalten. In der Vergangenheit wurde die `Cohort Report Builder` wurde für die Benutzergruppierung nach `cohort date` (z. B. der Satz aller Kunden, die in einem bestimmten Monat ihren ersten Kauf getätigt haben). Die `Non-Date Based Cohort` bietet Ihnen jetzt die Möglichkeit, Benutzer nach einer ähnlichen Aktivität oder einem ähnlichen Attribut zu gruppieren. Sehen Sie sich einige Anwendungsfälle für diese Funktion an.
+Die [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) ist eine großartige Möglichkeit für Händler, zu untersuchen, wie sich verschiedene Teilmengen von Benutzern im Laufe der Zeit verhalten. Die Funktion `Cohort Report Builder` wurde für die Benutzergruppierung nach `cohort date` (z. B. der Satz aller Kunden, die in einem bestimmten Monat ihren ersten Kauf getätigt haben). Die `Non-Date Based Cohort` bietet Ihnen jetzt die Möglichkeit, Benutzer nach einer ähnlichen Aktivität oder einem ähnlichen Attribut zu gruppieren. Sehen Sie sich einige Anwendungsfälle für diese Funktion an.
 
 ## Nutzungsszenarios
 
 Dies ist keine umfassende Liste, aber hier sind einige potenzielle Analysen, die mit dieser Funktion durchgeführt werden können.
 
-* Prüfung des Umsatzes, den Kunden durch [!DNL Google] versus [!DNL Facebook]
+* Prüfung des Umsatzes der Kunden, die durch [!DNL Google] versus [!DNL Facebook]
 * Analyse von Kunden, deren erster Kauf in den USA getätigt wurde, im Vergleich zu Kanada
 * Betrachten Sie das Verhalten der Kunden, die durch verschiedene Werbekampagnen erworben wurden.
 
 ## Erstellen einer Analyse
 
-1. Klicken **[!UICONTROL Report Builder]** auf der linken Registerkarte oder **[!UICONTROL Add Report** > **Create Report]** in jedem Dashboard.
+1. Klicks **[!UICONTROL Report Builder]** auf der linken Registerkarte oder **[!UICONTROL Add Report** > **Create Report]** in jedem Dashboard.
 
-1. Im `Report Builder Selection` Bildschirm, klicken Sie auf **[!UICONTROL Create Report]** neben dem `Visual Report Builder` -Option.
+1. Im `Report Builder Selection` Bildschirm, klicken Sie **[!UICONTROL Create Report]** neben dem `Visual Report Builder` -Option.
 
 ### Hinzufügen einer Metrik
 
@@ -61,7 +61,7 @@ Zum Erstellen eines Kohortenberichts sind fünf Spezifikationen erforderlich:
 
 #### 2. Auswahl der Kohorten
 
-Sie können alle Ergebnisse für das angegebene Merkmal anzeigen. Da dies viele `cohorts`, können Sie die spezifische `cohorts` (entspricht den verschiedenen verfügbaren Werten für `Customer's first order GA source`), die Sie benötigen.
+Sie können alle Ergebnisse für das angegebene Merkmal anzeigen. Da dies viele `cohorts`, können Sie die spezifische `cohorts` (entspricht den verschiedenen für `Customer's first order GA source`), die Sie benötigen.
 
 ![Kohortengruppen](../../assets/4-cohort-groups.png)<!--{: width="300" height="338"}-->
 
@@ -71,11 +71,11 @@ Auf diese Weise können Sie eine datumsbasierte Spalte auswählen, die nicht mit
 
 #### 4. `Cohort first action time range`
 
-Hier wählen Sie den Datumsbereich aus, der die Variable `cohorts action timestamp` (d. h. Kunden, die die erste Bestellung von November 2017 bis Oktober 2018 aufgegeben haben). Dabei kann es sich um einen sich bewegenden Datumsbereich oder einen festen Datumsbereich handeln.
+Hier wählen Sie den Datumsbereich aus, der die Variable `cohorts action timestamp` (d. h. Kunden, die die erste Bestellung von November 2017 bis Oktober 2018 hatten). Dabei kann es sich um einen sich bewegenden Datumsbereich oder einen festen Datumsbereich handeln.
 
 #### 5. `Time range after cohort occurrence`
 
-Möchten Sie die `cohorts` über Zeit nach Monat, Woche oder Jahr? Hier erfolgt die Auswahl. Unter diesem Abschnitt wählen Sie die `time range` nach `cohort action timestamp` aufgetreten. Dies zeigt beispielsweise Daten aus 12 Monaten für die Kunden, die innerhalb des Aktionszeitraums die erste Bestellung aufgegeben haben.
+Möchten Sie die `cohorts` über Zeit nach Monat, Woche oder Jahr? Hier erfolgt die Auswahl. Unter diesem Abschnitt wählen Sie die `time range` hinter dem `cohort action timestamp` aufgetreten. Dies zeigt beispielsweise Daten aus 12 Monaten für die Kunden, die innerhalb des Aktionszeitraums die erste Bestellung aufgegeben haben.
 
 ![cohort-first-action-time-range](../../assets/5-cohort-first-action-time-range.png)<!--{: width="400" height="557"}-->
 

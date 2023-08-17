@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Berichterstellung für einen Einzelhandelskalender
 
-Dieses Thema zeigt, wie die Struktur für die Verwendung einer [4-5-4 Einzelhandelskalender](https://nrf.com/resources/4-5-4-calendar) in [!DNL Adobe Commerce Intelligence] -Konto. Der visuelle ReportBuilder bietet unglaublich flexible Zeiträume, Intervalle und unabhängige Einstellungen. Diese Einstellungen funktionieren jedoch mit dem herkömmlichen Monatskalender.
+In diesem Thema wird gezeigt, wie die Struktur für die Verwendung einer [4-5-4 Einzelhandelskalender](https://nrf.com/resources/4-5-4-calendar) in [!DNL Adobe Commerce Intelligence] -Konto. Der visuelle ReportBuilder bietet unglaublich flexible Zeiträume, Intervalle und unabhängige Einstellungen. All diese Einstellungen funktionieren jedoch mit dem herkömmlichen Monatskalender.
 
 Da viele Kunden ihren Kalender ändern, um Handels- oder Rechnungsdaten zu verwenden, veranschaulichen die folgenden Schritte, wie Sie mit Ihren Daten arbeiten und Berichte mithilfe von Einzelhandelsdaten erstellen. Obwohl die folgenden Anweisungen auf den 4-5-4-Einzelhandelskalender verweisen, können Sie sie für jeden bestimmten Kalender ändern, den Ihr Team verwendet, egal ob es sich um einen finanziellen oder nur einen benutzerdefinierten Zeitrahmen handelt.
 
@@ -40,7 +40,7 @@ Sie können [herunterladen](../../assets/454-calendar.csv) a `.csv` Version des 
 ## Zu erstellende Spalten
 
 * **sales\_order** table
-   * `INPUT` `created\_at` (JJJJ-MM-TT 00:00:00)
+   * `INPUT` `created\_at` (jjj-mm-tt 00:00:00
       * [!UICONTROL Column type]: – `Same table > Calculation`
       * [!UICONTROL Inputs]: – `created\_at`
       * [!UICONTROL Datatype]: – `Datetime`
@@ -104,7 +104,7 @@ Sie können [herunterladen](../../assets/454-calendar.csv) a `.csv` Version des 
          * [!UICONTROL One]: `Retail Calendar.Date Retail`
       * Wählen Sie eine [!UICONTROL table]: `Retail Calendar`
       * Wählen Sie eine [!UICONTROL column]: `Month Number Retail`
-   * **Im vorherigen Einzelhandelsjahr einschließen? (Ja/Nein)**
+   * **Im vorigen Einzelhandelsjahr einschließen? (Ja/Nein)**
       * [!UICONTROL Column type]: `One to Many > JOINED\_COLUMN`
       * Pfad -
          * [!UICONTROL Many]: `sales\_order.\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)`
@@ -127,11 +127,11 @@ Hinweis: Für diese Analyse sind keine neuen Metriken erforderlich. Stellen Sie 
 
 * **Wöchentliche Bestellungen - Einzelhandelskalender (YoY)**
    * Metrik `A`: `2017`
-      * [!UICONTROL Metric]: Anzahl Bestellungen
+      * [!UICONTROL Metric]: Anzahl der Bestellungen
       * [!UICONTROL Filter]:
          * Erstellt\_at (Einzelhandelsjahr) = 2017
    * Metrik `B`: `2016`
-      * [!UICONTROL Metric]: Anzahl Bestellungen
+      * [!UICONTROL Metric]: Anzahl der Bestellungen
       * [!UICONTROL Filter]:
          * Erstellt\_at (Einzelhandelsjahr) = 2016
    * Metrik `C`: `2015`
@@ -180,7 +180,7 @@ Hinweis: Für diese Analyse sind keine neuen Metriken erforderlich. Stellen Sie 
          * 
            [!UICONTROL Include current retail year?]: `Yes`
    * Metrik `B`: `Orders`
-      * [!UICONTROL Metric]: Anzahl Bestellungen
+      * [!UICONTROL Metric]: Anzahl der Bestellungen
       * [!UICONTROL Filter]:
          * 
            [!UICONTROL Include current retail year?]: `Yes`
@@ -199,8 +199,8 @@ Hinweis: Für diese Analyse sind keine neuen Metriken erforderlich. Stellen Sie 
 
 ## Nächste Schritte
 
-Im obigen Abschnitt wird beschrieben, wie Sie einen Einzelhandelskalender so konfigurieren, dass er mit einer beliebigen Metrik kompatibel ist, die auf Ihrer `sales\_order` -Tabelle (z. B. `Revenue` oder `Orders`). Sie können dies auch erweitern, um den Einzelhandelskalender für Metriken zu unterstützen, die auf einer beliebigen Tabelle basieren. Die einzige Anforderung besteht darin, dass diese Tabelle über ein gültiges Datum-Uhrzeit-Feld verfügt, das verwendet werden kann, um zur Einzelhandelskalender-Tabelle beizutreten.
+Im obigen Abschnitt wird beschrieben, wie Sie einen Einzelhandelskalender so konfigurieren, dass er mit jeder auf Ihrer `sales\_order` -Tabelle (z. B. `Revenue` oder `Orders`). Sie können dies auch erweitern, um den Einzelhandelskalender für Metriken zu unterstützen, die auf einer beliebigen Tabelle basieren. Die einzige Anforderung besteht darin, dass diese Tabelle über ein gültiges Datum-Uhrzeit-Feld verfügt, das verwendet werden kann, um zur Einzelhandelskalender-Tabelle beizutreten.
 
-Um beispielsweise Metriken auf Kundenebene in einem 4-5-4 Einzelhandelskalender anzuzeigen, erstellen Sie eine `Same Table` der `customer\_entity` -Tabelle ähnlich `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` weiter oben beschrieben. Diese Spalte kann dann zum Reproduzieren der `One to Many` JOINED\_COLUMN-Berechnungen (z. B. `Created_at (retail year)`) und `Include in previous retail year? (Yes/No)` durch Teilnahme an `customer\_entity` -Tabelle `Retail Calendar` Tabelle.
+Um beispielsweise Metriken auf Kundenebene in einem 4-5-4 Einzelhandelskalender anzuzeigen, erstellen Sie eine `Same Table` in der `customer\_entity` -Tabelle ähnlich `\[INPUT\] created\_at (yyyy-mm-dd 00:00:00)` weiter oben beschrieben. Diese Spalte kann dann zum Reproduzieren der `One to Many` JOINED\_COLUMN-Berechnungen (wie `Created_at (retail year)`) und `Include in previous retail year? (Yes/No)` durch Teilnahme an `customer\_entity` -Tabelle `Retail Calendar` Tabelle.
 
-Vergessen Sie nicht, [Metriken alle neuen Spalten als Dimensionen hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) vor der Erstellung neuer Berichte.
+Nicht vergessen: [Metriken alle neuen Spalten als Dimensionen hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) vor der Erstellung neuer Berichte.

@@ -23,7 +23,7 @@ Die `quote` table (`sales_flat_quote` auf M1) enthält Datensätze zu jedem Ware
 
 | **Spaltenname** | **Beschreibung** |
 |---|---|
-| `base_currency_code` | Währung für alle Werte, die in `base_*` -Felder (d. h. `base_grand_total`, `base_subtotal`usw.). Dies spiegelt normalerweise die Standardwährung des Commerce-Stores wider |
+| `base_currency_code` | Währung für alle in `base_*` -Felder (das heißt `base_grand_total`, `base_subtotal`usw.). Dies spiegelt normalerweise die Standardwährung des Commerce-Stores wider |
 | `base_grand_total` | Endpreis, der dem Kunden für den Warenkorb angeboten wird, nach Anwendung aller Steuern, Versand und Rabatte. Obwohl die genaue Berechnung anpassbar ist, ist im Allgemeinen die `base_grand_total` berechnet als `base_subtotal` + `base_tax_amount` + `base_shipping_amount` + `base_discount_amount` - `base_gift_cards_amount` - `base_customer_balance_amount` |
 | `base_subtotal` | Bruttokaufwert aller im Warenkorb enthaltenen Artikel. Steuern, Versand, Rabatte usw. sind nicht inbegriffen |
 | `created_at` | Erstellungszeitstempel des Warenkorbs, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL Commerce Intelligence], kann dieser Zeitstempel in eine Berichtszeitzone in [!DNL Commerce Intelligence] , die sich von der Zeitzone Ihrer Datenbank unterscheidet |
@@ -41,10 +41,10 @@ Die `quote` table (`sales_flat_quote` auf M1) enthält Datensätze zu jedem Ware
 
 | **Spaltenname** | **Beschreibung** |
 |---|---|
-| `Order date` | Zeitstempel, die das Erstellungsdatum der Bestellung für konvertierte Warenkörbe widerspiegeln. Errechnet durch Verbinden `quote.reserved_order_id` nach `sales_order.increment_id` und die `sales_order.created_at` field |
+| `Order date` | Zeitstempel, die das Erstellungsdatum der Bestellung für konvertierte Warenkörbe widerspiegeln. Errechnet durch Verbinden `quote.reserved_order_id` nach `sales_order.increment_id` und gibt die `sales_order.created_at` field |
 | `Seconds between cart creation and order` | Verstrichene Zeit zwischen der Erstellung des Warenkorbs und der Erstellung der Bestellung. Berechnet durch Subtraktion `created_at` von `Order date`zurückgegeben als ganzzahlige Anzahl von Sekunden |
 | `Seconds since cart creation` | Verstrichene Zeit zwischen dem Erstellungsdatum des Warenkorbs und jetzt. Berechnet durch Subtraktion `created_at` vom Server-Zeitstempel zum Zeitpunkt der Ausführung der Abfrage zurückgegeben, wobei eine Ganzzahl von Sekunden zurückgegeben wird. Wird am häufigsten verwendet, um das Alter eines Warenkorbs zu ermitteln |
-| `Store name` | Der Name des mit dieser Bestellung verknüpften Commerce-Stores. Errechnet durch Verbinden `quote.store_id` nach `store.store_id` und die `name` field |
+| `Store name` | Der Name des mit dieser Bestellung verknüpften Commerce-Stores. Errechnet durch Verbinden `quote.store_id` nach `store.store_id` und gibt die `name` field |
 
 {style="table-layout:auto"}
 
@@ -67,7 +67,7 @@ Die `quote` table (`sales_flat_quote` auf M1) enthält Datensätze zu jedem Ware
 
 `sales_order`
 
-* Mitglied werden `sales_order` -Tabelle, um Spalten zu erstellen, die Bestelldetails zurückgeben, die mit einem konvertierten Warenkorb verknüpft sind.
+* Mitglied werden `sales_order` -Tabelle verwenden, um Spalten zu erstellen, die Bestelldetails zurückgeben, die mit einem konvertierten Warenkorb verknüpft sind.
    * Pfad:`quote.reserved_order_id` (viele) => `sales_order.increment_id` (eins)
 
 `store`

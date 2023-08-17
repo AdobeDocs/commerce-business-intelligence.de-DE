@@ -29,15 +29,15 @@ So reduzieren Sie eine zweidimensionale Tabelle mit einem [!DNL Excel] Pivot-Tab
 
 1. Öffnen Sie die Datei mit der zweidimensionalen Datentabelle.
 1. Öffnen Sie den Assistenten PivotTable . In [!DNL Windows], lautet der Tastaturbefehl `Alt-D`. In [!DNL Mac OS], eingeben `Command-Option-P`.
-1. Auswählen **[!UICONTROL Multiple consolidated ranges]** und klicken Sie auf **[!UICONTROL Next]**.
-1. Auswählen **[!UICONTROL I will create the page fields]** und klicken Sie auf **[!UICONTROL Next]**.
-1. Wählen Sie den gesamten Datensatz in der zweidimensionalen Tabelle einschließlich der Beschriftungen aus. Stellen Sie sicher, dass `0` für die Anzahl der gewünschten Seitenfelder ausgewählt ist, und klicken Sie auf **[!UICONTROL Next]**.
+1. Auswählen **[!UICONTROL Multiple consolidated ranges]** und klicken **[!UICONTROL Next]**.
+1. Auswählen **[!UICONTROL I will create the page fields]** und klicken **[!UICONTROL Next]**.
+1. Wählen Sie den gesamten Datensatz in der zweidimensionalen Tabelle einschließlich der Titel aus. Stellen Sie sicher, dass `0` für die Anzahl der gewünschten Seitenfelder ausgewählt ist, und klicken Sie auf **[!UICONTROL Next]**.
 1. Pivot-Tabellen in einem neuen Arbeitsblatt erstellen und auf **[!UICONTROL Finish]**.
 1. Heben Sie die Auswahl der Spalten- und Zeilenfelder in der Feldliste auf.
 1. Doppelklicken Sie auf den resultierenden numerischen Wert, um die reduzierten Quelldaten in einem neuen Blatt anzuzeigen.
    ![](../../mbi/assets/pivot-table-double-click.png)
 1. Als `CSV` -Datei.
 
-## Aufbrechen
+## Aufwischen
 
-Die Datentabelle wurde in ein Listenformat konvertiert, wobei alle ursprünglichen Informationen beibehalten werden. Sie kann jetzt [importiert in [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) zur Analyse.
+Die Datentabelle wurde in ein Listenformat konvertiert, wobei alle ursprünglichen Informationen beibehalten werden. Sie kann jetzt [importiert in [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) für die Analyse.

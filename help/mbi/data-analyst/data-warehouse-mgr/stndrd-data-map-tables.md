@@ -19,13 +19,13 @@ Stellen Sie sich vor, Sie befinden sich im `Report Builder` Erstellen eines `Rev
 
 ## Wie konnte das passieren?
 
-Leider kann ein Mangel an Standardisierung manchmal zu undurchsichtigen Daten und Kopfschmerzen bei der Erstellung von Berichten führen. In diesem Beispiel gab es für Ihre Kunden möglicherweise kein Dropdown-Menü oder keine standardisierte Möglichkeit, ihre Rechnungsstatusinformationen einzugeben. Dies führt zu verschiedenen Werten - `pa`, `PA`, `penna`, `pennsylvania`und `Pennsylvania` - alle für denselben Status, was zu einigen seltsamen Ergebnissen in der `Report Builder`.
+Leider kann ein Mangel an Standardisierung manchmal zu undurchsichtigen Daten und Kopfschmerzen bei der Erstellung von Berichten führen. In diesem Beispiel gab es für Ihre Kunden möglicherweise kein Dropdown-Menü oder keine standardisierte Möglichkeit, ihre Rechnungsstatusinformationen einzugeben. Dies führt zu verschiedenen Werten - `pa`, `PA`, `penna`, `pennsylvania`, und `Pennsylvania` - alle für denselben Status, was zu einigen seltsamen Ergebnissen in der `Report Builder`.
 
 Es ist möglich, dass es eine technische Ressource gibt, mit der Sie die Daten bereinigen oder die benötigten Spalten direkt in Ihre Datenbank einfügen können. Wenn nicht, gibt es eine andere Lösung - **Zuordnungstabelle**. Mit einer Zuordnungstabelle können Sie schnell und einfach alle chaotischen Daten bereinigen und standardisieren, indem Sie Daten einer einzigen Ausgabe zuordnen.
 
 >[!NOTE]
 >
->Sie können keine Zuordnungstabelle für konsolidierte Tabellen erstellen, ohne Hilfe des Adobe Support-Teams zu erhalten.
+>Sie können keine Zuordnungstabelle für konsolidierte Tabellen erstellen, ohne Hilfe des Adobe-Supportteams zu erhalten.
 
 ## Wie erstelle ich es? {#how}
 
@@ -43,34 +43,34 @@ Um eine Zuordnungstabelle zu erstellen, müssen Sie eine zweispaltige Tabelle er
 
 Geben Sie in der ersten Spalte die in Ihrer Datenbank gespeicherten Werte mit **nur einen Wert in jeder Zeile**. Beispiel: `pa` und `PA` kann nicht auf derselben Zeile stehen - jede Eingabe muss eine eigene Zeile aufweisen. Ein Beispiel finden Sie unten.
 
-Geben Sie in der zweiten Spalte an, welche Werte diese Werte aufweisen sollen **sollte**. Fahren Sie mit dem Rechnungsstatusbeispiel fort, wenn Sie möchten `pa`, `PA`, `Pennsylvania`und `pennsylvania` einfach `PA`eingeben `PA` in dieser Spalte für jeden Eingabewert.
+Geben Sie in der zweiten Spalte an, welche Werte diese Werte aufweisen sollen **sollte**. Fahren Sie mit dem Rechnungsstatusbeispiel fort, wenn Sie möchten `pa`, `PA`, `Pennsylvania`, und `pennsylvania` einfach `PA`eingeben `PA` in dieser Spalte für jeden Eingabewert.
 
 ![](../../assets/Mapping_table_examples.jpg)
 
-## Was muss ich tun? [!DNL Commerce Intelligence] verwenden? {#use}
+## Was muss ich tun [!DNL Commerce Intelligence] verwenden? {#use}
 
-Nachdem Sie die Erstellung der Zuordnungstabelle abgeschlossen haben, müssen Sie [Datei hochladen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) in [!DNL Commerce Intelligence] und [eine verbundene Spalte erstellen](../../data-analyst/data-warehouse-mgr/calc-column-types.md) , das das neue Feld in die gewünschte Tabelle verschiebt. Sie können dies tun, nachdem die Datei mit Ihrer Data Warehouse synchronisiert wurde.
+Nachdem Sie die Zuordnungstabelle erstellt haben, müssen Sie [Datei hochladen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) in [!DNL Commerce Intelligence] und [eine verbundene Spalte erstellen](../../data-analyst/data-warehouse-mgr/calc-column-types.md) , das das neue Feld in die gewünschte Tabelle verschiebt. Sie können dies tun, nachdem die Datei mit Ihrer Data Warehouse synchronisiert wurde.
 
 Im folgenden Beispiel wird die Spalte verschoben, die Sie für die `mapping_state` table (`state_input`) auf `customer_address` -Tabelle mit einer verbundenen Spalte. Dies ermöglicht es uns, nach der Sauberkeit zu gruppieren `state_input` in Ihren Berichten anstelle der `state` Spalte.
 
-So erstellen Sie die `joined` Navigieren Sie im Data Warehousen-Manager zu der Tabelle, zu der das Feld verschoben werden soll. In diesem Beispiel wäre dies die `customer_address` Tabelle.
+So erstellen Sie die `joined` -Spalte, navigieren Sie zur Tabelle, in die das Feld im Data Warehouse-Manager verschoben wird. In diesem Beispiel wäre dies die `customer_address` Tabelle.
 
 1. Klicken **[!UICONTROL Create a Column]**.
-1. Auswählen `Joined Column` von `Definition` Dropdown-Liste.
-1. Geben Sie der Spalte einen Namen, der sie vom `state` in Ihrer Datenbank. Benennen Sie die Spalte. `billing state (mapped)` damit Sie feststellen können, welche Spalte bei der Segmentierung in ReportBuilder verwendet werden soll.
-1. Der Pfad, den Sie zum Verbinden der Tabellen benötigen, ist nicht vorhanden. Daher müssen Sie eine erstellen. Klicken **[!UICONTROL Create new path]**  im `Select a table and column` Dropdown-Liste.
+1. Auswählen `Joined Column` aus dem `Definition` Dropdown.
+1. Geben Sie der Spalte einen Namen, der sie vom `state` in Ihrer Datenbank. Benennen Sie die Spalte `billing state (mapped)` damit Sie feststellen können, welche Spalte bei der Segmentierung in ReportBuilder verwendet werden soll.
+1. Der Pfad, den Sie zum Verbinden der Tabellen benötigen, ist nicht vorhanden. Daher müssen Sie eine erstellen. Klicks **[!UICONTROL Create new path]**  im `Select a table and column` Dropdown.
 
    Wenn Sie sich nicht sicher sind, was die Tabellenbeziehung ist oder wie Sie die primären und Fremdschlüssel richtig definieren, überprüfen Sie [das Tutorial](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) für Hilfe.
 
    * Im `Many` die Tabelle, in die Sie das Feld umsiedeln möchten, auswählen (für uns ist es erneut `customer_address`) und der `Foreign Key` Spalte oder `state` -Spalte im Beispiel.
-   * Im `One` und wählen Sie die `mapping` und `Primary key` Spalte. In diesem Fall wählen Sie die `state_input` aus der `mapping_state` Tabelle.
+   * Im `One` und wählen Sie die `mapping` und `Primary key` Spalte. In diesem Fall wählen Sie die `state_input` aus der Spalte `mapping_state` Tabelle.
    * Hier sehen Sie, wie der Pfad aussieht:
 
      ![](../../assets/State_Mapping_Path.png)
 
 1. Klicken Sie abschließend auf **[!UICONTROL Save]** , um den Pfad zu erstellen.
 1. Der Pfad wird möglicherweise nicht sofort nach dem Speichern aufgefüllt. Klicken Sie in diesem Fall auf die `Path` und wählen Sie den erstellten Pfad aus.
-1. Klicken **[!UICONTROL Save]** , um die Spalte zu erstellen.
+1. Klicks **[!UICONTROL Save]** , um die Spalte zu erstellen.
 
 ## Was mache ich jetzt? {#wrapup}
 

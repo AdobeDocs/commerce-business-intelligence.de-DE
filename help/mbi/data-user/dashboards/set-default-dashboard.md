@@ -1,5 +1,5 @@
 ---
-title: Festlegen eines Standard-Dashboards
+title: Standard-Dashboard festlegen
 description: Erfahren Sie, wie Sie ein Standard-Dashboard einrichten.
 exl-id: a3fc64e3-b527-4c2c-848d-c0962cd20ff3
 role: Admin, Data Architect, Data Engineer, User
@@ -17,7 +17,7 @@ Das Standard-Dashboard ist das erste Dashboard, das Sie beim Öffnen sehen [!DNL
 
 1. Klicken Sie im Dashboard auf **[!UICONTROL Dashboard Options]** befindet sich oben auf dem Bildschirm.
 
-1. Klicken **[!UICONTROL Make Default]** in der Dropdown-Liste.
+1. Klicks **[!UICONTROL Make Default]** in der Dropdown-Liste.
 
 1. Wenn die Bestätigungsaufforderung angezeigt wird, klicken Sie auf **[!UICONTROL Yes]** , um das Standard-Dashboard zu ändern.
 

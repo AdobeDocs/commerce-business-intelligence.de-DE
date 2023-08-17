@@ -41,7 +41,7 @@ Zu verfolgende Spalten
 * **`product_name`**
 * **`product_sku`**
 
-Zu erstellende Filtersätze
+Sets filtern, um sie zu erstellen
 
 * **`enterprise_rma`** table
 * Name des Filtersatzes: `Returns we count`

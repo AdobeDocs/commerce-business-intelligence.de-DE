@@ -49,7 +49,7 @@ Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu beschrä
 
      ![Wert eingeben](../../assets/magento-bi-report-builder-filter-part3.png)
 
-   * Wenn der Filter abgeschlossen ist, klicken Sie auf **[!UICONTROL Apply]**.
+   * Klicken Sie nach Abschluss des Filters auf **[!UICONTROL Apply]**.
 
      Der Bericht enthält jetzt nur noch wiederkehrende Kunden, und die Anzahl der für den Bericht abgerufenen Kundendatensätze wurde von 33.000 auf 12.600 reduziert.
 
@@ -61,10 +61,10 @@ Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu beschrä
 
 1. Wählen Sie in der Liste der Einstellungen `Cumulative`. Klicken Sie anschließend auf **[!UICONTROL Apply]**.
 
-   ![Kumulierte Perspektive](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
+   ![Kumulative Perspektive](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
 
    Die `Cumulative` Die Perspektive verteilt die Änderung im Zeitverlauf, anstatt die &quot;Aufgejagt&quot;und &quot;Abgezackt&quot;für jeden Monat anzuzeigen.
 
-1. Geben Sie einen `Title` und klicken Sie auf **[!UICONTROL Save]** es als `Chart` in Ihr Dashboard.
+1. Geben Sie einen `Title` und klicken Sie auf **[!UICONTROL Save]** es als `Chart` in Ihr Dashboard ein.
 
    ![In Dashboard speichern](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

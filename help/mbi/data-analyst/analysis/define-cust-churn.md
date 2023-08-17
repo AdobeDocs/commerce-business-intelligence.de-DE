@@ -34,7 +34,7 @@ Zu erstellende Spalten
 
 * `sales_flat_order` table
 * `Customer's lifetime number of orders`
-* Wählen Sie eine Definition aus: Verbundene Spalte
+* Definition auswählen: Verbundene Spalte
 * Wählen Sie eine [!UICONTROL table]: `customer_entity`
 * Wählen Sie eine [!UICONTROL column]: `Customer's lifetime number of orders`
 * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
@@ -61,14 +61,14 @@ Keine neuen Metriken!
 ## Berichte
 
 * **anfängliche Wiederholungsreihenwahrscheinlichkeit**
-* Metrik A: Wiederholungsaufträge mit All-Time
+* Metrik A: Wiederholungsaufträge in Echtzeit
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* Metrik B: All-time-Bestellungen
-* [!UICONTROL Metric]: Anzahl Bestellungen
+* Metrik B: Allzeitbestellungen
+* [!UICONTROL Metric]: Anzahl der Bestellungen
 
-* [!UICONTROL Formula]: anfängliche Wiederholungsreihenwahrscheinlichkeit
+* [!UICONTROL Formula]: anfängliche Wiederholungsauftragswahrscheinlichkeit
 * 
   [!UICONTROL Formel]: `A/B`
 * 
@@ -81,19 +81,19 @@ Keine neuen Metriken!
   [!UICONTROL Chart type]: `Scalar`
 
 * **Wiederholungsbestellwahrscheinlichkeit seit Bestellung in Monaten**
-* Metrik A: Bestellungen nach Monaten seit der vorherigen Bestellung wiederholen (ausblenden)
+* Metrik A: Bestellungen nach Monaten seit vorheriger Bestellung wiederholen (ausblenden)
 * [!UICONTROL Metric]: `Number of orders`
 * 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* Metrik B: Letzte Bestellungen nach Monaten seit Bestellung (ausblenden)
+* Metrik B: Letzte Bestellungen nach Monaten seit der Bestellung (Verbergen)
 * [!UICONTROL Metric]: `Number of orders`
 * 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* Metrik C: Wiederholungsreihenfolge (ausblenden)
+* Metrik C: Wiederholungsreihenfolgen (ausblenden)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
@@ -107,7 +107,7 @@ Keine neuen Metriken!
 * 
   [!UICONTROL Gruppe von]: `Independent`
 
-* [!UICONTROL Formula]: anfängliche Wiederholungsreihenwahrscheinlichkeit
+* [!UICONTROL Formula]: anfängliche Wiederholungsauftragswahrscheinlichkeit
 * 
   [!UICONTROL Formel]: `(C-A)/(C+D-A-B)`
 * 
@@ -117,16 +117,16 @@ Keine neuen Metriken!
 * 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
-* Show top.bottom: Top 24 Kategorien, sortiert nach Kategoriename
+* Top.bottom anzeigen: Top 24 Kategorien, sortiert nach Kategoriename
 
 * 
   [!UICONTROL Chart type]: `Line`
 
-Der Bericht zur anfänglichen Wiederholungsbestellwahrscheinlichkeit stellt die Gesamtanzahl wiederholter Bestellungen/Gesamtbestellungen dar. Jede Bestellung bietet die Möglichkeit, eine Wiederholungsbestellung vorzunehmen. die Anzahl der Wiederholungsaufträge ist die Teilmenge der tatsächlich ausgeführten Bestellungen.
+Der Bericht zur anfänglichen Wiederholungsbestellwahrscheinlichkeit stellt die Gesamtanzahl wiederholter Bestellungen/Gesamtbestellungen dar. Jede Bestellung ist eine Möglichkeit, eine Wiederholungsbestellung zu tätigen. Die Anzahl der Wiederholungsaufträge ist die Teilmenge der Bestellungen, die tatsächlich ausgeführt werden.
 
 Die Formel, die Sie verwenden, vereinfacht die Verwendung von (Gesamtanzahl der Wiederholungsaufträge, die nach X Monaten erfolgten)/ (Gesamtbestellungen, die mindestens X Monate alt sind). Es zeigt uns, dass es historisch gesehen, da es seit einer Bestellung X Monate sind, eine Y% Chance gibt, dass der Benutzer eine andere Bestellung aufgibt.
 
-Nachdem Sie Ihr Dashboard erstellt haben, lautet die häufigste Frage: Wie kann ich dies verwenden, um eine Abwanderungsschwelle zu bestimmen?
+Nachdem Sie Ihr Dashboard erstellt haben, lautet die häufigste Frage: Wie kann ich damit einen Abwanderungsschwellenwert bestimmen?
 
 **Darauf gibt es keine &quot;richtige Antwort&quot;.** Adobe empfiehlt jedoch, den Punkt zu ermitteln, an dem die Linie den Wert überschreitet, der der Hälfte der anfänglichen Wiederholwahrscheinlichkeitsrate entspricht. An dieser Stelle können Sie sagen: &quot;Wenn ein Benutzer eine Wiederholungsreihenfolge durchführt, hätte er dies wahrscheinlich bis jetzt getan.&quot; Letztlich besteht das Ziel darin, die Schwelle auszuwählen, an der es sinnvoll ist, von &quot;Bindung&quot;zu &quot;Reaktivierung&quot;zu wechseln.
 

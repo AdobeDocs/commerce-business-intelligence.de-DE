@@ -50,4 +50,4 @@ Zurzeit [!DNL Salesforce] stellt die folgenden Objekte derzeit nicht in ihrer AP
 ## Verwandte:
 
 * [Verbinden [!DNL Salesforce]](../integrations/salesforce.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

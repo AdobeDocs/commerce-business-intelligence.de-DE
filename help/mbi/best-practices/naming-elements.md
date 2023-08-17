@@ -19,17 +19,17 @@ Bevor Sie mit dem Erstellen beginnen in [!DNL Adobe Commerce Intelligence], möc
 
 Die Art und Weise, wie Sie berechnete Spalten, Metriken und Berichte benennen, macht es erforderlich, dass verschiedene Benutzer durch Ihre [!DNL Commerce Intelligence] -Konto. Beachten Sie bei der Benennung dieser Funktionen die drei CSS:
 
-* **KLARHEIT** - So können Sie auf einen Blick feststellen, was ein Bericht zeigt, was eine Metrik bewirkt usw.
+* **KLARHEIT** - So können Sie auf einen Blick erkennen, was ein Bericht zeigt, was eine Metrik bewirkt usw.
 * **KONSISTENZ** - damit Sie (und das Adobe-Supportteam) Elemente und Berichte in Ihrem Konto leicht finden und verstehen können.
-* **GLAUBWÜRDIGKEIT** - um andere datengestützte Dienste anzuregen und zu stärken [!DNL Commerce Intelligence] Benutzer, müssen Sie sich darauf verlassen, wie sie die Daten verstehen und verwenden!
+* **ANERKENNUNG** - um andere datengestützte Dienste anzuregen und zu stärken [!DNL Commerce Intelligence] Benutzer, müssen Sie sich darauf verlassen, wie sie die Daten verstehen und verwenden!
 
 Lesen Sie weiter für bewährte und wahre Nomenklatur Tipps!
 
 ## Allgemeine Best Practices {#general}
 
-### Seien Sie aussagekräftig {#meaningful}
+### Seien Sie bedeutsam {#meaningful}
 
-Seien Sie nach Möglichkeit spezifisch! Wenn es beispielsweise das Land ist, wissen Sie, ob es sich um das Versand- oder das Rechnungsland handelt? Ist es die Stadt des Benutzers oder die Stadt des Deals?
+Seien Sie, wann immer möglich, spezifisch! Wenn es beispielsweise das Land ist, wissen Sie, ob es sich um das Versand- oder das Rechnungsland handelt? Ist es die Stadt des Benutzers oder die Stadt des Deals?
 
 **Schlechtes Beispiel:**
 Umsatz
@@ -41,7 +41,7 @@ Umsatz (Grundbetrag + Gebühr) Versandland des Benutzers
 
 Diese Beispiele sind spezifisch, was das Verwirrungspotenzial verringert.
 
-### Konsistent mit Großschreibung sein {#capitalize}
+### Konsistent mit der Groß-/Kleinschreibung {#capitalize}
 
 [!DNL Adobe] empfiehlt die Groß-/Kleinschreibung des ersten Buchstabens mit dem Rest der Zeichen in Kleinbuchstaben, es sei denn, es handelt sich um einen ordnungsgemäßen Schreibstil der Groß-/Kleinschreibung. Beispiel: **Bestellnummer des Benutzers** anstelle von **Bestellnummer des Benutzers.**
 
@@ -57,7 +57,7 @@ Wahrscheinlich haben Sie bereits eine Nomenklatur in Ihrem Unternehmen. Halten S
 
 ### Rechtschreibung und Grammatik {#spelling}
 
-Vergewissern Sie sich, dass Sie Ihre Rechtschreibung überprüfen und nicht die pesky Besitzungen vergessen!
+Achten Sie darauf, die Rechtschreibung zu überprüfen und nicht die pesky Besitzungen zu vergessen!
 
 ## Diagramme {#charts}
 
@@ -75,15 +75,15 @@ Das sagt uns **just** was im Bericht steht, was fantastisch ist.
 
 ## Dashboards {#dashboards}
 
-Dashboards sollten so benannt werden, dass sie die darin enthaltenen Berichte thematisch darstellen. Wenn Ihr Dashboard beispielsweise nur Informationen zum Umsatz und zu Bestellungen enthält, sollten Sie die Benennung in etwa wie folgt erwägen: **Speichername - Umsatz und Bestellungen.**
+Dashboards sollten so benannt werden, dass sie die darin enthaltenen Berichte thematisch darstellen. Wenn Ihr Dashboard beispielsweise nur Informationen zum Umsatz und zu Bestellungen enthält, sollten Sie die Benennung in etwa so vornehmen: **Speichername - Umsatz und Bestellungen.**
 
-Wenn Ihr Dashboard dagegen ein Ort ist, an dem Sie mit verschiedenen Berichten experimentieren, sollten Sie es nennen. **Sandbox Ihres Namens** sodass Sie wissen, dass es sich bei den in enthaltenen Berichten um Entwürfe handelt.
+Wenn Ihr Dashboard dagegen ein Ort ist, an dem Sie mit verschiedenen Berichten experimentieren, sollten Sie es nennen. **Sandbox Ihres Namens** sodass Sie wissen, dass die in enthaltenen Berichte Entwürfe sind.
 
 ## Dimensionen (berechnete Spalten) {#dimensions}
 
 Beim Benennen neuer [Dimensionen](../data-analyst/data-warehouse-mgr/creating-calculated-columns.md)ist es am nützlichsten, diese Formel zu verwenden: **(Entität) + (Nth) + (Zeitrahmen) + (Berechnung) + (Kommentare)**. Beispiel:
 
-Erster 30-Tage-Umsatz des Benutzers
+Erster Umsatz von 30 Tagen
 * Bestellnummer des Benutzers
 * Bestellnummer des Benutzers (auf Prüfung warten)
 
@@ -93,7 +93,7 @@ Erster 30-Tage-Umsatz des Benutzers
 
 ## Metriken {#metrics}
 
-[Metriken](../data-user/reports/ess-manage-data-metrics.md) sind im Wesentlichen Fragen, auf die Sie regelmäßig antworten möchten. Wie viele Bestellungen gab es im letzten Monat? Welchen durchschnittlichen Lebenszeitwert haben Ihre Kunden? Es ist Best Practice, Metriken zu benennen, die die Antwort widerspiegeln, die sie Benutzern geben. Wenn dieselbe Metrik für einen bestimmten Store oder eine bestimmte Abteilung gefiltert wurde, sollte sie als solche gekennzeichnet werden. Beispiel:
+[Metriken](../data-user/reports/ess-manage-data-metrics.md) sind im Wesentlichen Fragen, auf die Sie regelmäßig antworten möchten. Wie viele Bestellungen gab es im letzten Monat? Wie hoch ist der durchschnittliche Lebenszeitwert Ihrer Kunden? Es ist Best Practice, Metriken zu benennen, die die Antwort widerspiegeln, die sie Benutzern geben. Wenn dieselbe Metrik für einen bestimmten Store oder eine bestimmte Abteilung gefiltert wurde, sollte sie als solche gekennzeichnet werden. Beispiel:
 
 Durchschnittlicher LTV-Nutzer (erste 30 Tage) Store-Name - Umsatz
 
@@ -101,6 +101,6 @@ Schließlich kann dieselbe Metrik manchmal nach verschiedenen Zeitstempeln organ
 
 Umsatz (ausgeliefert\_at) Umsatz (erstellt\_at)
 
-## Aufbrechen {#wrapup}
+## Aufwischen {#wrapup}
 
-Die frühzeitige Festlegung von Stil- und Benennungskonventionen hilft Ihnen bei der erfolgreichen Einrichtung Ihrer [!DNL Commerce Intelligence] -Konto. Beachten Sie die drei CSS: Klarheit, Kohärenz und Glaubwürdigkeit.
+Die frühzeitige Festlegung von Stil- und Benennungskonventionen hilft Ihnen bei der erfolgreichen Einrichtung Ihrer [!DNL Commerce Intelligence] -Konto. Denken Sie an die drei Cs: Klarheit, Konsistenz und Glaubwürdigkeit.

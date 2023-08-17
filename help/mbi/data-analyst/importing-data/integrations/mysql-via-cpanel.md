@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 * [Erstellen Sie eine [!DNL Commerce Intelligence] [!DNL MySQL] Benutzer in [!DNL cPanel]](#cpanel)
 * [Eingabe von Verbindungs- und Benutzerinformationen in [!DNL Commerce Intelligence]](#finish)
 
-## Sprung zu
+## Springen Sie zu
 
 * [[!DNL MySQL] über SSH-Tunnel](../integrations/mysql-via-ssh-tunnel.md)
 * [[!DNL MySQL] Direkte Verbindung](../integrations/mysql-via-a-direct-connection.md)
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >[!DNL Adobe] empfiehlt die Verwendung von SSH oder einer anderen Form der Verschlüsselung, um Ihre Daten zu sichern! Wenn dies keine Option ist, können Sie weiterhin direkt eine Verbindung herstellen [!DNL Commerce Intelligence] zu Ihrer Datenbank mithilfe der Anweisungen in diesem Thema.
 
-Dieses Thema führt Sie durch die direkte Verbindung Ihrer [!DNL MySQL] Datenbank zu [!DNL Commerce Intelligence] using [!DNL cPanel]. Dieser Prozess kann auch verwendet werden, um eine Verbindung herzustellen [!DNL Adobe Commerce] und anderen MySQL-basierten eCommerce-Datenbanken, um [!DNL Commerce Intelligence].
+Dieses Thema führt Sie durch die direkte Verbindung Ihrer [!DNL MySQL] Datenbank zu [!DNL Commerce Intelligence] using [!DNL cPanel]. Dieser Prozess kann auch zum Verbinden verwendet werden [!DNL Adobe Commerce] und anderen MySQL-basierten eCommerce-Datenbanken, um [!DNL Commerce Intelligence].
 
 1. Erstellen Sie eine [!DNL Commerce Intelligence] [!DNL MySQL] Benutzer in [!DNL cPanel]
 1. Eingabe von Verbindungs- und Benutzerinformationen in [!DNL Commerce Intelligence]
@@ -35,8 +35,8 @@ Erste Schritte.
 ## Erstellen einer [!DNL Commerce Intelligence] [!DNL MySQL] Benutzer in [!DNL cPanel] {#cpanel}
 
 1. Anmelden bei [!DNL cPanel] über Ihren Hosting-Provider.
-1. Klicken **[!UICONTROL [!DNL MySQL] Databases]**, befindet sich im `Database` Abschnitt.
-1. Scrollen Sie nach unten zum `Add New User` und erstellen Sie einen Benutzer für [!DNL Commerce Intelligence]:
+1. Klicks **[!UICONTROL [!DNL MySQL] Databases]**, befindet sich in der `Database` Abschnitt.
+1. Scrollen Sie nach unten zum `Add New User` und einen Benutzer für [!DNL Commerce Intelligence]:
 
    ![](../../../assets/create-mbi-mysql-user-cpanel.png)
 
@@ -49,7 +49,7 @@ Erste Schritte.
 
 ## Eingabe der Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence] {#finish}
 
-Um Elemente einzuschließen, müssen Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]. Hast du die [!DNL MySQL] Berechtigungsseite öffnen? Wenn nicht, gehen Sie zu **[!UICONTROL Manage Data** > **Connections]** und klicken Sie auf **[!UICONTROL Add New Data Source]**, dann [!DNL MySQL] Symbol.
+Um Elemente einzuschließen, müssen Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]. Hast du die [!DNL MySQL] Berechtigungsseite öffnen? Wenn nicht, gehen Sie zu **[!UICONTROL Manage Data** > **Connections]** und klicken **[!UICONTROL Add New Data Source]**, dann die [!DNL MySQL] Symbol.
 
 Geben Sie die folgenden Informationen auf dieser Seite im `Database Connection` Abschnitt:
 
@@ -60,13 +60,13 @@ Geben Sie die folgenden Informationen auf dieser Seite im `Database Connection` 
 
 Wenn Sie eine [`SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)müssen Sie die Verschlüsselungsinformationen eingeben. Legen Sie die `Encrypted` Umschalten auf `Yes` , um das Formular anzuzeigen.
 
-* `Connection Type`: Legen Sie hier fest `SSH Tunnel`
-* `Remote Address`: Die IP-Adresse oder der Hostname des Servers [!DNL Commerce Intelligence] in den
+* `Connection Type`: Setzen Sie dies auf `SSH Tunnel`
+* `Remote Address`: IP-Adresse oder Hostname des Servers [!DNL Commerce Intelligence] in den
 * `Username`: Der Benutzername für die [!DNL Commerce Intelligence] `SSH (Linux)` Benutzer, siehe [instructions](../../../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) wie Sie dies durchführen können (falls noch nicht geschehen)
-* `SSH Port`: SSH-Port auf Ihrem Server (`22` standardmäßig)
+* `SSH Port`: SSH-Anschluss auf Ihrem Server (`22` standardmäßig)
 
-Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um das Setup abzuschließen.
+Klicken Sie abschließend auf **[!UICONTROL Save & Test]** , um das Setup abzuschließen.
 
 ## Verwandte:
 
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -35,9 +35,9 @@ Es ist an der Zeit, eine Liste möglicher Analysen und Messungen zu ermitteln, u
 
 Dies zeigt die durchschnittliche Zeit, die zwischen dem Registrierungsdatum und dem ersten Kaufdatum des Benutzers vergeht, und gibt eine Vorstellung davon, wie sich Benutzer bei diesem letzten Schritt im Konversionstrichter verhalten.
 
-## Daten suchen
+## Suchen nach Daten
 
-Das Verständnis, was gemessen werden soll, bringt uns nur in den Weg dorthin. Um die durchschnittliche Zeit von der Registrierung bis zum ersten Kaufdatum pro Benutzer zu bewerten, müssen Sie alle Datenpunkte identifizieren, aus denen Ihre Kennzahl besteht.
+Das Verständnis, was gemessen werden soll, bringt uns nur dazu, dorthin zu gelangen. Um die durchschnittliche Zeit von der Registrierung bis zum ersten Kaufdatum pro Benutzer zu bewerten, müssen Sie alle Datenpunkte identifizieren, aus denen Ihre Kennzahl besteht.
 
 Schlüsseln Sie Ihre Kennzahl in die Kernkomponenten auf. Sie müssen wissen, wie viele Personen sich registriert haben, wie viele Personen einen Kauf getätigt haben und wie viel Zeit zwischen diesen beiden Ereignissen vergangen ist.
 
@@ -49,8 +49,8 @@ Auf einer höheren Ebene müssen Sie wissen, wo diese Daten in der Datenbank zu 
 
 Auf einer detaillierteren Ebene müssen Sie die genauen Datenfelder identifizieren, die für diese Analyse verwendet werden:
 
-* Die Datentabelle und -spalte, die das Registrierungsdatum eines Kunden enthalten: Beispiel `user.created\_at`
-* Die Datentabelle und -spalte, die ein Kaufdatum enthalten: Beispiel `order.created\_at`
+* Die Datentabelle und -spalte mit dem Registrierungsdatum eines Kunden, z. B. `user.created\_at`
+* Die Datentabelle und -spalte mit einem Kaufdatum, z. B.: `order.created\_at`
 
 ## Datenspalten für Analysen erstellen
 
@@ -64,7 +64,7 @@ Dies wird dann zum Erstellen von Folgendem verwendet:
 
 Beide Felder müssen auf Benutzerebene erstellt werden (z. B. auf der `user` Tabelle). Dadurch kann die durchschnittliche Analyse von Benutzern normalisiert werden (d. h. der Nenner in dieser durchschnittlichen Berechnung ist die Anzahl der Benutzer).
 
-Hier [!DNL Commerce Intelligence] Schritte ein! Sie können Ihre [!DNL Commerce Intelligence] Data Warehouse zur Erstellung der obigen Spalten. Wenden Sie sich an das Analyseteam der Adobe und geben Sie uns die genaue Definition der neuen zu erstellenden Spalten an. Sie können auch die [Spalteneditor](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+Hier [!DNL Commerce Intelligence] Schritte ein! Sie können Ihre [!DNL Commerce Intelligence] Data Warehouse , um die obigen Spalten zu erstellen. Wenden Sie sich an das Adobe Analyst-Team und geben Sie uns die genaue Definition Ihrer neuen Spalten zur Erstellung an. Sie können auch die [Spalteneditor](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 Es empfiehlt sich, diese berechneten Datenfelder nicht direkt in Ihrer Datenbank zu erstellen, da dies Ihre Produktionsserver unnötig belastet.
 
@@ -80,8 +80,8 @@ _[SUM von `Time between a customer's registration date and first purchase date`]
 Und Sie möchten diese Berechnung im Zeitverlauf bzw. im Trend sehen, je nach Registrierungsdatum des Kunden. Und hier sehen Sie, wie Sie [diese Metrik erstellen](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
 
 1. Navigieren Sie zu **[!UICONTROL Data]** und wählen Sie die `Metrics` Registerkarte.
-1. Klicken **[!UICONTROL Add New Metric]** und wählen Sie die `user` -Tabelle (in der Sie die oben genannten Dimensionen erstellt haben).
-1. Wählen Sie aus der Dropdown-Liste `Average` auf`Time between a customer's registration date and first purchase date` in der Spalte `user` nach der `Customer's registration date`  Spalte.
+1. Klicks **[!UICONTROL Add New Metric]** und wählen Sie die `user` -Tabelle (in der Sie die oben genannten Dimensionen erstellt haben).
+1. Wählen Sie aus der Dropdown-Liste `Average` auf`Time between a customer's registration date and first purchase date` in der `user` nach der `Customer's registration date`  Spalte.
 1. Fügen Sie alle relevanten Filter oder Filtersätze hinzu.
 
 Diese Metrik ist jetzt bereit.
@@ -94,7 +94,7 @@ Gehen Sie einfach zu einem beliebigen Dashboard und [einen Bericht erstellen](..
 
 ### `Visual Report Builder` {#visualrb}
 
-[Die `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) ist die einfachste Möglichkeit, Ihre Daten zu visualisieren. Wenn Sie nicht mit SQL vertraut sind oder einen Bericht schnell erstellen möchten, ist Visual Report Builder die beste Wahl. Mit nur wenigen Klicks können Sie Metriken hinzufügen, Ihre Daten segmentieren und Berichte für Ihre gesamte Organisation erstellen. Diese Option eignet sich sowohl für Anfänger als auch für Experten, da sie keinerlei Fachwissen erfordert.
+[Die `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) ist die einfachste Möglichkeit, Ihre Daten zu visualisieren. Wenn Sie nicht mit SQL vertraut sind oder einen Bericht schnell erstellen möchten, ist Visual Report Builder die beste Wahl. Mit nur wenigen Klicks können Sie Metriken hinzufügen, Ihre Daten segmentieren und Berichte für Ihre gesamte Organisation erstellen. Diese Option eignet sich sowohl für Anfänger als auch für Experten, da sie keinerlei Fachkenntnisse erfordert.
 
 |  |  |
 |--- |--- |
@@ -109,7 +109,7 @@ Gehen Sie einfach zu einem beliebigen Dashboard und [einen Bericht erstellen](..
 
 Bei der Erstellung von Berichten, die mit anderen Team-Mitgliedern geteilt werden, empfiehlt Adobe das Hinzufügen von Beschreibungen, die es anderen Benutzern ermöglichen, Ihre Analyse besser zu verstehen.
 
-1. Klicken **[!UICONTROL i]** oben in jedem Bericht.
+1. Klicks **[!UICONTROL i]** oben in jedem Bericht.
 1. Geben Sie eine Beschreibung in das Wortfeld ein.
 1. Klicken **[!UICONTROL Save Description]**.
 
@@ -123,7 +123,7 @@ Muss ein Bericht in eine Präsentation oder ein Dokument aufgenommen werden? Jed
 
 1. Klicken Sie auf das Zahnradsymbol in der oberen rechten Ecke eines Berichts.
 1. Wählen Sie aus der Dropdown-Liste `Enlarge`.
-1. Wenn der Bericht vergrößert wird, klicken Sie auf **[!UICONTROL Download]** in der oberen rechten Ecke des Berichts.
+1. Wenn der Bericht vergrößert wird, klicken Sie **[!UICONTROL Download]** in der oberen rechten Ecke des Berichts.
 1. Wählen Sie aus der Dropdown-Liste das gewünschte Bildformat aus. Der Download beginnt sofort.
 
 Siehe unten:

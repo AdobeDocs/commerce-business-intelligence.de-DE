@@ -17,15 +17,15 @@ Eine Formel kombiniert mehrere Metriken und mathematische Logik, um eine Frage z
 
 ![Feiertagsverkäufe im Dashboard](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
-## Schritt 1: Basisbericht erstellen
+## Schritt 1: Erstellen des Basisberichts
 
 1. Wählen Sie im Menü `Report Builder`.
 
-1. Klicken **[!UICONTROL Add Metric]** und wählen Sie die erste Metrik für den Bericht aus.
+1. Klicks **[!UICONTROL Add Metric]** und wählen Sie die erste Metrik für den Bericht aus.
 
    In diesem Beispiel wird die Variable `Revenue by products ordered` verwendet.
 
-1. Klicken **[!UICONTROL Add Metric]** erneut und wählen Sie die zweite Metrik für den Bericht aus.
+1. Klicks **[!UICONTROL Add Metric]** erneut und wählen Sie die zweite Metrik für den Bericht aus.
 
    In diesem Beispiel wird die Variable `New Customers` verwendet.
 
@@ -67,7 +67,7 @@ Eine Formel kombiniert mehrere Metriken und mathematische Logik, um eine Frage z
 
 ## Schritt 3: Datumsbereich hinzufügen
 
-1. Klicken **[!UICONTROL Date Range]** in der oberen rechten Ecke.
+1. Klicks **[!UICONTROL Date Range]** in der oberen rechten Ecke.
 
 1. Im `Fixed Date Range` Gehen Sie wie folgt vor:
 
@@ -89,7 +89,7 @@ Eine Formel kombiniert mehrere Metriken und mathematische Logik, um eine Frage z
 
 In diesem Schritt speichern Sie den Bericht als Grafik und auch als Tabelle.
 
-1. Klicken `Untitled Report` oben auf der Seite und geben Sie einen beschreibenden Titel ein. In diesem Beispiel lautet der Berichtstitel `2017 Holiday Sales`.
+1. Klicks `Untitled Report` oben auf der Seite und geben Sie einen beschreibenden Titel ein. In diesem Beispiel lautet der Berichtstitel `2017 Holiday Sales`.
 
    Führen Sie dann die folgenden Schritte aus:
 
@@ -115,6 +115,6 @@ In diesem Schritt speichern Sie den Bericht als Grafik und auch als Tabelle.
 
 1. Führen Sie einen der folgenden Schritte aus, um die Berichte in Ihrem Dashboard anzuzeigen:
 
-   * Klicken **[!UICONTROL Go to Dashboard]** in der Nachricht oben auf der Seite.
+   * Klicks **[!UICONTROL Go to Dashboard]** in der Nachricht oben auf der Seite.
 
    * Wählen Sie im Menü **[!UICONTROL Dashboards]**. Klicken Sie auf den Namen des aktuellen Dashboards, um die Liste anzuzeigen. Klicken Sie dann auf den Namen des Dashboards, in dem der Bericht gespeichert wurde.

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Erwartet [!DNL Facebook Ads] data
 
-Nachdem Sie [mit [!DNL Facebook Ads] account](../integrations/facebook-ads.md), können Sie die [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) zur einfachen Nachverfolgung relevanter Datenfelder für die Analyse.
+Nachdem Sie [mit [!DNL Facebook Ads] account](../integrations/facebook-ads.md), können Sie die [Data Warehouse-Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) zur einfachen Nachverfolgung relevanter Datenfelder für die Analyse.
 
-In diesem Thema erhalten Sie einen kurzen Überblick über die Tabellen. Die Adobe empfiehlt die Synchronisierung mit Ihrer Data Warehouse. Hier werden nur die Kerntabellen hervorgehoben, da es einige Untertabellen gibt.
+Dieses Thema gibt Ihnen einen kurzen Überblick über die Tabellen, die Adobe empfiehlt, mit Ihrer Data Warehouse zu synchronisieren. Hier werden nur die Kerntabellen hervorgehoben, da es einige Untertabellen gibt.
 
 ## Kernkampagnentabellen
 
@@ -31,7 +31,7 @@ Dieser Tabellendatensatz ist die Kerntabelle von [!DNL Facebook Ads] Sets in [!D
 
 ### [`facebook _ads_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/adgroup)
 
-Diese Tabelle enthält alle Anzeigen in einer [!DNL Facebook Ads] -Konto. Die Spalten enthalten die Anzeigeninformationen, darunter das Anzeigenset und die Anzeigenkampagne, zu der es gehört, das Anzeigenangebot, das Anzeigen-Targeting und den Verweis auf bestimmte kreative Inhalte (Bild/Text), die von der Anzeige verwendet werden.
+Diese Tabelle enthält alle Anzeigen in einer [!DNL Facebook Ads] -Konto. Die Spalten enthalten die Anzeigeninformationen einschließlich des Anzeigensets und der Anzeigenkampagne, zu der es gehört, das Anzeigenangebot, das Anzeigen-Targeting und den Verweis auf bestimmte kreative Inhalte (Bild/Text), die von der Anzeige verwendet werden.
 
 ### [`facebook _adcreative_ (account-id)`](https://developers.facebook.com/docs/marketing-api/reference/ad-creative)
 
@@ -60,4 +60,4 @@ Diese Tabelle enthält dieselben Informationen wie die `facebook_ads_insights_{a
 ## Verwandte
 
 * [Verbinden [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

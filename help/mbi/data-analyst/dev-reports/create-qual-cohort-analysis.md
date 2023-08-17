@@ -17,13 +17,13 @@ Weißt du, wie deine [!DNL Google Adwords]-erworbene Kundensegmente bauen ihr LT
 
 Dieses Thema beschreibt, was eine qualitative Kohorte ist, warum Sie an der Erstellung dieser Analyse interessiert sein könnten und wie Sie sie erstellen können in [!DNL Commerce Intelligence].
 
-## Was ist `qualitative cohorts`Wie auch immer? {#whatare}
+## Was ist `qualitative cohorts`Wie dem auch sei? {#whatare}
 
 `Cohort` Analyse im Allgemeinen kann als Analyse von Benutzergruppen mit ähnlichen Merkmalen über ihre Lebenszyklen hinweg definiert werden. Damit können Sie Verhaltenstrends über verschiedene Benutzergruppen hinweg identifizieren.
 
 Siehe [Kohortenanalyse](https://www.cohortanalysis.com/).
 
-Am meisten `cohort` Analysen in [!DNL Commerce Intelligence] Benutzer nach einem gemeinsamen Datum gruppieren (z. B. die Gruppe aller Kunden, die in einem bestimmten Monat ihren ersten Kauf getätigt haben). A `qualitative cohort` unterscheidet sich etwas: Es handelt sich um eine Benutzergruppe, die durch ein nicht zeitbasiertes Merkmal definiert wird. Beispiele sind:
+Am meisten `cohort` Analysen in [!DNL Commerce Intelligence] Benutzer nach einem gemeinsamen Datum gruppieren (z. B. die Gruppe aller Kunden, die in einem bestimmten Monat ihren ersten Kauf getätigt haben). A `qualitative cohort` ist etwas anders: Es handelt sich um eine Benutzergruppe, die durch ein Merkmal definiert wird, das nicht zeitbasiert ist. Beispiele sind:
 
 * Die Gruppe aller Benutzer, die über eine Werbekampagne erworben wurden
 * Die Gruppe aller Benutzer, deren erster Kauf einen Coupon enthielt (oder nicht)
@@ -31,25 +31,25 @@ Am meisten `cohort` Analysen in [!DNL Commerce Intelligence] Benutzer nach einem
 
 ## Worin unterscheidet sich das vom normalen `cohort` Builder? {#different}
 
-Die [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) ist für die Gruppierung von Kohorten mit einem zeitbasierten Merkmal optimiert. Dies eignet sich hervorragend für Analysen, die sich auf ein bestimmtes Benutzersegment konzentrieren (z. B. alle Benutzer, die über eine gebührenpflichtige Suchkampagne erworben wurden). Im `Cohort Analysis Builder`, können Sie (1) sich auf diese spezifische Benutzergruppe konzentrieren und (2) `cohort` an einem Datum (z. B. dem Datum der ersten Bestellung).
+Die [`Cohort Analysis Builder`](../dev-reports/cohort-rpt-bldr.md) ist für die Gruppierung von Kohorten mit einem zeitbasierten Merkmal optimiert. Dies eignet sich hervorragend für Analysen, die sich auf ein bestimmtes Benutzersegment konzentrieren (z. B. alle Benutzer, die über eine gebührenpflichtige Suchkampagne erworben wurden). Im `Cohort Analysis Builder`, können Sie (1) sich auf diese spezifische Benutzergruppe konzentrieren und (2) `cohort` an einem Datum (wie das Datum der ersten Bestellung).
 
 Wenn Sie jedoch das Kohortenverhalten mehrerer Benutzersegmente im selben Kohortenbericht analysieren möchten (`paid` Suche versus `organic` Suche vs. direkter Traffic, vielleicht?), kann diese erweiterte Analyse in der `Report Builder`.
 
 ## Welche Informationen sollte ich an den Support senden, um meine Analyse einzurichten? {#support}
 
-Erstellen einer `qualitative cohort` im Bericht `Report Builder` umfasst das Erstellen eines Adobe Analyst-Teams [Erweiterte berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md) auf den erforderlichen Tabellen.
+Erstellen einer `qualitative cohort` im Bericht `Report Builder` das Adobe-Analyseteam einbezieht, einige [Erweiterte berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md) auf den erforderlichen Tabellen.
 
 Um diese zu erstellen, senden Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (und referenzieren Sie diesen Artikel!). Folgendes müssen Sie wissen:
 
 * Die `metric` Sie möchten Ihre Kohortenanalyse mit der verwendeten Tabelle durchführen (Beispiel: `Revenue`, basierend auf der `orders` Tabelle).
 
-* Die `user segments` Sie möchten definieren und wo sich diese Informationen in Ihrer Datenbank befinden (Beispiel: unterschiedliche Werte `User's referral source`, nativ für die `users` und nach unten zu `orders`).
+* Die `user segments` Sie möchten definieren und wo sich diese Informationen in Ihrer Datenbank befinden (Beispiel: unterschiedliche Werte von `User's referral source`, nativ für die `users` und nach unten zu `orders`).
 
 * Die `cohort date` Sie möchten, dass Ihre Analyse verwendet wird (Beispiel: die `User's first order date` Zeitstempel). Dieses Beispiel würde es uns ermöglichen, jedes Segment zu betrachten und `How does a user's revenue grow in the months following their first order date?`.
 
-* Die `time interval` dass die Analyse angezeigt werden soll (Beispiel: `weeks`, `months`oder `quarters` nach `User's first order date`).
+* Die `time interval` dass die Analyse angezeigt werden soll (Beispiel: `weeks`, `months`oder `quarters` hinter dem `User's first order date`).
 
-Sobald das Analyseteam der Adobe auf die oben genannten Punkte reagiert, verfügen Sie über einige neue erweiterte berechnete Spalten, um Ihren Bericht zu erstellen! Dann können Sie die folgenden Anweisungen befolgen, um dies zu tun.
+Sobald das Adobe-Analyseteam auf die oben genannten Punkte reagiert, haben Sie einige neue erweiterte berechnete Spalten, um Ihren Bericht zu erstellen! Dann können Sie die folgenden Anweisungen befolgen, um dies zu tun.
 
 ## Erstellung der qualitativen Kohortenanalyse {#create}
 
@@ -67,7 +67,7 @@ In diesem Beispiel sehen Sie sich eine `all time` Ansicht von `Revenue`. Danach 
 
 ![](../../assets/qualcohort2.gif)
 
-Drittens passen Sie die Einstellung an, um die `cohorts`. Basierend auf `cohort date` und `time interval` Sie dem Adobe Analyst-Team eine Dimension in Ihrem Konto zugewiesen haben, die die `cohort` Dating. In diesem Beispiel wird diese benutzerdefinierte Dimension `Months between this order and customer's first order date`. Mithilfe dieser Dimension sollten Sie:
+Drittens passen Sie die Einstellung an, um die `cohorts`. Basierend auf `cohort date` und `time interval` Sie dem Adobe-Analyseteam eine Dimension zugewiesen haben, die die `cohort` Dating. In diesem Beispiel wird diese benutzerdefinierte Dimension `Months between this order and customer's first order date`. Mithilfe dieser Dimension sollten Sie:
 
 * `Group by` die Dimension mit der `group by` option
 

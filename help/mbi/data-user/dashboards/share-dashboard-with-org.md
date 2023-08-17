@@ -23,7 +23,7 @@ Es ist einfach sicherzustellen, dass jeder Benutzer Zugriff auf wichtige Unterne
 
 1. Klicken **[!UICONTROL Save Changes]**.
 
-   Wenn `Permissions` auf `View` oder `Edit` und Benutzer nach Ihrem Dashboard suchen, wird Ihr Dashboard in den Suchergebnissen angezeigt.
+   Wenn `Permissions` wurden auf `View` oder `Edit` und Benutzer nach Ihrem Dashboard suchen, wird Ihr Dashboard in den Suchergebnissen angezeigt.
 
 Beispiel:
 

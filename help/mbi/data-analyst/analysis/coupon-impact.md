@@ -13,16 +13,16 @@ ht-degree: 2%
 
 # Couponeffekt
 
-Die Analyse, wie Kunden Ihre Gutscheine verwenden, bietet wichtige Einblicke in Ihr Geschäft. Insbesondere wird analysiert, wie Sie Kunden über Coupons gewinnen und binden. In diesem Thema werden Analysen untersucht, die Ihnen bei der Beantwortung der folgenden Fragen helfen können:
+Die Analyse, wie Kunden Ihre Gutscheine verwenden, kann wichtige Einblicke in Ihr Geschäft liefern. Insbesondere wird analysiert, wie Sie Kunden über Coupons gewinnen und binden. In diesem Thema werden Analysen untersucht, die Ihnen bei der Beantwortung der folgenden Fragen helfen können:
 
 * Wie viele Kunden erwerben Sie über Coupons?
 * Sind Kunden, die Gutscheine erworben haben, eher geneigt, Wiederholungskäufe zu tätigen als Kunden, die nicht über Gutscheine erworben wurden?
 * Inwiefern unterscheidet sich der durchschnittliche Umsatz während der Lebensdauer zwischen den durch Gutscheine erworbenen Kunden und den nicht durch Gutscheine erworbenen Kunden?
 * Machen Kunden, die über Gutscheine erworben wurden, Wiederholungskäufe mit Gutscheinen?
 
-Antworten Sie diese Fragen, indem Sie sich auf [Vergleich von kupon-erworbenen Kunden mit nicht kupon-erworbenen Kunden](#compare), [Analyse von Details zu Erstbestellungen aus Coupon-Akquisen](#firstorder)und [Betrachten Sie die Attribute von Kunden, die Gutscheine in ihrer ersten Bestellung verwenden.](#attributes)
+Antworten Sie diese Fragen, indem Sie sich auf [Vergleich von kupon-erworbenen Kunden mit nicht kupon-erworbenen Kunden](#compare), [Analyse von Details zu Erstbestellungen aus Coupon-Akquisen](#firstorder), und [Betrachten Sie die Attribute von Kunden, die Gutscheine in ihrer ersten Bestellung verwenden.](#attributes)
 
-Fang an!
+Erste Schritte!
 
 ## Vergleich von mit Gutscheinen erworbenen Kunden mit nicht mit Gutscheinen erworbenen Kunden {#compare}
 
@@ -65,7 +65,7 @@ In diesem Beispiel haben Nicht-Gutscheinakquisitionen einen höheren durchschnit
 
 ### Anzahl wiederholter Bestellungen
 
-Die Anzahl der Wiederholungsaufträge für Nicht-Coupon-Akquise ist viel höher als die Anzahl der Coupon-Akquise. Dies wird erwartet, da es viele weitere Kunden gibt, die keinen Gutschein erworben haben.
+Die Anzahl der Wiederholungsaufträge für Nicht-Coupon-Akquise ist viel höher als die Anzahl der Coupon-Akquise. Dies ist zu erwarten, da es viele weitere Kunden gibt, die keinen Gutschein erworben haben.
 
 ### Anzahl wiederholter Bestellungen mit Coupon
 
@@ -85,7 +85,7 @@ Diese Metrik zeigt die Anzahl der Erstbestellungen für jeden Gutschein oder die
 
 ### Bruttoeinnahmen
 
-Diese Metrik zeigt den Umsatz an, den Sie mit einem bestimmten Gutschein erzielen, der in der ersten Bestellung eines Kunden verwendet wurde. Dieser Umsatz ist eine Berechnung der verkauften Artikel, bevor Rabatte gewährt werden.
+Diese Metrik zeigt den Umsatz an, den Sie mit einem bestimmten Gutschein erzielen, der in der ersten Bestellung eines Kunden verwendet wurde. Dieser Umsatz ist eine Berechnung der Artikel, die verkauft werden, bevor Rabatte angewendet werden.
 
 ### Rabatte aus Gutscheinen
 
@@ -147,8 +147,8 @@ Nachdem Sie sich die Bestellungen selbst angesehen haben, sehen Sie sich die Kun
 
 Beachten Sie, dass die Anzahl der Erstbestellungen mit der Anzahl der Kunden für jeden Gutschein übereinstimmt. Dies ist sinnvoll, da jeder Kunde nur eine erste Bestellung haben kann.
 
-Die größte Anzahl von Kunden wurde durch den &quot;20% Rabatt&quot;-Gutschein erworben. Diese Kunden haben jedoch die niedrigsten **durchschnittliche Lebensdauer der Bestellungen** und **Durchschnittlicher Umsatz während der Lebensdauer**; Im Allgemeinen tätigen die meisten Kunden, die Gutscheine erworben haben, keine Nachbestellungen. Darüber hinaus haben Kunden über das Coupon-Laufwerk &quot;25 % Rabatt von 100 Euro oder mehr&quot;einen höheren Wert erworben **durchschnittliche Lebensdauer der Bestellungen** und wiederum höher **Durchschnittlicher Umsatz während der Lebensdauer**. Im Allgemeinen kehren Benutzer, die über diesen Gutschein erworben wurden, zurück und tätigen weitere Käufe.
+Die größte Anzahl von Kunden wurde durch den &quot;20% Rabatt&quot;-Gutschein erworben. Diese Kunden haben jedoch die niedrigsten **durchschnittliche Lebensdauer der Bestellungen** und **Durchschnittlicher Umsatz während der Lebensdauer**; im Allgemeinen tätigen die meisten mit Coupon erworbenen Kunden keine Nachbestellungen. Darüber hinaus haben Kunden über das Coupon-Laufwerk &quot;25 % Rabatt von 100 Euro oder mehr&quot;einen höheren Wert erworben **durchschnittliche Lebensdauer der Bestellungen** und wiederum höher **Durchschnittlicher Umsatz während der Lebensdauer**. Im Allgemeinen kehren Benutzer, die über diesen Gutschein erworben wurden, in der Regel zurück und tätigen weitere Käufe.
 
-## Aufbrechen {#wrapup}
+## Aufwischen {#wrapup}
 
 Es gibt eine Vielzahl von Analysen, die Sie erstellen können, um besser zu verstehen, wie Ihre Kunden Coupons verwenden. Haben Sie schon einmal darüber nachgedacht zu analysieren, wie Ihre Kunden Ihre Gutscheine verwenden oder wie lange es dauert, bis Gutscheine verwendet werden? Wie sieht es mit der Suche nach dem optimalen Rabattbetrag aus - welcher Betrag ermutigt Wiederholungskäufer, einen höheren durchschnittlichen Bestellwert und höheren Lebenszeitumsatz? Für Hilfe zu diesen Fragen, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

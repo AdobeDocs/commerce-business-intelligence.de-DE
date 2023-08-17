@@ -19,14 +19,14 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../../administrator/user-management/user-management.md).
 
-Verbinden Ihrer [!DNL Salesforce] -Daten ermöglichen eine Reihe von Analysen, von der Auswertung und Optimierung von Leads bis hin zum Erreichen Ihrer Ziele für konvertierte Chancen.
+Verbinden Ihrer [!DNL Salesforce] -Daten ermöglichen eine Reihe von Analysen, von der Auswertung und Optimierung von Leads bis hin zum Erreichen Ihrer Ziele für konvertierte Gelegenheiten.
 
 >[!IMPORTANT]
 >
 >Die [!DNL Salesforce] Für den Connector müssen Sie [[!DNL Salesforce] API-Zugriff](../integrations/salesforce.md) als Teil Ihrer [!DNL Salesforce] Abonnement. Stellen Sie sicher, dass diese Option aktiviert ist, bevor Sie beginnen.
 
-1. So fügen Sie die [!DNL Salesforce] -Integration zu Ihrem Konto hinzufügen, navigieren Sie zu `Connections` Seite unter **[!UICONTROL Manage Data** > **Connections]**.
-1. Klicken **[!UICONTROL Add a Data Source]**, auf der rechten Seite des Bildschirms über der Data Sources-Tabelle.
+1. So fügen Sie [!DNL Salesforce] -Integration zu Ihrem Konto hinzufügen, navigieren Sie zu `Connections` Seite unter **[!UICONTROL Manage Data** > **Connections]**.
+1. Klicks **[!UICONTROL Add a Data Source]**, auf der rechten Seite des Bildschirms über der Data Sources-Tabelle.
 1. Klicken Sie auf [!DNL Salesforce] Symbol.
 1. Klicken **[!UICONTROL Connect to Salesforce]**.
 1. Geben Sie Ihre [!DNL Salesforce] Anmeldedaten und klicken Sie auf **[!UICONTROL Login to Salesforce]**.
@@ -36,4 +36,4 @@ Verbinden Ihrer [!DNL Salesforce] -Daten ermöglichen eine Reihe von Analysen, v
 Wenn man ein bisschen technisch versiert ist, ist die [[!DNL Salesforce] API-Dokumentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) kann eine nützliche Ressource sein, um mehr über die Integration von Salesforce mit [!DNL Commerce Intelligence].
 
 * [Erwartet [!DNL Salesforce] data](../integrations/salesforce-data.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

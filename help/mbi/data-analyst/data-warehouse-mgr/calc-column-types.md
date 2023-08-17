@@ -19,7 +19,7 @@ ht-degree: 0%
 * [Praktische Referenzzuordnung](#map)
 * [Erweiterte berechnete Spalten](#advanced)
 
-Innerhalb der [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md)können Sie Spalten erstellen, um Ihre Daten für die Analyse zu erweitern und zu optimieren. [Diese Funktion](../data-warehouse-mgr/creating-calculated-columns.md) Sie können auf eine beliebige Tabelle im Data Warehousen-Manager zugreifen, indem Sie auf **[!UICONTROL Create New Column]**.
+Innerhalb der [Data Warehouse-Manager](../data-warehouse-mgr/tour-dwm.md)können Sie Spalten erstellen, um Ihre Daten für die Analyse zu erweitern und zu optimieren. [Diese Funktion](../data-warehouse-mgr/creating-calculated-columns.md) Sie können auf eine beliebige Tabelle im Data Warehouse-Manager zugreifen, indem Sie auf **[!UICONTROL Create New Column]**.
 
 Hier werden die Spaltentypen beschrieben, die Sie mit dem Data Warehouse Manager erstellen können. Sie umfasst auch die Beschreibung, einen visuellen Durchgang dieser Spalte und eine [Referenzkarte](#map) aller Eingaben, die zum Erstellen einer Spalte erforderlich sind. Es gibt drei Möglichkeiten, berechnete Spalten zu erstellen:
 
@@ -63,13 +63,13 @@ Im folgenden Beispiel wird die Variable `Customer's group\_id` Dimension wird in
 
 ## Zahlreiche berechnete Spalten {#manytoone}
 
-Diese Spalten verwenden dieselben Pfade wie Eins-zu-viele-Spalten, weisen aber Daten in die entgegengesetzte Richtung. Die Spalte wird auf der einen Seite des Pfads erstellt, im Gegensatz zu der auf der anderen Seite. Aufgrund dieser Beziehung muss der Wert in der Spalte eine Aggregation sein, d. h. eine mathematische Operation, die an den Datenpunkten auf der vielen Seite durchgeführt wird. Es gibt viele Anwendungsfälle dafür und einige sind unten aufgeführt.
+Diese Spalten verwenden dieselben Pfade wie Eins-zu-viele-Spalten, weisen aber Daten in die entgegengesetzte Richtung. Die Spalte wird auf der einen Seite des Pfads erstellt, im Gegensatz zu den vielen Seiten. Aufgrund dieser Beziehung muss der Wert in der Spalte eine Aggregation sein, d. h. eine mathematische Operation, die an den Datenpunkten auf der vielen Seite durchgeführt wird. Es gibt viele Anwendungsfälle dafür und einige sind unten aufgeführt.
 
 ### Count {#count}
 
 Dieser Typ der berechneten Spalte gibt die Anzahl der Werte für die Viele-Tabelle zurück. *onto* den einen Tisch.
 
-Im folgenden Beispiel wird die Dimension `Customer's lifetime number of canceled orders` wird auf der `customers` Tabelle (mit einem Filter für `orders.status`).
+Im folgenden Beispiel wird die Dimension `Customer's lifetime number of canceled orders` wird auf der `customers` -Tabelle (mit einem Filter für `orders.status`).
 
 ![](../../assets/many_to_one.gif){: width=&quot;699&quot; height=&quot;351&quot;}
 
@@ -77,13 +77,13 @@ Im folgenden Beispiel wird die Dimension `Customer's lifetime number of canceled
 
 Eine berechnete Spalte ist die Summe der Werte auf der `many` auf den einen Tisch.
 
-Dies kann zum Erstellen von Dimensionen auf Kundenebene wie `Customer's lifetime revenue`.
+Dies kann verwendet werden, um Dimensionen auf Kundenebene zu erstellen, z. B. `Customer's lifetime revenue`.
 
-### Min. oder Max. {#minmax}
+### Min. oder Max {#minmax}
 
 Eine berechnete Min.- oder Max.-Spalte gibt den kleinsten oder größten Datensatz zurück, der auf vielen Seiten vorhanden ist.
 
-Dies kann zum Erstellen von Dimensionen auf Kundenebene wie `Customer's first order date`.
+Dies kann verwendet werden, um Dimensionen auf Kundenebene zu erstellen, z. B. `Customer's first order date`.
 
 ### Exists {#exists}
 
@@ -101,7 +101,7 @@ Wenn Sie beim Erstellen einer berechneten Spalte Schwierigkeiten haben, sich vor
 
 Bei Ihrer Suche nach einer Analyse und Beantwortung von Fragen zu Ihrem Unternehmen kann es vorkommen, dass Sie nicht in der Lage sind, die exakte Spalte zu erstellen, die Sie benötigen.
 
-Um eine schnelle Umgehung zu gewährleisten, empfiehlt Adobe, die [Erweiterte berechnete Spaltentypen](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) Anleitung, um zu sehen, welche Spalten das Adobe-Support-Team erstellen kann. Dieses Thema behandelt auch die Informationen, die Sie zur Erstellung der Spalte benötigen - schließen Sie sie in Ihre Anfrage ein.
+Um eine schnelle Umgehung zu gewährleisten, empfiehlt Adobe, die [Erweiterte berechnete Spaltentypen](../../data-analyst/data-warehouse-mgr/adv-calc-columns.md) Anleitung, um zu sehen, welche Spalten das Adobe-Supportteam erstellen kann. Dieses Thema behandelt auch die Informationen, die Sie zur Erstellung der Spalte benötigen - schließen Sie sie in Ihre Anfrage ein.
 
 ## Verwandte Dokumentation
 

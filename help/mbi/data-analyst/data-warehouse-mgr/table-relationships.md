@@ -1,5 +1,5 @@
 ---
-title: Tabellenbeziehungen verstehen und auswerten
+title: Grundlegendes zu und Auswerten von Tabellenbeziehungen
 description: Erfahren Sie, wie Sie verstehen können, wie viele mögliche Vorkommen in einer Tabelle zu einer Entität in einer anderen gehören können.
 exl-id: e7256f46-879a-41da-9919-b700f2691013
 role: Admin, Data Architect, Data Engineer, User
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Tabellenbeziehungen verstehen und auswerten
+# Grundlegendes zu und Auswerten von Tabellenbeziehungen
 
-Bei der Beurteilung der Beziehung zwischen zwei bestimmten Tabellen müssen Sie wissen, wie viele mögliche Vorkommen in einer Tabelle einer Entität in einer anderen zugeordnet werden können, und umgekehrt. Verwenden Sie beispielsweise eine `users` und eine `orders` Tabelle. In diesem Fall möchten Sie wissen, wie viele **Bestellungen** ein **Benutzer** hat platziert und wie viele Möglichkeiten **Benutzer** ein **order** kann gehören.
+Bei der Beurteilung der Beziehung zwischen zwei bestimmten Tabellen müssen Sie wissen, wie viele mögliche Vorkommen in einer Tabelle einer Entität in einer anderen zugeordnet werden können, und umgekehrt. Verwenden Sie beispielsweise eine `users` und eine `orders` Tabelle. In diesem Fall möchten Sie wissen, wie viele **Bestellungen** ein **Benutzer** hat platziert und wie viele Möglichkeiten **Benutzer** ein **bestellen** kann gehören.
 
 Das Verständnis der Beziehungen ist für die Wahrung der Datenintegrität von entscheidender Bedeutung, da sie die Genauigkeit Ihrer [berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md) und [Dimensionen](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Weitere Informationen finden Sie unter [Beziehungstypen](#types) und [wie die Tabellen in Ihrer Data Warehouse ausgewertet werden.](#eval)
 
@@ -27,7 +27,7 @@ Es gibt drei Arten von Beziehungen, die zwischen zwei Tabellen bestehen können:
 
 ### `One-to-One` {#onetoone}
 
-In `one-to-one` Beziehung, Datensatz in Tabelle `B` nur einen Datensatz in der Tabelle `A`. Und ein Datensatz in der Tabelle `A` gehört nur zu einem Datensatz in der Tabelle `B`.
+In `one-to-one` Beziehung, ein Datensatz in einer Tabelle `B` nur einen Datensatz in der Tabelle `A`. Und ein Datensatz in der Tabelle `A` nur einen Datensatz in der Tabelle `B`.
 
 So darf beispielsweise eine Person in der Beziehung zwischen Personen und Führerscheinnummern nur eine Führerscheinnummer und eine Führerscheinnummer nur einer Person angehören.
 
@@ -35,13 +35,13 @@ So darf beispielsweise eine Person in der Beziehung zwischen Personen und Führe
 
 ### `One-to-Many` {#onetomany}
 
-In `one-to-many` Beziehung, Datensatz in Tabelle `A` kann möglicherweise zu mehreren Datensätzen in der Tabelle gehören `B`. Denken Sie an die Beziehung zwischen `orders` und `items` - Eine Bestellung kann viele Elemente enthalten, aber ein Artikel gehört zu einer Bestellung. In diesem Fall wird die `orders` -Tabelle ist die eine Seite und die `items` -Tisch ist die Viele-Seite.
+In `one-to-many` Beziehung, ein Datensatz in einer Tabelle `A` kann möglicherweise zu mehreren Datensätzen in der Tabelle gehören `B`. Denken Sie an die Beziehung zwischen `orders` und `items` - Eine Bestellung kann viele Elemente enthalten, aber ein Artikel gehört zu einer Bestellung. In diesem Fall wird die `orders` -Tabelle ist die eine Seite und die `items` -Tisch ist die Viele-Seite.
 
 ![](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
-In `many-to-many` Beziehung, Datensatz in Tabelle `B` kann möglicherweise zu mehreren Datensätzen in der Tabelle gehören `A`. Und umgekehrt, ein Datensatz in einer Tabelle `A` kann möglicherweise zu mehreren Datensätzen in der Tabelle gehören `B`.
+In `many-to-many` Beziehung, ein Datensatz in einer Tabelle `B` kann möglicherweise zu mehreren Datensätzen in der Tabelle gehören `A`. Und umgekehrt, ein Datensatz in einer Tabelle `A` kann möglicherweise zu mehreren Datensätzen in der Tabelle gehören `B`.
 
 Denken Sie an die Beziehung zwischen **products** und **categories**: Ein Produkt kann zu vielen Kategorien gehören und eine Kategorie kann viele Produkte enthalten.
 
@@ -61,11 +61,11 @@ Wenn Sie beispielsweise an Benutzer und Bestellungen denken, denken Sie an alles
 
 So verwenden Sie diese Methode:
 
-1. Identifizieren Sie die in jeder Tabelle beschriebene Entität. **Hinweis: ist normalerweise ein Substantiv**. Beispiel: die `user` und `orders` -Tabellen beschreiben Benutzer und Bestellungen explizit.
+1. Identifizieren Sie die in jeder Tabelle beschriebene Entität. **Hinweis: Normalerweise handelt es sich um ein Substantiv**. Beispiel: die `user` und `orders` -Tabellen beschreiben Benutzer und Bestellungen explizit.
 
 1. Identifizieren Sie einen oder mehrere Verben, die die Interaktion dieser Entitäten beschreiben. Wenn Benutzer beispielsweise mit Bestellungen vergleichen, &quot;platzieren&quot;Benutzer Bestellungen. In die andere Richtung weist Benutzer &quot;hinzu&quot;.
 
-Dieser Framework-Typ kann auf jede beliebige Tabellenpaarung in Ihrer Data Warehouse angewendet werden. Auf diese Weise können Sie leicht erkennen, welcher Beziehungstyp und welche Tabelle eine einseitige ist und welche Tabelle viele Seiten aufweist.
+Diese Art von Framework kann auf jede beliebige Kopplung von Tabellen in Ihrer Data Warehouse angewendet werden. Auf diese Weise können Sie leicht erkennen, welcher Beziehungstyp und welche Tabelle eine einseitige ist und welche Tabelle viele Seiten aufweist.
 
 Nachdem Sie die Terminologie identifiziert haben, die beschreibt, wie die beiden Tabellen interagieren, legen Sie die Interaktion in beide Richtungen fest, indem Sie prüfen, wie eine bestimmte Instanz der ersten Entität mit der zweiten verknüpft ist. Im Folgenden finden Sie einige Beispiele für die einzelnen Beziehungen:
 
@@ -111,7 +111,7 @@ Beispiel: eine `users` -Tabelle können die meisten Benutzerattribute (z. B. Nam
 
 >[!NOTE]
 >
->Akzeptieren Sie Gastaufträge, siehe [Gastbestellungen](../data-warehouse-mgr/guest-orders.md) , um zu erfahren, wie sich Gastaufträge auf Ihre Tabellenbeziehungen auswirken können.
+>Akzeptieren Sie Gastbestellungen? Siehe [Gastbestellungen](../data-warehouse-mgr/guest-orders.md) , um zu erfahren, wie sich Gastaufträge auf Ihre Tabellenbeziehungen auswirken können.
 
 Wenn Tabellen mithilfe einer `Foreign key` auf einen `primary key`, beschreibt diese Einrichtung eine `one-to-many` Beziehung. Die eine Seite ist die Tabelle mit der `primary key` und viele Seiten die Tabelle mit der `foreign key`.
 
@@ -123,10 +123,10 @@ Wenn einer der folgenden Werte wahr ist, lautet die Beziehung `many-to-many`:
 
 * `Non-primary key` verwendet, um zwei Tabellen zu verknüpfen
   ![](../../assets/many-to-many1.png)
-* Teil eines Verbundes `primary key` wird verwendet, um zwei Tabellen zu verknüpfen
+* Teil eines Verbundes `primary key` wird zum Verknüpfen zweier Tabellen verwendet
 
 ![](../../assets/many-to-mnay2.png)
 
 ## Nächste Schritte
 
-Die korrekte Bewertung von Tabellenbeziehungen ist für eine genaue Modellierung Ihrer Daten von entscheidender Bedeutung. Nachdem Sie nun wissen, wie Tabellen miteinander verbunden sind, lesen Sie [Möglichkeiten des Data Warehouse Managers](../data-warehouse-mgr/tour-dwm.md).
+Die korrekte Bewertung von Tabellenbeziehungen ist für eine genaue Modellierung Ihrer Daten von entscheidender Bedeutung. Nachdem Sie nun wissen, wie Tabellen miteinander verbunden sind, lesen Sie [Was Sie mit dem Data Warehouse-Manager tun können](../data-warehouse-mgr/tour-dwm.md).

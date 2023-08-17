@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Eines der Merkmale der [!DNL Visual Report Builder] ist der globale `Time Range` und `Interval` -Einstellungen. Mit diesen Einstellungen können Sie die Daten in Ihrem Bericht für einen bestimmten Zeitraum analysieren.
 
-Bei einigen Analysen müssen Sie jedoch möglicherweise verschiedene Zeitbereiche oder Zeitintervalle im selben Bericht berücksichtigen. Dort `Time` Optionen werden angezeigt. So erhalten Sie eine bessere Vorstellung von der Verwendung von `Time` -Optionen in Ihren Berichten verwenden, werden in diesem Tutorial die folgenden Anwendungsfälle behandelt:
+Bei einigen Analysen müssen Sie jedoch möglicherweise verschiedene Zeitbereiche oder Zeitintervalle im selben Bericht berücksichtigen. Dort `Time` Optionen werden angezeigt. So erhalten Sie eine bessere Vorstellung von der Verwendung `Time` -Optionen in Ihren Berichten verwenden, werden in diesem Tutorial die folgenden Anwendungsfälle behandelt:
 
 * [Analysieren von Metriken ohne Zeitstempel](#notimestamp)
 * [Geben einer Metrik ein unabhängiges Zeitintervall](#independenttimeinterval)
@@ -38,19 +38,19 @@ Wenn Sie eine solche Metrik in Ihren Berichten verwenden, stellen Sie fest, dass
 Dieser Berichtstyp kann nützlich sein, wenn Sie den Umsatz vergleichen möchten, der im Jahresvergleich generiert wurde. Sie haben beispielsweise eine Grafik für 2015, die gezeigt hat, dass der Januar 18 Prozent des Umsatzes für das Jahr beigetragen hat, und eine Grafik für 2016 zeigte nur 8 Prozent. Du könntest anfangen zu recherchieren, was geschehen sein könnte.
 
 1. Fügen Sie Ihre `Revenue` zum Bericht hinzu.
-1. Klicken **[!UICONTROL Duplicate]** , um eine Kopie der Metrik zu erstellen.
+1. Klicks **[!UICONTROL Duplicate]** , um eine Kopie der Metrik zu erstellen.
 1. Klicken Sie auf die globale **[!UICONTROL Time Range]** Option, dann **[!UICONTROL Moving Time Range]**. Legen Sie hier fest `Last Year`.
 1. Klicken Sie auf die globale **[!UICONTROL Time Interval]** und legen Sie sie auf `Monthly`.
 1. Report Builder fügt für eine zweite Metrik automatisch eine zweite Y-Achse hinzu. Deaktivieren Sie die `Multiple Y-Axes` ankreuzen.
-1. Als Nächstes wenden Sie eine unabhängige `Time Interval` zur ersten Metrik. Klicken **[!UICONTROL Time Options]** (Uhrensymbol) rechts neben dem `first Revenue metric`.
-1. Klicken **[!UICONTROL Time Options]** im erweiterten Fenster, das über dem Bericht angezeigt wird.
+1. Als Nächstes wenden Sie eine unabhängige `Time Interval` zur ersten Metrik hinzu. Klicks **[!UICONTROL Time Options]** (Uhrensymbol) rechts neben dem `first Revenue metric`.
+1. Klicks **[!UICONTROL Time Options]** im erweiterten Fenster, das über dem Bericht angezeigt wird.
 1. Legen Sie im Dropdown-Menü Folgendes fest:
 
-   * `Time Interval`: setzen Sie dies auf `None`.
+   * `Time Interval`: Setzen Sie dies auf `None`.
 
-   * `Time Range`: setzen Sie dies auf `Last Year` durch erstmaliges Klicken **[!UICONTROL Custom]**, dann **[!UICONTROL Moving Range]** und schließlich die Auswahl der `Last Year` -Option.
+   * `Time Range`: Setzen Sie dies auf `Last Year` durch erstmaliges Klicken **[!UICONTROL Custom]**, dann **[!UICONTROL Moving Range]** und schließlich die Auswahl der `Last Year` -Option.
 
-   * Klicken **[!UICONTROL Apply]** , um die Intervall- und Bereichseinstellungen zu speichern. Dadurch wird eine Metrik erstellt, die den Gesamtumsatz des Vorjahres berechnet. Als Nächstes verwenden Sie diese Metrik als Nenner in einer Formel.
+   * Klicks **[!UICONTROL Apply]** , um die Intervall- und Bereichseinstellungen zu speichern. Dadurch wird eine Metrik erstellt, die den Gesamtumsatz des Vorjahres berechnet. Als Nächstes verwenden Sie diese Metrik als Nenner in einer Formel.
 
    * Um den Prozentsatz des Umsatzes für jeden Monat anzuzeigen, müssen Sie dem Bericht eine Formel hinzufügen. Klicken **[!UICONTROL Add Formula]**.
 
@@ -73,27 +73,27 @@ Die beiden häufigsten Beispiele in dieser Kategorie sind (1) der Vergleich von 
 Um diesen Anwendungsfall zu demonstrieren, sehen Sie sich den täglichen Umsatz des Vormonats im Vergleich zum Vorjahresmonat an. Nehmen wir an, Sie möchten den Umsatz für jeden Tag im Januar 2016 betrachten und ihn dann mit Januar 2015, Januar 2014 usw. vergleichen - dieser Bericht würde uns das zeigen.
 
 1. Fügen Sie Ihre `Revenue` zum Bericht hinzu.
-1. Klicken **[!UICONTROL Duplicate]** , um eine Kopie der Metrik zu erstellen.
+1. Klicks **[!UICONTROL Duplicate]** , um eine Kopie der Metrik zu erstellen.
 1. Benennen Sie die erste Metrik in `Items sold last 7 days` und die zweite Metrik `Items sold last 28 days`.
-1. Klicken **[!UICONTROL Time Range]**, dann **[!UICONTROL Moving Time Range]**. Legen Sie hier fest `Last Month`.
-1. Klicken **[!UICONTROL Time Interval]** und legen Sie `None`.
-1. Klicken **[!UICONTROL Time Options]** (Uhrensymbol) neben der zweiten `Revenue` Metrik.
-1. Klicken **[!UICONTROL Time Options]** im erweiterten Fenster, das über dem Bericht angezeigt wird.
+1. Klicks **[!UICONTROL Time Range]**, dann **[!UICONTROL Moving Time Range]**. Legen Sie hier fest `Last Month`.
+1. Klicks **[!UICONTROL Time Interval]** und legen Sie `None`.
+1. Klicks **[!UICONTROL Time Options]** (Uhrensymbol) neben der zweiten `Revenue` Metrik.
+1. Klicks **[!UICONTROL Time Options]** im erweiterten Fenster, das über dem Bericht angezeigt wird.
 1. Legen Sie im Dropdown-Menü Folgendes fest:
 
-   * `Time Interval`: setzen Sie dies auf `None`.
+   * `Time Interval`: Setzen Sie dies auf `None`.
 
-   * `Time Range`: setzen Sie dies auf `From 14 Months Ago To 13 Months Ago` durch erstmaliges Klicken **[!UICONTROL Custom]** then **[!UICONTROL Moving Range]**. Verwenden Sie die Felder und Dropdown-Listen oben im Menü, um den Bereich festzulegen. Diese Einstellung ermöglicht es uns, den Umsatz des Vormonats, aber des Vorjahres zu sehen.
+   * `Time Range`: Setzen Sie dies auf `From 14 Months Ago To 13 Months Ago` durch erstmaliges Klicken **[!UICONTROL Custom]** then **[!UICONTROL Moving Range]**. Verwenden Sie die Felder und Dropdown-Listen oben im Menü, um den Bereich festzulegen. Diese Einstellung ermöglicht es uns, den Umsatz des Vormonats, aber des Vorjahres zu sehen.
 
-   Machen Sie sich keine Gedanken, wenn die Metrik aus dem Bericht verschwindet. Durch Festlegen einer unabhängigen Zeitoption wird die Metrik automatisch aus dem Bericht ausgeblendet. Um es erneut anzuzeigen, klicken Sie auf **[!UICONTROL Show]** neben der Metrik.
+   Machen Sie sich keine Gedanken, wenn die Metrik aus dem Bericht verschwindet. Wenn Sie eine unabhängige Zeitoption festlegen, wird die Metrik automatisch aus dem Bericht ausgeblendet. Um es erneut anzuzeigen, klicken Sie auf **[!UICONTROL Show]** neben der Metrik.
 
    ![](../assets/Different_Time_Ranges.gif)
 
-   * Klicken **[!UICONTROL Apply]** , um die Intervall- und Bereichseinstellungen zu speichern.
+   * Klicks **[!UICONTROL Apply]** , um die Intervall- und Bereichseinstellungen zu speichern.
 
-   * Als Nächstes fügen Sie Ihre benutzerdefinierte `Day number of the month` Dimension durch Klicken auf **[!UICONTROL Group By]** und wählen Sie die Dimension aus. Dadurch wird die Tagesnummer des Monats einer Bestellung zurückgegeben, z. B. wird eine am 2. März aufgegebene Bestellung zurückgegeben `2`.
+   * Als Nächstes fügen Sie Ihre benutzerdefinierte `Day number of the month` Dimension durch Klicken auf **[!UICONTROL Group By]** und wählen Sie die Dimension aus. Dadurch wird die Tagesnummer des Monats einer Bestellung zurückgegeben. Beispielsweise gibt eine am 2. März aufgegebene Bestellung zurück. `2`.
 
-   * Im `Group By` Dropdown-Liste auswählen `Show All` und klicken Sie auf **[!UICONTROL Apply]**. Dadurch werden die X-Achsen-Werte für den Bericht erstellt:
+   * Im `Group By` Dropdown-Liste auswählen `Show All` und klicken **[!UICONTROL Apply]**. Dadurch werden die X-Achsen-Werte für den Bericht erstellt:
 
    ![](../assets/TO4.png)
 
@@ -104,26 +104,26 @@ Weitere häufige Verwendung benutzerdefinierter `Time Options` ist die Bestimmun
 Denken Sie daran, die Zeiträume auf das zu setzen, was Sie beim Erstellen dieses Berichts selbst benötigen.
 
 1. Fügen Sie Ihre `Items Sold` zum Bericht hinzu.
-1. Klicken **[!UICONTROL Duplicate]** , um eine Kopie der Metrik zu erstellen.
+1. Klicks **[!UICONTROL Duplicate]** , um eine Kopie der Metrik zu erstellen.
 1. Benennen Sie die Metriken um. Sie können dieselben Namen verwenden oder etwas Ähnliches verwenden:
    1. Benennen Sie die erste Metrik in `Items sold last 7 days`.
    1. Benennen Sie die zweite Metrik in `Items sold last 28 days`.
 1. Im `Items sold last 7 days` Metrik, klicken Sie auf die globale **[!UICONTROL Time Range]** Option dann **[!UICONTROL Moving Time Range]**. Für dieses Beispiel setzen Sie `Last 7 Days`.
-1. Klicken **[!UICONTROL Time Interval]** und legen Sie `None`.
-1. Als Nächstes definieren Sie die `Time Options` für `Items sold last 28 days` Metrik. Klicken **[!UICONTROL Time Options]** (Uhrensymbol) rechts neben dem `second Items sold` Metrik.
-1. Klicken **[!UICONTROL Time Options]** im erweiterten Fenster, das über dem Bericht angezeigt wird.
+1. Klicks **[!UICONTROL Time Interval]** und legen Sie `None`.
+1. Als Nächstes definieren Sie die `Time Options` für die `Items sold last 28 days` Metrik. Klicks **[!UICONTROL Time Options]** (Uhrensymbol) rechts neben dem `second Items sold` Metrik.
+1. Klicks **[!UICONTROL Time Options]** im erweiterten Fenster, das über dem Bericht angezeigt wird.
 1. Legen Sie im Dropdown-Menü Folgendes fest:
 
-   * `Time Interval`: setzen Sie dies auf `None`.
-   * `Time Range`: setzen Sie dies auf `From 29 days to 1 day ago` durch erstmaliges Klicken **[!UICONTROL Custom]**, dann **[!UICONTROL Moving Range]**. Verwenden Sie die Felder und Dropdown-Listen oben im Menü, um den Bereich festzulegen.
-   * Klicken **[!UICONTROL Apply]** , um die Intervall- und Bereichseinstellungen zu speichern.
-   * Duplizieren Sie die `Items sold last 28 days` Metrik erstellen und die neue Metrik öffnen `Time Options`. Legen Sie die Optionen auf Folgendes fest:
+   * `Time Interval`: Setzen Sie dies auf `None`.
+   * `Time Range`: Setzen Sie dies auf `From 29 days to 1 day ago` durch erstmaliges Klicken **[!UICONTROL Custom]**, dann **[!UICONTROL Moving Range]**. Verwenden Sie die Felder und Dropdown-Listen oben im Menü, um den Bereich festzulegen.
+   * Klicks **[!UICONTROL Apply]** , um die Intervall- und Bereichseinstellungen zu speichern.
+   * Duplizieren Sie die `Items sold last 28 days` und öffnen Sie die Metrik `Time Options`. Legen Sie die Optionen auf Folgendes fest:
 
-      * `Time Interval`: Lassen Sie dies als `None`.
-      * `Time Range`: Ändern Sie diesen in den Datumsbereich, der mit der Promotion, an der Sie interessiert sind, übereinstimmt, indem Sie auf **[!UICONTROL Specific Date Range]** und die entsprechenden Daten eingeben.
+      * `Time Interval`: Lassen Sie dies wie folgt: `None`.
+      * `Time Range`: Ändern Sie diesen in den Datumsbereich, der mit der Promotion, an der Sie interessiert sind, durch Klicken auf **[!UICONTROL Specific Date Range]** und die entsprechenden Daten eingeben.
       * Metrik umbenennen `Items sold during last promotion` oder etwas Ähnliches.
       * Fügen Sie Ihre `Units on hand` Metrik.
-      * Als Nächstes müssen Sie die Berechnungen hinzufügen, die uns die Wochen zeigen, unter Berücksichtigung der Verkaufstrends, für die Zeiträume (`last 7 days`, `last 28 days`und `last promo` -Zeitraum), die Sie in den Bericht aufnehmen. Sie müssen dies einmal für jeden Zeitraum tun.
+      * Als Nächstes müssen Sie die Berechnungen hinzufügen, die uns die Wochen zeigen, unter Berücksichtigung der Verkaufstrends, für die Zeiträume (`last 7 days`, `last 28 days`, und `last promo` -Zeitraum), die Sie in den Bericht aufnehmen. Sie müssen dies einmal für jeden Zeitraum tun.
 
 Um die Formeln zu erstellen, klicken Sie auf **[!UICONTROL Add Formula]**. Geben Sie die folgenden Formeln ein und klicken Sie auf **[!UICONTROL Apply Changes]** wenn fertig. Wiederholen Sie diesen Vorgang für jeden der drei Zeiträume:
 

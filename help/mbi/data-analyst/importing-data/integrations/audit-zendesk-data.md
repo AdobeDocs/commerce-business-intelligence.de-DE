@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Zendesk-Daten überprüfen
 
-Etwas Seltsames in Ihrem [[!DNL Zendesk] data](../integrations/exp-zendesk-data.md)? Um das Problem zu identifizieren, müssen Sie Ihre Daten untersuchen. Dies kann durch Exportieren Ihrer [!DNL Zendesk] Daten in eine herunterladbare Datei.
+Suchen Sie etwas Seltsames in Ihrem [[!DNL Zendesk] data](../integrations/exp-zendesk-data.md)? Um das Problem zu identifizieren, müssen Sie Ihre Daten untersuchen. Dies kann durch Exportieren Ihrer [!DNL Zendesk] Daten in eine herunterladbare Datei.
 
 ## Datenexport aktivieren
 
@@ -29,9 +29,9 @@ Nachdem der Datenexport aktiviert wurde, können nur Administratoren einer besti
 
 1. Klicken Sie auf das Admin-Symbol (Zahnradlogo) in der Seitenleiste und wählen Sie **[!UICONTROL Manage** > **Reports]**.
 1. Klicken Sie auf **[!UICONTROL Export]** Registerkarte.
-1. Klicken **[!UICONTROL Request file]** neben &quot;Vollständiger XML-Export&quot;, wie in der Abbildung unten dargestellt.
+1. Klicks **[!UICONTROL Request file]** neben &quot;Vollständiger XML-Export&quot;, wie in der Abbildung unten dargestellt.
 
-   Ab diesem Zeitpunkt beginnt ein Build. Sie werden per E-Mail benachrichtigt, wenn sie abgeschlossen ist.
+   An dieser Stelle beginnt ein Build. Sie werden per E-Mail benachrichtigt, wenn er abgeschlossen ist.
    ![reports_export_new.png](../../../assets/reports_export_new.png)
 
 1. Klicken Sie auf den Link in Ihrer E-Mail-Benachrichtigung, um eine ZIP-Datei mit dem Bericht herunterzuladen.

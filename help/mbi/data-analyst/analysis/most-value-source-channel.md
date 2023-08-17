@@ -27,11 +27,11 @@ In diesem Thema werden einige Berichte untersucht, mit denen Sie Ihre wertvollst
 
 ## Voraussetzungen {#prereqs}
 
-Um die Analysen in diesem Thema zu erstellen, benötigen Sie Zugriff auf Marketing-Akquise-/Verweisquelldaten. Wenn Sie es noch nicht verfolgen, müssen Sie [Bestellreferenz-Quelldaten aus [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) in [!DNL Adobe Commerce Intelligence] bevor Sie fortfahren können. Durch das Hinzufügen von Benutzergeräteinformationen zu Ihren Analysen können Sie außerdem sehen, welche Technologie Ihre Referenzen verwenden.
+Um die Analysen in diesem Thema zu erstellen, benötigen Sie Zugriff auf Marketing-Akquise-/Verweisquelldaten. Wenn Sie es noch nicht verfolgen, müssen Sie [Bestellreferenz-Quelldaten aus [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md) in [!DNL Adobe Commerce Intelligence] bevor Sie fortfahren können. Durch das Hinzufügen von Benutzergeräteinformationen zu Ihren Analysen können Sie außerdem sehen, welche Technologie Ihre Verweise verwenden.
 
 ## Neue Benutzer nach Quelle {#newusersbysource}
 
-Die Bewertung der Leistung von Verweisquellen ist entscheidend, um Ihre wertvollsten Kanäle zu ermitteln. Dieser Bericht zeigt die Anzahl der neu registrierten Benutzer nach Akquisequelle im Zeitverlauf an, sodass Sie die Leistung der Verweisquellen beim Erwerb neuer registrierter Benutzer verfolgen können.
+Die Bewertung der Leistung von Verweisquellen ist entscheidend, um Ihre wertvollsten Kanäle zu ermitteln. Dieser Bericht zeigt die Anzahl der neu registrierten Benutzer nach Akquisequelle im Zeitverlauf an, sodass Sie die Leistung der Verweisquellen bei der Akquise neuer registrierter Benutzer verfolgen können.
 
 So erstellen Sie diesen Bericht im [Report Builder](../../tutorials/using-visual-report-builder.md), fügen Sie die **Neue Benutzer** Metrik (oder eine äquivalente Metrik, die die Anzahl neuer Benutzer im Zeitverlauf zählt) zum Bericht hinzu. Gehen Sie dann wie folgt vor:
 
@@ -42,7 +42,7 @@ So erstellen Sie diesen Bericht im [Report Builder](../../tutorials/using-visual
 
 Im Folgenden finden Sie eine visuelle exemplarische Vorgehensweise:
 
-![Erstellen eines Berichts &quot;Neue Benutzer nach Quelle&quot;.](../../assets/New_Users_by_source.gif)
+![Erstellen eines Berichts Neue Benutzer nach Quelle .](../../assets/New_Users_by_source.gif)
 
 ## Durchschnittlicher Umsatz während der Lebensdauer nach Benutzerquelle {#avglifetimerev}
 
@@ -57,7 +57,7 @@ Um diesen Bericht im Report Builder zu erstellen, fügen Sie die **Durchschnittl
 
 Im Folgenden finden Sie eine visuelle exemplarische Vorgehensweise:
 
-![Erstellen des durchschnittlichen Lebenszeitumsatzes nach Benutzerquelle](../../assets/Lifetime_revenue_by_user_source.gif).
+![Durchschnittlicher Umsatz während der Lebensdauer nach Benutzerquelle erstellen](../../assets/Lifetime_revenue_by_user_source.gif).
 
 In diesem Beispiel wird nur der Umsatz während der Lebensdauer untersucht. Sie können diese Analyse jedoch auch replizieren, um die [!UICONTROL Number of orders] oder [!UICONTROL Distinct buyers] durch die Verweisquelle.
 
@@ -80,7 +80,7 @@ Im Folgenden finden Sie eine visuelle exemplarische Vorgehensweise:
 
 Mit der zuvor behandelten Analyse des Lebensdauerumsatzes können Sie den durchschnittlichen Umsatz von Benutzern aus verschiedenen Quellen anzeigen, aber was ist mit dem Gesamtumsatz während der Lebensdauer? Mit diesem Bericht können Sie ermitteln, wie viel Gesamtumsatz Benutzer generieren, die sich während eines bestimmten Zeitraums und aus einer bestimmten Quelle registriert haben.
 
-Um diesen Bericht im Report Builder zu erstellen, fügen Sie die `Revenue by user registration date` Metrik. Wenn Sie [diese Metrik erstellt hat](../../data-user/reports/ess-manage-data-metrics.md) Sie können dies bereits tun, indem Sie die `Revenue` Metrik und ändern Sie die `time stamp` auf `creation date`. Gehen Sie nach dem Hinzufügen der Metrik wie folgt vor:
+Um diesen Bericht im Report Builder zu erstellen, fügen Sie die `Revenue by user registration date` Metrik. Wenn Sie [diese Metrik erstellt hat](../../data-user/reports/ess-manage-data-metrics.md) Sie können dies bereits tun, indem Sie die `Revenue` und ändern Sie die `time stamp` für die `creation date`. Gehen Sie nach dem Hinzufügen der Metrik wie folgt vor:
 
 1. Legen Sie die [!UICONTROL Time Period] in den Registrierungszeitraum, den Sie analysieren möchten.
 1. Legen Sie die [!UICONTROL Time Interval] auf monatlich.
@@ -111,7 +111,7 @@ Im Folgenden finden Sie eine visuelle exemplarische Vorgehensweise:
 ![Erstellen eines Berichts zur Wiederholung von Bestellungen nach Benutzerquellen .](../../assets/Repeat_orders_by_user_source.gif)
 
 
-## Aufbrechen {#wrapup}
+## Aufwischen {#wrapup}
 
 In diesem Thema wurden nur einige Analysen behandelt, mit denen Sie den Wert Ihrer Akquise- und Marketingkanäle analysieren können, aber dies ist nur die Spitze des Eisbergs.
 

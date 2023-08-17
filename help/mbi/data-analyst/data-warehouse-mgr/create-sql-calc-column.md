@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # SQL-berechnete Spalte erstellen
 
-In diesem Thema werden Zweck und Verwendung der `Calculation` Spaltentyp, der Tabellen mithilfe der [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md). Im Folgenden werden die Funktionsweise von SQL-Berechnungen, ihre Verwendung, der Prozess zur Erstellung einer SQL-Berechnung und zwei Beispiele erläutert.
+In diesem Thema werden Zweck und Verwendung der Variablen `Calculation` Spaltentyp, der Tabellen mithilfe der [Data Warehouse-Manager](../data-warehouse-mgr/tour-dwm.md). Im Folgenden werden die Funktionsweise von SQL-Berechnungen, ihre Verwendung, der Prozess zur Erstellung einer SQL-Berechnung und zwei Beispiele erläutert.
 
 **Erklärung**
 
 In der Vergangenheit wurden Spalten `advanced` kann nur von einem Analytiker des Customer Success-Teams hier unter [!DNL Adobe Commerce Intelligence]. Jetzt liegt die gesamte Leistung in den Händen des Endbenutzers, und erweiterte Spalten können in Form von `SQL Calculation` Spalten in der neuen [!DNL Commerce Intelligence] Architektur.
 
-Die `Calculation` Der jetzt im Data Warehouse Manager als Option verfügbare Spaltentyp ist derselbe Tabellenvorgang, mit dem Sie die Tabellenspalten mithilfe der PostgreSQL-Logik umwandeln können. Dokumentation zu den Funktionen und Operatoren, die in der `Calculation` Spaltentyp finden Sie auf der PostgreSQL-Website. [here](https://www.postgresql.org/docs/9.6/functions.html).
+Die `Calculation` Der nun als Option im Data Warehouse-Manager verfügbare Spaltentyp ist derselbe Tabellenvorgang, mit dem Sie die Tabellenspalten mithilfe der PostgreSQL-Logik umwandeln können. Dokumentation zu den Funktionen und Operatoren, die in der `Calculation` Spaltentyp finden Sie auf der PostgreSQL-Website. [here](https://www.postgresql.org/docs/9.6/functions.html).
 
 Die verschiedenen Spalten, die mit der `Calculation` -Spalte ist fast unbegrenzt, aber die meisten Spalten können mit IF-THEN -Anweisungen und Arithmetik erstellt werden, die in den Beispielen unten verwendet wird.
 
@@ -29,27 +29,27 @@ Die meisten Konten haben eine Spalte namens `Is customer's last order?` auf `ord
 
 ![](../../assets/Is_customer_s_last_order.png)
 
-Die `Is customer's last order?` -Spalte verwendet die Eingaben `Customer's lifetime number of orders` und `Customer's order number` Alias `A` und `B` bzw.
+Die `Is customer's last order?` -Spalte verwendet Eingaben `Customer's lifetime number of orders` und `Customer's order number` Alias `A` und `B` bzw.
 
 Die Bedeutung von PostgreSQL lautet Zeile für Zeile:
 
-* Case: Dadurch wird eine Reihe von If - Then -Anweisungen gestartet.
-* when `A` null oder `B` null ist, dann null: Wenn eine der Eingaben leer ist, sollte die Ausgabe ebenfalls leer sein. Dies verhindert SQL-Fehler
+* case: Startet eine Reihe von If - Then -Anweisungen
+* when `A` ist null oder `B` null ist, dann null: Wenn eine der Eingaben leer ist, sollte die Ausgabe ebenfalls leer sein. Dies verhindert SQL-Fehler
 * when `A=B` then `Yes`: Wenn `Customer's lifetime number of orders` gleich `Customer's order number` für diese Zeile und dann `Yes`. Wenn ein Kunde also vier Bestellungen aufgegeben hat, würde die Zeile für die vierte Bestellung zurückgegeben `Yes` für `Is customer's last order?`
 * else `No`: Wenn keine der anderen Anweisungen erfüllt ist, geben Sie `No`
-* end: Dadurch werden die If - Then -Anweisungen beendet.
+* end: Hierdurch wird die If - Then -Anweisung beendet.
 
-Die möglichen Werte, die von dieser Spalte zurückgegeben werden können (`NULL`, `Yes`, `No`) Zeichen enthalten, die keine Zahl sind, daher ist der Datentyp hier &quot;String&quot;.
+Die möglichen Werte, die von dieser Spalte (`NULL`, `Yes`, `No`) Zeichen enthalten, die keine Zahl sind, daher ist der Datentyp hier &quot;String&quot;.
 
-**Beispiel 2: Bestellartikelgesamtwert (Menge * Preis)**
+**Beispiel 2: Gesamtwert des Bestellartikels (Menge * Preis)**
 
-Viele Kunden analysieren gerne den Umsatz auf Artikelebene und teilen ihn nach Feldern wie `product name` oder `category`. Die meisten Datenbanken geben Ihnen nicht den Umsatz aus einem Produkt in einer Bestellung. Stattdessen geben sie die in der Bestellung verkaufte Menge und den Preis des Artikels an.
+Viele Kunden analysieren gerne den Umsatz auf Artikelebene und teilen ihn nach Feldern wie `product name` oder `category`. Die meisten Datenbanken geben Ihnen nicht den Umsatz aus einem Produkt in einer Bestellung, sondern die Menge, die in der Bestellung verkauft wird, und den Preis des Artikels.
 
 Um Produktumsatzanalysen zu ermöglichen, verfügen die meisten Konten über eine Spalte mit dem Namen `Order item total value (quantity * price)` auf `Orders Items` Tabelle. Wenn Ihr Konto auf der neuen Architektur basiert, wird diese Spalte auch mithilfe einer `Calculation` und im folgenden Screenshot angezeigt werden:
 
 ![](../../assets/Order_item_total_value.png)
 
-Im Commerce-Schema wird die `Order item total value (quantity * price)` -Spalte verwendet die Eingaben `qty ordered` und `base price` Alias `A` und `B` bzw.
+Im Commerce-Schema wird die `Order item total value (quantity * price)` -Spalte verwendet Eingaben `qty ordered` und `base price` Alias `A` und `B` bzw.
 
 Die Werte, die von dieser neuen Spalte zurückgegeben werden, sind in Dollar und Cent angegeben. Daher ist der richtige Datentyp `Decimal(10,2)`.
 

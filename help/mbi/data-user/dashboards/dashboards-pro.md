@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Berichtverfügbarkeit
 
-Für `Customers` und `Executive Summary` -Dashboards können Sie einige Berichte nur in Abhängigkeit von der Checkout-Konfiguration Ihres Stores herunterladen. Insbesondere, wenn Ihr Store das Auschecken von Gast zulässt oder das Auschecken von Gast nicht zulässt.
+Für `Customers` und `Executive Summary` -Dashboards können Sie einige Berichte nur in Abhängigkeit von der Checkout-Konfiguration Ihres Stores herunterladen. Insbesondere, wenn Ihr Store das Auschecken von Gast erlaubt oder das Auschecken von Gast nicht zulässt.
 
 ## Kunden (Gastkasse erlaubt)
 
@@ -37,7 +37,7 @@ Das Dashboard Kunden (Gastkasse erlaubt) enthält Informationen zu Ihrer Kundenb
 | `Orders by New vs Existing Customers` | Anzahl der Bestellungen von Kunden ohne vorherige Bestellungen im Vergleich zu Kunden mit mindestens einer vorherigen Bestellung. |
 | `Subsequent Order Probability (All Time)` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere platzieren. |
 | `% of Customers with Multiple Orders (All Time)` | Prozent aller Kunden, die mehr als eine Bestellung aufgegeben haben. |
-| `Median Time Between Orders (All Time)` | Mediane Zeit, die jeder Kunde zwischen der Bestellung und der nächsten benötigt. |
+| `Median Time Between Orders (All Time)` | Mittlere Zeit, die jeder Kunde zwischen der Bestellung und der nächsten benötigt. |
 | `Subsequent Order Probability` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere Bestellung aufgeben, aufgeschlüsselt nach Bestellnummer. Das heißt, der Prozentsatz der Kunden mit einer Bestellung, die eine Sekunde aufgeben, der Prozentsatz mit zwei, die eine dritte platzieren usw. |
 | `Time Between Orders` | Die durchschnittliche und mittlere Zeit, die Kunden zwischen Bestellungen nehmen, aufgegliedert nach Bestellnummer (d. h. die Zeit zwischen Bestellungen 1 und 2, 2 und 3 usw.). |
 | `Number of Customers - Lifetime Orders` | Für eine bestimmte Anzahl von Bestellungen, die während der Lebensdauer eines Kunden aufgegeben werden, stellt die Anzahl der Kunden, die so viele Bestellungen aufgegeben haben, und der Prozentsatz des gesamten Kundenstamms dar, den diese Zahl darstellt. |
@@ -60,7 +60,7 @@ Das Dashboard Kunden (kein Gastkauf erlaubt) enthält Informationen zu Ihrer Kun
 | `Orders by New vs Existing Customers` | Anzahl der Bestellungen von Kunden ohne vorherige Bestellungen im Vergleich zu Kunden mit mindestens einer vorherigen Bestellung. |
 | `Subsequent Order Probability (All Time)` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere platzieren. |
 | `% of Customers with Multiple Orders (All Time)` | Prozent aller Kunden, die mehr als eine Bestellung aufgegeben haben. |
-| `Median Time Between Orders (All Time)` | Mediane Zeit, die jeder Kunde zwischen der Bestellung und der nächsten benötigt. |
+| `Median Time Between Orders (All Time)` | Mittlere Zeit, die jeder Kunde zwischen der Bestellung und der nächsten benötigt. |
 | `Subsequent Order Probability` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere platzieren, aufgeschlüsselt nach Auftragsnummer. Das heißt, Prozent der Kunden mit einer Bestellung, die eine Sekunde aufgeben, Prozent mit zwei, die eine dritte platzieren usw. |
 | `Time Between Orders` | Die durchschnittliche und mittlere Zeit, die Kunden zwischen Bestellungen nehmen, aufgegliedert nach Bestellnummer (d. h. die Zeit zwischen Bestellungen 1 und 2, 2 und 3 usw.). |
 | `Number of Customers - Lifetime Orders` | Für eine bestimmte Anzahl von Bestellungen, die während der Lebensdauer eines Kunden aufgegeben werden, stellt die Anzahl der Kunden, die so viele Bestellungen aufgegeben haben, und der Prozentsatz des gesamten Kundenstamms dar, den diese Zahl darstellt. |
@@ -97,7 +97,7 @@ Das Dashboard &quot;Executive Summary&quot;(kein Gast-Checkout erlaubt) gibt Ihn
 |---|---|
 | `Revenue (Current Month)` | Der Umsatz, der in diesem Monat von Ihrem Store generiert wurde. In diesem Fall ist der Umsatz definiert als der Endpreis, der von einem Kunden für eine Bestellung gezahlt wird. |
 | `Revenue (Past 6 Months by Day)` | Gesamttäglicher Umsatz, überlagert mit dem durchschnittlichen Tagesumsatz der letzten sieben Tage. In diesem Fall ist der Umsatz definiert als der Endpreis, der von einem Kunden für eine Bestellung gezahlt wird. |
-| `% Change in Revenue (MoM MTD)` | Vergleich des Umsatzes bis jetzt in diesem Monat mit dem gleichen Anteil im Vormonat. |
+| `% Change in Revenue (MoM MTD)` | Vergleich des Umsatzes in diesem Monat mit dem gleichen Anteil im Vormonat. |
 | `Revenue from New vs Existing Customers (Current Month)` | Umsatz für den aktuellen Monat (bisher), der neuen (erstmaligen) Kunden zugeordnet wurde, gegenüber bestehenden Kunden (Platzierung einer zweiten oder späteren Bestellung). |
 | `Average Order Value (Current Month)` | Durchschnittlicher Tageswert der im aktuellen Monat aufgegebenen Bestellungen (bisher). Der Bestellwert ist definiert als der Endpreis, den ein Kunde bei einer Bestellung zahlt. |
 | `Orders (Current Month)` | Die Anzahl der Bestellungen, die in Ihrem Store für den aktuellen Monat aufgegeben wurden (bisher). |
@@ -149,7 +149,7 @@ Das Produkt-Dashboard zeigt die allgemeine Produktleistung in Bezug auf bestellt
 | `% Purchased Products (Past 30 Days) Refunded` | Prozentsatz der Artikel, die in den letzten 30 Tagen gekauft wurden und zu einer Rückerstattung führten. |
 | `Gross Merchandise Value` | Der Bruttowertwert aller verkauften Produkte nach Monat. GMV ist definiert als die bestellte Menge multipliziert mit dem Basispreis für jedes Produkt. |
 | `Purchases vs Refund Rate per Product (Past 30 Days)` | Für jedes Produkt wird die Gesamtzahl der bestellten Artikel in den letzten 30 Tagen mit der Erstattungsquote verglichen. Die Größe jeder Blase entspricht der Erstattungsrate. |
-| `Product Performance Details (Past 30 Days)` | Detaillierte Angaben zu den Verkäufen und den anschließenden Erstattungen in den letzten 30 Tagen, nach Produkt-SKU und Produktname. |
+| `Product Performance Details (Past 30 Days)` | Detaillierte Angaben zu den Verkäufen und den anschließenden Erstattungen in den letzten 30 Tagen, aufgeschlüsselt nach Produkt-SKU und Produktname. |
 | `Top Purchased Products by GMV (Past 30 Days)` | In den letzten 30 Tagen verkaufte Produkte, die den meisten Umsatz brachten (Top 10). |
 | `Top Refunded Products by GMV (Past 30 Days)` | Produkte, die in den letzten 30 Tagen gekauft wurden und die am meisten GMV aufgrund von Erstattungen verloren haben (Top 10). |
 | `Top Purchased Products by Quantity (Past 30 Days)` | Produkte, die in den letzten 30 Tagen in der größten Zahl (Top 10) verkauft wurden. |

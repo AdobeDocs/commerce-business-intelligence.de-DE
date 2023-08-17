@@ -18,10 +18,10 @@ Sie fragen sich je, wie das Anbieten von Coupons Ihr Geschäft beeinflusst? Möc
 * Wie viele Kunden verwenden Coupons?
 * Wie viele Coupons werden verwendet?
 * Wie hoch ist Ihr Umsatz vor und nach der Anwendung von Coupons?
-* Wie hoch ist der durchschnittliche Bestellwert vor und nach der Anwendung von Gutscheinen?
+* Wie hoch ist der durchschnittliche Bestellwert vor und nach der Anwendung von Coupons?
 * Was für Kunden ziehen Sie mit Coupons an?
 
-## Empfohlene Metriken {#metrics}
+## Empfehlungen für Metriken {#metrics}
 
 Verwenden Sie bei der Analyse der Couponnutzung die Option ([oder Gebäude](../../data-user/reports/ess-manage-data-metrics.md)) diese Metriken:
 
@@ -43,7 +43,7 @@ Diese Metrik zeigt den Nettoumsatz an, den Sie aus Bestellungen erzielen, die ei
 
 ### Prozent diskontiert
 
-Dies zeigt den Anteil des Bruttoeinkommens, der durch Rabatte ausgeglichen wird. Für Gutscheine, die einen prozentualen Rabatt bieten, ist dieser Wert bereits bekannt (z. B. 10 % Rabatt). Trotzdem bietet diese Maßnahme Einblicke und eine Vergleichsmethode für Gutscheine, die einen festen Dollarrabatt darstellen.
+Dies zeigt den Anteil des Bruttoumsatzes, der durch Rabatte ausgeglichen wird. Für Gutscheine, die einen prozentualen Rabatt bieten, ist dieser Wert bereits bekannt (z. B. 10 % Rabatt). Trotzdem bietet diese Maßnahme Einblicke und eine Vergleichsmethode für Gutscheine, die einen festen Dollarrabatt darstellen.
 
 ### Durchschnittlicher Netto-Bestellwert
 
@@ -74,7 +74,7 @@ Nun, da Sie wissen, welche Metriken Sie sich ansehen sollten, sehen Sie sich ein
 {style="table-layout:auto"}
 
 
-| **Coupon** | **Durchschn. Netto-Bestellwert** | **Durchschn. BestellRabatt** | **Unique Buyer** | **Durchschn. Lebenszeitumsatz** |
+| **Coupon** | **Durchschn. Netto-Bestellwert** | **Durchschn. Bestellrabatt** | **Unique Buyer** | **Durchschn. Lebenszeitumsatz** |
 |-----|-----|-----|-----|-----|
 | **10 % Rabatt** | $225.08 | $25.01 | 79 | $361.50 |
 | **20 $ ohne 100 $+** | $117.91 | $20.00 | 95 | $218.76 |
@@ -101,7 +101,7 @@ Während **Bruttorabatte** für alle drei Gutscheine ähnlich sind (rund 2.000 $
 
 **Brutto- und Nettoumsatz** geben Sie eine allgemeine Vorstellung vom vollständigen Wert der mit jedem Gutschein verknüpften Bestellungen. Dieses Gesamtbild vermittelt jedoch kein Verständnis der unterschiedlichen Verhaltensweisen, die mit den einzelnen Gutscheinen verbunden sind. Wenn Sie sich die Bestellbasis ansehen, können Sie sehen, dass der &quot;10 % Rabatt&quot;-Gutschein einen hohen Wert aufweist **durchschnittliche Nettoaufträge** -Wert, der wiederum zu seinem hohen **Nettoeinnahmen**.
 
-Auf der anderen Seite hat der &quot;10% Rabatt&quot;-Gutschein einen hohen durchschnittlichen Rabattwert ($25.01), aber den niedrigsten **% Rabatt**. Dies ist sinnvoll, wenn Sie den durchschnittlichen Netto-Bestellwert von 225,08 US-Dollar berücksichtigen. Der &quot;10% Rabatt&quot;-Gutschein hat einen kleinen prozentualen Rabatt auf einen großen durchschnittlichen Nettoauftragswert, sodass der durchschnittliche Auftragsnachlass einen großen Betrag darstellt.
+Auf der anderen Seite hat der &quot;10% Rabatt&quot;-Gutschein einen hohen durchschnittlichen Rabattwert ($25.01), aber den niedrigsten **% Rabatt**. Dies ist sinnvoll, wenn Sie den durchschnittlichen Netto-Bestellwert von 225,08 US-Dollar berücksichtigen. Der &quot;10% Rabatt&quot;-Gutschein weist einen kleinen prozentualen Rabatt auf einen großen durchschnittlichen Nettoauftragswert auf, sodass der durchschnittliche Nachlass für Bestellungen ein großer Betrag ist.
 
 Sehen Sie sich die **verschiedene Käufer** und **Durchschnittlicher Umsatz während der Lebensdauer** für jeden Gutschein. Der Gutschein &quot;10 % Rabatt&quot;weist dieselbe Anzahl von Bestellungen auf wie unterschiedliche Käufer. Dies könnte darauf zurückzuführen sein, dass jeder Kunde auf einen Gutschein beschränkt ist. Auf der anderen Seite haben die Gutscheine &quot;$20 von $100 oder mehr&quot;und &quot;$10 off&quot;weniger unterschiedliche Käufer als die Anzahl der Bestellungen, was bedeutet, dass einige Kunden diese Gutscheine mehrmals verwendet haben.
 
@@ -111,7 +111,7 @@ Für den durchschnittlichen Umsatz während der Lebensdauer können Sie erkennen
 
 Die in diesem Thema erwähnten Analysen geben Ihnen wertvolle Einblicke in die Verwendung Ihrer Gutscheine durch Ihre Kunden. Es gibt jedoch eine Vielzahl weiterer Analysen, die Ihnen erlauben, ein wenig tiefer zu gehen.
 
-**Sie können Ihre Kundenakquise aus Gutscheinen analysieren.**
+**Sie können Ihre Kundenakquisen anhand von Gutscheinen analysieren.**
 
 Welche Coupons ermutigen Kunden, Bestellungen aufzunehmen? Sind diese Gutscheine für einmalige Käufer attraktiv oder fördern sie die Kundenloyalität (d. h. Kunden, die wiederholte Käufe tätigen)?
 
@@ -121,6 +121,6 @@ Werden Ihre Gutscheine am Tag ihrer Veröffentlichung verwendet oder verstreiche
 
 **Sie können den optimalen Rabattbetrag ermitteln, der die Kundenloyalität und den Gesamtwert erhöht.**
 
-Welchen Rabatt ermuntert wiederkehrende Käufer, einen höheren durchschnittlichen Bestellwert und höheren Lebenszeitumsatz?
+Welchen Rabatt ermuntert wiederkehrende Käufer, einen höheren durchschnittlichen Bestellwert und einen höheren Lebenszeitumsatz?
 
 Durch die Beantwortung dieser Fragen erhalten Sie Einblicke in Ihre Kunden, ihr Verhalten und die Gutscheine, die Ihrem Unternehmen den größten Nutzen bringen.

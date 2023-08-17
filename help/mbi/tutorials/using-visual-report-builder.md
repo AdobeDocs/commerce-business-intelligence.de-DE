@@ -21,7 +21,7 @@ Die [[!DNL Visual Report Builder]](../data-user/reports/ess-rpt-build-visual.md)
 
 ## Schritt 1: Erstellen eines Berichts
 
-Um mit der Erstellung eines Berichts zu beginnen, klicken Sie auf **[!UICONTROL Report Builder]** auf der Seitenleiste oder **[!UICONTROL Add Report]** oben in jedem Dashboard. Wenn die `Report Builder` angezeigt wird, klicken Sie auf die **[!UICONTROL Visual Report Builder]** -Option.
+Um mit der Erstellung eines Berichts zu beginnen, klicken Sie auf **[!UICONTROL Report Builder]** auf der Seitenleiste oder **[!UICONTROL Add Report]** oben in einem Dashboard angezeigt. Wenn die Variable `Report Builder` angezeigt wird, klicken Sie auf die **[!UICONTROL Visual Report Builder]** -Option.
 
 So bearbeiten Sie einen Bericht, der im [!DNL Visual Report Builder], klicken Sie auf das Zahnradsymbol (Optionen) in der oberen rechten Ecke eines beliebigen Diagramms und klicken Sie dann auf **[!UICONTROL Edit]**.
 
@@ -31,7 +31,7 @@ Der erste Schritt bei der Erstellung einer Analyse besteht darin, [die Metrik](.
 
 Sie können nach Auswahl der ursprünglichen Metrik zusätzliche Metriken hinzufügen und alle Metriken in einem einzelnen Bericht überlagern oder mehrere Metriken berechnen, indem Sie Formeln hinzufügen.
 
-## Schritt 3: Hinzufügen `Formulas`
+## 3. Schritt: Hinzufügen `Formulas`
 
 `Formulas` zu Berichten hinzugefügt werden, indem Sie auf **[!UICONTROL Add Formula]**, direkt über der Liste der Metriken im Bericht. Im [Formeleditor](../data-analyst/dev-reports/formulas-in-rpt-bldr.md)können alle im Bericht enthaltenen Metriken als Eingaben verwendet werden. Grundlegende mathematische Operatoren werden verwendet, um die verschiedenen Metriken zu bearbeiten.
 
@@ -47,7 +47,7 @@ Wenn Sie einen bestimmten Zeitraum nicht einbeziehen möchten, können Sie den Z
 
 Stellen Sie beim Festlegen eines bestimmten Datumsbereichs für den Zeitraum sicher, dass sich das Startdatum am Anfang des Intervalls befindet und das Enddatum am Ende Ihres Intervalls liegt.
 
-Beispielsweise können Sie einen Zeitraum von `January 1st` nach `March 1st` und wählen Sie eine `monthly` interval zeigt `March` als Datenpunkt verwenden, jedoch jeden Tag in `March` Ausnahme `March 1`. In diesem Fall sollten Sie Ihre `Time Period` von `January 1 to March 31`.
+So können Sie beispielsweise einen Zeitraum von `January 1st` nach `March 1st` und wählen Sie eine `monthly` interval zeigt `March` als Datenpunkt verwenden, jedoch jeden Tag in `March` Außer `March 1`. In diesem Fall sollten Sie Ihre `Time Period` von `January 1 to March 31`.
 
 ## Schritt 5: `Group by` / `Segmenting the Analysis` {#groupby}
 
@@ -63,7 +63,7 @@ Wenn die in der Analyse enthaltenen Metriken auf unterschiedlichen Datentabellen
 
 ![](../assets/Dimension_Editor.png)
 
-## Schritt 6: Einstellung `Metric Filters`, `Perspective`und `Time Interval` {#metric-specific}
+## Schritt 6: Festlegen `Metric Filters`, `Perspective`, und `Time Interval` {#metric-specific}
 
 Für jede zur Analyse hinzugefügte Metrik können Sie Filter hinzufügen, die relevante Datenperspektive auswählen und `time interval` Optionen. Um auf diese Funktionen zuzugreifen, klicken Sie auf den Trichter (`Filter`), Auge (`Perspective`) und der Uhr (`Time`) neben den im Bericht enthaltenen Metriken.
 
@@ -89,11 +89,11 @@ Durch das Hinzufügen mehrerer Filter können die Daten der Grafik genau gesteue
 
 `Perspectives` Ermöglicht Ihnen den einfachen Umschalter zwischen verschiedenen Ansichten Ihrer Daten. Sehen Sie sich an, was verfügbar ist:
 
-- `Standard perspective`: Die Standardperspektive zeigt Ihnen das Ergebnis für das entsprechende Datum auf der X-Achse (z. B. Umsatz im Januar). Dies ist die Perspektive, die Sie in Ihrem Beispiel Durchschnittlicher Umsatz pro Bestellung verwenden.
+- `Standard perspective`: Die Standardperspektive zeigt das Ergebnis für das entsprechende Datum auf der X-Achse an (z. B. Umsatz im Januar). Dies ist die Perspektive, die Sie in Ihrem Beispiel Durchschnittlicher Umsatz pro Bestellung verwenden.
 
 ![](../assets/Standard.png)
 
-- `Amount` ODER `Percent Change` versus `Previous Period` Perspektive: Diese Perspektive zeigt die Menge oder prozentuale Veränderung von einem Intervall zum nächsten und ist nützlich zur Messung der Änderungsrate bei schnell wechselnden Metriken. Es gibt auch eine Perspektive, um das Intervall mit dem gleichen Zeitraum im letzten Jahr zu vergleichen und das Wachstum im Jahresvergleich anzuzeigen.
+- `Amount` ODER `Percent Change` versus `Previous Period` Perspektive: Diese Perspektive zeigt die Veränderung von einem Intervall zum nächsten oder in Prozent und ist nützlich zur Messung der Änderungsrate bei schnell wechselnden Metriken. Es gibt auch eine Perspektive, um das Intervall mit dem gleichen Zeitraum im letzten Jahr zu vergleichen und das Wachstum im Jahresvergleich anzuzeigen.
 
 ![](../assets/Amt_or_Percent_Change.png)
 
@@ -101,17 +101,17 @@ Durch das Hinzufügen mehrerer Filter können die Daten der Grafik genau gesteue
 
 ![](../assets/Cumulative_Perspective.png)
 
-- `Percent of First Value perspective`: Diese Perspektive zeigt die Daten als Prozentsatz des in der Analyse enthaltenen Erstintervalls. Dies ist hilfreich bei der Messung der Effektivität spezifischer Aktionen im Vergleich zur Leistung des ersten Zeitraums.
+- `Percent of First Value perspective`: Diese Perspektive zeigt die Daten als Prozentsatz des in der Analyse enthaltenen Erstintervalls an. Dies ist hilfreich bei der Messung der Effektivität spezifischer Aktionen im Vergleich zur Leistung des ersten Zeitraums.
 
 ![](../assets/Percent_of_First_Value.png)
 
-- `Rolling averages window perspective`: Die Perspektive &quot;Rollierende Durchschnittswerte&quot;zeigt den rollierenden Durchschnittswert einer Metrik über den angegebenen Zeitraum. Das Intervall muss mit dem auf Berichtsebene festgelegten Intervall übereinstimmen. Wenn der Bericht beispielsweise das letzte vollständige Quartal des Umsatzes pro Woche anzeigt, können Sie den rollierenden durchschnittlichen Fensterzeitbereich auf vier Wochen festlegen. Dadurch sind die ersten drei Werte null und der vierte Wert stellt den Durchschnitt der ersten vier Umsatzwochen dar. Stellen Sie für mehr Klarheit sicher, dass Sie die `Multiple Y-Axes` aktivieren, wenn Sie dieselbe Metrik mit einem rollierenden Durchschnitt anzeigen, wie im Beispiel unten.
+- `Rolling averages window perspective`: Die Perspektive des Fensters &quot;Rollierende Durchschnittswerte&quot;zeigt den rollierenden Durchschnittswert einer Metrik über den angegebenen Zeitraum an. Das Intervall muss mit dem auf Berichtsebene festgelegten Intervall übereinstimmen. Wenn der Bericht beispielsweise das letzte vollständige Quartal des Umsatzes pro Woche anzeigt, können Sie den rollierenden durchschnittlichen Fensterzeitbereich auf vier Wochen festlegen. Dadurch sind die ersten drei Werte null und der vierte Wert stellt den Durchschnitt der ersten vier Umsatzwochen dar. Stellen Sie für mehr Klarheit sicher, dass die `Multiple Y-Axes` aktivieren, wenn Sie dieselbe Metrik mit einem rollierenden Durchschnitt anzeigen, wie im Beispiel unten.
 
 ![](../assets/rolling_avg_window.png)
 
 ### Metrikspezifische Zeitoptionen
 
-Für in Berichten verwendete Metriken gibt es zwei Optionen: sie können einen Trend im Zeitverlauf entsprechend den globalen Zeitoptionen aufweisen oder nicht, wodurch sie als Skalarzahl angezeigt werden.
+Für Metriken, die in Berichten verwendet werden, gibt es zwei Optionen: Sie können einen Trend im Zeitverlauf entsprechend den globalen Zeitoptionen aufweisen oder nicht, wodurch sie als Skalarzahl angezeigt werden.
 
 Ändern eines Metrikzeitintervalls in `None` gibt eine `scalar` Zahl, was beim Erstellen von Formeln nützlich ist, bei denen eine Metrik mit Trends in der Zeit durch eine `scalar` Zahl. Sie können auch den Zeitbereich der `scalar` auf einen Zeitraum, der unabhängig von dem für den Bericht ist.
 
@@ -125,15 +125,15 @@ Weitere Informationen zur Verwendung von Zeitoptionen in Berichten finden Sie in
 
 ## Schritt 7: Speichern des Berichts
 
-Wenn Sie ein Diagramm erstellen, können Sie es speichern, indem Sie auf **[!UICONTROL Save]** oben rechts im `Visual Report Builder`.
+Wenn Sie ein Diagramm erstellen, können Sie es durch Klicken auf **[!UICONTROL Save]** oben rechts im `Visual Report Builder`.
 
-Sie können ein Diagramm, eine Tabelle oder eine Zahl (`scalar`) mithilfe der `Type` und das Dashboard, in dem der Bericht gespeichert werden soll, mithilfe der `Location` Dropdown-Liste.
+Sie können ein Diagramm, eine Tabelle oder eine Zahl (`scalar`) mithilfe der `Type` und das Dashboard, in dem der Bericht gespeichert werden soll, mithilfe der `Location` Dropdown.
 
 Anschließend können Sie den Bericht speichern, indem Sie auf **[!UICONTROL Save to Dashboard]**.
 
 ![](../assets/save-to-dashboard.png)
 
-## Berichtsausgaben
+## Berichtsausgabe
 
 Informationen zur Auswahl der Berichtausgabe finden Sie unter folgenden Themen:
 

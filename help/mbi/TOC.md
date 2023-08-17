@@ -1,6 +1,6 @@
 ---
 title: Commerce Intelligence
-description: Erfahren Sie, wie Sie [!DNL Commerce Intelligence] Funktionen, die für Adobe Commerce verfügbar sind.
+description: Verwendung von [!DNL Commerce Intelligence] für Adobe Commerce verfügbar.
 breadcrumb-title: Benutzerhandbuch für Commerce Intelligence
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
@@ -19,7 +19,7 @@ ht-degree: 0%
 - Erste Schritte {#start}
    - [Onboarding](getting-started/onboarding.md)
    - [Aktivieren Ihrer [!DNL Commerce Intelligence] Konto](getting-started/onpremise-activation.md)
-   - [Melden Sie sich bei Ihrer [!DNL Commerce Intelligence] Konto](getting-started/sign-in.md)
+   - [Anmelden bei [!DNL Commerce Intelligence] Konto](getting-started/sign-in.md)
    - [Commerce Intelligence Essentials vs Commerce Intelligence Pro](getting-started/essentials-vs-pro.md)
 - Administrator {#administrator}
    - Kontoverwaltung {#acct-mgmt}
@@ -35,14 +35,14 @@ ht-degree: 0%
       - [Zugriff auf Metriken beschränken](../mbi/administrator/user-management/restrict-metric-access.md)
 - Daten analysieren {#analyze}
    - [Data Analyst](data-analyst.md)
-   - Data Warehouse Manager {#warehouse-manager}
+   - Data Warehouse-Manager {#warehouse-manager}
       - [Einführung](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [Erweiterte berechnete Spaltentypen](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
       - [Erstellen [!DNL Google Ecommerce] Dimensionen](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
       - [Berechnete Spaltentypen](data-analyst/data-warehouse-mgr/calc-column-types.md)
       - [Konfigurieren von Replikationsmethoden](data-analyst/data-warehouse-mgr/cfg-replication-methods.md)
       - [Konfigurieren von Datenprüfungen](data-analyst/data-warehouse-mgr/cfg-data-rechecks.md)
-      - [Ändern der Arbeitstabelle einer Metrik](data-analyst/data-warehouse-mgr/change-metric-op-table.md)
+      - [Ändern der Operationstabelle einer Metrik](data-analyst/data-warehouse-mgr/change-metric-op-table.md)
       - [Erstellen und Verwenden von Data Warehouse-Ansichten](data-analyst/data-warehouse-mgr/create-dw-views.md)
       - [Erstellen/Löschen von Pfaden für berechnete Spalten](data-analyst/data-warehouse-mgr/create-paths-calc-columns.md)
       - [Erstellen/Verwenden einer berechneten SQL-Spalte](data-analyst/data-warehouse-mgr/create-sql-calc-column.md)
@@ -95,9 +95,9 @@ ht-degree: 0%
       - [Importieren von Offline-/anderen Anzeigenausgabedaten](data-analyst/importing-data/connecting-data/import-offline-ad-data.md)
       - [Verwenden des Datei-Uploaders](data-analyst/importing-data/connecting-data/using-file-uploader.md)
       - [Datenmigrationsdienste](data-analyst/importing-data/connecting-data/data-migration-services.md)
-   - SaaS-Integrationen {#saas}
-      - [SaaS-Integrationen](data-analyst/importing-data/integrations/integrations.md)
-      - [Ergebnisse verstehen zwischen [!DNL Database] und [!DNL SQL] Editor](data-analyst/importing-data/integrations/last-success-update.md)
+   - SaaS-Integration {#saas}
+      - [SaaS-Integration](data-analyst/importing-data/integrations/integrations.md)
+      - [Ergebnisse verstehen zwischen [!DNL Database] und [!DNL SQL] Bearbeiter](data-analyst/importing-data/integrations/last-success-update.md)
       - [Verbinden [!DNL Adobe Analytics]](data-analyst/importing-data/integrations/adobe-analytics.md)
       - [Erwartet [!DNL Adobe Analytics] Daten](data-analyst/importing-data/integrations/adobe-analytics-data.md)
       - [Verbinden [!DNL Facebook Ads]](data-analyst/importing-data/integrations/facebook-ads.md)
@@ -131,7 +131,7 @@ ht-degree: 0%
    - Datenbankintegrationen {#integration}
       - [Verbinden [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [Datenbanken über VPN verbinden](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
-      - [Verbinden Sie Ihre [!DNL MySQL Database] nach [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)
+      - [Verbinden Sie [!DNL MySQL Database] nach [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)
       - [Verbinden von Adobe Commerce](data-analyst/importing-data/integrations/magento.md)
       - [Erwartete Commerce-Daten](data-analyst/importing-data/integrations/magento-data.md)
       - [Verbinden [!DNL Microsoft SQL Server]](data-analyst/importing-data/integrations/microsoft-sql-server.md)
@@ -142,7 +142,7 @@ ht-degree: 0%
       - [Verbinden [!DNL PostgreSQ]](data-analyst/importing-data/integrations/postgresql.md)
    - Kampagnen analysieren {#campaigns}
       - [Analyse des Couponcodes (Basisversion)](data-analyst/analysis/ess-coupon-code-analysis.md)
-      - [Analyse von Couponcodes (erweitert)](data-analyst/analysis/coupon-code-analysis.md)
+      - [Analyse des Couponcodes (erweitert)](data-analyst/analysis/coupon-code-analysis.md)
       - [Schwelle für kostenlosen Versand](data-analyst/analysis/free-ship-thresh.md)
       - [Auswirkungen des Gutscheins analysieren](data-analyst/analysis/coupon-impact.md)
       - [Nutzung von Gutscheinen analysieren](data-analyst/analysis/coupon-usage.md)
@@ -152,14 +152,14 @@ ht-degree: 0%
       - [Berechnung der Commerce-Abwanderungsraten](data-analyst/analysis/commerce-churn.md)
       - [Bestimmung der Kundenkonzentration](data-analyst/analysis/define-cust-concent.md)
       - [Definieren der Kundenabwanderung](data-analyst/analysis/define-cust-churn.md)
-      - [[!DNL Expected Lifetime Value (LTV)] Analyse (Basisanalyse)](data-analyst/analysis/ess-expected-ltv.md)
+      - [[!DNL Expected Lifetime Value (LTV)] Analyse (Basis)](data-analyst/analysis/ess-expected-ltv.md)
       - [[!DNL Expected Lifetime Value (LTV)] Analyse (erweitert)](data-analyst/analysis/expected-customer-ltv.md)
       - [Tracking der Benutzerakquise-Quelldaten - Überblick](data-analyst/analysis/google-track-user-acq.md)
       - [Tracking von Benutzergeräten und Browserdaten in Ihrer Datenbank](data-analyst/analysis/track-usr-dev-browser.md)
       - [Analysieren des Kaufverhaltens von Kunden](data-analyst/analysis/repurchase-behavior.md)
       - [Analyse der Website-Aktivität und der Kundenkonversionsraten](data-analyst/analysis/web-act-cust-conversion.md)
       - [Neuigkeits-, Häufigkeits- und Geldanalyse](data-analyst/analysis/rfm-analysis.md)
-   - Analyse der Geschäftsleistung {#performance}
+   - Analysieren der Geschäftsleistung {#performance}
       - [Ziele mit tatsächlichen Metriken verfolgen](data-analyst/analysis/track-goals-against-metrics.md)
       - [Analyse zurückgegebener Bestellungen](data-analyst/analysis/returned-order-analysis.md)
       - [Jahres-, Monatsvergleich, Wochenvergleich](data-analyst/analysis/year-month-week.md)
@@ -196,7 +196,7 @@ ht-degree: 0%
       - [Verwalten von Dashboards](data-user/dashboards/managing-dashboard.md)
       - [Löschen von Dashboards](data-user/dashboards/deleting-dashboard.md)
       - [Umbenennen von Dashboards](data-user/dashboards/renaming-dashboard.md)
-      - [Festlegen eines Standard-Dashboards](data-user/dashboards/set-default-dashboard.md)
+      - [Standard-Dashboard einrichten](data-user/dashboards/set-default-dashboard.md)
       - [Hinzufügen von Diagrammen zu Dashboards](data-user/dashboards/add-charts-dashboard.md)
       - [Entfernen von Diagrammen aus Dashboards](data-user/dashboards/remove-charts-dashboard.md)
       - [Größe und Anordnung von Diagrammen in einem Dashboard](data-user/dashboards/resize-charts-dashboard.md)
@@ -231,7 +231,7 @@ ht-degree: 0%
    - Arbeiten mit Dashboards {#working-dashboards}
       - [Freigeben von Dashboards](best-practices/share-dashboard-best-practice.md)
       - [Erstellen eines Anleger-Dashboards](best-practices/build-investor-dashboard.md)
-- Tutorials {#tutorials}
+- -Tutorials{#tutorials}
    - [Verwenden der [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Verwenden der Zeitoptionen in [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Erstellen von Visualisierungen für eine [!DNL SQL] Abfrage](tutorials/create-visuals-from-sql.md)

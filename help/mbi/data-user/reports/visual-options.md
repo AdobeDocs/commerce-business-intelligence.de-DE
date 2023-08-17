@@ -37,7 +37,7 @@ Die [!DNL Commerce Intelligence] [!DNL Visual Report Builder] bietet 12 verschie
 
 ![](../../assets/blobid0.png)
 
-Um einen Bericht als Skalar zu speichern, konfigurieren Sie Ihre Filter und Zeiteinstellungen und klicken Sie auf **[!UICONTROL Save]** oder **[!UICONTROL Update]** oben rechts im Bericht. Unter dem `Type` Dropdown-Liste wählen Sie die Zahl aus: Metrikname , um den Bericht als Wert zu speichern, der auf der linken Seitenleiste angezeigt wird.
+Um einen Bericht als Skalar zu speichern, konfigurieren Sie Ihre Filter und Zeiteinstellungen und klicken Sie auf **[!UICONTROL Save]** oder **[!UICONTROL Update]** oben rechts im Bericht. Unter dem `Type` Wählen Sie in der Dropdown-Liste die Option Zahl: Metrik aus, um den Bericht als den in der linken Seitenleiste angezeigten Wert zu speichern.
 
 ![](../../assets/blobid1.png)
 
@@ -53,7 +53,7 @@ Wie der Name nahe legt, `table` -Berichte eignen sich hervorragend für die Anze
 
 ![](../../assets/blobid2.png)
 
-Ähnlich wie bei skalaren Berichten können Sie einen Bericht als Tabelle speichern, indem Sie auf **[!UICONTROL Save]** oder **[!UICONTROL Update]** im ReportBuilder und wählen Sie dann die Tabellenoption unter der `Type` Dropdown-Liste.
+Ähnlich wie bei skalaren Berichten können Sie einen Bericht als Tabelle speichern, indem Sie auf **[!UICONTROL Save]** oder **[!UICONTROL Update]** im ReportBuilder und wählen Sie dann die Tabellenoption unter der `Type` Dropdown.
 
 ![](../../assets/blobid3.png)
 
@@ -79,7 +79,7 @@ Um einen Bericht als Liniendiagramm zu speichern, passen Sie den Bericht an `Typ
 
 ## `Bar`
 
-`Bar` -Diagramme zeigen Ihre Daten als Reihe von horizontalen Balken an und eignen sich am besten zur Anzeige der Gesamtleistung einer begrenzten Anzahl von Metriken oder der Gruppe nach Werten. Beispielsweise könnte ein Balkendiagramm verwendet werden, um den Umsatz nach Geschäft zu vergleichen:
+`Bar` -Diagramme zeigen Ihre Daten als Reihe von horizontalen Balken an und eignen sich am besten zur Anzeige der Gesamtleistung einer begrenzten Anzahl von Metriken oder der Gruppe nach Werten. Beispielsweise kann ein Balkendiagramm verwendet werden, um den Umsatz nach Geschäft zu vergleichen:
 
 ![](../../assets/blobid2.png)
 
@@ -103,7 +103,7 @@ Beispielsweise weist der unten stehende Bericht zwei identische Umsatzmetriken a
 
 Stellen Sie sicher, dass `Multiple Y-Axes` deaktiviert ist, wenn Sie einen Bericht wie den oben stehenden einrichten.
 
-Um einen Bericht als gestapeltes Balkendiagramm zu speichern, passen Sie den Bericht an `Type` nach `Chart` und wählen Sie die Option &quot;Gestapelte Leiste&quot;aus der Berichterstellung aus:
+Um einen Bericht als gestapeltes Balkendiagramm zu speichern, passen Sie die `Type` nach `Chart` und wählen Sie die Option &quot;Gestapelte Leiste&quot;aus der Berichterstellung aus:
 
 ![](../../assets/blobid5.png)
 
@@ -135,7 +135,7 @@ Verwenden Sie dieselbe Berichtskonfiguration wie im Abschnitt `Column` weiter ob
 
 ![](../../assets/blobid8.png)
 
-Auch hier ist es wichtig, dass die `Multiple Y-Axes` bei der Anzeige mehrerer Metriken mit der gestapelten Spaltenvisualisierung deaktiviert ist.
+Auch hier ist es wichtig, dass `Multiple Y-Axes` bei der Anzeige mehrerer Metriken mit der gestapelten Spaltenvisualisierung deaktiviert ist.
 
 Um einen Bericht als gestapelte Spalte zu speichern, legen Sie den Bericht fest `Type` nach `Chart` und wählen Sie die `stacked column` Option:
 
@@ -188,7 +188,7 @@ In einem Trichterbericht spiegelt sich der relative Wert eines bestimmten Schrit
 
 * `Single metric with one group by`: - Die Reihenfolge der Schritte wird durch die Einstellung &quot;Oben/Unten anzeigen&quot;der Gruppe von bestimmt. Standardmäßig werden Trichterschritte in der Reihenfolge vom größten zum kleinsten Wert angezeigt. Sie können sie aber auch alphabetisch nach Name sortieren.
 
-* `Multiple metrics with no group by`: - Reihenfolge der Schritte, die durch die Reihenfolge bestimmt werden, in der die Metriken zum Bericht hinzugefügt werden.
+* `Multiple metrics with no group by`: - Die Reihenfolge der Schritte wird durch die Reihenfolge bestimmt, in der die Metriken zum Bericht hinzugefügt werden.
 
 Um einen Bericht als Trichterdiagramm zu speichern, passen Sie den Bericht an `Type` nach `Chart` und wählen Sie die entsprechende Visualisierung aus der Berichterstellung aus.
 

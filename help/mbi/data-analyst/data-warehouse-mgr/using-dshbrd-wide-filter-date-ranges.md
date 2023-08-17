@@ -19,7 +19,7 @@ Mit einer Dashboard-weiten Filterung können Sie Massenbearbeitungen aller Beric
 
 Um den Datumsbereich oder das Intervall der Berichte in einem Dashboard zu ändern, klicken Sie auf das Kalendersymbol in der oberen rechten Ecke (![calendar](../../assets/calendar-button.png)).
 
-Sie können Daten mithilfe eines `Fixed Date Range` oder verschiedene vorab berechnete `Moving Date Ranges`:
+Sie können die Daten mithilfe eines `Fixed Date Range` oder verschiedene vorab berechnete `Moving Date Ranges`:
 
 ![Verschieben von Datumsbereichen](../../assets/moving_date_ranges.png)
 
@@ -29,11 +29,11 @@ Oder erstellen Sie Ihre eigene `Custom Moving Range`\:
 
 ![benutzerdefinierter Bewegungsbereich](../../assets/custom-moving-range.png)
 
-Wählen Sie auch aus, das Intervall zu ändern. Auswählen der Standardschaltfläche (![Zeitintervall Standard](../../assets/time_interval_default.png)) bedeutet, dass sich nur der Datumsbereich ändert:
+Wählen Sie auch aus, das Intervall zu ändern. Auswählen der Standardschaltfläche (![Zeitintervall - Standard](../../assets/time_interval_default.png)) bedeutet, dass sich nur der Datumsbereich ändert:
 
 ![Zeitintervall](../../assets/time_interval.png)
 
-Um alle Berichte auf ihren ursprünglichen Datumsbereich und ihr anfängliches Intervall wiederherzustellen, klicken Sie auf **[!UICONTROL Restore Defaults]** oder klicken Sie auf **[!UICONTROL Cancel]**.
+Um alle Berichte auf ihren ursprünglichen Datumsbereich und ihr anfängliches Intervall wiederherzustellen, klicken Sie auf **[!UICONTROL Restore Defaults]** oder klicken Sie **[!UICONTROL Cancel]**.
 
 Wenn Sie einen Datumsfilter für ein Dashboard angeben, wird dieser Filter nur auf dieses Dashboard angewendet. Sie wird nicht angewendet, wenn Sie zu anderen Dashboards navigieren.
 
@@ -43,7 +43,7 @@ Wenn Sie einen Datumsfilter für ein Dashboard angeben, wird dieser Filter nur a
 
 ## Filter speichern
 
-Um die Leistung eines bestimmten Stores zu analysieren, klicken Sie auf das Store-Symbol oben rechts (![Store Filter](../../assets/store-filter.png)). Standardmäßig `Store Filter` auf `All Stores`, der alle Daten anzeigt [Store-Ansichten](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) auf Ihrer Commerce-Site verfügbar.
+Um die Leistung eines bestimmten Stores zu analysieren, klicken Sie auf das Store-Symbol oben rechts (![Store Filter](../../assets/store-filter.png)). Standardmäßig ist `Store Filter` auf `All Stores`, der alle Daten anzeigt [Store-Ansichten](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) auf Ihrer Commerce-Site verfügbar.
 
 >[!NOTE]
 >

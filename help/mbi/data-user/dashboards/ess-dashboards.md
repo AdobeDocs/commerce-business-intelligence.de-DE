@@ -27,7 +27,7 @@ Dashboards sind freigebbare thematische Behälter für die Analysen, die Sie in 
 
 Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie können die Elemente im Dashboard beliebig anordnen und ihre Größe ändern.
 
-![Dashboard-Element zur Größenanpassung anordnen](../../assets/arrange_resize_dashboard_element.gif)
+![Größe des Dashboard-Elements ändern](../../assets/arrange_resize_dashboard_element.gif)
 
 ### Dashboard erstellen
 
@@ -61,7 +61,7 @@ Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie kön
 
      ![Bericht hinzufügen](../../assets/magento-bi-dashboard-create-add-report.png)
 
-1. Klicken **[!UICONTROL Create Report]** , um **[!UICONTROL Report Builder Options]**.
+1. Klicks **[!UICONTROL Create Report]** , um **[!UICONTROL Report Builder Options]**.
 
    ![Report Builder Options](../../assets/magento-bi-report-builder.png)
 
@@ -77,7 +77,7 @@ In **[!DNL Manage Data** > **Dashboards]** können Sie Benutzerberechtigungen f�
 
 ### Dashboards freigeben {#sharingdash}
 
-Skalierung [!DNL Commerce Intelligence] Adobe bietet wertvolle Einblicke in Ihr Unternehmen und ermutigt Sie, Dashboards, die Sie erstellen, mit anderen Team-Mitgliedern zu teilen. *Sie können eigene Dashboards freigeben* durch Klicken auf `Share Dashboard` -Option oben auf der Seite.
+Skalierbarkeit [!DNL Commerce Intelligence] Adobe ermutigt Sie, Dashboards, die Sie erstellen, für andere Teammitglieder freizugeben und wertvolle Einblicke zu bieten. *Sie können eigene Dashboards freigeben* durch Klicken auf `Share Dashboard` -Option oben auf der Seite.
 
 Wenn Sie ein Dashboard freigeben, können Sie Ihrer gesamten Organisation ODER individuell Berechtigungen zuweisen, sodass Sie entscheiden können, wer Ihre Berichte anzeigen und bearbeiten kann.
 
@@ -87,7 +87,7 @@ Wenn Sie ein Dashboard freigeben, können Sie Ihrer gesamten Organisation ODER i
 
 ### Zugreifen auf freigegebene Dashboards {#accessshared}
 
-*Wenn Sie Administrator- oder Standardbenutzer sind* und möchten Ihrem Konto ein freigegebenes Dashboard hinzufügen, können Sie dies tun, indem Sie auf **[!UICONTROL Dashboard Options]** und klicken Sie anschließend auf **[!UICONTROL Find]** in der Dropdown-Liste.
+*Wenn Sie Administrator- oder Standardbenutzer sind* Sie möchten Ihrem Konto ein freigegebenes Dashboard hinzufügen, indem Sie auf **[!UICONTROL Dashboard Options]** und klicken Sie anschließend auf **[!UICONTROL Find]** in der Dropdown-Liste.
 
 ![Dashboard finden](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
 
@@ -109,13 +109,13 @@ Wenn Sie ein Dashboard freigeben, können Sie Ihrer gesamten Organisation ODER i
       * `Edit`
       * `None`
 
-   1. Wenn Sie zur Bestätigung aufgefordert werden, klicken Sie auf **[!UICONTROL OK]** , um die Berechtigungsebene für jeden Benutzer zu aktualisieren.
+   1. Klicken Sie bei Aufforderung zur Bestätigung auf **[!UICONTROL OK]** , um die Berechtigungsebene für jeden Benutzer zu aktualisieren.
 
    1. Um die Berechtigungsstufe einer Person zu ändern, suchen Sie den Benutzer in der Liste, um die Berechtigungsebene zu ändern. Die Änderung wird automatisch gespeichert.
 
    **`Default`**
 
-   1. Damit dieses Dashboard zum Standard für Ihre [!DNL Commerce Intelligence] Konto, klicken Sie auf **[!UICONTROL Make Default]**.
+   1. Damit dieses Dashboard zum Standard für Ihre [!DNL Commerce Intelligence] Konto, klicken Sie **[!UICONTROL Make Default]**.
 
    **`Remove`**
 

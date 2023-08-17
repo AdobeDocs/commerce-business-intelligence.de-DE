@@ -1,6 +1,6 @@
 ---
 title: Replizieren von Google Analytics-Kanälen mithilfe von Akquisequellen
-description: Erfahren Sie, wie Sie Google Analytics-Kanäle mithilfe von Akquise-Quellen replizieren.
+description: Erfahren Sie, wie Sie Google Analytics-Kanäle mithilfe von Akquisequellen replizieren.
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -19,13 +19,13 @@ Das Erstellen benutzerdefinierter Segmente, um zu sehen, wie unterschiedliche Tr
 
 ## Warum sehe ich meine `channels` in Commerce Intelligence? {#nochannels}
 
-`Channels` sind einfache, aggregierte Datenbehälter. So sortieren Sie Ihre Akquisen in Kanalbehälter: [!DNL Google] legt mithilfe spezifischer Parameter unterschiedliche Regeln und Definitionen fest: eine Kombination aus Akquisition [Quelle](https://support.google.com/analytics/answer/1033173?hl=en) (die Herkunft Ihres Traffics) und die Akquise [Mittel](https://support.google.com/analytics/answer/6099206?hl=en) (allgemeine Kategorie der Quelle).
+`Channels` sind einfache, aggregierte Datenbehälter. So sortieren Sie Ihre Akquisen in Kanalbehälter: [!DNL Google] legt mithilfe bestimmter Parameter unterschiedliche Regeln und Definitionen fest: eine Kombination aus Akquise [Quelle](https://support.google.com/analytics/answer/1033173?hl=en) (Ursprung Ihres Traffics) und Akquise [Mittel](https://support.google.com/analytics/answer/6099206?hl=en) (allgemeine Kategorie der Quelle).
 
 Diese Behälter können Ihnen dabei helfen, den Ursprung Ihres Traffics zu ermitteln. Diese Daten werden jedoch nicht nach Kanal, sondern durch eine Kombination aus Quelle und Medium getaggt. weil [!DNL Google] Sendet Kanalinformationen als zwei separate Datenpunkte, werden Kanalgruppierungen nicht automatisch in [!DNL Commerce Intelligence].
 
 ## Was sind die standardmäßigen Kanalgruppierungen? Wie werden sie erstellt?
 
-Standardmäßig [!DNL Google] richtet acht verschiedene Kanäle ein. Die Regeln, die bestimmen, wie Kanäle erstellt werden, sind unten aufgeführt.
+Standardmäßig ist [!DNL Google] richtet acht verschiedene Kanäle ein. Die Regeln, die bestimmen, wie Kanäle erstellt werden, sind unten aufgeführt.
 
 | **Kanal** | **Was ist es?** | **Wie wird es erstellt?** |
 |---|---|---|
@@ -40,9 +40,9 @@ Standardmäßig [!DNL Google] richtet acht verschiedene Kanäle ein. Die Regeln,
 
 {style="table-layout:auto"}
 
-## Wie kann ich diese Kanalgruppierungen in meiner Data Warehouse neu erstellen? {#recreate}
+## Wie kann ich diese Kanalgruppierungen in meiner Data Warehouse nachstellen? {#recreate}
 
-Da Sie wissen, dass Kanäle nur eine Kombination aus Quellen und Medien sind, ist es einfach, diese Gruppierungen in Ihrer Data Warehouse in drei Schritten neu zu erstellen.
+Da Sie wissen, dass Kanäle nur eine Kombination von Quellen und Medien sind, ist es einfach, diese Gruppierungen in Ihrem Data Warehouse in drei Schritten neu zu erstellen.
 
 1. **Aktivieren Sie Ihre[!DNL Google ECommerce]Integration**
 
@@ -54,15 +54,15 @@ Da Sie wissen, dass Kanäle nur eine Kombination aus Quellen und Medien sind, is
 
    Wenn Sie [!DNL Google Analytics] Pro und Ihre eigenen Kanäle erstellt haben, möchten Sie Ihre spezifischen Regeln zur Zuordnungstabelle hinzufügen, bevor Sie die Datei in hochladen. [!DNL Commerce Intelligence].
 
-   Einbinden in Ihre Data Warehouse als [Datei-Upload](../importing-data/connecting-data/using-file-uploader.md).
+   Einbinden in Ihre Data Warehouse as a [Datei-Upload](../importing-data/connecting-data/using-file-uploader.md).
 
    ![](../../assets/Setting_Primary_Keys.png)
 
 1. **Beziehung herstellen zwischen[!DNL Google ECommerce]und Mappings-Datei-Upload**
 
-   So erstellen Sie eine Beziehung zwischen[!DNL Google ECommerce] und der Zuordnungstabelle, [Support-Anfrage senden](../../guide-overview.md#Submitting-a-Support-Ticket) an Ihr Data Analyst-Team weiterleiten und auf dieses Thema verweisen. Der Analyst erstellt eine neue berechnete Spalte mit dem Namen **Kanal** in der EG-Commerce-Tabelle. **Nach einem vollständigen Aktualisierungszyklus**, kann diese Spalte in einer `Filter` oder `Group by`.
+   So erstellen Sie eine Beziehung zwischen[!DNL Google ECommerce] und der Zuordnungstabelle, [Support-Anfrage senden](../../guide-overview.md#Submitting-a-Support-Ticket) an Ihr Data Analyst-Team weiterleiten und auf dieses Thema verweisen. Der Analyst erstellt eine neue berechnete Spalte mit dem Namen **Kanal** in der EG-Commerce-Tabelle. **Nach einem vollständigen Aktualisierungszyklus** festgelegt ist, kann diese Spalte in einer `Filter` oder `Group by`.
 
-Sie haben jetzt [!DNL Google Analytics Channel] -Gruppierungen in Ihrer Data Warehouse verwenden, sodass Sie Ihre Daten aus einer neuen Perspektive analysieren können:
+Sie haben jetzt [!DNL Google Analytics Channel] -Gruppierungen in Ihrer Data Warehouse verwenden, was bedeutet, dass Sie Ihre Daten aus einer neuen Perspektive analysieren können:
 
 ![Segmentieren der Metrik Anzahl Bestellungen nach Kanal](../../assets/GA_Channel_Gif.gif)
 

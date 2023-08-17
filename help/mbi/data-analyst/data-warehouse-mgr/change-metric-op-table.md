@@ -16,12 +16,12 @@ ht-degree: 0%
 In bestimmten Fällen können Sie die Datentabelle ändern, mit der eine Metrik ihren Vorgang ausführt. Wenn Sie beispielsweise eine neue Benutzertabelle haben, möchten Sie Ihre benutzerbezogenen Metriken aus dem  `Users\_Old` -Tabelle, die verwendet werden soll `Users\_New` -Tabelle.
 
 1. Navigieren Sie zu **[!UICONTROL Data]** > **[!UICONTROL Metrics]**
-1. Klicken **[!UICONTROL Edit]** neben der Metrik, für die Sie die `operational` Tabelle.
+1. Klicks **[!UICONTROL Edit]** neben der Metrik, für die Sie die `operational` Tabelle.
 1. Klicken Sie im Editor auf **[!UICONTROL Change]**.
 
    ![](../../assets/change-metrics-1.png)
 1. Wählen Sie die neue Tabelle aus, auf der diese Metrik basieren soll.
-1. Ordnen Sie vorhandene Datendimensionen den entsprechenden Dimensionen in der neuen Tabelle zu. Wenn Sie beispielsweise eine Spalte mit dem Namen `User's registration date`wählen Sie einfach aus, welche Spalte in der neuen Tabelle die gleichen Datumsdaten enthält. (Siehe nächsten Schritt, wenn die neue Tabelle keine übereinstimmenden Spalten enthält)
+1. Ordnen Sie die vorhandenen Datendimensionen den entsprechenden Dimensionen in der neuen Tabelle zu. Wenn Sie beispielsweise eine Spalte mit dem Namen `User's registration date`wählen Sie einfach aus, welche Spalte in der neuen Tabelle die gleichen Datumsdaten enthält. (Siehe nächsten Schritt, wenn die neue Tabelle keine übereinstimmenden Spalten enthält)
 
    ![](../../assets/change-metrics-2.png)
 

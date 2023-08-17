@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Etwas Seltsames gefunden in [[!DNL Google Adwords]](../integrations/google-adwords.md)? Um das Problem zu identifizieren, müssen Sie Ihre Daten untersuchen. Dies kann durch Exportieren Ihrer [!DNL Google Adwords] Daten an `.csv` -Datei.
 
-1. Herunterladen und Installieren der kostenlosen [[!DNL Google Adwords] Editor](https://ads.google.com/home/tools/ads-editor/) Anwendung.
+1. Herunterladen und Installieren der kostenlosen [[!DNL Google Adwords] Bearbeiter](https://ads.google.com/home/tools/ads-editor/) Anwendung.
 
-1. Nachdem die Installation abgeschlossen ist, wählen Sie `Add Count` im `Add/manage accounts` Bereich.
+1. Nachdem die Installation abgeschlossen ist, wählen Sie `Add Count` im `Add/manage accounts` Bedienfeld.
 
 1. Geben Sie Ihre [!DNL Google Adwords] Kontoinformationen.
 

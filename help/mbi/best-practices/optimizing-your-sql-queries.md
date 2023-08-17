@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # SQL-Abfragen optimieren
 
-Die [!DNL SQL Report Builder] ermöglicht es Ihnen, diese Abfragen jederzeit abzufragen und zu wiederholen. Dies ist nützlich, wenn Sie eine Abfrage ändern müssen, ohne warten zu müssen, bis ein Aktualisierungszyklus abgeschlossen ist, bevor Sie eine von Ihnen erstellte Spalte oder einen erstellten Bericht realisieren können, die aktualisiert werden muss.
+Die [!DNL SQL Report Builder] ermöglicht es Ihnen, diese Abfragen jederzeit abzufragen und zu wiederholen. Dies ist nützlich, wenn Sie eine Abfrage ändern müssen, ohne auf die Fertigstellung eines Aktualisierungszyklus warten zu müssen, bevor Sie eine von Ihnen erstellte Spalte oder einen erstellten Bericht realisieren können.
 
-Vor der Ausführung einer Abfrage [[!DNL Commerce Intelligence] Kostenschätzungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Kosten berücksichtigt die Dauer und die Anzahl der Ressourcen, die zur Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch betrachtet werden oder wenn die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] -Beschränkungen, schlägt die Abfrage fehl. Zur Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), wodurch sichergestellt wird, dass Sie möglichst rationalisierte Abfragen erstellen, empfiehlt Adobe Folgendes.
+Vor der Ausführung einer Abfrage [[!DNL Commerce Intelligence] Kostenschätzungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Kosten berücksichtigt die Dauer und die Anzahl der Ressourcen, die zur Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch betrachtet werden oder wenn die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] -Beschränkungen, schlägt die Abfrage fehl. Zur Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), wodurch Sie die bestmöglichen Abfragen erstellen können, empfiehlt Adobe Folgendes.
 
 ## Verwenden von SELECT oder Auswählen aller Spalten
 
@@ -33,7 +33,7 @@ Daher empfiehlt Adobe, die Verwendung von `SELECT *` soweit möglich und nur die
 
 Externe Joins wählen die Gesamtheit der beiden Tabellen aus, die verbunden werden sollen, wodurch sich die Rechenkosten der Abfrage erhöhen. Das bedeutet, dass die Ausführung Ihrer Abfrage länger dauert und eher fehlschlägt, da es länger dauern kann, bis die Ergebnisse zurückgegeben werden.
 
-Anstatt diesen Join-Typ zu verwenden, sollten Sie einen inneren oder linken Join verwenden. Inner-Joins geben Ergebnisse nur dann zurück, wenn eine Spaltenübereinstimmung zwischen Tabellen vorliegt (z. B. `order_id` ist in beiden Fällen vorhanden: `customers` und `orders` Tabelle). Linke Joins geben alle Ergebnisse aus der linken (ersten) Tabelle zusammen mit den entsprechenden Ergebnissen in der rechten (zweiten) Tabelle zurück.
+Anstatt diesen Join-Typ zu verwenden, sollten Sie einen inneren oder linken Join verwenden. Inner-Joins geben Ergebnisse nur dann zurück, wenn eine Spaltenübereinstimmung zwischen Tabellen vorliegt (z. B. `order_id` ist in beiden Fällen vorhanden `customers` und `orders` Tabelle). Linke Joins geben alle Ergebnisse aus der linken (ersten) Tabelle zusammen mit den entsprechenden Ergebnissen in der rechten (zweiten) Tabelle zurück.
 
 Sehen Sie sich an, wie Sie eine FULL OUTER JOIN-Abfrage umschreiben können:
 
@@ -47,9 +47,9 @@ Diese Abfragen sind in jeder Hinsicht identisch, mit Ausnahme des von ihnen verw
 
 ## Verwenden mehrerer Joins
 
-Sie können zwar mehrere Joins in Ihre Abfrage einschließen, aber beachten Sie, dass dies die Kosten der Abfrage erhöhen kann. Damit die Kostenstelle nicht erreicht wird, empfiehlt Adobe, nach Möglichkeit mehrere Joins zu vermeiden.
+Sie können zwar mehrere Joins in Ihre Abfrage einschließen, aber beachten Sie, dass dies die Kosten der Abfrage erhöhen kann. Um die Kostenschwelle nicht zu erreichen, empfiehlt Adobe, nach Möglichkeit mehrere Joins zu vermeiden.
 
-## Verwenden von Filtern
+## Filter verwenden
 
 Verwenden Sie nach Möglichkeit Filter. `WHERE` und `HAVING` -Klauseln filtern Ihre Ergebnisse und geben Ihnen nur die Daten, die Sie wirklich benötigen.
 
@@ -63,7 +63,7 @@ Wenn Sie beim Ausführen eines Joins einen Filter verwenden, achten Sie darauf, 
 
 {style="table-layout:auto"}
 
-## Verwenden von Operatoren
+## Benutzer verwenden
 
 Erwägen Sie beim Schreiben von Abfragen die Verwendung der &quot;kostengünstigsten&quot; Operatoren. Jede Abfrage hat einen Rechenaufwand, der durch die Funktionen, Operatoren und Filter bestimmt wird, aus denen die Abfrage besteht. Manche Betreiber erfordern weniger Rechenaufwand, was sie billiger macht als andere.
 
@@ -99,6 +99,6 @@ Es kann einige Situationen geben, in denen dieser Ansatz nicht mit dem übereins
 
 {style="table-layout:auto"}
 
-## Aufbrechen
+## Aufwischen
 
 Die beste Möglichkeit, SQL zu schreiben - und dies effizient zu tun - ist durch Testen und Fehler. Um herauszufinden, was für Sie am besten geeignet ist, erstellen Sie einige Berichte nur mit dem SQL-Editor.

@@ -15,26 +15,26 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dieses Thema enthält Anweisungen für Clients, die die ursprüngliche Architektur und die neue Architektur verwenden. Sie befinden sich auf der [neue Architektur](../../administrator/account-management/new-architecture.md) Wenn Sie den Bereich &quot;Datenansichten&quot;nach Auswahl von &quot;Data Warehousen verwalten&quot;in der Hauptsymbolleiste verfügbar haben.
+>Dieses Thema enthält Anweisungen für Clients, die die ursprüngliche Architektur und die neue Architektur verwenden. Sie befinden sich auf der [neue Architektur](../../administrator/account-management/new-architecture.md) Wenn Sie den Bereich &quot;Data Warehouse-Ansichten&quot;verfügbar haben, nachdem Sie in der Hauptsymbolleiste &quot;Daten verwalten&quot;ausgewählt haben.
 
 Wenn Sie Geld für Online-Werbung ausgeben, möchten Sie Ihre Rendite aus diesen Ausgaben nachverfolgen und datenbasierte Entscheidungen über weitere Investitionen treffen. In diesem Thema erfahren Sie, wie Sie ein Dashboard einrichten, das Ihre Kanalanalyse verfolgt - einschließlich des ROI insgesamt und nach Kampagne.
 
 ![](../../assets/Marketing_dashboard_example.png)
 
-Bevor Sie beginnen, möchten Sie Ihre [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)und [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) und fügen Sie zusätzliche Daten zu den Ausgaben für Online-Werbung hinzu. Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
+Bevor Sie beginnen, möchten Sie Ihre [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md), [!DNL [Adwords]](../importing-data/integrations/google-adwords.md), und [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md) und fügen Sie zusätzliche Daten zu den Ausgaben für Online-Werbung hinzu. Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Konsolidierte Tabellen
 
 **Originalarchitektur:** Zusammenführen Ihrer Ausgaben aus verschiedenen Quellen, z. B. [!DNL Facebook Ads] oder [!DNL Google Adwords]empfiehlt Adobe, eine **konsolidierte Tabelle** der Werbeausgaben. Sie benötigen einen Analysten, um diesen Schritt für Sie abzuschließen. Wenn nicht, [Support-Anfrage einreichen](../../guide-overview.md#Submitting-a-Support-Ticket) mit dem Betreff `[MARKETING ROI ANALYSIS]`, und ein Analytiker erstellt diese Tabelle.
 
-**Neue Architektur:** Sie können dem Beispiel in [Diese Analysebibliothek](../../data-analyst/data-warehouse-mgr/create-dw-views.md) Thema. Konsolidierte Tabellen werden jetzt als Data Warehousen-Ansichten für die neue Architektur bezeichnet.
+**Neue Architektur:** Sie können dem Beispiel in [Diese Analysebibliothek](../../data-analyst/data-warehouse-mgr/create-dw-views.md) Thema. Konsolidierte Tabellen werden jetzt als Data Warehouse-Ansichten in der neuen Architektur bezeichnet.
 
 ## Berechnete Spalten
 
 Zu erstellende Spalten
 
 * **`Consolidated Digital Ad Spend`** table
-* **`Campaign name`** von einem Adobe Analyst als Teil Ihrer **[MARKETING-ROI-ANALYSE]** Ticket
+* **`Campaign name`** von einem Adobe-Analyst als Teil Ihrer **[MARKETING-ROI-ANALYSE]** Ticket
 
 **Originalarchitekturen und neue Architekturen:**
 
@@ -52,16 +52,16 @@ Zu erstellende Spalten
       * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
 
    * **`Order's GA medium`**
-      * Wählen Sie eine Definition aus: Verbundene Spalte
+      * Definition auswählen: Verbundene Spalte
       * Wählen Sie eine [!UICONTROL table]: `ecommerce####`
       * Wählen Sie eine [!UICONTROL column]: `medium`
-      * [!UICONTROL Path]: sales_flach_order.increment_id = ecommerce###.transactionId
+      * [!UICONTROL Path]: sales_flach_order.inkrement_id = ecommerce###.transactionId
 
    * **`Order's GA source`**
-      * Wählen Sie eine Definition aus: Verbundene Spalte
+      * Definition auswählen: Verbundene Spalte
       * Wählen Sie eine [!UICONTROL table]: `ecommerce####`
       * Wählen Sie eine [!UICONTROL column]: `source`
-      * [!UICONTROL Path]: sales_flach_order.increment_id = ecommerce###.transactionId ^
+      * [!UICONTROL Path]: sales_flach_order.inkrement_id = ecommerce###.transactionId ^
 
 * **`customer_entity`** table
 * **`Customer's first order GA campaign`**
@@ -99,7 +99,7 @@ Zu erstellende Spalten
    * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA source`**
-   * Wählen Sie eine Definition aus: Verbundene Spalte
+   * Definition auswählen: Verbundene Spalte
    * Wählen Sie eine [!UICONTROL table]: `customer_entity`
    * Wählen Sie eine [!UICONTROL column]: `Customer's first order GA source`
    * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`

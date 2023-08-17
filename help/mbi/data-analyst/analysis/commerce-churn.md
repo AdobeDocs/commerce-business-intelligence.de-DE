@@ -42,7 +42,7 @@ Zu erstellende Spalten
 ## Metriken
 
 * **Neue Kunden (nach Datum der ersten Bestellung)**
-   * Kunden, die gezählt werden
+   * Zählte Kunden
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Zu erstellende Spalten
 * [!UICONTROL Filter]:
 
 * **Neue Kunden (nach letztem Bestelldatum)**
-   * Kunden, die gezählt werden
+   * Zählte Kunden
 
   >[!NOTE]
   >
@@ -99,7 +99,7 @@ Zu erstellende Spalten
 * *`Group by`:`Customer's order number`*
 * *`Chart Type`:`Column`*
 
-Unten finden Sie einige gängige Konvertierungen vom Typ Monat > Sekunde , Google stellt jedoch weitere Werte bereit, darunter Konversionen vom Typ Woche > Sekunden für alle benutzerdefinierten Werte, nach denen Sie suchen.
+Unten finden Sie einige gängige Konvertierungen vom Typ Monat > Sekunde , Google stellt jedoch weitere Werte bereit, darunter Konversionen vom Typ Woche > Sekunden für alle benutzerdefinierten Werte, nach denen Sie suchen können.
 
 | **Monate** | **Sekunden** |
 |---|---|

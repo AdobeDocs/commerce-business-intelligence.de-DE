@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Verringern der Verarbeitungszeit für den Aktualisierungszyklus
 
-[!DNL Adobe Commerce Intelligence] synchronisiert täglich mit Ihrer Datenbank, um neue Daten zu replizieren, sodass in Ihren Dashboards immer die neuesten Informationen angezeigt werden.
+[!DNL Adobe Commerce Intelligence] synchronisiert täglich mit Ihrer Datenbank, um neue Daten zu replizieren, sodass Ihre Dashboards stets die neuesten Informationen anzeigen.
 
 Viele Faktoren können zu einer bereits langen Aktualisierungszeit beitragen. Bestimmte Replikationsmethoden, höhere Wiederaufnahmefrequenzen und die Anzahl der Dashboards und Diagramme sind nur ein paar Mitwirkende. In diesen Themen werden einige Best Practices zur Verkürzung der Aktualisierungszeiten besprochen.
 
@@ -21,11 +21,11 @@ Viele Faktoren können zu einer bereits langen Aktualisierungszeit beitragen. Be
 
 In einer Datenbanktabelle können Datenspalten mit veränderlichen Werten vorhanden sein. Beispiel: in einer **Bestellungen** Tabelle gibt es möglicherweise eine Spalte namens **status**. Wenn eine Bestellung ursprünglich in die Datenbank geschrieben wurde, kann die Statusspalte den Wert enthalten `pending`. Die Bestellung wird in Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) mit diesem `pending` -Wert.
 
-Die veränderlichen Spalten müssen [auf aktualisierte Werte erneut geprüft werden](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) über einen bestimmten Zeitraum. Standardmäßig [!DNL Commerce Intelligence] Diese Spalten werden bei jeder Aktualisierung erneut überprüft. Wenn jedoch eine große Datenmenge erneut geprüft und repliziert werden muss, kann dies die Aktualisierungszeit beeinträchtigen. Anstatt bei jeder Aktualisierung eine erneute Überprüfung durchzuführen, empfiehlt Adobe, die Wiederholungshäufigkeit auf täglich, wöchentlich oder monatlich festzulegen.
+Die veränderlichen Spalten müssen [auf aktualisierte Werte erneut geprüft werden](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) über einen bestimmten Zeitraum. Standardmäßig ist [!DNL Commerce Intelligence] Diese Spalten werden bei jeder Aktualisierung erneut überprüft. Wenn jedoch eine große Datenmenge erneut geprüft und repliziert werden muss, kann dies die Aktualisierungszeit beeinträchtigen. Anstatt bei jeder Aktualisierung eine erneute Überprüfung durchzuführen, empfiehlt Adobe, die Wiederholungshäufigkeit auf täglich, wöchentlich oder monatlich festzulegen.
 
 ## Inkrementelle Replikationsmethoden verwenden
 
-Wie bereits erwähnt, stehen lange Aktualisierungszeiten in direktem Zusammenhang mit der Menge der Daten, die neu überprüft und repliziert werden müssen. [Inkrementelle Replikationsmethoden](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md) kann die Menge der während des Aktualisierungszyklus verarbeiteten Daten erheblich verringern. Wenn möglich, empfiehlt Adobe die Verwendung dieser Methoden oder die Änderung Ihrer Datenbank, um eine inkrementelle Methode zu unterstützen.
+Wie bereits erwähnt, stehen lange Aktualisierungszeiten in direktem Zusammenhang mit der Menge der Daten, die neu überprüft und repliziert werden müssen. [Inkrementelle Replikationsmethoden](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md) kann die Menge der während des Aktualisierungszyklus verarbeiteten Daten erheblich verringern. Adobe empfiehlt nach Möglichkeit die Verwendung dieser Methoden oder die Änderung Ihrer Datenbank, um eine inkrementelle Methode zu unterstützen.
 
 ## Nicht verwendete Diagramme aus Dashboards entfernen
 
@@ -41,6 +41,6 @@ Seit [!DNL Commerce Intelligence] Führt nur Cache-Vorgänge für Diagramme in e
 
 Zusätzlich zur Neubewertung von Wiederholungsfrequenzen, Replikationsmethoden und der Nützlichkeit von Diagrammen können Sie auch [Datenbank für Analyse optimieren](../best-practices/opt-db-analysis.md).
 
-## Aufbrechen
+## Aufwischen
 
-Wenn Ihre Aktualisierungszeit auch nach der Implementierung dieser Empfehlungen immer noch langsam scheint [das Supportteam kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Wenn Ihre Aktualisierungszeit auch nach der Implementierung dieser Empfehlungen immer noch langsam scheint, [das Supportteam kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

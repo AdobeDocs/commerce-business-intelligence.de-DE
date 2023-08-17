@@ -17,7 +17,7 @@ ht-degree: 0%
 * [Was ist der Unterschied zwischen einer regelmäßigen und erzwungenen Aktualisierung?](#regularforcedupdates)
 * [Warum dauert der Aktualisierungszyklus lange?](#updatecycletime)
 * [Kann ich benachrichtigt werden, wenn ein Aktualisierungszyklus abgeschlossen ist?](#notifyupdate)
-* [Warum [!DNL Google ECommerce] Daten, die sich von meiner Datenbank unterscheiden?](#ecommdatabase)
+* [Warum ist [!DNL Google ECommerce] andere Daten als meine Datenbank?](#ecommdatabase)
 * [Wie kann ich eine Datendiskrepanz beheben?](#datadiscrepancy)
 
 ## Warum haben sich meine Daten geändert? {#datachange}
@@ -38,9 +38,9 @@ Eine bereits lange Aktualisierungszeit kann durch zahlreiche Faktoren verlänger
 
 Wenn eine Aktualisierung ausgeführt wird, befindet sich ein Link auf der `Connections` -Seite, mit der Sie eine E-Mail-Benachrichtigung anfordern können, sobald der Zyklus abgeschlossen ist.
 
-## Warum[!DNL Google ECommerce]Daten, die sich von meiner Datenbank unterscheiden? {#ecommdatabase}
+## Warum ist[!DNL Google ECommerce]andere Daten als meine Datenbank? {#ecommdatabase}
 
-Diskrepanzen zwischen [!DNL Google Analytics] und Ihre Datenbank kann aus verschiedenen Gründen auftreten. Das Tracking, das nicht ordnungsgemäß aktiviert wurde, Benutzer, die eine Inkognito besuchen, und Klick-Ereignisse, die nicht ordnungsgemäß funktionieren, sind nur einige Beispiele. Wenn Ihr Umsatz und Ihre Bestellungen nicht richtig aussehen, [siehe dieses Thema](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) um ein Problem zu diagnostizieren.
+Unterschiede zwischen [!DNL Google Analytics] und Ihre Datenbank kann aus verschiedenen Gründen auftreten. Das Tracking, das nicht ordnungsgemäß aktiviert wurde, Benutzer, die eine Inkognito besuchen, und Klick-Ereignisse, die nicht ordnungsgemäß funktionieren, sind nur einige Beispiele. Wenn Ihr Umsatz und Ihre Bestellungen nicht richtig aussehen, [siehe dieses Thema](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) um ein Problem zu diagnostizieren.
 
 ## Wie kann ich eine Datendiskrepanz beheben? {#datadiscrepancy}
 

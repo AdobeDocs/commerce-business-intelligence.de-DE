@@ -23,7 +23,7 @@ In **[!DNL Manage Data** > **Dashboards]** können Sie Benutzerberechtigungen f�
 
 1. [Verwalten von Dashboard-Berechtigungen](#userperm)
 
-1. [Ändern des Standard-Dashboards](#default)
+1. [Standard-Dashboard ändern](#default)
 
 1. [Löschen von Dashboards](#delete)
 
@@ -37,7 +37,7 @@ So benennen Sie ein Dashboard um:
 
 ## Verwalten von Benutzerberechtigungen {#userperm}
 
-Es gibt drei Zugriffsebenen in [!DNL Commerce Intelligence] für Dashboards - `View`, `Edit`und `None`.
+Es gibt drei Zugriffsebenen in [!DNL Commerce Intelligence] für Dashboards - `View`, `Edit`, und `None`.
 
 * `View` ermöglicht ausgewählten Benutzern, das Dashboard anzuzeigen, es jedoch nicht zu bearbeiten. Benutzer können auch die Größe von Diagrammen ändern, Daten exportieren und die Diagramme mithilfe der Funktion Speichern unter in ihre eigenen Dashboards kopieren, sofern sie über Standard- oder Administratorberechtigungen verfügen.
 
@@ -47,7 +47,7 @@ Es gibt drei Zugriffsebenen in [!DNL Commerce Intelligence] für Dashboards - `V
 
 Benutzerberechtigungen können auf zwei Arten geändert werden - für alle Benutzer oder für einzelne Benutzer.
 
-1. *So ändern Sie die Berechtigungen aller Benutzer:* Verwenden Sie das Dropdown-Menü neben dem `Set all users' permissions to…` Beschriftung.
+1. *So ändern Sie die Berechtigungen aller Benutzer:* Verwenden Sie das Dropdown-Menü neben `Set all users' permissions to…` Beschriftung.
 
 1. *So ändern Sie die Berechtigungen einzelner Benutzer:* Verwenden Sie das Dropdown-Menü neben dem Namen des Benutzers, um die gewünschte Zugriffsebene festzulegen.
 

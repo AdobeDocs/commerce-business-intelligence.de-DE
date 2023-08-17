@@ -27,7 +27,7 @@ Mit diesen Berechtigungen können Benutzer bestimmte Aktionen durchführen oder 
 
 |   | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
-| **Benutzer erstellen/verwalten** | ✔ |   |   |
+| **Benutzer erstellen/verwalten** | ms |   |   |
 | **E-Mail-Zusammenfassungen erstellen** | ✔ | ✔ |   |
 | **Dashboards erstellen/bearbeiten/freigeben** | ✔ | ✔ |   |
 | **Anzeigen von Dashboards** | ✔ | ✔ | ✔ |
@@ -43,7 +43,7 @@ Mit diesen Berechtigungen können Benutzer bestimmte Aktionen durchführen oder 
 | **Liste der abhängigen Berichte erstellen** | ✔ |   |   |
 | **Zugriffssystemzusammenfassung** | ✔ |   |   |
 | **Zeitzoneneinstellungen aufrufen** | ✔ |   |   |
-| **Abrechnung des Zugriffs** | ✔ | ✔** |   |
+| **Zugriffsabrechnung** | ✔ | ✔** |   |
 | **Support kontaktieren** | ✔ | ✔ | ✔ |
 
 {style="table-layout:auto"}
@@ -54,7 +54,7 @@ Mit diesen Berechtigungen können Benutzer bestimmte Aktionen durchführen oder 
 >
 >**[!UICONTROL Standard] _-Benutzer können mit einer zusätzlichen Berechtigungseinstellung auf die Abrechnung zugreifen._
 >
->**[!UICONTROL Read-Only]** Benutzer können nur _Ansicht_ Dashboards, die für sie freigegeben wurden; Sie können keine Elemente in erstellen oder bearbeiten [!DNL Commerce Intelligence], noch können sie nach neuen Dashboards suchen und zu ihrem Konto hinzufügen. Adobe empfiehlt, einen bestimmten Satz von Dashboards für **[!UICONTROL Read-Only]** Benutzer, die Sie oder ein anderes Mitglied Ihres Teams unterhalten. Klonen Sie keine Dashboards.
+>**[!UICONTROL Read-Only]** Benutzer können nur _Ansicht_ Dashboards, die für sie freigegeben wurden; sie können keine Elemente in erstellen oder bearbeiten [!DNL Commerce Intelligence], noch können sie nach neuen Dashboards suchen und zu ihrem Konto hinzufügen. Adobe empfiehlt, einen bestimmten Satz von Dashboards für **[!UICONTROL Read-Only]** Benutzer, die Sie oder ein anderes Mitglied Ihres Teams unterhalten. Klonen Sie keine Dashboards.
 
 ## Zusätzliche Berechtigungen: Rechnungsstellung und technische {#billingtech}
 
@@ -64,14 +64,14 @@ Neben den allgemeinen Berechtigungsstufen gibt es auch zwei weitere Benutzerbeze
 
 `Billing` -Benutzer haben Zugriff auf die Rechnungsseite und können Zahlungsinformationen ändern. Sie können auch von Adobe für Abrechnungsfragen kontaktiert werden.
 
-`Admin` -Benutzer haben Zugriff auf `Billing` standardmäßig, aber `Standard` Benutzer können auch darauf zugreifen, wenn sie `Billing` in ihrem Profil aktiviert wurde.
+`Admin` -Benutzer haben Zugriff auf `Billing` standardmäßig, aber `Standard` Benutzer können auch darauf zugreifen, wenn sie `Billing` aktivieren, das für das jeweilige Profil ausgewählt wurde.
 
 ![Abrechnung](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### Technisch
 
-`Technical` -Benutzer haben keine spezifischen Berechtigungen. Mit dieser Einstellung wird nur ein technischer Kontakt innerhalb Ihres Unternehmens gekennzeichnet. Bei technischen Fragen wenden Sie sich bitte an diese Anwender.
+`Technical` -Benutzer haben keine spezifischen Berechtigungen. Mit dieser Einstellung wird nur ein technischer Kontakt innerhalb Ihres Unternehmens gekennzeichnet. Diese Benutzer werden von Adobe unter Umständen bei technischen Fragen kontaktiert.
 
 `Admin` Benutzer können ihrem Konto neue Benutzer hinzufügen, indem sie auf **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** und den Eingabeaufforderungen folgen. Nachdem der Benutzer in [!DNL Commerce Intelligence], erhält die Glückliche, die Sie einladen, E-Mail-Anweisungen zum Abschluss des Kontoeinrichtungsprozesses.
 
-Sie können jederzeit `Admins` Alle Benutzer in ihrem Konto durch Klicken auf **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. Auf dieser Seite werden die Berechtigungen des Benutzers sowie die Metriken und Dashboards angezeigt, auf die er zugreifen kann.
+jederzeit `Admins` Alle Benutzer in ihrem Konto durch Klicken auf **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**. Auf dieser Seite werden die Berechtigungen des Benutzers sowie die Metriken und Dashboards angezeigt, auf die er zugreifen kann.

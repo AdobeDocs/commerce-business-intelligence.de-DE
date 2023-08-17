@@ -15,17 +15,17 @@ ht-degree: 0%
 
 Bei der Analyse Ihrer Daten ist es hilfreich, Daten aus verschiedenen Quellen zu bündeln. Möchten Sie den Umsatz nach Akquisequelle gruppieren und die Daten aus Ihrer `orders` Tabelle und [!DNL Google Analytics] Daten? Vielleicht möchten Sie den Umsatz nach Kundengeschlecht gruppieren oder ein Kundenattribut zu Transaktionsdaten für die Segmentierung hinzufügen. In diesem Thema wird erläutert, wie man genau das macht.
 
-Bevor Sie beginnen, empfiehlt Adobe, die [Handbuch zu berechneten Spaltentypen](../../data-analyst/data-warehouse-mgr/calc-column-types.md) für Informationen zu den Spaltentypen, die Sie im Data Warehousen-Manager erstellen können, sowie deren Definitionen und Beispiele.
+Bevor Sie beginnen, empfiehlt Adobe, die [Handbuch zu berechneten Spaltentypen](../../data-analyst/data-warehouse-mgr/calc-column-types.md) für Informationen zu den Spaltentypen, die Sie im Data Warehouse-Manager erstellen können, sowie deren Definitionen und Beispiele.
 
-1. Um zu beginnen, klicken Sie auf **[!DNL Manage Data > Data Warehouse]**.
+1. Klicken Sie zunächst auf **[!DNL Manage Data > Data Warehouse]**.
 
 1. Klicken Sie auf die Tabelle, in der Sie eine Spalte erstellen möchten. Wenn Sie beispielsweise eine `Customer Gender` für die Umsatzsegmentierung verwenden, wählen Sie die `sales_flat_order` Tabelle.
 
 1. Das Tabellenschema wird angezeigt. Klicken **[!UICONTROL Create New Column]**.
 
-1. Geben Sie Ihrer Spalte einen Namen. Beispiel: `Customer Gender`.
+1. Geben Sie Ihrer Spalte einen Namen. Beispiel, `Customer Gender`.
 
-1. Wählen Sie die Definition für die Spalte aus. Hier ist die [Handbuch zu berechneten Spaltentypen](../data-warehouse-mgr/calc-column-types.md) kommt praktisch!
+1. Wählen Sie die Spaltendefinition aus. Dies ist der Punkt, an dem die [Handbuch zu berechneten Spaltentypen](../data-warehouse-mgr/calc-column-types.md) kommt praktisch!
 
 1. Für bestimmte Spaltentypen sind etwas mehr Informationen erforderlich, um die Spalte korrekt zu erstellen:
 
@@ -43,7 +43,7 @@ Wenn Sie eine `One to Many` (verbunden) oder `Many to One` (aggregierte) Spalte,
 
 * Klicken Sie abschließend auf **[!UICONTROL Save]**.
 
-Ihre neue Spalte wird in der aktuellen Tabelle mit einer `Pending` Status. Nach Abschluss der nächsten Aktualisierung ist Ihre Spalte für die Verwendung in Metriken und Berichten verfügbar.
+Ihre neue Spalte wird in der aktuellen Tabelle mit einer `Pending` -Status. Nach Abschluss der nächsten Aktualisierung ist Ihre Spalte für die Verwendung in Metriken und Berichten verfügbar.
 
 ## Praktische Referenzzuordnung {#map}
 

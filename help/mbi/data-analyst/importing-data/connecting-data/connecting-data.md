@@ -1,6 +1,6 @@
 ---
 title: Daten verbinden
-description: Erfahren Sie, wie Sie die Tabellen durchsuchen, die im Data Warehouse Manager für die Synchronisierung verfügbar sind.
+description: Erfahren Sie, wie Sie die Tabellen durchsuchen, die im Data Warehouse-Manager synchronisiert werden können.
 exl-id: 94beba8b-6a86-4af9-87fb-96b1cf8f8fa2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Daten verbinden
 
-In [!DNL Adobe Commerce Intelligence], werden Datenquellen aufgerufen. `integrations`. Nach `integration` erfolgreich verbunden ist, können Sie die Tabellen durchsuchen, die im Data Warehouse Manager für die Synchronisierung verfügbar sind.
+In [!DNL Adobe Commerce Intelligence], werden Datenquellen aufgerufen. `integrations`. Nach `integration` erfolgreich verbunden ist, können Sie die Tabellen durchsuchen, die für die Synchronisierung im Data Warehouse-Manager verfügbar sind.
 
 Integrationen werden hinzugefügt und mithilfe der `Connections` Seite, auf die durch Klicken auf **[!UICONTROL Manage Data** > **Connections]**. Hier sehen Sie:
 
@@ -23,7 +23,7 @@ Integrationen werden hinzugefügt und mithilfe der `Connections` Seite, auf die 
 
 * status ([!DNL Google Analytics] und [!DNL Data Import API] Verbindungen haben leere Statusfelder)
 
-* das letzte Mal, dass ein Verbindungstest (`Last Connection Started` Spalte) ausgeführt wurde
+* beim letzten Verbindungstest (`Last Connection Started` Spalte) ausgeführt wurde
 
 ![data\_sources\_table.png](../../../assets/Data_Sources_Table.png)
 
@@ -35,9 +35,9 @@ Es gibt vier Möglichkeiten, Ihre Daten zu integrieren [!DNL Commerce Intelligen
 
 ![Database\_icons.jpg](../../../assets/Database_icons.jpg)
 
-[!DNL Commerce Intelligence] unterstützt SQL-basierte und NoSQL-Datenbanken wie [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [Microsoft SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md)und [PostgreSQL](../integrations/postgresql.md).
+[!DNL Commerce Intelligence] unterstützt SQL-basierte und NoSQL-Datenbanken wie [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [MICROSOFT SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md), und [PostgreSQL](../integrations/postgresql.md).
 
-Während Sie Ihre Datenbank direkt mit [!DNL Commerce Intelligence] Bei Verwendung von Datenbankberechtigungen empfiehlt Adobe die Verwendung einer bewährten Verschlüsselungsmethode wie einem SSH-Tunnel. Dadurch wird sichergestellt, dass Ihre Daten sicher und sicher bleiben, während sie in Ihre Data Warehouse gelangen.
+Während Sie Ihre Datenbank direkt mit [!DNL Commerce Intelligence] Adobe empfiehlt die Verwendung einer bewährten Verschlüsselungsmethode wie eines SSH-Tunnels. Dadurch wird sichergestellt, dass Ihre Daten sicher und sicher bleiben, während sie in Ihre Data Warehouse gelangen.
 
 Abhängig von der Verbindungsmethode und dem Datenbanktyp kann ein gewisser technischer Sachverstand erforderlich sein, um die Einrichtung abzuschließen.
 
@@ -45,21 +45,21 @@ Abhängig von der Verbindungsmethode und dem Datenbanktyp kann ein gewisser tech
 
 ![](../../../assets/SaaS_icons.jpg)spree-commerce-logo.png
 
-`SaaS` Integrationen sind Dienste wie [[!DNL Google Adwords]](../integrations/google-adwords.md), [[!DNL Salesforce]](../integrations/salesforce.md)und [[!DNL Zendesk]](../integrations/zendesk.md). Da Daten von Drittanbietern auf dem Server des Anbieters gespeichert sind, können Sie mit den Daten in Ihrer Datenbank nicht direkt darauf zugreifen.
+`SaaS` Integrationen sind Dienste wie [[!DNL Google Adwords]](../integrations/google-adwords.md), [[!DNL Salesforce]](../integrations/salesforce.md), und [[!DNL Zendesk]](../integrations/zendesk.md). Da Daten von Drittanbietern auf dem Server des Anbieters gespeichert sind, können Sie mit den Daten in Ihrer Datenbank nicht direkt darauf zugreifen.
 
 Normalerweise richten Sie eine Integration in [!DNL Commerce Intelligence] ist so einfach wie die einfache Eingabe Ihrer Kontoanmeldeinformationen. Einige Dienste benötigen möglicherweise einen API-Schlüssel, um die Autorisierung abzuschließen. Sehen Sie sich die [Integrationsabschnitt](../integrations/integrations.md) für Anweisungen zum Generieren der benötigten Anmeldeinformationen.
 
 ## Datei-Upload
 
-Sie wissen nicht genau, wie Sie Daten von einer zusätzlichen Quelle in Ihre Data Warehouse bekommen? [Verwenden der `File Upload` Funktion](../connecting-data/using-file-uploader.md) ist eine gute Möglichkeit, Daten abzurufen, die Sie für die tägliche Entscheidungsfindung nicht benötigen. Mithilfe der Formatierungsregeln können Sie schnell und einfach `.csv` -Dateien in Ihre Data Warehouse und verbinden Sie sie mit anderen Datenquellen.
+Sie wissen nicht genau, wie Sie Daten von einer zusätzlichen Quelle in Ihre Data Warehouse bekommen? [Verwenden der `File Upload` Funktion](../connecting-data/using-file-uploader.md) ist eine gute Möglichkeit, Daten abzurufen, die Sie für die tägliche Entscheidungsfindung nicht benötigen. Mithilfe der Formatierungsregeln können Sie schnell und einfach `.csv` -Dateien in Ihre Data Warehouse ein und verbinden sie mit anderen Datenquellen.
 
 ## [!DNL Commerce Intelligence] `Import API`
 
-Wenn Sie den Abruf von Daten aus einer Ihrer eigenen Quellen lieber automatisieren möchten, können Sie die [!DNL Commerce Intelligence] `Import API`. Grundsätzlich, wenn es sich nicht in einer Datenbank oder einer `SaaS` Integration, `Import API` -Funktion ist Ihre beste Wette.
+Wenn Sie den Abruf von Daten aus einer Ihrer eigenen Quellen lieber automatisieren möchten, können Sie die [!DNL Commerce Intelligence] `Import API`. Grundsätzlich, wenn es sich nicht in einer Datenbank oder einer `SaaS` Integration, die `Import API` -Funktion ist Ihre beste Wette.
 
 Die Verwendung der API erfordert ein wenig technisches Know-how - jemand, der sich mit dem Schreiben und Verwalten eines kleinen Ruby- oder PHP-Skripts auskennt, ist mehr als qualifiziert.
 
-Weitere Informationen zu den ersten Schritten mit dem `Import API`, sehen Sie sich die [Entwicklersite](https://developer.adobe.com/commerce/services/reporting/) und [Erstellen eines API-Schlüssels](https://developer.adobe.com/commerce/services/reporting/import-api/).
+Weitere Informationen zu den ersten Schritten mit dem `Import API`, sehen Sie sich die [Entwicklersite](https://developer.adobe.com/commerce/services/reporting/) und [Generieren eines API-Schlüssels](https://developer.adobe.com/commerce/services/reporting/import-api/).
 
 ## Hinzufügen einer Integration
 

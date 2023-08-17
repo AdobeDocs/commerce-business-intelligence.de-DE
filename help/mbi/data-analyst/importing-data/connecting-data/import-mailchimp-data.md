@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Import [!DNL Mailchimp] data
 
-Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre [!DNL Mailchimp] E-Mail-Kampagnendaten in [!DNL Commerce Intelligence]. Um den Import abzuschließen, müssen Sie für jede [!DNL Mailchimp] Kampagne:
+Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre [!DNL Mailchimp] Daten der E-Mail-Kampagne [!DNL Commerce Intelligence]. Um den Import abzuschließen, müssen Sie für jede [!DNL Mailchimp] Kampagne, die Sie haben:
 
 ## Exportieren von Daten zu Öffnungen {#opens}
 
@@ -21,7 +21,7 @@ Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre
 
    ![import mailchimp 1](../../../assets/import-mailchimp-1.png)
 
-1. Klicken **[!UICONTROL View Report]** neben dem Kampagnennamen.
+1. Klicks **[!UICONTROL View Report]** neben dem Kampagnennamen.
 
    ![import mailchimp 2](../../../assets/import-mailchimp-2.png)
 
@@ -29,9 +29,9 @@ Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre
 
    ![import mailchimp 3](../../../assets/import-mailchimp-3.png)
 
-1. Klicken **[!UICONTROL Export]** und speichern Sie die `.csv` -Datei.
+1. Klicks **[!UICONTROL Export]** und speichern Sie die `.csv` -Datei.
 
-   Sie müssen `primary key`, `date (mm/dd/yyyy)`und `campaign name` -Spalten zu dieser Datei. Stellen Sie sicher, dass `primary keys` sind für jede Zeile eindeutig.
+   Sie müssen `primary key`, `date (mm/dd/yyyy)`, und `campaign name` -Spalten zu dieser Datei. Stellen Sie sicher, dass `primary keys` sind für jede Zeile eindeutig.
 
    ![import mailchimp 4](../../../assets/import-mailchimp-4.png)
 
@@ -47,9 +47,9 @@ Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre
 
    ![import mailchimp 6](../../../assets/import-mailchimp-6.png)
 
-1. Klicken **[!UICONTROL Export]** und speichern Sie die `.csv` -Datei.
+1. Klicks **[!UICONTROL Export]** und speichern Sie die `.csv` -Datei.
 
-   Sie müssen `Primary Key`, `date (mm/dd/yyyy)`, `campaign name`und `URL` -Spalten zu dieser Datei. Sie müssen nicht die vollständige URL hinzufügen, sondern nur etwas, das Ihnen mitteilt, worauf geklickt wurde.
+   Sie müssen `Primary Key`, `date (mm/dd/yyyy)`, `campaign name`, und `URL` -Spalten zu dieser Datei. Sie müssen nicht die vollständige URL hinzufügen, sondern nur etwas, das Ihnen mitteilt, worauf geklickt wurde.
 
    ![import mailchimp 7](../../../assets/import-mailchimp-7.png)
 
@@ -59,20 +59,20 @@ Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre
 
 1. Wechseln Sie zu `Campaigns` Tab von [!DNL Mailchimp].
 
-1. Klicken **[!UICONTROL View Report]** neben dem Kampagnennamen.
+1. Klicks **[!UICONTROL View Report]** neben dem Kampagnennamen.
 
 1. Klicken Sie auf die Zahl neben `Recipients`.
 
    ![import mailchimp 8](../../../assets/import-mailchimp-8.png)
 
-1. Klicken **[!UICONTROL Export]** und speichern Sie die `.csv` -Datei.
+1. Klicks **[!UICONTROL Export]** und speichern Sie die `.csv` -Datei.
 
-   Sie müssen `Primary Key`, `date (mm/dd/yyyy)`und `campaign name` -Spalten zu dieser Datei.
+   Sie müssen `Primary Key`, `date (mm/dd/yyyy)`, und `campaign name` -Spalten zu dieser Datei.
 
    ![import mailchimp 9](../../../assets/import-mailchimp-9.png)
 
 ## Vorbereiten von Dateien auf den Upload in [!DNL Commerce Intelligence] {#upload}
 
-Jede Datei - `Opens`, `Clicks`und `Sent` - sollte in hochgeladen werden. [!DNL Commerce Intelligence] als separate Datei. Adobe empfiehlt, die Dateien mithilfe dieser Benennungsregel zu benennen: `MailChimp\_ACTION\_DATE`. Ersetzen `ACTION` mit `Open`, `Click`oder `Sent`und ersetzen `DATE` mit dem Datum der Ausfuhr.
+Jede Datei - `Opens`, `Clicks`, und `Sent` - sollte in hochgeladen werden. [!DNL Commerce Intelligence] als separate Datei. Adobe empfiehlt, die Dateien mit dieser Namenskonvention zu benennen: `MailChimp\_ACTION\_DATE`. Ersetzen `ACTION` mit `Open`, `Click`oder `Sent`und ersetzen `DATE` mit dem Datum der Ausfuhr.
 
 Wenn Sie zum Hochladen der Dateien bereit sind, verwenden Sie die [`File Upload` Funktion](../connecting-data/using-file-uploader.md) , um die Daten in Ihre Data Warehouse zu übertragen.

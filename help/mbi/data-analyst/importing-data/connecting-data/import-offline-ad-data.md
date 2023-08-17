@@ -19,7 +19,7 @@ Durch das Hochladen Ihrer Werbeausgaben können Sie den ROI Ihrer Kampagne messe
 
 Der erste Schritt bei der Analyse der Daten zu Anzeigenausgaben besteht darin, die Daten abzurufen. Da die meisten Werbeplattformen den Export von Berichten ermöglichen, empfiehlt Adobe, die Rohdaten von Ihrer Anzeigenplattform zu exportieren und direkt in [!DNL Commerce Intelligence] ohne Manipulationen. Sie können Vorgänge für die Daten in Ihrer Data Warehouse durchführen, sodass Sie Ihre Bemühungen nicht verdoppeln müssen.
 
-Nachdem Sie die Anzeigenausgabedaten exportiert haben, verwenden Sie die [`File Upload` Funktion](../connecting-data/using-file-uploader.md) , um die Daten in Ihre Data Warehouse zu übertragen. Sie können neue Daten auf die gleiche [!DNL Commerce Intelligence] -Tabelle.
+Verwenden Sie nach dem Export der Anzeigenausgabedaten die [`File Upload` Funktion](../connecting-data/using-file-uploader.md) , um die Daten in Ihre Data Warehouse zu übertragen. Sie können neue Daten auf die gleiche [!DNL Commerce Intelligence] Tabelle im Zeitverlauf.
 
 ## Offline-Quellen
 

@@ -1,5 +1,5 @@
 ---
-title: Data Warehouse Manager
+title: Data Warehouse-Manager
 description: Erfahren Sie, wie Sie die Synchronisierungseinstellungen für Tabellen und Spalten verwalten, einen Drilldown im Schema einer Tabelle durchführen und berechnete Spalten für die Verwendung in Berichten erstellen.
 exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
 role: Admin, Data Architect, Data Engineer, User
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Data Warehouse Manager
+# Data Warehouse-Manager
 
 >[!NOTE]
 >
 >Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md)
 
-Der Data Warehouse Manager, auf den Sie durch Klicken auf **[!UICONTROL Manage Data > Data Warehouse]**, ist das Portal zu Ihrem [!DNL Adobe Commerce Intelligence] Data Warehouse. Mithilfe des Data Warehousen-Managers können Sie Einstellungen für die Tabellen- und Spaltensynchronisierung verwalten, einen Drilldown im Tabellenschema durchführen und berechnete Spalten für die Verwendung in Berichten erstellen.
+Data Warehouse Manager durch Klicken auf **[!UICONTROL Manage Data > Data Warehouse]**, ist das Portal zu Ihrem [!DNL Adobe Commerce Intelligence] Data Warehouse. Mithilfe des Data Warehouse-Managers können Sie Einstellungen für die Tabellen- und Spaltensynchronisierung verwalten, einen Drilldown im Schema einer Tabelle durchführen und berechnete Spalten für die Verwendung in Berichten erstellen.
 
 Dieses Thema behandelt:
 
@@ -30,9 +30,9 @@ Dieses Thema behandelt:
 
 ## Weg lernen {#learning}
 
-Die linke Seite von `Data Warehouse Manager` -Seite enthält die Tabellenliste, mit der Sie mühelos zwischen Tabellen wechseln können. Wenn Sie eine Tabelle aus der Liste auswählen, wird der Tabellenverwaltungsbereich mit dem Schema der Tabelle gefüllt, in dem Sie die ausgewählte Tabelle ändern können.
+Links von `Data Warehouse Manager` -Seite enthält die Tabellenliste, mit der Sie mühelos zwischen Tabellen wechseln können. Wenn Sie eine Tabelle aus der Liste auswählen, wird der Tabellenverwaltungsbereich mit dem Schema der Tabelle gefüllt, in dem Sie die ausgewählte Tabelle ändern können.
 
-In der Tabellenliste werden Tabellen nach ihrer Verbindungsquelle gruppiert. Diese Quellen werden unter [!UICONTROL Manage Data > Integrations] und kann entweder eine Datenbank, eine [API](https://developer.adobe.com/commerce/services/reporting/)oder einem Drittanbieter-Connector. Oben in der Tabellenliste befindet sich ein Suchfeld, mit dem Sie mühelos die gewünschten Tabellen finden können.
+In der Tabellenliste werden Tabellen nach ihrer Verbindungsquelle gruppiert. Diese Quellen werden unter [!UICONTROL Manage Data > Integrations] und kann entweder eine Datenbank, eine [API](https://developer.adobe.com/commerce/services/reporting/)oder einem Drittanbieter-Connector. Oben in der Tabellenliste befindet sich ein Suchfeld, mit dem Sie die gewünschten Tabellen leicht finden können.
 
 Unter dem Suchfeld werden zwei Optionen angezeigt: `All Tables` und `Synced Tables`. Die `All Tables` listet alle Tabellen auf, die Sie Ihrer Data Warehouse zur Verfügung gestellt haben, einschließlich synchronisierter und nicht synchronisierter Tabellen.
 
@@ -58,12 +58,12 @@ Der Data Warehouse Manager bietet Ihnen nicht nur die Möglichkeit, Ihre Datenqu
    >
    >Spalten, die in einer Tabelle nativ sind, haben Aus Ihrer Datenbank in der `Location` Spalte.
 
-1. Stellen Sie sicher, dass Sie die `Primary Key` -Spalten - diese Spalten haben ein Schlüsselsymbol neben dem Spaltennamen. A `Primary Key` ist erforderlich, um Daten ordnungsgemäß mit der Data Warehouse zu synchronisieren.
+1. Überprüfen Sie die `Primary Key` -Spalten - diese Spalten haben ein Schlüsselsymbol neben dem Spaltennamen. A `Primary Key` ist erforderlich, um Daten ordnungsgemäß mit der Data Warehouse zu synchronisieren.
 
    Wenn Sie eine Tabelle synchronisieren, die direkt aus Ihrer Datenbank stammt, kann es sein, dass `Primary Keys` nicht bezeichnet werden. Wenden Sie sich in diesem Fall an Ihren Datenbankadministrator, um das Hinzufügen eines Primärschlüssels zur Tabelle anzufordern.
 1. Klicken Sie abschließend auf die ![button](../../assets/button.png) Schaltfläche.
 
-A *Erfolg!* wird angezeigt und der Status ändert sich in `Pending` für die ausgewählten Spalten. Nach Abschluss der nächsten vollständigen Aktualisierung stehen die neu synchronisierten Tabellen und Spalten zur Verwendung in Berichten zur Verfügung. Sie können auch neue [Replikationsmethoden](./cfg-replication-methods.md) nach der ersten Synchronisierung.
+A *Erfolg!* wird angezeigt und der Status ändert sich in `Pending` für die ausgewählten Spalten. Nach Abschluss der nächsten vollständigen Aktualisierung stehen die neu synchronisierten Tabellen und Spalten zur Verwendung in Berichten zur Verfügung. Sie können auch eine neue [Replikationsmethoden](./cfg-replication-methods.md) nach der ersten Synchronisierung.
 
 Im Folgenden finden Sie einen kurzen Überblick über den gesamten Prozess:
 
@@ -71,19 +71,19 @@ Im Folgenden finden Sie einen kurzen Überblick über den gesamten Prozess:
 
 ### Synchronisieren neuer Tabellen im Hintergrund {#syncnew}
 
-Wenn Sie eine große Tabelle zum ersten Mal synchronisieren, muss Ihre Data Warehouse alle Datenpunkte in der Tabelle rückwirkend erfassen, bevor Sie neue Daten laufend erfassen. Wenn Ihre Tabelle groß ist, sollten Sie diese anfängliche Synchronisierung möglicherweise nicht in einer Sequenz mit Ihrer **Aktualisierungszyklus**. In diesem Fall soll die anfängliche Synchronisierung im Hintergrund in *parallel* mit allen derzeit ausgeführten Updates.
+Wenn Sie eine große Tabelle zum ersten Mal synchronisieren, muss Ihr Data Warehouse rückwirkend alle Datenpunkte in der Tabelle erfassen, bevor Sie fortlaufend neue Daten erfassen. Wenn Ihre Tabelle groß ist, sollten Sie diese anfängliche Synchronisierung möglicherweise nicht in einer Sequenz mit Ihrer **Aktualisierungszyklus**. In diesem Fall soll die anfängliche Synchronisierung im Hintergrund in *parallel* mit allen derzeit ausgeführten Updates.
 
-Um sicherzustellen, dass dies eintritt, sollten Sie die `Save and Sync Data Immediately` Option zum erstmaligen Synchronisieren dieser Tabelle.
+Wählen Sie die `Save and Sync Data Immediately` Option zum erstmaligen Synchronisieren dieser Tabelle.
 
 ### Überprüfen auf neue Tabellen und Spalten {#forceupdate}
 
-Ihre Data Warehouse erkennt nicht automatisch neue Quellen, Tabellen oder Spalten, sobald sie hinzugefügt werden. Ein Synchronisierungsprozess läuft die ganze Woche über, um neue Ergänzungen zu finden und sie verfügbar zu machen. Sie können jedoch eine Struktursynchronisierung erzwingen, wenn Sie auf neu hinzugefügte Tabellen und Spalten zugreifen möchten, bevor der Prozess ausgeführt wird.
+Ihre Data Warehouse erkennt nicht automatisch neue Quellen, Tabellen oder Spalten, sobald sie hinzugefügt werden. Ein Synchronisierungsprozess läuft die ganze Woche über, um neue Ergänzungen zu finden und sie verfügbar zu machen. Sie können jedoch eine Struktursynchronisierung erzwingen, wenn Sie vor Ausführung des Prozesses auf neu hinzugefügte Tabellen und Spalten zugreifen möchten.
 
-Unter der Suchleiste in der Tabellenliste befindet sich eine `Check for new tables and columns` Link. Durch Klicken auf diesen Link wird der Prozess der Struktursynchronisierung erzwungen. neue Ergänzungen sind in der Regel nach 10 Minuten verfügbar. Aktualisieren Sie die Seite, um die neue Quelle, Tabelle oder Spalte anzuzeigen.
+Unter der Suchleiste in der Tabellenliste befindet sich eine `Check for new tables and columns` -Link. Durch Klicken auf diesen Link wird der Prozess der Struktursynchronisierung erzwungen und gestartet. Nach 10 Minuten sind in der Regel neue Ergänzungen verfügbar. Aktualisieren Sie die Seite, um die neue Quelle, Tabelle oder Spalte anzuzeigen.
 
 ## Erstellen berechneter Spalten {#calculated}
 
-Die einfache Möglichkeit, Daten aus all Ihren Quellen zu sehen und zu verwalten, erleichtert das Auffinden von Einblicken in Ihr Unternehmen. Im Data Warehousen-Manager können Sie jedoch einen Schritt weiter gehen, indem Sie berechnete Spalten in Ihren Tabellen erstellen. `Calculated` -Spalten leiten neue Informationen aus Ihren vorhandenen Daten ab.
+Die einfache Möglichkeit, Daten aus all Ihren Quellen zu sehen und zu verwalten, erleichtert das Auffinden von Einblicken in Ihr Unternehmen. Im Data Warehouse-Manager können Sie jedoch noch einen Schritt weiter gehen, indem Sie berechnete Spalten in Ihren Tabellen erstellen. `Calculated` aus Ihren vorhandenen Daten neue Informationen ableiten.
 
 Angenommen, Sie möchten `user's lifetime revenue` auf `users` -Tabelle, um Benutzer mit hohem Wert zu finden. Wenn Sie Umsätze nach Geschlecht segmentieren möchten, können Sie `customer's gender` auf `orders` Tabelle.
 
@@ -91,13 +91,13 @@ Weitere Informationen finden Sie hier . [Tutorial](../../data-analyst/data-wareh
 
 ## Tabellen löschen und Spalten entfernen {#delete}
 
-So wie Sie Tabellen und Spalten auswählen können, die mit Ihrer Data Warehouse synchronisiert werden sollen, können Sie sie auch ablegen oder entfernen.
+So wie Sie Tabellen und Spalten auswählen können, um sie mit Ihrer Data Warehouse zu synchronisieren, können Sie sie auch ablegen oder entfernen.
 
 >[!NOTE]
 >
 >Wenn Sie eine Tabelle löschen oder Spalten entfernen, werden alle abhängigen Berichte, Metriken, Filtersätze und Spalten gelöscht, sobald Sie den Löschvorgang bestätigt haben. Stellen Sie sicher, dass Sie dies tun möchten - **Diese Aktion kann nicht rückgängig gemacht werden.**
 
-Wenn Sie auf **[!UICONTROL Delete]** zufällig. Eine Abhängigkeitsprüfung wird ausgeführt, bevor etwas gelöscht wird. Daher haben Sie die Möglichkeit, alles zu überprüfen, bevor Sie es bestätigen.
+Wenn Sie auf **[!UICONTROL Delete]** zufällig. Eine Abhängigkeitsprüfung wird ausgeführt, bevor etwas gelöscht wird. Daher haben Sie die Möglichkeit, alles zu überprüfen, bevor Sie bestätigen.
 
 Um Spalten zu entfernen, klicken Sie auf die Tabelle, zu der die Spalte gehört. Überprüfen Sie die Spalten, die Sie entfernen möchten, und klicken Sie auf die Schaltfläche ![button\_1.png](../../assets/button_1.png) Schaltfläche.
 
@@ -119,8 +119,8 @@ Neue synchronisierte Spalten und neue/aktualisierte berechnete Spalten können n
 
 Wenn Sie bereit sind, Ihre neuen Spalten in Berichten zu verwenden, [müssen Sie sie zuerst zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Auch wenn die Daten erst nach Abschluss der Aktualisierung verfügbar sind, können Sie in Berichten weiterhin neue Spalten verwenden. Daten im Bericht werden nach Abschluss der Aktualisierung angezeigt.
 
-## Aufbrechen
+## Aufwischen
 
-Dieser Artikel deckte eine Menge Material ab. Inzwischen sollten Sie genau wissen, was eine Datenbank ist, wie Daten organisiert sind, wie Tabellen miteinander verknüpft sind und was Sie mit dem Data Warehouse Manager tun können.
+Dieser Artikel deckte eine Menge Material ab. Jetzt sollten Sie genau wissen, was eine Datenbank ist, wie Daten organisiert sind, wie Tabellen miteinander in Beziehung stehen und was Sie mit dem Data Warehouse Manager tun können.
 
 Testen Sie Ihr Wissen durch [eine berechnete Spalte erstellen](../data-warehouse-mgr/creating-calculated-columns.md) oder [interessante Berichte erstellen](../../tutorials/using-visual-report-builder.md).

@@ -7,7 +7,7 @@ feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce 
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -48,8 +48,8 @@ Jede Zeile im `enterprise_rma_item_entity` Tabelle (häufig `magento_rma_item_en
 
 | **Metrikname** | **Beschreibung** | **Bauwesen** |
 |---|---|---|
-| `Number of items returned` | Die Anzahl der zurückgegebenen Elemente. | Vorgangsspalte: zurückgegebene qty<br>Vorgang: Summe<br>Zeitstempelspalte: Rückkehrtermin angefordert |
-| `Returned items' total value` | Der zurückgegebene Geldbetrag. | Vorgangsspalte: Gesamtwert des Rückkehrartikels (zurückgegebene Menge * Preis)<br>Vorgang: Summe<br>Zeitstempelspalte: Rückkehrtermin angefordert |
+| `Number of items returned` | Die Anzahl der zurückgegebenen Elemente. | Vorgangsspalte: zurückgegebene Menge<br>Vorgang: Summe<br>Zeitstempelspalte: Rückkehrdatum erforderlich |
+| `Returned items' total value` | Der zurückgegebene Geldbetrag. | Spalte &quot;Aktion&quot;: Gesamtwert des Rückgabeelements (Menge zurückgegeben * Preis)<br>Vorgang: Summe<br>Zeitstempelspalte: Rückkehrdatum erforderlich |
 
 {style="table-layout:auto"}
 

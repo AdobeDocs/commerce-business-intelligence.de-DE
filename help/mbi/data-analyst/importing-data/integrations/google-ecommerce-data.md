@@ -21,12 +21,12 @@ Nach [!DNL Google ECommerce] -Konto erfolgreich mit [!DNL Commerce Intelligence]
 | `accountId` | Diese Spalte enthält die Konto-ID, die Ihrer [!DNL Google Analytics] eCommerce-Konto. |
 | `profileName` | Diese Spalte enthält Ihre [!DNL Google Analytics] Profilname. |
 | `profileId` | Diese Spalte enthält Ihre [!DNL Google Analytics] Profil-ID. |
-| `socialNetwork` | Diese Spalte enthält den Namen des sozialen Netzwerks (z. B. [!DNL Facebook]oder [!DNL YouTube]) |
+| `socialNetwork` | Diese Spalte enthält den Namen des sozialen Netzwerks (beispielsweise [!DNL Facebook]oder [!DNL YouTube]) |
 | `campaign` | Diese Spalte enthält den Kampagnennamen (z. B. [`utm\_campaign`](https://support.google.com/analytics/answer/1033867?hl=en)). |
 | `medium` | Diese Spalte enthält den mittleren Namen (z. B. [`utm\_medium`](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| `source` | Diese Spalte enthält den Quellnamen. (z. B. [`utm\_source`](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| `source` | Diese Spalte enthält den Quellnamen. (zum Beispiel: [`utm\_source`](https://support.google.com/analytics/answer/1033867?hl=en)) |
 | `keyword` | Diese Spalte enthält die Suchbegriffbeschreibung (z. B. [`utm\_term`](https://support.google.com/analytics/answer/1033867?hl=en)) |
-| `transactionId` | Diese Spalte enthält die Bestell-ID. Damit können Sie die Verweisdaten wieder in Ihre Bestellungsdaten einbinden. |
+| `transactionId` | Diese Spalte enthält die Bestell-ID. Dadurch werden die Verweisdaten wieder in Ihre Bestellungsdaten eingefügt. |
 | `updated\_at` | Diese Spalte enthält das letzte Mal, dass die Datenzeile aktualisiert wurde. |
 
 {style="table-layout:auto"}

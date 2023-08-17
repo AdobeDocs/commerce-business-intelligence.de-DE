@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # RFM-Analyse
 
-In diesem Thema wird gezeigt, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Kunden nach Neuigkeit, Häufigkeit und geldlichem Rang segmentieren können. Die RFM-Analyse ist eine Marketing-Technik, die das Kundenverhalten berücksichtigt, um Sie bei der Bestimmung der Segmentierung für die Reichweite zu unterstützen. Er umfasst drei Aspekte:
+In diesem Thema wird gezeigt, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Kunden nach Neuigkeit, Häufigkeit und Geldwert segmentieren können. Die RFM-Analyse ist eine Marketing-Technik, die das Kundenverhalten berücksichtigt, um Sie bei der Bestimmung der Segmentierung für die Reichweite zu unterstützen. Er umfasst drei Aspekte:
 
 1. Neuigkeit darüber, wie kürzlich ein Kunde in Ihrem Geschäft gekauft hat
 1. Häufigkeit des Kaufs bei Ihnen
@@ -31,7 +31,7 @@ Sie können dies [Artikel](../importing-data/connecting-data/using-file-uploader
 
 ## Berechnete Spalten
 
-Eine weitere Unterscheidung wird getroffen, wenn Ihr Unternehmen Gastaufträge zulässt. Wenn dies der Fall ist, können Sie alle Schritte für die `customer_entity` Tabelle. Wenn Gastaufträge nicht zulässig sind, ignorieren Sie alle Schritte für die `sales_flat_order` Tabelle.
+Eine weitere Unterscheidung wird getroffen, wenn Ihr Unternehmen Gastaufträge zulässt. Wenn ja, können Sie alle Schritte für die `customer_entity` Tabelle. Wenn Gastaufträge nicht zulässig sind, ignorieren Sie alle Schritte für die `sales_flat_order` Tabelle.
 
 Zu erstellende Spalten
 
@@ -91,12 +91,12 @@ Zu erstellende Spalten
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Customer's lifetime number of orders`
 
-* Rangfolge nach Kundenlebensdauer und Anzahl der Bestellungen
+* Rangfolge nach Kundenlebensdauer der Bestellungen
 * 
   [!UICONTROL Spaltentyp]: – "Dieselbe Tabelle > Berechnung"
 * [!UICONTROL Inputs]: - **(Eingabe) Rangfolge nach Kundenlebensdauer Anzahl der Bestellungen**, **Anzahl der Kunden**
 * [!UICONTROL Calculation]: - **Wenn A null ist, dann wird das Ende von null else (B-(A-1))**
-* [!UICONTROL Datatype]: - Ganzzahl
+* [!UICONTROL Datatype]: - Integer
 
 * Frequenzwert des Kunden (nach Perzentilen)
 * [!UICONTROL Column type]: `Same table > Calculation`

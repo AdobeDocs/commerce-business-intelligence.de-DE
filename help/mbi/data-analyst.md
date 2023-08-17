@@ -23,7 +23,7 @@ In diesem Abschnitt wird Folgendes veranschaulicht:
 
 ## Verwandte
 
-* [Data Warehouse Manager](../mbi/data-analyst/data-warehouse-mgr/tour-dwm.md)
+* [Data Warehouse-Manager](../mbi/data-analyst/data-warehouse-mgr/tour-dwm.md)
 * [[!DNL SQL Report Builder]](data-analyst/dev-reports/sql-rpt-bldr.md)
 * [Daten verbinden](../mbi/data-analyst/importing-data/connecting-data/connecting-data.md)
 * [Integrationen](../mbi/data-analyst/importing-data/integrations/magento.md)

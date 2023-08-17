@@ -7,13 +7,13 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Diagramme für die Massenbearbeitung in Dashboards
 
-Dank der Massenbearbeitung können Sie die Namen und Daten von Diagrammen in Ihren Dashboards einfach ändern. Sie möchten beispielsweise, dass alle Diagramme in einem bestimmten Dashboard auf einen einzigen Store verweisen und monatlich anstatt vierteljährlich einen Bericht erstellen. Anstatt alles manuell zu ändern, lassen Sie die `bulk-editing` -Funktion die Arbeit erledigen. In diesem Thema erfahren Sie, wie Sie Folgendes verwenden:
+Dank der Massenbearbeitung können Sie die Namen und Daten von Diagrammen in Ihren Dashboards einfach ändern. Sie möchten beispielsweise, dass alle Diagramme in einem bestimmten Dashboard auf einen einzigen Store verweisen und monatlich anstatt vierteljährlich einen Bericht erstellen. Anstatt alles manuell zu ändern, lassen Sie die `bulk-editing` -Funktion verwenden. In diesem Thema erfahren Sie, wie Sie Folgendes verwenden:
 
 * [Die [!DNL Find/Replace] Funktion](#findreplace)
 
@@ -31,11 +31,11 @@ Beachten Sie jedoch Folgendes: *Müssen diese Änderungen dauerhaft sein?* Wenn 
 
 1. Klicken Sie auf das Zahnrad (![](../../assets/gear-icon.png)) neben dem Namen Ihres Dashboards angezeigt wird, können Sie die [!UICONTROL Bulk Edit Reports] Fenster.
 
-1. Klicken **[!UICONTROL Chart Title Find and Replace]** im Popup-Fenster.
+1. Klicks **[!UICONTROL Chart Title Find and Replace]** im Popup-Fenster angezeigt.
 
 1. Im `Chart Title Find` eingeben, die gesuchten Wörter oder Zeichen eingeben.
 
-1. Im `Replace With` -Feld, geben Sie die Wörter oder Zeichen ein, die das ersetzen sollen, was im `Find` -Feld.
+1. Im `Replace With` -Feld, geben Sie die Wörter oder Zeichen ein, die die im `Find` -Feld.
 
 1. Klicken **[!UICONTROL Update Reports]**.
 
@@ -47,7 +47,7 @@ Beispiel:
 
 1. Klicken Sie auf das Zahnrad (![](../../assets/gear-icon.png)) neben dem Namen Ihres Dashboards angezeigt wird, können Sie die [!UICONTROL Bulk Edit Reports] Fenster.
 
-1. Klicken **[!UICONTROL Prepend Report Names]** im Popup-Fenster.
+1. Klicks **[!UICONTROL Prepend Report Names]** im Popup-Fenster angezeigt.
 
 1. Geben Sie die Wörter oder Zeichen ein, denen Sie Ihre Diagramme voranstellen möchten.
 
@@ -61,7 +61,7 @@ Beispiel:
 
 1. Klicken Sie auf das Zahnrad (![](../../assets/gear-icon.png)) neben dem Namen Ihres Dashboards angezeigt werden, und wählen Sie dann die [!UICONTROL Bulk Edit Reports] Fenster.
 
-1. Klicken **[!UICONTROL Change Dates]** im Popup-Fenster.
+1. Klicks **[!UICONTROL Change Dates]** im Popup-Fenster.
 
 1. Festlegen der neuen `Start/End Date` und `Time Interval`. Sie können diese Felder auch unverändert lassen.
 

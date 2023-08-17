@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Import [!DNL CJ Affiliate] data
 
-Zu importieren [!DNL CJ Affiliate (Commission Junction)] Daten in [!DNL Adobe Commerce Intelligence]führen Sie einfach die folgenden Schritte aus und fügen Sie die resultierende Datei an eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Adobe richtet die Datentabelle für Ihr Konto ein und ermöglicht es Ihnen, das Hochladen von Daten unabhängig voneinander fortzusetzen.
+Zu importieren [!DNL CJ Affiliate (Commission Junction)] Daten in [!DNL Adobe Commerce Intelligence]führen Sie einfach die folgenden Schritte aus und fügen Sie die resultierende Datei an eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). Adobe richtet die Datentabelle Ihres Kontos ein und ermöglicht es Ihnen, das Hochladen von Daten unabhängig fortzusetzen.
 
 ## Export [!DNL CJ Affiliate] Daten
 
-1. In [!DNL CJ Affiliate] -Konto, navigieren Sie zum `Reports` Registerkarte.
+1. In der [!DNL CJ Affiliate] -Konto, navigieren Sie zum `Reports` Registerkarte.
 
-1. Im `Performance` Registerkarte, wählen Sie `Report Options`.
+1. Im `Performance` Registerkarte auswählen `Report Options`.
 
-1. Satz `Performance By` gleich `Program`, `Trend` gleich `Daily`und `Date Range` entspricht dem geprüften Datumsbereich.
+1. Satz `Performance By` gleich `Program`, `Trend` gleich `Daily`, und `Date Range` entspricht dem geprüften Datumsbereich.
 
    ![export-cj-Affiliate-data](../../../assets/export-cj-affiliate-data-1.png)<!--{:.zoom}-->
 
@@ -29,6 +29,6 @@ Zu importieren [!DNL CJ Affiliate (Commission Junction)] Daten in [!DNL Adobe Co
 
    ![Export von CJ-Partnerdaten](../../../assets/export-an-individual-order-2.jpg)<!--{:.zoom}-->
 
-1. Nachdem Sie die Datei heruntergeladen haben, können Sie [Datei hochladen](../connecting-data/using-file-uploader.md) auf [!DNL Commerce Intelligence] Data Warehouse.
+1. Nach dem Herunterladen der Datei können Sie [Datei hochladen](../connecting-data/using-file-uploader.md) auf [!DNL Commerce Intelligence] Data Warehouse.
 
-   Dadurch wird eine Tabelle in Ihrem [!DNL Commerce Intelligence] Data Warehouse, dass Sie weiterhin neue Daten in regelmäßig hochladen können. Befolgen Sie beim Hochladen der Datei die Formatierungsanforderungen, die unter [Verwenden des Datei-Uploaders](../connecting-data/using-file-uploader.md).
+   Dadurch wird eine Tabelle in Ihrem [!DNL Commerce Intelligence] Data Warehouse, dass Sie weiterhin neue Daten regelmäßig hochladen können. Befolgen Sie beim Hochladen der Datei die Formatierungsanforderungen, die unter [Verwenden des Datei-Uploaders](../connecting-data/using-file-uploader.md).

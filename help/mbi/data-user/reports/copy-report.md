@@ -15,6 +15,6 @@ ht-degree: 0%
 
 Häufig möchten Sie ähnlich definierte Diagramme erstellen, in denen Sie nur ein Element ändern möchten - z. B. Filter bearbeiten oder die `group by`.
 
-In diesen Fällen starten Sie die `Chart Editor` und klicken Sie auf **[!UICONTROL Save As]** oben rechts. Dadurch wird Ihr vorhandenes Diagramm repliziert und dem aktuellen Dashboard mit dem von Ihnen ausgewählten neuen Namen hinzugefügt. Außerdem können Sie die Einstellungen des neuen Diagramms sofort bearbeiten.
+In diesen Fällen starten Sie die `Chart Editor` und klicken **[!UICONTROL Save As]** oben rechts. Dadurch wird Ihr vorhandenes Diagramm repliziert und dem aktuellen Dashboard mit dem von Ihnen ausgewählten neuen Namen hinzugefügt. Außerdem können Sie die Einstellungen des neuen Diagramms sofort bearbeiten.
 
 ![](../../assets/create-report-copy.png)

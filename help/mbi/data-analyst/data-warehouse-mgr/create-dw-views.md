@@ -13,11 +13,11 @@ ht-degree: 9%
 
 # Arbeiten mit Data Warehouse-Ansichten
 
-In diesem Dokument werden der Zweck und die Verwendung von `Data Warehouse Views` durch Navigieren zu **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. Im Folgenden finden Sie eine Erläuterung der Funktion und der Erstellung von Ansichten sowie ein Beispiel für die Verwendung von `Data Warehouse Views` zur Konsolidierung [!DNL Facebook] und [!DNL AdWords] Daten ausgeben.
+In diesem Dokument werden der Zweck und die Verwendung von `Data Warehouse Views` durch Navigieren zu **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]**. Im Folgenden finden Sie eine Erläuterung der Funktion und der Erstellung von Ansichten sowie ein Beispiel für die Verwendung von `Data Warehouse Views` zur Konsolidierung [!DNL Facebook] und [!DNL AdWords] Ausgaben.
 
 ## Allgemeiner Zweck
 
-Die `Data Warehouse Views` -Funktion ist eine Methode zum Erstellen neuer, in Lagern gespeicherter Tabellen durch Ändern einer vorhandenen Tabelle oder durch Zusammenführen oder Konsolidieren mehrerer Tabellen mithilfe von SQL. Einmal `Data Warehouse View` von einem Aktualisierungszyklus erstellt und verarbeitet wurde, wird sie in Ihrer Data Warehouse als neue Tabelle unter `Data Warehouse Views` wie unten gezeigt:
+Die `Data Warehouse Views` -Funktion ist eine Methode zum Erstellen neuer, in Lagern gespeicherter Tabellen durch Ändern einer vorhandenen Tabelle oder durch Zusammenführen oder Konsolidieren mehrerer Tabellen mithilfe von SQL. Einmal `Data Warehouse View` von einem Aktualisierungszyklus erstellt und verarbeitet wurde, wird es in Ihrer Data Warehouse als neue Tabelle unter `Data Warehouse Views` wie unten gezeigt:
 
 ![](../../assets/Data_Warehouse.png)
 
@@ -35,21 +35,21 @@ Neu `Data Warehouse Views` kann erstellt werden und vorhandene Ansichten können
 
 Von hier aus können Sie eine Ansicht erstellen, indem Sie die folgenden Beispielanweisungen befolgen:
 
-1. Wenn Sie eine vorhandene Ansicht beobachten, klicken Sie auf **[!UICONTROL New Data Warehouse View]** um ein leeres Abfragefenster zu öffnen. Wenn bereits ein leeres Abfragefenster geöffnet ist, fahren Sie mit dem nächsten Schritt fort.
-1. Geben Sie der Ansicht einen Namen, indem Sie die `View Name` -Feld. Der hier angegebene Name bestimmt den Anzeigenamen für die Ansicht in der Data Warehouse. `View names` sind auf Kleinbuchstaben, Zahlen und Unterstriche (_) beschränkt. Alle anderen Zeichen sind verboten.
+1. Wenn Sie eine vorhandene Ansicht beobachten, klicken Sie auf **[!UICONTROL New Data Warehouse View]** , um ein leeres Abfragefenster zu öffnen. Wenn bereits ein leeres Abfragefenster geöffnet ist, fahren Sie mit dem nächsten Schritt fort.
+1. Geben Sie der Ansicht einen Namen, indem Sie die `View Name` -Feld. Der hier angegebene Name bestimmt den Anzeigenamen für die Ansicht auf der Data Warehouse. `View names` sind auf Kleinbuchstaben, Zahlen und Unterstriche (_) beschränkt. Alle anderen Zeichen sind verboten.
 1. Geben Sie Ihre Abfrage in das Fenster mit dem Titel `Select Query`, unter Verwendung der standardmäßigen PostgreSQL-Syntax.
 
    >[!NOTE]
    >
    >Ihre Abfrage muss auf bestimmte Spaltennamen verweisen. Die Verwendung der `*`-Zeichen, um alle Spalten auszuwählen, ist nicht zulässig.
 
-1. Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save]** , um Ihre Ansicht zu speichern. Ihre Ansicht verfügt vorübergehend über `Pending` -Status bis zur Verarbeitung durch den nächsten vollständigen Aktualisierungszyklus, an dem sich der Status in `Active`. Nach der Verarbeitung durch eine Aktualisierung kann Ihre Ansicht in Berichten verwendet werden.
+1. Klicken Sie abschließend auf **[!UICONTROL Save]** , um Ihre Ansicht zu speichern. Ihre Ansicht verfügt vorübergehend über `Pending` -Status bis zur Verarbeitung durch den nächsten vollständigen Aktualisierungszyklus, an dem sich der Status in `Active`. Nach der Verarbeitung durch eine Aktualisierung kann Ihre Ansicht in Berichten verwendet werden.
 
-Es ist wichtig zu erwähnen, dass nach dem Speichern die zugrunde liegende Abfrage, die zum Generieren einer `Data Warehouse View` kann nicht bearbeitet werden. Wenn Sie die Struktur eines `Data Warehouse View`müssen Sie eine Ansicht erstellen und berechnete Spalten, Metriken oder Berichte manuell von der ursprünglichen Ansicht zur neuen migrieren. Nach Abschluss der Migration können Sie die Originalansicht sicher löschen. weil `Data Warehouse Views` nicht bearbeitbar sind, empfiehlt Adobe, die Ausgabe Ihrer Abfrage mithilfe der `SQL Report Builder` vor dem Speichern Ihrer Abfrage als Data Warehouse View.
+Es ist wichtig zu erwähnen, dass nach dem Speichern die zugrunde liegende Abfrage, die zum Generieren einer `Data Warehouse View` kann nicht bearbeitet werden. Wenn Sie die Struktur eines `Data Warehouse View`müssen Sie eine Ansicht erstellen und berechnete Spalten, Metriken oder Berichte manuell von der ursprünglichen Ansicht zur neuen migrieren. Nach Abschluss der Migration können Sie die Originalansicht sicher löschen. weil `Data Warehouse Views` nicht bearbeitbar sind, empfiehlt Adobe, die Ausgabe Ihrer Abfrage mithilfe der `SQL Report Builder` vor dem Speichern Ihrer Abfrage als Data Warehouse-Ansicht.
 
 ## Beispiel: [!DNL Facebook] und [!DNL Google AdWords] data
 
-Sehen Sie sich eines der oben in diesem Artikel erwähnten Beispiele genauer an: konsolidieren [!DNL Facebook] und [!DNL AdWords] Daten in eine neue konsolidierte Anzeigentabelle investieren. In den meisten Fällen umfasst dies die Konsolidierung von zwei Tabellen mit unten stehenden Beispieldatensätzen:
+Sehen Sie sich eines der oben in diesem Artikel erwähnten Beispiele an: Konsolidierung [!DNL Facebook] und [!DNL AdWords] Daten in eine neue konsolidierte Anzeigentabelle investieren. In den meisten Fällen umfasst dies die Konsolidierung von zwei Tabellen mit unten stehenden Beispieldatensätzen:
 
 `Ad source: Google AdWords`
 
@@ -81,7 +81,7 @@ Sehen Sie sich eines der oben in diesem Artikel erwähnten Beispiele genauer an:
 
 So erstellen Sie eine Ausgabentabelle für eine einzelne Anzeige, die beide [!DNL Facebook] und [!DNL Google AdWords] Kampagnen, müssen Sie eine SQL-Abfrage schreiben und die `UNION ALL` -Funktion. A `UNION ALL` -Anweisung wird meist verwendet, um mehrere verschiedene SQL-Abfragen zu kombinieren und gleichzeitig die Ergebnisse jeder Abfrage an eine einzelne Ausgabe anzuhängen.
 
-Es gibt einige Anforderungen an `UNION` -Anweisung, die erwähnt werden muss, wie in PostgreSQL beschrieben [Dokumentation](https://www.postgresql.org/docs/8.3/queries-union.html):
+Es gibt einige Anforderungen an `UNION` -Anweisung erwähnenswert, wie in PostgreSQL beschrieben [Dokumentation](https://www.postgresql.org/docs/8.3/queries-union.html):
 
 * Alle Abfragen müssen dieselbe Anzahl von Spalten zurückgeben
 * Die entsprechenden Spalten müssen identische Datentypen aufweisen
@@ -136,11 +136,11 @@ Anstatt für jede Anzeigenquelle einen separaten Satz von Marketing-Metriken zu 
 
 **Suchen Sie weitere Hilfe?**
 
-Schreiben von SQL und Erstellen `Data Warehouse Views` ist nicht im technischen Support enthalten. Die Variable [Serviceteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) bietet Unterstützung bei der Erstellung von Ansichten. Von der Migration einer alten Data Warehouse mit einer neuen Datenbank bis hin zur Erstellung einer einzigen Analyseansicht kann das Supportteam Ihnen helfen.
+Schreiben von SQL und Erstellen `Data Warehouse Views` ist nicht im technischen Support enthalten. Die Variable [Serviceteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) bietet Unterstützung bei der Erstellung von Ansichten. Von der Migration einer alten Datenbank mit einer neuen Datenbank bis hin zur Erstellung einer einzigen Data Warehouse-Ansicht für eine bestimmte Analyse kann das Supportteam behilflich sein.
 
 Normalerweise wird durch die Erstellung eines `Data Warehouse View` Für die Konsolidierung von 2-3 ähnlich strukturierten Tabellen ist eine fünfstündige Dienstzeit erforderlich, was etwa 1.250 Dollar Arbeitszeit entspricht. Im Folgenden finden Sie jedoch einige gemeinsame Faktoren, durch die sich die erforderlichen Investitionen erhöhen können:
 
 * Konsolidierung von mehr als drei Tabellen in einer einzigen Ansicht
-* Erstellen von mehr als einer Data Warehouse-Ansicht
+* Erstellung mehrerer Data Warehouse-Ansichten
 * Komplexe Fügelogik oder Filterbedingungen
 * Konsolidierung von zwei oder mehr Tabellen mit unterschiedlichen Datenstrukturen

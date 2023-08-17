@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Zugriff beschränken
 
-Wenn Sie einen SSH-Tunnel zu Ihrem Server erstellen, müssen Sie [!DNL Adobe Commerce Intelligence] um Zugriff auf alles außer der Datenbank zu haben. Wenn Sie nicht möchten [!DNL Commerce Intelligence] um vollen Zugriff auf den Server zu haben, auf dem Ihre Datenbank gespeichert ist, können Sie den Zugriff einschränken, indem Sie die [!DNL Commerce Intelligence Linux] Benutzer in [beschränkte Bash-Shell](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
+Wenn Sie einen SSH-Tunnel zu Ihrem Server erstellen, müssen Sie [!DNL Adobe Commerce Intelligence] um Zugriff auf alles außer der Datenbank zu haben. Wenn Sie [!DNL Commerce Intelligence] um vollen Zugriff auf den Server zu haben, auf dem Ihre Datenbank gespeichert ist, können Sie den Zugriff einschränken, indem Sie die [!DNL Commerce Intelligence Linux] Benutzer in ein [beschränkte Bash-Shell](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
 
 Sie haben vielleicht vom Namen aus erraten, aber eine beschränkte Bash-Shell wird verwendet, um eine Umgebung einzurichten, die besser kontrolliert ist als die Standard-Shell. Wichtig an dieser Art von Shell ist, dass beschränkte Shell-Benutzer nicht auf Systemfunktionen zugreifen oder irgendwelche Änderungen vornehmen können.
 
@@ -31,4 +31,4 @@ command="env PATH="" /bin/bash -r" <rjmetrics public key goes here>
 ... other keys ...
 ```
 
-Wenn dies abgeschlossen ist, der Benutzer, für den Sie erstellt haben [!DNL Commerce Intelligence] kann keine Änderungen an Ihrem System vornehmen.
+Wenn dies abgeschlossen ist, der Benutzer, für den Sie erstellt haben [!DNL Commerce Intelligence] Sie können keine Änderungen an Ihrem System vornehmen.

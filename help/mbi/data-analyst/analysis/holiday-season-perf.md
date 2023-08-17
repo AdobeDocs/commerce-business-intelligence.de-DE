@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Für Ihr Unternehmen ist der Urlaub vielleicht eine der geschäftigsten Zeiten des Jahres. Für Einzelhändler mit einem großen amerikanischen Kundenstamm erstreckt sich die Weihnachtszeit in der Regel über die Monate zwischen dem Erntedankfest und dem Neujahr.
 
-Rushes können jederzeit während des Jahres auftreten. Wenn Ihr Unternehmen z. B. Shorts oder Poolvorräte verkauft, kann es im Sommer zu einer Eile kommen. Dieses Thema untersucht Analysen, die Ihnen helfen, Ihre hohen Jahreszeiten über verschiedene Jahre hinweg zu vergleichen.
+Rushes können jederzeit während des Jahres auftreten. Wenn Ihr Unternehmen z.B. Shorts oder Poolzubehör verkauft, kann es im Sommer zu einem Espresso kommen. Dieses Thema untersucht Analysen, die Ihnen helfen, Ihre hohen Jahreszeiten über verschiedene Jahre hinweg zu vergleichen.
 
-## Empfohlene Metriken
+## Empfehlungen für Metriken
 
 Bei der Analyse der Leistung in der Weihnachtszeit sollten Sie die Analyse in Erwägung ziehen ([oder Gebäude](../../data-user/reports/ess-manage-data-metrics.md)) diese Metriken:
 
@@ -29,13 +29,13 @@ Um zu verstehen, wie sich das diesjährige Wachstum im Vergleich zu den Vorjahre
 
 Diese Kennzahl zeigt den durchschnittlichen Gesamtbestellwert während Ihrer Urlaubszeit an.
 
-## Beispiel: Täglicher Umsatz in der Weihnachtszeit
+## Beispiel: Umsatz in der Urlaubszeit pro Tag
 
 Nachdem Sie nun wissen, welche Metriken analysiert werden sollen, sehen Sie sich einige Beispielumsatzdaten während der Weihnachtsmonate November und Dezember für 2014 und 2015 an.
 
 ![Tägliche Weihnachtseinnahmen für 2014 und 2015](../../assets/Analyzing_holiday_season.png)
 
-In diesem Beispiel gibt es zwei große Umsatzspitzen für 2014 und 2015: Diese Erhöhungen entsprechen Black Friday und Cyber Monday. Beachten Sie, dass die Spitzen 2014 und 2015 nicht am selben Tag stattfinden. Dies liegt daran, dass Black Friday für 2014 auf den 27. November und für 28. November 2015 auf den 27. November fiel. Ebenso war Cyber Montag der 30. November für 2014 und der 1. Dezember für 2015.
+In diesem Beispiel gibt es zwei große Umsatzsteigerungen für 2014 und 2015: Diese Zunahmen fallen mit Black Friday und Cyber Monday zusammen. Beachten Sie, dass die Spitzen 2014 und 2015 nicht am selben Tag stattfinden. Dies liegt daran, dass Black Friday für 2014 auf den 27. November und für 28. November 2015 auf den 27. November fiel. Ebenso war Cyber Montag der 30. November für 2014 und der 1. Dezember für 2015.
 
 Darüber hinaus gibt es einen Anstieg der Einnahmen für 2015 am 19. Dezember, der 2014 nicht auftritt. Es ist möglich, dass ein Verkauf an diesem Samstag angeboten wurde, der im Vorjahr nicht verfügbar war.
 
@@ -58,7 +58,7 @@ Eine Möglichkeit besteht darin, das Kaufverhalten Ihrer Kunden während der Url
 
 Eine weitere Möglichkeit besteht darin, den ROI nach Kampagnen während der Urlaubszeiten zu analysieren. Ist Ihr ROI bei bestimmten Kampagnen höher, die während der Weihnachtszeit ausgeführt werden? Sollten Sie während dieser Saison die Ausgaben für Kampagnen mit hohem ROI erhöhen?
 
-Darüber hinaus können Sie die Anzahl der diskontierten Bestellungen im Vergleich zu vollständigen Preisaufträgen analysieren. [Warten die meisten Kunden auf einen Kauf von Bestellungen](../analysis/coupon-usage.md) während Ihrer Urlaubszeit oder kaufen sie ganze Preisartikel?
+Darüber hinaus können Sie die Anzahl der diskontierten Bestellungen im Vergleich zu vollständigen Preisaufträgen analysieren. [Warten die meisten Kunden auf einen Kauf von Bestellungen](../analysis/coupon-usage.md) während Ihrer Urlaubszeit oder kaufen sie ganze Preisangebote?
 
 ### Verwandte
 

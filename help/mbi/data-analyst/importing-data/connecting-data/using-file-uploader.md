@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../../administrator/user-management/user-management.md).
 
-[!DNL Adobe Commerce Intelligence] ist nicht nur wegen seiner Visualisierungsfunktionen leistungsstark, sondern auch weil Sie damit alle Ihre Daten in eine Data Warehouse setzen können. Auch Daten, die außerhalb Ihrer Datenbanken und Integrationen liegen, können in [!DNL Commerce Intelligence] mithilfe des Tools &quot;Datei-Upload&quot;im Data Warehouse Manager.
+[!DNL Adobe Commerce Intelligence] ist nicht nur wegen seiner Visualisierungsfunktionen leistungsstark, sondern auch weil es Ihnen die Möglichkeit gibt, alle Ihre Daten in einer einzigen Data Warehouse abzulegen. Auch Daten, die außerhalb Ihrer Datenbanken und Integrationen liegen, können in [!DNL Commerce Intelligence] mithilfe des Tools Datei-Upload im Data Warehouse-Manager.
 
 Verwenden Sie Werbekampagnen als Beispiel. Wenn Sie sowohl Online- als auch Offline-Kampagnen ausführen, können Sie das gesamte Bild nicht abrufen, wenn Sie nur Daten aus einer Online-Integration analysieren. Durch das Hochladen einer Tabelle mit den Offline-Kampagnendaten können Sie beide Datensätze analysieren und ein tieferes Verständnis Ihrer Kampagnenleistung erhalten.
 
@@ -44,9 +44,9 @@ Spaltennamen müssen eindeutig sein und dürfen nur Buchstaben, Zahlen, Leerzeic
 
 Da Dateien in `CSV` -Format verwenden, kann die Verwendung von Kommas zu Problemen beim Hochladen von Daten führen. `CSV` -Dateien verwenden Kommas, um neue Werte anzugeben. Daher ist eine Spalte mit einem Namen wie `Campaigns`, `August` wird als zwei Spalten gelesen (`Campaigns` und `August`) anstatt einer Zeile, verschieben Sie alle Ihre Daten über eine Zeile. Adobe empfiehlt, Kommas soweit möglich zu vermeiden. Sie können `Data Preview` , um zu sehen, ob Ihre Daten nach Abschluss der Aktualisierung korrekt angezeigt werden.
 
-### Datum
+### Datumsangaben
 
-Jeder Datensatz, der Datumsangaben enthält, muss die Variable [Standarddatumsformat](https://dev.mysql.com/doc/refman/5.7/en/datetime.html) `YYYY-MM-DD HH:MM:SS` oder `MM/DD/YYYY`.
+Jeder Datensatz, der Datumsangaben enthält, muss die [Standarddatumsformat](https://dev.mysql.com/doc/refman/5.7/en/datetime.html) `YYYY-MM-DD HH:MM:SS` oder `MM/DD/YYYY`.
 
 ### Sonderzeichen
 
@@ -54,7 +54,7 @@ Einige Sonderzeichen werden nicht akzeptiert. Beispiel: das Symbol für das Rohr
 
 ### Dezimalzahlen
 
-Währungswerte sollten den Datentyp aufweisen `Decimal Number` ausgewählt ist und diese Spalten automatisch auf zwei Dezimalstellen in Ihrer Data Warehouse gerundet werden. Wenn Sie Ihre Dezimalzahlen nicht runden möchten oder einen höheren Genauigkeitsgrad haben möchten, sollten Sie die `Non-Currency Decimal Number` Datentyp.
+Währungswerte sollten den Datentyp aufweisen `Decimal Number` und diese Spalten automatisch auf zwei Dezimalstellen in Ihrer Data Warehouse runden. Wenn Sie Ihre Dezimalzahlen nicht runden möchten oder einen höheren Genauigkeitsgrad haben möchten, sollten Sie die `Non-Currency Decimal Number` Datentyp.
 
 ### Prozentsatz
 
@@ -71,9 +71,9 @@ Prozentangaben müssen als Dezimalstellen angegeben werden. Beispiel:
 
 Einige Werte in Ihrer Datei - wie Postleitzahlen und IDs - können mit Nullen beginnen oder enden. Um sicherzustellen, dass die Nullen korrekt beibehalten und hochgeladen werden, können Sie den Formatierungstyp ändern (z. B. [von Zahl zu Text](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&amp;rs=en-us&amp;ad=us)) oder die Zahlenformatierung erzwingen.
 
-Verwendung `US ZIP codes` als Beispiel für die Änderung der Zahlenformatierung. In [!DNL Excel]markieren, markieren Sie die Spalte, die `ZIP codes` und [Zahlenformat ändern](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&amp;rs=en-us&amp;ad=us) nach `ZIP code`. Sie können auch ein benutzerdefiniertes Zahlenformat auswählen und im `Type` Fenster, eingeben `00000`. Beachten Sie, dass diese Methode Probleme verursachen kann, wenn einige Codes als `00000` und andere `00000-0000`.
+Verwendung `US ZIP codes` als Beispiel für die Änderung der Zahlenformatierung. In [!DNL Excel]markieren Sie die Spalte, die `ZIP codes` und [Zahlenformat ändern](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&amp;rs=en-us&amp;ad=us) nach `ZIP code`. Sie können auch ein benutzerdefiniertes Zahlenformat auswählen und im `Type` Fenster, eingeben `00000`. Beachten Sie, dass diese Methode Probleme verursachen kann, wenn einige Codes als `00000` und andere `00000-0000`.
 
-Die `Type` kann [anders formatiert, um andere Datentypen aufzunehmen](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&amp;ui=en-us&amp;rs=en-us&amp;ad=us), wie IDs. Wenn eine `ID` ist neun Stellen lang, zum Beispiel die `Type` könnte `000000000` oder `000-000-000`. Dies würde sich ändern `123456` nach `000-123-456`.
+Die `Type` kann [anders formatiert, um andere Datentypen aufzunehmen](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&amp;ui=en-us&amp;rs=en-us&amp;ad=us), z. B. IDs. Wenn eine `ID` ist neun Stellen lang, zum Beispiel die `Type` könnte `000000000` oder `000-000-000`. Dies würde sich ändern `123456` nach `000-123-456`.
 
 Für [!DNL Google Docs] und [!DNL Apple Numbers] Ressourcen, siehe [Verwandte](#related) Liste unten auf dieser Seite.
 
@@ -85,7 +85,7 @@ Jetzt, da Ihr Arbeitsblatt korrekt formatiert ist und [!DNL Commerce Intelligenc
 
 1. Klicken Sie auf **[!UICONTROL Upload to New Table]** Registerkarte.
 
-1. Klicken **[!UICONTROL Choose File]** und wählen Sie die Datei aus. Klicken **[!UICONTROL Open]** , um den Upload zu starten.
+1. Klicks **[!UICONTROL Choose File]** und wählen Sie die Datei aus. Klicks **[!UICONTROL Open]** , um den Upload zu starten.
 
    Nach Abschluss des Uploads eine Liste der Spalten [!DNL Commerce Intelligence] angezeigt.
 
@@ -107,7 +107,7 @@ Wenn Sie eine Visualisierung benötigen, sehen Sie sich den gesamten Prozess an:
 
 ![](../../../assets/fileupload.gif)
 
-Hochgeladene Tabellen werden unter der **Datei-Uploads** -Abschnitt der Tabellenliste (in den Optionen &quot;Alle Tabellen&quot;und &quot;Synchronisierte Tabellen&quot;) im Data Warehousen-Manager:
+Hochgeladene Tabellen werden unter der Variablen **Datei-Uploads** -Abschnitt der Tabellenliste (in den Optionen Alle Tabellen und Synchronisierte Tabellen ) im Data Warehouse-Manager:
 
 ![](../../../assets/upload-tables.png)
 
@@ -129,17 +129,17 @@ Haben Sie neue Daten, die Sie zu einer bereits hochgeladenen Datei hinzufügen k
    | `Retain old row; discard new row` | Dadurch werden neue Daten ignoriert, wenn eine Zeile sowohl in der vorhandenen Tabelle als auch in der neuen Datei denselben Primärschlüssel enthält. |
    | `Purge all existing rows first and ignore duplicate keys within the file` | Dadurch werden alle vorhandenen Daten gelöscht und durch die neuen Daten aus der Datei ersetzt. Verwenden Sie diese Option nur, wenn Sie keine der Daten in der vorhandenen Tabelle benötigen. |
 
-1. Klicken **[!UICONTROL Choose File]** und wählen Sie die Datei aus.
+1. Klicks **[!UICONTROL Choose File]** und wählen Sie die Datei aus.
 
-1. Klicken **[!UICONTROL Open]** , um den Upload zu starten.
+1. Klicks **[!UICONTROL Open]** , um den Upload zu starten.
 
    Nach Abschluss des Uploads [!DNL Commerce Intelligence] validiert die Datenstruktur in der Datei. A *Erfolg!* wird oben im Bildschirm angezeigt, nachdem die Tabelle gespeichert wurde.
 
 ## Datenverfügbarkeit {#availability}
 
-Wie berechnete Spalten sind auch Daten aus Datei-Uploads nach Abschluss des nächsten Aktualisierungszyklus verfügbar. Wenn während des Datei-Uploads eine Aktualisierung durchgeführt wurde, stehen die Daten erst nach der nächsten Aktualisierung zur Verfügung. Sobald ein Aktualisierungszyklus abgeschlossen ist, können Sie zum `Data Preview` in Ihrer Data Warehouse, um sicherzustellen, dass die hochgeladene Datei und die Daten erwartungsgemäß angezeigt werden.
+Wie berechnete Spalten sind auch Daten aus Datei-Uploads nach Abschluss des nächsten Aktualisierungszyklus verfügbar. Wenn während des Datei-Uploads eine Aktualisierung durchgeführt wurde, stehen die Daten erst nach der nächsten Aktualisierung zur Verfügung. Sobald ein Aktualisierungszyklus abgeschlossen ist, können Sie zum `Data Preview` -Registerkarte in Ihrer Data Warehouse, um sicherzustellen, dass die Datei korrekt hochgeladen wurde und die Daten erwartungsgemäß angezeigt werden.
 
-## Aufbrechen {#wrapup}
+## Aufwischen {#wrapup}
 
 In diesem Thema wurden nur die Grundlagen für die Verwendung des Datenimports behandelt. Möglicherweise möchten Sie jedoch etwas erweiterter vorgehen. In den entsprechenden Artikeln finden Sie Anleitungen zum Formatieren und Importieren von Finanzdaten, E-Commerce, Werbeausgaben und anderen Datentypen.
 

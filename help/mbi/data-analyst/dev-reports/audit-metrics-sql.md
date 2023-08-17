@@ -21,7 +21,7 @@ Die [!DNL SQL Report Builder] wird hauptsächlich zur Erstellung neuer Berichte 
 
 - Die **Metrikvorgang** durchgeführt werden, angegeben durch `SUM()` im Beispiel unten.
 - Die **Tabelle auf** , aus der die Metrik erstellt wurde, angezeigt durch die `FROM` -Klausel.
-- Alle **Filter (und Filtersätze)** die zur Metrik hinzugefügt wurden, angegeben durch die `WHERE` -Klausel im Beispiel unten.
+- Alle **Filter (und Filtersätze)** , die zur Metrik hinzugefügt wurden, angegeben durch die `WHERE` -Klausel im Beispiel unten.
 - Die Komponente der **timestamp** (Jahr, Monat), an dem die Daten bestellt werden sollen, angegeben durch `ORDER BY` -Klausel im Beispiel unten.
 
 Um eine bessere Übersicht über die Abfrage zu erhalten, können Sie die Anzeige im Abfragefeld neu formatieren. Wenn Sie bereit sind, wählen Sie `Run Query`. Die Ergebnisse werden als Tabelle im Berichtbereich unter der Abfrage ausgefüllt.
@@ -48,4 +48,4 @@ Sie können auch benutzerdefinierte Abfragen schreiben und die Ergebnisse export
 
 >[!NOTE]
 >
->Wenn Sie nach der Prüfung Ihrer Daten eine Diskrepanz feststellen, überprüfen Sie die [Support kontaktieren: Datendiskrepanzen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) Support-Thema für weitere Informationen zu den nächsten Schritten.
+>Wenn Sie nach der Prüfung Ihrer Daten eine Diskrepanz feststellen, überprüfen Sie die [Kontaktaufnahme mit Support: Datendiskrepanzen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) Support-Thema für weitere Informationen zu den nächsten Schritten.

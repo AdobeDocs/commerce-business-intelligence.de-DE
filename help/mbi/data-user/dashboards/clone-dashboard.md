@@ -29,7 +29,7 @@ Dies ist nützlich, wenn Sie einen vorhandenen Grafiksatz neu erstellen, aber di
 
    Wenn Sie keine Werte in diese Felder eingeben, wird eine `(2)` wird automatisch am Ende aller Diagrammtitel im neuen Dashboard angehängt.
 
-1. Klicken **[!UICONTROL Save]** , um das Dashboard zu klonen.
+1. Klicks **[!UICONTROL Save]** , um das Dashboard zu klonen.
 
 Beispiel:
 

@@ -1,6 +1,6 @@
 ---
 title: Amazon RDS verbinden
-description: Erfahren Sie mehr über die Schritte zum Verbinden Ihrer RDS-Instanz.
+description: Erfahren Sie, wie Sie Ihre RDS-Instanz verbinden.
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -19,23 +19,23 @@ ht-degree: 0%
 * [[!DNL Microsoft SQL]](../integrations/microsoft-sql-server.md)
 * [[!DNL PostgreSQL]](../integrations/postgresql.md)
 
-Die Schritte zum Verbinden der [!DNL RDS] Die Instanz variiert je nach dem verwendeten Datenbanktyp und abhängig davon, ob Sie eine verschlüsselte Verbindung verwenden (z. B. eine [`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)), aber hier sind die Grundlagen.
+Die Schritte zum Verbinden der [!DNL RDS] Die Instanzen variieren je nach dem verwendeten Datenbanktyp und abhängig davon, ob Sie eine verschlüsselte Verbindung (wie eine [`SSH tunnel for MySQL`](../integrations/mysql-via-ssh-tunnel.md)), aber hier sind die Grundlagen.
 
-## Autorisieren [!DNL Commerce Intelligence] , um auf Ihre Datenbank zuzugreifen
+## Autorisieren [!DNL Commerce Intelligence] auf Ihre Datenbank zugreifen
 
 Auf der Seite mit den Anmeldedaten (**[!UICONTROL Manage Data** > **Integrations]**) sehen Sie für jede Datenbank ein Feld mit den IP-Adressen, die Sie für die Verbindung R autorisieren müssen.[!DNL RDS] nach [!DNL Commerce Intelligence]: `54.88.76.97` und `34.250.211.151`. Im Folgenden finden Sie die `MySQL credentials` Seite, auf der Sie das Feld &quot;IP-Adresse&quot;markiert haben:
 
 ![](../../../assets/RDS_IP.png)
 
-Für [!DNL Commerce Intelligence] für eine erfolgreiche Verbindung mit Ihrer [!DNL RDS] müssen Sie diese IP-Adressen über die AWS-Verwaltungskonsole der entsprechenden Sicherheitsgruppe der Datenbank hinzufügen. Diese IP-Adressen können zu einer vorhandenen Gruppe hinzugefügt werden oder Sie können eine erstellen. Wichtig ist, dass die Gruppe berechtigt ist, auf die Instanz zuzugreifen, mit der Sie eine Verbindung herstellen möchten. [!DNL Commerce Intelligence].
+Für [!DNL Commerce Intelligence] für eine erfolgreiche Verbindung mit Ihrer [!DNL RDS] müssen Sie diese IP-Adressen über die AWS-Verwaltungskonsole der entsprechenden Sicherheitsgruppe der Datenbank hinzufügen. Diese IP-Adressen können zu einer vorhandenen Gruppe hinzugefügt werden oder Sie können eine erstellen. Wichtig ist, dass die Gruppe berechtigt ist, auf die Instanz zuzugreifen, mit der Sie eine Verbindung herstellen möchten [!DNL Commerce Intelligence].
 
-Beim Hinzufügen von [!DNL Commerce Intelligence] IP-Adressen, stellen Sie sicher, dass Sie eine `/32` an das Ende der Adresse, die [!DNL Amazon] dass es sich um eine exakte IP-Adresse handelt. Keine Sorge; In der Benutzeroberfläche von AWS wird deutlich, dass dies erforderlich ist.
+Beim Hinzufügen von [!DNL Commerce Intelligence] IP-Adressen, stellen Sie sicher, dass Sie eine `/32` an das Ende der Adresse, die [!DNL Amazon] dass es sich um eine exakte IP-Adresse handelt. Machen Sie sich keine Gedanken; in der Benutzeroberfläche von AWS wird deutlich, dass dies erforderlich ist.
 
 ## Erstellen Sie eine `Linux` Benutzer für [!DNL Commerce Intelligence] {#linux}
 
 >[!NOTE]
 >
->Dieser Schritt ist nur erforderlich, wenn Sie eine verschlüsselte Verbindung verwenden. Anweisungen hierzu finden Sie im Einrichtungsthema für die verwendete Datenbank (z. B.: MySQL). Die `Linux` Benutzer ermöglicht uns die Erstellung eines `SSH tunnel`, die sicherste Methode zum Senden von Daten über das Internet.
+>Dieser Schritt ist nur erforderlich, wenn Sie eine verschlüsselte Verbindung verwenden. Anweisungen hierzu finden Sie im Setup-Thema der verwendeten Datenbank (z. B. MySQL). Die `Linux` Benutzer ermöglicht uns die Erstellung eines `SSH tunnel`, die sicherste Methode zum Senden von Daten über das Internet.
 
 ## Datenbankbenutzer erstellen für [!DNL Commerce Intelligence]
 
@@ -43,13 +43,13 @@ Dies ist der Teil des Prozesses, in dem die Schritte je nach verwendeter Datenba
 
 ## Verbindungsinformationen eingeben in [!DNL Commerce Intelligence]
 
-Nachdem Sie [!DNL Commerce Intelligence] Zugriff auf Ihre Instanz und Erstellung eines Benutzers für uns. Das Letzte, was Sie tun müssen, ist die Angabe der Verbindungsinformationen in [!DNL Commerce Intelligence].
+Nachdem Sie die [!DNL Commerce Intelligence] Zugriff auf Ihre Instanz und Erstellung eines Benutzers für uns. Das Letzte, was Sie tun müssen, ist die Angabe der Verbindungsinformationen in [!DNL Commerce Intelligence].
 
-Die Berechtigungsseiten für `MySQL`, `Microsoft SQL`und `PostgreSQL` auf die über `Integrations` page (**[!UICONTROL Manage Data** > **Integrations]**) durch Klicken auf **[!UICONTROL Add Integration]**. Wenn die Liste der Integrationen angezeigt wird, klicken Sie auf das Symbol für die Datenbank, die Sie verwenden, um zur Seite &quot;Anmeldeinformationen&quot;zu gelangen. Wenn Sie derzeit keinen Zugriff auf die benötigte Integration haben, wenden Sie sich an Ihr Adobe Account Team.
+Die Berechtigungsseiten für `MySQL`, `Microsoft SQL`, und `PostgreSQL` über die `Integrations` page (**[!UICONTROL Manage Data** > **Integrations]**) durch Klicken auf **[!UICONTROL Add Integration]**. Wenn die Liste der Integrationen angezeigt wird, klicken Sie auf das Symbol für die Datenbank, die Sie verwenden, um zur Seite &quot;Anmeldeinformationen&quot;zu gelangen. Wenn Sie derzeit keinen Zugriff auf die benötigte Integration haben, wenden Sie sich an Ihr Adobe-Account-Team.
 
 Um die Verbindung zu erstellen, benötigen Sie die folgenden Informationen:
 
-* Die öffentliche Adresse Ihrer RDS-Instanz: Dies finden Sie im Abschnitt [!DNL AWS] Verwaltungskonsole.
+* Die öffentliche Adresse Ihrer RDS-Instanz: Diese finden Sie im [!DNL AWS] Verwaltungskonsole.
 * Der Anschluss, den Ihre Datenbankinstanz verwendet: Einige Datenbanken verfügen über einen Standardanschluss, mit dem die `Port` -Feld. Diese Informationen finden Sie auch in der Einrichtungsdokumentation für die Datenbank.
 * Benutzername und Kennwort des Benutzers, den Sie für [!DNL Commerce Intelligence].
 

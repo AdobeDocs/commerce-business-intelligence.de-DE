@@ -37,7 +37,7 @@ Um eine Verbindung herzustellen [!DNL MySQL] Datenbank zu [!DNL Commerce Intelli
 
 Die `public key` wird verwendet, um die [!DNL Commerce Intelligence] `Linux` Benutzer. Im nächsten Abschnitt erstellen Sie den Benutzer und importieren den Schlüssel.
 
-1. Navigieren Sie zu **[!UICONTROL Manage Data** > **Connections]** und klicken Sie auf **[!UICONTROL Add New Data Source]**.
+1. Navigieren Sie zu **[!UICONTROL Manage Data** > **Connections]** und klicken **[!UICONTROL Add New Data Source]**.
 1. Klicken Sie auf `MySQL` Symbol.
 1. Nach dem `MySQL credentials` Seite geöffnet wird, legen Sie die `Encrypted` Umschalten auf `Yes`. Dadurch wird das SSH-Setup-Formular angezeigt.
 1. Die `public key` befindet sich unter diesem Formular.
@@ -83,11 +83,11 @@ Dabei kann es sich um eine Produktions- oder Sekundärmaschine handeln, sofern d
 
 >[!IMPORTANT]
 >
->Wenn die Variable `sshd\_config` -Datei, die mit dem Server verknüpft ist, nicht auf die Standardoption festgelegt, sondern nur bestimmte Benutzer haben Serverzugriff. Dies verhindert eine erfolgreiche Verbindung zu [!DNL Commerce Intelligence]. In diesen Fällen ist es erforderlich, einen Befehl wie `AllowUsers` , um `rjmetric` Benutzerzugriff auf den Server.
+>Wenn die Variable `sshd\_config` -Datei, die mit dem Server verknüpft ist, nicht auf die Standardoption festgelegt, sondern nur bestimmte Benutzer haben Serverzugriff. Dies verhindert eine erfolgreiche Verbindung zu [!DNL Commerce Intelligence]. In diesen Fällen ist es erforderlich, einen Befehl wie `AllowUsers` , um die `rjmetric` Benutzerzugriff auf den Server.
 
 ## Erstellen einer [!DNL MySQL] Benutzer für [!DNL Commerce Intelligence] {#mysql}
 
-Ihr Unternehmen erfordert möglicherweise einen anderen Prozess, aber die einfachste Möglichkeit, diesen Benutzer zu erstellen, besteht darin, die folgende Abfrage auszuführen, wenn Sie sich bei anmelden [!DNL MySQL] als Benutzer mit dem Recht, Berechtigungen zu gewähren:
+Ihr Unternehmen erfordert möglicherweise einen anderen Prozess, die einfachste Möglichkeit zum Erstellen dieses Benutzers besteht jedoch darin, die folgende Abfrage auszuführen, wenn Sie sich bei anmelden [!DNL MySQL] als Benutzer mit dem Recht, Berechtigungen zu gewähren:
 
 ```sql
     GRANT SELECT ON *.* TO 'rjmetric'@'localhost' IDENTIFIED BY '<secure password here>';
@@ -99,7 +99,7 @@ Um den Zugriff dieses Benutzers auf Daten in bestimmten Datenbanken, Tabellen od
 
 ## Eingabe der Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence] {#finish}
 
-Um Elemente einzuschließen, müssen Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]. Hast du die `MySQL credentials` Seite öffnen? Wenn nicht, gehen Sie zu **[!UICONTROL Data** > **Connections]** und klicken Sie auf **[!UICONTROL Add New Data Source]**, dann [!DNL MySQL] Symbol. Vergessen Sie nicht, die `Encrypted` Umschalten auf `Yes`.
+Um Elemente einzuschließen, müssen Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]. Hast du die `MySQL credentials` Seite öffnen? Wenn nicht, gehen Sie zu **[!UICONTROL Data** > **Connections]** und klicken **[!UICONTROL Add New Data Source]**, dann die [!DNL MySQL] Symbol. Vergessen Sie nicht, die `Encrypted` Umschalten auf `Yes`.
 
 Geben Sie die folgenden Informationen auf dieser Seite ein, beginnend mit dem `Database Connection` Abschnitt:
 
@@ -112,12 +112,12 @@ Geben Sie die folgenden Informationen auf dieser Seite ein, beginnend mit dem `D
 
 Im `SSH Connection` Abschnitt:
 
-* `Remote Address`: Die IP-Adresse oder der Hostname des Servers [!DNL Commerce Intelligence] in den
+* `Remote Address`: IP-Adresse oder Hostname des Servers [!DNL Commerce Intelligence] in den
 * `Username`: Der Benutzername für die [!DNL Commerce Intelligence] SSH ([!DNL Linux]) Benutzer
-* `SSH Port`: SSH-Anschluss auf Ihrem Server (standardmäßig 22)
+* `SSH Port`: SSH-Port auf Ihrem Server (standardmäßig 22)
 
-Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um das Setup abzuschließen.
+Klicken Sie abschließend auf **[!UICONTROL Save & Test]** , um das Setup abzuschließen.
 
 ## Verwandte:
 
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

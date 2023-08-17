@@ -1,5 +1,5 @@
 ---
-title: Anbinden von PostgreSQL über den SSH-Tunnel
+title: PostgreSQL über den SSH-Tunnel verbinden
 description: Erfahren Sie, wie Sie Ihre PostgreSQL-Datenbank über einen SSH-Tunnel mit Commerce Intelligence verbinden.
 exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
 role: Admin, Data Architect, Data Engineer, User
@@ -25,7 +25,7 @@ Um eine Verbindung herzustellen [!DNL PostgreSQL] Datenbank zu [!DNL Commerce In
 
 Die `public key` wird verwendet, um die [!DNL Commerce Intelligence] [!DNL Linux] Benutzer. Jetzt erstellen Sie den Benutzer und importieren den Schlüssel.
 
-1. Navigieren Sie zu **[!UICONTROL Manage Data** > **Connections]** und klicken Sie auf **[!UICONTROL Add a Data Source]**.
+1. Navigieren Sie zu **[!UICONTROL Manage Data** > **Connections]** und klicken **[!UICONTROL Add a Data Source]**.
 1. Klicken Sie auf [!DNL PostgreSQL] Symbol.
 1. Nach dem `PostgreSQL credentials` Seite geöffnet wird, legen Sie die `Encrypted` Umschalten auf `Yes`. Dadurch wird die `SSH` Formular einrichten.
 1. Die `public key` befindet sich unter diesem Formular.
@@ -38,7 +38,7 @@ Nachstehend wird gezeigt, wie Sie durch [!DNL Commerce Intelligence] , um den Sc
 
 ## Zugriff auf [!DNL Commerce Intelligence] IP-Adresse {#allowlist}
 
-Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firewall so konfigurieren, dass der Zugriff von Ihrer IP-Adresse aus gestattet wird. Es ist `54.88.76.97/32`, aber es befindet sich auch auf der `PostgreSQL` Seite mit Anmeldeinformationen. Siehe blaue Box in der obigen GIF.
+Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firewall so konfigurieren, dass sie den Zugriff von Ihrer IP-Adresse aus gestattet. Es ist `54.88.76.97/32`, aber es befindet sich auch auf der `PostgreSQL` Seite mit Anmeldeinformationen. Siehe blaue Box in der obigen GIF.
 
 ## Erstellen einer [!DNL Linux] Benutzer für [!DNL Commerce Intelligence] {#linux}
 
@@ -82,27 +82,27 @@ Ihr Unternehmen erfordert möglicherweise einen anderen Prozess. Die einfachste 
 
 Ersetzen `secure password` mit Ihrem eigenen sicheren Kennwort, das vom SSH-Kennwort abweichen kann. Stellen Sie außerdem sicher, dass Sie `database name` und `schema name` mit den entsprechenden Namen in Ihrer Datenbank.
 
-Wenn Sie mehrere Datenbanken oder Schemata verbinden möchten, wiederholen Sie diesen Vorgang nach Bedarf.
+Wenn Sie mehrere Datenbanken oder Schemata verbinden möchten, wiederholen Sie diesen Prozess nach Bedarf.
 
 ## Eingabe der Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence] {#finish}
 
-Um Elemente einzuschließen, müssen Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]. Hast du die [!DNL PostgreSQL] Berechtigungsseite öffnen? Wenn nicht, gehen Sie zu **[!UICONTROL Manage Data > Connections]** und klicken Sie auf **[!UICONTROL Add a Data Source]**, dann [!DNL PostgreSQL] Symbol. Vergessen Sie nicht, die `Encrypted` Umschalten auf `Yes`.
+Um Elemente einzuschließen, müssen Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]. Hast du die [!DNL PostgreSQL] Berechtigungsseite öffnen? Wenn nicht, gehen Sie zu **[!UICONTROL Manage Data > Connections]** und klicken **[!UICONTROL Add a Data Source]**, dann die [!DNL PostgreSQL] Symbol. Vergessen Sie nicht, die `Encrypted` Umschalten auf `Yes`.
 
 Geben Sie die folgenden Informationen auf dieser Seite ein, beginnend mit dem `Database Connection` Abschnitt:
 
 * `Username`: Der Benutzername RJMetrics Postgres (sollte rjmetric sein)
-* `Password`: Das Kennwort für RJMetrics Postgres
+* `Password`: Das RJMetrics Postgres-Kennwort
 * `Port`: PostgreSQL-Anschluss auf Ihrem Server (standardmäßig 5432)
 * `Host`: 127.0.0.1
 
 under `SSH Connection`:
 
-* `Remote Address`: Die IP-Adresse oder der Hostname des Servers, auf dem SSH ausgeführt wird
+* `Remote Address`: Die IP-Adresse oder der Hostname des Servers, in den Sie SSH durchführen werden
 * `Username`: Ihr SSH-Anmeldename (sollte rjmetric sein)
-* `SSH Port`: SSH-Anschluss auf Ihrem Server (standardmäßig 22)
+* `SSH Port`: SSH-Port auf Ihrem Server (standardmäßig 22)
 
-Wenn Sie fertig sind, klicken Sie auf **Speichern und testen** , um das Setup abzuschließen.
+Klicken Sie abschließend auf **Speichern und testen** , um das Setup abzuschließen.
 
 ### Verwandte
 
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

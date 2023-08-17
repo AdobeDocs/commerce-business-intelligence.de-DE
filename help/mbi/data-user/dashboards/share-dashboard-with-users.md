@@ -21,13 +21,13 @@ Die Freigabe von Dashboards ist eine hervorragende Möglichkeit, Ihr Team in der
 
 ## Dashboard freigeben
 
-1. Klicken **[!UICONTROL Share Dashboard]** oben auf dem Bildschirm.
+1. Klicks **[!UICONTROL Share Dashboard]** oben auf dem Bildschirm.
 
    Eine Liste aller Benutzer in Ihrer [!DNL Commerce Intelligence] -Konto angezeigt.
 
 1. Um einen Benutzer auszuwählen, für den das Dashboard freigegeben werden soll, aktivieren Sie das Kontrollkästchen links neben seinem Namen.
 
-   Um alle Benutzer auszuwählen/deren Auswahl aufzuheben, klicken Sie auf **[!UICONTROL Select]** und wählen Sie `Everyone` oder `None`zurück.
+   Um alle Benutzer auszuwählen/deren Auswahl aufzuheben, klicken Sie auf **[!UICONTROL Select]** und wählen `Everyone` oder `None`, bzw.
 
 1. Berechtigungen können von Benutzer zu Benutzer oder en masse festgelegt werden.
 

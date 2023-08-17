@@ -24,7 +24,7 @@ Sehen Sie sich einige der häufigsten Gründe an, aus denen Sie die [!DNL SQL Re
 
 ### Wenn Sie [!DNL SQL]-spezifische Funktionen...
 
-Teil der Schönheit der [!DNL SQL Report Builder] ist, dass Sie damit Funktionen verwenden können, die derzeit nicht im Data Warehouse Manager verfügbar sind. In der Vergangenheit musste vielleicht ein Analyste eintreten, um Ihnen bei der vollständigen Verwirklichung Ihrer Vision zu helfen.
+Teil der Schönheit der [!DNL SQL Report Builder] ist, dass es Ihnen die Möglichkeit gibt, Funktionen zu verwenden, die derzeit nicht im Data Warehouse-Manager verfügbar sind. In der Vergangenheit musste vielleicht ein Analyste eintreten, um Ihnen bei der vollständigen Verwirklichung Ihrer Vision zu helfen.
 
 Die [!DNL SQL Report Builder] unterstützt Funktionen wie [`LISTAGG`](https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html) und [`GETDATE`](https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html), die Sie zuvor nicht verwenden konnten. Sie können auf die [`full list`](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html), aber einige andere SQL-spezifische Funktionen sind:
 
@@ -39,17 +39,17 @@ Die [!DNL SQL Report Builder] unterstützt Funktionen wie [`LISTAGG`](https://do
 
 ### Wenn Sie einige Tests durchführen möchten...
 
-Wenn Sie verschiedene Techniken und Strategien ausprobieren möchten, um herauszufinden, was für Ihre Analyse am besten geeignet ist, sollten Sie die [!DNL SQL Report Builder]. Das Erstellen von Spalten im Data Warehousen-Manager erfordert Zeit, und die mithilfe des DWM erstellten Spalten hängen von Aktualisierungszyklen ab.
+Wenn Sie verschiedene Techniken und Strategien ausprobieren möchten, um herauszufinden, was für Ihre Analyse am besten geeignet ist, sollten Sie die [!DNL SQL Report Builder]. Das Erstellen von Spalten im Data Warehouse-Manager erfordert Zeit, und die mithilfe des DWM erstellten Spalten hängen von Aktualisierungszyklen ab.
 
-Sie müssen bestenfalls einen Aktualisierungszyklus durchlaufen, bevor Sie Ihre Spalte verwenden können. Wenn Sie feststellen, dass Sie beim Erstellen der Spalte einen Fehler gemacht haben, müssen Sie durchwarten *two* Zyklen: ein , um die Spalte anfänglich zu füllen, und ein anderer Zyklus, in dem die Revisionen propagiert werden.
+Sie müssen bestenfalls einen Aktualisierungszyklus durchlaufen, bevor Sie Ihre Spalte verwenden können. Wenn Sie feststellen, dass Sie beim Erstellen der Spalte einen Fehler gemacht haben, müssen Sie durchwarten *two* Zyklen: Ein Zyklus, in dem die Spalte anfänglich gefüllt wird, und ein weiterer Zyklus, in dem die Revisionen propagiert werden.
 
 ### Wenn Sie nur einmal eine neue Spalte verwenden...
 
-Wie im obigen Abschnitt erwähnt, dauert das Erstellen einer Spalte im Data Warehousen-Manager. Wenn Sie nur eine Spalte verwenden möchten, die Sie in einem Bericht erstellen, empfiehlt die Adobe, die [!DNL SQL Report Builder]. Dadurch müssen Sie nicht warten, bis ein Aktualisierungszyklus abgeschlossen ist, sodass Sie schneller wieder arbeiten können.
+Wie im obigen Abschnitt erwähnt, dauert das Erstellen einer Spalte im Data Warehouse-Manager. Wenn Sie nur eine Spalte verwenden möchten, die Sie in einem Bericht erstellen, empfiehlt Adobe die Verwendung der [!DNL SQL Report Builder]. Dadurch müssen Sie nicht warten, bis ein Aktualisierungszyklus abgeschlossen ist, sodass Sie schneller wieder arbeiten können.
 
 ### Wenn Sie mit Daten arbeiten, die eine Eins-zu-viele-Beziehung aufweisen ...
 
-Manchmal kann die Struktur Ihrer Daten die [!DNL SQL Report Builder] eine effizientere und logischere Wahl zur Erstellung Ihrer Analyse. Das Erstellen von Spalten für Eins-zu-Eins-Beziehungen ist im Data Warehousen-Manager unkompliziert, aber die Dinge können etwas verwirrend sein, wenn es um Eins-zu-viele-Beziehungen geht.
+Manchmal kann die Struktur Ihrer Daten die [!DNL SQL Report Builder] eine effizientere und logischere Wahl zur Erstellung Ihrer Analyse. Das Erstellen von Spalten für Eins-zu-Eins-Beziehungen ist im Data Warehouse-Manager unkompliziert, aber die Dinge können etwas verwirrend sein, wenn Sie es mit Eins-zu-viele-Beziehungen zu tun haben.
 
 Nehmen Sie an, dass ein einzelnes Produkt als Teil mehrerer Produktkategorien betrachtet wird, und Sie möchten den Umsatz sehen, der mit jeder Produktkategorie verbunden ist. Der Versuch, diese Beziehung mithilfe des DWM zu erstellen, kann mühsam und schwierig sein, aber eine [!DNL SQL] -Abfrage kann ein wenig einfacher sein:
 
@@ -57,11 +57,11 @@ Nehmen Sie an, dass ein einzelnes Produkt als Teil mehrerer Produktkategorien be
 
 ## Wann sollte ich den traditionellen Report Builder verwenden? {#whentraditionalrb}
 
-Während [!DNL SQL Report Builder] bietet Ihnen mehr Kontrolle und Zugriff auf zuvor nicht verfügbare Funktionen. Möglicherweise ist dies nicht immer die richtige Wahl. Die Adobe legt nahe, dass Sie bei der Entscheidung, welche Variante von ReportBuilder verwendet werden soll, auch Folgendes berücksichtigen.
+Während [!DNL SQL Report Builder] bietet Ihnen mehr Kontrolle und Zugriff auf zuvor nicht verfügbare Funktionen. Möglicherweise ist dies nicht immer die richtige Wahl. Adobe legt nahe, dass Sie auch Folgendes berücksichtigen, wenn Sie entscheiden, welchen Geschmack der Report Builder verwenden soll.
 
 ### Wenn Sie einen einfachen Bericht erstellen ...
 
-Wenn das, was Sie erstellen möchten, einfach ist, kann die Verwendung des herkömmlichen Report Builders viel schneller sein, als ein vollständiges [!DNL SQL] Abfrage. Es ist hilfreich, wenn sich die Spalten, die Sie zur Erstellung der Analyse benötigen, bereits im Data Warehousen-Manager befinden.
+Wenn das, was Sie erstellen möchten, einfach ist, kann die Verwendung des herkömmlichen Report Builders viel schneller sein, als ein vollständiges [!DNL SQL] Abfrage. Es ist hilfreich, wenn sich die Spalten, die Sie zur Erstellung der Analyse benötigen, bereits im Data Warehouse-Manager befinden.
 
 ### Wenn Sie Ihre Arbeit mit anderen Benutzern teilen ...
 
@@ -69,6 +69,6 @@ Verwenden Benutzer in Ihrer gesamten Organisation diese Analyse? Je nachdem, mit
 
 Wenn es einige Personen gibt, die den Bericht benötigen, aber nicht mit [!DNL SQL], schlägt Adobe vor, den ursprünglichen Geschmack des Report Builders zu verwenden. Das erleichtert ihnen die Arbeit.
 
-## Aufbrechen {#wrapup}
+## Aufwischen {#wrapup}
 
 Beide [!DNL SQL Report Builder] und [!DNL Visual Report Builder] für eine Vielzahl von Anwendungsfällen geeignet sind. Dies hängt in der Regel davon ab, was Ihre Analyseanforderungen sind und wer die Analyse verbraucht.

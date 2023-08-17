@@ -29,7 +29,7 @@ Im Folgenden wird erläutert, wann es sinnvoll sein könnte, konsolidierte Tabel
 
 Wenn Sie Ihre Produkte unter verschiedenen Marken und Websites verkaufen, sind die Tabellen für jede Marke oder Website wahrscheinlich ähnlich strukturiert.
 
-Sie können beispielsweise eine `orders` Tabelle für Website `A` und eine separate, aber ähnliche `orders` Tabelle für Website `B`. In diesem Fall kann es nützlich sein, die `orders` Tabellen auf der Website `A` und `B`. Auf diese Weise können Sie sich den konsolidierten Umsatz und die Anzahl der Bestellungen von der Website ansehen. `A` und `B`, um Metriken auch nach diesen beiden Websites segmentieren zu können.
+Sie können beispielsweise eine `orders` Tabelle für Website `A` und eine separate, aber ähnliche `orders` Tabelle für Website `B`. In diesem Fall kann es nützlich sein, die `orders` Tabellen auf der Website `A` und `B`. Auf diese Weise können Sie den konsolidierten Umsatz und die Anzahl der Bestellungen von der Website anzeigen `A` und `B`, um Metriken auch nach diesen beiden Websites segmentieren zu können.
 
 ### Integrieren älterer Daten
 
@@ -37,11 +37,11 @@ Viele Unternehmen haben ihre Datenbanken an der einen oder anderen Stelle umstru
 
 ### Kombinieren von Ereignissen für die Analyse aktiver Benutzer
 
-Stellen Sie sich eine Website vor, auf der Benutzer mehrere Dinge tun können: Nehmen Sie eine Umfrage vor, spielen Sie ein Spiel, kaufen Sie ein, wenden Sie sich an einen Freund und so weiter. Normalerweise wird jedes dieser Ereignisse in einer eigenen Tabelle gespeichert. Dies erschwert die Durchführung einer Analyse, wie viele verschiedene Benutzer in einem bestimmten Zeitraum mindestens eine Aktion irgendeiner Art ergriffen haben.
+Stellen Sie sich eine Website vor, auf der Benutzer mehrere Dinge tun können: Umfragen durchführen, ein Spiel spielen, einen Kauf tätigen, Freunde kennenlernen usw. Normalerweise wird jedes dieser Ereignisse in einer eigenen Tabelle gespeichert. Dies erschwert die Durchführung einer Analyse, wie viele verschiedene Benutzer in einem bestimmten Zeitraum mindestens eine Aktion irgendeiner Art ergriffen haben.
 
 Sie können konsolidierte Tabellen verwenden, um eine einheitliche Liste aller Benutzer und wann eines dieser Ereignisse stattgefunden hat. Sie können dann Abfragen auf die konsolidierte Tabelle ausführen, um eine solche Analyse einfach durchzuführen.
 
-Wie bei allen anderen Tabellen in Ihrer Data Warehouse können Sie zusätzliche Spalten hinzufügen, um verschiedene Arten von Diagrammen und Analysen zu unterstützen.
+Wie bei allen anderen Tabellen in Ihrer Data Warehouse können Sie zusätzliche Spalten hinzufügen, um verschiedene Arten von Diagrammen und Analysen zu ermöglichen.
 
 ## Erstellen, Anzeigen oder Aktualisieren einer konsolidierten Tabelle
 
@@ -49,4 +49,4 @@ Wenn Sie eine konsolidierte Tabelle zu Ihrer Data Warehouse hinzufügen möchten
 
 >[!NOTE]
 >
->Da konsolidierte Tabellen nicht im `Data Warehouse Manager`, können Sie diese Tabellen nur anzeigen und aktualisieren, indem Sie [!DNL Commerce Intelligence] unterstützen.
+>Da konsolidierte Tabellen nicht im `Data Warehouse Manager`, das Anzeigen und Aktualisieren dieser Tabellen nur durch [!DNL Commerce Intelligence] unterstützen.

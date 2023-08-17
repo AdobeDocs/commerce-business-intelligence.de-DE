@@ -7,7 +7,7 @@ feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce 
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Wann [!DNL Adobe Commerce Intelligence] abruft [!DNL MongoDB] -Daten in ein relationales Modell übersetzt werden.
 
-Die schlechte Nachricht: Die meisten Datenmuster werfen zwar kein Problem auf, es gibt jedoch einige, die von [!DNL Commerce Intelligence], da die Übersetzung in ein relationales Modell erfolgt.
+Die schlechte Nachricht: Die meisten Datenmuster werfen zwar kein Problem auf, es gibt jedoch einige wenige, die von [!DNL Commerce Intelligence], da die Übersetzung in ein relationales Modell erfolgt.
 
 Die gute Nachricht: All diese Muster lassen sich vermeiden.
 
-## Übergeordnete Arrays {#subnested}
+## Subverschachtelte Arrays {#subnested}
 
 Wenn Ihre Sammlung wie im folgenden Beispiel aussieht: [!DNL Commerce Intelligence] repliziert nur die Daten im Elemente-Array. Daten aus dem Array der Unterelemente werden nicht abgerufen.
 

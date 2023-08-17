@@ -31,7 +31,7 @@ In der typischen Commerce-Datenbank gibt es eine `orders` Tabelle, die mit einer
   >
   >Um die eindeutige Person zu identifizieren, die die Bestellung aufgegeben hat, muss ein anderes eindeutiges Benutzerattribut vorhanden sein. `customer\_id` an eine Bestellung angehängt. In der Regel wird die E-Mail-Adresse des Kunden verwendet.
 
-## Wie werden Gastaufträge bei der Einrichtung der Data Warehouse berücksichtigt?
+## Wie werden Gastaufträge bei der Data Warehouse-Einrichtung berücksichtigt?
 
 Normalerweise berücksichtigt der Sales Engineer, der Ihr Konto implementiert, Gastaufträge bei der Erstellung der Grundlage Ihrer Data Warehouse.
 
@@ -41,11 +41,11 @@ Sie werden feststellen, dass die Variable `Customers we count` Filtersatz in die
 
 ![](../../assets/guest-orders-filter-set.png)
 
-In einer Situation ohne Gastaufträge existiert jeder Kunde als eindeutige Zeile in der Kundentabelle (siehe Abbildung 1). Eine Metrik, z. B. `New customers` kann einfach die ID dieser Tabelle basierend auf `created\_at` Datum, um neue Kunden basierend auf dem Registrierungsdatum zu verstehen.
+In einer Situation ohne Gastaufträge existiert jeder Kunde als eindeutige Zeile in der Kundentabelle (siehe Abbildung 1). Eine Metrik wie `New customers` kann einfach die ID dieser Tabelle basierend auf `created\_at` Datum, um neue Kunden basierend auf dem Registrierungsdatum zu verstehen.
 
-Bei einer Einrichtung für Gastbestellungen, bei der alle Kundenmetriken auf der `orders` -Tabelle, um Gastbestellungen zu berücksichtigen, müssen Sie sicherstellen, dass Sie `not counting customers twice`. Wenn Sie die ID der Auftragstabelle zählen, zählen Sie jede Bestellung. Wenn Sie stattdessen die ID auf der `orders` Tabelle erstellen und einen Filter verwenden, `Customer's order number = 1`, werden Sie jeden Unique Customer zählen `only one time`. Dies gilt für alle Metriken auf Kundenebene, z. B. `Customer's lifetime revenue` oder `Customer's lifetime number of orders`.
+Bei einer Einrichtung für Gastbestellungen, bei der alle Kundenmetriken auf der `orders` -Tabelle, um Gastbestellungen zu berücksichtigen, müssen Sie sicherstellen, dass Sie `not counting customers twice`. Wenn Sie die ID der Auftragstabelle zählen, werden alle Bestellungen gezählt. Wenn Sie stattdessen die ID auf der `orders` Tabelle erstellen und einen Filter verwenden, `Customer's order number = 1`, werden Sie jeden Unique Customer zählen `only one time`. Dies gilt für alle Metriken auf Kundenebene, z. B. `Customer's lifetime revenue` oder `Customer's lifetime number of orders`.
 
-Sie können oben sehen, dass null vorhanden ist `customer\_ids` im `orders` Tabelle. Wenn Sie `customer\_email` um Unique Customers zu identifizieren, können Sie sehen, dass `erin@test.com` hat drei (3) Bestellungen aufgegeben. Daher können Sie eine `New customers` Metrik auf Ihrer `orders` -Tabelle anhand der folgenden Bedingungen:
+Sie können oben sehen, dass null vorhanden ist. `customer\_ids` im `orders` Tabelle. Wenn Sie die `customer\_email` um Unique Customers zu identifizieren, können Sie sehen, dass `erin@test.com` hat drei (3) Bestellungen aufgegeben. Daher können Sie eine `New customers` Metrik auf Ihrer `orders` -Tabelle anhand der folgenden Bedingungen:
 
 * `Operation table = orders`
 * `Operation column = id`

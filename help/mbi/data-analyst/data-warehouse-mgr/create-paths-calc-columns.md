@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Neuerung berechneter Spalten
 
-Wann [berechnete Spalten erstellen](../data-warehouse-mgr/creating-calculated-columns.md) In Ihrer Data Warehouse werden Sie aufgefordert, einen Pfad zu definieren, der beschreibt, wie die Tabelle, in der Sie eine Spalte erstellen, mit der Tabelle verbunden ist, aus der Sie Informationen abrufen. Um einen Pfad erfolgreich zu erstellen, müssen Sie zwei Dinge wissen:
+Wann [berechnete Spalten erstellen](../data-warehouse-mgr/creating-calculated-columns.md) In Ihrer Data Warehouse werden Sie aufgefordert, einen Pfad zu definieren, der beschreibt, wie die Tabelle, in der Sie eine Spalte erstellen, mit der Tabelle zusammenhängt, aus der Sie Informationen abrufen. Um einen Pfad erfolgreich zu erstellen, müssen Sie zwei Dinge wissen:
 
 1. Beziehung der Tabellen in Ihren Datenbanken
 1. Die primären und Fremdschlüssel, die diese Beziehung definieren
@@ -26,7 +26,7 @@ Wenn Sie diese Informationen kennen, können Sie einfach einen Pfad entsprechend
 
 ### Tabellenbeziehungen {#relationships}
 
-Dieses Konzept wird im Abschnitt [Artikel zum Verstehen und Auswerten von Tabellenbeziehungen](../../data-analyst/data-warehouse-mgr/table-relationships.md)aber eine kurze Zusammenfassung schadet nie jemandem, nicht wahr?
+Dieses Konzept wird im Abschnitt [Artikel zum Verstehen und Auswerten von Tabellenbeziehungen](../../data-analyst/data-warehouse-mgr/table-relationships.md), aber eine kurze Zusammenfassung schadet nie jemandem, nicht wahr?
 
 Tabellen können auf drei Arten miteinander verbunden werden:
 
@@ -34,7 +34,7 @@ Tabellen können auf drei Arten miteinander verbunden werden:
 |-----|-----|
 | **`one-to-one`** | Das Verhältnis zwischen Personen und Führerscheinnummern. Eine Person kann nur eine Führerscheinnummer besitzen, und eine Führerscheinnummer gehört nur einer Person. |
 | **`one-to-many`** | Die Beziehung zwischen Bestellungen und Artikeln - eine Bestellung kann viele Elemente enthalten, aber ein Artikel gehört zu einer Bestellung. In diesem Fall ist die Auftragstabelle die eine Seite und die Artikeltabelle die n Seite. |
-| **`many-to-many`** | Beziehung zwischen Produkten und Kategorien: Ein Produkt kann zu vielen Kategorien gehören und eine Kategorie kann viele Produkte enthalten. |
+| **`many-to-many`** | Die Beziehung zwischen Produkten und Kategorien: Ein Produkt kann zu vielen Kategorien gehören und eine Kategorie kann viele Produkte enthalten. |
 
 {style="table-layout:auto"}
 
@@ -52,17 +52,17 @@ Beim Erstellen einer Spalte in Ihrer Data Warehouse müssen Sie den Pfad definie
 
 Verwenden Sie die Beziehung zwischen **Kunden** und **Bestellungen** um Ihnen zu zeigen, wie es gemacht wird. Aufschlüsselung:
 
-* Die Beziehung lautet `one-to-many` - ein Kunde kann viele Bestellungen haben, aber eine Bestellung kann nur einen Kunden haben. Dies gibt die Richtung der Beziehung an oder gibt an, wo die berechnete Spalte erstellt werden soll. In diesem Fall bedeutet dies Informationen aus dem `orders` -Tabelle in die `customers` Tabelle.
-* Die `primary key` Sie verwenden möchten `customers.customerid`oder `customer ID` in der Spalte `customers` Tabelle.
-* Die `foreign key` Sie verwenden möchten `orders.customerid`oder `customer ID` in der Spalte `orders` Tabelle.
+* Die Beziehung lautet `one-to-many` - ein Kunde kann viele Bestellungen haben, aber eine Bestellung kann nur einen Kunden haben. Dies gibt die Richtung der Beziehung an oder gibt an, wo die berechnete Spalte erstellt werden soll. In diesem Fall bedeutet dies Informationen aus dem `orders` -Tabelle kann in die `customers` Tabelle.
+* Die `primary key` Sie verwenden möchten, ist `customers.customerid`oder die `customer ID` in der `customers` Tabelle.
+* Die `foreign key` Sie verwenden möchten, ist `orders.customerid`oder die `customer ID` in der `orders` Tabelle.
 
 Jetzt können Sie den Pfad erstellen.
 
 1. Klicken **[!UICONTROL Data > Data Warehouse]**.
 1. Klicken Sie in der Tabellenliste auf die Tabelle, in der Sie die Spalte erstellen möchten. In diesem Beispiel ist dies die `customers` Tabelle.
 1. Das Tabellenschema wird angezeigt. Klicken **[!UICONTROL Create New Column]**.
-1. Geben Sie Ihrer Spalte einen Namen, z. B. `Customer's orders`.
-1. Wählen Sie die Definition für die Spalte aus. Sehen Sie sich die [Berechnete Spaltenanleitung](../data-warehouse-mgr/creating-calculated-columns.md) für ein praktisches Cheatsheet.
+1. Benennen Sie die Spalte beispielsweise `Customer's orders`.
+1. Wählen Sie die Spaltendefinition aus. Sehen Sie sich die [Berechnete Spaltenanleitung](../data-warehouse-mgr/creating-calculated-columns.md) für ein praktisches Cheatsheet.
 1. Im [!UICONTROL Select table and column] Dropdown-Liste klicken Sie auf die **[!UICONTROL Create new path]** -Option.
 
    ![Erstellen von Pfaden für berechnete Spalten modal](../../assets/Creating_Paths_modal.png)
@@ -73,7 +73,7 @@ Jetzt können Sie den Pfad erstellen.
 
    Im `One` side, wählen Sie `customers.customerid` - eine Bestellung kann nur einen Kunden haben.
 
-1. Klicken **[!UICONTROL Save]** , um den Pfad zu speichern und die Erstellung der Spalte abzuschließen.
+1. Klicks **[!UICONTROL Save]** , um den Pfad zu speichern und die Erstellung der Spalte abzuschließen.
 
 ### Einschränkungen beim Erstellen von Pfaden {#limits}
 
@@ -89,11 +89,11 @@ Wenn Sie aufgrund einer oder mehrerer der oben genannten Einschränkungen keine 
 
 ## Berechneten Spaltenpfad löschen {#delete}
 
-Einen falschen Pfad in Ihrer Data Warehouse erstellt? Oder vielleicht machen Sie eine kleine Frühlingsreinigung und wollen aufräumen? Wenn Sie einen Pfad aus Ihrem Konto löschen müssen, können Sie [Senden eines Tickets an Adobe Support-Analysten](../../guide-overview.md#Submitting-a-Support-Ticket). **Stellen Sie sicher, dass Sie den Namen des Pfads einschließen!**
+einen falschen Pfad in Ihrem Data Warehouse erstellt? Oder vielleicht machen Sie eine kleine Frühlingsreinigung und wollen aufräumen? Wenn Sie einen Pfad aus Ihrem Konto löschen müssen, können Sie [Senden eines Tickets an Adobe-Support-Analysten](../../guide-overview.md#Submitting-a-Support-Ticket). **Stellen Sie sicher, dass Sie den Namen des Pfads einschließen!**
 
-## Aufbrechen {#wrapup}
+## Aufwischen {#wrapup}
 
-Jetzt können Sie Pfade für berechnete Spalten in Ihrer Data Warehouse erstellen. Wenn Sie sich bei einem bestimmten Pfad immer noch unsicher sind, können Sie immer auf **[!UICONTROL Support]** in [!DNL Commerce Intelligence] -Konto, um Hilfe zu erhalten.
+Jetzt ist es Ihnen bequem, Pfade für berechnete Spalten in Ihrer Data Warehouse zu erstellen. Wenn Sie sich bei einem bestimmten Pfad immer noch unsicher sind, können Sie immer auf **[!UICONTROL Support]** in [!DNL Commerce Intelligence] -Konto, um Hilfe zu erhalten.
 
 ## Verwandte
 

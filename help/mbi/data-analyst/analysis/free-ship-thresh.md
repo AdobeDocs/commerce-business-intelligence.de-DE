@@ -32,7 +32,7 @@ Wenn Sie sich in der ursprünglichen Architektur befinden (z. B. wenn Sie nicht 
 * **`sales_flat_order`** table
    * Diese Berechnung erstellt Behälter in Schritten, die in Bezug auf Ihre typischen Warenkorbgrößen liegen. Dies kann von Schritten bis zu 5, 10, 50, 100 reichen.
 
-* **`Order subtotal (buckets)`** Originalarchitektur: , die von einem Analytiker im Rahmen Ihrer `[FREE SHIPPING ANALYSIS]` Ticket
+* **`Order subtotal (buckets)`** Originalarchitektur: von einem Analytiker im Rahmen Ihrer `[FREE SHIPPING ANALYSIS]` Ticket
 * **`Order subtotal (buckets)`** Neue Architektur:
    * Wie oben erwähnt, werden bei dieser Berechnung die Behälter in Schritten erstellt, die in Bezug auf Ihre typischen Warenkorbgrößen liegen. Wenn Sie über eine native Spalte mit Zwischensummen verfügen, z. B. `base_subtotal`, der als Grundlage für diese neue Spalte verwendet werden kann. Ist dies nicht der Fall, kann es sich um eine berechnete Spalte handeln, die Versand- und Rabatte vom Umsatz ausschließt.
 

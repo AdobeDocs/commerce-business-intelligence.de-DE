@@ -1,5 +1,5 @@
 ---
-title: Google Analytics - Übersicht über die Benutzerakquise-Quelldaten verfolgen
+title: Google Analytics - Übersicht über die Benutzerakquise-Quelldaten
 description: Erfahren Sie, wie Sie Ihre Daten nach der Benutzerakquise-Quelle segmentieren.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
@@ -35,7 +35,7 @@ In diesem Thema wird erläutert, wie Sie [!DNL Google Analytics] Akquise-Kanal-I
 
 #### Warum?
 
-Wenn Sie sich nur die Standardeinstellung ansehen [!DNL Google Analytics] Konversions- und Akquise-Metriken, erhalten Sie nicht das gesamte Bild. Während die Anzahl der Konversionen aus der kostenlosen Suche im Vergleich zur gebührenpflichtigen Suche interessant ist, was können Sie mit diesen Informationen machen? Sollten Sie mehr Geld für die gebührenpflichtige Suche ausgeben? Das hängt vom Wert der Kunden ab, die von diesem Kanal stammen, was von Google Analytics nicht bereitgestellt wird.
+Wenn Sie sich nur die Standardeinstellung ansehen [!DNL Google Analytics] Konversions- und Akquise-Metriken, erhalten Sie nicht das gesamte Bild. Während die Anzahl der Konversionen aus der kostenlosen Suche im Vergleich zur gebührenpflichtigen Suche interessant ist, was können Sie mit diesen Informationen machen? Sollten Sie mehr Geld für die gebührenpflichtige Suche ausgeben? Das hängt vom Wert der Kunden ab, die von diesem Kanal kommen, was keine Google Analytics bietet.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Dieser Code wurde in eine [PHP-Bibliothek wird auf github gehostet](https://gith
 
 Die zurückgegebene `$data` array ist eine Zuordnung der Schlüssel `source`, `medium`, `term`, `content`, `campaign`, `gclid`und ihre jeweiligen Werte.
 
-Adobe empfiehlt, eine Tabelle zu Ihrer Datenbank hinzuzufügen, die beispielsweise `user_referral`, wobei die Spalten wie folgt lauten: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Wenn sich ein Benutzer anmeldet, rufen Sie die Verweisinformationen ab und speichern Sie sie in dieser Tabelle.
+Adobe empfiehlt das Hinzufügen einer Tabelle zu Ihrer Datenbank, die beispielsweise `user_referral`, wobei die Spalten wie folgt lauten: `id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`. Wenn sich ein Benutzer anmeldet, rufen Sie die Verweisinformationen ab und speichern Sie sie in dieser Tabelle.
 
 #### Verwendung dieser Daten
 

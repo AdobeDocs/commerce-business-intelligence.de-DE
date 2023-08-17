@@ -15,7 +15,7 @@ ht-degree: 0%
 
 &quot;Daten verwalten&quot;bietet Zugriff auf verschiedene Tools zur Verwaltung von Integrationen, Berichts- und Diagrammdaten, Dashboards und Exporten.
 
-## So greifen Sie auf [!DNL Manage Data]:
+## Zugriff [!DNL Manage Data]:
 
 1. Klicken Sie im Menü auf **[!DNL Manage Data]**.
 

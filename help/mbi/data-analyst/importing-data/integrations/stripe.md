@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![](../../../assets/stripe-logo.png)
 
-[!DNL Stripe] ermöglicht Ihnen, die Zahlungs- und Rechnungsdaten Ihres Unternehmens zu verwalten und zu verfolgen. Verbinden Ihrer [!DNL Stripe] Konto [!DNL Commerce Intelligence] ist ein einfacher zweistufiger Prozess:
+[!DNL Stripe] ermöglicht Ihnen, die Zahlungs- und Rechnungsdaten Ihres Unternehmens zu verwalten und zu verfolgen. Verbinden Ihrer [!DNL Stripe] -Konto [!DNL Commerce Intelligence] ist ein einfacher zweistufiger Prozess:
 
 1. [Hinzufügen [!DNL Stripe] als Datenquelle in [!DNL Commerce Intelligence]](#stepone)
 1. [Zulassen [!DNL Commerce Intelligence] Zugriff auf Ihre [!DNL Stripe] Daten](#steptwo)
@@ -27,7 +27,7 @@ ht-degree: 0%
 ## Hinzufügen [!DNL Stripe] als Datenquelle {#stepone}
 
 1. Navigieren Sie zu `Connections` Seite unter **[!UICONTROL Admin** > **Connections]**.
-1. Klicken **[!UICONTROL Add a Data Source]** auf der rechten Seite des Bildschirms über dem `Data Sources` Tabelle.
+1. Klicks **[!UICONTROL Add a Data Source]** auf der rechten Seite des Bildschirms über dem `Data Sources` Tabelle.
 1. Klicken Sie auf [!DNL Stripe] Symbol. Dadurch wird die `[!DNL Stripe] authorization` Seite.
 1. Klicken **[!UICONTROL Connect with Stripe]**.
 
@@ -41,11 +41,11 @@ Nach dem Klicken **[!UICONTROL Connect with Stripe]**, wird eine Seite mit Zugri
 
 1. Ihre Anmeldedaten werden validiert und Sie werden zu [!DNL Commerce Intelligence].
 
-1. Wenn die Verbindung erfolgreich hergestellt wurde, wird ein *Verbindung erfolgreich!* wird oben auf dem Bildschirm angezeigt.
+1. Wenn die Verbindung erfolgreich hergestellt wurde, wird ein *Verbindung erfolgreich!* wird oben im Bildschirm angezeigt.
 
 ## Verwandte:
 
-Die [[!DNL Stripe] API-Dokumentation](https://stripe.com/docs/api) kann eine nützliche Ressource sein, um mehr darüber zu erfahren, wie [!DNL Stripe] ist integriert in [!DNL Commerce Intelligence].
+Die [[!DNL Stripe] API-Dokumentation](https://stripe.com/docs/api) kann eine nützliche Ressource sein, um mehr über die [!DNL Stripe] ist integriert in [!DNL Commerce Intelligence].
 
 * [Erwartet [!DNL Stripe] data](../integrations/stripe-data.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -130,7 +130,7 @@ Weitere Diagrammdetails
 * [!UICONTROL Time period]: `All time`
 * Zeitintervall: `None`
 * [!UICONTROL Group by]: `Calendar months between first order and this order` - Alle anzeigen
-* Ändern Sie die `group by` für `All time customers` Metrik mithilfe des Stiftsymbols neben dem `group by`
+* Ändern Sie die `group by` für die `All time customers` Metrik mithilfe des Stiftsymbols neben dem `group by`
 * Bearbeiten Sie die `Show top/bottom` -Felder wie folgt:
    * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
    * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`

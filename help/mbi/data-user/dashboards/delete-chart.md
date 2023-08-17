@@ -7,17 +7,17 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '103'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Dauerhaftes Löschen von Diagrammen
 
-Selbst wenn [Diagramm aus dem Dashboard entfernen](../../data-user/dashboards/remove-charts-dashboard.md), ist es weiterhin in Ihrer [!DNL Commerce Intelligence] -Konto.
+Selbst wenn Sie [Diagramm aus dem Dashboard entfernen](../../data-user/dashboards/remove-charts-dashboard.md), ist es weiterhin in Ihrer [!DNL Commerce Intelligence] -Konto.
 
 So löschen Sie ein Diagramm dauerhaft:
 
-1. Klicken **[!UICONTROL Account Setting]** in der Seitenleiste.
+1. Klicks **[!UICONTROL Account Setting]** in der Seitenleiste.
 
 1. Klicken **[!UICONTROL Charts]**.
 
@@ -29,7 +29,7 @@ So löschen Sie ein Diagramm dauerhaft:
 
    >[!NOTE]
    >
-   >Wenn das Diagramm in einem Dashboard oder einer E-Mail-Zusammenfassung verwendet wird, wird eine Benachrichtigung angezeigt. Um fortzufahren, müssen Sie den Löschvorgang bestätigen und dann auf **[!UICONTROL Force Deletion]**.
+   >Wenn das Diagramm in einem Dashboard oder einer E-Mail-Zusammenfassung verwendet wird, wird eine Benachrichtigung angezeigt. Um fortzufahren, müssen Sie den Löschvorgang bestätigen und auf **[!UICONTROL Force Deletion]**.
 
 Beispiel:
 

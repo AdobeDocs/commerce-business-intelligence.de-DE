@@ -22,9 +22,9 @@ Von Kunden, die eine *spezifisches Element*,
 * Wie viele Bestellungen haben Kunden im Schnitt kurz-/langfristig aufgegeben?
 * Welchen durchschnittlichen Umsatz erzielen Kunden kurz-/langfristig?
 
-## Empfohlene Metriken
+## Empfehlungen für Metriken
 
-Bei der Erstellung von Kundenanalysen zur Neukauf-Aktivität empfiehlt Adobe die Verwendung der folgenden Metriken:
+Adobe empfiehlt beim Erstellen von Kundenanalysen zur Neukaufung die Verwendung der folgenden Metriken:
 
 ### Wiederholungsreihenwahrscheinlichkeit
 
@@ -68,7 +68,7 @@ Auf der Grundlage der oben genannten Daten können Sie sehen, dass Personen, die
 
 ### Durchschnittlicher Umsatz während der Kundenlebensdauer
 
-Kunden, die die Brauerei erwerben, haben den höchsten durchschnittlichen Lebensdauerumsatz, was angesichts der Tatsache, dass die Kosten der Brauerei in diese Maßnahme einbezogen werden, sinnvoll ist. Im Gegensatz dazu kaufen Kunden, die Kaffeebohnen kaufen, normalerweise nur kostengünstige Artikel.
+Kunden, die die Brauerei erwerben, haben den höchsten durchschnittlichen Lebensdauerumsatz, was angesichts der Tatsache, dass die Kosten der Brauerei in diese Maßnahme einbezogen werden, sinnvoll ist. Im Gegensatz dazu kaufen Kunden, die Kaffeebohnen kaufen, in der Regel nur kostengünstige Artikel.
 
 ### Zeit bis zur nächsten Bestellung
 
@@ -76,7 +76,7 @@ Bei Kunden, die Kaffeekapseln gekauft haben, kann die Hälfte innerhalb von etwa
 
 ## Welche anderen Analysen kann ich erstellen?
 
-Mithilfe der in diesem Thema beschriebenen Metriken können Sie auch weitere nützliche Neukaufsanalysen erstellen. Sie können beispielsweise auch sehen, wie Kunden zurückkaufen **dasselbe Element** - wenn sie beispielsweise regelmäßig Nachfüllungen kaufen. Kapseln und Kaffeebohnen können regelmäßig neu gekauft werden, es wäre jedoch unerwartet, wenn Kunden den Kaffee-Brauer erneut kaufen würden. Wenn sich Ihr Unternehmen auf Nachbearbeitung oder Wiederaufstockung konzentriert, wäre diese Analyse nützlich.
+Mithilfe der in diesem Thema beschriebenen Metriken können Sie auch weitere nützliche Neukaufsanalysen erstellen. Sie können beispielsweise auch sehen, wie Kunden zurückkaufen **derselbe Artikel** - wenn sie beispielsweise regelmäßig Nachfüllungen kaufen. Kapseln und Kaffeebohnen können regelmäßig neu gekauft werden, es wäre jedoch unerwartet, wenn Kunden den Kaffee-Brauer erneut kaufen würden. Wenn sich Ihr Unternehmen auf Nachbearbeitung oder Wiederaufstockung konzentriert, wäre diese Analyse nützlich.
 
 Zusätzlich zur Analyse des Kaufverhaltens Ihrer Kunden können Sie auch Analysen erstellen, die sich auf die Kundenloyalität beziehen. Erwägen Sie die Analyse von Mustern in der Kundenabwanderung - wo verlassen Ihre Kunden Ihre Site und kommen nicht zurück? Wie schnell ist das passiert?
 

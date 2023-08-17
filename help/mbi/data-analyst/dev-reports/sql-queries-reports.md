@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # SQL-Abfragen in Commerce Intelligence übersetzen
 
-Haben Sie sich schon immer gefragt, wie SQL-Abfragen in die [berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md), [Metriken](../../data-user/reports/ess-manage-data-metrics.md)und [Berichte](../../tutorials/using-visual-report-builder.md) Sie verwenden [!DNL Commerce Intelligence]? Wenn Sie ein starker SQL-Benutzer sind, sollten Sie wissen, wie SQL übersetzt wird in [!DNL Commerce Intelligence] ermöglicht es Ihnen, im [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) und das Beste aus dem [!DNL Commerce Intelligence] Plattform.
+Haben Sie sich schon immer gefragt, wie SQL-Abfragen in die [berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md), [Metriken](../../data-user/reports/ess-manage-data-metrics.md), und [Berichte](../../tutorials/using-visual-report-builder.md) Sie verwenden [!DNL Commerce Intelligence]? Wenn Sie ein starker SQL-Benutzer sind, sollten Sie wissen, wie SQL übersetzt wird in [!DNL Commerce Intelligence] ermöglicht es Ihnen, im [Data Warehouse-Manager](../data-warehouse-mgr/tour-dwm.md) und das Beste aus dem [!DNL Commerce Intelligence] Plattform.
 
-Am Ende dieses Themas finden Sie eine **Übersetzungsmatrix** für SQL-Abfrageklauseln und [!DNL Commerce Intelligence] -Elemente.
+Am Ende dieses Themas finden Sie eine **Übersetzungsmatrix** für SQL-Abfragen und [!DNL Commerce Intelligence] -Elemente.
 
 Sehen Sie sich zunächst eine allgemeine Abfrage an:
 
@@ -42,7 +42,7 @@ Sehen Sie sich für jeden der oben genannten Beispiele an.
 
 Bei der Aggregation von `within a single table`. Beispielsweise wird die `SUM(b)` Aggregatfunktion aus der obigen Abfrage würde höchstwahrscheinlich durch eine Metrik dargestellt, die die Spalte summiert `B`. 
 
-Sehen Sie sich ein bestimmtes Beispiel an, wie ein `Total Revenue` Metriken können in [!DNL Commerce Intelligence]. Sehen Sie sich die nachstehende Abfrage an, mit der Sie versuchen zu übersetzen:
+Sehen Sie sich ein bestimmtes Beispiel an, wie ein `Total Revenue` Metriken können in [!DNL Commerce Intelligence]. Sehen Sie sich die unten stehende Abfrage an, mit der Sie versuchen, zu übersetzen:
 
 | | |
 |--- |--- |
@@ -53,7 +53,7 @@ Sehen Sie sich ein bestimmtes Beispiel an, wie ein `Total Revenue` Metriken kön
 | `email NOT LIKE '%@magento.com'` | Metrik `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | Metrik `timestamp` (und Berichterstattung) `time range`) |
 
-Navigieren Sie zum Metrikaufbau durch Klicken auf **[!UICONTROL Manage Data** > ** Metriken **> **Neue Metrik erstellen]**, müssen Sie zuerst die entsprechende `source` -Tabelle, die in diesem Fall der `orders` Tabelle. Anschließend würde die Metrik wie folgt eingerichtet:
+Navigieren Sie zum Metrikaufbau durch Klicken auf **[!UICONTROL Manage Data** > ** Metriken **> **Neue Metrik erstellen]**, müssen Sie zuerst die entsprechende `source` -Tabelle, in diesem Fall ist dies die `orders` Tabelle. Anschließend würde die Metrik wie folgt eingerichtet:
 
 ![Metrikaggregation](../../assets/Metric_aggregation.png)
 
@@ -73,35 +73,35 @@ Die Abfrage für diese Aggregation kann etwa wie folgt aussehen:
 | `ON c.customer_id = o.customer_id` | Pfad |
 | `WHERE o.status = 'success'` | Aggregat-Filter |
 
-Einrichten des [!DNL Commerce Intelligence] erfordert die Verwendung Ihres Data Warehouse-Managers, in dem Sie einen Pfad zwischen Ihrem `orders` und `customers` und erstellen Sie dann eine Spalte namens `Customer LTV` in der Tabelle Ihres Kunden.
+Einrichten der Funktion in [!DNL Commerce Intelligence] erfordert die Verwendung Ihres Data Warehouse-Managers, wo Sie einen Pfad zwischen Ihrem `orders` und `customers` und erstellen Sie dann eine Spalte namens `Customer LTV` in der Tabelle Ihres Kunden.
 
-Untersuchen Sie, wie Sie einen neuen Pfad zwischen dem `customers` und `orders`. Das Endziel besteht darin, eine neue aggregierte Spalte im `customers` -Tabelle, also navigieren Sie zuerst zur `customers` in der Data Warehouse angezeigt werden, klicken Sie auf **[!UICONTROL Create a Column** > ** Definition auswählen **> **SUM]**.
+Untersuchen Sie, wie Sie einen neuen Pfad zwischen dem `customers` und `orders`. Das Endziel besteht darin, eine neue aggregierte Spalte im `customers` -Tabelle, also navigieren Sie zuerst zur `customers` -Tabelle in Ihrer Data Warehouse und klicken Sie dann auf **[!UICONTROL Create a Column** > ** Definition auswählen **> **SUM]**.
 
-Wählen Sie anschließend die Quelltabelle aus. Wenn ein Pfad zu Ihrer `orders` -Tabelle aus, wählen Sie sie einfach aus der Dropdown-Liste aus. Wenn Sie jedoch einen neuen Pfad erstellen, klicken Sie auf **[!UICONTROL Create new path]** und Ihnen wird der folgende Bildschirm angezeigt:
+Wählen Sie anschließend die Quelltabelle aus. Wenn ein Pfad zu Ihrer `orders` aus, wählen Sie sie einfach aus der Dropdown-Liste aus. Wenn Sie jedoch einen neuen Pfad erstellen, klicken Sie auf **[!UICONTROL Create new path]** und Ihnen wird der folgende Bildschirm angezeigt:
 
 ![Neuen Pfad erstellen](../../assets/Create_new_path.png)
 
-Hier müssen Sie die Beziehung zwischen den beiden Tabellen, denen Sie beitreten möchten, sorgfältig überdenken. In diesem Fall gibt es `Many` Bestellungen, die mit `One` -Kunde, also `orders` ist auf der `Many` Seite, während die `customers` auf der `One` Seite.
+Hier müssen Sie die Beziehung zwischen den beiden Tabellen, denen Sie beitreten möchten, sorgfältig überdenken. In diesem Fall gibt es möglicherweise `Many` Bestellungen, die mit `One` -Kunde, also die `orders` Die Tabelle wird auf der `Many` Seite, während die `customers` auf der `One` Seite.
 
 >[!NOTE]
 >
->In [!DNL Commerce Intelligence], `path` entspricht einem `Join` in SQL.
+>In [!DNL Commerce Intelligence], a `path` entspricht einem `Join` in SQL.
 
 Nachdem der Pfad gespeichert wurde, können Sie die `Customer LTV` column! Siehe unten:
 
 ![](../../assets/Customer_LTV.gif)
 
-Jetzt, da Sie die neue `Customer LTV` in der Spalte `customers` -Tabelle, können Sie eine [Metrikaggregation](#aggregate) Verwendung dieser Spalte (z. B. zur Ermittlung der durchschnittlichen LTV-Anzahl pro Kunde). Sie können auch `group by` oder `filter` durch die berechnete Spalte in einem Bericht mit vorhandenen Metriken, die auf der `customers` Tabelle.
+Jetzt, da Sie die neue `Customer LTV` in der Spalte `customers` -Tabelle, können Sie eine [Metrikaggregation](#aggregate) Verwendung dieser Spalte (z. B. zur Ermittlung der durchschnittlichen LTV-Anzahl pro Kunde). Sie können auch `group by` oder `filter` durch die berechnete Spalte in einem Bericht mit vorhandenen, auf der `customers` Tabelle.
 
 >[!NOTE]
 >
->Für letztere müssen Sie jedes Mal, wenn Sie eine neue berechnete Spalte erstellen, [Dimension zu vorhandenen Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor sie als `filter` oder `group by`.
+>Für letztere müssen Sie bei jedem Erstellen einer neuen berechneten Spalte [Dimension zu vorhandenen Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor sie als `filter` oder `group by`.
 
-Siehe [berechnete Spalten erstellen](../data-warehouse-mgr/creating-calculated-columns.md) mit Ihrem Data Warehouse Manager.
+Siehe [berechnete Spalten erstellen](../data-warehouse-mgr/creating-calculated-columns.md) mit Ihrem Data Warehouse-Manager.
 
 ## `Group By` Klauseln
 
-`Group By` Funktionen in Abfragen werden häufig in [!DNL Commerce Intelligence] als Spalte zur Segmentierung oder Filterung eines visuellen Berichts. Beispiel: `Total Revenue` Abfrage, die Sie zuvor untersucht haben, aber diesmal den Umsatz nach `coupon\_code` um ein besseres Verständnis davon zu gewinnen, welche Gutscheine den meisten Umsatz generieren.
+`Group By` Funktionen in Abfragen werden häufig in [!DNL Commerce Intelligence] als Spalte zur Segmentierung oder Filterung eines visuellen Berichts. Als Beispiel sollten wir die `Total Revenue` Abfrage, die Sie zuvor untersucht haben, aber diesmal den Umsatz nach `coupon\_code` um ein besseres Verständnis davon zu gewinnen, welche Gutscheine den meisten Umsatz generieren.
 
 Beginnen Sie mit der folgenden Abfrage:
 
@@ -149,9 +149,9 @@ Nehmen Sie nun an, dass Sie bereits Metriken zur Berechnung der `Total Revenue` 
 
 ![AOV-Forumula](../../assets/AOV_forumula.gif)
 
-## Aufbrechen
+## Aufwischen
 
-Wenn Sie ein starker SQL-Benutzer sind, denken Sie darüber nach, wie Abfragen in übersetzt werden. [!DNL Commerce Intelligence] ermöglicht die Erstellung berechneter Spalten, Metriken und Berichte.
+Wenn Sie ein starker SQL-Benutzer sind, denken Sie daran, wie Abfragen in übersetzt werden. [!DNL Commerce Intelligence] ermöglicht die Erstellung berechneter Spalten, Metriken und Berichte.
 
 Sehen Sie sich die folgende Matrix für einen schnellen Überblick an. Dies zeigt die Entsprechung einer SQL-Klausel [!DNL Commerce Intelligence] -Element und wie es mehreren Elementen zugeordnet werden kann, je nachdem, wie es in der Abfrage verwendet wird.
 

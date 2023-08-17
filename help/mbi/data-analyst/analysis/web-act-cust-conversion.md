@@ -19,9 +19,9 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Ihre Website-Aktivitä
 
 ## Voraussetzungen
 
-**Importieren von Daten zu Werbekosten** - Verbinden [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) nach [!DNL Adobe Commerce Intelligence] - Diese synchronisiert automatisch Ihre [!DNL AdWords] Ausgaben für Commerce Intelligence.
+**Importieren von Daten zu Werbekosten** - Verbinden [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) nach [!DNL Adobe Commerce Intelligence] - die automatisch Ihre [!DNL AdWords] Ausgaben für Commerce Intelligence.
 
-**Tracking der Benutzerakquisekanaldaten** - Verknüpfen Sie Ihre [!DNL Google AdWords] Daten für bestimmte Bestellungen in Ihrer Datenbank, müssen Sie [Benutzerakquise verfolgen](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. Dadurch können Sie jede Bestellung mit einer UTM-Quelle und einem Medium verbinden.
+**Tracking der Benutzerakquisekanaldaten** - So binden Sie Ihre [!DNL Google AdWords] Daten für bestimmte Bestellungen in Ihrer Datenbank, müssen Sie [Benutzerakquise verfolgen](../analysis/google-track-user-acq.md) via [!DNL Google Analytics E-commerce]. Dadurch können Sie jede Bestellung mit einer UTM-Quelle und einem Medium verbinden.
 
 ## Benutzerakquise-Kampagnen
 
@@ -36,7 +36,7 @@ Diese Berichtserstellung basiert auf Folgendem:
 **Erstellen Sie zunächst einen Bericht, der die Anzahl der Seitenansichten, Sitzungen und Benutzer im Zeitverlauf anzeigt:**
 
 1. Erstellen Sie einen Bericht.
-1. Klicken **[!UICONTROL Add Metric]**, dann mit der Maus über [!DNL Google Analytics] im unteren Bereich des Dropdown-Menüs und wählen Sie `Page Views`.
+1. Klicks **[!UICONTROL Add Metric]**, dann mit der Maus über [!DNL Google Analytics] im unteren Bereich des Dropdown-Menüs und wählen Sie `Page Views`.
 1. Fügen Sie eine weitere Metrik hinzu und bewegen Sie den Mauszeiger erneut über die [!DNL Google Analytics] dieses Mal `Sessions`.
 1. Fügen Sie eine dritte Metrik hinzu und bewegen Sie den Mauszeiger erneut über die [!DNL Google Analytics] dieses Mal `Users`.
 1. Ändern Sie jetzt Ihren Zeitraum in einen sich bewegenden Bereich von vor 31 Tagen auf vor 1 Tag und passen Sie das Zeitintervall an `by day`.
@@ -45,32 +45,32 @@ Diese Berichtserstellung basiert auf Folgendem:
 **Der zweite Bericht untersucht die Anzahl der Seitenansichten im vergangenen Jahr:**
 
 1. Erstellen Sie einen Bericht.
-1. Klicken **[!UICONTROL Add Metric]**, bewegen Sie die Maus über [!DNL Google Analytics] im unteren Bereich des Dropdown-Menüs und wählen Sie _Seitenansichten_.
+1. Klicks **[!UICONTROL Add Metric]**, bewegen Sie die Maus über [!DNL Google Analytics] im unteren Bereich des Dropdown-Menüs und wählen Sie _Seitenansichten_.
 1. Ändern Sie Ihren Zeitraum von vor 13 Monaten in einen sich bewegenden Bereich und passen Sie das Zeitintervall an auf `by month`.
 1. Benennen Sie den Bericht, z. B. `Page views by month,` und klicken **[!UICONTROL Save]**.
 
 **Die dritte Grafik zeigt die Absprungrate des vergangenen Jahres:**
 
 1. Erstellen Sie einen Bericht.
-1. Klicken **[!UICONTROL Add Metric]**, bewegen Sie die Maus über [!DNL Google Analytics] im unteren Bereich des Dropdown-Menüs und wählen Sie _Absprungrate_.
+1. Klicks **[!UICONTROL Add Metric]**, bewegen Sie die Maus über [!DNL Google Analytics] im unteren Bereich des Dropdown-Menüs und wählen Sie _Absprungrate_.
 1. Ändern Sie Ihren Zeitraum von vor 13 Monaten in einen sich bewegenden Bereich und passen Sie das Zeitintervall an auf `by month`.
-1. Benennen Sie den Bericht, z. B. `Bounce rate by month`und klicken Sie auf **[!UICONTROL Save]**.
+1. Benennen Sie den Bericht, z. B. `Bounce rate by month`und Klicken **[!UICONTROL Save]**.
 
 **Betrachten Sie nun die durchschnittliche Sitzungslänge neuer Besucher im Vergleich zu wiederkehrenden Besuchern:**
 
 1. Erstellen Sie einen Bericht.
-1. Klicken **UICONTROL Metrik hinzufügen**, bewegen Sie die Maus über [!DNL Google Analytics] im unteren Bereich des Dropdown-Menüs und wählen Sie `Average Session Length`.
+1. Klicks **UICONTROL Metrik hinzufügen**, bewegen Sie die Maus über [!DNL Google Analytics] im unteren Bereich des Dropdown-Menüs und wählen Sie `Average Session Length`.
 1. Ändern Sie Ihren Zeitraum von vor 13 Monaten in einen sich bewegenden Bereich und passen Sie das Zeitintervall an auf `by month`?
-1. Hinzufügen einer `Group by` und wählen Sie `New or returning visitor`.  Überprüfen Sie die `Show All` Kasten, Klicken Sie dann auf **[!UICONTROL Apply]**.
-1. Benennen Sie den Bericht, z. B. `Average session length`und klicken Sie auf **[!UICONTROL Save]**.
+1. Hinzufügen einer `Group by` und wählen `New or returning visitor`.  Überprüfen Sie die `Show All` und klicken Sie dann auf **[!UICONTROL Apply]**.
+1. Benennen Sie den Bericht, z. B. `Average session length`und Klicken **[!UICONTROL Save]**.
 
 **Sehen Sie sich als Nächstes Ihre wichtigsten Referrer-Domänen aus den letzten 30 Tagen an:**
 
 1. Erstellen Sie einen Bericht.
-1. Klicken **[!UICONTROL Add Metric]**, bewegen Sie die Maus über [!DNL Google Analytics] im unteren Bereich des Dropdown-Menüs und wählen Sie `Sessions`.
-1. Ändern Sie Ihren Zeitraum in einen sich bewegenden Bereich von vor 31 Tagen auf vor 1 Tag und passen Sie das Zeitintervall an `none`.
-1. Hinzufügen einer `Group by` und wählen Sie `ga:source`.  Überprüfen Sie die _Alle anzeigen_ Kasten, Klicken Sie dann auf **[!UICONTROL Apply]**.
-1. Weitere hinzufügen `group by` und wählen Sie `ga:medium`. Überprüfen Sie erneut die `Show All` Kasten, Klicken Sie dann auf **[!UICONTROL Apply]**.
+1. Klicks **[!UICONTROL Add Metric]**, bewegen Sie die Maus über [!DNL Google Analytics] im unteren Bereich des Dropdown-Menüs und wählen Sie `Sessions`.
+1. Ändern Sie Ihren Zeitraum von vor 31 Tagen in einen sich bewegenden Bereich und passen Sie das Zeitintervall an `none`.
+1. Hinzufügen einer `Group by` und wählen `ga:source`.  Überprüfen Sie die _Alle anzeigen_ und klicken Sie dann auf **[!UICONTROL Apply]**.
+1. Weitere hinzufügen `group by` und wählen `ga:medium`. Überprüfen Sie erneut die `Show All` und klicken Sie dann auf **[!UICONTROL Apply]**.
 1. Benennen Sie den Bericht, z. B. `Top 20 Referring Domains, 30 Days`und klicken Sie auf **[!UICONTROL Save]**.
 
 **Sehen Sie sich schließlich die Konversion an:**
@@ -79,10 +79,10 @@ Diese Berichtserstellung basiert auf Folgendem:
 1. Fügen Sie die folgenden Metriken hinzu:
 
 * `New users`
-   * Klicken **[!UICONTROL Hide]** unterhalb des Metriknamens
+   * Klicks **[!UICONTROL Hide]** unterhalb des Metriknamens
 
 * `Number of orders`
-   * Filter hinzufügen für `Customer's order number` = 1 und klicken Sie auf **[!UICONTROL Apply]**
+   * Filter hinzufügen für `Customer's order number` = 1 und klicken Sie **[!UICONTROL Apply]**
    * Benennen Sie die Metrik um, indem Sie auf den Metriknamen klicken und sie aufrufen. `Number of first orders`Klicken Sie auf **[!UICONTROL Hide]**
 
 * `Number of orders`
@@ -96,7 +96,7 @@ Diese Berichtserstellung basiert auf Folgendem:
    * Formel umbenennen `Registration conversion`
    * B/D und klicken Sie dann auf **[!UICONTROL Apply]**
    * Formel umbenennen `First order conversion`
-   * C/D und klicken Sie dann auf **[!UICONTROL Apply]**
+   * C/D und klicken Sie auf **[!UICONTROL Apply]**
    * Formel umbenennen `Any order conversion`
 
 * Benennen Sie nun Ihren Bericht, z. B. `Conversion by month`und klicken Sie anschließend auf **[!UICONTROL Save]**.

@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ Mit [!DNL Linkshare] Daten in [!DNL Adobe Commerce Intelligence]müssen Sie zwei
 
 ## Daten aus Linkshare exportieren {#export}
 
-1. In [!DNL Linkshare] Konto, gehen Sie zu **[!UICONTROL Reports** > **Run Reports].**
+1. In der [!DNL Linkshare] Konto, gehen Sie zu **[!UICONTROL Reports** > **Run Reports].**
 
 1. Im `Report` Dropdown-Liste auswählen **[!UICONTROL Sales & Activity Report]**.
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Um die Rechnungsinformationen Ihres Kontos anzuzeigen, hinzuzufügen oder zu ändern, müssen Sie über `Billing` Berechtigungen. [Berechtigungen werden auf Benutzerbasis festgelegt](../../administrator/user-management/user-management.md) wenn Benutzerkonten erstellt werden. Wenn Sie `Billing` -Berechtigungen, wenden Sie sich an den Administrator Ihres Kontos.
+   >Um die Rechnungsinformationen Ihres Kontos anzuzeigen, hinzuzufügen oder zu ändern, müssen Sie `Billing` Berechtigungen. [Berechtigungen werden auf Benutzerbasis festgelegt](../../administrator/user-management/user-management.md) wenn Benutzerkonten erstellt werden. Wenn Sie `Billing` -Berechtigungen, wenden Sie sich an den Administrator Ihres Kontos.
 
 1. Klicken **[!UICONTROL Save]**.
 
@@ -36,8 +36,8 @@ Sie können Ihre E-Mail-Adresse und/oder Ihr Passwort aktualisieren, indem Sie o
 
 ## Einladung erneut senden
 
-Wenn Sie die Einladung erneut senden müssen, muss die [Anmeldeseite](https://dashboard.rjmetrics.com/v2/session/create)klicken **[!UICONTROL Forgot?]**, geben Sie die E-Mail-Adresse des neuen Benutzers ein und klicken Sie auf **[!UICONTROL Reset Password]**. Dadurch wird die Einladung erneut gesendet und der Benutzer kann sich anmelden.
+Wenn Sie die Einladung erneut senden müssen, muss die [Anmeldeseite](https://dashboard.rjmetrics.com/v2/session/create)klicken **[!UICONTROL Forgot?]** eingeben, die E-Mail-Adresse des neuen Benutzers eingeben und auf **[!UICONTROL Reset Password]**. Dadurch wird die Einladung erneut gesendet und der Benutzer kann sich anmelden.
 
 >[!IMPORTANT]
 >
->Jedes Konto verfügt über eine vertraglich festgelegte Anzahl von Lizenzen oder Sitzen. Wenn Sie Ihr Limit erreichen oder mehr erfahren möchten, [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>Jedes Konto verfügt über eine vertraglich festgelegte Anzahl von Lizenzen oder Sitzen. Wenn Sie Ihr Limit erreicht haben oder mehr erfahren möchten, [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

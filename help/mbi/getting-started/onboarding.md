@@ -17,7 +17,7 @@ Die Onboarding-Fragen im Zusammenhang mit `store` und `database` -Einstellungen 
 
 ## Speichereinstellungen
 
-- *Akzeptiert Ihr Geschäft einen Checkout?* - Auswählen **yes** wenn Sie Kunden erlauben, in Ihrem Geschäft einen Kauf zu tätigen, ohne sich für ein Konto zu registrieren.
+- *Akzeptiert Ihr Geschäft einen Gast-Checkout?* - Auswählen **yes** wenn Sie Kunden erlauben, in Ihrem Geschäft einen Kauf zu tätigen, ohne sich für ein Konto zu registrieren.
 
 - `Timezone` - Wählen Sie die `timezone` in dem Sie Ihre Berichterstellung sehen möchten.
 
@@ -27,10 +27,10 @@ Die Onboarding-Fragen im Zusammenhang mit `store` und `database` -Einstellungen 
 
 - *Welche Commerce-Version verwenden Sie?* - Wählen Sie die `currency` , in dem Ihr Geschäft tätig ist.
 
-- *Ist Ihr Geschäft in der Europäischen Union ansässig?* - Wenn Sie antworten `Yes` zu dieser Frage: Adobe hostet Ihre Data Warehouse und all Ihre Daten in der Europäischen Union unter Einhaltung der DSGVO.
+- *Ist Ihr Geschäft in der Europäischen Union ansässig?* - Wenn Sie antworten `Yes` zu dieser Frage hosten Adobe Ihre Data Warehouse und alle Ihre Daten in der Europäischen Union gemäß der DSGVO.
 
 ## Datenbankeinstellungen
 
 - `Database name` - Was ist der *Name des [!DNL MySQL] Datenbank* Wo befinden sich Ihre Commerce-Transaktionsdaten?
 
-- `Table prefix (optional)` - Sind die in Ihrer Commerce-Datenbank enthaltenen Tabellen durch irgendetwas vorgezogen (z. B. `store_`)? Dies ist normalerweise nicht der Fall, aber es ist eine Anpassung, die vorgenommen werden kann.
+- `Table prefix (optional)` - Sind die in Ihrer Commerce-Datenbank enthaltenen Tabellen durch irgendetwas (z. B. `store_`)? Dies ist normalerweise nicht der Fall, aber es ist eine Anpassung, die vorgenommen werden kann.

@@ -35,7 +35,7 @@ Erste Schritte:
 
 1. Navigieren Sie zu `Connections` Seite unter **[!DNL Manage Data** > **Connections]**.
 
-1. Klicken **[!UICONTROL Add a New Source]** auf der rechten Seite des Bildschirms über dem `Data Sources` Tabelle.
+1. Klicks **[!UICONTROL Add a New Source]** auf der rechten Seite des Bildschirms über dem `Data Sources` Tabelle.
 
 1. Klicken Sie auf [!DNL Mixpanel] und die Seite mit den Anmeldedaten geöffnet.
 
@@ -45,7 +45,7 @@ Lassen Sie diese Seite zunächst geöffnet und wechseln Sie mit Ihrem [!DNL Mixp
 
 Wenn Sie sich nicht bei Ihrer [!DNL Mixpanel] -Konto hinzugefügt haben, tun Sie dies und führen Sie dann die folgenden Schritte aus:
 
-1. Klicken **[!UICONTROL Account]** in der oberen rechten Ecke.
+1. Klicks **[!UICONTROL Account]** in der oberen rechten Ecke.
 
 1. Klicken Sie im angezeigten Dialogfeld auf **[!UICONTROL Projects]**.
 
@@ -58,11 +58,11 @@ Lassen Sie das offen, Sie brauchen es, um es zu verpacken.
 ## Eingabe Ihrer [!DNL Mixpanel] API-Anmeldeinformationen in [!DNL Commerce Intelligence] {#stepthree}
 
 1. Kopieren Sie die `API Key` und `Secret` in [!DNL Mixpanel] Anmeldeseite in [!DNL Commerce Intelligence].
-1. Klicken **[!UICONTROL Connect to Mixpanel]** , um das Setup abzuschließen.
+1. Klicks **[!UICONTROL Connect to Mixpanel]** , um das Setup abzuschließen.
 
 Wenn die Verbindung erfolgreich hergestellt wurde, wird ein _Erfolg!_ wird oben auf der Seite angezeigt.
 
 ### Verwandte
 
 * [Erwartet [!DNL Mixpanel] data](../integrations/mixpanel-data.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

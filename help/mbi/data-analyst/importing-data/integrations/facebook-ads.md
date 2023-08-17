@@ -29,8 +29,8 @@ Verbinden Ihrer [!DNL Facebook Ad] Daten an [!DNL Commerce Intelligence] ist ein
 
 ## Hinzufügen [!DNL Facebook] als Datenquelle in [!DNL Commerce Intelligence] {#stepone}
 
-1. So fügen Sie die [!DNL Facebook] Integration in Ihre [!DNL Commerce Intelligence]-Konto, navigieren Sie zum `Connections` Seite unter **[!UICONTROL Manage Data** > **Integrations]**.
-1. Klicken **[!UICONTROL Add Integration]**, auf der rechten Seite.
+1. So fügen Sie [!DNL Facebook] Integration in Ihre [!DNL Commerce Intelligence]-Konto, navigieren Sie zum `Connections` Seite unter **[!UICONTROL Manage Data** > **Integrations]**.
+1. Klicks **[!UICONTROL Add Integration]**, auf der rechten Seite.
 1. Klicken Sie auf [!DNL Facebook] Symbol. Dadurch wird die [!DNL Facebook] Autorisierungsseite.
 1. Klicken **[!UICONTROL Authorize]**.
 
@@ -40,7 +40,7 @@ Nach dem Klicken **[!DNL Facebook Authorize]**, wird ein kleines Popup-Fenster a
 
 ![](../../../assets/Facebook_Access_Popup.png)
 
-Führen Sie eine Reihe von Schritten aus, um [!DNL Commerce Intelligence] , um auf Daten aus Ihrem öffentlichen Profil zuzugreifen, [!DNL Facebook Ads] und zugehörige Statistiken. Klicken **[!UICONTROL OK]** auf diese Schritte folgen, um fortzufahren.
+Führen Sie eine Reihe von Schritten aus, um [!DNL Commerce Intelligence] , um auf Daten aus Ihrem öffentlichen Profil zuzugreifen, [!DNL Facebook Ads] und zugehörige Statistiken. Klicks **[!UICONTROL OK]** auf diese Schritte folgen, um weiterzumachen.
 
 ## Auswählen [!DNL Facebook Ads] Konten zum Abrufen von Daten {#stepthree}
 
@@ -58,11 +58,11 @@ Vergewissern Sie sich, dass Sie das Tracking durchführen [!DNL Facebook] Kampag
 
 ## Verwandte
 
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
-* [Verbinden Sie Ihre [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Verbinden Sie [!DNL Google Adwords] account](../integrations/google-ecommerce.md)
 * [Verweisquelle für Bestellungen verfolgen über [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Tracking der Verweisquelle von Benutzern in Ihrer Datenbank](../../analysis/google-track-user-acq.md)
 * [Tracking von Benutzergeräte-, Browser- und Betriebssystemdaten in Ihrer Datenbank](../../analysis/track-usr-dev-browser.md)
 * [Entdecken Sie Ihre wertvollsten Akquisequellen und -kanäle](../../analysis/most-value-source-channel.md)
-* [Erhöhen Sie den ROI Ihrer Werbekampagnen.](../../analysis/roi-ad-camp.md)
+* [Steigerung des ROI bei Werbekampagnen](../../analysis/roi-ad-camp.md)
 * [Wie funktioniert [!DNL Google Analytics] UTM-Attribution funktioniert?](../../analysis/utm-attributes.md)

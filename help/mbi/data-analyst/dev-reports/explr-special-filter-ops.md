@@ -1,6 +1,6 @@
 ---
 title: Spezielle Filteroperatoren
-description: Erfahren Sie mehr über einige spezielle Operatoren, die in Filtern beim Erstellen eines Berichts oder bei der Erstellung einer Metrik verwendet werden.
+description: Erfahren Sie mehr über einige spezielle Operatoren, die bei der Erstellung eines Berichts oder einer Metrik in Filtern verwendet werden.
 exl-id: 12837490-b9ca-4040-bb71-8988b5dde485
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
@@ -17,7 +17,7 @@ Dieses Thema behandelt einige spezielle `operators` verwendet in `filters` when 
 
 ## `Filter Operators`
 
-* `LIKE` für Musterzuordnung. Dies muss mit den Platzhalterzeichen % (für einen Platzhalter mit einer variablen Anzahl von Buchstaben) oder _ (für einen einzelnen Platzhalterbuchstaben) verwendet werden.  Beispielsweise die Beschränkung `LIKE \_ake%` gibt true zurück für `Jake Stein`, `Jake Smith`oder `Fake Smith`.  Sie gibt &quot;false&quot;zurück für `Drake Smith`.
+* `LIKE` für Musterzuordnung. Dies muss mit den Platzhalterzeichen % (für einen Platzhalter mit einer variablen Anzahl von Buchstaben) oder _ (für einen einzelnen Platzhalterbuchstaben) verwendet werden.  Beispielsweise die Beschränkung `LIKE \_ake%` würde true zurückgeben für `Jake Stein`, `Jake Smith`oder `Fake Smith`.  Sie gibt &quot;false&quot;zurück für `Drake Smith`.
 
 * `NOT LIKE` ähnelt dem oben aufgeführten Musterabgleich, überprüft jedoch, auf welche Muster nicht übereinstimmen.
 

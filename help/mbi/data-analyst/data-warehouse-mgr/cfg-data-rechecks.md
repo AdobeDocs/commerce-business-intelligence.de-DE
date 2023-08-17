@@ -15,7 +15,7 @@ ht-degree: 0%
 
 In einer Datenbanktabelle können Datenspalten mit veränderlichen Werten vorhanden sein. Beispiel: in einer `orders` Tabelle gibt es möglicherweise eine Spalte namens `status`. Wenn eine Bestellung ursprünglich in die Datenbank geschrieben wurde, kann die Statusspalte den Wert enthalten _pending_. Die Bestellung wird in Ihrer [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) mit diesem `pending` -Wert.
 
-Der Bestellstatus kann sich ändern, ist jedoch nicht immer in einer `pending` Status. Letztlich könnte es `complete` oder `cancelled`. Um sicherzustellen, dass Ihre Data Warehouse diese Änderung synchronisiert, muss die Spalte auf neue Werte überprüft werden.
+Der Bestellstatus kann sich ändern, ist jedoch nicht immer in einer `pending` -Status. Letztlich könnte es `complete` oder `cancelled`. Um sicherzustellen, dass Ihre Data Warehouse diese Änderung synchronisiert, muss die Spalte auf neue Werte überprüft werden.
 
 Wie passt dies in die [Replikationsmethoden](../data-warehouse-mgr/cfg-replication-methods.md) darüber diskutiert wurde? Die Verarbeitung der Überprüfungen variiert je nach ausgewählter Replikationsmethode. Die `Modified\_At` Die Replikationsmethode eignet sich am besten für die Verarbeitung von sich ändernden Werten, da keine erneuten Überprüfungen konfiguriert werden müssen. Die `Auto-Incrementing Primary Key` und `Primary Key Batch Monitoring` -Methoden müssen erneut konfiguriert werden.
 
@@ -27,9 +27,9 @@ Bei Verwendung einer dieser Methoden müssen veränderliche Spalten zur erneuten
    >
    >Der Prüfer stützt sich auf ein Probenahmeverfahren, und die sich ändernden Spalten dürfen nicht sofort erfasst werden.
 
-1. Sie können sie selbst festlegen, indem Sie das Kontrollkästchen neben der Data Warehouse im Spaltenmanager aktivieren und auf **[!UICONTROL Set Recheck Frequency]** und wählen Sie ein passendes Zeitintervall für den Zeitpunkt aus, zu dem Sie nach Änderungen suchen sollten.
+1. Sie können sie selbst festlegen, indem Sie das Kontrollkästchen neben der Spalte im Data Warehouse-Manager aktivieren und auf **[!UICONTROL Set Recheck Frequency]** und wählen Sie ein passendes Zeitintervall für den Zeitpunkt aus, zu dem Sie nach Änderungen suchen sollten.
 
-1. Ein Mitglied der [!DNL Adobe Commerce Intelligence] Das Data Warehouse-Team kann die Spalten manuell markieren, um sie in Ihrer Data Warehouse erneut zu überprüfen. Wenn Sie über veränderliche Spalten informiert sind, wenden Sie sich an das Team, um anzufordern, dass die Überprüfungen durchgeführt werden. Fügen Sie Ihrer Anforderung eine Liste von Spalten sowie die Häufigkeit bei.
+1. Ein Mitglied der [!DNL Adobe Commerce Intelligence] Das Data Warehouse-Team kann die Spalten manuell markieren, um sie erneut in Ihrem Data Warehouse zu überprüfen. Wenn Sie über veränderliche Spalten informiert sind, wenden Sie sich an das Team, um anzufordern, dass die Überprüfungen durchgeführt werden. Fügen Sie Ihrer Anforderung eine Liste von Spalten sowie die Häufigkeit bei.
 
 ## Recherche-Frequenzen {#frequency}
 
@@ -50,7 +50,7 @@ Da die Aktualisierungszeiten mit der zu synchronisierenden Datenmenge korreliere
 
 ## Verwaltung der Kontrollfrequenzen {#manage}
 
-Die Häufigkeit der erneuten Überprüfung kann in der Data Warehouse verwaltet werden, indem Sie auf einen Tabellennamen klicken und die einzelnen Spalten überprüfen. Der Synchronisierungsstatus und die Häufigkeit der erneuten Überprüfung (die **Änderungen?** Spalte) für jede Spalte in der Tabelle angezeigt.
+Über die Data Warehouse können die Frequenzen erneut verwaltet werden, indem Sie auf einen Tabellennamen klicken und die einzelnen Spalten überprüfen. Der Synchronisierungsstatus und die Häufigkeit der erneuten Überprüfung (die **Änderungen?** Spalte) für jede Spalte in der Tabelle angezeigt.
 
 Um die Häufigkeit der erneuten Überprüfungen zu ändern, aktivieren Sie das Kontrollkästchen neben den Spalten, die Sie ändern möchten. Klicken Sie anschließend auf **[!UICONTROL Set Recheck Frequency]** und legen Sie die gewünschte Häufigkeit fest.
 

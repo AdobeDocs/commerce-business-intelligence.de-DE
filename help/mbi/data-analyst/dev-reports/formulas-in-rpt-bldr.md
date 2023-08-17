@@ -17,17 +17,17 @@ Im [`Report Builder`](../../tutorials/using-visual-report-builder.md), können S
 
 ## Was ist ein `formula`? {#what}
 
-Im `Report Builder`, `formula` ist nur eine Kombination aus einer oder mehreren Metriken basierend auf einer mathematischen Logik. Ein typisches Beispiel sieht wie folgt aus:
+Im `Report Builder`, a `formula` ist nur eine Kombination aus einer oder mehreren Metriken basierend auf einer mathematischen Logik. Ein typisches Beispiel sieht wie folgt aus:
 
 ![](../../assets/formula-example.png)
 
-In diesem Beispiel verwenden Sie eine `Number of orders metric (A)` und `Distinct buyers metric (B)`und das Ziel besteht darin, die Frage zu beantworten: Wie viele Bestellungen tätigen meine Käufer jeden Monat? Die Formel enthält folgende Parameter:
+In diesem Beispiel verwenden Sie eine `Number of orders metric (A)` und `Distinct buyers metric (B)`und das Ziel ist es, die Frage zu beantworten: Wie viele Bestellungen tätigen meine Käufer jeden Monat? Die Formel enthält folgende Parameter:
 
 * `Definition`: Hier wenden Sie die Mathematik auf die Eingabemetriken an. In diesem Beispiel teilt uns die Division der Anzahl der Bestellungen durch die Anzahl unterschiedlicher Käufer die durchschnittliche Anzahl der Bestellungen mit. Daher lautet die Definition (A/B).
 
 * `Format`: Gibt Ihre Formel eine Zahl, einen Zeitraum oder einen Währungsbetrag zurück? Neben der Definition der Formel befindet sich ein Dropdown-Menü, in dem Sie das Format der Rückgabe angeben können. In diesem Fall ist es eine Zahl.
 
-* `Miscellaneous`: Der Zeitstempel, die Gruppierungen, Perspektiven und Filter der Formel werden durch die Eingabemetriken vererbt. Hier gibt es nichts zu tun!
+* `Miscellaneous`: Der Zeitstempel, die Gruppierungen, Perspektiven und Filter der Formel werden allesamt von den Eingabemetriken übernommen. Hier gibt es nichts zu tun!
 
 ## Wie kann ich `formulas` in meinen Berichten? {#how}
 
@@ -43,7 +43,7 @@ In diesem Beispiel haben Sie die Variable `Revenue` und `Revenue (first time ord
 
 ![Verwenden von Formeln zur Ermittlung des durchschnittlichen Umsatzes pro Bestellung mit und ohne Angebotscodes](../../assets/promo_code.gif)
 
-In diesem Beispiel haben Sie die Variable `Revenue` und `Number of orders` Metriken. Die Antwort auf diese Frage umfasst zwei Schritte - die Aufteilung `Revenue (A)` durch `Number of orders (B)` und legen Sie das Rückgabeformat auf `Currency`. Als Nächstes wurde nur das Formelergebnis zugelassen (`Avg. Revenue per order`), um die Ergebnisse anzuzeigen und zu gruppieren, indem Sie `Promo code`.
+In diesem Beispiel haben Sie die Variable `Revenue` und `Number of orders` Metriken. Die Antwort auf diese Frage umfasst zwei Schritte - die Aufteilung `Revenue (A)` durch die `Number of orders (B)` und legen Sie das Rückgabeformat auf `Currency`. Als Nächstes wurde nur das Formelergebnis zugelassen (`Avg. Revenue per order`), um die Ergebnisse anzuzeigen und zu gruppieren, nach `Promo code`.
 
 ### Beispiel: Ich möchte die Verteilung der UTM-Quellen meiner neuen Kunden erfahren.
 
@@ -55,14 +55,14 @@ Die Beantwortung dieser Frage umfasst einige Schritte:
 
 1. Als Nächstes haben Sie die `New Customers (grouped)` und legen Sie fest, dass eine unabhängige Dimension verwendet werden soll. Metrik `B` - `New customers (ungrouped)` - zeigt die Gesamtzahl neuer Kunden an.
 
-1. Nachdem Sie beide Metriken ausgeblendet haben, setzen Sie die Formeldefinition auf `A/B`. Dadurch wird die `New customers (grouped)` durch `New Customers (ungrouped)`.
+1. Nachdem Sie beide Metriken ausgeblendet haben, setzen Sie die Formeldefinition auf `A/B`. Dadurch wird die `New customers (grouped)` durch die `New Customers (ungrouped)`.
 
 1. Als Nächstes legen Sie das Ergebnisformat auf `Percent`.
 
 In diesem Beispiel haben Sie die Variable `Stacked Columns` um die Ergebnisse nach Monat anzuzeigen. Dadurch können wir den Vertrieb neuer Kunden von Monat zu Monat vergleichen.
 
-## Aufbrechen {#wrapup}
+## Aufwischen {#wrapup}
 
-Haben Sie in den obigen Beispielen bemerkt, dass die Formel `timestamp`, `groupings`, `perspectives`und `filters` von den Eingabemetriken vererbt werden? Beachten Sie, dass Formeln zur Verwendung von `perspectives` und [unabhängige Zeitoptionen](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, genau wie Metriken.
+Haben Sie in den obigen Beispielen bemerkt, dass die Formel `timestamp`, `groupings`, `perspectives`, und `filters` von den Eingabemetriken vererbt werden? Beachten Sie, dass Formeln zur Verwendung von `perspectives` und [unabhängige Zeitoptionen](../../tutorials/time-options-visual-rpt-bldr.md){: target=&quot;_blank&quot;}, genau wie Metriken.
 
 Wenn Sie weitere Fragen zur Verwendung von Formeln im `Report Builder`, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

@@ -25,7 +25,7 @@ Dieses Thema enthält einige Empfehlungen, mit denen Sie Ihre Datenbank für die
 
 Wenn eine Bestellung storniert, ein Benutzer sein Konto deaktiviert oder ein Produkt eingestellt wird, ist es versucht, die zugehörigen Informationen in der Datenbank zu löschen. Tabellen wachsen und beseitigen Unübersichtlichkeit scheint eine umsichtige Idee zu sein. Das Löschen von Zeilen bedeutet jedoch, dass diese Informationen für immer verloren gehen oder dass Sie alte Sicherungen durchsuchen müssen, um sie zu finden.
 
-Stattdessen können Sie der Tabelle eine Statusspalte hinzufügen, die angibt, wann die Zeile nicht mehr aktiv oder relevant ist. Es wird außerdem empfohlen, eine Spalte hinzuzufügen, in der das Datum der Änderung gespeichert wird, oder ein Protokoll für historische Änderungen zu erstellen. Wenn Tabellen so groß sind, dass die Leistung langsam beeinträchtigt wird, sollten Sie die alten Daten in einer für Analysen verwendeten Tabelle archivieren.
+Stattdessen können Sie der Tabelle eine Statusspalte hinzufügen, die angibt, wann die Zeile nicht mehr aktiv oder relevant ist. Es wird außerdem empfohlen, eine Spalte hinzuzufügen, in der das Datum der Änderung gespeichert wird, oder ein Protokoll für historische Änderungen zu erstellen. Wenn Tabellen so groß sind, dass die Leistung langsam zunimmt, sollten Sie die alten Daten in einer für Analysen verwendeten Tabelle archivieren.
 
 ## Daten selten überschreiben
 
@@ -39,11 +39,11 @@ Wenn Sie einen Datensatz aufgrund einer Benutzeraktion aktualisieren, überschre
 
 Wenn die Zeilen einer Tabelle Werte im Laufe der Zeit ändern, z. B.: **order\_status** Änderungen von`processing` nach `complete`, fügen Sie eine **updated\_at** -Spalte, um aufzuzeichnen, wann die letzte Änderung erfolgt. Stellen Sie sicher, dass **updated\_at** beim ersten Einfügen der neuen Datenzeile verfügbar ist, wenn die **updated\_at** date entspricht dem **created\_at** Datum.
 
-Neben der Optimierung für die Analyse **updated\_at** -Spalten ermöglichen Ihnen auch die Verwendung von [Inkrementelle Replikationsmethoden](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md), was dazu beitragen kann, die Länge Ihrer Aktualisierungszyklen zu verkürzen.
+Neben der Optimierung für die Analyse **updated\_at** -Spalten können Sie auch [Inkrementelle Replikationsmethoden](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md), was dazu beitragen kann, die Länge Ihrer Aktualisierungszyklen zu verkürzen.
 
 ## Store User Acquisition Source
 
-Einer der häufigsten Fehler ist der [Benutzerakquise-Quelle](../data-analyst/analysis/google-track-user-acq.md) (UAS) nicht in der Betriebsdatenbank gespeichert. In den meisten Fällen, in denen dies ein Problem ist, wird die AS nur verfolgt [!DNL Google Analytics] oder einem anderen Webanalysetool. Diese Instrumente können zwar nützlich sein, doch gibt es einige Nachteile, die die ausschließliche Lagerung von UAS in diesen Instrumenten mit sich bringt. Sie können beispielsweise keine Daten auf Benutzerebene aus diesen Tools extrahieren. Wenn es möglich ist, ist es normalerweise ein schwieriger Prozess. Es sollte einfach sein, diese Informationen zu erhalten und sie mit Daten aus anderen Quellen zu verbinden, z. B. mit den Verhaltens- und Transaktionsdaten, die ebenfalls in Ihrer Datenbank gespeichert sind.
+Einer der häufigsten Fehler ist der [Benutzerakquise-Quelle](../data-analyst/analysis/google-track-user-acq.md) (UAS) nicht in der Betriebsdatenbank gespeichert. In den meisten Fällen, in denen dies ein Problem ist, wird die AS nur verfolgt [!DNL Google Analytics] oder einem anderen Webanalysetool. Diese Tools können zwar nützlich sein, doch gibt es einige Nachteile, die die ausschließliche Speicherung von UAS in ihnen mit sich bringt, wie z. B. die Extraktion von Daten auf Benutzerebene aus diesen Tools. Wenn es möglich ist, ist es normalerweise ein schwieriger Prozess. Es sollte einfach sein, diese Informationen zu erhalten und sie mit Daten aus anderen Quellen zu verbinden, z. B. mit den Verhaltens- und Transaktionsdaten, die ebenfalls in Ihrer Datenbank gespeichert sind.
 
 Die Speicherung von UAS in Ihrer eigenen Datenbank ist oft die größte Verbesserung, die ein Online-Unternehmen an seinen analytischen Fähigkeiten vornehmen kann. Dies ermöglicht die Analyse von Vertrieb, Benutzerinteraktion, Payback-Zeiträumen, Kundenlebenszeitwert, Abwanderung und anderen kritischen Metriken nach UAS. [Diese Daten sind bei der Entscheidung, wo Marketing-Ressourcen investiert werden, von entscheidender Bedeutung](../data-analyst/analysis/most-value-source-channel.md).
 
@@ -51,17 +51,17 @@ Zu viele Unternehmen konzentrieren sich ausschließlich auf die Suche nach Kanä
 
 ## Einrichten von Datentabellen
 
-### Festlegen eines Primären Schlüssels
+### Primären Schlüssel festlegen
 
 A [Primärschlüssel](https://en.wikipedia.org/wiki/Unique_key) ist eine unveränderliche Spalte (oder ein Satz von Spalten), die eindeutige Werte in einer Tabelle erzeugt. Primäre Schlüssel sind sehr wichtig, da sie sicherstellen, dass Ihre Tabellen ordnungsgemäß repliziert werden in [!DNL Commerce Intelligence].
 
-Verwenden Sie beim Erstellen von Primärschlüsseln einen ganzzahligen Datentyp für die Spalte, die automatisch erhöht wird. Adobe empfiehlt, die Verwendung von mehrspaltigen Primärschlüsseln möglichst zu vermeiden.
+Verwenden Sie beim Erstellen von Primärschlüsseln einen ganzzahligen Datentyp für die Spalte, die automatisch erhöht wird. Adobe empfiehlt, die Verwendung von mehrspaltigen Primärschlüsseln zu vermeiden.
 
 Wenn es sich bei Ihrer Tabelle um eine SQL-Ansicht handelt, fügen Sie eine Spalte hinzu, die als Primärschlüssel dienen kann. [!DNL Commerce Intelligence] kann diese Spalte automatisch als Primärschlüssel identifizieren.
 
 ### Datentyp zu Ihrer Datenspalte zuweisen
 
-Wenn einer Datenspalte keine [Datentyp](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] rät, welcher Datentyp verwendet werden soll. Wenn das System falsch einschätzt, können Sie die entsprechenden Analysen erst dann durchführen, wenn das Adobe Support-Team die Spalte an den entsprechenden Datentyp anpasst. Wenn beispielsweise eine Datumsspalte als numerischer Datentyp betrachtet wird, können Sie mithilfe dieser Datumsdimension einen Trend im Zeitverlauf erstellen.
+Wenn einer Datenspalte keine [Datentyp](https://en.wikipedia.org/wiki/Data_type), [!DNL Commerce Intelligence] rät, welcher Datentyp verwendet werden soll. Wenn das System falsch einschätzt, können Sie die entsprechenden Analysen erst dann durchführen, wenn das Adobe-Supportteam die Spalte an den entsprechenden Datentyp anpasst. Wenn beispielsweise eine Datumsspalte als numerischer Datentyp betrachtet wird, können Sie mithilfe dieser Datumsdimension einen Trend im Zeitverlauf erstellen.
 
 ### Hinzufügen von Präfixen zu Ihren Datentabellen, wenn mehrere Datenbanken vorhanden sind
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Erwartet [!DNL Google Analytics] data
 
-Nachdem Sie eine Verbindung hergestellt haben, [!DNL Google Analytics] Integration, können Sie mit Ihrer [!DNL Google Analytics] Metriken *unmittelbar im`Visual Report Builder`*. Wenn Sie `Visual Report Builder`, wenn Sie auf **[!UICONTROL Add a Metric]**, eine Reihe von Metriken aus Ihrer [!DNL Google Analytics] Profil wird in einer Dropdown-Liste direkt unter den Metriken in Ihrer Data Warehouse angezeigt.
+Nachdem Sie eine Verbindung hergestellt haben, [!DNL Google Analytics] Integration, können Sie mit Ihrer [!DNL Google Analytics] Metriken *unmittelbar im`Visual Report Builder`*. Wenn Sie `Visual Report Builder`, wenn Sie auf **[!UICONTROL Add a Metric]**, eine Reihe von Metriken aus Ihrer [!DNL Google Analytics] -Profil wird in einer Dropdown-Liste direkt unter den Metriken in Ihrer Data Warehouse angezeigt.
 
 Die [!DNL Google Analytics] Integration *live* — das bedeutet, dass die `Report Builder` Daten anfordern von [!DNL Google Analytics] *sofort* wenn Sie eine Metrik zum Bericht hinzufügen. Dies bedeutet auch, dass die Metriken, auf die Sie zugreifen können, genau so definiert sind, wie sie sich in [!DNL Google Analytics]und dass diese Werte nicht *Warehouse* in [!DNL Commerce Intelligence] -Konto - wird nur visuell in Ihren Berichten angezeigt.
 
@@ -160,7 +160,7 @@ Die [!DNL Google Analytics] Integration *live* — das bedeutet, dass die `Repor
 
 >[!NOTE]
 >
-> Commerce Intelligence unterstützt folgende Dimensionen nicht: `cohort`, `cohortNthDay`, `cohortNthMonth`und `cohortNthWeek`.
+> Commerce Intelligence unterstützt folgende Dimensionen nicht: `cohort`, `cohortNthDay`, `cohortNthMonth`, und `cohortNthWeek`.
 >
 >Bestätigen Sie, dass alle verwendeten Dimensionen mit einer oder mehreren Metriken kompatibel sind, die Sie in der Variablen `Visual Report Builder`. Sie können die [GA4-Dimensionen und Metriken-Explorer](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/).
 

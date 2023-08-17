@@ -41,11 +41,11 @@ Die `quote_item` table (`sales_flat_quote_item` auf M1) enthält Datensätze zu
 
 | **Spaltenname** | **Beschreibung** |
 |---|---|
-| `Cart creation date` | Zeitstempel, der mit dem Erstellungsdatum des Warenkorbs verknüpft ist. Errechnet durch Verbinden `quote_item.quote_id` nach `quote.entity_id` und die `created_at` timestamp |
-| `Cart is active? (1/0)` | Boolesches Feld, das &quot;1&quot;zurückgibt, wenn der Warenkorb von einem Kunden erstellt wurde und noch nicht in eine Bestellung konvertiert wurde. Gibt &quot;0&quot;für konvertierte Warenkörbe oder Warenkörbe zurück, die vom Administrator erstellt wurden. Errechnet durch Verbinden `quote_item.quote_id` nach `quote.entity_id` und die `is_active` field |
-| `Cart item total value (qty * base_price)` | Gesamtwert eines Artikels zum Zeitpunkt der Hinzufügung des Artikels zum Warenkorb nach [Katalogpreisregeln, gestaffelte Rabatte und Sonderpreise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) werden angewendet und bevor Steuern, Versand- oder Warenkorbrabatte angewendet werden. Wird durch Multiplikation der `qty` durch `base_price` |
-| `Seconds since cart creation` | Verstrichene Zeit zwischen dem Erstellungsdatum des Warenkorbs und jetzt. Errechnet durch Verbinden `quote_item.quote_id` nach `quote.entity_id` und die `Seconds since cart creation` field |
-| `Store name` | Name des Commerce-Stores, der mit dem Bestellelement verknüpft ist. Errechnet durch Verbinden `sales_order_item.store_id` nach `store.store_id` und die `name` field |
+| `Cart creation date` | Zeitstempel, der mit dem Erstellungsdatum des Warenkorbs verknüpft ist. Errechnet durch Verbinden `quote_item.quote_id` nach `quote.entity_id` und gibt die `created_at` timestamp |
+| `Cart is active? (1/0)` | Boolesches Feld, das &quot;1&quot;zurückgibt, wenn der Warenkorb von einem Kunden erstellt wurde und noch nicht in eine Bestellung konvertiert wurde. Gibt &quot;0&quot;für konvertierte Warenkörbe oder Warenkörbe zurück, die vom Administrator erstellt wurden. Errechnet durch Verbinden `quote_item.quote_id` nach `quote.entity_id` und gibt die `is_active` field |
+| `Cart item total value (qty * base_price)` | Gesamtwert eines Artikels zum Zeitpunkt der Hinzufügung des Artikels zum Warenkorb nach [Katalogpreisregeln, gestaffelte Rabatte und Sonderpreise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) werden angewendet und bevor Steuern, Versand- oder Warenkorbrabatte angewendet werden. Wird durch Multiplikation der `qty` durch die `base_price` |
+| `Seconds since cart creation` | Verstrichene Zeit zwischen dem Erstellungsdatum des Warenkorbs und jetzt. Errechnet durch Verbinden `quote_item.quote_id` nach `quote.entity_id` und gibt die `Seconds since cart creation` field |
+| `Store name` | Name des mit dem Bestellelement verknüpften Commerce-Stores. Errechnet durch Verbinden `sales_order_item.store_id` nach `store.store_id` und gibt die `name` field |
 
 {style="table-layout:auto"}
 
@@ -72,7 +72,7 @@ Die `quote_item` table (`sales_flat_quote_item` auf M1) enthält Datensätze zu
 
 `quote_item`
 
-* Mitglied werden `quote_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) Hilfe bei der Konfiguration dieser Berechnungen, wenn sie im Data Warehousen-Manager erstellt werden.
+* Mitglied werden `quote_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) für Hilfe bei der Konfiguration dieser Berechnungen, wenn sie im Data Warehouse-Manager erstellt werden.
    * Pfad: `quote_item.parent_item_id` (viele) => `quote_item.item_id` (eins)
 
 `store`

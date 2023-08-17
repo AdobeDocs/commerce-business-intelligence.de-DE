@@ -26,4 +26,4 @@ Verbinden, Konsolidieren und Transformieren Ihrer Daten. Visualisieren, analysie
 
 Standard-Dashboards umfassen Marketing-ROI, Customer Lifetime Value, Kundensegmentierung, Executive- und Investor-KPIs, Kohortenanalyse und Merchandising-Analyse.
 
-Wenn Sie [Aktivieren](../getting-started/onpremise-activation.md) Ihre [!DNL Commerce Intelligence] -Konto verwenden, verbinden Sie Ihre [!DNL Adobe Commerce] Datenbank zu [!DNL Commerce Intelligence] und sofort Zugriff auf fünf Dashboards mit etwa 100 Berichten erhalten. Diese Berichte sollen Einblicke in Ihre Daten bieten und Fragen wie *Wie wachsen meine Bestellungen monatlich?*, *Wer sind meine treusten Kunden?* und *Funktioniert meine Couponstrategie?*.
+Wenn Sie [Aktivieren](../getting-started/onpremise-activation.md) Ihre [!DNL Commerce Intelligence] -Konto verwenden, verbinden Sie Ihre [!DNL Adobe Commerce] Datenbank zu [!DNL Commerce Intelligence] und sofort Zugriff auf fünf Dashboards mit etwa 100 Berichten erhalten. Diese Berichte sollen Einblicke in Ihre Daten bieten und Fragen wie *Wie wachsen meine Bestellungen monatlich?*, *Wer sind meine treusten Kunden?*, und *Funktioniert meine Couponstrategie?*.

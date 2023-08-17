@@ -25,13 +25,13 @@ Erste Schritte mit der Eingabe Ihrer [!DNL Google ECommerce] Anmeldedaten [!DNL 
 
 1. Navigieren Sie zu `Connections` Seite unter **[!UICONTROL Admin** > **Connections]**.
 
-1. Klicken **[!UICONTROL Add a New Source]** auf der rechten Seite des Bildschirms über dem `Data Sources` Tabelle.
+1. Klicks **[!UICONTROL Add a New Source]** auf der rechten Seite des Bildschirms über dem `Data Sources` Tabelle.
 
 1. Klicken Sie auf [!DNL Google ECommerce] Symbol. Dadurch wird die [!DNL Google ECommerce] Seite mit Anmeldeinformationen.
 
 1. Geben Sie Ihre [!DNL Google Analytics] Anmeldedaten. Nach Abschluss des Autorisierungsprozesses werden Sie zurück zu [!DNL Commerce Intelligence].
 
-1. Eine Liste der Profil-IDs wird angezeigt. Überprüfen Sie die Profile, mit denen Sie eine Verbindung herstellen möchten. [!DNL Commerce Intelligence].
+1. Eine Liste der Profil-IDs wird angezeigt. Überprüfen Sie die Profile, mit denen Sie eine Verbindung herstellen möchten [!DNL Commerce Intelligence].
 
    Wenn Sie mehrere Profile haben und dabei behilflich sein müssen, welche Profile identifiziert werden können, lesen Sie den Abschnitt &quot;Mehrere Profile verbinden&quot;. [!DNL Google Analytics] Profile weiter unten.
 
@@ -39,7 +39,7 @@ Erste Schritte mit der Eingabe Ihrer [!DNL Google ECommerce] Anmeldedaten [!DNL 
 
 1. Änderungen werden automatisch gespeichert. Klicken Sie daher auf **[!UICONTROL Back to Connections]** wenn Sie fertig sind.
 
-## Mehrere Verbindungen herstellen [!DNL Google Analytics] Profile in [!DNL Commerce Intelligence]
+## Mehrere Verbindungen [!DNL Google Analytics] Profile in [!DNL Commerce Intelligence]
 
 Möglicherweise sind mehrere Websites mit einer [!DNL Google Analytics] eigenem Konto [!DNL Google Analytics] Profil-ID. In diesem Fall können Sie alle Ihre Profil-IDs in [!DNL Commerce Intelligence]. Überprüfen Sie die Profil-IDs, die Sie im Schritt zur Profilauswahl einbeziehen möchten.
 
@@ -55,12 +55,12 @@ So identifizieren Sie die [!DNL Google Analytics] Profil-ID:
 
 1. Besuchen Sie Ihre [!DNL Google Analytics] [Kontoeinstellungen](https://www.google.com/account/about/?hl=en) Seite.
 1. Unter dem `Security` Abschnitt, klicken Sie auf **[!UICONTROL edit]** neben `Authorizing` Anwendungen und Sites.
-1. Klicken **[!UICONTROL revoke access]** neben [!DNL Commerce Intelligence].
+1. Klicks **[!UICONTROL revoke access]** neben [!DNL Commerce Intelligence].
 
 ## Verwandte:
 
 * [Erwartet [!DNL Google ECommerce] data](../integrations/google-ecommerce-data.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Einrichten [!DNL Google ECommerce] tracking](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Entdecken Sie Ihre wertvollsten Akquisequellen und -kanäle](../../analysis/most-value-source-channel.md)
-* [Erhöhen Sie den ROI Ihrer Werbekampagnen.](../../analysis/roi-ad-camp.md)
+* [Steigerung des ROI bei Werbekampagnen](../../analysis/roi-ad-camp.md)

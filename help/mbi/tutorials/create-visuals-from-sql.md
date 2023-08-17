@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Ziel dieses Tutorials ist es, Sie mit der in der [!DNL SQL Report Builder] und geben Ihnen eine solide Grundlage für die Erstellung `SQL visualizations`.
 
-Die [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) ist ein Report Builder mit Optionen: Sie können eine Abfrage ausführen, um nur eine Datentabelle abzurufen, oder Sie können diese Ergebnisse in einen Bericht umwandeln. In diesem Tutorial wird beschrieben, wie Sie eine Visualisierung aus einer SQL-Abfrage erstellen.
+Die [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) ist ein ReportBuilder mit Optionen: Sie können eine Abfrage ausführen, um nur eine Datentabelle abzurufen, oder Sie können diese Ergebnisse in einen Bericht umwandeln. In diesem Tutorial wird beschrieben, wie Sie eine Visualisierung aus einer SQL-Abfrage erstellen.
 
 ## Terminologie
 
 Bevor Sie mit diesem Tutorial beginnen, lesen Sie die folgende in der `SQL Report Builder`.
 
-- `Series`: Die Spalte, die Sie messen möchten, wird im SQL-Report Builder als Reihe bezeichnet. Häufige Beispiele: `revenue`, `items sold`und `marketing spend`. Mindestens eine Spalte muss als `Series` , um eine Visualisierung zu erstellen.
+- `Series`: Die Spalte, die Sie messen möchten, wird im SQL-Report Builder als Reihe bezeichnet. Häufige Beispiele `revenue`, `items sold`, und `marketing spend`. Mindestens eine Spalte muss als `Series` , um eine Visualisierung zu erstellen.
 
 - `Category`: Die Spalte, die Sie zur Segmentierung Ihrer Daten verwenden möchten, wird als `Category` Das ist genau wie das `Group By` in der [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Wenn Sie beispielsweise den Umsatz Ihrer Kunden über die gesamte Lebensdauer nach ihrer Akquisequelle segmentieren möchten, wird die Spalte mit der Akquisequelle als `Category`. Mehr als eine Spalte kann als `Category`.
 
@@ -31,7 +31,7 @@ Bevor Sie mit diesem Tutorial beginnen, lesen Sie die folgende in der `SQL Repor
 
 - `Labels`: Diese werden als X-Achsen-Beschriftungen angewendet. Bei der Analyse von Datentrends im Zeitverlauf werden die Spalten für Jahr und Monat als Titel angegeben. Es kann mehr als eine Spalte als Titel festgelegt werden.
 
-## Schritt 1: Schreiben der Abfrage
+## Schritt 1: Abfrage schreiben
 
 Beachten Sie Folgendes:
 
@@ -72,9 +72,9 @@ In diesem Beispiel soll es sich um ein Liniendiagramm handeln, das sich im Zeitv
 
 - `Series`: Wählen Sie die `Items sold` als `Series` da Sie es messen möchten. Nachdem Sie die `Series` -Spalte wird eine einzelne Zeile im Bericht angezeigt.
 
-- `Category`: In diesem Beispiel möchten Sie jedes Produkt als eine andere Zeile im Bericht anzeigen. Dazu legen Sie `Product name` als `Category`.
+- `Category`: In diesem Beispiel möchten Sie jedes Produkt als eine andere Zeile im Bericht anzeigen. Dazu legen Sie Folgendes fest: `Product name` als `Category`.
 
-- `Labels`: Spalten verwenden `year` und `month` als Beschriftungen auf der X-Achse, um sie anzeigen zu können `Items Sold` als Trend im Zeitverlauf.
+- `Labels`: Verwenden Sie die Spalten `year` und `month` als Beschriftungen auf der X-Achse, um sie anzeigen zu können `Items Sold` als Trend im Zeitverlauf.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Im Folgenden sehen Sie, wie Sie diese Visualisierung erstellt haben, von der Aus
 
 ![](../assets/SQL_report_settings.gif)
 
-## Schritt 3: Wählen Sie eine `Chart Type`
+## Schritt 3: Auswählen einer `Chart Type`
 
 In diesem Beispiel wird die `Line` Diagrammtyp. So verwenden Sie eine andere `chart type`klicken Sie auf die Symbole über dem Abschnitt Grafikoptionen , um ihn zu ändern:
 
@@ -96,6 +96,6 @@ Wenn Sie diesen Bericht erneut verwenden möchten, geben Sie dem Bericht einen N
 
 Wählen Sie im Dropdown-Menü `Chart` als `Type` und dann ein Dashboard, in dem der Bericht gespeichert werden soll.
 
-## Aufbrechen
+## Aufwischen
 
 Willst du noch einen Schritt weiter gehen? Sehen Sie sich die [Best Practices zur Abfrageoptimierung](../best-practices/optimizing-your-sql-queries.md).

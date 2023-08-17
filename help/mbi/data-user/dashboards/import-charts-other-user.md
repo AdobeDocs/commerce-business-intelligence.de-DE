@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Importieren von Diagrammen aus einem anderen Benutzer
+# Importdiagramm von einem anderen Benutzer
 
 Sie können ein Diagramm bearbeiten, das einem anderen Benutzer gehört, oder ein ähnliches Diagramm erstellen. Es ist einfach, ein Diagramm zu importieren, das derzeit einem anderen Benutzer gehört, und es in Ihrem eigenen Dashboard zu speichern.
 
-## Grafik suchen
+## Diagramm suchen
 
 Suchen Sie zunächst das Diagramm, das Sie kopieren möchten, vom anderen Benutzer. Alle Dashboards, die für Sie freigegeben sind, finden Sie im `Dashboard` Seitenleiste, in der sie mit einem gemeinsamen Symbol markiert sind. Klicken Sie auf das gewünschte Dashboard.
 

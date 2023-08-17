@@ -19,7 +19,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
 ## So erstellen Sie einen einfachen Bericht:
 
-1. Im [!DNL Commerce Intelligence] Menü, klicken Sie **[!UICONTROL Report Builder]**.
+1. Im [!DNL Commerce Intelligence] Menü, klicken **[!UICONTROL Report Builder]**.
 
 1. under [!UICONTROL Visual Report Builder]klicken **[!UICONTROL Create Report]** und gehen Sie wie folgt vor:
 
@@ -53,7 +53,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
      Die `Group By` detail listet jeden von Kunden verwendeten Gutschein auf. Die Gutscheine, die zum Platzieren der ursprünglichen Bestellung verwendet wurden, sind mit einem Kontrollkästchen markiert. Das Diagramm enthält jetzt mehrere farbige Linien, die jeden Gutschein darstellen, der für eine erste Bestellung verwendet wurde. Die Legende ist farbcodiert und entspricht jeder Datenzeile.
 
-   * Klicken **[!UICONTROL Apply]** um die Gruppe nach Detail zu schließen.
+   * Klicks **[!UICONTROL Apply]** um die Gruppe nach Detail zu schließen.
 
      ![Mehrere Dimensionen](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
@@ -67,7 +67,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
      Die Datenachse wird gespiegelt, und die Tabelle enthält jetzt eine Spalte für jeden Couponcode und eine Zeile für jeden Monat. Vielleicht ist diese Ausrichtung leichter zu lesen.
 
-     ![Übertragene Daten](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
+     ![Transponierte Daten](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
 
    **`Date Range`**
 
@@ -97,7 +97,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
      |-----|-----|
      | ![](../../assets/magento-bi-btn-chart-line.png) | Kantengraph |
      | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | Horizontalbalken |
-     | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Horizontaler gestapelter Balken |
+     | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Horizontalbalken |
      | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | Vertikalbalken |
      | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Vertikaler gestapelter Balken |
      | ![](../../assets/magento-bi-btn-chart-pie.png) | Torte |
@@ -120,7 +120,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
 1. Führen Sie einen der folgenden Schritte aus, um die Grafik in einem Dashboard anzuzeigen:
 
-   * Klicken **[!UICONTROL Go to Dashboard]** in der Nachricht oben auf der Seite.
+   * Klicks **[!UICONTROL Go to Dashboard]** in der Nachricht oben auf der Seite.
 
    * Wählen Sie im Menü `Dashboards` und klicken Sie auf den Namen des aktuellen Dashboards, um die Liste anzuzeigen. Klicken Sie dann auf den Namen des Dashboards, in dem der Bericht gespeichert wurde.
 

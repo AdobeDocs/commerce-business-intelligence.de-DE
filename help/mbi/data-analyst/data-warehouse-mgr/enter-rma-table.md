@@ -7,7 +7,7 @@ feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce 
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -49,7 +49,7 @@ Jede Zeile im `enterprise_rma` Tabelle (häufig `magento_rma` in Adobe Commerce 
 | `Number of returns` | Die Anzahl der angeforderten Rückgaben. | `Operation` column: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Spalte: `date requested` |
 | `Total returned amount` | Der insgesamt zurückgegebene Geldbetrag. | `Operation `Spalte: `Return's total value`<br>`Operation`: Summe<br>`Timestamp` Spalte: Datum angefordert |
 | `Average returned amount` | Der durchschnittliche Geldbetrag, der zurückgegeben wurde. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
-| `Average time to return` | Die durchschnittliche Zeit zwischen Bestellung und Rückgabe. | `Operation` Spalte: Sekunden zwischen der am und dem angeforderten Rückgabedatum erstellten Bestellung<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
+| `Average time to return` | Die durchschnittliche Zeit zwischen Bestellung und Rückgabe. | `Operation` Spalte: Sekunden zwischen der am erstellten Bestellung und dem angeforderten Rückkehrdatum<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
 
 {style="table-layout:auto"}
 

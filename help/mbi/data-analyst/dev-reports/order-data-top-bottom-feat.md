@@ -41,9 +41,9 @@ Wenn Sie z. B. die fünf Verweisquellen anzeigen möchten, die den meisten Umsat
 
 Die Verwendung dieser Funktion wird kompliziert, wenn es sich bei hier um mehr als eine Metrik in einem Bericht handelt, da jede Metrik nur nach sich selbst oder nach einer der Gruppierungen sortiert werden kann.
 
-Angenommen, Sie haben einen Bericht mit den beiden Variablen `Revenue` und `Number of orders` Metriken, gruppiert nach Verweisquelle. `Revenue` kann nur sortiert werden nach `Revenue` oder Verweisquelle und `Number of orders` kann nur sortiert werden nach `Number of orders` oder Verweisquelle.
+Angenommen, Sie haben einen Bericht mit den beiden Variablen `Revenue` und `Number of orders` Metriken, gruppiert nach Verweisquelle. `Revenue` kann nur nach `Revenue` oder Verweisquelle und `Number of orders` kann nur nach `Number of orders` oder Verweisquelle.
 
-Das bedeutet, dass während der `Revenue` von nur oben `5` Verweisquellen, die Umsatz generieren, können die Anzahl der Bestellungen nicht auch nach oben anzeigen `5` Verweisquellen, die Umsatz generieren. Einfach ausgedrückt: Wenn mehrere Metriken vorhanden sind, sollten Sie am besten jede Metrik nach der Gruppierung sortieren.
+Das bedeutet, dass während der `Revenue` von nur oben `5` Verweisquellen, die Umsatz generieren, können die Anzahl der Bestellungen nicht auch nach oben anzeigen `5` Verweisquellen, die Umsatz generieren. Einfach ausgedrückt: Wenn mehrere Metriken vorhanden sind, ist es am besten, jede Metrik nach Gruppierung zu sortieren.
 
 Nachfolgend finden Sie ein Beispiel für ein Diagramm, das die `Revenue` -Metrik selbst anstatt durch die Gruppierung. Wie Sie sehen können, wurde durch das Nichtsortieren der Metrik nach der Gruppierung ein seltsamer (und letztlich nicht hilfreicher) Bericht erstellt:
 
@@ -61,11 +61,11 @@ In diesem Beispiel wird untersucht, wie viele Möglichkeiten Ihre Vertriebsmitar
 
 ![Reihenfolge nach Metrik.](../../assets/Ordered_by_metric.png)
 
-Wenn jedoch eine zweite Metrik hinzugefügt wird, besteht die Standardeinstellung darin, die obere anhand der Gruppierung anzuordnen. Wenn Metriken und Gruppierungen hinzugefügt werden, basiert die Standardsortierung auf der ersten Gruppierung, der zweiten Gruppierung usw.
+Wenn jedoch eine zweite Metrik hinzugefügt wird, besteht die Standardeinstellung darin, die oberste Metrik basierend auf der Gruppierung anzuordnen. Wenn Metriken und Gruppierungen hinzugefügt werden, basiert die Standardsortierung auf der ersten Gruppierung, der zweiten Gruppierung usw.
 
 ![Sortieren nach Gruppierung.](../../assets/Ordered_by_grouping.png)
 
-## Aufbrechen {#wrapup}
+## Aufwischen {#wrapup}
 
 Während einige grundlegende Funktionen hier behandelt werden, hat diese Funktion viele interessante Verwendungen.
 

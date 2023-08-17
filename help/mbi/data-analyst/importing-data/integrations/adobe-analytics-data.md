@@ -1,6 +1,6 @@
 ---
 title: Erwartet [!DNL Adobe Analytics] Daten
-description: Erfahren Sie mehr über die Schritte zum Verbinden Ihrer RDS-Instanz.
+description: Erfahren Sie, wie Sie Ihre RDS-Instanz verbinden.
 exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -36,10 +36,10 @@ Die Tabelle würde die folgenden Spalten enthalten:
 | `_updated_at` | Diese Spalte enthält das letzte Mal, dass die Datenzeile aktualisiert wurde. Sie wird von [!DNL Commerce Intelligence]. |
 | `start_date` | Startdatum der eingeschlossenen Daten für die Zeile. `start_date` ist immer 00:00 Uhr desselben Tages innerhalb einer Zeile. |
 | `end_date` | Enddatum der eingeschlossenen Daten für die Zeile. `end_date` ist immer 23:59 des gleichen Tages innerhalb einer Zeile. |
-| `page_views` | Ausgewählte Metrik: Die Gesamtzahl der Seitenansichten für den angegebenen Zeitraum. |
+| `page_views` | Ausgewählte Metrik: Die Gesamtanzahl der Seitenansichten für den angegebenen Zeitraum. |
 | `page` | Ausgewählte Dimension: Einzelne Seitennamen mit verfolgten Ansichten. |
 
-Legen Sie fest, welche der ausgewählten Metriken und Dimensionen Daten in Ihrer [!DNL Commerce Intelligence] mithilfe der *Synchronisieren* oder *unsync* Optionen in `Data Warehouse` Seite. Spalten, die derzeit nicht synchronisiert werden, werden grau dargestellt. Wenn Sie die Synchronisierung einer Spalte stoppen, können Sie sie später erneut synchronisieren.
+Legen Sie fest, welche der ausgewählten Metriken und Dimensionen Daten in Ihrer [!DNL Commerce Intelligence] -Tabelle mithilfe der *Synchronisieren* oder *unsync* Optionen in `Data Warehouse` Seite. Spalten, die derzeit nicht synchronisiert werden, werden grau dargestellt. Wenn Sie die Synchronisierung einer Spalte stoppen, können Sie sie später erneut synchronisieren.
 
 ## Aktuelle Einschränkungen
 

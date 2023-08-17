@@ -1,6 +1,6 @@
 ---
 title: Importieren von Bing Ad Spent-Daten
-description: Erfahren Sie, wie Sie Bing-Werbeausgaben in importieren [!DNL Commerce Intelligence] zur Analyse.
+description: Erfahren Sie, wie Sie Bing-Werbeausgaben in importieren [!DNL Commerce Intelligence] für die Analyse.
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Import [!DNL Bing] Daten
 
-Zu importieren [!DNL Bing] Daten zu Werbeausgaben [!DNL Adobe Commerce Intelligence] zur Analyse exportieren Sie einfach die Daten aus [!DNL Bing Ads Editor] in `.csv` formatieren und hochladen in [!DNL Commerce Intelligence] wie unten beschrieben.
+Zu importieren [!DNL Bing] Daten zu Werbeausgaben [!DNL Adobe Commerce Intelligence] zur Analyse exportieren Sie einfach die Daten aus [!DNL Bing Ads Editor] in einer `.csv` formatieren und hochladen in [!DNL Commerce Intelligence] wie unten beschrieben.
 
 ## [!DNL Bing Ads Editor]
 
-So exportieren Sie [!DNL Bing Ads] Daten, müssen Sie über [!DNL Bing Ads Editor] installiert. Sie können die kostenlosen Downloads von [[!DNL Bing Ads Editor]](https://about.ads.microsoft.com/en-us/solutions/tools/editor).
+So exportieren Sie [!DNL Bing Ads] Daten, müssen Sie über [!DNL Bing Ads Editor] installiert. Sie können die kostenlose [[!DNL Bing Ads Editor]](https://about.ads.microsoft.com/en-us/solutions/tools/editor).
 
 ## [!DNL Bing Ads] Datenexport
 

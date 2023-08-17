@@ -17,4 +17,4 @@ Eine Integration ist eine Datenquelle. Integrationen sind Anwendungen und Datenb
 
 In diesem Abschnitt werden die verfügbaren Integrationen vorgestellt, mit denen Sie verschiedene externe Datenquellen verbinden können. [!DNL Commerce Intelligence].
 
-So löschen Sie eine Verbindung oder Integration: [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) und fügen Sie den Namen der Verbindung oder Integration ein, die gelöscht werden soll.
+So löschen Sie eine Verbindung oder Integration [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) und fügen Sie den Namen der Verbindung oder Integration ein, die gelöscht werden soll.

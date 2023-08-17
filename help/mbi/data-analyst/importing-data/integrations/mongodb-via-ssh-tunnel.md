@@ -23,15 +23,15 @@ Um eine Verbindung herzustellen [!DNL MongoDB] Datenbank zu [!DNL Commerce Intel
 
 >[!NOTE]
 >
->Aufgrund des technischen Charakters dieses Setups empfiehlt Adobe, in einem Entwickler eine Schleife durchzuführen, um herauszufinden, ob Sie dies noch nicht getan haben.
+>Aufgrund des technischen Charakters dieses Setups empfiehlt Adobe, dass Sie in einem Entwickler eine Schleife durchführen, um herauszufinden, ob Sie dies noch nicht getan haben.
 
 ## Abrufen der [!DNL Commerce Intelligence] öffentlicher Schlüssel {#retrieve}
 
 Die `public key` wird verwendet, um die [!DNL Commerce Intelligence] `Linux` Benutzer. Der nächste Abschnitt erläutert Ihnen schrittweise, wie Sie den Benutzer erstellen und die Schlüssel importieren können.
 
-1. Navigieren Sie zu **[!UICONTROL Data** > **Connections]** und klicken Sie auf **[!UICONTROL Add New Data Source]**.
+1. Navigieren Sie zu **[!UICONTROL Data** > **Connections]** und klicken **[!UICONTROL Add New Data Source]**.
 1. Klicken Sie auf [!DNL MONGODB] Symbol.
-1. Nach dem [!DNL MongoDB] Die Seite mit den Anmeldedaten wird geöffnet. Ändern Sie `Encrypted` Umschalten auf `Yes`. Dadurch wird das SSH-Setup-Formular angezeigt.
+1. Nach dem [!DNL MongoDB] Die Anmeldeseite wird geöffnet. Ändern Sie `Encrypted` Umschalten auf `Yes`. Dadurch wird das SSH-Setup-Formular angezeigt.
 1. Die `public key` befindet sich unter diesem Formular.
 
 Lassen Sie diese Seite während des Tutorials geöffnet - Sie benötigen sie im nächsten Abschnitt und am Ende.
@@ -50,7 +50,7 @@ Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firew
 
 >[!IMPORTANT]
 >
->Wenn die Variable `sshd_config` -Datei, die mit dem Server verknüpft ist, nicht auf die Standardoption festgelegt, sondern nur bestimmte Benutzer haben Serverzugriff. Dies verhindert eine erfolgreiche Verbindung zu [!DNL Commerce Intelligence]. In diesen Fällen ist es erforderlich, einen Befehl wie `AllowUsers` , um `rjmetric` Benutzerzugriff auf den Server.
+>Wenn die Variable `sshd_config` -Datei, die mit dem Server verknüpft ist, nicht auf die Standardoption festgelegt, sondern nur bestimmte Benutzer haben Serverzugriff. Dies verhindert eine erfolgreiche Verbindung zu [!DNL Commerce Intelligence]. In diesen Fällen ist es erforderlich, einen Befehl wie `AllowUsers` , um die `rjmetric` Benutzerzugriff auf den Server.
 
 Dabei kann es sich um eine Produktions- oder Sekundärmaschine handeln, sofern diese Daten in Echtzeit (oder häufig aktualisiert) enthält. Sie können diesen Benutzer beliebig einschränken, solange er das Recht behält, sich mit dem [!DNL MongoDB] Server.
 
@@ -78,9 +78,9 @@ Um die Erstellung des Benutzers abzuschließen, ändern Sie die Berechtigungen f
 
 ## Erstellen einer [!DNL Commerce Intelligence] [!DNL MongoDB] Benutzer {#mongodb}
 
-[!DNL MongoDB] -Server haben zwei Ausführungsmodi: [mit der Option &quot;auth&quot;](#auth) `(mongod -- auth)` und ohne [, der standardmäßig](#default). Die Schritte zum Erstellen einer [!DNL MongoDB] Der Benutzer variiert je nach verwendetem Modus. Überprüfen Sie den Modus, bevor Sie fortfahren.
+[!DNL MongoDB] -Server haben zwei Ausführungsmodi: [mit der Option &quot;auth&quot;](#auth) `(mongod -- auth)` und eine ohne [, der standardmäßig](#default). Die Schritte zum Erstellen einer [!DNL MongoDB] Der Benutzer variiert je nach verwendetem Modus des Servers. Überprüfen Sie den Modus, bevor Sie fortfahren.
 
-### Wenn Ihr Server `Auth` Option: {#auth}
+### Wenn Ihr Server die `Auth` Option: {#auth}
 
 Wenn Sie eine Verbindung zu mehreren Datenbanken herstellen, können Sie den Benutzer hinzufügen, indem Sie sich bei [!DNL MongoDB] als Administrator verwenden und die folgenden Befehle ausführen.
 
@@ -115,7 +115,7 @@ Dadurch wird eine Antwort wie die folgende ausgegeben:
 
 ### Wenn Ihr Server die Standardoption verwendet {#default}
 
-Wenn Ihr Server nicht verwendet `auth` mode, Ihre [!DNL MongoDB] auf den Server auch ohne Benutzernamen und Kennwort zugegriffen werden kann. Sie sollten jedoch sicherstellen, dass die `mongodb.conf` file `(/etc/mongodb.conf)` weist die folgenden Zeilen auf - wenn nicht, starten Sie Ihren Server neu, nachdem Sie sie hinzugefügt haben.
+Wenn Ihr Server `auth` mode, Ihre [!DNL MongoDB] auf den Server auch ohne Benutzernamen und Kennwort zugegriffen werden kann. Sie sollten jedoch die `mongodb.conf` file `(/etc/mongodb.conf)` weist die folgenden Zeilen auf - wenn nicht, starten Sie Ihren Server neu, nachdem Sie sie hinzugefügt haben.
 
 ```bash
     bind_ip = 127.0.0.1
@@ -126,7 +126,7 @@ So binden Sie Ihre [!DNL MongoDB] an eine andere Adresse zu senden, passen Sie d
 
 ## Eingabe der Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence] {#finish}
 
-Um Elemente einzuschließen, müssen Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]. Hast du die [!DNL MongoDB] Berechtigungsseite öffnen? Wenn nicht, gehen Sie zu **[!UICONTROL Data > Connections]** und klicken Sie auf **[!UICONTROL Add New Data Source]**, dann [!DNL MongoDB] Symbol. Vergessen Sie nicht, die `Encrypted` Umschalten auf `Yes`.
+Um Elemente einzuschließen, müssen Sie die Verbindung und Benutzerinformationen in [!DNL Commerce Intelligence]. Hast du die [!DNL MongoDB] Berechtigungsseite öffnen? Wenn nicht, gehen Sie zu **[!UICONTROL Data > Connections]** und klicken **[!UICONTROL Add New Data Source]**, dann die [!DNL MongoDB] Symbol. Vergessen Sie nicht, die `Encrypted` Umschalten auf `Yes`.
 
 Geben Sie die folgenden Informationen auf dieser Seite ein, beginnend mit dem `Database Connection` Abschnitt:
 
@@ -138,12 +138,12 @@ Geben Sie die folgenden Informationen auf dieser Seite ein, beginnend mit dem `D
 
 Unter dem `SSH Connection` Abschnitt:
 
-* `Remote Address`: Die IP-Adresse oder der Hostname des Servers, auf dem SSH ausgeführt wird
+* `Remote Address`: Die IP-Adresse oder der Hostname des Servers, in den Sie SSH durchführen werden
 * `Username`: Die [!DNL Commerce Intelligence] Linux (SSH)-Benutzername (sollte rjmetric sein)
 * `SSH Port`: Der SSH-Port auf Ihrem Server (standardmäßig 22)
 
-Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save Test]** , um das Setup abzuschließen.
+Klicken Sie abschließend auf **[!UICONTROL Save Test]** , um das Setup abzuschließen.
 
 ### Verwandte
 
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

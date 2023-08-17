@@ -1,5 +1,5 @@
 ---
-title: Löschen eines Dashboards
+title: Dashboard löschen
 description: Erfahren Sie, wie Sie ein Dashboard löschen.
 exl-id: 27482dea-0593-46d6-8310-ad505ff9436a
 role: Admin, Data Architect, Data Engineer, User
@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Beispiel:
 
 1. Klicken Sie im Dropdown-Menü auf **[!UICONTROL Delete]**.
 
-1. Wenn Sie zur Bestätigung aufgefordert werden, klicken Sie auf **[!UICONTROL Delete]**.
+1. Klicken Sie bei Aufforderung zur Bestätigung auf **[!UICONTROL Delete]**.
 
 Beispiel:
 

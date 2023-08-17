@@ -17,21 +17,21 @@ ht-degree: 0%
 
 ## Vorteile der neuen Architektur
 
-* Erstellen Sie Spaltentypen in der Data Warehouse, einschließlich berechneter Spalten mit SQL.
+* Erstellen Sie Spaltentypen im Data Warehouse, einschließlich berechneter Spalten mit SQL.
 * Neue Spalten sind sofort verfügbar.
 * Die Datenlatenz wurde erheblich verbessert.
 
 ## Technische Vorteile
 
-Die wichtigsten Unterschiede sind oben aufgeführt, aber die Hauptänderung ist die Art und Weise, wie Berechnungen während des Aktualisierungszyklus durchgeführt werden. Berechnungen werden bei jeder Aktualisierung nicht mehr in jeder Spalte ausgeführt. Sie werden stattdessen bei Bedarf vom Visual Report Builder ausgeführt.
+Die wichtigsten Unterschiede sind oben aufgeführt, aber die Hauptänderung ist die Art und Weise, wie Berechnungen während des Aktualisierungszyklus durchgeführt werden. Berechnungen werden bei jeder Aktualisierung nicht mehr in jeder Spalte ausgeführt, sondern werden stattdessen bei Bedarf über den Visual Report Builder ausgeführt.
 
 ### Wechsel zur neuen Architektur
 
-Da die Konten grundlegend anders aufgebaut sind, gibt es keinen automatischen Prozess, um Ihre Data Warehouse oder Berichte in ein neues Architekturkonto zu migrieren. Der Wechsel zur neuen Architektur erfordert eine erneute Implementierung Ihres vorhandenen Kontos.
+Da die Konten grundlegend anders aufgebaut sind, gibt es keinen automatischen Prozess zur Migration Ihrer Data Warehouse oder Berichte zu einem neuen Architekturkonto. Der Wechsel zur neuen Architektur erfordert eine erneute Implementierung Ihres vorhandenen Kontos.
 
 ### Kosten für den Wechsel zur neuen Architektur
 
-Keine zusätzlichen Kosten! Adobe wird dieses neue Konto erstellen, damit Sie mit der Neuimplementierung beginnen können, die mindestens einen Monat lang kostenlos ist. Auf diese Weise haben Sie Zeit, beide Konten zu öffnen, damit Sie die Neuimplementierung einfacher durchführen und sicherstellen können, dass Ihr Team keine Dienstlücke aufweist.
+Keine zusätzlichen Kosten! Adobe erstellt dieses neue Konto, damit Sie mit der Neuimplementierung beginnen können, die für mindestens einen Monat kostenlos ist. Auf diese Weise haben Sie Zeit, beide Konten zu öffnen, damit Sie die Neuimplementierung einfacher durchführen und sicherstellen können, dass Ihr Team keine Dienstlücke aufweist.
 
 ### Erforderliche Zeit für die Neuimplementierung des Kontos in der neuen Architektur
 

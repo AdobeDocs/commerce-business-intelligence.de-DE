@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Neuerstellen von Abfragen nach dem Aktualisierungszyklus
 
-Sie müssen Ihre Abfragen nicht neu erstellen. Mit der Variablen [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) werden so gespeichert, wie sie im traditionellen `Report Builder`. Der Aktualisierungsprozess für SQL-Diagramme ist derselbe - nach der Aktualisierung Ihrer Daten werden die Werte in Ihren Diagrammen neu berechnet und neu angezeigt.
+Sie müssen Ihre Abfragen nicht neu erstellen. Berichte, die mithilfe der [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) werden so gespeichert, wie sie im traditionellen `Report Builder`. Der Aktualisierungsprozess für SQL-Diagramme ist derselbe - nach der Aktualisierung Ihrer Daten werden die Werte in Ihren Diagrammen neu berechnet und neu angezeigt.

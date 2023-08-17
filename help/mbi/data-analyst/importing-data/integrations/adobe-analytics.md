@@ -25,9 +25,9 @@ Genauer gesagt, wird die [!DNL Adobe Analytics] Integration für [!DNL Commerce 
 
 - Erstellen Sie eine Verbindung aus Ihrer bestehenden [!DNL Adobe Analytics] Konto [!DNL Commerce Intelligence].
 
-- Wählen Sie bis zu 25 Metriken und Dimensionen aus einer Report Suite aus, die in Ihrer Data Warehouse repliziert werden sollen.
+- Wählen Sie bis zu 25 Metriken und Dimensionen aus einer Report Suite aus, um sie auf Ihrer Data Warehouse zu replizieren.
 
-- Verwenden Sie alle standardmäßigen [!DNL Commerce Intelligence] Funktionen zum Transformieren, Verknüpfen und Berichten zu replizierten [!DNL Adobe Analytics] Daten.
+- Verwenden Sie alle standardmäßigen [!DNL Commerce Intelligence] Funktionen zum Transformieren, Verbinden und Berichten replizierter [!DNL Adobe Analytics] Daten.
 
 ## Verbindungsvoraussetzungen
 
@@ -35,7 +35,7 @@ Die folgenden Informationen sind erforderlich, um eine Verbindung herzustellen:
 
 - [!DNL Adobe Analytics] Anmeldedaten
 
-- `Name` und/oder `ID` von [!DNL Adobe Analytics] Report Suite, aus der Daten repliziert werden sollen
+- `Name` und/oder `ID` von [!DNL Adobe Analytics] Report Suite zur Replikation von Daten aus
 
 - Liste der zu replizierenden Metriken und Dimensionen [!DNL Commerce Intelligence]
 
@@ -55,8 +55,8 @@ Die folgenden Informationen sind erforderlich, um eine Verbindung herzustellen:
 
 1. Der Bildschirm zur Auswahl der Metriken und Dimensionen wird angezeigt. Wählen Sie mindestens eine Metrik und mindestens eine Dimension bis zu einer Gesamtsumme von 25 Metriken und Dimensionen aus. Suchen Sie nach Namen oder scrollen Sie nach Ihren Komponenten, und klicken Sie dann auf die Kontrollkästchen, um sie auszuwählen. Klicken **[!UICONTROL Continue]**.
 
-1. Die ausgewählte Report Suite wird in einer Tabelle angezeigt. Klicken **[!UICONTROL Save]** um Ihre Auswahl zu bestätigen.
+1. Die ausgewählte Report Suite wird in einer Tabelle angezeigt. Klicks **[!UICONTROL Save]** um Ihre Auswahl zu bestätigen.
 
 1. Informieren Sie die [!DNL Commerce Intelligence] [Supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) dass Ihre Integration autorisiert ist und der erste Verbindungsprozess für Sie ausgeführt wird.
 
-Nach Ausführung des anfänglichen Verbindungsprozesses ist Ihre Tabelle auf der Seite &quot;Data Warehouse&quot;unter der `All Tables` Registerkarte. Wählen Sie die Spalten aus, die Sie replizieren möchten. Die Daten werden nach der nächsten vollständigen Aktualisierung angezeigt.
+Nachdem der anfängliche Verbindungsprozess ausgeführt wurde, ist Ihre Tabelle auf der Data Warehouse-Seite unter der `All Tables` Registerkarte. Wählen Sie die Spalten aus, die Sie replizieren möchten. Die Daten werden nach der nächsten vollständigen Aktualisierung angezeigt.

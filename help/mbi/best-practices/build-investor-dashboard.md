@@ -49,9 +49,9 @@ Im Folgenden finden Sie Informationen zum Erstellen von Berichten für Ihr Inves
 * **[!UICONTROL Revenue from top 10 products]**
    * Metrik - Produktumsatz
       * Diagramm ausblenden
-      * Gruppieren nach Produktname. Wählen Sie alle Produkte aus.
+      * Gruppieren nach Produktname. Alle Produkte auswählen.
       * Legen Sie den Zeitraum auf &quot;All Time&quot;fest
-      * Legen Sie das Zeitintervall auf &quot;Ohne&quot;fest.
+      * Legen Sie das Zeitintervall auf &quot;Ohne&quot;fest
       * Zeigen Sie in &quot;Oben/Unten anzeigen&quot;nur die 10 Top-Artikel, sortiert nach Produktgewinn
 * **[!UICONTROL Cumulative distinct buyers by quarter]**
    * Metrik - Unique Buyer

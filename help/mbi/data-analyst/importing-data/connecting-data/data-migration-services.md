@@ -41,7 +41,7 @@ Wenn sich der Datenbankname nicht ändert, ist die Migration abgeschlossen. Dash
 >
 >Wenn bestimmte Datenspalten nicht über äquivalente Spalten in der neuen Datenbank verfügen, kann es vorkommen, dass bestimmte Analysen im Prozess verloren gehen.
 
-Um diese Art der Migration erfolgreich abzuschließen, müssen vorhandene Datenspalten mit den entsprechenden Elementen in der neuen Datenbank abgeglichen werden. Dies ist nicht obligatorisch, aber die Durchführung der Abstimmung für uns hilft, die Umkehrzeit Ihrer Anfrage zu beschleunigen und den Preis der Migration zu senken.
+Um diese Art der Migration erfolgreich abzuschließen, müssen die vorhandenen Datenspalten mit den entsprechenden Elementen in der neuen Datenbank abgeglichen werden. Dies ist nicht obligatorisch, aber die Durchführung der Abstimmung für uns hilft, die Umkehrzeit Ihrer Anfrage zu beschleunigen und den Preis der Migration zu senken.
 
 Wenn Sie die Zuordnung selbst vornehmen möchten, befolgen Sie diese Anweisungen und fügen Sie das fertige Arbeitsblatt an Ihre Anfrage an:
 
@@ -49,7 +49,7 @@ Wenn Sie die Zuordnung selbst vornehmen möchten, befolgen Sie diese Anweisungen
 
 1. Erstellen Sie in einer Tabelle eine Registerkarte für jede Tabelle, die in die neue Datenbank migriert werden soll.
 
-1. Erstellen Sie in jeder Registerkarte eine Spalte für alle vorhandenen Spalten, die migriert werden müssen. Adobe empfiehlt die Benennung in etwa wie folgt: `Existing column name`.
+1. Erstellen Sie in jeder Registerkarte eine Spalte für alle vorhandenen Spalten, die migriert werden müssen. Adobe empfiehlt die Benennung von `Existing column name`.
 
 1. Außerdem müssen Sie in jedem Tab des Arbeitsblatts eine weitere Spalte für die Spaltenäquivalente in der neuen Datenbank erstellen. Adobe empfiehlt, die Spalte in etwa wie folgt zu benennen: `New column name`.
 
@@ -73,4 +73,4 @@ Wenn Sie die Schritte im vorherigen Abschnitt zur Erstellung des Spaltenabgleich
 
 ## Wie geht es weiter? {#wrapup}
 
-Die Bestimmung des Umfangs des Projekts erfordert eine gewisse Zusammenarbeit zwischen Ihnen und dem Analysten des für die Migration zuständigen Teams von Commerce Services. Die Komplexität der Änderungen und die Reaktionsfähigkeit von Ihnen und dem Analysten wirken sich direkt auf die Dauer der Migration aus. Nachdem Sie die Details aufgeschlüsselt haben, wird eine Zeitleiste erstellt und Ihnen mit einer Arbeitserklärung übermittelt.
+Die Bestimmung des Umfangs des Projekts erfordert eine gewisse Zusammenarbeit zwischen Ihnen und dem Analysten des für die Migration zuständigen Teams von Commerce Services. Die Komplexität der Änderungen und die Reaktionsschnelligkeit von Ihnen und dem Analysten wirken sich direkt auf die Dauer der Migration aus. Nachdem Sie die Details aufgeschlüsselt haben, wird eine Zeitleiste erstellt und Ihnen mit einer Arbeitserklärung übermittelt.

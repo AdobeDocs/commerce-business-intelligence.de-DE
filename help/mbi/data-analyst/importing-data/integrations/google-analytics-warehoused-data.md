@@ -1,6 +1,6 @@
 ---
 title: Erwartete Google Analytics Warehouse-Daten
-description: Erfahren Sie, wie Sie mit Ihren in Google Analytics gespeicherten Daten interagieren.
+description: Erfahren Sie, wie Sie mit Ihren Google Analytics-gespeicherten Daten interagieren können.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Bestätigen Sie, dass alle verwendeten Dimensionen [mit einer oder mehreren Metriken kompatibel](https://ga-dev-tools.google/dimensions-metrics-explorer/) Sie verwenden in `Report Builder`.
+>Bestätigen Sie, dass alle verwendeten Dimensionen [mit einer oder mehreren Metriken kompatibel](https://ga-dev-tools.google/dimensions-metrics-explorer/) Sie verwenden in der `Report Builder`.
 
 Eine einzige Tabelle namens `report` - wird in Ihrer Data Warehouse erstellt.
 
@@ -46,19 +46,19 @@ Die Tabelle würde wie im folgenden Beispiel aussehen.
 | `start-date` | Identifikation des Tages, für den die Zeile ist. |
 | `end-date` | Identifikation des Tages, für den die Zeile ist. |
 | `month` | Ausgewählte Dimension: Monat der Sitzung, eine zweistellige Ganzzahl von 01 bis 12. |
-| `users` | Ausgewählte Metrik: Die Gesamtzahl der Benutzer für den angeforderten Zeitraum. |
+| `users` | Ausgewählte Metrik: Die Gesamtanzahl der Benutzer für den angeforderten Zeitraum. |
 
 {style="table-layout:auto"}
 
 ## Was ist der Unterschied zwischen [!DNL Google Analytics Warehoused] und [!DNL Live Integration]
 
-Der Hauptunterschied besteht darin, dass eine Integration gespeichert wird ([!DNL Google Analytics Warehoused]) und der andere nicht ([!DNL Google Analytics Live]). In den Fällen von [!DNL Google Analytics Warehoused], ermöglicht dies die Manipulation Ihrer [!DNL Google Analytics] Daten und bietet Ihnen die Möglichkeit, [!DNL Google Analytics] und anderen Datenquellen, um eine aufschlussreiche Berichterstellung zu erstellen.
+Der Hauptunterschied besteht darin, dass eine Integration gespeichert wird ([!DNL Google Analytics Warehoused]) und der andere nicht ([!DNL Google Analytics Live]). Im Falle von [!DNL Google Analytics Warehoused], ermöglicht dies die Manipulation Ihrer [!DNL Google Analytics] Daten und bietet Ihnen die Möglichkeit, [!DNL Google Analytics] und anderen Datenquellen, um eine aufschlussreiche Berichterstellung zu erstellen.
 
 Sehen Sie sich an [!DNL Google Analytics] Anzeigenkampagnen für ein Beispiel dessen, was aus Sicht der Manipulation möglich ist. Angenommen, Sie hatten mehrere Werbekampagnen für Q4 mit unterschiedlichen Namen. Die Kampagnen waren das Ergebnis einer spezifischen Marketinginitiative. Mit gespeicherten Daten können Sie eine Spalte erstellen, die die betreffenden Kampagnennamen sucht und den Initiativnamen für Q4 zurückgibt: `Operation Dumbo`.
 
 Der Kombinationsaspekt ermöglicht Folgendes: [!DNL Google Analytics] Daten, die mit anderen Daten verknüpft werden sollen, um Analysen durchzuführen. Nehmen Sie beispielsweise `Total Time On Site By Ad Campaign` Daten aus [!DNL Google Analytics] und verbinden Sie es mit `Total Spent Per Campaign` Daten aus [!DNL Facebook Ads] um ein vollständiges Bild davon zu erhalten, wie viel Interaktion Sie kostet.
 
-Mit dem [!DNL Google Analytics Live] Integration, [!DNL Google Analytics] Diagramm ist wie ein kleines Silo, das nicht in Ihrem [!DNL Commerce Intelligence] Data Warehouse.
+Mit dem [!DNL Google Analytics Live] -Integration. [!DNL Google Analytics] Diagramm ist wie ein kleines Silo, das nicht in Ihrem [!DNL Commerce Intelligence] Data Warehouse.
 
 ## Verwandte:
 

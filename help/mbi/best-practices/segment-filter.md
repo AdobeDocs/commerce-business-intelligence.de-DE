@@ -34,7 +34,7 @@ Benutzersegmente helfen Ihnen dabei zu verstehen, wer Ihre Benutzer sind und wie
 * **Verwiesen von**: Wer sind Ihre wichtigsten Einflussnehmer? Wie viele Benutzer wurden direkt von anderen weitergeleitet?
 * **Branche**: Wenn Sie ein B2B-Unternehmen sind, in welchen Branchen arbeiten Ihre Benutzer? Welche Handelsorganisationen sind es wert, Mitglied zu werden?
 * **Umfrageantworten**: Wenn Sie Kundenumfragen durchführen, verwenden Sie die Antworten als Segmente, um eine tiefere Profilerstellung zu erzielen. Sie können Fragen stellen, die das, was Sie über Ihre Benutzer wissen, ergänzen oder Ihre Ratschläge bestätigen.
-* **Erstbestellbetrag und Produktkategorie**: Besteht ein Zusammenhang zwischen der Erstbestellung eines Benutzers und künftigen Kaufmustern?
+* **Erstbestellbetrag und Produktkategorie**: Besteht eine Korrelation zwischen der Erstbestellung eines Benutzers und künftigen Kaufmustern?
 
 ## Bestellungen/Ereignissegmente
 
@@ -44,7 +44,7 @@ Reihenfolge- und Ereignissegmente helfen bei der Analyse des Benutzerverhaltens 
 * **[!UICONTROL Status]**: Wie viele Ihrer Bestellungen konnten nicht abgeschlossen werden? Wie hoch ist das Verhältnis der ausstehenden Bestellungen in den letzten sieben Tagen?
 * **[!UICONTROL Customer acquisition source]**: Neben der Verfolgung von Benutzerakquise-Daten auf Benutzerebene können Sie auch [Tracking auf Bestell- oder Ereignisebene](../data-analyst/analysis/google-track-user-acq.md). Ein Benutzer, der sich über eine Quelle registriert hat, kann auch weiterhin über andere Quellen auf Ihre Website zugreifen.
 * **[!UICONTROL Device]**: Steigt die Anzahl der Bestellungen auf Mobilgeräten? Wie viel Ihres Umsatzes wird durch mobile Käufe generiert? (Wenn Sie dies noch nicht verfolgen, lesen Sie dieses Thema . [zu den Tracking-Bestellgerätendaten](../data-analyst/analysis/track-usr-dev-browser.md).
-* **[!UICONTROL Fulfillment Center]**: Welcher Ihrer Fulfillment-Zentren generiert den meisten Umsatz? Wenn Sie den Unterschied zwischen Bestellzeit und Versandzeit analysieren, welches Ausführungscenter reagiert am besten?
+* **[!UICONTROL Fulfillment Center]**: Welches Ihrer Fulfillment-Zentren generiert den meisten Umsatz? Wenn Sie den Unterschied zwischen Bestellzeit und Versandzeit analysieren, welches Ausführungscenter reagiert am besten?
 * **[!UICONTROL Delivery Carrier]**: Welcher ist der beliebteste Anbieter? Welcher Netzbetreiber hat die geringste Anzahl an zurückgegebenen Artikeln?
 * **[!UICONTROL Discount / Coupon Codes]**: Generieren Ihre Promotions tatsächlich ein zusätzliches Geschäft? Wie viele zusätzliche Artikel haben Ihre Kunden zusätzlich zum Artikel gekauft? Wie beeinflussen Gutscheine Ihren durchschnittlichen Bestellwert? Wie hoch ist Ihre durchschnittliche Marge bei diskontierten und nicht diskontierten Artikeln?
 * **[!UICONTROL Satisfaction / Rating]**: Wie zufrieden sind Ihre Kunden mit ihren Bestellungen? Sind Ihre Kunden wahrscheinlich auf Sie verweisen?
@@ -54,14 +54,14 @@ Reihenfolge- und Ereignissegmente helfen bei der Analyse des Benutzerverhaltens 
 Mit Produktsegmenten können Sie Merchandising-Entscheidungen treffen.
 
 * **[!UICONTROL Merchant / Brand]**: Verkauft eine bestimmte Marke schneller als der Rest? Welche Marken sind leistungsschwach?
-* **[!UICONTROL Type / Category]**: Genießen unterschiedliche Benutzersegmente unterschiedliche Produktarten? Welche Produktkategorien generieren das sich am häufigsten wiederholende Geschäft?
+* **[!UICONTROL Type / Category]**: Haben verschiedene Benutzersegmente unterschiedliche Arten von Produkten? Welche Produktkategorien generieren das sich am häufigsten wiederholende Geschäft?
 * **[!UICONTROL Discount / Coupon Codes]**: Schaden Promotions dem Verkauf von Produkten ohne Rabatt? Wie beeinflussen Gutscheine den wahrgenommenen Wert Ihrer Produkte?
-* **[!UICONTROL Social Activity]**: Besteht ein Zusammenhang zwischen dem in sozialen Medien generierten Buzz und der für ein Produkt verkauften Menge?
+* **[!UICONTROL Social Activity]**: Besteht ein Zusammenhang zwischen dem in Social Media generierten Buzz und der für ein Produkt verkauften Menge?
 * **[!UICONTROL Size / Variant]**: Wie hoch ist das Verhältnis des Bestands, das Sie für jede Variante benötigen? Welche Varianten können zu Rabattpreisen verkauft werden?
 
-Wenn Sie an Merchandising interessiert sind, besuchen Sie das [wie Sie Produktsegmente verwenden, um das Wiederholungsgeschäft zu fördern](../data-analyst/analysis/most-value-source-channel.md).
+Wenn Sie an Merchandising interessiert sind, besuchen Sie das [wie Sie mithilfe von Produktsegmenten das Wiederholungsgeschäft fördern](../data-analyst/analysis/most-value-source-channel.md).
 
-## Einrichten von Kundenprofilen
+## Kundenprofile erstellen
 
 Experten für Segmentierung möchten möglicherweise über eindimensionale Segmente hinausgehen und mit der Erstellung echter Kundenprofile beginnen. Beispielsweise werden Personen zwischen 13 und 24 Jahren, die sich über ein Mobilgerät registriert haben, in die Gruppe &quot;Young &amp; Mobile&quot;aufgenommen. Wie unterscheidet sich das Verhalten dieser Gruppe vom Rest Ihrer Benutzerbasis?
 
@@ -71,7 +71,7 @@ Diese Art von Analyse machen Marketer in Fortune 1000-Unternehmen den ganzen Tag
 
 Der erste Schritt zur Segmentierung Ihrer Metriken nach den oben genannten Dimensionen besteht darin sicherzustellen, dass Sie diese Daten in Ihrer Datenbank verfolgen. Wenn sie nicht verfolgt wird, wenden Sie sich an Ihr Technikerteam und finden Sie eine Möglichkeit, das Tracking dieser Daten zu starten.
 
-Nachdem Sie bestätigt haben, dass die Daten in Ihrer Datenbank nachverfolgt werden, [das Supportteam kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) um die Dimensionen an Ihre [!DNL Commerce Intelligence] Metriken und Diagrammen. Sie können auch die *Feldverwaltung* Tool zum Verfolgen dieser Felder in [!DNL Commerce Intelligence].
+Nachdem Sie bestätigt haben, dass die Daten in Ihrer Datenbank nachverfolgt werden, [das Supportteam kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) , um die Dimensionen an Ihre [!DNL Commerce Intelligence] Metriken und Diagrammen. Sie können auch die *Feldverwaltung* Tool zum Verfolgen dieser Felder in [!DNL Commerce Intelligence].
 
 ## Verwandte
 

@@ -25,11 +25,11 @@ Wenn Sie Fragen haben oder ein Package zu Ihrem Konto hinzufügen möchten, send
 
 Die `executive overview` Das Dashboard basiert auf Diagrammen, die in anderen Dashboards vorhanden sind. Dieses Dashboard bietet einen allgemeinen Überblick über Ihre Daten und enthält Diagramme, die täglich überprüft werden, während andere Dashboards detailliertere Informationen enthalten. Zunächst wird es in jedem Konto als Standard-Dashboard festgelegt.
 
-Ein allgemeiner Grafiksatz ist für Sie enthalten. Adobe empfiehlt, dieses Dashboard an Ihre Anforderungen anzupassen, indem Sie weitere Diagramme hinzufügen, die Sie am häufigsten verwenden.
+Ein allgemeiner Grafiksatz ist für Sie enthalten. Adobe empfiehlt, dieses Dashboard Ihren Bedürfnissen anzupassen, indem Sie weitere Diagramme hinzufügen, die Sie am häufigsten verwenden.
 
 ## Kohortenanalyse
 
-Die `cohort analysis` Das Dashboard enthält eine Reihe von Diagrammen, die das durchschnittliche Umsatzwachstum und den inkrementellen Umsatzzuwachs der Nutzer nach Registrierungs-Kohorten gruppieren. Dies zeigt, ob der Lebenszeitwert (LTV) eines Kunden, der Wert eines Kunden für ein Unternehmen, im Laufe der Zeit zunimmt, und identifiziert auch Trends rund um das LTV-Wachstum. Standardmäßig *alle registrierten Benutzer (Käufer und Nicht-Käufer)* in der durchschnittlichen LTV-Berechnung - siehe [Kohortenanalysethema](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
+Die `cohort analysis` Das Dashboard enthält eine Reihe von Diagrammen, die das durchschnittliche Umsatzwachstum und den inkrementellen Umsatzzuwachs der Nutzer nach Registrierungs-Kohorten gruppieren. Dies zeigt, ob der Lebenszeitwert (LTV) eines Kunden, der Wert eines Kunden für ein Unternehmen, im Laufe der Zeit zunimmt, und identifiziert auch Trends rund um das LTV-Wachstum. Standardmäßig ist *alle registrierten Benutzer (Käufer und Nicht-Käufer)* in der durchschnittlichen LTV-Berechnung - siehe [Kohortenanalysethema](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
 
 Dieses Dashboard kann auch Kohortendiagramme enthalten, die den Lebenszeitumsatz von Benutzern aus einer bestimmten Akquisequelle, einem bestimmten Kanal oder einer bestimmten demografischen Gruppe analysieren (z. B. New York oder Kalifornien). Damit wird veranschaulicht, wie Sie LTV für bestimmte Segmente Ihrer Benutzerbasis analysieren und feststellen können, ob eine Gruppe im Laufe der Zeit höhere LTV-Werte liefert.
 
@@ -39,7 +39,7 @@ Wenn Sie die Benutzerakquise-Quelle derzeit nicht verfolgen, lesen Sie den Absch
 
 ## Email summary
 
-Die `Email Summary` Das Dashboard enthält einen Beispielsatz von Diagrammen, die in einer automatisierten täglichen E-Mail-Zusammenfassung verwendet werden können. Siehe [Erstellen automatisierter E-Mail-Zusammenfassungen](../../data-user/export-data/email-summaries.md) für weitere Informationen zum Konfigurieren von E-Mail-Zusammenfassungen.  
+Die `Email Summary` Das Dashboard enthält einen Beispielsatz von Diagrammen, die in einer automatisierten täglichen E-Mail-Zusammenfassung verwendet werden können. Siehe Abschnitt [Erstellen automatisierter E-Mail-Zusammenfassungen](../../data-user/export-data/email-summaries.md) für weitere Informationen zum Konfigurieren von E-Mail-Zusammenfassungen.  
 
 ## Treuestufe
 
@@ -65,7 +65,7 @@ In diesem Beispiel lautet die Wahrscheinlichkeit, dass Kunden, die während ihre
 
 Die `Customer LTV growth` Das Dashboard enthält eine Reihe von Diagrammen, die den durchschnittlichen Umsatz pro Benutzer ermitteln. Die Diagramme werden basierend auf dem durchschnittlichen Umsatz segmentiert, der innerhalb der ersten 30, 60, 90 oder 365 Tage nach der Registrierung generiert wird.  
 
-Die untere Tabellenzeile zeigt, dass diese Durchschnittswerte segmentiert nach Akquise-Quellen oder demografischen Daten zeigen, welche Benutzergruppen im Zeitverlauf den meisten Umsatz erzielen.
+Die untere Tabellenzeile zeigt, dass diese Durchschnittswerte segmentiert nach Akquise-Quellen oder demografischen Daten zeigen, welche Benutzergruppen im Laufe der Zeit den meisten Umsatz generieren.
 
 ## Produktleistung
 

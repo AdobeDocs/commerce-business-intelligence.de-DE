@@ -13,6 +13,6 @@ ht-degree: 0%
 
 # Arbeiten mit Daten
 
-[!DNL Adobe Commerce Intelligence] ermöglicht den Import von Daten aus mehreren Quellen. In diesem Abschnitt lernen Sie die Best Practices für die Organisation und Verwendung dieser Daten kennen.
+[!DNL Adobe Commerce Intelligence] ermöglicht den Import von Daten aus mehreren Quellen. In diesem Abschnitt erfahren Sie Best Practices für die Organisation und Verwendung dieser Daten.
 
 Hier erfahren Sie, wie Sie Ihre Datenbank und Ihre SQL-Abfragen optimieren, den Status des Aktualisierungszyklus überprüfen und die Aktualisierungszyklusdauer verkürzen können.

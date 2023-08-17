@@ -27,7 +27,7 @@ Sie können [Datei-Uploader](../importing-data/connecting-data/using-file-upload
 
 Wenn Sie sich in der ursprünglichen Architektur befinden (z. B. wenn Sie nicht über die `Data Warehouse Views` Option unter `Manage Data` ), sollten Sie sich an das Supportteam wenden, um die folgenden Spalten zu erstellen. In der neuen Architektur können diese Spalten aus dem `Manage Data > Data Warehouse` Seite. Im Folgenden finden Sie ausführliche Anweisungen.
 
-Eine weitere Unterscheidung wird getroffen, wenn Ihr Unternehmen Gastaufträge zulässt. Wenn dies der Fall ist, können Sie alle Schritte für die `customer_entity` Tabelle. Wenn Gastaufträge nicht zulässig sind, ignorieren Sie alle Schritte für die `sales_flat_order` Tabelle.
+Eine weitere Unterscheidung wird getroffen, wenn Ihr Unternehmen Gastaufträge zulässt. Wenn ja, können Sie alle Schritte für die `customer_entity` Tabelle. Wenn Gastaufträge nicht zulässig sind, ignorieren Sie alle Schritte für die `sales_flat_order` Tabelle.
 
 Zu erstellende Spalten
 

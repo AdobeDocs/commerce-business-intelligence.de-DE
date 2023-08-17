@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bericht zur durchschnittlichen Zeit bis zum ersten Kauf
 
-Viele Adobe-Kunden haben eine Metrik und ein Diagramm mit dem Namen `Average time to first purchase`, die die durchschnittliche Zeit zwischen dem Registrierungsdatum einer Benutzergruppe und dem ersten Kaufdatum anzeigt. Die Daten fallen fast unweigerlich nach unten, wenn die Zeit näher an die Gegenwart rückt.
+Viele Adobe-Kunden verfügen über eine Metrik und ein Diagramm mit dem Namen `Average time to first purchase`, die die durchschnittliche Zeit zwischen dem Registrierungsdatum einer Benutzergruppe und dem ersten Kaufdatum anzeigt. Die Daten fallen fast unweigerlich nach unten, wenn die Zeit näher an die Gegenwart rückt.
 
 ![durchschnittliche Zeit bis zur ersten Bestellung](../../assets/average-time-to-first-order.png)
 

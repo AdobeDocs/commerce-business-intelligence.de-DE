@@ -1,5 +1,5 @@
 ---
-title: Analyse des Couponcodes (allgemein)
+title: Analyse des Couponcodes (Basisversion)
 description: Informieren Sie sich über die Couponleistung Ihres Unternehmens, um Ihre Bestellungen zu segmentieren und Kundengewohnheiten besser zu verstehen.
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Grundlegende Coupon-Codeanalyse
+# Grundlegende Analyse von Coupon-Codes
 
 Das Verständnis der Couponleistung Ihres Unternehmens ist eine interessante Möglichkeit, Ihre Bestellungen zu unterteilen und Kundengewohnheiten besser zu verstehen.
 
@@ -39,7 +39,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
       * Fügen Sie die `Orders we count` (Gespeicherter Filtersatz)
       * Fügen Sie Folgendes hinzu:
          * `coupon_code`**IST NICHT**`[NULL]`
-      * Geben Sie der Metrik einen Namen, z. B. `Coupon discount amount`.
+      * Geben Sie der Metrik einen Namen, beispielsweise `Coupon discount amount`.
 
 ## Dashboard erstellen
 

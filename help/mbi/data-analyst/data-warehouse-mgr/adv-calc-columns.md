@@ -16,7 +16,7 @@ ht-degree: 4%
 Viele Analysen, die Sie erstellen möchten, umfassen die Verwendung einer **neue Spalte** die Sie `group by` oder `filter by`. Die [Erstellen berechneter Spalten](../data-warehouse-mgr/creating-calculated-columns.md) In diesem Tutorial werden die Grundlagen für die meisten Anwendungsfälle behandelt. Sie können jedoch eine berechnete Spalte wünschen, die etwas komplexer ist als das, was der Data Warehouse Manager erstellen kann.
 {: #top}
 
-Diese Spaltenarten können vom Adobe-Team der Data Warehouse-Analytiker erstellt werden. Um eine neue berechnete Spalte zu definieren, geben Sie die folgenden Informationen an:
+Diese Spaltenarten können vom Adobe-Team der Data Warehouse-Analysten erstellt werden. Um eine neue berechnete Spalte zu definieren, geben Sie die folgenden Informationen an:
 
 1. Die **`definition`** dieser Spalte (einschließlich Eingabe, Formeln oder Formatierung)
 1. Die **`table`** die Spalte erstellen möchten, auf der
@@ -33,7 +33,7 @@ Im Folgenden finden Sie einige gängige Beispiele für erweiterte berechnete Spa
 
 ## Ich versuche, Ereignisse sequenziell zu ordnen {#compareevents}
 
-Dies wird als **Ereignisnummer** berechnete Spalte. Das bedeutet, dass Sie versuchen, die Sequenz zu finden, in der Ereignisse für einen bestimmten Ereigniseigentümer aufgetreten sind, z. B. einen Kunden oder Benutzer.
+Dies wird als **Ereignisnummer** berechnete Spalte Das bedeutet, dass Sie versuchen, die Sequenz zu finden, in der Ereignisse für einen bestimmten Ereigniseigentümer aufgetreten sind, z. B. einen Kunden oder Benutzer.
 
 Im Folgenden finden Sie ein Beispiel:
 
@@ -63,7 +63,7 @@ Um diesen Typ berechneter Spalten zu erstellen, müssen Sie Folgendes wissen:
 
 ## Ich versuche, die Zeit zwischen zwei Ereignissen zu finden. {#twoevents}
 
-Dies wird als `date difference` berechnete Spalte. Dies bedeutet, dass Sie versuchen, die Zeit zwischen zwei Ereignissen zu finden, die zu einem einzigen Datensatz gehören, basierend auf den Ereignis-Zeitstempeln.
+Dies wird als `date difference` berechnete Spalte Dies bedeutet, dass Sie versuchen, die Zeit zwischen zwei Ereignissen zu finden, die zu einem einzigen Datensatz gehören, basierend auf den Ereignis-Zeitstempeln.
 
 Im Folgenden finden Sie ein Beispiel:
 
@@ -76,7 +76,7 @@ Im Folgenden finden Sie ein Beispiel:
 
 Eine berechnete Datumsdifferenz -Spalte kann verwendet werden, um eine Metrik zu erstellen, die die durchschnittliche oder mittlere Zeit zwischen zwei Ereignissen berechnet. Klicken Sie auf das folgende Bild, um zu sehen, wie die `Average time to first order` wird in einem Bericht verwendet.
 
-![Berechnung der durchschnittlichen Zeit bis zur ersten Bestellung mithilfe einer Spalte mit der Datumsdifferenz](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
+![Berechnung der durchschnittlichen Zeit bis zur ersten Bestellung mithilfe einer Spalte mit der Datumsdifferenz.](../../assets/DateDifference.gif)<!--{: style="max-width: 500px;"}-->
 
 Um diesen Typ berechneter Spalten zu erstellen, müssen Sie Folgendes wissen:
 
@@ -103,7 +103,7 @@ Im Folgenden finden Sie ein Beispiel:
 
 Ein sequenzieller Ereignisvergleich kann verwendet werden, um die durchschnittliche oder mittlere Zeit zwischen den einzelnen sequenziellen Ereignissen zu ermitteln. Klicken Sie auf das folgende Bild, um die **Durchschnittliche und mittlere Zeit zwischen Bestellungen** Metriken in Aktion.
 
-=![Verwenden einer Spalte für den sequenziellen Ereignisvergleich, um die durchschnittliche und die mittlere Zeit zwischen den Bestellungen zu berechnen.](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
+=![Verwenden einer Spalte für den sequenziellen Ereignisvergleich zur Berechnung der durchschnittlichen und der Median-Zeit zwischen Bestellungen.](../../assets/SeqEventComp.gif)<!--{: style="max-width: 500px;"}-->
 
 Um diesen Typ berechneter Spalten zu erstellen, müssen Sie Folgendes wissen:
 

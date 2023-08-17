@@ -1,5 +1,5 @@
 ---
-title: Jährliche, monatliche und wöchentliche Berichte
+title: Berichte für Jahr, Monat und Woche
 description: Erfahren Sie, wie Sie Trends im Zeitverlauf einfach erkennen und die Perspektive für Zeiträume ändern können, die Sie vergleichen möchten.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
 role: Admin, Data Architect, Data Engineer, Leader, User
@@ -59,7 +59,7 @@ Keine.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
-   * [!UICONTROL Show top/bottom]: Top 100 % sortiert nach **`created_at (month-day)`***
+   * [!UICONTROL Show top/bottom]: Die 100 beliebtesten Sortierungen nach **`created_at (month-day)`***
 
 * Metrik `A`: `This year`
 * Metrik `B`: `Last year`
@@ -80,7 +80,7 @@ Keine.
 
 * Metrik `A`: Dieser Monat*
 * Metrik `B`: Letzter Monat*
-* [!UICONTROL Time period]: vor einem Monat vor 0 Monaten
+* [!UICONTROL Time period]: vor einem Monat bis vor 0 Monaten
 * 
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
@@ -93,7 +93,7 @@ Keine.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
-   * [!UICONTROL Show top/bottom]: Top 100 % sortiert nach `created_at (day of week)`
+   * [!UICONTROL Show top/bottom]: Die 100 beliebtesten Sortierungen nach `created_at (day of week)`
 
 * Metrik `A`: `This week`
 * Metrik `B`: `Last week`
@@ -110,7 +110,7 @@ Keine.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
-   * [!UICONTROL Show top/bottom]: Top 100 % sortiert nach `created_at (hour of day)`
+   * [!UICONTROL Show top/bottom]: Die 100 beliebtesten Sortierungen nach `created_at (hour of day)`
 
 * Metrik `A`: `Today`
 * Metrik B: `Yesterday`
