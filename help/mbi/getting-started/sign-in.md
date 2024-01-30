@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Anmeldung bei Ihrem Commerce Intelligen
 exl-id: 3ee36e0e-f447-4be3-afc8-ccc6d3aa4f20
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Accounts
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 988a7bee27a0c381d1c84db960e978ca73eb3615
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,9 @@ ht-degree: 0%
 
 Nachdem Sie die [!DNL Commerce Intelligence] entweder für [On-Premise oder Cloud](../getting-started/onpremise-activation.md) und mit Ihrem Adobe Account Team zusammengearbeitet haben, um die Konfigurationsschritte abzuschließen, können Sie sich jetzt bei Ihrem Konto anmelden.
 
-Sie können sich mit Ihrer [!DNL Adobe ID] oder verwenden Sie [!DNL Commerce Intelligence] E-Mail-Adresse und Passwort.
-
-![Anmelden](../assets/sign-in.png)
-
 ## Melden Sie sich mit Ihrem [!DNL Adobe ID]
 
-1. Klicken **[!UICONTROL Sign in with Adobe ID]**.
+1. Klicks **[!UICONTROL Sign in with Adobe ID]**.
 
    ![Sign-in-adobe](../assets/sign-in-adobe.png)
 
