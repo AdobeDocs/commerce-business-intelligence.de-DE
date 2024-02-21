@@ -4,7 +4,7 @@ description: Verwendung von [!DNL Commerce Intelligence] für Adobe Commerce ver
 breadcrumb-title: Benutzerhandbuch für Commerce Intelligence
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 903e839e8bd8a4e7b6d21b6a7ebcae49f2dfe6e4
+source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -57,10 +57,10 @@ ht-degree: 0%
       - [Daten mit Zuordnungstabellen standardisieren](data-analyst/data-warehouse-mgr/stndrd-data-map-tables.md)
       - [SQL-Abfragen in übersetzen [!DNL Commerce Intelligence] Berichte](data-analyst/dev-reports/sql-queries-reports.md)
       - [Verstehen und Auswerten von Tabellenbeziehungen](data-analyst/data-warehouse-mgr/table-relationships.md)
-      - [Verwenden der berechneten Datumsdifferenz](data-analyst/data-warehouse-mgr/using-date-diff-calc-column-.md)
+      - [Verwenden der berechneten Datumsdifferenz](data-analyst/data-warehouse-mgr/using-date-diff-calc-column.md)
       - [Verwenden des Dashboard-weiten Filters](data-analyst/data-warehouse-mgr/using-dshbrd-wide-filter-date-ranges.md)
       - [Verwenden der Spalte &quot;Errechnete Ereignisnummer&quot;](data-analyst/data-warehouse-mgr/using-event-num-calc-column.md)
-      - [Verwenden der Spalte für den sequenziellen Vergleich der berechneten Werte](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column-.md)
+      - [Verwenden der Spalte für den sequenziellen Vergleich der berechneten Werte](data-analyst/data-warehouse-mgr/using-seq-comp-calc-column.md)
    - Allgemeine Commerce-Tabellen {#tables}
       - [Einführung](data-analyst/data-warehouse-mgr/common-mage-tables.md)
       - [[!DNL customer_entity]](data-analyst/data-warehouse-mgr/cust-ent-table.md)
@@ -231,7 +231,7 @@ ht-degree: 0%
    - Arbeiten mit Dashboards {#working-dashboards}
       - [Freigeben von Dashboards](best-practices/share-dashboard-best-practice.md)
       - [Erstellen eines Anleger-Dashboards](best-practices/build-investor-dashboard.md)
-- -Tutorials{#tutorials}
+- Tutorials {#tutorials}
    - [Verwenden der [!DNL Visual Report Builder]](tutorials/using-visual-report-builder.md)
    - [Verwenden der Zeitoptionen in [!DNL Visual Report Builder]](tutorials/time-options-visual-rpt-bldr.md)
    - [Erstellen von Visualisierungen für eine [!DNL SQL] Abfrage](tutorials/create-visuals-from-sql.md)
