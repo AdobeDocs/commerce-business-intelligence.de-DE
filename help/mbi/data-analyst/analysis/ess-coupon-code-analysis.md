@@ -4,9 +4,9 @@ description: Informieren Sie sich über die Couponleistung Ihres Unternehmens, u
 exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d8fc96a58b72c601a5700f35ea1f3dc982d76571
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Zunächst ein Hinweis zur Verfolgung von Coupon-Codes. Wenn ein Kunde einen Guts
 * Ein Rabatt wird im Abschnitt `base_grand_total` Betrag (Ihre `Revenue` Metrik in Commerce Intelligence)
 * Der Gutscheincode wird im `coupon_code` -Feld. Wenn dieses Feld NULL (leer) ist, ist der Bestellung kein Gutschein zugeordnet.
 * Der abgezinste Betrag wird in `base_discount_amount`. Dieser Wert kann je nach Konfiguration negativ oder positiv aussehen.
+
+Ab Commerce 2.4.7 kann ein Kunde mehr als einen Couponcode auf eine Bestellung anwenden. In diesem Fall:
+
+* Alle angewendeten Gutscheincodes werden im `coupon_code` -Feld `sales_order_coupons`. Der erste angewendete Couponcode wird ebenfalls im `coupon_code` -Feld `sales_order`. Wenn dieses Feld NULL (leer) ist, ist der Bestellung kein Gutschein zugeordnet.
 
 ## Erstellen einer Metrik
 
@@ -196,3 +200,9 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
    * [!UICONTROL Chart type]: `Stacked Column`
 
 Nachdem Sie die Berichte erstellt haben, erfahren Sie im Bild oben in diesem Thema, wie Sie die Berichte in Ihrem Dashboard organisieren können.
+
+>[!NOTE]
+>
+>Ab Adobe Commerce 2.4.7 können Kunden die **quote_coupons** und **sales_order_coupons** -Tabellen, um Einblicke dazu zu erhalten, wie Kunden mehrere Gutscheine verwenden.
+
+![](../../assets/multicoupon_relationship_tables.png)
