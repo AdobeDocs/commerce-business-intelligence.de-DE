@@ -1,5 +1,5 @@
 ---
-title: Benutzerhandbuch für Commerce Intelligence
+title: Commerce Intelligence-Benutzerhandbuch
 description: Umfassende Informationen für Commerce Intelligence-Datenadministratoren.
 breadcrumb-title: Handbuch-Übersicht
 seo-title: Commerce Intelligence User Guide
@@ -7,8 +7,8 @@ seo-description: Describes how to use Adobe Commerce Intelligence features used 
 exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 1%
+source-wordcount: '424'
+ht-degree: 0%
 
 ---
 
