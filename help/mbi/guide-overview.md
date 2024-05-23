@@ -1,6 +1,6 @@
 ---
 title: Commerce Intelligence-Benutzerhandbuch
-description: Umfassende Informationen für Commerce Intelligence-Datenadministratoren.
+description: Umfassende Informationen für Admins von Commerce Intelligence-Daten.
 breadcrumb-title: Handbuch-Übersicht
 seo-title: Commerce Intelligence User Guide
 seo-description: Describes how to use Adobe Commerce Intelligence features used to gain insights from Adobe Commerce or Magento Open Source data, along with other third-party data sources.
@@ -8,7 +8,7 @@ exl-id: f62c7a98-1b4c-4abb-9692-50ce0f3ee1fb
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
