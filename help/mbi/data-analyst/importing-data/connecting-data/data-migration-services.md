@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
 
 # Datenmigration
 
-Die Migration zu einem neuen Datenbankschema, Server oder Reporting-Datenbank muss nicht aufwändig sein. Die [[!DNL Adobe] Serviceteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) bietet Migrationsunterstützung.
+Die Migration zu einem neuen Datenbankschema, Server oder Reporting-Datenbank muss nicht aufwändig sein. Das [[!DNL Adobe] Service-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) bietet Unterstützung bei der Migration.
 
 Um sicherzustellen, dass Ihre Umstellung so reibungslos wie möglich verläuft, sollten Sie beim Senden Ihrer Migrationsanfrage so detailliert wie möglich sein. Dieses Thema enthält alles, was Sie benötigen, um eine Anfrage zu senden und mit der Migration zu beginnen. Durch ein umfassendes Bild Ihrer Bedürfnisse können Sie sicherstellen, dass Ihr Projekt richtig erfasst wird und dass die Schätzung korrekt ist.
 
@@ -21,15 +21,15 @@ Um sicherzustellen, dass Ihre Umstellung so reibungslos wie möglich verläuft, 
 
 Bevor Sie beginnen, müssen Sie die Antworten auf diese Fragen kennen:
 
-* **Befindet sich die neue Datenbank auf einem neuen Server?** Aktualisieren Sie vor dem Senden einer Anfrage die Einstellungen Ihrer Datenverbindung unter **[!UICONTROL Manage Data** > **Connections]**. Wenn Sie einen Auffrischungskurs dazu benötigen, gehen Sie zu [`Integrations`](../integrations/integrations.md) und finden Sie die Anweisungen für den verwendeten Datenbanktyp.
+* **Befindet sich die neue Datenbank auf einem neuen Server?** Aktualisieren Sie vor dem Senden einer Anfrage die Einstellungen Ihrer Datenverbindung unter **[!UICONTROL Manage Data** > **Connections]**. Wenn Sie einen Auffrischungskurs dazu benötigen, gehen Sie zum Abschnitt &quot;[`Integrations`](../integrations/integrations.md)&quot;und suchen Sie die Anweisungen für den verwendeten Datenbanktyp.
 
-* **Sind Ihre historischen Daten in der neuen Datenbank vorhanden oder müssen sie migriert werden?** Sie können die historischen und neuen Daten während des Migrationsprozesses konsolidieren. Auch wenn Sie keine Konsolidierung benötigen, teilen Sie uns dies in Ihrer Anfrage mit.
+* **Existieren Ihre historischen Daten in der neuen Datenbank oder müssen sie migriert werden?** Sie können die historischen und neuen Daten während des Migrationsprozesses konsolidieren. Auch wenn Sie keine Konsolidierung benötigen, teilen Sie uns dies in Ihrer Anfrage mit.
 
-Nachdem Sie die Antworten auf die oben genannten Fragen erhalten haben, müssen Sie den Migrationstyp kennen. Verfügt die neue Datenbank über die [`same`](#sameschema) Schema oder wird es über ein [`different`](#newschema) schema? In den unten stehenden Diskussionen finden Sie detaillierte Anweisungen für jeden Migrationstyp.
+Nachdem Sie die Antworten auf die oben genannten Fragen erhalten haben, müssen Sie den Migrationstyp kennen. Verfügt die neue Datenbank über das Schema [`same`](#sameschema) oder wird sie über ein Schema [`different`](#newschema) verfügen? In den unten stehenden Diskussionen finden Sie detaillierte Anweisungen für jeden Migrationstyp.
 
 ## Migration zu einer neuen Datenbank mit demselben Schema {#sameschema}
 
-Teilen Sie uns beim Senden der Anfrage mit, dass sich das Datenbankschema nicht ändert und die Verbindung bereits in [!DNL Adobe Commerce Intelligence].
+Teilen Sie uns beim Senden der Anfrage mit, dass sich das Datenbankschema nicht ändert und die Verbindung bereits in [!DNL Adobe Commerce Intelligence] eingerichtet ist.
 
 Wenn die Datenbank einen neuen Namen aufweist, fügen Sie ihn in die Anfrage ein, damit Ihre Dashboards ordnungsgemäß migriert werden können.
 
@@ -49,13 +49,13 @@ Wenn Sie die Zuordnung selbst vornehmen möchten, befolgen Sie diese Anweisungen
 
 1. Erstellen Sie in einer Tabelle eine Registerkarte für jede Tabelle, die in die neue Datenbank migriert werden soll.
 
-1. Erstellen Sie in jeder Registerkarte eine Spalte für alle vorhandenen Spalten, die migriert werden müssen. Adobe empfiehlt die Benennung von `Existing column name`.
+1. Erstellen Sie in jeder Registerkarte eine Spalte für alle vorhandenen Spalten, die migriert werden müssen. Adobe empfiehlt die Benennung in etwa mit `Existing column name`.
 
-1. Außerdem müssen Sie in jedem Tab des Arbeitsblatts eine weitere Spalte für die Spaltenäquivalente in der neuen Datenbank erstellen. Adobe empfiehlt, die Spalte in etwa wie folgt zu benennen: `New column name`.
+1. Außerdem müssen Sie in jedem Tab des Arbeitsblatts eine weitere Spalte für die Spaltenäquivalente in der neuen Datenbank erstellen. Adobe empfiehlt, die Spalte in etwa mit `New column name` zu benennen.
 
-1. Geben Sie die vorhandenen Spalten und ihre Entsprechungen ein. Wenn eine vorhandene Spalte keine neue Entsprechung hat, geben Sie `N/A`.
+1. Geben Sie die vorhandenen Spalten und ihre Entsprechungen ein. Wenn eine vorhandene Spalte keine neue Entsprechung hat, geben Sie `N/A` ein.
 
-   Wenn es eine neue Möglichkeit gibt, dieselben Informationen in der neuen Datenbank zu berechnen, geben Sie sie auch in die [`New column name`] Spalte.
+   Wenn es eine neue Möglichkeit gibt, dieselben Informationen in der neuen Datenbank zu berechnen, geben Sie sie in die Spalte [`New column name`] ein.
 
 Im Folgenden finden Sie ein Beispiel:
 
@@ -67,10 +67,10 @@ Im Folgenden finden Sie ein Beispiel:
 
 ## Wie sende ich eine Anfrage? {#submitreq}
 
-Sie können uns kontaktieren, indem Sie [Support anfordern](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Sie können uns kontaktieren, indem Sie [eine Support-Anfrage senden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Wenn Sie die Schritte im vorherigen Abschnitt zur Erstellung des Spaltenabgleichs-Arbeitsblatts ausgeführt haben, sollten Sie dieses anhängen.
 
 ## Wie geht es weiter? {#wrapup}
 
-Die Bestimmung des Umfangs des Projekts erfordert eine gewisse Zusammenarbeit zwischen Ihnen und dem Analysten des für die Migration zuständigen Teams von Commerce Services. Die Komplexität der Änderungen und die Reaktionsschnelligkeit von Ihnen und dem Analysten wirken sich direkt auf die Dauer der Migration aus. Nachdem Sie die Details aufgeschlüsselt haben, wird eine Zeitleiste erstellt und Ihnen mit einer Arbeitserklärung übermittelt.
+Die Bestimmung des Umfangs des Projekts erfordert eine gewisse Zusammenarbeit zwischen Ihnen und dem Analysten des Commerce Services-Teams, das die Migration durchführt. Die Komplexität der Änderungen und die Reaktionsschnelligkeit von Ihnen und dem Analysten wirken sich direkt auf die Dauer der Migration aus. Nachdem Sie die Details aufgeschlüsselt haben, wird eine Zeitleiste erstellt und Ihnen mit einer Arbeitserklärung übermittelt.

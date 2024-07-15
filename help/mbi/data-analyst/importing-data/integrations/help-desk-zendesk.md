@@ -15,11 +15,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dies ist nur für Kunden verfügbar, die sich auf der `Pro` Planen und Verwenden der neuen Architektur. Sie befinden sich in der neuen Architektur, wenn Sie über die `Data Warehouse Views` -Bereich nach Auswahl `Manage Data` aus der Hauptsymbolleiste.
+>Dies ist nur für Clients verfügbar, die den `Pro` -Plan ausführen und die neue Architektur verwenden. Sie befinden sich in der neuen Architektur, wenn der Abschnitt `Data Warehouse Views` nach Auswahl von `Manage Data` in der Hauptsymbolleiste verfügbar ist.
 
-Konsolidierung Ihrer [!DNL Zendesk] -Daten mit Ihrer Transaktionsdatenbank sind eine hervorragende Möglichkeit, um besser zu verstehen, wie Ihre Kunden mit Ihren Vertriebs- oder Kundenerfolgsteams interagieren. Außerdem erfahren Sie, welche Art von Kunden Ihre Support-Plattform verwenden. Dieses Thema zeigt, wie Sie ein Dashboard einrichten, um detaillierte Berichte über Ihre [!DNL Zendesk] Leistung und Bindung Ihrer Transaktionskunden.
+Die Konsolidierung Ihrer [!DNL Zendesk] -Daten mit Ihrer Transaktionsdatenbank ist eine hervorragende Möglichkeit, um besser zu verstehen, wie Ihre Kunden mit Ihren Vertriebs- oder Kundenerfolgsteams interagieren. Außerdem erfahren Sie, welche Art von Kunden Ihre Support-Plattform verwenden. In diesem Thema wird gezeigt, wie Sie ein Dashboard einrichten, um detaillierte Berichte über Ihre [!DNL Zendesk] Leistung und Zeitdauer bei Ihren Transaktionskunden zu erhalten.
 
-Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.md). Diese Analyse enthält [Erweiterte berechnete Spalten](../../data-warehouse-mgr/adv-calc-columns.md).
+Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.md) verbinden. Diese Analyse enthält [erweiterte berechnete Spalten](../../data-warehouse-mgr/adv-calc-columns.md).
 
 <!-- Getting Started -->
 
@@ -82,9 +82,9 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
 
       * `Input columns` - `role`, `email`
 
-      * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user` then `Yes` when `B` ist nicht `null` und `B` like `%@magento.com` then `Yes` else `No` end
+      * `SQL Calculation` `- case when `A` is not `null` and `A!=`end-user` gefolgt von `Yes`, wenn `B` nicht `null` und `B` wie `%@magento.com` ist, dann `Yes` else `No` Ende
 
-      * Ersetzen `@magento.com` mit Ihrer Domäne
+      * Ersetzen Sie `@magento.com` durch Ihre Domäne
 
       * `Datatype` - `String`
 
@@ -94,8 +94,8 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
    * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events.author_id8`
    * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
-   * Wählen Sie eine [!UICONTROL table]: `[!DNL Zendesk] users`
-   * Wählen Sie eine [!UICONTROL column]: `User is agent? (Yes/No)`
+   * Wählen Sie einen [!UICONTROL table]: `[!DNL Zendesk] users`
+   * Wählen Sie einen [!UICONTROL column]: `User is agent? (Yes/No)`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events.author_id = [!DNL Zendesk] users.id`
 
 * **`Author is agent? (Yes/No)`**
@@ -106,7 +106,7 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
    * [!UICONTROL Many]: `[!DNL Zendesk] audits_~_events._id_of_parent`
    * [!UICONTROL One]: `[!DNL Zendesk] audits._id`
 
-   * Wählen Sie eine [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
+   * Wählen Sie einen [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
    * [!UICONTROL Filter]:
    * `field_name` = `status`
@@ -114,7 +114,7 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
    * `value` = `solved`
 
    * Wählen Sie eine Definition aus: `Exists`
-   * Wählen Sie eine [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
+   * Wählen Sie einen [!UICONTROL table]: `[!DNL Zendesk] audits_~_events`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits_~_events._id_of_parent = [!DNL Zendesk] audits._id`
    * [!UICONTROL Filter]: `Author is agent? (Yes/No)`
    * `type` = `Comment`
@@ -129,13 +129,13 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.requester_id`
    * [!UICONTROL One]: `[!DNL Zendesk] users.id`
 
-   * Wählen Sie eine [!UICONTROL table]: `[!DNL Zendesk] users`
-   * Wählen Sie eine [!UICONTROL column]: `email`
+   * Wählen Sie einen [!UICONTROL table]: `[!DNL Zendesk] users`
+   * Wählen Sie einen [!UICONTROL column]: `email`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
    * Wählen Sie eine Definition aus: `Joined Column`
-   * Wählen Sie eine [!UICONTROL table]: `[!DNL Zendesk] users`
-   * Wählen Sie eine [!UICONTROL column]: `role`
+   * Wählen Sie einen [!UICONTROL table]: `[!DNL Zendesk] users`
+   * Wählen Sie einen [!UICONTROL column]: `role`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.requester_id = [!DNL Zendesk] users.id`
 
    * Wählen Sie eine Definition aus: `Max`
@@ -143,15 +143,15 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
    * [!UICONTROL Many]: `[!DNL Zendesk] audits.ticket_id`
    * [!UICONTROL One]: `[!DNL Zendesk] tickets.id`
 
-   * Wählen Sie eine [!UICONTROL table]: `[!DNL Zendesk] audits`
-   * Wählen Sie eine [!UICONTROL column]: `created_at`
+   * Wählen Sie einen [!UICONTROL table]: `[!DNL Zendesk] audits`
+   * Wählen Sie einen [!UICONTROL column]: `created_at`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
-   * `status` geändert auf `solved = 1`
+   * `status` geändert in `solved = 1`
 
    * Wählen Sie eine Definition aus: `Min`
-   * Wählen Sie eine [!UICONTROL table]: `[!DNL Zendesk] audits`
-   * Wählen Sie eine [!UICONTROL column]: `created_at`
+   * Wählen Sie einen [!UICONTROL table]: `[!DNL Zendesk] audits`
+   * Wählen Sie einen [!UICONTROL column]: `created_at`
    * [!UICONTROL Path]: `[!DNL Zendesk] audits.ticket_id = [!DNL Zendesk] tickets.id`
    * [!UICONTROL Filter]:
    * `Is agent comment? = 1`
@@ -198,7 +198,7 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
 
       * `Calculation` - `to_char(A,'D')||'. '||to_char(A,'Day')`
 
-     *`Datatype` – `String`
+     *`Datatype` - `String`
 
 * **`customer_entity`** table
    * Wählen Sie eine Definition aus: `Count`
@@ -207,7 +207,7 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
    * 
      [!UICONTROL One]: `customer_entity.email`
 
-   * Wählen Sie eine [!UICONTROL table]: `[!DNL Zendesk] tickets`
+   * Wählen Sie einen [!UICONTROL table]: `[!DNL Zendesk] tickets`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
    * [!UICONTROL Filter]:
    * `Tickets we count`
@@ -221,12 +221,12 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
 
       * `Calculation` - `case when A>0 then 'Yes' else 'No' end`
 
-      * `Datatype` – `String`
+      * `Datatype` - `String`
 
 * **`[!DNL Zendesk] Tickets`** table
    * Wählen Sie eine Definition aus: `Joined Column`
-   * Wählen Sie eine [!UICONTROL table]: `customer_entity`
-   * Wählen Sie eine [!UICONTROL column]: `User's lifetime number of support tickets requested`
+   * Wählen Sie einen [!UICONTROL table]: `customer_entity`
+   * Wählen Sie einen [!UICONTROL column]: `User's lifetime number of support tickets requested`
    * [!UICONTROL Path]: `[!DNL Zendesk] tickets.email = customer_entity.email`
 
 * **`Requester's lifetime number of support tickets`**
@@ -236,61 +236,61 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
 * **[!DNL Zendesk]Neue Tickets**
    * `Tickets we count`
 
-* Im **`[!DNL Zendesk] tickets`** table
-* Diese Metrik führt eine **Count**
-* Im **`id`** column
-* Bestellt von der **`created_at`** timestamp
+* In der Tabelle **`[!DNL Zendesk] tickets`**
+* Diese Metrik führt eine **Zählung** aus
+* In der Spalte **`id`**
+* Durch den Zeitstempel **`created_at`** geordnet
 * [!UICONTROL Filter]:
 
 * **[!DNL Zendesk]Gelöste Tickets**
    * `Tickets we count`
-   * status IN `closed, solved`
+   * Status IN `closed, solved`
 
-* Im **`[!DNL Zendesk] tickets`** table
-* Diese Metrik führt eine **Count**
-* Im **`id`** column
-* Bestellt von der **`created_at`** timestamp
+* In der Tabelle **`[!DNL Zendesk] tickets`**
+* Diese Metrik führt eine **Zählung** aus
+* In der Spalte **`id`**
+* Durch den Zeitstempel **`created_at`** geordnet
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]Unique Users, die Tickets einreichen**
+* **[!DNL Zendesk]Unique Users, die Tickets abschicken**
    * `Tickets we count`
 
-* Im **`[!DNL Zendesk] tickets`** table
-* Diese Metrik führt eine **Count Distinct**
-* Im **`requester_id`** column
-* Bestellt von der **`created_at`** timestamp
+* In der Tabelle **`[!DNL Zendesk] tickets`**
+* Diese Metrik führt einen **Count Distinct** aus
+* In der Spalte **`requester_id`**
+* Durch den Zeitstempel **`created_at`** geordnet
 * [!UICONTROL Filter]:
 
-* **[!DNL Zendesk]Durchschnittliche/mittlere Ticketauflösungszeit**
+* **[!DNL Zendesk]Durchschnittliche/mittlere Zeitdauer der Ticketauflösung**
    * `Tickets we count`
-   * status IN `closed, solved`
+   * Status IN `closed, solved`
 
-* Im **`[!DNL Zendesk] tickets`** table
-* Diese Metrik führt eine **Durchschnitt (oder Medianwert)**
-* Im **`Seconds to resolution`** column
-* Bestellt von der **`created_at`** timestamp
+* In der Tabelle **`[!DNL Zendesk] tickets`**
+* Diese Metrik führt einen **Durchschnitt (oder Median)** aus.
+* In der Spalte **`Seconds to resolution`**
+* Durch den Zeitstempel **`created_at`** geordnet
 * [!UICONTROL Filter]:
 
 * **[!DNL Zendesk]Durchschnittliche/mittlere Zeit bis erste Antwort**
    * Zu zählende Tickets
    * Status IN geschlossen, gelöst
 
-* Im **`[!DNL Zendesk] tickets`** table
-* Diese Metrik führt eine **Durchschnitt (oder Medianwert)**
-* Im **`Seconds to first response`** column
-* Bestellt von der **`created_at`** timestamp
+* In der Tabelle **`[!DNL Zendesk] tickets`**
+* Diese Metrik führt einen **Durchschnitt (oder Median)** aus.
+* In der Spalte **`Seconds to first response`**
+* Durch den Zeitstempel **`created_at`** geordnet
 * [!UICONTROL Filter]:
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass [Metriken alle neuen Spalten als Dimensionen hinzufügen](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) vor der Erstellung neuer Berichte.
+>Stellen Sie sicher, dass Sie [alle neuen Spalten als Dimensionen zu den Metriken hinzufügen](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) , bevor Sie neue Berichte erstellen.
 
 ### Berichte
 
 * **[!UICONTROL New/Open/Pending tickets]**
    * [!UICONTROL Metric]: `New Tickets`
    * [!UICONTROL Filter]:
-   * status IN `new, open, pending`
+   * Status IN `new, open, pending`
 
 * Metrik `A`: `New tickets`
 * `Time period`: `All time`
@@ -300,7 +300,7 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
 * **[!UICONTROL Closed/Solved tickets]**
    * [!UICONTROL Metric]: `New Tickets`
    * [!UICONTROL Filter]:
-   * status IN `solved, closed`
+   * Status IN `solved, closed`
 
 * Metrik `A`: `New tickets`
 * `Time period`: `All time`
@@ -318,7 +318,7 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
 * **[!UICONTROL Average time to resolution]**
    * [!UICONTROL Metric]: `Average time to resolution`
    * [!UICONTROL Filter]:
-   * status IN `solved, closed`
+   * Status IN `solved, closed`
 
 * Metrik `A`: `Average time to resolution`
 * `Time period`: `All time`
@@ -356,7 +356,7 @@ Bevor Sie beginnen, möchten Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.m
 * **[!UICONTROL Time to resolution]**
    * [!UICONTROL Metric]: `Average time to resolution`
    * [!UICONTROL Filter]:
-   * status IN `solved, closed`
+   * Status IN `solved, closed`
 
 * Metrik `A`: `Average time to resolution`
 * `Time period`: `All time`

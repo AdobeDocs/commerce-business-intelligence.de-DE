@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # Grafik aus einem Dashboard entfernen
 
-Um ein Diagramm aus einem Dashboard zu entfernen, klicken Sie auf das Zahnrad (![](../../assets/gear-icon.png)) in der oberen rechten Ecke des Diagramms ein und klicken Sie auf **[!UICONTROL Remove from Dashboard]**.
+Um ein Diagramm aus einem Dashboard zu entfernen, klicken Sie auf das Zahnradsymbol (![](../../assets/gear-icon.png)) in der oberen rechten Ecke des Diagramms und klicken Sie auf **[!UICONTROL Remove from Dashboard]**.
 
 >[!NOTE]
 >
->Das Entfernen eines Diagramms ist nicht dasselbe wie [Löschen](../../data-user/dashboards/delete-chart.md). Außerdem [Ein Diagramm kann in ein Dashboard geladen werden.](../../data-user/dashboards/add-charts-dashboard.md) jederzeit verfügbar sein.
+>Das Entfernen eines Diagramms ist nicht dasselbe wie das Löschen durch [. ](../../data-user/dashboards/delete-chart.md) Außerdem kann [ein Diagramm jederzeit in ein Dashboard](../../data-user/dashboards/add-charts-dashboard.md) gelesen werden.
 
 ![Diagramm entfernen](../../assets/Removing_Charts_from_Dashboards.gif)

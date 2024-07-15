@@ -17,8 +17,8 @@ Es ist einfach, neue Benutzer auf den neuesten Stand zu bringen.
 
 ## Neuer Benutzer
 
-Nachdem ein neuer Benutzer sein Kennwort erstellt hat, wird eine Liste der beliebten freigegebenen Dashboards angezeigt. Sie können die Dashboards auswählen, die sie im Dashboard anzeigen möchten, und auf **[!UICONTROL Done]**.
+Nachdem ein neuer Benutzer sein Kennwort erstellt hat, wird eine Liste der beliebten freigegebenen Dashboards angezeigt. Sie können die Dashboards auswählen, die sie im Dashboard anzeigen möchten, und auf **[!UICONTROL Done]** klicken.
 
 ## Vorhandene Benutzer
 
-Um die Liste der freigegebenen Dashboards erneut anzuzeigen, können Benutzer auf **[!UICONTROL Find]** im `Global Search` Menü.
+Um die Liste der freigegebenen Dashboards erneut anzuzeigen, können Benutzer im Menü `Global Search` auf **[!UICONTROL Find]** klicken.

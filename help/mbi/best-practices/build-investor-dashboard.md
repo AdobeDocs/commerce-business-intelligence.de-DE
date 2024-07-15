@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Im Folgenden finden Sie Informationen zum Erstellen von Berichten für Ihr Inves
       * A/B
 * **[!UICONTROL All-time revenue by source]**
    * Metrik - Umsatz
-   * Gruppe nach Kunden `utm_source`
+   * Gruppe nach `utm_source` des Kunden
 * **[!UICONTROL Revenue from top 10 products]**
    * Metrik - Produktumsatz
       * Diagramm ausblenden
@@ -59,18 +59,18 @@ Im Folgenden finden Sie Informationen zum Erstellen von Berichten für Ihr Inves
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * Sitzungen
 
-Mit [!DNL Google Analytics] -Integration können Sie Berichte zu folgenden Themen einbeziehen:
+Mit einer [!DNL Google Analytics] -Integration können Sie Berichte zu folgenden Themen einbeziehen:
 
 * Site-Besuche
 * Konversionsrate
 
-Mit dem [Commerce-Datenanreicherungsdienste](https://business.adobe.com/products/magento/magento-commerce.html)können Sie Berichte zu folgenden Themen einbeziehen:
+Mit den [Commerce-Datenanreicherungsdiensten](https://business.adobe.com/products/magento/magento-commerce.html) können Sie Berichte zu folgenden Themen einbeziehen:
 
 * Unique Customers nach Bundesland/Region, Alter, Geschlecht.
 
 ## Weitere Tipps
 
-* Verwenden Sie eine klare und knappe [Namenskonvention](../best-practices/naming-elements.md)
+* Verwenden Sie eine klare und knappe [Benennungskonvention](../best-practices/naming-elements.md)
 * Dashboard für Anleger-Benutzer freigeben
 * Oder senden Sie es über **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
 * Erstellen Sie nur ein Dashboard. Dies erleichtert die Pflege des Inhalts und Sie wissen genau, was Ihre Investoren sehen.

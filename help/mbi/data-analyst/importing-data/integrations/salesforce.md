@@ -6,12 +6,12 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
 
-# Verbinden [!DNL Salesforce]
+# [!DNL Salesforce] verbinden
 
 ![](../../../assets/Salesforce_Logo.png)
 
@@ -19,21 +19,21 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../../administrator/user-management/user-management.md).
 
-Verbinden Ihrer [!DNL Salesforce] -Daten ermöglichen eine Reihe von Analysen, von der Auswertung und Optimierung von Leads bis hin zum Erreichen Ihrer Ziele für konvertierte Gelegenheiten.
+Die Verknüpfung Ihrer [!DNL Salesforce] -Daten ermöglicht eine Reihe von Analysen, von der Auswertung und Optimierung von führt bis hin zur Erreichung Ihrer Ziele für konvertierte Gelegenheiten.
 
 >[!IMPORTANT]
 >
->Die [!DNL Salesforce] Für den Connector müssen Sie [[!DNL Salesforce] API-Zugriff](../integrations/salesforce.md) als Teil Ihrer [!DNL Salesforce] Abonnement. Stellen Sie sicher, dass diese Option aktiviert ist, bevor Sie beginnen.
+>Für den [!DNL Salesforce] -Connector ist es erforderlich, dass Sie über [[!DNL Salesforce] API-Zugriff](../integrations/salesforce.md) als Teil Ihres [!DNL Salesforce]-Abonnements verfügen. Stellen Sie sicher, dass diese Option aktiviert ist, bevor Sie beginnen.
 
-1. So fügen Sie [!DNL Salesforce] -Integration zu Ihrem Konto hinzufügen, navigieren Sie zu `Connections` Seite unter **[!UICONTROL Manage Data** > **Connections]**.
-1. Klicks **[!UICONTROL Add a Data Source]**, auf der rechten Seite des Bildschirms über der Data Sources-Tabelle.
-1. Klicken Sie auf [!DNL Salesforce] Symbol.
-1. Klicken **[!UICONTROL Connect to Salesforce]**.
-1. Geben Sie Ihre [!DNL Salesforce] Anmeldedaten und klicken Sie auf **[!UICONTROL Login to Salesforce]**.
+1. Um die Integration [!DNL Salesforce] zu Ihrem Konto hinzuzufügen, navigieren Sie zur Seite `Connections` unter **[!UICONTROL Manage Data** > **Connections]**.
+1. Klicken Sie auf **[!UICONTROL Add a Data Source]** rechts neben dem Bildschirm über der Data Sources-Tabelle.
+1. Klicken Sie auf das Symbol &quot;[!DNL Salesforce]&quot;.
+1. Klicken Sie auf **[!UICONTROL Connect to Salesforce]**.
+1. Geben Sie Ihre [!DNL Salesforce] -Anmeldedaten ein und klicken Sie auf **[!UICONTROL Login to Salesforce]**.
 
 ## Verwandte:
 
-Wenn man ein bisschen technisch versiert ist, ist die [[!DNL Salesforce] API-Dokumentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) kann eine nützliche Ressource sein, um mehr über die Integration von Salesforce mit [!DNL Commerce Intelligence].
+Wenn Sie etwas technisch versierter sind, kann die [[!DNL Salesforce] API-Dokumentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm) eine nützliche Ressource sein, um mehr über die Integration von Salesforce mit [!DNL Commerce Intelligence] zu erfahren.
 
-* [Erwartet [!DNL Salesforce] data](../integrations/salesforce-data.md)
-* [Neu authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Erwartete [!DNL Salesforce] Daten](../integrations/salesforce-data.md)
+* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

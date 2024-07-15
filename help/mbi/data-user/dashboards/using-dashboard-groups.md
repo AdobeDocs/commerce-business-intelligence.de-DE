@@ -31,11 +31,11 @@ Dashboard-Gruppen können auf zwei Arten erstellt werden:
 
    ![Dashboard-Gruppe erstellen](../../assets/create-dashboard-groups-new-dashboard.png)
 
-1. Wenn Sie die Gruppe eines vorhandenen Dashboards ändern, wählen Sie im `Manage Data > Dashboards` Seite:
+1. Beim Ändern der Gruppe eines vorhandenen Dashboards über die Seite `Manage Data > Dashboards`:
 
    1. Klicken Sie auf das Dashboard, für das Sie die Gruppe erstellen möchten.
 
-   1. under `Dashboard Group (optional)`, wird die aktuelle Dashboard-Gruppe angezeigt.
+   1. Unter &quot;`Dashboard Group (optional)`&quot; wird die aktuelle Dashboard-Gruppe angezeigt.
 
    1. Um eine Gruppe zu erstellen, geben Sie den Namen der neuen Gruppe ein und klicken Sie dann außerhalb des Felds auf .
 
@@ -43,13 +43,13 @@ Dashboard-Gruppen können auf zwei Arten erstellt werden:
 
 ## Vorhandene Dashboards vorhandenen Gruppen hinzufügen
 
-1. Im `Manage Data > Dashboards` -Seite, wählen Sie das Dashboard aus, für das die Gruppe geändert werden soll.
+1. Wählen Sie auf der Seite `Manage Data > Dashboards` das Dashboard aus, für das die Gruppe geändert werden soll.
 
 1. Der Text unter `Dashboard Group (optional)` zeigt die aktuelle Dashboard-Gruppe des Dashboards an.
 
 1. Um die Gruppe des Dashboards zu ändern, wählen Sie eine andere Gruppe aus der Liste - in diesem Fall `PS`, `Campaigns`.
 
-   ![Gruppen-Dashboard ändern](../../assets/add-existing-dashboard-existing-group.png)
+   ![ Gruppen-Dashboard ändern](../../assets/add-existing-dashboard-existing-group.png)
 
 ## Dashboard-Gruppen löschen
 

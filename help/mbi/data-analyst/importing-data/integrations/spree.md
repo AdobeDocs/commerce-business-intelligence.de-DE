@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Verbinden [!DNL Spree]
+# [!DNL Spree] verbinden
 
 ![](../../../assets/spree-commerce-logo.png)
 
-Möchten Sie sehen, wie Ihr Unternehmen die Leistung erzielt oder Ihre wertvollsten Akquisequellen und -kanäle finden? Verbinden Ihrer [!DNL Spree] Daten an [!DNL Commerce Intelligence] können Sie diese Fragen und vieles mehr beantworten.
+Möchten Sie sehen, wie Ihr Unternehmen die Leistung erzielt oder Ihre wertvollsten Akquisequellen und -kanäle finden? Wenn Sie Ihre [!DNL Spree] -Daten mit [!DNL Commerce Intelligence] verbinden, können Sie diese Fragen und vieles mehr beantworten.
 
-Die [!DNL Spree] Datenbank basiert auf [!DNL PostgreSQL], können Sie ihn mit [!DNL Commerce Intelligence] mithilfe der [dieselben Schritte wie für einen normalen [!DNL Postgres] connection](../integrations/postgresql.md).
+Die [!DNL Spree] -Datenbank basiert auf [!DNL PostgreSQL], Sie können sie mit [!DNL Commerce Intelligence] verbinden, indem Sie die [ Schritte verwenden, die Sie für eine normale [!DNL Postgres] Verbindung](../integrations/postgresql.md) ausführen würden.
 
 ## Verwandte Dokumentation
 

@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # [!DNL Visual Report Builder]
 
-[!DNL Visual Report Builder] erleichtert die Erstellung von Schnellberichten auf der Grundlage vordefinierter Metriken. Jede Metrik enthält eine Abfrage, die den Datensatz für den Bericht definiert.
+Mit [!DNL Visual Report Builder] können Sie schnell Berichte auf der Basis vordefinierter Metriken erstellen. Jede Metrik enthält eine Abfrage, die den Datensatz für den Bericht definiert.
 
 Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Daten nach einer zusätzlichen Dimension gruppieren, das Datums- und Uhrzeitintervall festlegen, den Diagrammtyp ändern und den Bericht in einem Dashboard speichern.
 
 ## So erstellen Sie einen einfachen Bericht:
 
-1. Im [!DNL Commerce Intelligence] Menü, klicken **[!UICONTROL Report Builder]**.
+1. Klicken Sie im Menü [!DNL Commerce Intelligence] auf **[!UICONTROL Report Builder]**.
 
-1. under [!UICONTROL Visual Report Builder]klicken **[!UICONTROL Create Report]** und gehen Sie wie folgt vor:
+1. Klicken Sie unter [!UICONTROL Visual Report Builder] auf **[!UICONTROL Create Report]** und führen Sie folgende Schritte aus:
 
-   * Klicken **[!UICONTROL Add Metric]**.
+   * Klicken Sie auf **[!UICONTROL Add Metric]**.
 
      Die verfügbaren Metriken können alphabetisch oder nach Tabelle aufgelistet werden.
 
      ![Visual Report Builder](../../assets/magento-bi-visual-report-builder-add-metric.png)
 
-   * Wählen Sie die [Metrik](../../data-user/reports/ess-manage-data-metrics.md) beschreibt den Datensatz, den Sie für den Bericht verwenden möchten.
+   * Wählen Sie die [Metrik](../../data-user/reports/ess-manage-data-metrics.md) aus, die den Datensatz beschreibt, den Sie für den Bericht verwenden möchten.
 
-     Die `New Customers` -Metrik, die in diesem Beispiel verwendet wird, zählt alle Kunden und sortiert die Liste nach dem Datum, an dem sich der Kunde für ein Konto angemeldet hat. Der erste Bericht enthält ein einfaches Liniendiagramm, gefolgt von der Datentabelle.
+     Die in diesem Beispiel verwendete Metrik `New Customers` zählt alle Kunden und sortiert die Liste nach dem Datum, an dem sich der Kunde für ein Konto angemeldet hat. Der erste Bericht enthält ein einfaches Liniendiagramm, gefolgt von der Datentabelle.
 
      Die Zusammenfassung auf der linken Seite zeigt den Namen der aktuellen Metrik, gefolgt vom Ergebnis aller Berechnungen zu Spaltendaten, die in der Metrik angegeben sind. In diesem Beispiel zeigt die Zusammenfassung die Gesamtanzahl der Kunden an.
 
@@ -43,17 +43,17 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
    **`Group By`**
 
-   Die `Group By` -Kontrolle bietet Ihnen die Möglichkeit, mehrere Dimensionen nach Gruppe oder Segment hinzuzufügen. Dimensionen sind Tabellenspalten, die zur Gruppierung der Daten verwendet werden können.
+   Mit dem Steuerelement `Group By` können Sie mehrere Dimensionen nach Gruppe oder Segment hinzufügen. Dimensionen sind Tabellenspalten, die zur Gruppierung der Daten verwendet werden können.
 
-   * Wählen Sie eine der verfügbaren Dimensionen aus der Liste der `Group By` Optionen.
+   * Wählen Sie eine der verfügbaren Dimensionen aus der Liste der `Group By` -Optionen.
 
      In diesem Beispiel hat das System fünf Coupon-Codes gefunden, die von Kunden bei der ersten Bestellung verwendet wurden.
 
-     ![Gruppieren nach](../../assets/magento-bi-report-builder-group-by-dimensions.png)
+     ![Gruppieren nach ](../../assets/magento-bi-report-builder-group-by-dimensions.png)
 
-     Die `Group By` detail listet jeden von Kunden verwendeten Gutschein auf. Die Gutscheine, die zum Platzieren der ursprünglichen Bestellung verwendet wurden, sind mit einem Kontrollkästchen markiert. Das Diagramm enthält jetzt mehrere farbige Linien, die jeden Gutschein darstellen, der für eine erste Bestellung verwendet wurde. Die Legende ist farbcodiert und entspricht jeder Datenzeile.
+     Im Detail `Group By` werden die einzelnen von Kunden verwendeten Gutscheine aufgelistet. Die Gutscheine, die zum Platzieren der ursprünglichen Bestellung verwendet wurden, sind mit einem Kontrollkästchen markiert. Das Diagramm enthält jetzt mehrere farbige Linien, die jeden Gutschein darstellen, der für eine erste Bestellung verwendet wurde. Die Legende ist farbcodiert und entspricht jeder Datenzeile.
 
-   * Klicks **[!UICONTROL Apply]** um die Gruppe nach Detail zu schließen.
+   * Klicken Sie auf **[!UICONTROL Apply]** , um die Gruppe nach Detail zu schließen.
 
      ![Mehrere Dimensionen](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
@@ -63,25 +63,25 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
      ![Nach Tabellendaten gruppieren](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * Klicken Sie auf Transponieren (![](../../assets/magento-bi-btn-transpose.png)) in der rechten oberen Ecke der Tabelle, um die Ausrichtung der Daten zu ändern.
+   * Klicken Sie oben rechts in der Tabelle auf das Steuerelement Transponieren (![](../../assets/magento-bi-btn-transpose.png)), um die Ausrichtung der Daten zu ändern.
 
      Die Datenachse wird gespiegelt, und die Tabelle enthält jetzt eine Spalte für jeden Couponcode und eine Zeile für jeden Monat. Vielleicht ist diese Ausrichtung leichter zu lesen.
 
-     ![Transponierte Daten](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
+     ![Transpodierte Daten](../../assets/magento-bi-report-builder-group-by-table-data-transposed.png)
 
    **`Date Range`**
 
-   Die `Date Range` Die Kontrolle zeigt den aktuellen Datumsbereich und die Zeitintervalleinstellungen an und befindet sich direkt über dem Diagramm auf der rechten Seite.
+   Das Steuerelement `Date Range` zeigt den aktuellen Datumsbereich und die Zeitintervalleinstellungen an und befindet sich direkt über dem Diagramm rechts.
 
-   * Klicken Sie auf `Date Range` -Steuerelement, das in diesem Beispiel auf `All-Time by Month`.
+   * Klicken Sie auf das Steuerelement `Date Range` , das in diesem Beispiel auf `All-Time by Month` festgelegt ist.
 
      ![Datumsbereich](../../assets/magento-bi-report-builder-date-range.png)
 
    * Nehmen Sie die folgenden Änderungen vor:
 
-      * Um für eine genauere Ansicht einzoomen, ändern Sie den Datumsbereich in `Last Full Quarter`.
-      * under `Select Time Interval`auswählen `Week`.
-      * Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save]**.
+      * Um für eine genauere Ansicht einzoomen, ändern Sie den Datumsbereich in &quot;`Last Full Quarter`&quot;.
+      * Wählen Sie unter &quot;`Select Time Interval`&quot;die Option &quot;`Week`&quot;.
+      * Klicken Sie nach Abschluss des Vorgangs auf **[!UICONTROL Save]**.
 
      Der Bericht enthält jetzt nur die Daten des letzten Quartals nach Woche.
 
@@ -106,22 +106,22 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
      {style="table-layout:auto"}
 
-1. So geben Sie dem Bericht einen `title`, ersetzen Sie die `Untitled Report` Text oben auf der Seite mit einem beschreibenden Titel.
+1. Um dem Bericht den Wert &quot;`title`&quot;zu geben, ersetzen Sie den Text &quot;`Untitled Report`&quot;oben auf der Seite durch einen beschreibenden Titel.
 
-1. Klicken Sie oben rechts auf **[!UICONTROL Save]** und gehen Sie wie folgt vor:
+1. Klicken Sie oben rechts auf **[!UICONTROL Save]** und führen Sie folgende Schritte aus:
 
-   * Für `Type`, die Standardeinstellung akzeptieren, `Chart`.
+   * Nehmen Sie für `Type` die Standardeinstellung `Chart` an.
 
-   * Wählen Sie die `Dashboard` wo der Bericht verfügbar sein soll.
+   * Wählen Sie die `Dashboard` aus, für die der Bericht verfügbar sein soll.
 
-   * Klicken **[!UICONTROL Save to Dashboard]**.
+   * Klicken Sie auf **[!UICONTROL Save to Dashboard]**.
 
      ![In Dashboard speichern](../../assets/magento-bi-report-builder-save-to-dashboard.png)
 
 1. Führen Sie einen der folgenden Schritte aus, um die Grafik in einem Dashboard anzuzeigen:
 
-   * Klicks **[!UICONTROL Go to Dashboard]** in der Nachricht oben auf der Seite.
+   * Klicken Sie oben auf der Seite in der Nachricht auf **[!UICONTROL Go to Dashboard]** .
 
-   * Wählen Sie im Menü `Dashboards` und klicken Sie auf den Namen des aktuellen Dashboards, um die Liste anzuzeigen. Klicken Sie dann auf den Namen des Dashboards, in dem der Bericht gespeichert wurde.
+   * Wählen Sie im Menü `Dashboards` aus und klicken Sie auf den Namen des aktuellen Dashboards, um die Liste anzuzeigen. Klicken Sie dann auf den Namen des Dashboards, in dem der Bericht gespeichert wurde.
 
      ![Bericht im Dashboard](../../assets/magento-bi-report-builder-my-dashboard.png)

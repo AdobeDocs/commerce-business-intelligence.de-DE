@@ -12,4 +12,4 @@ ht-degree: 25%
 
 # Tutorials
 
-In diesen selbstgeleiteten Tutorials erfahren Sie mehr über die Vorteile von [!DNL Adobe Commerce Intelligence].
+Befolgen Sie diese selbstgeleiteten Tutorials, um die Macht von [!DNL Adobe Commerce Intelligence] zu erfahren.

@@ -1,6 +1,6 @@
 ---
-title: Verbinden Sie [!DNL MySQL] Datenbank
-description: Sehen Sie sich an, wie Sie Ihre [!DNL MySQL] Datenbanken mit [!DNL Commerce Intelligence].
+title: Verbinden Ihrer [!DNL MySQL] Datenbank
+description: Sehen Sie sich an, wie Sie Ihre [!DNL MySQL] Datenbanken mit [!DNL Commerce Intelligence] verbinden.
 exl-id: 22632cab-3c44-4a1b-8809-ac6cba5f655a
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,6 +11,6 @@ ht-degree: 0%
 
 ---
 
-# Verbinden Sie `MySQL` Datenbank
+# `MySQL`-Datenbank verbinden
 
 Informationen kommen.

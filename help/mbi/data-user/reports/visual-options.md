@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Die Auswahl der richtigen Visualisierung für einen bestimmten Datensatz ist ein wichtiger Teil des Analyseprozesses. Jeder Datensatz hat eine Geschichte zu erzählen, aber die Wirkung dieser Geschichte wird durch ihre visuelle Wirkung und Lesbarkeit betont.
 
-Die [!DNL Commerce Intelligence] [!DNL Visual Report Builder] bietet 12 verschiedene Visualisierungsoptionen mit jeweils eigenen Vorteilen und Anwendungsfällen. In diesem Thema werden die verschiedenen Visualisierungsoptionen in [!DNL Commerce Intelligence], einschließlich ggf. erforderlicher Berichtskonfigurationen, und ein Beispiel für einen Anwendungsfall. Die folgenden Visualisierungen sind verfügbar in [!DNL Commerce Intelligence]:
+Die [!DNL Commerce Intelligence] [!DNL Visual Report Builder] bietet 12 verschiedene Visualisierungsoptionen mit jeweils eigenen Vorteilen und Anwendungsfällen. In diesem Thema werden die verschiedenen Visualisierungsoptionen in [!DNL Commerce Intelligence] erläutert, einschließlich der erforderlichen Berichtskonfigurationen (falls zutreffend) und eines Beispiels für einen Anwendungsfall. Die folgenden Visualisierungen sind in [!DNL Commerce Intelligence] verfügbar:
 
 * `Scalar`
 * `Table`
@@ -37,11 +37,11 @@ Die [!DNL Commerce Intelligence] [!DNL Visual Report Builder] bietet 12 verschie
 
 ![](../../assets/blobid0.png)
 
-Um einen Bericht als Skalar zu speichern, konfigurieren Sie Ihre Filter und Zeiteinstellungen und klicken Sie auf **[!UICONTROL Save]** oder **[!UICONTROL Update]** oben rechts im Bericht. Unter dem `Type` Wählen Sie in der Dropdown-Liste die Option Zahl: Metrik aus, um den Bericht als den in der linken Seitenleiste angezeigten Wert zu speichern.
+Um einen Bericht als Skalar zu speichern, konfigurieren Sie Ihre Filter und Zeiteinstellungen und klicken Sie dann oben rechts im Bericht auf **[!UICONTROL Save]** oder **[!UICONTROL Update]** . Wählen Sie im Dropdown-Menü `Type` den Namen Zahl: Metrik aus, um den Bericht als Wert zu speichern, der auf der linken Seitenleiste angezeigt wird.
 
 ![](../../assets/blobid1.png)
 
-**Voraussetzungen**:
+**Anforderungen**:
 
 * `Time interval`: `None`
 * `Group by`: `None`
@@ -49,17 +49,17 @@ Um einen Bericht als Skalar zu speichern, konfigurieren Sie Ihre Filter und Zeit
 
 ## `Table`
 
-Wie der Name nahe legt, `table` -Berichte eignen sich hervorragend für die Anzeige von Tabellendetails. Wenn viele Gruppen nach Werten oder Metriken in einem Bericht angezeigt werden müssen, ist eine Tabelle häufig der beste Weg. Unten finden Sie eine Tabelle mit &quot;Kundendetails&quot;, in der Bestellungen und Umsatz nach E-Mail-Adresse des Kunden gruppiert sind:
+Wie der Name schon sagt, eignen sich `table` -Berichte hervorragend für die Anzeige von Tabellendetails. Wenn viele Gruppen nach Werten oder Metriken in einem Bericht angezeigt werden müssen, ist eine Tabelle häufig der beste Weg. Unten finden Sie eine Tabelle mit &quot;Kundendetails&quot;, in der Bestellungen und Umsatz nach E-Mail-Adresse des Kunden gruppiert sind:
 
 ![](../../assets/blobid2.png)
 
-Ähnlich wie bei skalaren Berichten können Sie einen Bericht als Tabelle speichern, indem Sie auf **[!UICONTROL Save]** oder **[!UICONTROL Update]** im ReportBuilder und wählen Sie dann die Tabellenoption unter der `Type` Dropdown.
+Ähnlich wie bei skalaren Berichten können Sie einen Bericht als Tabelle speichern, indem Sie im ReportBuilder auf **[!UICONTROL Save]** oder **[!UICONTROL Update]** klicken und dann die Option Tabelle im Dropdown-Menü `Type` auswählen.
 
 ![](../../assets/blobid3.png)
 
-**Voraussetzungen:**
+**Anforderungen:**
 
-* Es gibt zwar keine Anforderungen an die Berichtskonfiguration, es ist jedoch wichtig zu beachten, dass Tabellen auf 3500 Zeilen beschränkt sind. Wenn Ihr Datensatz mehr als 3500 Zeilen enthält, müssen Sie die Ergebnisse entweder filtern, um den Umfang einzugrenzen, oder die Ergebnisse exportieren nach `.csv` oder `Excel` , um den vollständigen Datensatz anzuzeigen.
+* Es gibt zwar keine Anforderungen an die Berichtskonfiguration, es ist jedoch wichtig zu beachten, dass Tabellen auf 3500 Zeilen beschränkt sind. Wenn Ihr Datensatz mehr als 3500 Zeilen enthält, müssen Sie entweder die Ergebnisse filtern, um den Umfang einzugrenzen, oder die Ergebnisse in `.csv` oder `Excel` exportieren, um den vollständigen Datensatz anzuzeigen.
 
 ## `Line`
 
@@ -67,13 +67,13 @@ Wie der Name nahe legt, `table` -Berichte eignen sich hervorragend für die Anze
 
 ![](../../assets/blobid0.png)
 
-Jede zum Bericht hinzugefügte Metrik und Formel wird durch eine eigene Zeile dargestellt. Vergessen Sie beim Vergleich von Metriken mit ähnlichen Einheiten und Skalierungen nicht, das Kontrollkästchen für `Multiple Y-Axes` , um alle Metriken auf derselben Skala anzuzeigen.
+Jede zum Bericht hinzugefügte Metrik und Formel wird durch eine eigene Zeile dargestellt. Vergessen Sie beim Vergleich von Metriken mit ähnlichen Einheiten und Skalierungen nicht, das Kontrollkästchen für `Multiple Y-Axes` zu deaktivieren, damit alle Metriken auf derselben Skala angezeigt werden.
 
-Um einen Bericht als Liniendiagramm zu speichern, passen Sie den Bericht an `Type` nach `Chart`und wählen Sie die entsprechende Visualisierung aus der Berichterstellung aus, wie unten dargestellt:
+Um einen Bericht als Liniendiagramm zu speichern, passen Sie den Bericht `Type` auf `Chart` an und wählen Sie die entsprechende Visualisierung aus dem ReportBuilder aus, wie unten dargestellt:
 
 ![](../../assets/blobid1.png)
 
-**Voraussetzungen:**
+**Anforderungen:**
 
 * Keines
 
@@ -83,13 +83,13 @@ Um einen Bericht als Liniendiagramm zu speichern, passen Sie den Bericht an `Typ
 
 ![](../../assets/blobid2.png)
 
-Jede einzelne Kombination aus Metrik, Gruppe nach und Zeitintervall wird als eigener Balken angezeigt. Wenn Sie zwei Metriken mit einer `group by`, die drei verschiedene `group by` -Werte, zeigt Ihr Bericht sechs separate Balken an.
+Jede einzelne Kombination aus Metrik, Gruppe nach und Zeitintervall wird als eigener Balken angezeigt. Wenn Sie zwei Metriken mit einem `group by` haben, die drei verschiedene `group by` -Werte enthalten, zeigt Ihr Bericht sechs separate Balken an.
 
-Um einen Bericht als Balkendiagramm zu speichern, passen Sie den Bericht an `Type` nach `Chart` und wählen Sie die `Bar` wie unten gezeigt:
+Um einen Bericht als Balkendiagramm zu speichern, passen Sie den Bericht `Type` auf `Chart` an und wählen Sie die Option `Bar` wie unten gezeigt aus:
 
 ![](../../assets/blobid3.png)
 
-**Voraussetzungen:**
+**Anforderungen:**
 
 * Keines
 
@@ -101,29 +101,29 @@ Beispielsweise weist der unten stehende Bericht zwei identische Umsatzmetriken a
 
 ![](../../assets/blobid4.png)
 
-Stellen Sie sicher, dass `Multiple Y-Axes` deaktiviert ist, wenn Sie einen Bericht wie den oben stehenden einrichten.
+Stellen Sie sicher, dass das Kontrollkästchen `Multiple Y-Axes` deaktiviert ist, wenn Sie einen Bericht wie den oben genannten einrichten.
 
-Um einen Bericht als gestapeltes Balkendiagramm zu speichern, passen Sie die `Type` nach `Chart` und wählen Sie die Option &quot;Gestapelte Leiste&quot;aus der Berichterstellung aus:
+Um einen Bericht als gestapeltes Balkendiagramm zu speichern, passen Sie den Bericht `Type` auf `Chart` an und wählen Sie die Option für gestapelte Balken aus ReportBuilder aus:
 
 ![](../../assets/blobid5.png)
 
-**Voraussetzungen:**
+**Anforderungen:**
 
 * Keines
 
 ## `Column`
 
-`Column` -Diagramme stellen jeden Datenpunkt als vertikale Spalte dar und eignen sich besser für die Anzeige von Trend-Daten als für die horizontale Balkendiagrammvisualisierung. Jede einzelne Metrik und Gruppe nach Kombination wird in einer eigenen Serie von Balken dargestellt. Ein Spaltenbericht eignet sich am besten für Berichte mit drei oder weniger Metriken oder einer Metrik mit einer einzelnen Gruppe, indem er 1-3 Gruppen nach Werten enthält.
+`Column` -Diagramme stellen jeden Datenpunkt als vertikale Spalte dar und eignen sich besser für die Anzeige von Trend-Zeitdaten als für die horizontale Balkendiagrammvisualisierung. Jede einzelne Metrik und Gruppe nach Kombination wird in einer eigenen Serie von Balken dargestellt. Ein Spaltenbericht eignet sich am besten für Berichte mit drei oder weniger Metriken oder einer Metrik mit einer einzelnen Gruppe, indem er 1-3 Gruppen nach Werten enthält.
 
 Im folgenden Beispiel sehen Sie zwei Umsatzmetriken: eine für den Erstumsatz und die andere für den wiederholten Umsatz, wobei die Trends im Zeitverlauf nach Monaten gefiltert werden:
 
 ![](../../assets/blobid6.png)
 
-Spaltenberichte können durch Ändern des Berichts gespeichert werden. `Type` nach `Chart`und wählen Sie die Spaltenvisualisierungsoption aus:
+Spaltenberichte können gespeichert werden, indem der Bericht `Type` in `Chart` geändert und die Spaltenvisualisierungsoption ausgewählt wird:
 
 ![](../../assets/blobid7.png)
 
-**Voraussetzungen:**
+**Anforderungen:**
 
 * Keines
 
@@ -131,31 +131,31 @@ Spaltenberichte können durch Ändern des Berichts gespeichert werden. `Type` na
 
 `Stacked column` -Berichte sind fast identisch mit Spaltendiagrammen, allerdings werden ähnliche Spalten übereinander gestapelt, sodass die Gesamthöhe die Summe der Werte darstellt. Gestapelte Spalten lassen sich am besten mit einer begrenzten Anzahl von Metriken oder Gruppenbeiständen visualisieren.
 
-Verwenden Sie dieselbe Berichtskonfiguration wie im Abschnitt `Column` weiter oben ein Bericht mit zwei Umsatzmetriken (gefiltert zum ersten Mal und wiederholt) mit einer gestapelten Spaltenvisualisierung wie folgt aussehen:
+Bei Verwendung derselben Berichtskonfiguration wie im obigen Abschnitt `Column` beschrieben würde ein Bericht mit zwei Umsatzmetriken (gefiltert zum ersten Mal und wiederholt) mit einer gestapelten Spaltenvisualisierung wie folgt aussehen:
 
 ![](../../assets/blobid8.png)
 
-Auch hier ist es wichtig, dass `Multiple Y-Axes` bei der Anzeige mehrerer Metriken mit der gestapelten Spaltenvisualisierung deaktiviert ist.
+Auch hier ist es wichtig, dass das Kontrollkästchen `Multiple Y-Axes` deaktiviert wird, wenn mehrere Metriken mit der gestapelten Spaltenvisualisierung angezeigt werden.
 
-Um einen Bericht als gestapelte Spalte zu speichern, legen Sie den Bericht fest `Type` nach `Chart` und wählen Sie die `stacked column` Option:
+Um einen Bericht als gestapelte Spalte zu speichern, setzen Sie den Bericht `Type` auf `Chart` und wählen Sie die Option `stacked column` aus:
 
 ![](../../assets/blobid9.png)
 
-**Voraussetzungen:**
+**Anforderungen:**
 
 * Keines
 
 ## `Pie`
 
-`Pie` -Diagramme eignen sich am besten für die Anzeige einer einzelnen Metrik mit einem oder mehreren Gruppen-Bys oder mehrerer Metriken ohne Gruppenbys. In beiden Fällen muss das Zeitintervall auf &quot;Keine&quot;gesetzt werden, damit Daten in einem Kreisdiagramm angezeigt werden. Im folgenden Beispiel ist eine Metrik für einzelne Bestellungen eine Gruppe nach Store-Namen, um die Aufschlüsselung der Bestellungen nach Store anzuzeigen:
+`Pie` -Diagramme eignen sich am besten für die Anzeige einer einzelnen Metrik mit einem oder mehreren Gruppenblöcken oder mehrerer Metriken ohne Gruppenbys. In beiden Fällen muss das Zeitintervall auf &quot;Keine&quot;gesetzt werden, damit Daten in einem Kreisdiagramm angezeigt werden. Im folgenden Beispiel ist eine Metrik für einzelne Bestellungen eine Gruppe nach Store-Namen, um die Aufschlüsselung der Bestellungen nach Store anzuzeigen:
 
 ![](../../assets/blobid10.png)
 
-Um einen Bericht als Tortendiagramm zu speichern, legen Sie den Bericht fest `Type` nach `Chart` und wählen Sie die `pie` wie unten gezeigt:
+Um einen Bericht als Tortendiagramm zu speichern, setzen Sie den Bericht `Type` auf `Chart` und wählen Sie die Option `pie` wie unten gezeigt aus:
 
 ![](../../assets/blobid11.png)
 
-**Voraussetzungen:**
+**Anforderungen:**
 
 * `Time interval`: `None`
 * Sie haben eine der folgenden Möglichkeiten:
@@ -166,35 +166,35 @@ Um einen Bericht als Tortendiagramm zu speichern, legen Sie den Bericht fest `Ty
 
 `Area` -Diagramme sind fast mit gestapelten Spaltendiagrammen identisch, allerdings werden die Spalten kontinuierlich angezeigt. Ähnlich wie gestapelte Spalten werden Flächendiagramme am besten mit einer begrenzten Anzahl von Gruppenbys oder Metriken visualisiert.
 
-Verwenden des gleichen Beispiels aus der `stacked column` angezeigt, zeigt der unten stehende Bericht den ersten Umsatz im Vergleich zum Wiederholungsumsatz mit der Visualisierung des Flächendiagramms:
+Ausgehend vom gleichen Beispiel aus dem Abschnitt `stacked column` zeigt der unten stehende Bericht den ersten Umsatz mit der Visualisierung des Flächendiagramms im Vergleich zu Wiederholungsumsätzen:
 
 ![](../../assets/blobid12.png)
 
-Um einen Bericht als Flächendiagramm zu speichern, passen Sie die `Type` nach `Chart` und wählen Sie die Option Bereich aus:
+Um einen Bericht als Flächendiagramm zu speichern, passen Sie die `Type` -Einstellung auf `Chart` an und wählen Sie die Bereichsoption aus:
 
 ![](../../assets/blobid13.png)
 
-**Voraussetzungen:**
+**Anforderungen:**
 
 * Keines
 
 ## `Funnel`
 
-`Funnel` -Diagramme eignen sich ideal für die Visualisierung der Konvertierung über eine erwartete Ereignissequenz hinweg. Einige Beispiele sind die Analyse des potenziellen Umsatzes in Ihrem Verkaufstrichter vom Lead bis zum geschlossenen Geschäft oder die Messung des Rückgangs der Kunden zwischen ihren ersten und zweiten Bestellungen, zweiten und dritten Bestellungen usw. Nachstehend finden Sie ein Beispiel für Letztere:
+`Funnel` -Diagramme eignen sich ideal für die Visualisierung der Konversion über eine erwartete Ereignissequenz hinweg. Einige Beispiele sind die Analyse des potenziellen Umsatzes in Ihrem Verkaufstrichter vom Lead bis zum geschlossenen Geschäft oder die Messung des Rückgangs der Kunden zwischen ihren ersten und zweiten Bestellungen, zweiten und dritten Bestellungen usw. Nachstehend finden Sie ein Beispiel für Letztere:
 
 ![](../../assets/blobid4.png)
 
 In einem Trichterbericht spiegelt sich der relative Wert eines bestimmten Schritts des Trichters in der Höhe des Schritts wider. Die Berichtskonfiguration bestimmt die Reihenfolge, in der die Schritte angezeigt werden. Es gibt zwei Möglichkeiten, einen Trichterbericht zu konfigurieren:
 
-* `Single metric with one group by`: - Die Reihenfolge der Schritte wird durch die Einstellung &quot;Oben/Unten anzeigen&quot;der Gruppe von bestimmt. Standardmäßig werden Trichterschritte in der Reihenfolge vom größten zum kleinsten Wert angezeigt. Sie können sie aber auch alphabetisch nach Name sortieren.
+* `Single metric with one group by`: Die Reihenfolge der Schritte wird durch die Einstellung &quot;Oben/Unten anzeigen&quot;der Gruppe von bestimmt. Standardmäßig werden Trichterschritte in der Reihenfolge vom größten zum kleinsten Wert angezeigt. Sie können sie aber auch alphabetisch nach Name sortieren.
 
-* `Multiple metrics with no group by`: - Die Reihenfolge der Schritte wird durch die Reihenfolge bestimmt, in der die Metriken zum Bericht hinzugefügt werden.
+* `Multiple metrics with no group by`: Die Reihenfolge der Schritte wird durch die Reihenfolge bestimmt, in der die Metriken zum Bericht hinzugefügt werden.
 
-Um einen Bericht als Trichterdiagramm zu speichern, passen Sie den Bericht an `Type` nach `Chart` und wählen Sie die entsprechende Visualisierung aus der Berichterstellung aus.
+Um einen Bericht als Trichterdiagramm zu speichern, passen Sie den Bericht `Type` auf `Chart` an und wählen Sie die entsprechende Visualisierung im ReportBuilder aus.
 
 ![](../../assets/blobid5.png)
 
-**Voraussetzungen:**
+**Anforderungen:**
 
 * `Time interval`: `None`
 * Sie haben eine der folgenden Möglichkeiten:
@@ -203,17 +203,17 @@ Um einen Bericht als Trichterdiagramm zu speichern, passen Sie den Bericht an `T
 
 ## `Scatter plot`
 
-A `scatter plot` wird verwendet, um die Beziehung einer Metrik mit zwei verschiedenen Variablen zu untersuchen, damit Sie Korrelationen und Ausreißer leicht identifizieren können. Diese Visualisierung sollte am besten nur mit numerischen Dimensionen verwendet werden - versuchen Sie es mit der Metrik Bestellungen und dem `Customer's lifetime number of coupons` und `Customer's lifetime revenue` Dimensionen, um zu sehen, wie die Nutzung des Gutscheins mit dem Umsatz verbunden ist. Sie können zwischen einem Streudiagramm mit und ohne Trendlinie wählen:
+Mit einem `scatter plot` wird die Beziehung einer Metrik mit zwei verschiedenen Variablen untersucht, sodass Sie Korrelationen und Ausreißer leicht identifizieren können. Diese Visualisierung sollte am besten nur bei numerischen Dimensionen verwendet werden. Versuchen Sie es mit der Metrik Bestellungen und den Dimensionen `Customer's lifetime number of coupons` und `Customer's lifetime revenue`, um zu sehen, wie die Nutzung des Coupons mit dem Umsatz verbunden ist. Sie können zwischen einem Streudiagramm mit und ohne Trendlinie wählen:
 
 ![](../../assets/scatter-plot-1.png)
 
-![ohne Trendlinie](../../assets/scatter-plot-2.png)
+![ohne trendline](../../assets/scatter-plot-2.png)
 
 ![](../../assets/scatter-plot-3.png)
 
-![Mit Trendlinie](../../assets/scatter-plot-4.png)
+![Mit trendline](../../assets/scatter-plot-4.png)
 
-**Voraussetzungen:**
+**Anforderungen:**
 
 Option 1:
 
@@ -225,11 +225,11 @@ Option 2:
 
 * Zwei `metrics`
 * Nein `group by`
-* Satz `time interval`
+* `time interval` festlegen
 
 ## `Bubble` Diagramm
 
-A `bubble` kann bis zu vier Datendimensionen anzeigen, wobei die `X` und `Y` Achsen geben die Position der Blasen an. Die `Z` Achse ist die Größe der Blasen, und durch die Einbeziehung von zwei Gruppen Bys können Sie Farbe zu den Blasen hinzufügen. Diese Art der Visualisierung eignet sich am besten, wenn Sie mehrere Datendimensionen in einem Diagramm darstellen möchten.
+Ein `bubble` -Diagramm kann bis zu vier Datendimensionen anzeigen, wobei die `X` - und `Y` -Achsen die Position der Blasen angeben. Die Achse &quot;`Z`&quot; entspricht der Größe der Blasen. Durch Einschluss von zwei Gruppenbys können Sie den Blasen Farbe hinzufügen. Diese Art der Visualisierung eignet sich am besten, wenn Sie mehrere Datendimensionen in einem Diagramm darstellen möchten.
 
 Die folgende Tabelle zeigt beispielsweise die Anzahl der Kunden (Punktgröße), gruppiert nach einer bestimmten Akquise-Quelle (Blasenfarbe) und Status (verschiedene Blasen in einer bestimmten Farbe), gezeichnet anhand des Gesamtumsatzes und der durchschnittlichen Bestellungen während der Lebensdauer.
 
@@ -239,7 +239,7 @@ Die folgende Tabelle zeigt die Anzahl der Kunden (Blasengröße), gruppiert nach
 
 ![](../../assets/bubble-2.png)
 
-**Anforderungen an Punktdiagramme einzelner Reihen:**
+**Anforderungen an Punktdiagramme einzelner Serien:**
 
 Option 1
 
@@ -251,9 +251,9 @@ Option 2
 
 * Drei `metrics`
 * Nein `group by`
-* Satz `time interval`
+* `time interval` festlegen
 
-**Anforderungen an ein mehrreihenweises Punktdiagramm:**
+**Anforderungen für ein mehrreihenweises Punktdiagramm:**
 
 * Drei `metrics`
 * Zwei `group by`
@@ -261,13 +261,13 @@ Option 2
 
 ## `Heatmap`
 
-Verwendung `heatmaps` um Hotspots in Ihren Daten zu visualisieren. Beispielsweise kann eine Heatmap angeben, wo Sie routinemäßig ein höheres Volumen erhalten. Die Visualisierung dieser Daten kann Ihnen dabei helfen, Ihre Lagerbestände anzupassen, um sicherzustellen, dass Sie die Nachfrage während dieser Spitzenfenster erfüllen.
+Verwenden Sie `heatmaps` , um Hotspots in Ihren Daten zu visualisieren. Beispielsweise kann eine Heatmap angeben, wo Sie routinemäßig ein höheres Volumen erhalten. Die Visualisierung dieser Daten kann Ihnen dabei helfen, Ihre Lagerbestände anzupassen, um sicherzustellen, dass Sie die Nachfrage während dieser Spitzenfenster erfüllen.
 
 Die folgende Heatmap zeigt die Bestellungen über mehrere Wochen nach Wochentag, Stunde für Tag.
 
 ![](../../assets/heat-map.png)<!--{: width="650"}-->
 
-**Voraussetzungen:**
+**Anforderungen:**
 
 Option 1
 
@@ -279,4 +279,4 @@ Option 2
 
 * One `metric`
 * One `group by`
-* Satz `time interval`
+* `time interval` festlegen

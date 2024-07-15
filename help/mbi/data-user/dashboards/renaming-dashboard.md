@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Erfordert [Admin](../../administrator/user-management/user-management.md) oder `Standard` Berechtigungen zur Ausführung dieser Funktionen. Wenn Sie ein `Standard` Benutzer, benötigen Sie auch `Edit` Berechtigungen für das Dashboard.
+>Erfordert [Admin](../../administrator/user-management/user-management.md) - oder `Standard` -Berechtigungen, um diese Funktionen auszuführen. Wenn Sie ein `Standard` -Benutzer sind, benötigen Sie auch `Edit` -Berechtigungen für das Dashboard.
 
 Manchmal passen Namen einfach nicht mehr. Das Umbenennen eines Dashboards ist schnell und einfach.
 
-1. Klicken Sie im Dashboard auf die Schaltfläche **[!UICONTROL Dashboard Options]** Menü oben auf dem Bildschirm, neben dem `Global Search` Menü.
+1. Klicken Sie im Dashboard auf das Menü **[!UICONTROL Dashboard Options]** oben im Bildschirm neben dem Menü `Global Search`.
 
-1. Klicks **[!UICONTROL Rename]** in der Dropdown-Liste.
+1. Klicken Sie im Dropdown-Menü auf **[!UICONTROL Rename]** .
 
 1. Geben Sie bei Aufforderung den neuen Namen für Ihr Dashboard ein.
 
-1. Klicken **[!UICONTROL Save Changes]**.
+1. Klicken Sie auf **[!UICONTROL Save Changes]**.
 
 Beispiel:
 

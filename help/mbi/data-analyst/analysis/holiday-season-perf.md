@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Rushes können jederzeit während des Jahres auftreten. Wenn Ihr Unternehmen z.B
 
 ## Empfehlungen für Metriken
 
-Bei der Analyse der Leistung in der Weihnachtszeit sollten Sie die Analyse in Erwägung ziehen ([oder Gebäude](../../data-user/reports/ess-manage-data-metrics.md)) diese Metriken:
+Wenn Sie die Leistung der Weihnachtszeit analysieren ([oder](../../data-user/reports/ess-manage-data-metrics.md)), sollten Sie diese Metriken analysieren:
 
 ### Anzahl neuer Kunden, Anzahl Bestellungen, Umsatz
 
@@ -33,7 +33,7 @@ Diese Kennzahl zeigt den durchschnittlichen Gesamtbestellwert während Ihrer Url
 
 Nachdem Sie nun wissen, welche Metriken analysiert werden sollen, sehen Sie sich einige Beispielumsatzdaten während der Weihnachtsmonate November und Dezember für 2014 und 2015 an.
 
-![Tägliche Weihnachtseinnahmen für 2014 und 2015](../../assets/Analyzing_holiday_season.png)
+![Täglicher Umsatz aus Weihnachtszeiten für 2014 und 2015](../../assets/Analyzing_holiday_season.png)
 
 In diesem Beispiel gibt es zwei große Umsatzsteigerungen für 2014 und 2015: Diese Zunahmen fallen mit Black Friday und Cyber Monday zusammen. Beachten Sie, dass die Spitzen 2014 und 2015 nicht am selben Tag stattfinden. Dies liegt daran, dass Black Friday für 2014 auf den 27. November und für 28. November 2015 auf den 27. November fiel. Ebenso war Cyber Montag der 30. November für 2014 und der 1. Dezember für 2015.
 
@@ -58,7 +58,7 @@ Eine Möglichkeit besteht darin, das Kaufverhalten Ihrer Kunden während der Url
 
 Eine weitere Möglichkeit besteht darin, den ROI nach Kampagnen während der Urlaubszeiten zu analysieren. Ist Ihr ROI bei bestimmten Kampagnen höher, die während der Weihnachtszeit ausgeführt werden? Sollten Sie während dieser Saison die Ausgaben für Kampagnen mit hohem ROI erhöhen?
 
-Darüber hinaus können Sie die Anzahl der diskontierten Bestellungen im Vergleich zu vollständigen Preisaufträgen analysieren. [Warten die meisten Kunden auf einen Kauf von Bestellungen](../analysis/coupon-usage.md) während Ihrer Urlaubszeit oder kaufen sie ganze Preisangebote?
+Darüber hinaus können Sie die Anzahl der diskontierten Bestellungen im Vergleich zu vollständigen Preisaufträgen analysieren. [Warten die meisten Kunden während Ihrer Weihnachtszeit auf einen Verkauf zum Bestellen von Bestellungen](../analysis/coupon-usage.md) oder kaufen sie ganze Preisartikel?
 
 ### Verwandte
 

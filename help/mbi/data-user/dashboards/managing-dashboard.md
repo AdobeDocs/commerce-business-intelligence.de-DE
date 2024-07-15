@@ -33,23 +33,23 @@ So benennen Sie ein Dashboard um:
 
 1. Klicken Sie auf den Namen des Dashboards, das Sie ändern möchten.
 
-2. Geben Sie den neuen Namen in die `Dashboard Name` -Feld.
+2. Geben Sie den neuen Namen in das Feld `Dashboard Name` ein.
 
 ## Verwalten von Benutzerberechtigungen {#userperm}
 
-Es gibt drei Zugriffsebenen in [!DNL Commerce Intelligence] für Dashboards - `View`, `Edit`, und `None`.
+In [!DNL Commerce Intelligence] gibt es drei Zugriffsebenen für Dashboards: `View`, `Edit` und `None`.
 
-* `View` ermöglicht ausgewählten Benutzern, das Dashboard anzuzeigen, es jedoch nicht zu bearbeiten. Benutzer können auch die Größe von Diagrammen ändern, Daten exportieren und die Diagramme mithilfe der Funktion Speichern unter in ihre eigenen Dashboards kopieren, sofern sie über Standard- oder Administratorberechtigungen verfügen.
+* Mit `View` können ausgewählte Benutzer das Dashboard anzeigen, es jedoch nicht bearbeiten. Benutzer können auch die Größe von Diagrammen ändern, Daten exportieren und die Diagramme mithilfe der Funktion Speichern unter in ihre eigenen Dashboards kopieren, sofern sie über Standard- oder Administratorberechtigungen verfügen.
 
-* `Edit` ermöglicht ausgewählten Benutzern das Bearbeiten und Speichern von Diagrammen in diesem Dashboard, wenn sie über Standard- oder Admin-Berechtigungen verfügen. Außerdem können Benutzer mit Bearbeitungsberechtigungen Dashboards auch für andere Benutzer freigeben.
+* Mit `Edit` können ausgewählte Benutzer Diagramme in diesem Dashboard bearbeiten und speichern, wenn sie über Standard- oder Admin-Berechtigungen verfügen. Außerdem können Benutzer mit Bearbeitungsberechtigungen Dashboards auch für andere Benutzer freigeben.
 
 * `None` bedeutet, dass ausgewählte Benutzer dieses Dashboard nicht anzeigen oder bearbeiten können.
 
 Benutzerberechtigungen können auf zwei Arten geändert werden - für alle Benutzer oder für einzelne Benutzer.
 
-1. *So ändern Sie die Berechtigungen aller Benutzer:* Verwenden Sie das Dropdown-Menü neben `Set all users' permissions to…` Beschriftung.
+1. *Um die Berechtigungen aller Benutzer zu ändern, verwenden Sie* das Dropdown-Menü neben der Bezeichnung `Set all users' permissions to…` .
 
-1. *So ändern Sie die Berechtigungen einzelner Benutzer:* Verwenden Sie das Dropdown-Menü neben dem Namen des Benutzers, um die gewünschte Zugriffsebene festzulegen.
+1. *Um die Berechtigungen eines einzelnen Benutzers zu ändern,* verwenden Sie das Dropdown-Menü neben dem Namen des Benutzers, um die gewünschte Zugriffsebene festzulegen.
 
 ## Standard-Dashboard ändern {#default}
 
@@ -57,7 +57,7 @@ So ändern Sie Ihr Standard-Dashboard für das Konto:
 
 1. Klicken Sie auf den Namen des Dashboards, das Sie als Standard festlegen möchten.
 
-1. Klicken **[!UICONTROL Make Default]**.
+1. Klicken Sie auf **[!UICONTROL Make Default]**.
 
 ## Dashboards löschen {#delete}
 
@@ -65,4 +65,4 @@ So löschen Sie ein Dashboard:
 
 1. Klicken Sie auf den Namen des Dashboards, das Sie löschen möchten.
 
-1. Klicken **[!UICONTROL Delete Dashboard]**.
+1. Klicken Sie auf **[!UICONTROL Delete Dashboard]**.

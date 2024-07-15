@@ -6,49 +6,49 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
-# Erwartet [!DNL Google Adwords] data
+# Erwartete [!DNL Google Adwords] Daten
 
-Nachher [Sie haben Ihre [!DNL Google Adwords] account](../integrations/google-adwords.md), können Sie die [Data Warehouse-Manager](../../data-warehouse-mgr/tour-dwm.md) zur einfachen Nachverfolgung relevanter Datenfelder für die Analyse.
+Nachdem [Sie Ihr [!DNL Google Adwords] Konto](../integrations/google-adwords.md) verbunden haben, können Sie den [Data Warehouse-Manager](../../data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder für die Analyse einfach zu verfolgen.
 
 Dort sind zwei Tabellen für die Replikation auf Ihrem Data Warehouse verfügbar:
 
 * `campaigns[account-id]`
 * `adwords[account-id]`
 
-Die `campaigns` table *sollte standardmäßig verwendet werden*, damit Sie mit der Synchronisierung aller relevanten Felder aus dieser Tabelle beginnen können.
+Die `campaigns` Tabelle *sollte standardmäßig verwendet werden*, sodass Sie mit der Synchronisierung aller relevanten Felder aus dieser Tabelle beginnen können.
 
-Die `adwords` -Tabelle enthält vier Spalten, die nicht im `campaigns` table:
+Die Tabelle `adwords` enthält vier Spalten, die nicht in der Tabelle `campaigns` enthalten sind:
 
 1. `keyword`
 1. `adContent`
 1. `adDestinationUrl`
 1. `adGroup`
 
-Wenn Sie eine Analyse durchführen möchten, die diese Attribute berücksichtigt, müssen Sie die `adwords` Tabelle.
+Wenn Sie eine Analyse durchführen möchten, die diese Attribute berücksichtigt, müssen Sie die Tabelle `adwords` verwenden.
 
 >[!IMPORTANT]
 >
->Diese Tabelle schließt Zeilen aus, in denen alle vier dieser Spalten `null`.
+>Diese Tabelle schließt Zeilen aus, in denen alle vier dieser Spalten `null` sind.
 
 Im Folgenden finden Sie einen Überblick über das erwartete Schema für beide Tabellen.
 
 ## [!DNL Campaigns] table
 
-Die `campaigns` -Tabelle enthält die folgenden Spalten:
+Die Tabelle `campaigns` enthält die folgenden Spalten:
 
-| **Spalte** | **Beschreibung** |
+| **Column** | **Beschreibung** |
 |-----|-----|
 | `\_id` | Der Primärschlüssel für die Tabelle |
 | `accountId` | Die Konto-ID |
 | [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | Gesamtzahl der Klicks für den Tag |
 | [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | Gesamtkosten der Kampagne für den Tag |
 | [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] Kampagnen-ID |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | Kampagnenname (beispielsweise [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | Kampagnenname (z. B. [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
 | [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | Das Datum der Ausführung der Kampagne |
 | [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | Anzahl der Impressionen für den Tag |
 | `profileId` | Die Profil-ID |
@@ -59,16 +59,16 @@ Die `campaigns` -Tabelle enthält die folgenden Spalten:
 
 ## [!DNL AdWords] table
 
-Die `adwords` -Tabelle enthält die folgenden Spalten:
+Die Tabelle `adwords` enthält die folgenden Spalten:
 
-| **Spalte** | **Beschreibung** |
+| **Column** | **Beschreibung** |
 |-----|-----|
 | `\_id` | Der Primärschlüssel für die Tabelle |
 | `accountId` | Die Konto-ID |
 | [`adClicks`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adclicks) | Gesamtzahl der Klicks für den Tag |
 | [`adCost`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adcost) | Gesamtkosten der Kampagne für den Tag |
 | [`adwordsCampaignID`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_adwordscampaignid) | [!DNL Adwords] Kampagnen-ID |
-| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | Kampagnenname (beispielsweise [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
+| [`campaign`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=traffic_sources&amp;jump=ga_campaign) | Kampagnenname (z. B. [utm\_campaign](https://support.google.com/analytics/answer/1033867?hl=en)) |
 | [`date`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=time&amp;jump=ga_date) | Das Datum der Ausführung der Kampagne |
 | [`impressions`](https://ga-dev-tools.google/dimensions-metrics-explorer/#view=detail&amp;group=adwords&amp;jump=ga_impressions) | Anzahl der Impressionen für den Tag |
 | `profileId` | Die Profil-ID |
@@ -76,17 +76,17 @@ Die `adwords` -Tabelle enthält die folgenden Spalten:
 | `\_updated\_at` | Datum und Uhrzeit der letzten Aktualisierung für diese Zeile |
 | `keyword` | Der Suchbegriff der Kampagne |
 | `adContent` | Die erste Zeile des Textes für die Online-Kampagne |
-| `adDestinationUrl` | Die URL, zu der die [!DNL Adwords] Anzeigen auf Traffic verwiesen |
-| `adGroup` | Der Name der [!DNL Adwords] Anzeigengruppe |
+| `adDestinationUrl` | Die URL, auf die die [!DNL Adwords] -Anzeigen Traffic verwiesen haben |
+| `adGroup` | Der Name der Anzeigengruppe [!DNL Adwords] |
 
 {style="table-layout:auto"}
 
-Mithilfe dieser Daten können Sie mit der Erstellung [Metriken](../../../data-user/reports/ess-manage-data-metrics.md) und [Berichte](../../../tutorials/using-visual-report-builder.md) auf der Grundlage der Ausgabedaten und [ihn mit Ihrem Lebensdauerumsatz zur Berechnung des ROI heiraten.](../../analysis/roi-ad-camp.md).
+Mithilfe dieser Daten können Sie die Erstellung von [Metriken](../../../data-user/reports/ess-manage-data-metrics.md) und [Berichten](../../../tutorials/using-visual-report-builder.md) auf der Grundlage der Ausgabedaten und [heiraten, um den ROI zu berechnen](../../analysis/roi-ad-camp.md).
 
 ## Konsolidierte Tabellen
 
-[!DNL Adobe] empfiehlt, eine `consolidated ad spend` -Tabelle verwenden, um die Daten aus all Ihren verschiedenen Werbequellen in einer einzigen Tabelle zu kombinieren. Auf diese Weise können Sie einen einzigen Metriksatz für die Werbeanalyse verwenden.
+[!DNL Adobe] empfiehlt, eine `consolidated ad spend` -Tabelle zu erstellen, um die Daten aus allen Ihren verschiedenen Werbequellen in einer einzigen Tabelle zu kombinieren. Auf diese Weise können Sie einen einzigen Metriksatz für die Werbeanalyse verwenden.
 
-Wenn Sie keine konsolidierte Tabelle haben und ein schönes Dashboard auf der `adwords` müssen Sie die Berichterstellung replizieren oder doppelte Metriken erstellen, um diese Daten mit Ihren [!DNL Facebook Ads] Daten. Mithilfe einer konsolidierten Tabelle können Sie nahtlos [!DNL Facebook Ads] Daten mit vorhandenen [!DNL Adwords] Berichte. Sie können auch nach Anzeigenplattform segmentieren.
+Wenn Sie keine konsolidierte Tabelle haben und ein schönes Dashboard auf der `adwords` -Tabelle erstellen, müssen Sie die Berichterstellung replizieren oder doppelte Metriken erstellen, um diese Daten mit Ihren [!DNL Facebook Ads] -Daten zu vergleichen. Mithilfe einer konsolidierten Tabelle können Sie [!DNL Facebook Ads] -Daten nahtlos in Ihre vorhandenen [!DNL Adwords] -Berichte integrieren. Sie können auch nach Anzeigenplattform segmentieren.
 
-Wenn Sie die oben genannten Felder bereits synchronisiert haben, [Kontakt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) , um Ihre Werbeausgaben zu konsolidieren.
+Wenn Sie die oben genannten Felder bereits synchronisiert haben, kontaktieren Sie uns [1}, um Ihre Werbeausgaben zu konsolidieren.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)

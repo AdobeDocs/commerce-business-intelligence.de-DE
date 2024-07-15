@@ -13,12 +13,12 @@ ht-degree: 0%
 
 # Arbeiten mit Diagrammen in Dashboards
 
-Skalarzahlen. Balkendiagramme. Diagramme, die sich über lange Zeiträume erstrecken. Jedes Diagramm zeigt Informationen unterschiedlich an, d. h. Größe und Position von Diagrammen sind keine universelle Lösung. In [!DNL Commerce Intelligence]können Sie die Größe von Diagrammen ändern und neu anordnen, um Ihren idealen Arbeitsbereich zu erstellen.
+Skalarzahlen. Balkendiagramme. Diagramme, die sich über lange Zeiträume erstrecken. Jedes Diagramm zeigt Informationen unterschiedlich an, d. h. Größe und Position von Diagrammen sind keine universelle Lösung. In [!DNL Commerce Intelligence] können Sie die Größe von Diagrammen ändern und neu anordnen, um Ihren idealen Arbeitsbereich zu erstellen.
 
-*So ändern Sie die Größe eines Diagramms* klicken und ziehen Sie die untere rechte Ecke eines beliebigen Diagramms.
+*Um die Größe eines Diagramms zu ändern*, klicken Sie auf die untere rechte Ecke eines beliebigen Diagramms und ziehen Sie sie.
 
 ![Größendiagramm](../../assets/Resize_Chart_in_Dashboard.gif)
 
-*So verschieben Sie ein Diagramm*, bewegen Sie den Mauszeiger über den oberen Rand des Diagramms, bis die `Move` -Cursor angezeigt. Halten Sie die Maustaste gedrückt und ziehen Sie das Diagramm an die gewünschte Position. Klicken Sie auf Freigabe , um die Grafik zu platzieren.
+*Um ein Diagramm zu verschieben*, bewegen Sie den Mauszeiger über den oberen Rand des Diagramms, bis der `Move` -Cursor angezeigt wird. Halten Sie die Maustaste gedrückt und ziehen Sie das Diagramm an die gewünschte Position. Klicken Sie auf Freigabe , um die Grafik zu platzieren.
 
-![Verschieben-Diagramm](../../assets/Move_Chart_in_Dashboard.gif)
+![Diagramm verschieben](../../assets/Move_Chart_in_Dashboard.gif)

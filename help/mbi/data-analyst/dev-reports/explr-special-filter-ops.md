@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # Filteroptionen
 
-Dieses Thema behandelt einige spezielle `operators` verwendet in `filters` when [Berichterstellung](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} oder [Erstellen einer Metrik](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
+Dieses Thema behandelt einige spezielle `operators`, die in `filters` verwendet werden, wenn [ein Bericht erstellt](../../tutorials/using-visual-report-builder.md){: target=&quot;_blank&quot;} oder [eine Metrik erstellt](../../data-user/reports/ess-manage-data-metrics.md){: target=&quot;_blank&quot;}.
 
 ## `Filter Operators`
 
-* `LIKE` für Musterzuordnung. Dies muss mit den Platzhalterzeichen % (für einen Platzhalter mit einer variablen Anzahl von Buchstaben) oder _ (für einen einzelnen Platzhalterbuchstaben) verwendet werden.  Beispielsweise die Beschränkung `LIKE \_ake%` würde true zurückgeben für `Jake Stein`, `Jake Smith`oder `Fake Smith`.  Sie gibt &quot;false&quot;zurück für `Drake Smith`.
+* `LIKE` für Musterabgleich. Dies muss mit den Platzhalterzeichen % (für einen Platzhalter mit einer variablen Anzahl von Buchstaben) oder _ (für einen einzelnen Platzhalterbuchstaben) verwendet werden.  Beispielsweise würde die Beschränkung `LIKE \_ake%` für `Jake Stein`, `Jake Smith` oder `Fake Smith` &quot;true&quot;zurückgeben.  Für `Drake Smith` wird &quot;false&quot;zurückgegeben.
 
-* `NOT LIKE` ähnelt dem oben aufgeführten Musterabgleich, überprüft jedoch, auf welche Muster nicht übereinstimmen.
+* `NOT LIKE` ähnelt dem Muster, das oben übereinstimmt, überprüft jedoch, auf welche Muster nicht übereinstimmen.
 
-* `IS` überprüft, ob die Spalte `NULL`oder leer.
+* `IS` prüft, ob die Spalte `NULL` oder leer ist.
 
-* `IS NOT` ähnelt dem `IS` -Operator weiter oben, sucht jedoch nach Nicht-NULL-Spalten.
+* `IS NOT` ähnelt dem Operator `IS` oben, sucht jedoch nach Spalten, die nicht NULL sind.
 
-* `IN` prüft, ob ein Wert in einer kommagetrennten Liste vorhanden ist. (z. B. &quot;Farbe&quot; `IN` red,orange&quot;entspricht Farbe `equal to` rote OR-Farbe `equal to` orange).
+* `IN` prüft, ob ein Wert in einer kommagetrennten Liste vorhanden ist. (z. B. &quot;Farbe `IN` rot,orange&quot;entspricht der Farbe `equal to` rot ODER Farbe `equal to` orange).
 
-* `NOT IN` ähnelt `IN` höher, prüft jedoch, ob ein Wert nicht vorhanden ist.
+* `NOT IN` ähnelt `IN` oben, prüft jedoch, ob ein Wert nicht vorhanden ist.

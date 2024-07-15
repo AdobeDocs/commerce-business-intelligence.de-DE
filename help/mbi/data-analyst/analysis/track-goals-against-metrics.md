@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Tracking von Zielen mit Leistungsmetriken
 
-Die meisten Kunden möchten ihre **Geschäftsziele**, aber nicht erkennen, dass dies möglich ist in [!DNL Adobe Commerce Intelligence]. In diesem Thema erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Geschäftsziele anhand Ihrer tatsächlichen Daten verfolgen können - einschließlich Umsatz, neu registrierten Benutzern und Bestellungen im Zeitverlauf. Außerdem erfahren Sie, wie Sie die Leistung von Jahr zu Jahr in einem Dashboard wie folgt vergleichen:
+Die meisten Kunden möchten ihre **Geschäftsziele** verfolgen, aber wissen nicht, dass dies in [!DNL Adobe Commerce Intelligence] möglich ist. In diesem Thema erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Geschäftsziele anhand Ihrer tatsächlichen Daten verfolgen können - einschließlich Umsatz, neu registrierten Benutzern und Bestellungen im Zeitverlauf. Außerdem erfahren Sie, wie Sie die Leistung von Jahr zu Jahr in einem Dashboard wie folgt vergleichen:
 
 ![](../../assets/Goals-_dashboard_2.png)
 
-Bevor Sie beginnen, sollten Sie die [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) und stellen Sie sicher, dass Sie Ihre Geschäftsziele für einen bestimmten Zeitraum definiert haben.
+Bevor Sie beginnen, sollten Sie den [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) überprüfen und sicherstellen, dass Sie Ihre Geschäftsziele für einen bestimmten Zeitraum definiert haben.
 
 ## Erste Schritte
 
 Sie müssen zunächst eine Datei hochladen, die bestimmte tägliche/monatliche/vierteljährliche Ziele für Ihr Unternehmen enthält.
 
-Sie können die [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild, um Ihre Datei zu formatieren. Die gängigsten Ziele, die Kunden in verfolgen [!DNL Commerce Intelligence] umfassen Bestellungen, Umsatz und neue registrierte Konten.
+Sie können den [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild verwenden, um Ihre Datei zu formatieren. Zu den gängigsten Zielen, die Kunden in [!DNL Commerce Intelligence] verfolgen, gehören Bestellungen, Umsatz und neu registrierte Konten.
 
 ![](../../assets/Goals-_Excel.png)
 
@@ -32,28 +32,28 @@ Sie können die [Datei-Uploader](../importing-data/connecting-data/using-file-up
 Erstellen Sie für jedes Ziel eine neue Metrik. Wenn Sie beispielsweise monatliche Umsatz- und Bestellziele hochladen, müssen Sie zwei neue Metriken erstellen:
 
 * **Monatliches Umsatzziel**
-* Im **`Monthly goals`** table
-* Diese Metrik führt eine **Summe**
-* Im **`Revenue target`** column
-* Bestellt von der **`Month`** timestamp
+* In der Tabelle **`Monthly goals`**
+* Diese Metrik führt eine **Summe** aus.
+* In der Spalte **`Revenue target`**
+* Durch den Zeitstempel **`Month`** geordnet
 
-* **Monatliches Bestellziel**
-* Im **`Monthly goals`** table
-* Diese Metrik führt eine **Summe**
-* Im **`Orders target`** column
-* Bestellt von der **`Month`** timestamp
+* **Monatsbestellziel**
+* In der Tabelle **`Monthly goals`**
+* Diese Metrik führt eine **Summe** aus.
+* In der Spalte **`Orders target`**
+* Durch den Zeitstempel **`Month`** geordnet
 
 * **Monatliches Ziel neuer registrierter Konten**
-* Im **`Monthly goals`** table
-* Diese Metrik führt eine **Summe**
-* Im **`New registered accounts target`** column
-* Bestellt von der **`Month`** timestamp
+* In der Tabelle **`Monthly goals`**
+* Diese Metrik führt eine **Summe** aus.
+* In der Spalte **`New registered accounts target`**
+* Durch den Zeitstempel **`Month`** geordnet
 
 ## Berichte
 
 Es ist hilfreich, bei der Analyse Ihrer Ziele eine Mischung aus statischen Werten und visuellen Diagrammen zu verwenden. Im Folgenden finden Sie drei Beispielberichte, mit denen Sie Ihre Umsatzleistung verfolgen können.
 
-* **Erzielter Umsatz**
+* **Ertrag links zum Erreichen des Ziels**
 * Metrik `A`: `Revenue`
 * 
   [!UICONTROL Metrik]: `Revenue`
@@ -67,7 +67,7 @@ Es ist hilfreich, bei der Analyse Ihrer Ziele eine Mischung aus statischen Werte
 * 
   [!UICONTROL Format]: `Number`
 
-* [!UICONTROL Time period]: (Welchen relevanten Zeitraum Sie wünschen)
+* [!UICONTROL Time period]: (Welchen relevanten Zeitraum Sie verwenden möchten)
 * 
   [!UICONTROL Interval]: `Month`
 * 
@@ -92,8 +92,8 @@ Es ist hilfreich, bei der Analyse Ihrer Ziele eine Mischung aus statischen Werte
 * 
   [!UICONTROL Format]: `Currency`
 
-* Ausschalten `Multiple Y-Axes`
-* [!UICONTROL Time period]: (Welchen relevanten Zeitraum Sie wünschen)*
+* `Multiple Y-Axes` ausschalten
+* [!UICONTROL Time period]: (Welchen relevanten Zeitraum Sie auch immer wünschen)*
 * 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`

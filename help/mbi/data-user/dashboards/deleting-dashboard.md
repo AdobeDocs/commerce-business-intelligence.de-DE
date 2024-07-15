@@ -7,7 +7,7 @@ feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -15,25 +15,25 @@ ht-degree: 1%
 
 Wenn Sie verhindern möchten, dass Ihre Dashboard-Liste überladen wird, können Sie ein Dashboard löschen, wenn es nicht mehr benötigt wird. Dies lässt sich auf zwei Arten erreichen:
 
-1. [Über die `Account Settings` page](#account) - diese Methode erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
+1. [Über die Seite `Account Settings` ](#account) - diese Methode erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
 
-1. [Über die `Dashboard Options` Menü](#do) - Für diese Methode müssen Sie Eigentümer des Dashboards sein oder `Edit` Berechtigungen.
+1. [Über das `Dashboard Options` Menü](#do) - Für diese Methode müssen Sie Inhaber des Dashboards sein oder über `Edit` -Berechtigungen verfügen.
 
-## Dashboard löschen über `Account Settings` page {#account}
+## Dashboard über die Seite `Account Settings` löschen {#account}
 
-1. Klicken **[!UICONTROL Account Settings** > **Dashboards]**.
+1. Klicken Sie auf **[!UICONTROL Account Settings** > **Dashboards]**.
 
 1. Klicken Sie in der Liste der Dashboards auf das Dashboard, das Sie löschen möchten.
 
-1. Klicken **[!UICONTROL Delete Dashboard]**.
+1. Klicken Sie auf **[!UICONTROL Delete Dashboard]**.
 
 Beispiel:
 
 ![Dashboard löschen](../../assets/deleting_dash.gif)<!--{: width="703" height="346"}-->
 
-## Dashboard löschen über `Dashboard Options` Menü {#do}
+## Dashboard über das Menü `Dashboard Options` löschen {#do}
 
-1. Klicken Sie auf **[!UICONTROL Dashboard Options]** im oberen Bildschirmbereich.
+1. Klicken Sie oben im Bildschirm auf das Menü **[!UICONTROL Dashboard Options]** .
 
 1. Klicken Sie im Dropdown-Menü auf **[!UICONTROL Delete]**.
 

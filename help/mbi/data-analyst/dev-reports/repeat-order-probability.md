@@ -6,32 +6,32 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
 # Bericht zur Bestellwahrscheinlichkeit wiederholen
 
-## Wann ist der `Incremental Event Probability` Perspektive verfügbar?
+## Wann ist die Perspektive `Incremental Event Probability` verfügbar?
 
-Die `incremental event probability` ist nur verfügbar, wenn Filter Dimensionen verwenden, die für alle Bestellungen gleich sind (z. B. die `gender`, der `age` oder des Benutzers `source`).
+Die Perspektive `incremental event probability` ist nur verfügbar, wenn Filter Dimensionen verwenden, die für alle Bestellungen gleich sind (z. B. `gender` des Benutzers, `age` des Benutzers oder `source` des Benutzers).
 
-Dies liegt daran, dass diese Perspektive auf einer Dimension mit dem Namen `User's order number` für die Segmentierung, die die Käufe eines Benutzers zählt (z. B. die 1., 2. und 3. Bestellungen von John).
+Dies liegt daran, dass diese Perspektive bei der Segmentierung auf einer Dimension mit dem Namen `User's order number` beruht, die die Käufe eines Benutzers zählt (z. B. die erste, zweite und dritte Bestellungen von John).
 
-Wenn Sie einen Filter hinzugefügt haben, der eine Dimension verwendet, die nicht für alle Bestellungen gleich ist (z. B. `Order's Region`), die `User's order number` -Dimension nicht mehr genau sein. Dies liegt daran, dass bei der Nummerierung der Bestellungen eines Benutzers bestimmte Regionen nicht berücksichtigt werden (z. B. sind die Bestellungen von John 1., 2. und 3. unabhängig von seiner Region immer noch gleich).
+Wenn Sie einen Filter hinzufügen, der eine Dimension verwendet, die nicht für alle Bestellungen gleich ist (z. B. `Order's Region`), wäre die Dimension `User's order number` nicht mehr genau. Dies liegt daran, dass bei der Nummerierung der Bestellungen eines Benutzers bestimmte Regionen nicht berücksichtigt werden (z. B. sind die Bestellungen von John 1., 2. und 3. unabhängig von seiner Region immer noch gleich).
 
 ## Eine auftragsspezifische Dimension in eine benutzerspezifische Dimension umwandeln
 
-In bestimmten Fällen können Sie die `order-specific` Dimension in eine `user-specific` Dimension, die als Filter in der `Repeat Order Probability` Diagramm. In diesen Fällen geben Sie das Bestellattribut der ersten Bestellung oder der neuesten Bestellung eines Benutzers zurück (z. B. den Regionennamen der ersten Bestellung des Benutzers).
+In bestimmten Fällen können Sie eine `order-specific` -Dimension in eine `user-specific` -Dimension umwandeln, um sie als Filter in das `Repeat Order Probability` -Diagramm einzufügen. In diesen Fällen geben Sie das Bestellattribut der ersten Bestellung oder der neuesten Bestellung eines Benutzers zurück (z. B. den Regionennamen der ersten Bestellung des Benutzers).
 
-Wenn Sie eine solche neue Dimension erstellen möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Wenn Sie eine solche neue Dimension erstellen möchten, kontaktieren Sie [den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Vergleich der Wiederholungswahrscheinlichkeit von Bestellungen mit unterschiedlichen Attributen
 
-Um die Anzahl wiederholter Käufe für verschiedene Bestellattribute zu vergleichen (z. B. die `region`), empfiehlt Adobe, ein Diagramm ähnlich dem zu erstellen. `Users by lifetime number of orders`. Zeigt die Anzahl der Benutzer an, die 1, 2, 3 usw. Bestellungen getätigt haben, und fügt den Filter auf Bestellebene hinzu. (Mit anderen Worten: Dies zeigt Ihnen, ob Benutzer in einer Region oder einer anderen mehr oder weniger Käufe tätigen.)
+Um die Anzahl der Wiederholungskäufe für verschiedene Bestellattribute zu vergleichen (z. B. `region` der Bestellung), empfiehlt Adobe, eine Grafik ähnlich der `Users by lifetime number of orders` zu erstellen. Zeigt die Anzahl der Benutzer an, die 1, 2, 3 usw. Bestellungen getätigt haben, und fügt den Filter auf Bestellebene hinzu. (Mit anderen Worten: Dies zeigt Ihnen, ob Benutzer in einer Region oder einer anderen mehr oder weniger Käufe tätigen.)
 
-Die Zahlen, aus denen ein solches Diagramm besteht, können dann in Excel exportiert werden, um das Wahrscheinlichkeitsverhältnis der Wiederholung der Bestellung zu berechnen. So sehen Sie die Wahrscheinlichkeit von Kunden, die `(x)` Bestellungen `(x+1)` Bestellungen, einfach` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` Einkäufe.
+Die Zahlen, aus denen ein solches Diagramm besteht, können dann in Excel exportiert werden, um das Wahrscheinlichkeitsverhältnis der Wiederholung der Bestellung zu berechnen. Um die Wahrscheinlichkeit zu sehen, mit der Kunden, die `(x)` Bestellungen aufgegeben haben, `(x+1)` Bestellungen tätigen, einfach ` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` Käufe tätigen.
 
 ### Beispiel:
 

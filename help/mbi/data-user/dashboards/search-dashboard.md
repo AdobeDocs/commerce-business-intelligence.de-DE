@@ -13,22 +13,22 @@ ht-degree: 0%
 
 # Suchen nach einem Dashboard
 
-In diesem Thema erfahren Sie, wie Sie die [[!DNL Global Search] Funktion](#global) , um nach Dashboards zu suchen und nach [Dashboards im Besitz anderer Benutzer](#other).
+In diesem Thema erfahren Sie, wie Sie mit der [[!DNL Global Search] Funktion](#global) nach Dashboards suchen und nach [Dashboards suchen, die anderen Benutzern gehören](#other).
 
 ## Globale Suche {#global}
 
-Die [!DNL Global Search] können Sie nach Dashboards suchen und diese zur Ansicht auswählen.
+Im Menü [!DNL Global Search] können Sie nach Dashboards suchen und diese zur Ansicht auswählen.
 
-* *So zeigen Sie eine Liste Ihrer vorhandenen Dashboards an* klicken Sie auf das Dashboard.
+* *Um eine Liste Ihrer vorhandenen Dashboards anzuzeigen*, klicken Sie auf das Dashboard.
 
-* *So suchen Sie nach einem Dashboard* eingeben, geben Sie einige Suchkriterien in die Suchleiste ein, nachdem Sie auf das Dropdown-Menü des Dashboards geklickt haben. Wenn Dashboards den Kriterien entsprechen, werden sie in der Liste zuerst angezeigt.
+* *Um nach einem Dashboard zu suchen*, geben Sie einige Suchkriterien in die Suchleiste ein, nachdem Sie auf das Dropdown-Menü des Dashboards geklickt haben. Wenn Dashboards den Kriterien entsprechen, werden sie in der Liste zuerst angezeigt.
 
 Beispiel:
 
-![Dashboard - globale Suche](../../assets/dboard-global-search.gif)
+![Globale Dashboard-Suche](../../assets/dboard-global-search.gif)
 
 ## Suchen von Dashboards, die anderen Benutzern gehören {#other}
 
-Suchen Sie nach einem Dashboard, das einem anderen Benutzer gehört? Wenn das Dashboard von anderen Benutzern angezeigt werden kann, können Sie es durch Klicken auf **[!UICONTROL Find]** im `Dashboard Options` Dropdown.
+Suchen Sie nach einem Dashboard, das einem anderen Benutzer gehört? Wenn das Dashboard von anderen angezeigt werden kann, können Sie danach suchen, indem Sie im Dropdown-Menü `Dashboard Options` auf **[!UICONTROL Find]** klicken.
 
 ![Dashboards finden](../../assets/find-dboards-other-owners.png)

@@ -6,30 +6,30 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # Zendesk-Daten überprüfen
 
-Suchen Sie etwas Seltsames in Ihrem [[!DNL Zendesk] data](../integrations/exp-zendesk-data.md)? Um das Problem zu identifizieren, müssen Sie Ihre Daten untersuchen. Dies kann durch Exportieren Ihrer [!DNL Zendesk] Daten in eine herunterladbare Datei.
+Etwas Seltsames in Ihren [[!DNL Zendesk] Daten](../integrations/exp-zendesk-data.md) gefunden? Um das Problem zu identifizieren, müssen Sie Ihre Daten untersuchen. Exportieren Sie dazu Ihre [!DNL Zendesk] -Daten in eine herunterladbare Datei.
 
 ## Datenexport aktivieren
 
-Der Datenexport ist derzeit nicht für alle [!DNL Zendesk] Konten. So aktivieren Sie diese Funktion: [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), die Ihre [!DNL Zendesk] Name der Subdomäne.
+Der Datenexport ist derzeit nicht für alle [!DNL Zendesk] -Konten aktiviert. Um diese Funktion zu aktivieren, senden [ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), in dem Ihr [!DNL Zendesk]-Subdomänenname erwähnt wird.
 
 >[!NOTE]
 >
->Nur `Enterprise` und `Plus` Pläne haben derzeit Zugriff auf diese Funktion.
+>Nur `Enterprise`- und `Plus`-Pläne haben derzeit Zugriff auf diese Funktion.
 
-Nachdem der Datenexport aktiviert wurde, können nur Administratoren einer bestimmten E-Mail-Domäne Daten aus Ihrer [!DNL Zendesk] -Konto. Diese E-Mail-Domäne ist normalerweise dieselbe E-Mail-Domäne wie Ihre [!DNL Zendesk]. Die E-Mail-Domäne des Kontoinhabers wird standardmäßig verwendet. Sie können die Domäne jedoch bei Bedarf ändern.
+Nachdem der Datenexport aktiviert wurde, können nur Administratoren einer bestimmten E-Mail-Domäne Daten aus Ihrem [!DNL Zendesk] -Konto exportieren. Diese E-Mail-Domäne ist normalerweise dieselbe E-Mail-Domäne wie Ihr [!DNL Zendesk]. Die E-Mail-Domäne des Kontoinhabers wird standardmäßig verwendet. Sie können die Domäne jedoch bei Bedarf ändern.
 
 ## In eine herunterladbare Datei exportieren
 
-1. Klicken Sie auf das Admin-Symbol (Zahnradlogo) in der Seitenleiste und wählen Sie **[!UICONTROL Manage** > **Reports]**.
-1. Klicken Sie auf **[!UICONTROL Export]** Registerkarte.
-1. Klicks **[!UICONTROL Request file]** neben &quot;Vollständiger XML-Export&quot;, wie in der Abbildung unten dargestellt.
+1. Klicken Sie auf das Admin-Symbol (Zahnradlogo) in der Seitenleiste und wählen Sie **[!UICONTROL Manage** > **Reports]** aus.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Export]** .
+1. Klicken Sie neben &quot;Vollständiger XML-Export&quot;, wie in der Abbildung unten dargestellt, auf &quot;**[!UICONTROL Request file]**&quot;.
 
    An dieser Stelle beginnt ein Build. Sie werden per E-Mail benachrichtigt, wenn er abgeschlossen ist.
    ![reports_export_new.png](../../../assets/reports_export_new.png)
@@ -38,6 +38,6 @@ Nachdem der Datenexport aktiviert wurde, können nur Administratoren einer besti
 
    Dieser Downloadlink ist mindestens drei Tage lang gültig.
 
-Dieser Prozess erstellt eine XML-Datei, die alle in Ihrer aktuellen [!DNL Zendesk] -Konto, einschließlich Ticketdaten (mit Kommentaren), Benutzerdaten und Kontodaten. An dieser Stelle können Sie [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (Achten Sie darauf, diese Datei anzuhängen!) damit Sie Ihre Daten genauer betrachten können. Wenn die Datei zu groß ist, teilen Sie sie mit der [!DNL Commerce Intelligence] Team via [!DNL Dropbox] oder [!DNL Google Drive].
+Dieser Prozess erstellt eine XML-Datei mit allen Informationen, die in Ihrem aktuellen [!DNL Zendesk]-Konto gespeichert sind, einschließlich Ticketdaten (mit Kommentaren), Benutzerdaten und Kontodaten. An dieser Stelle können Sie [ein Support-Ticket senden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) (hängen Sie diese Datei an!) damit Sie Ihre Daten genauer betrachten können. Wenn die Datei zu groß ist, geben Sie sie über [!DNL Dropbox] oder [!DNL Google Drive] für das [!DNL Commerce Intelligence]-Team frei.
 
-Weitere Informationen finden Sie unter [!DNL Zendesk] Dateiexporte, siehe [[!DNL Zendesk] Exportdokumentation](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).
+Weitere Informationen zu [!DNL Zendesk] -Dateiexporten finden Sie in der offiziellen [[!DNL Zendesk] Exportdokumentation](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

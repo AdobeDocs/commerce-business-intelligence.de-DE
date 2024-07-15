@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -22,25 +22,25 @@ Im Folgenden finden Sie die Schritte zum Erstellen von Analysen, um den Lebensze
 ## Erstellen einer Metrik
 
 Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu erstellen:
-* Navigieren Sie zu **[!UICONTROL Manage Data > Metrics]**
-   * Vorhandene anzeigen **[!UICONTROL Avg lifetime revenue]**.
+* Navigieren zu **[!UICONTROL Manage Data > Metrics]**
+   * Zeigen Sie die vorhandene **[!UICONTROL Avg lifetime revenue]** an.
 
   >[!NOTE]
   >
-  >Die Tabelle, auf der diese Metrik erstellt wird (wahrscheinlich `customer_entity` oder `sales_order` abhängig von der Fähigkeit Ihres Stores, einen Gast-Checkout zu akzeptieren.)
+  >Die Tabelle, auf der diese Metrik erstellt wird (wahrscheinlich `customer_entity` oder `sales_order`, je nachdem, ob Ihr Store einen Gast-Checkout akzeptieren kann).
 
-   * Klicks **[!UICONTROL Create New Metric]** und wählen Sie die Tabelle oben aus.
-   * Diese Metrik führt eine **Median** auf `Customer's lifetime revenue` Spalte, sortiert nach `created_at`.
+   * Klicken Sie auf &quot;**[!UICONTROL Create New Metric]**&quot;und wählen Sie die Tabelle oben aus.
+   * Diese Metrik führt einen **Median** für die Spalte `Customer's lifetime revenue` aus, geordnet nach `created_at`.
       * [!UICONTROL Filters]:
-         * Fügen Sie die `Customers we count (Saved Filter Set)` (oder `Registered accounts we count`)
+         * Fügen Sie die `Customers we count (Saved Filter Set)` (oder `Registered accounts we count`) hinzu.
 
-   * Geben Sie der Metrik einen Namen, beispielsweise `Median lifetime revenue`.
+   * Geben Sie der Metrik einen Namen, z. B. `Median lifetime revenue`.
 
 ## Dashboard erstellen
 
-Nachdem die Metrik erstellt wurde, können Sie **Dashboard erstellen** indem Sie dies tun:
+Nachdem die Metrik erstellt wurde, können Sie **ein Dashboard** erstellen, indem Sie Folgendes tun:
 * Navigieren Sie zu **[!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
-* Benennen Sie das Dashboard, z. B. `Expected LTV`.
+* Geben Sie dem Dashboard einen Namen wie `Expected LTV`.
 
 * Hier können Sie alle Berichte erstellen und hinzufügen.
 
@@ -48,7 +48,7 @@ Nachdem die Metrik erstellt wurde, können Sie **Dashboard erstellen** indem Sie
 
 >[!NOTE]
 >
->on **[!UICONTROL Time Period:]** festgelegt ist, wird der Zeitraum für jeden Bericht als `All-time`. Sie können dies nach Ihren Analyseanforderungen ändern. Adobe empfiehlt, dass alle Berichte in diesem Dashboard den gleichen Zeitraum abdecken, z. B. `All time`, `Year-to-date`oder `Last 365 days`.
+>Bei **[!UICONTROL Time Period:]** wird der Zeitraum für jeden Bericht als `All-time` angegeben. Sie können dies nach Ihren Analyseanforderungen ändern. Adobe empfiehlt, dass alle Berichte in diesem Dashboard denselben Zeitraum abdecken, z. B. `All time`, `Year-to-date` oder `Last 365 days`.
 
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
@@ -59,8 +59,8 @@ Nachdem die Metrik erstellt wurde, können Sie **Dashboard erstellen** indem Sie
 
 * **[!UICONTROL Average LTV (customers / non-guest checkout)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
-      * Hinzufügen [!UICONTROL filters]:
-         * [`A`] `Customer's group code` **Ungleich** `Not Logged In`
+      * Hinzufügen von [!UICONTROL filters]:
+         * [`A`] `Customer's group code` **Entspricht nicht** `Not Logged In`
          * [`B`] `Customer's lifetime number of orders` **Größer als**`0`
 
    * [!UICONTROL Time period]: `All time`
@@ -75,7 +75,7 @@ Nachdem die Metrik erstellt wurde, können Sie **Dashboard erstellen** indem Sie
    * [!UICONTROL Interval]: `By Month`
    * 
      [!UICONTROL Diagrammtyp]: `Line`
-   * Deaktivieren `Multiple Y-Axes`
+   * Deaktivieren Sie `Multiple Y-Axes`
 
 * **LTV nach Lebensdauer der Bestellungen**
    * Metrik `1`: `Avg lifetime revenue`
@@ -89,8 +89,8 @@ Nachdem die Metrik erstellt wurde, können Sie **Dashboard erstellen** indem Sie
 
   >[!NOTE]
   >
-  >Fügen Sie nicht alle Werte für `Customer's lifetime number of orders`. Sehen Sie sich stattdessen einen Punkt an, an dem die Anzahl neuer Kunden eine kleine Zahl erreicht, und fügen Sie manuell die Anzahl der Bestellwerte für die gesamte Lebensdauer jedes Kunden zu diesem Punkt hinzu. Wenn es beispielsweise 200 Kunden bei einer Bestellung gibt, 75 bei zwei, 15 bei drei und 3 bei vier, fügen Sie *1, 2 und 3*.
+  >Fügen Sie nicht alle Werte für `Customer's lifetime number of orders` hinzu. Sehen Sie sich stattdessen einen Punkt an, an dem die Anzahl neuer Kunden eine kleine Zahl erreicht, und fügen Sie manuell die Anzahl der Bestellwerte für die gesamte Lebensdauer jedes Kunden zu diesem Punkt hinzu. Wenn es beispielsweise 200 Kunden bei einer Bestellung gibt, 75 bei zwei, 15 bei drei und 3 bei vier, fügen Sie *1, 2 und 3* hinzu.
 
-* Vorhandenen hinzufügen [!UICONTROL Avg customer lifetime revenue by cohort] Bericht.
+* Fügen Sie den vorhandenen [!UICONTROL Avg customer lifetime revenue by cohort] -Bericht hinzu.
 
 Nachdem Sie die Berichte erstellt haben, erfahren Sie im Bild oben in diesem Thema, wie Sie die Berichte in Ihrem Dashboard organisieren können.

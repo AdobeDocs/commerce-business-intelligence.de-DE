@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Unterschiede zwischen [!DNL SQL] und [!DNL Data Warehouse Manager]
 
-Es gibt zwei wesentliche Unterschiede zwischen Spalten, die in der [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) und denen, die mithilfe der [[!DNL Data Warehouse Manager]](../data-warehouse-mgr/creating-calculated-columns.md). Das eine ist die Abhängigkeit von Aktualisierungszyklen, das andere ist, wie Spalten in Ihrem Konto gespeichert werden.
+Es gibt zwei wesentliche Unterschiede zwischen den im [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) erstellten Spalten und den mit dem [[!DNL Data Warehouse Manager]](../data-warehouse-mgr/creating-calculated-columns.md) erstellten Spalten. Das eine ist die Abhängigkeit von Aktualisierungszyklen, das andere ist, wie Spalten in Ihrem Konto gespeichert werden.
 
 ## Spalten im [!DNL SQL Report Builder]
 
@@ -21,8 +21,8 @@ Spalten hängen nicht von Aktualisierungszyklen ab. Sie müssen also nicht mehr 
 
 >[!IMPORTANT]
 >
->Die Spalten, die Sie mithilfe der [!DNL SQL] -Editor nicht auf Ihrer Data Warehouse gespeichert. Sie haben immer Zugriff auf die Abfrage, die die Spalte enthält. Wenn Sie die Spalte jedoch in mehr als einem Bericht verwenden möchten, müssen Sie sie in der Abfrage für jeden Bericht neu erstellen. Dies bedeutet, dass Spalten, die mit der Variablen [!DNL SQL] Der Editor kann nicht im herkömmlichen [!DNL Report Builder].
+>Die Spalten, die Sie mit dem [!DNL SQL] -Editor erstellen, werden nicht auf Ihrer Data Warehouse gespeichert. Sie haben immer Zugriff auf die Abfrage, die die Spalte enthält. Wenn Sie die Spalte jedoch in mehr als einem Bericht verwenden möchten, müssen Sie sie in der Abfrage für jeden Bericht neu erstellen. Dies bedeutet, dass Spalten, die mit dem [!DNL SQL] -Editor erstellt wurden, nicht im herkömmlichen [!DNL Report Builder] verwendet werden können.
 
 ## Spalten im Data Warehouse-Manager
 
-Die Spalten hängen von den Aktualisierungszyklen ab. Daher muss ein vollständiger Zyklus abgeschlossen sein, bevor sie bearbeitet werden können. Diese Spalten werden im Data Warehouse-Manager gespeichert und können im herkömmlichen [!DNL Report Builder] oder [!DNL SQL Report Builder].
+Die Spalten hängen von den Aktualisierungszyklen ab. Daher muss ein vollständiger Zyklus abgeschlossen sein, bevor sie bearbeitet werden können. Diese Spalten werden im Data Warehouse-Manager gespeichert und können im herkömmlichen [!DNL Report Builder] oder [!DNL SQL Report Builder] verwendet werden.

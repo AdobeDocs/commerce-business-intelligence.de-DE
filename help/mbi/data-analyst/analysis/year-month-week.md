@@ -15,27 +15,27 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dieses Thema enthält Anweisungen für Clients, die die ursprüngliche Architektur und die neue Architektur verwenden. Sie befinden sich auf der [neue Architektur](../../administrator/account-management/new-architecture.md) Wenn Sie über [!DNL _Data Warehouse-Ansichten_] -Bereich nach Auswahl [!DNL Manage Data] aus der Hauptsymbolleiste.
+>Dieses Thema enthält Anweisungen für Clients, die die ursprüngliche Architektur und die neue Architektur verwenden. Sie befinden sich in der [neuen Architektur](../../administrator/account-management/new-architecture.md), wenn der Bereich [!DNL _Data Warehouse-Ansichten_] nach Auswahl von [!DNL Manage Data] in der Hauptsymbolleiste verfügbar ist.
 
 Mit ReportBuilder können Sie Trends im Zeitverlauf einfach anzeigen und die Perspektive für Zeiträume ändern, die Sie vergleichen möchten. In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das eine Ebene tiefer geht und es Ihnen ermöglicht, Berichte für die Analyse von Woche zu Woche, Monat zu Jahr und Jahr zu Jahr zu erstellen.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-Bevor Sie beginnen, sollten Sie die Perspektiven genauer untersuchen [here](../../tutorials/using-visual-report-builder.md) und unabhängige Zeitoptionen [here](../../tutorials/time-options-visual-rpt-bldr.md).
+Bevor Sie beginnen, sollten Sie die Perspektiven genauer betrachten [hier](../../tutorials/using-visual-report-builder.md) und die unabhängigen Zeitoptionen [hier](../../tutorials/time-options-visual-rpt-bldr.md).
 
-Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
+Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Berechnete Spalten
 
 * **`Sales_flat_order`** table
-* **Originalarchitektur:** Die folgenden Spalten werden von einem Analytiker im Rahmen Ihrer `[YoY WoW MoM ANALYSIS]` Ticket
+* **Ursprüngliche Architektur:** Die folgenden Spalten werden von einem Analytiker im Rahmen Ihres `[YoY WoW MoM ANALYSIS]`-Tickets erstellt
 * `created_at (month-day)`
 * `created_at (month)`
 * `created_at (day of the month)`
 * `created_at (day of the week)`
 * `created_at (hour of the day)`
 
-* **Neue Architektur:** Unten aufgeführte SQL mit einem Foto eines Beispiels für die Erstellung dieser Berechnung
+* **Neue Architektur:** SQL mit einem Foto eines Beispiels für die Erstellung dieser Berechnung
    * `created_at (month-day)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-dd&#39;)**
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
@@ -49,7 +49,7 @@ Keine.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass [Metriken alle neuen Spalten als Dimensionen hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) vor der Erstellung neuer Berichte.
+>Stellen Sie sicher, dass Sie [alle neuen Spalten als Dimensionen zu den Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) , bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
@@ -59,7 +59,7 @@ Keine.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
-   * [!UICONTROL Show top/bottom]: Die 100 beliebtesten Sortierungen nach **`created_at (month-day)`***
+   * [!UICONTROL Show top/bottom]: Top 100% sortiert nach **`created_at (month-day)`***
 
 * Metrik `A`: `This year`
 * Metrik `B`: `Last year`
@@ -80,20 +80,20 @@ Keine.
 
 * Metrik `A`: Dieser Monat*
 * Metrik `B`: Letzter Monat*
-* [!UICONTROL Time period]: vor einem Monat bis vor 0 Monaten
+* [!UICONTROL Time period]: Vor einem Monat bis vor 0 Monaten
 * 
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
 * 
   [!UICONTROL Chart Type]: Line
 
-* **WoW-Grafik**
+* **WoW-Diagramm**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
-   * [!UICONTROL Show top/bottom]: Die 100 beliebtesten Sortierungen nach `created_at (day of week)`
+   * [!UICONTROL Show top/bottom]: Top 100% sortiert nach `created_at (day of week)`
 
 * Metrik `A`: `This week`
 * Metrik `B`: `Last week`
@@ -110,7 +110,7 @@ Keine.
    * [!UICONTROL Metric]: `Number of orders`
    * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
-   * [!UICONTROL Show top/bottom]: Die 100 beliebtesten Sortierungen nach `created_at (hour of day)`
+   * [!UICONTROL Show top/bottom]: Top 100% sortiert nach `created_at (hour of day)`
 
 * Metrik `A`: `Today`
 * Metrik B: `Yesterday`

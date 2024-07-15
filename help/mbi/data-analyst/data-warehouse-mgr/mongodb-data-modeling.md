@@ -13,15 +13,15 @@ ht-degree: 1%
 
 # [!DNL MongoDB] Datenmodellierung
 
-Wann [!DNL Adobe Commerce Intelligence] abruft [!DNL MongoDB] -Daten in ein relationales Modell übersetzt werden.
+Wenn [!DNL Adobe Commerce Intelligence] [!DNL MongoDB] -Daten abruft, werden diese Daten in ein relationales Modell übersetzt.
 
-Die schlechte Nachricht: Die meisten Datenmuster werfen zwar kein Problem auf, es gibt jedoch einige wenige, die von [!DNL Commerce Intelligence], da die Übersetzung in ein relationales Modell erfolgt.
+Die schlechte Nachricht: Obwohl die meisten Datenmuster kein Problem darstellen, gibt es einige wenige, die aufgrund der Übersetzung in ein relationales Modell nicht von [!DNL Commerce Intelligence] unterstützt werden.
 
 Die gute Nachricht: All diese Muster lassen sich vermeiden.
 
 ## Subverschachtelte Arrays {#subnested}
 
-Wenn Ihre Sammlung wie im folgenden Beispiel aussieht: [!DNL Commerce Intelligence] repliziert nur die Daten im Elemente-Array. Daten aus dem Array der Unterelemente werden nicht abgerufen.
+Wenn Ihre Sammlung wie das Beispiel unten aussieht, repliziert [!DNL Commerce Intelligence] nur die Daten im Elemente-Array. Daten aus dem Array der Unterelemente werden nicht abgerufen.
 
 ```bash
     {
@@ -43,7 +43,7 @@ Wenn Ihre Sammlung wie im folgenden Beispiel aussieht: [!DNL Commerce Intelligen
 
 ## Variablenobjektschlüssel {#varobjectkeys}
 
-Sammlungen, die Objekte mit variablen Objektschlüsseln enthalten, werden nicht repliziert in [!DNL Commerce Intelligence]. Beispiel:
+Sammlungen, die Objekte mit Variablenobjektschlüsseln enthalten, werden nicht in [!DNL Commerce Intelligence] repliziert. Beispiel:
 
 ```bash
     {

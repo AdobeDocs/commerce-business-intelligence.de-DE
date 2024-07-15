@@ -6,22 +6,22 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
 
 # Vordefinierte Dashboards
 
-[!DNL Adobe Commerce Intelligence] enthält vordefinierte Dashboards, um Einblicke in Ihr Unternehmen zu erhalten. Mit Dashboards können Sie die Konsistenz wichtiger Metriken überprüfen, z. B. den Umsatz während der Lebensdauer der Benutzer, die Anzahl wiederholter Käufe, die wichtigsten über einen bestimmten Zeitraum gekauften Produkte und mehr. Diese vorkonfigurierten Dashboards wurden erstellt, um Sie bei fundierten Geschäftsentscheidungen zu unterstützen.
+[!DNL Adobe Commerce Intelligence] enthält vordefinierte Dashboards, um Einblicke in Ihr Geschäft zu bieten. Mit Dashboards können Sie die Konsistenz wichtiger Metriken überprüfen, z. B. den Umsatz während der Lebensdauer der Benutzer, die Anzahl wiederholter Käufe, die wichtigsten über einen bestimmten Zeitraum gekauften Produkte und mehr. Diese vorkonfigurierten Dashboards wurden erstellt, um Sie bei fundierten Geschäftsentscheidungen zu unterstützen.
 
 >[!NOTE]
 >
->Der Zugriff auf diese Dashboards hängt von Ihrem Kontotyp und Ihrer Zugriffsebene ab. Wenn diese Dashboards nicht angezeigt werden, wenden Sie sich an [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>Der Zugriff auf diese Dashboards hängt von Ihrem Kontotyp und Ihrer Zugriffsebene ab. Wenn diese Dashboards nicht angezeigt werden, wenden Sie sich an [support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Berichtverfügbarkeit
 
-Für `Customers` und `Executive Summary` -Dashboards können Sie einige Berichte nur in Abhängigkeit von der Checkout-Konfiguration Ihres Stores herunterladen. Insbesondere, wenn Ihr Store das Auschecken von Gast erlaubt oder das Auschecken von Gast nicht zulässt.
+Für die Dashboards `Customers` und `Executive Summary` sind einige Berichte nur in Abhängigkeit von der Checkout-Konfiguration Ihres Stores verfügbar. Insbesondere, wenn Ihr Store das Auschecken von Gast erlaubt oder das Auschecken von Gast nicht zulässt.
 
 ## Kunden (Gastkasse erlaubt)
 
@@ -42,7 +42,7 @@ Das Dashboard Kunden (Gastkasse erlaubt) enthält Informationen zu Ihrer Kundenb
 | `Time Between Orders` | Die durchschnittliche und mittlere Zeit, die Kunden zwischen Bestellungen nehmen, aufgegliedert nach Bestellnummer (d. h. die Zeit zwischen Bestellungen 1 und 2, 2 und 3 usw.). |
 | `Number of Customers - Lifetime Orders` | Für eine bestimmte Anzahl von Bestellungen, die während der Lebensdauer eines Kunden aufgegeben werden, stellt die Anzahl der Kunden, die so viele Bestellungen aufgegeben haben, und der Prozentsatz des gesamten Kundenstamms dar, den diese Zahl darstellt. |
 | `One-Time Customers who Bought 3-6 Months Ago` | Kunden, die vor drei bis sechs Monaten ihren ersten Kauf getätigt haben. |
-| `Avg LTV by First Order` | Vergleicht den kumulativen durchschnittlichen Umsatz der Kundenlebensdauer über Kohorten hinweg. Kohorten werden durch den Monat definiert, in dem ein Kunde zum ersten Mal einen Kauf tätigte. Beispiel: eine `Jan 2020` Die Kohorte zeigt die kumulative durchschnittliche LTV-Rate für Kunden, die zum ersten Mal im Januar 2020 gekauft wurden. |
+| `Avg LTV by First Order` | Vergleicht den kumulativen durchschnittlichen Umsatz der Kundenlebensdauer über Kohorten hinweg. Kohorten werden durch den Monat definiert, in dem ein Kunde zum ersten Mal einen Kauf tätigte. Beispielsweise zeigt eine Kohorte mit dem Wert &quot;`Jan 2020`&quot;die kumulative durchschnittliche LTV-Wiedergabe für Kunden, deren erster Kauf im Januar 2020 erfolgte. |
 | `Customer's First 30 Day vs Lifetime Revenue` | Vergleich des durchschnittlichen Umsatzes von Kunden in den 30 Tagen nach ihrem ersten Kauf im Vergleich zur gesamten Lebensdauer. Jede Blase entspricht einer Versandregion, und die Größe jeder Blase entspricht der Anzahl der Kunden, die aus dieser Region erworben wurden. |
 
 ## Kunden (kein Gast-Checkout erlaubt)
@@ -133,7 +133,7 @@ Das Dashboard &quot;Bestellungen&quot;bietet Einblicke in das Transaktionsvolume
 
 ## Produkte
 
-Das Produkt-Dashboard zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Brutto-Merchandise-Wert (GMV) sowie die wichtigsten gekauften und erstatteten Produkte an. Es kann Ihnen dabei helfen, Käufe und Renditen auszugleichen und den Erfolg und die Beliebtheit des Produkts zu bestimmen. Ihr Geschäft muss [zur Rückverfolgung der Erstattungen konfiguriert wurde](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html) für diese Diagramme.
+Das Produkt-Dashboard zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Brutto-Merchandise-Wert (GMV) sowie die wichtigsten gekauften und erstatteten Produkte an. Es kann Ihnen dabei helfen, Käufe und Renditen auszugleichen und den Erfolg und die Beliebtheit des Produkts zu bestimmen. Ihr Store muss [so konfiguriert sein, dass Erstattungen verfolgt werden](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html), damit diese Diagramme ausgefüllt werden.
 
 >[!NOTE]
 >

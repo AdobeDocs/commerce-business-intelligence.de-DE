@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
 source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # Neue Architektur
 
-[!DNL Adobe Commerce Intelligence] Die Produkt- und Engineering-Teams haben sich darauf konzentriert, im letzten Jahr die umfassendsten und dringend geforderten Verbesserungen zu erzielen. Adobe freut sich, Ihnen die Verfügbarkeit eines neuen [!DNL Commerce Intelligence] -Produktarchitektur, die diese Verbesserungen zur Realität werden lässt.
+[!DNL Adobe Commerce Intelligence] Die Produkt- und Engineering-Teams haben sich darauf konzentriert, im letzten Jahr die umfassendsten und dringend geforderten Verbesserungen zu erzielen. Adobe freut sich, Ihnen die Verfügbarkeit einer neuen [!DNL Commerce Intelligence] -Produktarchitektur mitteilen zu können, die diese Verbesserungen ermöglicht.
 
 ## Vorteile der neuen Architektur
 
@@ -45,7 +45,7 @@ Wenn dies abgeschlossen ist, wissen Sie, welche Daten Sie mit der neuen Architek
 
 ### Hilfe erhalten
 
-Die [!DNL Adobe Commerce Intelligence] [Serviceteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) kann Ihre erneute Implementierung gegen zusätzliche Kosten durchführen. Wenden Sie sich an [Adobe Account Team](../../guide-overview.md#Submitting-a-Support-Ticket) und sind bereit, eine Liste von Dashboards/Berichten bereitzustellen, die Sie priorisieren möchten, um sie in dem neuen Konto zu erstellen
+Das [!DNL Adobe Commerce Intelligence] [Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) kann Ihre Neuimplementierung gegen zusätzliche Kosten durchführen. Kontaktieren Sie Ihr [Adobe Account Team](../../guide-overview.md#Submitting-a-Support-Ticket) und bereiten Sie sich darauf vor, eine Liste der Dashboards/Berichte bereitzustellen, die Sie priorisieren möchten, um in dem neuen Konto zu erstellen.
 
 ### Aufenthalt mit vorhandener Architektur
 

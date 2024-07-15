@@ -17,15 +17,15 @@ Wenn Ihre Tabellen derzeit keine inkrementelle Replikation zulassen, finden Sie 
 
 ## Änderungen für geändert am
 
-Die `Modified At` -Methode, die die am besten geeignete Replikationsmethode ist, verwendet eine `datetime` um neue und/oder aktualisierte Daten zu erkennen. Beachten Sie, dass die Variable `datetime` -Spalte in Tabellen, die diese Methode verwenden, muss indiziert sein und darf keine Nullwerte enthalten.
+Die `Modified At` -Methode, die am besten geeignete Replikationsmethode ist, verwendet eine `datetime` -Spalte, um neue und/oder aktualisierte Daten zu erkennen. Beachten Sie, dass die Spalte &quot;`datetime`&quot; in Tabellen, die diese Methode verwenden, indiziert sein muss und keine Nullwerte enthalten darf.
 
-Wenn Ihre Tabelle keine `datetime` können Sie einen Index hinzufügen `modified at` Spalte. Nullwerte sind in einer `modified at` Spalte. Überprüfen Sie, ob die Spalte für jede Zeile gefüllt ist.
+Wenn Ihre Tabelle keine `datetime` -Spalte enthält, können Sie eine Index `modified at` -Spalte hinzufügen. Null-Werte sind in einer `modified at` -Spalte nicht zulässig. Überprüfen Sie, ob die Spalte für jede Zeile gefüllt ist.
 
-Um die `Modified At` -Methode wie gewünscht funktioniert, können Sie keine Zeilen aus der Tabelle löschen. Stattdessen sollten Sie die Zeile als ungültig markieren, indem Sie eine `deleted` in die Tabelle ein. Diese Spalte gibt eine `1` wenn die Zeile ungültig ist und `0` andernfalls. Anschließend können Sie diese Spalte verwenden, um ungültige Zeilen beim Erstellen von Metriken und Berichten herauszufiltern.
+Um sicherzustellen, dass die `Modified At` -Methode wie gewünscht funktioniert, können Sie keine Zeilen aus der Tabelle löschen. Stattdessen sollten Sie die Zeile als ungültig markieren, indem Sie der Tabelle eine `deleted` -Spalte hinzufügen. Diese Spalte gibt einen `1` zurück, wenn die Zeile ungültig ist, andernfalls `0`. Anschließend können Sie diese Spalte verwenden, um ungültige Zeilen beim Erstellen von Metriken und Berichten herauszufiltern.
 
 ## Änderungen für die automatische Erhöhung des Primären Schlüssels
 
-Wenn die Variable `Modified At` -Methode nicht aktiviert werden, ist der Einzelne automatische Inkrementierungs-Primäre Schlüssel die nächste beste Option. Neue Daten werden in Tabellen mit dieser Methode erkannt, indem nach Primärschlüsselwerten gesucht wird, die höher sind als der aktuelle höchste Wert in der Data Warehouse.
+Wenn die `Modified At` -Methode nicht aktiviert werden kann, ist die Option Primärer Einzelner, automatisch inkrementierender Schlüssel die nächste beste Option. Neue Daten werden in Tabellen mit dieser Methode erkannt, indem nach Primärschlüsselwerten gesucht wird, die höher sind als der aktuelle höchste Wert in der Data Warehouse.
 
 Beachten Sie, dass Tabellen, die diese Methode verwenden, eine einzelne Spalte sind, wobei die Ganzzahl automatisch die Primärschlüssel inkrementiert. Um diese Methode in Ihrer Datenbank zu verwenden, nehmen Sie die folgenden Änderungen vor:
 
@@ -34,4 +34,4 @@ Beachten Sie, dass Tabellen, die diese Methode verwenden, eine einzelne Spalte s
 
 ## Aufwischen
 
-Durch geringfügige Änderungen an Ihren Tabellen können Sie die schnelleren und effizienteren Methoden für die inkrementelle Replikation nutzen. Ist dies jedoch nicht möglich, können Sie weitere Schritte ausführen, um [Verkürzen der Aktualisierungszeit](../best-practices/reduce-update-cycle-time.md) und [Datenbank optimieren](../best-practices/opt-db-analysis.md).
+Durch geringfügige Änderungen an Ihren Tabellen können Sie die schnelleren und effizienteren Methoden für die inkrementelle Replikation nutzen. Ist dies jedoch nicht möglich, können Sie weitere Schritte durchführen, um [Ihre Aktualisierungszeit zu reduzieren](../best-practices/reduce-update-cycle-time.md) und [Ihre Datenbank zu optimieren](../best-practices/opt-db-analysis.md).

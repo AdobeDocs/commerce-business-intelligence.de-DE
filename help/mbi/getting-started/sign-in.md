@@ -11,21 +11,21 @@ ht-degree: 0%
 
 ---
 
-# Zugriff auf die aktivierte [!DNL Adobe Commerce Intelligence] account
+# Zugriff auf Ihr aktiviertes [!DNL Adobe Commerce Intelligence] -Konto
 
-Nachdem Sie die [!DNL Commerce Intelligence] entweder für [On-Premise oder Cloud](../getting-started/onpremise-activation.md) und mit Ihrem Adobe Account Team zusammengearbeitet haben, um die Konfigurationsschritte abzuschließen, können Sie sich jetzt bei Ihrem Konto anmelden.
+Nachdem Sie Ihr [!DNL Commerce Intelligence]-Konto für [On-Premise oder Cloud](../getting-started/onpremise-activation.md) aktiviert und mit Ihrem Adobe-Account-Team zusammengearbeitet haben, um die Konfigurationsschritte abzuschließen, können Sie sich jetzt bei Ihrem Konto anmelden.
 
-## Melden Sie sich mit Ihrem [!DNL Adobe ID]
+## Anmelden mit Ihrem [!DNL Adobe ID]
 
-1. Klicks **[!UICONTROL Sign in with Adobe ID]**.
+1. Klicken Sie auf **[!UICONTROL Sign in with Adobe ID]**.
 
-   ![Sign-in-adobe](../assets/sign-in-adobe.png)
+   ![ Sign-in-adobe](../assets/sign-in-adobe.png)
 
-1. Geben Sie die E-Mail-Adresse ein, die Sie bei der Erstellung der [!DNL Commerce Intelligence] -Konto. Wenn Sie noch kein Adobe-Konto haben, klicken Sie auf **[!UICONTROL Create an account]** und geben Sie Ihre Informationen ein. Denken Sie daran, die E-Mail-Adresse zu verwenden, die Sie bei der Erstellung der [!DNL Commerce Intelligence] -Konto. Die E-Mail-Adresse ist der Schlüssel, den Sie für den Zugriff auf Ihr Adobe-Konto benötigen.
+1. Geben Sie die E-Mail-Adresse ein, die Sie beim Erstellen Ihres [!DNL Commerce Intelligence]-Kontos verwendet haben. Wenn Sie noch kein Adobe-Konto haben, klicken Sie auf **[!UICONTROL Create an account]** und geben Sie Ihre Informationen ein. Denken Sie daran, die E-Mail-Adresse zu verwenden, die Sie beim Erstellen Ihres [!DNL Commerce Intelligence]-Kontos verwendet haben. Die E-Mail-Adresse ist der Schlüssel, den Sie für den Zugriff auf Ihr Adobe-Konto benötigen.
 
 >[!NOTE]
 >
->Wenn Sie sich mit Ihrem [!DNL Adobe ID], können Sie Ihre [!DNL Commerce Intelligence] Profilkennwort.
+>Wenn Sie sich mit Ihrem &quot;[!DNL Adobe ID]&quot;-Profil anmelden, können Sie Ihr &quot;[!DNL Commerce Intelligence]&quot;-Profilkennwort nicht ändern.
 
 ## Melden Sie sich mit Ihrem Benutzernamen und Kennwort an.
 

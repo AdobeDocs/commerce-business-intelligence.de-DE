@@ -1,35 +1,35 @@
 ---
-title: Deklarieren der [!DNL Commerce Intelligence] Konto
-description: Erfahren Sie, wie Sie Ihre [!DNL Commerce Intelligence] -Konto.
+title: Löschen Ihres [!DNL Commerce Intelligence] Kontos
+description: Erfahren Sie, wie Sie Ihr [!DNL Commerce Intelligence] Konto bereinigen.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
 
-# Bereinigen Sie Ihre [!DNL Adobe Commerce Intelligence] Konto
+# Bereinigen Sie Ihr [!DNL Adobe Commerce Intelligence]-Konto.
 
-Ob Sie mit [!DNL Commerce Intelligence] Für sechs Monate oder sechs Jahre ist die Führung eines ordentlichen Kontos von größter Bedeutung, damit Ihr Unternehmen die Plattform optimal nutzen kann. Im Laufe der Zeit ist es natürlich, dass es Benutzer, Dashboards, Berichte, Metriken und Spalten gibt, die nicht mehr benötigt werden. Vielleicht haben Sie einen Bericht für die einmalige Verwendung erstellt und ihn vergessen, oder ein Benutzer, der Ihr Unternehmen verlassen hat, hat sein Konto nie deaktiviert.
+Unabhängig davon, ob Sie seit sechs Monaten oder sechs Jahren mit [!DNL Commerce Intelligence] arbeiten, ist die Verwaltung eines ordentlichen Kontos von größter Bedeutung, damit Ihr Unternehmen die Plattform optimal nutzen kann. Im Laufe der Zeit ist es natürlich, dass es Benutzer, Dashboards, Berichte, Metriken und Spalten gibt, die nicht mehr benötigt werden. Vielleicht haben Sie einen Bericht für die einmalige Verwendung erstellt und ihn vergessen, oder ein Benutzer, der Ihr Unternehmen verlassen hat, hat sein Konto nie deaktiviert.
 
-Mit [standardisierte, eindeutige Benennung aller Elemente](../best-practices/naming-elements.md)) Ihrer [!DNL Commerce Intelligence] -Konto verwenden, helfen Ihnen die nachfolgenden Schritte zur Kontoprüfung dabei, die Übersichtlichkeit und unnötige Analysen für Ihre Benutzer zu reduzieren. Ein weiterer Vorteil umfasst [potenziell schnellere Aktualisierungszyklen](../best-practices/reduce-update-cycle-time.md).
+Mit [standardisierter, eindeutiger Benennung für alle Elemente](../best-practices/naming-elements.md)) Ihres [!DNL Commerce Intelligence]-Kontos können Sie mit den nachfolgenden Kontoprüfungsschritten die Übersichtlichkeit und unnötige Analysen für Ihre Benutzer reduzieren. Ein weiterer Vorteil besteht darin, dass [potenziell schnellere Aktualisierungszyklen](../best-practices/reduce-update-cycle-time.md) erzielt werden können.
 
 ## Schritt 1: Identifizieren Ihrer nicht aktiven Benutzer
 
-Der erste Schritt bei der Bereinigung Ihres Kontos besteht darin, die Konten Ihrer nicht aktiven Benutzer zu deaktivieren, z. B. Personen, die das Unternehmen verlassen oder nicht mehr verwenden [!DNL Commerce Intelligence] in ihren aktuellen Rollen.
+Der erste Schritt bei der Bereinigung Ihres Kontos besteht darin, die Konten Ihrer nicht aktiven Benutzer zu deaktivieren, z. B. Personen, die das Unternehmen verlassen haben oder [!DNL Commerce Intelligence] nicht mehr in ihren aktuellen Rollen verwenden.
 
-Klicken Sie dazu in der Navigationsleiste oben rechts auf den Namen Ihres Unternehmens und wählen Sie **[!UICONTROL Manage Users]**. Wählen Sie anschließend den Benutzer aus, den Sie deaktivieren möchten, und klicken Sie auf **[!UICONTROL Deactivate User]**.
+Klicken Sie dazu in der Navigationsleiste oben rechts auf den Namen Ihres Unternehmens und wählen Sie dann **[!UICONTROL Manage Users]** aus. Wählen Sie als Nächstes den Benutzer aus, den Sie deaktivieren möchten, und klicken Sie auf **[!UICONTROL Deactivate User]**.
 
 >[!NOTE]
 >
->Sie benötigen [Administratorberechtigungen](../administrator/user-management/user-management.md) um dies zu tun.
+>Dazu benötigen Sie [Administratorberechtigungen](../administrator/user-management/user-management.md).
 
 >[!WARNING]
 >
->Durch das Deaktivieren eines Benutzers werden die Diagramme, Dashboards und anderen von diesem Benutzer erstellten Assets entfernt. Wenn Sie diese Assets beibehalten möchten, wenden Sie sich an die [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket) Team vor dem Deaktivieren des Benutzers. Die Unterstützung kann Ihnen dabei helfen, diese Assets an einen anderen Benutzer zu übertragen.
+>Durch das Deaktivieren eines Benutzers werden die Diagramme, Dashboards und anderen von diesem Benutzer erstellten Assets entfernt. Wenn Sie diese Assets beibehalten möchten, wenden Sie sich an das Team [!DNL Commerce Intelligence] [support](../guide-overview.md#Submitting-a-Support-Ticket) , bevor Sie den Benutzer deaktivieren. Die Unterstützung kann Ihnen dabei helfen, diese Assets an einen anderen Benutzer zu übertragen.
 
 ### Benutzer erneut aktivieren
 
@@ -41,13 +41,13 @@ Der nächste Schritt bei der Prüfung Ihres Kontos besteht darin, nicht verwende
 
 >[!NOTE]
 >
->Sie benötigen `Admin` oder `Standard` [Benutzerberechtigungen](../administrator/user-management/user-management.md) um dies zu tun.
+>Dazu benötigen Sie `Admin` oder `Standard` [Benutzerberechtigungen](../administrator/user-management/user-management.md).
 
-Jeder Benutzer mit `Admin` oder `Standard` -Zugriff kann Berichte und Dashboards erstellen. Aus diesem Grund müssen alle Benutzer mit diesen Berechtigungen die folgenden Schritte ausführen, um nicht verwendete Berichte zu identifizieren und zu entfernen.
+Jeder Benutzer mit Zugriff auf `Admin` oder `Standard` kann Berichte und Dashboards erstellen. Aus diesem Grund müssen alle Benutzer mit diesen Berechtigungen die folgenden Schritte ausführen, um nicht verwendete Berichte zu identifizieren und zu entfernen.
 
 ### Überprüfen Ihrer Dashboards und Berichte
 
-Bevor Sie irgendetwas löschen, sollten Sie Ihre Berichte und Dashboards überprüfen, um zu bewerten, was aktuell verwendet wird. Während Sie die **[!UICONTROL find unused reports]** weiter unten beschrieben ist, werden Ihre Bereinigungsbemühungen bei jeder ersten Überprüfung wesentlich produktiver.
+Bevor Sie irgendetwas löschen, sollten Sie Ihre Berichte und Dashboards überprüfen, um zu bewerten, was aktuell verwendet wird. Sie können zwar die unten beschriebene **[!UICONTROL find unused reports]**-Funktion verwenden, jedoch werden Ihre Bereinigungsbemühungen bei jeder ersten Überprüfung deutlich produktiver.
 
 ### Löschen von Dashboards und Berichten
 
@@ -56,16 +56,16 @@ Nachdem Sie auf Ihre Dashboards und Berichte zugreifen, können Sie mit der Kont
 **So entfernen Sie einen Bericht aus einem Dashboard**
 
 1. Suchen Sie den Bericht, den Sie entfernen möchten, im Dashboard.
-1. Auswählen **[!UICONTROL Options]** in der oberen rechten Ecke des Berichts.
-1. Klicken **[!UICONTROL Remove From Dashboard]**.
+1. Wählen Sie oben rechts im Bericht **[!UICONTROL Options]** aus.
+1. Klicken Sie auf **[!UICONTROL Remove From Dashboard]**.
 
 **So löschen Sie ein ganzes Dashboard**
 
-1. Auswählen **[!UICONTROL Manage Data]**, dann **[!UICONTROL Dashboards**].
+1. Wählen Sie **[!UICONTROL Manage Data]** und dann **[!UICONTROL Dashboards**].
 1. Klicken Sie auf das Dashboard, das Sie löschen möchten.
-1. Klicken **[!UICONTROL Delete Dashboard]**.
+1. Klicken Sie auf **[!UICONTROL Delete Dashboard]**.
 
-Sie können auch **[!UICONTROL Dashboard Options]**, dann **[!UICONTROL Delete]** aus dem Dashboard selbst.
+Sie können auch &quot;**[!UICONTROL Dashboard Options]**&quot; und &quot;**[!UICONTROL Delete]**&quot; aus dem Dashboard selbst auswählen.
 
 ![](../../mbi/assets/Delete_from_dashboard.png)
 
@@ -75,10 +75,10 @@ Sie können auch **[!UICONTROL Dashboard Options]**, dann **[!UICONTROL Delete]*
 
 **So löschen Sie nicht verwendete Berichte**
 
-1. Auswählen **[!UICONTROL Manage Data]**, dann **[!UICONTROL Reports]**.
-1. Überprüfen Sie die **Nur nicht verwendete Berichte anzeigen** unter der Metrikliste. Dadurch wird eine Liste von Berichten erstellt, die nicht in einem Dashboard oder einer E-Mail-Zusammenfassung verwendet werden.
+1. Wählen Sie **[!UICONTROL Manage Data]** und dann **[!UICONTROL Reports]** aus.
+1. Aktivieren Sie die Option **Nur nicht verwendete Berichte anzeigen** , die sich unter der Metrikliste befindet. Dadurch wird eine Liste von Berichten erstellt, die nicht in einem Dashboard oder einer E-Mail-Zusammenfassung verwendet werden.
 1. Wählen Sie die Berichte aus, die Sie löschen möchten. Sie können alle auswählen, indem Sie auf das Kontrollkästchen über der Berichtsliste klicken.
-1. Klicken **[!UICONTROL Delete Selected]**.
+1. Klicken Sie auf **[!UICONTROL Delete Selected]**.
 
 Im Folgenden finden Sie einen Überblick über den nicht verwendeten Löschvorgang von Berichten:
 
@@ -88,14 +88,14 @@ Im Folgenden finden Sie einen Überblick über den nicht verwendeten Löschvorga
 
 Nachdem Sie die Benutzerliste, die Dashboards und Berichte bereinigt haben, können Sie zur Prüfung Ihrer Metrikenliste übergehen. Auf diese Weise können Sie alles identifizieren, was veraltet sein könnte - z. B. wurde eine neue Metrik mit einer anderen Definition erstellt - oder nicht verwendet wird.
 
-1. Um eine Liste der abhängigen Berichte für eine Metrik zu erstellen, gehen Sie zu **[!DNL Manage Data]** und klicken Sie auf Klicken **[!UICONTROL Metrics]**.
-1. Klicks **[!UICONTROL Edit]** neben einer Metrik.
+1. Um eine Liste der abhängigen Berichte für eine Metrik zu generieren, gehen Sie zu &quot;**[!DNL Manage Data]**&quot;und wählen Sie dann &quot;Klick **[!UICONTROL Metrics]**&quot;.
+1. Klicken Sie neben einer Metrik auf **[!UICONTROL Edit]** .
 1. Unten auf der Seite sehen Sie einen Abschnitt mit dem Namen **[!UICONTROL Dependent Charts]**. Klicken Sie auf den Link, um eine Liste der abhängigen Berichte für diese Metrik zu erstellen.
-1. Nachdem das System die Prüfung abgeschlossen hat, [!DNL Commerce Intelligence] zeigt eine Liste der Dashboards, Berichte und Benutzer an, die diese Metrik verwenden.
+1. Nachdem das System die Prüfung abgeschlossen hat, zeigt [!DNL Commerce Intelligence] eine Liste der Dashboards, Berichte und Benutzer an, die diese Metrik verwenden.
 
 ![](../../mbi/assets/report_dependecies.png)
 
-Wenn Sie entscheiden, dass die Metrik nicht mehr benötigt wird, navigieren Sie zurück zum **[!UICONTROL Metrics]** Seite durch Klicken auf **[!UICONTROL Back to Metric List]** , um die Metrik zu finden, die Sie löschen möchten. Klicken **[!UICONTROL Delete]**.
+Wenn Sie entscheiden, dass die Metrik nicht mehr benötigt wird, navigieren Sie zur Seite &quot;**[!UICONTROL Metrics]**&quot;, indem Sie auf &quot;**[!UICONTROL Back to Metric List]**&quot;klicken, um die Metrik zu finden, die Sie löschen möchten. Klicken Sie auf **[!UICONTROL Delete]**.
 
 ## Schritt 4: Prüfen der synchronisierten Spalten
 
@@ -109,14 +109,14 @@ Wenn Sie dies fortsetzen möchten, wenden Sie sich an [!DNL Commerce Intelligenc
 
 **So heben Sie die Synchronisierung einer Spalte (oder Spalten) auf**
 
-1. Navigieren Sie zu **[!DNL Manage Data]**, dann **[!UICONTROL Data Warehouse]**.
-1. Im **[!UICONTROL Synced Tables]** und navigieren Sie zur Tabelle, die die Spalte enthält.
+1. Gehe zu **[!DNL Manage Data]** und dann zu **[!UICONTROL Data Warehouse]**.
+1. Navigieren Sie in der Liste **[!UICONTROL Synced Tables]** zur Tabelle, die die Spalte enthält.
 1. Aktivieren Sie ein oder mehrere Kontrollkästchen neben einer oder mehreren Spalten, deren Synchronisierung Sie aufheben möchten.
    >[!NOTE]
    >
    >Sie können die Synchronisierung einer Primären Schlüsselspalte nicht aufheben, ohne die gesamte Tabelle abzulegen.
 
-1. Klicks **[!UICONTROL Remove]** , um die Synchronisierung einer oder mehrerer Spalten aufzuheben.
+1. Klicken Sie auf **[!UICONTROL Remove]** , um die Synchronisierung zwischen einer oder mehreren Spalten aufzuheben.
 
 Im Folgenden finden Sie einen Überblick über den gesamten Prozess:
 
@@ -124,4 +124,4 @@ Im Folgenden finden Sie einen Überblick über den gesamten Prozess:
 
 ## Aufwischen
 
-Ihre [!DNL Commerce Intelligence] -Konto sollte jetzt tidier und einfacher zu navigieren für Sie und Ihr Team.
+Ihr [!DNL Commerce Intelligence] -Konto sollte jetzt tidier sein und für Sie und Ihr Team leichter navigieren können.

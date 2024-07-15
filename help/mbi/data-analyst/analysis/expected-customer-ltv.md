@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ In diesem Thema wird gezeigt, wie Sie ein Dashboard einrichten, das Ihnen dabei 
 
 ![](../../assets/exp-lifetim-value-anyalysis.png)
 
-Diese Analyse steht nur Pro-Konto-Kunden in der neuen Architektur zur Verfügung. Wenn Ihr Konto Zugriff auf die `Persistent Views` -Funktion unter `Manage Data` Seitenleiste, befinden Sie sich in der neuen Architektur und können den hier aufgeführten Anweisungen folgen, um diese Analyse selbst zu erstellen.
+Diese Analyse steht nur Pro-Konto-Kunden in der neuen Architektur zur Verfügung. Wenn Ihr Konto Zugriff auf die Funktion `Persistent Views` unter der Seitenleiste `Manage Data` hat, befinden Sie sich in der neuen Architektur und können den hier aufgeführten Anweisungen folgen, um diese Analyse selbst zu erstellen.
 
-Bevor Sie beginnen, möchten Sie sich mit dem [Kohorten-ReportBuilder.](../dev-reports/cohort-rpt-bldr.md)
+Bevor Sie beginnen, sollten Sie sich mit der Berichterstellung für die Kohorte [ vertraut machen.](../dev-reports/cohort-rpt-bldr.md)
 
 ## Berechnete Spalten
 
-Spalten, die für die **Bestellungen** -Tabelle verwenden **30-Tage-Monate**:
+Spalten, die für die Tabelle **Bestellungen** erstellt werden sollen, wenn **30-Tage-Monate** verwendet wird:
 
 * [!UICONTROL Column name]: `Months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
@@ -43,7 +43,7 @@ Spalten, die für die **Bestellungen** -Tabelle verwenden **30-Tage-Monate**:
   [!UICONTROL Datatype]: `Integer`
 * Definition: `case when created_at is null then null else (ceil((extract(epoch from current_timestamp) - extract(epoch from created_at))/2629800))::int end`
 
-Spalten, die für die **`orders`** -Tabelle verwenden **calendar** months:
+Spalten, die für die **`orders`** -Tabelle erstellt werden sollen, wenn **calendar** -Monate verwendet werden:
 
 * [!UICONTROL Column name]: `Calendar months between first order and this order`
 * [!UICONTROL Column type]: `Same Table`
@@ -84,14 +84,14 @@ Zu erstellende Metriken
 * **Unique Customers nach Erstbestellungsdatum**
    * Wenn Sie Gastbestellungen aktivieren, verwenden Sie `customer_email`
 
-* Im **`orders`** table
-* Diese Metrik führt eine **Zählung unterschiedlicher Werte**
-* Im **`customer_id`** column
-* Bestellt von der **`Customer's first order date`** timestamp
+* In der Tabelle **`orders`**
+* Diese Metrik führt einen **Count Distinct Values** aus.
+* In der Spalte **`customer_id`**
+* Durch den Zeitstempel **`Customer's first order date`** geordnet
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass [Metriken alle neuen Spalten als Dimensionen hinzufügen](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) vor der Erstellung neuer Berichte.
+>Stellen Sie sicher, dass Sie [alle neuen Spalten als Dimensionen zu den Metriken hinzufügen](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) , bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
@@ -130,8 +130,8 @@ Weitere Diagrammdetails
 * [!UICONTROL Time period]: `All time`
 * Zeitintervall: `None`
 * [!UICONTROL Group by]: `Calendar months between first order and this order` - Alle anzeigen
-* Ändern Sie die `group by` für die `All time customers` Metrik mithilfe des Stiftsymbols neben dem `group by`
-* Bearbeiten Sie die `Show top/bottom` -Felder wie folgt:
+* Ändern Sie die `group by` für die Metrik `All time customers` mithilfe des Stiftsymbols neben dem `group by` in Unabhängig .
+* Bearbeiten Sie die Felder `Show top/bottom` wie folgt:
    * [!UICONTROL Revenue]: `Top 24 sorted by Calendar months between first order and this order`
    * [!UICONTROL All time customers]: `Top 24 sorted by All time customers`
    * [!UICONTROL All time customers by month since first order]: `Top 24 sorted by All time customers by month since first order`
@@ -154,4 +154,4 @@ Weitere Diagrammdetails
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie das Bild oben auf der Seite aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Wenn Sie beim Erstellen dieser Analyse Fragen haben oder einfach das Professional Services-Team kontaktieren möchten, wenden Sie sich an den Support [.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)

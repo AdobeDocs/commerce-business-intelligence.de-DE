@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Meine Abfrageergebnisse exportieren
 
-Klicks **[!UICONTROL Export Data]** im `Results` -Bereich, um Ihre Ergebnisse in eine `.csv` -Datei.
+Klicken Sie im Bereich `Results` auf **[!UICONTROL Export Data]** , um Ihre Ergebnisse in eine `.csv` -Datei zu exportieren.

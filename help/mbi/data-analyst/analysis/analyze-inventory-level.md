@@ -6,14 +6,14 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
 # Inventarebenen analysieren
 
-In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke in Ihr aktuelles Inventar bietet und Anweisungen für Kunden zur alten Architektur oder zur neuen Architektur enthält. Sie befinden sich in der alten Architektur, wenn Sie nicht über die **[!UICONTROL Data Warehouse Views]** Option unter **[!UICONTROL Manage Data]** Menü. Wenn Sie sich in der alten Architektur befinden, senden Sie eine [neue Supportanfrage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) mit dem Betreff **[!UICONTROL INVENTORY ANALYSIS]** Sobald Sie den vorgesehenen Abschnitt im _Berechnete Spalten_ Anweisungen unten.
+In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke in Ihr aktuelles Inventar bietet und Anweisungen für Kunden zur alten Architektur oder zur neuen Architektur enthält. Sie befinden sich in der alten Architektur, wenn Sie nicht über die Option **[!UICONTROL Data Warehouse Views]** im Menü **[!UICONTROL Manage Data]** verfügen. Wenn Sie sich in der alten Architektur befinden, senden Sie eine [neue Support-Anfrage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) mit dem Betreff **[!UICONTROL INVENTORY ANALYSIS]** , sobald Sie den angegebenen Abschnitt in den Anweisungen unter _Berechnete Spalten_ erreichen.
 
 ## Zu verfolgende Spalten:
 
@@ -39,7 +39,7 @@ In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke
       * 
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `created_at`
+      * Wählen Sie einen [!UICONTROL column]: `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
 
@@ -48,7 +48,7 @@ In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke
       * 
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `created_at`
+      * Wählen Sie einen [!UICONTROL column]: `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
 
@@ -56,14 +56,14 @@ In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke
       * [!UICONTROL Column type]: `Same Table`
       * 
         [!UICONTROL Column equation]: `AGE`
-      * Auswählen [!UICONTROL DATETIME column]: `Product's most recent order date`
+      * Wählen Sie [!UICONTROL DATETIME column]: `Product's most recent order date`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `Many to One`
       * 
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `qty_ordered`
+      * Wählen Sie einen [!UICONTROL column]: `qty_ordered`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
 
@@ -85,28 +85,28 @@ In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `sku`
+      * Wählen Sie einen [!UICONTROL column]: `sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `Product's lifetime number of items sold`
+      * Wählen Sie einen [!UICONTROL column]: `Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `Seconds since product's most recent order date`
+      * Wählen Sie einen [!UICONTROL column]: `Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `Avg products sold per week (all time)`
+      * Wählen Sie einen [!UICONTROL column]: `Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
       * [!UICONTROL Column type]: `Same Table`
@@ -129,7 +129,7 @@ In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke
       * 
         [!UICONTROL Column equation]: `MAX`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `created_at`
+      * Wählen Sie einen [!UICONTROL column]: `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
 
@@ -138,7 +138,7 @@ In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke
       * 
         [!UICONTROL Column equation]: `MIN`
       * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `created_at`
+      * Wählen Sie einen [!UICONTROL column]: `created_at`
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
 
@@ -153,12 +153,12 @@ In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke
       * 
         [!UICONTROL Column equation]: `SUM`
       * [!UICONTROL Path]: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
-      * Wählen Sie eine [!UICONTROL column]: **`qty_ordered`**
+      * Wählen Sie einen [!UICONTROL column]: **`qty_ordered`**
       * [!UICONTROL Filters]:
          * [A] `Ordered products we count`
 
    * **`Avg products sold per week (all time)`**
-      * Wird von einem Analytiker erstellt, wenn Sie die Datei senden **[INVENTORANALYSE]** Support-Anfrage
+      * Wird von einem Analytiker erstellt, wenn Sie Ihre **[INVENTORY ANALYSIS]**-Supportanfrage senden
 
 * **[!UICONTROL cataloginventory_stock_item]** table:
    * **`Sku`**
@@ -166,31 +166,31 @@ In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `sku`
+      * Wählen Sie einen [!UICONTROL column]: `sku`
 
    * **`Product's lifetime number of items sold`**
       * [!UICONTROL Column type]: `One to Many`
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `Product's lifetime number of items sold`
+      * Wählen Sie einen [!UICONTROL column]: `Product's lifetime number of items sold`
 
    * **`Seconds since product's most recent order date`**
       * [!UICONTROL Column type]: `One to Many`
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `Seconds since product's most recent order date`
+      * Wählen Sie einen [!UICONTROL column]: `Seconds since product's most recent order date`
 
    * **`Avg products sold per week (all time)`**
       * [!UICONTROL Column type]: `One to Many`
       * 
         [!UICONTROL Column equation]: `JOINED_COLUMN`
       * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
-      * Wählen Sie eine [!UICONTROL column]: `Avg products sold per week (all time)`
+      * Wählen Sie einen [!UICONTROL column]: `Avg products sold per week (all time)`
 
    * **`Weeks on hand`**
-      * Wird von einem Analytiker erstellt, wenn Sie die Datei senden **[!UICONTROL INVENTORY ANALYSIS]** Support-Anfrage
+      * Wird von einem Analytiker erstellt, wenn Sie Ihre **[!UICONTROL INVENTORY ANALYSIS]**-Supportanfrage senden
 
 +++
 
@@ -200,9 +200,9 @@ In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke
 
 * **[!UICONTROL cataloginventory_stock_item]** table:
    * **`Inventory on hand`**: Diese Metrik führt eine
-      * **Summe** auf
-      * **`qty`** durch die
-      * [Keines] column
+      * **Sum** auf der
+      * **`qty`** -Spalte, sortiert nach der
+      * Spalte [None]
 
 ## Berichte
 
@@ -242,4 +242,4 @@ In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das Einblicke
    * 
      [!UICONTROL Chart type]: `Table`
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Wenn Sie beim Erstellen dieser Analyse Fragen haben oder einfach das Professional Services-Team kontaktieren möchten, wenden Sie sich an den Support [.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)

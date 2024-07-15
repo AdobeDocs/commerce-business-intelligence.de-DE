@@ -16,10 +16,10 @@ ht-degree: 0%
 Sie sind damit vertraut, Abfragen zu entwerfen und als Ansprechpartner für die Datenanalyse zu fungieren. Sie wissen, wie Sie spezifische Antworten auf Datenfragen finden und eine Self-Service-Erfahrung für Ihre Kollegen ermöglichen möchten.
 
 In diesem Abschnitt wird Folgendes veranschaulicht:
-* Daten verbinden und importieren [!DNL Commerce Intelligence]
+* Daten mit [!DNL Commerce Intelligence] verbinden und importieren
 * Anzeigen der Speicherung und Struktur Ihrer Daten in Ihrer Data Warehouse
 * Daten analysieren
-* die [!DNL SQL Report Builder]
+* Verwenden Sie die [!DNL SQL Report Builder]
 
 ## Verwandte
 

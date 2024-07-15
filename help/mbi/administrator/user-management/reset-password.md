@@ -6,15 +6,15 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
 
 # Passwort zurücksetzen
 
-Um Ihr Kennwort zurückzusetzen, klicken Sie auf **[!UICONTROL Reset Password]** unterhalb des Kennwortfelds auf Ihrem [!DNL Adobe Commerce Intelligence] Anmeldeseite. Geben Sie die E-Mail-Adresse für das Benutzerkonto ein und eine E-Mail mit einem Link zum Zurücksetzen des Kennworts wird gesendet.
+Um Ihr Passwort zurückzusetzen, klicken Sie unter dem Kennwortfeld auf Ihrer Anmeldeseite mit [!DNL Adobe Commerce Intelligence] auf **[!UICONTROL Reset Password]** . Geben Sie die E-Mail-Adresse für das Benutzerkonto ein und eine E-Mail mit einem Link zum Zurücksetzen des Kennworts wird gesendet.
 
-Außerdem können Sie Ihr Kennwort in [!DNL Commerce Intelligence] durch Verwendung von **[!UICONTROL Personal Settings]** Seite.
+Außerdem können Sie Ihr Kennwort in [!DNL Commerce Intelligence] ändern, indem Sie die Seite **[!UICONTROL Personal Settings]** verwenden.
 
-Wenn Sie Ihr Kennwort zurücksetzen und aus Ihrem Konto ausgesperrt bleiben, folgen Sie den Anweisungen [Diese Tipps](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html) um das Problem zu erkennen.
+Wenn Sie Ihr Kennwort zurücksetzen und aus Ihrem Konto ausgesperrt bleiben, befolgen Sie [diese Tipps](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html), um das Problem zu erkennen.

@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Formatieren und Importieren von Daten
 
-Wenn Sie eine Integration verwenden, die derzeit nicht von [!DNL Adobe Commerce Intelligence], können Sie weiterhin die [Funktion &quot;Datei-Upload&quot;](using-file-uploader.md) um Ihre Daten in Ihre Data Warehouse zu übertragen. In diesem Thema werden die idealen Datenformate zum Hochladen von E-Commerce-Daten behandelt.
+Wenn Sie eine Integration verwenden, die derzeit nicht von [!DNL Adobe Commerce Intelligence] unterstützt wird, können Sie weiterhin die Funktion [Datei-Upload](using-file-uploader.md) verwenden, um Ihre Daten in Ihre Data Warehouse zu übertragen. In diesem Thema werden die idealen Datenformate zum Hochladen von E-Commerce-Daten behandelt.
 
 ## `Orders` table
 
-Die `orders` -Tabelle sollte für jede Transaktion, die das Unternehmen getätigt hat, eine Zeile enthalten. Mögliche Spalten:
+Die Tabelle `orders` sollte für jede Transaktion, die das Unternehmen ausgeführt hat, eine Zeile enthalten. Mögliche Spalten:
 
 | Spaltenname | Beschreibung |
 |----|----|
@@ -25,7 +25,7 @@ Die `orders` -Tabelle sollte für jede Transaktion, die das Unternehmen getätig
 | `Customer` | Der Kunde, der die Bestellung aufgegeben hat. |
 | `Order total` | Die Gesamtbestellung. Dies kann eine berechenbasierte Spalte sein, in der Werte in anderen Spalten - wie z. B. Zwischensumme und Versand - die Summe für diese Spalte ausmachen. |
 | `Currency` | Die Währung, in der die Bestellung bestellt wurde. Gegebenenfalls einschließen. |
-| ` Order status` | Der Status der Bestellung, z. B. `In Progress`, `Refunded`oder `Complete`. Der Wert dieser Spalte ändert sich (falls nicht vollständig). Neue und aktualisierte Daten können mit der [Funktion &quot;Daten anhängen&quot;](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) auf `File Uploads` Seite. |
+| ` Order status` | Der Status der Reihenfolge, z. B. `In Progress`, `Refunded` oder `Complete`. Der Wert dieser Spalte ändert sich (falls nicht vollständig). Neue und aktualisierte Daten können mit der Funktion [Daten anhängen](../../../data-analyst/importing-data/connecting-data/using-file-uploader.md) auf der Seite `File Uploads` importiert werden. |
 | `Acquisition/marketing channel` | Der Akquise- oder Marketingkanal, von dem der Kunde, der die Bestellung aufgegeben hat, verwiesen wurde. |
 | `Order datetime` | Datum und Uhrzeit der Erstellung der Bestellung. |
 | `Order updated at` | Datum und Uhrzeit der letzten Änderung am Bestelldatensatz. |
@@ -34,11 +34,11 @@ Die `orders` -Tabelle sollte für jede Transaktion, die das Unternehmen getätig
 
 ## `Order detail/items` table {#itemstable}
 
-Die `order_detail / items` -Tabelle sollte für jedes einzelne Element in jeder Reihenfolge eine Zeile enthalten. Mögliche Spalten:
+Die Tabelle `order_detail / items` sollte für jedes einzelne Element in jeder Reihenfolge eine Zeile enthalten. Mögliche Spalten:
 
 | Spaltenname | Beschreibung |
 |----|----|
-| `Order item ID` | Die Bestellelement-ID sollte für jede Zeile in der Tabelle eindeutig sein. Außerdem ist dies normalerweise der `primary key` für die Tabelle. |
+| `Order item ID` | Die Bestellelement-ID sollte für jede Zeile in der Tabelle eindeutig sein. Dies ist normalerweise der `primary key` für die Tabelle. |
 | `Order ID` | Die ID der Bestellung. |
 | `Product ID` | Die Kennung des Produkts. |
 | `Product name` | Der Name des Produkts. |
@@ -47,7 +47,7 @@ Die `order_detail / items` -Tabelle sollte für jedes einzelne Element in jeder 
 
 ## `Customers` table {#customerstable}
 
-Die `customers` sollte für jedes Kundenkonto eine Zeile enthalten. Mögliche Spalten:
+Die Tabelle `customers` sollte für jedes Kundenkonto eine Zeile enthalten. Mögliche Spalten:
 
 | Spaltenname | Beschreibung |
 |----|----|
@@ -60,7 +60,7 @@ Die `customers` sollte für jedes Kundenkonto eine Zeile enthalten. Mögliche Sp
 
 ## `Subscription payments` table
 
-Die `subscriptions` sollte für jede Abonnement-Zahlung eine Zeile enthalten. Mögliche Spalten:
+Die Tabelle `subscriptions` sollte für jede Abonnement-Zahlung eine Zeile enthalten. Mögliche Spalten:
 
 | Spaltenname | Beschreibung |
 |----|----|

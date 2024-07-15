@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Diagrammdateninformationen
 
-Nehmen Sie Ihre Wahl - einfach Englisch oder die Metrikdefinition. Benutzer können Diagramme kommentieren und die Metriken und Formeln in einem Diagramm anzeigen, indem sie auf die _Informationen_ in der oberen rechten Ecke eines jeden Diagramms angezeigt.
+Nehmen Sie Ihre Wahl - einfach Englisch oder die Metrikdefinition. Benutzer können Diagramme kommentieren und die Metriken und Formeln in einem Diagramm anzeigen, indem sie auf das Symbol _Informationen_ oben rechts in einem beliebigen Diagramm klicken.
 
 ## Verwandte:
 

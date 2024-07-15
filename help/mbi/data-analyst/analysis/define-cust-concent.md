@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -15,81 +15,81 @@ ht-degree: 0%
 
 Dieses Thema zeigt, wie Sie ein Dashboard einrichten, mit dem Sie messen können, wie der Gesamtumsatz auf Ihre Kundenbasis verteilt wird. Erfahren Sie, welcher Prozentsatz der Kunden zu welchem Prozentsatz des Umsatzes beitragen, und erstellen Sie segmentierte Listen, um Ihre wichtigsten Kunden am besten zu vermarkten und zu halten.
 
-Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
+Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Erste Schritte
 
 Sie müssen zunächst eine Datei hochladen, die nur einen Primärschlüssel mit dem Wert 1 enthält. Dies ermöglicht die Erstellung einiger erforderlicher berechneter Spalten für die Analyse.
 
-Sie können [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild, um Ihre Datei zu formatieren.
+Sie können [den Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild verwenden, um Ihre Datei zu formatieren.
 
 ## Berechnete Spalten
 
-Wenn Sie sich in der ursprünglichen Architektur befinden (z. B. wenn Sie nicht über die `Data Warehouse Views` Option unter `Manage Data` ), sollten Sie sich an das Supportteam wenden, um die folgenden Spalten zu erstellen. In der neuen Architektur können diese Spalten aus dem `Manage Data > Data Warehouse` Seite. Im Folgenden finden Sie ausführliche Anweisungen.
+Wenn Sie sich in der Originalarchitektur befinden (z. B. wenn Sie die Option `Data Warehouse Views` unter dem Menü `Manage Data` nicht haben), wenden Sie sich an das Supportteam, um die folgenden Spalten zu erstellen. In der neuen Architektur können diese Spalten über die Seite `Manage Data > Data Warehouse` erstellt werden. Im Folgenden finden Sie ausführliche Anweisungen.
 
-Eine weitere Unterscheidung wird getroffen, wenn Ihr Unternehmen Gastaufträge zulässt. Wenn ja, können Sie alle Schritte für die `customer_entity` Tabelle. Wenn Gastaufträge nicht zulässig sind, ignorieren Sie alle Schritte für die `sales_flat_order` Tabelle.
+Eine weitere Unterscheidung wird getroffen, wenn Ihr Unternehmen Gastaufträge zulässt. Wenn dies der Fall ist, können Sie alle Schritte für die Tabelle `customer_entity` ignorieren. Wenn Gastaufträge nicht zulässig sind, ignorieren Sie alle Schritte für die Tabelle `sales_flat_order` .
 
 Zu erstellende Spalten
 
 * `Sales_flat_order/customer_entity` table
-* (Eingabe) `reference`
-* [!UICONTROL Column type]: – `Same table > Calculation`
-* [!UICONTROL Inputs]: – `entity_id`
-* [!UICONTROL Calculation]: - **Wenn A null ist, dann null else 1 end**
-* [!UICONTROL Datatype]: – `Integer`
+* (input) `reference`
+* [!UICONTROL Column type]: - `Same table > Calculation`
+* [!UICONTROL Inputs]: - `entity_id`
+* [!UICONTROL Calculation]: - **Fall, wenn A null ist, dann null else 1 end**
+* [!UICONTROL Datatype]: - `Integer`
 
-* `Customer concentration` table (dies ist die Datei, die Sie mit der Nummer hochgeladen haben `1`)
+* `Customer concentration` Tabelle (dies ist die Datei, die Sie mit der Zahl `1` hochgeladen haben)
 * Anzahl der Kunden
-* [!UICONTROL Column type]: – `Many to One > Count Distinct`
+* [!UICONTROL Column type]: - `Many to One > Count Distinct`
 * Pfad - `sales_flat_order.(input) reference > Customer Concentration.Primary Key` ODER `customer_entity.(input)reference > Customer Concentration.Primary Key`
 * Ausgewählte Spalte - `sales_flat_order.customer_email` ODER `customer_entity.entity_id`
 
 * `customer_entity` table
 * Anzahl der Kunden
-* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
 * Pfad - `customer_entity.(input) reference > Customer Concentration. Primary Key`
 * Ausgewählte Spalte - `Number of customers`
 
-* (Eingabe) `Ranking by customer lifetime revenue`
-* [!UICONTROL Column type]: – `Same table > Event Number`
+* (input) `Ranking by customer lifetime revenue`
+* [!UICONTROL Column type]: - `Same table > Event Number`
 * Ereigniseigentümer - `Number of customers`
 * Ereignisrang - `Customer's lifetime revenue`
 
 * Umsatz-Perzentil des Kunden
-* [!UICONTROL Column type]: – `Same table > Calculation`
-* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **Wenn A null ist, dann null else (A/B)* 100 Ende **
-* [!UICONTROL Datatype]: – `Decimal`
+* [!UICONTROL Column type]: - `Same table > Calculation`
+* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Calculation]: - **Fall, wenn A null ist, dann null else (A/B)* 100 end **
+* [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order` table
 * Anzahl der Kunden
-* [!UICONTROL Column type]: – `One to Many > JOINED_COLUMN`
+* [!UICONTROL Column type]: - `One to Many > JOINED_COLUMN`
 * Pfad - `sales_flat_order.(input) reference > Customer Concentration.Primary Key`
 * Ausgewählte Spalte - `Number of customers`
 
 * (Eingabe) Rangfolge nach Kundenlebenszeitumsatz
-* [!UICONTROL Column type]: – `Same table > Event Number`
+* [!UICONTROL Column type]: - `Same table > Event Number`
 * Ereigniseigentümer - `Number of customers`
 * Ereignisrang - `Customer's lifetime revenue`
 * Filter - `Customer's order number = 1`
 
 * Umsatz-Perzentil des Kunden
-* [!UICONTROL Column type]: – `Same table > Calculation`
-* [!UICONTROL Inputs]: – `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **Wenn A null ist, dann null else (A/B)* 100 Ende **
+* [!UICONTROL Column type]: - `Same table > Calculation`
+* [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
+* [!UICONTROL Calculation]: - **Fall, wenn A null ist, dann null else (A/B)* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
 >
->Die verwendeten Perzentile sind sogar Kundenaufteilungen, die das Xte Perzentil Ihrer Kundenbasis darstellen. Jeder Kunde ist mit einer Ganzzahl von 1 bis 100 verknüpft, die als Lebensdauerumsatz betrachtet werden kann *rank*. Wenn beispielsweise das Umsatzperzentil des Kunden für einen bestimmten Kunden **5**, befindet sich dieser Kunde im ***fünftes Perzentil*** des Gesamtumsatzes aller Kunden.
+>Die verwendeten Perzentile sind sogar Kundenaufteilungen, die das Xte Perzentil Ihrer Kundenbasis darstellen. Jeder Kunde ist mit einer Ganzzahl von 1 bis 100 verknüpft, die als ihr Lebensdauerumsatz *rank* betrachtet werden kann. Wenn beispielsweise das Umsatzperzentil des Kunden für einen bestimmten Kunden **5** beträgt, liegt dieser Kunde im ***fünften Perzentil*** aller Kunden in Bezug auf den Umsatz während der Lebensdauer.
 
 ## Metriken
 
 * **Gesamtwert der Kundenlebensdauer**
-* Im `customer_entity` table
-* Diese Metrik führt eine **Summe**
-* Im `Customer's lifetime revenue` column
-* Bestellt von der `Customer's first order date` timestamp
+* In der Tabelle `customer_entity`
+* Diese Metrik führt eine **Summe** aus.
+* In der Spalte `Customer's lifetime revenue`
+* Durch den Zeitstempel `Customer's first order date` geordnet
 
 ## Berichte
 
@@ -112,7 +112,7 @@ Zu erstellende Spalten
 * 
   [!UICONTROL Chart type]: `Line`
 
-* **Top-10-%-Konzentration**
+* **Top 10% Konzentration**
 * [!UICONTROL Filter]: `Customer's revenue percentile <= 10`
 
 * Metrik `A`: `Total customer lifetime revenue`
@@ -125,7 +125,7 @@ Zu erstellende Spalten
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **Unterste Konzentration von 50 % bei nur einem Kauf**
+* **Unterste Konzentration von 50 % mit nur einem Kauf**
 
 * Metrik `A`: `Total customer lifetime revenue`
 * `Customer's revenue percentile <= 50`
@@ -141,7 +141,7 @@ Zu erstellende Spalten
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **Konzentration unter 10 %**
+* **Unterste 10 % Konzentration**
 * [!UICONTROL Filter]: `Customer's revenue percentile > 90`
 
 * Metrik `A`: `Total customer lifetime revenue`
@@ -156,4 +156,4 @@ Zu erstellende Spalten
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie im obigen Beispiel-Dashboard aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Wenn Sie beim Erstellen dieser Analyse Fragen haben oder einfach das Professional Services-Team kontaktieren möchten, wenden Sie sich an den Support [.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)

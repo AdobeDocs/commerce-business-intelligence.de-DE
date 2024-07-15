@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ In diesem Thema wird gezeigt, wie Sie ein Dashboard einrichten, mit dem Sie die 
 
 ![](../../assets/churn-deashboard.png)
 
-Diese Analyse enthält [Erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
+Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Berechnete Spalten
 
@@ -26,8 +26,8 @@ Zu erstellende Spalten
 * `customer_entity` table
 * `Customer's lifetime number of orders`
 * Wählen Sie eine Definition aus: `Count`
-* Wählen Sie eine [!UICONTROL table]: `sales_flat_order`
-* Wählen Sie eine [!UICONTROL column]: **`entity_id`**
+* Wählen Sie einen [!UICONTROL table]: `sales_flat_order`
+* Wählen Sie einen [!UICONTROL column]: **`entity_id`**
 * [!UICONTROL Path]: sales_flach_order.customer_id = customer_entity.entity_id
 * [!UICONTROL Filter]:
 * Bestellungen, die gezählt werden
@@ -35,20 +35,20 @@ Zu erstellende Spalten
 * `sales_flat_order` table
 * `Customer's lifetime number of orders`
 * Definition auswählen: Verbundene Spalte
-* Wählen Sie eine [!UICONTROL table]: `customer_entity`
-* Wählen Sie eine [!UICONTROL column]: `Customer's lifetime number of orders`
+* Wählen Sie einen [!UICONTROL table]: `customer_entity`
+* Wählen Sie einen [!UICONTROL column]: `Customer's lifetime number of orders`
 * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 * [!UICONTROL Filter]: `Orders we count`
 
 * `Seconds since created_at`
 * Wählen Sie eine Definition aus: `Age`
-* Wählen Sie eine [!UICONTROL column]: `created_at`
+* Wählen Sie einen [!UICONTROL column]: `created_at`
 
-* **`Customer's order number`** von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
-* **`Is customer's last order`** von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
-* **`Seconds since previous order`** von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
-* **`Months since order`** von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
-* **`Months since previous order`** von einem Analytiker im Rahmen Ihrer **[CHURN DEFINIEREN]** Ticket
+* **`Customer's order number`** wird von einem Analysten im Rahmen Ihres **[DEFINING CHURN]**-Tickets erstellt
+* **`Is customer's last order`** wird von einem Analysten im Rahmen Ihres **[DEFINING CHURN]**-Tickets erstellt
+* **`Seconds since previous order`** wird von einem Analysten im Rahmen Ihres **[DEFINING CHURN]**-Tickets erstellt
+* **`Months since order`** wird von einem Analysten im Rahmen Ihres **[DEFINING CHURN]**-Tickets erstellt
+* **`Months since previous order`** wird von einem Analysten im Rahmen Ihres **[DEFINING CHURN]**-Tickets erstellt
 
 ## Metriken
 
@@ -56,11 +56,11 @@ Keine neuen Metriken!
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass [Metriken alle neuen Spalten als Dimensionen hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) vor der Erstellung neuer Berichte.
+>Stellen Sie sicher, dass Sie [alle neuen Spalten als Dimensionen zu den Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) , bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
-* **anfängliche Wiederholungsreihenwahrscheinlichkeit**
+* **anfängliche Wiederholungsauftragswahrscheinlichkeit**
 * Metrik A: Wiederholungsaufträge in Echtzeit
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
@@ -68,7 +68,7 @@ Keine neuen Metriken!
 * Metrik B: Allzeitbestellungen
 * [!UICONTROL Metric]: Anzahl der Bestellungen
 
-* [!UICONTROL Formula]: anfängliche Wiederholungsauftragswahrscheinlichkeit
+* [!UICONTROL Formula]: Anfangswahrscheinlichkeit der Wiederholungsreihenfolge
 * 
   [!UICONTROL Formel]: `A/B`
 * 
@@ -107,7 +107,7 @@ Keine neuen Metriken!
 * 
   [!UICONTROL Gruppe von]: `Independent`
 
-* [!UICONTROL Formula]: anfängliche Wiederholungsauftragswahrscheinlichkeit
+* [!UICONTROL Formula]: Anfangswahrscheinlichkeit der Wiederholungsreihenfolge
 * 
   [!UICONTROL Formel]: `(C-A)/(C+D-A-B)`
 * 
@@ -128,8 +128,8 @@ Die Formel, die Sie verwenden, vereinfacht die Verwendung von (Gesamtanzahl der 
 
 Nachdem Sie Ihr Dashboard erstellt haben, lautet die häufigste Frage: Wie kann ich damit einen Abwanderungsschwellenwert bestimmen?
 
-**Darauf gibt es keine &quot;richtige Antwort&quot;.** Adobe empfiehlt jedoch, den Punkt zu ermitteln, an dem die Linie den Wert überschreitet, der der Hälfte der anfänglichen Wiederholwahrscheinlichkeitsrate entspricht. An dieser Stelle können Sie sagen: &quot;Wenn ein Benutzer eine Wiederholungsreihenfolge durchführt, hätte er dies wahrscheinlich bis jetzt getan.&quot; Letztlich besteht das Ziel darin, die Schwelle auszuwählen, an der es sinnvoll ist, von &quot;Bindung&quot;zu &quot;Reaktivierung&quot;zu wechseln.
+**Hierauf gibt es keine &quot;richtige Antwort&quot;.** Adobe empfiehlt jedoch, den Punkt zu ermitteln, an dem die Zeile den Wert überschreitet, der der Hälfte der anfänglichen Wiederholwahrscheinlichkeitsrate entspricht. An dieser Stelle können Sie sagen: &quot;Wenn ein Benutzer eine Wiederholungsreihenfolge durchführt, hätte er dies wahrscheinlich bis jetzt getan.&quot; Letztlich besteht das Ziel darin, die Schwelle auszuwählen, an der es sinnvoll ist, von &quot;Bindung&quot;zu &quot;Reaktivierung&quot;zu wechseln.
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie das Bild oben auf der Seite aussehen
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Wenn Sie beim Erstellen dieser Analyse Fragen haben oder einfach das Professional Services-Team kontaktieren möchten, wenden Sie sich an den Support [.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)

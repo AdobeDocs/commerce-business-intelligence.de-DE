@@ -17,4 +17,4 @@ Die Möglichkeit, den Lebenszeitwert von Kunden vorherzusagen, wenn sie mehr Bes
 
 In diesem Abschnitt erfahren Sie mehr über den Lebenszeitwert Ihrer aktuellen Kunden und prognostizieren, wie der Lebenszeitwert mit mehr Bestellungen zunimmt.
 
-Siehe auch: [Analyse des erwarteten Lebenszeitwerts (Basis)](../../data-analyst/analysis/ess-expected-ltv.md)
+Siehe auch: [Analyse des erwarteten Lebenszeitwerts (LTV) (Standard)](../../data-analyst/analysis/ess-expected-ltv.md)

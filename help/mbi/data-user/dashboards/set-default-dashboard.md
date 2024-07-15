@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Standard-Dashboard einrichten
 
-Das Standard-Dashboard ist das erste Dashboard, das Sie beim Öffnen sehen [!DNL Commerce Intelligence].
+Das Standard-Dashboard ist das erste Dashboard, das Sie beim Öffnen von [!DNL Commerce Intelligence] sehen.
 
-1. Klicken Sie im Dashboard auf **[!UICONTROL Dashboard Options]** befindet sich oben auf dem Bildschirm.
+1. Klicken Sie im Dashboard oben im Bildschirm auf **[!UICONTROL Dashboard Options]** .
 
-1. Klicks **[!UICONTROL Make Default]** in der Dropdown-Liste.
+1. Klicken Sie im Dropdown-Menü auf **[!UICONTROL Make Default]** .
 
 1. Wenn die Bestätigungsaufforderung angezeigt wird, klicken Sie auf **[!UICONTROL Yes]** , um das Standard-Dashboard zu ändern.
 

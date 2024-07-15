@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Dashboards
 
-[!DNL Adobe Commerce Intelligence] Dashboards bieten einen Überblick über die Leistung und Verkaufsaktivitäten Ihres Stores. Einzelne Dashboards können für andere Benutzer freigegeben und in logische Gruppen unterteilt werden. Sie können auch verschiedene Berechtigungsstufen für andere Benutzer festlegen.
+[!DNL Adobe Commerce Intelligence] Dashboards geben Ihnen einen Überblick über die Leistung und Verkaufsaktivitäten Ihres Stores auf einen Blick. Einzelne Dashboards können für andere Benutzer freigegeben und in logische Gruppen unterteilt werden. Sie können auch verschiedene Berechtigungsstufen für andere Benutzer festlegen.
 
 Es ist einfach, einen Bericht zu erstellen, ihn einem Dashboard hinzuzufügen und die Daten nach Excel zu exportieren. Grafiken und Berichte können in der Größe angepasst und in die Position des Dashboards gezogen werden.
 
@@ -23,11 +23,11 @@ Es ist einfach, einen Bericht zu erstellen, ihn einem Dashboard hinzuzufügen un
 
 Dashboards sind freigebbare thematische Behälter für die Analysen, die Sie in den Report Buildern erstellen. Auf diese Weise können Sie Ihr Team ermutigen, zusammenzuarbeiten und eine einzige Quelle der Wahrheit in Ihrem Unternehmen zu erhalten.
 
-*Wenn Sie Administrator oder Standardbenutzer sind*, können Sie ein Dashboard erstellen, indem Sie auf `Dashboard Options` Dropdown und Auswählen `Create New dashboard`.
+*Wenn Sie Administrator oder Standardbenutzer sind*, können Sie ein Dashboard erstellen, indem Sie auf das Dropdown-Menü `Dashboard Options` klicken und `Create New dashboard` auswählen.
 
 Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie können die Elemente im Dashboard beliebig anordnen und ihre Größe ändern.
 
-![Größe des Dashboard-Elements ändern](../../assets/arrange_resize_dashboard_element.gif)
+![Größe des Dashboard-Elements anordnen](../../assets/arrange_resize_dashboard_element.gif)
 
 ### Dashboard erstellen
 
@@ -37,15 +37,15 @@ Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie kön
 
    ![Dashboard erstellen](../../assets/magento-bi-dashboard-create.png)
 
-1. Klicken **[!UICONTROL Create Dashboard]**. Führen Sie dann die folgenden Schritte aus:
+1. Klicken Sie auf **[!UICONTROL Create Dashboard]**. Führen Sie dann die folgenden Schritte aus:
 
-   * Geben Sie einen `Name` für Ihr Dashboard.
+   * Geben Sie einen `Name` für Ihr Dashboard ein.
 
-   * So erstellen Sie eine `Group` Geben Sie für das Dashboard den Namen der Gruppe ein.
+   * Um eine `Group` für das Dashboard zu erstellen, geben Sie den Namen der Gruppe ein.
 
      Wenn Ihre Commerce-Installation beispielsweise über mehrere Store-Ansichten verfügt, können Sie für jede Store-Ansicht eine Gruppe erstellen.
 
-   * Klicken **[!UICONTROL Create]**.
+   * Klicken Sie auf **[!UICONTROL Create]**.
 
    ![Dashboard-Name](../../assets/magento-bi-dashboard-create-name.png)
 
@@ -55,13 +55,13 @@ Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie kön
 
 1. Führen Sie einen der folgenden Schritte aus, um einen Bericht hinzuzufügen:
 
-   * Klicken Sie auf **[!UICONTROL Add a report]** auf der Seite.
+   * Klicken Sie auf die Eingabeaufforderung **[!UICONTROL Add a report]** auf der Seite.
 
    * Klicken Sie in der Dashboard-Kopfzeile auf **[!UICONTROL Add Report]**.
 
      ![Bericht hinzufügen](../../assets/magento-bi-dashboard-create-add-report.png)
 
-1. Klicks **[!UICONTROL Create Report]** , um **[!UICONTROL Report Builder Options]**.
+1. Klicken Sie auf **[!UICONTROL Create Report]** , um den **[!UICONTROL Report Builder Options]** anzuzeigen.
 
    ![Report Builder Options](../../assets/magento-bi-report-builder.png)
 
@@ -77,45 +77,45 @@ In **[!DNL Manage Data** > **Dashboards]** können Sie Benutzerberechtigungen f�
 
 ### Dashboards freigeben {#sharingdash}
 
-Skalierbarkeit [!DNL Commerce Intelligence] Adobe ermutigt Sie, Dashboards, die Sie erstellen, für andere Teammitglieder freizugeben und wertvolle Einblicke zu bieten. *Sie können eigene Dashboards freigeben* durch Klicken auf `Share Dashboard` -Option oben auf der Seite.
+Um in Ihrer Organisation wirklich [!DNL Commerce Intelligence] zu skalieren und wertvolle Einblicke zu erhalten, empfiehlt Ihnen Adobe, Dashboards, die Sie erstellen, mit anderen Team-Mitgliedern zu teilen. *Sie können Dashboards freigeben, deren Inhaber Sie sind*, indem Sie oben auf der Seite auf die Option `Share Dashboard` klicken.
 
 Wenn Sie ein Dashboard freigeben, können Sie Ihrer gesamten Organisation ODER individuell Berechtigungen zuweisen, sodass Sie entscheiden können, wer Ihre Berichte anzeigen und bearbeiten kann.
 
 >[!NOTE]
 >
->`Read-Only` -Benutzer haben nur Zugriff auf Dashboards, die direkt für sie freigegeben sind. Sie können nicht allein nach Dashboards suchen und diese hinzufügen. Vergessen Sie nicht, sie in der Schleife zu halten!
+>`Read-Only` Benutzer haben nur Zugriff auf Dashboards, die direkt für sie freigegeben sind. Sie können nicht allein nach Dashboards suchen und diese hinzufügen. Vergessen Sie nicht, sie in der Schleife zu halten!
 
 ### Zugreifen auf freigegebene Dashboards {#accessshared}
 
-*Wenn Sie Administrator- oder Standardbenutzer sind* Sie möchten Ihrem Konto ein freigegebenes Dashboard hinzufügen, indem Sie auf **[!UICONTROL Dashboard Options]** und klicken Sie anschließend auf **[!UICONTROL Find]** in der Dropdown-Liste.
+*Wenn Sie Administrator oder Standardbenutzer sind* und Ihrem Konto ein freigegebenes Dashboard hinzufügen möchten, können Sie dies tun, indem Sie auf **[!UICONTROL Dashboard Options]** klicken und dann im Dropdown-Menü auf **[!UICONTROL Find]** klicken.
 
-![Dashboard finden](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
+![Dashboard suchen](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
 
 ### Dashboard-Einstellungen verwalten
 
 1. Klicken Sie im Menü auf **[!DNL Manage Data** > **Dashboards]**.
 
-1. Falls zutreffend, geben Sie eine neue `Dashboard Name`.
+1. Falls zutreffend, geben Sie einen neuen `Dashboard Name` ein.
 
-1. So weisen Sie das Dashboard einer bestimmten `Dashboard Group`, wählen Sie aus der Liste der Gruppen aus.
+1. Um das Dashboard einer bestimmten `Dashboard Group` zuzuweisen, wählen Sie aus der Gruppenliste aus.
 
    **`Permissions`**
 
    Gehen Sie wie folgt vor, um allen Benutzern denselben Zugriff auf das Dashboard zu gewähren:
 
-   1. under **`Shared with`** wählen Sie eine der folgenden Optionen aus:
+   1. Wählen Sie unter **`Shared with`** eine der folgenden Optionen aus:
 
       * `View`
       * `Edit`
       * `None`
 
-   1. Klicken Sie bei Aufforderung zur Bestätigung auf **[!UICONTROL OK]** , um die Berechtigungsebene für jeden Benutzer zu aktualisieren.
+   1. Wenn Sie zur Bestätigung aufgefordert werden, klicken Sie auf **[!UICONTROL OK]** , um die Berechtigungsebene für jeden Benutzer zu aktualisieren.
 
    1. Um die Berechtigungsstufe einer Person zu ändern, suchen Sie den Benutzer in der Liste, um die Berechtigungsebene zu ändern. Die Änderung wird automatisch gespeichert.
 
    **`Default`**
 
-   1. Damit dieses Dashboard zum Standard für Ihre [!DNL Commerce Intelligence] Konto, klicken Sie **[!UICONTROL Make Default]**.
+   1. Um dieses Dashboard als Standard für Ihr [!DNL Commerce Intelligence] -Konto festzulegen, klicken Sie auf **[!UICONTROL Make Default]**.
 
    **`Remove`**
 

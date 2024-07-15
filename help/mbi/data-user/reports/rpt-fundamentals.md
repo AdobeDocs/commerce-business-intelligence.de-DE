@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Verwenden eines Berichts
 
-Verwenden von Berichten in [!DNL Adobe Commerce Intelligence] um Ihnen bei der Beantwortung von Geschäftsfragen zu helfen - ob Sie einfach den Umsatz dieses Monats im Vergleich zum letzten Jahr sehen oder Ihre Akquisekosten für Ihre neuesten [!DNL Google AdWords] Kampagne.
+Verwenden Sie Berichte in [!DNL Adobe Commerce Intelligence] , um Ihnen bei der Beantwortung von Geschäftsfragen zu helfen - ob Sie einfach den Umsatz dieses Monats im Vergleich zum letzten Jahr sehen möchten oder Ihre Akquisekosten für Ihre neueste [!DNL Google AdWords]-Kampagne verstehen möchten.
 
 Wie sieht der Weg von Frage zu Antwort genau aus?
 
@@ -45,26 +45,26 @@ Auf einer höheren Ebene müssen Sie wissen, wo diese Daten in der Datenbank zu 
 
 * Die Tabelle, die bei jeder Registrierung eine Datenzeile aufzeichnet
 * Die Tabelle, die eine Datenzeile aufzeichnet, die jedes Mal, wenn ein Besucher einen Kauf tätigt,
-* Die Spalte, die verwendet werden kann, um der `purchase` -Tabelle `customer` table - ermöglicht es uns zu wissen, wer einen Kauf getätigt hat
+* Die Spalte, die verwendet werden kann, um der Tabelle `purchase` beizutreten oder sie auf die Tabelle `customer` zu verweisen - dies ermöglicht uns zu wissen, wer einen Kauf getätigt hat
 
 Auf einer detaillierteren Ebene müssen Sie die genauen Datenfelder identifizieren, die für diese Analyse verwendet werden:
 
 * Die Datentabelle und -spalte mit dem Registrierungsdatum eines Kunden, z. B. `user.created\_at`
-* Die Datentabelle und -spalte mit einem Kaufdatum, z. B.: `order.created\_at`
+* Die Datentabelle und -spalte mit einem Kaufdatum, z. B. `order.created\_at`
 
 ## Datenspalten für Analysen erstellen
 
 Zusätzlich zu den oben genannten nativen Datenspalten benötigen Sie auch eine Reihe berechneter Datenfelder, um diese Analyse zu ermöglichen, darunter:
 
-* `Customer's first purchase date` , der die `MIN(order.created_at`)
+* `Customer's first purchase date` , der die `MIN(order.created_at` eines bestimmten Benutzers zurückgibt)
 
 Dies wird dann zum Erstellen von Folgendem verwendet:
 
 * `Time between a customer's registration date and first purchase date`, der die Zeit eines bestimmten Benutzers zwischen der Registrierung und dem ersten Kaufdatum zurückgibt. Dies ist die Grundlage für Ihre Metrik später.
 
-Beide Felder müssen auf Benutzerebene erstellt werden (z. B. auf der `user` Tabelle). Dadurch kann die durchschnittliche Analyse von Benutzern normalisiert werden (d. h. der Nenner in dieser durchschnittlichen Berechnung ist die Anzahl der Benutzer).
+Beide Felder müssen auf Benutzerebene erstellt werden (z. B. in der Tabelle `user` ). Dadurch kann die durchschnittliche Analyse von Benutzern normalisiert werden (d. h. der Nenner in dieser durchschnittlichen Berechnung ist die Anzahl der Benutzer).
 
-Hier [!DNL Commerce Intelligence] Schritte ein! Sie können Ihre [!DNL Commerce Intelligence] Data Warehouse , um die obigen Spalten zu erstellen. Wenden Sie sich an das Adobe Analyst-Team und geben Sie uns die genaue Definition Ihrer neuen Spalten zur Erstellung an. Sie können auch die [Spalteneditor](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+Hier tritt [!DNL Commerce Intelligence] ein! Sie können Ihre [!DNL Commerce Intelligence] -Data Warehouse verwenden, um die oben genannten Spalten zu erstellen. Wenden Sie sich an das Adobe Analyst-Team und geben Sie uns die genaue Definition Ihrer neuen Spalten zur Erstellung an. Sie können auch den [Spalten-Editor](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md) verwenden.
 
 Es empfiehlt sich, diese berechneten Datenfelder nicht direkt in Ihrer Datenbank zu erstellen, da dies Ihre Produktionsserver unnötig belastet.
 
@@ -75,13 +75,13 @@ Nachdem Sie nun über die erforderlichen Datenfelder für die Analyse verfügen,
 Hier wird die folgende Berechnung durchgeführt:
 
 
-_[SUM von `Time between a customer's registration date and first purchase date`] / [Gesamtzahl der Kunden, die sich registriert und gekauft haben]_
+_[SUMME von `Time between a customer's registration date and first purchase date`] / [Gesamtzahl der Kunden, die sich registriert und gekauft haben]_
 
-Und Sie möchten diese Berechnung im Zeitverlauf bzw. im Trend sehen, je nach Registrierungsdatum des Kunden. Und hier sehen Sie, wie Sie [diese Metrik erstellen](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
+Und Sie möchten diese Berechnung im Zeitverlauf bzw. im Trend sehen, je nach Registrierungsdatum des Kunden. So erstellen Sie [diese Metrik](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
 
-1. Navigieren Sie zu **[!UICONTROL Data]** und wählen Sie die `Metrics` Registerkarte.
-1. Klicks **[!UICONTROL Add New Metric]** und wählen Sie die `user` -Tabelle (in der Sie die oben genannten Dimensionen erstellt haben).
-1. Wählen Sie aus der Dropdown-Liste `Average` auf`Time between a customer's registration date and first purchase date` in der `user` nach der `Customer's registration date`  Spalte.
+1. Gehen Sie zu **[!UICONTROL Data]** und wählen Sie die Registerkarte `Metrics` aus.
+1. Klicken Sie auf **[!UICONTROL Add New Metric]** und wählen Sie die Tabelle `user` aus (wo Sie die oben genannten Dimensionen erstellt haben).
+1. Wählen Sie aus der Dropdown-Liste in der Tabelle `user`, die durch die Spalte `Customer's registration date` sortiert ist, `Average` in der Spalte `Time between a customer's registration date and first purchase date` aus.
 1. Fügen Sie alle relevanten Filter oder Filtersätze hinzu.
 
 Diese Metrik ist jetzt bereit.
@@ -90,7 +90,7 @@ Diese Metrik ist jetzt bereit.
 
 Wenn die neue Metrik eingerichtet ist, können Sie sie verwenden, um die durchschnittliche Zeit zwischen der Registrierung und dem ersten Kaufdatum nach Registrierungsdatum zu melden.
 
-Gehen Sie einfach zu einem beliebigen Dashboard und [einen Bericht erstellen](../../data-user/reports/ess-manage-data-metrics.md) unter Verwendung der oben erstellten Metrik.
+Gehen Sie einfach zu einem beliebigen Dashboard und [erstellen Sie einen Bericht](../../data-user/reports/ess-manage-data-metrics.md) mit der oben erstellten Metrik.
 
 ### `Visual Report Builder` {#visualrb}
 
@@ -98,8 +98,8 @@ Gehen Sie einfach zu einem beliebigen Dashboard und [einen Bericht erstellen](..
 
 |  |  |
 |--- |--- |
-| **Das ist perfekt für ...** | **Das ist nicht so toll für ...** |
-| - Alle Ebenen der Analyse/des technischen Erlebnisses<br>- Schnelles Erstellen von Berichten<br>- Erstellen von Analysen zur Freigabe für andere Benutzer | - Analysen, die SQL-spezifische Funktionen erfordern<br>- Testen neuer Spalten - berechnete Spalten hängen von Aktualisierungszyklen für die anfängliche Datenpopulation ab, die mit SQL erstellten Spalten nicht. |
+| **Dies ist perfekt für ...**. | **Das ist nicht so toll für ...**. |
+| - Alle Ebenen der Analyse/des technischen Erlebnisses<br> - Schnelles Erstellen von Berichten<br> - Erstellen von Analysen zur Freigabe für andere Benutzer | - Analysen, die SQL-spezifische Funktionen erfordern<br> - Testen neuer Spalten - berechnete Spalten hängen von Aktualisierungszyklen für die anfängliche Datenpopulation ab, die mit SQL erstellt wurden, nicht. |
 
 {style="table-layout:auto"}
 
@@ -109,9 +109,9 @@ Gehen Sie einfach zu einem beliebigen Dashboard und [einen Bericht erstellen](..
 
 Bei der Erstellung von Berichten, die mit anderen Team-Mitgliedern geteilt werden, empfiehlt Adobe das Hinzufügen von Beschreibungen, die es anderen Benutzern ermöglichen, Ihre Analyse besser zu verstehen.
 
-1. Klicks **[!UICONTROL i]** oben in jedem Bericht.
+1. Klicken Sie oben in einem beliebigen Bericht auf **[!UICONTROL i]** .
 1. Geben Sie eine Beschreibung in das Wortfeld ein.
-1. Klicken **[!UICONTROL Save Description]**.
+1. Klicken Sie auf **[!UICONTROL Save Description]**.
 
 Siehe unten:
 
@@ -119,11 +119,11 @@ Siehe unten:
 
 #### Exportieren von Berichten als Bilder
 
-Muss ein Bericht in eine Präsentation oder ein Dokument aufgenommen werden? Jeder Bericht kann als Bild gespeichert werden (im PNG-, PDF- oder SVG-Format), indem Sie die `Report Options` in der oberen rechten Ecke eines jeden Berichts.
+Muss ein Bericht in eine Präsentation oder ein Dokument aufgenommen werden? Jeder Bericht kann mithilfe des Menüs `Report Options` oben rechts in jedem Bericht als Bild (im PNG-, PDF- oder SVG-Format) gespeichert werden.
 
 1. Klicken Sie auf das Zahnradsymbol in der oberen rechten Ecke eines Berichts.
-1. Wählen Sie aus der Dropdown-Liste `Enlarge`.
-1. Wenn der Bericht vergrößert wird, klicken Sie **[!UICONTROL Download]** in der oberen rechten Ecke des Berichts.
+1. Wählen Sie im Dropdown-Menü `Enlarge` aus.
+1. Wenn der Bericht vergrößert wird, klicken Sie oben rechts im Bericht auf **[!UICONTROL Download]** .
 1. Wählen Sie aus der Dropdown-Liste das gewünschte Bildformat aus. Der Download beginnt sofort.
 
 Siehe unten:

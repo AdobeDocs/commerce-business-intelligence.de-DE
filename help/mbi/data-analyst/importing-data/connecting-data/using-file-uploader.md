@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -17,22 +17,22 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../../administrator/user-management/user-management.md).
 
-[!DNL Adobe Commerce Intelligence] ist nicht nur wegen seiner Visualisierungsfunktionen leistungsstark, sondern auch weil es Ihnen die Möglichkeit gibt, alle Ihre Daten in einer einzigen Data Warehouse abzulegen. Auch Daten, die außerhalb Ihrer Datenbanken und Integrationen liegen, können in [!DNL Commerce Intelligence] mithilfe des Tools Datei-Upload im Data Warehouse-Manager.
+[!DNL Adobe Commerce Intelligence] ist nicht nur wegen seiner Visualisierungsfunktionen leistungsstark, sondern auch weil es Ihnen die Möglichkeit gibt, alle Ihre Daten in eine Data Warehouse zu übertragen. Selbst Daten, die außerhalb Ihrer Datenbanken und Integrationen liegen, können mit dem File Upload-Tool im Data Warehouse-Manager in [!DNL Commerce Intelligence] importiert werden.
 
 Verwenden Sie Werbekampagnen als Beispiel. Wenn Sie sowohl Online- als auch Offline-Kampagnen ausführen, können Sie das gesamte Bild nicht abrufen, wenn Sie nur Daten aus einer Online-Integration analysieren. Durch das Hochladen einer Tabelle mit den Offline-Kampagnendaten können Sie beide Datensätze analysieren und ein tieferes Verständnis Ihrer Kampagnenleistung erhalten.
 
 ## Einschränkungen und Anforderungen {#require}
 
-1. **Das einzige unterstützte Format für Datei-Uploads ist `CSV` oder`comma separated values`**. Wenn Sie in Excel arbeiten, können Sie die Datei mit der Funktion Speichern unter in `.csv` Format.
-1. **`CSV`-Dateien müssen`UTF-8 encoding`**. Meistens ist dies kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, [Artikel zum Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
-1. **Dateien dürfen nicht größer als 100 MB sein.**. Wenn die Datei größer ist, trennen Sie die Tabelle in Blöcke und speichern Sie sie als einzelne Dateien. Sie können die Daten anhängen, nachdem die erste Datei geladen wurde.
-1. **Alle Tabellen müssen über eine`primary key`**. Ihre Tabelle muss mindestens eine Spalte enthalten, die als `primary key`oder eine eindeutige Kennung für jede Zeile in der Tabelle. Jede Spalte, die als `primary key` can *never* null sein. A `primary key` kann so einfach sein, wie das Hinzufügen einer Spalte, die jeder Zeile eine Zahl gibt, oder zwei miteinander verkettete Spalten, um eine Spalte mit eindeutigen Werten zu bilden (z. B. `campaign name` und `date`).
+1. **Das einzige unterstützte Format für Datei-Uploads ist `CSV` oder`comma separated values`**. Wenn Sie in Excel arbeiten, können Sie die Datei mit der Funktion Speichern unter im Format `.csv` speichern.
+1. **`CSV`-Dateien müssen`UTF-8 encoding`** verwenden. Meistens ist dies kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, lesen Sie [diesen Support-Artikel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
+1. **Dateien dürfen nicht größer als 100 MB** sein. Wenn die Datei größer ist, trennen Sie die Tabelle in Blöcke und speichern Sie sie als einzelne Dateien. Sie können die Daten anhängen, nachdem die erste Datei geladen wurde.
+1. **Alle Tabellen müssen einen`primary key`** aufweisen. Ihre Tabelle muss mindestens eine Spalte enthalten, die als `primary key` oder eine eindeutige Kennung für jede Zeile in der Tabelle verwendet werden kann. Jede Spalte, die als `primary key` bezeichnet wird, kann *never* null sein. Ein `primary key` kann so einfach sein wie das Hinzufügen einer Spalte, die jeder Zeile eine Zahl gibt, oder zwei miteinander verkettete Spalten, um eine Spalte mit eindeutigen Werten zu bilden (z. B. `campaign name` und `date`).
 
    Wenn eine Spalte (oder Spalten) als eindeutig gekennzeichnet ist, es jedoch Duplikate gibt, werden die Duplikate nicht importiert.
 
 ## Formatieren von Daten für den Upload {#formatting}
 
-Vor dem Hochladen Ihrer Daten in [!DNL Commerce Intelligence], überprüfen Sie, ob die Formatierung den Richtlinien in diesem Abschnitt entspricht.
+Bevor Sie Ihre Daten in [!DNL Commerce Intelligence] hochladen können, überprüfen Sie, ob sie gemäß den Richtlinien in diesem Abschnitt formatiert sind.
 
 ### Kopfzeile {#header}
 
@@ -42,25 +42,25 @@ Spaltennamen müssen eindeutig sein und dürfen nur Buchstaben, Zahlen, Leerzeic
 
 ### Daten mit Kommas {#commas}
 
-Da Dateien in `CSV` -Format verwenden, kann die Verwendung von Kommas zu Problemen beim Hochladen von Daten führen. `CSV` -Dateien verwenden Kommas, um neue Werte anzugeben. Daher ist eine Spalte mit einem Namen wie `Campaigns`, `August` wird als zwei Spalten gelesen (`Campaigns` und `August`) anstatt einer Zeile, verschieben Sie alle Ihre Daten über eine Zeile. Adobe empfiehlt, Kommas soweit möglich zu vermeiden. Sie können `Data Preview` , um zu sehen, ob Ihre Daten nach Abschluss der Aktualisierung korrekt angezeigt werden.
+Da Dateien im Format `CSV` vorliegen müssen, kann die Verwendung von Kommas Probleme beim Hochladen von Daten verursachen. `CSV` -Dateien verwenden Kommas, um neue Werte anzugeben. Daher wird eine Spalte mit einem Namen wie `Campaigns`, `August` als zwei Spalten (`Campaigns` und `August`) anstelle einer Spalte gelesen, wodurch alle Daten über eine Zeile verschoben werden. Adobe empfiehlt, Kommas soweit möglich zu vermeiden. Mit `Data Preview` können Sie sehen, ob Ihre Daten nach Abschluss einer Aktualisierung korrekt angezeigt werden.
 
 ### Datumsangaben
 
-Jeder Datensatz, der Datumsangaben enthält, muss die [Standarddatumsformat](https://dev.mysql.com/doc/refman/5.7/en/datetime.html) `YYYY-MM-DD HH:MM:SS` oder `MM/DD/YYYY`.
+Jeder Datensatz, der Datumsangaben enthält, muss das Standarddatumsformat ](https://dev.mysql.com/doc/refman/5.7/en/datetime.html) `YYYY-MM-DD HH:MM:SS` oder `MM/DD/YYYY` verwenden.[
 
 ### Sonderzeichen
 
-Einige Sonderzeichen werden nicht akzeptiert. Beispiel: das Symbol für das Rohr `& # 1 2 4` wird als Spaltenerstellung interpretiert und verursacht beim Hochladen einer Datei Fehler.
+Einige Sonderzeichen werden nicht akzeptiert. Beispielsweise wird das senkrechte Symbol `& # 1 2 4` als Spaltenerstellung interpretiert und verursacht beim Hochladen einer Datei Fehler.
 
 ### Dezimalzahlen
 
-Währungswerte sollten den Datentyp aufweisen `Decimal Number` und diese Spalten automatisch auf zwei Dezimalstellen in Ihrer Data Warehouse runden. Wenn Sie Ihre Dezimalzahlen nicht runden möchten oder einen höheren Genauigkeitsgrad haben möchten, sollten Sie die `Non-Currency Decimal Number` Datentyp.
+Bei Währungswerten sollte der Datentyp `Decimal Number` ausgewählt sein, und diese Spalten runden automatisch auf zwei Dezimalstellen in Ihrer Data Warehouse. Wenn Sie Ihre Dezimalzahlen nicht runden möchten oder einen höheren Genauigkeitsgrad haben möchten, sollten Sie den Datentyp `Non-Currency Decimal Number` auswählen.
 
 ### Prozentsatz
 
 Prozentangaben müssen als Dezimalstellen angegeben werden. Beispiel:
 
-| **Rechts:** | **Falsch:** |
+| **Right:** | **Falsch:** |
 |-----|-----|
 | `.05` | `5%` |
 | `.23` | `23` |
@@ -69,55 +69,55 @@ Prozentangaben müssen als Dezimalstellen angegeben werden. Beispiel:
 
 ### Werte mit führenden und/oder nachfolgenden Nullen {#zeroes}
 
-Einige Werte in Ihrer Datei - wie Postleitzahlen und IDs - können mit Nullen beginnen oder enden. Um sicherzustellen, dass die Nullen korrekt beibehalten und hochgeladen werden, können Sie den Formatierungstyp ändern (z. B. [von Zahl zu Text](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&amp;rs=en-us&amp;ad=us)) oder die Zahlenformatierung erzwingen.
+Einige Werte in Ihrer Datei - wie Postleitzahlen und IDs - können mit Nullen beginnen oder enden. Um sicherzustellen, dass die Nullen korrekt beibehalten und hochgeladen werden, können Sie den Formatierungstyp ändern (z. B. [von Zahl in Text](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&amp;rs=en-us&amp;ad=us)) oder die Zahlenformatierung erzwingen.
 
-Verwendung `US ZIP codes` als Beispiel für die Änderung der Zahlenformatierung. In [!DNL Excel]markieren Sie die Spalte, die `ZIP codes` und [Zahlenformat ändern](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&amp;rs=en-us&amp;ad=us) nach `ZIP code`. Sie können auch ein benutzerdefiniertes Zahlenformat auswählen und im `Type` Fenster, eingeben `00000`. Beachten Sie, dass diese Methode Probleme verursachen kann, wenn einige Codes als `00000` und andere `00000-0000`.
+Verwenden Sie `US ZIP codes` als Beispiel für die Änderung der Zahlenformatierung. Markieren Sie in [!DNL Excel] die Spalte mit `ZIP codes` und [ändern Sie das Zahlenformat](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&amp;rs=en-us&amp;ad=us) in `ZIP code`. Sie können auch ein benutzerdefiniertes Zahlenformat auswählen und im Fenster `Type` den Wert `00000` eingeben. Beachten Sie, dass diese Methode Probleme verursachen kann, wenn einige Codes als `00000` und andere als `00000-0000` formatiert sind.
 
-Die `Type` kann [anders formatiert, um andere Datentypen aufzunehmen](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&amp;ui=en-us&amp;rs=en-us&amp;ad=us), z. B. IDs. Wenn eine `ID` ist neun Stellen lang, zum Beispiel die `Type` könnte `000000000` oder `000-000-000`. Dies würde sich ändern `123456` nach `000-123-456`.
+Der `Type` kann [ anders formatiert sein, um andere Datentypen aufzunehmen](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&amp;ui=en-us&amp;rs=en-us&amp;ad=us), z. B. IDs. Wenn ein `ID` beispielsweise neunstellig ist, könnte der `Type` `000000000` oder `000-000-000` sein. Dies würde `123456` in `000-123-456` ändern.
 
-Für [!DNL Google Docs] und [!DNL Apple Numbers] Ressourcen, siehe [Verwandte](#related) Liste unten auf dieser Seite.
+Ressourcen für [!DNL Google Docs] und [!DNL Apple Numbers] finden Sie in der Liste [Related](#related) unten auf dieser Seite.
 
 ## Hochladen von Daten {#uploading}
 
-Jetzt, da Ihr Arbeitsblatt korrekt formatiert ist und [!DNL Commerce Intelligence]-friendly, fügen Sie es zu Ihrer Data Warehouse hinzu.
+Nachdem das Arbeitsblatt korrekt formatiert und [!DNL Commerce Intelligence]-freundlich ist, fügen Sie es zu Ihrer Data Warehouse hinzu.
 
-1. Gehen Sie zu **[!UICONTROL Data** > **File Uploads]**.
+1. Gehen Sie zu **[!UICONTROL Data** > **File Uploads]**, um zu beginnen.
 
-1. Klicken Sie auf **[!UICONTROL Upload to New Table]** Registerkarte.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Upload to New Table]** .
 
-1. Klicks **[!UICONTROL Choose File]** und wählen Sie die Datei aus. Klicks **[!UICONTROL Open]** , um den Upload zu starten.
+1. Klicken Sie auf **[!UICONTROL Choose File]** und wählen Sie die Datei aus. Klicken Sie auf **[!UICONTROL Open]** , um den Upload zu starten.
 
-   Nach Abschluss des Uploads eine Liste der Spalten [!DNL Commerce Intelligence] angezeigt.
+   Nach Abschluss des Uploads wird eine Liste der Spalten [!DNL Commerce Intelligence] in Ihrer Datei angezeigt.
 
 1. Überprüfen Sie, ob die Spaltennamen und Datentypen korrekt sind. Prüfen Sie insbesondere, ob Datumsspalten als Datumsangaben und nicht als Zahlen gelesen werden.
 
    >[!NOTE]
    >
-   >Die `datatype` ist wichtig, also überspringen Sie diesen Schritt nicht!
+   >Der `datatype` ist wichtig, überspringen Sie also diesen Schritt nicht!
 
-1. Wählen Sie die Spalte (oder Spalten) aus, aus der die `primary key` für die Tabelle verwenden, indem Sie die Kontrollkästchen unter dem Schlüsselsymbol aktivieren.
+1. Wählen Sie mithilfe der Kontrollkästchen unter dem Schlüsselsymbol die Spalte (oder Spalten) aus, aus der die `primary key` für die Tabelle besteht.
 
 1. Nennen Sie die Tabelle.
 
-1. Klicken **[!UICONTROL Save Table]**.
+1. Klicken Sie auf **[!UICONTROL Save Table]**.
 
-A *Erfolg!* wird oben im Bildschirm angezeigt, nachdem die Tabelle gespeichert wurde.
+Ein *Erfolg!Die Meldung* wird oben im Bildschirm angezeigt, nachdem die Tabelle gespeichert wurde.
 
 Wenn Sie eine Visualisierung benötigen, sehen Sie sich den gesamten Prozess an:
 
 ![](../../../assets/fileupload.gif)
 
-Hochgeladene Tabellen werden unter der Variablen **Datei-Uploads** -Abschnitt der Tabellenliste (in den Optionen Alle Tabellen und Synchronisierte Tabellen ) im Data Warehouse-Manager:
+Hochgeladene Tabellen werden im Data Warehouse-Manager im Bereich **Datei-Uploads** der Tabellenliste (sowohl in den Optionen &quot;Alle Tabellen&quot;als auch &quot;Synchronisierte Tabellen&quot;) angezeigt:
 
 ![](../../../assets/upload-tables.png)
 
 ## Aktualisieren oder Anhängen von Daten an eine vorhandene Tabelle {#appending}
 
-Haben Sie neue Daten, die Sie zu einer bereits hochgeladenen Datei hinzufügen können? Kein Problem - Sie können Daten einfach aktualisieren und anhängen in [!DNL Commerce Intelligence].
+Haben Sie neue Daten, die Sie zu einer bereits hochgeladenen Datei hinzufügen können? Kein Problem - Sie können Daten einfach in [!DNL Commerce Intelligence] aktualisieren und anhängen.
 
-1. Gehen Sie zu **[!UICONTROL Manage Data** > **File Uploads]**.
+1. Gehen Sie zu **[!UICONTROL Manage Data** > **File Uploads]**, um zu beginnen.
 
-1. Klicken Sie auf **[!UICONTROL Edit/Upload `.csv`in bestehende Tabellen]** Registerkarte.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Edit/Upload `.csv`to Existing Tables]** .
 
 1. Klicken Sie im Dropdown-Menü auf den Namen der Tabelle, die Sie aktualisieren oder anhängen möchten.
 
@@ -129,29 +129,29 @@ Haben Sie neue Daten, die Sie zu einer bereits hochgeladenen Datei hinzufügen k
    | `Retain old row; discard new row` | Dadurch werden neue Daten ignoriert, wenn eine Zeile sowohl in der vorhandenen Tabelle als auch in der neuen Datei denselben Primärschlüssel enthält. |
    | `Purge all existing rows first and ignore duplicate keys within the file` | Dadurch werden alle vorhandenen Daten gelöscht und durch die neuen Daten aus der Datei ersetzt. Verwenden Sie diese Option nur, wenn Sie keine der Daten in der vorhandenen Tabelle benötigen. |
 
-1. Klicks **[!UICONTROL Choose File]** und wählen Sie die Datei aus.
+1. Klicken Sie auf **[!UICONTROL Choose File]** und wählen Sie die Datei aus.
 
-1. Klicks **[!UICONTROL Open]** , um den Upload zu starten.
+1. Klicken Sie auf **[!UICONTROL Open]** , um den Upload zu starten.
 
-   Nach Abschluss des Uploads [!DNL Commerce Intelligence] validiert die Datenstruktur in der Datei. A *Erfolg!* wird oben im Bildschirm angezeigt, nachdem die Tabelle gespeichert wurde.
+   Nach Abschluss des Uploads validiert [!DNL Commerce Intelligence] die Datenstruktur in der Datei. Ein *Erfolg!Die Meldung* wird oben im Bildschirm angezeigt, nachdem die Tabelle gespeichert wurde.
 
 ## Datenverfügbarkeit {#availability}
 
-Wie berechnete Spalten sind auch Daten aus Datei-Uploads nach Abschluss des nächsten Aktualisierungszyklus verfügbar. Wenn während des Datei-Uploads eine Aktualisierung durchgeführt wurde, stehen die Daten erst nach der nächsten Aktualisierung zur Verfügung. Sobald ein Aktualisierungszyklus abgeschlossen ist, können Sie zum `Data Preview` -Registerkarte in Ihrer Data Warehouse, um sicherzustellen, dass die Datei korrekt hochgeladen wurde und die Daten erwartungsgemäß angezeigt werden.
+Wie berechnete Spalten sind auch Daten aus Datei-Uploads nach Abschluss des nächsten Aktualisierungszyklus verfügbar. Wenn während des Datei-Uploads eine Aktualisierung durchgeführt wurde, stehen die Daten erst nach der nächsten Aktualisierung zur Verfügung. Nach Abschluss eines Aktualisierungszyklus können Sie auf der Data Warehouse zur Registerkarte `Data Preview` navigieren, um sicherzustellen, dass die hochgeladene Datei und die Daten erwartungsgemäß angezeigt werden.
 
 ## Aufwischen {#wrapup}
 
 In diesem Thema wurden nur die Grundlagen für die Verwendung des Datenimports behandelt. Möglicherweise möchten Sie jedoch etwas erweiterter vorgehen. In den entsprechenden Artikeln finden Sie Anleitungen zum Formatieren und Importieren von Finanzdaten, E-Commerce, Werbeausgaben und anderen Datentypen.
 
-Außerdem ist der Datei-Upload nicht die einzige Möglichkeit, Ihre Daten in [!DNL Commerce Intelligence]. Die [Datenimport-API](https://developer.adobe.com/commerce/services/reporting/import-api/) -Funktionen ermöglichen es Ihnen, beliebige Daten in Ihre [!DNL Commerce Intelligence] Data Warehouse.
+Außerdem ist der Datei-Upload nicht die einzige Möglichkeit, Ihre Daten in [!DNL Commerce Intelligence] zu übertragen. Mit den Funktionen der [Datenimport-API](https://developer.adobe.com/commerce/services/reporting/import-api/) können Sie beliebige Daten in Ihre [!DNL Commerce Intelligence]-Data Warehouse übertragen.
 
 ## Verwandte {#related}
 
 * [Finanzdaten formatieren und importieren](../../../best-practices/format-import-financial-data.md)
 * [Importieren von Offline-/anderen Anzeigenausgabedaten](../connecting-data/import-offline-ad-data.md)
-* [Erwartet[!DNL Google ECommerce] data](../integrations/google-ecommerce-data.md)
+* [Erwartete [!DNL Google ECommerce] Daten](../integrations/google-ecommerce-data.md)
 
 ## Drittanbieterressourcen
 
-* [Numbers Data Formatting Guide](http://www.dummies.com/how-to/content/how-to-choose-a-number-format-in-your-numbers-spre.html)
+* [Handbuch zur Nummerndatenformatierung](http://www.dummies.com/how-to/content/how-to-choose-a-number-format-in-your-numbers-spre.html)
 * [[!DNL Google Docs] Anleitung zur Datenformatierung](https://support.google.com/docs/answer/56470?hl=en)

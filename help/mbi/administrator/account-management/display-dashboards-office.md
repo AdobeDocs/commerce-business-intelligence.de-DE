@@ -6,23 +6,23 @@ role: Admin, User
 feature: Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
 
 # Anzeigen von Dashboards im Büro
 
-Für [!DNL Commerce Intelligence] Benutzern, die Interesse daran haben, ihre Dashboards und Berichte auf Bildschirmen im gesamten Büro anzuzeigen, stehen verschiedene Hardware-Optionen zur Verfügung, mit deren Hilfe diese Einrichtung einfach möglich ist.
+Für [!DNL Commerce Intelligence] -Benutzer, die ihre Dashboards und Berichte auf Bildschirmen im gesamten Büro anzeigen möchten, gibt es verschiedene Hardware-Optionen, die diese Einrichtung einfach aktivieren können.
 
 Im Folgenden finden Sie die empfohlene Liste der Elemente, die Sie für die Option benötigen:
 
-1. **Ein Fernseher oder Monitor mit HDMI-Eingabe** an senden.
+1. **Ein Fernseher oder Monitor mit HDMI-Eingabe**, an den gesendet werden soll.
 
-1. **Ein WLAN-fähiger Dongle, der ein leichtes Betriebssystem ausführt, z. B. [!DNL Chrome] OS oder Raspberry Pi.** Ihr Dongle sollte über eine HDMI-Ausgabe verfügen, die eine Verbindung zu Ihrem Bildschirm herstellt und Ihre ausgewählten Dashboards immer anzeigt. Ein dedizierter Computer mit eigenem Betriebssystem ist besser als ein Setup wie [!DNL Chromecast], wo Sie sich auf die Übertragung des gleichen Dashboards auf alle verbundenen Bildschirme beschränken können. Der Dongle ist am besten hinter Ihrem Bildschirm montiert.
+1. **Ein WLAN-fähiger Dongle, der ein leichtes Betriebssystem ausführt, z. B. [!DNL Chrome] OS oder Himbery Pi.** Ihr Dongle sollte über eine HDMI-Ausgabe verfügen, die eine Verbindung zu Ihrem Bildschirm herstellt und Ihre ausgewählten Dashboards immer anzeigt. Ein dedizierter Computer mit eigenem Betriebssystem ist besser als ein Setup wie [!DNL Chromecast], bei dem Sie darauf beschränkt wären, dasselbe Dashboard für alle verbundenen Bildschirme zu benennen. Der Dongle ist am besten hinter Ihrem Bildschirm montiert.
 
-1. **USB-Tastatur und -Maus** um Ihren Dongle zu kontrollieren.
+1. **USB-Tastatur und -Maus** zur Steuerung Ihres Dongles.
 
-1. **Eine Browser-Erweiterung, um mehrere Registerkarten gleichzeitig zu drehen.** Auf diese Weise können Sie ausgewählte Dashboards einrichten, die auf einer eindeutigen Registerkarte angezeigt werden. Adobe empfiehlt die [Revolver-Registerkarten](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) Erweiterung, wenn Sie [!DNL Chrome].
+1. **Eine Browser-Erweiterung, die zwischen mehreren Registerkarten gleichzeitig gedreht werden kann.** Damit können Sie ausgewählte Dashboards einrichten, die auf einer Registerkarte angezeigt werden. Adobe empfiehlt die Erweiterung [Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en) , wenn Sie [!DNL Chrome] verwenden.
 
 Sobald Sie über die obige Hardware verfügen, können Sie ein Browser-Fenster auf Ihrem Bildschirm mit einem bestimmten Dashboard öffnen, das Sie auf jeder Registerkarte anzeigen möchten. Konfigurieren Sie abschließend Ihren Browser so, dass er jedes Dashboard in der gewünschten Häufigkeit durchläuft.

@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 330832e2668024b00edb2b7c49b92bb042bd004a
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,10 @@ Dies liegt daran, dass diese neueren Kunden noch nicht die Möglichkeit hatten, 
 
 Es gibt einige andere Möglichkeiten, diese Metrik zu betrachten, die weniger Verzerrungen verursachen. Sehen Sie sich ein Beispiel an.
 
-## Beispiel: Führen Sie eine `cohort` Analyse der Erstbestellungen
+## Beispiel: Durchführen einer `cohort`-Analyse von Erstbestellungen
 
-Möglicherweise haben Sie ein Diagramm auf Ihrem `Users` Dashboard namens `Time to first order cohort`. Dieser Bericht verwendet die `Distinct buyers` Metrik, gruppiert Benutzer nach `cohort` Wochen oder Monate der Registrierung und zeigt das Verhältnis (zwischen `0` und `1`) von Benutzern, die in den folgenden Wochen oder Monaten nach der Registrierung zum ersten Mal einen Kauf getätigt haben.
+Sie können ein Diagramm in Ihrem `Users`-Dashboard mit dem Namen `Time to first order cohort` haben. Dieser Bericht verwendet die Metrik &quot;`Distinct buyers`&quot;, gruppiert Benutzer nach `cohort` Wochen oder Monaten der Registrierung und zeigt das Verhältnis (zwischen `0` und `1`) der Benutzer an, die in den folgenden Wochen oder Monaten nach der Registrierung einen ersten Kauf getätigt haben.
 
-Die Grafik kann zeigen, dass für die im Dezember 2014 registrierten Benutzer `0.56` (oder `56%`) eine erste Bestellung nach Monat 2 (z. B. Januar 2015).
+Die Grafik kann zeigen, dass für Benutzer, die sich im Dezember 2014 registriert haben, `0.56` (oder `56%`) bis zum 2. Monat (z. B. Januar 2015) eine erste Bestellung tätigte.
 
 Diese Kohortenanalyse ist ein guter Indikator für die Benutzeraktivierungsrate im Zeitverlauf. Wenn dieses Diagramm zu einer Abflachung oder Plateau führt und Sie immer noch nicht in der Nähe einer 100%igen Konversion zu Käufern sind, kann es an der Zeit sein, die verbleibenden Benutzer über E-Mail-Kampagnen zu aktivieren.

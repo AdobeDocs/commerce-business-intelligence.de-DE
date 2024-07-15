@@ -23,13 +23,13 @@ In diesem Thema werden die Schritte beschrieben, die zur Erstellung dieser Analy
 
 Zunächst ein Hinweis zur Verfolgung von Coupon-Codes. Wenn ein Kunde einen Gutschein auf eine Bestellung angewendet hat, geschieht Folgendes:
 
-* Ein Rabatt wird im Abschnitt `base_grand_total` Betrag (Ihre `Revenue` Metrik in Commerce Intelligence)
-* Der Gutscheincode wird im `coupon_code` -Feld. Wenn dieses Feld NULL (leer) ist, ist der Bestellung kein Gutschein zugeordnet.
-* Der abgezinste Betrag wird in `base_discount_amount`. Dieser Wert kann je nach Konfiguration negativ oder positiv aussehen.
+* Ein Rabatt wird im Betrag `base_grand_total` angezeigt (Ihre Metrik `Revenue` in Commerce Intelligence).
+* Der Gutscheincode wird im Feld `coupon_code` gespeichert. Wenn dieses Feld NULL (leer) ist, ist der Bestellung kein Gutschein zugeordnet.
+* Der abgezinste Betrag wird in `base_discount_amount` gespeichert. Dieser Wert kann je nach Konfiguration negativ oder positiv aussehen.
 
 Ab Commerce 2.4.7 kann ein Kunde mehr als einen Couponcode auf eine Bestellung anwenden. In diesem Fall:
 
-* Alle angewendeten Gutscheincodes werden im `coupon_code` -Feld `sales_order_coupons`. Der erste angewendete Couponcode wird ebenfalls im `coupon_code` -Feld `sales_order`. Wenn dieses Feld NULL (leer) ist, ist der Bestellung kein Gutschein zugeordnet.
+* Alle angewendeten Couponcodes werden im Feld `coupon_code` von `sales_order_coupons` gespeichert. Der erste angewendete Couponcode wird ebenfalls im Feld `coupon_code` von `sales_order` gespeichert. Wenn dieses Feld NULL (leer) ist, ist der Bestellung kein Gutschein zugeordnet.
 
 ## Erstellen einer Metrik
 
@@ -37,19 +37,19 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
 
 * Navigieren Sie zu **[!UICONTROL Manage Data > Metrics > Create New Metric]**.
 
-* Wählen Sie die `sales_order`.
-* Diese Metrik führt eine **Summe** auf **base_discount_amount** Spalte, sortiert nach **created_at**.
+* Wählen Sie den Wert `sales_order` aus.
+* Diese Metrik führt eine **Summe** für die Spalte **base_discount_amount** aus, geordnet nach **created_at**.
    * [!UICONTROL Filters]:
-      * Fügen Sie die `Orders we count` (Gespeicherter Filtersatz)
+      * Hinzufügen von &quot;`Orders we count`&quot;(gespeicherten Filtersatz)
       * Fügen Sie Folgendes hinzu:
-         * `coupon_code`**IST NICHT**`[NULL]`
-      * Geben Sie der Metrik einen Namen, beispielsweise `Coupon discount amount`.
+         * `coupon_code`**IS NOT**`[NULL]`
+      * Geben Sie der Metrik einen Namen, z. B. `Coupon discount amount`.
 
 ## Dashboard erstellen
 
 * Nachdem die Metrik erstellt wurde:
    * Navigieren Sie zu [!UICONTROL Dashboards > Dashboard Options > Create New Dashboard]**.
-   * Benennen Sie das Dashboard, z. B. `_Coupon Analysis_`.
+   * Geben Sie dem Dashboard einen Namen wie `_Coupon Analysis_`.
 
 * Hier können Sie alle Berichte erstellen und hinzufügen.
 
@@ -59,7 +59,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
 
 >[!NOTE]
 >
->Die [!UICONTROL Time Period]** für jeden Bericht aufgeführt als `All-time`. Sie können dies nach Ihren Analyseanforderungen ändern. Adobe empfiehlt, dass alle Berichte in diesem Dashboard den gleichen Zeitraum abdecken, z. B. `All time`, `Year-to-date`oder `Last 365 days`.
+>Die [!UICONTROL Time Period]** für jeden Bericht wird als `All-time` aufgelistet. Sie können dies nach Ihren Analyseanforderungen ändern. Adobe empfiehlt, dass alle Berichte in diesem Dashboard denselben Zeitraum abdecken, z. B. `All time`, `Year-to-date` oder `Last 365 days`.
 
 * **Bestellungen mit Coupons**
    * 
@@ -83,7 +83,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
-* **Nettoeinnahmen aus Bestellungen mit Coupons**
+* **Nettoumsatz aus Bestellungen mit Coupons**
    * 
      [!UICONTROL Metrik]: `Revenue`
       * Filter hinzufügen:
@@ -101,7 +101,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Durchschnittlicher Umsatz während der Lebensdauer: Mit Coupons erworbene Kunden**
+* **Durchschnittlicher Umsatz während der Lebensdauer: Mit Coupon erworbene Kunden**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Filter hinzufügen:
          * [`A`] `Customer's first order's coupon_code` **IST NICHT** `[NULL]`
@@ -111,7 +111,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Durchschnittlicher Umsatz während der Lebensdauer: Nicht kupon erworbene Kunden**
+* **Durchschnittlicher Umsatz während der Lebensdauer: Mit Kupon versehene Kunden**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Filter hinzufügen:
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
@@ -121,30 +121,30 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Angaben zur Nutzung des Gutscheins (Erstbestellungen)**
+* **Nutzungsdetails des Coupons (Erstbestellungen)**
    * Metrik `1`: `Orders`
       * Filter hinzufügen:
          * [`A`] `coupon_code` **IST NICHT**`[NULL]`
-         * [`B`] `Customer's order number` **Gleich** `1`
+         * [`B`] `Customer's order number` **Entspricht** `1`
 
    * Metrik `2`: `Revenue`
       * Filter hinzufügen:
          * [`A`] `coupon_code` **IST NICHT**`[NULL]`
-         * [`B`] `Customer's order number` **Gleich** `1`
+         * [`B`] `Customer's order number` **Entspricht** `1`
 
-      * Umbenennen:  `Net revenue`
+      * Umbenennen: `Net revenue`
 
    * Metrik `3`: `Coupon discount amount`
       * Filter hinzufügen:
          * [`A`] `coupon_code` **IST NICHT**`[NULL]`
-         * [`B`] `Customer's order number` **Gleich** `1`
+         * [`B`] `Customer's order number` **Entspricht** `1`
 
    * Formel erstellen: `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
       * 
         [!UICONTROL Format]: `Currency`
 
-   * Formel erstellen:**% diskontiert**
+   * Formel erstellen:**% discount**
       * Formel: `(C / (B - C))`
       * 
         [!UICONTROL Format]: `Percentage`
@@ -160,7 +160,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
    * 
      [!UICONTROL Diagrammtyp]: `Table`
 
-* **Durchschnittlicher Umsatz während der Lebensdauer nach erstmaligem Bestellcoupon**
+* **Durchschnittlicher Umsatz während der Lebensdauer nach Coupon der ersten Bestellung**
    * [!UICONTROL Metric]:**Durchschnittlicher Umsatz während der Lebensdauer**
       * Filter hinzufügen:
          * [`A`] `coupon_code` **IS**`[NULL]`
@@ -170,7 +170,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
-* **Angaben zur Nutzung des Gutscheins (Erstbestellungen)**
+* **Nutzungsdetails des Coupons (Erstbestellungen)**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
       * Filter hinzufügen:
          * [`A`] `Customer's first order's coupon_code` **IST NICHT** `[NULL]`
@@ -182,7 +182,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
    * 
      [!UICONTROL Diagrammtyp]: **Column**
 
-* **Neue Kunden nach Coupon-/Nicht-Coupon-Akquise**
+* **Neue Kunden nach Coupon-/Nicht-Couponakquise**
    * Metrik `1`: `New customers`
       * Filter hinzufügen:
          * [`A`] `Customer's first order's coupon_code` **IST NICHT** `[NULL]`
@@ -203,6 +203,6 @@ Nachdem Sie die Berichte erstellt haben, erfahren Sie im Bild oben in diesem The
 
 >[!NOTE]
 >
->Ab Adobe Commerce 2.4.7 können Kunden die **quote_coupons** und **sales_order_coupons** -Tabellen, um Einblicke dazu zu erhalten, wie Kunden mehrere Gutscheine verwenden.
+>Ab Adobe Commerce 2.4.7 können Kunden die Tabellen **Anführungszeichen** und **sales_order_coupons** verwenden, um Einblicke dazu zu erhalten, wie Kunden mehrere Gutscheine verwenden.
 
 ![](../../assets/multicoupon_relationship_tables.png)

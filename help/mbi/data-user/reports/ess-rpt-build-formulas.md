@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -15,23 +15,23 @@ ht-degree: 0%
 
 Eine Formel kombiniert mehrere Metriken und mathematische Logik, um eine Frage zu beantworten. Wie viel vom Umsatz pro Produkt während der Weihnachtszeit wurde beispielsweise von neuen Kunden generiert?
 
-![Feiertagsverkäufe im Dashboard](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
+![Feiertagsumsätze im Dashboard](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## Schritt 1: Erstellen des Basisberichts
 
-1. Wählen Sie im Menü `Report Builder`.
+1. Wählen Sie im Menü `Report Builder` aus.
 
-1. Klicks **[!UICONTROL Add Metric]** und wählen Sie die erste Metrik für den Bericht aus.
+1. Klicken Sie auf **[!UICONTROL Add Metric]** und wählen Sie die erste Metrik für den Bericht aus.
 
-   In diesem Beispiel wird die Variable `Revenue by products ordered` verwendet.
+   In diesem Beispiel wird die Metrik `Revenue by products ordered` verwendet.
 
-1. Klicks **[!UICONTROL Add Metric]** erneut und wählen Sie die zweite Metrik für den Bericht aus.
+1. Klicken Sie erneut auf **[!UICONTROL Add Metric]** und wählen Sie die zweite Metrik für den Bericht aus.
 
-   In diesem Beispiel wird die Variable `New Customers` verwendet.
+   In diesem Beispiel wird die Metrik `New Customers` verwendet.
 
 1. Klicken Sie in der Seitenleiste auf **[!UICONTROL Details]** , um Informationen zu den einzelnen Metriken anzuzeigen.
 
-   ![Umsatz nach bestellten Artikeln](../../assets/magento-bi-report-builder-revenue-by-products.png)
+   ![Umsatz durch bestellte Produkte](../../assets/magento-bi-report-builder-revenue-by-products.png)
 
 1. Klicken Sie in der Seitenleiste auf den Namen jeder Metrik, um die Einstellungsseite in einer neuen Browser-Registerkarte zu öffnen. Scrollen Sie nach unten, um die einzelnen Komponenten der Metrik anzuzeigen, einschließlich der Metrikabfrage, des Filters und der Dimensionen.
 
@@ -45,41 +45,41 @@ Eine Formel kombiniert mehrere Metriken und mathematische Logik, um eine Frage z
 
 1. Klicken Sie oben in der Seitenleiste auf **[!UICONTROL Add Formula]**.
 
-   Das Formelfeld zeigt die Metriken als verfügbare Eingaben an `A` und `B`und enthält ein Eingabefeld, in das Sie die Formel eingeben können.
+   Das Formelfeld zeigt die Metriken als verfügbare Eingabe `A` und `B` an und enthält ein Eingabefeld, in das Sie die Formel eingeben können.
 
    Gehen Sie wie folgt vor:
 
-   * Im `Enter your Formula` Eingabefeld, Eingabe `A/B`.
+   * Geben Sie in das Eingabefeld `Enter your Formula` den Wert `A/B` ein.
 
      Dadurch wird der Umsatz durch die bestellten Produkte durch die Anzahl neuer Kunden dividiert.
 
-   * Satz `Select format` nach `123Number`.
+   * Setzen Sie `Select format` auf `123Number`.
 
-   * Ersetzen Sie in der Seitenleiste `Untitled` mit einem Namen für die Formel.
+   * Ersetzen Sie in der Seitenleiste `Untitled` durch einen Namen für die Formel.
 
    ![Formeleinstellungen](../../assets/magento-bi-report-builder-revenue-by-products-add-formula-detail.png)
 
-1. Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Apply]**.
+1. Klicken Sie nach Abschluss des Vorgangs auf **[!UICONTROL Apply]**.
 
-   Der Bericht enthält nun eine neue Zeile für die Formel, `New Customer Revenue`und die Seitenleiste zeigt die Gesamtsumme des Umsatzes an, der von neuen Kunden generiert wurde.
+   Der Bericht enthält jetzt eine neue Zeile für die Formel &quot;`New Customer Revenue`&quot;, und die Seitenleiste zeigt den Gesamtumsatz an, der von neuen Kunden generiert wurde.
 
    ![Bericht mit Formel](../../assets/magento-bi-report-builder-revenue-by-products-formula-report.png)
 
 ## Schritt 3: Datumsbereich hinzufügen
 
-1. Klicks **[!UICONTROL Date Range]** in der oberen rechten Ecke.
+1. Klicken Sie oben rechts auf **[!UICONTROL Date Range]** .
 
-1. Im `Fixed Date Range` Gehen Sie wie folgt vor:
+1. Gehen Sie auf der Registerkarte `Fixed Date Range` wie folgt vor:
 
    * Wählen Sie in den Kalendern den Datumsbereich aus.
 
-     In diesem Beispiel stammt die Weihnachtszeit von `November 1` bis `December 31`.
+     In diesem Beispiel ist die Weihnachtszeit von `November 1` bis `December 31`.
 
-   * under `Select Time Interval`auswählen `Day`.
+   * Wählen Sie unter &quot;`Select Time Interval`&quot;die Option &quot;`Day`&quot;.
 
      ![Fester Datumsbereich](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-fixed-date-range.png)
 
-   * Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Apply]**.
+   * Klicken Sie nach Abschluss des Vorgangs auf **[!UICONTROL Apply]**.
 
    Der Bericht ist nun auf die Weihnachtszeit beschränkt und enthält für jeden Tag einen Datenpunkt.
 
@@ -89,32 +89,32 @@ Eine Formel kombiniert mehrere Metriken und mathematische Logik, um eine Frage z
 
 In diesem Schritt speichern Sie den Bericht als Grafik und auch als Tabelle.
 
-1. Klicks `Untitled Report` oben auf der Seite und geben Sie einen beschreibenden Titel ein. In diesem Beispiel lautet der Berichtstitel `2017 Holiday Sales`.
+1. Klicken Sie oben auf der Seite auf `Untitled Report` und geben Sie einen beschreibenden Titel ein. In diesem Beispiel ist der Berichtstitel `2017 Holiday Sales`.
 
    Führen Sie dann die folgenden Schritte aus:
 
    * Klicken Sie oben rechts auf **[!UICONTROL Save]**.
 
-   * Für `Type`, übernehmen Sie die Standardeinstellung `Chart` -Einstellung.
+   * Nehmen Sie für `Type` die standardmäßige Einstellung `Chart` an.
 
-   * Wählen Sie die `Dashboard` wo der Bericht verfügbar sein soll.
+   * Wählen Sie die `Dashboard` aus, für die der Bericht verfügbar sein soll.
 
-   * Klicken **[!UICONTROL Save to Dashboard]**.
+   * Klicken Sie auf **[!UICONTROL Save to Dashboard]**.
 
-1. Klicken Sie auf den Berichtstitel und ändern Sie den Namen. In diesem Beispiel ändert sich der Berichtstitel in `2017 Holiday Sales Data`.
+1. Klicken Sie auf den Berichtstitel und ändern Sie den Namen. In diesem Beispiel wird der Berichtstitel in `2017 Holiday Sales Data` geändert.
 
    Führen Sie dann die folgenden Schritte aus:
 
-   * Klicken Sie oben rechts auf **[!UICONTROL Save a Copy]**.
+   * Klicken Sie in der oberen rechten Ecke auf **[!UICONTROL Save a Copy]**.
 
-   * Satz `Type` nach `Table`.
+   * Setzen Sie `Type` auf `Table`.
 
-   * Wählen Sie die `Dashboard` wo der Bericht verfügbar sein soll.
+   * Wählen Sie die `Dashboard` aus, für die der Bericht verfügbar sein soll.
 
-   * Klicken **[!UICONTROL Save a Copy to Dashboard]**.
+   * Klicken Sie auf **[!UICONTROL Save a Copy to Dashboard]**.
 
 1. Führen Sie einen der folgenden Schritte aus, um die Berichte in Ihrem Dashboard anzuzeigen:
 
-   * Klicks **[!UICONTROL Go to Dashboard]** in der Nachricht oben auf der Seite.
+   * Klicken Sie oben auf der Seite in der Nachricht auf **[!UICONTROL Go to Dashboard]** .
 
-   * Wählen Sie im Menü **[!UICONTROL Dashboards]**. Klicken Sie auf den Namen des aktuellen Dashboards, um die Liste anzuzeigen. Klicken Sie dann auf den Namen des Dashboards, in dem der Bericht gespeichert wurde.
+   * Wählen Sie im Menü **[!UICONTROL Dashboards]** aus. Klicken Sie auf den Namen des aktuellen Dashboards, um die Liste anzuzeigen. Klicken Sie dann auf den Namen des Dashboards, in dem der Bericht gespeichert wurde.

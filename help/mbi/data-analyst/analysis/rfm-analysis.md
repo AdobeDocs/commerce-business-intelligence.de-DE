@@ -6,7 +6,7 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -21,17 +21,17 @@ In diesem Thema wird gezeigt, wie Sie ein Dashboard einrichten, mit dem Sie Ihre
 
 ![](../../assets/blobid0.png)
 
-Die RFM-Analyse kann nur konfiguriert werden, wenn Sie über die [!DNL Adobe Commerce Intelligence] Pro Plan für die neue Architektur (z. B. wenn Sie über die `Data Warehouse Views` Option unter `Manage Data` Menü). Diese Spalten können aus der **[!DNL Manage Data > Data Warehouse]** Seite. Detaillierte Anweisungen finden Sie unten.
+Die RFM-Analyse kann nur konfiguriert werden, wenn Sie über den Plan [!DNL Adobe Commerce Intelligence] Pro für die neue Architektur verfügen (z. B. wenn Sie die Option `Data Warehouse Views` im Menü `Manage Data` haben). Diese Spalten können über die Seite **[!DNL Manage Data > Data Warehouse]** erstellt werden. Detaillierte Anweisungen finden Sie unten.
 
 ## Erste Schritte
 
 Sie müssen zunächst eine Datei hochladen, die nur einen Primärschlüssel mit dem Wert 1 enthält. Dies ermöglicht die Erstellung einiger erforderlicher berechneter Spalten für die Analyse.
 
-Sie können dies [Artikel](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild, um Ihre Datei zu formatieren.
+Sie können diesen [Artikel](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild verwenden, um Ihre Datei zu formatieren.
 
 ## Berechnete Spalten
 
-Eine weitere Unterscheidung wird getroffen, wenn Ihr Unternehmen Gastaufträge zulässt. Wenn ja, können Sie alle Schritte für die `customer_entity` Tabelle. Wenn Gastaufträge nicht zulässig sind, ignorieren Sie alle Schritte für die `sales_flat_order` Tabelle.
+Eine weitere Unterscheidung wird getroffen, wenn Ihr Unternehmen Gastaufträge zulässt. Wenn dies der Fall ist, können Sie alle Schritte für die Tabelle `customer_entity` ignorieren. Wenn Gastaufträge nicht zulässig sind, ignorieren Sie alle Schritte für die Tabelle `sales_flat_order` .
 
 Zu erstellende Spalten
 
@@ -39,13 +39,13 @@ Zu erstellende Spalten
 * `Customer's last order date`
 * [!UICONTROL Column type]: `Many to one > Max`
 * [!UICONTROL Pat]: `sales_flat_order.customer_id > customer_entity.entity_id`
-* Ausgewählt [!UICONTROL column]: `created_at`
+* Ausgewählte [!UICONTROL column]: `created_at`
 * [!UICONTROL Filter]: `Orders we count`
 
 * 
       Sekunden seit dem letzten Bestelldatum des Kunden
-  * [!UICONTROL Column type]: - &quot;Same table > Age
-* Ausgewählt [!UICONTROL column]: `Customer's last order date`
+  * [!UICONTROL Column type]: -     &quot;Gleiche Tabelle > Alter
+* Ausgewählte [!UICONTROL column]: `Customer's last order date`
 
 * (input) Count reference
 * [!UICONTROL Column type]: `Same table > Calculation`
@@ -55,19 +55,19 @@ Zu erstellende Spalten
 * 
   [!UICONTROL Datatype]: `Integer`
 
-* **Count reference** table (dies ist die Datei, die Sie mit der Zahl &quot;1&quot;hochgeladen haben)
+* **Zählerreferenz** -Tabelle (dies ist die Datei, die Sie mit der Zahl &quot;1&quot;hochgeladen haben)
 * Anzahl der Kunden
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `ales_flat_order.(input) reference > Count reference.Primary Key` ODER `customer_entity.(input)reference > Count Reference`. `Primary Key`
-* Ausgewählt [!UICONTROL column]: `sales_flat_order.customer_email` ODER `customer_entity.entity_id`
+* Ausgewählte [!UICONTROL column]: `sales_flat_order.customer_email` ODER `customer_entity.entity_id`
 
-* **Customer_entity** table
+* Tabelle **Customer_entity**
 * Anzahl der Kunden
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
-* [!UICONTROL Path]: `customer_entity`.(Eingabe)-Referenz > Kundenkonzentration. `Primary Key`
-* Ausgewählt [!UICONTROL column]: `Number of customers`
+* [!UICONTROL Path]: `customer_entity`(Eingabe)-Referenz > Kundenkonzentration. `Primary Key`
+* Ausgewählte [!UICONTROL column]: `Number of customers`
 
-* (Eingabe) `Ranking by customer lifetime revenue`
+* (input) `Ranking by customer lifetime revenue`
 * [!UICONTROL Column type]: `Same table > Event Number`
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Customer's lifetime revenue`
@@ -94,8 +94,8 @@ Zu erstellende Spalten
 * Rangfolge nach Kundenlebensdauer der Bestellungen
 * 
   [!UICONTROL Spaltentyp]: – "Dieselbe Tabelle > Berechnung"
-* [!UICONTROL Inputs]: - **(Eingabe) Rangfolge nach Kundenlebensdauer Anzahl der Bestellungen**, **Anzahl der Kunden**
-* [!UICONTROL Calculation]: - **Wenn A null ist, dann wird das Ende von null else (B-(A-1))**
+* [!UICONTROL Inputs]: - **(input) Rangfolge nach Kundenlebensdauer Anzahl der Bestellungen**, **Anzahl der Kunden**
+* [!UICONTROL Calculation]: - **Fall, wenn A null ist, dann null else (B-(A-1)) end**
 * [!UICONTROL Datatype]: - Integer
 
 * Frequenzwert des Kunden (nach Perzentilen)
@@ -128,18 +128,18 @@ Zu erstellende Spalten
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `Many to One > Count Distinct`
 * [!UICONTROL Path]: `sales_flat_order.(input) reference > Customer Concentration. Primary Key` ODER `customer_entity.(input)reference > Customer Concentration.Primary Key`
-* Ausgewählt [!UICONTROL column]: `sales_flat_order.customer_email` ODER `customer_entity.entity_id`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` nicht gleich 000
+* Ausgewählte [!UICONTROL column]: `sales_flat_order.customer_email` ODER `customer_entity.entity_id`
+* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` Entspricht nicht 000
 
-* **Customer_entity** table
+* Tabelle **Customer_entity**
 * [!UICONTROL Number of customers]: `(RFM > 0)`
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
 * [!UICONTROL Path]: `customer_entity.(input) reference > Customer Concentration.Primary Key`
 * Ausgewählt [!UICONTROL column]: - `Number of customers`
 
-* Neuigkeitsbewertung des Kunden `(R+F+M)`
+* Neuigkeitsergebnis des Kunden `(R+F+M)`
 * [!UICONTROL Column type]: `Same table > Calculation`
-* [!UICONTROL Inputs]: – `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
+* [!UICONTROL Inputs]: - `Customer's recency score (by percentiles)`, `Customer's frequency score (by percentiles)`, `Customer's monetary score (by percentiles)`
 * [!UICONTROL Calculation]: `case when (A IS NULL or B IS NULL or C IS NULL) then null else A+B+C end`
 * 
   [!UICONTROL Datatype]: `Integer`
@@ -148,7 +148,7 @@ Zu erstellende Spalten
 * [!UICONTROL Column type]: `Same table > Event Number`
 * [!UICONTROL Event owner]: `(input) reference for count`
 * [!UICONTROL Event rank]: `Customer's recency score (R+F+M)`
-* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` nicht gleich 000
+* [!UICONTROL Filter]: `Customer's RFM score (by percentile)` Entspricht nicht 000
 
 * Rangordnung nach dem RFM-Gesamtwert des Kunden
 * [!UICONTROL Column type]: `Same table > Calculation`
@@ -174,7 +174,7 @@ Keine neuen Metriken!
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass [Metriken alle neuen Spalten als Dimensionen hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) vor der Erstellung neuer Berichte.
+>Stellen Sie sicher, dass Sie [alle neuen Spalten als Dimensionen zu den Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) , bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
@@ -210,7 +210,7 @@ Keine neuen Metriken!
 * 
   [!UICONTROL Chart type]: `Table`
 
-* **Kunden mit einer Neuigkeitsbewertung**
+* **Kunden mit einem Neuigkeitswert**
 * Metrik `A`: `New customers`
 * [!UICONTROL Metric]: `New customers`
 * [!UICONTROL Filter]: `Customer's recency score (by percentiles) Equal to 1`

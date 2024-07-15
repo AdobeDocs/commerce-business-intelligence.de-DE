@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -15,18 +15,18 @@ ht-degree: 0%
 
 ## Neuerung berechneter Spalten
 
-Wann [berechnete Spalten erstellen](../data-warehouse-mgr/creating-calculated-columns.md) In Ihrer Data Warehouse werden Sie aufgefordert, einen Pfad zu definieren, der beschreibt, wie die Tabelle, in der Sie eine Spalte erstellen, mit der Tabelle zusammenhängt, aus der Sie Informationen abrufen. Um einen Pfad erfolgreich zu erstellen, müssen Sie zwei Dinge wissen:
+Beim Erstellen von [berechneten Spalten](../data-warehouse-mgr/creating-calculated-columns.md) in Ihrer Data Warehouse werden Sie aufgefordert, einen Pfad zu definieren, der beschreibt, wie die Tabelle, in der Sie eine Spalte erstellen, mit der Tabelle verbunden ist, aus der Sie Informationen abrufen. Um einen Pfad erfolgreich zu erstellen, müssen Sie zwei Dinge wissen:
 
 1. Beziehung der Tabellen in Ihren Datenbanken
 1. Die primären und Fremdschlüssel, die diese Beziehung definieren
 
-Wenn Sie diese Informationen kennen, können Sie einfach einen Pfad entsprechend den Anweisungen in diesem Thema erstellen. Sie können einen technischen Experten in Ihrer Organisation fragen oder sich an die [Professional Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Wenn Sie diese Informationen kennen, können Sie einfach einen Pfad entsprechend den Anweisungen in diesem Thema erstellen. Sie können einen technischen Experten in Ihrem Unternehmen fragen oder sich an das [Professional Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) wenden.
 
 ## Aktualisierung von Tabellenbeziehungen und Schlüsseltypen {#refresher}
 
 ### Tabellenbeziehungen {#relationships}
 
-Dieses Konzept wird im Abschnitt [Artikel zum Verstehen und Auswerten von Tabellenbeziehungen](../../data-analyst/data-warehouse-mgr/table-relationships.md), aber eine kurze Zusammenfassung schadet nie jemandem, nicht wahr?
+Dieses Konzept wird im Artikel [Grundlegendes und Auswerten von Tabellenbeziehungen](../../data-analyst/data-warehouse-mgr/table-relationships.md) behandelt, aber eine schnelle Zusammenfassung schadet niemandem, oder?
 
 Tabellen können auf drei Arten miteinander verbunden werden:
 
@@ -42,61 +42,61 @@ Wenn eine Beziehung zwischen zwei Tabellen verstanden wird, kann damit bestimmt 
 
 ### Primäre und Fremdschlüssel {#keys}
 
-A `Primary Key` ist eine unveränderliche Spalte oder ein Satz von Spalten, die eindeutige Werte in einer Tabelle erzeugt. Wenn beispielsweise ein Kunde eine Bestellung auf einer Website tätigt, wird dem `orders` mit einem neuen `order_id`. Diese `order_id` ermöglicht es sowohl dem Kunden als auch dem Unternehmen, den Fortschritt dieser bestimmten Bestellung zu verfolgen. Da die Bestell-ID eindeutig ist, ist normalerweise der `Primary Key` von `orders` Tabelle.
+Ein `Primary Key` ist eine unveränderliche Spalte oder ein Satz von Spalten, die eindeutige Werte in einer Tabelle erzeugt. Wenn ein Kunde beispielsweise eine Bestellung auf einer Website tätigt, wird der Tabelle `orders` in Ihrem Warenkorb eine neue Zeile mit dem neuen Wert `order_id` hinzugefügt. Mit diesem `order_id` können sowohl der Kunde als auch das Unternehmen den Fortschritt dieser bestimmten Bestellung verfolgen. Da die Bestell-ID eindeutig ist, ist sie normalerweise der `Primary Key` einer `orders` -Tabelle.
 
-A `Foreign Key` ist eine Spalte, die innerhalb einer Tabelle erstellt wird, die mit dem `Primary Key` Spalte einer anderen Tabelle. Fremdschlüssel erstellen Verweise zwischen Tabellen, sodass Analysten Datensätze einfach nachschlagen und verknüpfen können. Sagen Sie, Sie wollten wissen, welche Bestellungen zu den einzelnen Kunden gehörten. Die `customer id` column (`Primary Key` des `customers` und der `order_id` column (`Foreign Key` im `customers` -Tabelle, die auf die `Primary Key` des `orders` -Tabelle) können wir diese Informationen verknüpfen und analysieren. Beim Erstellen eines Pfads werden Sie aufgefordert, beide `Primary Key` und `Foreign Key`.
+Ein `Foreign Key` ist eine Spalte, die innerhalb einer Tabelle erstellt wird und mit der Spalte `Primary Key` einer anderen Tabelle verknüpft ist. Fremdschlüssel erstellen Verweise zwischen Tabellen, sodass Analysten Datensätze einfach nachschlagen und verknüpfen können. Sagen Sie, Sie wollten wissen, welche Bestellungen zu den einzelnen Kunden gehörten. Die Spalte `customer id` (`Primary Key` der Tabelle `customers`) und die Spalte `order_id` (`Foreign Key` in der Tabelle `customers`, die auf die Tabelle `Primary Key` der Tabelle `orders` verweisen, ermöglichen es uns, diese Informationen zu verknüpfen und zu analysieren. Beim Erstellen eines Pfads werden Sie aufgefordert, sowohl `Primary Key` als auch `Foreign Key` zu definieren.
 
 ## Erstellen eines Pfads {#createpath}
 
 Beim Erstellen einer Spalte in Ihrer Data Warehouse müssen Sie den Pfad definieren, der Informationen aus einer Tabelle in eine andere bringt. Manchmal werden Pfade vorbelegt, da ein Pfad zwischen Tabellen vorhanden ist. Wenn dies nicht der Fall ist, müssen Sie einen Pfad erstellen.
 
-Verwenden Sie die Beziehung zwischen **Kunden** und **Bestellungen** um Ihnen zu zeigen, wie es gemacht wird. Aufschlüsselung:
+Verwenden Sie die Beziehung zwischen **Kunden** und **Bestellungen**, um Ihnen anzuzeigen, wie es funktioniert. Aufschlüsselung:
 
-* Die Beziehung lautet `one-to-many` - ein Kunde kann viele Bestellungen haben, aber eine Bestellung kann nur einen Kunden haben. Dies gibt die Richtung der Beziehung an oder gibt an, wo die berechnete Spalte erstellt werden soll. In diesem Fall bedeutet dies Informationen aus dem `orders` -Tabelle kann in die `customers` Tabelle.
-* Die `primary key` Sie verwenden möchten, ist `customers.customerid`oder die `customer ID` in der `customers` Tabelle.
-* Die `foreign key` Sie verwenden möchten, ist `orders.customerid`oder die `customer ID` in der `orders` Tabelle.
+* Die Beziehung ist `one-to-many` - Ein Kunde kann viele Bestellungen haben, eine Bestellung kann jedoch nur einen Kunden haben. Dies gibt die Richtung der Beziehung an oder gibt an, wo die berechnete Spalte erstellt werden soll. In diesem Fall bedeutet dies, dass Informationen aus der `orders`-Tabelle in die `customers`-Tabelle aufgenommen werden können.
+* Die `primary key`, die Sie verwenden möchten, ist `customers.customerid` oder die `customer ID` -Spalte in der `customers` -Tabelle.
+* Die `foreign key`, die Sie verwenden möchten, ist `orders.customerid` oder die `customer ID` -Spalte in der `orders` -Tabelle.
 
 Jetzt können Sie den Pfad erstellen.
 
-1. Klicken **[!UICONTROL Data > Data Warehouse]**.
-1. Klicken Sie in der Tabellenliste auf die Tabelle, in der Sie die Spalte erstellen möchten. In diesem Beispiel ist dies die `customers` Tabelle.
-1. Das Tabellenschema wird angezeigt. Klicken **[!UICONTROL Create New Column]**.
-1. Benennen Sie die Spalte beispielsweise `Customer's orders`.
-1. Wählen Sie die Spaltendefinition aus. Sehen Sie sich die [Berechnete Spaltenanleitung](../data-warehouse-mgr/creating-calculated-columns.md) für ein praktisches Cheatsheet.
-1. Im [!UICONTROL Select table and column] Dropdown-Liste klicken Sie auf die **[!UICONTROL Create new path]** -Option.
+1. Klicken Sie auf **[!UICONTROL Data > Data Warehouse]**.
+1. Klicken Sie in der Tabellenliste auf die Tabelle, in der Sie die Spalte erstellen möchten. In diesem Beispiel handelt es sich um die Tabelle `customers`.
+1. Das Tabellenschema wird angezeigt. Klicken Sie auf **[!UICONTROL Create New Column]**.
+1. Geben Sie Ihrer Spalte einen Namen, z. B. `Customer's orders`.
+1. Wählen Sie die Spaltendefinition aus. Sehen Sie sich den [Leitfaden für berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md) für ein praktisches Cheatsheet an.
+1. Klicken Sie im Dropdown-Menü [!UICONTROL Select table and column] auf die Option **[!UICONTROL Create new path]** .
 
-   ![Erstellen von Pfaden für berechnete Spalten modal](../../assets/Creating_Paths_modal.png)
+   ![Pfade für berechnete Spalten-Modal erstellen](../../assets/Creating_Paths_modal.png)
 
 1. Wählen Sie mithilfe der Dropdown-Liste die primären und ausländischen Schlüssel für jede Tabelle aus.
 
-   Im `Many` side, wählen Sie `orders.customerid` - Denken Sie daran, Kunden können viele Bestellungen haben.
+   Auf der Seite `Many` wählen Sie `orders.customerid` - denken Sie daran, Kunden können viele Bestellungen haben.
 
-   Im `One` side, wählen Sie `customers.customerid` - eine Bestellung kann nur einen Kunden haben.
+   Auf der Seite `One` wählen Sie `customers.customerid` - eine Bestellung kann nur einen Kunden enthalten.
 
-1. Klicks **[!UICONTROL Save]** , um den Pfad zu speichern und die Erstellung der Spalte abzuschließen.
+1. Klicken Sie auf **[!UICONTROL Save]** , um den Pfad zu speichern und die Erstellung der Spalte abzuschließen.
 
 ### Einschränkungen beim Erstellen von Pfaden {#limits}
 
-* **[!DNL Commerce Intelligence]Primär-/Fremdschlüsselbeziehungen nicht erraten**. Sie möchten keine falschen Daten in Ihr Konto einführen. Daher müssen Pfade manuell erstellt werden.
+* **[!DNL Commerce Intelligence]kann keine Primär-/Fremdschlüsselbeziehungen erraten**. Sie möchten keine falschen Daten in Ihr Konto einführen. Daher müssen Pfade manuell erstellt werden.
 
-* **Derzeit können Pfade nur zwischen zwei verschiedenen Tabellen angegeben werden**. Sind mehr als zwei Tabellen an der Logik beteiligt, die Sie nachbilden möchten? Dann kann es sinnvoll sein, (1) zuerst eine zwischengeschaltete Tabelle zu verwenden, dann die Tabelle &quot;endgültiges Ziel&quot;, oder (2) mit der [Professional Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) um den besten Ansatz für Ihre Ziele zu finden.
+* **Derzeit können Pfade nur zwischen zwei verschiedenen Tabellen angegeben werden**. Sind mehr als zwei Tabellen an der Logik beteiligt, die Sie nachbilden möchten? Dann kann es sinnvoll sein, (1) zuerst eine zwischengeschaltete Tabelle zu verwenden und dann die Tabelle &quot;endgültiges Ziel&quot; zu öffnen, oder (2) mit dem [Professional Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) Kontakt aufzunehmen, um den besten Ansatz für Ihre Ziele zu finden.
 
-* **Eine Spalte kann nur die Fremdschlüsselreferenz für EINEN Pfad gleichzeitig sein.**. Wenn beispielsweise `order_items.order_id` weist auf `orders.id`, dann `order_items.order_id` kann auf nichts anderes verweisen.
+* **Eine Spalte kann nur die Fremdschlüsselreferenz für EINEN Pfad gleichzeitig sein**. Wenn beispielsweise `order_items.order_id` auf `orders.id` verweist, kann `order_items.order_id` nicht auf irgendetwas anderes verweisen.
 
-* **`Many-to-many`Pfade können technisch erstellt werden, führen aber oft zu schlechten Daten, da keine Seite wahr ist `one-to-many` Fremdschlüssel**. Die beste Methode, diese Pfade zu erreichen, hängt immer von der gewünschten spezifischen Analyse ab. Wenden Sie sich an das RJ-Analyseteam, um die beste Lösung zu ermitteln.
+* **`Many-to-many`-Pfade können technisch erstellt werden, führen aber oft zu schlechten Daten, da keine der Seiten ein echter `one-to-many` Fremdschlüssel** ist. Die beste Methode, diese Pfade zu erreichen, hängt immer von der gewünschten spezifischen Analyse ab. Wenden Sie sich an das RJ-Analyseteam, um die beste Lösung zu ermitteln.
 
 Wenn Sie aufgrund einer oder mehrerer der oben genannten Einschränkungen keine berechnete Spalte erstellen können, wenden Sie sich an den Support mit einer Beschreibung der Spalte, die Sie sind
 
 ## Berechneten Spaltenpfad löschen {#delete}
 
-einen falschen Pfad in Ihrem Data Warehouse erstellt? Oder vielleicht machen Sie eine kleine Frühlingsreinigung und wollen aufräumen? Wenn Sie einen Pfad aus Ihrem Konto löschen müssen, können Sie [Senden eines Tickets an Adobe-Support-Analysten](../../guide-overview.md#Submitting-a-Support-Ticket). **Stellen Sie sicher, dass Sie den Namen des Pfads einschließen!**
+einen falschen Pfad in Ihrem Data Warehouse erstellt? Oder vielleicht machen Sie eine kleine Frühlingsreinigung und wollen aufräumen? Wenn Sie einen Pfad aus Ihrem Konto löschen müssen, können Sie [ein Ticket an Adobe Support-Analysten senden](../../guide-overview.md#Submitting-a-Support-Ticket). **Stellen Sie sicher, dass Sie den Namen des Pfads einschließen!**
 
 ## Aufwischen {#wrapup}
 
-Jetzt ist es Ihnen bequem, Pfade für berechnete Spalten in Ihrer Data Warehouse zu erstellen. Wenn Sie sich bei einem bestimmten Pfad immer noch unsicher sind, können Sie immer auf **[!UICONTROL Support]** in [!DNL Commerce Intelligence] -Konto, um Hilfe zu erhalten.
+Jetzt ist es Ihnen bequem, Pfade für berechnete Spalten in Ihrer Data Warehouse zu erstellen. Wenn Sie sich bezüglich eines bestimmten Pfads immer noch unsicher sind, können Sie immer auf **[!UICONTROL Support]** in Ihrem [!DNL Commerce Intelligence]-Konto klicken, um Hilfe zu erhalten.
 
 ## Verwandte
 
 * [Grundlegendes zu und Auswerten von Tabellenbeziehungen](../data-warehouse-mgr/table-relationships.md)
 * [Erstellen von Pfaden für berechnete Spalten](../data-warehouse-mgr/create-paths-calc-columns.md)
-* [Berechnete Spaltentypen](../data-warehouse-mgr/calc-column-types.md) Versuchen Sie zu erstellen.
+* [Berechnete Spaltentypen](../data-warehouse-mgr/calc-column-types.md), die erstellt werden sollen.

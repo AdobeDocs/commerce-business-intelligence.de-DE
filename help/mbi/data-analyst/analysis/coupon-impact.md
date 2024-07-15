@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 2%
+source-wordcount: '1382'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,9 @@ Die Analyse, wie Kunden Ihre Gutscheine verwenden, kann wichtige Einblicke in Ih
 * Inwiefern unterscheidet sich der durchschnittliche Umsatz während der Lebensdauer zwischen den durch Gutscheine erworbenen Kunden und den nicht durch Gutscheine erworbenen Kunden?
 * Machen Kunden, die über Gutscheine erworben wurden, Wiederholungskäufe mit Gutscheinen?
 
-Antworten Sie diese Fragen, indem Sie sich auf [Vergleich von kupon-erworbenen Kunden mit nicht kupon-erworbenen Kunden](#compare), [Analyse von Details zu Erstbestellungen aus Coupon-Akquisen](#firstorder), und [Betrachten Sie die Attribute von Kunden, die Gutscheine in ihrer ersten Bestellung verwenden.](#attributes)
+Beantworten Sie diese Fragen, indem Sie sich auf den [Vergleich von mit Gutscheinen erworbenen Kunden mit nicht mit Gutscheinen erworbenen Kunden](#compare), die [ Analyse von Erstbestelldetails aus Couponakquisitionen](#firstorder) und den [Untersuchen der Attribute von Kunden konzentrieren, die Gutscheine in ihrer ersten Bestellung verwenden.](#attributes)
 
-Erste Schritte!
+Fang an!
 
 ## Vergleich von mit Gutscheinen erworbenen Kunden mit nicht mit Gutscheinen erworbenen Kunden {#compare}
 
@@ -46,10 +46,10 @@ Zeigt die Anzahl der wiederholten Bestellungen mit einem angewendeten Coupon und
 
 Sehen Sie sich einige Beispieldaten für die Akquise von Gutscheinen im Vergleich zu den Akquise-Metriken ohne Coupon an:
 
-| **Kundenakquise** | **Anzahl neuer Kunden** | **Durchschnittlicher Umsatz während der Lebensdauer** | **Anzahl wiederholter Bestellungen** | **Anzahl wiederholter Bestellungen mit Coupon** | **% der Wiederholungsaufträge mit Coupon** |
+| **Kundenakquise** | **Anzahl neuer Kunden** | **Durchschnittlicher Umsatz während der Lebensdauer** | **Anzahl der Wiederholungsaufträge** | **Anzahl wiederholter Bestellungen mit Coupon** | **% der Wiederholungsbestellungen mit Coupon** |
 |-----|-----|-----|-----|-----|-----|
-| Coupon | 1,206 | $356.91 | 2,570 | 1,248 | 48.56% |
-| Nicht Coupon | 11,561 | $498.30 | 20,145 | 3,251 | 16.14% |
+| Coupon | 1.206 | 356,91 $ | 2.570 | 1.248 | 48,56% |
+| Nicht Coupon | 11.561 | $ 498.30 | 20.145 | 3.251 | 16,14 % |
 
 {style="table-layout:auto"}
 
@@ -109,11 +109,11 @@ Diese Metrik hilft bei der Bewertung der Treue und des durchschnittlichen Umsatz
 
 Sehen Sie sich nun ein Beispiel an, in dem drei verschiedene Gutscheine für die Erstbestellung von Kunden verwendet werden:
 
-| **Coupon** | **Erstbestellungen (FTO)** | **Bruttoeinnahmen aus FTO** | **Ermäßigungen für FTO** | **Nettoeinnahmen aus FTO** | **Durchschnittlicher Bestellwert für FTO** |
+| **Coupon** | **Erstbestellungen (FTO)** | **Bruttoeinnahmen aus FTO** | **Auf FTO angewendete Rabatte** | **Nettoumsatz aus FTO** | **Durchschnittlicher Bestellwert für FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25 % Rabatt auf 100 USD oder mehr** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
-| **10 USD Rabatt** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
-| **20 % Rabatt** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
+| **25 % Rabatt auf 100 USD oder mehr** | 56 | 8.531,04 $ | 2.132,76 $ | $ 6&#39;398.28 | 152,34 $ |
+| **$10 off** | 87 | $ 3&#39;707.07 | 426,10 $ | $ 3&#39;280.97 | 42,61 $ |
+| **20 % Rabatt** | 145 | 10.975,05 $ | 2.195,01 $ | 8.780,04 $ | $ 75.69 |
 
 {style="table-layout:auto"}
 
@@ -124,31 +124,31 @@ Was kann daraus gemacht werden? Erstens hatte der Gutschein &quot;20 % Rabatt&qu
 * die Tageszeit/Woche/Monat/Jahr, zu der die Gutscheine angeboten wurden.
 * die Saison, in der die Gutscheine je nach Unternehmen angeboten wurden.
 
-  **Beispiel:** Der Gutschein &quot;20% Rabatt&quot; wurde in den Sommermonaten angeboten, aber das Unternehmen verkauft Winterkleidung.
+  **Beispiel:** Der Gutschein &quot;20% Rabatt&quot;wurde in den Sommermonaten angeboten, aber das Unternehmen verkauft Winterkleidung.
 * die Einschränkungen für die Gutscheine.
 
   **Beispiel:** Der Gutschein &quot;10 % Rabatt&quot;wird nur Kunden angeboten, die einen Wintermantel in derselben Bestellung erwerben.
 
-Die **Bruttoeinnahmen** für den Coupon &quot;25 % Rabatt von 100 $ oder mehr&quot;ist viel höher als der Bruttoumsatz für den &quot;10 off&quot;-Coupon. Der Gutschein für &quot;$10 off&quot;ist jedoch viel größer **Anzahl der Bestellungen**. Analysieren der **durchschnittlicher Bestellwert** bietet Einblicke in diese Unterschiede. Obwohl der Coupon &quot;25 % Rabatt von 100 Euro oder mehr&quot;weniger Bestellungen aufwies, liegt der durchschnittliche Bestellwert über dem Dreifachen des &quot;10-Rabatt&quot;-Coupons. Somit wird ein größerer Bruttoumsatz dem Coupon &quot;25 % Rabatt von 100 $ oder mehr&quot;zugeordnet.
+Der **Bruttoumsatz** für den Coupon &quot;25 % Rabatt 100 $ oder mehr&quot;ist viel höher als der Bruttoumsatz für den Gutschein &quot;10 € Rabatt&quot;. Der Gutschein &quot;$10 off&quot;hat jedoch eine viel größere **Anzahl der Bestellungen**. Die Analyse des **durchschnittlichen Bestellwerts** bietet Einblicke in diese Unterschiede. Obwohl der Coupon &quot;25 % Rabatt von 100 Euro oder mehr&quot;weniger Bestellungen aufwies, liegt der durchschnittliche Bestellwert über dem Dreifachen des &quot;10-Rabatt&quot;-Coupons. Somit wird ein größerer Bruttoumsatz dem Coupon &quot;25 % Rabatt von 100 $ oder mehr&quot;zugeordnet.
 
-Die **Rabatte** und **Nettoeinnahmen** für die Gutscheine &quot;25 % Rabatt von 100 USD oder mehr&quot;und &quot;20 % Rabatt&quot;sind wertmäßig. Auch wenn der durchschnittliche Bestellwert für &quot;25 % Rabatt von 100 $ oder mehr&quot;fast dem Doppelten des durchschnittlichen Bestellwerts für &quot;20 % Rabatt&quot;entspricht, hat der letztgenannte Coupon etwas weniger als das Dreifache der Anzahl von Bestellungen.
+Die **Rabatte** und **Nettoumsätze** für die Gutscheine &quot;25% Rabatt von 100 $ oder mehr&quot;und &quot;20% Rabatt&quot;sind wertmäßig. Auch wenn der durchschnittliche Bestellwert für &quot;25 % Rabatt von 100 $ oder mehr&quot;fast dem Doppelten des durchschnittlichen Bestellwerts für &quot;20 % Rabatt&quot;entspricht, hat der letztgenannte Coupon etwas weniger als das Dreifache der Anzahl von Bestellungen.
 
 ## Attribute von Kunden, die Gutscheine in ihrer ersten Bestellung verwenden {#attributes}
 
 Nachdem Sie sich die Bestellungen selbst angesehen haben, sehen Sie sich die Kunden an, die bei ihren ersten Bestellungen Gutscheine verwenden:
 
-| **Erstbestellcoupon des Kunden** | **Anzahl der Kunden** | **Durchschnittliche Anzahl der Bestellungen über die Lebensdauer** | **Durchschnittlicher Umsatz während der Lebensdauer** |
+| **Coupon der ersten Bestellung des Kunden** | **Anzahl der Kunden** | **Durchschnittliche Lebensdauer der Bestellungen** | **Durchschnittlicher Umsatz während der Lebensdauer** |
 |-----|-----|-----|-----|
-| **25 % Rabatt auf 100 USD oder mehr** | 56 | 2.8 | $554.54 |
-| **10 USD Rabatt** | 87 | 1.9 | $115.50 |
-| **20 % Rabatt** | 145 | 1.3 | $103.75 |
+| **25 % Rabatt auf 100 USD oder mehr** | 56 | 2,8 | 554,54 $ |
+| **$10 off** | 87 | 1,9 | 115,50 $ |
+| **20 % Rabatt** | 145 | 1,3 | 103,75 $ |
 
 {style="table-layout:auto"}
 
 Beachten Sie, dass die Anzahl der Erstbestellungen mit der Anzahl der Kunden für jeden Gutschein übereinstimmt. Dies ist sinnvoll, da jeder Kunde nur eine erste Bestellung haben kann.
 
-Die größte Anzahl von Kunden wurde durch den &quot;20% Rabatt&quot;-Gutschein erworben. Diese Kunden haben jedoch die niedrigsten **durchschnittliche Lebensdauer der Bestellungen** und **Durchschnittlicher Umsatz während der Lebensdauer**; im Allgemeinen tätigen die meisten mit Coupon erworbenen Kunden keine Nachbestellungen. Darüber hinaus haben Kunden über das Coupon-Laufwerk &quot;25 % Rabatt von 100 Euro oder mehr&quot;einen höheren Wert erworben **durchschnittliche Lebensdauer der Bestellungen** und wiederum höher **Durchschnittlicher Umsatz während der Lebensdauer**. Im Allgemeinen kehren Benutzer, die über diesen Gutschein erworben wurden, in der Regel zurück und tätigen weitere Käufe.
+Die größte Anzahl von Kunden wurde durch den &quot;20% Rabatt&quot;-Gutschein erworben. Diese Kunden verfügen jedoch über die niedrigste **durchschnittliche Lebensdauer der Bestellungen** und den niedrigsten **durchschnittlichen Umsatz während der Lebensdauer**; im Allgemeinen tätigen die meisten mit Coupons erworbenen Kunden keine Wiederholungsaufträge. Darüber hinaus führen Kunden, die über den &quot;25 % Rabatt von 100 Euro oder mehr&quot;Coupon erworben wurden, zu einer höheren **durchschnittlichen Lebensdauer von Bestellungen** und damit zu einem höheren **durchschnittlichen Lebensdauerumsatz**. Im Allgemeinen kehren Benutzer, die über diesen Gutschein erworben wurden, in der Regel zurück und tätigen weitere Käufe.
 
 ## Aufwischen {#wrapup}
 
-Es gibt eine Vielzahl von Analysen, die Sie erstellen können, um besser zu verstehen, wie Ihre Kunden Coupons verwenden. Haben Sie schon einmal darüber nachgedacht zu analysieren, wie Ihre Kunden Ihre Gutscheine verwenden oder wie lange es dauert, bis Gutscheine verwendet werden? Wie sieht es mit der Suche nach dem optimalen Rabattbetrag aus - welcher Betrag ermutigt Wiederholungskäufer, einen höheren durchschnittlichen Bestellwert und höheren Lebenszeitumsatz? Für Hilfe zu diesen Fragen, [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Es gibt eine Vielzahl von Analysen, die Sie erstellen können, um besser zu verstehen, wie Ihre Kunden Coupons verwenden. Haben Sie schon einmal darüber nachgedacht zu analysieren, wie Ihre Kunden Ihre Gutscheine verwenden oder wie lange es dauert, bis Gutscheine verwendet werden? Wie sieht es mit der Suche nach dem optimalen Rabattbetrag aus - welcher Betrag ermutigt Wiederholungskäufer, einen höheren durchschnittlichen Bestellwert und höheren Lebenszeitumsatz? Hilfe bei diesen Fragen erhalten Sie von [dem Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

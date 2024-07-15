@@ -22,31 +22,31 @@ E-Mail-Zusammenfassungen sind ein leistungsstarkes Kommunikationswerkzeug, mit d
 
 ## Neue E-Mail-Zusammenfassung erstellen
 
-1. Klicks **[!DNL Manage Data]** then **[!UICONTROL Email Summary]** in der Seitenleiste.
+1. Klicken Sie auf **[!DNL Manage Data]** und dann auf **[!UICONTROL Email Summary]** in der Seitenleiste.
 
    Wenn Sie zum ersten Mal eine E-Mail-Zusammenfassung erstellen, werden auf dieser Seite keine gespeicherten Zusammenfassungen angezeigt.
 
-1. Klicks **[!UICONTROL Create New Email Summary]** in der oberen rechten Ecke.
+1. Klicken Sie oben rechts auf **[!UICONTROL Create New Email Summary]** .
 
 1. Geben Sie einen Namen für die Zusammenfassung ein.
 
-   Wählen Sie einen Namen aus, der die in der Zusammenfassung enthaltenen Elemente wiedergibt. Beispiel, `AOV Comparison`.
+   Wählen Sie einen Namen aus, der die in der Zusammenfassung enthaltenen Elemente wiedergibt. Beispiel: `AOV Comparison`.
 
-1. Im `Choose Content` auswählen, die Berichte, die Sie in die Zusammenfassung aufnehmen möchten.
+1. Wählen Sie im Abschnitt `Choose Content` die Berichte aus, die Sie in die Zusammenfassung aufnehmen möchten.
 
-   Sie können bis zu zehn Berichte auswählen, deren Inhaber Sie sind. Nachdem Sie einen Bericht ausgewählt haben, verwenden Sie die angezeigten Symbole, um auszuwählen, ob der Bericht als Tabelle oder Diagramm gesendet werden soll. Wenn Sie den Bericht als Zahl gespeichert haben, können Sie ihn nur als Zahl senden. Informationen zum Senden einer E-Mail-Zusammenfassung mit einem Bericht mit veralteten Daten finden Sie unter [Kontoeinstellungen verwalten](../../administrator/account-management/managing-account-settings.md).
+   Sie können bis zu zehn Berichte auswählen, deren Inhaber Sie sind. Nachdem Sie einen Bericht ausgewählt haben, verwenden Sie die angezeigten Symbole, um auszuwählen, ob der Bericht als Tabelle oder Diagramm gesendet werden soll. Wenn Sie den Bericht als Zahl gespeichert haben, können Sie ihn nur als Zahl senden. Informationen zum Senden einer E-Mail-Zusammenfassung mit einem Bericht mit veralteten Daten finden Sie unter [Verwalten Ihrer Kontoeinstellungen](../../administrator/account-management/managing-account-settings.md).
 
    >[!NOTE]
    >
    >`Cohort` -Berichte sind nur verfügbar, wenn Sie die neue Architektur verwenden.
 
-1. (Optional) Wählen Sie `Send Email To Me` , wenn Sie die E-Mail erhalten möchten.
+1. (Optional) Wählen Sie `Send Email To Me` aus, wenn Sie die E-Mail erhalten möchten.
 
-1. Um andere Benutzer in die E-Mail aufzunehmen, geben Sie ihre E-Mail-Adressen in das `Add Email Recipients` durch Kommas, Leerzeichen, Tabulatoren oder Semikolons getrennt werden.
+1. Um andere Benutzer in die E-Mail einzuschließen, geben Sie deren E-Mail-Adressen in das Feld `Add Email Recipients` ein, getrennt durch Kommas, Leerzeichen, Tabs oder Semikolons.
 
 ## Email-Zusammenfassung planen
 
-Im `Set when to send the Email Summary` -Feld können Sie angeben, wann die E-Mail-Zusammenfassungen gesendet werden sollen. Optionen sind:
+Im Feld `Set when to send the Email Summary` können Sie angeben, wann die E-Mail-Zusammenfassungen gesendet werden sollen. Optionen sind:
 
 * `Manual`
 * `Once`
@@ -54,40 +54,40 @@ Im `Set when to send the Email Summary` -Feld können Sie angeben, wann die E-Ma
 
 ### E-Mail-Zusammenfassung speichern , um sie zu einem späteren Zeitpunkt zu senden
 
-1. Auswählen `Manual` aus dem `Set when to send the Email Summary` -Feld.
+1. Wählen Sie `Manual` aus dem Feld `Set when to send the Email Summary` aus.
 
-1. Klicken **[!UICONTROL Save]**.
+1. Klicken Sie auf **[!UICONTROL Save]**.
 
    Dadurch wird die Zusammenfassung in der Liste der E-Mail-Zusammenfassungen gespeichert.
 
-1. Wenn Sie die Zusammenfassung versenden möchten, klicken Sie auf das Zahnradsymbol und wählen Sie `Send Now`.
+1. Wenn Sie bereit sind, die Zusammenfassung zu senden, klicken Sie auf das Zahnradsymbol und wählen Sie `Send Now` aus.
 
 ### E-Mail-Zusammenfassung einmal senden
 
-1. Auswählen `Once` aus dem `Set when to send the Email Summary` -Feld.
+1. Wählen Sie `Once` aus dem Feld `Set when to send the Email Summary` aus.
 
-1. Geben Sie das Startdatum im `Select Start Date` Kalender.
+1. Geben Sie das Startdatum im Kalender `Select Start Date` an.
 
-1. Geben Sie die Versandzeit der E-Mail im `Select time to send` -Feld.
+1. Geben Sie im Feld `Select time to send` die Zeit für den Versand der E-Mail an.
 
 ### Wiederholungszeitplan erstellen
 
-1. Auswählen `Repeating` aus dem `Set when to send the Email Summary` -Feld.
+1. Wählen Sie `Repeating` aus dem Feld `Set when to send the Email Summary` aus.
 
-1. Im `Set Frequency` Feld auswählen `Daily`, `Weekly`oder `Monthly`.
+1. Wählen Sie im Feld `Set Frequency` die Option `Daily`, `Weekly` oder `Monthly` aus.
 
-1. Geben Sie das Startdatum im `Select Start Date` Kalender.
+1. Geben Sie das Startdatum im Kalender `Select Start Date` an.
 
-1. Geben Sie die Versandzeit der E-Mail im `Select time to send` -Feld.
+1. Geben Sie im Feld `Select time to send` die Zeit für den Versand der E-Mail an.
 
-1. (Optional) Um ein Enddatum anzugeben, wählen Sie `End Date` und wählen Sie das Enddatum aus dem Kalender aus.
+1. (Optional) Um ein Enddatum anzugeben, wählen Sie &quot;`End Date`&quot;und wählen Sie das Enddatum aus dem Kalender aus.
 
 ## Vorhandene E-Mail-Zusammenfassung ändern
 
-Nachdem Sie eine E-Mail-Zusammenfassung erstellt und gespeichert haben, wird `Email Summaries` zeigt eine Liste aller gespeicherten Zusammenfassungen an. Sie können`+`) für jede Zeile, um weitere Informationen zu erhalten. Die Spalten in dieser Ansicht sind:
+Nachdem Sie eine E-Mail-Zusammenfassung erstellt und gespeichert haben, zeigt die Seite `Email Summaries` eine Liste aller gespeicherten Zusammenfassungen an. Sie können die einzelnen Zeilen erweitern (`+`), um weitere Informationen zu erhalten. Die Spalten in dieser Ansicht sind:
 
 * `Email Name` - Name der E-Mail-Zusammenfassung
-* `Content` - Inhaltstyp innerhalb der Zusammenfassung, z. B. die Namen von Berichten. Informationen zum Senden einer E-Mail-Zusammenfassung mit einem Bericht mit veralteten Daten finden Sie unter [Kontoeinstellungen verwalten](../../administrator/account-management/managing-account-settings.md).
+* `Content` - Inhaltstyp innerhalb der Zusammenfassung, z. B. die Namen von Berichten. Informationen zum Senden einer E-Mail-Zusammenfassung mit einem Bericht mit veralteten Daten finden Sie unter [Verwalten Ihrer Kontoeinstellungen](../../administrator/account-management/managing-account-settings.md).
 * `Scheduled` - Häufigkeit, Datum und Uhrzeit der Übermittlung der E-Mail-Zusammenfassung
 * `Recipients` - Empfänger der E-Mail-Zusammenfassung
 * `Created Date` - Datum der Erstellung der E-Mail-Zusammenfassung

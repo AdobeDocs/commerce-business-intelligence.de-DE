@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Diagramme zu Dashboards hinzufügen
 
-Vorhandene Diagramme können Dashboards mit dem [!UICONTROL Add Report] -Funktion, die sich oben rechts im Bildschirm befindet. Dieselbe Grafik kann mehreren Dashboards hinzugefügt werden, d. h. wenn das Diagramm bearbeitet wird, spiegeln alle Dashboards mit dieser Grafik die Änderung wider.
+Vorhandene Diagramme können Dashboards mithilfe der Funktion [!UICONTROL Add Report] oben rechts im Bildschirm hinzugefügt werden. Dieselbe Grafik kann mehreren Dashboards hinzugefügt werden, d. h. wenn das Diagramm bearbeitet wird, spiegeln alle Dashboards mit dieser Grafik die Änderung wider.
 
 >[!NOTE]
 >
->Klicken **[!UICONTROL Add Report]** ist nicht dasselbe wie Klicken **[!UICONTROL Save As]** im Diagramm-Editor. `Add Report` fügt lediglich das Diagramm zum Dashboard hinzu, während `Save As` erstellt eine Version eines vorhandenen Diagramms.
+>Das Klicken auf **[!UICONTROL Add Report]** entspricht nicht dem Klicken auf **[!UICONTROL Save As]** im Diagrammeditor. `Add Report` fügt lediglich das Diagramm zum Dashboard hinzu, während `Save As` eine Version eines vorhandenen Diagramms erstellt.
 
 ## Diagramm hinzufügen
 
-1. Klicken **[!UICONTROL Add Report]**. Eine Liste der vorhandenen Diagramme wird angezeigt.
+1. Klicken Sie auf **[!UICONTROL Add Report]**. Eine Liste der vorhandenen Diagramme wird angezeigt.
 
 1. Suchen Sie nach dem Namen des Diagramms, das Sie hinzufügen möchten, oder klicken Sie darauf.
 

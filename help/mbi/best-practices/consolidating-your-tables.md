@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Tabellen zusammenfassen
 
-Wenn Sie mehrere Storefronts oder mehrere Märkte betreiben, können ähnliche Datenbanken separat gespeichert werden. In [!DNL Adobe Commerce Intelligence]ist es einfach, ähnliche Tabellen aus verschiedenen Datenbanken zusammenzuführen.
+Wenn Sie mehrere Storefronts oder mehrere Märkte betreiben, können ähnliche Datenbanken separat gespeichert werden. In [!DNL Adobe Commerce Intelligence] ist es einfach, ähnliche Tabellen aus verschiedenen Datenbanken zusammenzufassen.
 
-Sie können beispielsweise eine `orders` Tabelle für `Market A`und ähnliche `orders` Tabelle für `Market B`. [!DNL Commerce Intelligence] kann beide Tabellen zusammenfassen und die aggregierten Bestelldaten aus beiden anzeigen `Market A` und `B`, zusätzlich zur Segmentierung nach spezifischen Märkten.
+Sie können beispielsweise eine `orders` Tabelle für `Market A` und eine ähnliche `orders` Tabelle für `Market B` haben. [!DNL Commerce Intelligence] kann beide Tabellen konsolidieren und Ihnen erlauben, die aggregierten Bestelldaten sowohl aus `Market A` als auch aus `B` anzuzeigen, und zwar zusätzlich zur Segmentierung nach spezifischen Märkten.
 
-Damit die Tabellen konsolidiert werden können, müssen Eingabetabellen **ähnlich strukturiert**. Anders ausgedrückt: Alle Eingabetabellen müssen die in der konsolidierten Tabelle erforderlichen Datenspalten enthalten.
+Damit die Konsolidierung von Tabellen funktioniert, müssen Eingabetabellen **ähnlich strukturiert** sein. Anders ausgedrückt: Alle Eingabetabellen müssen die in der konsolidierten Tabelle erforderlichen Datenspalten enthalten.
 
 In diesem Thema werden einige der häufigsten Anwendungsfälle für konsolidierte Tabellen und die nächsten Schritte erläutert, die für die Erstellung eigener Tabellen erforderlich sind.
 
@@ -29,7 +29,7 @@ Im Folgenden wird erläutert, wann es sinnvoll sein könnte, konsolidierte Tabel
 
 Wenn Sie Ihre Produkte unter verschiedenen Marken und Websites verkaufen, sind die Tabellen für jede Marke oder Website wahrscheinlich ähnlich strukturiert.
 
-Sie können beispielsweise eine `orders` Tabelle für Website `A` und eine separate, aber ähnliche `orders` Tabelle für Website `B`. In diesem Fall kann es nützlich sein, die `orders` Tabellen auf der Website `A` und `B`. Auf diese Weise können Sie den konsolidierten Umsatz und die Anzahl der Bestellungen von der Website anzeigen `A` und `B`, um Metriken auch nach diesen beiden Websites segmentieren zu können.
+Sie können beispielsweise eine `orders` Tabelle für Website `A` und eine separate, aber ähnliche `orders` Tabelle für Website `B` haben. In diesem Fall kann es nützlich sein, die `orders` -Tabellen von der Website `A` und `B` zu konsolidieren. Auf diese Weise können Sie sich den konsolidierten Umsatz und die Anzahl der Bestellungen von der Website `A` und `B` ansehen und außerdem Metriken nach diesen beiden Websites segmentieren.
 
 ### Integrieren älterer Daten
 
@@ -45,8 +45,8 @@ Wie bei allen anderen Tabellen in Ihrer Data Warehouse können Sie zusätzliche 
 
 ## Erstellen, Anzeigen oder Aktualisieren einer konsolidierten Tabelle
 
-Wenn Sie eine konsolidierte Tabelle zu Ihrer Data Warehouse hinzufügen möchten, wenden Sie sich an [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket).
+Wenn Sie eine konsolidierte Tabelle zu Ihrer Data Warehouse hinzufügen möchten, wenden Sie sich an [!DNL Commerce Intelligence] [support](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >
->Da konsolidierte Tabellen nicht im `Data Warehouse Manager`, das Anzeigen und Aktualisieren dieser Tabellen nur durch [!DNL Commerce Intelligence] unterstützen.
+>Da konsolidierte Tabellen nicht im `Data Warehouse Manager` angezeigt werden können, können diese Tabellen nur durch die Unterstützung von [!DNL Commerce Intelligence] angezeigt und aktualisiert werden.

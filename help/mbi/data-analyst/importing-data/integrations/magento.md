@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# Verbinden [!DNL Adobe Commerce]
+# [!DNL Adobe Commerce] verbinden
 
 >[!NOTE]
 >
 >Erfordert [Administratorberechtigungen](../../../administrator/user-management/user-management.md).
 
-Möchten Sie sehen, wie Ihr Unternehmen die Leistung erzielt oder Ihre wertvollsten Akquisequellen und -kanäle finden? Verbinden Ihrer [!DNL Adobe Commerce] Daten an [!DNL Commerce Intelligence] ermöglicht Ihnen, diese Fragen und vieles mehr zu beantworten.
+Möchten Sie sehen, wie Ihr Unternehmen die Leistung erzielt oder Ihre wertvollsten Akquisequellen und -kanäle finden? Wenn Sie Ihre [!DNL Adobe Commerce] -Daten mit [!DNL Commerce Intelligence] verbinden, können Sie diese Fragen beantworten und vieles mehr.
 
-Als [!DNL Adobe Commerce] Datenbank basiert auf MySQL, Sie können sie mit [!DNL Commerce Intelligence] durch [Direktanschluss](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)oder [über einen SSH-Tunnel](../integrations/mysql-via-ssh-tunnel.md). Die SSH-Methode wird empfohlen, da sie die sicherste ist.
+Da die [!DNL Adobe Commerce]-Datenbank auf MySQL basiert, können Sie sie über eine [direkte Verbindung](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) oder [ über einen SSH-Tunnel mit [!DNL Commerce Intelligence] verbinden. ](../integrations/mysql-via-ssh-tunnel.md) Die SSH-Methode wird empfohlen, da sie die sicherste ist.
 
 ## Verwandte Informationen
 

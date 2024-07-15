@@ -6,8 +6,8 @@ role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 1%
+source-wordcount: '849'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt kaufen, im Laufe der Zeit anders verhalten als andere Kunden. In diesem Thema werden Analysen untersucht, die Ihnen bei der Beantwortung der folgenden Fragen helfen können.
 
-Von Kunden, die eine *spezifisches Element*,
+Von Kunden, die einen *bestimmten Artikel* kaufen,
 
 * Wie hoch ist die Wahrscheinlichkeit, dass sie einen weiteren Kauf tätigen?
 * Wie lange dauert es, bis sie einen weiteren Kauf tätigen?
@@ -46,11 +46,11 @@ Diese Kennzahl zeigt die Bestellfrequenz des Kunden oder die Zeit an, die es dau
 
 Beachten Sie die oben genannten Metriken und sehen Sie sich ein Beispiel für Kaffeeprodukte an.
 
-| **Produktname** | **Wiederholungsreihenwahrscheinlichkeit** | **Durchschnittliche Anzahl der Bestellungen über die Lebensdauer** | **Durchschnittlicher Umsatz während der Lebensdauer** | **Mittlere Zeit bis nächste Bestellung** |
+| **Produktname** | **Wiederholungsreihenwahrscheinlichkeit** | **Durchschnittliche Lebensdauer der Bestellungen** | **Durchschnittlicher Umsatz während der Lebensdauer** | **Mediane Zeit bis zur nächsten Bestellung** |
 |-----|-----|-----|-----|-----|
-| Kaffeebierwanne für eine Tasse | 94.98% | 7.92 | $549.82 | 57.01 Tage |
-| Kaffeekapseln | 93.82% | 8.68 | $479.98 | 63.48 Tage |
-| Kaffeebohnen | 41.92% | 6.07 | $99.82 | 27.31 Tage |
+| Kaffeebierwanne für eine Tasse | 94,98% | 7,92 | 549,82 $ | 57.01 Tage |
+| Kaffeekapseln | 93,82% | 8,68 | $ 479.98 | 63.48 Tage |
+| Kaffeebohnen | 41,92% | 6,07 | 99,82 $ | 27.31 Tage |
 
 {style="table-layout:auto"}
 
@@ -76,10 +76,10 @@ Bei Kunden, die Kaffeekapseln gekauft haben, kann die Hälfte innerhalb von etwa
 
 ## Welche anderen Analysen kann ich erstellen?
 
-Mithilfe der in diesem Thema beschriebenen Metriken können Sie auch weitere nützliche Neukaufsanalysen erstellen. Sie können beispielsweise auch sehen, wie Kunden zurückkaufen **derselbe Artikel** - wenn sie beispielsweise regelmäßig Nachfüllungen kaufen. Kapseln und Kaffeebohnen können regelmäßig neu gekauft werden, es wäre jedoch unerwartet, wenn Kunden den Kaffee-Brauer erneut kaufen würden. Wenn sich Ihr Unternehmen auf Nachbearbeitung oder Wiederaufstockung konzentriert, wäre diese Analyse nützlich.
+Mithilfe der in diesem Thema beschriebenen Metriken können Sie auch weitere nützliche Neukaufsanalysen erstellen. Sie können beispielsweise auch sehen, wie Kunden **denselben Artikel** zurückkaufen - z. B. wenn sie regelmäßig Nachfüllungen kaufen. Kapseln und Kaffeebohnen können regelmäßig neu gekauft werden, es wäre jedoch unerwartet, wenn Kunden den Kaffee-Brauer erneut kaufen würden. Wenn sich Ihr Unternehmen auf Nachbearbeitung oder Wiederaufstockung konzentriert, wäre diese Analyse nützlich.
 
 Zusätzlich zur Analyse des Kaufverhaltens Ihrer Kunden können Sie auch Analysen erstellen, die sich auf die Kundenloyalität beziehen. Erwägen Sie die Analyse von Mustern in der Kundenabwanderung - wo verlassen Ihre Kunden Ihre Site und kommen nicht zurück? Wie schnell ist das passiert?
 
-Nachdem Sie ermittelt haben, warum die Abwanderung stattfindet, können Sie Ihre Analyse verwenden, um eine `reactivation` Kampagne. Mithilfe dieser Daten können Sie Benutzer identifizieren, die inaktiv geworden sind, wie lange es seit ihrem letzten Besuch ist, was ihr letzter Kauf war usw. Auf diese Weise können Sie umsetzbare Entscheidungen treffen, die Ihre Kunden dazu verleiten, zurückzukehren.
+Nachdem Sie ermittelt haben, warum die Abwanderung stattfindet, können Sie Ihre Analyse verwenden, um eine `reactivation` -Kampagne zu erstellen. Mithilfe dieser Daten können Sie Benutzer identifizieren, die inaktiv geworden sind, wie lange es seit ihrem letzten Besuch ist, was ihr letzter Kauf war usw. Auf diese Weise können Sie umsetzbare Entscheidungen treffen, die Ihre Kunden dazu verleiten, zurückzukehren.
 
-Hilfe zur Analyse: [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Hilfe bei der Analyse erhalten Sie von [dem Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

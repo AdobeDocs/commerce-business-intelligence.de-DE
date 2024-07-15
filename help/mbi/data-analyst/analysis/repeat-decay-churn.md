@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ In diesem Thema werden die Analysen untersucht, die Ihnen bei der Beantwortung d
 
 ## Empfehlungen für Metriken
 
-Bei der Analyse des Rückgangs und der Abwanderung von Wiederholungswahrscheinlichkeiten sollten Sie erwägen, ([oder Gebäude](../../data-user/reports/ess-manage-data-metrics.md)) diese Metriken:
+Bei der Analyse von Wiederholungswahrscheinlichkeitsverfall und Abwanderung sollten Sie die folgenden Metriken ([oder Erstellen](../../data-user/reports/ess-manage-data-metrics.md)) in Erwägung ziehen:
 
 ### anfängliche Wiederholungsreihenwahrscheinlichkeit
 
@@ -33,7 +33,7 @@ Diese Kennzahl ist definiert als die Gesamtzahl der wiederkehrenden Bestellungen
 
 Diese Kennzahl zeigt die Wahrscheinlichkeit, dass ein Benutzer eine erneute Bestellung aufgibt, da seit seiner letzten Bestellung Monate vergangen sind. Die Formel, mit der diese Metrik generiert wird, vereinfacht Folgendes:
 
-![Formel für Wiederholungswahrscheinlichkeit](../../assets/Repeat_probability_formula.png)
+![Formel zur Wiederholungswahrscheinlichkeit](../../assets/Repeat_probability_formula.png)
 
 Je nach Ihrem Geschäftsmodell kann die Wiederholungsbestellwahrscheinlichkeit entweder sofort nach der Bestellung eines Kunden abnehmen und in den darauffolgenden Monaten weiter sinken oder saisonale Schwankungen und Spitzen zeigen.
 
@@ -43,7 +43,7 @@ Wenn Sie den Prozentsatz der Kunden verstehen, von denen erwartet wird, dass sie
 
 Sehen Sie sich den Rückgang der Wiederholwahrscheinlichkeit für ein typisches E-Commerce-Geschäft an.
 
-![Anfängliche Wiederholungsauftragswahrscheinlichkeit Wiederholungsauftragswahrscheinlichkeit in den Monaten seit der Bestellung.](../../assets/Order_probability_reports.png)
+![Die anfängliche Wiederholungsauftragswahrscheinlichkeit wiederholt die Auftragswahrscheinlichkeit in den Monaten seit der Bestellung.](../../assets/Order_probability_reports.png)
 
 ### anfängliche Wiederholungsreihenwahrscheinlichkeit
 
@@ -78,7 +78,7 @@ Nachdem Sie die obige Analyse erstellt und einen Abwanderungsschwellenwert ermit
 
 Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt kaufen, im Laufe der Zeit anders verhalten als andere Kunden. Möchten Sie mehr erfahren? Sehen Sie sich dieses Tutorial an, um das lebenslange Kaufverhalten von Kundenkohorten basierend auf bestimmten Produkten, die sie gekauft haben, zu untersuchen.
 
-Diese Best Practice wird von [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS). [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) für weitere Informationen.
+Diese Best Practice wird von [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS) bereitgestellt. [Wenden Sie sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) , um weitere Informationen zu erhalten.
 
 ### Verwandte
 

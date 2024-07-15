@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Datenfreigabe
 
-Es ist wichtig, den Status und die Trends Ihres Unternehmens mitzuteilen. In diesem Abschnitt erfahren Sie, wie Sie Daten aus einer Grafik in eine `.csv` oder `Excel` -Datei. Erfahren Sie außerdem, wie Sie E-Mail-Zusammenfassungen Ihrer Daten konfigurieren und automatisch an wichtige Interessengruppen senden können.
+Es ist wichtig, den Status und die Trends Ihres Unternehmens mitzuteilen. In diesem Abschnitt erfahren Sie, wie Sie Daten aus einem Diagramm exportieren und in eine `.csv` - oder `Excel` -Datei freigeben. Erfahren Sie außerdem, wie Sie E-Mail-Zusammenfassungen Ihrer Daten konfigurieren und automatisch an wichtige Interessengruppen senden können.

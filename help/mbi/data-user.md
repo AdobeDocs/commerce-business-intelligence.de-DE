@@ -16,8 +16,8 @@ ht-degree: 0%
 Sie verwenden Daten, um geschäftliche Entscheidungen zu treffen. Möglicherweise erhalten Sie Berichte und Dashboards von einem Datenanalytiker in Ihrem Team, aber Sie möchten auch erfahren, wie Sie diese Berichte und Dashboards erstellen.
 
 In diesem Abschnitt wird Folgendes veranschaulicht:
-* Daten erfassen und anzeigen in [!DNL Commerce Intelligence] Verwenden von Berichten und Dashboards
-* diese Daten per E-Mail an Interessenträger weitergeben und `.csv` files
+* Erfassen und Anzeigen von Daten in [!DNL Commerce Intelligence] mithilfe von Berichten und Dashboards
+* diese Daten über E-Mail- und `.csv`-Dateien für Interessengruppen freigeben
 
 ## Verwandte
 

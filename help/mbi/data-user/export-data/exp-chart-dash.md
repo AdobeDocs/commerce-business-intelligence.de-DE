@@ -22,6 +22,6 @@ Wählen Sie entweder:
 - `Full Excel Export`
 - `Raw Export`
 
-Sie können auch die [Tabelle und Spalten, die Sie in den Export einbeziehen möchten](../../tutorials/export-raw-data.md).
+Sie können auch die [Tabelle und die Spalten definieren, die Sie in den Export](../../tutorials/export-raw-data.md) aufnehmen möchten.
 
-Wenn Sie eine Grafik in eine Präsentation oder ein Dokument aufnehmen möchten, können Sie die Grafik als Bild im PNG-, PDF- oder SVG-Format exportieren. Klicken Sie auf das Zahnradsymbol in der oberen rechten Ecke eines beliebigen Diagramms. Wählen Sie die `Enlarge` in der Dropdown-Liste ein und klicken Sie dann auf **[!UICONTROL Download]** , um den Export abzuschließen.
+Wenn Sie eine Grafik in eine Präsentation oder ein Dokument aufnehmen möchten, können Sie die Grafik als Bild im PNG-, PDF- oder SVG-Format exportieren. Klicken Sie auf das Zahnradsymbol in der oberen rechten Ecke eines beliebigen Diagramms. Wählen Sie die Option `Enlarge` im Dropdown-Menü aus und klicken Sie dann auf **[!UICONTROL Download]** , um den Export abzuschließen.
