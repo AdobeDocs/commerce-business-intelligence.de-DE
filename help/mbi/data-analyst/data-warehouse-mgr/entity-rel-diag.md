@@ -1,6 +1,6 @@
 ---
-title: Diagramme zur Entitätsbeziehung
-description: Erfahren Sie mehr über einige ER-Diagramme, mit denen Sie die Beziehung zwischen einer Handvoll gängiger Commerce-Datenbanktabellen visualisieren können.
+title: Entitätsbeziehungsdiagramme
+description: Erfahren Sie mehr über einige ER-Diagramme, die Ihnen dabei helfen, die Beziehung zwischen einer Handvoll gängiger Commerce-Datenbanktabellen zu visualisieren.
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -11,33 +11,33 @@ ht-degree: 0%
 
 ---
 
-# Diagramm zur Entitätsbeziehung
+# Entitätsbeziehungsdiagramm
 
-Was ist ein **[!UICONTROL entity relationship (ER) diagram]**? Ein [!UICONTROL ER] -Diagramm ist eine Visualisierung von Tabellen in einer Datenbank und deren Beziehung zueinander. Dieses Thema enthält einige [!UICONTROL ER]-Diagramme, mit denen Sie die Beziehung zwischen einigen häufigen Adobe Commerce-Datenbanktabellen visualisieren können.
+Was ist ein **[!UICONTROL entity relationship (ER) diagram]**? Ein [!UICONTROL ER] ist eine Visualisierung von Tabellen innerhalb einer Datenbank und ihrer Beziehung zueinander. Dieses Thema enthält einige [!UICONTROL ER], die Ihnen helfen, die Beziehung zwischen einigen gängigen Adobe Commerce-Datenbanktabellen zu visualisieren.
 
 >[!NOTE]
 >
->In diesem Thema sehen Sie die Wörter **join**, **relation** und **path**. Anhand dieser Wörter wird beschrieben, wie zwei Tabellen miteinander verbunden sind.
+>In diesem Thema werden die Wörter **Join**, **relation** und **path** angezeigt. Diese Wörter werden alle verwendet, um zu beschreiben, wie zwei Tabellen verbunden sind.
 
-## Diagramm Commerce [!UICONTROL ER]
+## Commerce-[!UICONTROL ER]
 
-![4_DB_Chart](../../assets/4_DB_Chart.png)
+![4_DB_chart](../../assets/4_DB_Chart.png)
 
-Dieses Diagramm zeigt die Beziehungen zwischen den Kerntabellen einer Commerce-Datenbank. `ER` Indem Sie mehrere Beziehungen gleichzeitig anzeigen, können Sie sehen, wie sich Daten auf viele Tabellen beziehen würden.
+Dieses `ER` stellt die Beziehungen zwischen den Kerntabellen in einer Commerce-Datenbank dar. Wenn Sie mehrere Beziehungen gleichzeitig betrachten, können Sie sehen, wie sich Daten über viele Tabellen hinweg verhalten würden.
 
 Die folgenden Abschnitte enthalten `ER` Diagramme, die jeweils für zwei Tabellen spezifisch sind. Um ein Diagramm und die zugehörige Beschreibung anzuzeigen, klicken Sie auf die Kopfzeile für diesen Abschnitt.
 
 ## `customer\_entity & sales\_flat\_order`
 
-![Ein Kunde, der viele Bestellungen bestellt hat](../../assets/2_OneCustomerManyOrders.png)
+![Ein Kunde und viele Bestellungen](../../assets/2_OneCustomerManyOrders.png)
 
-Ein Kunde kann viele Bestellungen tätigen. Die Beziehung zwischen diesen beiden Tabellen ist `customer\_entity.entity\_id = sales\_flat\_order.customer\_id`
+Ein Kunde kann viele Bestellungen aufgeben. Die Beziehung zwischen diesen beiden Tabellen ist `customer\_entity.entity\_id = sales\_flat\_order.customer\_id`
 
 >[!IMPORTANT]
 >
->`customer\_entity.entity\_id` entspricht nicht `sales\_flat\_order.entity\_id`. Die erste kann als `customer\_id` und die zweite als `order\_id.` betrachtet werden
+>`customer\_entity.entity\_id` ist nicht gleich `sales\_flat\_order.entity\_id`. Das erste kann als `customer\_id` betrachtet werden, und das zweite kann als `order\_id.` betrachtet werden
 
-Wenn innerhalb von [!DNL Commerce Intelligence] der Pfad zwischen diesen beiden Tabellen nicht vorhanden ist, können Sie [den Pfad](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte &quot;Data Warehouse&quot;erstellen. Wenn Sie bereit sind, den Pfad zu erstellen, wird er wie folgt definiert:
+Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse erstellen. Wenn Sie bereit sind, den Pfad zu erstellen, wird er wie folgt definiert:
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -45,18 +45,18 @@ Wenn innerhalb von [!DNL Commerce Intelligence] der Pfad zwischen diesen beiden 
 
 ![1_OneOrderManyItems](../../assets/1_OneOrderManyItems.png)
 
-Eine Bestellung kann viele Elemente enthalten. Die Beziehung zwischen diesen beiden Tabellen ist `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`.
+Eine Bestellung kann viele Artikel enthalten. Die Beziehung zwischen diesen beiden Tabellen ist `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`.
 
-Wenn innerhalb von [!DNL Commerce Intelligence] der Pfad zwischen diesen beiden Tabellen nicht vorhanden ist, können Sie auf der Registerkarte &quot;Data Warehouse&quot;den Pfad [erstellen](../data-warehouse-mgr/create-paths-calc-columns.md). Wenn Sie bereit sind, den Pfad zu erstellen, definieren Sie den Pfad wie unten dargestellt.
+Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse verwenden. Wenn Sie bereit sind, den Pfad zu erstellen, definieren Sie ihn wie unten gezeigt.
 
 ![](../../assets/SFOI___SFO_path.png)
 
 ## `catalog\_product\_entity & sales\_flat\_order\_item`
 
-![3_OneProductManyTimes](../../assets/3_OneProductManyTimes.png)
+![3_oneProductManyTimes](../../assets/3_OneProductManyTimes.png)
 
 Ein Produkt kann viele Artikel gekauft werden. Die Beziehung zwischen diesen beiden Tabellen ist `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
 
-Wenn innerhalb von [!DNL Commerce Intelligence] der Pfad zwischen diesen beiden Tabellen nicht vorhanden ist, können Sie [den Pfad](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte &quot;Data Warehouse&quot;erstellen. Wenn Sie bereit sind, den Pfad zu erstellen, definieren Sie den Pfad wie unten dargestellt.
+Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse erstellen. Wenn Sie bereit sind, den Pfad zu erstellen, definieren Sie ihn wie unten gezeigt.
 
 ![](../../assets/SFOI___CPE_path.png)

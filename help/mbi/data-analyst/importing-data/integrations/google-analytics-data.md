@@ -1,6 +1,6 @@
 ---
 title: Erwartete Google Analytics-Daten
-description: Erfahren Sie, wie Sie mit Ihren Google Analytics-Metriken interagieren.
+description: Erfahren Sie, wie Sie mit Ihren Google Analytics-Metriken interagieren können.
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,27 +11,27 @@ ht-degree: 0%
 
 ---
 
-# Erwartete [!DNL Google Analytics] Daten
+# Erwartete [!DNL Google Analytics]
 
-Nachdem Sie eine [!DNL Google Analytics] -Integration verbunden haben, können Sie sofort mit Ihren [!DNL Google Analytics] Metriken *im`Visual Report Builder`* interagieren. Wenn Sie den Wert `Visual Report Builder` eingeben und auf **[!UICONTROL Add a Metric]** klicken, wird eine Reihe von Metriken aus Ihrem [!DNL Google Analytics] -Profil in einer Dropdown-Liste direkt unter den Metriken in Ihrer Data Warehouse angezeigt.
+Nachdem Sie eine [!DNL Google Analytics]-Integration verbunden haben, können Sie mit Ihren [!DNL Google Analytics] Metriken *sofort im`Visual Report Builder`* interagieren. Wenn Sie den `Visual Report Builder` eingeben und auf **[!UICONTROL Add a Metric]** klicken, wird eine Reihe von Metriken aus Ihrem [!DNL Google Analytics] in einem Dropdown-Menü direkt unter den Metriken in Ihrem Data Warehouse angezeigt.
 
-Die [!DNL Google Analytics] -Integration ist *live* - Das bedeutet, dass `Report Builder` beim Hinzufügen einer Metrik zum Bericht sofort Daten von [!DNL Google Analytics] *anfordert.* Dies bedeutet auch, dass die Metriken, auf die Sie zugreifen können, genau so definiert sind, wie sie sich in [!DNL Google Analytics] befinden, und dass diese Werte nicht in Ihrem [!DNL Commerce Intelligence] -Konto *Warehouse* sind - nur visuell in Ihren Berichten angezeigt werden.
+Die [!DNL Google Analytics]-Integration ist *live* - dies bedeutet, dass die `Report Builder` Daten von [!DNL Google Analytics] anfordert *sofort* wenn Sie eine Metrik zu Ihrem Bericht hinzufügen. Das bedeutet auch, dass die Metriken, auf die Sie zugreifen können, genau so definiert sind, wie sie sich in [!DNL Google Analytics] befinden, und dass diese Werte nicht in Ihrem [!DNL Commerce Intelligence]-Konto *eingelagert* sondern nur visuell in Ihren Berichten angezeigt werden.
 
-+++ Unterstützte Metriken und Dimensionen (Google Analytics 3 oder Universal Analytics)
-
->[!NOTE]
->
->Ab dem 1. Juli 2023 werden in den standardmäßigen universellen Analytics-Eigenschaften ([!DNL Google Analytics] 3) keine Daten mehr verarbeitet. Sie können Ihre universellen Analytics-Berichte für einen Zeitraum nach dem 1. Juli 2023 anzeigen. Neue Daten fließen jedoch nur in die Eigenschaften [!DNL Google Analytics] 4.
-
-[!DNL Google Analytics] Integrationen in [!DNL Commerce Intelligence] verwenden die [!DNL Google Analytics] [Core Reporting-API](https://developers.google.com/analytics/devguides/reporting/core/v3/) und unterstützen die folgenden Metriken und Dimensionen.
++++Unterstützte Metriken und Dimensionen (Google Analytics 3 oder Universal Analytics)
 
 >[!NOTE]
 >
->Um unerwartete oder unsinnige Ergebnisse zu vermeiden, überprüfen Sie, ob alle verwendeten Dimensionen mit einer oder mehreren Metriken kompatibel sind, die Sie in &quot;`Report Builder`&quot;verwenden. Sie können [hier](https://ga-dev-tools.google/dimensions-metrics-explorer/) überprüfen.
+>Am 1. Juli 2023 werden die Daten in den Standardeigenschaften von Universal Analytics ([!DNL Google Analytics] 3) nicht mehr verarbeitet. Sie können Ihre Universal Analytics-Berichte für einen Zeitraum nach dem 1. Juli 2023 anzeigen. Neue Daten fließen jedoch nur in [!DNL Google Analytics] 4-Eigenschaften.
+
+[!DNL Google Analytics] Integrationen in [!DNL Commerce Intelligence] verwenden die [!DNL Google Analytics][ Core-Reporting](https://developers.google.com/analytics/devguides/reporting/core/v3/)API) und unterstützen die folgenden Metriken und Dimensionen.
+
+>[!NOTE]
+>
+>Um unerwartete oder unsinnige Ergebnisse zu vermeiden, stellen Sie sicher, dass alle verwendeten Dimensionen mit einer oder mehreren Metriken kompatibel sind, die Sie im `Report Builder` verwenden. Sie können ([) ](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Unterstützte Metriken
 
-| [!DNL Commerce Intelligence] Anzeigename | [!DNL Google Analytics] Name/Formel |
+| [!DNL Commerce Intelligence] Anzeigename | [!DNL Google Analytics]/Formel |
 | --- | --- |
 | `Page Views` | `ga:pageviews` |
 | `Total Time Spent On Page` | `ga:timeOnPage` |
@@ -85,7 +85,7 @@ Die [!DNL Google Analytics] -Integration ist *live* - Das bedeutet, dass `Report
 
 ## Unterstützte Dimensionen
 
-| [!DNL Commerce Intelligence] Anzeigename | [!DNL Google Analytics] Name/Formel | Groupierbar? |
+| [!DNL Commerce Intelligence] Anzeigename | [!DNL Google Analytics]/Formel | Gruppierbar? |
 | --- | --- | --- |
 | `Ad Content` | `ga:adContent` | `Yes` |
 | `Ad Group` | `ga:adGroup` | `Yes` |
@@ -156,12 +156,12 @@ Die [!DNL Google Analytics] -Integration ist *live* - Das bedeutet, dass `Report
 
 +++Unterstützte Metriken und Dimensionen (Google Analytics 4)
 
-[!DNL Google Analytics] Integrationen in [!DNL Commerce Intelligence] verwenden die [!DNL Google Analytics] [Daten-API v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+[!DNL Google Analytics] Integrationen in verwenden [!DNL Commerce Intelligence] die [!DNL Google Analytics]Data [ v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
 
 >[!NOTE]
 >
 > Commerce Intelligence unterstützt die folgenden Dimensionen nicht: `cohort`, `cohortNthDay`, `cohortNthMonth` und `cohortNthWeek`.
 >
->Um unerwartete oder unsinnige Ergebnisse zu vermeiden, überprüfen Sie, ob alle verwendeten Dimensionen mit einer oder mehreren Metriken kompatibel sind, die Sie in &quot;`Visual Report Builder`&quot;verwenden. Sie können den Explorer [GA4-Dimensionen und -Metriken](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/) überprüfen.
+>Um unerwartete oder unsinnige Ergebnisse zu vermeiden, stellen Sie sicher, dass alle verwendeten Dimensionen mit einer oder mehreren Metriken kompatibel sind, die Sie im `Visual Report Builder` verwenden. Sie können den [GA4-Dimensionen- und Metrik-Explorer](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/) überprüfen.
 
 +++

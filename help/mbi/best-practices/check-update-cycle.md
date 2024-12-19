@@ -1,5 +1,5 @@
 ---
-title: Überprüfen des Aktualisierungszyklusstatus
+title: Überprüfen des Status des Aktualisierungszyklus
 description: Erfahren Sie, wie Sie den Status des Aktualisierungszyklus überprüfen.
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
@@ -11,34 +11,34 @@ ht-degree: 0%
 
 ---
 
-# Fortschritt des Aktualisierungszyklus
+# Aktualisierungszyklus-Fortschritt
 
-Wenn Sie sich bei Ihrem [!DNL Adobe Commerce Intelligence] -Dashboard anmelden, gibt es mehrere Möglichkeiten, den Status Ihres letzten Aktualisierungszyklus zu überprüfen. Das alles hängt vom Typ der [Benutzerberechtigungen](../administrator/user-management/user-management.md) ab, die Sie haben.
+Wenn Sie sich bei Ihrem [!DNL Adobe Commerce Intelligence]-Dashboard anmelden, gibt es mehrere Möglichkeiten, den Status Ihres letzten Aktualisierungszyklus zu überprüfen. Alles hängt von der Art der [Benutzerberechtigungen](../administrator/user-management/user-management.md) ab, die Sie haben.
 
 ## Warum sollte ich den Status des Aktualisierungszyklus überprüfen?
 
-Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die Daten in Ihrem [!DNL Commerce Intelligence] -Konto überprüfen. Wenn Sie beispielsweise [Ergebnisse sehen, die nicht Ihren Erwartungen entsprechen](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md), stimmen die täglichen Verkäufe in [!DNL Commerce Intelligence] nicht mit denen in Ihrer E-Commerce-Plattform oder Ihrem [[!DNL Google] E-Commerce-Umsatz](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) überein, können Sie den letzten Datenpunkt überprüfen, um festzustellen, ob das Problem nach Abschluss der Aktualisierung behoben wurde.
+Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die Daten in Ihrem [!DNL Commerce Intelligence]-Konto prüfen. Wenn Sie [Ergebnisse sehen, die nicht Ihren Erwartungen entsprechen](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) z. B. der tägliche Umsatz in [!DNL Commerce Intelligence] nicht mit dem übereinstimmt, was Sie auf Ihrer E-Commerce-Plattform oder in Ihrem [[!DNL Google] E-Commerce-Umsatz sehen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) können Sie den letzten Datenpunkt überprüfen, um festzustellen, ob das Problem behoben wird, sobald eine Aktualisierung abgeschlossen ist.
 
 ## [!UICONTROL Read-Only] und [!UICONTROL Standard] Benutzer
 
-`Read-only` -Benutzer können sich bei ihrem Dashboard anmelden und sehen, wie kürzlich die Daten aktualisiert wurden, indem sie den Mauszeiger über das Symbol oben rechts auf der Seite bewegen. Dies zeigt, wann der letzte Datenpunkt abgerufen wurde.
+`Read-only` Benutzer können sich bei ihrem Dashboard anmelden und sehen, wie kürzlich die Daten aktualisiert wurden, indem sie den Mauszeiger über das Symbol oben rechts auf der Seite bewegen. Dies zeigt an, wann der letzte Datenpunkt abgerufen wurde.
 
 ![](../../mbi/assets/last-success-data.png)
 
-## [!UICONTROL Admin] Benutzer
+## Benutzer [!UICONTROL Admin]
 
-`Admin` -Benutzer können sich beim Dashboard anmelden und den letzten Datenpunkt oben sowie ein kurzes Statussymbol ihrer Kontointegrationen anzeigen.
+`Admin` Benutzer können sich beim Dashboard anmelden und den letzten obigen Datenpunkt zusammen mit einem kurzen Statussymbol ihrer Kontointegrationen sehen.
 
-Für weitere Details können Admin-Benutzer auf **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]** klicken.
+Admin-Benutzer können auch auf &quot;**[!UICONTROL Manage Data]**&quot; > &quot;**[!UICONTROL Integrations]**&quot; klicken, um weitere Informationen zu erhalten.
 
 ![](../../mbi/assets/detail-manage-data-integrations.png)
 
-Auf dieser Seite werden der aktuelle Aktualisierungsstatus und der Zeitpunkt der letzten abgeschlossenen Aktualisierung angezeigt.
+Auf dieser Seite werden der aktuelle Aktualisierungsstatus und die Zeit der letzten abgeschlossenen Aktualisierung angezeigt.
 
-Wenn eine Aktualisierung ausgeführt wird, wird ein Link angezeigt, über den nach Abschluss der Aktualisierung eine E-Mail-Benachrichtigung angefordert werden kann.
+Wenn eine Aktualisierung ausgeführt wird, wird ein Link angezeigt, über den Sie nach Abschluss der Aktualisierung eine E-Mail-Benachrichtigung anfordern können.
 
-Wenn keine Aktualisierung ausgeführt wird, wird ein Link angezeigt, über den das Starten einer Aktualisierung erzwungen werden kann.
+Wenn keine Aktualisierung ausgeführt wird, wird ein Link angezeigt, über den Sie den Start einer Aktualisierung erzwingen können.
 
 >[!NOTE]
 >
->Wenn Sie Blackout-Stunden haben (Zeit, in der Sie Ihre Daten nicht mit [!DNL Commerce Intelligence] aktualisieren möchten), wird beim Erzwingen einer Aktualisierung ein Aktualisierungszyklus gestartet, der die Einschränkungen dieser Blackout-Stunden nicht berücksichtigt.
+>Wenn Sie Ausfallzeiten haben (Zeit, zu der Sie Ihre Daten nicht aktualisieren [!DNL Commerce Intelligence]), wird beim Erzwingen einer Aktualisierung ein Aktualisierungszyklus gestartet, der die Einschränkungen dieser Ausfallzeiten nicht berücksichtigt.

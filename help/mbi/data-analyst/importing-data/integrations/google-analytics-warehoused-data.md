@@ -1,6 +1,6 @@
 ---
-title: Erwartete Google Analytics Warehouse-Daten
-description: Erfahren Sie, wie Sie mit Ihren Google Analytics-gespeicherten Daten interagieren können.
+title: Erwartete Data Warehouse-Daten der Google Analytics
+description: Erfahren Sie, wie Sie mit den Data Warehouse von Google Analytics interagieren können.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Erwartete [!DNL Google Analytics Warehoused] Daten
+# Erwartete [!DNL Google Analytics Warehoused]
 
 >[!NOTE]
 >
@@ -21,17 +21,17 @@ ht-degree: 0%
 >
 >Einige Informationen wurden mit Erlaubnis Ihrer Freunde bei [[!DNL Stitch]](https://www.stitchdata.com/docs/integrations/saas/google-analytics) verwendet.
 
-Die Integration von [!DNL Google Analytics Warehoused] in [!DNL Commerce Intelligence] verwendet die [!DNL Google Analytics] [Core-Berichterstellungs-API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
+[!DNL Google Analytics Warehoused] Integration in [!DNL Commerce Intelligence] verwendet die [!DNL Google Analytics]Core Reporting [API](https://developers.google.com/analytics/devguides/reporting/core/v3/).
 
 >[!NOTE]
 >
->Um unerwartete oder unsinnige Ergebnisse zu vermeiden, vergewissern Sie sich, dass alle verwendeten Dimensionen [mit einer oder mehreren Metriken](https://ga-dev-tools.google/dimensions-metrics-explorer/) kompatibel sind, die Sie in den `Report Builder` verwenden.
+>Um unerwartete oder unsinnige Ergebnisse zu vermeiden, stellen Sie sicher, dass alle verwendeten Dimensionen [mit einer oder mehreren Metriken kompatibel](https://ga-dev-tools.google/dimensions-metrics-explorer/) die Sie im `Report Builder` verwenden.
 
-Eine einzelne Tabelle - mit dem Namen `report` - wird in Ihrer Data Warehouse erstellt.
+In Ihrem Data Warehouse wird eine einzige Tabelle namens `report` erstellt.
 
 Das Schema dieser Tabelle besteht aus den Metriken und Dimensionen, die Sie während des Einrichtungsprozesses ausgewählt haben, sowie zwei weiteren Spalten: `start-date` und `end-date`.
 
-Wenn Sie beispielsweise während der Einrichtung die folgenden Metriken und Dimensionen ausgewählt haben:
+Wenn Sie beispielsweise während des Setups die folgenden Metriken und Dimensionen ausgewählt haben:
 
 * `Metrics`: `ga:users`
 * `Dimensions`: `ga:month`
@@ -43,23 +43,23 @@ Die Tabelle würde wie im folgenden Beispiel aussehen.
 | `\_id` | Diese Spalte ist die `primary key`. |
 | `\_rjm\_record\_hash` | [!DNL Commerce Intelligence] eindeutige Kennung. Diese Spalte wird von [!DNL Commerce Intelligence] erstellt. |
 | `\_updated\_at` | Diese Spalte enthält das letzte Mal, dass die Datenzeile aktualisiert wurde. Diese Spalte wird von [!DNL Commerce Intelligence] erstellt. |
-| `start-date` | Identifikation des Tages, für den die Zeile ist. |
-| `end-date` | Identifikation des Tages, für den die Zeile ist. |
+| `start-date` | Identifikation des Tages, an dem die Zeile angezeigt wird. |
+| `end-date` | Identifikation des Tages, an dem die Zeile angezeigt wird. |
 | `month` | Ausgewählte Dimension: Monat der Sitzung, eine zweistellige Ganzzahl von 01 bis 12. |
-| `users` | Ausgewählte Metrik: Die Gesamtanzahl der Benutzer für den angeforderten Zeitraum. |
+| `users` | Ausgewählte Metrik: Die Gesamtzahl der Benutzer für den angeforderten Zeitraum. |
 
 {style="table-layout:auto"}
 
-## Was ist der Unterschied zwischen [!DNL Google Analytics Warehoused] und [!DNL Live Integration]
+## Was ist der Unterschied zwischen [!DNL Google Analytics Warehoused] und [!DNL Live Integration]?
 
-Der Hauptunterschied besteht darin, dass eine Integration gespeichert wird ([!DNL Google Analytics Warehoused]) und die andere nicht ([!DNL Google Analytics Live]). Bei [!DNL Google Analytics Warehoused] ermöglicht dies die Manipulation Ihrer [!DNL Google Analytics] -Daten und gibt Ihnen die Möglichkeit, [!DNL Google Analytics] und andere Datenquellen zu kombinieren, um aufschlussreiche Berichte zu erstellen.
+Das wichtigste Unterscheidungsmerkmal besteht darin, dass eine Integration gespeichert wird ([!DNL Google Analytics Warehoused]) und die andere nicht ([!DNL Google Analytics Live]). In [!DNL Google Analytics Warehoused] Fällen ermöglicht dies die Manipulation Ihrer [!DNL Google Analytics] und bietet Ihnen die Möglichkeit, [!DNL Google Analytics] und andere Datenquellen zu kombinieren, um aufschlussreiche Berichte zu erstellen.
 
-Sehen Sie sich [!DNL Google Analytics] Anzeigenkampagnen an, um ein Beispiel dafür zu erhalten, was aus Sicht der Manipulation möglich ist. Angenommen, Sie hatten mehrere Werbekampagnen für Q4 mit unterschiedlichen Namen. Die Kampagnen waren das Ergebnis einer spezifischen Marketinginitiative. Mit gespeicherten Daten können Sie eine Spalte erstellen, in der die betreffenden Kampagnennamen gesucht werden und der für das 4. Quartal vorgesehene Initiativname `Operation Dumbo` zurückgegeben wird.
+Ein Beispiel dafür, was aus Sicht der Manipulation getan werden kann, finden Sie in [!DNL Google Analytics] Anzeigenkampagnen . Angenommen, Sie verfügen über mehrere Anzeigenkampagnen für das 4. Quartal mit unterschiedlichen Namen. Die Kampagnen waren das Ergebnis einer bestimmten Marketing-Initiative. Mit gespeicherten Daten können Sie eine Spalte erstellen, die die betreffenden Kampagnennamen findet und den Namen der `Operation Dumbo` im 4. Quartal zurückgibt.
 
-Durch den kombinierten Aspekt können [!DNL Google Analytics] -Daten mit anderen Daten verknüpft werden, um Analysen durchzuführen. Nehmen Sie beispielsweise `Total Time On Site By Ad Campaign` Daten von [!DNL Google Analytics] und vergleichen Sie sie mit `Total Spent Per Campaign` Daten von [!DNL Facebook Ads], um ein vollständiges Bild davon zu erhalten, wie viel Interaktion Sie kostet.
+Der Kombinationsaspekt ermöglicht es, [!DNL Google Analytics] Daten mit anderen Daten zu verbinden, um Analysen durchzuführen. Nehmen Sie beispielsweise `Total Time On Site By Ad Campaign` Daten aus [!DNL Google Analytics] und verbinden Sie sie mit `Total Spent Per Campaign` Daten aus [!DNL Facebook Ads], um ein vollständiges Bild darüber zu erhalten, wie viel Interaktion Sie kostet.
 
-Bei der [!DNL Google Analytics Live] -Integration hingegen ähnelt jedes [!DNL Google Analytics] -Diagramm einem kleinen Silo, das nicht in Ihrer [!DNL Commerce Intelligence] -Data Warehouse gespeichert ist.
+Mit der [!DNL Google Analytics Live] Integration ist hingegen jedes [!DNL Google Analytics] wie ein kleines Silo, das nicht auf dem [!DNL Commerce Intelligence] Data Warehouse abgelegt ist.
 
-## Verwandte:
+## Verwandt:
 
 * [Verbinden [!DNL Google Analytics Warehoused]](../integrations/google-analytics-warehoused.md)

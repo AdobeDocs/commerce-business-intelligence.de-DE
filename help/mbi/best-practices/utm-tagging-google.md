@@ -1,6 +1,6 @@
 ---
 title: UTM-Tracking in Google Analytics
-description: Erfahren Sie mehr über Best Practices für das UTM-Tracking (Tagging) in Google Analytics.
+description: Erfahren Sie mehr über Best Practices für UTM-Tracking (Tagging) in Google Analytics.
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
@@ -13,32 +13,32 @@ ht-degree: 0%
 
 # UTM-Tracking
 
-`UTM`-Tracking ist eine Tagging-Konvention für URLs, mit der Sie analysieren können, woher Ihre Benutzer kommen. Wenn Sie sich die URLs ansehen, auf die Sie in den meisten Marketing-E-Mail- oder Banneranzeigen klicken, sehen Sie das UTM-Tagging. Es sind die langen Verknüpfungen, die mit Dingen wie `utm\_source` und `utm\_medium` enden.
+`UTM`-Tracking ist eine Tagging-Konvention für URLs, mit der Sie analysieren können, woher Ihre Benutzer kommen. Wenn Sie sich die URLs ansehen, auf die Sie in den meisten Marketing-E-Mail- oder Banneranzeigen klicken, sehen Sie UTM-Tagging. Es sind diese langen Verbindungen, die mit Dingen wie `utm\_source` und `utm\_medium` enden.
 
-[!DNL Google Analytics] verwendet `UTM`-Tagging, um zu erfahren, woher Ihr Traffic stammt. Einige dieser Informationen stammen aus dem [HTTP-Referrer](https://en.wikipedia.org/wiki/HTTP_referer), der Rest muss jedoch mit `UTM` -Parametern angegeben werden. Wenn Sie `google adwords` oder `email marketing` sehen, bedeutet dies, dass diese `UTM` Parameter vom ursprünglichen Link-Klick aufgezeichnet und dann in den Cookies der Benutzer gespeichert werden. Von dort verwendet [!DNL Google Analytics] diese Daten, um [interessante Verhaltensweisen](../data-analyst/analysis/google-track-user-acq.md) auf Ihrer Site zuzuordnen. Wenn Sie wissen, wofür diese Parameter sind, können Sie nachvollziehen, wie Sie das UTM-Tagging am besten einrichten und verwenden.
+[!DNL Google Analytics] verwendet `UTM`-Tagging, um herauszufinden, wo Ihr Traffic herkommt. Einige dieser Informationen stammen vom [HTTP Referrer](https://en.wikipedia.org/wiki/HTTP_referer) aber der Rest muss mit `UTM` Parametern angegeben werden. Wenn Sie `google adwords` oder `email marketing` sehen, bedeutet dies, dass diese `UTM` Parameter vom ursprünglichen Link-Klick aufgezeichnet und dann in den Cookies der Benutzer gespeichert werden. Von dort aus verwendet [!DNL Google Analytics] diese Daten, um [interessante Verhaltensweisen“ ](../data-analyst/analysis/google-track-user-acq.md) Ihrer Site zuzuordnen. Wenn Sie verstehen, wofür diese Parameter bestimmt sind, können Sie verstehen, wie UTM-Tagging am besten eingerichtet und verwendet werden.
 
 ## Best Practices für UTM-Tagging
 
-Im Folgenden werden die fünf wichtigsten Elemente aufgelistet, die beim Einrichten Ihrer URLs mit `UTM` -Tagging beachtet werden müssen.
+Im Folgenden sind die fünf wichtigsten Aspekte aufgeführt, die Sie beim Einrichten Ihrer URLs mit `UTM`-Tagging beachten müssen.
 
-### 1. Ziel ist es, jede URL zu taggen, die Sie steuern können, wenn Sie zu Ihrer Site gelangen.
+### 1. Ziel ist es, jede URL zu taggen, die Sie steuern können, wenn sie auf Ihre Site kommt
 
-Jedes Mal, wenn Sie Personen auffordern, auf einen Link zu klicken, sollten Sie `UTM`-Tagging einrichten. Dazu gehören alle Ihre E-Mail-Links (Ihr E-Mail-Dienstanbieter hat wahrscheinlich eine Möglichkeit, Ihre URLs automatisch mit Tags zu versehen), Werbe-Links, Presseartikel, Blog-Beiträge.
+Jedes Mal, wenn Sie Personen bitten, auf einen Link zu klicken, sollten Sie `UTM` Tagging einrichten. Dazu gehören all Ihre E-Mail-Links (Ihr E-Mail-Dienstleister hat wahrscheinlich eine Möglichkeit, Ihre URLs automatisch zu taggen), Anzeigen-Links, Presseartikel, Blog-Posts.
 
-### 2. Verwenden Sie ein Tool, um die URL zu erstellen
+### 2. Verwenden eines Tools zum Erstellen der URL
 
-Mit `UTM` getaggte URLs können schwerfällig sein. Statt zu versuchen, sie einseitig einzugeben, verwenden Sie ein Werkzeug [wie dieses](https://support.google.com/analytics/answer/1033867?hl=en), um Ihnen zu helfen. Dadurch wird sichergestellt, dass Sie alle sinnvollen Parameter zur URL hinzufügen und die URL direkt kopieren und einfügen können. Zum Verwalten von Social-Links enthalten Tools wie [!DNL Hootsuite] die Option, benutzerdefinierte URL-Parameter zu allen Links hinzuzufügen.
+`UTM`-getaggte URLs können umständlich sein. Anstatt zu versuchen, sie mit langer Hand zu tippen, verwenden Sie ein Tool [wie dieses](https://support.google.com/analytics/answer/1033867?hl=en), um Ihnen zu helfen. Dadurch wird sichergestellt, dass Sie alle sinnvollen Parameter zur URL hinzufügen und die URL kopieren und einfügen können. Um Social-Media-Links zu verwalten, bieten Tools wie [!DNL Hootsuite] die Option, allen Ihren Links benutzerdefinierte URL-Parameter hinzuzufügen.
 
-### 3. Achten Sie bei den Parameterwerten auf die Groß-/Kleinschreibung.
+### 3. Achten Sie in den Parameterwerten auf Groß- und Kleinschreibung
 
-Beachten Sie dabei, dass das Tag `utm\_source=adwords` ein anderes Tag als `utm\_source=Adwords` ist. Erwägen Sie, alles in Kleinbuchstaben zu schreiben.
+Beachten Sie, dass sich das Tag `utm\_source=adwords` von `utm\_source=Adwords` unterscheidet. Erwäge, alles kleingeschrieben zu machen.
 
-### 4. Speichern Sie die UTM-Parameterwerte in Ihrer Datenbank.
+### 4. UTM-Parameterwerte in der Datenbank speichern
 
-Jedes Mal, wenn eine Transaktion oder ein Ereignis eintritt, möchten Sie die Leistung Ihrer Marketing-Aktivitäten bewerten. Sie können dies tun, indem Sie die Werte der UTM-Parameterwerte aus dem [[!DNL Google Analytics] Cookie in Ihre Datenbank lesen](../data-analyst/analysis/google-track-user-acq.md).
+Jedes Mal, wenn eine Transaktion oder ein Ereignis stattfindet, möchten Sie die Leistung Ihrer Marketing-Aktivitäten bewerten. Lesen Sie dazu die Werte der UTM-Parameterwerte aus dem [[!DNL Google Analytics] Cookie in Ihre Datenbank](../data-analyst/analysis/google-track-user-acq.md).
 
-### 5. Denken Sie darüber nach, wie Sie Kampagnen benennen
+### 5. Überlegen Sie, wie Sie Kampagnen benennen
 
-Damit Sie verfolgen können, wie sich Ihre Marketing-Bemühungen im Laufe der Zeit verbessern, müssen Sie Ihre Benennungskonventionen mit Vorsicht beachten. Halten Sie es einfach und minimieren Sie so viel wie möglich. Die Verwaltung komplizierter Benennungssysteme ist schwieriger.
+Um verfolgen zu können, wie sich Ihre Marketing-Maßnahmen im Laufe der Zeit verbessern, müssen Sie Ihre Namenskonventionen intelligent einhalten. Halten Sie es einfach und minimieren Sie so viel wie möglich. Komplizierte Benennungssysteme sind schwieriger zu verwalten.
 
-Nachdem Sie diese Daten in Ihrer Datenbank erfasst haben, können Sie die Leistung Ihres Marketing- und Werbegeschäfts durch eine komplexere Analyse bewerten, einschließlich [Kundenlebenszeitwert](../data-analyst/analysis/ess-expected-ltv.md), [Wiederholungskäufe](../data-analyst/analysis/repurchase-behavior.md) und [durchschnittlicher Bestellwert](../data-analyst/analysis/basic-analytics.md).
+Sobald Sie diese Daten in Ihrer Datenbank erfassen, können Sie die Leistung Ihres Marketings und Ihrer Werbung durch eine komplexere Analyse bewerten, einschließlich [Kundenlebenszeitwert](../data-analyst/analysis/ess-expected-ltv.md), [Wiederholungskaufraten](../data-analyst/analysis/repurchase-behavior.md) und [Durchschnittlicher Bestellwert](../data-analyst/analysis/basic-analytics.md).

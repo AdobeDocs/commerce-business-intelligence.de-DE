@@ -1,6 +1,6 @@
 ---
-title: Google Analytics Warehouse verbinden
-description: Erfahren Sie, wie Besucher Ihre Site nutzen, welche Inhalte attraktiv sind, wo Besucher aussteigen und vieles mehr.
+title: Google Analytics mit Lagerort verbinden
+description: Erfahren Sie, wie Sie verfolgen können, wie Besucher Ihre Site verwenden, welche Inhalte attraktiv sind, wo Besucher die Site verlassen und vieles mehr.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -19,51 +19,51 @@ ht-degree: 0%
 
 ![](../../../assets/google-analytics-logo.png)
 
-[!DNL Google Analytics] ist der am häufigsten verwendete Webanalysedienst im Internet. Durch die Implementierung von [!DNL Google Analytics] auf Ihrer Website können Sie verfolgen, wie Besucher Ihre Site nutzen, welche Inhalte attraktiv sind, wo Besucher aussteigen und vieles mehr. [!DNL Google Analytics Warehoused] ist eine separate Integration von Ihrer vorhandenen [!DNL Google Analytics]-Integration. Dies ermöglicht eine bessere Analyse, da die [!DNL Google Analytics] -Daten in Ihrer Data Warehouse vorhanden sind, die sich vom Live-Feed der vorhandenen [!DNL Google Analytics] -Integration unterscheiden. Die Analyse dieser Metriken in [!DNL Commerce Intelligence] zusammen mit anderen Datenelementen verbessert den allgemeinen Zustand und die Benutzerfreundlichkeit Ihrer Site.
+[!DNL Google Analytics] ist der am häufigsten verwendete Webanalysedienst im Internet. Durch die Implementierung von [!DNL Google Analytics] auf Ihrer Website können Sie verfolgen, wie Besucher Ihre Site verwenden, welche Inhalte attraktiv sind, wo Besucher die Site verlassen und vieles mehr. [!DNL Google Analytics Warehoused] ist eine separate Integration von Ihrer vorhandenen [!DNL Google Analytics]. Es ermöglicht eine bessere Analyse, da sich die [!DNL Google Analytics] Daten auf Ihrem Data Warehouse befinden, was sich vom Live-Feed der vorhandenen [!DNL Google Analytics]-Integration unterscheidet. Die Analyse dieser Metriken in [!DNL Commerce Intelligence] verbessert zusammen mit anderen Daten den allgemeinen Zustand und die Benutzerfreundlichkeit Ihrer Site.
 
-## Unterschied zwischen GA Warehouse und Live-Integration
+## Unterschied zwischen GA Warehouse- und Live-Integration
 
-Der Hauptunterschied besteht darin, dass eine Integration gespeichert wird ([!DNL Google Analytics Warehoused]) und die andere nicht ([!DNL Google Analytics Live]). Im Fall von [!DNL Google Analytics Warehoused] ermöglicht dies die Manipulation Ihrer [!DNL Google Analytics] -Daten und gibt Ihnen die Möglichkeit, [!DNL Google Analytics] und andere Datenquellen zu kombinieren, um aufschlussreiche Berichte zu erstellen.
+Das wichtigste Unterscheidungsmerkmal besteht darin, dass eine Integration gespeichert wird ([!DNL Google Analytics Warehoused]) und die andere nicht ([!DNL Google Analytics Live]). Im Falle von [!DNL Google Analytics Warehoused] ermöglicht dies die Manipulation Ihrer [!DNL Google Analytics] und bietet Ihnen die Möglichkeit, [!DNL Google Analytics] und andere Datenquellen zu kombinieren, um aufschlussreiche Berichte zu erstellen.
 
-Sehen Sie sich [!DNL Google Analytics] Anzeigenkampagnen an, um ein Beispiel dafür zu erhalten, was aus Sicht der Manipulation möglich ist. Angenommen, Sie hatten mehrere Werbekampagnen für das vierte Quartal mit unterschiedlichen Namen. Die Kampagnen waren das Ergebnis einer spezifischen Marketinginitiative. Mit gespeicherten Daten können Sie eine Spalte erstellen, in der die betreffenden Kampagnennamen gesucht und der vierte Quartalsinitiative-Name `Operation Dumbo` zurückgegeben wird.
+Ein Beispiel dafür, was aus Sicht der Manipulation getan werden kann, finden Sie in [!DNL Google Analytics] Anzeigenkampagnen . Angenommen, Sie hatten mehrere Anzeigenkampagnen für das vierte Quartal mit unterschiedlichen Namen. Die Kampagnen waren das Ergebnis einer bestimmten Marketing-Initiative. Mit gespeicherten Daten können Sie eine Spalte erstellen, die die betreffenden Kampagnennamen findet und den Namen der Initiative für das vierte Quartal von `Operation Dumbo` zurückgibt.
 
-Durch den kombinierten Aspekt können [!DNL Google Analytics] -Daten mit anderen Daten verknüpft werden, um Analysen durchzuführen. Nehmen Sie beispielsweise `Total Time On Site By Ad Campaign` Daten von [!DNL Google Analytics] und vergleichen Sie sie mit `Total Spent Per Campaign` Daten von [!DNL Facebook Ads], um ein vollständiges Bild davon zu erhalten, wie viel Interaktion Sie kostet.
+Der Kombinationsaspekt ermöglicht es, [!DNL Google Analytics] Daten mit anderen Daten zu verbinden, um Analysen durchzuführen. Nehmen Sie beispielsweise `Total Time On Site By Ad Campaign` Daten aus [!DNL Google Analytics] und verbinden Sie sie mit `Total Spent Per Campaign` Daten aus [!DNL Facebook Ads], um ein vollständiges Bild darüber zu erhalten, wie viel Interaktion Sie kostet.
 
-Bei der Integration von [!DNL Google Analytics Live] dagegen ist jedes [!DNL Google Analytics]-Diagramm wie ein kleines Silo, das nicht in Ihrer Data Warehouse gespeichert ist.
+Mit der [!DNL Google Analytics Live] Integration ist hingegen jedes [!DNL Google Analytics] wie ein kleines Silo, das nicht auf dem Data Warehouse abgelegt ist.
 
-## Verbinden von [!DNL Google Analytics Warehoused]
+## [!DNL Google Analytics Warehoused]
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] ist eine `Premium` Integration. [Wenden Sie sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) , wenn Sie daran interessiert sind, diese Integration zu Ihrem Abonnement hinzuzufügen.
+>[!DNL Google Analytics Warehoused] ist eine `Premium`. [Wenden Sie sich an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), wenn Sie diese Integration zu Ihrem Abonnement hinzufügen möchten.
 
-1. Wechseln Sie zur Seite `Connections` unter **[!UICONTROL Admin** > **Integrations]**.
-1. Klicken Sie auf **[!UICONTROL Add an Integration]** rechts.
-1. Klicken Sie auf das Symbol &quot;[!DNL Google Analytics Warehoused]&quot;. Dadurch wird die Seite mit den Anmeldedaten für [!DNL Google Analytics] geöffnet.
-1. Geben Sie Ihre [!DNL Google Analytics] -Anmeldedaten ein. Nach Abschluss des Autorisierungsprozesses werden Sie zurück zu [!DNL Commerce Intelligence] umgeleitet.
-1. Eine Liste der Profil-IDs wird angezeigt. Überprüfen Sie die Profile, mit denen Sie eine Verbindung herstellen möchten. [!DNL Commerce Intelligence] Wenn Sie mehrere Profile haben und dabei behilflich sein müssen, welche Profile identifiziert werden können, lesen Sie den Abschnitt Mehrere [!DNL Google Analytics] Profile verbinden weiter unten.
+1. Navigieren Sie zur `Connections` unter **[!UICONTROL Admin** > **Integrations]**.
+1. Klicken Sie auf der rechten Seite auf **[!UICONTROL Add an Integration]**.
+1. Klicken Sie auf das Symbol [!DNL Google Analytics Warehoused] . Dadurch wird die Seite mit den [!DNL Google Analytics]-Anmeldeinformationen geöffnet.
+1. Geben Sie Ihre [!DNL Google Analytics] ein. Nach Abschluss des Autorisierungsprozesses werden Sie zurück zu [!DNL Commerce Intelligence] weitergeleitet.
+1. Eine Liste der Profil-IDs wird angezeigt. Markieren Sie die Profile, mit denen Sie eine Verbindung herstellen möchten[!DNL Commerce Intelligence]. Wenn Sie mehrere Profile haben und Hilfe bei der Identifizierung dessen benötigen, was ist, lesen Sie den Abschnitt Verbinden mehrerer [!DNL Google Analytics] Profile unten.
 
-## Mehrere [!DNL Google Analytics] Profile verbinden
+## Mehrere [!DNL Google Analytics] verbinden
 
-Möglicherweise sind mehrere Websites mit einem einzelnen [!DNL Google Analytics] -Konto verbunden, das durch ihre eigene [!DNL Google Analytics] -Profil-ID identifiziert wird. In diesem Fall können Sie alle Ihre Profil-IDs in [!DNL Commerce Intelligence] einschließen. Überprüfen Sie die Profil-IDs, die Sie im Schritt zur Profilauswahl einbeziehen möchten.
+Möglicherweise sind mehrere Websites mit einem einzigen [!DNL Google Analytics]-Konto verbunden, das durch seine eigene [!DNL Google Analytics]-Profil-ID identifiziert wird. In diesem Fall haben Sie die Möglichkeit, alle Ihre Profil-IDs in [!DNL Commerce Intelligence] einzuschließen. Markieren Sie die Profil-IDs, die Sie in den Schritt zur Profilauswahl einbeziehen möchten.
 
-So identifizieren Sie die [!DNL Google Analytics] Profil-ID einer bestimmten Website:
+So identifizieren Sie die [!DNL Google Analytics]-Profil-ID einer bestimmten Website:
 
 1. Anmelden bei [!DNL Google Analytics]
-1. Gehen Sie zum Dashboard der jeweiligen Website mit dem Tag &quot;[!DNL Google Analytics]&quot;
-1. Sehen Sie sich die URL an - die Profil-ID entspricht den acht Zahlen nach `p` am Ende der Zeile
+1. Zum [!DNL Google Analytics]-Dashboard der jeweiligen Website wechseln
+1. URL überprüfen - die Profil-ID entspricht den acht Zahlen, die auf `p` am Ende der Zeile folgen
 
    `www.google.com/analytics/web/#home/a11345062w43527078p**XXXXXXXX**/`
 
-## [!DNL Google Analytics Warehoused] von [!DNL Commerce Intelligence] trennen {#disconnect}
+## Trennen von [!DNL Google Analytics Warehoused] von [!DNL Commerce Intelligence] {#disconnect}
 
-1. Besuchen Sie die Seite [!DNL Google Analytics] [Kontoeinstellungen](https://myaccount.google.com/intro) .
-1. Klicken Sie unter dem Abschnitt `Security` auf **[!UICONTROL edit]** neben `Authorizing` Anwendungen und Sites.
+1. Rufen Sie [!DNL Google Analytics] Seite [Kontoeinstellungen](https://myaccount.google.com/intro) auf.
+1. Klicken Sie im Abschnitt `Security` auf **[!UICONTROL edit]** neben `Authorizing` Anwendungen und Sites.
 1. Klicken Sie auf **[!UICONTROL revoke access]** neben [!DNL Commerce Intelligence].
 
 ## Verwandte Dokumentation
 
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Verbinden [!DNL Google Adwords]](../integrations/google-adwords.md)
-* [Analyse der Website-Aktivität und der Kundenkonversionsraten](../../analysis/web-act-cust-conversion.md)
-* [Benutzerakquise-Daten mithilfe von [!DNL Google Analytics] Cookies verfolgen](../../analysis/google-track-user-acq.md)
+* [Analyse der Website-Aktivität und der Konversionsraten der Kunden](../../analysis/web-act-cust-conversion.md)
+* [Tracking von Benutzerakquise-Daten mithilfe von  [!DNL Google Analytics] -Cookies](../../analysis/google-track-user-acq.md)

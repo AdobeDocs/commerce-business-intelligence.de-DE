@@ -1,5 +1,5 @@
 ---
-title: Commerce Intelligence Essentials vs. Pro
+title: Commerce Intelligence Essentials im Vergleich zu Pro
 description: Erfahren Sie, wie sich Commerce Intelligence Essentials von Commerce Intelligence Pro unterscheidet.
 exl-id: 624a6285-8497-43d9-a56d-8ae503e0e2dd
 role: Admin, Data Architect, Data Engineer, Leader, User
@@ -7,13 +7,13 @@ feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
 source-wordcount: '77'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 # [!DNL Commerce Intelligence Essentials] vs. [!DNL Commerce Intelligence Pro]
 
-In der folgenden Tabelle werden die Elemente beschrieben, die in einem älteren `Essentials` -Konto und einem aktuellen Commerce Intelligence-Konto enthalten sind. Adobe bietet `Essentials` nicht mehr an.
+In der folgenden Tabelle werden Elemente beschrieben, die in einem alten `Essentials`-Konto im Vergleich zu einem aktuellen Commerce Intelligence-Konto enthalten sind. Adobe bietet keine `Essentials` mehr.
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|
@@ -36,9 +36,9 @@ In der folgenden Tabelle werden die Elemente beschrieben, die in einem älteren 
 
 >[!NOTE]
 >
->Die Anzahl der Tabellen hängt vom Checkout ab.
+>Die Anzahl der Tabellen hängt vom Gast-Checkout ab.
 
-**Einbezogene Tabellen**
+**Enthaltene Tabellen**
 
 * `sales\_order`
 * `sales\_order\_item`

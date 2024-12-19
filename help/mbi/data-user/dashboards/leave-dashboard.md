@@ -1,6 +1,6 @@
 ---
-title: Verlassen (Freigabe aufheben) eines Dashboards
-description: Erfahren Sie, wie Sie sich von einem Dashboard aus freigeben können.
+title: Dashboard verlassen (Freigabe aufheben)
+description: Erfahren Sie, wie Sie die Freigabe eines Dashboards beenden oder aufheben.
 exl-id: c84e7145-aded-4f66-8e52-a61c7e6ac804
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Verlassen (Freigabe aufheben) eines Dashboards
+# Dashboard verlassen (Freigabe aufheben)
 
-Teams wechseln? In der Mitte des Frühlings bereinigen Sie Ihr [!DNL Commerce Intelligence] Konto? Um die Freigabe in einem Dashboard zu beenden oder aufzuheben, klicken Sie oben im Bildschirm auf **[!UICONTROL Shared]** , während Sie sich im Dashboard befinden, das Sie verlassen möchten. Klicken Sie auf **[!UICONTROL Leave this Dashboard]** , um sich selbst zu entfernen.
+Teams wechseln? Mitten in der Frühjahrsputzaktion Ihr [!DNL Commerce Intelligence]? Um ein Dashboard zu verlassen oder dessen Freigabe aufzuheben, klicken Sie im Dashboard, das Sie verlassen möchten, oben im Bildschirm auf **[!UICONTROL Shared]** . Klicken Sie auf **[!UICONTROL Leave this Dashboard]** , um sich selbst zu entfernen.
 
 Beispiel:
 

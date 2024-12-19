@@ -1,6 +1,6 @@
 ---
 title: Marketing-ROI
-description: Erfahren Sie, wie Sie ein Dashboard einrichten, das Ihre Kanalanalyse verfolgt - einschließlich ROI insgesamt und nach Kampagne.
+description: Erfahren Sie, wie Sie ein Dashboard einrichten, das Ihre Kanalanalyse verfolgt - einschließlich des ROI insgesamt und nach Kampagne.
 exl-id: 5de83998-e6cf-478d-bb6a-7a3dc77c2c0c
 role: Admin,  User
 feature: Reports, Dashboards
@@ -15,139 +15,139 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dieses Thema enthält Anweisungen für Clients, die die ursprüngliche Architektur und die neue Architektur verwenden. Sie befinden sich in der [neuen Architektur](../../administrator/account-management/new-architecture.md), wenn der Bereich &quot;Data Warehouse-Ansichten&quot;nach Auswahl von &quot;Daten verwalten&quot;in der Hauptsymbolleiste verfügbar ist.
+>Dieses Thema enthält Anweisungen für Clients, die die ursprüngliche und die neue Architektur verwenden. Sie befinden sich auf der [neuen Architektur](../../administrator/account-management/new-architecture.md), wenn Sie den Abschnitt &quot;Data Warehouse-Ansichten“ verfügbar haben, nachdem Sie in der Hauptsymbolleiste „Daten verwalten“ ausgewählt haben.
 
-Wenn Sie Geld für Online-Werbung ausgeben, möchten Sie Ihre Rendite aus diesen Ausgaben nachverfolgen und datenbasierte Entscheidungen über weitere Investitionen treffen. In diesem Thema erfahren Sie, wie Sie ein Dashboard einrichten, das Ihre Kanalanalyse verfolgt - einschließlich des ROI insgesamt und nach Kampagne.
+Wenn Sie Geld für Online-Werbung ausgeben, möchten Sie Ihre Rendite auf diese Ausgaben verfolgen und datengestützte Entscheidungen über weitere Investitionen treffen. Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Ihre Kanalanalyse verfolgt - einschließlich des ROI insgesamt und nach Kampagne.
 
 ![](../../assets/Marketing_dashboard_example.png)
 
-Bevor Sie beginnen, möchten Sie Ihre [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)-, [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)- und [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md)-Konten verbinden und zusätzliche Daten zu den Werbeausgaben im Internet einbringen. Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
+Bevor Sie beginnen, sollten Sie Ihre [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)-, [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)- und [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md)-Konten verbinden und alle zusätzlichen Online-Daten zu Werbeausgaben einbringen. Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Konsolidierte Tabellen
 
-**Ursprüngliche Architektur:** Um Ihre Ausgaben aus verschiedenen Quellen wie [!DNL Facebook Ads] oder [!DNL Google Adwords] zusammenzuführen, empfiehlt Adobe, eine **konsolidierte Tabelle** aller Werbeausgaben zu erstellen. Sie benötigen einen Analysten, um diesen Schritt für Sie abzuschließen. Ist dies nicht der Fall, reichen Sie [eine Supportanfrage ](../../guide-overview.md#Submitting-a-Support-Ticket) mit dem Betreff `[MARKETING ROI ANALYSIS]` ein, und ein Analyst erstellt diese Tabelle.
+**Ursprüngliche Architektur:** Um Ihre Ausgaben aus verschiedenen Quellen wie [!DNL Facebook Ads] oder [!DNL Google Adwords] zusammenzuführen, empfiehlt Adobe die Erstellung einer **konsolidierten Tabelle** aller Ihrer Werbeausgaben. Sie benötigen einen Analysten, um diesen Schritt für Sie auszuführen. Andernfalls reichen Sie [eine Support-Anfrage](../../guide-overview.md#Submitting-a-Support-Ticket) mit dem `[MARKETING ROI ANALYSIS]` ein, und ein Analyst erstellt diese Tabelle.
 
-**Neue Architektur:** Sie können dem Beispiel in [diesem Thema der Analysebibliothek](../../data-analyst/data-warehouse-mgr/create-dw-views.md) folgen. Konsolidierte Tabellen werden jetzt als Data Warehouse-Ansichten in der neuen Architektur bezeichnet.
+**Neue Architektur:** Sie können dem Beispiel in [diesem Analysis Library](../../data-analyst/data-warehouse-mgr/create-dw-views.md)-Thema folgen. Konsolidierte Tabellen werden jetzt unter dem Namen Data Warehouse-Ansichten in der neuen Architektur bezeichnet.
 
 ## Berechnete Spalten
 
 Zu erstellende Spalten
 
-* **`Consolidated Digital Ad Spend`** table
-* **`Campaign name`** wird von einem Adobe-Analyst im Rahmen Ihres **[MARKETING ROI ANALYSIS]**-Tickets erstellt
+* **`Consolidated Digital Ad Spend`**
+* **`Campaign name`** wird von einem Adobe-Analyst im Rahmen Ihres **[MARKETING ROI ANALYSIS]** Tickets erstellt
 
-**Ursprüngliche und neue Architekturen:**
+**Originale und neue Architekturen:**
 
-* **`sales_flat_order`** table
+* **`sales_flat_order`**
    * **`Order's GA campaign`**
-      * Wählen Sie eine Definition aus: `Joined Column`
+      * Definition auswählen: `Joined Column`
       * [!UICONTROL Create Path]:
       * 
         [!UICONTROL Many]: `sales_flat_order.increment_id`
       * 
         [!UICONTROL One]: `ecommerce####.transaction_id`
 
-      * Wählen Sie einen [!UICONTROL table]: `ecommerce####`
-      * Wählen Sie einen [!UICONTROL column]: `campaign`
+      * [!UICONTROL table] auswählen: `ecommerce####`
+      * [!UICONTROL column] auswählen: `campaign`
       * [!UICONTROL Path]: `sales_flat_order.increment_id = ecommerce#####.transactionID`
 
    * **`Order's GA medium`**
       * Definition auswählen: Verbundene Spalte
-      * Wählen Sie einen [!UICONTROL table]: `ecommerce####`
-      * Wählen Sie einen [!UICONTROL column]: `medium`
-      * [!UICONTROL Path]: sales_flach_order.Increment_id = ecommerce###.transactionId
+      * [!UICONTROL table] auswählen: `ecommerce####`
+      * [!UICONTROL column] auswählen: `medium`
+      * [!UICONTROL Path]: sales_flat_order.increment_id = eCommerce######.transactionId
 
    * **`Order's GA source`**
       * Definition auswählen: Verbundene Spalte
-      * Wählen Sie einen [!UICONTROL table]: `ecommerce####`
-      * Wählen Sie einen [!UICONTROL column]: `source`
-      * [!UICONTROL Path]: sales_flach_order.Increment_id = ecommerce###.transactionId
+      * [!UICONTROL table] auswählen: `ecommerce####`
+      * [!UICONTROL column] auswählen: `source`
+      * [!UICONTROL Path]: sales_flat_order.increment_id = eCommerce######.transactionId
 ^
 
-* **`customer_entity`** table
+* **`customer_entity`**
 * **`Customer's first order GA campaign`**
-   * Wählen Sie eine Definition aus: `Max`
-   * Wählen Sie einen [!UICONTROL table]: `sales_flat_order`
-   * Wählen Sie einen [!UICONTROL column]: `Order's GA campaign`
+   * Definition auswählen: `Max`
+   * [!UICONTROL table] auswählen: `sales_flat_order`
+   * [!UICONTROL column] auswählen: `Order's GA campaign`
    * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
    * [!UICONTROL Filter]:
       * `Orders we count`
       * `Customer's order number = 1`
 
 * **`Customer's first order GA source`**
-   * Wählen Sie eine Definition aus: `Max`
-   * Wählen Sie einen [!UICONTROL table]: `sales_flat_order`
-   * Wählen Sie einen [!UICONTROL column]: `Order's GA source`
-   * [!UICONTROL Path]: sales_flach_order.customer_id = customer_entity.entity_id
+   * Definition auswählen: `Max`
+   * [!UICONTROL table] auswählen: `sales_flat_order`
+   * [!UICONTROL column] auswählen: `Order's GA source`
+   * [!UICONTROL Path]: sales_flat_order.customer_id = customer_entity.entity_id
    * [!UICONTROL Filter]:
       * `Orders we count`
       * `Customer's order number = 1`
 
 * **`Customer's first order GA medium`**
-   * Wählen Sie eine Definition aus: `Max`
-   * Wählen Sie einen [!UICONTROL table]: `sales_flat_order`
-   * Wählen Sie einen [!UICONTROL column]: `Order's GA medium`
+   * Definition auswählen: `Max`
+   * [!UICONTROL table] auswählen: `sales_flat_order`
+   * [!UICONTROL column] auswählen: `Order's GA medium`
    * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
    * [!UICONTROL Filter]:
       * `Orders we count`
       * `Customer's order number = 1`
 
-* **`sales_flat_order`** table
+* **`sales_flat_order`**
 * **`Customer's first order GA campaign`**
-   * Wählen Sie eine Definition aus: `Joined Column`
-   * Wählen Sie einen [!UICONTROL table]: `customer_entity`
-   * Wählen Sie einen [!UICONTROL column]: `Customer's first order GA campaign`
+   * Definition auswählen: `Joined Column`
+   * [!UICONTROL table] auswählen: `customer_entity`
+   * [!UICONTROL column] auswählen: `Customer's first order GA campaign`
    * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA source`**
    * Definition auswählen: Verbundene Spalte
-   * Wählen Sie einen [!UICONTROL table]: `customer_entity`
-   * Wählen Sie einen [!UICONTROL column]: `Customer's first order GA source`
+   * [!UICONTROL table] auswählen: `customer_entity`
+   * [!UICONTROL column] auswählen: `Customer's first order GA source`
    * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 * **`Customer's first order GA medium`**
-   * Wählen Sie eine Definition aus: `Joined Column`
-   * Wählen Sie einen [!UICONTROL table]: `customer_entity`
-   * Wählen Sie einen [!UICONTROL column]: `Customer's first order GA medium`
+   * Definition auswählen: `Joined Column`
+   * [!UICONTROL table] auswählen: `customer_entity`
+   * [!UICONTROL column] auswählen: `Customer's first order GA medium`
    * [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
 
 ## Metriken
 
 * **Werbeausgaben**
-* In der Tabelle **`Consolidated Digital Ad Spend`**
-* Diese Metrik führt eine **Summe** aus.
+* In der **`Consolidated Digital Ad Spend`**
+* Diese Metrik führt eine **Summe“**
 * In der Spalte **`adCost`**
-* Durch den Zeitstempel **`date`** geordnet
+* Sortiert nach dem **`date`** Zeitstempel
 
-* **Anzeigenimpressionen**
-* In der Tabelle **`Consolidated Digital Ad Spend`**
-* Diese Metrik führt eine **Summe** aus.
+* **Anzeigen-Impressions**
+* In der **`Consolidated Digital Ad Spend`**
+* Diese Metrik führt eine **Summe“**
 * In der Spalte **`Impressions`**
-* Durch den Zeitstempel **`Month`** geordnet
+* Sortiert nach dem **`Month`** Zeitstempel
 
 * **Anzeigenklicks**
-* In der Tabelle **`Consolidated Digital Ad Spend`**
-* Diese Metrik führt eine **Summe** aus.
+* In der **`Consolidated Digital Ad Spend`**
+* Diese Metrik führt eine **Summe“**
 * In der Spalte **`adClicks`**
-* Durch den Zeitstempel **`Month`** geordnet
+* Sortiert nach dem **`Month`** Zeitstempel
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie [alle neuen Spalten als Dimensionen zu den Metriken hinzufügen](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) , bevor Sie neue Berichte erstellen.
+>Stellen Sie sicher[ dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
-* **Werbeausgaben (ganze Zeit)**
+* **Werbeausgaben (alle Zeiten)**
    * [!UICONTROL Metric]: Werbeausgaben
 
-* Metrik `A`: Anzeigenausgaben
+* `A`: Werbeausgaben
 * [!UICONTROL Time period]: `All time`
 * 
   [!UICONTROL Intervall]: `None`
 * 
   [!UICONTROL Chart Type]: `Scalar`
 
-* **Akquise von Anzeigenkunden (immer)**
+* **Kundenakquise hinzufügen (jederzeit)**
    * [!UICONTROL Metric]: `New customers`
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
@@ -156,14 +156,14 @@ Zu erstellende Spalten
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ODER [`B`] ODER [`C`]) UND [`D`]
 
-* Metrik `A`: `Ad customer acquisitions`
+* `A`: `Ad customer acquisitions`
 * [!UICONTROL Time period]: `All time`
 * 
   [!UICONTROL Intervall]: `None`
 * 
   [!UICONTROL Chart Type]: `Scalar`
 
-* **Anzeigen-ROI**
+* **Ad ROI**
    * [!UICONTROL Metric]: Werbeausgaben
 
    * [!UICONTROL Metric]: `New customers`
@@ -174,7 +174,7 @@ Zu erstellende Spalten
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ODER [`B`] ODER [`C`]) UND [`D`]
 
-   * [!UICONTROL Metric]: Durchschnittlicher Umsatz während der Lebensdauer
+   * [!UICONTROL Metric]: Durchschnittlicher Lebensdauerumsatz
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
@@ -186,9 +186,9 @@ Zu erstellende Spalten
    * 
      [!UICONTROL Format]: `Percentage`
 
-* Metrik `A`: `Ad Spend (hide)`
-* Metrik `B`: `Ad customer acquisitions (hide)`
-* Metrik `C`: `Average LTV (hide)`
+* `A`: `Ad Spend (hide)`
+* `B`: `Ad customer acquisitions (hide)`
+* `C`: `Average LTV (hide)`
 * [!UICONTROL Formula]: `Ads ROI`
 * [!UICONTROL Time period]: `All time`
 * 
@@ -196,18 +196,18 @@ Zu erstellende Spalten
 * 
   [!UICONTROL Chart Type]: `Scalar`
 
-* **Bestellungen nach ga medium**
+* **Bestellungen nach GA-Medium**
    * 
-     [!UICONTROL Metrik]: `Orders`
+     [!UICONTROL-Metrik]: `Orders`
 
-* Metrik `A`: `Orders`
+* `A`: `Orders`
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By Month`
 * [!UICONTROL Group by]: `Order's medium`
 * 
   [!UICONTROL Chart Type]: `Area`
 
-* **Anzeigen-ROI nach Kampagne**
+* **Anzeige-ROI nach Kampagne**
    * [!UICONTROL Metric]: `Ad Spend`
 
    * [!UICONTROL Metric]:`New customers`
@@ -218,7 +218,7 @@ Zu erstellende Spalten
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ODER [`B`] ODER [`C`]) UND [`D`]
 
-   * [!UICONTROL Metric]: Durchschnittlicher Umsatz während der Lebensdauer
+   * [!UICONTROL Metric]: Durchschnittlicher Lebensdauerumsatz
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
@@ -226,7 +226,7 @@ Zu erstellende Spalten
       * `User's first order's medium IN cpc, ppc`
       * Filterlogik: ([`A`] ODER [`B`] ODER [`C`]) UND [`D`]
 
-   * [!UICONTROL Metric]: Durchschnittliche Anzahl der Bestellungen während der Lebensdauer
+   * [!UICONTROL Metric]: Durchschnittliche Anzahl der Bestellungen während der gesamten Lebensdauer
    * [!UICONTROL Filters]:
       * `User's first order's source LIKE %google%`
       * `User's first order's source LIKE %facebook%`
@@ -258,31 +258,31 @@ Zu erstellende Spalten
    * 
      [!UICONTROL Format]: `Currency`
 
-* Metrik `A`: `Ad Spend` (ausblenden)
-* Metrik `B`: `Ad customer acquisitions`
-* Metrik `C`: `Average LTV`
-* Metrik `D`: `Average lifetime # of orders`
+* `A`: `Ad Spend` (ausblenden)
+* `B`: `Ad customer acquisitions`
+* `C`: `Average LTV`
+* `D`: `Average lifetime # of orders`
 * 
-  [!UICONTROL Formel]: `CAC`
+  [!UICONTROL-Formel]: `CAC`
 * [!UICONTROL Formula]: `Avg return`
 * [!UICONTROL Formula]: `Ads ROI`
-* Metrik `H`: `adClicks`
-* Metrik `I`: `Impressions`
+* `H`: `adClicks`
+* `I`: `Impressions`
 * 
-  [!UICONTROL Formel]: `CTR`
+  [!UICONTROL-Formel]: `CTR`
 * 
-  [!UICONTROL Formel]: `CPC`
+  [!UICONTROL-Formel]: `CPC`
 * [!UICONTROL Time period]: `All time`
 * 
   [!UICONTROL Intervall]: `None`
 * 
-  [!UICONTROL Gruppe von]: `campaign` (Verwenden der Kampagne &quot;Erstbestellung&quot;des Kunden für die Tabellenmetriken ohne Anzeigenausgaben)
+  [!UICONTROL Gruppieren nach]: `campaign` (Verwenden der Kampagne „Erster Auftrag des Kunden“ für Nicht-Anzeigen-Ausgabentabellen-Metriken)
 * 
   [!UICONTROL Chart Type]: `Table`
 
-Wenn Sie beim Erstellen dieser Analyse Fragen haben oder einfach das Professional Services-Team kontaktieren möchten, wenden Sie sich an den Support [.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
-### Verwandte
+### verwandt
 
 * [Best Practices für UTM-Tagging in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
-* [Wie funktioniert die  [!DNL Google Analytics] UTM-Attribution?](../analysis/utm-attributes.md)
+* [Wie funktioniert  [!DNL Google Analytics]  UTM-Attribution?](../analysis/utm-attributes.md)

@@ -1,6 +1,6 @@
 ---
-title: Verwenden der Spalte "Datumsdifferenz berechnet"
-description: Erfahren Sie mehr über den Zweck und die Verwendung der Spalte Datumsdifferenz berechnet .
+title: Verwenden der berechneten Spalte „Datumsdifferenz“
+description: Erfahren Sie mehr über den Zweck und die Verwendung der Spalte „Datumsdifferenz berechnet“.
 exl-id: 6ecab794-3466-4b3a-a929-3e56287522aa
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -11,43 +11,43 @@ ht-degree: 0%
 
 ---
 
-# Datumsdifferenz berechnet Spalte
+# Berechnete Spalte „Datumsdifferenz“
 
-In diesem Thema werden der Zweck und die Verwendung der auf der Seite **[!DNL Manage Data > Data Warehouse]** verfügbaren Spalte mit der berechneten `Date Difference` -Zahl erläutert. Nachstehend finden Sie eine Erläuterung dessen, was es tut, gefolgt von einem Beispiel und der Methode, sie zu erstellen.
+In diesem Thema werden der Zweck und die Verwendung der `Date Difference` berechneten Spalte auf der **[!DNL Manage Data > Data Warehouse]** Seite beschrieben. Nachfolgend finden Sie eine Erläuterung der Funktionen, gefolgt von einem Beispiel und den Methoden zu seiner Erstellung.
 
-**Erklärung**
+**Erläuterung**
 
-Der Spaltentyp `Date Difference` berechnet anhand der Zeitstempel des Ereignisses die Zeit zwischen zwei Ereignissen, die zu einem einzigen Datensatz gehören. Der in dieser Spalte berechnete Rohwert wird in Sekunden angegeben. Er wird jedoch automatisch in Minuten, Stunden, Tage usw. umgewandelt, um in Berichten angezeigt zu werden. Wenn Sie den Wert jedoch als Filter/Gruppe von verwenden, möchten Sie ihn in Sekunden verwenden.
+Der `Date Difference` Spaltentyp berechnet die Zeit zwischen zwei Ereignissen, die zu einem einzelnen Datensatz gehören, basierend auf den Ereignis-Zeitstempeln. Der in dieser Spalte berechnete Rohwert beträgt in Sekunden, er wird jedoch automatisch in Minuten, Stunden, Tage usw. konvertiert, um ihn in Berichten anzuzeigen. Bei Verwendung als Filter/Gruppieren nach sollte der Wert jedoch in Sekunden verwendet werden.
 
-Eine berechnete Spalte vom Typ `date difference` kann verwendet werden, um eine Metrik zu erstellen, die die durchschnittliche oder mittlere Zeit zwischen zwei Ereignissen berechnet, z. B. die durchschnittliche Zeit zwischen der Registrierung eines Kunden und seinen ersten Bestellungen.
+Eine `date difference` berechnete Spalte kann verwendet werden, um eine Metrik zu erstellen, die die durchschnittliche oder mediane Zeit zwischen zwei Ereignissen berechnet, z. B. die durchschnittliche Zeit zwischen der Kundenregistrierung und ihren ersten Bestellungen.
 
 **Beispiel**
 
 | **`id`** | **`timestamp_1`** | **`timestamp_2`** | **`Seconds between timestamp_2 and timestamp_1`** |
 |--- |--- |--- |--- |
-| `A` | 01.01.2015 00:00:00 | 12.1.2015:30:00 | 45000 |
-| `B` | 01.01.2015:00:00 | 10.01.2015 10:00:00 | 7200 |
+| `A` | 01.01.2015 00:00:00 | 01.01.2015 12:30:00 | 45000 |
+| `B` | 01.01.2015 08:00:00 | 01.01.2015 10:00:00 | 7200 |
 
 {style="table-layout:auto"}
 
 
-Im obigen Beispiel ist die Spalte `Date Difference` die Spalte `Seconds between timestamp_2 and timestamp_1` . Er führt die Berechnung `timestamp_2 minus timestamp_1` durch.
+Im obigen Beispiel ist die Spalte `Date Difference` die Spalte `Seconds between timestamp_2 and timestamp_1` . Er führt die `timestamp_2 minus timestamp_1` durch.
 
-**Mechanics**
+**Mechanik**
 
-In den folgenden Schritten wird beschrieben, wie Sie eine `Date Difference` -Spalte erstellen.
+Die folgenden Schritte beschreiben, wie Sie eine `Date Difference` erstellen.
 
-1. Navigieren Sie zur Seite &quot;**[!DNL Manage Data > Data Warehouse]**&quot;.
-1. Navigieren Sie zu der Tabelle, für die Sie diese Spalte erstellen möchten.
+1. Navigieren Sie zur **[!DNL Manage Data > Data Warehouse]**.
+1. Navigieren Sie zu der Tabelle, in der Sie diese Spalte erstellen möchten.
 1. Klicken Sie auf **[!UICONTROL Create a Column]** und konfigurieren Sie Ihre Spalte wie folgt:
    * Wählen Sie `Column Definition Type` > `Same Table`
    * Wählen Sie `Column Definition Equation` > `DATE_DIFF = (Ending DATETIME - Starting DATETIME)`
-   * Wählen Sie die Spalte `Ending DATETIME` aus > Wählen Sie das Feld für die Enddatumszeit aus, was normalerweise dem Ereignis entspricht, das später auftritt
-   * Wählen Sie `Starting DATETIME` column** > Wählen Sie das Feld für den Startzeitpunkt aus, was normalerweise dem zuvor aufgetretenen Ereignis entspricht.
+   * Wählen Sie `Ending DATETIME` Spalte aus und wählen Sie das Feld Enddatum und -uhrzeit aus, was normalerweise das Ereignis ist, das später auftritt
+   * Wählen Sie `Starting DATETIME` Spalte ** > Wählen Sie das Feld Anfangsdatum/Uhrzeit , das normalerweise das früher auftretende Ereignis ist
 
-1. Geben Sie einen Namen für die Spalte ein und klicken Sie auf **[!UICONTROL Save]**.
-1. Die Spalte ist verfügbar, um *unmittelbar* zu verwenden.
+1. Geben Sie der Spalte einen Namen und klicken Sie auf **[!UICONTROL Save]**.
+1. Die Spalte kann (sofort *verwendet*.
 
-Im folgenden Beispiel wird zur Berechnung des `Seconds between order date and customer's creation date`-Werts konfiguriert:
+Als Beispiel wird das folgende Beispiel konfiguriert, um die `Seconds between order date and customer's creation date` zu berechnen:
 
 ![](../../assets/date_diff.png)

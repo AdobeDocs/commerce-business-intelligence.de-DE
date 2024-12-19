@@ -13,45 +13,45 @@ ht-degree: 0%
 
 # Filter
 
-Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu beschränken, die zum Produkt eines Berichts verwendet werden. Jeder Filter ist ein Ausdruck, der eine Spalte der zugehörigen Tabelle, einen Operator und einen Wert enthält. Um beispielsweise nur wiederkehrende Kunden einzubeziehen, können Sie einen Filter erstellen, der nur Kunden umfasst, die mehr als eine Bestellung aufgegeben haben. Es können mehrere Filter mit logischen `AND/OR` -Operatoren verwendet werden, um dem Bericht Logik hinzuzufügen.
+Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu begrenzen, die für das Erstellen eines Berichts verwendet werden. Jeder Filter ist ein Ausdruck, der eine Spalte aus der zugehörigen Tabelle, einen Operator und einen Wert enthält. Um beispielsweise nur Bestandskunden einzubeziehen, können Sie einen Filter erstellen, der nur Kunden enthält, die mehr als eine Bestellung aufgegeben haben. Mit logischen `AND/OR`-Operatoren können mehrere Filter verwendet werden, um dem Bericht Logik hinzuzufügen.
 
 >[!TIP]
 >
 >Ein Bericht kann maximal 3.500 Datenpunkte enthalten. Um die Anzahl der Datenpunkte zu reduzieren, verwenden Sie einen Filter, um die Datenmenge zu reduzieren, die zum Generieren des Berichts verwendet wird.
 
-[!DNL Adobe Commerce Intelligence] enthält eine Auswahl von Filtern, die Sie &quot;vorkonfiguriert&quot;(OOTB) verwenden oder entsprechend Ihren Anforderungen ändern können. Die Anzahl der Filter, die Sie erstellen können, ist unbegrenzt.
+[!DNL Adobe Commerce Intelligence] enthält eine Auswahl von Filtern, die Sie „vorkonfiguriert“ (OOTB) verwenden oder an Ihre Anforderungen anpassen können. Die Anzahl der Filter, die Sie erstellen können, ist unbegrenzt.
 
 ## So fügen Sie einen Filter hinzu:
 
-1. Bewegen Sie den Mauszeiger im Diagramm über jeden Datenpunkt.
+1. Bewegen Sie im Diagramm den Mauszeiger über die einzelnen Datenpunkte.
 
-   In diesem Bericht zeigt jeder Datenpunkt die Gesamtanzahl der Kunden für den Monat an.
+   In diesem Bericht zeigt jeder Datenpunkt die Gesamtzahl der Kunden für den Monat an.
 
-1. Klicken Sie im linken Bereich auf das Symbol Filter (![](../../assets/magento-bi-btn-filter.png)).
+1. Klicken Sie im linken Bedienfeld auf das Symbol „Filter“ (![](../../assets/magento-bi-btn-filter.png)).
 
    ![Filter hinzufügen](../../assets/magento-bi-report-builder-filter-add.png)
 
 1. Klicken Sie auf **[!UICONTROL Add Filter]**.
 
-   Filter werden alphabetisch nummeriert und der erste ist `[A]`. Die ersten beiden Teile des Filters sind Dropdown-Optionen und der dritte Teil ist ein Wert.
+   Filter sind alphabetisch nummeriert, wobei der erste `[A]` ist. Die ersten beiden Teile des Filters sind Dropdown-Optionen, und der dritte Teil ist ein -Wert.
 
    ![](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * Klicken Sie auf den ersten Teil des Filters und wählen Sie die Spalte aus, die Sie als Betreff des Ausdrucks verwenden möchten.
 
-     ![Ersten Teil des Filters auswählen](../../assets/magento-bi-report-builder-filter-part1.png)
+     ![Wählen Sie den ersten Teil des Filters](../../assets/magento-bi-report-builder-filter-part1.png)
 
    * Klicken Sie auf den zweiten Teil des Filters und wählen Sie den Operator aus.
 
-     ![Wählen Sie den Operator](../../assets/magento-bi-report-builder-filter-part2.png)
+     ![Operator auswählen](../../assets/magento-bi-report-builder-filter-part2.png)
 
    * Geben Sie im dritten Teil des Filters den Wert ein, der zum Vervollständigen des Ausdrucks erforderlich ist.
 
-     ![Geben Sie den Wert ](../../assets/magento-bi-report-builder-filter-part3.png) ein.
+     ![Wert eingeben](../../assets/magento-bi-report-builder-filter-part3.png)
 
-   * Klicken Sie nach Abschluss des Filters auf **[!UICONTROL Apply]**.
+   * Wenn der Filter abgeschlossen ist, klicken Sie auf **[!UICONTROL Apply]**.
 
-     Der Bericht enthält jetzt nur noch wiederkehrende Kunden, und die Anzahl der für den Bericht abgerufenen Kundendatensätze wurde von 33.000 auf 12.600 reduziert.
+     Der Bericht enthält jetzt nur noch Bestandskunden, und die Anzahl der für den Bericht abgerufenen Kundendatensätze wurde von 33.000 auf 12.600 reduziert.
 
      ![Gefilterter Bericht](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
@@ -63,8 +63,8 @@ Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu beschrä
 
    ![Kumulative Perspektive](../../assets/magento-bi-report-builder-filter-perspective-cumulative.png)
 
-   Die Perspektive &quot;`Cumulative`&quot; verteilt die Änderung über einen bestimmten Zeitraum, anstatt für jeden Monat die &quot;Aufgejagt&quot; und &quot;Abwärts&quot; anzuzeigen.
+   Die `Cumulative` Perspektive verteilt die Änderung über die Zeit, anstatt die gezackten Auf- und Abwärtsbewegungen für jeden Monat anzuzeigen.
 
-1. Geben Sie einen `Title` für den Bericht ein und klicken Sie auf **[!UICONTROL Save]** ihn als `Chart` in Ihr Dashboard.
+1. Geben Sie einen `Title` für den Bericht ein und klicken Sie **[!UICONTROL Save]** ihn als `Chart` auf Ihr Dashboard.
 
-   ![In Dashboard speichern](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)
+   ![Im Dashboard speichern](../../assets/magento-bi-report-builder-filter-perspective-cumulative-save.png)

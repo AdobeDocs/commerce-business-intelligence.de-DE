@@ -17,45 +17,45 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Intelligence] wurde zuvor als [!DNL Magento Business Intelligence] bezeichnet. Für dieses Handbuch werden derzeit eine Reihe von Aktualisierungen zur Erfassung der Änderungen durchgeführt.
+>[!DNL Adobe Commerce Intelligence] hieß früher [!DNL Magento Business Intelligence]. Für dieses Handbuch wird derzeit eine Reihe von Aktualisierungen durchgeführt, um die Änderungen zu erfassen.
 
 Für Datenadministratoren gibt es zwei Bereiche:
 
-- Admin: Verwenden Sie diesen Bereich, um auf die Konfigurationsoberfläche und die Berichterstellung zuzugreifen.
-- Befehlszeilenschnittstelle (CLI): Mit diesem Tool können Sie Installations- und Backend-Konfigurationsaufgaben ausführen.
+- Der Administrator: Verwenden Sie diesen Bereich, um auf die Konfigurations-Benutzeroberfläche und Berichte zuzugreifen.
+- Die Befehlszeilenschnittstelle (CLI): Verwenden Sie dieses Tool, um Installations- und Backend-Konfigurationsaufgaben auszuführen.
 
-## Verwenden dieses Handbuchs
+## Verwendung dieses Handbuchs
 
-Dieses Handbuch enthält die folgenden Abschnitte, die auf der Rolle basieren, die Sie innerhalb Ihres Unternehmens spielen können.
+Dieses Handbuch enthält die folgenden Abschnitte, die je nach der Rolle, die Sie in Ihrer Organisation haben, organisiert sind.
 
-- [Datenbenutzer](data-user.md): Sie verwenden Daten, um geschäftliche Entscheidungen zu treffen. Möglicherweise erhalten Sie Berichte und Dashboards von einem Datenanalytiker in Ihrem Team, aber Sie möchten auch erfahren, wie Sie diese Berichte und Dashboards erstellen.
-- [Datenanalyst](data-analyst.md): Sie sind damit vertraut, Abfragen zu entwerfen und als Ansprechpartner für die Datenanalyse zu fungieren. Sie wissen, wie Sie spezifische Antworten auf Datenfragen finden und eine Self-Service-Erfahrung für Ihre Kollegen ermöglichen möchten.
-- Administrator: Sie verwalten das [!DNL Commerce Intelligence] -Konto, einschließlich Lizenzierung, Hinzufügen und Entfernen von Benutzern und Umgang mit wichtigen Verwaltungsaufgaben.
+- [Datenbenutzer](data-user.md): Sie verwenden Daten, um geschäftliche Entscheidungen zu treffen. Möglicherweise erhalten Sie Berichte und Dashboards von einem Datenanalytiker in Ihrem Team. Sie möchten aber auch erfahren, wie Sie diese Berichte und Dashboards erstellen.
+- [Datenanalyst](data-analyst.md): Sie können Abfragen bequem entwerfen und sind die erste Person für die Datenanalyse. Sie wissen, wie Sie spezifische Antworten auf Datenfragen finden können, und möchten Ihren Kollegen ein Self-Service-Erlebnis bieten.
+- Administrator : Sie verwalten das [!DNL Commerce Intelligence]-Konto, einschließlich der Lizenzierung, des Hinzufügens und Entfernens von Benutzern und der Ausführung wesentlicher Verwaltungsaufgaben.
 
-Zusätzlich zu den oben genannten rollenbasierten Workflows enthält dieses Handbuch auch Folgendes:
+Zusätzlich zu den oben genannten rollenbasierten Workflows enthält dieses Handbuch auch:
 
-- Best Practices: [!UICONTROL Commerce Intelligence] ist eine robuste und flexible Plattform, was bedeutet, dass es viele verschiedene Möglichkeiten gibt, ähnliche Aufgaben durchzuführen. In diesem Abschnitt werden die für [!DNL Commerce Intelligence] empfohlenen Methoden zur Erfassung, Analyse und Anzeige Ihrer Daten zusammengefasst.
-- Tutorials: Folgen Sie diesen selbstgeführten Tutorials, um die Macht von [!DNL Commerce Intelligence] zu erfahren.
+- Best Practices: [!UICONTROL Commerce Intelligence] ist eine robuste und flexible Plattform, was bedeutet, dass es viele verschiedene Möglichkeiten gibt, ähnliche Aufgaben auszuführen. In diesem Abschnitt werden die [!DNL Commerce Intelligence] empfohlenen Methoden zur Erfassung, Analyse und Anzeige Ihrer Daten zusammengefasst.
+- Tutorials: Befolgen Sie diese Tutorials, um die Macht der [!DNL Commerce Intelligence] kennenzulernen.
 
 ## Hilfe erhalten
 
-Wenden Sie sich an das [Supportteam](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), wenn Sie Fragen haben und einige Ihrer Professional Services nutzen möchten oder wenn Sie auf Probleme mit Ihrem Konto stoßen.
+Wenden Sie sich an [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), wenn Sie Fragen haben und einige Ihrer Professional Services in Anspruch nehmen möchten oder Probleme mit Ihrem Konto auftreten.
 
 ### Service-Richtlinien
 
-Sehen Sie eine [ Liste der vom Support-Team bereitgestellten Dienste an.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)
+Hier finden Sie [Liste der Services, die das Support-Team bereitstellt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### Senden eines Support-Tickets
 
-Benötigen Sie Hilfe beim Erstellen einer erweiterten berechneten Spalte? Fehlerkorrektur - kein Verbindungsproblem mehr aufgetreten? Sollten Sie Kontakt mit dem Supportteam aufnehmen müssen, bittet Adobe Sie, die [Support-Ticketrichtlinien](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) zu verwenden. Diese Richtlinien beschreiben die Informationen, die Adobe zur Lösung des Problems benötigt.
+Benötigen Sie Hilfe beim Erstellen einer erweiterten berechneten Spalte? Haben Sie einen Defekt oder ein Verbindungsproblem festgestellt? Wenn Sie sich an das Support-Team wenden müssen, bittet Adobe Sie, die [Support-Ticket-Richtlinien“ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). In diesen Richtlinien werden die Informationen beschrieben, die Adobe zur Behebung des Problems benötigt.
 
 ## Verfügbare Dokumentation
 
 | Dokumentationsressource | Beschreibung |
 |----------------------- | ----------- |
-| [Dokumentation zum Adobe Commerce 2.4-Händler](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Merchandising-fokussierte Dokumentation für Adobe Commerce und Magento Open Source |
-| [Dienste für die Dokumentation zu Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) | Dokumentation zur Unterstützung einer Reihe von Diensten, die Händlern bei der Integration wichtiger Komponenten ihres Geschäfts in ihren Speicher helfen. |
-| [Adobe Commerce 2.4-Operationshandbücher](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Systemdokumentation zu Konzepten, Prozessen, Tools und Best Practices zur Entwicklung, Bereitstellung und Wartung von Projekten, die auf Adobe Commerce- und Magento Open Source-Plattformen bereitgestellt werden. |
-| [Adobe Commerce 2.4-Entwicklerdokumentation](https://developer.adobe.com/commerce/) | Entwickerorientierte Dokumentation zum Erstellen und Anpassen von Adobe Commerce oder Magento Open Source |
+| [Adobe Commerce 2.4-Händlerdokumentation](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Händlerorientierte Dokumentation für Adobe Commerce und Magento Open Source |
+| [Dokumentation zu Services für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) | Dokumentation zur Unterstützung einer Reihe von Services, die Händlern die Integration wichtiger Komponenten ihres Unternehmens in ihren Shop erleichtern. |
+| [Adobe Commerce 2.4-Betriebshandbücher](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Systemdokumentation zu den Konzepten, Prozessen, Tools und Best Practices für die Entwicklung, Bereitstellung und Wartung von Projekten, die auf Adobe Commerce- und Magento Open Source-Plattformen bereitgestellt werden. |
+| [Entwicklerdokumentation zu Adobe Commerce 2.4](https://developer.adobe.com/commerce/) | Entwicklerorientierte Dokumentation zum Erstellen und Anpassen von Adobe Commerce oder Magento Open Source |
 
 {style="table-layout:auto"}

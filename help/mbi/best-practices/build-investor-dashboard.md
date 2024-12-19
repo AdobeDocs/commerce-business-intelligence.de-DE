@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Dashboards für Anleger
+title: Erstellen eines Dashboards für Investoren
 description: Erfahren Sie, wie Sie ein Dashboard für Investoren erstellen.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Data Architect, Data Engineer, User
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Erstellen des Anleger-Dashboards
+# Investor Dashboard erstellen
 
-Viele Kunden arbeiten mit Anlegern zusammen und müssen Informationen aus der Plattform austauschen. Die Dashboards, die Sie für tägliche Geschäftsentscheidungen erstellen, sind jedoch möglicherweise nicht das, wonach ein Investor sucht. Im Folgenden werden einige Best Practices für die Erstellung eines Dashboards beschrieben, das umfassend, aber einfach ist und ideal für die gemeinsame Nutzung mit aktiven und potenziellen Investoren geeignet ist.
+Viele Kunden arbeiten mit Investoren zusammen und müssen Informationen über die Plattform austauschen, aber die Dashboards, die Sie für alltägliche Geschäftsentscheidungen erstellen, sind möglicherweise nicht das, was ein Investor sucht. Nachfolgend werden einige Best Practices für die Erstellung eines umfassenden, aber einfachen Dashboards beschrieben, das sich ideal für die Freigabe mit aktiven und potenziellen Investoren eignet.
 
-Im Folgenden finden Sie Informationen zum Erstellen von Berichten für Ihr Investor-Dashboard:
+So erstellen Sie Berichte für Ihr Investor-Dashboard:
 
-## Skalarberichte
+## Skalare Berichte
 
 * **[!UICONTROL All-time revenue]**
 * **[!UICONTROL Distinct buyers]**
@@ -30,12 +30,12 @@ Im Folgenden finden Sie Informationen zum Erstellen von Berichten für Ihr Inves
 * **[!UICONTROL Revenue by quarter]**
    * Metrik - Umsatz
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
-   * Metrik - Umsatz der Erstbestellung
-   * Filter - Die Ordnungsnummer des Benutzers ist gleich 1
-   * Metrik 2 - Auftragsumsatz wiederholen
+   * Metrik - Erster Bestellumsatz
+   * Filter - Die Bestellnummer des Benutzers ist gleich 1
+   * Metrik 2 - Umsatz der Wiederholungsaufträge
       * Filter - Die Bestellnummer des Benutzers ist größer als 1
-   * Deaktivieren Sie das Kontrollkästchen für mehrere Y-Achsen .
-   * Ändern in ein gestapeltes Spaltendiagramm
+   * Deaktivieren Sie das Kontrollkästchen für Mehrere Y-Achsen
+   * Wechseln zu einem gestapelten Säulendiagramm
 * **[!UICONTROL AOV by quarter]**
    * Metrik 1 - Umsatz
       * Diese Metrik ausblenden
@@ -45,36 +45,36 @@ Im Folgenden finden Sie Informationen zum Erstellen von Berichten für Ihr Inves
       * A/B
 * **[!UICONTROL All-time revenue by source]**
    * Metrik - Umsatz
-   * Gruppe nach `utm_source` des Kunden
+   * Nach `utm_source` des Kunden gruppieren
 * **[!UICONTROL Revenue from top 10 products]**
    * Metrik - Produktumsatz
       * Diagramm ausblenden
-      * Gruppieren nach Produktname. Alle Produkte auswählen.
-      * Legen Sie den Zeitraum auf &quot;All Time&quot;fest
-      * Legen Sie das Zeitintervall auf &quot;Ohne&quot;fest
-      * Zeigen Sie in &quot;Oben/Unten anzeigen&quot;nur die 10 Top-Artikel, sortiert nach Produktgewinn
+      * Nach Produktnamen gruppieren. Alle Produkte auswählen.
+      * Zeitbereich auf „Gesamte Zeit“ einstellen
+      * Legen Sie das Zeitintervall auf Keine fest.
+      * In „Oben/Unten anzeigen“ nur die 10 obersten sortiert nach Produktgewinn anzeigen
 * **[!UICONTROL Cumulative distinct buyers by quarter]**
-   * Metrik - Unique Buyer
-      * Perspektive - kumulativ
+   * Metrik - Unterschiedliche Käufer
+      * Perspektive - Kumulativ
 * **[!UICONTROL Site visits - New vs. repeat by month]**
 * Sitzungen
 
-Mit einer [!DNL Google Analytics] -Integration können Sie Berichte zu folgenden Themen einbeziehen:
+Mit einer [!DNL Google Analytics] Integration können Sie Berichte zu folgenden Themen einbeziehen:
 
 * Site-Besuche
 * Konversionsrate
 
-Mit den [Commerce-Datenanreicherungsdiensten](https://business.adobe.com/products/magento/magento-commerce.html) können Sie Berichte zu folgenden Themen einbeziehen:
+Mit den [Commerce Data Enrichment-Services](https://business.adobe.com/products/magento/magento-commerce.html) können Sie Berichte zu folgenden Themen einbeziehen:
 
 * Unique Customers nach Bundesland/Region, Alter, Geschlecht.
 
 ## Weitere Tipps
 
-* Verwenden Sie eine klare und knappe [Benennungskonvention](../best-practices/naming-elements.md)
-* Dashboard für Anleger-Benutzer freigeben
+* Verwenden Sie eine klare und knappe [Namenskonvention](../best-practices/naming-elements.md)
+* Freigeben des Dashboards für Investoren
 * Oder senden Sie es über **[!UICONTROL Automated email summary]**(../data-user/export-data/email-summaries.md)
-* Erstellen Sie nur ein Dashboard. Dies erleichtert die Pflege des Inhalts und Sie wissen genau, was Ihre Investoren sehen.
+* Nur ein Dashboard erstellen. Dies erleichtert die Pflege des Inhalts und Sie wissen genau, was Ihre Investoren anschauen.
 
-Organisieren Sie Ihre Berichte sorgfältig und achten Sie auf Details. Nach Abschluss sieht das Dashboard wie folgt aus:
+Organisieren Sie Ihre Berichte sorgfältig und achten Sie auf Details. Nach Abschluss des Vorgangs sieht das Dashboard wie folgt aus:
 
 ![](../../mbi/assets/investor-dboard-example.png)

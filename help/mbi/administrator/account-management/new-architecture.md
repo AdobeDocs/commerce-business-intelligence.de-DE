@@ -13,40 +13,40 @@ ht-degree: 0%
 
 # Neue Architektur
 
-[!DNL Adobe Commerce Intelligence] Die Produkt- und Engineering-Teams haben sich darauf konzentriert, im letzten Jahr die umfassendsten und dringend geforderten Verbesserungen zu erzielen. Adobe freut sich, Ihnen die Verfügbarkeit einer neuen [!DNL Commerce Intelligence] -Produktarchitektur mitteilen zu können, die diese Verbesserungen ermöglicht.
+[!DNL Adobe Commerce Intelligence] Produkt- und Engineering-Teams haben sich darauf konzentriert, im letzten Jahr die umfassendsten und am häufigsten geforderten Verbesserungen vorzunehmen. Adobe freut sich, die Verfügbarkeit einer neuen [!DNL Commerce Intelligence] Produktarchitektur bekannt geben zu können, die diese Verbesserungen Wirklichkeit werden lässt.
 
 ## Vorteile der neuen Architektur
 
-* Erstellen Sie Spaltentypen im Data Warehouse, einschließlich berechneter Spalten mit SQL.
+* Erstellen Sie Spaltentypen auf der Data Warehouse, einschließlich berechneter Spalten mit SQL.
 * Neue Spalten sind sofort verfügbar.
 * Die Datenlatenz wurde erheblich verbessert.
 
 ## Technische Vorteile
 
-Die wichtigsten Unterschiede sind oben aufgeführt, aber die Hauptänderung ist die Art und Weise, wie Berechnungen während des Aktualisierungszyklus durchgeführt werden. Berechnungen werden bei jeder Aktualisierung nicht mehr in jeder Spalte ausgeführt, sondern werden stattdessen bei Bedarf über den Visual Report Builder ausgeführt.
+Die wichtigsten Unterschiede sind oben aufgeführt, die wichtigste Änderung besteht jedoch in der Art und Weise, wie die Berechnungen während des Aktualisierungszyklus durchgeführt werden. Berechnungen werden nicht mehr bei jeder Aktualisierung für jede Spalte ausgeführt, sondern bei Bedarf über den Visual Report Builder.
 
-### Wechsel zur neuen Architektur
+### Wechseln zur neuen Architektur
 
-Da die Konten grundlegend anders aufgebaut sind, gibt es keinen automatischen Prozess zur Migration Ihrer Data Warehouse oder Berichte zu einem neuen Architekturkonto. Der Wechsel zur neuen Architektur erfordert eine erneute Implementierung Ihres vorhandenen Kontos.
+Da die Konten grundlegend anders aufgebaut sind, gibt es keinen automatischen Prozess zum Migrieren Ihrer Data Warehouse oder Berichte zu einem neuen Architekturkonto. Der Wechsel zur neuen Architektur erfordert eine erneute Implementierung Ihres vorhandenen Kontos.
 
-### Kosten für den Wechsel zur neuen Architektur
+### Kosten für die Umstellung auf die neue Architektur
 
-Keine zusätzlichen Kosten! Adobe erstellt dieses neue Konto, damit Sie mit der Neuimplementierung beginnen können, die für mindestens einen Monat kostenlos ist. Auf diese Weise haben Sie Zeit, beide Konten zu öffnen, damit Sie die Neuimplementierung einfacher durchführen und sicherstellen können, dass Ihr Team keine Dienstlücke aufweist.
+Keine zusätzlichen Kosten! Adobe wird dieses neue Konto erstellen, damit Sie mit der erneuten Implementierung beginnen können, die mindestens einen Monat kostenlos ist. Auf diese Weise haben Sie Zeit, beide Konten zu öffnen, sodass Sie die erneute Implementierung einfacher durchführen können, und stellen sicher, dass Ihr Team keine Service-Lücke hat.
 
-### Erforderliche Zeit für die Neuimplementierung des Kontos in der neuen Architektur
+### Erforderlicher Zeitaufwand für die Neuimplementierung des Kontos in der neuen Architektur
 
-Die Zeiten für die erneute Implementierung hängen davon ab, was Sie neu erstellen möchten. Adobe empfiehlt, dass Sie in Ihrem bestehenden Konto die folgenden Schritte ausführen, um eine Vorstellung davon zu erhalten, was in Ihrer Neuimplementierung involviert sein würde:
+Die Zeit für die erneute Implementierung hängt davon ab, was neu erstellt werden soll. Adobe empfiehlt, die folgenden Schritte in Ihrem bestehenden Konto auszuführen, um einen Eindruck davon zu gewinnen, was mit Ihrer erneuten Implementierung verbunden wäre:
 
-* Identifizieren Sie einen Hauptsatz von Berichten/Dashboards.
-* Identifizieren Sie Metriken und Dimensionen, die für die Erstellung dieser Berichte erforderlich sind.
-* Identifizieren Sie die Spalten, die zum erneuten Erstellen dieser Metriken und Dimensionen erforderlich sind.
+* Identifizieren Sie einen Kernsatz von Berichten/Dashboards.
+* Identifizieren Sie die Metriken und Dimensionen, die zum Erstellen dieser Berichte erforderlich sind.
+* Identifizieren Sie die Spalten, die erforderlich sind, um diese Metriken und Dimensionen neu zu erstellen.
 
 Wenn dies abgeschlossen ist, wissen Sie, welche Daten Sie mit der neuen Architektur-Data Warehouse synchronisieren müssen, um diese Kernberichte neu zu erstellen.
 
-### Hilfe erhalten
+### Hilfe wird abgerufen
 
-Das [!DNL Adobe Commerce Intelligence] [Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) kann Ihre Neuimplementierung gegen zusätzliche Kosten durchführen. Kontaktieren Sie Ihr [Adobe Account Team](../../guide-overview.md#Submitting-a-Support-Ticket) und bereiten Sie sich darauf vor, eine Liste der Dashboards/Berichte bereitzustellen, die Sie priorisieren möchten, um in dem neuen Konto zu erstellen.
+Das [!DNL Adobe Commerce Intelligence] [Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)Team kann die erneute Implementierung gegen Aufpreis durchführen. Wenden Sie sich an Ihr [Adobe-](../../guide-overview.md#Submitting-a-Support-Ticket) und stellen Sie eine Liste der Dashboards/Berichte bereit, die Sie in Ihrem neuen Konto vorrangig erstellen möchten
 
-### Aufenthalt mit vorhandener Architektur
+### Bestehende Architektur beibehalten
 
-Wenn diese Funktionen für Sie nicht wichtig sind, können Sie bei Ihrem vorhandenen Konto bleiben. Es fallen keine zusätzlichen Kosten an, um Ihr bestehendes Konto zu behalten. Adobe unterstützt diese Konten weiterhin ohne Änderungen.
+Wenn diese Funktionen für Sie nicht wichtig sind, können Sie an Ihrem bestehenden Konto festhalten. Es fallen keine zusätzlichen Kosten für die Führung Ihres bestehenden Kontos an. Adobe unterstützt diese Konten weiterhin ohne Änderungen.

@@ -1,6 +1,6 @@
 ---
-title: Analysieren von Wiederholwahrscheinlichkeitsabfall und Abwanderung
-description: Erfahren Sie, wie die Zeit zwischen Bestellungen verfällt und wann mit einer Abwanderung der Kunden zu rechnen ist.
+title: Analyse der Wiederholungswahrscheinlichkeit von Abfall und Abwanderung
+description: Erfahren Sie, wie viel Zeit zwischen Bestellungen vergeht und wann Kunden voraussichtlich abwandern werden.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Warehouse Manager, Reports, Dashboards
@@ -11,76 +11,76 @@ ht-degree: 0%
 
 ---
 
-# Wiederholungswahrscheinlichkeitsverfall und Abwanderung
+# Wiederholungswahrscheinlichkeit, Abwanderung und Abwanderung
 
-Wenn ein Teil Ihres Umsatzes aus wiederholten Käufen stammt, ist Ihnen der enorme Wert einer treuen Kundenbasis wahrscheinlich bekannt. Zu diesem Zweck ist es wichtig zu verstehen, wie viel Zeit zwischen Bestellungen vergeht und wann mit einer Abwanderung der Kunden zu rechnen ist.
+Wenn ein Teil Ihres Umsatzes aus wiederholten Käufen stammt, sind Sie sich wahrscheinlich des enormen Werts eines treuen Kundenstamms bewusst. Zu diesem Zweck ist es wichtig zu verstehen, wie viel Zeit zwischen den Bestellungen vergeht und wann die Kunden voraussichtlich abwandern werden.
 
 In diesem Thema werden die Analysen untersucht, die Ihnen bei der Beantwortung der folgenden Fragen helfen können:
 
 * Wie hoch ist die Wahrscheinlichkeit, dass ein Kunde einen weiteren Kauf tätigt?
-* Wie variiert die Wahrscheinlichkeit einer Wiederholung der Bestellung je nach der Zeit seit dem letzten Kauf des Kunden?
-* Wann sollte ein Kunde berücksichtigt werden? Wann sollte also eine Reaktivierungskampagne starten?
+* Wie schwankt die Wahrscheinlichkeit für die Wiederholungsbestellung im Laufe der Zeit seit dem letzten Kauf des Kunden?
+* Wann sollte ein Kunde als abgewandert betrachtet werden? Und wann sollte eine Reaktivierungskampagne gestartet werden?
 
-## Empfehlungen für Metriken
+## Empfohlene Kennzahlen
 
-Bei der Analyse von Wiederholungswahrscheinlichkeitsverfall und Abwanderung sollten Sie die folgenden Metriken ([oder Erstellen](../../data-user/reports/ess-manage-data-metrics.md)) in Erwägung ziehen:
+Bei der Analyse von Wiederholungswahrscheinlichkeitsverfall und Abwanderung sollten Sie die Verwendung ([oder den Aufbau](../../data-user/reports/ess-manage-data-metrics.md) dieser Metriken in Betracht ziehen:
 
-### anfängliche Wiederholungsreihenwahrscheinlichkeit
+### Wahrscheinlichkeit der anfänglichen Wiederholungsreihenfolge
 
-Diese Kennzahl ist definiert als die Gesamtzahl der wiederkehrenden Bestellungen in Prozent der Gesamtbestellungen. Anders ausgedrückt: Dies ist die Wahrscheinlichkeit, dass eine Bestellung von einer anderen Bestellung gefolgt wird. Wenn diese Wahrscheinlichkeit über 50 Prozent liegt, bedeutet dies, dass mehr als die Hälfte aller Bestellungen von einer nachfolgenden Bestellung gefolgt wird.
+Diese Kennzahl ist definiert als die Gesamtzahl der Wiederholungsaufträge, als Prozentsatz der Gesamtaufträge. Anders ausgedrückt: Dies ist die Wahrscheinlichkeit, dass einer Bestellung eine andere Bestellung folgt. Wenn diese Wahrscheinlichkeit über 50 Prozent liegt, bedeutet dies, dass mehr als die Hälfte aller Bestellungen von einer nachfolgenden Bestellung gefolgt wird.
 
-### Wiederholungsbestellwahrscheinlichkeit seit Bestellung in Monaten
+### Wiederholungswahrscheinlichkeit der Bestellung seit Monaten
 
-Diese Kennzahl zeigt die Wahrscheinlichkeit, dass ein Benutzer eine erneute Bestellung aufgibt, da seit seiner letzten Bestellung Monate vergangen sind. Die Formel, mit der diese Metrik generiert wird, vereinfacht Folgendes:
+Diese Kennzahl zeigt die Wahrscheinlichkeit, dass eine Benutzerin oder ein Benutzer angesichts der Anzahl der Monate seit ihrer letzten Bestellung erneut bestellt. Die Formel, mit der diese Metrik generiert wird, vereinfacht Folgendes:
 
-![Formel zur Wiederholungswahrscheinlichkeit](../../assets/Repeat_probability_formula.png)
+![Formel für die Wiederholungswahrscheinlichkeit](../../assets/Repeat_probability_formula.png)
 
-Je nach Ihrem Geschäftsmodell kann die Wiederholungsbestellwahrscheinlichkeit entweder sofort nach der Bestellung eines Kunden abnehmen und in den darauffolgenden Monaten weiter sinken oder saisonale Schwankungen und Spitzen zeigen.
+Je nach Geschäftsmodell sinkt die Wahrscheinlichkeit für Wiederholungsaufträge entweder sofort nach der Auftragserteilung durch den Kunden und sinkt in den folgenden Monaten weiter oder es können saisonale Schwankungen und Spitzen auftreten.
 
-Wenn Sie den Prozentsatz der Kunden verstehen, von denen erwartet wird, dass sie Wiederholungskäufe tätigen (und wie dieser Trend im Laufe der Zeit abläuft), können Sie Ihre Kunden in Intervallen ansprechen, um die Wahrscheinlichkeit eines Wiederholungskäufs zu maximieren. Wenn also die Wahrscheinlichkeit eines wiederholten Kaufs abnimmt, können Sie einen Zeitpunkt auswählen, um einen Kunden als abgesichert zu identifizieren, und Ihre Bemühungen von der Bindung zur erneuten Aktivierung umstellen.
+Wenn Sie wissen, wie viel Prozent der Kundinnen und Kunden voraussichtlich wiederholte Käufe tätigen werden (und wie sich dieser Trend im Laufe der Zeit entwickelt), können Sie Ihre Kundinnen und Kunden in bestimmten Abständen ansprechen, um die Wahrscheinlichkeit eines wiederholten Kaufs zu maximieren. Wenn also die Wahrscheinlichkeit eines wiederholten Kaufs sinkt, können Sie einen Zeitpunkt auswählen, zu dem Sie einen Kunden als Abgewanderte identifizieren und Ihre Bemühungen von der Bindung auf die Reaktivierung umstellen.
 
-## Das heutige Beispiel
+## Beispiel vom heutigen Tag
 
-Sehen Sie sich den Rückgang der Wiederholwahrscheinlichkeit für ein typisches E-Commerce-Geschäft an.
+Betrachten Sie die Wiederholungswahrscheinlichkeit für einen typischen E-Commerce-Betrieb.
 
-![Die anfängliche Wiederholungsauftragswahrscheinlichkeit wiederholt die Auftragswahrscheinlichkeit in den Monaten seit der Bestellung.](../../assets/Order_probability_reports.png)
+![Anfängliche Wiederholungsreihenfolgewahrscheinlichkeit Wiederholungsreihenfolgewahrscheinlichkeit angegeben Monate seit Bestellung.](../../assets/Order_probability_reports.png)
 
-### anfängliche Wiederholungsreihenwahrscheinlichkeit
+### Wahrscheinlichkeit der anfänglichen Wiederholungsreihenfolge
 
-In diesem Beispiel beträgt die anfängliche Wiederholungsbestellwahrscheinlichkeit - oder die Wahrscheinlichkeit, dass ein Kunde einen Wiederholungskauf tätigt - 60 Prozent. Das bedeutet, dass 60 Prozent aller bei diesem Geschäft aufgegebenen Bestellungen von einer nachfolgenden Bestellung gefolgt werden.
+In diesem Beispiel beträgt die anfängliche Wahrscheinlichkeit für Wiederholungsaufträge - oder die Wahrscheinlichkeit, dass ein Kunde einen Wiederholungskauf tätigt - 60 Prozent. Das bedeutet, dass auf 60 Prozent aller Bestellungen in diesem Geschäft eine Nachbestellung folgt.
 
-### Wiederholungsbestellwahrscheinlichkeit seit Bestellung in Monaten
+### Wiederholungswahrscheinlichkeit der Bestellung seit Monaten
 
-Dieser Bericht zeigt die Wahrscheinlichkeit, dass ein Kunde erneut bestellt wird, da seit seiner letzten Bestellung Monate vergangen sind. Obwohl es für den Abwanderungsschwellenwert in diesem Bericht keine Einzeldefinition gibt, empfiehlt Adobe, die Abwanderung als den Punkt zu definieren, an dem der Wahrscheinlichkeitsverfall den Wert überschreitet, der der Hälfte der anfänglichen Wiederholwahrscheinlichkeitsrate entspricht.
+Dieser Bericht zeigt die Wahrscheinlichkeit, dass ein Kunde erneut bestellt, da seit seiner letzten Bestellung einige Monate vergangen sind. Obwohl es für diesen Bericht keine Einzeldefinition für den Abwanderungsschwellenwert gibt, empfiehlt Adobe, Abwanderung als den Punkt zu definieren, an dem der Wahrscheinlichkeitsabfall den Wert überschreitet, der die Hälfte der anfänglichen Wiederholungswahrscheinlichkeitsrate beträgt.
 
-Da die anfängliche Wiederholungswahrscheinlichkeitsrate für dieses Beispiel 60 % beträgt, wäre das Abwanderungsdatum der Zeitpunkt, zu dem die Wiederholungsbestellwahrscheinlichkeit unter 60 %/2 = 30 % oder etwa 6 Monate absinkt. Von den 60 % der Bestellungen, die voraussichtlich mit einer weiteren Bestellung bestellt werden, wurde die Hälfte innerhalb der ersten sechs Monate aufgegeben.
+Da die anfängliche Wiederholungswahrscheinlichkeitsrate für dieses Beispiel 60 % beträgt, wäre das Abwanderungsdatum der Zeitpunkt, zu dem die Wiederholungsreihenfolgewahrscheinlichkeit unter 60 %/2 = 30 % fällt, oder bei etwa 6 Monaten. Von den 60 % der Bestellungen, die voraussichtlich mit einer anderen Bestellung nachgeholt werden, wurde die Hälfte innerhalb der ersten 6 Monate aufgegeben.
 
-Anders ausgedrückt: Wenn ein Kunde eine Nachbestellung tätigt, ist es wahrscheinlicher, dass er dies innerhalb von sechs Monaten nach seiner letzten Bestellung getan hat, als nach der Sechsmonatsfrist. Wenn ein Kunde nach sechs Monaten nicht zurückgekauft hat, sollte eine Reaktivierungskampagne gestartet werden, um diesen Kunden wieder einzuziehen.
+Anders ausgedrückt: Wenn ein Kunde eine Folgebestellung aufgeben wollte, war die Wahrscheinlichkeit höher, dass er dies innerhalb von sechs Monaten nach seiner letzten Bestellung getan hat, als nach der Sechsmonatsmarke. Wenn ein Kunde nach sechs Monaten keinen Rückkauf getätigt hat, sollte eine Reaktivierungskampagne gestartet werden, um diesen Kunden wieder heranzuziehen.
 
-Abhängig von Ihrem Geschäftsmodell können Sie stattdessen einen anderen Schwellenwert wählen, z. B. den Punkt, an dem die Wiederholungsbestellwahrscheinlichkeit unter 50 % oder 10 % sinkt. Wenn Ihr internes Wissen auf eine andere Zahl hinweist, dann sollten Sie sie auf jeden Fall verwenden!
+Je nach Geschäftsmodell sollten Sie stattdessen einen anderen Schwellenwert wählen, z. B. den Punkt, an dem die Wahrscheinlichkeit der Wiederholungsreihenfolge unter 50 % oder 10 % sinkt. Wenn Ihr internes Wissen eine andere Zahl vorschlägt, dann sollten Sie sie auf jeden Fall verwenden!
 
-Letztlich besteht das Ziel darin, die Schwelle auszuwählen, an der es sinnvoll ist, von der Aufbewahrung zur Reaktivierung zu wechseln. Bei den Bemühungen um Kundenbindung kann es sich um E-Mails handeln, um Bestandskunden mit empfohlenen Folgekäufen erneut anzusprechen, während bei Reaktivierungsmaßnahmen E-Mails an verstorbene Kunden mit Coupons und Angeboten erforderlich sein können.
+Das Ziel besteht letztendlich darin, den Schwellenwert auszuwählen, bei dem es sinnvoll ist, von der Beibehaltung zu den Reaktivierungsbemühungen zu wechseln. Aufbewahrungsmaßnahmen können E-Mails beinhalten, um erneut mit Bestandskunden mit vorgeschlagenen Folgekäufen zu interagieren, während Reaktivierungsmaßnahmen E-Mails mit Coupons und Angeboten an verfallene Kunden umfassen können.
 
-## Welche Fragen sollte ich beachten?
+## Welche Fragen sollte ich berücksichtigen?
 
-Um Ihnen dabei zu helfen, die Wahrscheinlichkeit von wiederholten Bestellungen zu verstehen, die für Ihr Unternehmen gilt, schlägt Adobe vor, diese Fragen zu berücksichtigen, wenn Sie Ihre eigenen Daten untersuchen:
+Um Ihnen dabei zu helfen, die Wahrscheinlichkeit von Wiederholungsaufträgen für Ihr Unternehmen zu verstehen, schlägt Adobe vor, diese Fragen zu berücksichtigen, wenn Sie Ihre eigenen Daten untersuchen:
 
-* Ist die anfängliche Wiederholungsauftragswahrscheinlichkeit zu erwarten? Wenn nein, warum sollte es Ihrer Meinung nach höher oder niedriger sein?
-* Gibt es seit der letzten Bestellung einen großen Rückgang der Wahrscheinlichkeit für wiederholte Bestellungen für bestimmte Monate? Wenn ja, sind diese Änderungen zu erwarten?
-* Wie hoch ist Ihre aktuelle Abwanderungsschwelle?
-* Stimmt der aktuelle Abwanderungsschwellenwert mit einem der Werte in Ihrer Wiederholungsbestellwahrscheinlichkeit für bestimmte Monate seit dem letzten Bestellbericht überein?
-* Spiegelt Ihre aktuelle Schwelle Ihre Werbebemühungen wider, von der Aufbewahrung zur erneuten Aktivierung zu wechseln?
-* Ist es sinnvoll, dass Ihr Unternehmen die Schwelle in den Monat ändert, in dem der Wahrscheinlichkeitsverfall den Wert überschreitet, der halb so hoch ist wie die anfängliche Wiederholwahrscheinlichkeitsrate?
+* Wird die anfängliche Wiederholungsreihenfolge erwartet? Wenn nicht, warum sollte sie dann höher oder niedriger sein?
+* Gibt es seit der letzten Bestellung erhebliche Rückgänge bei der Wiederholungsreihenwahrscheinlichkeit für bestimmte Monate? Wenn ja, werden diese Änderungen erwartet?
+* Wie hoch ist die aktuelle Abwanderungsschwelle?
+* Passt Ihr aktueller Abwanderungsschwellenwert zu einem der Werte in Ihrer Wiederholungsauftragswahrscheinlichkeit, die seit der letzten Bestellauswertung Monate zurückliegt?
+* Spiegelt der aktuelle Schwellenwert Ihre Werbebemühungen beim Wechsel von der Bindung zur Reaktivierung wider?
+* Ist es für Ihr Unternehmen sinnvoll, den Schwellenwert auf den Monat zu ändern, in dem der Wahrscheinlichkeitsverfall den Wert überschreitet, der der Hälfte der ursprünglichen Wiederholungswahrscheinlichkeitsrate entspricht?
 
-## Was soll ich sonst noch analysieren?
+## Was sollte ich noch analysieren?
 
-Nachdem Sie die obige Analyse erstellt und einen Abwanderungsschwellenwert ermittelt haben, können Sie weitere Analysen erstellen, um allgemeine Trends bei abgeworfenen Benutzern zu identifizieren. Wurden beispielsweise Kunden, die im selben Zeitraum gekauft haben, oder haben sie in ihrer letzten Bestellung ähnliche Produkte gekauft? Sobald ein Abwanderungsschwellenwert festgelegt wurde, können Sie in bestimmte Eigenschaften dieser abgefeuerten Kunden eintauchen.
+Nachdem Sie die oben genannte Analyse erstellt und eine Abwanderungsschwelle festgelegt haben, können Sie weitere Analysen erstellen, um gängige Trends bei abgewanderten Benutzenden zu identifizieren. Werden beispielsweise Kunden, die im selben Zeitraum abgewandert sind, erworben oder haben sie ähnliche Produkte in ihrer letzten Bestellung gekauft? Sobald ein Abwanderungsschwellenwert festgelegt wurde, können Sie sich näher mit bestimmten Eigenschaften dieser abgewanderten Kundinnen und Kunden befassen.
 
-Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt kaufen, im Laufe der Zeit anders verhalten als andere Kunden. Möchten Sie mehr erfahren? Sehen Sie sich dieses Tutorial an, um das lebenslange Kaufverhalten von Kundenkohorten basierend auf bestimmten Produkten, die sie gekauft haben, zu untersuchen.
+Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt erwerben, im Laufe der Zeit anders verhalten als andere Kunden. Möchten Sie mehr erfahren? Sehen Sie sich dieses Tutorial an, um das lebenslange Kaufverhalten von Kundenkohorten basierend auf bestimmten Produkten zu untersuchen, die sie gekauft haben.
 
-Diese Best Practice wird von [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS) bereitgestellt. [Wenden Sie sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) , um weitere Informationen zu erhalten.
+Diese Best Practice wird von [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS) bereitgestellt. [Kontaktieren Sie den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um weitere Informationen zu erhalten.
 
-### Verwandte
+### verwandt
 
-* [Analyse der Auswirkungen von Gutscheinen auf die Akquise und Bindung von Kunden](../analysis/coupon-impact.md)
-* [Analysieren des Kaufverhaltens von Kunden](../analysis/repurchase-behavior.md)
+* [Analyse der Couponauswirkungen auf Kundenakquise und Kundenbindung](../analysis/coupon-impact.md)
+* [Analyse des Rückkaufverhaltens von Kunden](../analysis/repurchase-behavior.md)

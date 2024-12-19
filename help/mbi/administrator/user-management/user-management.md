@@ -1,6 +1,6 @@
 ---
 title: Verwalten von Adobe Commerce-Benutzern und -Berechtigungen
-description: Erfahren Sie, wie Sie Ihre Commerce Intelligence-Benutzer verwalten.
+description: Erfahren Sie, wie Sie Ihre Commerce Intelligence-Benutzenden verwalten.
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
 role: Admin, User
 feature: User Management
@@ -13,65 +13,65 @@ ht-degree: 0%
 
 # Verwalten von Benutzerberechtigungen
 
-[!DNL Adobe Commerce Intelligence] ist als eine einzige Quelle der Wahrheit in Ihrer Organisation gedacht. Jeder Benutzer verfügt über einen eigenen Satz von Dashboards, die er [für andere Benutzer freigeben kann](../../data-user/dashboards/share-dashboard-with-users.md).
+[!DNL Adobe Commerce Intelligence] soll in Ihrer gesamten Organisation als zentrale Datenquelle dienen. Jeder Benutzer verfügt über einen eigenen Satz von Dashboards, die er [für andere Benutzer freigeben](../../data-user/dashboards/share-dashboard-with-users.md).
 
-## Benutzerberechtigungsebenen
+## Berechtigungsebenen des Benutzers
 
-In [!DNL Commerce Intelligence] gibt es drei allgemeine Berechtigungsebenen, die für Benutzer gelten und bei der Erstellung eines Kontos ausgewählt werden:
+In [!DNL Commerce Intelligence] gibt es drei allgemeine Berechtigungsebenen, die für Benutzende gelten und die beim Erstellen eines Kontos ausgewählt werden:
 
 * `Admin`
 * `Standard`
 * `Read-Only`
 
-Mit diesen Berechtigungen können Benutzer bestimmte Aktionen durchführen oder auf bestimmte Teile von [!DNL Commerce Intelligence] zugreifen. Die folgende Tabelle zeigt, was die einzelnen Berechtigungsebenen in [!DNL Commerce Intelligence] tun können:
+Diese Berechtigungen ermöglichen es Benutzenden, bestimmte Aktionen auszuführen oder auf bestimmte Teile von [!DNL Commerce Intelligence] zuzugreifen. Im Folgenden finden Sie eine Tabelle, was jede Berechtigungsstufe in [!DNL Commerce Intelligence] tun kann:
 
 |   | `Admin` | `Standard` | `Read Only` |
 | -----|-----|-----|----|
-| **Benutzer erstellen/verwalten** | ms |   |   |
-| **E-Mail-Zusammenfassungen erstellen** | ms | ms |   |
-| **Dashboards erstellen/bearbeiten/freigeben** | ms | ms |   |
-| **Anzeigen von Dashboards** | ms | ms | ms |
-| **Erstellen/Bearbeiten/Löschen visueller Berichte** | ms | * |   |
-| **SQL-Berichte erstellen/bearbeiten/löschen** | ms |  |   |
-| **Dashboards klonen** | ms |   |   |
-| **Integrationen hinzufügen/verwalten** | ms |   |   |
-| **Zugriff auf den Data Warehouse-Manager** | ms |   |   |
-| **Synchronisieren/Aufheben der Synchronisierung von Tabellen und Spalten** | ms |   |   |
-| **Erstellen/Bearbeiten von Metriken** | ms |   |   |
-| **Erstellen/Bearbeiten von Filtersätzen** | ms |   |   |
-| **Berechnete Spalten erstellen/bearbeiten** | ms |   |   |
-| **Liste der abhängigen Berichte erstellen** | ms |   |   |
-| **Systemzusammenfassung aufrufen** | ms |   |   |
-| **Zugriff auf Zeitzoneneinstellungen** | ms |   |   |
-| **Zugriff auf Abrechnung** | ms | * |   |
-| **Support kontaktieren** | ms | ms | ms |
+| **Benutzer erstellen/verwalten** | ✔ |   |   |
+| **E-Mail-Zusammenfassungen erstellen** | ✔ | ✔ |   |
+| **Erstellen/Bearbeiten/Freigeben von Dashboards** | ✔ | ✔ |   |
+| **Anzeigen von Dashboards** | ✔ | ✔ | ✔ |
+| **Visuelle Berichte erstellen/bearbeiten/löschen** | ✔ | ✔* |   |
+| **SQL-Berichte erstellen/bearbeiten/löschen** | ✔ |  |   |
+| **Klonen von Dashboards** | ✔ |   |   |
+| **Integrationen hinzufügen/verwalten** | ✔ |   |   |
+| **Zugriff auf den Data Warehouse-Manager** | ✔ |   |   |
+| **Synchronisieren/Synchronisieren von Tabellen und Spalten** | ✔ |   |   |
+| **Metriken erstellen/bearbeiten** | ✔ |   |   |
+| **Filtersätze erstellen/bearbeiten** | ✔ |   |   |
+| **Berechnete Spalten erstellen/bearbeiten** | ✔ |   |   |
+| **Liste abhängiger Berichte erstellen** | ✔ |   |   |
+| **Zugriff auf die Systemübersicht** | ✔ |   |   |
+| **Zugriff auf Zeitzoneneinstellungen** | ✔ |   |   |
+| **Zugriffsabrechnung** | ✔ | ✔** |   |
+| **Support kontaktieren** | ✔ | ✔ | ✔ |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->_Sie können den [ -Zugriff eines **[!UICONTROL Standard]**Benutzers auf bestimmte Metriken beschränken](../../administrator/user-management/restrict-metric-access.md)._
+>_Sie können den Zugriff eines **[!UICONTROL Standard]**Benutzers [auf bestimmte Metriken) ](../../administrator/user-management/restrict-metric-access.md)._
 >
->**[!UICONTROL Standard] _Benutzer können mit einer zusätzlichen Berechtigungseinstellung auf die Abrechnung zugreifen._
+>**[!UICONTROL Standard] _Benutzer können über eine zusätzliche Berechtigungseinstellung auf Abrechnung zugreifen._
 >
->**[!UICONTROL Read-Only]** Benutzer können nur Dashboards anzeigen, die für sie freigegeben wurden. Sie können keine Dashboards in [!DNL Commerce Intelligence] erstellen oder bearbeiten. Sie können auch keine neuen Dashboards suchen und zu ihrem Konto hinzufügen. __ Adobe empfiehlt, einen bestimmten Satz von Dashboards für **[!UICONTROL Read-Only]** -Benutzer freizugeben, den Sie oder ein anderes Team-Mitglied verwalten. Klonen Sie keine Dashboards.
+>**[!UICONTROL Read-Only]** Benutzer können nur Dashboards _anzeigen_ die für sie freigegeben wurden. Sie können in [!DNL Commerce Intelligence] nichts erstellen oder bearbeiten und auch nicht nach neuen Dashboards suchen und zu ihrem Konto hinzufügen. Adobe empfiehlt, einen bestimmten Satz von Dashboards für **[!UICONTROL Read-Only]** Benutzer freizugeben, die Sie oder ein anderes Teammitglied verwalten. Klonen Sie keinen Satz von Dashboards für sie.
 
-## Zusätzliche Berechtigungen: Rechnungsstellung und technische {#billingtech}
+## Zusätzliche Berechtigungen: Abrechnung und technische {#billingtech}
 
-Zusätzlich zu den allgemeinen Berechtigungsstufen gibt es auch zwei weitere Benutzerbezeichnungen: `Billing` und `Technical`. Diese Bezeichnungen sollten mit den allgemeinen Berechtigungsstufen verwendet werden.
+Neben den allgemeinen Berechtigungsebenen gibt es auch zwei weitere Benutzerbezeichnungen: `Billing` und `Technical`. Diese Bezeichnungen sollten zusammen mit den allgemeinen Berechtigungsebenen verwendet werden.
 
-### Rechnungsstellung
+### Fakturierung
 
-`Billing` -Benutzer haben Zugriff auf die Rechnungsseite und können Zahlungsinformationen ändern. Sie können auch von Adobe für Abrechnungsfragen kontaktiert werden.
+`Billing` Benutzer haben Zugriff auf die Seite Abrechnung und können Zahlungsinformationen ändern. Sie können auch per Adobe kontaktiert werden, wenn Sie Fragen zur Rechnungsstellung haben.
 
-`Admin` -Benutzer haben standardmäßig Zugriff auf die Registerkarte `Billing` , aber `Standard` -Benutzer können auch Zugriff erhalten, wenn in ihrem Profil das Kontrollkästchen `Billing` aktiviert ist.
+`Admin` Benutzer haben standardmäßig Zugriff auf die Registerkarte `Billing` . `Standard` Benutzer können jedoch auch Zugriff erhalten, wenn sie in ihrem Profil das Kontrollkästchen `Billing` aktiviert haben.
 
 ![billing](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### Technisch
 
-`Technical` -Benutzer haben keine spezifischen Berechtigungen. Diese Einstellung kennzeichnet nur einen technischen Kontakt innerhalb Ihrer Organisation. Diese Benutzer werden von Adobe unter Umständen bei technischen Fragen kontaktiert.
+`Technical` Benutzer haben keine spezifischen Berechtigungen für sie. Mit dieser Einstellung wird nur ein technischer Kontakt innerhalb Ihrer Organisation markiert. Diese Nutzer können bei technischen Fragen von Adobe kontaktiert werden.
 
-`Admin` -Benutzer können neue Benutzer zu ihrem Konto hinzufügen, indem sie auf **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** klicken und den Anweisungen folgen. Nachdem der Benutzer in [!DNL Commerce Intelligence] erstellt wurde, erhält die glückliche Person, die Sie einladen, E-Mail-Anweisungen zum Abschluss des Kontoeinrichtungsprozesses.
+`Admin` Benutzer können neue Benutzer zu ihrem Konto hinzufügen, indem sie auf **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** klicken und die entsprechenden Anweisungen befolgen. Nachdem der Benutzer in [!DNL Commerce Intelligence] erstellt wurde, erhält die glückliche Person, die Sie einladen, E-Mail-Anweisungen zum Abschließen des Prozesses zur Kontoeinrichtung.
 
-`Admins` kann jederzeit alle Benutzer in ihrem Konto anzeigen, indem er auf **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]** klickt. Auf dieser Seite werden die Berechtigungen des Benutzers sowie die Metriken und Dashboards angezeigt, auf die er zugreifen kann.
+`Admins` können jederzeit alle Benutzer in ihrem Konto anzeigen, indem Sie auf **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]** klicken. Auf dieser Seite werden die Berechtigungen der Benutzenden und die Metriken und Dashboards angezeigt, auf die sie zugreifen können.

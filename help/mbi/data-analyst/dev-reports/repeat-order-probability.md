@@ -1,6 +1,6 @@
 ---
-title: Bericht zur Bestellwahrscheinlichkeit wiederholen
-description: Erfahren Sie mehr über den Bericht zur Wahrscheinlichkeit wiederholter Bestellungen.
+title: Bericht zur Wahrscheinlichkeit der Wiederholungsreihenfolge
+description: Lernen Sie den Bericht zur Wahrscheinlichkeit der Wiederholungsreihenfolge kennen und verstehen Sie ihn.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
@@ -11,33 +11,33 @@ ht-degree: 0%
 
 ---
 
-# Bericht zur Bestellwahrscheinlichkeit wiederholen
+# Bericht zur Wahrscheinlichkeit der Wiederholungsreihenfolge
 
-## Wann ist die Perspektive `Incremental Event Probability` verfügbar?
+## Wann ist die `Incremental Event Probability` verfügbar?
 
-Die Perspektive `incremental event probability` ist nur verfügbar, wenn Filter Dimensionen verwenden, die für alle Bestellungen gleich sind (z. B. `gender` des Benutzers, `age` des Benutzers oder `source` des Benutzers).
+Die `incremental event probability` ist nur verfügbar, wenn Filter Dimensionen verwenden, die für alle Bestellungen gleich sind (z. B. `gender`, `age` oder `source` der Benutzenden).
 
-Dies liegt daran, dass diese Perspektive bei der Segmentierung auf einer Dimension mit dem Namen `User's order number` beruht, die die Käufe eines Benutzers zählt (z. B. die erste, zweite und dritte Bestellungen von John).
+Dies liegt daran, dass diese Perspektive auf einer Dimension namens `User's order number` für die Segmentierung basiert, die die Käufe eines Benutzers nummeriert (z. B. die erste, zweite und dritte Bestellung von John).
 
-Wenn Sie einen Filter hinzufügen, der eine Dimension verwendet, die nicht für alle Bestellungen gleich ist (z. B. `Order's Region`), wäre die Dimension `User's order number` nicht mehr genau. Dies liegt daran, dass bei der Nummerierung der Bestellungen eines Benutzers bestimmte Regionen nicht berücksichtigt werden (z. B. sind die Bestellungen von John 1., 2. und 3. unabhängig von seiner Region immer noch gleich).
+Wenn Sie einen Filter hinzugefügt haben, der eine Dimension verwendet, die nicht für alle Bestellungen gleich ist (z. B. `Order's Region`), ist die `User's order number` Dimension nicht mehr korrekt. Dies liegt daran, dass bei der Nummerierung der Bestellungen eines Benutzers bestimmte Regionen nicht berücksichtigt werden (z. B. sind die 1., 2., 3. Bestellung von John unabhängig von ihrer Region immer noch gleich).
 
-## Eine auftragsspezifische Dimension in eine benutzerspezifische Dimension umwandeln
+## Umwandeln einer auftragsspezifischen Dimension in eine benutzerspezifische Dimension
 
-In bestimmten Fällen können Sie eine `order-specific` -Dimension in eine `user-specific` -Dimension umwandeln, um sie als Filter in das `Repeat Order Probability` -Diagramm einzufügen. In diesen Fällen geben Sie das Bestellattribut der ersten Bestellung oder der neuesten Bestellung eines Benutzers zurück (z. B. den Regionennamen der ersten Bestellung des Benutzers).
+In bestimmten Fällen können Sie eine `order-specific` Dimension in eine `user-specific` Dimension umwandeln, die dem `Repeat Order Probability` als Filter hinzugefügt werden soll. In diesen Fällen geben Sie das Sortierattribut der ersten oder letzten Bestellung eines Benutzers zurück (z. B. den Regionsnamen der ersten Bestellung eines Benutzers).
 
-Wenn Sie eine solche neue Dimension erstellen möchten, kontaktieren Sie [den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Wenn Sie eine solche neue Dimension erstellen möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
-## Vergleich der Wiederholungswahrscheinlichkeit von Bestellungen mit unterschiedlichen Attributen
+## Vergleich der Wiederholungswahrscheinlichkeit von Aufträgen mit verschiedenen Attributen
 
-Um die Anzahl der Wiederholungskäufe für verschiedene Bestellattribute zu vergleichen (z. B. `region` der Bestellung), empfiehlt Adobe, eine Grafik ähnlich der `Users by lifetime number of orders` zu erstellen. Zeigt die Anzahl der Benutzer an, die 1, 2, 3 usw. Bestellungen getätigt haben, und fügt den Filter auf Bestellebene hinzu. (Mit anderen Worten: Dies zeigt Ihnen, ob Benutzer in einer Region oder einer anderen mehr oder weniger Käufe tätigen.)
+Um die Anzahl der wiederholten Käufe für verschiedene Bestellattribute (z. B. die `region` der Bestellung) zu vergleichen, empfiehlt Adobe, ein Diagramm wie `Users by lifetime number of orders` zu erstellen. Hier wird die Anzahl der Benutzer angezeigt, die 1, 2, 3,… Lebensdauernummer der Bestellungen getätigt haben, und der Filter auf Bestellebene hinzugefügt. (Mit anderen Worten: Dies kann anzeigen, ob Benutzende in der einen oder anderen Region mehr oder weniger wiederholte Käufe tätigen.)
 
-Die Zahlen, aus denen ein solches Diagramm besteht, können dann in Excel exportiert werden, um das Wahrscheinlichkeitsverhältnis der Wiederholung der Bestellung zu berechnen. Um die Wahrscheinlichkeit zu sehen, mit der Kunden, die `(x)` Bestellungen aufgegeben haben, `(x+1)` Bestellungen tätigen, einfach ` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` Käufe tätigen.
+Die Zahlen, aus denen ein solches Diagramm besteht, können dann nach Excel exportiert werden, um das Wahrscheinlichkeitsverhältnis der Wiederholungsreihenfolge zu berechnen. Um die Wahrscheinlichkeit von Kunden zu sehen, die `(x)` Bestellungen für `(x+1)` Bestellungen getätigt haben, ` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` Sie einfach Käufe.
 
 ### Beispiel:
 
 | Kategorie | Wert |
 |---|---|
-| Anzahl der Kunden, die in ihrer Lebensdauer einen Kauf getätigt haben | `90` |
-| Anzahl der Kunden, die während ihrer Lebensdauer zwei Käufe getätigt haben | `30` |
-| Anzahl der Kunden, die während ihrer Lebensdauer drei Käufe getätigt haben | `10` |
-| Die Wiederholungsauftragswahrscheinlichkeit von Kunden, die während ihrer Lebensdauer einen Kauf getätigt haben, um einen zweiten Kauf zu tätigen | `(30 + 10) / (30+10+90) = 30.77%` |
+| Anzahl der Kundinnen und Kunden, die im Laufe ihres Lebens einen Kauf getätigt haben | `90` |
+| Anzahl der Kunden, die im Laufe ihres Lebens zwei Käufe getätigt haben | `30` |
+| Anzahl der Kunden, die im Laufe ihres Lebens drei Käufe getätigt haben | `10` |
+| Die Wahrscheinlichkeit der Wiederholungsbestellung von Kunden, die einen Kauf im Laufe ihres Lebens getätigt haben, um einen zweiten Kauf zu tätigen | `(30 + 10) / (30+10+90) = 30.77%` |

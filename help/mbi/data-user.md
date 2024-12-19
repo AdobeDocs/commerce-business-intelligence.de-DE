@@ -1,6 +1,6 @@
 ---
-title: Datenbenutzer
-description: Datenbenutzer
+title: Datennutzer
+description: Datennutzer
 exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -11,16 +11,16 @@ ht-degree: 0%
 
 ---
 
-# Datenbenutzer
+# Datennutzer
 
-Sie verwenden Daten, um geschäftliche Entscheidungen zu treffen. Möglicherweise erhalten Sie Berichte und Dashboards von einem Datenanalytiker in Ihrem Team, aber Sie möchten auch erfahren, wie Sie diese Berichte und Dashboards erstellen.
+Sie verwenden Daten, um geschäftliche Entscheidungen zu treffen. Möglicherweise erhalten Sie Berichte und Dashboards von einem Datenanalytiker in Ihrem Team. Sie möchten aber auch erfahren, wie Sie diese Berichte und Dashboards erstellen.
 
 In diesem Abschnitt wird Folgendes veranschaulicht:
 * Erfassen und Anzeigen von Daten in [!DNL Commerce Intelligence] mithilfe von Berichten und Dashboards
-* diese Daten über E-Mail- und `.csv`-Dateien für Interessengruppen freigeben
+* Geben Sie diese Daten per E-Mail und `.csv` für die beteiligten Akteure frei
 
-## Verwandte
+## verwandt
 
 * [Erstellen von Berichten](../mbi/data-user/reports/rpt-fundamentals.md)
 * [Erstellen von Dashboards](../mbi/data-user/dashboards/ess-dashboards.md)
-* [Datenfreigabe](../mbi/data-user/export-data/share-data.md)
+* [Freigeben von Daten](../mbi/data-user/export-data/share-data.md)

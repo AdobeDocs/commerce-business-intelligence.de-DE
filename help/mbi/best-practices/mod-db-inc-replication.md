@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # Unterstützung für inkrementelle Replikation
 
-Wenn Ihre Tabellen derzeit keine inkrementelle Replikation zulassen, finden Sie in den folgenden Empfehlungen Lösungsmöglichkeiten.
+Wenn Ihre Tabellen derzeit keine inkrementelle Replikation zulassen, finden Sie in den folgenden Empfehlungen mögliche Lösungen.
 
-## Änderungen für geändert am
+## Änderungen für Geändert um
 
-Die `Modified At` -Methode, die am besten geeignete Replikationsmethode ist, verwendet eine `datetime` -Spalte, um neue und/oder aktualisierte Daten zu erkennen. Beachten Sie, dass die Spalte &quot;`datetime`&quot; in Tabellen, die diese Methode verwenden, indiziert sein muss und keine Nullwerte enthalten darf.
+Die `Modified At` Methode, die sich am besten für die Replikation eignet, verwendet eine `datetime` Spalte, um neue und/oder aktualisierte Daten zu erkennen. Denken Sie daran, dass die Spalte `datetime` in Tabellen, die diese Methode verwenden, indiziert sein muss und zu keinem Zeitpunkt Nullwerte enthalten darf.
 
-Wenn Ihre Tabelle keine `datetime` -Spalte enthält, können Sie eine Index `modified at` -Spalte hinzufügen. Null-Werte sind in einer `modified at` -Spalte nicht zulässig. Überprüfen Sie, ob die Spalte für jede Zeile gefüllt ist.
+Wenn Ihre Tabelle keine `datetime` Spalte hat, können Sie eine `modified at` hinzufügen. Nullwerte sind in einer `modified at` Spalte nicht zulässig. Vergewissern Sie sich, dass die Spalte für jede Zeile ausgefüllt ist.
 
-Um sicherzustellen, dass die `Modified At` -Methode wie gewünscht funktioniert, können Sie keine Zeilen aus der Tabelle löschen. Stattdessen sollten Sie die Zeile als ungültig markieren, indem Sie der Tabelle eine `deleted` -Spalte hinzufügen. Diese Spalte gibt einen `1` zurück, wenn die Zeile ungültig ist, andernfalls `0`. Anschließend können Sie diese Spalte verwenden, um ungültige Zeilen beim Erstellen von Metriken und Berichten herauszufiltern.
+Um sicherzustellen, dass die `Modified At` Methode wie vorgesehen funktioniert, können Sie keine Zeilen aus der Tabelle löschen. Stattdessen sollten Sie die Zeile als ungültig markieren, indem Sie der Tabelle eine `deleted` Spalte hinzufügen. Diese Spalte gibt eine `1` zurück, wenn die Zeile ungültig ist, andernfalls `0`. Sie können diese Spalte dann verwenden, um ungültige Zeilen herauszufiltern, wenn Sie Metriken und Berichte erstellen.
 
-## Änderungen für die automatische Erhöhung des Primären Schlüssels
+## Änderungen für Primären Einzelschlüssel mit automatischer Erhöhung
 
-Wenn die `Modified At` -Methode nicht aktiviert werden kann, ist die Option Primärer Einzelner, automatisch inkrementierender Schlüssel die nächste beste Option. Neue Daten werden in Tabellen mit dieser Methode erkannt, indem nach Primärschlüsselwerten gesucht wird, die höher sind als der aktuelle höchste Wert in der Data Warehouse.
+Wenn die `Modified At` nicht aktiviert werden kann, ist die Option Einzel Primärer Schlüssel automatisch inkrementieren die nächstbeste Option. Neue Daten werden bei Verwendung dieser Methode in Tabellen erkannt, indem nach Primärschlüsselwerten gesucht wird, die höher sind als der aktuell höchste Wert im Data Warehouse.
 
-Beachten Sie, dass Tabellen, die diese Methode verwenden, eine einzelne Spalte sind, wobei die Ganzzahl automatisch die Primärschlüssel inkrementiert. Um diese Methode in Ihrer Datenbank zu verwenden, nehmen Sie die folgenden Änderungen vor:
+Denken Sie daran, dass Tabellen, die diese Methode verwenden, Einzelspalten sind, wobei die Primärschlüssel automatisch ganzzahlig inkrementiert werden. Um diese Methode in Ihrer Datenbank zu verwenden, nehmen Sie die folgenden Änderungen vor:
 
 * Wenn der Primärschlüssel entweder ein zusammengesetzter Schlüssel oder eine Nicht-Ganzzahl ist, ändern Sie den Primärschlüssel in eine automatisch inkrementierende Ganzzahl
-* Wenn der Primärschlüssel eine einzelne Ganzzahlspalte ist, Schlüssel jedoch nicht sequenziell zugewiesen werden können, ändern Sie den Primärschlüssel in automatische Inkrementierung
+* Wenn der Primärschlüssel eine einzelne ganzzahlige Spalte ist, Schlüssel jedoch nicht sequenziell zugewiesen werden können, ändern Sie den Primärschlüssel in eine automatische Inkrementierung
 
-## Aufwischen
+## Verpackung
 
-Durch geringfügige Änderungen an Ihren Tabellen können Sie die schnelleren und effizienteren Methoden für die inkrementelle Replikation nutzen. Ist dies jedoch nicht möglich, können Sie weitere Schritte durchführen, um [Ihre Aktualisierungszeit zu reduzieren](../best-practices/reduce-update-cycle-time.md) und [Ihre Datenbank zu optimieren](../best-practices/opt-db-analysis.md).
+Durch kleinere Änderungen an Ihren Tabellen können Sie die schnelleren, effizienteren inkrementellen Replikationsmethoden nutzen. Wenn dies jedoch nicht möglich ist, können Sie weitere Schritte ausführen, um [die Aktualisierungszeit zu reduzieren](../best-practices/reduce-update-cycle-time.md) und [Ihre Datenbank zu optimieren](../best-practices/opt-db-analysis.md).

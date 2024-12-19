@@ -1,5 +1,5 @@
 ---
-title: Auf freigegebene Dashboards zugreifen
+title: Zugreifen auf freigegebene Dashboards
 description: Erfahren Sie, wie Sie auf freigegebene Dashboards zugreifen können.
 exl-id: 528b8a2e-f13c-4ce8-ab8e-13864f50761a
 role: Admin, Data Architect, Data Engineer, User
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Auf freigegebene Dashboards zugreifen
+# Zugreifen auf freigegebene Dashboards
 
-Es ist einfach, neue Benutzer auf den neuesten Stand zu bringen.
+Neue Benutzer auf den neuesten Stand zu bringen, ist einfach.
 
 ## Neuer Benutzer
 
-Nachdem ein neuer Benutzer sein Kennwort erstellt hat, wird eine Liste der beliebten freigegebenen Dashboards angezeigt. Sie können die Dashboards auswählen, die sie im Dashboard anzeigen möchten, und auf **[!UICONTROL Done]** klicken.
+Nachdem ein neuer Benutzer sein Kennwort erstellt hat, wird eine Liste mit beliebten freigegebenen Dashboards angezeigt. Sie können die Dashboards auswählen, die in ihrem Dashboard angezeigt werden sollen, und auf &quot;**[!UICONTROL Done]**&quot; klicken.
 
 ## Vorhandene Benutzer
 

@@ -1,6 +1,6 @@
 ---
-title: Vordefinierte Dashboards
-description: Erfahren Sie mehr über vordefinierte Dashboards, um Einblicke in Ihr Unternehmen zu erhalten.
+title: Vorkonfigurierte Dashboards
+description: Erfahren Sie mehr über vordefinierte Dashboards, die Ihnen einen Einblick in Ihr Unternehmen bieten.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -11,146 +11,146 @@ ht-degree: 0%
 
 ---
 
-# Vordefinierte Dashboards
+# Vorkonfigurierte Dashboards
 
-[!DNL Adobe Commerce Intelligence] enthält vordefinierte Dashboards, um Einblicke in Ihr Geschäft zu bieten. Mit Dashboards können Sie die Konsistenz wichtiger Metriken überprüfen, z. B. den Umsatz während der Lebensdauer der Benutzer, die Anzahl wiederholter Käufe, die wichtigsten über einen bestimmten Zeitraum gekauften Produkte und mehr. Diese vorkonfigurierten Dashboards wurden erstellt, um Sie bei fundierten Geschäftsentscheidungen zu unterstützen.
+[!DNL Adobe Commerce Intelligence] enthält vordefinierte Dashboards, die einen Einblick in Ihr Unternehmen bieten. Mit Dashboards können Sie den Status wichtiger Metriken überprüfen, z. B. den Lebensdauerumsatz der Benutzenden, die Anzahl der Wiederholungskäufe, die über einen bestimmten Zeitraum gekauften Top-Produkte und mehr. Diese vorkonfigurierten Dashboards wurden erstellt, um Sie bei fundierten Geschäftsentscheidungen zu unterstützen.
 
 >[!NOTE]
 >
->Der Zugriff auf diese Dashboards hängt von Ihrem Kontotyp und Ihrer Zugriffsebene ab. Wenn diese Dashboards nicht angezeigt werden, wenden Sie sich an [support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>Der Zugriff auf diese Dashboards hängt von Ihrem Kontotyp und Ihrer Zugriffsebene ab. Wenn diese Dashboards nicht angezeigt werden, wenden Sie sich an den [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Berichtverfügbarkeit
 
-Für die Dashboards `Customers` und `Executive Summary` sind einige Berichte nur in Abhängigkeit von der Checkout-Konfiguration Ihres Stores verfügbar. Insbesondere, wenn Ihr Store das Auschecken von Gast erlaubt oder das Auschecken von Gast nicht zulässt.
+Für die `Customers`- und `Executive Summary`-Dashboards sind einige Berichte nur je nach Checkout-Konfiguration Ihres Geschäfts verfügbar. Insbesondere dann, wenn Ihr Store einen Gast-Checkout zulässt oder keinen Gast-Checkout zulässt.
 
-## Kunden (Gastkasse erlaubt)
+## Kunden (Gast-Checkout erlaubt)
 
-Das Dashboard Kunden (Gastkasse erlaubt) enthält Informationen zu Ihrer Kundenbasis, z. B. zu ihrem Kaufverhalten. Dieses Dashboard kann Ihnen dabei helfen, die Kundenbindung zu verbessern und festzustellen, welche Kunden den höchsten Umsatz erzielen.
+Das Dashboard „Kunden“ (Gast-Checkout zulässig) enthält Informationen zu Ihrem Kundenstamm, wie z. B. das Kaufverhalten. Dieses Dashboard kann Ihnen dabei helfen, die Kundenbindung zu verbessern und festzustellen, welche Kunden den höchsten Umsatz erzielen.
 
 ### Berichte
 
-| Name | Beschreibung |
+| -Name | Beschreibung |
 |---|---|
-| `Orders by New Customers (Past 30 Days)` | Bestellungen von Kunden, die noch nie eine Bestellung aufgegeben haben, in den letzten 30 Tagen. |
-| `Orders by Existing Customers (Past 30 Days)` | Bestellungen von Kunden, die in den letzten 30 Tagen mindestens eine Bestellung aufgegeben haben. |
+| `Orders by New Customers (Past 30 Days)` | Bestellungen in den letzten 30 Tagen von Kunden, die noch nie eine Bestellung aufgegeben haben. |
+| `Orders by Existing Customers (Past 30 Days)` | Bestellungen in den letzten 30 Tagen von Kunden, die zuvor mindestens eine Bestellung aufgegeben haben. |
 | `Total Unique Customers (Past 30 Days)` | Anzahl der Unique Customers, die in den letzten 30 Tagen Bestellungen aufgegeben haben. |
-| `Orders by New vs Existing Customers` | Anzahl der Bestellungen von Kunden ohne vorherige Bestellungen im Vergleich zu Kunden mit mindestens einer vorherigen Bestellung. |
-| `Subsequent Order Probability (All Time)` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere platzieren. |
+| `Orders by New vs Existing Customers` | Anzahl der Bestellungen von Kunden ohne vorherige Bestellungen gegenüber Kunden mit mindestens einer vorherigen Bestellung. |
+| `Subsequent Order Probability (All Time)` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere aufgeben. |
 | `% of Customers with Multiple Orders (All Time)` | Prozent aller Kunden, die mehr als eine Bestellung aufgegeben haben. |
-| `Median Time Between Orders (All Time)` | Mittlere Zeit, die jeder Kunde zwischen der Bestellung und der nächsten benötigt. |
-| `Subsequent Order Probability` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere Bestellung aufgeben, aufgeschlüsselt nach Bestellnummer. Das heißt, der Prozentsatz der Kunden mit einer Bestellung, die eine Sekunde aufgeben, der Prozentsatz mit zwei, die eine dritte platzieren usw. |
-| `Time Between Orders` | Die durchschnittliche und mittlere Zeit, die Kunden zwischen Bestellungen nehmen, aufgegliedert nach Bestellnummer (d. h. die Zeit zwischen Bestellungen 1 und 2, 2 und 3 usw.). |
-| `Number of Customers - Lifetime Orders` | Für eine bestimmte Anzahl von Bestellungen, die während der Lebensdauer eines Kunden aufgegeben werden, stellt die Anzahl der Kunden, die so viele Bestellungen aufgegeben haben, und der Prozentsatz des gesamten Kundenstamms dar, den diese Zahl darstellt. |
-| `One-Time Customers who Bought 3-6 Months Ago` | Kunden, die vor drei bis sechs Monaten ihren ersten Kauf getätigt haben. |
-| `Avg LTV by First Order` | Vergleicht den kumulativen durchschnittlichen Umsatz der Kundenlebensdauer über Kohorten hinweg. Kohorten werden durch den Monat definiert, in dem ein Kunde zum ersten Mal einen Kauf tätigte. Beispielsweise zeigt eine Kohorte mit dem Wert &quot;`Jan 2020`&quot;die kumulative durchschnittliche LTV-Wiedergabe für Kunden, deren erster Kauf im Januar 2020 erfolgte. |
-| `Customer's First 30 Day vs Lifetime Revenue` | Vergleich des durchschnittlichen Umsatzes von Kunden in den 30 Tagen nach ihrem ersten Kauf im Vergleich zur gesamten Lebensdauer. Jede Blase entspricht einer Versandregion, und die Größe jeder Blase entspricht der Anzahl der Kunden, die aus dieser Region erworben wurden. |
+| `Median Time Between Orders (All Time)` | Durchschnittliche Zeit, die jeder Kunde zwischen einer Bestellung und der nächsten benötigt. |
+| `Subsequent Order Probability` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere Bestellung aufgeben, aufgeschlüsselt nach Bestellnummer. Das heißt, der Prozentsatz der Kunden mit einer Bestellung, die eine zweite aufgeben, der Prozentsatz der Kunden mit zwei Aufträgen, die eine dritte aufgeben, usw. |
+| `Time Between Orders` | Die durchschnittliche und mediane Zeit, die Kunden zwischen Aufträgen benötigen, aufgeschlüsselt nach Auftragsnummern (d. h. die Zeit zwischen den Aufträgen 1 und 2, 2 und 3 usw.). |
+| `Number of Customers - Lifetime Orders` | Bei einer bestimmten Anzahl von Aufträgen, die während der Kundenlebensdauer aufgegeben werden, die Anzahl der Kunden, die so viele Aufträge aufgegeben haben, und der Prozentsatz des gesamten Kundenstamms, den diese Anzahl darstellt. |
+| `One-Time Customers who Bought 3-6 Months Ago` | Kunden, die ihren ersten und einzigen Kauf vor drei bis sechs Monaten getätigt haben. |
+| `Avg LTV by First Order` | Vergleicht den kumulativen durchschnittlichen Kundenlebensdauerumsatz in allen Kohorten. Kohorten werden durch den Monat definiert, in dem ein Kunde zum ersten Mal einen Kauf getätigt hat. Eine `Jan 2020` Kohorte zeigt beispielsweise den kumulativen durchschnittlichen LTV für Kunden, deren erster Kauf im Januar 2020 erfolgte. |
+| `Customer's First 30 Day vs Lifetime Revenue` | Vergleich des durchschnittlichen Umsatzes von Kunden in den 30 Tagen nach ihrem ersten Kauf im Vergleich zu ihrem gesamten Lebenszyklus. Jede Blase entspricht einer Versandregion, und die Größe jeder Blase gibt die Anzahl der von dieser Region erworbenen Kunden an. |
 
-## Kunden (kein Gast-Checkout erlaubt)
+## Kunden (kein Gast-Checkout zulässig)
 
-Das Dashboard Kunden (kein Gastkauf erlaubt) enthält Informationen zu Ihrer Kundenbasis, z. B. zu ihrem Kaufverhalten und Konversionen von Kontoregistrierungen zu Bestellplatzierungen. Dieses Dashboard kann Ihnen dabei helfen, die Kundenbindung zu verbessern und festzustellen, welche Kunden den höchsten Umsatz erzielen.
+Das Dashboard Kunden (kein Gast-Checkout zulässig) enthält Informationen zu Ihrem Kundenstamm, wie z. B. das Kaufverhalten und Konversionen von Kontoregistrierungen zu Bestellplatzierungen. Dieses Dashboard kann Ihnen dabei helfen, die Kundenbindung zu verbessern und festzustellen, welche Kunden den höchsten Umsatz erzielen.
 
 ### Berichte
 
-| Name | Beschreibung |
+| -Name | Beschreibung |
 |---|---|
-| `Account Registration (Past 30 Days)` | Die Anzahl der Personen, die sich in den letzten 30 Tagen für ein Konto bei Ihrem Geschäft angemeldet haben. |
-| `Accounts Registered (Past 30 Days) with 1 or More Orders` | Die Anzahl der Personen, die sich in den letzten 30 Tagen bei Ihrem Geschäft für ein Konto angemeldet und auch mindestens eine Bestellung aufgegeben haben. |
+| `Account Registration (Past 30 Days)` | Die Anzahl der Personen, die sich in den letzten 30 Tagen für ein Konto bei Ihrem Store registriert haben. |
+| `Accounts Registered (Past 30 Days) with 1 or More Orders` | Die Anzahl der Personen, die sich in den letzten 30 Tagen für ein Konto bei Ihrem Geschäft registriert und auch mindestens eine Bestellung aufgegeben haben. |
 | `% Conversion from Registration to First Order (Past 30 Days)` | Prozentsatz der Konten, die in den letzten 30 Tagen registriert wurden und eine Bestellung aufgegeben haben. |
-| `% Conversion from Registration to First Order` | Prozentsatz der registrierten Konten, die eine Bestellung getätigt haben, nach Monat der Registrierung. |
-| `Orders by New vs Existing Customers` | Anzahl der Bestellungen von Kunden ohne vorherige Bestellungen im Vergleich zu Kunden mit mindestens einer vorherigen Bestellung. |
-| `Subsequent Order Probability (All Time)` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere platzieren. |
+| `% Conversion from Registration to First Order` | Prozentsatz der registrierten Konten, die eine Bestellung aufgegeben haben, nach Monat der Registrierung. |
+| `Orders by New vs Existing Customers` | Anzahl der Bestellungen von Kunden ohne vorherige Bestellungen gegenüber Kunden mit mindestens einer vorherigen Bestellung. |
+| `Subsequent Order Probability (All Time)` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere aufgeben. |
 | `% of Customers with Multiple Orders (All Time)` | Prozent aller Kunden, die mehr als eine Bestellung aufgegeben haben. |
-| `Median Time Between Orders (All Time)` | Mittlere Zeit, die jeder Kunde zwischen der Bestellung und der nächsten benötigt. |
-| `Subsequent Order Probability` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere platzieren, aufgeschlüsselt nach Auftragsnummer. Das heißt, Prozent der Kunden mit einer Bestellung, die eine Sekunde aufgeben, Prozent mit zwei, die eine dritte platzieren usw. |
-| `Time Between Orders` | Die durchschnittliche und mittlere Zeit, die Kunden zwischen Bestellungen nehmen, aufgegliedert nach Bestellnummer (d. h. die Zeit zwischen Bestellungen 1 und 2, 2 und 3 usw.). |
-| `Number of Customers - Lifetime Orders` | Für eine bestimmte Anzahl von Bestellungen, die während der Lebensdauer eines Kunden aufgegeben werden, stellt die Anzahl der Kunden, die so viele Bestellungen aufgegeben haben, und der Prozentsatz des gesamten Kundenstamms dar, den diese Zahl darstellt. |
-| `One-Time Customers who Bought 3-6 Months Ago` | Kunden, die vor drei bis sechs Monaten ihren ersten Kauf getätigt haben. |
-| `Avg LTV by First Order` | Vergleicht den kumulativen durchschnittlichen Umsatz der Kundenlebensdauer über Kohorten hinweg. Kohorten werden durch den Monat definiert, in dem ein Kunde zum ersten Mal einen Kauf tätigte. Beispielsweise zeigt eine Kohorte vom Januar 2020 die kumulative durchschnittliche LTV-Rate für Kunden, deren erster Kauf im Januar 2020 erfolgte. |
-| `Customer's First 30 Day vs Lifetime Revenue` | Vergleich des durchschnittlichen Umsatzes von Kunden in den 30 Tagen nach ihrem ersten Kauf im Vergleich zur gesamten Lebensdauer. Jede Blase entspricht einer Versandregion, und die Größe jeder Blase entspricht der Anzahl der Kunden, die aus dieser Region erworben wurden. |
+| `Median Time Between Orders (All Time)` | Durchschnittliche Zeit, die jeder Kunde zwischen einer Bestellung und der nächsten benötigt. |
+| `Subsequent Order Probability` | Die Wahrscheinlichkeit, dass Kunden, die eine Bestellung aufgegeben haben, eine andere aufgeben, aufgeschlüsselt nach Bestellnummer. Das heißt, Prozent der Kunden mit einer Bestellung, die eine zweite aufgeben, Prozent mit zwei, die eine dritte aufgeben, und so weiter. |
+| `Time Between Orders` | Die durchschnittliche und mediane Zeit, die Kunden zwischen Aufträgen benötigen, aufgeschlüsselt nach Auftragsnummern (d. h. die Zeit zwischen den Aufträgen 1 und 2, 2 und 3 usw.). |
+| `Number of Customers - Lifetime Orders` | Bei einer bestimmten Anzahl von Aufträgen, die während der Kundenlebensdauer aufgegeben werden, die Anzahl der Kunden, die so viele Aufträge aufgegeben haben, und der Prozentsatz des gesamten Kundenstamms, den diese Anzahl darstellt. |
+| `One-Time Customers who Bought 3-6 Months Ago` | Kunden, die ihren ersten und einzigen Kauf vor drei bis sechs Monaten getätigt haben. |
+| `Avg LTV by First Order` | Vergleicht den kumulativen durchschnittlichen Kundenlebensdauerumsatz in allen Kohorten. Kohorten werden durch den Monat definiert, in dem ein Kunde zum ersten Mal einen Kauf getätigt hat. Beispielsweise zeigt eine Kohorte im Januar 2020 den kumulativen durchschnittlichen LTV für Kunden, deren erster Kauf im Januar 2020 erfolgte. |
+| `Customer's First 30 Day vs Lifetime Revenue` | Vergleich des durchschnittlichen Umsatzes von Kunden in den 30 Tagen nach ihrem ersten Kauf im Vergleich zu ihrem gesamten Lebenszyklus. Jede Blase entspricht einer Versandregion, und die Größe jeder Blase gibt die Anzahl der von dieser Region erworbenen Kunden an. |
 
-## Zusammenfassung (Gastkasse erlaubt)
+## Executive Summary (Gast-Checkout erlaubt)
 
-Das Dashboard &quot;Executive Summary&quot;(Gastkasse erlaubt) gibt Ihnen einen Überblick darüber, wie das Unternehmen im Hinblick auf Bestellungen und Umsatz vorgeht. Dieses Dashboard wurde für Führungskräfte entwickelt, um ein allgemeines Verständnis der Geschäftsleistung zu erhalten, kann aber auch für andere Benutzer aufschlussreich sein.
+Das Dashboard „Executive Summary“ (Gast-Checkout zulässig) bietet einen kurzen Überblick über die Aktivitäten des Unternehmens in Bezug auf Bestellungen und Umsatz. Dieses Dashboard wurde für Führungskräfte entwickelt, um einen Überblick über die Geschäftsleistung zu erhalten, kann aber auch für andere interessant sein.
 
 ### Berichte
 
-| Name | Beschreibung |
+| -Name | Beschreibung |
 |---|---|
-| `Revenue (Current Month)` | Der Umsatz, der von Ihrem Store für den aktuellen Monat generiert wurde. In diesem Fall ist der Umsatz definiert als der Endpreis, der von einem Kunden für eine Bestellung gezahlt wird. |
-| `Revenue (Past 6 Months by Day)` | Gesamttäglicher Umsatz, überlagert mit dem durchschnittlichen Tagesumsatz der letzten sieben Tage. In diesem Fall ist der Umsatz definiert als der Endpreis, der von einem Kunden für eine Bestellung gezahlt wird. |
-| `% Change in Revenue (MoM MTD)` | Vergleich des Umsatzes im aktuellen Monat (bisher) mit dem gleichen Anteil im Vormonat. |
-| `Revenue from New vs Existing Customers (Current Month)` | Umsatz für den aktuellen Monat (bisher), der neuen (erstmaligen) Kunden zugeordnet wurde, gegenüber bestehenden Kunden (Platzierung einer zweiten oder späteren Bestellung). |
-| `Average Order Value (Current Month)` | Durchschnittlicher Tageswert der im aktuellen Monat aufgegebenen Bestellungen (bisher). Der Bestellwert ist definiert als der Endpreis, den ein Kunde bei einer Bestellung zahlt. |
-| `Orders (Current Month)` | Die Anzahl der Bestellungen, die in Ihrem Store für den aktuellen Monat aufgegeben wurden (bisher). |
-| `% Change in Orders (MoM MTD)` | Vergleich der Anzahl der Bestellungen für den aktuellen Monat (bisher) mit dem gleichen Anteil des Vormonats. |
+| `Revenue (Current Month)` | Der Umsatz, der von Ihrem Geschäft für den aktuellen Monat generiert wurde. In diesem Fall wird der Umsatz definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
+| `Revenue (Past 6 Months by Day)` | Gesamter Tagesumsatz, überlagert mit dem durchschnittlichen Tagesumsatz der letzten sieben Tage. In diesem Fall wird der Umsatz definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
+| `% Change in Revenue (MoM MTD)` | Vergleich des Umsatzes des aktuellen Monats (bisher) mit dem gleichen Anteil des Vormonats. |
+| `Revenue from New vs Existing Customers (Current Month)` | Umsatz für den aktuellen Monat (bisher), der neuen (Erstkundinnen und -kunden) gegenüber Bestandskunden (zweite oder spätere Bestellung) zugeordnet wird. |
+| `Average Order Value (Current Month)` | Tagesdurchschnittswert der im aktuellen Monat aufgegebenen Bestellungen (bisher). Der Bestellwert ist definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt hat. |
+| `Orders (Current Month)` | Die Anzahl der Bestellungen, die für den aktuellen Monat (bis jetzt) in Ihrem Geschäft aufgegeben wurden. |
+| `% Change in Orders (MoM MTD)` | Vergleich der Anzahl der Bestellungen für den aktuellen Monat (bisher) mit dem gleichen Teil des Vormonats. |
 | `Orders by New Customers (Current Month)` | Bestellungen für den aktuellen Monat von Kunden, die noch nie eine Bestellung aufgegeben haben. |
 | `Orders by Existing Customers (Current Month)` | Bestellungen für den aktuellen Monat von Kunden, die zuvor mindestens eine Bestellung aufgegeben haben. |
-| `Orders by New vs Existing Customers (Current Year by Week)` | Anzahl der Bestellungen von Kunden ohne vorherige Bestellungen im Vergleich zu Kunden mit mindestens einer vorherigen Bestellung für jede Woche des laufenden Jahres (bisher). |
+| `Orders by New vs Existing Customers (Current Year by Week)` | Anzahl der Bestellungen von Kunden ohne vorherige Bestellungen gegenüber Kunden mit mindestens einer vorherigen Bestellung für jede Woche des aktuellen Jahres (bisher). |
 
-## Zusammenfassung (kein Gast-Checkout erlaubt)
+## Zusammenfassung für Führungskräfte (kein Gast-Checkout zulässig)
 
-Das Dashboard &quot;Executive Summary&quot;(kein Gast-Checkout erlaubt) gibt Ihnen einen kurzen Überblick darüber, wie das Unternehmen in Bezug auf Bestellungen, Umsatz und Kontoregistrierungen vorgeht. Dieses Dashboard wurde für Führungskräfte entwickelt, um ein allgemeines Verständnis der Geschäftsleistung zu erhalten, kann aber auch für andere Benutzer aufschlussreich sein.
+Das Dashboard „Executive Summary“ (Kein Gast-Checkout zulässig) bietet einen kurzen Überblick über die Geschäftsentwicklung in Bezug auf Bestellungen, Umsatz und Kontoregistrierungen. Dieses Dashboard wurde für Führungskräfte entwickelt, um einen Überblick über die Geschäftsleistung zu erhalten, kann aber auch für andere interessant sein.
 
 ### Berichte
 
-| Name | Beschreibung |
+| -Name | Beschreibung |
 |---|---|
-| `Revenue (Current Month)` | Der Umsatz, der in diesem Monat von Ihrem Store generiert wurde. In diesem Fall ist der Umsatz definiert als der Endpreis, der von einem Kunden für eine Bestellung gezahlt wird. |
-| `Revenue (Past 6 Months by Day)` | Gesamttäglicher Umsatz, überlagert mit dem durchschnittlichen Tagesumsatz der letzten sieben Tage. In diesem Fall ist der Umsatz definiert als der Endpreis, der von einem Kunden für eine Bestellung gezahlt wird. |
-| `% Change in Revenue (MoM MTD)` | Vergleich des Umsatzes in diesem Monat mit dem gleichen Anteil im Vormonat. |
-| `Revenue from New vs Existing Customers (Current Month)` | Umsatz für den aktuellen Monat (bisher), der neuen (erstmaligen) Kunden zugeordnet wurde, gegenüber bestehenden Kunden (Platzierung einer zweiten oder späteren Bestellung). |
-| `Average Order Value (Current Month)` | Durchschnittlicher Tageswert der im aktuellen Monat aufgegebenen Bestellungen (bisher). Der Bestellwert ist definiert als der Endpreis, den ein Kunde bei einer Bestellung zahlt. |
-| `Orders (Current Month)` | Die Anzahl der Bestellungen, die in Ihrem Store für den aktuellen Monat aufgegeben wurden (bisher). |
-| `% Change in Orders (MoM MTD)` | Vergleich der Anzahl der Bestellungen für den aktuellen Monat (bisher) mit dem gleichen Anteil des Vormonats. |
-| `Account Registrations (Current Month)` | Die Anzahl der neu registrierten Konten in diesem Monat. |
-| `% Conversion from Registration to First Order (Current Month)` | Der Prozentsatz der Konten, die in diesem Monat bisher registriert wurden und eine Bestellung aufgegeben haben. |
-| `% Conversion from Registration to First Order (Current Year by Week)` | Der Prozentsatz der Konten, die bis jetzt in diesem Jahr jede Woche registriert wurden und eine Bestellung aufgegeben haben. |
+| `Revenue (Current Month)` | Der Umsatz, der von Ihrem Geschäft in diesem Monat generiert wurde. In diesem Fall wird der Umsatz definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
+| `Revenue (Past 6 Months by Day)` | Gesamter Tagesumsatz, überlagert mit dem durchschnittlichen Tagesumsatz der letzten sieben Tage. In diesem Fall wird der Umsatz definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
+| `% Change in Revenue (MoM MTD)` | Vergleich der bisherigen Einnahmen in diesem Monat mit dem gleichen Anteil des Vormonats. |
+| `Revenue from New vs Existing Customers (Current Month)` | Umsatz für den aktuellen Monat (bisher), der neuen (Erstkundinnen und -kunden) gegenüber Bestandskunden (zweite oder spätere Bestellung) zugeordnet wird. |
+| `Average Order Value (Current Month)` | Tagesdurchschnittswert der im aktuellen Monat aufgegebenen Bestellungen (bisher). Der Bestellwert ist definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt hat. |
+| `Orders (Current Month)` | Die Anzahl der Bestellungen, die für den aktuellen Monat (bis jetzt) in Ihrem Geschäft aufgegeben wurden. |
+| `% Change in Orders (MoM MTD)` | Vergleich der Anzahl der Bestellungen für den aktuellen Monat (bisher) mit dem gleichen Teil des Vormonats. |
+| `Account Registrations (Current Month)` | Die Anzahl der bisher neu registrierten Konten in diesem Monat. |
+| `% Conversion from Registration to First Order (Current Month)` | Der Prozentsatz der in diesem Monat bisher registrierten Konten, die eine Bestellung aufgegeben haben. |
+| `% Conversion from Registration to First Order (Current Year by Week)` | Der Prozentsatz der Konten, die in diesem Jahr bisher jede Woche registriert wurden und eine Bestellung aufgegeben haben. |
 
 ## Bestellungen
 
-Das Dashboard &quot;Bestellungen&quot;bietet Einblicke in das Transaktionsvolumen von Bestellungen, ihren Status, die verwendeten Couponcodes, den erzielten Umsatz und die verwendeten Zahlungsmethoden. Sie können beispielsweise den Ausführungsprozess verfolgen und sicherstellen, dass es keine Probleme oder Engpässe gibt.
+Das Dashboard „Bestellungen“ bietet Einblicke in das Transaktionsvolumen von Bestellungen, ihren Status, die verwendeten Couponcodes, den generierten Umsatz und die verwendeten Zahlungsmethoden. Sie können beispielsweise den Erfüllungsprozess verfolgen und sicherstellen, dass keine Probleme oder Engpässe auftreten.
 
 >[!NOTE]
 >
->Die Berichte in diesem Dashboard stehen für Konten zur Verfügung, die mit Stores verbunden sind, die beide Konfigurationstypen aufweisen (Gastkasse, kein Gast-Checkout).
+>Die Berichte in diesem Dashboard sind für Konten verfügbar, die mit Stores mit beiden Konfigurationstypen verbunden sind (Gast-Checkout, kein Gast-Checkout).
 
 ### Berichte
 
-| Name | Beschreibung |
+| -Name | Beschreibung |
 |---|---|
 | `Orders (Past 30 Days)` | Die Anzahl der Bestellungen, die in den letzten 30 Tagen bei Ihrem Geschäft aufgegeben wurden. |
-| `Revenue (Past 30 Days)` | Der Umsatz, der von Ihrem Store in den letzten 30 Tagen generiert wurde. Umsatz ist definiert als der Endpreis, der von einem Kunden für eine Bestellung gezahlt wird. |
-| `Average Order Value (Past 30 Days)` | Durchschnittlicher Wert der Bestellungen der letzten 30 Tage. Der Bestellwert ist definiert als der Endpreis, den ein Kunde bei einer Bestellung zahlt. |
-| `Orders` | Die Anzahl der Bestellungen, die jeden Monat in Ihrem Geschäft aufgegeben werden. |
-| `Revenue by Payment Method` | Der Umsatz, der von Ihrem Store generiert wurde, aufgeteilt nach Zahlungsmethode. Umsatz ist definiert als der Endpreis, der von einem Kunden für eine Bestellung gezahlt wird. |
-| `AOV by New vs Existing Customers` | Durchschnittlicher Monatswert der in Ihrem Geschäft getätigten Bestellungen, aufgeteilt nach Bestellungen von Kunden ohne vorherige Bestellungen, gegenüber Kunden mit mindestens einer vorherigen Bestellung. Der Bestellwert ist definiert als der Endpreis, den ein Kunde bei einer Bestellung zahlt. |
-| `% Orders by Status (Past 30 Days)` | Prozent der Bestellungen von jedem Tag in den letzten 30 Tagen, die sich derzeit in jedem Bestellstatus befinden. |
-| `Incomplete Orders (Created more than 1 Day Ago)` | Liste aller vor mehr als einem Tag aufgegebenen Bestellungen, die noch immer unvollständig sind (weder storniert noch abgeschlossen). |
-| `Orders Per Hour (Past 7 Days)` | Bestellvolumen nach Tag und Stunde. |
-| `Revenue Details (Past 30 Days)` | Tägliche Aufschlüsselung des Umsatzes für die letzten 30 Tage in alle Komponenten des Gesamtumsatzwerts. |
-| `Order Details by Coupon Code (Past 30 Days)` | Für jeden Gutscheincode, den Ihr Store anbietet, geben Sie an, wie dieser Couponcode verwendet wurde und welche Gutscheincodes in den letzten 30 Tagen zurückgegeben wurden. |
-| `% Orders with Coupon (Past 30 Days)` | Der Prozentsatz der Bestellungen, die in den letzten 30 Tagen mit einem Coupon bestellt wurden, im Vergleich zu den Bestellungen, die nicht getätigt wurden. |
+| `Revenue (Past 30 Days)` | Der Umsatz, der von Ihrem Geschäft in den letzten 30 Tagen generiert wurde. Der Umsatz ist definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
+| `Average Order Value (Past 30 Days)` | Durchschnittlicher Wert der Bestellungen der letzten 30 Tage. Der Bestellwert ist definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt hat. |
+| `Orders` | Die Anzahl der Bestellungen, die monatlich in Ihrem Geschäft aufgegeben werden. |
+| `Revenue by Payment Method` | Der Umsatz, der von Ihrem Geschäft generiert wurde, aufgeteilt nach Zahlungsmethode. Der Umsatz ist definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
+| `AOV by New vs Existing Customers` | Monatlicher Durchschnittswert der in Ihrem Geschäft getätigten Bestellungen, aufgeteilt nach Bestellungen von Kunden ohne vorherige Bestellungen gegenüber Kunden mit mindestens einer vorherigen Bestellung. Der Bestellwert ist definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt hat. |
+| `% Orders by Status (Past 30 Days)` | Prozent der Bestellungen von jedem Tag in den letzten 30 Tagen, die derzeit in jedem Bestellstatus sind. |
+| `Incomplete Orders (Created more than 1 Day Ago)` | Eine Liste aller Bestellungen, die vor mehr als einem Tag aufgegeben wurden und sich noch im Status „Unvollständig“ (nicht storniert oder abgeschlossen) befinden. |
+| `Orders Per Hour (Past 7 Days)` | Bestellmenge nach Tag und Stunde. |
+| `Revenue Details (Past 30 Days)` | Tägliche Aufschlüsselung des Umsatzes der letzten 30 Tage in alle Komponenten des Gesamtumsatzwerts. |
+| `Order Details by Coupon Code (Past 30 Days)` | Für jeden von Ihrem Shop angebotenen Couponcode Details dazu, wie dieser Couponcode verwendet wurde und welche Rückgaben er in den letzten 30 Tagen eingebracht hat. |
+| `% Orders with Coupon (Past 30 Days)` | Der Prozentsatz der in den letzten 30 Tagen aufgegebenen Bestellungen, für die ein Coupon verwendet wurde, im Vergleich zu den Bestellungen, für die kein Coupon verwendet wurde. |
 
-## Produkte
+## PRODUCT
 
-Das Produkt-Dashboard zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Brutto-Merchandise-Wert (GMV) sowie die wichtigsten gekauften und erstatteten Produkte an. Es kann Ihnen dabei helfen, Käufe und Renditen auszugleichen und den Erfolg und die Beliebtheit des Produkts zu bestimmen. Ihr Store muss [so konfiguriert sein, dass Erstattungen verfolgt werden](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html), damit diese Diagramme ausgefüllt werden.
+Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Bruttowarenwert (GMV) und die am häufigsten gekauften und rückerstatteten Produkte an. Dies kann Ihnen helfen, Käufe und Rücksendungen auszugleichen und den Produkterfolg und die Beliebtheit zu bestimmen. Ihr Store muss [konfiguriert sein, um Rückerstattungen zu ](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html)), damit diese Diagramme ausgefüllt werden.
 
 >[!NOTE]
 >
->Die Berichte in diesem Dashboard stehen für Konten zur Verfügung, die mit Stores verbunden sind, die beide Konfigurationstypen aufweisen (Gastkasse, kein Gast-Checkout).
+>Die Berichte in diesem Dashboard sind für Konten verfügbar, die mit Stores mit beiden Konfigurationstypen verbunden sind (Gast-Checkout, kein Gast-Checkout).
 
 ### Berichte
 
-| Name | Beschreibung |
+| -Name | Beschreibung |
 |---|---|
-| `GMV (Past 30 Days)` | Der Bruttowarenwert aller in den letzten 30 Tagen verkauften Produkte. GMV ist definiert als die bestellte Menge multipliziert mit dem Basispreis für jedes Produkt. |
-| `% GMV (Past 30 Days) Refunded` | Prozent der GMV für Produkte, die in den letzten 30 Tagen gekauft wurden und zu einer Rückerstattung führten. |
-| `Product Quantity Ordered (Past 30 Days)` | Gesamtbetrag der in den letzten 30 Tagen bestellten Artikel. |
-| `% Purchased Products (Past 30 Days) Refunded` | Prozentsatz der Artikel, die in den letzten 30 Tagen gekauft wurden und zu einer Rückerstattung führten. |
-| `Gross Merchandise Value` | Der Bruttowertwert aller verkauften Produkte nach Monat. GMV ist definiert als die bestellte Menge multipliziert mit dem Basispreis für jedes Produkt. |
-| `Purchases vs Refund Rate per Product (Past 30 Days)` | Für jedes Produkt wird die Gesamtzahl der bestellten Artikel in den letzten 30 Tagen mit der Erstattungsquote verglichen. Die Größe jeder Blase entspricht der Erstattungsrate. |
-| `Product Performance Details (Past 30 Days)` | Detaillierte Angaben zu den Verkäufen und den anschließenden Erstattungen in den letzten 30 Tagen, aufgeschlüsselt nach Produkt-SKU und Produktname. |
-| `Top Purchased Products by GMV (Past 30 Days)` | In den letzten 30 Tagen verkaufte Produkte, die den meisten Umsatz brachten (Top 10). |
-| `Top Refunded Products by GMV (Past 30 Days)` | Produkte, die in den letzten 30 Tagen gekauft wurden und die am meisten GMV aufgrund von Erstattungen verloren haben (Top 10). |
-| `Top Purchased Products by Quantity (Past 30 Days)` | Produkte, die in den letzten 30 Tagen in der größten Zahl (Top 10) verkauft wurden. |
-| `Top Refunded Products by Quantity (Past 30 Days)` | Produkte, die in den letzten 30 Tagen gekauft wurden, was zu der größten erstatteten Menge führte (Top 10). |
+| `GMV (Past 30 Days)` | Der Bruttowarenwert aller in den letzten 30 Tagen verkauften Produkte. GMV ist definiert als die bestellte Menge multipliziert mit dem Grundpreis für jedes Produkt. |
+| `% GMV (Past 30 Days) Refunded` | Prozent des GMV für Produkte, die in den letzten 30 Tagen gekauft wurden und zu einer Rückerstattung führten. |
+| `Product Quantity Ordered (Past 30 Days)` | Gesamtzahl der in den letzten 30 Tagen bestellten Artikel. |
+| `% Purchased Products (Past 30 Days) Refunded` | Prozent der in den letzten 30 Tagen gekauften Artikel, die zu einer Rückerstattung geführt haben. |
+| `Gross Merchandise Value` | Der Bruttowarenwert aller verkauften Produkte nach Monat. GMV ist definiert als die bestellte Menge multipliziert mit dem Grundpreis für jedes Produkt. |
+| `Purchases vs Refund Rate per Product (Past 30 Days)` | Für jedes Produkt ein Vergleich der Gesamtzahl der bestellten Artikel in den letzten 30 Tagen mit dem Satz, zu dem das Produkt zurückerstattet wurde. Die Größe jeder Blase entspricht dem Erstattungssatz. |
+| `Product Performance Details (Past 30 Days)` | Detaillierte Informationen zu Verkäufen und nachfolgenden Erstattungen in den letzten 30 Tagen, nach Produkt-SKU und Produktname. |
+| `Top Purchased Products by GMV (Past 30 Days)` | In den letzten 30 Tagen verkaufte Produkte, die den höchsten Umsatz erzielten (Top 10). |
+| `Top Refunded Products by GMV (Past 30 Days)` | In den letzten 30 Tagen gekaufte Produkte, die zu den meisten GMV-Verlusten aufgrund von Erstattungen führten (die Top 10). |
+| `Top Purchased Products by Quantity (Past 30 Days)` | Produkte, die in den letzten 30 Tagen in den meisten Zahlen verkauft wurden (Top 10). |
+| `Top Refunded Products by Quantity (Past 30 Days)` | Produkte, die in den letzten 30 Tagen gekauft wurden und die am meisten erstattet wurden (Top 10). |

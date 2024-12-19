@@ -1,5 +1,5 @@
 ---
-title: Daten verwalten
+title: Verwalten von Daten
 description: Erfahren Sie, wie Sie Daten verwalten verwenden.
 exl-id: 6274eda4-d3ff-47b6-81d9-06ad4f150ef7
 role: Admin, Data Architect, Data Engineer, User
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# Daten verwalten
+# Verwalten von Daten
 
-&quot;Daten verwalten&quot;bietet Zugriff auf verschiedene Tools zur Verwaltung von Integrationen, Berichts- und Diagrammdaten, Dashboards und Exporten.
+Daten verwalten bietet Zugriff auf verschiedene Tools zum Verwalten von Integrationen, Berichts- und Diagrammdaten, Dashboards und Exporten.
 
-## Zugriff auf [!DNL Manage Data]:
+## So greifen Sie auf [!DNL Manage Data] zu:
 
 1. Klicken Sie im Menü auf **[!DNL Manage Data]**.
 
-1. Wählen Sie in der Seitenleiste das Thema aus, das Sie unter den folgenden Überschriften verwenden möchten:
+1. Wählen Sie in der Seitenleiste das gewünschte Thema unter den folgenden Überschriften aus:
 
    * `Data Sources`
    * `Manage Data`

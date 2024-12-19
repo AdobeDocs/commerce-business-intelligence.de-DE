@@ -1,6 +1,6 @@
 ---
-title: Google Analytics- und UTM-Zuordnung
-description: Erfahren Sie mehr über den Quellzuordnungsprozess der Google Analytics.
+title: Google Analytics und UTM Attribution
+description: Erfahren Sie mehr über den Quell-Attributionsprozess der Google Analytics.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports
@@ -11,62 +11,62 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Google Analytics] und UTM-Attribution
+# [!DNL Google Analytics]- und UTM-Attribution
 
-Es ist wichtig, [Benutzer-Akquise-Quelle verfolgen](../../data-analyst/analysis/google-track-user-acq.md), um [die leistungsschwächsten Werbekampagnen zu identifizieren](../../data-analyst/analysis/most-value-source-channel.md). In diesem Thema wird der Quellzuordnungsprozess von [!DNL Google Analytics] untersucht. Mit anderen Worten, welche Information wird aufgezeichnet, wenn.
+Es ist wichtig, die [Quelle der Benutzerakquise](../../data-analyst/analysis/google-track-user-acq.md) zu verfolgen, um [die Werbekampagnen mit der besten Performance zu ](../../data-analyst/analysis/most-value-source-channel.md). In diesem Thema wird der Prozess der [!DNL Google Analytics]-Quellattribution untersucht. Mit anderen Worten, welche Informationen wann aufgezeichnet werden.
 
 ## Was ist Attribution?
 
-Bei `Attribution` geht es darum, eine Verweisquelle für eine bestimmte Aktivität anzugeben. Bei diesen Aktivitäten handelt es sich normalerweise um Makrokonversionen oder Mikrokonversionen, bei denen es sich um Makros wie **Einkäufe** handelt, bei denen es sich um Mikro-Vorgänge wie **Registrierung, E-Mail-Anmeldung, Blogkommentar usw. handelt.**
+`Attribution` geht darum, eine Empfehlungsquelle für eine bestimmte Aktivität anzugeben. Diese Aktivitäten sind in der Regel Makro- oder Mikrokonversionen, Makro ist etwas wie **Käufe**, Mikro ist etwas wie **Registrierung, E-Mail-Anmeldung, Blog-Kommentar** und so weiter.
 
-Idealerweise wird jedes Mal, wenn ein Konversionsereignis auftritt, eine Verweisquelle aufgezeichnet. Aber wie wird die Quelle bestimmt?
+Idealerweise wird jedes Mal, wenn ein Konversionsereignis auftritt, eine Empfehlungsquelle aufgezeichnet. Aber wie wird die Quelle bestimmt?
 
-Die Realität ist, dass Benutzer oft aus vielen Quellen kommen, bevor sie eine Mikro- oder Makrokonversion treffen/begehen. Beispielsweise können sie über organische Verbindungen zur Site gelangen, dann aussteigen, dann über eine gebührenpflichtige Suche anfangen, dann verlassen und dann direkt zur Site selbst kommen. Diese Quell-Tracking-Informationen werden der Site oft über UTM-Parameter bereitgestellt, aber es gibt auch komplexere Systeme. Konzentrieren Sie sich für Ihre Zwecke auf [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
+Die Realität ist, dass Benutzer oft aus vielen Quellen kommen, bevor sie eine Mikro- oder Makrokonvertierung treffen/übertragen. Sie können zum Beispiel über Bio auf die Website kommen, dann die Website verlassen, dann über Paid Search kommen, dann die Website verlassen und dann direkt zur Website selbst kommen. Diese Tracking-Informationen werden der Website oft über UTM-Parameter bereitgestellt, es gibt jedoch auch komplexere Systeme. Konzentrieren Sie sich für Ihre Zwecke auf [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
 
 ## Wie ordnet [!DNL Google Analytics] Verweisquellen über UTM-Parameter zu?
 
-Wenn die UTM-Parameter in der URL angegeben werden, werden sie analysiert und in ein [!DNL Google Analytics] [Cookie](https://en.wikipedia.org/wiki/HTTP_cookie) eingefügt. Wenn eine Website nicht über &quot;[!DNL Google Analytics]&quot; verfügt, hat dies keinen Sinn. [!DNL Google Analytics] verfügt über Regeln dafür, wie es mit einem Benutzer umgeht, der während seiner Lebensdauer mehrere URLs mit UTMs erreicht (mehr dazu später). Wenn die Website so konfiguriert ist, dass UTM-Parameter in einer externen Datenbank erfasst werden, wird bei einer Mikro- oder Makrokonversion das, was zum Zeitpunkt der Konvertierung im [!DNL Google Analytics] -Cookie enthalten ist, in die Datenbank repliziert.
+Wenn die UTM-Parameter für die URL angegeben werden, werden diese ausgewertet und in einem [!DNL Google Analytics] ([) ](https://en.wikipedia.org/wiki/HTTP_cookie). Wenn eine Website nicht über [!DNL Google Analytics] verfügt, macht es keinen Sinn, UTMs zu verwenden. [!DNL Google Analytics] verfügt über Regeln für den Umgang mit Benutzenden, die während ihres Lebenszyklus mehrere URLs mit UTMs aufrufen (mehr dazu später). Angenommen, die Website ist so konfiguriert, dass UTM-Parameter in einer externen Datenbank erfasst werden. Wenn eine Mikro- oder Makrokonvertierung stattfindet, wird alles, was sich zum Zeitpunkt der Konvertierung im [!DNL Google Analytics]-Cookie befindet, in die Datenbank repliziert.
 
-## Erstklick vs. Letzter Klick
+## Erster Klick vs. letzter Klick
 
-### Last-Click-Attribution
+### Attribution Letzter Klick
 
-Die Attribution des letzten Klicks ist das gängigste Attributionsmodell, das von [!DNL Google Analytics] verwendet wird. In diesem Fall stellt das Cookie [!DNL Google Analytics] die UTM-Parameter für die letzte Quelle vor dem Konversionsereignis dar, und dies wird [in der Datenbank aufgezeichnet](../../data-analyst/analysis/google-track-user-acq.md). Das Cookie [!DNL Google Analytics] überschreibt nur die vorherigen UTM-Parameter, wenn der Benutzer auf eine neue URL klickt, die einen neuen Satz von UTM-Parametern enthält.
+Die Attribution Letztklick ist das häufigste Attributionsmodell, das von [!DNL Google Analytics] verwendet wird. In diesem Fall stellt das [!DNL Google Analytics]-Cookie die UTM-Parameter der letzten Quelle vor dem Konversionsereignis dar und wird [in der Datenbank aufgezeichnet](../../data-analyst/analysis/google-track-user-acq.md). Das [!DNL Google Analytics]-Cookie überschreibt nur die vorherigen UTM-Parameter, wenn der Benutzer auf eine neue URL klickt, die einen neuen Satz UTM-Parameter enthält.
 
-Betrachten Sie beispielsweise einen Benutzer, der zuerst eine Website über [!DNL Google Analytics] *gebührenpflichtige Suche* besucht, dann über *organische Suche* zurückkehrt und schließlich direkt *zur* Website zurückkehrt oder über einen *E-Mail-Link* **ohne UTM-Parameter** vor dem Konversionsereignis zurückkehrt. In diesem Beispiel sagt das Cookie [!DNL Google Analytics], dass die Quelle des Benutzers organisch ist, da dies die letzte Quelle vor der Konvertierung darstellt. Der *Pfad* des Benutzers vor diesem letzten Konversionsereignis wird ignoriert. Wenn der Benutzer stattdessen die Website über einen E-Mail-Link mit UTM besucht, würde das [!DNL Google Analytics] -Cookie sagen, dass die Quelle &quot;E-Mail&quot;ist. Wenn also im Cookie vorhandene UTM-Parameter vorhanden sind und der Benutzer über Direkt eingeht, zeigt das [!DNL Google Analytics] -Cookie die UTM-Parameter anstelle von &quot;direct&quot;.
+Angenommen, ein Benutzer besucht eine Website zuerst über [!DNL Google Analytics] *Paid Search*, kehrt dann über *Organische Suche* zurück und kehrt schließlich direkt *oder über einen* E-Mail-Link ***ohne UTM-Parameter**vor dem Konversionsereignis zur* zurück. In diesem Beispiel besagt das [!DNL Google Analytics]-Cookie, dass die Quelle des Benutzers organisch ist, da dies die letzte Quelle vor der Konversion darstellt. Der *Pfad* des Benutzers vor diesem endgültigen Konversionsereignis wird ignoriert. Wenn der Benutzer die Website stattdessen über einen E-Mail-Link mit UTM besucht hat, würde das [!DNL Google Analytics]-Cookie sagen, dass die Quelle „E-Mail“ ist. Wenn also UTM-Parameter im Cookie vorhanden sind und der Benutzer über Direct eintritt, zeigt das [!DNL Google Analytics]-Cookie die UTM-Parameter anstelle von „direct“ an.
 
 >[!NOTE]
 >
->Die [!DNL Google Analytics] -Cookie-Parameter eines bestimmten Benutzers werden gelöscht, wenn das Cookie [abläuft](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage) oder wenn ein Benutzer seine Cookies im Browser löscht.*
+>Die [!DNL Google Analytics] Cookie-Parameter eines bestimmten Benutzers werden gelöscht, wenn das Cookie [abläuft](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage) oder wenn ein Benutzer seine Cookies im Browser löscht.*
 
-### Erstklick-Attribution
+### Attribution Erster Klick
 
-Einige gebührenpflichtige Zuordnungstools ermöglichen es Ihnen, den &quot;Pancake-Stapel&quot;von Quellen im Pfad eines Benutzers zu erfassen. In diesem Fall würde uns die Attribution des ersten Klicks im obigen Beispiel die gebührenpflichtige Suche mitteilen. Alternativ können einige Websites eigene Cookies implementieren, die einen Pancake-Stapel erfassen und die erste Quelle in ihrer Datenbank speichern.
+Einige kostenpflichtige Attributionstools ermöglichen es Ihnen, „den Eierkuchen-Stapel“ von Quellen im Pfad eines Benutzers zu erfassen. In diesem Fall würde uns im obigen Beispiel die Attribution Erster Klick eine Paid Search mitteilen. Alternativ implementieren einige Websites ihre eigenen Cookies, die einen Pfannkuchen-Stapel erfassen und die erste Quelle in ihrer Datenbank speichern.
 
-## Wie kann die Attribution analysiert werden?
+## Wie kann ich die Attribution analysieren?
 
-[!DNL Google Analytics] verfügt über eine robuste Funktionalität in der Web-Oberfläche, mit der Sie vier verschiedene Attributionsmodelle durchführen können:
+[!DNL Google Analytics] Web-Oberfläche von verfügt über einige leistungsstarke Funktionen, mit denen Sie vier verschiedene Attributionsmodelle durchführen können:
 
-1. Erstklick
-1. last click
-1. linear (Aufteilung des Umsatzes gleichmäßig auf alle Quellen im Pfad)
-1. gewichtete (benutzerdefinierte Attribution)
+1. Erster Klick
+1. Letzter Klick
+1. Linear (Teilt den Umsatz gleichmäßig auf alle Quellen im Pfad auf)
+1. Gewichtete (benutzerdefinierte Attribution)
 
-Nachdem Sie nun verstanden haben, was das Attributionsmodell für jede Mikro- oder Makrokonversion ist, lautet die Frage &quot;Was machen Sie mit der Gesamtheit der Konversionen eines Benutzers?&quot;  Betrachten Sie beispielsweise die aufgezeichneten UTMs basierend auf der GA-Logik des letzten Klicks:
+Nachdem Sie nun wissen, was das Attributionsmodell für jede Mikro- oder Makrokonvertierung ist, wird die Frage zu „Was machen Sie mit der Gesamtheit der Konversionen eines Benutzers?“.  Sehen Sie sich beispielsweise die UTMs an, die basierend auf der GA-Logik des letzten Klicks aufgezeichnet wurden:
 
-* Benutzerregister unter &quot;Organisch&quot;
-* Erstkauf des Benutzers unter Paid Search $5.00
+* Benutzerregister unter „Organisch“
+* Erster Kauf des Benutzers unter Paid Search $5.00
 * Zweiter Kauf des Benutzers unter E-Mail $50.00
-* Dritter Kauf des Benutzers unter kostenlosen $10.00
+* Dritter Kauf des Nutzers unter Organic $10.00
 
-Hier fragen Sie: &quot;Wie viel Umsatz habe ich aus der gebührenpflichtigen Suche erhalten? Von E-Mail?  Aus Bio?&quot; Sie könnten sagen, dass die Antworten 5, 50 und 10 sind (egal, welche Quelle zuletzt verwendet wurde), oder Sie könnten auch sagen, dass Sie alle Umsätze der ersten Quelle zuordnen (alle 65 gehen zu &quot;organisch&quot;). Sie können auch eine gewichtete Analyse anwenden oder das lineare Modell anwenden (d. h. ungefähr 22 pro Modell).
+Da fragt man sich: „Wie viel Umsatz machte mir die bezahlte Recherche? Von E-Mail?  Aus biologischem Anbau?“ Man könnte sagen, dass die Antworten 5, 50 und 10 sind (was auch immer die letzte Quelle war), oder man könnte auch sagen, dass man alle Einnahmen der ersten Quelle zuordnet (alle 65 gehen an Bio). Sie können auch einige gewichtete Analysen oder das lineare Modell (d. h. jeweils etwa 22) anwenden.
 
 ## Verwandte Dokumentation
 
-* [Verfolgen der Verweisquelle für Bestellungen über [!DNL Google Analytics] E-Commerce](../importing-data/integrations/google-ecommerce.md)
-* [Tracking der Verweisquelle von Benutzern in Ihrer Datenbank](../analysis/google-track-user-acq.md)
-* [Tracking von Benutzergeräte-, Browser- und Betriebssystemdaten in Ihrer Datenbank](../analysis/google-track-user-acq.md)
-* [Entdecken Sie Ihre wertvollsten Akquisequellen und -kanäle](../analysis/most-value-source-channel.md)
-* [ [!DNL Google Adwords] Konto verbinden](../importing-data/integrations/google-adwords.md)
-* [Steigerung des ROI bei Werbekampagnen](../analysis/roi-ad-camp.md)
-* [Fünf Best Practices für das UTM-Tagging in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)
+* [Verfolgen Sie die Quelle der Bestellungsreferenz über  [!DNL Google Analytics] E-Commerce](../importing-data/integrations/google-ecommerce.md)
+* [Verfolgen Sie die Quelle der Benutzerreferenz in Ihrer Datenbank](../analysis/google-track-user-acq.md)
+* [Benutzergeräte-, Browser- und Betriebssystemdaten in der Datenbank tracken](../analysis/google-track-user-acq.md)
+* [Entdecken Sie Ihre wertvollsten Akquisitionsquellen und -kanäle](../analysis/most-value-source-channel.md)
+* [Konto  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Steigerung des ROI Ihrer Werbekampagnen](../analysis/roi-ad-camp.md)
+* [Fünf Best Practices für UTM-Tagging in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

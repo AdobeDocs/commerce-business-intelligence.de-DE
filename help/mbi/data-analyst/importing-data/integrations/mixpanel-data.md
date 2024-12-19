@@ -1,6 +1,6 @@
 ---
 title: Erwartete Mixpanel-Daten
-description: Erkunden Sie die Hauptdatentabellen, die Sie aus Mixpanel in Ihr [!DNL Commerce Intelligence] Konto importieren können.
+description: Informieren Sie sich über die wichtigsten Datentabellen, die Sie aus Mixpanel in Ihr - [!DNL Commerce Intelligence]  importieren können.
 exl-id: 87bd337a-63fa-44cf-b1fe-c2f34ca86029
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,25 +11,25 @@ ht-degree: 0%
 
 ---
 
-# Erwartete [!DNL Mixpanel] Daten
+# Erwartete [!DNL Mixpanel]
 
-Nachdem [Sie Ihr [!DNL Mixpanel] Konto](../integrations/mixpanel.md) verbunden haben, können Sie den [Data Warehouse-Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder für die Analyse einfach zu verfolgen.
+Nachdem [Sie Ihr [!DNL Mixpanel] Konto verbunden haben](../integrations/mixpanel.md) können Sie den [Data Warehouse-Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder für die Analyse einfach zu verfolgen.
 
-In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!DNL Mixpanel] in Ihr [!DNL Commerce Intelligence] -Konto importieren können. Die folgenden Tabellen werden nach dem Verbinden von [!DNL Mixpanel] in Ihrer Data Warehouse erstellt. Um alle für die Verfolgung verfügbaren Felder anzuzeigen, klicken Sie auf die Links in der Tabellennamenspalte.
+In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!DNL Mixpanel] in Ihr [!DNL Commerce Intelligence]-Konto importieren können. Die folgenden Tabellen werden nach dem Verbinden von [!DNL Mixpanel] auf Ihrem Data Warehouse erstellt. Um alle für das Tracking verfügbaren Felder anzuzeigen, klicken Sie auf die Links in der Spalte „Tabellenname“.
 
 >[!NOTE]
 >
->Aufgrund der Einschränkungen der [!DNL Mixpanel] -API werden historische Daten - Daten, die älter als sieben (7) Tage ab dem Datum der Verbindung zu [!DNL Commerce Intelligence] sind - nicht repliziert.
+>Aufgrund der Einschränkungen der [!DNL Mixpanel]-API werden historische Daten - Daten, die älter als sieben (7) Tage ab dem Datum der Verbindung mit [!DNL Commerce Intelligence] sind - nicht repliziert.
 
 | **Tabellenname** | **Beschreibung** |
 |-----|-----|
-| [`mixpanel\_export`](https://developer.mixpanel.com/reference/raw-data-export-api#datafeed) | Diese Tabelle enthält Rohdaten zu Ereignissen, einschließlich Ereignis-, Ereignis- und Plattform-Bucket. |
-| [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | Diese Tabelle enthält Daten zu Ihren Trichter, einschließlich der Trichterkennung, der Trichterlänge (Anzahl der Tage, die der Benutzer den Trichter abschließen muss) sowie des Start- und Enddatums des Trichters. |
-| [`mixpanel\_engage`](https://developer.mixpanel.com/reference/raw-data-export-api#engage-default) | Dies enthält Daten aus People Analytics, einschließlich Sitzungs-IDs, Seiten- und Benutzerinformationen sowie Datum/Uhrzeit der letzten Anzeige des Benutzers. |
+| [`mixpanel\_export`](https://developer.mixpanel.com/reference/raw-data-export-api#datafeed) | Diese Tabelle enthält unformatierte Ereignisdaten, einschließlich Ereignis, Ereignisdaten und Plattform-Bucket. |
+| [`mixpanel\_funnels`](https://developer.mixpanel.com/reference/raw-data-export-api#funnels-default) | Diese Tabelle enthält Daten zu Ihren Trichtern, einschließlich der Trichterkennung, der Trichterlänge (Anzahl der Tage, an denen der Benutzer den Trichter abschließen muss) und des Start- und Enddatums des Trichters. |
+| [`mixpanel\_engage`](https://developer.mixpanel.com/reference/raw-data-export-api#engage-default) | Diese enthält Daten aus People Analytics, einschließlich Sitzungs-IDs, Seiten- und Benutzerinformationen sowie Datum und Uhrzeit des letzten Besuchs des Benutzers. |
 
 {style="table-layout:auto"}
 
 ## Verwandte Dokumentation
 
 * [Verbinden [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

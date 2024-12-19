@@ -1,6 +1,6 @@
 ---
-title: Verbinden von WooCommerce
-description: Erfahren Sie, wie Sie die Leistung Ihres Unternehmens sehen oder Ihre wertvollsten Akquisequellen und -kanäle finden.
+title: WooCommerce verbinden
+description: Erfahren Sie, wie Sie die Performance Ihres Unternehmens sehen oder Ihre wertvollsten Akquisequellen und -kanäle finden.
 exl-id: 26ac24e0-087b-4958-873c-2facab22ffb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ![](../../../assets/WooCommerce-Logo.jpg)
 
-Möchten Sie sehen, wie Ihr Unternehmen die Leistung erzielt oder Ihre wertvollsten Akquisequellen und -kanäle finden? Wenn Sie Ihre [!DNL WooCommerce] -Daten mit [!DNL Commerce Intelligence] verbinden, können Sie diese Fragen und vieles mehr beantworten.
+Möchten Sie sehen, wie Ihr Unternehmen funktioniert oder Ihre wertvollsten Akquisequellen und -kanäle finden? Sie können diese Fragen und mehr beantworten, indem Sie Ihre [!DNL WooCommerce] mit [!DNL Commerce Intelligence] verbinden.
 
-Die [!DNL WooCommerce] -Datenbank basiert auf [!DNL MySQL], Sie können sie mit [!DNL Commerce Intelligence] über eine [direkte Verbindung](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) oder [über eine `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md) mit  verbinden. Adobe empfiehlt die Verwendung der SSH-Methode, da diese die sicherste Methode ist.
+Die [!DNL WooCommerce]-Datenbank basiert auf [!DNL MySQL]. Sie können sie über eine [Direktverbindung](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) oder [über eine `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md) mit [!DNL Commerce Intelligence] verbinden. Adobe empfiehlt die Verwendung der SSH-Methode, da diese am sichersten ist.
 
-## Verwandte:
+## Verwandt:
 
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Empfohlene Datendimensionen für Segmentierung und Filterung](../../../best-practices/segment-filter.md)

@@ -1,6 +1,6 @@
 ---
-title: Diagrammdateninformationen
-description: Erfahren Sie, wie Sie die Visualisierungsoptionen im Visual Report Builder verwenden.
+title: Informationen zu Diagrammdaten
+description: Erfahren Sie, wie Sie die Visualisierungsoptionen in Visual Report Builder verwenden.
 exl-id: 865efc8b-1e1a-4033-9e42-cbd03b220260
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -11,12 +11,12 @@ ht-degree: 0%
 
 ---
 
-# Diagrammdateninformationen
+# Informationen zu Diagrammdaten
 
-Nehmen Sie Ihre Wahl - einfach Englisch oder die Metrikdefinition. Benutzer können Diagramme kommentieren und die Metriken und Formeln in einem Diagramm anzeigen, indem sie auf das Symbol _Informationen_ oben rechts in einem beliebigen Diagramm klicken.
+Wählen Sie einfach Englisch oder die Metrikdefinition aus. Benutzer können zu Diagrammen Anmerkungen hinzufügen und die Metriken und Formeln in einem Diagramm anzeigen, indem sie auf das Symbol _Informationen_ in der oberen rechten Ecke eines beliebigen Diagramms klicken.
 
-## Verwandte:
+## Verwandt:
 
-* [Grundlegende Analytics](../../data-analyst/analysis/basic-analytics.md)
+* [Grundlegende Analysen](../../data-analyst/analysis/basic-analytics.md)
 * [[!DNL Visual Report Builder]](../../data-user/reports/ess-rpt-build-visual.md)
 * [[!DNL SQL Report Builder]](../../data-analyst/dev-reports/sql-rpt-bldr.md)

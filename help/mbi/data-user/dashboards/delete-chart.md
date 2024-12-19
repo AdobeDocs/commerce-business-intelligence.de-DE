@@ -1,5 +1,5 @@
 ---
-title: Dauerhaftes Löschen von Diagrammen
+title: Diagramm dauerhaft löschen
 description: Erfahren Sie, wie Sie ein Diagramm dauerhaft löschen.
 exl-id: 34234ff6-b258-4369-9774-946d8423d4da
 role: Admin, Data Architect, Data Engineer, User
@@ -11,25 +11,25 @@ ht-degree: 0%
 
 ---
 
-# Dauerhaftes Löschen von Diagrammen
+# Diagramm dauerhaft löschen
 
-Selbst wenn Sie [ ein Diagramm aus dem Dashboard entfernen](../../data-user/dashboards/remove-charts-dashboard.md), ist es weiterhin in Ihrem [!DNL Commerce Intelligence] -Konto vorhanden.
+Selbst wenn Sie [ein Diagramm aus dem Dashboard entfernen](../../data-user/dashboards/remove-charts-dashboard.md) ist es weiterhin in Ihrem [!DNL Commerce Intelligence]-Konto vorhanden.
 
 So löschen Sie ein Diagramm dauerhaft:
 
-1. Klicken Sie in der Seitenleiste auf &quot;**[!UICONTROL Account Setting]**&quot;.
+1. Klicken Sie in der Seitenleiste auf **[!UICONTROL Account Setting]** .
 
 1. Klicken Sie auf **[!UICONTROL Charts]**.
 
-1. Die Grafiken, die Sie löschen können (basierend auf den Benutzerberechtigungen und dem Diagrammeigentum), werden rechts im Bildschirm angezeigt.
+1. Die Diagramme, die Sie löschen können (basierend auf Benutzerberechtigungen und der Eigentümerschaft des Diagramms), werden auf der rechten Seite des Bildschirms angezeigt.
 
-1. Aktivieren Sie das Kontrollkästchen neben der Diagrammzeile, die Sie löschen möchten.
+1. Aktivieren Sie das Kontrollkästchen neben der Diagrammlinie, die Sie löschen möchten.
 
 1. Klicken Sie auf **[!UICONTROL Delete Selected]**.
 
    >[!NOTE]
    >
-   >Wenn das Diagramm in einem Dashboard oder einer E-Mail-Zusammenfassung verwendet wird, wird eine Benachrichtigung angezeigt. Um fortzufahren, müssen Sie den Löschvorgang bestätigen und dann auf **[!UICONTROL Force Deletion]** klicken.
+   >Wenn das Diagramm in einem Dashboard oder in einer E-Mail-Zusammenfassung verwendet wird, wird eine Benachrichtigung angezeigt. Um fortzufahren, müssen Sie den Löschvorgang bestätigen und dann auf **[!UICONTROL Force Deletion]** klicken.
 
 Beispiel:
 

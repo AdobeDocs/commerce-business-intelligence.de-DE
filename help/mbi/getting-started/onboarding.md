@@ -1,6 +1,6 @@
 ---
 title: Onboarding von Adobe Commerce Intelligence
-description: Informationen zum Onboarding von Adobe Commerce Intelligence.
+description: Weitere Informationen zum Onboarding von Adobe Commerce Intelligence.
 exl-id: e0cce957-af2c-4514-9afd-c9aaa651a4f0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -13,24 +13,24 @@ ht-degree: 0%
 
 # Onboarding [!DNL Adobe Commerce Intelligence]
 
-Die Onboarding-Fragen im Zusammenhang mit den Einstellungen für `store` und `database` stellen sicher, dass Sie die Berichterstellung korrekt einrichten. Mit diesen Antworten stellt Adobe Ihre Berichte bereit, die genau auf das Setup Ihres Stores zugeschnitten sind.
+Die Onboarding-Fragen im Zusammenhang mit `store`- und `database` stellen sicher, dass Sie Ihre Berichte korrekt einrichten. Mit diesen Antworten liefert Adobe Ihre Berichte, die genau auf die Einrichtung Ihres Shops zugeschnitten sind.
 
-## Speichereinstellungen
+## Store-Einstellungen
 
-- *Akzeptiert Ihr Store ein Auschecken als Gast?* - Wählen Sie **yes** aus, wenn Sie Kunden erlauben, einen Kauf in Ihrem Geschäft abzuschließen, ohne sich für ein Konto zu registrieren.
+- *Akzeptiert Ihr Geschäft einen Gast-Checkout?* - Wählen Sie **Ja**, wenn Sie Kunden erlauben, einen Kauf in Ihrem Geschäft zu tätigen, ohne sich für ein Konto zu registrieren.
 
-- `Timezone` - Wählen Sie den `timezone` aus, in dem Ihre Berichterstellung angezeigt werden soll.
+- `Timezone` : Wählen Sie die `timezone` aus, in der Ihre Berichte angezeigt werden sollen.
 
-- `Currency` - Wählen Sie die `currency` aus, in der Ihr Store tätig ist.
+- `Currency` : Wählen Sie die `currency` aus, in der Ihr Store betrieben wird.
 
-- `Your week starts on...` - Wählen Sie den Wochentag aus, der in Ihren Berichten als Wochenstart verwendet werden soll.
+- `Your week starts on...` : Wählen Sie den Wochentag aus, an dem die Woche in Ihren Berichten beginnen soll.
 
-- *Welche Version von Commerce verwenden Sie?* - Wählen Sie die `currency` aus, in der Ihr Store tätig ist.
+- *Welche Version von Commerce verwenden Sie?* : Wählen Sie die `currency` aus, in der Ihr Store betrieben wird.
 
-- *Ist Ihr Geschäft in der Europäischen Union ansässig?* - Wenn Sie `Yes` auf diese Frage antworten, hostet Adobe Ihre Data Warehouse und all Ihre Daten in der Europäischen Union gemäß der DSGVO.
+- *Ist Ihr Geschäft in der Europäischen Union ansässig?* - Wenn Sie diese Frage `Yes` beantworten, hosten Sie Ihre Data Warehouse und alle Ihre Daten in der Europäischen Union in Adobe in Übereinstimmung mit der DSGVO.
 
 ## Datenbankeinstellungen
 
-- `Database name` - Wie lautet der *Name der [!DNL MySQL] Datenbank*, in der sich Ihre Commerce-Transaktionsdaten befinden?
+- `Database name` - Wie lautet *Name der [!DNL MySQL]-Datenbank* in der sich Ihre Commerce-Transaktionsdaten befinden?
 
-- `Table prefix (optional)` - Sind die in Ihrer Commerce-Datenbank enthaltenen Tabellen von irgendetwas (z. B. `store_`) vorangestellt? Dies ist normalerweise nicht der Fall, aber es ist eine Anpassung, die vorgenommen werden kann.
+- `Table prefix (optional)` - Werden den in Ihrer Commerce-Datenbank enthaltenen Tabellen Elemente vorangestellt (z. B. `store_`)? Dies ist normalerweise nicht der Fall, aber es ist eine Anpassung, die vorgenommen werden kann.

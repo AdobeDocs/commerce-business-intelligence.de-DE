@@ -13,103 +13,103 @@ ht-degree: 0%
 
 # Verwenden eines Berichts
 
-Verwenden Sie Berichte in [!DNL Adobe Commerce Intelligence] , um Ihnen bei der Beantwortung von Geschäftsfragen zu helfen - ob Sie einfach den Umsatz dieses Monats im Vergleich zum letzten Jahr sehen möchten oder Ihre Akquisekosten für Ihre neueste [!DNL Google AdWords]-Kampagne verstehen möchten.
+Verwenden Sie Berichte in [!DNL Adobe Commerce Intelligence], um geschäftliche Fragen zu beantworten - egal, ob Sie einfach den Umsatz dieses Monats im Vergleich zum Vorjahr sehen möchten oder Ihre Anschaffungskosten für Ihre neueste [!DNL Google AdWords]-Kampagne verstehen möchten.
 
-Wie sieht der Weg von Frage zu Antwort genau aus?
+Wie sieht der Weg von der Frage zur Antwort genau aus?
 
-Um Ihnen bei der Visualisierung dieses Prozesses zu helfen, wird diese Route unten zugeordnet. Dieses Thema zeigt, wie Sie eine analytische Frage angehen, und wie die Backend-Logistik, die erforderlich ist, um Ihnen die benötigten Daten zu liefern.
+Diese Route ist unten dargestellt, um Ihnen bei der Visualisierung dieses Prozesses zu helfen. Dieses Thema beleuchtet sowohl, wie Sie eine analytische Frage angehen, als auch die Backend-Logistik, die erforderlich ist, um Ihnen die benötigten Daten zu liefern.
 
-## Beginnen mit der Frage
+## Beginnen wir mit der Frage
 
-Sie wissen, dass Sie ständig Fragen stellen, um Ihr Geschäft zu verbessern, von der Steigerung der Kundenzufriedenheit bis zur Senkung der Lieferkosten. Sie konzentrieren sich darauf, wie Sie Ihre Fragen in Analysen übersetzen können, die Ihnen bei der Entscheidungsfindung helfen.
+Sie wissen, dass Sie ständig Fragen stellen, um Ihr Geschäft zu verbessern, von der Erhöhung der Kundenzufriedenheit bis zur Senkung der Lieferkosten. Sie konzentrieren sich darauf, wie Sie Ihre Fragen in Analysen übersetzen können, die Ihnen bei der Entscheidungsfindung helfen.
 
-Angenommen, Sie möchten die folgende Frage beantworten:
+Nehmen wir für dieses Beispiel an, dass Sie die folgende Frage beantworten möchten:
 
-* Wie schnell konvertieren meine neuen Registrierungspflichtigen?
+* Wie schnell konvertieren meine neuen Registrierenden?
 
-## Kennzeichnen einer Messung
+## Kennzahlen identifizieren
 
-Es ist an der Zeit, eine Liste möglicher Analysen und Messungen zu ermitteln, um die Frage zu beantworten. In diesem Beispiel konzentrieren Sie sich auf die folgende Metrik:
+Es ist an der Zeit, eine Liste möglicher Analysen und Messungen zu erstellen, um die Frage zu beantworten. Konzentrieren Sie sich in diesem Beispiel auf die folgende Metrik:
 
 * Durchschnittliche Zeit von der Registrierung bis zum ersten Kaufdatum pro Verwendung.
 
-Dies zeigt die durchschnittliche Zeit, die zwischen dem Registrierungsdatum und dem ersten Kaufdatum des Benutzers vergeht, und gibt eine Vorstellung davon, wie sich Benutzer bei diesem letzten Schritt im Konversionstrichter verhalten.
+Dadurch wird die durchschnittliche Zeit zwischen dem Registrierungsdatum und dem ersten Kaufdatum des Benutzers angezeigt und eine Vorstellung davon gegeben, wie sich Benutzer in diesem letzten Schritt im Konversionstrichter verhalten.
 
-## Suchen nach Daten
+## Ermitteln der Daten
 
-Das Verständnis, was gemessen werden soll, bringt uns nur dazu, dorthin zu gelangen. Um die durchschnittliche Zeit von der Registrierung bis zum ersten Kaufdatum pro Benutzer zu bewerten, müssen Sie alle Datenpunkte identifizieren, aus denen Ihre Kennzahl besteht.
+Zu verstehen, was zu messen ist, verschafft uns nur einen Teil des Weges dorthin. Um die durchschnittliche Zeit von der Registrierung bis zum ersten Kaufdatum pro Benutzer zu bewerten, müssen Sie alle Datenpunkte identifizieren, aus denen Ihre Kennzahl besteht.
 
-Schlüsseln Sie Ihre Kennzahl in die Kernkomponenten auf. Sie müssen wissen, wie viele Personen sich registriert haben, wie viele Personen einen Kauf getätigt haben und wie viel Zeit zwischen diesen beiden Ereignissen vergangen ist.
+Schlüsseln Sie Ihre Kennzahl in ihre Kernkomponenten auf. Sie müssen die Anzahl der registrierten Personen, die Anzahl der Personen, die einen Kauf getätigt haben und die Zeit zwischen diesen beiden Ereignissen kennen.
 
-Auf einer höheren Ebene müssen Sie wissen, wo diese Daten in der Datenbank zu finden sind, insbesondere:
+Auf höherer Ebene müssen Sie wissen, wo Sie diese Daten in der Datenbank finden, insbesondere:
 
-* Die Tabelle, die bei jeder Registrierung eine Datenzeile aufzeichnet
-* Die Tabelle, die eine Datenzeile aufzeichnet, die jedes Mal, wenn ein Besucher einen Kauf tätigt,
-* Die Spalte, die verwendet werden kann, um der Tabelle `purchase` beizutreten oder sie auf die Tabelle `customer` zu verweisen - dies ermöglicht uns zu wissen, wer einen Kauf getätigt hat
+* Die Tabelle, die jedes Mal, wenn sich jemand registriert, eine Datenzeile aufzeichnet
+* Die Tabelle, die jedes Mal, wenn jemand einen Kauf tätigt, eine Datenzeile aufzeichnet
+* Die Spalte, die verwendet werden kann, um die `purchase`-Tabelle mit der `customer`-Tabelle zu verbinden oder darauf zu verweisen - dies ermöglicht es uns zu wissen, wer einen Kauf getätigt hat
 
 Auf einer detaillierteren Ebene müssen Sie die genauen Datenfelder identifizieren, die für diese Analyse verwendet werden:
 
-* Die Datentabelle und -spalte mit dem Registrierungsdatum eines Kunden, z. B. `user.created\_at`
-* Die Datentabelle und -spalte mit einem Kaufdatum, z. B. `order.created\_at`
+* Die Datentabelle und -spalte, die das Registrierungsdatum eines Kunden enthalten: z. B. `user.created\_at`
+* Die Datentabelle und -spalte, die ein Kaufdatum enthalten: z. B. `order.created\_at`
 
 ## Datenspalten für Analysen erstellen
 
-Zusätzlich zu den oben genannten nativen Datenspalten benötigen Sie auch eine Reihe berechneter Datenfelder, um diese Analyse zu ermöglichen, darunter:
+Zusätzlich zu den oben beschriebenen nativen Datenspalten benötigen Sie auch einen Satz berechneter Datenfelder, um diese Analyse zu ermöglichen, einschließlich:
 
-* `Customer's first purchase date` , der die `MIN(order.created_at` eines bestimmten Benutzers zurückgibt)
+* `Customer's first purchase date`, das die `MIN(order.created_at` eines bestimmten Benutzers zurückgibt)
 
-Dies wird dann zum Erstellen von Folgendem verwendet:
+Diese wird dann verwendet, um Folgendes zu erstellen:
 
-* `Time between a customer's registration date and first purchase date`, der die Zeit eines bestimmten Benutzers zwischen der Registrierung und dem ersten Kaufdatum zurückgibt. Dies ist die Grundlage für Ihre Metrik später.
+* `Time between a customer's registration date and first purchase date`, die die Zeit zurückgibt, die zwischen der Registrierung und dem ersten Kaufdatum eines bestimmten Benutzers verstrichen ist. Dies ist die Grundlage für Ihre Metrik später.
 
-Beide Felder müssen auf Benutzerebene erstellt werden (z. B. in der Tabelle `user` ). Dadurch kann die durchschnittliche Analyse von Benutzern normalisiert werden (d. h. der Nenner in dieser durchschnittlichen Berechnung ist die Anzahl der Benutzer).
+Beide Felder müssen auf Benutzerebene erstellt werden (z. B. in der `user`). Dies ermöglicht eine Normalisierung der Durchschnittsanalyse durch die Benutzer (d. h., der Nenner bei dieser Durchschnittsberechnung ist die Anzahl der Benutzer).
 
-Hier tritt [!DNL Commerce Intelligence] ein! Sie können Ihre [!DNL Commerce Intelligence] -Data Warehouse verwenden, um die oben genannten Spalten zu erstellen. Wenden Sie sich an das Adobe Analyst-Team und geben Sie uns die genaue Definition Ihrer neuen Spalten zur Erstellung an. Sie können auch den [Spalten-Editor](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md) verwenden.
+Hier kommt [!DNL Commerce Intelligence] ins Spiel! Sie können Ihre [!DNL Commerce Intelligence] Data Warehouse verwenden, um die oben genannten Spalten zu erstellen. Wenden Sie sich an das Adobe-Analyst-Team und geben Sie uns die spezifische Definition Ihrer neuen Spalten für die Erstellung an. Sie können auch den [Spalteneditor“ ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
-Es empfiehlt sich, diese berechneten Datenfelder nicht direkt in Ihrer Datenbank zu erstellen, da dies Ihre Produktionsserver unnötig belastet.
+Es empfiehlt sich, die Erstellung dieser berechneten Datenfelder in Ihrer Datenbank zu vermeiden, da dies eine unnötige Belastung für Ihre Produktions-Server darstellt.
 
-## Erstellen der Metrik
+## Metrik erstellen
 
-Nachdem Sie nun über die erforderlichen Datenfelder für die Analyse verfügen, ist es an der Zeit, die relevante Metrik zu finden oder zu erstellen, um Ihre Analyse zu erstellen.
+Nachdem Sie nun über die erforderlichen Datenfelder für die Analyse verfügen, ist es an der Zeit, die entsprechende Metrik zu finden oder zu erstellen, um Ihre Analyse zu erstellen.
 
-Hier wird die folgende Berechnung durchgeführt:
+Führen Sie hier die folgende Berechnung durch:
 
 
-_[SUMME von `Time between a customer's registration date and first purchase date`] / [Gesamtzahl der Kunden, die sich registriert und gekauft haben]_
+_[SUMME der `Time between a customer's registration date and first purchase date`] / [Gesamtzahl der Kunden, die sich registriert und gekauft haben]_
 
-Und Sie möchten diese Berechnung im Zeitverlauf bzw. im Trend sehen, je nach Registrierungsdatum des Kunden. So erstellen Sie [diese Metrik](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
+Und Sie möchten sehen, dass diese Berechnung über die Zeit, oder den Trend, eingezeichnet wird basierend auf dem Registrierungsdatum eines Kunden. So erstellen Sie [diese Metrik](../../data-user/reports/ess-manage-data-metrics.md) in [!DNL Commerce Intelligence]:
 
-1. Gehen Sie zu **[!UICONTROL Data]** und wählen Sie die Registerkarte `Metrics` aus.
-1. Klicken Sie auf **[!UICONTROL Add New Metric]** und wählen Sie die Tabelle `user` aus (wo Sie die oben genannten Dimensionen erstellt haben).
-1. Wählen Sie aus der Dropdown-Liste in der Tabelle `user`, die durch die Spalte `Customer's registration date` sortiert ist, `Average` in der Spalte `Time between a customer's registration date and first purchase date` aus.
+1. Wechseln Sie zu **[!UICONTROL Data]** und wählen Sie die Registerkarte `Metrics` aus.
+1. Klicken Sie auf **[!UICONTROL Add New Metric]** und wählen Sie die `user` aus (in der Sie die Dimensionen oben erstellt haben).
+1. Wählen Sie aus dem Dropdown-Menü `Average` in der Spalte `Time between a customer's registration date and first purchase date``user` in der Tabelle nach `Customer's registration date` sortiert aus.
 1. Fügen Sie alle relevanten Filter oder Filtersätze hinzu.
 
 Diese Metrik ist jetzt bereit.
 
-## Berichtserstellung
+## Erstellen des Berichts
 
 Wenn die neue Metrik eingerichtet ist, können Sie sie verwenden, um die durchschnittliche Zeit zwischen der Registrierung und dem ersten Kaufdatum nach Registrierungsdatum zu melden.
 
-Gehen Sie einfach zu einem beliebigen Dashboard und [erstellen Sie einen Bericht](../../data-user/reports/ess-manage-data-metrics.md) mit der oben erstellten Metrik.
+Wechseln Sie einfach zu einem beliebigen Dashboard und [erstellen Sie einen Bericht](../../data-user/reports/ess-manage-data-metrics.md) mithilfe der oben erstellten Metrik.
 
 ### `Visual Report Builder` {#visualrb}
 
-[Die `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) ist die einfachste Möglichkeit, Ihre Daten zu visualisieren. Wenn Sie nicht mit SQL vertraut sind oder einen Bericht schnell erstellen möchten, ist Visual Report Builder die beste Wahl. Mit nur wenigen Klicks können Sie Metriken hinzufügen, Ihre Daten segmentieren und Berichte für Ihre gesamte Organisation erstellen. Diese Option eignet sich sowohl für Anfänger als auch für Experten, da sie keinerlei Fachkenntnisse erfordert.
+[Die `Visual Report Builder`](../../data-user/reports/ess-rpt-build-visual.md) ist der einfachste Weg, Ihre Daten zu visualisieren. Wenn Sie mit SQL nicht vertraut sind oder schnell einen Bericht erstellen möchten, ist der Visual Report Builder Ihre beste Wahl. Mit nur wenigen Klicks können Sie Metriken hinzufügen, Ihre Daten segmentieren und Berichte erstellen, um sie in Ihrem gesamten Unternehmen zu verwalten. Diese Option ist sowohl für Anfänger als auch für Experten ideal, da sie keine technische Expertise erfordert.
 
 |  |  |
 |--- |--- |
-| **Dies ist perfekt für ...**. | **Das ist nicht so toll für ...**. |
-| - Alle Ebenen der Analyse/des technischen Erlebnisses<br> - Schnelles Erstellen von Berichten<br> - Erstellen von Analysen zur Freigabe für andere Benutzer | - Analysen, die SQL-spezifische Funktionen erfordern<br> - Testen neuer Spalten - berechnete Spalten hängen von Aktualisierungszyklen für die anfängliche Datenpopulation ab, die mit SQL erstellt wurden, nicht. |
+| **Dies ist perfekt für…** | **Das ist nicht so toll für…** |
+| - Alle Ebenen der Analyse/des technischen Erlebnisses<br>- Schnelles Erstellen von Berichten<br>- Erstellen von Analysen zur gemeinsamen Nutzung mit anderen Benutzern | - Analysen, die SQL-spezifische Funktionen erfordern<br>- Testen neuer Spalten - Berechnete Spalten hängen von Aktualisierungszyklen für die anfängliche Datenpopulation ab, während solche, die mit SQL erstellt wurden, nicht funktionieren. |
 
 {style="table-layout:auto"}
 
-### Berichtbeschreibungen und Bilder
+### Berichtsbeschreibungen und Bilder
 
 #### Hinzufügen von Beschreibungen zu Berichten
 
-Bei der Erstellung von Berichten, die mit anderen Team-Mitgliedern geteilt werden, empfiehlt Adobe das Hinzufügen von Beschreibungen, die es anderen Benutzern ermöglichen, Ihre Analyse besser zu verstehen.
+Beim Erstellen von Berichten, die für andere Mitglieder Ihres Teams freigegeben werden, empfiehlt Adobe, Beschreibungen hinzuzufügen, die es anderen Benutzenden ermöglichen, Ihre Analyse besser zu verstehen.
 
-1. Klicken Sie oben in einem beliebigen Bericht auf **[!UICONTROL i]** .
+1. Klicken Sie oben in einem Bericht auf **[!UICONTROL i]** .
 1. Geben Sie eine Beschreibung in das Wortfeld ein.
 1. Klicken Sie auf **[!UICONTROL Save Description]**.
 
@@ -119,12 +119,12 @@ Siehe unten:
 
 #### Exportieren von Berichten als Bilder
 
-Muss ein Bericht in eine Präsentation oder ein Dokument aufgenommen werden? Jeder Bericht kann mithilfe des Menüs `Report Options` oben rechts in jedem Bericht als Bild (im PNG-, PDF- oder SVG-Format) gespeichert werden.
+Müssen Sie einen Bericht in eine Präsentation oder ein Dokument aufnehmen? Jeder Bericht kann über das `Report Options`-Menü oben rechts in jedem Bericht als Bild (im PNG-, PDF- oder SVG-Format) gespeichert werden.
 
 1. Klicken Sie auf das Zahnradsymbol in der oberen rechten Ecke eines Berichts.
 1. Wählen Sie im Dropdown-Menü `Enlarge` aus.
-1. Wenn der Bericht vergrößert wird, klicken Sie oben rechts im Bericht auf **[!UICONTROL Download]** .
-1. Wählen Sie aus der Dropdown-Liste das gewünschte Bildformat aus. Der Download beginnt sofort.
+1. Wenn der Bericht größer wird, klicken Sie oben rechts im Bericht auf **[!UICONTROL Download]** .
+1. Wählen Sie in der Dropdown-Liste das bevorzugte Bildformat aus. Der Download beginnt sofort.
 
 Siehe unten:
 

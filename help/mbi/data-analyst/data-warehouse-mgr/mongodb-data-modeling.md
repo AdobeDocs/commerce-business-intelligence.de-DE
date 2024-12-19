@@ -13,15 +13,15 @@ ht-degree: 1%
 
 # [!DNL MongoDB] Datenmodellierung
 
-Wenn [!DNL Adobe Commerce Intelligence] [!DNL MongoDB] -Daten abruft, werden diese Daten in ein relationales Modell übersetzt.
+Wenn [!DNL Adobe Commerce Intelligence] [!DNL MongoDB] Daten abruft, werden diese Daten in ein relationales Modell übersetzt.
 
-Die schlechte Nachricht: Obwohl die meisten Datenmuster kein Problem darstellen, gibt es einige wenige, die aufgrund der Übersetzung in ein relationales Modell nicht von [!DNL Commerce Intelligence] unterstützt werden.
+Die schlechte Nachricht: Während die meisten Datenmuster kein Problem darstellen, gibt es einige, die von [!DNL Commerce Intelligence] aufgrund der Übersetzung in ein relationales Modell nicht unterstützt werden.
 
-Die gute Nachricht: All diese Muster lassen sich vermeiden.
+Die gute Nachricht: All diese Muster können vermieden werden.
 
-## Subverschachtelte Arrays {#subnested}
+## Unterverschachtelte Arrays {#subnested}
 
-Wenn Ihre Sammlung wie das Beispiel unten aussieht, repliziert [!DNL Commerce Intelligence] nur die Daten im Elemente-Array. Daten aus dem Array der Unterelemente werden nicht abgerufen.
+Wenn Ihre Auflistung dem folgenden Beispiel entspricht, repliziert [!DNL Commerce Intelligence] die Daten nur im Element-Array. Daten aus dem Unterelement-Array werden nicht abgerufen.
 
 ```bash
     {
@@ -41,9 +41,9 @@ Wenn Ihre Sammlung wie das Beispiel unten aussieht, repliziert [!DNL Commerce In
     }
 ```
 
-## Variablenobjektschlüssel {#varobjectkeys}
+## Schlüssel des variablen Objekts {#varobjectkeys}
 
-Sammlungen, die Objekte mit Variablenobjektschlüsseln enthalten, werden nicht in [!DNL Commerce Intelligence] repliziert. Beispiel:
+Sammlungen, die Objekte mit variablen Objektschlüsseln enthalten, werden nicht in [!DNL Commerce Intelligence] repliziert. Beispiel:
 
 ```bash
     {
@@ -56,7 +56,7 @@ Sammlungen, die Objekte mit Variablenobjektschlüsseln enthalten, werden nicht i
     }
 ```
 
-Dies tritt normalerweise dann auf, wenn ein Objekt verwendet wird und ein Array angemessener wäre. Nacharbeiten Sie nun das obige Beispiel:
+Dies tritt normalerweise auf, wenn ein -Objekt verwendet wird und ein Array geeigneter wäre. Überarbeiten Sie nun das obige Beispiel:
 
 ```bash
     {

@@ -1,6 +1,6 @@
 ---
-title: enterprise_rma-Tabelle
-description: Erfahren Sie, wie Sie Informationen zu einer bestimmten Rückgabeanforderung analysieren.
+title: Tabelle enterprise_rma
+description: Erfahren Sie, wie Sie Informationen zu einer bestimmten Rückgabeanfrage analysieren können.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -11,45 +11,45 @@ ht-degree: 0%
 
 ---
 
-# enterprise_rma-Tabelle
+# Tabelle enterprise_rma
 
-Jede Zeile in der Tabelle `enterprise_rma` (in Adobe Commerce 2.x häufig als `magento_rma` bezeichnet, der Name kann jedoch angepasst werden) enthält Informationen zu einer bestimmten Rückgabeanforderung.
+Jede Zeile in der `enterprise_rma` (in Adobe Commerce 2.x häufig als `magento_rma` bezeichnet, der Name kann jedoch angepasst werden) enthält Informationen zu einer bestimmten Rückgabeanfrage.
 
 >[!NOTE]
 >
->Diese Tabelle ist nur mit Ihrem Adobe Commerce-Konto standardmäßig verfügbar, wenn Sie `Enterprise Edition`- oder `Enterprise Cloud Edition`-Kunde sind.
+>Diese Tabelle wird nur dann standardmäßig mit Ihrem Adobe Commerce-Konto geliefert, wenn Sie `Enterprise Edition` oder `Enterprise Cloud Edition` sind.
 
-## Allgemeine native Spalten
+## Gemeinsame native Spalten
 
 | **Spaltenname** | **Beschreibung** |
 |---|---|
-| `entity\_id` | Eindeutige Kennung für die Tabelle. Jede `entity\_id` stellt eine Rückgabeanforderung dar. |
+| `entity\_id` | Eindeutige Kennung für die Tabelle. Jede `entity\_id` stellt eine Rückgabeanfrage dar. |
 | `date\_requested` | Das Datum, an dem die Rückgabe angefordert wurde. |
-| `status` | Der Status der Rückgabe. Zu den Werten gehören u. a. &quot;empfangen&quot;, &quot;ausstehend&quot;, &quot;autorisiert&quot;. |
-| `order\_id` | Fremdschlüssel, der mit der Tabelle `sales\_flat\_order` verknüpft ist. |
-| `customer\_id` | Fremdschlüssel, der mit der Tabelle `customer\_entity` verknüpft ist. |
+| `status` | Der Status der Rücksendung. Die Werte umfassen u. a. „Received“, „Pending“, „Authorized“. |
+| `order\_id` | Fremdschlüssel, der der `sales\_flat\_order`-Tabelle zugeordnet ist. |
+| `customer\_id` | Fremdschlüssel, der der `customer\_entity`-Tabelle zugeordnet ist. |
 
 {style="table-layout:auto"}
 
-## Allgemeine berechnete Spalten
+## Gemeinsame berechnete Spalten
 
 | **Spaltenname** | **Beschreibung** |
 |---|---|
-| `Order's created\_at` | Dies ist das Datum der ursprünglichen Bestellung. Dies kann verwendet werden, um die Zeit zwischen Bestellung und Rückgabeanforderung zu erhalten. |
-| `Customer's order number` | Dies ist die Auftragsnummer des Kunden, die der ursprünglichen Bestellung zugeordnet ist. |
-| `Seconds between order's created\_at and return's date\_requested` | Die Anzahl der Sekunden vom Bestelldatum bis zur Rückgabeanforderung. |
-| `Return's total value` | Dies ist der gesamte Geldbetrag, der zurückgegeben wird. Dies ist die Summe des individuellen Rückgabebetrags jedes Rückgabeelements. |
+| `Order's created\_at` | Dies ist das Datum der ursprünglichen Bestellung. Dies kann verwendet werden, um die Zeit zwischen der Bestellung und der Rücksendung zu ermitteln. |
+| `Customer's order number` | Dies ist die Bestellnummer des Kunden, die mit der ursprünglichen Bestellung verknüpft ist. |
+| `Seconds between order's created\_at and return's date\_requested` | Die Anzahl der Sekunden vom Bestelldatum bis zur Rückgabeanfrage. |
+| `Return's total value` | Dies ist der gesamte Geldbetrag, der zurückgegeben wird. Dies ist die Summe des individuellen Rücksendungsbetrags jedes einzelnen Rücksendungspostens. |
 
 {style="table-layout:auto"}
 
 ## Allgemeine Metriken
 
-| **Metrikname** | **Beschreibung** | **Konstruktion** |
+| **Metrikname** | **Beschreibung** | **Baugewerbe** |
 |---|---|---|
-| `Number of returns` | Die Anzahl der angeforderten Rückgaben. | `Operation` column: `entity id`<br>`Operation`: `Count`<br>`Timestamp` column: `date requested` |
-| `Total returned amount` | Der insgesamt zurückgegebene Geldbetrag. | `Operation `Spalte: `Return's total value`<br>`Operation`: Summe<br>`Timestamp` Spalte: Datum angefordert |
-| `Average returned amount` | Der durchschnittliche Geldbetrag, der zurückgegeben wurde. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
-| `Average time to return` | Die durchschnittliche Zeit zwischen Bestellung und Rückgabe. | `Operation` Spalte: Sekunden zwischen der am erstellten Bestellung und dem angeforderten Datum der Rückgabe<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
+| `Number of returns` | Die Anzahl der angeforderten Rücksendungen. | `Operation`: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Spalte: `date requested` |
+| `Total returned amount` | Der insgesamt zurückgegebene Geldbetrag. | `Operation `Spalte: `Return's total value`<br>`Operation`: Summe<br>`Timestamp` Spalte: angefordertes Datum |
+| `Average returned amount` | Der durchschnittliche zurückgegebene Geldbetrag. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
+| `Average time to return` | Die durchschnittliche Zeit von der Bestellung bis zur Rückkehr. | `Operation` Spalte: Sekunden zwischen dem Erstellungsdatum des Auftrags und dem Rückgabedatum der Anforderung<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
 
 {style="table-layout:auto"}
 
@@ -57,12 +57,12 @@ Jede Zeile in der Tabelle `enterprise_rma` (in Adobe Commerce 2.x häufig als `m
 
 `sale_flat_order`
 
-* Erstellen Sie verbundene Spalten, um mithilfe des folgenden Joins nach Attributen auf Bestellebene in der Tabelle `enterprise_rma` zu segmentieren und zu filtern:
-   * Commerce 1.x: `enterprise_rma.order_id` (viele) => `sales_flat_order.entity_id` (eins)
-   * Commerce 2.x: `magento_rma.order_id` (viele) => `sales_order.entity_id` (eins)
+* Erstellen Sie verknüpfte Spalten, um mithilfe der folgenden Verknüpfung zu segmentieren und nach Attributen auf Auftragsebene in der `enterprise_rma`-Tabelle zu filtern:
+   * Commerce 1.x: `enterprise_rma.order_id` (viele) => `sales_flat_order.entity_id` (eine)
+   * Commerce 2.x: `magento_rma.order_id` (viele) => `sales_order.entity_id` (eine)
 
 `enterprise_rma_item_entity`
 
-* Erstellen Sie mit dem folgenden Join eine n:n-Spalte wie `Return's total value` auf der Tabelle `enterprise_rma`:
-   * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id` (viele) => `enterprise_rma.entity_id` (eins)
-   * Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` (viele) => `magento_rma.entity_id` (eins)
+* Erstellen Sie Viele-zu-eins-Spalten wie `Return's total value` in der `enterprise_rma`-Tabelle über den folgenden Join:
+   * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id` (viele) => `enterprise_rma.entity_id` (eine)
+   * Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` (viele) => `magento_rma.entity_id` (eine)

@@ -1,6 +1,6 @@
 ---
-title: Zugriff auf Metriken beschränken
-description: Erfahren Sie, wie Sie mit dem Zugriff auf Metriken und Einschränkungen arbeiten.
+title: Zugriff auf Metriken einschränken
+description: Erfahren Sie, wie Sie mit Metriken und Zugriffsbeschränkungen arbeiten.
 exl-id: 88f5ca7a-8073-4968-9685-95f141b2a87f
 role: Admin, User
 feature: User Management
@@ -11,24 +11,24 @@ ht-degree: 0%
 
 ---
 
-# Benutzer von Metriken verwalten
+# Verwalten von Metriken für Benutzer
 
-Sie können nicht nur Benutzerberechtigungsstufen festlegen, sondern auch den Zugriff auf Metriken für einzelne Benutzer einschränken. Wenn Sie beispielsweise möchten, dass Ihre Buchhaltungsabteilung Zugriff auf umsatzbezogene Metriken hat, aber keine Benutzerakquise-Metriken, können Sie den Zugriff auf diese Metriken beschränken.
+Zusätzlich zur Festlegung von Benutzerberechtigungsebenen können Sie den Zugriff auf Metriken auch benutzerspezifisch einschränken. Wenn Sie beispielsweise möchten, dass Ihre Buchhaltungsabteilung Zugriff auf umsatzbezogene Metriken, aber nicht auf Metriken zur Benutzerakquise hat, können Sie den Zugriff auf diese Metriken einschränken.
 
-In solchen Fällen empfiehlt Adobe, das Benutzerkonto auf **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)** festzulegen. **[!UICONTROL Standard]** -Berechtigungen sollten Benutzern erteilt werden, die keine Metriken, berechneten Spalten, Integrationen oder Benutzer erstellen oder ändern müssen, aber Zugriff auf Daten im Data Warehouse benötigen. Wenn Sie den Zugriff auf Daten vollständig beschränken möchten, verwenden Sie stattdessen die **[!UICONTROL Read Only]** -Berechtigungen.
+In Fällen wie diesen empfiehlt Adobe, das Konto dieses Benutzers auf **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)** zu setzen. **[!UICONTROL Standard]** sollten Benutzenden gewährt werden, die keine Metriken, berechneten Spalten, Integrationen oder Benutzenden erstellen oder ändern müssen, aber Zugriff auf Daten auf der Data Warehouse benötigen. Wenn Sie den Zugriff auf Daten vollständig einschränken möchten, verwenden Sie stattdessen die **[!UICONTROL Read Only]** .
 
-Nachdem Sie die Berechtigungsebene festgelegt haben, können Sie die Metriken auswählen, auf die ein **[!UICONTROL Standard]** -Benutzer zugreifen kann, indem Sie Folgendes tun:
+Nachdem Sie die Berechtigungsstufe festgelegt haben, können Sie die Metriken auswählen, auf die ein **[!UICONTROL Standard]** Benutzer zugreifen kann, indem Sie folgende Schritte ausführen:
 
-1. Gehen Sie zu **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
-1. Wählen Sie das gewünschte Benutzerkonto aus.
-1. Auf der Registerkarte **[!UICONTROL Metrics]** wird eine Liste der verfügbaren Metriken angezeigt. Überprüfen Sie die Metriken, auf die der Benutzer Zugriff haben soll, und heben Sie die Auswahl für die Metriken auf, auf die der Benutzer keinen Zugriff haben soll.
+1. Navigieren Sie zu **[!UICONTROL Account Settings]** > **[!UICONTROL Manage Users]**.
+1. Das gewünschte Benutzerkonto auswählen.
+1. Auf der Registerkarte **[!UICONTROL Metrics]** wird eine Liste der verfügbaren Metriken angezeigt. Markieren Sie die Metriken, auf die der Benutzer Zugriff haben soll, und heben Sie die Auswahl der Metriken auf, auf die der Benutzer keinen Zugriff haben soll.
 1. [!DNL Adobe Commerce Intelligence] speichert die Änderungen automatisch. Wenn die Änderung erfolgreich war, zeigt [!DNL Commerce Intelligence] oben auf der Seite **[!UICONTROL Saved!]** an.
 
 >[!NOTE]
 >
->Alle Benutzer mit **[!UICONTROL Standard]** -Berechtigungen können über den Datenexport auf alle Daten in der Data Warehouse zugreifen - zusätzlich zu allen Metriken aus [!DNL Google Analytics].
+>Alle Benutzer mit **[!UICONTROL Standard]** Berechtigungen können über den Datenexport zusätzlich zu allen Metriken von [!DNL Google Analytics] auf alle Daten auf der Data Warehouse zugreifen.
 
-Sie können den Zugriff auf eine Metrik auch beschränken, indem Sie die Metrik bearbeiten und **[!UICONTROL Standard]** Benutzer im Abschnitt **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)** auswählen.
+Sie können den Zugriff auf eine Metrik auch einschränken, indem Sie die Metrik bearbeiten und **[!UICONTROL Standard]** im Abschnitt **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)** Benutzer auswählen.
 
 >[!NOTE]
 >

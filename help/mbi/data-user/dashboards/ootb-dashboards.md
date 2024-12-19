@@ -1,6 +1,6 @@
 ---
-title: Einbezogene Dashboards
-description: Erfahren Sie, wie Sie die Gesundheit wichtiger Metriken wie den Umsatz während der Nutzungsdauer, die Anzahl wiederholter Käufe und mehr überprüfen und so eine solide Grundlage für die zukünftige Exploration schaffen können.
+title: Enthaltene Dashboards
+description: Erfahren Sie, wie Sie den Zustand wichtiger Metriken wie Benutzerlebensdauerumsatz, Anzahl der Wiederholungskäufe und mehr überprüfen können, um so eine solide Grundlage für die zukünftige Untersuchung zu schaffen.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -11,90 +11,90 @@ ht-degree: 0%
 
 ---
 
-# Einbezogene Dashboards
+# Enthaltene Dashboards
 
-[!DNL Adobe] bietet `eCommerce` - und `SaaS` Starter-Pakete an. Diese von Adobe-Analysten erstellten Packages enthalten einen benutzerdefinierten Satz von Dashboards und Berichten für Ihren Datensatz. Die in diesen Packages enthaltenen Analysen ermöglichen es Ihnen, die Gesundheit wichtiger Metriken wie der Umsatz der Nutzer über die Lebensdauer, die Anzahl wiederholter Käufe und mehr zu überprüfen und so eine solide Grundlage für die zukünftige Erforschung zu schaffen.
+[!DNL Adobe] bietet `eCommerce` und `SaaS` Starter-Pakete an. Diese von Adobe-Analysten erstellten Pakete enthalten eine benutzerdefinierte Reihe von Dashboards und Berichten für Ihren Datensatz. Die in diesen Paketen enthaltenen Analysen ermöglichen es Ihnen, den Zustand wesentlicher Metriken wie den Lebensdauerumsatz der Benutzenden, die Anzahl der Wiederholungskäufe und mehr zu überprüfen und so eine solide Grundlage für die zukünftige Exploration zu schaffen.
 
 >[!NOTE]
 >
 >Die Verfügbarkeit einiger Dashboards hängt von Ihrem Datensatz ab.
 
-Wenn Sie Fragen haben oder ein Paket zu Ihrem Konto hinzufügen möchten, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) zur Hilfe.
+Wenn Sie Fragen haben oder daran interessiert sind, ein Paket zu Ihrem Konto hinzuzufügen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um Hilfe zu erhalten.
 
-## Übersicht über das Unternehmen
+## Überblick für Führungskräfte
 
-Das Dashboard `executive overview` wird aus Diagrammen erstellt, die in anderen Dashboards vorhanden sind. Dieses Dashboard bietet einen allgemeinen Überblick über Ihre Daten und enthält Diagramme, die täglich überprüft werden, während andere Dashboards detailliertere Informationen enthalten. Zunächst wird es in jedem Konto als Standard-Dashboard festgelegt.
+Das `executive overview` Dashboard wird aus Diagrammen erstellt, die in anderen Dashboards vorhanden sind. Dieses Dashboard bietet einen allgemeinen Überblick über Ihre Daten und enthält Diagramme, die täglich überprüft werden, während andere Dashboards detailliertere Informationen enthalten. Zunächst wird es in jedem Konto als Standard-Dashboard festgelegt.
 
-Ein allgemeiner Grafiksatz ist für Sie enthalten. Adobe empfiehlt, dieses Dashboard Ihren Bedürfnissen anzupassen, indem Sie weitere Diagramme hinzufügen, die Sie am häufigsten verwenden.
+Ein allgemeiner Satz von Diagrammen ist für Sie enthalten. Adobe empfiehlt, dieses Dashboard an Ihre Anforderungen anzupassen, indem Sie andere Diagramme hinzufügen, die Sie am häufigsten verwenden.
 
 ## Kohortenanalyse
 
-Das Dashboard `cohort analysis` enthält eine Reihe von Diagrammen, die das durchschnittliche Umsatzwachstum und den inkrementellen Umsatzzuwachs für die gesamte Lebensdauer anzeigen, gruppiert nach Registrierungskohorten. Dies zeigt, ob der Lebenszeitwert (LTV) eines Kunden, der Wert eines Kunden für ein Unternehmen, im Laufe der Zeit zunimmt, und identifiziert auch Trends rund um das LTV-Wachstum. Standardmäßig werden *alle registrierten Benutzer (Käufer und Nicht-Käufer) für* in der durchschnittlichen LTV-Berechnung berücksichtigt - siehe das Thema [Kohortenanalyse](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
+Das `cohort analysis`-Dashboard enthält eine Reihe von Diagrammen, die das durchschnittliche Wachstum des Benutzerumsatzes während der Lebensdauer und das inkrementelle Umsatzwachstum gruppiert nach Registrierungskohorten zeigen. So lässt sich feststellen, ob der Kundenlebenszeitwert (LTV), der Wert eines Kunden für ein Unternehmen, im Laufe der Zeit steigt, und es lassen sich Trends rund um das LTV-Wachstum erkennen. Standardmäßig werden *alle registrierten Benutzer (Käufer und Nicht-Käufer) bei der Berechnung* durchschnittlichen LTV berücksichtigt - siehe [Thema Kohortenanalyse](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
 
-Dieses Dashboard kann auch Kohortendiagramme enthalten, die den Lebenszeitumsatz von Benutzern aus einer bestimmten Akquisequelle, einem bestimmten Kanal oder einer bestimmten demografischen Gruppe analysieren (z. B. New York oder Kalifornien). Damit wird veranschaulicht, wie Sie LTV für bestimmte Segmente Ihrer Benutzerbasis analysieren und feststellen können, ob eine Gruppe im Laufe der Zeit höhere LTV-Werte liefert.
+Dieses Dashboard kann auch Kohortendiagramme enthalten, die den Lebenszeitumsatz von Benutzenden aus einer bestimmten Akquisequelle, einem bestimmten Kanal oder einer bestimmten demografischen Gruppe (z. B. New York oder Kalifornien) analysieren. Auf diese Weise können Sie LTV für bestimmte Segmente Ihrer Benutzerbasis analysieren und sehen, ob die eine oder andere Gruppe im Laufe der Zeit höhere LTV-Werte erzielt.
 
 Weitere Informationen zu Kohorten finden Sie unter [Durchführen einer Kohortenanalyse](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
 
-Wenn Sie derzeit keine Benutzerakquise-Quelle verfolgen, lesen Sie den Abschnitt [Tracking User Acquisition Source Data Overview](../../data-analyst/analysis/google-track-user-acq.md) .
+Wenn Sie derzeit keine Quelle für die Benutzerakquise verfolgen, lesen Sie den Abschnitt [Übersicht über Source-Daten zur Benutzerakquise ](../../data-analyst/analysis/google-track-user-acq.md).
 
-## Email summary
+## E-Mail-Zusammenfassung
 
-Das Dashboard `Email Summary` enthält einen Beispielsatz von Diagrammen, die in einer automatisierten täglichen E-Mail-Zusammenfassung verwendet werden können. Weitere Informationen zum Konfigurieren von E-Mail-Zusammenfassungen finden Sie unter [Erstellen automatisierter E-Mail-Zusammenfassungen](../../data-user/export-data/email-summaries.md) .  
+Das `Email Summary`-Dashboard enthält einen Beispielsatz von Diagrammen, die in einer automatisierten täglichen E-Mail-Zusammenfassung verwendet werden können. Weitere Informationen [ Konfigurieren von E-Mail](../../data-user/export-data/email-summaries.md)Zusammenfassungen finden Sie unter „Erstellen automatisierter E-Mail-Zusammenfassungen“.  
 
-## Treuestufe
+## Aufbewahrungszustand
 
-Das Dashboard `Retention health` zeigt das wiederholte Kaufverhalten Ihrer Benutzerbasis an.
+Das `Retention health`-Dashboard zeigt das Verhalten beim wiederholten Kauf Ihres Benutzerstamms an.
 
-Das Diagramm `Time between orders` zeigt die durchschnittliche und/oder mittlere verstrichene Zeit zwischen der ersten und zweiten Bestellung eines Benutzers, der zweiten und dritten Reihenfolge usw. Sie können [erwägen, diese Daten zur Konfiguration Ihrer E-Mail-Marketing-Kampagnen zu verwenden](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/).
+Das `Time between orders` Diagramm zeigt die durchschnittliche und/oder mediane Zeit zwischen der ersten und zweiten, zweiten und dritten Ordnung usw. eines Benutzers. Sie können [diese Daten zur Konfiguration Ihrer E-Mail-Marketing-Kampagnen verwenden](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/).
 
-In der `Users by lifetime number of orders` -Grafik wird die Gesamtanzahl der Benutzer für jede Lebensdauer von Bestellungen aufgeführt, um einen allgemeinen Überblick über das Verhalten bei wiederholten Bestellungen zu erhalten.  
+Das `Users by lifetime number of orders` Diagramm listet die Gesamtzahl der Benutzer für jede lebenslange Anzahl von Bestellungen auf, um einen allgemeinen Überblick über das Verhalten bei wiederholten Käufen zu geben.  
 
-Das Diagramm `Repeat order probability` zeigt die Wahrscheinlichkeit an, dass ein Benutzer mit einer bestimmten Bestellnummer einen wiederholten Kauf tätigt. Um die Wahrscheinlichkeit zu sehen, mit der Kunden, die `x` Bestellungen getätigt haben, um `(x+1)` Bestellungen zu tätigen, einfach die Anzahl der Personen, die mindestens `(x+1)` Bestellungen getätigt haben, durch die Anzahl der Personen zu teilen, die mindestens `x` Bestellungen getätigt haben.
+Das `Repeat order probability` zeigt die Wahrscheinlichkeit, dass ein Benutzer mit einer bestimmten Bestellnummer einen wiederholten Kauf tätigt. Um die Wahrscheinlichkeit von Kunden zu sehen, die `x` Bestellungen getätigt haben, um `(x+1)` Bestellungen zu tätigen, teilen Sie einfach die Anzahl der Personen, die mindestens `(x+1)` Einkäufe getätigt haben, durch die Anzahl der Personen, die mindestens `x` Einkäufe getätigt haben.
 
 ### Beispiel
 
-Anzahl der Kunden, die während ihrer Lebensdauer einen Kauf getätigt haben: `90`
+Anzahl der Kunden, die im Laufe ihres Lebens einen Kauf getätigt haben: `90`
 
-Anzahl der Kunden, die während ihrer Lebensdauer zwei Käufe getätigt haben: `30`
+Anzahl der Kunden, die im Laufe ihres Lebens zwei Käufe getätigt haben: `30`
 
-Anzahl der Kunden, die während ihrer Lebensdauer drei Käufe getätigt haben: `10`
+Anzahl der Kunden, die im Laufe ihres Lebens drei Käufe getätigt haben: `10`
 
-In diesem Beispiel beträgt die Wiederholungsbestellwahrscheinlichkeit von Kunden, die während ihrer Lebensdauer einen Kauf getätigt haben, um einen zweiten Kauf zu tätigen: `(30 + 10) / (30+10+90) = 30.77%`.
+In diesem Beispiel ist die Wahrscheinlichkeit der Wiederholungsbestellung von Kunden, die einen Kauf im Laufe ihres Lebens getätigt haben, um einen zweiten Kauf zu tätigen, `(30 + 10) / (30+10+90) = 30.77%`.
 
-## Wachstum von Kunden-LTV
+## Kunden-LTV-Wachstum
 
-Das Dashboard `Customer LTV growth` enthält eine Reihe von Diagrammen, die den durchschnittlichen Umsatz pro Benutzer ermitteln. Die Diagramme werden basierend auf dem durchschnittlichen Umsatz segmentiert, der innerhalb der ersten 30, 60, 90 oder 365 Tage nach der Registrierung generiert wird.  
+Das `Customer LTV growth`-Dashboard enthält eine Reihe von Diagrammen, die den durchschnittlichen Umsatz pro Benutzer ermitteln. Die Diagramme sind auf der Grundlage des durchschnittlichen Umsatzes segmentiert, der entweder innerhalb der ersten 30, 60, 90 oder 365 Tage nach der Registrierung generiert wird.  
 
-Die untere Tabellenzeile zeigt, dass diese Durchschnittswerte segmentiert nach Akquise-Quellen oder demografischen Daten zeigen, welche Benutzergruppen im Laufe der Zeit den meisten Umsatz generieren.
+Die untere Zeile der Diagramme zeigt, dass diese Durchschnittswerte nach Akquisequellen oder Demographien segmentiert sind, um zu zeigen, welche Benutzergruppen im Laufe der Zeit den meisten Umsatz generieren.
 
 ## Produktleistung
 
-Das Dashboard `Product Performance` enthält Diagramme, in denen die allgemeine Produktleistung dargestellt wird, indem die Anzahl der verkauften Artikel und der Umsatz nach Artikeln angezeigt und die leistungsstärksten Produkte ermittelt werden.
+Das `Product Performance`-Dashboard enthält Diagramme, die die allgemeine Produktleistung anzeigen, indem sie die Anzahl der verkauften Artikel und den Umsatz nach Artikel anzeigen und die leistungsstärksten Produkte identifizieren.
 
 ## Letzte Aktivität
 
-Das Dashboard `Recent Activity` zeigt Leistungsdaten aus den letzten 30 Tagen an.
+Das `Recent Activity`-Dashboard zeigt Leistungsdaten für die letzten 30 Tage an.
 
 ## Transaktionsstatus
 
-Das Dashboard `Transaction Health` enthält Übersichtsdiagramme zu Umsatz, Bestellungen und durchschnittlichem Bestellwert. Diese Diagramme können nach Marketing-Kanälen, demografischen Daten oder speziellen Couponcodes segmentiert werden.
+Das `Transaction Health`-Dashboard enthält Übersichtsdiagramme mit Umsatz, Bestellungen und durchschnittlichem Bestellwert. Diese Diagramme können nach Marketing-Kanälen, Demografie oder speziellen Couponcodes segmentiert werden.
 
-## Benutzer zum Targeting
+## Zielgruppe der Benutzer
 
-Das Dashboard `Users to target` enthält Tabellen-Grafiken, die Benutzer mit gemeinsamen Kaufverhaltensweisen auflisten. Zu den Beispielen gehören:
+Das `Users to target`-Dashboard enthält tabellenartige Diagramme, in denen Benutzende mit bestimmten gemeinsamen Kaufverhaltensweisen aufgelistet sind. Einige Beispiele:
 
 * Liste der einmaligen Käufer, die vor `X` Monaten gekauft haben (die Sie möglicherweise reaktivieren möchten)
 
-* Liste der wichtigsten Geldgeber (die Sie möglicherweise glücklich halten möchten)
+* Liste der Top-Spender (die Sie vielleicht glücklich halten möchten)
 
-* Liste der wichtigsten Geldgeber, die in den letzten `X` Tagen aktiv waren (die Sie möglicherweise belohnen möchten)
+* Liste der Top-Spender, die in den letzten `X` Tagen aktiv waren (wen Sie möglicherweise belohnen möchten)
 
-Mit Ihren Datenexport-Tools können Sie [E-Mail-Listen von Benutzern erstellen, die ähnliche Kaufverhaltensweisen für das Zielmarketing haben](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/).
+Mit Ihren Datenexportwerkzeugen können Sie ganz einfach [E-Mail-Listen von Benutzern mit ähnlichem Kaufverhalten für Target-Marketing erstellen](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/).
 
 ## Benutzeraktivität
 
-Das Dashboard `User activity` enthält Diagramme, die Benutzer nach verschiedenen Daten segmentieren, einschließlich Akquise-Quelle, demografischen Daten und durchschnittlicher Erstbestellung. Er enthält auch die Analyse der Benutzerkohorte, einschließlich des durchschnittlichen Gesamtumsatzes während der Lebensdauer nach dem Registrierungsmonat des Benutzers.
+Das `User activity`-Dashboard enthält Diagramme, die Benutzer nach verschiedenen Daten segmentieren, einschließlich der Akquise, der Demografie und der durchschnittlichen Erstbestellung. Sie enthält auch eine Analyse der Benutzergruppen, einschließlich des durchschnittlichen Gesamtumsatzes während der Lebensdauer nach Registrierungsmonat der Benutzer.
 
-Das Diagramm `% of cohort members who have purchased` ist nützlich, da es das Konversionsverhältnis (von 0 bis 1) der Benutzer basierend auf dem Zeitpunkt der Registrierung anzeigt (jede Zeile stellt eine Kohorte von Benutzern dar). Er zeigt auch an, wann er seinen ersten Kauf tätigt (z. B. in Monat 1, 2, 3... nach der Registrierung). Dies kann zeigen, dass 10 % der Benutzer im Monat 1 aktiviert haben, während diese Zahl im Monat 2, 3, 4... zunimmt und sich später versteigern kann.
+Das `% of cohort members who have purchased` Diagramm ist nützlich, da es das Konversionsverhältnis (von 0 bis 1) von Benutzern basierend auf dem Zeitpunkt ihrer Registrierung anzeigt (jede Zeile stellt eine Kohorte von Benutzern dar). Es zeigt auch an, wann sie ihren ersten Kauf tätigen (z. B. in Monat 1, 2, 3… nach der Registrierung). Dies kann zeigen, dass 10 % der Benutzenden in Monat 1 aktiviert wurden, während diese Zahl in Monat 2, 3, 4… zunimmt und später ein Plateau erreicht werden kann.
 
-In der Regel werden die Zeilen in dieser Grafik nach einigen Zeiträumen horizontal. Dies weist darauf hin, dass nach diesem Zeitpunkt nur wenige weitere Kohortenmitglieder organisch konvertieren - die meisten Benutzer, die einen Kauf tätigen werden, haben dies bereits getan. An dieser Stelle ist es höchst unwahrscheinlich, dass diese Mitglieder ohne Eingreifen in Käufer konvertieren. [Mit benutzerdefinierten Promotions oder zielgerichteten E-Mails auf sie zuzugreifen ist eine Methode, mit der die Konversion dieser Population mit geringem Risiko beschleunigt werden kann.](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)
+In der Regel werden die Linien in diesem Diagramm nach einiger Zeit horizontal. Dies deutet darauf hin, dass nach diesem Zeitpunkt nur wenige zusätzliche Kohortenmitglieder organisch konvertieren - die meisten Benutzer, die einen Kauf tätigen werden, haben dies bereits getan. Zum gegenwärtigen Zeitpunkt ist es höchst unwahrscheinlich, dass diese Mitglieder ohne Eingreifen in Käufer übergehen. [Sie mit benutzerdefinierten Promotions oder zielgerichteten E-Mails zu kontaktieren, ist eine risikoarme Methode, um die Konversion dieser Population zu starten.](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)

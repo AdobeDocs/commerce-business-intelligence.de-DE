@@ -1,6 +1,6 @@
 ---
-title: Importieren anderer Anzeigenausgabedaten
-description: Erfahren Sie, wie Sie Offline- oder andere Daten zu Werbeausgaben in [!DNL Commerce Intelligence] importieren.
+title: Andere Anzeigenausgabendaten importieren
+description: Erfahren Sie, wie Sie Daten zu Offline- oder anderen Werbeausgaben in importieren [!DNL Commerce Intelligence].
 exl-id: 6f12a397-0927-4e87-95ff-3a55ccc9e14b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,30 +11,30 @@ ht-degree: 0%
 
 ---
 
-# Importieren anderer Anzeigenausgabedaten
+# Andere Anzeigenausgabendaten importieren
 
-Durch das Hochladen Ihrer Daten zu Werbeausgaben können Sie den ROI Ihrer Kampagne messen, indem Sie Ihre Werbekosten und die `customer lifetime value (CLV)` der durch Ihre Kampagnen erworbenen Benutzer miteinander verbinden.
+Durch das Hochladen Ihrer Werbeausgabendaten können Sie den Kampagnen-ROI messen, indem Sie Ihre Werbekosten und die `customer lifetime value (CLV)` der aus Ihren Kampagnen erworbenen Benutzer vereinen.
 
-## Hochladen von Daten zu Werbekosten
+## Hochladen von Werbekostendaten
 
-Der erste Schritt bei der Analyse der Daten zu Anzeigenausgaben besteht darin, die Daten abzurufen. Da die meisten Werbeplattformen den Export von Berichten ermöglichen, empfiehlt Adobe, die Rohdaten von Ihrer Anzeigenplattform zu exportieren und direkt ohne Manipulation in [!DNL Commerce Intelligence] hochzuladen. Sie können Vorgänge für die Daten in Ihrer Data Warehouse durchführen, sodass Sie Ihre Bemühungen nicht verdoppeln müssen.
+Der erste Schritt bei der Analyse und Verwendung von Daten besteht darin, die Daten abzurufen. Da die meisten Werbeplattformen den Export von Berichten ermöglichen, empfiehlt Adobe, die Rohdaten von Ihrer Werbeplattform zu exportieren und ohne Manipulation direkt in [!DNL Commerce Intelligence] hochzuladen. Sie können Vorgänge mit den Daten auf Ihrem Data Warehouse durchführen, sodass Sie Ihre Anstrengungen nicht verdoppeln müssen.
 
-Nachdem Sie die Anzeigenausgabedaten exportiert haben, verwenden Sie die [`File Upload`-Funktion](../connecting-data/using-file-uploader.md) , um die Daten in Ihre Data Warehouse zu übertragen. Sie können neue Daten im Laufe der Zeit in dieselbe [!DNL Commerce Intelligence]-Tabelle hochladen.
+Nachdem Sie die Daten zu Werbeausgaben exportiert haben, verwenden Sie die [`File Upload` Funktion](../connecting-data/using-file-uploader.md) um die Daten auf Ihren Data Warehouse zu bringen. Sie können im Laufe der Zeit neue Daten in dieselbe [!DNL Commerce Intelligence]-Tabelle hochladen.
 
 ## Offline-Quellen
 
-Zusätzlich zu Ihren Online-Kampagnen können Sie auch offline Werbung schalten, z. B. im Radio oder auf einer Werbeplakette. Um dies zu berücksichtigen, können Sie eine Tabelle mit den Kostendaten manuell in [!DNL Commerce Intelligence] hochladen.
+Zusätzlich zu Ihren Online-Kampagnen können Sie auch Offline-Werbung schalten, z. B. im Radio oder auf einer Plakatwand. Um diesen Fällen Rechnung zu tragen, können Sie manuell eine Tabelle mit den Kostendaten in [!DNL Commerce Intelligence] hochladen.
 
-Die unten beschriebene Tabellenstruktur wird beim Erstellen einer `.csv` -Datei zur Aufzeichnung von Anzeigenausgabedaten empfohlen. Eine Vorlagendatei wird ebenfalls am Ende dieses Themas als Beispiel angehängt. Empfohlene Spalten:
+Die unten untersuchte Tabellenstruktur wird beim Erstellen einer `.csv` zum Aufzeichnen und Ausgeben von Daten empfohlen. Eine Vorlagendatei wird ebenfalls am Ende dieses Themas angehängt, um als Beispiel zu dienen. Empfohlene Spalten sind:
 
-* `ID` - Dies ist eine eindeutige Kennung für jede Datenzeile, die von der Datenbank als Primärschlüssel verwendet wird. Dies muss für jede Zeile anders sein.
-* `Date` - Dies ist das Datum, an dem die Kampagne im Format JJJJ-MM-TT ausgeführt wurde.
-* `Amount` - Dies ist der Betrag, den Sie für die Kampagne ausgegeben haben.
-* `campaign` - Dies ist der Kampagnenname. Wenn Sie [!DNL Google Analytics] verwenden, um Ihre anderen Daten zu Werbeausgaben zu verfolgen, sollte dies mit dem Namen utm\_campaign übereinstimmen.
-* `source` - Dies ist der Quellname. Wenn Sie [!DNL Google Analytics] verwenden, sollte dies mit dem `utm_source` -Namen übereinstimmen.
-* `other` (Optional) - Sie können auch zusätzliche Spalten einfügen, die Ihnen bei der Segmentierung von Kampagnen und Kosten helfen. Es kann auch eine Möglichkeit sein, mehrere verschiedene UTM-Kampagnennamen zu Tracking-Zwecken in einer einzigen, kohärenten Kampagne zusammenzufassen. Anstatt dies manuell einzurichten, kann es sinnvoll sein, eine V-Suche in einem zweiten Blatt zu verwenden, um jeden Kampagnennamen mit dem anderen Namen abzugleichen und ihn hier dynamisch zu melden.
+* `ID` : Dies ist eine eindeutige Kennung für jede Datenzeile, die von der Datenbank als Primärschlüssel verwendet wird. Dieser muss für jede Zeile anders sein.
+* `Date` - Dies ist das Datum, an dem die Kampagne ausgeführt wurde, im Format jjjjj-mm-tt.
+* `Amount` : Dies ist der Betrag, den Sie für die Kampagne ausgegeben haben.
+* `campaign` : Dies ist der Kampagnenname. Wenn Sie [!DNL Google Analytics] zum Nachverfolgen Ihrer anderen Anzeigenausgabendaten verwenden, sollte diese mit dem utm\_campaign-Namen übereinstimmen.
+* `source` - Dies ist der Quellenname. Wenn Sie [!DNL Google Analytics] verwenden, sollte dies mit dem `utm_source` übereinstimmen.
+* `other` (Optional) - Sie können auch zusätzliche Spalten einbeziehen, um Kampagnen und Kosten zu segmentieren. Außerdem kann es eine Möglichkeit sein, mehrere verschiedene UTM-Kampagnennamen zu Tracking-Zwecken in einer einzigen, kohärenten Kampagne zusammenzufassen. Anstatt dies manuell einzurichten, empfiehlt es sich möglicherweise, eine V-Suche zu verwenden, um ein zweites Blatt zu verwenden, um jeden Kampagnennamen mit dem anderen Namen abzugleichen und ihn hier dynamisch zu melden.
 
-## Verwandte
+## verwandt
 
-* [ [!DNL AdWords] data verbinden](../integrations/google-adwords.md)
-* [Steigerung des ROI bei Werbekampagnen](../../analysis/roi-ad-camp.md)
+* [ [!DNL AdWords] ](../integrations/google-adwords.md)
+* [Steigerung des ROI von Werbekampagnen](../../analysis/roi-ad-camp.md)

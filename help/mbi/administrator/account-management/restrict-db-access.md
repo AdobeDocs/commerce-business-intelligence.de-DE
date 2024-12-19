@@ -1,6 +1,6 @@
 ---
-title: Einschränken des Zugriffs auf Ihre Datenbank
-description: Erfahren Sie, wie Sie den Zugriff einschränken und den Zugriff auf den Server beschränken können, auf dem sich Ihre Datenbank befindet.
+title: Beschränken des Zugriffs auf Ihre Datenbank
+description: Erfahren Sie, wie Sie den Zugriff einschränken und so den Zugriff auf den Server einschränken können, auf dem sich Ihre Datenbank befindet.
 exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
 role: Admin, User
 feature: Accounts, User Management
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Zugriff beschränken
 
-Wenn Sie einen SSH-Tunnel zu Ihrem Server erstellen, muss [!DNL Adobe Commerce Intelligence] nur auf die Datenbank zugreifen können. Wenn Sie nicht möchten, dass [!DNL Commerce Intelligence] vollen Zugriff auf den Server hat, auf dem Ihre Datenbank gespeichert ist, können Sie den Zugriff beschränken, indem Sie den Benutzer [!DNL Commerce Intelligence Linux] in eine [beschränkte Bash-Shell](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html) zwingen.
+Wenn Sie einen SSH-Tunnel zu Ihrem Server erstellen, müssen [!DNL Adobe Commerce Intelligence] auf nichts anderes als auf die Datenbank zugreifen können. Wenn Sie nicht möchten, dass [!DNL Commerce Intelligence] vollen Zugriff auf den Server haben, auf dem sich Ihre Datenbank befindet, können Sie den Zugriff einschränken, indem Sie den [!DNL Commerce Intelligence Linux] Benutzer in eine [eingeschränkte Bash-Shell“ ](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
 
-Sie haben vielleicht vom Namen aus erraten, aber eine beschränkte Bash-Shell wird verwendet, um eine Umgebung einzurichten, die besser kontrolliert ist als die Standard-Shell. Wichtig an dieser Art von Shell ist, dass beschränkte Shell-Benutzer nicht auf Systemfunktionen zugreifen oder irgendwelche Änderungen vornehmen können.
+Sie können den Namen bereits erraten haben, aber eine eingeschränkte Bash-Shell wird verwendet, um eine Umgebung einzurichten, die kontrollierter ist als die Standard-Shell. Das Wichtige an dieser Art von Shell ist, dass eingeschränkte Shell-Benutzer nicht auf Systemfunktionen zugreifen oder irgendwelche Änderungen vornehmen können.
 
-Um den Benutzer [!DNL Commerce Intelligence Linux] zu beschränken, müssen Sie zwei Schritte durchführen:
+Um den [!DNL Commerce Intelligence Linux] Benutzer einzuschränken, müssen Sie zwei Dinge tun:
 
-1. Ändern Sie die Umgebungsvariable PATH in die leere Zeichenfolge. Das bedeutet, dass der Benutzer nicht auf ausführbare Systemtabellen zugreifen kann.
+1. Ändern Sie die PATH-Umgebungsvariable in die leere Zeichenfolge. Das bedeutet, dass der Benutzer nicht auf ausführbare Dateien des Systems zugreifen kann.
 
-1. Stellen Sie sicher, dass die ausgeführte Shell `bash -r` ist.
+1. Stellen Sie sicher, dass die ausgeführte Shell `bash -r` ist
 
-Beide können innerhalb der Datei `authorized_keys` im Home `dir/.ssh`-Verzeichnis des Benutzers im Rahmen des Befehls ausgeführt werden, der bei der Anmeldung des Benutzers ausgeführt wird. Es sieht ungefähr so aus:
+Beide Aktionen können in der `authorized_keys`-Datei im `dir/.ssh` des Benutzers als Teil des Befehls ausgeführt werden, der bei der Anmeldung des Benutzers ausgeführt wird. Er sieht in etwa so aus:
 
 ```bash
 ... other keys ...

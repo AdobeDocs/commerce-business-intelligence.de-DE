@@ -1,6 +1,6 @@
 ---
 title: Importieren von MailChimp-Daten
-description: Erfahren Sie, wie Sie MailChimp-Daten in [!DNL Commerce Intelligence] importieren.
+description: Erfahren Sie, wie Sie MailChimp-Daten in  [!DNL Commerce Intelligence].
 exl-id: 5595c6a6-5476-4a0e-a493-ddc32161894e
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,68 +11,68 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Mailchimp] Daten importieren
+# [!DNL Mailchimp] importieren
 
-Um ein umfassendes Bild Ihrer Kampagnenbemühungen zu erhalten, können Sie Ihre [!DNL Mailchimp] E-Mail-Kampagnendaten in [!DNL Commerce Intelligence] importieren. Um den Import abzuschließen, müssen Sie für jede vorhandene [!DNL Mailchimp]-Kampagne die folgenden Schritte ausführen:
+Um sich einen umfassenden Überblick über Ihre Kampagnen zu verschaffen, können Sie Ihre [!DNL Mailchimp] E-Mail-Kampagnendaten in [!DNL Commerce Intelligence] importieren. Um den Import abzuschließen, müssen Sie für jede [!DNL Mailchimp] Kampagne, die Sie haben, Folgendes tun:
 
-## Exportieren von Daten zu Öffnungen {#opens}
+## Öffnen von Daten exportieren {#opens}
 
-1. Gehen Sie nach dem Anmelden bei [!DNL Mailchimp] zur Registerkarte `Campaigns` .
+1. Navigieren Sie nach der Anmeldung bei [!DNL Mailchimp] zur Registerkarte `Campaigns` .
 
-   ![import mailchimp 1](../../../assets/import-mailchimp-1.png)
+   ![Importieren von MailChimp 1](../../../assets/import-mailchimp-1.png)
 
-1. Klicken Sie neben dem Kampagnennamen auf **[!UICONTROL View Report]**.
+1. Klicken Sie **[!UICONTROL View Report]** neben dem Kampagnennamen.
 
-   ![import mailchimp 2](../../../assets/import-mailchimp-2.png)
+   ![Importieren von MailChimp 2](../../../assets/import-mailchimp-2.png)
 
-1. Klicken Sie auf die Nummer **[!UICONTROL Opened]** .
+1. Klicken Sie auf die **[!UICONTROL Opened]**.
 
-   ![import mailchimp 3](../../../assets/import-mailchimp-3.png)
+   ![Importieren von MailChimp 3](../../../assets/import-mailchimp-3.png)
 
-1. Klicken Sie auf &quot;**[!UICONTROL Export]**&quot;und speichern Sie die Datei &quot;`.csv`&quot;.
+1. Klicken Sie auf **[!UICONTROL Export]** und speichern Sie die `.csv`.
 
-   Sie müssen dieser Datei die Spalten `primary key`, `date (mm/dd/yyyy)` und `campaign name` hinzufügen. Stellen Sie sicher, dass die `primary keys` für jede Zeile eindeutig sind.
+   Sie müssen dieser Datei `primary key`, `date (mm/dd/yyyy)` und `campaign name` Spalten hinzufügen. Stellen Sie sicher, dass die `primary keys` für jede Zeile eindeutig sind.
 
-   ![import mailchimp 4](../../../assets/import-mailchimp-4.png)
+   ![Importieren von MailChimp 4](../../../assets/import-mailchimp-4.png)
 
-## Klickdaten exportieren {#clicks}
+## Exportieren von Klickdaten {#clicks}
 
-1. Navigieren Sie zurück zum Bildschirm `View Report` für die Kampagne.
+1. Navigieren Sie zurück zum `View Report` für die Kampagne.
 
-1. Klicken Sie auf die Zahl &quot;`Clicked`&quot;.
+1. Klicken Sie auf die `Clicked` Zahl.
 
-   ![import mailchimp 5](../../../assets/import-mailchimp-5.png)
+   ![Importieren von MailChimp 5](../../../assets/import-mailchimp-5.png)
 
 1. Klicken Sie entweder auf die Zahl unter der Spalte `Total Clicks` ODER `Unique Clicks` .
 
-   ![import mailchimp 6](../../../assets/import-mailchimp-6.png)
+   ![Importieren von MailChimp 6](../../../assets/import-mailchimp-6.png)
 
-1. Klicken Sie auf &quot;**[!UICONTROL Export]**&quot;und speichern Sie die Datei &quot;`.csv`&quot;.
+1. Klicken Sie auf **[!UICONTROL Export]** und speichern Sie die `.csv`.
 
-   Sie müssen dieser Datei die Spalten `Primary Key`, `date (mm/dd/yyyy)`, `campaign name` und `URL` hinzufügen. Sie müssen nicht die vollständige URL hinzufügen, sondern nur etwas, das Ihnen mitteilt, worauf geklickt wurde.
+   Sie müssen dieser Datei `Primary Key`, `date (mm/dd/yyyy)`, `campaign name` und `URL` Spalten hinzufügen. Sie müssen nicht die vollständige URL hinzufügen, nur etwas, das Ihnen mitteilt, was angeklickt wurde.
 
-   ![import mailchimp 7](../../../assets/import-mailchimp-7.png)
+   ![Importieren von MailChimp 7](../../../assets/import-mailchimp-7.png)
 
-1. Wiederholen Sie die Schritte 3 und 4 für jede in Ihrer E-Mail angeklickte URL, wobei Sie alle Daten zum Abschluss in derselben `.csv`-Datei zusammenfassen.
+1. Wiederholen Sie die Schritte 3 und 4 für jede in Ihrer E-Mail angeklickte URL und kombinieren Sie alle Daten in derselben `.csv`.
 
-## Versanddaten exportieren {#sent}
+## Gesendete Daten exportieren {#sent}
 
-1. Gehen Sie in den Tab `Campaigns` von [!DNL Mailchimp].
+1. Wechseln Sie zur Registerkarte `Campaigns` von [!DNL Mailchimp].
 
-1. Klicken Sie neben dem Kampagnennamen auf **[!UICONTROL View Report]** .
+1. Klicken Sie **[!UICONTROL View Report]** neben dem Kampagnennamen.
 
 1. Klicken Sie auf die Zahl neben `Recipients`.
 
-   ![import mailchimp 8](../../../assets/import-mailchimp-8.png)
+   ![Importieren von MailChimp 8](../../../assets/import-mailchimp-8.png)
 
-1. Klicken Sie auf &quot;**[!UICONTROL Export]**&quot;und speichern Sie die Datei &quot;`.csv`&quot;.
+1. Klicken Sie auf **[!UICONTROL Export]** und speichern Sie die `.csv`.
 
-   Sie müssen dieser Datei die Spalten `Primary Key`, `date (mm/dd/yyyy)` und `campaign name` hinzufügen.
+   Sie müssen dieser Datei `Primary Key`, `date (mm/dd/yyyy)` und `campaign name` Spalten hinzufügen.
 
-   ![import mailchimp 9](../../../assets/import-mailchimp-9.png)
+   ![Importieren von MailChimp 9](../../../assets/import-mailchimp-9.png)
 
-## Vorbereiten von Dateien auf den Upload in [!DNL Commerce Intelligence] {#upload}
+## Vorbereiten von Dateien für den Upload in [!DNL Commerce Intelligence] {#upload}
 
-Jede Datei - `Opens`, `Clicks` und `Sent` - sollte als separate Datei in [!DNL Commerce Intelligence] hochgeladen werden. Adobe empfiehlt, die Dateien mit dieser Namenskonvention zu benennen: `MailChimp\_ACTION\_DATE`. Ersetzen Sie `ACTION` durch `Open`, `Click` oder `Sent` und ersetzen Sie `DATE` durch das Datum des Exports.
+Jede Datei - `Opens`, `Clicks` und `Sent` - sollte als separate Datei in [!DNL Commerce Intelligence] hochgeladen werden. Adobe empfiehlt, die Dateien nach dieser Namenskonvention zu benennen: `MailChimp\_ACTION\_DATE`. Ersetzen Sie `ACTION` durch `Open`, `Click` oder `Sent` und ersetzen Sie `DATE` durch das Exportdatum.
 
-Wenn Sie zum Hochladen der Dateien bereit sind, verwenden Sie die [`File Upload`-Funktion](../connecting-data/using-file-uploader.md) , um die Daten in Ihre Data Warehouse zu übertragen.
+Wenn Sie bereit sind, die Dateien hochzuladen, verwenden Sie die [`File Upload`-Funktion](../connecting-data/using-file-uploader.md) um die Daten auf Ihren Data Warehouse zu bringen.

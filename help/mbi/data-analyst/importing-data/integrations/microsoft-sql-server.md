@@ -1,6 +1,6 @@
 ---
 title: Microsoft SQL Server verbinden
-description: Erfahren Sie, wie Sie Ihre Microsoft SQL-Datenbank in vier Schritten mit [!DNL Commerce Intelligence] verbinden.
+description: Erfahren Sie, wie Sie Ihre Microsoft SQL [!DNL Commerce Intelligence] Datenbank in einem vierstufigen Prozess mit verbinden.
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Microsoft SQL] Server verbinden
+# Verbindung [!DNL Microsoft SQL] Server herstellen
 
 >[!NOTE]
 >
@@ -19,23 +19,23 @@ ht-degree: 0%
 
 ![](../../../assets/MicrosoftSQLServer-logo.png)
 
-In diesem Thema wird erläutert, wie Sie Ihre [!DNL Microsoft SQL]-Datenbank in vier Schritten mit [!DNL Commerce Intelligence] verbinden können. Dieser Prozess erfordert einige technische Kenntnisse im Zusammenhang mit Serververbindungen und SQL und kann Unterstützung von Entwicklern in Ihrem Team erfordern.
+In diesem Thema wird erläutert, wie Sie Ihre [!DNL Microsoft SQL]-Datenbank in einem vierstufigen Prozess mit [!DNL Commerce Intelligence] verbinden. Dieser Prozess erfordert einige technische Kenntnisse in Bezug auf Server-Verbindungen und SQL und erfordert möglicherweise Unterstützung von Entwicklern in Ihrem Team.
 
-[!DNL Commerce Intelligence] unterstützt [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] und die meisten anderen Cloud-Server-Anbieter. Wenn Sie eine Frage zu Ihrem bestimmten Host haben, senden Sie [ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um uns zu bitten, diese Informationen anzugeben.
+[!DNL Commerce Intelligence] unterstützt [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] und die meisten anderen Cloud-Server-Anbieter. Wenn Sie eine Frage zu Ihrem Gastgeber haben, [ Sie (ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)) uns bitten, diese Informationen bereitzustellen.
 
-Ihr System muss SELECT-Abfragen für Ihre Datenbank ausführen. Dies geschieht zunächst, um eine Momentaufnahme Ihrer Datenbankstruktur zu erhalten und dann regelmäßig, um Ihre Daten auf dem neuesten Stand zu halten. Ihre Updates sind inkrementell und Adobe schränkt die Aktualisierungshäufigkeit und -zeit ein, um unerwünschte Ladevorgänge auf Ihrem Server zu vermeiden.
+Ihr System muss SELECT-Abfragen in Ihrer Datenbank ausführen. Dies erfolgt zunächst, um einen Schnappschuss Ihrer Datenbankstruktur zu erhalten, und dann regelmäßig durch Überstunden, um Ihre Daten auf dem neuesten Stand zu halten. Ihre Updates sind inkrementell, und Adobe schränken die Aktualisierungshäufigkeit und -zeit ein, um eine unerwünschte Belastung Ihres Servers zu vermeiden.
 
-Die beste Möglichkeit, dies zu tun, besteht darin, dass wir über TCP/IP eine Verbindung zu Ihrem Datenbankserver herstellen. Erstellen Sie für uns einen Benutzer, der nur SELECT-Abfragen ausführen kann (und optional nur Daten aus den angegebenen Tabellen auswählen kann). Dies muss für jeden Ihrer Server durchgeführt werden, mit dem Sie eine Verbindung zu [!DNL Commerce Intelligence] herstellen.
+Die beste Möglichkeit, dies zu tun, besteht darin, eine Verbindung zu Ihrem Datenbankserver über TCP/IP herzustellen. Erstellen Sie einen Benutzer, der nur SELECT-Abfragen ausführen kann (und optional nur Daten aus den von Ihnen angegebenen Tabellen auswählen kann). Dies muss für jeden Server geschehen, mit dem Sie eine Verbindung [!DNL Commerce Intelligence].
 
 ## Verbinden von `Microsoft SQL` mit [!DNL Commerce Intelligence]:
 
-1. Stellen Sie sicher, dass Ihr Server Verbindungen über TCP/IP und die Authentifizierung im gemischten Modus zulässt.
+1. Stellen Sie sicher, dass Ihr Server Verbindungen über TCP/IP und Authentifizierung im gemischten Modus zulässt.
 
-1. Stellen Sie sicher, dass Ihre Firewall die Verbindung der dedizierten IP Ihres Servers ermöglicht.
+1. Stellen Sie sicher, dass Ihre Firewall der dedizierten IP-Adresse Ihres Servers die Verbindung ermöglicht.
 
-   Die IP-Adresse, über die eine Verbindung zu Ihrem Server hergestellt wird, finden Sie im Abschnitt &quot;Verbindungen&quot;auf Ihrer `Settings` -Seite.
+   Die IP-Adresse, mit der eine Verbindung zu Ihrem Server hergestellt wird, finden Sie im Abschnitt Verbindungen Ihrer `Settings`.
 
-1. Erstellen Sie einen Benutzer, der zum Anmelden bei Ihrem Datenbankserver verwendet werden soll. Sie haben zwei Optionen, entweder über `UI` oder über einen `query`:
+1. Erstellen Sie einen Benutzer, der zum Anmelden bei Ihrem Datenbankserver verwendet werden soll. Sie haben zwei Möglichkeiten: entweder über `UI` oder über eine `query`:
    * `UI`
    * [`Query`](http://sqlserverplanet.com/security/add-user) (zweites Beispiel)
 
@@ -45,6 +45,6 @@ Die beste Möglichkeit, dies zu tun, besteht darin, dass wir über TCP/IP eine V
 
 1. Klicken Sie auf **[!UICONTROL Add a Data Source]**.
 
-1. Wählen Sie aus, um eine `Microsoft SQL` -Datenbank zu verbinden, und geben Sie Ihre Anmeldedaten in die Felder auf der neuen `Connections`-Seite ein.
+1. Wählen Sie aus, um eine `Microsoft SQL` Datenbank zu verbinden, und geben Sie Ihre Anmeldeinformationen in die Felder auf der neuen `Connections` ein.
 
    Wenn Sie `Windows Azure` verwenden, müssen Sie auch einen Datenbanknamen angeben.

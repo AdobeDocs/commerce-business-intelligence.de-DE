@@ -1,6 +1,6 @@
 ---
-title: Analyse zurückgegebener Bestellungen
-description: Erfahren Sie, wie Sie ein Dashboard einrichten, das eine detaillierte Analyse der Ergebnisse Ihres Stores bietet.
+title: Analyse der zurückgegebenen Bestellungen
+description: Erfahren Sie, wie Sie ein Dashboard einrichten, das eine detaillierte Analyse der Rückgaben Ihres Stores bietet.
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
@@ -13,26 +13,26 @@ ht-degree: 0%
 
 # Zurückgegebene Bestellungen
 
-In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das eine detaillierte Analyse der Ergebnisse Ihres Stores bietet.
+Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das eine detaillierte Analyse der Rückgaben Ihres Stores bietet.
 
 ![](../../assets/detailed-returns-dboard.png)
 
-Bevor Sie beginnen, müssen Sie ein [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) -Kunde sein und sicherstellen, dass Ihr Unternehmen die `enterprise\_rma` -Tabelle für die Rückgabe verwendet.
+Bevor Sie beginnen, müssen Sie [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)-Kunde sein und sollten sicherstellen, dass Ihr Unternehmen die `enterprise\_rma` für Rücksendungen verwendet.
 
 Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Erste Schritte
 
-Zu verfolgende Spalten
+Nachzuverfolgende Spalten
 
-* Tabelle **`enterprise_rma`** oder **`rma`**
+* **`enterprise_rma`** oder **`rma`**
 * **`entity_id`**
 * **`status`**
 * **`order_id`**
 * **`customer_id`**
 * **`date_requested`**
 
-* Tabelle **`enterprise_rma_item_entity`** oder **`rma_item_entity`**
+* **`enterprise_rma_item_entity`** oder **`rma_item_entity`**
 * **`entity_id`**
 * **`rma_entity_id`**
 * **`qty_returned`**
@@ -41,121 +41,121 @@ Zu verfolgende Spalten
 * **`product_name`**
 * **`product_sku`**
 
-Sets filtern, um sie zu erstellen
+Zu erstellende Filtersätze
 
-* **`enterprise_rma`** table
+* **`enterprise_rma`**
 * Name des Filtersatzes: `Returns we count`
-* Filtersatzlogik:
-   * Platzhalter - Geben Sie Ihre benutzerdefinierte Logik hier ein
+* Filtersatz-Logik:
+   * Platzhalter - geben Sie Ihre benutzerdefinierte Logik hier ein
 
-* **`enterprise_rma_item_entity`** table
+* **`enterprise_rma_item_entity`**
 * Name des Filtersatzes: `Returns items we count`
-* Filtersatzlogik:
-   * Platzhalter - Geben Sie Ihre benutzerdefinierte Logik hier ein
+* Filtersatz-Logik:
+   * Platzhalter - geben Sie Ihre benutzerdefinierte Logik hier ein
 
 ### Berechnete Spalten
 
 Zu erstellende Spalten
 
-* **`enterprise_rma`** table
+* **`enterprise_rma`**
 * **`Order's created at`**
-* Wählen Sie eine Definition aus: `Joined Column`
+* Definition auswählen: `Joined Column`
 * [!UICONTROL Create Path]:
 * 
   [!UICONTROL Many]: `enterprise_rma.order_id`
 * 
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
-* Wählen Sie einen [!UICONTROL table]: `sales_flat_order`
-* Wählen Sie einen [!UICONTROL column]: `created_at`
+* [!UICONTROL table] auswählen: `sales_flat_order`
+* [!UICONTROL column] auswählen: `created_at`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
 * **`Customer's order number`**
-* Wählen Sie eine Definition aus: `Joined Column`
-* Wählen Sie einen [!UICONTROL table]: `sales_flat_order`
-* Wählen Sie einen [!UICONTROL column]: `Customer's order number`
+* Definition auswählen: `Joined Column`
+* [!UICONTROL table] auswählen: `sales_flat_order`
+* [!UICONTROL column] auswählen: `Customer's order number`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Time between order's created_at and date_requested`** wird von einem Analysten im Rahmen Ihres `[RETURNS ANALYSIS]`-Tickets erstellt
+* **`Time between order's created_at and date_requested`** wird von einem Analyst im Rahmen Ihres `[RETURNS ANALYSIS]` Tickets erstellt
 
-* **`enterprise_rma_item_entity`** table
+* **`enterprise_rma_item_entity`**
 * **`return_date_requested`**
-* Wählen Sie eine Definition aus: `Joined Column`
+* Definition auswählen: `Joined Column`
 * [!UICONTROL Create Path]:
    * 
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
    * 
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
-* Wählen Sie einen [!UICONTROL table]: `enterprise_rma`
-* Wählen Sie einen [!UICONTROL column]: `date_requested`
+* [!UICONTROL table] auswählen: `enterprise_rma`
+* [!UICONTROL column] auswählen: `date_requested`
    * `enterprise_rma_item_entity.rma_entity_id = enterprise_rma.entity_id`
 
-* **`Return item total value (qty_returned * price)`** wird von einem Analysten im Rahmen Ihres `[RETURNS ANALYSIS]`-Tickets erstellt
+* **`Return item total value (qty_returned * price)`** wird von einem Analyst im Rahmen Ihres `[RETURNS ANALYSIS]` Tickets erstellt
 
-* **`sales_flat_order`** table
+* **`sales_flat_order`**
 * **`Order contains a return? (1=yes/0=No)`**
-* Wählen Sie eine Definition aus: `Exists`
-* Wählen Sie einen [!UICONTROL table]: `enterprise_rma`
+* Definition auswählen: `Exists`
+* [!UICONTROL table] auswählen: `enterprise_rma`
    * `enterprise_rma.order_id = sales_flat_order.entity_id`
 
-* **`Customer's previous order number`** wird von einem Analysten im Rahmen Ihres `[RETURNS ANALYSIS]`-Tickets erstellt
-* **`Customer's previous order contains return? (1=yes/0=no)`** wird von einem Analysten im Rahmen Ihres `[RETURNS ANALYSIS]`-Tickets erstellt
+* **`Customer's previous order number`** wird von einem Analyst im Rahmen Ihres `[RETURNS ANALYSIS]` Tickets erstellt
+* **`Customer's previous order contains return? (1=yes/0=no)`** wird von einem Analyst im Rahmen Ihres `[RETURNS ANALYSIS]` Tickets erstellt
 
 >[!NOTE]
 >
->Wenn Sie nur Geschäftszeiten für die Auflösung in Sekunden oder die erste Antwort in Sekunden analysieren möchten, teilen Sie dies dem Analysten bei der Anforderung des Tickets mit.
+>Wenn Sie daran interessiert sind, nur die Geschäftszeiten für Sekunden bis zur Lösung oder Sekunden bis zur ersten Antwort zu analysieren, informieren Sie den Analyst, wenn Sie das Ticket anfordern.
 
 ### Metriken
 
-* **Gibt** zurück
-* In der Tabelle **`enterprise_rma`**
-* Diese Metrik führt eine **Zählung** aus
+* **Rückgabe**
+* In der **`enterprise_rma`**
+* Diese Metrik führt eine **Anzahl** aus
 * In der Spalte **`entity_id`**
-* Bestellt von der **`date_requested`**
+* Sortiert nach der **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 * **Zurückgegebene Elemente**
-* In der Tabelle **`enterprise_rma_item_entity`**
-* Diese Metrik führt eine **Summe** aus.
+* In der **`enterprise_rma_item_entity`**
+* Diese Metrik führt eine **Summe“**
 * In der Spalte **`qty_approved`**
-* Bestellt von der **`return date_requested`**
+* Sortiert nach der **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **Gesamtwert des zurückgegebenen Elements**
-* In der Tabelle **`enterprise_rma_item_entity`**
-* Diese Metrik führt eine **Summe** aus.
+* **Zurückgegebener Artikelgesamtwert**
+* In der **`enterprise_rma_item_entity`**
+* Diese Metrik führt eine **Summe“**
 * In der Spalte **`Returned item total value (qty_returned * price)`**
-* Bestellt von der **`return date_requested`**
+* Sortiert nach der **`return date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
-* **Durchschnittliche Zeit zwischen Bestellung und Rückgabe**
-* In der Tabelle **`enterprise_rma`**
+* **Durchschnittliche Zeit zwischen Bestellung und Rücksendung**
+* In der **`enterprise_rma`**
 * Diese Metrik führt einen **Durchschnitt** aus
 * In der Spalte **`Time between order's created_at and date_requested`**
-* Bestellt von der **`date_requested`**
+* Sortiert nach der **`date_requested`**
 * [!UICONTROL Filter]: `Returns we count`
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie [alle neuen Spalten als Dimensionen zu den Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) , bevor Sie neue Berichte erstellen.
+>Stellen Sie sicher[ dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
 
 ### Berichte
 
-* **Wiederholungsreihenwahrscheinlichkeit nach einer Rückgabe**
-* Metrik `A`: `Number of orders with returns`
+* **Wiederholungsreihenwahrscheinlichkeit nach einer Rücksendung**
+* `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
    * `Order contains a return? (1=yes/0=No) = 1`
    * `Is in current month? = No`
 
-* Metrik `B`: `Non-last orders with returns`
+* `B`: `Non-last orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
    * `Is customer's last order? (1=yes/0=no) = 0`
    * `Order contains a return? (1=yes/0=No) = 1`
 
-* Formel: Wiederholungsreihenwahrscheinlichkeit
+* Formel: Wahrscheinlichkeit der Wiederholungsreihenfolge
 * [!UICONTROL Formula]: `B / A`
 * 
   [!UICONTROL Format]: `Percentage`
@@ -167,8 +167,8 @@ Zu erstellende Spalten
 * 
   [!UICONTROL Diagrammtyp]: `Bar`
 
-* **Durchschnittliche Zeit bis zur Rückgabe (alle Zeit)**
-* Metrik `A`: `Avg time between order and return`
+* **Durchschn. Zeit bis zur Rückkehr (alle Zeiten)**
+* `A`: `Avg time between order and return`
 * [!UICONTROL Metric]: `Avg time between order and return`
 
 * [!UICONTROL Time period]: `All time`
@@ -177,16 +177,16 @@ Zu erstellende Spalten
 * 
   [!UICONTROL Diagrammtyp]: `Number`
 
-* **Prozentsatz der Bestellungen mit Rückgabe**
-* Metrik `A`: `Number of orders`
+* **Prozent der Bestellungen mit einer Rücksendung**
+* `A`: `Number of orders`
 * [!UICONTROL Metric]: `Number of orders`
 
-* Metrik `B`: `Orders w/ return`
+* `B`: `Orders w/ return`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
    * `Order contains a return? (1=yes/0=No) = 1`
 
-* Formel: % der Bestellungen mit Rückgabe
+* Formel: % der Bestellungen mit Rücksendung
 * [!UICONTROL Formula]: `B / A`
 * 
   [!UICONTROL Format]: `Percentage`
@@ -196,8 +196,8 @@ Zu erstellende Spalten
   [!UICONTROL Intervall]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
-* **Nach Monat zurückgegebener Umsatz**
-* Metrik `A`: `Returned item total value`
+* **Rückgegebener Umsatz nach Monat**
+* `A`: `Returned item total value`
 * [!UICONTROL Metric]: `Returned item total value`
 
 * [!UICONTROL Time period]: `All time`
@@ -206,7 +206,7 @@ Zu erstellende Spalten
   [!UICONTROL Diagrammtyp]: `Line`
 
 * **Kunden, die eine Rückgabe getätigt und nicht erneut gekauft haben**
-* Metrik `A`: `Number of orders with returns`
+* `A`: `Number of orders with returns`
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]:
    * `Order contains a return? (1=yes/0=No) = 1`
@@ -216,11 +216,11 @@ Zu erstellende Spalten
 * 
   [!UICONTROL Intervall]: `None`
 * 
-  [!UICONTROL Gruppe von]: `Customer_email`
+  [!UICONTROL Gruppieren nach]: `Customer_email`
 * 
   [!UICONTROL Diagrammtyp]: `Table`
 
-* **Rückkehrrate nach Element**
+* **Rückgaberate nach Artikel**
 * Metrik `A`: `Returned items` (Ausblenden)
 * [!UICONTROL Metric]: Zurückgegebene Elemente
 
@@ -240,6 +240,6 @@ Zu erstellende Spalten
 * 
   [!UICONTROL Diagrammtyp]: `Table`
 
-Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie im obigen Beispiel-Dashboard aussehen.
+Nachdem Sie alle Berichte kompiliert haben, können Sie sie im Dashboard nach Bedarf organisieren. Das Ergebnis kann wie im obigen Beispiel-Dashboard aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse Fragen haben oder das Professional Services-Team kontaktieren möchten, wenden Sie sich an den Support [.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder das Professional Services-Team kontaktieren möchten, wenden [ sich an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

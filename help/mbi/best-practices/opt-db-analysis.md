@@ -1,6 +1,6 @@
 ---
 title: Datenbank für Analysen optimieren
-description: Erfahren Sie, wie Sie Ihre Datenbank für die Analyse optimieren können.
+description: Erfahren Sie, wie Sie Ihre Datenbank für Analysen optimieren können.
 exl-id: e73e1a1e-c933-476d-97bc-bd8f52bb2fa1
 role: Admin, Data Architect, Data Engineer, User
 feature: Business Performance, Data Integration, Data Import/Export, Data Warehouse Manager
@@ -13,56 +13,56 @@ ht-degree: 0%
 
 # Datenbank optimieren
 
-Der Hauptvorteil der Verwendung einer operativen Datenbank für [!DNL Adobe Commerce Intelligence] besteht darin, dass nichts erstellt oder geändert werden muss, um Daten zu erfassen. Wertvolle Informationen sind bereits vorhanden - Sie müssen sie nur freischalten.
+Der Hauptvorteil der Verwendung einer operativen Datenbank für [!DNL Adobe Commerce Intelligence] besteht darin, dass zum Erfassen von Daten nichts erstellt oder geändert werden muss. Wertvolle Informationen sind bereits vorhanden - Sie müssen sie nur entsperren.
 
-Dieses Thema enthält einige Empfehlungen, mit denen Sie Ihre Datenbank für die Analyse optimieren und aus Rohdaten umsetzbare Einblicke gewinnen können.
+Dieses Thema enthält einige Empfehlungen, wie Sie Ihre Datenbank für Analysen optimieren und aus Rohdaten verwertbare Einblicke gewinnen können.
 
 ## Daten nicht löschen
 
 >[!TIP]
 >
->Die lokalen und internationalen Gesetze, die Ihr Geschäft (und Ihre eigenen Servicebestimmungen) beeinflussen können, welche Datentypen Sie beibehalten können und wie lange Sie sie behalten können. Die Einhaltung dieser Gesetze sollte oberste Priorität haben.
+>Die lokalen und internationalen Gesetze, die sich auf Ihr Unternehmen (und Ihre eigenen Nutzungsbedingungen) auswirken, können beeinflussen, welche Arten von Daten Sie speichern können und wie lange Sie sie aufbewahren können. Die Einhaltung dieser Gesetze sollte Ihre oberste Priorität sein.
 
-Wenn eine Bestellung storniert, ein Benutzer sein Konto deaktiviert oder ein Produkt eingestellt wird, ist es versucht, die zugehörigen Informationen in der Datenbank zu löschen. Tabellen wachsen und beseitigen Unübersichtlichkeit scheint eine umsichtige Idee zu sein. Das Löschen von Zeilen bedeutet jedoch, dass diese Informationen für immer verloren gehen oder dass Sie alte Sicherungen durchsuchen müssen, um sie zu finden.
+Wenn eine Bestellung storniert wird, ein Benutzer sein Konto deaktiviert oder ein Produkt eingestellt wird, ist es verlockend, die zugehörigen Informationen in der Datenbank zu löschen. Die Tabellen wachsen und die Beseitigung von Unordnung scheint eine vernünftige Idee zu sein. Das Löschen von Zeilen bedeutet jedoch, dass diese Informationen für immer verloren gehen oder Sie alte Backups durchsuchen müssen, um sie zu finden.
 
-Stattdessen können Sie der Tabelle eine Statusspalte hinzufügen, die angibt, wann die Zeile nicht mehr aktiv oder relevant ist. Es wird außerdem empfohlen, eine Spalte hinzuzufügen, in der das Datum der Änderung gespeichert wird, oder ein Protokoll für historische Änderungen zu erstellen. Wenn Tabellen so groß sind, dass die Leistung langsam zunimmt, sollten Sie die alten Daten in einer für Analysen verwendeten Tabelle archivieren.
+Stattdessen können Sie der Tabelle eine Statusspalte hinzufügen, die anzeigt, wann die Zeile nicht mehr aktiv oder relevant ist. Es wird außerdem empfohlen, eine Spalte hinzuzufügen, in der das Datum gespeichert wird, an dem die Änderung vorgenommen wurde, oder ein Protokoll für historische Änderungen zu erstellen. Wenn Tabellen so groß werden, dass die Leistung beeinträchtigt wird, sollten Sie die alten Daten in einer für die Analyse verwendeten Tabelle archivieren.
 
-## Daten selten überschreiben
+## Daten nur selten überschreiben
 
 Das Überschreiben von Daten sollte sparsam und mit Vorsicht erfolgen.
 
-Unter Verwendung von Anmeldedaten als Beispiel speichern viele Unternehmen das letzte Anmeldedatum und nicht eine Tabelle historischer Anmeldungen. Auch wenn Sie für funktionale Zwecke möglicherweise nur das letzte Anmeldedatum benötigen, stellen überschriebene Daten aus der Sicht der Analyse einen enormen Verlust dar. Wenn Sie kein vollständiges Protokoll dieser Aktionen speichern, können Sie nicht mehr sehen, wie viele Benutzer lange Zeit weg blieben und dann reaktiviert wurden. Außerdem ist es unmöglich, auf der Grundlage von Anmeldungen Kohortenanalysen für die Benutzerinteraktion zu erstellen.
+Anhand von Anmeldedaten speichern viele Unternehmen das letzte Anmeldedatum anstelle einer Tabelle mit historischen Anmeldungen. Möglicherweise benötigen Sie nur das letzte Anmeldedatum für funktionale Zwecke. Diese überschriebenen Daten stellen jedoch aus Analytics-Sicht einen enormen Verlust dar. Wenn Sie kein vollständiges Protokoll dieser Aktionen führen, können Sie nicht mehr sehen, wie viele Benutzer über einen langen Zeitraum hinweg ferngeblieben und dann wieder aktiviert sind. Es macht es auch unmöglich, Dinge wie Kohortenanalysen zur Benutzerinteraktion auf der Grundlage von Anmeldungen zu erstellen.
 
-Wenn Sie einen Datensatz aufgrund einer Benutzeraktion aktualisieren, überschreiben Sie im Allgemeinen keine Informationen über eine vorherige oder separate Benutzeraktion.
+Wenn Sie einen Datensatz aufgrund einer Benutzeraktion aktualisieren, überschreiben Sie im Allgemeinen nicht die Informationen zu einer vorherigen oder separaten Benutzeraktion.
 
-## `Updated_at` Spalten für Daten einschließen, die im Zeitverlauf aktualisiert wurden
+## `Updated_at` Spalten für Daten einschließen, die im Laufe der Zeit aktualisiert werden
 
-Wenn sich die Werte in den Zeilen einer Tabelle ändern, z. B. ändert sich **order\_status** von `processing` in `complete`, fügen Sie eine Spalte **updated\_at** hinzu, um aufzuzeichnen, wann die letzte Änderung erfolgt. Stellen Sie sicher, dass beim ersten Einfügen der neuen Datenzeile ein Wert vom Typ **updated\_at** verfügbar ist, wenn das Datum **updated\_at** dem Datum **created\_at** entspricht.
+Wenn sich die Werte in den Zeilen einer Tabelle im Laufe der Zeit ändern, z. B. **order\_status** von`processing` zu `complete`, schließen Sie eine **updated\_at**-Spalte ein, um aufzuzeichnen, wann die letzte Änderung erfolgt. Stellen Sie sicher **dass beim ersten Einfügen der neuen Datenzeile ein** updated\_at) verfügbar ist, wenn das **updated\_at**-Datum dem **created\_at**-Datum entspricht.
 
-Neben der Optimierung für die Analyse können Sie in den Spalten **updated\_at** auch [Inkrementelle Replikationsmethoden](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md) verwenden, was dazu beitragen kann, die Dauer Ihrer Aktualisierungszyklen zu verkürzen.
+Zusätzlich zur Optimierung für die Analyse können Sie mit **updated\_at**-Spalten auch [inkrementelle Replikationsmethoden](../data-analyst/data-warehouse-mgr/cfg-replication-methods.md) verwenden, was dazu beitragen kann, die Länge Ihrer Aktualisierungszyklen zu verkürzen.
 
-## Store User Acquisition Source
+## Source zur Benutzerakquise speichern
 
-Einer der häufigsten Fehler ist die [Benutzer-Akquise-Quelle](../data-analyst/analysis/google-track-user-acq.md) (UAS), die nicht in der Betriebsdatenbank gespeichert wird. In den meisten Fällen, in denen dies ein Problem darstellt, wird UAS nur über [!DNL Google Analytics] oder ein anderes Webanalysetool verfolgt. Diese Tools können zwar nützlich sein, doch gibt es einige Nachteile, die die ausschließliche Speicherung von UAS in ihnen mit sich bringt, wie z. B. die Extraktion von Daten auf Benutzerebene aus diesen Tools. Wenn es möglich ist, ist es normalerweise ein schwieriger Prozess. Es sollte einfach sein, diese Informationen zu erhalten und sie mit Daten aus anderen Quellen zu verbinden, z. B. mit den Verhaltens- und Transaktionsdaten, die ebenfalls in Ihrer Datenbank gespeichert sind.
+Einer der häufigsten Fehler ist, dass [User Acquisition Source](../data-analyst/analysis/google-track-user-acq.md) (UAS) nicht in der Betriebsdatenbank gespeichert wird. In den meisten Situationen, in denen dies ein Problem darstellt, wird UAS nur über [!DNL Google Analytics] oder ein anderes Web-Analyse-Tool verfolgt. Obwohl diese Tools nützlich sein können, hat die ausschließliche Speicherung von UAS in ihnen einige Nachteile, z. B. dass Sie keine Daten auf Benutzerebene aus diesen Tools extrahieren können. Wenn es möglich ist, ist es in der Regel ein schwieriger Prozess. Es sollte einfach sein, diese Informationen abzurufen und sie mit Daten aus anderen Quellen zu verbinden, z. B. den Verhaltens- und Transaktionsinformationen, die ebenfalls in Ihrer Datenbank gespeichert sind.
 
-Die Speicherung von UAS in Ihrer eigenen Datenbank ist oft die größte Verbesserung, die ein Online-Unternehmen an seinen analytischen Fähigkeiten vornehmen kann. Dies ermöglicht die Analyse von Vertrieb, Benutzerinteraktion, Payback-Zeiträumen, Kundenlebenszeitwert, Abwanderung und anderen kritischen Metriken nach UAS. [Diese Daten sind bei der Entscheidung, wo Marketing-Ressourcen investiert werden sollen, von entscheidender Bedeutung.](../data-analyst/analysis/most-value-source-channel.md)
+Das Speichern von UAS in Ihrer eigenen Datenbank ist oft die größte Verbesserung, die ein Online-Unternehmen an seinen Analysefunktionen vornehmen kann. Dies ermöglicht die Analyse von Verkäufen, Benutzerinteraktion, Amortisationszeiten, Kundenlebenszeitwert, Abwanderung und anderen kritischen Metriken durch UAS. [Diese Daten sind bei der Entscheidung, wo Marketing-Ressourcen investiert werden sollen, von entscheidender Bedeutung](../data-analyst/analysis/most-value-source-channel.md).
 
-Zu viele Unternehmen konzentrieren sich ausschließlich auf die Suche nach Kanälen, die neue Benutzer zu niedrigsten Kosten anbieten. Wenn Sie die Qualität der von den einzelnen Kanälen erworbenen Benutzer nicht verfolgen, besteht das Risiko, Benutzer anzuziehen, die keinen Geschäftswert generieren.
+Zu viele Unternehmen konzentrieren sich ausschließlich auf die Suche nach Kanälen, die neue Benutzer zu den niedrigsten Kosten anbieten. Wenn Sie die Qualität der von den einzelnen Kanälen erworbenen Benutzer nicht verfolgen, laufen Sie Gefahr, Benutzer anzulocken, die keinen Geschäftswert generieren.
 
-## Einrichten von Datentabellen
+## Einrichtung der Datentabelle
 
 ### Primären Schlüssel festlegen
 
-Ein [Primärschlüssel](https://en.wikipedia.org/wiki/Unique_key) ist eine unveränderliche Spalte (oder Gruppe von Spalten), die eindeutige Werte in einer Tabelle erzeugt. Primäre Schlüssel sind unglaublich wichtig, da sie sicherstellen, dass Ihre Tabellen ordnungsgemäß in [!DNL Commerce Intelligence] repliziert werden.
+Ein [Primärschlüssel](https://en.wikipedia.org/wiki/Unique_key) ist eine unveränderliche Spalte (oder Gruppe von Spalten), die eindeutige Werte innerhalb einer Tabelle erzeugt. Primäre Schlüssel sind unglaublich wichtig, da sie sicherstellen, dass Ihre Tabellen ordnungsgemäß in [!DNL Commerce Intelligence] repliziert werden.
 
-Verwenden Sie beim Erstellen von Primärschlüsseln einen ganzzahligen Datentyp für die Spalte, die automatisch erhöht wird. Adobe empfiehlt, die Verwendung von mehrspaltigen Primärschlüsseln zu vermeiden.
+Verwenden Sie beim Erstellen von Primärschlüsseln einen ganzzahligen Datentyp für die Spalte, die automatisch erhöht wird. Adobe empfiehlt, nach Möglichkeit die Verwendung mehrspaltiger Primärschlüssel zu vermeiden.
 
 Wenn es sich bei Ihrer Tabelle um eine SQL-Ansicht handelt, fügen Sie eine Spalte hinzu, die als Primärschlüssel dienen kann. [!DNL Commerce Intelligence] kann diese Spalte automatisch als Primärschlüssel identifizieren.
 
-### Datentyp zu Ihrer Datenspalte zuweisen
+### Zuweisen eines Datentyps zu Ihrer Datenspalte
 
-Wenn einer Datenspalte kein [Datentyp](https://en.wikipedia.org/wiki/Data_type) zugewiesen ist, schätzt [!DNL Commerce Intelligence], welcher Datentyp verwendet werden soll. Wenn das System falsch einschätzt, können Sie die entsprechenden Analysen erst dann durchführen, wenn das Adobe-Supportteam die Spalte an den entsprechenden Datentyp anpasst. Wenn beispielsweise eine Datumsspalte als numerischer Datentyp betrachtet wird, können Sie mithilfe dieser Datumsdimension einen Trend im Zeitverlauf erstellen.
+Wenn einer Datenspalte kein [Datentyp“ zugewiesen ist](https://en.wikipedia.org/wiki/Data_type) schätzt [!DNL Commerce Intelligence], welcher Datentyp verwendet werden soll. Wenn das System falsch schätzt, können Sie die entsprechenden Analysen möglicherweise erst durchführen, wenn das Adobe-Supportteam die Spalte an den richtigen Datentyp angepasst hat. Wenn beispielsweise eine Datumsspalte als numerischer Datentyp geschätzt wird, können Sie mithilfe dieser Datumsdimension einen Trend im Zeitverlauf durchführen.
 
-### Hinzufügen von Präfixen zu Ihren Datentabellen, wenn mehrere Datenbanken vorhanden sind
+### Fügen Sie Ihren Datentabellen Präfixe hinzu, wenn Sie mehrere Datenbanken haben
 
-Wenn mehr als eine Datenbank mit [!DNL Commerce Intelligence] verbunden ist, empfiehlt Adobe, den Tabellen Präfixe hinzuzufügen, um Verwirrung zu vermeiden. Mit Präfixen können Sie sich merken, woher Metriken oder Datendimensionen stammen.
+Wenn mehr als eine Datenbank mit [!DNL Commerce Intelligence] verbunden ist, empfiehlt Adobe, Ihren Tabellen Präfixe hinzuzufügen, um Verwirrung zu vermeiden. Präfixe helfen Ihnen dabei, sich zu merken, woher Metriken oder Datendimensionen stammen.

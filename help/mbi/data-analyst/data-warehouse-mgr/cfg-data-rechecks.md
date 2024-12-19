@@ -13,56 +13,56 @@ ht-degree: 0%
 
 # Konfigurieren von Datenprüfungen
 
-In einer Datenbanktabelle können Datenspalten mit veränderlichen Werten vorhanden sein. In einer `orders` -Tabelle kann es beispielsweise eine Spalte mit dem Namen `status` geben. Wenn eine Bestellung anfänglich in die Datenbank geschrieben wird, kann die Statusspalte den Wert _pending_ enthalten. Die Reihenfolge wird in Ihrem [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) mit diesem `pending` -Wert repliziert.
+In einer Datenbanktabelle können Datenspalten mit veränderlichen Werten vorhanden sein. Beispielsweise könnte es in einer `orders` eine Spalte namens `status` geben. Wenn eine Bestellung erstmals in die Datenbank geschrieben wird, kann die Spalte Status den Wert _Ausstehend_ enthalten. Die Bestellung wird auf Ihrer [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) mit diesem `pending` Wert repliziert.
 
-Der Bestellstatus kann sich ändern, obwohl sie sich nicht immer im Status `pending` befinden. Letztlich könnte es `complete` oder `cancelled` werden. Um sicherzustellen, dass Ihre Data Warehouse diese Änderung synchronisiert, muss die Spalte auf neue Werte überprüft werden.
+Der Bestellstatus kann sich ändern, obwohl er nicht immer den Status &quot;`pending`&quot; aufweist. Irgendwann könnte es `complete` oder `cancelled` werden. Um sicherzustellen, dass der Data Warehouse diese Änderung synchronisiert, muss die Spalte erneut auf neue Werte geprüft werden.
 
-Wie passt dies zu den besprochenen [Replikationsmethoden](../data-warehouse-mgr/cfg-replication-methods.md)? Die Verarbeitung der Überprüfungen variiert je nach ausgewählter Replikationsmethode. Die Replikationsmethode `Modified\_At` eignet sich am besten für die Verarbeitung von sich ändernden Werten, da keine erneuten Überprüfungen konfiguriert werden müssen. Die Methoden `Auto-Incrementing Primary Key` und `Primary Key Batch Monitoring` müssen erneut konfiguriert werden.
+Wie passt dies zu den besprochenen [Replikationsmethoden](../data-warehouse-mgr/cfg-replication-methods.md)? Die Verarbeitung der erneuten Prüfungen hängt von der gewählten Replikationsmethode ab. Die `Modified\_At` Replikationsmethode ist die beste Wahl für die Verarbeitung von sich ändernden Werten, da erneute Prüfungen nicht konfiguriert werden müssen. Die `Auto-Incrementing Primary Key`- und `Primary Key Batch Monitoring`-Methoden erfordern eine erneute Überprüfung der Konfiguration.
 
-Bei Verwendung einer dieser Methoden müssen veränderliche Spalten zur erneuten Überprüfung gekennzeichnet werden. Hierfür gibt es drei Möglichkeiten:
+Bei Verwendung einer dieser Methoden müssen veränderbare Spalten für eine erneute Überprüfung markiert werden. Dazu gibt es drei Möglichkeiten:
 
-1. Ein Auditing-Prozess, der als Teil der Aktualisierungsmarkierungen ausgeführt wird und erneut überprüft werden soll.
+1. Ein Auditing-Prozess, der als Teil der Aktualisierungs-Flags ausgeführt wird, die erneut überprüft werden sollen.
 
    >[!NOTE]
    >
-   >Der Prüfer stützt sich auf ein Probenahmeverfahren, und die sich ändernden Spalten dürfen nicht sofort erfasst werden.
+   >Der Prüfer stützt sich auf ein Stichprobenverfahren, und die wechselnden Spalten werden möglicherweise nicht sofort erfasst.
 
-1. Sie können sie selbst festlegen, indem Sie im Data Warehouse-Manager das Kontrollkästchen neben der Spalte aktivieren, auf **[!UICONTROL Set Recheck Frequency]** klicken und ein entsprechendes Zeitintervall auswählen, in dem Sie nach Änderungen suchen sollen.
+1. Sie können sie selbst festlegen, indem Sie das Kontrollkästchen neben der Spalte im Data Warehouse-Manager aktivieren, auf **[!UICONTROL Set Recheck Frequency]** klicken und ein geeignetes Zeitintervall auswählen, in dem Sie auf Änderungen prüfen sollten.
 
-1. Ein Mitglied des [!DNL Adobe Commerce Intelligence]-Data Warehouse-Teams kann die Spalten manuell markieren, um sie erneut auf Ihrem Data Warehouse zu überprüfen. Wenn Sie über veränderliche Spalten informiert sind, wenden Sie sich an das Team, um anzufordern, dass die Überprüfungen durchgeführt werden. Fügen Sie Ihrer Anforderung eine Liste von Spalten sowie die Häufigkeit bei.
+1. Ein Mitglied des [!DNL Adobe Commerce Intelligence] Data Warehouse-Teams kann die Spalten manuell zum erneuten Überprüfen in Ihrem Data Warehouse markieren. Wenn Sie sich veränderlicher Spalten bewusst sind, wenden Sie sich an das -Team, um das Setzen von erneuten Prüfungen anzufordern. Fügen Sie Ihrer Anfrage eine Liste der Spalten mit der Häufigkeit hinzu.
 
-## Recherche-Frequenzen {#frequency}
+## Frequenzen erneut überprüfen {#frequency}
 
-**Wusstest du das?**
-Wenn Sie eine erneute Überprüfung auf eine `primary key` -Spalte einstellen, wird die Spalte nicht auf geänderte Werte überprüft. Die Tabelle wird auf gelöschte Zeilen überprüft und alle Löschungen werden aus der Data Warehouse gelöscht.
+**Wussten Sie schon?**
+Wenn Sie für eine `primary key` Spalte eine erneute Überprüfung festlegen, wird die Spalte nicht auf geänderte Werte geprüft. Die Tabelle wird auf gelöschte Zeilen überprüft, und alle Löschvorgänge werden von der Data Warehouse bereinigt.
 
-Wenn eine Spalte zur erneuten Überprüfung markiert wird, können Sie auch festlegen, wie oft ein erneutes Überprüfen auftritt. Wenn sich eine bestimmte Spalte nicht häufig ändert, kann die Auswahl eines weniger häufigen Wiederholungsvorgangs [Ihren Aktualisierungszyklus optimieren](../../best-practices/reduce-update-cycle-time.md).
+Wenn eine Spalte für eine erneute Überprüfung gekennzeichnet ist, können Sie auch festlegen, wie oft eine erneute Überprüfung erfolgt. Wenn sich eine bestimmte Spalte nicht oft ändert, kann die Auswahl einer weniger häufigen erneuten Überprüfung [den Aktualisierungszyklus optimieren](../../best-practices/reduce-update-cycle-time.md).
 
-Häufigkeitsoptionen sind:
+Die Häufigkeitsoptionen sind:
 
-* `always` - Während jeder Aktualisierung wird erneut überprüft.
-* `daily` - Erneutes Überprüfen tritt nach Mitternacht für Ihre deklarierte Zeitzone auf
-* `weekly` - Überprüfung findet nach 21:00 Uhr Freitags-Update jede Woche für Ihre deklarierte Zeitzone statt
-* `monthly` - Überprüfung findet nach 21:00 Uhr Freitagsupdate alle vier Wochen für Ihre deklarierte Zeitzone statt
-* `once` - Tritt nur bei der nächsten Aktualisierung auf (einmalige Aktualisierung)
+* `always` - Bei jeder Aktualisierung wird eine erneute Prüfung durchgeführt
+* `daily` - Die erneute Prüfung erfolgt zum ersten Mal nach Mitternacht für die angegebene Zeitzone
+* `weekly` - Die erneute Prüfung findet jede Woche nach 21:00 Uhr für die angegebene Zeitzone statt
+* `monthly` - Die erneute Prüfung findet alle vier Wochen nach 21 Uhr statt und wird für die angegebene Zeitzone aktualisiert
+* `once` - Tritt nur bei der nächsten Aktualisierung auf (eine einmalige Aktualisierung)
 
-Da die Aktualisierungszeiten mit der zu synchronisierenden Datenmenge korrelieren, empfiehlt Adobe, anstelle jedes Updates eine erneute Überprüfung von `daily`, `weekly` oder `monthly` zu wählen.
+Da die Aktualisierungszeiten davon abhängen, wie viele Daten synchronisiert werden müssen, empfiehlt Adobe, anstelle jeder Aktualisierung eine `daily`, `weekly` oder `monthly` zu wählen.
 
-## Verwaltung der Kontrollfrequenzen {#manage}
+## Verwalten der Häufigkeit der erneuten Prüfungen {#manage}
 
-Über die Data Warehouse können die Frequenzen erneut verwaltet werden, indem Sie auf einen Tabellennamen klicken und die einzelnen Spalten überprüfen. Der Synchronisierungsstatus und die Häufigkeit der erneuten Überprüfung (die **ändert sich?** Spalte) für jede Spalte in der Tabelle angezeigt.
+Die Häufigkeit der erneuten Prüfungen kann im Data Warehouse durch Klicken auf einen Tabellennamen und anschließendes Überprüfen der einzelnen Spalten verwaltet werden. Der Synchronisationsstatus und die Häufigkeit der erneuten Prüfung (**Änderungen?** Spalte) wird für jede Spalte in der Tabelle angezeigt.
 
-Um die Häufigkeit der erneuten Überprüfungen zu ändern, aktivieren Sie das Kontrollkästchen neben den Spalten, die Sie ändern möchten. Klicken Sie dann auf das Dropdown-Menü **[!UICONTROL Set Recheck Frequency]** und legen Sie die gewünschte Häufigkeit fest.
+Um die Häufigkeit der erneuten Prüfungen zu ändern, aktivieren Sie das Kontrollkästchen neben den Spalten, die Sie ändern möchten. Klicken Sie dann auf das Dropdown-Menü **[!UICONTROL Set Recheck Frequency]** und legen Sie die gewünschte Häufigkeit fest.
 
 ![](../../assets/dwm-recheck.png)
 
-Manchmal wird in der Spalte `Changes?` `Paused` angezeigt. Dieser Wert wird angezeigt, wenn die [Replikationsmethode](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) der Tabelle auf `Paused` gesetzt ist.
+Manchmal werden `Paused` in der `Changes?` Spalte angezeigt. Dieser Wert wird angezeigt, wenn die [Replikationsmethode](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) der Tabelle auf `Paused` festgelegt ist.
 
-[!DNL Adobe] empfiehlt, diese Spalten zu überprüfen, um sowohl Ihre Aktualisierungen zu optimieren als auch sicherzustellen, dass veränderliche Spalten erneut überprüft werden. Wenn die Wiederholungshäufigkeit für eine Spalte angesichts der Häufigkeit der Datenänderungen hoch ist, empfiehlt Adobe, sie zu reduzieren, um Ihre Aktualisierungen zu optimieren.
+[!DNL Adobe] empfiehlt, diese Spalten zu überprüfen, um sowohl Ihre Aktualisierungen zu optimieren als auch sicherzustellen, dass veränderbare Spalten erneut überprüft werden. Wenn die Häufigkeit der erneuten Überprüfung für eine Spalte aufgrund der Häufigkeit der Datenänderungen hoch ist, empfiehlt Adobe, sie zu verringern, um Ihre Aktualisierungen zu optimieren.
 
-Kontaktieren Sie uns bei Fragen oder um aktuelle Replikationsmethoden oder Nachprüfungen zu erhalten.
+Wenden Sie sich bei Fragen oder Fragen zu aktuellen Replikationsmethoden oder erneuten Prüfungen an uns.
 
 **Related:**
 
-* [Verkürzen der Aktualisierungszeiten](../../best-practices/reduce-update-cycle-time.md)
+* [Verkürzung der Aktualisierungszeiten](../../best-practices/reduce-update-cycle-time.md)
 * [Datenbank für Analysen optimieren](../../best-practices/opt-db-analysis.md)

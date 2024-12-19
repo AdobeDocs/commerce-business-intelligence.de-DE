@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Dashboard löschen
 
-Wenn Sie verhindern möchten, dass Ihre Dashboard-Liste überladen wird, können Sie ein Dashboard löschen, wenn es nicht mehr benötigt wird. Dies lässt sich auf zwei Arten erreichen:
+Wenn Sie verhindern möchten, dass Ihre Dashboard-Liste zu überladen wird, können Sie ein Dashboard löschen, wenn es nicht mehr benötigt wird. Dies lässt sich auf zwei Arten erreichen:
 
-1. [Über die Seite `Account Settings` ](#account) - diese Methode erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
+1. [Über die `Account Settings`-](#account): Diese Methode erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
 
-1. [Über das `Dashboard Options` Menü](#do) - Für diese Methode müssen Sie Inhaber des Dashboards sein oder über `Edit` -Berechtigungen verfügen.
+1. [Über das `Dashboard Options`-](#do): Für diese Methode müssen Sie Eigentümer des Dashboards sein oder über `Edit` verfügen.
 
-## Dashboard über die Seite `Account Settings` löschen {#account}
+## Dashboard über die `Account Settings` löschen {#account}
 
 1. Klicken Sie auf **[!UICONTROL Account Settings** > **Dashboards]**.
 
@@ -31,13 +31,13 @@ Beispiel:
 
 ![Dashboard löschen](../../assets/deleting_dash.gif)<!--{: width="703" height="346"}-->
 
-## Dashboard über das Menü `Dashboard Options` löschen {#do}
+## Löschen eines Dashboards über das `Dashboard Options` {#do}
 
-1. Klicken Sie oben im Bildschirm auf das Menü **[!UICONTROL Dashboard Options]** .
+1. Klicken Sie auf das Menü **[!UICONTROL Dashboard Options]** oben auf dem Bildschirm.
 
-1. Klicken Sie im Dropdown-Menü auf **[!UICONTROL Delete]**.
+1. Klicken Sie in der Dropdown-Liste auf **[!UICONTROL Delete]**.
 
-1. Klicken Sie bei Aufforderung zur Bestätigung auf **[!UICONTROL Delete]**.
+1. Wenn Sie zum Bestätigen aufgefordert werden, klicken Sie auf **[!UICONTROL Delete]**.
 
 Beispiel:
 

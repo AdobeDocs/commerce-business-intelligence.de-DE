@@ -11,19 +11,19 @@ ht-degree: 0%
 
 ---
 
-# Grafik aus einem Dashboard entfernen
+# Entfernen eines Diagramms aus einem Dashboard
 
 >[!NOTE]
 >
->Erfordert [Admin](../../administrator/user-management/user-management.md) - oder `Standard` -Berechtigungen, um diese Funktionen auszuführen. Wenn Sie ein `Standard` -Benutzer sind, benötigen Sie auch `Edit` -Berechtigungen für das Dashboard.
+>Erfordert [Admin](../../administrator/user-management/user-management.md) oder `Standard` Berechtigungen, um diese Funktionen auszuführen. Wenn Sie ein `Standard` Benutzer sind, benötigen Sie auch `Edit` Berechtigungen für das Dashboard.
 
 Manchmal passen Namen einfach nicht mehr. Das Umbenennen eines Dashboards ist schnell und einfach.
 
-1. Klicken Sie im Dashboard auf das Menü **[!UICONTROL Dashboard Options]** oben im Bildschirm neben dem Menü `Global Search`.
+1. Klicken Sie im Dashboard oben auf dem Bildschirm auf das **[!UICONTROL Dashboard Options]**-Menü neben dem `Global Search`.
 
 1. Klicken Sie im Dropdown-Menü auf **[!UICONTROL Rename]** .
 
-1. Geben Sie bei Aufforderung den neuen Namen für Ihr Dashboard ein.
+1. Geben Sie nach Aufforderung den neuen Namen für Ihr Dashboard ein.
 
 1. Klicken Sie auf **[!UICONTROL Save Changes]**.
 

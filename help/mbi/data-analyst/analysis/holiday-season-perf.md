@@ -1,6 +1,6 @@
 ---
-title: Analysieren der Leistung der Weihnachtszeit
-description: Erfahren Sie, wie sich das diesjährige Wachstum im Vergleich zu den Vorjahren entwickelt.
+title: Analysieren der Leistung während der Urlaubszeit
+description: Erfahren Sie, wie sich das Wachstumsmuster dieses Jahres im Vergleich zu den Vorjahren darstellt.
 exl-id: 328f30b8-0db6-48fd-8d97-95f0bc7e4803
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
@@ -11,56 +11,56 @@ ht-degree: 0%
 
 ---
 
-# Holiday Shopping Analysis
+# Analyse des Weihnachtseinkaufs
 
-Für Ihr Unternehmen ist der Urlaub vielleicht eine der geschäftigsten Zeiten des Jahres. Für Einzelhändler mit einem großen amerikanischen Kundenstamm erstreckt sich die Weihnachtszeit in der Regel über die Monate zwischen dem Erntedankfest und dem Neujahr.
+Für Ihr Unternehmen könnten die Feiertage eine der geschäftigsten Zeiten des Jahres sein. Für Einzelhändler mit einem großen amerikanischen Kundenstamm umfasst die Weihnachtszeit in der Regel die Monate zwischen Thanksgiving und Neujahr.
 
-Rushes können jederzeit während des Jahres auftreten. Wenn Ihr Unternehmen z.B. Shorts oder Poolzubehör verkauft, kann es im Sommer zu einem Espresso kommen. Dieses Thema untersucht Analysen, die Ihnen helfen, Ihre hohen Jahreszeiten über verschiedene Jahre hinweg zu vergleichen.
+Anstürme können zu jedem Zeitpunkt des Jahres auftreten. Wenn Ihr Unternehmen beispielsweise Shorts oder Poolzubehör verkauft, können Sie im Sommer einen Ansturm erleben. In diesem Thema werden Analysen untersucht, mit denen Sie Ihre Hochsaisons über verschiedene Jahre hinweg vergleichen können.
 
-## Empfehlungen für Metriken
+## Empfohlene Kennzahlen
 
-Wenn Sie die Leistung der Weihnachtszeit analysieren ([oder](../../data-user/reports/ess-manage-data-metrics.md)), sollten Sie diese Metriken analysieren:
+Berücksichtigen Sie bei der Analyse der Leistung während der Weihnachtssaison [ Analyse (oder ](../../data-user/reports/ess-manage-data-metrics.md)) dieser Metriken:
 
-### Anzahl neuer Kunden, Anzahl Bestellungen, Umsatz
+### Anzahl neuer Kunden, Anzahl der Bestellungen, Umsatz
 
-Um zu verstehen, wie sich das diesjährige Wachstum im Vergleich zu den Vorjahren entwickelt, sollten Sie diese Maßnahmen analysieren. Die Anzahl neuer Kunden, die Anzahl neuer Bestellungen und der Umsatzbetrag zeigen Ihnen die tägliche Leistung Ihres Unternehmens für den von Ihnen festgelegten Zeitraum (Weihnachtszeit). Sie können diese Kennzahlen auch mithilfe einer kumulativen Perspektive analysieren, um zu sehen, wie sich die Metrik im Laufe der Zeit ändert.
+Um zu verstehen, wie sich das Wachstumsmuster dieses Jahres im Vergleich zu den Vorjahren darstellt, sollten Sie diese Maßnahmen analysieren. Die Anzahl der neuen Kunden, die Anzahl der neuen Bestellungen und der Umsatzbetrag zeigen Ihnen, wie Ihr Unternehmen täglich für den von Ihnen angegebenen Zeitraum (Weihnachtszeit) funktioniert. Sie können diese Kennzahlen auch aus einer kumulativen Perspektive analysieren, um zu sehen, wie sich die Metrik im Laufe der Zeit verändert.
 
 ### Durchschnittlicher Bestellwert
 
-Diese Kennzahl zeigt den durchschnittlichen Gesamtbestellwert während Ihrer Urlaubszeit an.
+Diese Kennzahl zeigt den durchschnittlichen Gesamtbestellwert während der Urlaubszeiten an.
 
-## Beispiel: Umsatz in der Urlaubszeit pro Tag
+## Beispiel: Umsatz der täglichen Urlaubszeit
 
-Nachdem Sie nun wissen, welche Metriken analysiert werden sollen, sehen Sie sich einige Beispielumsatzdaten während der Weihnachtsmonate November und Dezember für 2014 und 2015 an.
+Nachdem Sie nun wissen, welche Metriken Sie analysieren müssen, sehen Sie sich einige Beispiel-Umsatzdaten während der Weihnachtssaison in den Monaten November und Dezember 2014 und 2015 an.
 
-![Täglicher Umsatz aus Weihnachtszeiten für 2014 und 2015](../../assets/Analyzing_holiday_season.png)
+![Tageseinnahmen aus der Urlaubssaison 2014 und 2015](../../assets/Analyzing_holiday_season.png)
 
-In diesem Beispiel gibt es zwei große Umsatzsteigerungen für 2014 und 2015: Diese Zunahmen fallen mit Black Friday und Cyber Monday zusammen. Beachten Sie, dass die Spitzen 2014 und 2015 nicht am selben Tag stattfinden. Dies liegt daran, dass Black Friday für 2014 auf den 27. November und für 28. November 2015 auf den 27. November fiel. Ebenso war Cyber Montag der 30. November für 2014 und der 1. Dezember für 2015.
+In diesem Beispiel gibt es zwei große Umsatzspitzen für 2014 und 2015: Diese Steigerungen fallen mit Black Friday und Cyber Monday zusammen. Beachten Sie, dass sich die Spitzen für 2014 und 2015 nicht am selben Tag befinden. Dies liegt daran, dass der Black Friday am 27. November 2014 und am 28. November 2015 fiel. In ähnlicher Weise war der Cyber Monday der 30. November 2014 und der 1. Dezember 2015.
 
-Darüber hinaus gibt es einen Anstieg der Einnahmen für 2015 am 19. Dezember, der 2014 nicht auftritt. Es ist möglich, dass ein Verkauf an diesem Samstag angeboten wurde, der im Vorjahr nicht verfügbar war.
+Außerdem ist am 19. Dezember ein Umsatzanstieg für 2015 zu verzeichnen, der 2014 nicht eintritt. Möglicherweise wurde an diesem Samstag ein Verkauf angeboten, der im Vorjahr nicht verfügbar war.
 
-Abgesehen von den wenigen oben genannten Daten verzeichnen sich die Umsätze für diese beiden Jahre zusammen.
+Abgesehen von den wenigen oben genannten Terminen fallen die Einnahmen für diese beiden Jahre zusammen.
 
-## Welche Fragen sollte ich beachten?
+## Welche Fragen sollte ich berücksichtigen?
 
-Um Ihnen zu helfen, die saisonalen Trends für Ihr Unternehmen zu verstehen, sollten Sie bei der Erforschung Ihrer eigenen Daten einige Fragen beachten:
+Damit Sie die saisonalen Trends für Ihr Unternehmen besser verstehen können, sollten Sie bei der Analyse Ihrer eigenen Daten folgende Fragen berücksichtigen:
 
 * Sind die Trends von Jahr zu Jahr zu erwarten?
-* Entsprechen die Trends Ihren Erwartungen an saisonbedingte Schwankungen?
-* Gibt es Unterschiede von Jahr zu Jahr? Können diese Unterschiede erklärt werden?
-* Wurden in einem bestimmten Jahr Promotions angeboten?
-* Wurden die Preise in einem bestimmten Jahr gestiegen?
+* Spiegeln die Trends Ihre Erwartungen an saisonale Variationen wider?
+* Gibt es von Jahr zu Jahr Unterschiede? Können diese Unterschiede erklärt werden?
+* Wurden in einem bestimmten Jahr Angebote unterbreitet?
+* Wurden die Preise in einem bestimmten Jahr erhöht?
 * Wurden die Werbeausgaben für ein bestimmtes Jahr erhöht?
 
-## Was soll ich sonst noch analysieren?
+## Was sollte ich noch analysieren?
 
-Eine Möglichkeit besteht darin, das Kaufverhalten Ihrer Kunden während der Urlaubszeit zu analysieren. Verbringen Kunden, die während der Weihnachtszeit erworben wurden, häufiger oder kaufen häufiger als Kunden außerhalb der Weihnachtszeit?
+Eine Möglichkeit besteht darin, das Kaufverhalten Ihrer Kunden während der Urlaubszeit zu analysieren. Geben Kunden, die während der Urlaubszeit erworben wurden, mehr aus oder kaufen sie häufiger ein als Kunden, die außerhalb der Urlaubszeit erworben wurden?
 
-Eine weitere Möglichkeit besteht darin, den ROI nach Kampagnen während der Urlaubszeiten zu analysieren. Ist Ihr ROI bei bestimmten Kampagnen höher, die während der Weihnachtszeit ausgeführt werden? Sollten Sie während dieser Saison die Ausgaben für Kampagnen mit hohem ROI erhöhen?
+Eine weitere Möglichkeit besteht darin, Ihren ROI nach Kampagne während der Urlaubszeiten zu analysieren. Ist Ihr ROI für bestimmte Kampagnen, die während der Urlaubszeit ausgeführt werden, höher? Sollten Sie die Ausgaben für Kampagnen mit hohem ROI in diesen Saisons erhöhen?
 
-Darüber hinaus können Sie die Anzahl der diskontierten Bestellungen im Vergleich zu vollständigen Preisaufträgen analysieren. [Warten die meisten Kunden während Ihrer Weihnachtszeit auf einen Verkauf zum Bestellen von Bestellungen](../analysis/coupon-usage.md) oder kaufen sie ganze Preisartikel?
+Darüber hinaus können Sie die Anzahl der reduzierten Bestellungen versus Vollpreisbestellungen analysieren. [Warten die meisten Kunden auf einen Verkauf, um Bestellungen zu kaufen](../analysis/coupon-usage.md) während Ihrer Urlaubszeit oder kaufen sie Vollpreisartikel?
 
-### Verwandte
+### verwandt
 
-* [Analyse der Auswirkungen von Gutscheinen auf die Akquise und Bindung von Kunden](../analysis/coupon-impact.md)
-* [Analysieren des Kaufverhaltens von Kunden](../analysis/repurchase-behavior.md)
+* [Analyse der Couponauswirkungen auf Kundenakquise und Kundenbindung](../analysis/coupon-impact.md)
+* [Analyse des Rückkaufverhaltens von Kunden](../analysis/repurchase-behavior.md)

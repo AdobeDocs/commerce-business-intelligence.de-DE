@@ -1,6 +1,6 @@
 ---
 title: Importieren von Linkshare-Daten
-description: Erfahren Sie, wie Sie Linkshare-Daten in [!DNL Commerce Intelligence] importieren.
+description: Erfahren Sie, wie Sie Linkshare-Daten in  [!DNL Commerce Intelligence].
 exl-id: 1c2025a6-746c-4929-bbb1-62af1afcbc49
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -11,33 +11,33 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Linkshare] Daten importieren
+# [!DNL Linkshare] importieren
 
-Um Ihre [!DNL Linkshare] -Daten in [!DNL Adobe Commerce Intelligence] zu übertragen, müssen Sie zwei Schritte durchführen:
+Um Ihre [!DNL Linkshare]-Daten in [!DNL Adobe Commerce Intelligence] einzubringen, müssen Sie zwei Dinge tun:
 
-1. [Exportieren Sie die Linkshare-Daten in ](#export)
-1. [Hochladen der Tabelle in  [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
+1. [Exportieren der Linkshare-Daten in ](#export)
+1. [Tabelle hochladen in [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
-## Daten aus Linkshare exportieren {#export}
+## Exportieren von Daten aus Linkshare {#export}
 
-1. Gehen Sie in Ihrem [!DNL Linkshare]-Konto zu **[!UICONTROL Reports** > **Run Reports].**
+1. Navigieren Sie in Ihrem [!DNL Linkshare]-Konto zu **[!UICONTROL Reports** > **Run Reports].**
 
-1. Wählen Sie im Dropdown-Menü `Report` die Option **[!UICONTROL Sales & Activity Report]** aus.
+1. Wählen Sie in der Dropdown-Liste `Report` die Option **[!UICONTROL Sales & Activity Report]** aus.
 
-1. Behalten Sie alle anderen Dropdown-Optionen als Standardauswahl bei.
+1. Belassen Sie alle anderen Dropdown-Optionen als Standardauswahl.
 
-1. Wählen Sie im Dropdown-Menü `Date Range` aus, welche Option (`Sun - Sat`, `Mon - Sun`) mit Ihren `Start of Week`-Einstellungen in [!DNL Commerce Intelligence] übereinstimmt.
+1. Wählen Sie in der Dropdown-Liste `Date Range` aus, welche Option (`Sun - Sat`, `Mon - Sun`) Ihren `Start of Week` in [!DNL Commerce Intelligence] entspricht.
 
 1. Deaktivieren Sie das Kontrollkästchen `Compare Year-Over-Year Data` .
 
-1. Wählen Sie unter &quot;`Data Type`&quot;die Option &quot;`Transaction Date`&quot;.
+1. Wählen Sie unter `Data Type` die Option `Transaction Date`.
 
-   ![Importieren\_linkshare\_data.png](../../../assets/importing_linkshare_data.png)
+   ![import\_linkshare\_data.png](../../../assets/importing_linkshare_data.png)
 
 1. Klicken Sie auf **[!UICONTROL View Report]**.
 
 1. Klicken Sie auf **[!UICONTROL Download]**.
 
-   An dieser Stelle wurde eine `.csv` -Datei heruntergeladen.
+   An dieser Stelle wurde eine `.csv`-Datei heruntergeladen und.
 
-Nachdem die Datei heruntergeladen wurde, können Sie sie mit der Funktion [`File Upload` ](../connecting-data/using-file-uploader.md) in [!DNL Commerce Intelligence] hochladen.
+Nachdem die Datei heruntergeladen wurde, können Sie sie mit der [`File Upload`-Funktion in [!DNL Commerce Intelligence] hochladen](../connecting-data/using-file-uploader.md).

@@ -1,5 +1,5 @@
 ---
-title: Berichte für Jahr, Monat und Woche
+title: Jährliche, monatliche und wöchentliche Berichte
 description: Erfahren Sie, wie Sie Trends im Zeitverlauf einfach erkennen und die Perspektive für Zeiträume ändern können, die Sie vergleichen möchten.
 exl-id: 74cf11c3-7ce0-477f-9a28-9d782e5da3d9
 role: Admin, Data Architect, Data Engineer, Leader, User
@@ -11,31 +11,31 @@ ht-degree: 0%
 
 ---
 
-# Berichterstellung über Zeiträume
+# Reporting über Zeiträume
 
 >[!NOTE]
 >
->Dieses Thema enthält Anweisungen für Clients, die die ursprüngliche Architektur und die neue Architektur verwenden. Sie befinden sich in der [neuen Architektur](../../administrator/account-management/new-architecture.md), wenn der Bereich [!DNL _Data Warehouse-Ansichten_] nach Auswahl von [!DNL Manage Data] in der Hauptsymbolleiste verfügbar ist.
+>Dieses Thema enthält Anweisungen für Clients, die die ursprüngliche und die neue Architektur verwenden. Sie befinden sich auf der [neuen Architektur](../../administrator/account-management/new-architecture.md) wenn der Abschnitt [!DNL _Data Warehouse-Ansichten_] verfügbar ist, nachdem Sie [!DNL Manage Data] in der Hauptsymbolleiste ausgewählt haben.
 
-Mit ReportBuilder können Sie Trends im Zeitverlauf einfach anzeigen und die Perspektive für Zeiträume ändern, die Sie vergleichen möchten. In diesem Thema wird gezeigt, wie ein Dashboard eingerichtet wird, das eine Ebene tiefer geht und es Ihnen ermöglicht, Berichte für die Analyse von Woche zu Woche, Monat zu Jahr und Jahr zu Jahr zu erstellen.
+Mit Report Builder können Sie Trends im Zeitverlauf leicht erkennen und die Perspektive für Zeiträume ändern, die Sie vergleichen möchten. In diesem Thema wird gezeigt, wie Sie ein Dashboard einrichten, um eine tiefere Ebene zu betreten und Berichte für die Analyse von Woche zu Woche, von Monat zu Monat und von Jahr zu Jahr zu erstellen.
 
 ![](../../assets/Wow__mom__yoy.png)
 
-Bevor Sie beginnen, sollten Sie die Perspektiven genauer betrachten [hier](../../tutorials/using-visual-report-builder.md) und die unabhängigen Zeitoptionen [hier](../../tutorials/time-options-visual-rpt-bldr.md).
+Bevor Sie anfangen, sollten Sie Perspektiven detaillierter erkunden [hier](../../tutorials/using-visual-report-builder.md) und unabhängige Zeitoptionen [hier](../../tutorials/time-options-visual-rpt-bldr.md).
 
 Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Berechnete Spalten
 
-* **`Sales_flat_order`** table
-* **Ursprüngliche Architektur:** Die folgenden Spalten werden von einem Analytiker im Rahmen Ihres `[YoY WoW MoM ANALYSIS]`-Tickets erstellt
+* **`Sales_flat_order`**
+* **Ursprüngliche Architektur:** Die folgenden Spalten werden von einem Analyst als Teil Ihres `[YoY WoW MoM ANALYSIS]`-Tickets erstellt
 * `created_at (month-day)`
 * `created_at (month)`
 * `created_at (day of the month)`
 * `created_at (day of the week)`
 * `created_at (hour of the day)`
 
-* **Neue Architektur:** SQL mit einem Foto eines Beispiels für die Erstellung dieser Berechnung
+* **Neue Architektur:** unten aufgeführte SQL mit einem Foto eines Beispiels zur Erstellung dieser Berechnung
    * `created_at (month-day)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-dd&#39;)**
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
@@ -49,7 +49,7 @@ Keine.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie [alle neuen Spalten als Dimensionen zu den Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) , bevor Sie neue Berichte erstellen.
+>Stellen Sie sicher[ dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
@@ -61,8 +61,8 @@ Keine.
 
    * [!UICONTROL Show top/bottom]: Top 100% sortiert nach **`created_at (month-day)`***
 
-* Metrik `A`: `This year`
-* Metrik `B`: `Last year`
+* `A`: `This year`
+* `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
 * 
   [!UICONTROL Interval]: `None`
@@ -76,10 +76,10 @@ Keine.
    * [!UICONTROL Metric]: `Number of orders`
    * Zeitoptionen: `Time range (Custom)`: `2 months ago to 1 month ago`
 
-   * Oben/unten anzeigen: Top 100 % sortiert nach **`created_at (day of month)`***
+   * Oben/Unten anzeigen: Top 100% sortiert nach **`created_at (day of month)`***
 
-* Metrik `A`: Dieser Monat*
-* Metrik `B`: Letzter Monat*
+* `A`: Diesen Monat*
+* `B`: Letzter Monat*
 * [!UICONTROL Time period]: Vor einem Monat bis vor 0 Monaten
 * 
   [!UICONTROL Interval]: None
@@ -95,8 +95,8 @@ Keine.
 
    * [!UICONTROL Show top/bottom]: Top 100% sortiert nach `created_at (day of week)`
 
-* Metrik `A`: `This week`
-* Metrik `B`: `Last week`
+* `A`: `This week`
+* `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
 * 
   [!UICONTROL Interval]: `None`
@@ -112,7 +112,7 @@ Keine.
 
    * [!UICONTROL Show top/bottom]: Top 100% sortiert nach `created_at (hour of day)`
 
-* Metrik `A`: `Today`
+* `A`: `Today`
 * Metrik B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
 * 
@@ -121,4 +121,4 @@ Keine.
 * 
   [!UICONTROL Chart Type]: `Line`
 
-Nachdem Sie alle Berichte kompiliert haben, können Sie sie nach Bedarf im Dashboard organisieren. Das Ergebnis kann wie das Bild oben auf dieser Seite aussehen.
+Nachdem Sie alle Berichte kompiliert haben, können Sie sie im Dashboard nach Bedarf organisieren. Das Ergebnis könnte wie das Bild oben auf dieser Seite aussehen.

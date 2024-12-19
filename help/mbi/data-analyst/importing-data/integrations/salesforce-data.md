@@ -11,19 +11,19 @@ ht-degree: 0%
 
 ---
 
-# Erwartete [!DNL Salesforce] Daten
+# Erwartete [!DNL Salesforce]
 
-Nachdem der [[!DNL Salesforce] Setup](../integrations/salesforce.md) abgeschlossen ist, wird eine Tabelle für jedes abfragliche [Objekt](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - mit dem Namen `sf_/\{sobject-name}` - in Ihrer Data Warehouse erstellt.
+Nachdem [[!DNL Salesforce] Setup](../integrations/salesforce.md) abgeschlossen ist, wird eine Tabelle für jedes abfragbare [Objekt](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - namens `sf_/\{sobject-name}` - auf Ihrem Data Warehouse erstellt.
 
 >[!NOTE]
 >
->Die Struktur (Spalten) der einzelnen Tabellen hängt von den im Objekt enthaltenen Feldern ab.
+>Die Struktur (Spalten) jeder Tabelle hängt von den Feldern ab, die im -Objekt enthalten sind.
 
-Eine Liste der Ihrer Organisation zur Verfügung stehenden Objekte finden Sie in der Dokumentation [!DNL Salesforce] [Abrufen einer Liste von Objekten](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm) . Nachdem Sie über eine Liste von Objekten verfügen, sehen Sie sich den Abschnitt [Entitäts-Beziehungsdiagramm (ERD) in der Dokumentation zu [!DNL Salesforce] an, um zu sehen, wie sich Entitäten zueinander verhalten.](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm)
+Eine Liste der für Ihr Unternehmen verfügbaren Objekte finden Sie in der [!DNL Salesforce] [Abrufen einer Liste von Objekten](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/dome_describeGlobal.htm). Nachdem Sie eine Liste von Objekten haben, lesen Sie den Abschnitt [Entitätsbeziehungsdiagramm (ERD)](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_erd_knowledge.htm) [!DNL Salesforce] Dokumentation, um zu sehen, wie Entitäten miteinander zusammenhängen.
 
 ## Nicht unterstützte Objekte
 
-Derzeit stellt [!DNL Salesforce] die folgenden Objekte in ihrer API nicht bereit:
+Derzeit macht [!DNL Salesforce] die folgenden Objekte in ihrer API nicht verfügbar:
 
 * `Announcement`
 * `Attachment`
@@ -47,7 +47,7 @@ Derzeit stellt [!DNL Salesforce] die folgenden Objekte in ihrer API nicht bereit
 * `UserProfileFeed`
 * `Vote`
 
-## Verwandte:
+## Verwandt:
 
 * [Verbinden [!DNL Salesforce]](../integrations/salesforce.md)
-* [Erneutes Authentifizieren von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

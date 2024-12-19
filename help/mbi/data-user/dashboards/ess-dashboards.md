@@ -1,6 +1,6 @@
 ---
 title: Dashboards
-description: Erfahren Sie, wie Sie ein Dashboard erstellen und verwenden.
+description: Erfahren Sie, wie Sie ein Dashboard erstellen und damit arbeiten können.
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # Dashboards
 
-[!DNL Adobe Commerce Intelligence] Dashboards geben Ihnen einen Überblick über die Leistung und Verkaufsaktivitäten Ihres Stores auf einen Blick. Einzelne Dashboards können für andere Benutzer freigegeben und in logische Gruppen unterteilt werden. Sie können auch verschiedene Berechtigungsstufen für andere Benutzer festlegen.
+[!DNL Adobe Commerce Intelligence] Dashboards bieten Ihnen einen schnellen Überblick über die Leistung und Verkaufsaktivität Ihres Stores. Einzelne Dashboards können für andere Benutzer freigegeben und in logischen Gruppen organisiert werden. Sie können auch verschiedene Berechtigungsebenen für andere Benutzer festlegen.
 
-Es ist einfach, einen Bericht zu erstellen, ihn einem Dashboard hinzuzufügen und die Daten nach Excel zu exportieren. Grafiken und Berichte können in der Größe angepasst und in die Position des Dashboards gezogen werden.
+Es ist einfach, einen Bericht zu erstellen, ihn zu einem Dashboard hinzuzufügen und die Daten nach Excel zu exportieren. Diagramme und Berichte können in der Größe verändert und im Dashboard an eine Position verschoben werden.
 
 ![Dashboard](../../assets/magento-bi-report-builder-revenue-by-products-formula-report-holiday-sales-dashboard.png)
 
 ## Erstellen von Dashboards {#createdash}
 
-Dashboards sind freigebbare thematische Behälter für die Analysen, die Sie in den Report Buildern erstellen. Auf diese Weise können Sie Ihr Team ermutigen, zusammenzuarbeiten und eine einzige Quelle der Wahrheit in Ihrem Unternehmen zu erhalten.
+Dashboards sind freigebbare, thematische Behälter für die Analysen, die Sie in den Report Buildern erstellen. Auf diese Weise können Sie Ihr Team dazu ermutigen, in Ihrem gesamten Unternehmen zusammenzuarbeiten und eine zentrale Quelle der Wahrheit zu verwenden.
 
-*Wenn Sie Administrator oder Standardbenutzer sind*, können Sie ein Dashboard erstellen, indem Sie auf das Dropdown-Menü `Dashboard Options` klicken und `Create New dashboard` auswählen.
+*Wenn Sie Administrator oder Standardbenutzer sind* können Sie ein Dashboard erstellen, indem Sie auf das `Dashboard Options`-Dropdown-Menü klicken und `Create New dashboard` auswählen.
 
-Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie können die Elemente im Dashboard beliebig anordnen und ihre Größe ändern.
+Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie können die Elemente im Dashboard nach Belieben anordnen und in der Größe anpassen.
 
-![Größe des Dashboard-Elements anordnen](../../assets/arrange_resize_dashboard_element.gif)
+![Dashboard-Element in der Größe anordnen](../../assets/arrange_resize_dashboard_element.gif)
 
 ### Dashboard erstellen
 
@@ -37,7 +37,7 @@ Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie kön
 
    ![Dashboard erstellen](../../assets/magento-bi-dashboard-create.png)
 
-1. Klicken Sie auf **[!UICONTROL Create Dashboard]**. Führen Sie dann die folgenden Schritte aus:
+1. Klicken Sie auf **[!UICONTROL Create Dashboard]**. Gehen Sie dann wie folgt vor:
 
    * Geben Sie einen `Name` für Ihr Dashboard ein.
 
@@ -49,45 +49,45 @@ Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie kön
 
    ![Dashboard-Name](../../assets/magento-bi-dashboard-create-name.png)
 
-   * Der Name Ihres neuen Dashboards wird oben links angezeigt. Klicken Sie auf den Abwärtspfeil (![](../../assets/magento-bi-btn-down.png)), um die Optionen anzuzeigen. Wenn Sie eine Gruppe erstellt haben, wird das neue Dashboard unter der Gruppe in der Liste angezeigt.
+   * Der Name Ihres neuen Dashboards wird in der oberen linken Ecke angezeigt. Klicken Sie auf den Abwärtspfeil (![](../../assets/magento-bi-btn-down.png)), um die Optionen anzuzeigen. Wenn Sie eine Gruppe erstellt haben, wird das neue Dashboard unterhalb der Gruppe in der Liste angezeigt.
 
 ### Bericht hinzufügen
 
-1. Führen Sie einen der folgenden Schritte aus, um einen Bericht hinzuzufügen:
+1. Um einen Bericht hinzuzufügen, führen Sie einen der folgenden Schritte aus:
 
-   * Klicken Sie auf die Eingabeaufforderung **[!UICONTROL Add a report]** auf der Seite.
+   * Klicken Sie auf der Seite auf die Eingabeaufforderung **[!UICONTROL Add a report]** .
 
-   * Klicken Sie in der Dashboard-Kopfzeile auf **[!UICONTROL Add Report]**.
+   * Klicken Sie in der Kopfzeile des Dashboards auf **[!UICONTROL Add Report]**.
 
      ![Bericht hinzufügen](../../assets/magento-bi-dashboard-create-add-report.png)
 
-1. Klicken Sie auf **[!UICONTROL Create Report]** , um den **[!UICONTROL Report Builder Options]** anzuzeigen.
+1. Klicken Sie auf **[!UICONTROL Create Report]** , um die **[!UICONTROL Report Builder Options]** anzuzeigen.
 
-   ![Report Builder Options](../../assets/magento-bi-report-builder.png)
+   ![Report Builder-Optionen](../../assets/magento-bi-report-builder.png)
 
 ## Elemente in einem Dashboard anordnen
 
 * Um die Größe eines Diagramms oder Berichts zu ändern, ziehen Sie die untere rechte Ecke auf die neue Größe.
 
-* Um ein Diagramm oder einen Bericht zu verschieben, bewegen Sie den Mauszeiger über den Titel oder die Kopfzeile, bis der Cursor in ein Kreuz geändert wird. Ziehen Sie es dann an die gewünschte Position.
+* Um ein Diagramm oder einen Bericht zu verschieben, bewegen Sie den Mauszeiger über den Titel oder die Kopfzeile, bis sich der Cursor in ein Kreuz ändert. Ziehen Sie sie dann in die gewünschte Position.
 
 ## Verwalten von Dashboards {#managedash}
 
-In **[!DNL Manage Data** > **Dashboards]** können Sie Benutzerberechtigungen für Dashboards verwalten, die Ihnen gehören, Dashboards löschen, die Sie nicht mehr benötigen, und ein Standard-Dashboard einrichten.
+In **[!DNL Manage Data** > **Dashboards]** können Sie Benutzerberechtigungen für Dashboards verwalten, deren Inhaber Sie sind, nicht mehr benötigte Dashboards löschen und ein Standard-Dashboard festlegen.
 
-### Dashboards freigeben {#sharingdash}
+### Freigeben von Dashboards {#sharingdash}
 
-Um in Ihrer Organisation wirklich [!DNL Commerce Intelligence] zu skalieren und wertvolle Einblicke zu erhalten, empfiehlt Ihnen Adobe, Dashboards, die Sie erstellen, mit anderen Team-Mitgliedern zu teilen. *Sie können Dashboards freigeben, deren Inhaber Sie sind*, indem Sie oben auf der Seite auf die Option `Share Dashboard` klicken.
+Um die [!DNL Commerce Intelligence] in Ihrem Unternehmen wirklich zu skalieren und wertvolle Einblicke zu bieten, empfiehlt Adobe, die von Ihnen erstellten Dashboards mit anderen Team-Mitgliedern zu teilen. *Sie können Ihre eigenen Dashboards freigeben* indem Sie auf die Option `Share Dashboard` oben auf der Seite klicken.
 
-Wenn Sie ein Dashboard freigeben, können Sie Ihrer gesamten Organisation ODER individuell Berechtigungen zuweisen, sodass Sie entscheiden können, wer Ihre Berichte anzeigen und bearbeiten kann.
+Wenn Sie ein Dashboard freigeben, können Sie Berechtigungen für Ihre gesamte Organisation ODER für einzelne Benutzer zuweisen, sodass Sie entscheiden können, wer Ihre Berichte anzeigen und bearbeiten darf.
 
 >[!NOTE]
 >
->`Read-Only` Benutzer haben nur Zugriff auf Dashboards, die direkt für sie freigegeben sind. Sie können nicht allein nach Dashboards suchen und diese hinzufügen. Vergessen Sie nicht, sie in der Schleife zu halten!
+>`Read-Only` Benutzer haben nur Zugriff auf Dashboards, die direkt für sie freigegeben sind - sie können nicht selbst nach Dashboards suchen und diese hinzufügen. Vergessen Sie nicht, sie auf dem Laufenden zu halten!
 
 ### Zugreifen auf freigegebene Dashboards {#accessshared}
 
-*Wenn Sie Administrator oder Standardbenutzer sind* und Ihrem Konto ein freigegebenes Dashboard hinzufügen möchten, können Sie dies tun, indem Sie auf **[!UICONTROL Dashboard Options]** klicken und dann im Dropdown-Menü auf **[!UICONTROL Find]** klicken.
+*Wenn Sie ein Administrator- oder Standardbenutzer sind* Ihrem Konto ein freigegebenes Dashboard hinzufügen möchten, klicken Sie dazu auf **[!UICONTROL Dashboard Options]** und dann auf **[!UICONTROL Find]** in der Dropdown-Liste.
 
 ![Dashboard suchen](../../assets/find_dashboard.png)<!--{: width="1000" height="535"}-->
 
@@ -95,27 +95,27 @@ Wenn Sie ein Dashboard freigeben, können Sie Ihrer gesamten Organisation ODER i
 
 1. Klicken Sie im Menü auf **[!DNL Manage Data** > **Dashboards]**.
 
-1. Falls zutreffend, geben Sie einen neuen `Dashboard Name` ein.
+1. Geben Sie gegebenenfalls eine neue `Dashboard Name` ein.
 
-1. Um das Dashboard einer bestimmten `Dashboard Group` zuzuweisen, wählen Sie aus der Gruppenliste aus.
+1. Um das Dashboard einem bestimmten `Dashboard Group` zuzuweisen, wählen Sie aus der Liste der Gruppen aus.
 
    **`Permissions`**
 
    Gehen Sie wie folgt vor, um allen Benutzern denselben Zugriff auf das Dashboard zu gewähren:
 
-   1. Wählen Sie unter **`Shared with`** eine der folgenden Optionen aus:
+   1. Wählen Sie unter **`Shared with`** eine der folgenden Optionen:
 
       * `View`
       * `Edit`
       * `None`
 
-   1. Wenn Sie zur Bestätigung aufgefordert werden, klicken Sie auf **[!UICONTROL OK]** , um die Berechtigungsebene für jeden Benutzer zu aktualisieren.
+   1. Wenn Sie zur Bestätigung aufgefordert werden, klicken Sie auf **[!UICONTROL OK]** , um die Berechtigungsstufe für jeden Benutzer zu aktualisieren.
 
-   1. Um die Berechtigungsstufe einer Person zu ändern, suchen Sie den Benutzer in der Liste, um die Berechtigungsebene zu ändern. Die Änderung wird automatisch gespeichert.
+   1. Um die Berechtigungsstufe eines Kontakts zu ändern, suchen Sie den/die Benutzende(n) in der Liste und ändern Sie die Berechtigungsstufe. Die Änderung wird automatisch gespeichert.
 
    **`Default`**
 
-   1. Um dieses Dashboard als Standard für Ihr [!DNL Commerce Intelligence] -Konto festzulegen, klicken Sie auf **[!UICONTROL Make Default]**.
+   1. Um dieses Dashboard zum Standard für Ihr [!DNL Commerce Intelligence]-Konto zu machen, klicken Sie auf **[!UICONTROL Make Default]**.
 
    **`Remove`**
 

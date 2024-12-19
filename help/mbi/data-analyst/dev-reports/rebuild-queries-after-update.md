@@ -1,6 +1,6 @@
 ---
-title: Abfragen nach Aktualisierungszyklus neu erstellen?
-description: Erfahren Sie, was mit Ihren Abfragen nach Ausführung des Aktualisierungszyklus geschieht.
+title: Abfragen nach dem Aktualisierungszyklus neu erstellen?
+description: Erfahren Sie, was mit Ihren Abfragen passiert, nachdem der Aktualisierungszyklus ausgeführt wurde.
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
@@ -10,6 +10,6 @@ ht-degree: 0%
 
 ---
 
-# Neuerstellen von Abfragen nach dem Aktualisierungszyklus
+# Abfragen nach dem Aktualisierungszyklus neu erstellen
 
-Sie müssen Ihre Abfragen nicht neu erstellen. Berichte, die mit dem [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) erstellt wurden, werden wie im herkömmlichen `Report Builder` gespeichert. Der Aktualisierungsprozess für SQL-Diagramme ist derselbe - nach der Aktualisierung Ihrer Daten werden die Werte in Ihren Diagrammen neu berechnet und neu angezeigt.
+Sie müssen Ihre Abfragen nicht neu erstellen. Mit dem [`SQL Report Builder`](../dev-reports/sql-rpt-bldr.md) erstellte Berichte werden wie die im herkömmlichen `Report Builder` erstellten gespeichert. Der Aktualisierungsprozess für SQL-Diagramme ist derselbe - nachdem Ihre Daten aktualisiert wurden, werden die Werte in Ihren Diagrammen neu berechnet und angezeigt.

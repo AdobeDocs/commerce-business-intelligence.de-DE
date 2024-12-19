@@ -13,30 +13,30 @@ ht-degree: 0%
 
 # [!DNL SQL Report Builder]
 
-Der [!DNL SQL Report Builder] wird hauptsächlich zum Erstellen neuer Berichte und zum Iterieren von Analysen verwendet, kann aber auch verwendet werden, um Daten und Metriken effektiv zu überprüfen. In den folgenden Informationen wird erläutert, wie Sie Daten und Metriken mithilfe von [!DNL SQL Report Builder] prüfen können, damit Sie die Ergebnisse mit den Daten aus Ihrer lokalen Datenbank vergleichen können.
+Die [!DNL SQL Report Builder] wird hauptsächlich zum Erstellen neuer Berichte und zur Iteration von Analysen verwendet, kann aber auch zur effektiven Prüfung von Daten und Metriken verwendet werden. In den folgenden Informationen wird erläutert, wie Sie Daten und Metriken mithilfe der [!DNL SQL Report Builder] überprüfen können, damit Sie die Ergebnisse mit den Daten aus Ihrer lokalen Datenbank vergleichen können.
 
-## Abfrage zu einer Metrik
+## Metrik abfragen
 
-Öffnen Sie zunächst die [!DNL SQL Report Builder], indem Sie zu **[!UICONTROL Report Builder > SQL Report Builder > Create Report]** navigieren. Sie können die Seitenleiste im Editor [!DNL SQL] verwenden, um eine Metrik direkt in Ihre Abfrage einzufügen, indem Sie den Mauszeiger über die Metrik bewegen und auf **[!UICONTROL Insert]** klicken. Dadurch wird die Abfragedefinition dieser Metrik zum Editor hinzugefügt. Die Definition umfasst die folgenden Komponenten:
+Öffnen Sie zunächst die [!DNL SQL Report Builder], indem Sie zu **[!UICONTROL Report Builder > SQL Report Builder > Create Report]** navigieren. Sie können die Seitenleiste im [!DNL SQL] verwenden, um eine Metrik direkt in Ihre Abfrage einzufügen, indem Sie den Mauszeiger über die Metrik bewegen und auf **[!UICONTROL Insert]** klicken. Dadurch wird dem Editor die Abfragedefinition dieser Metrik hinzugefügt. Die Definition umfasst die folgenden Komponenten:
 
-- Der ausgeführte **metrische Vorgang**, wie im Beispiel unten durch `SUM()` angegeben.
-- Die **Tabelle auf**, die die Metrik erstellt wurde, wie durch die `FROM` -Klausel angegeben.
-- Alle **Filter (und Filtersätze)**, die zur Metrik hinzugefügt wurden, wie durch die `WHERE` -Klausel im folgenden Beispiel angegeben.
-- Die Komponente des **Zeitstempels** (Jahr, Monat), für die die Daten sortiert werden sollen, wie durch die `ORDER BY` -Klausel im unten stehenden Beispiel angegeben.
+- Der **metrische Vorgang** der ausgeführt wird, wie im folgenden Beispiel durch `SUM()` angegeben.
+- Die **Tabelle** auf der die Metrik basiert, angegeben durch die `FROM`.
+- Alle **Filter (und Filtersätze)** die der Metrik hinzugefügt wurden, angegeben durch die `WHERE` im folgenden Beispiel.
+- Die Komponente des **Zeitstempels** (Jahr, Monat), für die die Daten bestellt werden sollen, angegeben durch die `ORDER BY` im folgenden Beispiel.
 
-Um eine bessere Übersicht über die Abfrage zu erhalten, können Sie die Anzeige im Abfragefeld neu formatieren. Wählen Sie &quot;`Run Query`&quot;, wenn Sie bereit sind. Die Ergebnisse werden als Tabelle im Berichtbereich unter der Abfrage ausgefüllt.
+Um eine klarere Ansicht der Abfrage zu erhalten, können Sie die Darstellung der Abfrage im Abfragefeld neu formatieren. Wenn Sie bereit sind, wählen Sie `Run Query` aus. Die Ergebnisse werden als Tabelle im Bedienfeld Bericht unter der Abfrage angezeigt.
 
 ![](../../assets/run-query-results.gif)
 
-## Einschränkung der Abfrage
+## Abfrage einschränken
 
-Wenn Sie versuchen, eine bestimmte Diskrepanz oder einen bestimmten Datensatz zu ermitteln, sollten Sie die Abfrage auf ein bestimmtes Beispiel beschränken, um es mit Ihrer lokalen Datenbank abgleichen zu können. Bearbeiten Sie dazu die Abfrage entsprechend Ihren gewünschten Einschränkungen. Im folgenden Beispiel beschränken Sie die Abfrage so, dass nur der Umsatz ab dem 1. Januar 2013 oder höher erfasst wird. Nachdem Sie die Abfrage aktualisiert haben, wählen Sie erneut **[!UICONTROL Run Query]** aus, um die Ergebnisse zu aktualisieren.
+Wenn Sie versuchen, eine bestimmte Diskrepanz oder einen bestimmten Datensatz zu identifizieren, sollten Sie die Abfrage auf eine bestimmte Stichprobe beschränken, um sie mit Ihrer lokalen Datenbank zu vergleichen. Sie können dies tun, indem Sie die Abfrage entsprechend Ihren gewünschten Einschränkungen bearbeiten. Im folgenden Beispiel beschränken Sie die Abfrage darauf, nur Umsätze ab dem 1. Januar 2013 einzubeziehen. Nachdem Sie die Abfrage aktualisiert haben, wählen Sie erneut **[!UICONTROL Run Query]** aus, um die Ergebnisse zu aktualisieren.
 
 ![](../../assets/restricting-query.gif)
 
-## Speichern und exportieren
+## Speichern und Exportieren
 
-Wenn der Bericht Ihren Anforderungen entspricht, geben Sie dem Bericht einen eindeutigen Namen, klicken Sie auf &quot;**[!UICONTROL Save]**&quot;, wählen Sie den Berichtstyp aus, den Sie speichern möchten, und klicken Sie auf das Dashboard. Bei der Prüfung von Metriken empfiehlt Adobe, den Bericht als `Table` zu speichern und ihn in einem Test-Dashboard zu speichern.
+Wenn der Bericht Ihren Anforderungen entspricht, geben Sie dem Bericht einen eindeutigen Namen, klicken Sie auf **[!UICONTROL Save]** und wählen Sie den Berichtstyp aus, den Sie speichern möchten, sowie das Dashboard. Beim Auditing von Metriken empfiehlt Adobe, den Bericht als `Table` zu speichern und in einem Test-Dashboard zu speichern.
 
 Nachdem der Bericht gespeichert wurde, navigieren Sie zu diesem Dashboard, indem Sie `Go to Dashboard` auswählen. Von dort aus können Sie die Daten exportieren, indem Sie den Bericht suchen und **[!UICONTROL Options gear > Full `.csv`Export]** oder **[!UICONTROL Full Excel Export]** auswählen.
 
@@ -44,8 +44,8 @@ Nachdem der Bericht gespeichert wurde, navigieren Sie zu diesem Dashboard, indem
 
 ## Benutzerdefinierte Abfragen
 
-Sie können auch benutzerdefinierte Abfragen schreiben und die Ergebnisse exportieren, um sie mit Ihrer lokalen Datenbank zu vergleichen. Schreiben Sie entsprechend den [Richtlinien für die Abfrageoptimierung](../../best-practices/optimizing-your-sql-queries.md) eine Abfrage in den SQL-Editor. Sie können die Schaltflächen oben in der Seitenleiste verwenden, um zwischen den Listen der Tabellen und Metriken zu wechseln, die für die Verwendung in [!DNL SQL Report Builder] verfügbar sind, und sie zu Ihrer Abfrage hinzuzufügen. Wenn Ihre benutzerdefinierte Abfrage Ihren Anforderungen entspricht, können Sie den Bericht speichern und diese Daten aus dem Dashboard exportieren.
+Sie können auch benutzerdefinierte Abfragen schreiben und die Ergebnisse exportieren, um sie mit Ihrer lokalen Datenbank zu vergleichen. Schreiben Sie gemäß [Richtlinien für die ](../../best-practices/optimizing-your-sql-queries.md)) eine Abfrage im SQL-Editor. Mit den Schaltflächen oben in der Seitenleiste können Sie zwischen Listen von Tabellen und Metriken wechseln, die für die Verwendung in der [!DNL SQL Report Builder] verfügbar sind, und sie zu Ihrer Abfrage hinzufügen. Wenn Ihre benutzerdefinierte Abfrage Ihren Anforderungen entspricht, können Sie den Bericht speichern und diese Daten aus dem Dashboard exportieren.
 
 >[!NOTE]
 >
->Wenn Sie nach der Prüfung Ihrer Daten eine Diskrepanz feststellen, finden Sie weitere Informationen zu den nächsten Schritten im Support-Thema [Support kontaktieren: Datendiskrepanzen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) .
+>Wenn Sie nach dem Überprüfen Ihrer Daten eine Diskrepanz feststellen, finden Sie im Support-Thema [Kontaktaufnahme mit dem Support: ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) Diskrepanzen) weitere Informationen zu weiteren Schritten.

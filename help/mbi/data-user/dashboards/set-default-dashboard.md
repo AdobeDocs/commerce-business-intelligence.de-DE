@@ -1,6 +1,6 @@
 ---
 title: Standard-Dashboard festlegen
-description: Erfahren Sie, wie Sie ein Standard-Dashboard einrichten.
+description: Erfahren Sie, wie Sie ein Standard-Dashboard festlegen.
 exl-id: a3fc64e3-b527-4c2c-848d-c0962cd20ff3
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Standard-Dashboard einrichten
+# Standard-Dashboard festlegen
 
-Das Standard-Dashboard ist das erste Dashboard, das Sie beim Öffnen von [!DNL Commerce Intelligence] sehen.
+Das Standard-Dashboard ist das erste Dashboard, das beim Öffnen von [!DNL Commerce Intelligence] angezeigt wird.
 
-1. Klicken Sie im Dashboard oben im Bildschirm auf **[!UICONTROL Dashboard Options]** .
+1. Klicken Sie oben im Bildschirm im Dashboard auf **[!UICONTROL Dashboard Options]** .
 
 1. Klicken Sie im Dropdown-Menü auf **[!UICONTROL Make Default]** .
 

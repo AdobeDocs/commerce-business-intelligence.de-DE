@@ -1,5 +1,5 @@
 ---
-title: Filtersätze für Metriken erstellen
+title: Erstellen von Filtersätzen für Metriken
 description: Erfahren Sie, wie Sie gespeicherte Filtersätze erstellen und auf die Metriken anwenden.
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
 role: Admin, Data Architect, Data Engineer, User
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Erstellen von Filtersätzen
 
-Wenn Sie mehrere Metriken in [!DNL Commerce Intelligence] haben, die auf ähnliche Weise gefiltert werden müssen (z. B. Testreihenfolge herausfiltern), können Sie gespeicherte Filtersätze erstellen und diese auf die Metriken anwenden. So sparen Sie Zeit, da Sie beim Erstellen oder Bearbeiten einer Metrik keine individuellen Filter hinzufügen müssen.
+Wenn Sie mehrere Metriken in [!DNL Commerce Intelligence] haben, die auf ähnliche Weise gefiltert werden müssen (z. B. Filtern von Testaufträgen), können Sie gespeicherte Filtersätze erstellen und sie auf die Metriken anwenden. Dies spart Ihnen Zeit, da Sie beim Erstellen oder Bearbeiten einer Metrik keine individuellen Filter hinzufügen müssen.
 
-Weitere Informationen finden Sie im [Schulungsvideo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html) .
+Weitere Informationen finden [ im ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html)Schulungsvideo“.
 
 >[!NOTE]
 >
 >Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
 
-1. Klicken Sie in der Seitenleiste auf &quot;**[!DNL Manage Data** > **Filter Sets]**&quot;.
+1. Klicken Sie in der Seitenleiste auf **[!DNL Manage Data** > **Filter Sets]** .
 
    ![](../../assets/create-filter-sets.png)
 
@@ -29,26 +29,26 @@ Weitere Informationen finden Sie im [Schulungsvideo](https://experienceleague.ad
 
 1. Wählen Sie die Tabelle aus, die die Metriken enthält, die Sie filtern möchten.
 
-   Wenn Sie beispielsweise Ihre `Total number of orders` -Metrik filtern möchten und sie auf der `orders` -Tabelle basiert, wählen Sie diese Tabelle aus.
+   Wenn Sie beispielsweise Ihre `Total number of orders` filtern möchten und sie auf der `orders`-Tabelle aufbaut, wählen Sie diese Tabelle aus.
 
-1. Nennen Sie die &quot;`Filter Set`&quot;.
+1. Benennen Sie die `Filter Set`.
 
-1. Fügen Sie alle relevanten Filter hinzu.
+1. Alle relevanten Filter hinzufügen.
 
-   Wenn Sie beispielsweise nur Bestellungen mit dem Status &quot;complete&quot;in Ihre `Total number of orders` -Metrik aufnehmen möchten, wenden Sie einen Filter an, der alle Bestellungen ohne Status = `complete` ausschließt.
+   Wenn Sie beispielsweise nur Bestellungen mit dem Status „Abgeschlossen“ in Ihrer `Total number of orders` Metrik einbeziehen möchten, wenden Sie einen Filter an, der alle Bestellungen ausschließt, die keinen Status = `complete` haben.
 
-1. Überprüfen Sie Ihre Filterlogik und stellen Sie sicher, dass Klammern und Operatoren richtig platziert sind, z. B. `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
+1. Überprüfen Sie Ihre Filterlogik und stellen Sie sicher, dass Klammern und Operatoren korrekt platziert sind: z. B. `\[A\] AND \[B\]; (\[A\] OR \[B\]) AND \[C\]`.
 
-   Ein falscher Filter ist häufig die Ursache für Datendiskrepanzen zwischen [!DNL Commerce Intelligence] Berichten und Ihren erwarteten Ergebnissen.
+   Ein falscher Filter ist oft die Ursache für Datendiskrepanzen zwischen [!DNL Commerce Intelligence] Berichten und den erwarteten Ergebnissen.
 
 1. Speichern Sie die `Filter Set`.
 
-Nachdem ein Filtersatz gespeichert wurde, können Sie ihn auf jede Metrik anwenden, die dieselbe Tabelle verwendet. Wenn Sie beispielsweise eine `Filter Set` für die Tabelle `orders` erstellt haben, können Sie sie auf *alle auf dieser Tabelle erstellten Metriken* anwenden, z. B. `Revenue`.
+Nachdem ein Filtersatz gespeichert wurde, können Sie ihn auf jede Metrik anwenden, die dieselbe Tabelle verwendet. Wenn Sie beispielsweise ein `Filter Set` in der `orders`-Tabelle erstellt haben, können Sie es auf *beliebige Metriken) anwenden,* auf dieser Tabelle erstellt wurden, z. B. `Revenue`.
 
 >[!NOTE]
 >
->`Filter Sets` kann auch auf berechnete Spalten in [!DNL Commerce Intelligence] angewendet werden. Wenden Sie sich an den Support, um einen Filtersatz auf eine in [!DNL Commerce Intelligence] erstellte Datendimension anzuwenden.
+>`Filter Sets` können auch auf berechnete Spalten in [!DNL Commerce Intelligence] angewendet werden. Sie können über einen Filtersatz auf eine in [!DNL Commerce Intelligence] erstellte Datendimension anwenden, indem Sie sich an den Support wenden.
 
-## Verwandte
+## verwandt
 
 * [Best Practices für Segmentierung und Filterung](../../best-practices/segment-filter.md)
