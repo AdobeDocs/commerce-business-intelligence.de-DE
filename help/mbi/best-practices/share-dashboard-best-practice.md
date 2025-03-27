@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihre Dashboards verwenden und freigeben könn
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: d40a04cedb3aee3385a8c34e0919f954431e0897
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Manchmal finden Sie mehrere Dashboards mit demselben Namen - normalerweise, weil
 
 Um anzuzeigen, wem ein Dashboard gehört, klicken Sie auf das Dashboard-Dropdown-Menü in der oberen linken Ecke. Alle Dashboards, die keinen Namen darunter haben, gehören zu Ihnen.
 
-![](../../mbi/assets/Dash_ownership.gif)
+![](../../mbi/assets/Dash_ownership.png)
 
 So entfernen Sie alle doppelten Dashboards:
 
@@ -36,7 +36,7 @@ Wenn neue Benutzer erstellt werden, besitzen sie keine Dashboards oder Diagramme
 
 ## Freigeben von Dashboards für neue Benutzer
 
-Neue Benutzer können auch vom Zugriff auf einige Dashboards profitieren, die nicht organisationsweit freigegeben sind. In diesen Fällen empfiehlt Adobe, dass Dashboard-Besitzer [die relevanten Dashboards freigeben](../data-user/dashboards/share-dashboard-with-users.md) bei der Erstellung ihrer Konten neuen Benutzern mitteilen.
+Neue Benutzer können auch vom Zugriff auf einige Dashboards profitieren, die nicht organisationsweit freigegeben sind. In diesen Fällen empfiehlt Adobe den Dashboard-Inhabern [geben die relevanten Dashboards frei](../data-user/dashboards/share-dashboard-with-users.md) wenn ihre Konten erstellt werden.
 
 ## Mit Bearbeitungsberechtigungen selektiv sein
 
