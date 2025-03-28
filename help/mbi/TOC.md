@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie  [!DNL Commerce Intelligence]  für Adobe Com
 breadcrumb-title: Commerce Intelligence-Benutzerhandbuch
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Business Performance
-source-git-commit: 2433a614e9858684842804a0ae29fb67f0d41ead
+source-git-commit: cea314102fb3b2164c1498ce1efa60e83c41b188
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 0%
       - [Verwalten von Benutzerberechtigungen](administrator/user-management/user-management.md)
       - [Passwort zurücksetzen](../mbi/administrator/user-management/reset-password.md)
       - [Zugriff auf Metriken einschränken](../mbi/administrator/user-management/restrict-metric-access.md)
+      - [Erweiterte Benutzerverwaltung](../mbi/administrator/user-management/advanced.md)
 - {#analyze} analysieren
    - [Datenanalyst](data-analyst.md)
    - Data Warehouse Manager-{#warehouse-manager}
@@ -76,7 +77,7 @@ ht-degree: 0%
       - [Erstellen einer qualitativen Kohortenanalyse](data-analyst/dev-reports/create-qual-cohort-analysis.md)
       - [Erkunden spezieller Filteroperatoren](data-analyst/dev-reports/explr-special-filter-ops.md)
       - [Exportieren der Ergebnisse meiner Abfrage](data-analyst/dev-reports/export-query-results.md)
-      - [Verwenden von Formeln im [Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
+      - [Verwenden von Formeln in der [Report Builder]](../mbi/data-analyst/dev-reports/formulas-in-rpt-bldr.md)
       - [ [!DNL Google Analytics] ](data-analyst/dev-reports/google-analytics-charts-regex.md)
       - [Bedeutung des  [!DNL Lifetime Revenue Cohort Analysis]](data-analyst/dev-reports/lifetime-rev-cohort-analysis.md)
       - [Sortieren von Daten mit der  [!DNL Show Top/Bottom] -Funktion](data-analyst/dev-reports/order-data-top-bottom-feat.md)
@@ -176,7 +177,7 @@ ht-degree: 0%
    - [Datennutzer](../mbi/data-user.md)
    - Berichte {#reports}
       - [Grundlagen zum Bericht](data-user/reports/rpt-fundamentals.md)
-      - [Welchen Report Builder sollte ich verwenden?](data-user/reports/report-builder-options.md)
+      - [Welche Report Builder sollte ich verwenden?](data-user/reports/report-builder-options.md)
       - [[!DNL Visual Report Builder]](data-user/reports/ess-rpt-build-visual.md)
       - [Visualisierungsoptionen](data-user/reports/visual-options.md)
       - [Filter [!DNL Visual Report Builder]](data-user/reports/ess-rpt-build-filters.md)
@@ -217,7 +218,7 @@ ht-degree: 0%
       - [Arbeiten mit Daten](best-practices/work-data.md)
       - [UTM-Tagging in [!DNL Google Analytics]](best-practices/utm-tagging-google.md)
       - [Formatieren und Importieren von Finanzdaten](best-practices/format-import-financial-data.md)
-      - [Empfohlene Dimensionen für die Segmentierung und Filterung](best-practices/segment-filter.md)
+      - [Empfohlene Datendimensionen für Segmentierung und Filterung](best-practices/segment-filter.md)
       - [Überprüfen des Status des Aktualisierungszyklus](best-practices/check-update-cycle.md)
       - [Verkürzung des Aktualisierungszyklus](best-practices/reduce-update-cycle-time.md)
       - [Ändern der Datenbank zur Unterstützung der inkrementellen Replikation](best-practices/mod-db-inc-replication.md)
