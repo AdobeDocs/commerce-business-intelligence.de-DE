@@ -161,7 +161,7 @@ Um diesen Typ von berechneter Spalte zu erstellen, müssen Sie Folgendes wissen:
 
 Keine Sorge. Nur weil er hier nicht aufgeführt ist, heißt das noch lange nicht, dass er nicht möglich ist. Das Adobe-Team von Data Warehouse-Analysten kann Ihnen dabei helfen.
 
-Um eine neue berechnete Spalte zu definieren[ reichen Sie ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), in dem Sie genau angeben, was Sie erstellen möchten.
+Um eine neue berechnete Spalte zu definieren[ reichen Sie ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), in dem Sie genau angeben, was Sie erstellen möchten.
 
 ## Verwandte Dokumentation
 

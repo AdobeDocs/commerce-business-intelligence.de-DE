@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Mit dem [!DNL SQL Report Builder] können Sie diese Abfragen jederzeit abfragen und iterieren. Dies ist nützlich, wenn Sie eine Abfrage ändern müssen, ohne auf den Abschluss eines Aktualisierungszyklus warten zu müssen, bevor eine von Ihnen erstellte Spalte oder ein Bericht aktualisiert werden muss.
 
-Bevor eine Abfrage ausgeführt wird, [[!DNL Commerce Intelligence] schätzt ihre Kosten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Die Kosten berücksichtigen die Dauer und Anzahl der Ressourcen, die für die Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch erachtet werden oder die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] Limit überschreitet, schlägt die Abfrage fehl. Für die Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) empfiehlt Adobe Folgendes, um sicherzustellen, dass Sie möglichst optimierte Abfragen schreiben.
+Bevor eine Abfrage ausgeführt wird, [[!DNL Commerce Intelligence] schätzt ihre Kosten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=de). Die Kosten berücksichtigen die Dauer und Anzahl der Ressourcen, die für die Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch erachtet werden oder die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] Limit überschreitet, schlägt die Abfrage fehl. Für die Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) empfiehlt Adobe Folgendes, um sicherzustellen, dass Sie möglichst optimierte Abfragen schreiben.
 
 ## Verwenden von SELECT oder Auswählen aller Spalten
 

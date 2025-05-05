@@ -89,4 +89,4 @@ Mithilfe dieser Daten können Sie mit der Erstellung von [Metriken](../../../dat
 
 Wenn Sie keine konsolidierte Tabelle haben und ein schönes Dashboard auf der `adwords` erstellen, müssen Sie die Berichte replizieren oder doppelte Metriken erstellen, um diese Daten mit Ihren [!DNL Facebook Ads] zu vergleichen. Durch die Verwendung einer konsolidierten Tabelle können Sie [!DNL Facebook Ads] Daten nahtlos in Ihre vorhandenen [!DNL Adwords] Berichte integrieren. Sie können auch nach Anzeigenplattform segmentieren.
 
-Wenn Sie die oben genannten Felder bereits synchronisiert haben, [ Sie uns ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um Ihre Werbeausgaben zu konsolidieren.
+Wenn Sie die oben genannten Felder bereits synchronisiert haben, [ Sie uns ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um Ihre Werbeausgaben zu konsolidieren.

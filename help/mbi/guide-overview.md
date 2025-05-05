@@ -39,23 +39,23 @@ Zusätzlich zu den oben genannten rollenbasierten Workflows enthält dieses Hand
 
 ## Hilfe erhalten
 
-Wenden Sie sich an [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), wenn Sie Fragen haben und einige Ihrer Professional Services in Anspruch nehmen möchten oder Probleme mit Ihrem Konto auftreten.
+Wenden Sie sich an [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), wenn Sie Fragen haben und einige Ihrer Professional Services in Anspruch nehmen möchten oder Probleme mit Ihrem Konto auftreten.
 
 ### Service-Richtlinien
 
-Hier finden Sie [Liste der Services, die das Support-Team bereitstellt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Hier finden Sie [Liste der Services, die das Support-Team bereitstellt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
 
 ### Senden eines Support-Tickets
 
-Benötigen Sie Hilfe beim Erstellen einer erweiterten berechneten Spalte? Haben Sie einen Defekt oder ein Verbindungsproblem festgestellt? Wenn Sie sich an das Support-Team wenden müssen, bittet Adobe Sie, die [Support-Ticket-Richtlinien“ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html). In diesen Richtlinien werden die Informationen beschrieben, die Adobe zur Behebung des Problems benötigt.
+Benötigen Sie Hilfe beim Erstellen einer erweiterten berechneten Spalte? Haben Sie einen Defekt oder ein Verbindungsproblem festgestellt? Wenn Sie sich an das Support-Team wenden müssen, bittet Adobe Sie, die [Support-Ticket-Richtlinien“ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de). In diesen Richtlinien werden die Informationen beschrieben, die Adobe zur Behebung des Problems benötigt.
 
 ## Verfügbare Dokumentation
 
 | Dokumentationsressource | Beschreibung |
 |----------------------- | ----------- |
-| [Adobe Commerce 2.4-Händlerdokumentation](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Händlerorientierte Dokumentation für Adobe Commerce und Magento Open Source |
-| [Dokumentation zu Services für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) | Dokumentation zur Unterstützung einer Reihe von Services, die Händlern die Integration wichtiger Komponenten ihres Unternehmens in ihren Shop erleichtern. |
-| [Adobe Commerce 2.4-Betriebshandbücher](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html) | Systemdokumentation zu den Konzepten, Prozessen, Tools und Best Practices für die Entwicklung, Bereitstellung und Wartung von Projekten, die auf Adobe Commerce- und Magento Open Source-Plattformen bereitgestellt werden. |
+| [Adobe Commerce 2.4-Händlerdokumentation](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=de) | Händlerorientierte Dokumentation für Adobe Commerce und Magento Open Source |
+| [Dokumentation zu Services für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=de) | Dokumentation zur Unterstützung einer Reihe von Services, die Händlern die Integration wichtiger Komponenten ihres Unternehmens in ihren Shop erleichtern. |
+| [Adobe Commerce 2.4-Betriebshandbücher](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de) | Systemdokumentation zu den Konzepten, Prozessen, Tools und Best Practices für die Entwicklung, Bereitstellung und Wartung von Projekten, die auf Adobe Commerce- und Magento Open Source-Plattformen bereitgestellt werden. |
 | [Entwicklerdokumentation zu Adobe Commerce 2.4](https://developer.adobe.com/commerce/) | Entwicklerorientierte Dokumentation zum Erstellen und Anpassen von Adobe Commerce oder Magento Open Source |
 
 {style="table-layout:auto"}

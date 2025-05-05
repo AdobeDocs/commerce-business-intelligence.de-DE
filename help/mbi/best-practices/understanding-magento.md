@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Ihre [!DNL Adobe Commerce Intelligence]
 
-Beachten Sie bei der Analyse Ihrer Commerce-Daten diese Faktoren und häufigen Missverständnisse. Wenn Sie Hilfe benötigen, um sicherzustellen, dass Sie Ihr Commerce-Schema ordnungsgemäß verwenden, zögern Sie nicht, sich an den [ zu wenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Beachten Sie bei der Analyse Ihrer Commerce-Daten diese Faktoren und häufigen Missverständnisse. Wenn Sie Hilfe benötigen, um sicherzustellen, dass Sie Ihr Commerce-Schema ordnungsgemäß verwenden, zögern Sie nicht, sich an den [ zu wenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
 
 ## [!DNL entity\_id]
 

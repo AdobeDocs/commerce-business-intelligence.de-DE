@@ -105,4 +105,4 @@ Wenn Sie fertig sind, klicken Sie auf **Speichern und testen** um die Einrichtun
 
 ### verwandt
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)

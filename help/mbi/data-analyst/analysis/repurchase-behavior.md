@@ -82,4 +82,4 @@ Neben der Analyse des Rückkaufverhaltens Ihrer Kunden können Sie auch Analysen
 
 Nachdem Sie erkannt haben, warum eine Abwanderung stattfindet, können Sie Ihre Analyse verwenden, um eine `reactivation` Kampagne zu erstellen. Mithilfe dieser Daten können Sie Benutzer identifizieren, die inaktiv geworden sind, wie lange es seit ihrem letzten Besuch gewesen ist, was ihr letzter Kauf war usw. Auf diese Weise können Sie umsetzbare Entscheidungen treffen, die Ihre Kundinnen und Kunden dazu anregen, zurückzukehren.
 
-Um Hilfe bei der Analyse zu erhalten, [den Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Um Hilfe bei der Analyse zu erhalten, [den Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).

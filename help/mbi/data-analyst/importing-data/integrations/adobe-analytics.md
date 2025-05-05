@@ -57,6 +57,6 @@ Die folgenden Informationen werden für die Verbindung benötigt:
 
 1. Die ausgewählte Report Suite wird in einer Tabelle angezeigt. Klicken Sie auf **[!UICONTROL Save]** , um Ihre Auswahl zu bestätigen.
 
-1. Informieren Sie das [!DNL Commerce Intelligence] [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)Team, dass Ihre Integration autorisiert ist, und es führt den ersten Verbindungsprozess für Sie aus.
+1. Informieren Sie das [!DNL Commerce Intelligence] [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de)Team, dass Ihre Integration autorisiert ist, und es führt den ersten Verbindungsprozess für Sie aus.
 
 Nachdem der anfängliche Verbindungsprozess ausgeführt wurde, ist Ihre Tabelle auf der Data Warehouse-Seite unter der Registerkarte `All Tables` verfügbar. Wählen Sie die Spalten aus, die Sie replizieren möchten, und die Daten werden nach der nächsten vollständigen Aktualisierung angezeigt.

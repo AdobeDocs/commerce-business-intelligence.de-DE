@@ -66,7 +66,7 @@ Jetzt können Sie sehen, wie wirksam jeder Monat im letzten Jahr war:
 
 ## Vergleichen derselben Metrik über verschiedene Zeitbereiche hinweg {#difftimerange}
 
-In diesem Beispiel wird eine benutzerdefinierte Dimension namens `Day number of the month` verwendet. Wenn Sie diesen Bericht erstellen möchten, diese Dimension aber noch nicht auf Ihrem Data Warehouse vorhanden ist, [ Sie sich an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+In diesem Beispiel wird eine benutzerdefinierte Dimension namens `Day number of the month` verwendet. Wenn Sie diesen Bericht erstellen möchten, diese Dimension aber noch nicht auf Ihrem Data Warehouse vorhanden ist, [ Sie sich an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
 
 Die beiden häufigsten Beispiele in dieser Kategorie sind (1) der Vergleich von Wachstumsmetriken (Umsatz im Jahresvergleich oder Monat im Monatsvergleich) und (2) ein besseres Verständnis der jüngsten Trends bei Lagerbeständen oder Artikelverkäufen.
 
