@@ -34,7 +34,7 @@ ht-degree: 0%
       - [Passwort zurücksetzen](../mbi/administrator/user-management/reset-password.md)
       - [Zugriff auf Metriken einschränken](../mbi/administrator/user-management/restrict-metric-access.md)
       - [Erweiterte Benutzerverwaltung](../mbi/administrator/user-management/advanced.md)
-- {#analyze} analysieren
+- analysieren{#analyze}
    - [Datenanalyst](data-analyst.md)
    - Data Warehouse Manager-{#warehouse-manager}
       - [Einführung](data-analyst/data-warehouse-mgr/tour-dwm.md)
@@ -129,7 +129,7 @@ ht-degree: 0%
       - [ [!DNL Zendesk]  Daten](data-analyst/importing-data/integrations/exp-zendesk-data.md)
       - [Analysieren  [!DNL Zendesk]  Daten](data-analyst/importing-data/integrations/help-desk-zendesk.md)
       - [ [!DNL Zendesk] ](data-analyst/importing-data/integrations/audit-zendesk-data.md)
-   - {#integration} für Datenbankintegrationen
+   - für Datenbankintegrationen{#integration}
       - [Verbinden [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [Verbinden von Datenbanken über VPN](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
       - [Verbinden Sie Ihre [!DNL MySQL Database] mit [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)

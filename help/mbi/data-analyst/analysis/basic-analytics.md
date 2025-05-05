@@ -518,7 +518,7 @@ Im Folgenden finden Sie einige Beispiele für nützliche Berichte und Metriken:
 
 ### Return on Investment (ROI)
 
-* **Beschreibung**: Eine Möglichkeit, den ROI nach Kampagne zu berechnen, besteht in der Analyse aller über die Kampagne aufgegebenen Bestellungen. Eine alternative Methode besteht jedoch darin, den Lebenszeitwert der durch eine Kampagne akquirierten Kunden zu analysieren. Zur Analyse des ROI ist es wichtig, dass die Kampagnennamen in Ihren Ausgaben- und Transaktionsdaten konsistent sind. Wenn Sie den folgenden Bericht erstellen und aufgrund nicht übereinstimmender Kampagnennamen keine ROI-Werte vorhanden sind, müssen Sie sich möglicherweise das von ](../../best-practices/utm-tagging-google.md) implementierte [UTM-Tagging“ ansehen.
+* **Beschreibung**: Eine Möglichkeit, den ROI nach Kampagne zu berechnen, besteht in der Analyse aller über die Kampagne aufgegebenen Bestellungen. Eine alternative Methode besteht jedoch darin, den Lebenszeitwert der durch eine Kampagne akquirierten Kunden zu analysieren. Zur Analyse des ROI ist es wichtig, dass die Kampagnennamen in Ihren Ausgaben- und Transaktionsdaten konsistent sind. Wenn Sie den folgenden Bericht erstellen und aufgrund nicht übereinstimmender Kampagnennamen keine ROI-Werte vorhanden sind, müssen Sie sich möglicherweise das von [&#128279;](../../best-practices/utm-tagging-google.md) implementierte UTM-Tagging“ ansehen.
 * **Beispiel für einen Bericht**: ROI nach Kampagne
    * **[!UICONTROL Metric A]**: `New Customers`
    * **[!UICONTROL Filter A]**: `Customer's first order's source` WIE &#39;%google%&#39;

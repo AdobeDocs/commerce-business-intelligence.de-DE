@@ -34,7 +34,7 @@ Es gibt zwei Möglichkeiten, Rohdaten in [!DNL Commerce Intelligence] zu exporti
 
 Wenn Sie die Tabelle aus [!UICONTROL Manage Data] Registerkarte exportieren möchten, benötigen Sie [Admin](../administrator/user-management/user-management.md)-Berechtigungen.
 
-1. Klicken Sie **[!UICONTROL Manage Data** > ** Daten exportieren **> **Rohdatenexport]**.
+1. Klicken Sie **[!UICONTROL Manage Data** > **&#x200B; Daten exportieren &#x200B;**> **Rohdatenexport]**.
 1. Es wird eine `Export List` der kürzlich erstellten Datenexporte angezeigt, sofern vorhanden. Klicken Sie auf **[!UICONTROL Add Export]** , um einen Export zu erstellen.
 1. Das Dialogfeld `New Raw Data Export` wird angezeigt. Hier können Sie Ihren Export anpassen, indem Sie Spalten und Filter auswählen oder die Auswahl aufheben:
 

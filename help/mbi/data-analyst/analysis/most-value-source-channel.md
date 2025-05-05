@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Sie haben Ihre Zielgruppe recherchiert, Ihre Kampagne erstellt und in ein paar Marketing-Kanäle investiert. Nun, da einige Zeit vergangen ist, wie funktionieren diese Kanäle? Welcher Kanal hat die meisten neuen Benutzer hervorgebracht? Welche Quelle hat am meisten zu Ihrem Gesamtumsatz beigetragen?
 
-Mit [!DNL Adobe Commerce Intelligence] können Sie Ihre Umsätze und Benutzer einfach nach Empfehlungsquelle segmentieren, unabhängig davon, ob diese [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern entspricht. Diese Segmentierung ermöglicht es Ihnen, die Kanäle mit der besten Leistung zu finden und Ihr Marketing-Budget besser zu investieren.
+Mit [!DNL Adobe Commerce Intelligence] können Sie Ihre Umsätze und Benutzer einfach nach Empfehlungsquelle segmentieren, unabhängig davon, ob diese [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern entspricht. Diese Segmentierung ermöglicht es Ihnen, die Kanäle mit der besten Leistung zu finden und Ihr Marketing-Budget besser zu investieren.
 
 In diesem Thema werden einige Berichte vorgestellt, mit denen Sie Ihre wertvollsten Marketing-Kanäle aufdecken können:
 
@@ -95,7 +95,7 @@ Im Folgenden finden Sie eine visuelle Anleitung:
 
 Der Bericht „Durchschnittlicher Bestellwert“ zeigt im Durchschnitt an, wie viele Benutzer bei der Bestellung von einer bestimmten Quelle bezogen haben. In diesem Bericht wird jedoch nicht angezeigt, ob es sich bei denselben Benutzern um Bestandskunden handelt. Mit den Wiederholungsaufträgen nach Benutzerquellen können Sie jedoch sehen, ob Benutzer aus einer bestimmten Quelle mehr oder weniger Wiederholungskäufe tätigen.
 
-Um diesen Bericht im Report Builder [](../../tutorials/using-visual-report-builder.md) zu erstellen, fügen Sie die Metrik **Anzahl der Bestellungen** hinzu und führen Sie dann folgende Schritte aus:
+Um diesen Bericht im Report Builder [&#128279;](../../tutorials/using-visual-report-builder.md) zu erstellen, fügen Sie die Metrik **Anzahl der Bestellungen** hinzu und führen Sie dann folgende Schritte aus:
 
 1. Legen Sie die [!UICONTROL Time Period] auf den Registrierungszeitraum fest, den Sie analysieren möchten.
 1. Legen Sie die [!UICONTROL Time Interval] auf monatlich fest.

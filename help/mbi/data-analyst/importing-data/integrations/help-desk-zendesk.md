@@ -77,7 +77,7 @@ Bevor Sie beginnen, verbinden Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.
 
 * **`[!DNL Zendesk] user's`**
    * `User is agent? (Yes/No) `
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Calculation`
 
       * `Input columns` - `role`, `email`
@@ -161,19 +161,19 @@ Bevor Sie beginnen, verbinden Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.
 * `Ticket's latest solved date`
 * `First agent response date`
 * `Seconds to resolution`
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Date Difference`
 
       * `Ticket's latest solved date` minus `created_at`
 
 * **`Seconds to first response`**
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Date Difference`
 
       * `First agent response date` minus `created_at`
 
 * **`Requester's ticket number`**
-   * 
+   * &#x200B;
       * `Column type` - `Same Table > Event Number`
 
       * `Event Owner` - `requester_id`
@@ -181,7 +181,7 @@ Bevor Sie beginnen, verbinden Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.
       * `Event Rank` - `created_at`
 
 * **`Ticket created_at (hour of day)`**
-   * 
+   * &#x200B;
       * `Column type` - „Gleiche Tabelle > Berechnung“
 
       * `Input columns` - `created_at`
@@ -191,7 +191,7 @@ Bevor Sie beginnen, verbinden Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.
       * `Datatype` - Ganzzahl
 
 * **`Ticket created_at (day of week)`**
-   * 
+   * &#x200B;
       * `Column type` - „Gleiche Tabelle > Berechnung“
 
       * `Input columns` - `created_at`
@@ -204,7 +204,8 @@ Bevor Sie beginnen, verbinden Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.
    * Definition auswählen: `Count`
    * [!UICONTROL Create Path]:
    * [!UICONTROL Many]: `[!DNL Zendesk] tickets.email`
-   * 
+   * &#x200B;
+
      [!UICONTROL ONE]: `customer_entity.email`
 
    * [!UICONTROL table] auswählen: `[!DNL Zendesk] tickets`
@@ -214,7 +215,7 @@ Bevor Sie beginnen, verbinden Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.
 
 * **`User's lifetime number of support tickets requested`**
 * **`Has user filed a support ticket? (Yes/No)`**
-   * 
+   * &#x200B;
       * `Column type` - „Gleiche Tabelle > Berechnung“
 
       * `Input columns` - `User's lifetime number of support tickets requested`
@@ -401,8 +402,9 @@ Bevor Sie beginnen, verbinden Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.
 * `Chart Type`: `Column`
 
 * **[!UICONTROL Number of new users who have and have not filed tickets]**
-   * 
-     [!UICONTROL-Metrik]: Users
+   * &#x200B;
+
+     [!UICONTROL -Metrik]: Users
 
 * `A`: `New users`
 * `Time period`: `All time`

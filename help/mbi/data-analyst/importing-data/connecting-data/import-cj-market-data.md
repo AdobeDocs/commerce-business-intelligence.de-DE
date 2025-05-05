@@ -1,6 +1,6 @@
 ---
 title: Importieren von Marketing-Daten der CJ-Tochtergesellschaft (Commission Junction)
-description: Erfahren Sie, wie Sie Daten von CJ Affiliate (Commission Junction) in  [!DNL Commerce Intelligence].L Commerce Intelligence] importieren.
+description: Erfahren Sie, wie Sie Daten von CJ Affiliate (Commission Junction) in  [!DNL Commerce Intelligence].L Commerce Intelligence&rbrack; importieren.
 exl-id: 1db83f34-15a1-4599-ab0a-65d527ccae01
 source-git-commit: c7f6bacd49487cd13c4347fe6dd46d6a10613942
 workflow-type: tm+mt

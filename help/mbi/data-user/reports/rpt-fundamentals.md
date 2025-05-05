@@ -81,7 +81,7 @@ Und Sie möchten sehen, dass diese Berechnung über die Zeit, oder den Trend, ei
 
 1. Wechseln Sie zu **[!UICONTROL Data]** und wählen Sie die Registerkarte `Metrics` aus.
 1. Klicken Sie auf **[!UICONTROL Add New Metric]** und wählen Sie die `user` aus (in der Sie die Dimensionen oben erstellt haben).
-1. Wählen Sie aus dem Dropdown-Menü `Average` in der Spalte `Time between a customer's registration date and first purchase date``user` in der Tabelle nach `Customer's registration date` sortiert aus.
+1. Wählen Sie aus dem Dropdown-Menü `Average` in der Spalte `Time between a customer's registration date and first purchase date` `user` in der Tabelle nach `Customer's registration date` sortiert aus.
 1. Fügen Sie alle relevanten Filter oder Filtersätze hinzu.
 
 Diese Metrik ist jetzt bereit.

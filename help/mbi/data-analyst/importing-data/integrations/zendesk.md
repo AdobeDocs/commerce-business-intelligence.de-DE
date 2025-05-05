@@ -31,7 +31,7 @@ Um diesen Vorgang abzuschließen, müssen Sie zwei Browser-Fenster oder Register
 
 ## Öffnen Sie die Seite [!DNL Zendesk] in [!DNL Commerce Intelligence] {#stepone}
 
-1. Navigieren Sie zur `Integrations` unter **[!UICONTROL Manage Data** > ** Datenquellen **> **Integrationen]**.
+1. Navigieren Sie zur `Integrations` unter **[!UICONTROL Manage Data** > **&#x200B; Datenquellen &#x200B;**> **Integrationen]**.
 1. Klicken Sie auf **[!UICONTROL Add Integration]** rechts im Bildschirm.
 1. Klicken Sie auf das Symbol [!DNL Zendesk] . Dadurch wird die Seite mit den [!DNL Zendesk]-Anmeldeinformationen geöffnet.
 

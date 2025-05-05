@@ -53,7 +53,8 @@ Nachdem die Metrik erstellt wurde, können Sie **ein Dashboard erstellen** indem
 * **[!UICONTROL Average LTV (all)]**
    * [!UICONTROL Metric]: `Avg lifetime revenue`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -64,7 +65,8 @@ Nachdem die Metrik erstellt wurde, können Sie **ein Dashboard erstellen** indem
          * [`B`] `Customer's lifetime number of orders` **größer als**`0`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart Type]: `Number (scalar)`
 
@@ -73,7 +75,8 @@ Nachdem die Metrik erstellt wurde, können Sie **ein Dashboard erstellen** indem
    * `2`: `Median lifetime revenue`
    * [!UICONTROL Time period]: `All time`
    * [!UICONTROL Interval]: `By Month`
-   * 
+   * &#x200B;
+
      [!UICONTROL Diagrammtyp]: `Line`
    * `Multiple Y-Axes` deaktivieren
 
@@ -81,10 +84,12 @@ Nachdem die Metrik erstellt wurde, können Sie **ein Dashboard erstellen** indem
    * `1`: `Avg lifetime revenue`
    * `2`: `New customers`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
+
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Group by]: `Customer's lifetime number of orders`
-   * 
+   * &#x200B;
+
      [!UICONTROL Diagrammtyp]: `Line`
 
   >[!NOTE]
