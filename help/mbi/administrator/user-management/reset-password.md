@@ -17,4 +17,4 @@ Um Ihr Kennwort zurückzusetzen, klicken Sie auf der **[!UICONTROL Reset Passwor
 
 Sie können Ihr Kennwort in [!DNL Commerce Intelligence] auch über die Seite **[!UICONTROL Personal Settings]** ändern.
 
-Wenn Sie Ihr Kennwort zurückgesetzt haben und Ihr Konto gesperrt bleibt, befolgen Sie [diese Tipps](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html), um das Problem zu identifizieren.
+Wenn Sie Ihr Kennwort zurückgesetzt haben und Ihr Konto gesperrt bleibt, befolgen Sie [diese Tipps](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=de), um das Problem zu identifizieren.
