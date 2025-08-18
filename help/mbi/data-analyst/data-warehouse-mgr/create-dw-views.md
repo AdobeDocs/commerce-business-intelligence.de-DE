@@ -17,13 +17,13 @@ In diesem Dokument werden der Zweck und die Verwendungszwecke von `Data Warehous
 
 ## Allgemeiner Zweck
 
-Bei der `Data Warehouse Views`-Funktion handelt es sich um eine Methode zur Erstellung neuer, in einem Warehouse gespeicherter Tabellen, indem eine vorhandene Tabelle geändert oder mehrere Tabellen mithilfe von SQL zusammengefügt oder konsolidiert werden. Nachdem ein `Data Warehouse View` durch einen Aktualisierungszyklus erstellt und verarbeitet wurde, wird er in Ihrem Data Warehouse als neue Tabelle unter der `Data Warehouse Views` Dropdown-Liste ausgefüllt, wie unten dargestellt:
+Bei der `Data Warehouse Views`-Funktion handelt es sich um eine Methode zur Erstellung neuer, in einem Warehouse gespeicherter Tabellen, indem eine vorhandene Tabelle geändert oder mehrere Tabellen mithilfe von SQL zusammengefügt oder konsolidiert werden. Nachdem ein `Data Warehouse View` durch einen Aktualisierungszyklus erstellt und verarbeitet wurde, wird es in Ihrer Data Warehouse als neue Tabelle unter der `Data Warehouse Views` Dropdown-Liste ausgefüllt, wie unten dargestellt:
 
 ![](../../assets/Data_Warehouse.png)
 
 Von hier aus funktioniert Ihre neue Ansicht wie jede andere Tabelle, sodass Sie neue berechnete Spalten erstellen oder Metriken und Berichte darüber erstellen können.
 
-`Data Warehouse Views` werden hauptsächlich verwendet, um mehrere ähnliche, aber unterschiedliche Tabellen zusammenzufassen, sodass alle Berichte auf einer einzigen neuen Tabelle erstellt werden können. Einige gängige Beispiele sind die Konsolidierung der Tabellen aus einer alten Datenbank und einer Live-Datenbank, um Verlaufsdaten und aktuelle Daten zu kombinieren, oder die Kombination mehrerer Anzeigenquellen wie Facebook und AdWords in einer einzelnen `Consolidated ad spend`.
+`Data Warehouse Views` werden hauptsächlich verwendet, um mehrere ähnliche, aber unterschiedliche Tabellen zusammenzufassen, sodass alle Berichte auf einer einzigen neuen Tabelle erstellt werden können. Einige gängige Beispiele sind die Konsolidierung der Tabellen aus einer alten Datenbank und einer Live-Datenbank, um historische und aktuelle Daten zu kombinieren, oder die Kombination mehrerer Anzeigenquellen wie Facebook und AdWords in einer einzelnen `Consolidated ad spend`.
 
 Wenn Sie mit SQL vertraut sind, verwenden beide Konsolidierungsbeispiele die Funktion `UNION` , Sie können jedoch beim Erstellen einer neuen Ansicht eine beliebige PostgreSQL-Syntax und -Funktionen verwenden.
 
@@ -36,7 +36,7 @@ Sie können neue `Data Warehouse Views` erstellen und vorhandene Ansichten lösc
 Von hier aus können Sie eine Ansicht erstellen, indem Sie den folgenden Beispielanweisungen folgen:
 
 1. Wenn Sie eine vorhandene Ansicht betrachten, klicken Sie auf **[!UICONTROL New Data Warehouse View]** , um ein leeres Abfragefenster zu öffnen. Wenn bereits ein leeres Abfragefenster geöffnet ist, fahren Sie mit dem nächsten Schritt fort.
-1. Benennen Sie die Ansicht, indem Sie in das Feld `View Name` eingeben. Der hier angegebene Name bestimmt den Anzeigenamen für die Ansicht auf der Data Warehouse. `View names` sind auf Kleinbuchstaben, Zahlen und Unterstriche (_) beschränkt. Alle anderen Zeichen sind verboten.
+1. Benennen Sie die Ansicht, indem Sie in das Feld `View Name` eingeben. Der hier angegebene Name bestimmt den Anzeigenamen für die Ansicht in der Data Warehouse. `View names` sind auf Kleinbuchstaben, Zahlen und Unterstriche (_) beschränkt. Alle anderen Zeichen sind verboten.
 1. Geben Sie Ihre Abfrage im Fenster mit dem Titel `Select Query` ein. Verwenden Sie dabei die standardmäßige PostgreSQL-Syntax.
 
    >[!NOTE]
@@ -136,7 +136,7 @@ Anstatt für jede Anzeigenquelle einen separaten Satz von Marketing-Metriken zu 
 
 **Suchen Sie zusätzliche Hilfe?**
 
-Das Schreiben von SQL und das Erstellen von `Data Warehouse Views` ist nicht im Lieferumfang des technischen Supports enthalten. Das [Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) bietet jedoch Unterstützung bei der Erstellung von Ansichten an. Das Supportteam kann Ihnen bei allen Fragen behilflich sein, von der Migration einer alten Datenbank mit einer neuen Datenbank bis zur Erstellung einer einzigen Data Warehouse-Ansicht für bestimmte Analysezwecke.
+Das Schreiben von SQL und das Erstellen von `Data Warehouse Views` ist nicht im Lieferumfang des technischen Supports enthalten. Das [Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) bietet jedoch Unterstützung bei der Erstellung von Ansichten an. Das Supportteam kann Ihnen bei allen Fragen behilflich sein, von der Migration einer alten Datenbank mit einer neuen Datenbank bis zur Erstellung einer einzigen Data Warehouse-Ansicht für bestimmte Analysezwecke.
 
 Normalerweise erfordert die Erstellung eines neuen `Data Warehouse View` für die Konsolidierung von 2-3 ähnlich strukturierten Tabellen fünf Stunden Service-Zeit, was etwa 1.250 US-Dollar Arbeit entspricht. Im Folgenden finden Sie jedoch einige häufige Faktoren, die die erwarteten erforderlichen Investitionen erhöhen können:
 

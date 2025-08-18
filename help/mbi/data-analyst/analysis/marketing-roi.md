@@ -21,20 +21,20 @@ Wenn Sie Geld für Online-Werbung ausgeben, möchten Sie Ihre Rendite auf diese 
 
 ![](../../assets/Marketing_dashboard_example.png)
 
-Bevor Sie beginnen, sollten Sie Ihre [[!DNL [Facebook Ads]]](../importing-data/integrations/facebook-ads.md)-, [[!DNL [Adwords]]](../importing-data/integrations/google-adwords.md)- und [[!DNL [Google Ecommerce]]](../importing-data/integrations/google-ecommerce.md)-Konten verbinden und alle zusätzlichen Online-Daten zu Werbeausgaben einbringen. Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
+Bevor Sie beginnen, sollten Sie Ihre [!DNL [Facebook Ads]](../importing-data/integrations/facebook-ads.md)-, [!DNL [Adwords]](../importing-data/integrations/google-adwords.md)- und [!DNL [Google Ecommerce]](../importing-data/integrations/google-ecommerce.md)-Konten verbinden und alle zusätzlichen Online-Daten zu Werbeausgaben einbringen. Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
 ## Konsolidierte Tabellen
 
-**Ursprüngliche Architektur:** Um Ihre Ausgaben aus verschiedenen Quellen wie [!DNL Facebook Ads] oder [!DNL Google Adwords] zusammenzuführen, empfiehlt Adobe die Erstellung einer **konsolidierten Tabelle** aller Ihrer Werbeausgaben. Sie benötigen einen Analysten, um diesen Schritt für Sie auszuführen. Andernfalls reichen Sie [eine Support-Anfrage](../../guide-overview.md#Submitting-a-Support-Ticket) mit dem `[MARKETING ROI ANALYSIS]` ein, und ein Analyst erstellt diese Tabelle.
+**Ursprüngliche Architektur:** Um Ihre Ausgaben aus verschiedenen Quellen wie [!DNL Facebook Ads] oder [!DNL Google Adwords] zusammenzuführen, empfiehlt Adobe die Erstellung **konsolidierten Tabelle** aller Ihrer Werbeausgaben. Sie benötigen einen Analysten, um diesen Schritt für Sie auszuführen. Andernfalls reichen Sie [eine Support-Anfrage](../../guide-overview.md#Submitting-a-Support-Ticket) mit dem `[MARKETING ROI ANALYSIS]` ein, und ein Analyst erstellt diese Tabelle.
 
-**Neue Architektur:** Sie können dem Beispiel in [diesem Analysis Library](../../data-analyst/data-warehouse-mgr/create-dw-views.md)-Thema folgen. Konsolidierte Tabellen werden jetzt unter dem Namen Data Warehouse-Ansichten in der neuen Architektur bezeichnet.
+**Neue Architektur:** Sie können dem Beispiel in [diesem Analysis Library](../../data-analyst/data-warehouse-mgr/create-dw-views.md)-Thema folgen. Konsolidierte Tabellen werden jetzt mit der neuen Architektur als Data Warehouse-Ansichten bezeichnet.
 
 ## Berechnete Spalten
 
 Zu erstellende Spalten
 
 * **`Consolidated Digital Ad Spend`**
-* **`Campaign name`** wird von einem Adobe-Analyst im Rahmen Ihres **[MARKETING ROI ANALYSIS]** Tickets erstellt
+* **`Campaign name`** wird von einem Adobe-Analysten im Rahmen Ihres **[MARKETING ROI ANALYSIS]** Tickets erstellt
 
 **Originale und neue Architekturen:**
 
@@ -42,11 +42,9 @@ Zu erstellende Spalten
    * **`Order's GA campaign`**
       * Definition auswählen: `Joined Column`
       * [!UICONTROL Create Path]:
-      * &#x200B;
-
+      * 
         [!UICONTROL Many]: `sales_flat_order.increment_id`
-      * &#x200B;
-
+      * 
         [!UICONTROL One]: `ecommerce####.transaction_id`
 
       * [!UICONTROL table] auswählen: `ecommerce####`
@@ -144,9 +142,9 @@ Zu erstellende Spalten
 
 * `A`: Werbeausgaben
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervall]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Kundenakquise hinzufügen (jederzeit)**
@@ -160,9 +158,9 @@ Zu erstellende Spalten
 
 * `A`: `Ad customer acquisitions`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervall]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Ad ROI**
@@ -185,8 +183,7 @@ Zu erstellende Spalten
       * Filterlogik: ([`A`] ODER [`B`] ODER [`C`]) UND [`D`]
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Percentage`
 
 * `A`: `Ad Spend (hide)`
@@ -194,21 +191,20 @@ Zu erstellende Spalten
 * `C`: `Average LTV (hide)`
 * [!UICONTROL Formula]: `Ads ROI`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervall]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Bestellungen nach GA-Medium**
-   * &#x200B;
-
-     [!UICONTROL -Metrik]: `Orders`
+   * 
+     [!UICONTROL-Metrik]: `Orders`
 
 * `A`: `Orders`
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By Month`
 * [!UICONTROL Group by]: `Order's medium`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Area`
 
 * **Anzeige-ROI nach Kampagne**
@@ -239,18 +235,15 @@ Zu erstellende Spalten
       * Filterlogik: ([`A`] ODER [`B`] ODER [`C`]) UND [`D`]
 
    * [!UICONTROL Formula]: `(A / B)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `(C - (A / B))`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Currency`
 
    * [!UICONTROL Formula]: `((C - (A / B)) / (A / B))`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Metric]: `Ad Clicks`
@@ -258,38 +251,36 @@ Zu erstellende Spalten
    * [!UICONTROL Metric]: `Ad Impressions`
 
    * [!UICONTROL Formula]: `(H / I)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Formula]: `(A / H)`
-   * &#x200B;
-
+   * 
      [!UICONTROL Format]: `Currency`
 
 * `A`: `Ad Spend` (ausblenden)
 * `B`: `Ad customer acquisitions`
 * `C`: `Average LTV`
 * `D`: `Average lifetime # of orders`
-* &#x200B;
-  [!UICONTROL -Formel]: `CAC`
+* 
+  [!UICONTROL-Formel]: `CAC`
 * [!UICONTROL Formula]: `Avg return`
 * [!UICONTROL Formula]: `Ads ROI`
 * `H`: `adClicks`
 * `I`: `Impressions`
-* &#x200B;
-  [!UICONTROL -Formel]: `CTR`
-* &#x200B;
-  [!UICONTROL -Formel]: `CPC`
+* 
+  [!UICONTROL-Formel]: `CTR`
+* 
+  [!UICONTROL-Formel]: `CPC`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervall]: `None`
-* &#x200B;
+* 
   [!UICONTROL Gruppieren nach]: `campaign` (Verwenden der Kampagne „Erster Auftrag des Kunden“ für Nicht-Anzeigen-Ausgabentabellen-Metriken)
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Table`
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ### verwandt
 

@@ -1,6 +1,6 @@
 ---
 title: Google Analytics und UTM Attribution
-description: Erfahren Sie mehr über den Quell-Attributionsprozess der Google Analytics.
+description: Erfahren Sie mehr über den Google Analytics-Quellattributionsprozess.
 exl-id: 48b8a3d3-f1ac-4d3f-8f65-db1245c9ae0a
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports
@@ -21,7 +21,7 @@ Es ist wichtig, die [Quelle der Benutzerakquise](../../data-analyst/analysis/goo
 
 Idealerweise wird jedes Mal, wenn ein Konversionsereignis auftritt, eine Empfehlungsquelle aufgezeichnet. Aber wie wird die Quelle bestimmt?
 
-Die Realität ist, dass Benutzer oft aus vielen Quellen kommen, bevor sie eine Mikro- oder Makrokonvertierung treffen/übertragen. Sie können zum Beispiel über Bio auf die Website kommen, dann die Website verlassen, dann über Paid Search kommen, dann die Website verlassen und dann direkt zur Website selbst kommen. Diese Tracking-Informationen werden der Website oft über UTM-Parameter bereitgestellt, es gibt jedoch auch komplexere Systeme. Konzentrieren Sie sich für Ihre Zwecke auf [UTM](https://support.google.com/analytics/answer/1033867?hl=en&amp;ref_topic=1032998).
+Die Realität ist, dass Benutzer oft aus vielen Quellen kommen, bevor sie eine Mikro- oder Makrokonvertierung treffen/übertragen. Sie können zum Beispiel über Bio auf die Website kommen, dann die Website verlassen, dann über Paid Search kommen, dann die Website verlassen und dann direkt zur Website selbst kommen. Diese Tracking-Informationen werden der Website oft über UTM-Parameter bereitgestellt, es gibt jedoch auch komplexere Systeme. Konzentrieren Sie sich für Ihre Zwecke auf [UTM](https://support.google.com/analytics/answer/1033867?hl=en&ref_topic=1032998).
 
 ## Wie ordnet [!DNL Google Analytics] Verweisquellen über UTM-Parameter zu?
 
@@ -33,7 +33,7 @@ Wenn die UTM-Parameter für die URL angegeben werden, werden diese ausgewertet u
 
 Die Attribution Letztklick ist das häufigste Attributionsmodell, das von [!DNL Google Analytics] verwendet wird. In diesem Fall stellt das [!DNL Google Analytics]-Cookie die UTM-Parameter der letzten Quelle vor dem Konversionsereignis dar und wird [in der Datenbank aufgezeichnet](../../data-analyst/analysis/google-track-user-acq.md). Das [!DNL Google Analytics]-Cookie überschreibt nur die vorherigen UTM-Parameter, wenn der Benutzer auf eine neue URL klickt, die einen neuen Satz UTM-Parameter enthält.
 
-Angenommen, ein Benutzer besucht eine Website zuerst über [!DNL Google Analytics] *Paid Search*, kehrt dann über *Organische Suche* zurück und kehrt schließlich direkt *oder über einen* E-Mail-Link ***ohne UTM-Parameter**&#x200B;vor dem Konversionsereignis zur* zurück. In diesem Beispiel besagt das [!DNL Google Analytics]-Cookie, dass die Quelle des Benutzers organisch ist, da dies die letzte Quelle vor der Konversion darstellt. Der *Pfad* des Benutzers vor diesem endgültigen Konversionsereignis wird ignoriert. Wenn der Benutzer die Website stattdessen über einen E-Mail-Link mit UTM besucht hat, würde das [!DNL Google Analytics]-Cookie sagen, dass die Quelle „E-Mail“ ist. Wenn also UTM-Parameter im Cookie vorhanden sind und der Benutzer über Direct eintritt, zeigt das [!DNL Google Analytics]-Cookie die UTM-Parameter anstelle von „direct“ an.
+Angenommen, ein Benutzer besucht eine Website zuerst über [!DNL Google Analytics] *Paid Search*, kehrt dann über *Organische Suche* zurück und kehrt schließlich direkt *oder über einen* E-Mail-Link ** ohne UTM-Parameter **vor dem Konversionsereignis zur** zurück. In diesem Beispiel besagt das [!DNL Google Analytics]-Cookie, dass die Quelle des Benutzers organisch ist, da dies die letzte Quelle vor der Konversion darstellt. Der *Pfad* des Benutzers vor diesem endgültigen Konversionsereignis wird ignoriert. Wenn der Benutzer die Website stattdessen über einen E-Mail-Link mit UTM besucht hat, würde das [!DNL Google Analytics]-Cookie sagen, dass die Quelle „E-Mail“ ist. Wenn also UTM-Parameter im Cookie vorhanden sind und der Benutzer über Direct eintritt, zeigt das [!DNL Google Analytics]-Cookie die UTM-Parameter anstelle von „direct“ an.
 
 >[!NOTE]
 >

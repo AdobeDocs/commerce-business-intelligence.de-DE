@@ -17,9 +17,9 @@ Durch das Hochladen Ihrer Werbeausgabendaten können Sie den Kampagnen-ROI messe
 
 ## Hochladen von Werbekostendaten
 
-Der erste Schritt bei der Analyse und Verwendung von Daten besteht darin, die Daten abzurufen. Da die meisten Werbeplattformen den Export von Berichten ermöglichen, empfiehlt Adobe, die Rohdaten von Ihrer Werbeplattform zu exportieren und ohne Manipulation direkt in [!DNL Commerce Intelligence] hochzuladen. Sie können Vorgänge mit den Daten auf Ihrem Data Warehouse durchführen, sodass Sie Ihre Anstrengungen nicht verdoppeln müssen.
+Der erste Schritt bei der Analyse und Verwendung von Daten besteht darin, die Daten abzurufen. Da die meisten Werbeplattformen den Export von Berichten ermöglichen, empfiehlt Adobe, die Rohdaten aus Ihrer Werbeplattform zu exportieren und ohne Manipulation direkt in [!DNL Commerce Intelligence] hochzuladen. Sie können Vorgänge mit den Daten in Ihrer Data Warehouse durchführen, sodass Sie Ihre Anstrengungen nicht verdoppeln müssen.
 
-Nachdem Sie die Daten zu Werbeausgaben exportiert haben, verwenden Sie die [`File Upload` Funktion](../connecting-data/using-file-uploader.md) um die Daten auf Ihren Data Warehouse zu bringen. Sie können im Laufe der Zeit neue Daten in dieselbe [!DNL Commerce Intelligence]-Tabelle hochladen.
+Nachdem Sie die Daten zu Werbeausgaben exportiert haben, verwenden Sie die [`File Upload` Funktion](../connecting-data/using-file-uploader.md) um die Daten in Ihre Data Warehouse zu bringen. Sie können im Laufe der Zeit neue Daten in dieselbe [!DNL Commerce Intelligence]-Tabelle hochladen.
 
 ## Offline-Quellen
 

@@ -23,7 +23,7 @@ Um Ihre [!DNL MongoDB] Datenbank über einen SSH-Tunnel mit [!DNL Commerce Intel
 
 >[!NOTE]
 >
->Aufgrund der technischen Natur dieses Setups empfiehlt Adobe, einen Entwickler einzubinden, um zu helfen, falls Sie dies noch nicht getan haben.
+>Aufgrund der technischen Natur dieser Einrichtung empfiehlt Adobe, einen Entwickler einzubinden, um Hilfe zu erhalten, falls Sie dies noch nicht getan haben.
 
 ## Abrufen des [!DNL Commerce Intelligence] öffentlichen Schlüssels {#retrieve}
 
@@ -146,4 +146,4 @@ Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save Test]** , um die Einric
 
 ### verwandt
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

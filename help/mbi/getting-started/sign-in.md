@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Zugriff auf das aktivierte [!DNL Adobe Commerce Intelligence]
 
-Nachdem Sie Ihr [!DNL Commerce Intelligence]-Konto entweder für [On-Premise oder Cloud](../getting-started/onpremise-activation.md) aktiviert und mit Ihrem Adobe-Account-Team die Konfigurationsschritte abgeschlossen haben, können Sie sich jetzt bei Ihrem Konto anmelden.
+Nachdem Sie Ihr [!DNL Commerce Intelligence]-Konto entweder für [On-Premise oder Cloud](../getting-started/onpremise-activation.md) aktiviert und mit Ihrem Adobe-Konto-Team die Konfigurationsschritte abgeschlossen haben, können Sie sich jetzt bei Ihrem Konto anmelden.
 
 ## Mit dem [!DNL Adobe ID] anmelden
 
@@ -21,7 +21,7 @@ Nachdem Sie Ihr [!DNL Commerce Intelligence]-Konto entweder für [On-Premise ode
 
    ![Anmelden bei Adobe](../assets/sign-in-adobe.png)
 
-1. Geben Sie die E-Mail-Adresse ein, die Sie beim Erstellen Ihres [!DNL Commerce Intelligence]-Kontos verwendet haben. Wenn Sie noch kein Adobe-Konto haben, klicken Sie auf **[!UICONTROL Create an account]** und geben Sie Ihre Informationen ein. Denken Sie daran, die E-Mail-Adresse zu verwenden, die Sie beim Erstellen Ihres [!DNL Commerce Intelligence]-Kontos verwendet haben. Die E-Mail-Adresse ist der Schlüssel, den Sie für den Zugriff auf Ihr Adobe-Konto benötigen.
+1. Geben Sie die E-Mail-Adresse ein, die Sie beim Erstellen Ihres [!DNL Commerce Intelligence]-Kontos verwendet haben. Wenn Sie noch kein Adobe-Konto haben, klicken Sie auf **[!UICONTROL Create an account]** und geben Sie Ihre Informationen ein. Denken Sie daran, die E-Mail-Adresse zu verwenden, die Sie beim Erstellen Ihres [!DNL Commerce Intelligence]-Kontos verwendet haben. Die E-Mail-Adresse ist der Schlüssel für den Zugriff auf Ihr Adobe-Konto.
 
 >[!NOTE]
 >

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Erwartete [!DNL QuickBooks]
 
-Nachdem [Sie Ihr [!DNL QuickBooks] Konto verbunden haben](../../../data-analyst/importing-data/integrations/quickbooks.md) können Sie den [Data Warehouse-Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder für die Analyse einfach zu verfolgen. Die folgenden Tabellen werden in Ihrem Data Warehouse erstellt:
+Nachdem [Sie Ihr [!DNL QuickBooks] Konto verbunden haben](../../../data-analyst/importing-data/integrations/quickbooks.md) können Sie den [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder für die Analyse einfach zu verfolgen. Die folgenden Tabellen werden in Ihrer Data Warehouse erstellt:
 
 Um alle für das Tracking verfügbaren Felder anzuzeigen, klicken Sie auf die Links in der Spalte „Tabellenname“.
 
@@ -62,4 +62,4 @@ Um alle für das Tracking verfügbaren Felder anzuzeigen, klicken Sie auf die Li
 ## Verwandt:
 
 * [Verbinden [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

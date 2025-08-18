@@ -29,6 +29,6 @@ Beispiel:
 
 ## Suchen von Dashboards, die anderen Benutzern gehören {#other}
 
-Suchen Sie nach einem Dashboard, das einem anderen Benutzer gehört? Wenn das Dashboard von anderen Benutzern angezeigt werden kann, können Sie danach suchen, indem Sie im Dropdown-Menü `Dashboard Options` auf **[!UICONTROL Find]** klicken.
+Suchen Sie nach einem Dashboard, das einem anderen Benutzer gehört? Wenn das Dashboard von anderen Benutzern angezeigt werden kann, können Sie danach suchen, indem Sie im Dropdown-Menü **[!UICONTROL Find]** auf `Dashboard Options` klicken.
 
 ![Dashboards suchen](../../assets/find-dboards-other-owners.png)

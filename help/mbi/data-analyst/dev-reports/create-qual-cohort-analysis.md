@@ -37,9 +37,9 @@ Wenn Sie jedoch das Kohortenverhalten mehrerer Benutzersegmente im selben Kohort
 
 ## Welche Informationen sollte ich an den Support senden, um meine Analyse einzurichten? {#support}
 
-Das Erstellen eines `qualitative cohort` in der `Report Builder` beinhaltet, dass das Adobe-Analyst-Team einige [erweiterte berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md) auf den erforderlichen Tabellen erstellt.
+Das Erstellen eines `qualitative cohort` in der `Report Builder` beinhaltet, dass das Adobe-Analystenteam einige [erweiterte berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md) auf den erforderlichen Tabellen erstellt.
 
-Um diese zu erstellen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) ein (und lesen Sie diesen Artikel!). Hier finden Sie, was Sie wissen müssen:
+Um diese zu erstellen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ein (und lesen Sie diesen Artikel!). Hier finden Sie, was Sie wissen müssen:
 
 * Die `metric`, mit der Sie Ihre Kohortenanalyse durchführen möchten, und welche Tabelle verwendet wird (Beispiel: `Revenue`, basierend auf der `orders`).
 
@@ -49,7 +49,7 @@ Um diese zu erstellen, reichen Sie ein [Support-Ticket](https://experienceleague
 
 * Die `time interval`, über die die Analyse angezeigt werden soll (Beispiel: `weeks`, `months` oder `quarters` nach der `User's first order date`).
 
-Sobald das Adobe-Analyst-Team auf die oben genannten Fragen antwortet, haben Sie ein paar neue erweiterte berechnete Spalten, um Ihren Bericht zu erstellen! Folgen Sie dazu den unten stehenden Anweisungen.
+Sobald das Adobe-Analyst-Team auf die oben genannten Fragen antwortet, haben Sie einige neue erweiterte berechnete Spalten, um Ihren Bericht zu erstellen! Folgen Sie dazu den unten stehenden Anweisungen.
 
 ## Erstellen der qualitativen Kohortenanalyse {#create}
 
@@ -67,7 +67,7 @@ In diesem Beispiel sehen Sie eine `all time` Ansicht von `Revenue`. Danach sollt
 
 ![](../../assets/qualcohort2.gif)
 
-Drittens nehmen Sie die Anpassung vor, um die `cohorts` einzurichten. Basierend auf den `cohort date` und `time interval`, die Sie dem Adobe-Analyst-Team angegeben haben, haben Sie eine Dimension in Ihrem Konto, die die `cohort` Datierung durchführt. In diesem Beispiel wird diese benutzerdefinierte Dimension `Months between this order and customer's first order date` genannt. Mit dieser Dimension sollten Sie:
+Drittens nehmen Sie die Anpassung vor, um die `cohorts` einzurichten. Basierend auf den `cohort date` und `time interval`, die Sie dem Adobe-Analystenteam angegeben haben, haben Sie eine Dimension in Ihrem Konto, die die `cohort` Datierung durchführt. In diesem Beispiel wird diese benutzerdefinierte Dimension `Months between this order and customer's first order date` genannt. Mit dieser Dimension sollten Sie:
 
 * `Group by` der Dimension mit der Option &quot;`group by`&quot;
 

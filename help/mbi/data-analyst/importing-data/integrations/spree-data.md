@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Erwartete [!DNL Spree]
 
-Nachdem Sie [Ihren [!DNL Spree] Store](../../../data-analyst/importing-data/integrations/spree.md) verbunden haben, können Sie den [Data Warehouse-Manager](../../data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder von Ihrer [!DNL Spree] zur Analyse einfach zu verfolgen.
+Nachdem Sie [Ihren [!DNL Spree] Store](../../../data-analyst/importing-data/integrations/spree.md) verbunden haben, können Sie den [Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder von Ihrer [!DNL Spree] zur Analyse einfach zu verfolgen.
 
 In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!DNL Spree] in Ihr [!DNL Commerce Intelligence]-Konto importieren können, einschließlich Links zu [zusätzlichen ](https://guides.spreecommerce.org/developer/addresses.html#address)) [!DNL Spree].
 
@@ -30,4 +30,4 @@ In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!D
 ## Verwandt:
 
 * [Verbinden [!DNL Spree]](../integrations/spree.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

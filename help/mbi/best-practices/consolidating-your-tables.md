@@ -21,7 +21,7 @@ Damit die Konsolidierung von Tabellen funktioniert, müssen die Eingabetabellen 
 
 In diesem Abschnitt werden einige der häufigsten Anwendungsfälle für konsolidierte Tabellen sowie die nächsten Schritte, die zum Erstellen eigener Tabellen erforderlich sind, erläutert.
 
-## Recommendations für die Verwendung konsolidierter Tabellen
+## Empfehlungen für die Verwendung konsolidierter Tabellen
 
 Im Folgenden wird erläutert, wann die Verwendung konsolidierter Tabellen in Ihrem System sinnvoll sein könnte.
 
@@ -41,11 +41,11 @@ Stellen Sie sich eine Website vor, auf der Benutzer verschiedene Dinge tun könn
 
 Sie können konsolidierte Tabellen verwenden, um eine einheitliche Liste aller Benutzer zu erstellen und festzustellen, wann eines dieser Ereignisse stattgefunden hat. Sie können dann Abfragen für die konsolidierte Tabelle ausführen, um eine solche Analyse einfach durchzuführen.
 
-Wie bei allen anderen Tabellen in Ihrem Data Warehouse können Sie zusätzliche Spalten hinzufügen, um verschiedene Arten von Diagrammen und Analysen zu ermöglichen.
+Wie bei allen anderen Tabellen in Ihrer Data Warehouse können Sie zusätzliche Spalten hinzufügen, um verschiedene Arten von Diagrammen und Analysen zu ermöglichen.
 
 ## Erstellen, Anzeigen oder Aktualisieren einer konsolidierten Tabelle
 
-Wenn Sie eine konsolidierte Tabelle zu Ihrem Data Warehouse hinzufügen möchten, wenden Sie sich an [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket).
+Wenn Sie eine konsolidierte Tabelle zu Ihrer Data Warehouse hinzufügen möchten, wenden Sie sich an den [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket).
 
 >[!NOTE]
 >

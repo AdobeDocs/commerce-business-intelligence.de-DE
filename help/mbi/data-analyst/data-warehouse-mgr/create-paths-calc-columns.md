@@ -15,12 +15,12 @@ ht-degree: 0%
 
 ## Aktualisierung der berechneten Spalten
 
-Beim [Erstellen berechneter Spalten](../data-warehouse-mgr/creating-calculated-columns.md) in Ihrem Data Warehouse werden Sie aufgefordert, einen Pfad zu definieren, der beschreibt, wie die Tabelle, in der Sie eine Spalte erstellen, mit der Tabelle verknüpft ist, aus der Sie Informationen abrufen. Um einen Pfad erfolgreich zu erstellen, müssen Sie zwei Dinge wissen:
+Beim [Erstellen berechneter Spalten](../data-warehouse-mgr/creating-calculated-columns.md) in Ihrer Data Warehouse werden Sie aufgefordert, einen Pfad zu definieren, der beschreibt, wie die Tabelle, in der Sie eine Spalte erstellen, mit der Tabelle verknüpft ist, aus der Sie Informationen abrufen. Um einen Pfad erfolgreich zu erstellen, müssen Sie zwei Dinge wissen:
 
 1. Beziehung der Tabellen in Ihren Datenbanken zueinander
 1. Die primären und Fremdschlüssel, die diese Beziehung definieren
 
-Wenn Sie diese Informationen kennen, können Sie einfach einen Pfad erstellen, der den Anweisungen in diesem Thema folgt. Sie können einen technischen Experten in Ihrer Organisation fragen oder sich an das [Professional Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) wenden.
+Wenn Sie diese Informationen kennen, können Sie einfach einen Pfad erstellen, der den Anweisungen in diesem Thema folgt. Sie können einen technischen Experten in Ihrer Organisation fragen oder sich an das [Professional Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) wenden.
 
 ## Aktualisierung von Tabellenbeziehungen und Schlüsseltypen {#refresher}
 
@@ -48,7 +48,7 @@ Ein `Foreign Key` ist eine Spalte, die in einer Tabelle erstellt wird und mit de
 
 ## Erstellen eines Pfads {#createpath}
 
-Beim Erstellen einer Spalte im Data Warehouse müssen Sie den Pfad definieren, der Informationen von einer Tabelle in eine andere bringt. Manchmal werden Pfade vorab ausgefüllt, da ein Pfad zwischen Tabellen vorhanden ist. Sollte dies jedoch nicht der Fall sein, müssen Sie einen erstellen.
+Beim Erstellen einer Spalte in Ihrer Data Warehouse müssen Sie den Pfad definieren, der Informationen von einer Tabelle in eine andere bringt. Manchmal werden Pfade vorab ausgefüllt, da ein Pfad zwischen Tabellen vorhanden ist. Sollte dies jedoch nicht der Fall sein, müssen Sie einen erstellen.
 
 Verwenden Sie die Beziehung zwischen **Kunden** und **Bestellungen**, um Ihnen zu zeigen, wie dies geschieht. Aufschlüsselung:
 
@@ -79,7 +79,7 @@ Jetzt können Sie den Pfad erstellen.
 
 * **[!DNL Commerce Intelligence]kann keine Primär-/Fremdschlüsselbeziehungen erraten**. Sie möchten keine falschen Daten in Ihr Konto einschleusen. Daher müssen Pfade manuell erstellt werden.
 
-* **Derzeit können Pfade nur zwischen zwei verschiedenen Tabellen angegeben werden**. Enthält die Logik, die Sie wiederherstellen möchten, mehr als zwei Tabellen? Es kann dann sinnvoll sein, (1) die Spalten zuerst mit einer Zwischentabelle und dann mit der Tabelle „Endziel“ zu verbinden, oder (2) sich mit dem [Professional Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) beraten, um den besten Ansatz für Ihre Ziele zu finden.
+* **Derzeit können Pfade nur zwischen zwei verschiedenen Tabellen angegeben werden**. Enthält die Logik, die Sie wiederherstellen möchten, mehr als zwei Tabellen? Es kann dann sinnvoll sein, (1) die Spalten zuerst mit einer Zwischentabelle und dann mit der Tabelle „Endziel“ zu verbinden, oder (2) sich mit dem [Professional Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) beraten, um den besten Ansatz für Ihre Ziele zu finden.
 
 * **Eine Spalte kann jeweils nur die Fremdschlüsselreferenz für einen Pfad sein**. Wenn `order_items.order_id` beispielsweise auf `orders.id` verweist, kann `order_items.order_id` auf nichts anderes verweisen.
 
@@ -89,11 +89,11 @@ Wenn Sie aufgrund einer oder mehrerer der oben genannten Einschränkungen keine 
 
 ## Löschen eines berechneten Spaltenpfads {#delete}
 
-Sie haben einen falschen Pfad in Ihrem Data Warehouse erstellt? Oder Sie machen vielleicht einen kleinen Frühjahrsputz und wollen aufräumen? Wenn Sie einen Pfad aus Ihrem Konto löschen müssen, können Sie [ein Ticket an den Adobe-Support senden](../../guide-overview.md#Submitting-a-Support-Ticket). **Stellen Sie sicher, dass Sie den Namen des Pfads angeben!**
+Sie haben einen falschen Pfad in Ihrer Data Warehouse erstellt? Oder Sie machen vielleicht einen kleinen Frühjahrsputz und wollen aufräumen? Wenn Sie einen Pfad aus Ihrem Konto löschen müssen, können Sie [ein Ticket an den Adobe-Support senden](../../guide-overview.md#Submitting-a-Support-Ticket). **Stellen Sie sicher, dass Sie den Namen des Pfads angeben!**
 
 ## Verpackung {#wrapup}
 
-Jetzt, da Sie mit dem Erstellen von Pfaden für berechnete Spalten in Ihrem Data Warehouse vertraut sind. Wenn Sie sich bezüglich eines bestimmten Pfads immer noch nicht sicher sind, denken Sie daran, dass Sie in Ihrem [!DNL Commerce Intelligence]-Konto immer auf **[!UICONTROL Support]** klicken können, um Hilfe zu erhalten.
+Jetzt, da Sie sich mit dem Erstellen von Pfaden für berechnete Spalten in Ihrer Data Warehouse vertraut machen können. Wenn Sie sich bezüglich eines bestimmten Pfads immer noch nicht sicher sind, denken Sie daran, dass Sie in Ihrem **[!UICONTROL Support]**-Konto immer auf [!DNL Commerce Intelligence] klicken können, um Hilfe zu erhalten.
 
 ## verwandt
 

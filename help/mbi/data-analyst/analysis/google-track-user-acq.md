@@ -1,5 +1,5 @@
 ---
-title: Google Analytics - Übersicht über Source-Daten zur Benutzerakquise verfolgen
+title: Google Analytics - Übersicht über die Benutzerakquise von Source-Daten
 description: Erfahren Sie, wie Sie Ihre Daten nach Benutzerakquise-Quelle segmentieren.
 exl-id: 2ce3e4f9-4741-4ada-b822-ec6a5ca94497
 role: Admin, User
@@ -27,7 +27,7 @@ Wenn Sie nicht bereits Benutzerakquise-Quellen in Ihrer Datenbank verfolgen, kö
 
 ### (Option 1) Verfolgen Sie Quelldaten zu Bestellungsreferenzen über [!DNL Google Analytics E-Commerce]
 
-Wenn Sie [!DNL Google Analytics E-Commerce] verwenden, um Ihre Auftrags- und Verkaufsdaten zu verfolgen, können Sie die [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) verwenden, um die Bezugsquelldaten jeder Bestellung zu synchronisieren. Auf diese Weise können Sie Umsatz und Bestellungen nach Empfehlungsquelle (z. B. `utm_source` oder `utm_medium`) segmentieren. Sie erhalten auch ein Gefühl für die Quellen der Kundenakquise über [!DNL Commerce Intelligence] benutzerdefinierten Dimensionen wie `User's first order source`.
+Wenn Sie [!DNL Google Analytics E-Commerce] verwenden, um Ihre Auftrags- und Verkaufsdaten zu verfolgen, können Sie die [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) verwenden, um die Bezugsquelldaten jeder Bestellung zu synchronisieren. Auf diese Weise können Sie Umsatz und Bestellungen nach Empfehlungsquelle (z. B. `utm_source` oder `utm_medium`) segmentieren. Sie erhalten auch ein Gefühl für die Quellen der Kundenakquise über [!DNL Commerce Intelligence] benutzerdefinierten Dimensionen wie `User's first order source`.
 
 ### (Option 2) Speichern der Quelldaten der [!DNL Google Analytics] in Ihrer Datenbank
 
@@ -35,7 +35,7 @@ In diesem Thema wird erläutert, wie Sie [!DNL Google Analytics] Informationen z
 
 #### Warum?
 
-Wenn Sie sich nur die standardmäßigen [!DNL Google Analytics]- und Akquise-Metriken ansehen, erhalten Sie nicht das ganze Bild. Die Anzahl der Konversionen aus der organischen Suche im Vergleich zur Paid Search ist zwar interessant, aber was kann man mit diesen Informationen tun? Sollte man mehr Geld für bezahlte Suche ausgeben? Das hängt vom Wert der Kunden ab, die über diesen Kanal kommen, was von Google Analytics nicht bereitgestellt wird.
+Wenn Sie sich nur die standardmäßigen [!DNL Google Analytics]- und Akquise-Metriken ansehen, erhalten Sie nicht das ganze Bild. Die Anzahl der Konversionen aus der organischen Suche im Vergleich zur Paid Search ist zwar interessant, aber was kann man mit diesen Informationen tun? Sollte man mehr Geld für bezahlte Suche ausgeben? Das hängt vom Wert der Kunden ab, die über diesen Kanal kommen, was Google Analytics nicht bietet.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Dieser Code wurde in eine [PHP-Bibliothek auf GitHub gehostet](https://github.co
 
 Das zurückgegebene `$data`-Array ist eine Zuordnung der Schlüssel `source`, `medium`, `term`, `content`, `campaign`, `gclid` und der entsprechenden Werte.
 
-Adobe empfiehlt, der Datenbank eine Tabelle namens &quot;`user_referral`&quot; mit folgenden Spalten hinzuzufügen: &quot;`id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`&quot;. Wenn sich ein Benutzer anmeldet, rufen Sie die Verweisinformationen ab und speichern Sie sie in dieser Tabelle.
+Adobe empfiehlt, Ihrer Datenbank eine Tabelle namens &quot;`user_referral`&quot; mit folgenden Spalten hinzuzufügen: &quot;`id INT PRIMARY KEY, user_id INT NOT NULL, source VARCHAR(255), medium VARCHAR(255), term VARCHAR(255), content VARCHAR(255), campaign VARCHAR(255), gclid VARCHAR(255)`&quot;. Wenn sich ein Benutzer anmeldet, rufen Sie die Verweisinformationen ab und speichern Sie sie in dieser Tabelle.
 
 #### Verwendung dieser Daten
 

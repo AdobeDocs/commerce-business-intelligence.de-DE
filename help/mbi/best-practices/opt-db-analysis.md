@@ -65,4 +65,4 @@ Wenn einer Datenspalte kein [Datentyp“ zugewiesen ist](https://en.wikipedia.or
 
 ### Fügen Sie Ihren Datentabellen Präfixe hinzu, wenn Sie mehrere Datenbanken haben
 
-Wenn mehr als eine Datenbank mit [!DNL Commerce Intelligence] verbunden ist, empfiehlt Adobe, Ihren Tabellen Präfixe hinzuzufügen, um Verwirrung zu vermeiden. Präfixe helfen Ihnen dabei, sich zu merken, woher Metriken oder Datendimensionen stammen.
+Wenn mehr als eine Datenbank mit [!DNL Commerce Intelligence] verbunden ist, empfiehlt Adobe, den Tabellen Präfixe hinzuzufügen, um Verwirrung zu vermeiden. Präfixe helfen Ihnen dabei, sich zu merken, woher Metriken oder Datendimensionen stammen.

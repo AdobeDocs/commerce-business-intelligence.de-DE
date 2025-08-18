@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Bei der Bewertung der Beziehung zwischen zwei gegebenen Tabellen müssen Sie verstehen, wie viele mögliche Vorkommen in einer Tabelle zu einer Entität in einer anderen gehören könnten und umgekehrt. Verwenden Sie beispielsweise eine `users` und eine `orders`. In diesem Fall möchten Sie wissen, wie viele **Bestellungen** ein bestimmter **Benutzer** aufgegeben hat und wie viele **Benutzer** eine **Bestellung** gehören könnte.
 
-Das Verständnis von Beziehungen ist für die Aufrechterhaltung der Datenintegrität von entscheidender Bedeutung, da es die Genauigkeit Ihrer [berechneten Spalten](../data-warehouse-mgr/creating-calculated-columns.md) und [Dimensionen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) beeinflusst. Weitere Informationen finden Sie unter [Beziehungstypen](#types) und [Auswerten der Tabellen auf Ihrem Data Warehouse.](#eval)
+Das Verständnis von Beziehungen ist für die Aufrechterhaltung der Datenintegrität von entscheidender Bedeutung, da es die Genauigkeit Ihrer [berechneten Spalten](../data-warehouse-mgr/creating-calculated-columns.md) und [Dimensionen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) beeinflusst. Weitere Informationen finden Sie unter [Beziehungstypen](#types) und [Auswerten der Tabellen in Ihrer Data Warehouse.](#eval)
 
 ## Beziehungstypen {#types}
 
@@ -49,9 +49,9 @@ Denken Sie an die Beziehung zwischen **Produkten** und **Kategorien**: Ein Produ
 
 ## Auswerten von Tabellen {#eval}
 
-Angesichts der zwischen Tabellen bestehenden Beziehungstypen können Sie lernen, wie Sie die Tabellen in Ihrem Data Warehouse auswerten. Da diese Beziehungen bestimmen, wie berechnete Spalten mit mehreren Tabellen definiert werden, ist es wichtig, dass Sie verstehen, wie Sie Tabellenbeziehungen identifizieren und zu welcher Seite - `one` oder `many` - die Tabelle gehört.
+Angesichts der zwischen Tabellen bestehenden Beziehungstypen können Sie lernen, wie Sie die Tabellen in Ihrer Data Warehouse auswerten können. Da diese Beziehungen bestimmen, wie berechnete Spalten mit mehreren Tabellen definiert werden, ist es wichtig, dass Sie verstehen, wie Sie Tabellenbeziehungen identifizieren und zu welcher Seite - `one` oder `many` - die Tabelle gehört.
 
-Es gibt zwei Methoden, mit denen Sie die Beziehungen eines bestimmten Tabellenpaars innerhalb Ihres Data Warehouse auswerten können. Die erste Methode verwendet ein [konzeptionelles Framework](#concept) das berücksichtigt, wie die Entitäten der Tabelle miteinander interagieren. Die zweite Methode verwendet das [Tabellenschema](#schema).
+Es gibt zwei Methoden, mit denen Sie die Beziehungen eines bestimmten Tabellenpaars in Ihrer Data Warehouse auswerten können. Die erste Methode verwendet ein [konzeptionelles Framework](#concept) das berücksichtigt, wie die Entitäten der Tabelle miteinander interagieren. Die zweite Methode verwendet das [Tabellenschema](#schema).
 
 ### Verwenden des Konzeptrahmens {#concept}
 
@@ -65,7 +65,7 @@ So verwenden Sie diese Methode:
 
 1. Identifizieren Sie ein oder mehrere Verben, die die Interaktion dieser Entitäten beschreiben. Wenn beispielsweise Benutzende mit Bestellungen verglichen werden, „geben“ die Benutzenden Bestellungen auf. In die andere Richtung gehen, Bestellungen „gehören“ zu Benutzern.
 
-Diese Art von Framework kann auf jede Tabellenpaarung im Data Warehouse angewendet werden. Auf diese Weise können Sie den Beziehungstyp leicht erkennen und feststellen, welche Tabelle eine Seite und welche Tabelle eine viele Seiten ist.
+Diese Art von Framework kann auf jede Tabellenpaarung in Ihrer Data Warehouse angewendet werden. Auf diese Weise können Sie den Beziehungstyp leicht erkennen und feststellen, welche Tabelle eine Seite und welche Tabelle eine viele Seiten ist.
 
 Nachdem Sie die Terminologie identifiziert haben, die beschreibt, wie die beiden Tabellen interagieren, gestalten Sie die Interaktion in beide Richtungen, indem Sie überlegen, wie sich eine bestimmte Instanz der ersten Entität auf die zweite bezieht. Im Folgenden finden Sie einige Beispiele für jede Beziehung:
 
@@ -129,4 +129,4 @@ Wenn einer der folgenden Punkte zutrifft, wird die Beziehung `many-to-many`:
 
 ## Nächste Schritte
 
-Die korrekte Bewertung von Tabellenbeziehungen ist für die genaue Modellierung Ihrer Daten von entscheidender Bedeutung. Nachdem Sie nun wissen, wie Tabellen miteinander verknüpft sind, lesen Sie [Was Sie mit dem Data Warehouse-Manager tun können](../data-warehouse-mgr/tour-dwm.md).
+Die korrekte Bewertung von Tabellenbeziehungen ist für die genaue Modellierung Ihrer Daten von entscheidender Bedeutung. Nachdem Sie nun wissen, wie Tabellen miteinander verknüpft sind, lesen Sie [Was Sie mit Data Warehouse Manager tun können](../data-warehouse-mgr/tour-dwm.md).

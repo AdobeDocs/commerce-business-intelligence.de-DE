@@ -1,6 +1,6 @@
 ---
 title: Gastbestellungen
-description: Erfahren Sie mehr über die Auswirkungen von Gastbestellungen auf Ihre Daten und welche Optionen Sie haben, um Gastbestellungen auf Ihrer [!DNL Commerce Intelligence] Data Warehouse ordnungsgemäß zu berücksichtigen.
+description: Erfahren Sie mehr über die Auswirkungen von Gastbestellungen auf Ihre Daten und welche Optionen Sie haben, um Gastbestellungen in Ihrer [!DNL Commerce Intelligence] Data Warehouse ordnungsgemäß zu berücksichtigen.
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Wenn Sie bei der Überprüfung Ihrer Bestellungen feststellen, dass viele `customer\_id`-Werte null sind oder keinen Wert haben, um wieder zur `customers`-Tabelle hinzuzufügen, ist dies ein Hinweis darauf, dass Ihr Store Gastbestellungen zulässt. Das bedeutet, dass Ihre `customers` höchstwahrscheinlich nicht alle Ihre Kunden einschließt.
 
-In diesem Abschnitt wird erläutert, wie sich Gastbestellungen auf Ihre Daten auswirken und welche Optionen Sie haben, um Gastbestellungen auf Ihrer [!DNL Commerce Intelligence]-Data Warehouse ordnungsgemäß zu berücksichtigen.
+In diesem Abschnitt wird erläutert, wie sich Gastbestellungen auf Ihre Daten auswirken und welche Optionen Sie haben, um Gastbestellungen in Ihrer [!DNL Commerce Intelligence] Data Warehouse ordnungsgemäß zu berücksichtigen.
 
 ## Auswirkungen von Gastaufträgen auf Daten
 
@@ -31,9 +31,9 @@ In der typischen Commerce-Datenbank gibt es eine `orders`, die mit einer `custom
   >
   >Um die eindeutige Person zu identifizieren, die die Bestellung getätigt hat, muss neben `customer\_id` ein weiteres eindeutiges Benutzerattribut an eine Bestellung angehängt sein. Normalerweise wird die E-Mail-Adresse des Kunden verwendet.
 
-## Verbuchen von Gastaufträgen beim Data Warehouse-Setup
+## Verbuchen von Gastaufträgen im Data Warehouse-Setup
 
-In der Regel berücksichtigt der Sales Engineer, der Ihr Konto implementiert, Gastaufträge beim Aufbau der Grundlage Ihres Data Warehouse.
+In der Regel berücksichtigt der Sales Engineer, der Ihr Konto implementiert, Gastaufträge beim Aufbau der Grundlage für Ihre Data Warehouse.
 
 Die beste Möglichkeit, Gastaufträge zu berücksichtigen, besteht darin, alle Metriken auf Kundenebene auf der `orders`-Tabelle zu basieren. Bei dieser Einrichtung wird eine eindeutige Kunden-ID verwendet, die alle Kunden besitzen, einschließlich Gäste (normalerweise wird Kunden-E-Mail verwendet). Registrierungsdaten aus der `customers` werden dabei ignoriert. Mit dieser Option werden nur Kunden, die mindestens einen Kauf getätigt haben, in Berichte auf Kundenebene aufgenommen. Registrierte Benutzer, die noch keinen Kauf getätigt haben, sind nicht eingeschlossen. Bei dieser Option basiert Ihre `New customer`-Metrik auf dem Datum der ersten Bestellung des Kunden in der `orders`.
 
@@ -45,7 +45,7 @@ In einer Situation ohne Gastaufträge ist jeder Kunde als eindeutige Zeile in de
 
 Bei einer Einrichtung für Gastaufträge, bei der alle Kundenmetriken auf der `orders` basieren, um Gastaufträge zu berücksichtigen, müssen Sie sicherstellen, dass Sie `not counting customers twice` sind. Wenn Sie die Kennung der Tabelle Bestellungen zählen, zählen Sie jede Bestellung. Wenn Sie stattdessen die ID in der `orders` Tabelle zählen und einen Filter verwenden, `Customer's order number = 1`, zählen Sie jede eindeutige Kunden-`only one time`. Dies gilt für alle Metriken auf Kundenebene, wie `Customer's lifetime revenue` oder `Customer's lifetime number of orders`.
 
-Oben sehen Sie, dass die `orders`-Tabelle Null-`customer\_ids` enthält. Wenn Sie die `customer\_email` verwenden, um Unique Customers zu identifizieren, können Sie sehen, dass `erin@test.com` drei (3) Bestellungen aufgegeben hat. Daher können Sie basierend auf den folgenden Bedingungen eine `New customers` Metrik in Ihrer `orders` erstellen:
+Oben sehen Sie, dass die `customer\_ids`-Tabelle Null-`orders` enthält. Wenn Sie die `customer\_email` verwenden, um Unique Customers zu identifizieren, können Sie sehen, dass `erin@test.com` drei (3) Bestellungen aufgegeben hat. Daher können Sie basierend auf den folgenden Bedingungen eine `New customers` Metrik in Ihrer `orders` erstellen:
 
 * `Operation table = orders`
 * `Operation column = id`

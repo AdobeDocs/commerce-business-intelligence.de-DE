@@ -58,7 +58,7 @@ Zu erstellende Spalten
 * Perzentil des Umsatzes des Kunden
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **wenn A null ist, dann andernfalls null (A/B)* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **wenn A null ist, dann andernfalls null (A/B)* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order`
@@ -76,7 +76,7 @@ Zu erstellende Spalten
 * Perzentil des Umsatzes des Kunden
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **wenn A null ist, dann andernfalls null (A/B)* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **wenn A null ist, dann andernfalls null (A/B)* 100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -100,16 +100,16 @@ Zu erstellende Spalten
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* &#x200B;
+* 
   [!UICONTROL Gruppieren nach]: `Independent`
 * `A`: `Total customer lifetime revenue by percentile`
 * `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * Oben/unten anzeigen: `100% of Customer's revenue percentile Name`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 * **Top 10% Konzentration**
@@ -117,12 +117,12 @@ Zu erstellende Spalten
 
 * `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Diagramm ausblenden
-* &#x200B;
+* 
   [!UICONTROL Gruppieren nach]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **Unten 50 % Konzentration mit nur einem Kauf**
@@ -133,12 +133,12 @@ Zu erstellende Spalten
 * [!UICONTROL Filter]:
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Diagramm ausblenden
-* &#x200B;
+* 
   [!UICONTROL Gruppieren nach]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **untere 10%-Konzentration**
@@ -146,14 +146,14 @@ Zu erstellende Spalten
 
 * `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Diagramm ausblenden
-* &#x200B;
+* 
   [!UICONTROL Gruppieren nach]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie im Dashboard nach Bedarf organisieren. Das Ergebnis kann wie im obigen Beispiel-Dashboard aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

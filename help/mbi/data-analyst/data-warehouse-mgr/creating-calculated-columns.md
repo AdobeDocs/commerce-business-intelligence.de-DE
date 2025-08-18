@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Bei der Analyse Ihrer Daten ist es hilfreich, Daten aus verschiedenen Quellen zu konsolidieren. Möchten Sie den Umsatz nach Akquise-Quelle gruppieren, die Daten aus Ihrer `orders`-Tabelle verknüpfen und Daten [!DNL Google Analytics]? Vielleicht möchten Sie den Umsatz nach Kundengeschlecht gruppieren oder einem Kundenattribut Transaktionsdaten für die Segmentierung hinzufügen. In diesem Thema wird erläutert, wie Sie genau dies tun können.
 
-Bevor Sie beginnen, empfiehlt Adobe, das [Handbuch für berechnete Spaltentypen](../../data-analyst/data-warehouse-mgr/calc-column-types.md) zu lesen, um Informationen über die Spaltentypen zu erhalten, die Sie im Data Warehouse-Manager erstellen können, zusammen mit den Definitionen und Beispielen.
+Bevor Sie beginnen, empfiehlt Adobe, das [Handbuch für berechnete Spaltentypen](../../data-analyst/data-warehouse-mgr/calc-column-types.md) zu lesen, um Informationen über die Spaltentypen zu erhalten, die Sie in Data Warehouse Manager erstellen können, einschließlich der Definitionen und Beispiele.
 
 1. Um zu beginnen, klicken Sie auf **[!DNL Manage Data > Data Warehouse]**.
 

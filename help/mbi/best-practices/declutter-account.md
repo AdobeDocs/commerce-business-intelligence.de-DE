@@ -99,13 +99,13 @@ Wenn Sie feststellen, dass die Metrik nicht mehr benötigt wird, navigieren Sie 
 
 ## Schritt 4: Bewerten der synchronisierten Spalten
 
-Der letzte Schritt besteht darin, die Spalten zu bewerten, die derzeit in Ihrem Data Warehouse synchronisiert werden. Durch das Aufheben der Synchronisierung von Spalten wird nicht nur Ihr Konto unübersichtlich, sondern es kann auch die Aktualisierungszeit verkürzen.
+Der letzte Schritt besteht darin, die Spalten zu bewerten, die derzeit in Ihrer Data Warehouse synchronisiert werden. Durch das Aufheben der Synchronisierung von Spalten wird nicht nur Ihr Konto unübersichtlich, sondern es kann auch die Aktualisierungszeit verkürzen.
 
-Wenn Sie dies fortsetzen möchten, wenden Sie sich an [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket). Das Support-Team kann einen Bericht erstellen, der alle Spalten enthält, die in keinem Dashboard für einen Benutzer verwendet werden und die nicht in E-Mail-Zusammenfassungen verwendet werden, mit Ausnahme von SQL-Berichten. Sie können diesen Bericht dann als Anleitung zur Auswahl der Spalten verwenden, deren Synchronisierung über den Data Warehouse-Manager aufgehoben werden soll.
+Wenn Sie dies fortsetzen möchten, wenden Sie sich an [!DNL Commerce Intelligence] [Support](../guide-overview.md#Submitting-a-Support-Ticket). Das Support-Team kann einen Bericht erstellen, der alle Spalten enthält, die in keinem Dashboard für einen Benutzer verwendet werden und die nicht in E-Mail-Zusammenfassungen verwendet werden, mit Ausnahme von SQL-Berichten. Anschließend können Sie diesen Bericht als Anleitung zur Auswahl der Spalten verwenden, deren Synchronisierung über Data Warehouse Manager aufgehoben werden soll.
 
 >[!NOTE]
 >
->Sie können jederzeit wieder mit der Synchronisierung dieser Spalten beginnen. Beim Aufheben der Synchronisierung einer Spalte werden alle Daten von Ihrem Data Warehouse entfernt. Dies bedeutet nur, dass diese Spalte während des Aktualisierungszyklus nicht auf neue oder aktualisierte Werte überprüft wird.
+>Sie können jederzeit wieder mit der Synchronisierung dieser Spalten beginnen. Wenn Sie die Synchronisierung einer Spalte aufheben, werden alle Daten aus Ihrer Data Warehouse entfernt. Dies bedeutet nur, dass diese Spalte während des Aktualisierungszyklus nicht auf neue oder aktualisierte Werte überprüft wird.
 
 **So heben Sie die Synchronisierung einer Spalte (oder von Spalten) auf**
 

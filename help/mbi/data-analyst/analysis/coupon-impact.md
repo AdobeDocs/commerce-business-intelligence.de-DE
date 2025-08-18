@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Coupon-Auswirkung
 
-Durch die Analyse der Verwendung Ihrer Gutscheine durch Kunden erhalten Sie einen wichtigen Einblick in Ihr Unternehmen. Insbesondere die Analyse der Kundenakquise und -bindung über Gutscheine. In diesem Thema werden Analysen vorgestellt, die Ihnen bei der Beantwortung folgender Fragen helfen können:
+Analyse der Verwendung Ihrer Gutscheine durch Kunden, um Ihrem Unternehmen signifikante insight zu bieten. Insbesondere die Analyse der Kundenakquise und -bindung über Gutscheine. In diesem Thema werden Analysen vorgestellt, die Ihnen bei der Beantwortung folgender Fragen helfen können:
 
 * Wie viele Kunden gewinnen Sie mit Gutscheinen?
 * Tätigen Kundinnen und Kunden, die Coupons erwerben, mit höherer Wahrscheinlichkeit wiederholte Käufe als Kunden, die nicht über Coupons erworben werden?
@@ -129,7 +129,7 @@ Was kann man daraus lernen? Erstens war die Anzahl der Erstbestellungen mit dem 
 
   **Beispiel** Der „10% Rabatt“-Gutschein wird nur Kunden angeboten, die einen Wintermantel in derselben Bestellung erwerben.
 
-Der **Bruttoertrag** für den „25% Rabatt auf 100 $ oder mehr“-Coupon ist viel höher als der Bruttoertrag für den „10$ Rabatt“-Coupon. Der „10$ Rabatt“-Coupon hat jedoch eine viel größere **Anzahl an Bestellungen**. Die Analyse **durchschnittlichen Bestellwerts** bietet einen Einblick in diese Unterschiede. Obwohl der „25%-Rabatt von 100$ oder mehr“ weniger Bestellungen hatte, ist der durchschnittliche Bestellwert mehr als dreimal so hoch wie der des „10$-Rabatts“. Somit wird dem Coupon „25% Rabatt auf 100 Dollar oder mehr“ ein höherer Bruttoumsatz zugerechnet.
+Der **Bruttoertrag** für den „25% Rabatt auf 100 $ oder mehr“-Coupon ist viel höher als der Bruttoertrag für den „10$ Rabatt“-Coupon. Der „10$ Rabatt“-Coupon hat jedoch eine viel größere **Anzahl an Bestellungen**. Durch die Analyse **durchschnittlichen Bestellwerts** kann insight diese Unterschiede ausgleichen. Obwohl der „25%-Rabatt von 100$ oder mehr“ weniger Bestellungen hatte, ist der durchschnittliche Bestellwert mehr als dreimal so hoch wie der des „10$-Rabatts“. Somit wird dem Coupon „25% Rabatt auf 100 Dollar oder mehr“ ein höherer Bruttoumsatz zugerechnet.
 
 Die **Rabatte** und **Nettoumsatz** für die „25 % Rabatt auf 100 $ oder mehr“ und „20 % Rabatt“ sind wertmäßig nah. Obwohl der durchschnittliche Bestellwert für „25% Rabatt von 100 $ oder mehr“ nahe dem Doppelten des durchschnittlichen Bestellwerts für „20% Rabatt“ liegt, hat der letztgenannte Coupon etwas weniger als das Dreifache der Bestellanzahl.
 
@@ -151,4 +151,4 @@ Die größte Anzahl von Kunden wurde mit dem „20% Rabatt“-Coupon erworben. D
 
 ## Verpackung {#wrapup}
 
-Es gibt eine Vielzahl von Analysen, die Sie erstellen können, um besser zu verstehen, wie Ihre Kunden Gutscheine verwenden. Haben Sie schon einmal darüber nachgedacht zu analysieren, wie Ihre Kunden Ihre Coupons verwenden oder wie lange es dauert, bis Coupons verwendet werden? Wie sieht es mit der Suche nach dem optimalen Rabattbetrag aus - welcher Betrag ermutigt Wiederholungskäufer, einen höheren durchschnittlichen Bestellwert und einen höheren Lebensdauerumsatz? Wenn Sie Hilfe bei diesen Fragen benötigen, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Es gibt eine Vielzahl von Analysen, die Sie erstellen können, um besser zu verstehen, wie Ihre Kunden Gutscheine verwenden. Haben Sie schon einmal darüber nachgedacht zu analysieren, wie Ihre Kunden Ihre Coupons verwenden oder wie lange es dauert, bis Coupons verwendet werden? Wie sieht es mit der Suche nach dem optimalen Rabattbetrag aus - welcher Betrag ermutigt Wiederholungskäufer, einen höheren durchschnittlichen Bestellwert und einen höheren Lebensdauerumsatz? Wenn Sie Hilfe bei diesen Fragen benötigen, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

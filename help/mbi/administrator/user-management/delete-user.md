@@ -26,5 +26,5 @@ Sie können den Benutzer reaktivieren, indem Sie einen Benutzer mit derselben E-
 Wenn Sie die Dashboards nur von diesem Benutzer in das Konto eines anderen Benutzers verschieben möchten, gehen Sie wie folgt vor:
 
 1. Verwenden Sie die E-Mail-Adresse des gelöschten Benutzers, um einen neuen [!DNL Commerce Intelligence] Benutzer zu erstellen.
-1. [Benachrichtigen Sie den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), nachdem Sie den Benutzer erstellt haben. Der Support überträgt die Dashboards in Ihr Konto.
-1. Nachdem der Adobe-Support Sie über die Übertragung informiert hat, können Sie den Benutzer erneut löschen.
+1. [Benachrichtigen Sie den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), nachdem Sie den Benutzer erstellt haben. Der Support überträgt die Dashboards in Ihr Konto.
+1. Nachdem Sie vom Adobe-Support über die Übertragung informiert wurden, können Sie den Benutzer erneut löschen.

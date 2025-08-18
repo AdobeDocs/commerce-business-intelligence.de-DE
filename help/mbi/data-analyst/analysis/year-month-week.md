@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dieses Thema enthält Anweisungen für Clients, die die ursprüngliche und die neue Architektur verwenden. Sie befinden sich auf der [neuen Architektur](../../administrator/account-management/new-architecture.md) wenn der Abschnitt [!DNL _Data Warehouse-Ansichten_] verfügbar ist, nachdem Sie [!DNL Manage Data] in der Hauptsymbolleiste ausgewählt haben.
+>Dieses Thema enthält Anweisungen für Clients, die die ursprüngliche und die neue Architektur verwenden. Sie befinden sich auf der [neuen Architektur](../../administrator/account-management/new-architecture.md), wenn der Abschnitt [!DNL _Data Warehouse-_] verfügbar ist, nachdem Sie [!DNL Manage Data] in der Hauptsymbolleiste ausgewählt haben.
 
 Mit Report Builder können Sie Trends im Zeitverlauf leicht erkennen und die Perspektive für Zeiträume ändern, die Sie vergleichen möchten. In diesem Thema wird gezeigt, wie Sie ein Dashboard einrichten, um eine tiefere Ebene zu betreten und Berichte für die Analyse von Woche zu Woche, von Monat zu Monat und von Jahr zu Jahr zu erstellen.
 
@@ -40,8 +40,7 @@ Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv
    * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-month&#39;)**
    * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
    * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-   * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char(A, &#39;hh24&#39;)**
-
+   * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
      ![](../../assets/new-arch-create-calc.png)
 
 ## Metriken
@@ -65,10 +64,10 @@ Keine.
 * `A`: `This year`
 * `B`: `Last year`
 * [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (month-day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **MoM-Diagramm**
@@ -82,10 +81,10 @@ Keine.
 * `A`: Diesen Monat*
 * `B`: Letzter Monat*
 * [!UICONTROL Time period]: Vor einem Monat bis vor 0 Monaten
-* &#x200B;
+* 
   [!UICONTROL Interval]: None
 * [!UICONTROL Group by]: `created_at (day of month)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: Line
 
 * **WoW-Diagramm**
@@ -99,10 +98,10 @@ Keine.
 * `A`: `This week`
 * `B`: `Last week`
 * [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (day of week)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 * **DoD-Diagramm**
@@ -116,10 +115,10 @@ Keine.
 * `A`: `Today`
 * Metrik B: `Yesterday`
 * [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `created_at (hour of day)`
-* &#x200B;
+* 
   [!UICONTROL Chart Type]: `Line`
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie im Dashboard nach Bedarf organisieren. Das Ergebnis könnte wie das Bild oben auf dieser Seite aussehen.

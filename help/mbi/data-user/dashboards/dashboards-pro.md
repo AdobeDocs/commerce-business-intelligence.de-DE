@@ -1,6 +1,6 @@
 ---
 title: Vorkonfigurierte Dashboards
-description: Erfahren Sie mehr über vordefinierte Dashboards, die Ihnen einen Einblick in Ihr Unternehmen bieten.
+description: Erfahren Sie mehr über vordefinierte Dashboards, die insight in Ihr Unternehmen integrieren.
 exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Vorkonfigurierte Dashboards
 
-[!DNL Adobe Commerce Intelligence] enthält vordefinierte Dashboards, die einen Einblick in Ihr Unternehmen bieten. Mit Dashboards können Sie den Status wichtiger Metriken überprüfen, z. B. den Lebensdauerumsatz der Benutzenden, die Anzahl der Wiederholungskäufe, die über einen bestimmten Zeitraum gekauften Top-Produkte und mehr. Diese vorkonfigurierten Dashboards wurden erstellt, um Sie bei fundierten Geschäftsentscheidungen zu unterstützen.
+[!DNL Adobe Commerce Intelligence] enthält vordefinierte Dashboards, um insight in Ihr Unternehmen zu integrieren. Mit Dashboards können Sie den Status wichtiger Metriken überprüfen, z. B. den Lebensdauerumsatz der Benutzenden, die Anzahl der Wiederholungskäufe, die über einen bestimmten Zeitraum gekauften Top-Produkte und mehr. Diese vorkonfigurierten Dashboards wurden erstellt, um Sie bei fundierten Geschäftsentscheidungen zu unterstützen.
 
 >[!NOTE]
 >
->Der Zugriff auf diese Dashboards hängt von Ihrem Kontotyp und Ihrer Zugriffsebene ab. Wenn diese Dashboards nicht angezeigt werden, wenden Sie sich an den [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+>Der Zugriff auf diese Dashboards hängt von Ihrem Kontotyp und Ihrer Zugriffsebene ab. Wenn diese Dashboards nicht angezeigt werden, wenden Sie sich an den [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Berichtverfügbarkeit
 
@@ -133,7 +133,7 @@ Das Dashboard „Bestellungen“ bietet Einblicke in das Transaktionsvolumen von
 
 ## PRODUCT
 
-Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Bruttowarenwert (GMV) und die am häufigsten gekauften und rückerstatteten Produkte an. Dies kann Ihnen helfen, Käufe und Rücksendungen auszugleichen und den Produkterfolg und die Beliebtheit zu bestimmen. Ihr Store muss [konfiguriert sein, um Rückerstattungen zu ](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=de)), damit diese Diagramme ausgefüllt werden.
+Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Bruttowarenwert (GMV) und die am häufigsten gekauften und rückerstatteten Produkte an. Dies kann Ihnen helfen, Käufe und Rücksendungen auszugleichen und den Produkterfolg und die Beliebtheit zu bestimmen. Ihr Store muss [konfiguriert sein, um Rückerstattungen zu ](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html)), damit diese Diagramme ausgefüllt werden.
 
 >[!NOTE]
 >

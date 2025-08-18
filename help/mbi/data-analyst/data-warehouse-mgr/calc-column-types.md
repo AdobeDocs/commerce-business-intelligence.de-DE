@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 * [Praktische Referenzkarte](#map)
 * [Erweiterte berechnete Spalten](#advanced)
 
-Im [Data Warehouse-Manager](../data-warehouse-mgr/tour-dwm.md) können Sie Spalten erstellen, um Ihre Daten für die Analyse zu erweitern und zu optimieren. [Diese Funktion](../data-warehouse-mgr/creating-calculated-columns.md) können Sie aufrufen, indem Sie eine beliebige Tabelle im Data Warehouse-Manager auswählen und auf **[!UICONTROL Create New Column]** klicken.
+Im [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) können Sie Spalten erstellen, um Ihre Daten für die Analyse zu erweitern und zu optimieren. [Diese Funktion](../data-warehouse-mgr/creating-calculated-columns.md) können Sie aufrufen, indem Sie eine beliebige Tabelle im Data Warehouse Manager auswählen und auf **[!UICONTROL Create New Column]** klicken.
 
-In diesem Thema werden die Spaltentypen beschrieben, die Sie mit dem Data Warehouse-Manager erstellen können. Es behandelt auch die Beschreibung, eine visuelle Anleitung für diese Spalte und eine [Referenzzuordnung](#map) aller Eingaben, die zum Erstellen einer Spalte erforderlich sind. Es gibt drei Möglichkeiten, berechnete Spalten zu erstellen:
+In diesem Thema werden die Spaltentypen beschrieben, die Sie mit dem Data Warehouse Manager erstellen können. Es behandelt auch die Beschreibung, eine visuelle Anleitung für diese Spalte und eine [Referenzzuordnung](#map) aller Eingaben, die zum Erstellen einer Spalte erforderlich sind. Es gibt drei Möglichkeiten, berechnete Spalten zu erstellen:
 
 1. [Berechnete Spalten der gleichen Tabelle](#sametable)
 1. [1:n-berechnete Spalten](#onetomany)
@@ -65,13 +65,13 @@ Im folgenden Beispiel wird die Dimension `Customer's group\_id` mit der `orders`
 
 Diese Spalten verwenden dieselben Pfade wie die Eins-zu-viele-Spalten, verweisen jedoch auf Daten in die entgegengesetzte Richtung. Die Spalte wird auf der einen Seite des Pfads erstellt, im Gegensatz zu den vielen Seiten. Aufgrund dieser Beziehung muss der Wert in der Spalte eine Aggregation sein, d. h. eine mathematische Operation, die für die Datenpunkte auf der Viele-Seite durchgeführt wird. Es gibt viele Anwendungsfälle dafür, und einige davon sind unten aufgeführt.
 
-### Zählung {#count}
+### Count {#count}
 
 Dieser Typ der berechneten Spalte gibt die Anzahl der Werte in der vielen Tabelle *auf* der einen Tabelle zurück.
 
 Im folgenden Beispiel wird die Dimension `Customer's lifetime number of canceled orders` für die `customers`-Tabelle erstellt (mit einem Filter für `orders.status`).
 
-![](../../assets/many_to_one.gif){: width=„699“ height=„351“}
+![](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Summe {#sum}
 

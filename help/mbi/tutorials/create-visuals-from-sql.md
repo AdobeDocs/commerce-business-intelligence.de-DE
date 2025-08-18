@@ -1,6 +1,6 @@
 ---
 title: Erstellen von Visualisierungen aus SQL-Abfragen
-description: Lernen Sie die im SQL-Report Builder verwendete Terminologie kennen und erhalten Sie eine solide Grundlage für die Erstellung von SQL-Visualisierungen.
+description: Lernen Sie die in SQL Report Builder verwendete Terminologie kennen und erhalten Sie eine solide Grundlage für die Erstellung von SQL-Visualisierungen.
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
@@ -21,7 +21,7 @@ Der [[!DNL SQL Report Builder]](../data-analyst/dev-reports/sql-rpt-bldr.md) ist
 
 Bevor Sie mit diesem Tutorial beginnen, lesen Sie die folgende Terminologie, die in der `SQL Report Builder` verwendet wird.
 
-- `Series`: Die Spalte, die Sie messen möchten, wird im SQL-Report Builder als Serie bezeichnet. Häufige Beispiele sind `revenue`, `items sold` und `marketing spend`. Zum Erstellen einer Visualisierung muss mindestens eine Spalte als `Series` festgelegt werden.
+- `Series`: Die Spalte, die Sie messen möchten, wird in der SQL-Report Builder als Serie bezeichnet. Häufige Beispiele sind `revenue`, `items sold` und `marketing spend`. Zum Erstellen einer Visualisierung muss mindestens eine Spalte als `Series` festgelegt werden.
 
 - `Category`: Die Spalte, die Sie zum Segmentieren Ihrer Daten verwenden möchten, wird als `Category` bezeichnet. Dies entspricht der `Group By` Funktion in der [`Visual Report Builder`](../data-user/reports/ess-rpt-build-visual.md). Wenn Sie beispielsweise den Umsatz Ihrer Kundinnen und Kunden während ihrer Lebensdauer nach ihrer Akquisequelle segmentieren möchten, wird die Spalte, die die Akquisequelle enthält, als `Category` angegeben. Es können mehrere Spalten als `Category` festgelegt werden.
 

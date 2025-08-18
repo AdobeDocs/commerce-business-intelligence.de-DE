@@ -1,6 +1,6 @@
 ---
 title: Datei-Uploader verwenden
-description: Erfahren Sie, wie Sie alle Ihre Daten auf einer Data Warehouse speichern können.
+description: Erfahren Sie, wie Sie alle Ihre Daten in einer einzigen Data Warehouse zusammenfassen.
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -17,14 +17,14 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../../administrator/user-management/user-management.md).
 
-[!DNL Adobe Commerce Intelligence] ist nicht nur aufgrund seiner Visualisierungsfunktionen leistungsstark, sondern bietet Ihnen auch die Möglichkeit, alle Ihre Daten auf einem einzigen Data Warehouse abzulegen. Sogar Daten, die außerhalb Ihrer Datenbanken und Integrationen vorhanden sind, können mit dem Tool „Datei-Upload“ im Data Warehouse-Manager in [!DNL Commerce Intelligence] eingebracht werden.
+[!DNL Adobe Commerce Intelligence] ist nicht nur aufgrund der Visualisierungsfunktionen von leistungsstark, sondern bietet Ihnen auch die Möglichkeit, alle Ihre Daten in einer einzigen Data Warehouse zusammenzufassen. Sogar Daten, die außerhalb Ihrer Datenbanken und Integrationen vorhanden sind, können mit dem Tool „Datei-Upload“ in Data Warehouse Manager in [!DNL Commerce Intelligence] eingebracht werden.
 
 Verwenden Sie Werbekampagnen als Beispiel. Wenn Sie sowohl Online- als auch Offline-Kampagnen ausführen, können Sie nicht das gesamte Bild erhalten, wenn Sie nur Daten aus einer Online-Integration analysieren. Durch das Hochladen einer Tabelle mit den Offline-Kampagnendaten können Sie beide Datensätze analysieren und ein besseres Verständnis der Kampagnenleistung erlangen.
 
 ## Einschränkungen und Anforderungen {#require}
 
 1. **Das einzige unterstützte Format für Datei-Uploads ist `CSV` oder`comma separated values`**. Wenn Sie in Excel arbeiten, können Sie die Datei mithilfe der Funktion Speichern unter im `.csv` Format speichern.
-1. **`CSV`Dateien müssen`UTF-8 encoding`** verwenden. Meistens ist das kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, ([ Sie in diesem Support-Artikel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=de).
+1. **`CSV`Dateien müssen`UTF-8 encoding`** verwenden. Meistens ist das kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, ([ Sie in diesem Support-Artikel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Dateien dürfen nicht größer als 100 MB**. Wenn die Datei größer ist als diese, teilen Sie die Tabelle in Blöcke auf und speichern Sie sie als einzelne Dateien. Sie können die Daten anhängen, nachdem die ursprüngliche Datei geladen wurde.
 1. **Alle Tabellen müssen einen`primary key`** haben. Die Tabelle muss mindestens eine Spalte enthalten, die als `primary key` verwendet werden kann, oder eine eindeutige Kennung für jede Zeile der Tabelle. Jede als `primary key` gekennzeichnete Spalte darf *nie* null sein. Eine `primary key` kann so einfach sein wie das Hinzufügen einer Spalte, die jeder Zeile eine Zahl gibt, oder es können zwei Spalten verkettet sein, um eine Spalte mit eindeutigen Werten (z. B. `campaign name` und `date`) zu erstellen.
 
@@ -42,7 +42,7 @@ Spaltennamen müssen eindeutig sein und dürfen nur Buchstaben, Zahlen, Leerzeic
 
 ### Daten mit Kommas {#commas}
 
-Da Dateien im `CSV` Format vorliegen müssen, kann die Verwendung von Kommas beim Hochladen von Daten zu Problemen führen. `CSV` Dateien verwenden Kommas, um neue Werte anzugeben, daher eine Spalte mit einem Namen wie `Campaigns`, `August` als zwei Spalten (`Campaigns` und `August`) anstatt als eine gelesen wird, wodurch alle Ihre Daten über eine Zeile verschoben werden. Adobe empfiehlt, Kommas nach Möglichkeit zu vermeiden. Mit `Data Preview` können Sie überprüfen, ob Ihre Daten nach Abschluss einer Aktualisierung korrekt angezeigt werden.
+Da Dateien im `CSV` Format vorliegen müssen, kann die Verwendung von Kommas beim Hochladen von Daten zu Problemen führen. `CSV` Dateien verwenden Kommas, um neue Werte anzugeben, daher eine Spalte mit einem Namen wie `Campaigns`, `August` als zwei Spalten (`Campaigns` und `August`) anstatt als eine gelesen wird, wodurch alle Ihre Daten über eine Zeile verschoben werden. Adobe empfiehlt, wann immer möglich Kommas zu vermeiden. Mit `Data Preview` können Sie überprüfen, ob Ihre Daten nach Abschluss einer Aktualisierung korrekt angezeigt werden.
 
 ### Daten
 
@@ -54,7 +54,7 @@ Einige Sonderzeichen werden nicht akzeptiert. Beispielsweise wird das Pipe-Symbo
 
 ### Dezimalzahlen
 
-Für Währungswerte sollte der Datentyp ausgewählt `Decimal Number`. Diese Spalten werden automatisch auf zwei Dezimalstellen im Data Warehouse gerundet. Wenn Sie Ihre Dezimalzahlen nicht runden möchten oder eine größere Genauigkeit haben möchten, sollten Sie den `Non-Currency Decimal Number` Datentyp auswählen.
+Für Währungswerte sollte der Datentyp ausgewählt `Decimal Number`. Diese Spalten werden in Ihrer Data Warehouse automatisch auf zwei Dezimalstellen gerundet. Wenn Sie Ihre Dezimalzahlen nicht runden möchten oder eine größere Genauigkeit haben möchten, sollten Sie den `Non-Currency Decimal Number` Datentyp auswählen.
 
 ### Prozentsätze
 
@@ -69,17 +69,17 @@ Prozentsätze müssen als Dezimalzahlen eingegeben werden. Beispiel:
 
 ### Werte mit führenden und/oder nachfolgenden Nullen {#zeroes}
 
-Einige Werte in Ihrer Datei - z. B. Postleitzahlen und IDs - können mit Nullen beginnen oder enden. Um sicherzustellen, dass Nullen ordnungsgemäß gespeichert und hochgeladen werden, können Sie den Formatierungstyp ändern (z. B. [von Zahl zu Text](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&amp;rs=en-us&amp;ad=us) oder die Zahlenformatierung erzwingen.
+Einige Werte in Ihrer Datei - z. B. Postleitzahlen und IDs - können mit Nullen beginnen oder enden. Um sicherzustellen, dass Nullen ordnungsgemäß gespeichert und hochgeladen werden, können Sie den Formatierungstyp ändern (z. B. [von Zahl zu Text](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4?ui=en-us&rs=en-us&ad=us) oder die Zahlenformatierung erzwingen.
 
-Verwenden Sie `US ZIP codes` als Beispiel für das Ändern der Zahlenformatierung. Markieren Sie in [!DNL Excel] die Spalte, die `ZIP codes` enthält, und [ändern Sie das Zahlenformat](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&amp;rs=en-us&amp;ad=us) in `ZIP code`. Sie können auch ein benutzerdefiniertes Zahlenformat auswählen und im `Type` Fenster `00000` eingeben. Beachten Sie, dass diese Methode Probleme verursachen kann, wenn einige Codes als `00000` formatiert sind und andere `00000-0000`.
+Verwenden Sie `US ZIP codes` als Beispiel für das Ändern der Zahlenformatierung. Markieren Sie in [!DNL Excel] die Spalte, die `ZIP codes` enthält, und [ändern Sie das Zahlenformat](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) in `ZIP code`. Sie können auch ein benutzerdefiniertes Zahlenformat auswählen und im `Type` Fenster `00000` eingeben. Beachten Sie, dass diese Methode Probleme verursachen kann, wenn einige Codes als `00000` formatiert sind und andere `00000-0000`.
 
-Der `Type` kann [anders formatiert werden, um andere Datentypen, z. ](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&amp;ui=en-us&amp;rs=en-us&amp;ad=us). IDs, aufzunehmen. Wenn ein `ID` beispielsweise neun Stellen lang ist, kann der `Type` `000000000` oder `000-000-000` sein. Dies würde `123456` in `000-123-456` ändern.
+Der `Type` kann [anders formatiert werden, um andere Datentypen, z. ](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us). IDs, aufzunehmen. Wenn ein `ID` beispielsweise neun Stellen lang ist, kann der `Type` `000000000` oder `000-000-000` sein. Dies würde `123456` in `000-123-456` ändern.
 
 [!DNL Google Docs] und [!DNL Apple Numbers] Ressourcen finden Sie in der Liste [Verwandt](#related) unten auf dieser Seite.
 
 ## Hochladen von Daten {#uploading}
 
-Nachdem Ihre Tabelle korrekt formatiert und [!DNL Commerce Intelligence] ist, fügen Sie sie zu Ihrem Data Warehouse hinzu.
+Nachdem Ihre Tabelle korrekt formatiert und [!DNL Commerce Intelligence] ist, fügen Sie sie zu Ihrer Data Warehouse hinzu.
 
 1. Um zu beginnen, gehen Sie zu **[!UICONTROL Data** > **File Uploads]**.
 
@@ -137,13 +137,13 @@ Haben Sie neue Daten, die Sie einer bereits hochgeladenen Datei hinzufügen kön
 
 ## Datenverfügbarkeit {#availability}
 
-Genau wie berechnete Spalten sind Daten aus Datei-Uploads nach Abschluss des nächsten Aktualisierungszyklus verfügbar. Wenn während des Datei-Uploads eine Aktualisierung ausgeführt wurde, stehen die Daten erst nach der nächsten Aktualisierung zur Verfügung. Sobald ein Aktualisierungszyklus abgeschlossen ist, können Sie zur Registerkarte `Data Preview` auf Ihrem Data Warehouse navigieren, um sicherzustellen, dass die hochgeladene Datei korrekt ist und die Daten wie erwartet angezeigt werden.
+Genau wie berechnete Spalten sind Daten aus Datei-Uploads nach Abschluss des nächsten Aktualisierungszyklus verfügbar. Wenn während des Datei-Uploads eine Aktualisierung ausgeführt wurde, stehen die Daten erst nach der nächsten Aktualisierung zur Verfügung. Sobald ein Aktualisierungszyklus abgeschlossen ist, können Sie in Ihrer Data Warehouse zur Registerkarte `Data Preview` navigieren, um sicherzustellen, dass die hochgeladene Datei korrekt ist und die Daten wie erwartet angezeigt werden.
 
 ## Verpackung {#wrapup}
 
 In diesem Thema wurden nur die Grundlagen zum Importieren von Daten behandelt. Möglicherweise möchten Sie jedoch etwas Erweiterteres tun. In den entsprechenden Artikeln finden Sie Anleitungen zum Formatieren und Importieren von Finanz-, E-Commerce- und Ausgabendaten sowie anderen Datentypen.
 
-Außerdem ist der Datei-Upload nicht die einzige Möglichkeit, Ihre Daten in [!DNL Commerce Intelligence] zu übertragen. Die [Datenimport-API](https://developer.adobe.com/commerce/services/reporting/import-api/)-Funktionen ermöglichen es Ihnen, beliebige Daten auf Ihren [!DNL Commerce Intelligence]-Data Warehouse zu übertragen.
+Außerdem ist der Datei-Upload nicht die einzige Möglichkeit, Ihre Daten in [!DNL Commerce Intelligence] zu übertragen. Mit den [Datenimport-API](https://developer.adobe.com/commerce/services/reporting/import-api/)-Funktionen können Sie beliebige Daten in Ihre [!DNL Commerce Intelligence] Data Warehouse übertragen.
 
 ## verwandt {#related}
 

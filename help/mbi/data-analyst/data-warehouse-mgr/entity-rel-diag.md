@@ -37,7 +37,7 @@ Ein Kunde kann viele Bestellungen aufgeben. Die Beziehung zwischen diesen beiden
 >
 >`customer\_entity.entity\_id` ist nicht gleich `sales\_flat\_order.entity\_id`. Das erste kann als `customer\_id` betrachtet werden, und das zweite kann als `order\_id.` betrachtet werden
 
-Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse erstellen. Wenn Sie bereit sind, den Pfad zu erstellen, wird er wie folgt definiert:
+Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse . Wenn Sie bereit sind, den Pfad zu erstellen, wird er wie folgt definiert:
 
 ![](../../assets/SFO___CE_path.png)
 
@@ -47,7 +47,7 @@ Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] ni
 
 Eine Bestellung kann viele Artikel enthalten. Die Beziehung zwischen diesen beiden Tabellen ist `sales\_flat\_order.entity\_id = sales\_flat\_order\_item.order\_id`.
 
-Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse verwenden. Wenn Sie bereit sind, den Pfad zu erstellen, definieren Sie ihn wie unten gezeigt.
+Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse . Wenn Sie bereit sind, den Pfad zu erstellen, definieren Sie ihn wie unten gezeigt.
 
 ![](../../assets/SFOI___SFO_path.png)
 
@@ -57,6 +57,6 @@ Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] ni
 
 Ein Produkt kann viele Artikel gekauft werden. Die Beziehung zwischen diesen beiden Tabellen ist `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
 
-Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse erstellen. Wenn Sie bereit sind, den Pfad zu erstellen, definieren Sie ihn wie unten gezeigt.
+Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse . Wenn Sie bereit sind, den Pfad zu erstellen, definieren Sie ihn wie unten gezeigt.
 
 ![](../../assets/SFOI___CPE_path.png)

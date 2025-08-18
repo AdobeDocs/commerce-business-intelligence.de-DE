@@ -21,7 +21,7 @@ Die [!DNL Adobe Commerce]-Plattform erfasst und organisiert eine Vielzahl wertvo
 
 Um diese Konzepte zu besprechen, sehen Sie sich das folgende Beispiel an:
 
-`Clothes4U` ist ein Bekleidungseinzelhändler, der sowohl online als auch aus Ziegeln und Mörtel besteht. Sie verwendet [!DNL Magento Open Source] hinter ihrer Website, um Daten zu sammeln und zu organisieren.
+`Clothes4U` ist ein Bekleidungs-retailer mit sowohl Online- als auch Ziegel- und Mörtel-Präsenz. Sie verwendet [!DNL Magento Open Source] hinter ihrer Website, um Daten zu sammeln und zu organisieren.
 
 ## `catalog\_product\_entity`
 
@@ -79,7 +79,7 @@ Nachdem die Kontoerstellung abgeschlossen ist, ist `Sammy Customer` bereit, eine
 
 (wenn Sie Commerce 2.0 oder höher haben)
 
-Wenn `Sammy Customer` die Bestellung übermitteln, wird zusätzlich zur einzelnen Zeile in der `Sales\_flat\_order` Tabelle eine Zeile für jedes eindeutige Element in dieser Reihenfolge in die [`sales\_flat\_order\_item` Tabelle eingefügt](../data-warehouse-mgr/sales-flat-order-item-table.md):
+Wenn `Sales\_flat\_order` die Bestellung übermitteln, wird zusätzlich zur einzelnen Zeile in der `Sammy Customer` Tabelle eine Zeile für jedes eindeutige Element in dieser Reihenfolge in die [`sales\_flat\_order\_item` Tabelle eingefügt](../data-warehouse-mgr/sales-flat-order-item-table.md):
 
 | **`item\_id`** | **`name`** | **`product\_id`** | **`order\_id`** | **`qty\_ordered`** | **`price`** |
 |---|---|---|---|---|---|
@@ -90,9 +90,9 @@ Wenn `Sammy Customer` die Bestellung übermitteln, wird zusätzlich zur einzelne
    * Die Bestellung von `Sammy Customer` hat zwei Zeilen in dieser Tabelle erstellt, da die Bestellung zwei verschiedene Produkte enthielt
 * `name` - Diese Spalte ist der Name des Produkts.
 * `product_id` - Diese Spalte ist die eindeutige Kennung des Produkts, auf das sich diese Zeile bezieht
-   * Die erste obige Zeile hat `product_id` = 205, da `Throwback Bellbottoms` in der `catalog_product_entity` Tabelle einen `entity_id` von 205 haben
+   * Die erste obige Zeile hat `product_id` = 205, da `Throwback Bellbottoms` in der `entity_id` Tabelle einen `catalog_product_entity` von 205 haben
 * `order_id` - Diese Spalte ist die `entity_id` der Bestellung, die diese bestimmten Bestellelemente enthält.
-   * Beide Zeilen oben haben `order_id` = 227, da sie beide Teil der von `Sammy Customer` aufgegebenen Reihenfolge sind, die in der `sales_flat_order`-Tabelle `entity_id` = 227 hat
+   * Beide Zeilen oben haben `order_id` = 227, da sie beide Teil der von `Sammy Customer` aufgegebenen Reihenfolge sind, die in der `entity_id`-Tabelle `sales_flat_order` = 227 hat
 * `qty_ordered` - Diese Spalte ist die Anzahl der Einheiten des Produkts, die in dieser spezifischen Reihenfolge enthalten sind
    * `Sammy Customer` Bestellung enthielt zwei `Throwback Bellbottoms`
 * `price` - Diese Spalte ist der Preis einer einzelnen Einheit des Bestellartikels

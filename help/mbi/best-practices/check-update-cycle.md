@@ -17,7 +17,7 @@ Wenn Sie sich bei Ihrem [!DNL Adobe Commerce Intelligence]-Dashboard anmelden, g
 
 ## Warum sollte ich den Status des Aktualisierungszyklus überprüfen?
 
-Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die Daten in Ihrem [!DNL Commerce Intelligence]-Konto prüfen. Wenn Sie [Ergebnisse sehen, die nicht Ihren Erwartungen entsprechen](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) z. B. der tägliche Umsatz in [!DNL Commerce Intelligence] nicht mit dem übereinstimmt, was Sie auf Ihrer E-Commerce-Plattform oder in Ihrem [[!DNL Google] E-Commerce-Umsatz sehen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=de) können Sie den letzten Datenpunkt überprüfen, um festzustellen, ob das Problem behoben wird, sobald eine Aktualisierung abgeschlossen ist.
+Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die Daten in Ihrem [!DNL Commerce Intelligence]-Konto prüfen. Wenn Sie [Ergebnisse sehen, die nicht Ihren Erwartungen entsprechen](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) z. B. der tägliche Umsatz in [!DNL Commerce Intelligence] nicht mit dem übereinstimmt, was Sie auf Ihrer E-Commerce-Plattform oder in Ihrem [[!DNL Google] E-Commerce-Umsatz sehen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) können Sie den letzten Datenpunkt überprüfen, um festzustellen, ob das Problem behoben wird, sobald eine Aktualisierung abgeschlossen ist.
 
 ## [!UICONTROL Read-Only] und [!UICONTROL Standard] Benutzer
 

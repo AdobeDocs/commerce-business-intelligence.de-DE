@@ -78,7 +78,7 @@ So löschen Sie eine oder mehrere Dimensionen aus mehreren Metriken:
 
 >[!NOTE]
 >
->Selbst nach dem Löschen einer Dimension ist sie weiterhin als Spalte auf der Tabelle auf Ihrem Data Warehouse vorhanden. Sie können sie zu jeder Metrik zurück hinzufügen und neue Metriken mithilfe dieser Dimensionen erstellen. Um die Datenspalte, der eine Dimension entspricht, aus [!DNL Commerce Intelligence] zu entfernen, heben Sie einfach die Nachverfolgung der Datenspalte über die Seite [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) auf.
+>Selbst nach dem Löschen einer Dimension ist sie weiterhin als Spalte in Ihrer Tabelle in Ihrer Data Warehouse vorhanden. Sie können sie zu jeder Metrik zurück hinzufügen und neue Metriken mithilfe dieser Dimensionen erstellen. Um die Datenspalte, der eine Dimension entspricht, aus [!DNL Commerce Intelligence] zu entfernen, heben Sie einfach die Verfolgung der Datenspalte über die Seite [Data Warehouse](../data-warehouse-mgr/tour-dwm.md) auf.
 
 ## Verwandte Dokumentation
 

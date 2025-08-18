@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Mit dem [!DNL SQL Report Builder] können Sie diese Abfragen jederzeit abfragen und iterieren. Dies ist nützlich, wenn Sie eine Abfrage ändern müssen, ohne auf den Abschluss eines Aktualisierungszyklus warten zu müssen, bevor eine von Ihnen erstellte Spalte oder ein Bericht aktualisiert werden muss.
 
-Bevor eine Abfrage ausgeführt wird, [[!DNL Commerce Intelligence] schätzt ihre Kosten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=de). Die Kosten berücksichtigen die Dauer und Anzahl der Ressourcen, die für die Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch erachtet werden oder die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] Limit überschreitet, schlägt die Abfrage fehl. Für die Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) empfiehlt Adobe Folgendes, um sicherzustellen, dass Sie möglichst optimierte Abfragen schreiben.
+Bevor eine Abfrage ausgeführt wird, [[!DNL Commerce Intelligence] schätzt ihre Kosten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Die Kosten berücksichtigen die Dauer und Anzahl der Ressourcen, die für die Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch erachtet werden oder die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] Limit überschreitet, schlägt die Abfrage fehl. Für die Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), mit der sichergestellt wird, dass Sie möglichst optimierte Abfragen schreiben, empfiehlt Adobe Folgendes.
 
 ## Verwenden von SELECT oder Auswählen aller Spalten
 
 Die Auswahl aller Spalten führt nicht zu einer rechtzeitigen, einfach auszuführenden Abfrage. Die Ausführung von Abfragen, die `SELECT *` verwenden, kann recht lange dauern, insbesondere wenn die Tabelle viele Spalten hat.
 
-Aus diesem Grund empfiehlt Adobe, nach Möglichkeit auf die Verwendung von `SELECT *` zu verzichten und nur die benötigten Spalten einzubeziehen:
+Aus diesem Grund empfiehlt Adobe, nach Möglichkeit keine `SELECT *` zu verwenden und nur die benötigten Spalten einzubeziehen:
 
 | **Stattdessen…** | **Jetzt testen!** |
 |-----|-----|
@@ -47,7 +47,7 @@ Diese Abfragen sind in jeder Hinsicht identisch, mit Ausnahme des Typs von JOIN,
 
 ## Verwenden mehrerer Joins
 
-Sie können zwar mehrere Joins in Ihre Abfrage einbeziehen, aber denken Sie daran, dass dies die Kosten der Abfrage in die Höhe treiben kann. Um zu vermeiden, dass die Kostenschwelle erreicht wird, empfiehlt Adobe, nach Möglichkeit mehrere Joins zu vermeiden.
+Sie können zwar mehrere Joins in Ihre Abfrage einbeziehen, aber denken Sie daran, dass dies die Kosten der Abfrage in die Höhe treiben kann. Um zu vermeiden, dass der Kostenschwellenwert erreicht wird, empfiehlt Adobe, nach Möglichkeit mehrere Joins zu vermeiden.
 
 ## Verwenden von Filtern
 

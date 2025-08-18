@@ -40,13 +40,13 @@ Standardmäßig richtet [!DNL Google] acht verschiedene Kanäle ein. Nachfolgend
 
 {style="table-layout:auto"}
 
-## Wie kann ich diese Kanalgruppierungen in meinem Data Warehouse neu erstellen? {#recreate}
+## Wie kann ich diese Kanalgruppierungen in meiner Data Warehouse neu erstellen? {#recreate}
 
-Da Sie nun wissen, dass Kanäle nur noch Kombinationen aus Quellen und Medien sind, ist es ein einfacher 3-stufiger Prozess, diese Gruppierungen in Ihrem Data Warehouse neu zu erstellen.
+Da Sie nun wissen, dass Kanäle nur noch Kombinationen aus Quellen und Medien sind, ist es ein einfacher, dreistufiger Prozess, diese Gruppierungen in Ihrer Data Warehouse neu zu erstellen.
 
 1. **Integration [!DNL Google ECommerce]aktivieren**
 
-   [Wenn aktiviert](../importing-data/integrations/google-ecommerce.md), stellen Sie sicher, [synchronisieren](../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) die Felder **medium** und **source** auf Ihrem Data Warehouse. Nach Abschluss werden Medium- und Quelldaten in Ihren Data Warehouse eingebracht.
+   [Wenn aktiviert](../importing-data/integrations/google-ecommerce.md), stellen Sie sicher, [synchronisieren]&#x200B;(../{{ site.baseurl }}/data-analyst/data-warehouse-mgr/tour-dwm.html#syncing) die Felder **medium** und **source** in Ihrer Data Warehouse. Nach Abschluss dieses Vorgangs werden Medium- und Quellakquisitionsdaten in Ihre Data Warehouse eingebracht.
 
 1. **Laden Sie eine Zuordnung der Kanalgruppierungen von Google hoch**
 
@@ -54,7 +54,7 @@ Da Sie nun wissen, dass Kanäle nur noch Kombinationen aus Quellen und Medien si
 
    Wenn Sie [!DNL Google Analytics] sind und Ihre eigenen Kanäle erstellt haben, möchten Sie Ihre spezifischen Regeln zur Zuordnungstabelle hinzufügen, bevor Sie die Datei in [!DNL Commerce Intelligence] hochladen.
 
-   Bringen Sie es als [-Upload auf Ihren Data Warehouse](../importing-data/connecting-data/using-file-uploader.md).
+   Bringen Sie es als [-Upload in Ihre Data Warehouse](../importing-data/connecting-data/using-file-uploader.md).
 
    ![](../../assets/Setting_Primary_Keys.png)
 
@@ -62,7 +62,7 @@ Da Sie nun wissen, dass Kanäle nur noch Kombinationen aus Quellen und Medien si
 
    Um eine Beziehung zwischen dem [!DNL Google ECommerce] und der Zuordnungstabelle herzustellen, [ Sie eine Support-Anfrage ](../../guide-overview.md#Submitting-a-Support-Ticket) Ihr Datenanalyst-Team und verweisen Sie auf dieses Thema. Der Analyst erstellt eine neue berechnete Spalte mit dem Namen **Channel** in der ECommerce-Tabelle. **Nach einem vollständigen** kann diese Spalte in einer `Filter` oder `Group by` verwendet werden.
 
-Sie haben jetzt [!DNL Google Analytics Channel] Gruppierungen in Ihrem Data Warehouse, was bedeutet, dass Sie Ihre Daten aus einer neuen Perspektive analysieren können:
+Sie haben jetzt [!DNL Google Analytics Channel] Gruppierungen in Ihrer Data Warehouse, was bedeutet, dass Sie Ihre Daten aus einer neuen Perspektive analysieren können:
 
 ![Segmentieren der Metrik „Anzahl der Bestellungen“ nach Kanal](../../assets/GA_Channel_Gif.gif)
 
@@ -70,7 +70,7 @@ In diesem Beispiel haben Sie einfach mit der Segmentierung der Metrik **Anzahl d
 
 ## Verwandte Dokumentation
 
-* [Verwenden des Report Builders](../../tutorials/using-visual-report-builder.md)
+* [Verwenden von Report Builder](../../tutorials/using-visual-report-builder.md)
 * [[!DNL Google ECommerce] Daten](../importing-data/integrations/google-ecommerce-data.md)
 * [[!DNL Google ECommerce] mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Welche sind Ihre wertvollsten Akquisitionsquellen und -kanäle?](../analysis/most-value-source-channel.md)

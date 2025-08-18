@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Zusätzlich zur Festlegung von Benutzerberechtigungsebenen können Sie den Zugriff auf Metriken auch benutzerspezifisch einschränken. Wenn Sie beispielsweise möchten, dass Ihre Buchhaltungsabteilung Zugriff auf umsatzbezogene Metriken, aber nicht auf Metriken zur Benutzerakquise hat, können Sie den Zugriff auf diese Metriken einschränken.
 
-In Fällen wie diesen empfiehlt Adobe, das Konto dieses Benutzers auf **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)** zu setzen. **[!UICONTROL Standard]** sollten Benutzenden gewährt werden, die keine Metriken, berechneten Spalten, Integrationen oder Benutzenden erstellen oder ändern müssen, aber Zugriff auf Daten auf der Data Warehouse benötigen. Wenn Sie den Zugriff auf Daten vollständig einschränken möchten, verwenden Sie stattdessen die **[!UICONTROL Read Only]** .
+In Fällen wie diesen empfiehlt Adobe, das Konto dieses Benutzers auf **[[!UICONTROL Standard]](../../administrator/user-management/user-management.md)** festzulegen. **[!UICONTROL Standard]** Berechtigungen sollten Benutzenden erteilt werden, die keine Metriken, berechneten Spalten, Integrationen oder Benutzenden erstellen oder ändern müssen, aber Zugriff auf Daten in der Data Warehouse benötigen. Wenn Sie den Zugriff auf Daten vollständig einschränken möchten, verwenden Sie stattdessen die **[!UICONTROL Read Only]** .
 
 Nachdem Sie die Berechtigungsstufe festgelegt haben, können Sie die Metriken auswählen, auf die ein **[!UICONTROL Standard]** Benutzer zugreifen kann, indem Sie folgende Schritte ausführen:
 
@@ -26,7 +26,7 @@ Nachdem Sie die Berechtigungsstufe festgelegt haben, können Sie die Metriken au
 
 >[!NOTE]
 >
->Alle Benutzer mit **[!UICONTROL Standard]** Berechtigungen können über den Datenexport zusätzlich zu allen Metriken von [!DNL Google Analytics] auf alle Daten auf der Data Warehouse zugreifen.
+>Alle Benutzer mit **[!UICONTROL Standard]** Berechtigungen können zusätzlich zu allen Metriken aus [!DNL Google Analytics] über den Datenexport auf alle Daten in der Data Warehouse zugreifen.
 
 Sie können den Zugriff auf eine Metrik auch einschränken, indem Sie die Metrik bearbeiten und **[!UICONTROL Standard]** im Abschnitt **[[!UICONTROL User Rights]](../../data-user/reports/ess-manage-data-metrics.md)** Benutzer auswählen.
 

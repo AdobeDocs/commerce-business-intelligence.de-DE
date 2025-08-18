@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # [!DNL Commerce Intelligence Essentials] vs. [!DNL Commerce Intelligence Pro]
 
-In der folgenden Tabelle werden Elemente beschrieben, die in einem alten `Essentials`-Konto im Vergleich zu einem aktuellen Commerce Intelligence-Konto enthalten sind. Adobe bietet keine `Essentials` mehr.
+In der folgenden Tabelle werden Elemente beschrieben, die in einem alten `Essentials`-Konto im Vergleich zu einem aktuellen Commerce Intelligence-Konto enthalten sind. Adobe bietet keine `Essentials` mehr an.
 
 |   | **`Commerce Intelligence Essentials`** | **`Commerce Intelligence Pro`** |
 |-----|-----|-----|

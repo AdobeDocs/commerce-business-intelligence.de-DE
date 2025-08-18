@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Erwartete [!DNL Mixpanel]
 
-Nachdem [Sie Ihr [!DNL Mixpanel] Konto verbunden haben](../integrations/mixpanel.md) können Sie den [Data Warehouse-Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder für die Analyse einfach zu verfolgen.
+Nachdem [Sie Ihr [!DNL Mixpanel] Konto verbunden haben](../integrations/mixpanel.md) können Sie den [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder für die Analyse einfach zu verfolgen.
 
-In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!DNL Mixpanel] in Ihr [!DNL Commerce Intelligence]-Konto importieren können. Die folgenden Tabellen werden nach dem Verbinden von [!DNL Mixpanel] auf Ihrem Data Warehouse erstellt. Um alle für das Tracking verfügbaren Felder anzuzeigen, klicken Sie auf die Links in der Spalte „Tabellenname“.
+In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!DNL Mixpanel] in Ihr [!DNL Commerce Intelligence]-Konto importieren können. Die folgenden Tabellen werden in Ihrer Data Warehouse nach dem Verbinden von [!DNL Mixpanel] erstellt. Um alle für das Tracking verfügbaren Felder anzuzeigen, klicken Sie auf die Links in der Spalte „Tabellenname“.
 
 >[!NOTE]
 >
@@ -32,4 +32,4 @@ In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!D
 ## Verwandte Dokumentation
 
 * [Verbinden [!DNL Mixpanel]](../integrations/mixpanel.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

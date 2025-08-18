@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Erwartete [!DNL Salesforce]
 
-Nachdem [[!DNL Salesforce] Setup](../integrations/salesforce.md) abgeschlossen ist, wird eine Tabelle für jedes abfragbare [Objekt](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - namens `sf_/\{sobject-name}` - auf Ihrem Data Warehouse erstellt.
+Nachdem [[!DNL Salesforce] Setup](../integrations/salesforce.md) abgeschlossen ist, wird eine Tabelle für jedes abfragbare [Objekt](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_concepts.htm) - namens `sf_/\{sobject-name}` - in Ihrer Data Warehouse erstellt.
 
 >[!NOTE]
 >
@@ -50,4 +50,4 @@ Derzeit macht [!DNL Salesforce] die folgenden Objekte in ihrer API nicht verfüg
 ## Verwandt:
 
 * [Verbinden [!DNL Salesforce]](../integrations/salesforce.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

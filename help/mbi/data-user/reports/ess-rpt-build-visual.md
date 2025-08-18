@@ -1,5 +1,5 @@
 ---
-title: Visueller Report Builder
+title: Visual Report Builder
 description: Erfahren Sie, wie Sie Visual Report Builder verwenden.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
@@ -27,7 +27,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
      Die verfügbaren Metriken können alphabetisch oder nach Tabelle aufgelistet werden.
 
-     ![Visual Report Builder ](../../assets/magento-bi-visual-report-builder-add-metric.png)
+     ![Visual Report Builder](../../assets/magento-bi-visual-report-builder-add-metric.png)
 
    * Wählen Sie die [Metrik](../../data-user/reports/ess-manage-data-metrics.md), die den Datensatz beschreibt, den Sie für den Bericht verwenden möchten.
 
@@ -35,7 +35,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
      Die Zusammenfassung auf der linken Seite zeigt den Namen der aktuellen Metrik an, gefolgt vom Ergebnis aller Berechnungen mit Spaltendaten, die in der Metrik angegeben sind. In diesem Beispiel zeigt die Zusammenfassung die Gesamtkundenanzahl an.
 
-     ![Visual Report Builder ](../../assets/magento-bi-report-builder-untitled.png)
+     ![Visual Report Builder](../../assets/magento-bi-report-builder-untitled.png)
 
 1. Bewegen Sie im Diagramm den Mauszeiger über die einzelnen Datenpunkte auf der Linie. Jeder Datenpunkt zeigt die Gesamtzahl der neuen Kundinnen und Kunden an, die sich in diesem Monat angemeldet haben.
 
@@ -43,7 +43,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
    **`Group By`**
 
-   Mit dem `Group By` können Sie mehrere Dimensionen nach Gruppe oder Segment hinzufügen. Dimensionen sind Tabellenspalten, mit denen die Daten gruppiert werden können.
+   Mit dem `Group By` können Sie mehrere Dimensionen nach Gruppe oder Segment hinzufügen. Dimensionen sind Spalten in der Tabelle, die zur Gruppierung der Daten verwendet werden können.
 
    * Wählen Sie eine der verfügbaren Dimensionen aus der Liste `Group By` Optionen aus.
 
@@ -55,7 +55,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
    * Klicken Sie auf **[!UICONTROL Apply]** , um das Fenster Nach Detail gruppieren zu schließen.
 
-     ![Mehrere Dimensionen ](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
+     ![Mehrere Dimensionen](../../assets/magento-bi-report-builder-group-by-dimension-detail.png)
 
    * Bewegen Sie den Mauszeiger über einige Datenpunkte in jeder Zeile, um die Anzahl der Kunden während des Monats anzuzeigen, die diesen Coupon bei der ersten Bestellung verwendet haben.
 

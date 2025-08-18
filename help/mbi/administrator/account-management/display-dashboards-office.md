@@ -23,6 +23,6 @@ Hier finden Sie die empfohlene Liste der Elemente, die Sie für die Option benö
 
 1. **USB-Tastatur und -Maus** zur Steuerung Ihres Dongles.
 
-1. **Eine Browser-Erweiterung zum gleichzeitigen Drehen zwischen mehreren Registerkarten.** Auf diese Weise können Sie alle ausgewählten Dashboards einrichten, die auf einer eindeutigen Registerkarte angezeigt werden. Adobe empfiehlt die Erweiterung [Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en), wenn Sie [!DNL Chrome] verwenden.
+1. **Eine Browser-Erweiterung zum gleichzeitigen Drehen zwischen mehreren Registerkarten.** Auf diese Weise können Sie alle ausgewählten Dashboards einrichten, die auf einer eindeutigen Registerkarte angezeigt werden. Adobe empfiehlt die [Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)-Erweiterung, wenn Sie [!DNL Chrome] verwenden.
 
 Sobald Sie über die oben genannte Hardware verfügen, können Sie ein Browser-Fenster auf Ihrem Bildschirm mit einem bestimmten Dashboard öffnen, das Sie auf jeder Registerkarte anzeigen möchten. Konfigurieren Sie abschließend Ihren Browser so, dass er jedes Dashboard mit der gewünschten Häufigkeit durchläuft.

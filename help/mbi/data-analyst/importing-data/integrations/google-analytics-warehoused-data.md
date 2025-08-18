@@ -1,6 +1,6 @@
 ---
-title: Erwartete Data Warehouse-Daten der Google Analytics
-description: Erfahren Sie, wie Sie mit den Data Warehouse von Google Analytics interagieren können.
+title: Erwartete Data Warehouse-Daten in Google Analytics
+description: Erfahren Sie, wie Sie mit Ihren in Google Analytics gespeicherten Daten interagieren können.
 exl-id: 2b1305cd-5f34-43d9-b77f-a4f5b1d82c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -27,9 +27,9 @@ ht-degree: 0%
 >
 >Um unerwartete oder unsinnige Ergebnisse zu vermeiden, stellen Sie sicher, dass alle verwendeten Dimensionen [mit einer oder mehreren Metriken kompatibel](https://ga-dev-tools.google/dimensions-metrics-explorer/) die Sie im `Report Builder` verwenden.
 
-In Ihrem Data Warehouse wird eine einzige Tabelle namens `report` erstellt.
+In Ihrer Data Warehouse wird eine einzige Tabelle mit dem Namen `report` erstellt.
 
-Das Schema dieser Tabelle besteht aus den Metriken und Dimensionen, die Sie während des Einrichtungsprozesses ausgewählt haben, sowie zwei weiteren Spalten: `start-date` und `end-date`.
+Das Schema dieser Tabelle besteht aus den Metriken und Dimensionen, die Sie während des Einrichtungsprozesses ausgewählt haben, sowie aus zwei weiteren Spalten: `start-date` und `end-date`.
 
 Wenn Sie beispielsweise während des Setups die folgenden Metriken und Dimensionen ausgewählt haben:
 
@@ -58,7 +58,7 @@ Ein Beispiel dafür, was aus Sicht der Manipulation getan werden kann, finden Si
 
 Der Kombinationsaspekt ermöglicht es, [!DNL Google Analytics] Daten mit anderen Daten zu verbinden, um Analysen durchzuführen. Nehmen Sie beispielsweise `Total Time On Site By Ad Campaign` Daten aus [!DNL Google Analytics] und verbinden Sie sie mit `Total Spent Per Campaign` Daten aus [!DNL Facebook Ads], um ein vollständiges Bild darüber zu erhalten, wie viel Interaktion Sie kostet.
 
-Mit der [!DNL Google Analytics Live] Integration ist hingegen jedes [!DNL Google Analytics] wie ein kleines Silo, das nicht auf dem [!DNL Commerce Intelligence] Data Warehouse abgelegt ist.
+Mit der [!DNL Google Analytics Live] Integration ist hingegen jedes [!DNL Google Analytics] wie ein kleines Silo, das nicht in Ihrem [!DNL Commerce Intelligence] Data Warehouse gespeichert ist.
 
 ## Verwandt:
 

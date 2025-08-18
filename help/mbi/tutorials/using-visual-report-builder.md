@@ -125,7 +125,7 @@ Weitere Informationen zur Verwendung von Zeitoptionen in Berichten finden Sie in
 
 ## Schritt 7: Speichern des Berichts
 
-Wenn Sie ein Diagramm erstellen, können Sie es speichern, indem Sie oben rechts im `Visual Report Builder` auf **[!UICONTROL Save]** klicken.
+Wenn Sie ein Diagramm erstellen, können Sie es speichern, indem Sie oben rechts im **[!UICONTROL Save]** auf `Visual Report Builder` klicken.
 
 Sie können ein Diagramm, eine Tabelle oder eine Zahl (`scalar`) über das Dropdown-Menü `Type` und das Dashboard speichern, in dem der Bericht gespeichert werden soll, indem Sie das Dropdown-Menü `Location` verwenden.
 

@@ -51,7 +51,7 @@ In diesem Beispiel beträgt die anfängliche Wahrscheinlichkeit für Wiederholun
 
 ### Wiederholungswahrscheinlichkeit der Bestellung seit Monaten
 
-Dieser Bericht zeigt die Wahrscheinlichkeit, dass ein Kunde erneut bestellt, da seit seiner letzten Bestellung einige Monate vergangen sind. Obwohl es für diesen Bericht keine Einzeldefinition für den Abwanderungsschwellenwert gibt, empfiehlt Adobe, Abwanderung als den Punkt zu definieren, an dem der Wahrscheinlichkeitsabfall den Wert überschreitet, der die Hälfte der anfänglichen Wiederholungswahrscheinlichkeitsrate beträgt.
+Dieser Bericht zeigt die Wahrscheinlichkeit, dass ein Kunde erneut bestellt, da seit seiner letzten Bestellung einige Monate vergangen sind. Obwohl es für diesen Bericht keine Einzeldefinition für den Abwanderungsschwellenwert gibt, empfiehlt Adobe, die Abwanderung als den Punkt zu definieren, an dem der Wahrscheinlichkeitsabfall den Wert überschreitet, der der Hälfte der ursprünglichen Wiederholungswahrscheinlichkeitsrate entspricht.
 
 Da die anfängliche Wiederholungswahrscheinlichkeitsrate für dieses Beispiel 60 % beträgt, wäre das Abwanderungsdatum der Zeitpunkt, zu dem die Wiederholungsreihenfolgewahrscheinlichkeit unter 60 %/2 = 30 % fällt, oder bei etwa 6 Monaten. Von den 60 % der Bestellungen, die voraussichtlich mit einer anderen Bestellung nachgeholt werden, wurde die Hälfte innerhalb der ersten 6 Monate aufgegeben.
 
@@ -63,7 +63,7 @@ Das Ziel besteht letztendlich darin, den Schwellenwert auszuwählen, bei dem es 
 
 ## Welche Fragen sollte ich berücksichtigen?
 
-Um Ihnen dabei zu helfen, die Wahrscheinlichkeit von Wiederholungsaufträgen für Ihr Unternehmen zu verstehen, schlägt Adobe vor, diese Fragen zu berücksichtigen, wenn Sie Ihre eigenen Daten untersuchen:
+Um Ihnen dabei zu helfen, die Wahrscheinlichkeit von Wiederholungsaufträgen für Ihr Unternehmen zu verstehen, empfiehlt Adobe, diese Fragen zu berücksichtigen, wenn Sie Ihre eigenen Daten untersuchen:
 
 * Wird die anfängliche Wiederholungsreihenfolge erwartet? Wenn nicht, warum sollte sie dann höher oder niedriger sein?
 * Gibt es seit der letzten Bestellung erhebliche Rückgänge bei der Wiederholungsreihenwahrscheinlichkeit für bestimmte Monate? Wenn ja, werden diese Änderungen erwartet?
@@ -78,7 +78,7 @@ Nachdem Sie die oben genannte Analyse erstellt und eine Abwanderungsschwelle fes
 
 Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt erwerben, im Laufe der Zeit anders verhalten als andere Kunden. Möchten Sie mehr erfahren? Sehen Sie sich dieses Tutorial an, um das lebenslange Kaufverhalten von Kundenkohorten basierend auf bestimmten Produkten zu untersuchen, die sie gekauft haben.
 
-Diese Best Practice wird von [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS) bereitgestellt. [Kontaktieren Sie den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um weitere Informationen zu erhalten.
+Diese Best Practice wird von [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS) bereitgestellt. [Kontaktieren Sie den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um weitere Informationen zu erhalten.
 
 ### verwandt
 

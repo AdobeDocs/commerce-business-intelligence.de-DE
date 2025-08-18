@@ -1,6 +1,6 @@
 ---
 title: Google Analytics verbinden
-description: Erfahren Sie, wie Sie Google Analytics mit  [!DNL Commerce Intelligence] verbinden.
+description: Erfahren Sie, wie Sie eine Verbindung zwischen Google Analytics und  [!DNL Commerce Intelligence] herstellen.
 exl-id: 10e813f1-0306-4bdd-8222-e6364ac624de
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -57,7 +57,7 @@ So identifizieren Sie die [!DNL Google Analytics]-Profil-ID einer bestimmten Web
 
 ## Verwandt:
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Verbinden [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analyse der Website-Aktivität und der Konversionsraten der Kunden](../../analysis/web-act-cust-conversion.md)
 * [Tracking von Benutzerakquise-Daten mithilfe von  [!DNL Google Analytics] -Cookies](../../analysis/google-track-user-acq.md)

@@ -37,7 +37,7 @@ Es ist möglich, dass es eine technische Ressource gibt, die Ihnen dabei helfen 
 * Prozentsätze müssen als Dezimalzahlen eingegeben werden.
 * Stellen Sie sicher, dass vorangestellte oder nachfolgende Nullen korrekt beibehalten werden.
 
-Bevor Sie eintauchen, empfiehlt Adobe, [die rohen Tabellendaten zu exportieren](../../tutorials/export-raw-data.md). Wenn Sie die Rohdaten zuerst betrachten, können Sie alle möglichen Kombinationen für die Daten untersuchen, die Sie bereinigen müssen, und so sicherstellen, dass die Zuordnungstabelle alles abdeckt.
+Bevor Sie eintauchen, empfiehlt Adobe [Exportieren der Rohtabellendaten](../../tutorials/export-raw-data.md). Wenn Sie die Rohdaten zuerst betrachten, können Sie alle möglichen Kombinationen für die Daten untersuchen, die Sie bereinigen müssen, und so sicherstellen, dass die Zuordnungstabelle alles abdeckt.
 
 Um eine Zuordnungstabelle zu erstellen, müssen Sie eine zweispaltige Tabelle erstellen, die den [Formatierungsregeln für Datei-Uploads](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) folgt.
 
@@ -49,16 +49,16 @@ Geben Sie in der zweiten Spalte an, wie **Werte lauten**. Wenn Sie wie beim Beis
 
 ## Was muss ich tun, [!DNL Commerce Intelligence] es zu verwenden? {#use}
 
-Nachdem Sie die Zuordnungstabelle fertig erstellt haben, müssen Sie [die Datei hochladen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) in [!DNL Commerce Intelligence] und [eine verbundene Spalte erstellen](../../data-analyst/data-warehouse-mgr/calc-column-types.md) die das neue Feld in die gewünschte Tabelle verschiebt. Sie können dies tun, nachdem die Datei mit Ihrem Data Warehouse synchronisiert wurde.
+Nachdem Sie die Zuordnungstabelle fertig erstellt haben, müssen Sie [die Datei hochladen](../../data-analyst/importing-data/connecting-data/using-file-uploader.md) in [!DNL Commerce Intelligence] und [eine verbundene Spalte erstellen](../../data-analyst/data-warehouse-mgr/calc-column-types.md) die das neue Feld in die gewünschte Tabelle verschiebt. Sie können dies tun, nachdem die Datei mit Ihrer Data Warehouse synchronisiert wurde.
 
 In diesem Beispiel wird die Spalte, die Sie in der `mapping_state` (`state_input`) erstellt haben, mithilfe einer verbundenen Spalte in die `customer_address` Tabelle verschoben. Auf diese Weise können wir in Ihren Berichten nach der Spalte `state_input` bereinigen anstatt nach der Spalte `state` gruppieren.
 
-Um die `joined` Spalte zu erstellen, navigieren Sie zu der Tabelle, in die das Feld im Data Warehouse-Manager verschoben wird. In diesem Beispiel wäre dies die `customer_address`.
+Um die `joined` Spalte zu erstellen, navigieren Sie zu der Tabelle, in die das Feld im Data Warehouse Manager verschoben wird. In diesem Beispiel wäre dies die `customer_address`.
 
 1. Klicken Sie auf **[!UICONTROL Create a Column]**.
 1. Wählen Sie `Joined Column` aus dem Dropdown-Menü `Definition` aus.
 1. Geben Sie der Spalte einen Namen, der sie von der `state` Spalte in Ihrer Datenbank unterscheidet. Benennen Sie die Spalte `billing state (mapped)`, damit Sie sehen können, welche Spalte bei der Segmentierung in Report Builder verwendet werden soll.
-1. Der Pfad, den Sie zum Verbinden der Tabellen benötigen, existiert nicht. Daher müssen Sie einen erstellen. Klicken Sie in der Dropdown-Liste `Select a table and column` auf **[!UICONTROL Create new path]** .
+1. Der Pfad, den Sie zum Verbinden der Tabellen benötigen, existiert nicht. Daher müssen Sie einen erstellen. Klicken Sie in der Dropdown-Liste **[!UICONTROL Create new path]** auf `Select a table and column` .
 
    Wenn Sie sich nicht sicher sind, was die Tabellenbeziehung ist oder wie Sie die Primär- und Fremdschlüssel richtig definieren, finden Sie im [Tutorial](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) Hilfe.
 
@@ -78,7 +78,7 @@ Nach Abschluss eines Aktualisierungszyklus können Sie Ihre neue verknüpfte Spa
 
 ![](../../assets/Clean_State_Segments.png)
 
-Zuordnungstabellen sind immer dann praktisch, wenn Sie einige potenziell fehlerhafte Daten auf Ihrem Data Warehouse bereinigen möchten. Zuordnungstabellen können jedoch auch für einige andere coole Anwendungsfälle verwendet werden, z. B. [Replizieren Ihrer  [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
+Zuordnungstabellen sind immer dann praktisch, wenn Sie einige potenziell fehlerhafte Daten in Ihrer Data Warehouse bereinigen möchten. Zuordnungstabellen können jedoch auch für einige andere coole Anwendungsfälle verwendet werden, z. B. [Replizieren Ihrer  [!DNL Google Analytics channels] in [!DNL Commerce Intelligence]](../data-warehouse-mgr/rep-google-analytics-channels.md).
 
 ### verwandt
 

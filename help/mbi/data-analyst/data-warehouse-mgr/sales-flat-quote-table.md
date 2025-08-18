@@ -32,8 +32,8 @@ Die `quote` Tabelle (`sales_flat_quote` auf M1) enthält Datensätze zu jedem in
 | `entity_id` (K) | Eindeutige Kennung für die Tabelle, die häufig bei Verknüpfungen mit anderen Tabellen in der Commerce-Instanz verwendet wird |
 | `is_active` | Boolesches Feld, das „1“ zurückgibt, wenn der Warenkorb von einem Kunden erstellt wurde und noch nicht in eine Bestellung konvertiert wurde. Gibt „0“ für konvertierte Warenkörbe oder Warenkörbe zurück, die über den Administrator erstellt wurden. |
 | `items_qty` | Summe der Gesamtmenge aller Artikel im Warenkorb |
-| `reserved_order_id` | Der `sales_order` Tabelle zugeordnete `Foreign key` Join to `sales_order.increment_id` , um die Bestelldetails zu bestimmen, die einem konvertierten Warenkorb zugeordnet sind. Bei Warenkörben, die nicht mit einer konvertierten Bestellung verknüpft sind, bleibt die `reserved_order_id` `NULL` |
-| `store_id` | Der `store` Tabelle zugeordnete `Foreign key` Mit `store` verbinden.`store_id` Sie, um zu bestimmen, welche Commerce-Store-Ansicht mit dem Warenkorb verknüpft ist |
+| `reserved_order_id` | Der `Foreign key` Tabelle zugeordnete `sales_order` Join to `sales_order.increment_id` , um die Bestelldetails zu bestimmen, die einem konvertierten Warenkorb zugeordnet sind. Bei Warenkörben, die nicht mit einer konvertierten Bestellung verknüpft sind, bleibt die `reserved_order_id` `NULL` |
+| `store_id` | Der `Foreign key` Tabelle zugeordnete `store` Mit `store` verbinden.`store_id` Sie, um zu bestimmen, welche Commerce-Store-Ansicht mit dem Warenkorb verknüpft ist |
 
 {style="table-layout:auto"}
 

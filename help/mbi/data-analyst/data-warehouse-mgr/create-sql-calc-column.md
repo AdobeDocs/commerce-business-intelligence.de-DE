@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Erstellen einer berechneten SQL-Spalte
 
-In diesem Thema werden Zweck und Verwendungszwecke des `Calculation` Spaltentyps beschrieben, der mithilfe des [Data Warehouse-Managers zu Tabellen hinzugefügt ](../data-warehouse-mgr/tour-dwm.md) kann. Im Folgenden wird erläutert, was SQL-Berechnungen bewirken, warum sie verwendet werden und wie eine SQL-Berechnung erstellt wird. Nachfolgend werden zwei Beispiele beschrieben.
+In diesem Abschnitt werden Zweck und Verwendungszwecke des `Calculation` Spaltentyps beschrieben, der mithilfe des [Data Warehouse Managers} zu Tabellen hinzugefügt ](../data-warehouse-mgr/tour-dwm.md) kann. Im Folgenden wird erläutert, was SQL-Berechnungen bewirken, warum sie verwendet werden und wie eine SQL-Berechnung erstellt wird. Nachfolgend werden zwei Beispiele beschrieben.
 
 **Erläuterung**
 
 Früher konnten Spalten, die als `advanced` eingestuft wurden, nur von einem Analyst im Customer Success-Team hier bei [!DNL Adobe Commerce Intelligence] erstellt werden. Jetzt liegt die gesamte Macht in den Händen des Endbenutzers, und erweiterte Spalten können in Form von `SQL Calculation` Spalten in der neuen [!DNL Commerce Intelligence]-Architektur erstellt werden.
 
-Der `Calculation` Spaltentyp, der jetzt als Option im Data Warehouse-Manager verfügbar ist, ist ein Tabellenvorgang, mit dem Sie die Spalten einer Tabelle mithilfe der PostgreSQL-Logik umwandeln können. Dokumentationen zu den Funktionen und Operatoren, die im `Calculation` Spaltentyp verwendet werden können, finden Sie auf der PostgreSQL-Website [hier](https://www.postgresql.org/docs/9.6/functions.html).
+Der `Calculation` Spaltentyp, der jetzt als Option im Data Warehouse Manager verfügbar ist, ist ein Tabellenvorgang, mit dem Sie die Spalten einer Tabelle mithilfe der PostgreSQL-Logik umwandeln können. Dokumentationen zu den Funktionen und Operatoren, die im `Calculation` Spaltentyp verwendet werden können, finden Sie auf der PostgreSQL-Website [hier](https://www.postgresql.org/docs/9.6/functions.html).
 
 Die verschiedenen Spalten, die mit der `Calculation` Spalte erstellt werden können, sind nahezu unbegrenzt, aber die meisten Spalten können mit IF-THEN-Anweisungen und einfacher Arithmetik erstellt werden, die in den folgenden Beispielen verwendet wird.
 
@@ -45,7 +45,7 @@ Die möglichen Werte, die von dieser Spalte zurückgegeben werden können (`NULL
 
 Viele Kunden analysieren den Umsatz gerne auf Artikelebene, indem sie ihn nach Feldern wie `product name` oder `category` aufteilen. Die meisten Datenbanken geben einem nicht den Umsatz eines Produkts in einer Bestellung, sondern sie liefern die Menge, die in der Bestellung verkauft wird, und den Preis des Artikels.
 
-Um Analysen des Produktumsatzes zu ermöglichen, verfügen die meisten Konten in ihrer `Orders Items` über eine Spalte mit dem Namen `Order item total value (quantity * price)`. Wenn sich Ihr Konto auf der neuen Architektur befindet, wird diese Spalte auch mit einer `Calculation` Spalte erstellt und ist im folgenden Screenshot zu sehen:
+Um Analysen des Produktumsatzes zu ermöglichen, verfügen die meisten Konten in ihrer `Order item total value (quantity * price)` über eine Spalte mit dem Namen `Orders Items`. Wenn sich Ihr Konto auf der neuen Architektur befindet, wird diese Spalte auch mit einer `Calculation` Spalte erstellt und ist im folgenden Screenshot zu sehen:
 
 ![](../../assets/Order_item_total_value.png)
 
@@ -74,6 +74,6 @@ Gehen Sie wie folgt vor, um eine `Calculation` Spalte zu erstellen:
    * `String` - Jeder Text- oder Zeichenfolgentyp, bei dem andere Zahlen als Zahlen verwendet werden
    * `Datetime` - `yyyy-MM-dd hh:mm:ss`
 
-1. Klicken Sie auf **[!UICONTROL test column]**. Dadurch wird eine Liste von fünf Testwerten für jede Ihrer Eingaben generiert und das Ergebnis der Logik aus Schritt 6 für jeden Satz von Testwerten angezeigt. Wenn ein Teil der SQL einen Fehler erzeugt, wird die entsprechende Fehlermeldung zurückgegeben. Beispielergebnisse können nur generiert werden, wenn alle Eingabespalten native Felder sind. Wenn es sich bei einer der Eingabespalten um berechnete Spalten handelt, müssen Sie die Ergebnisse überprüfen, indem Sie die Spalte zu einer Metrik hinzufügen und im Visual Report Builder anzeigen
+1. Klicken Sie auf **[!UICONTROL test column]**. Dadurch wird eine Liste von fünf Testwerten für jede Ihrer Eingaben generiert und das Ergebnis der Logik aus Schritt 6 für jeden Satz von Testwerten angezeigt. Wenn ein Teil der SQL einen Fehler erzeugt, wird die entsprechende Fehlermeldung zurückgegeben. Beispielergebnisse können nur generiert werden, wenn alle Eingabespalten native Felder sind. Wenn es sich bei einer der Eingabespalten um berechnete Spalten handelt, müssen Sie die Ergebnisse überprüfen, indem Sie die Spalte zu einer Metrik hinzufügen und in der Visual Report Builder anzeigen
 
 1. Wenn Sie mit den Ergebnissen zufrieden sind, klicken Sie auf **[!UICONTROL Save]**. Die Spalte ermöglicht die Verwendung.

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Google ECommerce] Dimensionen erstellen
+# Erstellen [!DNL Google ECommerce] Dimensionen
 
 >[!NOTE]
 >
@@ -50,13 +50,13 @@ Im Folgenden werden die Dimensionen beschrieben:
 
 ## Dimensionen erstellen
 
-Um Dimensionen zu erstellen, öffnen Sie den [Data Warehouse-Manager](../data-warehouse-mgr/tour-dwm.md) indem Sie auf **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]** klicken.
+Um Dimensionen zu erstellen, öffnen Sie den [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) indem Sie auf **[!UICONTROL Data]** > **[!UICONTROL Data Warehouse]** klicken.
 
 ### Bestelltabelle, Runde 1
 
 In diesem Beispiel wird die Dimension **Order&#39;s [!DNL Google Analytics] Source** erstellt.
 
-1. Klicken Sie in der Liste der Tabellen auf der Data Warehouse auf die Tabelle (in diesem Fall `orders`), die Ihre Bestellinformationen enthält.
+1. Klicken Sie in der Tabellenliste in der Data Warehouse auf die Tabelle (in diesem Fall `orders`), die Ihre Bestellinformationen enthält.
 1. Klicken Sie auf **[!UICONTROL Create a Column]**.
 1. Benennen Sie die Spalte.
 1. Wählen Sie `Joined Column` aus dem Dropdown-Menü [Definition](../data-warehouse-mgr/calc-column-types.md). Dieses Beispiel arbeitet mit einer [-zu-eins-Beziehung](../data-warehouse-mgr/table-relationships.md) wobei die `eCommerce.transactionID` Spalte genau mit einer Zeile der `orders` Tabelle abgeglichen wird.
@@ -82,7 +82,7 @@ Als Nächstes versuchen Sie **das [!DNL Google Analytics] Medium der Bestellung*
 
 In diesem Beispiel wird die Dimension **Quelle des ersten Auftrags des Kunden[!DNL Google Analytics] erstellt**.
 
-1. Klicken Sie in der Liste der Tabellen auf der Data Warehouse auf die Tabelle (in diesem Fall `customers`), die Ihre Kundeninformationen enthält.
+1. Klicken Sie in der Tabellenliste in der Data Warehouse auf die Tabelle (in diesem Fall `customers`), die Ihre Kundeninformationen enthält.
 1. Klicken Sie auf **[!UICONTROL Create a Column]**.
 1. Benennen Sie die Spalte.
 1. Wählen Sie für dieses Beispiel die `is MAX` aus der Dropdown-Liste [Definition](../../data-analyst/data-warehouse-mgr/calc-column-types.md). Die `is MIN` könnte auch funktionieren, wenn sie auf eine Textspalte mit nur einem möglichen Wert angewendet würde. Wichtig ist, sicherzustellen, dass geeignete Filter festgelegt werden, was Sie später tun.
@@ -105,7 +105,7 @@ Sie können hier bei Bedarf stoppen, aber dieser Abschnitt ermöglicht eine weit
 
 Dieses Beispiel verbindet die Dimension `Customer's first order's [!DNL Google Analytics] source` mit der `orders`.
 
-1. Klicken Sie in der Liste der Tabellen auf der Data Warehouse auf die Tabelle (in diesem Fall `orders`), die Ihre Bestellinformationen enthält.
+1. Klicken Sie in der Tabellenliste in der Data Warehouse auf die Tabelle (in diesem Fall `orders`), die Ihre Bestellinformationen enthält.
 1. Klicken Sie auf **[!UICONTROL Create a Column]**.
 1. Benennen Sie die Spalte.
 1. Wählen Sie `Joined Column` aus dem Dropdown-Menü Definition aus. Dadurch werden die Kundendimensionen, die Sie im vorherigen Abschnitt erstellt haben, mit der `orders`-Tabelle verbunden.

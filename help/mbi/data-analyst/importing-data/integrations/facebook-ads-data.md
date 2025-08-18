@@ -1,6 +1,6 @@
 ---
-title: Erwartete Facebook Ads-Daten
-description: Hier erhalten Sie einen kurzen Überblick über die Tabellen, die Sie mit Ihrem Data Warehouse synchronisieren sollten
+title: Erwartete Daten von Facebook-Anzeigen
+description: Erfahren Sie einen kurzen Überblick über die Tabellen, die Sie mit Ihrer Data Warehouse synchronisieren sollten
 exl-id: 0c8b907b-1a98-470b-bb2c-55327e88e502
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Erwartete [!DNL Facebook Ads]
 
-Nachdem Sie [Ihr [!DNL Facebook Ads] Konto](../integrations/facebook-ads.md) verbunden haben, können Sie den [Data Warehouse-Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder für die Analyse einfach zu verfolgen.
+Nachdem Sie [Ihr [!DNL Facebook Ads] Konto](../integrations/facebook-ads.md) verbunden haben, können Sie den [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder für die Analyse einfach zu verfolgen.
 
-In diesem Abschnitt erhalten Sie einen kurzen Überblick über die Tabellen, die Adobe zum Synchronisieren mit dem Data Warehouse empfiehlt. Dies hebt nur die Kerntabellen hervor, da es einige Untertabellen gibt.
+In diesem Abschnitt erhalten Sie einen kurzen Überblick über die Tabellen, die Adobe zum Synchronisieren mit Data Warehouse empfiehlt. Dies hebt nur die Kerntabellen hervor, da es einige Untertabellen gibt.
 
 ## Zentrale Anzeigenkampagnentabellen
 
@@ -60,4 +60,4 @@ Diese Tabelle enthält dieselben Informationen wie die `facebook_ads_insights_{a
 ## verwandt
 
 * [Verbinden [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

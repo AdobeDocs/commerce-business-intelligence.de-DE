@@ -24,7 +24,7 @@ Unter Kunden, die einen *bestimmten Artikel* kaufen,
 
 ## Empfohlene Kennzahlen
 
-Beim Erstellen von Analysen zur Rückkaufaktivität von Kunden empfiehlt Adobe die Verwendung der folgenden Metriken:
+Adobe empfiehlt beim Erstellen von Aktivitätsanalysen für den Rückkauf durch Kunden die Verwendung der folgenden Metriken:
 
 ### Wiederholungsreihenwahrscheinlichkeit
 
@@ -82,4 +82,4 @@ Neben der Analyse des Rückkaufverhaltens Ihrer Kunden können Sie auch Analysen
 
 Nachdem Sie erkannt haben, warum eine Abwanderung stattfindet, können Sie Ihre Analyse verwenden, um eine `reactivation` Kampagne zu erstellen. Mithilfe dieser Daten können Sie Benutzer identifizieren, die inaktiv geworden sind, wie lange es seit ihrem letzten Besuch gewesen ist, was ihr letzter Kauf war usw. Auf diese Weise können Sie umsetzbare Entscheidungen treffen, die Ihre Kundinnen und Kunden dazu anregen, zurückzukehren.
 
-Um Hilfe bei der Analyse zu erhalten, [den Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Um Hilfe bei der Analyse zu erhalten, [den Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

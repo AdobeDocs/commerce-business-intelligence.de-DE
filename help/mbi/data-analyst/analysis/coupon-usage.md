@@ -43,7 +43,7 @@ Diese Metrik zeigt den Nettoumsatz an, den Sie mit Bestellungen erzielen, die ei
 
 ### Prozent abgezinst
 
-Dies zeigt den Anteil der Bruttoeinnahmen, der durch Rabatte ausgeglichen wird. Bei Gutscheinen, die einen prozentualen Rabatt bieten, ist dieser Wert bereits bekannt (z. B. 10 % Rabatt). Trotzdem bietet diese Maßnahme Einblicke und eine Vergleichsmethode für Coupons, die ein fester Dollarrabatt sind.
+Dies zeigt den Anteil der Bruttoeinnahmen, der durch Rabatte ausgeglichen wird. Bei Gutscheinen, die einen prozentualen Rabatt bieten, ist dieser Wert bereits bekannt (z. B. 10 % Rabatt). Dennoch bietet diese Maßnahme insight und eine Vergleichsmethode für Coupons, die einen festen Dollarrabatt darstellen.
 
 ### Durchschnittlicher Nettoauftragswert
 
@@ -109,7 +109,7 @@ Der durchschnittliche Umsatz während der gesamten Lebensdauer eines Coupons ist
 
 ## Was kann ich noch analysieren? {#otheranalyses}
 
-Die in diesem Thema erwähnten Analysen können Ihnen wertvolle Einblicke geben, wie Ihre Kunden Ihre Gutscheine verwenden, aber es gibt eine Vielzahl anderer Analysen, mit denen Sie etwas tiefer gehen können.
+Insight Die in diesem Thema erwähnten Analysen können Ihnen wertvolle Informationen darüber liefern, wie Ihre Kunden Ihre Gutscheine verwenden. Es gibt jedoch eine Vielzahl anderer Analysen, mit denen Sie etwas tiefer gehen können.
 
 **Sie können die Kundenakquise aus Coupons analysieren.**
 

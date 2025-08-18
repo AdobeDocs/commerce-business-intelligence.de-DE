@@ -1,5 +1,5 @@
 ---
-title: Empfohlene Dimensionen für die Segmentierung und Filterung
+title: Empfohlene Datendimensionen für Segmentierung und Filterung
 description: Erfahren Sie mehr über Best Practices für die Segmentierung und Filterung.
 exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Data Architect, Data Engineer, User
@@ -71,7 +71,7 @@ Diese Art von Analyse machen Marketing-Experten der Fortune 1000-Unternehmen den
 
 Um Ihre Metriken anhand der oben genannten Dimensionen zu segmentieren, müssen Sie als Erstes sicherstellen, dass Sie diese Daten in Ihrer Datenbank nachverfolgen. Wenn es nicht verfolgt wird, wenden Sie sich an Ihr Tech-Team und finden Sie einen Weg, um mit dem Tracking dieser Daten zu beginnen.
 
-Nachdem Sie bestätigt haben, dass die Daten in Ihrer Datenbank verfolgt werden, [ Sie sich an das Support-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um die Dimensionen in Ihre [!DNL Commerce Intelligence] Metriken und Diagramme zu übertragen. Sie können auch das Tool *Feldverwaltung* verwenden, um diese Felder in [!DNL Commerce Intelligence] zu verfolgen.
+Nachdem Sie bestätigt haben, dass die Daten in Ihrer Datenbank verfolgt werden, [ Sie sich an das Support-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um die Dimensionen in Ihre [!DNL Commerce Intelligence] Metriken und Diagramme zu übertragen. Sie können auch das Tool *Feldverwaltung* verwenden, um diese Felder in [!DNL Commerce Intelligence] zu verfolgen.
 
 ## verwandt
 

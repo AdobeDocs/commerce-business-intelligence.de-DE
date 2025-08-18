@@ -24,7 +24,7 @@ ht-degree: 0%
 * [[!DNL MySQL] über ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] über [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
-Um Ihre [!DNL MySQL] Datenbank über eine `SSH tunnel` mit [!DNL Commerce Intelligence] zu verbinden, müssen Sie einige Schritte ausführen:
+Um Ihre [!DNL MySQL] Datenbank über eine [!DNL Commerce Intelligence] mit `SSH tunnel` zu verbinden, müssen Sie einige Schritte ausführen:
 
 1. [!DNL Commerce Intelligence] `public key` abrufen
 1. Zulassen des Zugriffs auf [!DNL Commerce Intelligence] `IP address`
@@ -50,7 +50,7 @@ So navigieren Sie durch [!DNL Commerce Intelligence], um den Schlüssel abzurufe
 
 ## Zugriff auf die [!DNL Commerce Intelligence] IP-Adresse zulassen {#allowlist}
 
-Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firewall so konfigurieren, dass der Zugriff über Ihre IP-Adressen zulässig ist. Sie sind `54.88.76.97` und `34.250.211.151`, aber sie befinden sich auch auf der `MySQL credentials`. Siehe das blaue Kästchen auf der obigen GIF.
+Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firewall so konfigurieren, dass der Zugriff über Ihre IP-Adressen zulässig ist. Sie sind `54.88.76.97` und `34.250.211.151`, aber sie befinden sich auch auf der `MySQL credentials`. Siehe das blaue Kästchen oben in der GIF.
 
 ## Erstellen eines [!DNL Linux] Benutzers für [!DNL Commerce Intelligence] {#linux}
 
@@ -120,4 +120,4 @@ Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um die Einr
 
 ## Verwandt:
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

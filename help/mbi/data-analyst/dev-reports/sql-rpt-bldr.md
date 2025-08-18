@@ -1,5 +1,5 @@
 ---
-title: Verwenden des SQL-Report Builders
+title: Verwenden der SQL-Report Builder
 description: Erfahren Sie mehr über die Verwendung von SQL Report Builder.
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Data Architect, Data Engineer, User
@@ -17,15 +17,15 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md) um SQL-Diagramme zu erstellen und zu bearbeiten. `Standard` Benutzer können diese Diagramme in Dashboards neu anordnen und `Read-only` Benutzer haben die gleiche Erfahrung wie mit herkömmlichen Diagrammen. Darüber hinaus haben `Read-only` Benutzer keinen Zugriff auf den Text der Abfrage.
 
-Weitere Informationen finden [ im ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=de)Schulungsvideo“.
+Weitere Informationen finden [ im ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)Schulungsvideo“.
 
-[!DNL SQL], oder Structured Query Language, ist eine Programmiersprache, die zur Kommunikation mit Datenbanken verwendet wird. In [!DNL Commerce Intelligence] wird [!DNL SQL] zum Abfragen oder Abrufen von Daten von Ihrem Data Warehouse verwendet. Sehen Sie sich die Berichte in Ihrem Dashboard an - hinter den Kulissen basiert jeder Bericht auf einer [!DNL SQL] Abfrage.
+[!DNL SQL], oder Structured Query Language, ist eine Programmiersprache, die zur Kommunikation mit Datenbanken verwendet wird. In [!DNL Commerce Intelligence] wird [!DNL SQL] zum Abfragen oder Abrufen von Daten aus Ihrer Data Warehouse verwendet. Sehen Sie sich die Berichte in Ihrem Dashboard an - hinter den Kulissen basiert jeder Bericht auf einer [!DNL SQL] Abfrage.
 
 Sie können die [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) verwenden, um Ihre Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und sie in ein Diagramm umzuwandeln. Sie können mit der Erstellung eines Berichts mit dem [!DNL SQL Report Builder] beginnen, indem Sie auf **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]** klicken.
 
-Weitere Informationen finden [ im ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html?lang=de)Schulungsvideo“.
+Weitere Informationen finden [ im ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)Schulungsvideo“.
 
-Mit dem [!DNL SQL Report Builder] können Sie Ihren Data Warehouse direkt abfragen, die Ergebnisse anzeigen und schnell in ein Diagramm umwandeln. Das Beste an der Verwendung von [!DNL SQL] zum Erstellen von Berichten ist, dass Sie nicht auf Aktualisierungszyklen warten müssen, um die von Ihnen erstellten Spalten zu iterieren. Wenn die Ergebnisse nicht korrekt aussehen, können Sie die Abfrage schnell bearbeiten und erneut ausführen, bis die Dinge Ihren Erwartungen entsprechen.
+Mit dem [!DNL SQL Report Builder] können Sie Ihre Data Warehouse direkt abfragen, die Ergebnisse anzeigen und schnell in ein Diagramm umwandeln. Das Beste an der Verwendung von [!DNL SQL] zum Erstellen von Berichten ist, dass Sie nicht auf Aktualisierungszyklen warten müssen, um die von Ihnen erstellten Spalten zu iterieren. Wenn die Ergebnisse nicht korrekt aussehen, können Sie die Abfrage schnell bearbeiten und erneut ausführen, bis die Dinge Ihren Erwartungen entsprechen.
 
 Dieses Thema führt Sie durch die Verwendung des [!DNL SQL Report Builder]. Wenn Sie sich schon einmal umgesehen haben, können Sie sich das Tutorial [!DNL SQL] Visualisierungen ansehen oder versuchen, einige der von Ihnen geschriebenen Abfragen zu optimieren.
 
@@ -71,7 +71,7 @@ Sie können auch die Seitenleiste im [!DNL SQL]-Editor verwenden, um Metriken, T
 
 >[!NOTE]
 >
->Jede [SELECT-Funktion](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST) oder jede Funktion, die keine Daten mutiert und von PostgreSQL unterstützt wird, wird im SQL-Report Builder unterstützt. Dazu gehören unter anderem AVG, COUNT, COUNT, DISTINCT, MIN/MAX und SUM.
+>Jede [SELECT-](https://www.postgresql.org/docs/9.5/sql-select.html#SQL-SELECT-LIST) oder jede Funktion, die keine Daten mutiert und von PostgreSQL unterstützt wird, wird in der SQL-Report Builder unterstützt. Dazu gehören unter anderem AVG, COUNT, COUNT, DISTINCT, MIN/MAX und SUM.
 
 Außerdem werden alle `JOIN` unterstützt, aber Adobe empfiehlt nur die Verwendung von INNER JOIN, da dies der kostengünstigste der `JOIN` Typen ist.
 
@@ -105,7 +105,7 @@ Eine ausführliche Anleitung zum Erstellen einer Visualisierung finden Sie im Tu
 
 Bevor Sie Ihre Arbeit speichern können, müssen Sie dem Bericht einen Namen geben. Denken Sie daran, die [Richtlinien für die Benennung von Best Practices](../../best-practices/naming-elements.md){: target="_blank"} zu befolgen, und wählen Sie etwas aus, das klar vermittelt, was der Bericht ist!
 
-Klicken Sie oben rechts im [!DNL SQL] auf **[!UICONTROL Save]** und wählen Sie die Report `Type` (`Chart` oder `Table`) aus. Um alles abzuschließen, wählen Sie das Dashboard aus, in dem der Bericht gespeichert werden soll, und klicken Sie auf **[!UICONTROL Save to Dashboard]**.
+Klicken Sie oben rechts im **[!UICONTROL Save]** auf [!DNL SQL] und wählen Sie die Report `Type` (`Chart` oder `Table`) aus. Um alles abzuschließen, wählen Sie das Dashboard aus, in dem der Bericht gespeichert werden soll, und klicken Sie auf **[!UICONTROL Save to Dashboard]**.
 
 ![](../../assets/SQL_Save_Report.gif)
 
@@ -113,7 +113,7 @@ Klicken Sie oben rechts im [!DNL SQL] auf **[!UICONTROL Save]** und wählen Sie 
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) bietet Ihnen die Möglichkeit, Ihre Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und schnell in einen Bericht umzuwandeln. Durch die Verwendung von [!DNL SQL] können [ auch nicht  [!DNL SQL]  Funktionen ](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) den `Visual`- oder `Cohort`-Report Buildern verwenden und erhalten so mehr Kontrolle über Ihre Daten.
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) erhalten Sie die Möglichkeit, Ihre Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und schnell in einen Bericht umzuwandeln. Durch die Verwendung von [!DNL SQL] können [ auch nicht  [!DNL SQL]  Funktionen ](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) Report Builder `Visual` oder `Cohort` verwenden und erhalten so mehr Kontrolle über Ihre Daten.
 
 Berechnete Spalten, die mit [!DNL SQL] erstellt wurden, sind nicht von Aktualisierungszyklen abhängig, d. h. Sie können sie nach Belieben durchlaufen und sofort die Ergebnisse sehen.
 
@@ -131,19 +131,19 @@ Berechnete Spalten, die mit [!DNL SQL] erstellt wurden, sind nicht von Aktualisi
 
 #### Datenbank und SQL-Editor-Ergebnisse im Vergleich
 
-In den meisten Fällen können diese Unterschiede den Aktualisierungszyklen zugeschrieben werden. Wenn [!DNL Commerce Intelligence] gerade Daten aus Ihrer Datenbank auf Ihren Data Warehouse repliziert, können selbst bei Verwendung derselben Abfrage unterschiedliche Ergebnisse auftreten.
+In den meisten Fällen können diese Unterschiede den Aktualisierungszyklen zugeschrieben werden. Wenn [!DNL Commerce Intelligence] Daten aus Ihrer Datenbank in Ihre Data Warehouse repliziert, können selbst bei Verwendung derselben Abfrage unterschiedliche Ergebnisse auftreten.
 
-Verbindungsprobleme können auch zu Diskrepanzen führen. Navigieren Sie zur `Connections` Seite, indem Sie zum Überprüfen auf **[!DNL Manage Data** > **Connections]** klicken. Gibt es einen Fehler bei der betreffenden Datenbankintegration? In diesem Fall müssen Sie die Integration möglicherweise [erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de) um die Dinge wieder zum Laufen zu bringen.
+Verbindungsprobleme können auch zu Diskrepanzen führen. Navigieren Sie zur `Connections` Seite, indem Sie zum Überprüfen auf **[!DNL Manage Data** > **Connections]** klicken. Gibt es einen Fehler bei der betreffenden Datenbankintegration? In diesem Fall müssen Sie die Integration möglicherweise [erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html) um die Dinge wieder zum Laufen zu bringen.
 
 Wenn alle Ihre Integrationen erfolgreich verbunden sind und Sie sich nicht in der Mitte eines Aktualisierungszyklus befinden, kann etwas Anderes fehlen.
 
-#### Löscht das Löschen eines [!DNL SQL] auch die zugrunde liegenden Spalten von meinem Data Warehouse?
+#### Löscht das Löschen eines [!DNL SQL] auch die zugrunde liegenden Spalten aus meiner Data Warehouse?
 
-Nein, Sie verlieren keine Spalten von Ihrem Data Warehouse, unabhängig davon, wie Sie sie aufgebaut haben.
+Nein, Sie verlieren keine Spalten aus Ihrer Data Warehouse, unabhängig davon, wie Sie sie erstellt haben.
 
 Mit der `Data Warehouse Manager` erstellte Spalten sind nicht betroffen, wenn Sie einen Bericht oder eine Abfrage löschen, in dem bzw. der sie verwendet werden.
 
-Mit dem [!DNL SQL Report Builder] erstellte Spalten werden nicht auf Ihrem Data Warehouse gespeichert.
+Mit der [!DNL SQL Report Builder] erstellte Spalten werden nicht in Ihrer Data Warehouse gespeichert.
 
 
 #### `Report Builder` versus `SQL Report Builder`
@@ -157,7 +157,7 @@ Anders als die [!DNL Visual Report Builder] dient die [[!DNL Cohort Report Build
 | **Dies ist perfekt für…** | **Das ist nicht so toll für…** |
 |---|---|
 | Fortgeschrittene Analysten/Analysten | Anfänger - Sie benötigen praxisorientierte Kohorten. |
-| Identifizieren von Verhaltenstrends im Zeitverlauf | Qualitative Analyse - kann [ durchgeführt werden](../dev-reports/create-qual-cohort-analysis.md) erfordert jedoch Adobe-Unterstützung. |
+| Identifizieren von Verhaltenstrends im Zeitverlauf | Qualitative Analyse - kann [ durchgeführt werden](../dev-reports/create-qual-cohort-analysis.md) erfordert jedoch die Unterstützung von Adobe. |
 
 ## Abfragen nach dem Aktualisierungszyklus neu erstellen
 
@@ -165,11 +165,11 @@ Sie müssen Ihre Abfragen nicht neu erstellen. Mit dem [[!DNL SQL Report Builder
 
 >[!NOTE]
 >
->Beim Löschen eines [!DNL SQL] Berichts/einer Abfrage werden die zugrunde liegenden Spalten nicht von Ihrem Data Warehouse gelöscht. Sie verlieren keine Spalten, unabhängig davon, wie Sie sie erstellt haben.
+>Beim Löschen eines [!DNL SQL] Berichts/einer Abfrage werden die zugrunde liegenden Spalten nicht aus Ihrer Data Warehouse gelöscht. Sie verlieren keine Spalten, unabhängig davon, wie Sie sie erstellt haben.
 
-* Mit dem Data Warehouse-Manager erstellte Spalten sind davon nicht betroffen, wenn Sie einen Bericht oder eine Abfrage löschen, in dem bzw. der sie verwendet werden.
+* Mit dem Data Warehouse-Manager erstellte Spalten sind nicht betroffen, wenn Sie einen Bericht oder eine Abfrage löschen, der bzw. die sie verwendet.
 
-* Mit dem SQL-Report Builder erstellte Spalten werden nicht auf Ihrem Data Warehouse gespeichert.
+* Mit der SQL-Report Builder erstellte Spalten werden nicht in Ihrer Data Warehouse gespeichert.
 
 ## Verpackung {#wrapup}
 

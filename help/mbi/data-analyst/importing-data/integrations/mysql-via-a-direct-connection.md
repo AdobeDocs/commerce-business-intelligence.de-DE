@@ -38,7 +38,7 @@ Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firew
 
 ## Erstellen eines [!DNL MySQL] Benutzers für [!DNL Commerce Intelligence]
 
-Die einfachste Möglichkeit, einen `MySQL` Benutzer für [!DNL Commerce Intelligence] zu erstellen, besteht darin, die folgende Abfrage auszuführen, wenn Sie mit `GRANT` Berechtigungen bei `MySQL` angemeldet sind. Ersetzen Sie `Commerce Intelligence IP Address` durch die [!DNL Commerce Intelligence] IP-Adresse und ersetzen Sie `secure password` durch ein sicheres Kennwort Ihrer Wahl:
+Die einfachste Möglichkeit, einen `MySQL` Benutzer für [!DNL Commerce Intelligence] zu erstellen, besteht darin, die folgende Abfrage auszuführen, wenn Sie mit `MySQL` Berechtigungen bei `GRANT` angemeldet sind. Ersetzen Sie `Commerce Intelligence IP Address` durch die [!DNL Commerce Intelligence] IP-Adresse und ersetzen Sie `secure password` durch ein sicheres Kennwort Ihrer Wahl:
 
 ```sql
     GRANT SELECT ON *.* TO 'magentobi'@'<Commerce Intelligence IP address>' IDENTIFIED BY '<secure password>';
@@ -66,4 +66,4 @@ Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um die Einr
 
 ## Verwandte Dokumentation
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

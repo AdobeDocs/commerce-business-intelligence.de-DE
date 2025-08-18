@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Erwartete [!DNL Google Analytics]
 
-Nachdem Sie eine [!DNL Google Analytics]-Integration verbunden haben, können Sie mit Ihren [!DNL Google Analytics] Metriken *sofort im`Visual Report Builder`* interagieren. Wenn Sie den `Visual Report Builder` eingeben und auf **[!UICONTROL Add a Metric]** klicken, wird eine Reihe von Metriken aus Ihrem [!DNL Google Analytics] in einem Dropdown-Menü direkt unter den Metriken in Ihrem Data Warehouse angezeigt.
+Nachdem Sie eine [!DNL Google Analytics]-Integration verbunden haben, können Sie mit Ihren [!DNL Google Analytics] Metriken *sofort im`Visual Report Builder`* interagieren. Wenn Sie den `Visual Report Builder` eingeben und auf **[!UICONTROL Add a Metric]** klicken, wird eine Reihe von Metriken aus Ihrem [!DNL Google Analytics] in einem Dropdown-Menü direkt unter den Metriken in Ihrer Data Warehouse angezeigt.
 
-Die [!DNL Google Analytics]-Integration ist *live* - dies bedeutet, dass die `Report Builder` Daten von [!DNL Google Analytics] anfordert *sofort* wenn Sie eine Metrik zu Ihrem Bericht hinzufügen. Das bedeutet auch, dass die Metriken, auf die Sie zugreifen können, genau so definiert sind, wie sie sich in [!DNL Google Analytics] befinden, und dass diese Werte nicht in Ihrem [!DNL Commerce Intelligence]-Konto *eingelagert* sondern nur visuell in Ihren Berichten angezeigt werden.
+Die [!DNL Google Analytics]-Integration ist *live* - dies bedeutet, dass die `Report Builder` Daten von [!DNL Google Analytics] anfordert *sofort* wenn Sie eine Metrik zu Ihrem Bericht hinzufügen. Das bedeutet auch, dass die Metriken, auf die Sie zugreifen können, genau so definiert sind, wie sie sich in [!DNL Google Analytics] befinden, und dass diese Werte nicht in Ihrem *-Konto* eingelagert[!DNL Commerce Intelligence] sondern nur visuell in Ihren Berichten angezeigt werden.
 
 +++Unterstützte Metriken und Dimensionen (Google Analytics 3 oder Universal Analytics)
 
@@ -162,6 +162,6 @@ Die [!DNL Google Analytics]-Integration ist *live* - dies bedeutet, dass die `Re
 >
 > Commerce Intelligence unterstützt die folgenden Dimensionen nicht: `cohort`, `cohortNthDay`, `cohortNthMonth` und `cohortNthWeek`.
 >
->Um unerwartete oder unsinnige Ergebnisse zu vermeiden, stellen Sie sicher, dass alle verwendeten Dimensionen mit einer oder mehreren Metriken kompatibel sind, die Sie im `Visual Report Builder` verwenden. Sie können den [GA4-Dimensionen- und Metrik-Explorer](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/) überprüfen.
+>Um unerwartete oder unsinnige Ergebnisse zu vermeiden, stellen Sie sicher, dass alle verwendeten Dimensionen mit einer oder mehreren Metriken kompatibel sind, die Sie im `Visual Report Builder` verwenden. Sie können den [GA4 Dimensions &amp; Metrics Explorer](https://ga-dev-tools.google/ga4/dimensions-metrics-explorer/) überprüfen.
 
 +++

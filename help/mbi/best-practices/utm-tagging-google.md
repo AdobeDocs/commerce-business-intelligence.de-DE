@@ -21,23 +21,23 @@ ht-degree: 0%
 
 Im Folgenden sind die fünf wichtigsten Aspekte aufgeführt, die Sie beim Einrichten Ihrer URLs mit `UTM`-Tagging beachten müssen.
 
-### 1. Ziel ist es, jede URL zu taggen, die Sie steuern können, wenn sie auf Ihre Site kommt
+### &#x200B;1. Ziel ist es, jede URL zu taggen, die Sie steuern können, wenn sie auf Ihre Site kommt
 
 Jedes Mal, wenn Sie Personen bitten, auf einen Link zu klicken, sollten Sie `UTM` Tagging einrichten. Dazu gehören all Ihre E-Mail-Links (Ihr E-Mail-Dienstleister hat wahrscheinlich eine Möglichkeit, Ihre URLs automatisch zu taggen), Anzeigen-Links, Presseartikel, Blog-Posts.
 
-### 2. Verwenden eines Tools zum Erstellen der URL
+### &#x200B;2. Verwenden eines Tools zum Erstellen der URL
 
 `UTM`-getaggte URLs können umständlich sein. Anstatt zu versuchen, sie mit langer Hand zu tippen, verwenden Sie ein Tool [wie dieses](https://support.google.com/analytics/answer/1033867?hl=en), um Ihnen zu helfen. Dadurch wird sichergestellt, dass Sie alle sinnvollen Parameter zur URL hinzufügen und die URL kopieren und einfügen können. Um Social-Media-Links zu verwalten, bieten Tools wie [!DNL Hootsuite] die Option, allen Ihren Links benutzerdefinierte URL-Parameter hinzuzufügen.
 
-### 3. Achten Sie in den Parameterwerten auf Groß- und Kleinschreibung
+### &#x200B;3. Achten Sie in den Parameterwerten auf Groß- und Kleinschreibung
 
 Beachten Sie, dass sich das Tag `utm\_source=adwords` von `utm\_source=Adwords` unterscheidet. Erwäge, alles kleingeschrieben zu machen.
 
-### 4. UTM-Parameterwerte in der Datenbank speichern
+### &#x200B;4. UTM-Parameterwerte in der Datenbank speichern
 
 Jedes Mal, wenn eine Transaktion oder ein Ereignis stattfindet, möchten Sie die Leistung Ihrer Marketing-Aktivitäten bewerten. Lesen Sie dazu die Werte der UTM-Parameterwerte aus dem [[!DNL Google Analytics] Cookie in Ihre Datenbank](../data-analyst/analysis/google-track-user-acq.md).
 
-### 5. Überlegen Sie, wie Sie Kampagnen benennen
+### &#x200B;5. Überlegen Sie, wie Sie Kampagnen benennen
 
 Um verfolgen zu können, wie sich Ihre Marketing-Maßnahmen im Laufe der Zeit verbessern, müssen Sie Ihre Namenskonventionen intelligent einhalten. Halten Sie es einfach und minimieren Sie so viel wie möglich. Komplizierte Benennungssysteme sind schwieriger zu verwalten.
 

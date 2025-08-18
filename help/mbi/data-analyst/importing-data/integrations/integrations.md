@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # Externe Daten über eine Integration verbinden
 
-Eine Integration ist eine Datenquelle. Integrationen sind Programme und Datenbanken, die Sie mit Ihrem Data Warehouse verbinden können.
+Eine Integration ist eine Datenquelle. Integrationen sind Programme und Datenbanken, die Sie mit Ihrer Data Warehouse verbinden können.
 
 In diesem Abschnitt werden die verfügbaren Integrationen vorgestellt, mit denen Sie verschiedene externe Datenquellen mit [!DNL Commerce Intelligence] verbinden können.
 
-Um eine Verbindung oder Integration zu löschen[ wenden Sie sich an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) und geben Sie den Namen der zu löschenden Verbindung oder Integration an.
+Um eine Verbindung oder Integration zu löschen[ wenden Sie sich an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) und geben Sie den Namen der zu löschenden Verbindung oder Integration an.

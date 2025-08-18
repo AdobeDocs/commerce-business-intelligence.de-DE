@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Sie haben Ihre Zielgruppe recherchiert, Ihre Kampagne erstellt und in ein paar Marketing-Kanäle investiert. Nun, da einige Zeit vergangen ist, wie funktionieren diese Kanäle? Welcher Kanal hat die meisten neuen Benutzer hervorgebracht? Welche Quelle hat am meisten zu Ihrem Gesamtumsatz beigetragen?
 
-Mit [!DNL Adobe Commerce Intelligence] können Sie Ihre Umsätze und Benutzer einfach nach Empfehlungsquelle segmentieren, unabhängig davon, ob diese [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern entspricht. Diese Segmentierung ermöglicht es Ihnen, die Kanäle mit der besten Leistung zu finden und Ihr Marketing-Budget besser zu investieren.
+Mit [!DNL Adobe Commerce Intelligence] können Sie Ihre Umsätze und Benutzer einfach nach Empfehlungsquelle segmentieren, unabhängig davon, ob diese [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern entspricht. Diese Segmentierung ermöglicht es Ihnen, die Kanäle mit der besten Leistung zu finden und Ihr Marketing-Budget besser zu investieren.
 
 In diesem Thema werden einige Berichte vorgestellt, mit denen Sie Ihre wertvollsten Marketing-Kanäle aufdecken können:
 
@@ -33,12 +33,12 @@ Um die Analysen in diesem Thema zu erstellen, benötigen Sie Zugriff auf Daten a
 
 Die Bewertung der Leistung von Empfehlungsquellen ist für die Bestimmung Ihrer wertvollsten Kanäle von entscheidender Bedeutung. Dieser Bericht zeigt die Anzahl der neu registrierten Benutzer nach Akquise-Quelle im Laufe der Zeit an, sodass Sie die Leistung von Empfehlungsquellen bei der Akquise neuer registrierter Benutzer verfolgen können.
 
-Um diesen Bericht im [Report Builder ](../../tutorials/using-visual-report-builder.md) zu erstellen, fügen Sie die Metrik **Neue Benutzer** (oder eine äquivalente Metrik, die die Anzahl der neuen Benutzer im Zeitverlauf zählt) zum Bericht hinzu. Gehen Sie dann wie folgt vor:
+Um diesen Bericht in der [Report Builder](../../tutorials/using-visual-report-builder.md) zu erstellen, fügen Sie die Metrik **Neue Benutzer** (oder eine äquivalente Metrik, die die Anzahl der neuen Benutzer im Zeitverlauf zählt) zum Bericht hinzu. Gehen Sie dann wie folgt vor:
 
 1. Legen Sie die [!UICONTROL Time Period] auf den Registrierungszeitraum fest, den Sie analysieren möchten.
 1. Legen Sie die [!UICONTROL Interval] auf monatlich fest.
 1. Setzen Sie [!UICONTROL Group By] auf die Akquise- (oder Verweisquelle) und wählen Sie die Quellen aus, die Sie einbeziehen möchten.
-1. In diesem Beispiel wird die [!UICONTROL chart type] `stacked columns` verwendet.
+1. In diesem Beispiel wird die `stacked columns` [!UICONTROL chart type] verwendet.
 
 Im Folgenden finden Sie eine visuelle Anleitung:
 
@@ -48,7 +48,7 @@ Im Folgenden finden Sie eine visuelle Anleitung:
 
 Es ist wichtig, die Kanäle zu finden, über die neue Benutzende eingebunden werden. Aber wie wertvoll sind diese Empfehlungen insgesamt? Dieser Bericht zeigt den durchschnittlichen Lebensdauerumsatz von Benutzern aus bestimmten Akquise-Quellen im Zeitverlauf. Mit anderen Worten: Auf diese Weise können Sie sehen, ob Benutzer, die von einer bestimmten Quelle erworben wurden, während ihres Lebenszyklus mehr für Sie ausgeben als eine Gruppe von Benutzern, die von einer anderen Quelle erfasst wurden.
 
-Um diesen Bericht im Report Builder zu erstellen, fügen Sie die Metrik **Durchschnittlicher Lebensdauerumsatz** zum Bericht hinzu. Gehen Sie dann wie folgt vor:
+Um diesen Bericht in der Report Builder zu erstellen, fügen Sie die Metrik **Durchschnittlicher Lebensdauerumsatz** zum Bericht hinzu. Gehen Sie dann wie folgt vor:
 
 1. Legen Sie die [!UICONTROL Time Period] auf den Zeitraum fest, den Sie analysieren möchten.
 1. Legen Sie die [!UICONTROL Interval] auf monatlich fest.
@@ -65,7 +65,7 @@ In diesem Beispiel wird nur der Lebensdauerumsatz untersucht. Sie können diese 
 
 Um eine bessere Vorstellung davon zu bekommen, wie viel Geld Benutzer aus einer bestimmten Akquisitionsquelle ausgeben, können Sie einen Bericht erstellen, der ihren durchschnittlichen Bestellwert berücksichtigt. Auf diese Weise können Sie verfolgen, ob Benutzer, die von einer bestimmten Quelle erworben wurden, mehr pro Bestellung ausgeben als Benutzer aus einer anderen Quelle.
 
-Um diesen Bericht im Report Builder zu erstellen, fügen Sie die Metrik **Durchschnittlicher Bestellwert** hinzu und führen Sie dann die folgenden Schritte aus:
+Um diesen Bericht in der Report Builder zu erstellen, fügen Sie die Metrik **Durchschnittlicher Bestellwert** hinzu und führen Sie dann die folgenden Schritte aus:
 
 1. Legen Sie die [!UICONTROL Time Period] auf den Registrierungszeitraum fest, den Sie analysieren möchten.
 1. Legen Sie die [!UICONTROL Time Interval] auf monatlich fest.
@@ -80,7 +80,7 @@ Im Folgenden finden Sie eine visuelle Anleitung:
 
 Die zuvor behandelte Analyse des Lebensdauerumsatzes ermöglicht es, den durchschnittlichen Lebensdauerumsatz von Benutzern anzuzeigen, der aus verschiedenen Quellen erzielt wurde. Was ist aber mit dem gesamten Lebensdauerumsatz? Dieser Bericht ermöglicht es Ihnen festzustellen, wie viel Umsatz Benutzer insgesamt generieren, die sich während einer bestimmten Zeit registriert und aus einer bestimmten Quelle generiert haben.
 
-Um diesen Bericht im Report Builder zu erstellen, fügen Sie die `Revenue by user registration date` hinzu. Wenn Sie [diese Metrik](../../data-user/reports/ess-manage-data-metrics.md) noch nicht erstellt haben, können Sie dies tun, indem Sie die `Revenue` Metrik replizieren und die `time stamp` in die `creation date` des Benutzers ändern. Nachdem Sie die Metrik hinzugefügt haben, gehen Sie wie folgt vor:
+Um diesen Bericht in der Report Builder zu erstellen, fügen Sie die `Revenue by user registration date` hinzu. Wenn Sie [diese Metrik](../../data-user/reports/ess-manage-data-metrics.md) noch nicht erstellt haben, können Sie dies tun, indem Sie die `Revenue` Metrik replizieren und die `time stamp` in die `creation date` des Benutzers ändern. Nachdem Sie die Metrik hinzugefügt haben, gehen Sie wie folgt vor:
 
 1. Legen Sie die [!UICONTROL Time Period] auf den Registrierungszeitraum fest, den Sie analysieren möchten.
 1. Legen Sie die [!UICONTROL Time Interval] auf monatlich fest.
@@ -95,7 +95,7 @@ Im Folgenden finden Sie eine visuelle Anleitung:
 
 Der Bericht „Durchschnittlicher Bestellwert“ zeigt im Durchschnitt an, wie viele Benutzer bei der Bestellung von einer bestimmten Quelle bezogen haben. In diesem Bericht wird jedoch nicht angezeigt, ob es sich bei denselben Benutzern um Bestandskunden handelt. Mit den Wiederholungsaufträgen nach Benutzerquellen können Sie jedoch sehen, ob Benutzer aus einer bestimmten Quelle mehr oder weniger Wiederholungskäufe tätigen.
 
-Um diesen Bericht im Report Builder [&#128279;](../../tutorials/using-visual-report-builder.md) zu erstellen, fügen Sie die Metrik **Anzahl der Bestellungen** hinzu und führen Sie dann folgende Schritte aus:
+Um diesen Bericht in der [Report Builder](../../tutorials/using-visual-report-builder.md) zu erstellen, fügen Sie die Metrik **Anzahl der Bestellungen** hinzu und führen Sie dann die folgenden Schritte aus:
 
 1. Legen Sie die [!UICONTROL Time Period] auf den Registrierungszeitraum fest, den Sie analysieren möchten.
 1. Legen Sie die [!UICONTROL Time Interval] auf monatlich fest.

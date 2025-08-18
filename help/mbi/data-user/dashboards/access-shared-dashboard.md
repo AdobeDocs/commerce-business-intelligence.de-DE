@@ -21,4 +21,4 @@ Nachdem ein neuer Benutzer sein Kennwort erstellt hat, wird eine Liste mit belie
 
 ## Vorhandene Benutzer
 
-Um die Liste der freigegebenen Dashboards erneut anzuzeigen, können Benutzer im Menü `Global Search` auf **[!UICONTROL Find]** klicken.
+Um die Liste der freigegebenen Dashboards erneut anzuzeigen, können Benutzer im Menü **[!UICONTROL Find]** auf `Global Search` klicken.

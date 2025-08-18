@@ -69,7 +69,7 @@ Die oben unter (1) und (2) genannten Analysen werden in einem separaten Tutorial
 1. Klicken Sie in einem beliebigen Dashboard auf **[!UICONTROL Add Report > Create report]**
 1. Wählen Sie die `Average lifetime revenue` Metrik aus, die den Lebensdauerumsatz eines durchschnittlichen Benutzers berechnet
 1. Legen Sie die [!UICONTROL Time period] auf `All-time` und [!UICONTROL Interval] auf `None` fest.
-1. Fügen Sie auf der Registerkarte `Group by` als [!UICONTROL grouping field] `campaign` oder `utm\_campaign` hinzu und klicken Sie in das Feld `Add All` .
+1. Fügen Sie auf der Registerkarte `Group by` als `campaign` `utm\_campaign` oder [!UICONTROL grouping field] hinzu und klicken Sie in das Feld `Add All` .
 1. Dieser Bericht zeigt den durchschnittlichen Umsatz aus der Nutzungsdauer nach Kampagnen an
 
 **Berechnen Sie abschließend den Kampagnen-ROI, indem Sie diese drei Analysen in einem Bericht zusammenführen:**
@@ -99,7 +99,7 @@ Führen Sie produktspezifische Anzeigen durch? Wenn ja, können Sie den ROI dies
 >
 >In diesem Beispiel wird davon ausgegangen, dass alle Kampagnenkosten ausschließlich zur Generierung von Käufen bestimmter Produkte verwendet wurden. Unter der Annahme, dass alle Kosten für die Generierung von Käufen aufgewendet wurden, entfällt der resultierende ROI auf das Worst-Case-Szenario (höchste Kosten pro Kauf). Sie können sicher sein, dass Ihr tatsächlicher ROI höher ist als diese Berechnung. Beispiel: Angenommen, Sie haben 20 USD für eine Kampagne ausgegeben, die 10 neue Benutzende und 10 Käufe generiert hat, dann betragen die tatsächlichen Kosten pro Kauf 1 USD. Unter der Annahme, dass alle Kosten für die Akquise neuer Benutzer aufgewendet wurden, betragen die Kosten pro Kauf 2 USD.
 
-Bevor Sie beginnen, [ Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um die folgenden Dimensionen mit Ihrer Zeileneintragstabelle zu verbinden (`sales\_flat\_order\_item, order\_item`):
+Bevor Sie beginnen, [ Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um die folgenden Dimensionen mit Ihrer Zeileneintragstabelle zu verbinden (`sales\_flat\_order\_item, order\_item`):
 
 * Quelle der Bestellung (wenn Sie nur die Empfehlungsquelle auf Benutzerebene verfolgen, dann fügen Sie die Quelle des Benutzers hinzu)
 * Kampagne des Auftrags (wenn Sie nur die Empfehlungsquelle auf Benutzerebene verfolgen, dann der Kampagne des Benutzers beitreten)

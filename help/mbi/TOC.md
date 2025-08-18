@@ -21,22 +21,22 @@ ht-degree: 0%
    - [Konto  [!DNL Commerce Intelligence] ](getting-started/onpremise-activation.md)
    - [Bei Ihrem Konto  [!DNL Commerce Intelligence] ](getting-started/sign-in.md)
    - [Commerce Intelligence Essentials und Commerce Intelligence Pro im Vergleich](getting-started/essentials-vs-pro.md)
-- {#administrator}
-   - Account Management {#acct-mgmt}
+- Administrator {#administrator}
+   - Kontoverwaltung {#acct-mgmt}
       - [Vorteile von [!DNL New Architecture]](../mbi/administrator/account-management/new-architecture.md)
       - [Anzeigen von Dashboards im Büro](../mbi/administrator/account-management/display-dashboards-office.md)
       - [Konto verwalten](administrator/account-management/managing-account-settings.md)
       - [Beschränken des Datenbankzugriffs](../mbi/administrator/account-management/restrict-db-access.md)
-   - User Management {#user-mgmt}
+   - Benutzerverwaltung {#user-mgmt}
       - [Benutzer erstellen/bearbeiten](../mbi/administrator/user-management/create-user.md)
       - [Benutzer löschen/reaktivieren](../mbi/administrator/user-management/delete-user.md)
       - [Verwalten von Benutzerberechtigungen](administrator/user-management/user-management.md)
       - [Passwort zurücksetzen](../mbi/administrator/user-management/reset-password.md)
       - [Zugriff auf Metriken einschränken](../mbi/administrator/user-management/restrict-metric-access.md)
       - [Erweiterte Benutzerverwaltung](../mbi/administrator/user-management/advanced.md)
-- analysieren{#analyze}
+- Analysieren von Daten {#analyze}
    - [Datenanalyst](data-analyst.md)
-   - Data Warehouse Manager-{#warehouse-manager}
+   - Data Warehouse Manager {#warehouse-manager}
       - [Einführung](data-analyst/data-warehouse-mgr/tour-dwm.md)
       - [Erweiterte berechnete Spaltentypen](data-analyst/data-warehouse-mgr/adv-calc-columns.md)
       - [ [!DNL Google Ecommerce] ](data-analyst/data-warehouse-mgr/bldg-google-ecomm-dim.md)
@@ -71,7 +71,7 @@ ht-degree: 0%
       - [[!DNL sales_order_item]](data-analyst/data-warehouse-mgr/sales-flat-order-item-table.md)
       - [[!DNL quote]](data-analyst/data-warehouse-mgr/sales-flat-quote-table.md)
       - [[!DNL quote_item]](data-analyst/data-warehouse-mgr/sales-flat-quote-item-table.md)
-   - SQL Report Builder-{#sql}
+   - SQL-Report Builder {#sql}
       - [Verwenden des  [!DNL Cohort Report Builder]](data-analyst/dev-reports/cohort-rpt-bldr.md)
       - [Verwenden der  [!DNL Cohort Report Builder]  für nicht-datumsbasierte Kohorten](data-analyst/dev-reports/cohort-rpt-non-date-based.md)
       - [Erstellen einer qualitativen Kohortenanalyse](data-analyst/dev-reports/create-qual-cohort-analysis.md)
@@ -86,7 +86,7 @@ ht-degree: 0%
       - [Die  [!DNL Repeat Order Probability Report]](data-analyst/dev-reports/repeat-order-probability.md)
       - [Auditing von Metriken mithilfe der  [!DNL SQL Report Builder]](data-analyst/dev-reports/audit-metrics-sql.md)
       - [Unterschiede in Spalten zwischen [!DNL SQL] und [!DNL Data Warehouse Manager]](data-analyst/dev-reports/columns-sql-dwm.md)
-   - Verbinden von {#connecting}
+   - Verbinden von Daten {#connecting}
       - [Einführung](data-analyst/importing-data/connecting-data/connecting-data.md)
       - [Formatieren und Importieren von E-Commerce-Daten](data-analyst/importing-data/connecting-data/format-import-ecom-data.md)
       - [ [!DNL Bing Ad Spend]  importieren](data-analyst/importing-data/connecting-data/import-bing-ad-data.md)
@@ -129,7 +129,7 @@ ht-degree: 0%
       - [ [!DNL Zendesk]  Daten](data-analyst/importing-data/integrations/exp-zendesk-data.md)
       - [Analysieren  [!DNL Zendesk]  Daten](data-analyst/importing-data/integrations/help-desk-zendesk.md)
       - [ [!DNL Zendesk] ](data-analyst/importing-data/integrations/audit-zendesk-data.md)
-   - für Datenbankintegrationen{#integration}
+   - Datenbankintegrationen {#integration}
       - [Verbinden [!DNL Amazon RDS]](data-analyst/importing-data/integrations/amazon-rds.md)
       - [Verbinden von Datenbanken über VPN](data-analyst/importing-data/integrations/databases-via-a-vpn.md)
       - [Verbinden Sie Ihre [!DNL MySQL Database] mit [!DNL Commerce Intelligence]](data-analyst/importing-data/integrations/db-to-mbi.md)
@@ -149,7 +149,7 @@ ht-degree: 0%
       - [Analysieren der Couponnutzung](data-analyst/analysis/coupon-usage.md)
       - [Steigern des ROI in Ihren Werbekampagnen](data-analyst/analysis/roi-ad-camp.md)
       - [Marketing-ROI](data-analyst/analysis/marketing-roi.md)
-   - Analysieren von Kunden {#customers}
+   - Kunden analysieren {#customers}
       - [Berechnen der Abwanderungsraten von Commerce](data-analyst/analysis/commerce-churn.md)
       - [Kundenkonzentration definieren](data-analyst/analysis/define-cust-concent.md)
       - [Kundenabwanderung definieren](data-analyst/analysis/define-cust-churn.md)
@@ -160,7 +160,7 @@ ht-degree: 0%
       - [Analyse des Rückkaufverhaltens von Kunden](data-analyst/analysis/repurchase-behavior.md)
       - [Analyse der Website-Aktivität und der Konversionsraten der Kunden](data-analyst/analysis/web-act-cust-conversion.md)
       - [Neuigkeit, Häufigkeit, monetäre Analyse (RFM)](data-analyst/analysis/rfm-analysis.md)
-   - Analysieren der geschäftlichen {#performance}
+   - Analysieren der geschäftlichen Performance {#performance}
       - [Tracking von Zielen anhand tatsächlicher Metriken](data-analyst/analysis/track-goals-against-metrics.md)
       - [Analyse der zurückgegebenen Bestellungen](data-analyst/analysis/returned-order-analysis.md)
       - [Jahr-über-Jahr, Monat-über-Monat, Woche-über-Woche](data-analyst/analysis/year-month-week.md)
@@ -171,9 +171,9 @@ ht-degree: 0%
       - [Grundlagen  [!DNL Google Analytics]  UTM-Attribution](data-analyst/analysis/utm-attributes.md)
       - [Analysieren der Lagerbestände](data-analyst/analysis/analyze-inventory-level.md)
       - [Reporting über einen Einzelhandelskalender](data-analyst/analysis/report-retail-calendar.md)
-   - {#forecasting}
+   - Prognose {#forecasting}
       - [Einführung](data-analyst/analysis/forecasting.md)
-- Erstellen von Berichten und Freigeben von {#build}
+- Erstellen von Berichten und Freigeben von Daten {#build}
    - [Datennutzer](../mbi/data-user.md)
    - Berichte {#reports}
       - [Grundlagen zum Bericht](data-user/reports/rpt-fundamentals.md)
@@ -187,7 +187,7 @@ ht-degree: 0%
       - [Filtersätze](data-user/reports/ess-manage-data-filters.md)
       - [Bericht kopieren](data-user/reports/copy-report.md)
       - [Diagrammanalyse](data-user/reports/what-is-chart-analyzing.md)
-   - Dashboards-{#dashboards}
+   - Dashboards {#dashboards}
       - [Erstellen von Dashboards](data-user/dashboards/ess-dashboards.md)
       - [Vorkonfigurierte Dashboards](data-user/dashboards/ootb-dashboards.md)
       - [Dashboard Pro](data-user/dashboards/dashboards-pro.md)
@@ -209,12 +209,12 @@ ht-degree: 0%
       - [Zugreifen auf freigegebene Dashboards](data-user/dashboards/access-shared-dashboard.md)
       - [Zugriff auf freigegebene Dashboards ändern](data-user/dashboards/change-access-dashboard.md)
       - [Verlassen (Aufheben der Freigabe) eines Dashboards](data-user/dashboards/leave-dashboard.md)
-   - Freigeben von {#share}
+   - Freigeben von Daten {#share}
       - [Daten freigeben](data-user/export-data/share-data.md)
       - [Exportieren von Diagrammdaten](data-user/export-data/exp-chart-dash.md)
       - [Automatisierte E-Mail-Übersichten](data-user/export-data/email-summaries.md)
-- Best Practices-{#best-practices}
-   - Arbeiten mit {#data}
+- Best Practices {#best-practices}
+   - Arbeiten mit Daten {#data}
       - [Arbeiten mit Daten](best-practices/work-data.md)
       - [UTM-Tagging in [!DNL Google Analytics]](best-practices/utm-tagging-google.md)
       - [Formatieren und Importieren von Finanzdaten](best-practices/format-import-financial-data.md)

@@ -45,7 +45,7 @@ Dies ist der Teil des Prozesses, in dem die Schritte je nach verwendeter Datenba
 
 Nachdem Sie [!DNL Commerce Intelligence] Zugriff auf Ihre Instanz gewährt und einen Benutzer für uns erstellt haben, müssen Sie die Verbindungsinformationen zuletzt in [!DNL Commerce Intelligence] eingeben.
 
-Die Seiten mit den Anmeldedaten für `MySQL`, `Microsoft SQL` und `PostgreSQL` werden über die `Integrations` (**[!UICONTROL Manage Data** > **Integrations]**) aufgerufen, indem Sie auf **[!UICONTROL Add Integration]** klicken. Wenn die Liste der Integrationen angezeigt wird, klicken Sie auf das Symbol für die verwendete Datenbank, um zur Seite mit den Anmeldedaten zu gelangen. Wenn Sie derzeit keinen Zugriff auf die benötigte Integration haben, wenden Sie sich an Ihr Adobe-Account-Team.
+Die Seiten mit den Anmeldedaten für `MySQL`, `Microsoft SQL` und `PostgreSQL` werden über die `Integrations` (**[!UICONTROL Manage Data** > **Integrations]**) aufgerufen, indem Sie auf **[!UICONTROL Add Integration]** klicken. Wenn die Liste der Integrationen angezeigt wird, klicken Sie auf das Symbol für die verwendete Datenbank, um zur Seite mit den Anmeldedaten zu gelangen. Wenn Sie derzeit keinen Zugriff auf die benötigte Integration haben, wenden Sie sich an Ihr Adobe Account Team.
 
 Um die Erstellung der Verbindung abzuschließen, benötigen Sie die folgenden Informationen:
 

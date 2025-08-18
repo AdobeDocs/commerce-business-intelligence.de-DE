@@ -25,7 +25,7 @@ Um sicherzustellen, dass die `Modified At` Methode wie vorgesehen funktioniert, 
 
 ## Änderungen für Primären Einzelschlüssel mit automatischer Erhöhung
 
-Wenn die `Modified At` nicht aktiviert werden kann, ist die Option Einzel Primärer Schlüssel automatisch inkrementieren die nächstbeste Option. Neue Daten werden bei Verwendung dieser Methode in Tabellen erkannt, indem nach Primärschlüsselwerten gesucht wird, die höher sind als der aktuell höchste Wert im Data Warehouse.
+Wenn die `Modified At` nicht aktiviert werden kann, ist die Option Einzel Primärer Schlüssel automatisch inkrementieren die nächstbeste Option. Neue Daten werden bei Verwendung dieser Methode in Tabellen erkannt, indem nach Primärschlüsselwerten gesucht wird, die höher sind als der aktuell höchste Wert in der Data Warehouse.
 
 Denken Sie daran, dass Tabellen, die diese Methode verwenden, Einzelspalten sind, wobei die Primärschlüssel automatisch ganzzahlig inkrementiert werden. Um diese Methode in Ihrer Datenbank zu verwenden, nehmen Sie die folgenden Änderungen vor:
 

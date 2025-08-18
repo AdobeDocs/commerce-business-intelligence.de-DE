@@ -1,12 +1,12 @@
 ---
 title: Erweiterte berechnete Spaltentypen
-description: Lernen Sie die Grundlagen für die meisten Anwendungsfälle von Spalten kennen - aber vielleicht möchten Sie eine berechnete Spalte, die etwas komplexer ist als das, was der Data Warehouse-Manager erstellen kann.
+description: Lernen Sie die Grundlagen für die meisten Anwendungsfälle von Spalten kennen - möglicherweise möchten Sie jedoch eine berechnete Spalte, die etwas komplexer ist als das, was Data Warehouse Manager erstellen kann.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager
 source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 2%
 
 ---
@@ -159,9 +159,9 @@ Um diesen Typ von berechneter Spalte zu erstellen, müssen Sie Folgendes wissen:
 
 ## Ich versuche, etwas zu tun, das hier nicht aufgeführt ist. {#else}
 
-Keine Sorge. Nur weil er hier nicht aufgeführt ist, heißt das noch lange nicht, dass er nicht möglich ist. Das Adobe-Team von Data Warehouse-Analysten kann Ihnen dabei helfen.
+Keine Sorge. Nur weil er hier nicht aufgeführt ist, heißt das noch lange nicht, dass er nicht möglich ist. Das Adobe-Team der Data Warehouse-Analysten kann Ihnen dabei helfen.
 
-Um eine neue berechnete Spalte zu definieren[ reichen Sie ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), in dem Sie genau angeben, was Sie erstellen möchten.
+Um eine neue berechnete Spalte zu definieren[ reichen Sie ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), in dem Sie genau angeben, was Sie erstellen möchten.
 
 ## Verwandte Dokumentation
 

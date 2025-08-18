@@ -17,13 +17,13 @@ Um [!DNL Commerce Intelligence] für On-Premise-Abonnements zu aktivieren, erste
 
 ## [!DNL Commerce Intelligence] Konto erstellen
 
-Um Ihr Konto zu erstellen, wenden Sie sich an Ihr Adobe-Kundenbetreuungsteam oder Ihren technischen Kundenberater.
+Wenden Sie sich zur Erstellung Ihres Kontos an Ihr Adobe-Accountteam oder Ihren technischen Kundenberater.
 
 ## Kennwort erstellen
 
 Nachdem Ihr Konto erstellt wurde, überprüfen Sie Ihre E-Mail auf eine Konto-Benachrichtigungs-E-Mail von [!DNL The Magento BI Team@rjmetrics.com]. Verwenden Sie den in der E-Mail angegebenen Link, um auf Ihr [!DNL Commerce Intelligence]-Konto zuzugreifen und Ihr Kennwort zu erstellen. Wechseln Sie zu Ihrem Posteingang und überprüfen Sie Ihre E-Mail-Adresse.
 
-Wenn Sie keine E-Mail erhalten haben, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Wenn Sie keine E-Mail erhalten haben, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=en).
 
 ![](../assets/create-account-4.png)
 
@@ -41,14 +41,14 @@ Nachdem Sie Ihr Kennwort festgelegt und sich bei [!DNL Commerce Intelligence] an
 
 ## Erstellen Sie einen dedizierten [!DNL Commerce Intelligence]-Benutzer im [!DNL Commerce] Admin
 
-Um [!DNL Commerce Intelligence] verwenden zu können, müssen Sie dem [!DNL Commerce]-Projekt einen permanenten und dedizierten Benutzer hinzufügen. Dieser dedizierte Benutzer dient als permanente Verbindung zu [!DNL Commerce], die den Abruf und die Übertragung neuer Daten auf die [!DNL Commerce Intelligence]-Data Warehouse des Kontos ermöglicht.
+Um [!DNL Commerce Intelligence] verwenden zu können, müssen Sie dem [!DNL Commerce]-Projekt einen permanenten und dedizierten Benutzer hinzufügen. Dieser dedizierte Benutzer dient als permanente Verbindung zu [!DNL Commerce], die den Abruf und die Übertragung neuer Daten an die [!DNL Commerce Intelligence] Data Warehouse des Kontos ermöglicht.
 
 Durch die Konfiguration eines dedizierten [!DNL Commerce Intelligence]-Benutzers wird sichergestellt, dass das Konto nicht deaktiviert oder gelöscht wird, sodass die [!DNL Commerce Intelligence] Verbindung unterbrochen wird.
 
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung eines Kontonamens, der seinen permanenten Status angibt (z. B. ACI-dediziert, ACI-Datenbank-Connector usw.).
+>Adobe empfiehlt die Verwendung eines Kontonamens, der den permanenten Status angibt (z. B. ACI-dediziert, ACI-Datenbank-Connector usw.).
 
 Nachdem Sie den dedizierten Benutzer für die [!DNL Commerce Intelligence] im Admin-Bereich erstellt haben, fügen Sie denselben Benutzer zur primären Umgebung des [!DNL Commerce]-Projekts mit einer **[!UICONTROL Master]** von `Contributor` hinzu.
 
@@ -90,7 +90,7 @@ Nachdem Sie den dedizierten Benutzer für die [!DNL Commerce Intelligence] im Ad
 
 ## Abrufen von Datenbankverbindungsinformationen
 
-Abrufen der Informationen zur Datenbankverbindung mit der zu [!DNL Commerce Intelligence] [!DNL Commerce] Datenbank
+Abrufen der Informationen zur Datenbankverbindung mit der zu [!DNL Commerce] [!DNL Commerce Intelligence] Datenbank
 
 1. Führen Sie die folgenden Schritte aus, um Ihre Informationen zu erhalten.
 
@@ -104,7 +104,7 @@ Abrufen der Informationen zur Datenbankverbindung mit der zu [!DNL Commerce Inte
 
 >[!NOTE]
 >
->Adobe empfiehlt dringend, einen [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) Tunnel zu verwenden, um die Datenbankverbindung herzustellen. Wenn diese Methode jedoch keine Option ist, können Sie [!DNL Commerce Intelligence] mithilfe einer [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md) mit Ihrer Datenbank verknüpfen.
+>Adobe empfiehlt dringend, zur Herstellung der Datenbankverbindung einen [`SSH tunnel`](../data-analyst/importing-data/integrations/mysql-via-ssh-tunnel.md) zu verwenden. Wenn diese Methode jedoch keine Option ist, können Sie [!DNL Commerce Intelligence] mithilfe einer [`direct connection`](../data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md) mit Ihrer Datenbank verknüpfen.
 
 Geben Sie Ihre [!DNL Commerce Intelligence] im [!UICONTROL Connect your Magento Database] ein.
 
@@ -170,7 +170,7 @@ Nachdem Sie die Konfiguration abgeschlossen haben, [ Sie sich ](../getting-start
 
 <!---# Activate your [!DNL Commerce Intelligence] Account 
 
-To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+To activate [!DNL Commerce Intelligence] for on-premise or `Cloud Pro` subscriptions, [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 >[!NOTE]
 >

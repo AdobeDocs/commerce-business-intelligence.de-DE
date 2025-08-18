@@ -48,7 +48,7 @@ Jede Zeile in der `enterprise_rma` (in Adobe Commerce 2.x häufig als `magento_r
 |---|---|---|
 | `Number of returns` | Die Anzahl der angeforderten Rücksendungen. | `Operation`: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Spalte: `date requested` |
 | `Total returned amount` | Der insgesamt zurückgegebene Geldbetrag. | `Operation `Spalte: `Return's total value`<br>`Operation`: Summe<br>`Timestamp` Spalte: angefordertes Datum |
-| `Average returned amount` | Der durchschnittliche zurückgegebene Geldbetrag. | `Operation` ` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
+| `Average returned amount` | Der durchschnittliche zurückgegebene Geldbetrag. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
 | `Average time to return` | Die durchschnittliche Zeit von der Bestellung bis zur Rückkehr. | `Operation` Spalte: Sekunden zwischen dem Erstellungsdatum des Auftrags und dem Rückgabedatum der Anforderung<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
 
 {style="table-layout:auto"}

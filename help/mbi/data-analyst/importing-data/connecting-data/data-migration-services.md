@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Datenmigration
 
-Die Migration auf ein neues Datenbankschema, einen neuen Server oder eine neue Berichtsdatenbank ist nicht zwingend. Das [[!DNL Adobe] Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) bietet Unterstützung bei der Migration.
+Die Migration auf ein neues Datenbankschema, einen neuen Server oder eine neue Berichtsdatenbank ist nicht zwingend. Das [[!DNL Adobe] Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) bietet Unterstützung bei der Migration.
 
 Um sicherzustellen, dass Ihr Übergang so reibungslos wie möglich verläuft, sollten Sie bei der Übermittlung Ihrer Migrationsanfrage so detailliert wie möglich sein. In diesem Thema finden Sie alles, was Sie zum Senden einer Anfrage und für die ersten Schritte mit der Migration benötigen. Wenn Sie uns ein umfassendes Bild Ihrer Bedürfnisse vermitteln, können Sie sicherstellen, dass Ihr Projekt ordnungsgemäß abgewickelt wird und die Schätzung korrekt ist.
 
@@ -45,13 +45,13 @@ Um diesen Migrationstyp erfolgreich abzuschließen, müssen vorhandene Datenspal
 
 Wenn Sie sich beim Abgleichen wohl fühlen, befolgen Sie diese Anweisungen und fügen Sie die fertige Tabelle Ihrer Anfrage hinzu:
 
-1. Überprüfen Sie alle Tabellen und Spalten, die derzeit mit Ihrem Data Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**) synchronisiert werden.
+1. Überprüfen Sie alle Tabellen und Spalten, die derzeit mit Ihrer Data Warehouse (**[!UICONTROL Manage Data** > **Data Warehouse]**) synchronisiert werden.
 
 1. Erstellen Sie in einem Arbeitsblatt für jede Tabelle, die in die neue Datenbank migriert werden soll, eine Registerkarte.
 
-1. Erstellen Sie auf jeder Registerkarte eine Spalte für alle vorhandenen Spalten, die migriert werden müssen. Adobe empfiehlt, ihn so zu benennen wie `Existing column name`.
+1. Erstellen Sie auf jeder Registerkarte eine Spalte für alle vorhandenen Spalten, die migriert werden müssen. Adobe empfiehlt, ihn nach `Existing column name` zu benennen.
 
-1. Außerdem müssen Sie auf jeder Registerkarte des Arbeitsblatts eine weitere Spalte für die Spaltenäquivalente in der neuen Datenbank erstellen. Adobe empfiehlt, die Spalte so zu benennen wie `New column name`.
+1. Außerdem müssen Sie auf jeder Registerkarte des Arbeitsblatts eine weitere Spalte für die Spaltenäquivalente in der neuen Datenbank erstellen. Adobe empfiehlt, die Spalte `New column name` zu benennen.
 
 1. Geben Sie die vorhandenen Spalten und ihre Entsprechungen ein. Wenn eine vorhandene Spalte keine neue Entsprechung hat, geben Sie `N/A` ein.
 
@@ -67,7 +67,7 @@ Im Folgenden finden Sie ein Beispiel:
 
 ## Wie sende ich eine Anfrage? {#submitreq}
 
-Sie können sich an uns wenden, indem Sie [eine Support-Anfrage einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Sie können sich an uns wenden, indem Sie [eine Support-Anfrage einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Vergessen Sie nicht, die Tabelle anzuhängen, wenn Sie die Schritte aus dem vorherigen Abschnitt zum Erstellen der Tabelle mit Spaltenanpassung befolgt haben.
 

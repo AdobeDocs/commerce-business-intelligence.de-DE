@@ -46,7 +46,7 @@ Wenn einige dieser Berechnungen derzeit nicht in Ihrer Datenbank vorhanden sind,
 
 **Akzeptieren Sie Gastbestellungen?**
 
-*Wenn ja, enthält diese Tabelle möglicherweise nicht alle Ihre Kunden. Wenden Sie sich an das [Support-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um sicherzustellen, dass Ihre Kundenanalysen alle Kunden einschließen.*
+*Wenn ja, enthält diese Tabelle möglicherweise nicht alle Ihre Kunden. Wenden Sie sich an das [Support-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um sicherzustellen, dass Ihre Kundenanalysen alle Kunden einschließen.*
 
 *Nicht sicher, ob Sie Gastbestellungen annehmen? Weitere Informationen finden Sie [ &quot;](../data-warehouse-mgr/guest-orders.md) Thema“*
 
@@ -60,7 +60,7 @@ In dieser Tabelle stellt jede Zeile eine Reihenfolge dar. Die Spalten in dieser 
 * **[!UICONTROL Created_at]**: Das Datum, an dem die Bestellung erstellt oder aufgegeben wurde.
 * **[!UICONTROL Customer_email]**: Die E-Mail-Adresse des Kunden, der die Bestellung aufgegeben hat. Dies kann auch die eindeutige Kennung für den Kunden sein.
 * **[!UICONTROL Customer's lifetime number of orders]**: Eine Kopie der Spalte mit demselben Namen in Ihrer `Customers`.
-* **[!UICONTROL Customer's order number]**: Die mit der Bestellung verknüpfte sequenzielle Bestellnummer des Kunden. Wenn es sich bei der betrachteten Zeile beispielsweise um die erste Bestellung eines Kunden handelt, lautet diese Spalte „1“. Wenn dies jedoch die 15. Bestellung des Kunden war, zeigt diese Spalte „15“ für diese Bestellung an. Wenn diese Dimension nicht in Ihrer `Customers` vorhanden ist, bitten Sie das [Support-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), Sie beim Aufbau zu unterstützen.
+* **[!UICONTROL Customer's order number]**: Die mit der Bestellung verknüpfte sequenzielle Bestellnummer des Kunden. Wenn es sich bei der betrachteten Zeile beispielsweise um die erste Bestellung eines Kunden handelt, lautet diese Spalte „1“. Wenn dies jedoch die 15. Bestellung des Kunden war, zeigt diese Spalte „15“ für diese Bestellung an. Wenn diese Dimension nicht in Ihrer `Customers` vorhanden ist, bitten Sie das [Support-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), Sie beim Aufbau zu unterstützen.
 * **[!UICONTROL Customer's order number (previous-current)]**: Eine Verkettung zweier Werte in der **[!UICONTROL Customer's order number]**. Sie wird in einem Beispielbericht unten verwendet, um die verstrichene Zeit zwischen zwei beliebigen Bestellungen anzuzeigen. Bei dieser Berechnung wird beispielsweise die Zeit zwischen dem ersten Bestelldatum eines Kunden und seinem zweiten Bestelldatum als „1-2“ dargestellt.
 * **[!UICONTROL Coupon_code]**: Zeigt an, welche Coupons für jede Bestellung verwendet wurden.
 * **[!UICONTROL Seconds since previous order]**: Die Zeit (in Sekunden) zwischen den Bestellungen eines Kunden.
@@ -74,7 +74,7 @@ In dieser Tabelle stellt jede Zeile einen verkauften Artikel dar. Diese Tabelle 
 * **[!UICONTROL Item_id]**: Die eindeutige Kennung für jede Zeile in der Tabelle.
 * **[!UICONTROL Order_id]**: Der Referenzschlüssel für Ihre `Orders`, der Ihnen mitteilt, welche Artikel in derselben Bestellung gekauft wurden. Wenn eine Bestellung mehrere Artikel enthält, wird dieser Wert wiederholt.
 * **[!UICONTROL Product_id]**: Wenn Sie Informationen zu dem spezifischen gekauften Produkt wünschen (z. B. Farbe, Größe usw.), würden Sie diese Spalte verwenden, um diese Informationen aus Ihrer Produkttabelle abzurufen.
-* **[!UICONTROL Order's created_at]**: Der Zeitstempel, mit dem die Bestellung aufgegeben wurde. Er wird normalerweise aus der `Orders` Tabelle in Ihre `order line items` kopiert.
+* **[!UICONTROL Order's created_at]**: Der Zeitstempel, mit dem die Bestellung aufgegeben wurde. Er wird normalerweise aus der `order line items` Tabelle in Ihre `Orders` kopiert.
 * **[!UICONTROL Order's coupon_code]**: Ähnlich wie bei der Dimension `Order's created_at` wird diese Spalte aus Ihrer Tabelle Bestellungen kopiert.
 
 ## Tabelle zu Abonnements
@@ -253,7 +253,7 @@ Im Folgenden finden Sie einige Beispiele für nützliche Berichte und Metriken:
 ### Durchschnittlicher Umsatz über die Kundenlebensdauer
 
 * **Beschreibung**: Die durchschnittliche Umsatzmenge, die von Ihren Kunden während ihrer Lebensdauer generiert wird.
-* **Metrikbeschreibung**: Diese Metrik führt basierend auf der `created_at` einen **Durchschnitt** der `Customer's Lifetime Revenue` Spalte in der `customer_entity` aus.
+* **Metrikbeschreibung**: Diese Metrik führt basierend auf der **einen** Durchschnitt`Customer's Lifetime Revenue` der `customer_entity` Spalte in der `created_at` aus.
 * **Berichtsbeschreibung**: Allzeitdurchschnitt des lebenslangen Umsatzes des Kunden
    * **[!UICONTROL Metric]**: `Average Customer Lifetime Revenue`
    * **[!UICONTROL Time Range]**: `All Time`
@@ -343,7 +343,7 @@ Im Folgenden finden Sie einige Beispiele für nützliche Berichte und Metriken:
 
 ### Am häufigsten gekaufte Produkte mit Coupons
 
-* **Beschreibung**: Dieser Bericht bietet Einblicke, welche Produkte verkauft werden, wenn Sie Aktionen oder Coupons anbieten.
+* **Beschreibung**: Dieser Bericht liefert insight, an welche Produkte verkauft werden, wenn Sie Aktionen oder Coupons anbieten.
 * **Verwendete Metrik**: Bestellte Produkte
 * **Berichtsbeispiel**: Am häufigsten gekaufte Produkte mit Coupons
    * **[!UICONTROL Metric]**: `Products ordered`
@@ -518,7 +518,7 @@ Im Folgenden finden Sie einige Beispiele für nützliche Berichte und Metriken:
 
 ### Return on Investment (ROI)
 
-* **Beschreibung**: Eine Möglichkeit, den ROI nach Kampagne zu berechnen, besteht in der Analyse aller über die Kampagne aufgegebenen Bestellungen. Eine alternative Methode besteht jedoch darin, den Lebenszeitwert der durch eine Kampagne akquirierten Kunden zu analysieren. Zur Analyse des ROI ist es wichtig, dass die Kampagnennamen in Ihren Ausgaben- und Transaktionsdaten konsistent sind. Wenn Sie den folgenden Bericht erstellen und aufgrund nicht übereinstimmender Kampagnennamen keine ROI-Werte vorhanden sind, müssen Sie sich möglicherweise das von [&#128279;](../../best-practices/utm-tagging-google.md) implementierte UTM-Tagging“ ansehen.
+* **Beschreibung**: Eine Möglichkeit, den ROI nach Kampagne zu berechnen, besteht in der Analyse aller über die Kampagne aufgegebenen Bestellungen. Eine alternative Methode besteht jedoch darin, den Lebenszeitwert der durch eine Kampagne akquirierten Kunden zu analysieren. Zur Analyse des ROI ist es wichtig, dass die Kampagnennamen in Ihren Ausgaben- und Transaktionsdaten konsistent sind. Wenn Sie den folgenden Bericht erstellen und aufgrund nicht übereinstimmender Kampagnennamen keine ROI-Werte vorhanden sind, müssen Sie sich möglicherweise das von [ implementierte ](../../best-practices/utm-tagging-google.md)UTM-Tagging“ ansehen.
 * **Beispiel für einen Bericht**: ROI nach Kampagne
    * **[!UICONTROL Metric A]**: `New Customers`
    * **[!UICONTROL Filter A]**: `Customer's first order's source` WIE &#39;%google%&#39;

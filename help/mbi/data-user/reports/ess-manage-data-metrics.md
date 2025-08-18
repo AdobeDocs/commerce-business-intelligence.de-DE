@@ -66,7 +66,7 @@ Im `Filter Logic` Abschnitt können Sie genauer definieren, wie sich eine Metrik
 * &quot;\[`A`\] und \[`B`\]&quot; erlaubt nur Daten, die beide Filter \[`A`\] und \[`B`\] erfüllen
 * „(\[`A`\] und \[`B`\]) ODER \[`C`\]&quot; lässt nur Daten zu, die entweder beide Filter \[`A`\] und \[`B`\] erfüllen oder den Filter \[`C`\] allein erfüllen
 
-## Hinzufügen von Dimensionen {#dimensions}
+## Dimensionen hinzufügen {#dimensions}
 
 Im Abschnitt [`Dimensions`](../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) werden alle verfügbaren Datendimensionen zum Filtern oder Gruppieren angezeigt. Standardmäßig werden alle verfügbaren Datenspalten als Dimensionen aufgeführt. Wenn Sie Ihren Umsatz nach Empfehlungsquelle segmentieren möchten, können Sie dies hier tun.
 

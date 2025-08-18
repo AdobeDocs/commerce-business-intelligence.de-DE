@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Allgemeine Commerce-Tabellen
 
-Wenn Sie zum ersten Mal eine [!DNL Adobe Commerce] mit [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md) verbinden, repliziert [!DNL Commerce Intelligence] automatisch Daten aus einigen Ihrer Commerce-Tabellen (in der Regel 4-6 Tabellen), um den anfänglichen Satz von Dashboards und Berichten zu konfigurieren. Dies bietet zwar einen guten Ausgangspunkt, aber die meisten Store-Instanzen generieren Dutzende, wenn nicht Hunderte von zusätzlichen Tabellen, die wichtige Einblicke in die Leistung Ihres Unternehmens bieten können.
+Wenn Sie zum ersten Mal eine [!DNL Adobe Commerce] mit [[!DNL Adobe Commerce Intelligence]](../importing-data/integrations/magento.md) verbinden, repliziert [!DNL Commerce Intelligence] automatisch Daten aus einigen Ihrer Commerce-Tabellen (in der Regel 4-6 Tabellen), um den anfänglichen Satz von Dashboards und Berichten zu konfigurieren. Dies bietet zwar einen guten Ausgangspunkt, aber die meisten Store-Instanzen generieren Dutzende, wenn nicht Hunderte von zusätzlichen Tabellen, die wichtige insight für die Leistung Ihres Unternehmens bieten können.
 
-Nachfolgend finden Sie eine Liste einiger der häufigsten Tabellen, die [!DNL Commerce Intelligence] Kunden verwenden. Nachdem Sie [Ihre Commerce-Instanz mit Commerce Intelligence verbinden](../../data-analyst/importing-data/integrations/magento.md) können Sie den [Data Warehouse-Manager](../../data-analyst/data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder zu verfolgen.
+Nachfolgend finden Sie eine Liste einiger der häufigsten Tabellen, die [!DNL Commerce Intelligence] Kunden verwenden. Nachdem Sie [Ihre Commerce-Instanz mit Commerce Intelligence verbinden](../../data-analyst/importing-data/integrations/magento.md) können Sie den [Data Warehouse Manager](../../data-analyst/data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder zu verfolgen.
 
 | Tabellenname | Beschreibung |
 |---|---|

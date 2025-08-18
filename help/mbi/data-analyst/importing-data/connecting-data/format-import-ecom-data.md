@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Formatieren und Importieren von Daten
 
-Wenn Sie eine Integration verwenden, die derzeit nicht von [!DNL Adobe Commerce Intelligence] unterstützt wird, können Sie dennoch die Funktion [Datei-Upload](using-file-uploader.md) verwenden, um Ihre Daten auf Ihren Data Warehouse zu übertragen. In diesem Thema werden die idealen Datenformate für das Hochladen von E-Commerce-Daten behandelt.
+Wenn Sie eine Integration verwenden, die derzeit nicht von [!DNL Adobe Commerce Intelligence] unterstützt wird, können Sie dennoch die Funktion [Datei-Upload](using-file-uploader.md) verwenden, um Ihre Daten in Ihre Data Warehouse zu übertragen. In diesem Thema werden die idealen Datenformate für das Hochladen von E-Commerce-Daten behandelt.
 
 ## `Orders`
 

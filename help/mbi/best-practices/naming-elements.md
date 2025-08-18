@@ -20,7 +20,7 @@ Bevor Sie mit dem Erstellen in [!DNL Adobe Commerce Intelligence] beginnen, möc
 Die Art und Weise, wie Sie Ihre berechneten Spalten, Metriken und Berichte benennen, bestimmt die Leichtigkeit, mit der verschiedene Benutzer durch Ihr [!DNL Commerce Intelligence] navigieren können. Beachten Sie beim Benennen dieser Funktionen die drei folgenden Cs:
 
 * **KLARHEIT** - Auf einen Blick erkennen Sie also, was in einem Bericht angezeigt wird, was eine Metrik tut usw.
-* **KONSISTENZ** - Damit Sie (und das Adobe-Supportteam) Elemente und Berichte in Ihrem Account einfach finden und verstehen können.
+* **KONSISTENZ** - Damit Sie (und das Adobe-Supportteam) Elemente und Berichte in Ihrem Konto einfach finden und verstehen können.
 * **GLAUBWÜRDIGKEIT** - Um andere datengesteuerte [!DNL Commerce Intelligence]-Benutzer zu inspirieren und zu befähigen, müssen Sie Vertrauen in die Art und Weise schaffen, wie sie die Daten verstehen und verwenden!
 
 Lesen Sie weiter für bewährte Nomenklaturtipps!

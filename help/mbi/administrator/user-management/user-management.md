@@ -6,7 +6,7 @@ role: Admin, User
 feature: User Management
 source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Diese Berechtigungen ermöglichen es Benutzenden, bestimmte Aktionen auszuführe
 | **SQL-Berichte erstellen/bearbeiten/löschen** | ✔ |  |   |
 | **Klonen von Dashboards** | ✔ |   |   |
 | **Integrationen hinzufügen/verwalten** | ✔ |   |   |
-| **Zugriff auf den Data Warehouse-Manager** | ✔ |   |   |
+| **Zugriff auf Data Warehouse Manager** | ✔ |   |   |
 | **Synchronisieren/Synchronisieren von Tabellen und Spalten** | ✔ |   |   |
 | **Metriken erstellen/bearbeiten** | ✔ |   |   |
 | **Filtersätze erstellen/bearbeiten** | ✔ |   |   |
@@ -50,7 +50,7 @@ Diese Berechtigungen ermöglichen es Benutzenden, bestimmte Aktionen auszuführe
 
 >[!NOTE]
 >
->_Sie können den Zugriff eines **[!UICONTROL Standard]**&#x200B;Benutzers [auf bestimmte Metriken) ](../../administrator/user-management/restrict-metric-access.md)._
+>_Sie können den Zugriff eines **[!UICONTROL Standard]**Benutzers [auf bestimmte Metriken) ](../../administrator/user-management/restrict-metric-access.md)._
 >
 >**[!UICONTROL Standard] _Benutzer können über eine zusätzliche Berechtigungseinstellung auf Abrechnung zugreifen._
 >
@@ -62,7 +62,7 @@ Neben den allgemeinen Berechtigungsebenen gibt es auch zwei weitere Benutzerbeze
 
 ### Fakturierung
 
-`Billing` Benutzer haben Zugriff auf die Seite Abrechnung und können Zahlungsinformationen ändern. Sie können auch per Adobe kontaktiert werden, wenn Sie Fragen zur Rechnungsstellung haben.
+`Billing` Benutzer haben Zugriff auf die Seite Abrechnung und können Zahlungsinformationen ändern. Sie können auch von Adobe kontaktiert werden, wenn Sie Fragen zur Rechnungsstellung haben.
 
 `Admin` Benutzer haben standardmäßig Zugriff auf die Registerkarte `Billing` . `Standard` Benutzer können jedoch auch Zugriff erhalten, wenn sie in ihrem Profil das Kontrollkästchen `Billing` aktiviert haben.
 
@@ -70,7 +70,7 @@ Neben den allgemeinen Berechtigungsebenen gibt es auch zwei weitere Benutzerbeze
 
 ### Technisch
 
-`Technical` Benutzer haben keine spezifischen Berechtigungen für sie. Mit dieser Einstellung wird nur ein technischer Kontakt innerhalb Ihrer Organisation markiert. Diese Nutzer können bei technischen Fragen von Adobe kontaktiert werden.
+`Technical` Benutzer haben keine spezifischen Berechtigungen für sie. Mit dieser Einstellung wird nur ein technischer Kontakt innerhalb Ihrer Organisation markiert. Diese Benutzenden können von Adobe bei technischen Fragen kontaktiert werden.
 
 `Admin` Benutzer können neue Benutzer zu ihrem Konto hinzufügen, indem sie auf **[!UICONTROL Account Settings]** > **[!UICONTROL Create Users]** klicken und die entsprechenden Anweisungen befolgen. Nachdem der Benutzer in [!DNL Commerce Intelligence] erstellt wurde, erhält die glückliche Person, die Sie einladen, E-Mail-Anweisungen zum Abschließen des Prozesses zur Kontoeinrichtung.
 

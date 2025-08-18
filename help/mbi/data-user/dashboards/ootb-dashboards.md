@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Die Verfügbarkeit einiger Dashboards hängt von Ihrem Datensatz ab.
 
-Wenn Sie Fragen haben oder daran interessiert sind, ein Paket zu Ihrem Konto hinzuzufügen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um Hilfe zu erhalten.
+Wenn Sie Fragen haben oder daran interessiert sind, ein Paket zu Ihrem Konto hinzuzufügen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um Hilfe zu erhalten.
 
 ## Überblick für Führungskräfte
 

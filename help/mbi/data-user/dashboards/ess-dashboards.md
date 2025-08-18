@@ -21,7 +21,7 @@ Es ist einfach, einen Bericht zu erstellen, ihn zu einem Dashboard hinzuzufügen
 
 ## Erstellen von Dashboards {#createdash}
 
-Dashboards sind freigebbare, thematische Behälter für die Analysen, die Sie in den Report Buildern erstellen. Auf diese Weise können Sie Ihr Team dazu ermutigen, in Ihrem gesamten Unternehmen zusammenzuarbeiten und eine zentrale Quelle der Wahrheit zu verwenden.
+Dashboards sind freigebbare, thematische Behälter für die Analysen, die Sie in Report Builders erstellen. Auf diese Weise können Sie Ihr Team dazu ermutigen, in Ihrem gesamten Unternehmen zusammenzuarbeiten und eine zentrale Quelle der Wahrheit zu verwenden.
 
 *Wenn Sie Administrator oder Standardbenutzer sind* können Sie ein Dashboard erstellen, indem Sie auf das `Dashboard Options`-Dropdown-Menü klicken und `Create New dashboard` auswählen.
 
@@ -77,7 +77,7 @@ In **[!DNL Manage Data** > **Dashboards]** können Sie Benutzerberechtigungen f�
 
 ### Freigeben von Dashboards {#sharingdash}
 
-Um die [!DNL Commerce Intelligence] in Ihrem Unternehmen wirklich zu skalieren und wertvolle Einblicke zu bieten, empfiehlt Adobe, die von Ihnen erstellten Dashboards mit anderen Team-Mitgliedern zu teilen. *Sie können Ihre eigenen Dashboards freigeben* indem Sie auf die Option `Share Dashboard` oben auf der Seite klicken.
+Um die [!DNL Commerce Intelligence] in Ihrem Unternehmen wirklich zu skalieren und wertvolle Einblicke zu bieten, empfiehlt Ihnen Adobe, die von Ihnen erstellten Dashboards mit anderen Team-Mitgliedern zu teilen. *Sie können Ihre eigenen Dashboards freigeben* indem Sie auf die Option `Share Dashboard` oben auf der Seite klicken.
 
 Wenn Sie ein Dashboard freigeben, können Sie Berechtigungen für Ihre gesamte Organisation ODER für einzelne Benutzer zuweisen, sodass Sie entscheiden können, wer Ihre Berichte anzeigen und bearbeiten darf.
 

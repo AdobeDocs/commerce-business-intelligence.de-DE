@@ -25,7 +25,7 @@ Genauer gesagt bietet die [!DNL Adobe Analytics]-Integration für [!DNL Commerce
 
 - Erstellen Sie eine Verbindung von Ihrem bestehenden [!DNL Adobe Analytics]-Konto in [!DNL Commerce Intelligence].
 
-- Wählen Sie bis zu 25 Metriken und Dimensionen aus einer Report Suite aus, die auf Ihren Data Warehouse repliziert werden sollen.
+- Wählen Sie bis zu 25 Metriken und Dimensionen aus einer Report Suite aus, die in Ihre Data Warehouse repliziert werden sollen.
 
 - Verwenden Sie alle standardmäßigen [!DNL Commerce Intelligence], um replizierte [!DNL Adobe Analytics]-Daten zu transformieren, zusammenzuführen und Berichte dazu zu erstellen.
 
@@ -57,6 +57,6 @@ Die folgenden Informationen werden für die Verbindung benötigt:
 
 1. Die ausgewählte Report Suite wird in einer Tabelle angezeigt. Klicken Sie auf **[!UICONTROL Save]** , um Ihre Auswahl zu bestätigen.
 
-1. Informieren Sie das [!DNL Commerce Intelligence] [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de)Team, dass Ihre Integration autorisiert ist, und es führt den ersten Verbindungsprozess für Sie aus.
+1. Informieren Sie das [!DNL Commerce Intelligence] [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)Team, dass Ihre Integration autorisiert ist, und es führt den ersten Verbindungsprozess für Sie aus.
 
-Nachdem der anfängliche Verbindungsprozess ausgeführt wurde, ist Ihre Tabelle auf der Data Warehouse-Seite unter der Registerkarte `All Tables` verfügbar. Wählen Sie die Spalten aus, die Sie replizieren möchten, und die Daten werden nach der nächsten vollständigen Aktualisierung angezeigt.
+Nachdem der anfängliche Verbindungsprozess ausgeführt wurde, ist Ihre Tabelle auf der Data Warehouse-Seite auf der Registerkarte `All Tables` verfügbar. Wählen Sie die Spalten aus, die Sie replizieren möchten, und die Daten werden nach der nächsten vollständigen Aktualisierung angezeigt.

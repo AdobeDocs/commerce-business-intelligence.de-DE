@@ -15,7 +15,7 @@ ht-degree: 0%
 
 `Replication` Methoden und [erneute Prüfungen](../data-warehouse-mgr/cfg-data-rechecks.md) werden verwendet, um neue oder aktualisierte Daten in Ihren Datenbanktabellen zu identifizieren. Sie richtig einzustellen, ist entscheidend, um sowohl die Datengenauigkeit als auch optimierte Aktualisierungszeiten sicherzustellen. In diesem Abschnitt werden Replikationsmethoden behandelt.
 
-Wenn neue Tabellen im [Data Warehouse-Manager](../data-warehouse-mgr/tour-dwm.md) synchronisiert werden, wird automatisch eine Replikationsmethode für die Tabelle ausgewählt. Wenn Sie die verschiedenen Replikationsmethoden verstehen, wissen, wie Tabellen organisiert sind und wie sich die Tabellendaten verhalten, können Sie die beste Replikationsmethode für Ihre Tabellen auswählen.
+Wenn neue Tabellen im [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) synchronisiert werden, wird automatisch eine Replikationsmethode für die Tabelle ausgewählt. Wenn Sie die verschiedenen Replikationsmethoden verstehen, wissen, wie Tabellen organisiert sind und wie sich die Tabellendaten verhalten, können Sie die beste Replikationsmethode für Ihre Tabellen auswählen.
 
 ## Welche Replikationsmethoden gibt es?
 
@@ -39,9 +39,9 @@ Die `Modified At` Replikationsmethode verwendet eine Datums-/Uhrzeitspalte, die 
 
 Zusätzlich zu diesen Kriterien empfiehlt Adobe **Indizierung** die `datetime`, die für die `Modified At` Replikation verwendet wird, da dies die Replikationsgeschwindigkeit optimiert.
 
-Wenn die Aktualisierung ausgeführt wird, werden neue oder geänderte Daten identifiziert, indem nach Zeilen gesucht wird, die einen Wert in der Spalte `datetime` enthalten, die nach der letzten Aktualisierung aufgetreten ist. Wenn neue Zeilen erkannt werden, werden sie auf Ihrem Data Warehouse repliziert. Wenn Zeilen im [Data Warehouse-Manager](../data-warehouse-mgr/tour-dwm.md) vorhanden sind, werden sie mit den aktuellen Datenbankwerten überschrieben.
+Wenn die Aktualisierung ausgeführt wird, werden neue oder geänderte Daten identifiziert, indem nach Zeilen gesucht wird, die einen Wert in der Spalte `datetime` enthalten, die nach der letzten Aktualisierung aufgetreten ist. Wenn neue Zeilen erkannt werden, werden sie in Ihre Data Warehouse repliziert. Wenn Zeilen im [Data Warehouse Manager](../data-warehouse-mgr/tour-dwm.md) vorhanden sind, werden sie mit den aktuellen Datenbankwerten überschrieben.
 
-Beispielsweise kann eine Tabelle eine Spalte mit dem Namen `modified\_at` enthalten, die angibt, wann die Daten zuletzt geändert wurden. Wenn die letzte Aktualisierung Dienstag Mittag ausgeführt wurde, sucht die Aktualisierung nach allen Zeilen mit einem `modified\_at` Wert größer als Dienstag Mittag. Alle gefundenen Zeilen, die seit Dienstagmittag erstellt oder geändert wurden, werden auf die Data Warehouse repliziert.
+Beispielsweise kann eine Tabelle eine Spalte mit dem Namen `modified\_at` enthalten, die angibt, wann die Daten zuletzt geändert wurden. Wenn die letzte Aktualisierung Dienstag Mittag ausgeführt wurde, sucht die Aktualisierung nach allen Zeilen mit einem `modified\_at` Wert größer als Dienstag Mittag. Alle gefundenen Zeilen, die seit Dienstagmittag erstellt oder geändert wurden, werden in die Data Warehouse repliziert.
 
 **Wussten Sie schon?**
 Selbst wenn Ihre Datenbank derzeit keine `Incremental` Replikationsmethode unterstützen kann, können Sie möglicherweise [Änderungen an Ihrer Datenbank vornehmen](../../best-practices/mod-db-inc-replication.md) wodurch die Verwendung von `Modified At` oder `Single Auto Incrementing PK` ermöglicht würde.
@@ -58,13 +58,13 @@ Diese Methode dient zur Replikation neuer Daten aus Tabellen, die die folgenden 
 * `primary key` Datentyp ist `integer`; und
 * `auto incrementing` Primärschlüsselwerte.
 
-Wenn eine Tabelle `Single Auto Incrementing Primary Key` Replikation verwendet, werden neue Daten erkannt, indem nach Primärschlüsselwerten gesucht wird, die höher sind als der aktuell höchste Wert in Ihrem Data Warehouse. Wenn beispielsweise der höchste Primärschlüsselwert in Ihrem Data Warehouse 500 beträgt, sucht er bei der nächsten Aktualisierung nach Zeilen mit Primärschlüsselwerten von 501 oder höher.
+Wenn eine Tabelle `Single Auto Incrementing Primary Key` Replikation verwendet, werden neue Daten erkannt, indem nach Primärschlüsselwerten gesucht wird, die höher sind als der aktuell höchste Wert in Ihrer Data Warehouse. Wenn beispielsweise der höchste Primärschlüsselwert in Ihrer Data Warehouse 500 beträgt, sucht sie bei der nächsten Aktualisierung nach Zeilen mit Primärschlüsselwerten von 501 oder höher.
 
 ### Datum hinzufügen
 
 Die `Add Date` Methode funktioniert ähnlich wie die `Single Auto Incrementing Primary Key`. Anstatt eine Ganzzahl für den Primärschlüssel der Tabelle zu verwenden, verwendet diese Methode eine `timestamped` Spalte, um auf neue Zeilen zu prüfen.
 
-Wenn eine Tabelle `Add Date` Replikation verwendet, werden neue Daten erkannt, indem nach Werten mit Zeitstempel gesucht wird, die größer sind als das letzte Datum, das mit Ihrem Data Warehouse synchronisiert wird. Wenn beispielsweise eine Aktualisierung zuletzt am 20/12/2015 09.:00: ausgeführt wurde, werden alle Zeilen mit einem Zeitstempel, der größer ist als dieser, als neue Daten markiert und repliziert.
+Wenn eine Tabelle `Add Date` Replikation verwendet, werden neue Daten erkannt, indem nach Werten mit Zeitstempel gesucht wird, die nach dem letzten mit Ihrer Data Warehouse synchronisierten Datum liegen. Wenn beispielsweise eine Aktualisierung zuletzt am 20/12/2015 09.:00: ausgeführt wurde, werden alle Zeilen mit einem Zeitstempel, der größer ist als dieser, als neue Daten markiert und repliziert.
 
 >[!NOTE]
 >
@@ -97,13 +97,13 @@ Diese Methode dient zur Replikation von Daten aus Tabellen, die die folgenden Kr
 * Zusammengesetzte Schlüssel (mehrere Spalten, die den Primärschlüssel umfassen) - Beachten Sie, dass Spalten, die in einem zusammengesetzten Primärschlüssel verwendet werden, nie Nullwerte haben können; oder
 * Einzelspaltige, ganzzahlige, nicht automatisch inkrementierende Primärschlüsselwerte.
 
-Diese Methode ist nicht ideal, da sie aufgrund des Verarbeitungsaufwands für die Untersuchung von Stapeln und das Auffinden von Änderungen unglaublich langsam ist. Adobe empfiehlt, diese Methode nicht zu verwenden, es sei denn, es ist nicht möglich, die erforderlichen Änderungen vorzunehmen, um die anderen Replikationsmethoden zu unterstützen. Es wird erwartet, dass die Aktualisierungszeiten zunehmen, wenn diese Methode verwendet werden muss.
+Diese Methode ist nicht ideal, da sie aufgrund des Verarbeitungsaufwands für die Untersuchung von Stapeln und das Auffinden von Änderungen unglaublich langsam ist. Adobe empfiehlt, diese Methode nur zu verwenden, wenn die erforderlichen Änderungen zur Unterstützung der anderen Replikationsmethoden vorgenommen werden können. Es wird erwartet, dass die Aktualisierungszeiten zunehmen, wenn diese Methode verwendet werden muss.
 
 ## Festlegen von Replikationsmethoden
 
-Die Replikationsmethoden werden für jede Tabelle einzeln festgelegt. Zum Festlegen einer Replikationsmethode für eine Tabelle benötigen Sie [`Admin`](../../administrator/user-management/user-management.md) Berechtigungen, damit Sie auf den Data Warehouse-Manager zugreifen können.
+Die Replikationsmethoden werden für jede Tabelle einzeln festgelegt. Zum Festlegen einer Replikationsmethode für eine Tabelle benötigen Sie [`Admin`](../../administrator/user-management/user-management.md) Berechtigungen, damit Sie auf Data Warehouse Manager zugreifen können.
 
-1. Wählen Sie im Data Warehouse-Manager die Tabelle aus der Liste `Synced Tables` aus, um das Tabellenschema anzuzeigen.
+1. Wählen Sie im Data Warehouse Manager die Tabelle aus der `Synced Tables` Liste aus, um das Schema der Tabelle anzuzeigen.
 1. Die aktuelle Replikationsmethode wird unter dem Tabellennamen aufgeführt. Um ihn zu ändern, klicken Sie auf den Link.
 1. Klicken Sie im angezeigten Popup auf die Optionsschaltfläche neben `Incremental` oder `Full Table` Replikation, um einen Replikationstyp auszuwählen.
 1. Klicken Sie anschließend auf das Dropdown-Menü **[!UICONTROL Replication Method]** , um eine Methode auszuwählen. Beispiel: `Paused` oder `Modified At`.
@@ -122,7 +122,7 @@ Betrachten Sie den gesamten Prozess:
 
 ## Verpackung
 
-Zum Abschluss haben Sie diese Tabelle zusammengestellt, die die verschiedenen Replikationsmethoden vergleicht. Es ist unglaublich praktisch, wenn Sie eine Methode für die Tabellen auf Ihrem Data Warehouse auswählen.
+Zum Abschluss haben Sie diese Tabelle zusammengestellt, die die verschiedenen Replikationsmethoden vergleicht. Dies ist äußerst praktisch, wenn Sie eine Methode für die Tabellen in Ihrer Data Warehouse auswählen.
 
 | **`Method`** | **`Syncing New Data`** | **`Processing Rechecks on Large Data Sets`** | **`Handle Composite Keys?`** | **`Handle Non-Integer PKs?`** | **`Handle Non-Sequential PK Population?`** | **`Handle Row Deletion?`** |
 |-----|-----|-----|-----|-----|-----|-----|

@@ -40,4 +40,4 @@ Um Ihre [!DNL Linkshare]-Daten in [!DNL Adobe Commerce Intelligence] einzubringe
 
    An dieser Stelle wurde eine `.csv`-Datei heruntergeladen und.
 
-Nachdem die Datei heruntergeladen wurde, können Sie sie mit der [`File Upload`-Funktion in [!DNL Commerce Intelligence] hochladen](../connecting-data/using-file-uploader.md).
+Nachdem die Datei heruntergeladen wurde, können Sie sie mit der [!DNL Commerce Intelligence]-Funktion in [`File Upload` hochladen](../connecting-data/using-file-uploader.md).

@@ -1,6 +1,6 @@
 ---
 title: Erwartete Stripe-Daten
-description: Informieren Sie sich über die wichtigsten Datentabellen, die Sie von Stripe in Commerce Intelligence importieren können.
+description: Erkunden Sie die wichtigsten Datentabellen, die Sie aus Stripe in Commerce Intelligence importieren können.
 exl-id: 694577b2-48f9-4376-850d-acae1776afe3
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Erwartete [!DNL Stripe]
 
-Nachdem [Sie Ihr [!DNL Stripe] Konto verbunden haben](../integrations/stripe.md) können Sie den [Data Warehouse-Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder für die Analyse einfach zu verfolgen.
+Nachdem [Sie Ihr [!DNL Stripe] Konto verbunden haben](../integrations/stripe.md) können Sie den [Data Warehouse Manager](../../../data-analyst/data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder für die Analyse einfach zu verfolgen.
 
-In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!DNL Stripe] in [!DNL Commerce Intelligence] importieren können. Nach Abschluss des Setups werden die folgenden Tabellen auf Ihrem Data Warehouse erstellt. Klicken Sie auf die Links in der Spalte „Tabellenname“, um mehr über die Attribute in den einzelnen Tabellen zu erfahren.
+In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!DNL Stripe] in [!DNL Commerce Intelligence] importieren können. Nach Abschluss des Setups werden die folgenden Tabellen in Ihrer Data Warehouse erstellt. Klicken Sie auf die Links in der Spalte „Tabellenname“, um mehr über die Attribute in den einzelnen Tabellen zu erfahren.
 
 | **Tabellenname** | **Beschreibung** |
 |-----|-----|
@@ -36,4 +36,4 @@ In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!D
 ## Verwandt:
 
 * [Verbinden [!DNL Stripe]](../integrations/stripe.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

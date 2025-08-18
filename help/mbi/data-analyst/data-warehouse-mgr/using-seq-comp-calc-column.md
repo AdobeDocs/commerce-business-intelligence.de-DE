@@ -33,7 +33,7 @@ Der `Sequential Comparison` Spaltentyp: ermittelt den Unterschied zwischen aufei
 | **`4`** | A | 2015-01-02 13:00:00 | 126000 |
 | **`5`** | B | 03.01.2015 13:00:00 | 217800 |
 
-Im obigen Beispiel ist `Seconds since owner's previous event` die `Sequential Comparison` berechnete Spalte. Für die `owner_id = A` identifiziert sie zunächst eine Sequenz basierend auf der `timestamp` Spalte und subtrahiert dann die `timestamp` des vorherigen Ereignisses vom Zeitstempel des aktuellen Ereignisses. In der dritten Zeile der Tabelle - der zweiten Zeile für `owner_id A` - ist der Wert von `Seconds since owner's previous event` die Anzahl der Sekunden zwischen „2015-01-01 02:00“ und „2015-01-01 00:00:00“. Diese Differenz entspricht zwei Stunden = 7200 Sekunden.
+Im obigen Beispiel ist `Seconds since owner's previous event` die `Sequential Comparison` berechnete Spalte. Für die `owner_id = A` identifiziert sie zunächst eine Sequenz basierend auf der `timestamp` Spalte und subtrahiert dann die `timestamp` des vorherigen Ereignisses vom Zeitstempel des aktuellen Ereignisses. In der dritten Zeile der Tabelle - der zweiten Zeile für `owner_id A` - ist der Wert von `Seconds since owner's previous event` die Anzahl der Sekunden zwischen „2015-01-01 02“ :00 „2015-01-01 00:00:00“. Diese Differenz entspricht zwei Stunden = 7200 Sekunden.
 
 Für diesen berechneten Spaltentyp hat die Zeile, die dem ersten Ereignis des Inhabers entspricht, einen `NULL`.
 

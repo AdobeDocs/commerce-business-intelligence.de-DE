@@ -1,5 +1,5 @@
 ---
-title: Facebook Ads verbinden
+title: Facebook-Anzeigen verbinden
 description: Erfahren Sie, wie Sie Ihre Anzeigenausgabendaten analysieren und feststellen können, ob Ihr Geld effektiv ausgegeben wird.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Data Architect, Data Engineer, User
@@ -58,7 +58,7 @@ Vergewissern Sie sich, dass Sie [!DNL Facebook] Kampagnen in [!DNL Google Analyt
 
 ## verwandt
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Konto  [!DNL Google Adwords] ](../integrations/google-ecommerce.md)
 * [Verfolgen Sie die Quelle der Bestellungsreferenz über [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Verfolgen Sie die Quelle der Benutzerreferenz in Ihrer Datenbank](../../analysis/google-track-user-acq.md)

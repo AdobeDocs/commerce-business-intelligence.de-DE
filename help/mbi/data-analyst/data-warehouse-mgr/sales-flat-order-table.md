@@ -27,7 +27,7 @@ Diese Tabelle enthält alle Kundenbestellungen, unabhängig davon, ob diese Best
 | `base_subtotal` | Bruttowarenwert aller in der Bestellung enthaltenen Artikel. Steuern, Versandkosten, Rabatte usw. sind nicht enthalten |
 | `base_shipping_amount` | Auf Bestellung angewendeter Versandwert |
 | `base_tax_amount` | Auf Bestellung angewendeter Steuerwert |
-| `billing_address_id` | Der `sales_order_address` Tabelle zugeordnete `Foreign key` `sales_order_address.entity_id` Sie die mit der Bestellung verbundenen Details der Rechnungsadresse an. |
+| `billing_address_id` | Der `Foreign key` Tabelle zugeordnete `sales_order_address` `sales_order_address.entity_id` Sie die mit der Bestellung verbundenen Details der Rechnungsadresse an. |
 | `coupon_code` | Coupon auf Bestellung angewendet. Wenn kein Coupon angewendet wird, wird dieses Feld `NULL` |
 | `created_at` | Erstellungszeitstempel der Bestellung, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL Commerce Intelligence] kann dieser Zeitstempel in eine Berichtszeitzone umgewandelt werden, [!DNL Commerce Intelligence] sich von Ihrer Datenbankzeitzone unterscheidet |
 | `customer_email` | E-Mail-Adresse des Bestellers. Dies wird in allen Situationen ausgefüllt, einschließlich Bestellungen, die über den Gast-Checkout verarbeitet werden |
@@ -37,7 +37,7 @@ Diese Tabelle enthält alle Kundenbestellungen, unabhängig davon, ob diese Best
 | `increment_id` | Eindeutige Kennung für eine Bestellung, die in Adobe Commerce häufig als `order_id` bezeichnet wird. Der `increment_id` wird am häufigsten für Joins mit externen Quellen verwendet, z. B. [!DNL Google Ecommerce] |
 | `shipping_address_id` | Fremdschlüssel, der der `sales_order_address`-Tabelle zugeordnet ist. `sales_order_address.entity_id` Sie mit , um die mit der Bestellung verbundenen Details der Versandadresse zu bestimmen |
 | `status` | Status der Bestellung. Kann Werte wie „abgeschlossen“, „Verarbeitung läuft“, „abgebrochen“, „rückerstattet“ und alle benutzerdefinierten Status zurückgeben, die auf der Commerce-Instanz implementiert sind. Änderungen vorbehalten, sobald die Bestellung bearbeitet wird |
-| `store_id` | Der `store` Tabelle zugeordnete `Foreign key` Mit `store` verbinden.`store_id`, um zu bestimmen, welche Commerce Store-Ansicht mit der Bestellung verknüpft ist |
+| `store_id` | Der `Foreign key` Tabelle zugeordnete `store` Mit `store` verbinden.`store_id`, um zu bestimmen, welche Commerce Store-Ansicht mit der Bestellung verknüpft ist |
 
 {style="table-layout:auto"}
 

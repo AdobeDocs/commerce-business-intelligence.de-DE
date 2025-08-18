@@ -65,4 +65,4 @@ Wenn die Verbindung erfolgreich hergestellt wurde, wird ein _Erfolgreich!_ Nachr
 ### verwandt
 
 * [ [!DNL Mixpanel]  Daten](../integrations/mixpanel-data.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

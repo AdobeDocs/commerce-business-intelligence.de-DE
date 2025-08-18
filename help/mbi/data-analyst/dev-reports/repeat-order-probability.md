@@ -25,11 +25,11 @@ Wenn Sie einen Filter hinzugefügt haben, der eine Dimension verwendet, die nich
 
 In bestimmten Fällen können Sie eine `order-specific` Dimension in eine `user-specific` Dimension umwandeln, die dem `Repeat Order Probability` als Filter hinzugefügt werden soll. In diesen Fällen geben Sie das Sortierattribut der ersten oder letzten Bestellung eines Benutzers zurück (z. B. den Regionsnamen der ersten Bestellung eines Benutzers).
 
-Wenn Sie eine solche neue Dimension erstellen möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Wenn Sie eine solche neue Dimension erstellen möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Vergleich der Wiederholungswahrscheinlichkeit von Aufträgen mit verschiedenen Attributen
 
-Um die Anzahl der wiederholten Käufe für verschiedene Bestellattribute (z. B. die `region` der Bestellung) zu vergleichen, empfiehlt Adobe, ein Diagramm wie `Users by lifetime number of orders` zu erstellen. Hier wird die Anzahl der Benutzer angezeigt, die 1, 2, 3,… Lebensdauernummer der Bestellungen getätigt haben, und der Filter auf Bestellebene hinzugefügt. (Mit anderen Worten: Dies kann anzeigen, ob Benutzende in der einen oder anderen Region mehr oder weniger wiederholte Käufe tätigen.)
+Um die Anzahl der wiederholten Käufe für verschiedene Bestellattribute (z. B. die `region` der Bestellung) zu vergleichen, empfiehlt Adobe die Erstellung eines Diagramms, das `Users by lifetime number of orders` ähnelt. Hier wird die Anzahl der Benutzer angezeigt, die 1, 2, 3,… Lebensdauernummer der Bestellungen getätigt haben, und der Filter auf Bestellebene hinzugefügt. (Mit anderen Worten: Dies kann anzeigen, ob Benutzende in der einen oder anderen Region mehr oder weniger wiederholte Käufe tätigen.)
 
 Die Zahlen, aus denen ein solches Diagramm besteht, können dann nach Excel exportiert werden, um das Wahrscheinlichkeitsverhältnis der Wiederholungsreihenfolge zu berechnen. Um die Wahrscheinlichkeit von Kunden zu sehen, die `(x)` Bestellungen für `(x+1)` Bestellungen getätigt haben, ` divide the number of people who've made at least (x+1) purchases by the number of people who have made at least (x)` Sie einfach Käufe.
 

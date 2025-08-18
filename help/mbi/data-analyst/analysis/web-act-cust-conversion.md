@@ -19,7 +19,7 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Ihre Website-Aktivitä
 
 ## Voraussetzungen
 
-**Importieren Sie Ihre Werbungskostendaten** - Verbinden Sie [[!DNL [Google AdWords]]](../importing-data/integrations/google-adwords.md) mit [!DNL Adobe Commerce Intelligence] - Dadurch werden Ihre [!DNL AdWords] in Commerce Intelligence automatisch synchronisiert.
+**Importieren Sie Ihre Werbungskostendaten** - Verbinden Sie [!DNL [Google AdWords]](../importing-data/integrations/google-adwords.md) mit [!DNL Adobe Commerce Intelligence] - Dadurch werden Ihre [!DNL AdWords] in Commerce Intelligence automatisch synchronisiert.
 
 **Benutzerakquise-Kanaldaten verfolgen** - Um Ihre [!DNL Google AdWords] mit bestimmten Bestellungen in Ihrer Datenbank zu verknüpfen, müssen Sie [Benutzerakquise verfolgen](../analysis/google-track-user-acq.md) über [!DNL Google Analytics E-commerce]. Auf diese Weise können Sie jede Bestellung mit einer UTM-Quelle und einem Medium verbinden.
 
@@ -29,7 +29,7 @@ Diese Sammlung von Berichten basiert auf Folgendem:
 
 * Metriken, die beim Verbinden Ihrer [!DNL Google AdWords] automatisch generiert werden
 * Grundlegende Metriken, die bereits in Ihrem Konto verfügbar sein sollten, z. B. `Number of orders` und `New users`
-* Dimensionen, die beim Verbinden Ihrer [!DNL Google Analytics Ecommerce]-Daten mit Ihrer Datenbank erstellt werden, z. B. die UTM-Quelle der Bestellung und das UTM-Medium der Bestellung. Wenden Sie sich an das Support-Team , wenn diese Felder in Ihrem Konto derzeit nicht verfügbar sind
+* Dimensionen, die beim Verbinden Ihrer [!DNL Google Analytics Ecommerce] mit Ihrer Datenbank erstellt werden, z. B. die UTM-Quelle der Bestellung und das UTM-Medium der Bestellung. Wenden Sie sich an das Support-Team , wenn diese Felder in Ihrem Konto derzeit nicht verfügbar sind
 
 ## Erstellen von Berichten
 

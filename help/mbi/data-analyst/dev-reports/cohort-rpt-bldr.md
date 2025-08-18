@@ -1,5 +1,5 @@
 ---
-title: Kohorten-Report Builder
+title: Kohorte Report Builder
 description: Erfahren Sie mehr über die Analyse von Benutzergruppen, die über ihren Lebenszyklus ähnliche Merkmale aufweisen.
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Kohorten-Report Builder
+# Kohorte Report Builder
 
 Wollten Sie schon immer einmal untersuchen, wie sich verschiedene Untergruppen Ihrer Benutzer im Laufe der Zeit verhalten? Haben Sie sich beispielsweise jemals gefragt, ob Benutzer, die sich während eines Aktionszeitraums registrieren, im Durchschnitt einen höheren Lebensdauerumsatz erzielen als Benutzer, die sich nicht registrieren? Wenn die Antwort `Yes` ist, dann ist die `Cohort Report Builder` das perfekte Tool für Sie. [!DNL Adobe Commerce Intelligence] wurde optimiert, um diese Analyse durchzuführen und für Ihr Unternehmen relevant zu machen.
 
@@ -33,7 +33,7 @@ Wie bereits erwähnt, ermöglicht `cohort` Analyse die Identifizierung von Verha
 
 Dies sind die Anweisungen zur Verwendung des `Cohort Report Builder` auf der [Neue Architektur](../../administrator/account-management/new-architecture.md).
 
-1. Klicken Sie auf der linken Registerkarte oder **[!UICONTROL Add Report** > **Create Report]** in einem beliebigen Dashboard auf **[!UICONTROL Report Builder]** .
+1. Klicken Sie auf der linken Registerkarte oder **[!UICONTROL Report Builder]** in einem beliebigen Dashboard auf **[!UICONTROL Add Report** > **Create Report]** .
 
 1. Klicken Sie im Bildschirm zur `Report Builder` auf **[!UICONTROL Create Report]** neben der Option `Visual Report Builder` .
 
@@ -59,7 +59,7 @@ Dadurch wird ein neues Fenster geöffnet, in dem die Details des `Cohort` konfig
 1. Die Mindestmenge an Daten, die jede `cohort` enthalten muss
 1. Zeitraum nach `cohort` Auftreten
 
-#### 1. `cohorts`
+#### &#x200B;1. `cohorts`
 
 `Cohorts` werden nach einem Zeitstempel gruppiert, z. B **„Registrierungsdatum** oder **Erstbestellungsdatum**.
 
@@ -67,17 +67,17 @@ Dadurch wird ein neues Fenster geöffnet, in dem die Details des `Cohort` konfig
 >
 >Sie können nicht denselben Zeitstempel verwenden, auf dem die Metrik für das `cohort` Datum basiert. Für eine Analyse, die dies erfordert, können Sie stattdessen den `Standard report builder` verwenden.
 
-#### 2. `Cohort`
+#### &#x200B;2. `Cohort`
 
 Wählen Sie den Zeitraum aus, nach dem `cohorts` gruppiert werden sollen. Mit anderen Worten: Welcher Teil des Zeitstempels, den Sie oben ausgewählt haben, ist am wichtigsten: die `week`, `month`, `quarter` oder `year`? Ihr Bericht zeigt Daten in jedem hier ausgewählten Intervall an
 
-#### 3. und 4. Legen Sie fest, wie viele `cohorts` angezeigt werden sollen und wie viele Daten jede `cohort` haben muss
+#### &#x200B;3. und 4. Legen Sie fest, wie viele `cohorts` angezeigt werden sollen und wie viele Daten jede `cohort` haben muss
 
 Diese Parameter helfen Ihnen, nur die `cohorts` anzuzeigen, die Sie interessieren, und das praktische `Preview` am unteren Fensterrand zeigt Ihnen genau, welche Kohorten in Ihrem Bericht angezeigt werden.
 
 Standardmäßig ist die aktuelle `cohort` nur enthalten, wenn Sie die für jede `cohort` erforderliche Mindestmenge an Daten in `0` ändern. In diesem Fall umfasst die `cohort` für den aktuellen Zeitraum nur Teildaten.
 
-#### 5. Zeitraum nach `Cohort` Auftreten
+#### &#x200B;5. Zeitraum nach `Cohort` Auftreten
 
 Mit dieser Funktion können Sie den Zeitbereich der Daten festlegen, die Sie für die ausgewählte `cohorts` anzeigen. Wenn Sie beispielsweise 24 monatliche `cohorts` auf der Grundlage von `customer's first order date` anzeigen möchten, aber nur an den ersten 3 Monaten der Daten für jede `cohort` interessiert sind, können Sie die `number of cohorts to view` auf `24` und die `time range after cohort occurrence` auf `3` setzen.
 
@@ -109,9 +109,9 @@ Im Folgenden finden Sie spezifische Anweisungen für die Legacy-Version des `Coh
 
 Analyse `Cohort`! Hier sehen Sie den Umsatzanstieg im Laufe der Zeit kumulativ und pro Benutzer.
 
-Dieser Abschnitt führt Sie durch die Erstellung Ihrer eigenen `cohort`. Beispiele (und animierte GIF, die diesen Prozess demonstrieren) finden Sie [ Abschnitt „Beispiele](#examples) dieses Themas.
+Dieser Abschnitt führt Sie durch die Erstellung Ihrer eigenen `cohort`. Beispiele (und animierte GIFs zur Demonstration des Prozesses) finden Sie im [Abschnitt Beispiele](#examples) dieses Themas.
 
-1. Klicken Sie auf der linken Registerkarte oder **[!UICONTROL Add Report** > **Create Report]** in einem beliebigen Dashboard auf **[!UICONTROL Report Builder]** .
+1. Klicken Sie auf der linken Registerkarte oder **[!UICONTROL Report Builder]** in einem beliebigen Dashboard auf **[!UICONTROL Add Report** > **Create Report]** .
 
 1. Klicken Sie im `Report Builder Selection` auf **[!UICONTROL Create Report]** neben der Option `Cohort Analysis` .
 
@@ -213,4 +213,4 @@ Dies entspricht dem obigen `perspective`, mit der Ausnahme, dass der Wert des er
 
 ## Verpackung {#finish}
 
-Die `Cohort Report Builder` ist für die Gruppierung von Benutzern nach einem gemeinsamen `cohort date` optimiert. Möglicherweise möchten Sie die Benutzer nach einer ähnlichen Aktivität oder einem ähnlichen Attribut gruppieren. Adobe empfiehlt, sich [dieses Tutorial zu qualitativen Kohorten) anzusehen](../dev-reports/create-qual-cohort-analysis.md) um loszulegen.
+Die `Cohort Report Builder` ist für die Gruppierung von Benutzern nach einem gemeinsamen `cohort date` optimiert. Möglicherweise möchten Sie die Benutzer nach einer ähnlichen Aktivität oder einem ähnlichen Attribut gruppieren. Adobe empfiehlt, sich [ (dieses Tutorial zu qualitativen Kohorten) ](../dev-reports/create-qual-cohort-analysis.md), um loszulegen.

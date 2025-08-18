@@ -25,7 +25,7 @@ Dies ist keine umfassende Liste, aber hier sind einige potenzielle Analysen, die
 
 ## So erstellen Sie Ihre Analyse
 
-1. Klicken Sie auf der linken Registerkarte oder **[!UICONTROL Add Report** > **Create Report]** in einem beliebigen Dashboard auf **[!UICONTROL Report Builder]** .
+1. Klicken Sie auf der linken Registerkarte oder **[!UICONTROL Report Builder]** in einem beliebigen Dashboard auf **[!UICONTROL Add Report** > **Create Report]** .
 
 1. Klicken Sie im `Report Builder Selection` auf **[!UICONTROL Create Report]** neben der Option `Visual Report Builder` .
 
@@ -55,11 +55,11 @@ Für die Erstellung eines Kohortenberichts sind fünf Spezifikationen erforderli
 
 
 
-#### 1. `cohorts`
+#### &#x200B;1. `cohorts`
 
 `Cohorts` werden anhand eines Verhaltenscharakteristikums gruppiert, in diesem Beispiel `Customer's first order GA source`. Die hier verfügbaren Optionen sind Spalten, die bereits als `groupable` für die Metrik gekennzeichnet sind.
 
-#### 2. Auswahl der Kohorten
+#### &#x200B;2. Auswahl der Kohorten
 
 Sie können alle Ergebnisse für das angegebene Merkmal anzeigen. Da dies zu vielen `cohorts` führen kann, können Sie die spezifischen `cohorts` (die den verschiedenen für die `Customer's first order GA source` verfügbaren Werten entsprechen) auswählen, die Sie benötigen.
 
