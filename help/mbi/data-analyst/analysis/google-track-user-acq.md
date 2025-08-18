@@ -27,7 +27,7 @@ Wenn Sie nicht bereits Benutzerakquise-Quellen in Ihrer Datenbank verfolgen, kö
 
 ### (Option 1) Verfolgen Sie Quelldaten zu Bestellungsreferenzen über [!DNL Google Analytics E-Commerce]
 
-Wenn Sie [!DNL Google Analytics E-Commerce] verwenden, um Ihre Auftrags- und Verkaufsdaten zu verfolgen, können Sie die [!DNL [Google Analytics E-Commerce Connector]](../importing-data/integrations/google-ecommerce.md) verwenden, um die Bezugsquelldaten jeder Bestellung zu synchronisieren. Auf diese Weise können Sie Umsatz und Bestellungen nach Empfehlungsquelle (z. B. `utm_source` oder `utm_medium`) segmentieren. Sie erhalten auch ein Gefühl für die Quellen der Kundenakquise über [!DNL Commerce Intelligence] benutzerdefinierten Dimensionen wie `User's first order source`.
+Wenn Sie [!DNL Google Analytics E-Commerce] verwenden, um Ihre Auftrags- und Verkaufsdaten zu verfolgen, können Sie die [[!DNL [Google Analytics E-Commerce Connector]]](../importing-data/integrations/google-ecommerce.md) verwenden, um die Bezugsquelldaten jeder Bestellung zu synchronisieren. Auf diese Weise können Sie Umsatz und Bestellungen nach Empfehlungsquelle (z. B. `utm_source` oder `utm_medium`) segmentieren. Sie erhalten auch ein Gefühl für die Quellen der Kundenakquise über [!DNL Commerce Intelligence] benutzerdefinierten Dimensionen wie `User's first order source`.
 
 ### (Option 2) Speichern der Quelldaten der [!DNL Google Analytics] in Ihrer Datenbank
 

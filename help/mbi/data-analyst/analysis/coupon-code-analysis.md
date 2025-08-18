@@ -37,7 +37,7 @@ Unabhängig von der Gastauftragsrichtlinie zu erstellende Spalten:
    * [!UICONTROL Inputs]:
       * `A`: `coupon\_code`
 
-   * 
+   * &#x200B;
      [!UICONTROL Datentyp]: `String`
    * [!UICONTROL Calculation]: Wenn `A` null ist, wird `No coupon` andere `Coupon` beendet
 
@@ -87,7 +87,7 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
       * [!UICONTROL Inputs]:
          * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
 
-      * 
+      * &#x200B;
         [!UICONTROL Datentyp]: `String`
       * [!UICONTROL Calculation]: **Wenn A=&#39;Coupon&#39; dann &#39;Coupon-Akquise-Kunde&#39; Sonst &#39;Nicht-Coupon-Akquise-Kunde&#39; Ende**
 
@@ -97,7 +97,7 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
          * `A`: `User's lifetime number of coupons used`
          * `B`: `User's lifetime number of orders`
 
-      * 
+      * &#x200B;
         [!UICONTROL Datentyp]: `Decimal`
       * [!UICONTROL Calculation]: **Wenn A null oder B null oder B=0 ist, dann ist ansonsten A/B-Ende null**
 
@@ -106,7 +106,7 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
       * [!UICONTROL Inputs]:
          * `A`: `Percent of customer's orders with coupon`
 
-      * 
+      * &#x200B;
         [!UICONTROL Datentyp]: `String`
       * [!UICONTROL Calculation]: **Wenn A null ist, dann null, wenn A=0 dann „Nie verwendeter Coupon“ ist, wenn A&lt;0,5 dann „Meistens voller Preis“ ist, wenn A=0,5 dann „50/50“ ist, wenn A=1 dann „Nur Coupons“ ist, wenn A>0,5 dann „Meistens Coupon“ oder „Nicht definiert“ endet**
 
@@ -128,13 +128,13 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
    * **Die erste Bestellung des Kunden enthielt einen Gutschein? (Coupon/Kein Coupon)** **-** von Analyst im Rahmen Ihres \[COUPON ANALYSIS\] Tickets erstellt
    * **Gutschein-**{::}**-** des Kunden wird von Analyst im Rahmen Ihres \[COUPON-ANALYSE\]-Tickets erstellt
 
-* **Lebensdauernummer des Kunden, wie viele Coupons verwendet **{::}**-** vom Analyst im Rahmen Ihres \[COUPON ANALYSIS\]-Tickets erstellt wurden
+* **Lebensdauernummer des Kunden, wie viele Coupons verwendet &#x200B;**{::}**-** vom Analyst im Rahmen Ihres \[COUPON ANALYSIS\]-Tickets erstellt wurden
 * **Coupon-Akquise-Kunde oder Nicht-Coupon-Akquise-Kunde**
    * [!UICONTROL Column type]: `Same Table => CALCULATION`
    * [!UICONTROL Inputs]:
       * `A`: `Customer's first order included a coupon? (Coupon/No coupon)`
 
-   * 
+   * &#x200B;
      [!UICONTROL Datentyp]: `String`
    * [!UICONTROL Calculation]: **Wenn A=&#39;Coupon&#39; dann &#39;Coupon-Akquise-Kunde&#39; Sonst &#39;Nicht-Coupon-Akquise-Kunde&#39; Ende**
 
@@ -144,7 +144,7 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
       * `A`: `User's lifetime number of coupons used`
       * `B`: `User's lifetime number of orders`
 
-   * 
+   * &#x200B;
      [!UICONTROL Datentyp]: `Decimal`
    * [!UICONTROL Calculation]: **Wenn A null oder B null oder B=0 ist, dann ist ansonsten A/B-Ende null**
 
@@ -153,7 +153,7 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
    * [!UICONTROL Inputs]:
       * `A`: `Percent of customer's orders with coupon`
 
-   * 
+   * &#x200B;
      [!UICONTROL Datentyp]: `String`
    * [!UICONTROL Calculation]: **Wenn A null ist, dann null, wenn A=0 dann „Nie verwendeter Coupon“ ist, wenn A&lt;0,5 dann „Meistens voller Preis“ ist, wenn A=0,5 dann „50/50“ ist, wenn A=1 dann „Nur Coupons“ ist, wenn A>0,5 dann „Meistens Coupon“ oder „Nicht definiert“ endet**
 
@@ -190,10 +190,10 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 
 * `A`: `Coupon acquisitions`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
 * [!UICONTROL Group by]: `Coupon acquisitions customer` oder `Non coupon acquisition customer`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Pie`
 
 * **Anzahl der mit und ohne Coupon erworbenen Kunden**
@@ -212,9 +212,9 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 
 * `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Scalar`
 
 * **Durchschnittlicher Lebensdauerumsatz: Acq ohne Coupon. (Alter ab 90 Tagen)**
@@ -224,9 +224,9 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 
 * `A`: `Average lifetime revenue (at least 3 months age)`
 * [!UICONTROL Time period]: `X years ago to 90 days ago`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Scalar`
 
 * **Durchschnittlicher Lebensdauerumsatz nach Erstbestellung**
@@ -234,10 +234,10 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 
 * `A`: `Average lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
 * [!UICONTROL Group by]: `Customer's first order's coupon`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Column`
 
 >[!NOTE]
@@ -253,8 +253,8 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
    * [!UICONTROL Filter]:
       * Die erste Bestellung des Kunden enthielt einen Coupon (Coupon/Kein Coupon) = Coupon
       * Ist die letzte Bestellung des Kunden? = Nein
-   * 
-     [!UICONTROL-Formel]: `B/A`
+   * &#x200B;
+     [!UICONTROL -Formel]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
    * Wählen Sie eine statistisch signifikante Zahl aus `Customer's by lifetime orders` Diagramm. Wenn Sie sich die Grafik ansehen, ist eine gute Regel, nach Auftragsnummern mit 30 oder mehr Kunden im Bucket zu suchen. Je nach Datensatz kann dies eine große Zahl sein. Sie können also 1-10 hinzufügen.
@@ -263,7 +263,7 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 * `B`: `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
@@ -278,8 +278,8 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
       * Die erste Bestellung des Kunden enthielt einen Coupon (Coupon/No Coupon) = No Coupon
       * Ist die letzte Bestellung des Kunden? = Nein
 
-   * 
-     [!UICONTROL-Formel]: `B/A`
+   * &#x200B;
+     [!UICONTROL -Formel]: `B/A`
    * [!UICONTROL Format]: `Percentage %`
 
    * Wählen Sie eine statistisch signifikante Zahl aus `Customer's by lifetime orders` Diagramm oder 1-5.
@@ -288,7 +288,7 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 * `B`: `Number of non last orders`
 * [!UICONTROL Formula]: `Repeat order probability`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
 * [!UICONTROL Chart type]: `Bar chart`
@@ -309,8 +309,8 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
       * Die erste Bestellung des Kunden enthielt einen Gutschein? (Coupon/Kein Coupon) = Coupon
       * Bestellung mit Coupon angewendet? (Coupon/Kein Coupon) = Coupon
 
-   * 
-     [!UICONTROL-Formel]: `C/B`
+   * &#x200B;
+     [!UICONTROL -Formel]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
 
 * `A`: `Coupon-acquired customers`
@@ -318,9 +318,9 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 * `C`: `Number of repeat orders with coupon`
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Table` (Kann diese Tabelle für eine bessere Visualisierung umsetzen)
 
 * **Couponnutzungsrate nicht mit Coupons erworbener Kunden (Wiederholungsaufträge)**
@@ -339,8 +339,8 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
       * Die erste Bestellung des Kunden enthielt einen Gutschein? (Coupon/Kein Coupon) = Kein Coupon
       * Bestellung mit Coupon angewendet? (Coupon/Kein Coupon) = Coupon
 
-   * 
-     [!UICONTROL-Formel]: `C/B`
+   * &#x200B;
+     [!UICONTROL -Formel]: `C/B`
    * [!UICONTROL Format]: `Percentage %`
 
 * `A`: `Non-coupon-acquired customers`
@@ -348,9 +348,9 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 * `C`: `Number of repeat orders with coupon`
 * [!UICONTROL Formula]: `% of repeat orders with coupon`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Table` (Kann diese Tabelle für eine bessere Visualisierung umsetzen)
 
 * **Details zur Couponnutzung (Erstbestellungen)**
@@ -359,8 +359,8 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
       * Bestellnummer des Kunden = 1
       * Anzahl der Bestellungen mit diesem Coupon > 10
 
-   * 
-     [!UICONTROL-Metrik]: `Revenue`
+   * &#x200B;
+     [!UICONTROL -Metrik]: `Revenue`
    * [!UICONTROL Filter]:
       * Bestellnummer des Kunden = 1
       * Anzahl der Bestellungen mit diesem Coupon > 10
@@ -371,8 +371,8 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
       * Anzahl der Bestellungen mit diesem Coupon > 10
 
    * [!UICONTROL Formula]: `B-C` (wenn C negativ ist); B+C (wenn C positiv ist)
-   * 
-     [!UICONTROL-Format]: `Currency`
+   * &#x200B;
+     [!UICONTROL -Format]: `Currency`
 
    * [!UICONTROL Metric]: `Average order value`
    * [!UICONTROL Filter]:
@@ -385,10 +385,10 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 * [!UICONTROL Formula]: `Gross revenue from FTO`
 * `E`: `Average order value for FTO`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
 * [!UICONTROL Group by]: `coupon code`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Table`
 >[!NOTE]
 >
@@ -399,22 +399,22 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 
 * `A`: `Number or orders with coupon`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Scalar`
 
 * **Nettoumsatz aus Bestellungen mit Coupons (alle Zeiten)**
-   * 
-     [!UICONTROL-Metrik]: `Revenue`
+   * &#x200B;
+     [!UICONTROL -Metrik]: `Revenue`
    * [!UICONTROL Filter]:
       * Bestellung mit Coupon angewendet? (Coupon/Kein Coupon) = Coupon
 
 * `A`: `Net revenue from orders with coupons`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Scalar`
 
 * **Rabatte auf Gutscheine (alle Zeiten)**
@@ -422,9 +422,9 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 
 * `A`: `Coupon discount amount`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Scalar`
 
 * **Anzahl der Bestellungen mit und ohne Coupons**
@@ -432,7 +432,7 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 
 * `A`: `Number of orders`
 * [!UICONTROL Time period]: `Last 24 months`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
 * [!UICONTROL Group by]: `Order has coupon applied? (Coupon/No coupon)`
 * [!UICONTROL Chart type]: `Stacked column`
@@ -444,10 +444,10 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 
 * `A`: `New customers`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
 * [!UICONTROL Group by]: `Customer's coupon usage`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Pie`
 
 * **Details zur Couponnutzung**
@@ -455,8 +455,8 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
    * [!UICONTROL Filter]:
       * Anzahl der Bestellungen mit diesem Coupon > 10
 
-   * 
-     [!UICONTROL-Metrik]: `Revenue`
+   * &#x200B;
+     [!UICONTROL -Metrik]: `Revenue`
    * [!UICONTROL Filter]:
       * Anzahl der Bestellungen mit diesem Coupon > 10
 
@@ -465,21 +465,21 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
       * Anzahl der Bestellungen mit diesem Coupon > 10
 
    * [!UICONTROL Formula]: `B-C` (wenn `C` negativ ist); `B+C` (wenn `C` positiv ist)
-   * 
-     [!UICONTROL-Format]: `Currency`
+   * &#x200B;
+     [!UICONTROL -Format]: `Currency`
 
    * [!UICONTROL Formula]: `C/(B-C)` (wenn `C` negativ ist); `C/(B+C)` (wenn `C` positiv ist)
-   * 
-     [!UICONTROL-Format]: `Percentage`
+   * &#x200B;
+     [!UICONTROL -Format]: `Percentage`
 
    * [!UICONTROL Metric]: `Average order value`
    * [!UICONTROL Filter]:
       * Anzahl der Bestellungen mit diesem Coupon > 10
 
-   * 
-     [!UICONTROL-Formel]: `C/A`
-   * 
-     [!UICONTROL-Format]: `Currency`
+   * &#x200B;
+     [!UICONTROL -Formel]: `C/A`
+   * &#x200B;
+     [!UICONTROL -Format]: `Currency`
 
    * [!UICONTROL Metric]: `Distinct buyers`
    * [!UICONTROL Filter]:
@@ -494,10 +494,10 @@ Zusätzliche Spalten, die erstellt werden, wenn keine Gastbestellungen unterstü
 * [!UICONTROL Formula]: `Average order discount`
 * `H`: `Distinct buyers`
 * [!UICONTROL Time period]: `All time`
-* 
+* &#x200B;
   [!UICONTROL Intervall]: `None`
 * [!UICONTROL Group by]: `coupon code`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Table`
 
 >[!NOTE]

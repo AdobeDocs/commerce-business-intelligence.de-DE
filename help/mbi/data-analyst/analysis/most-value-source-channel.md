@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Sie haben Ihre Zielgruppe recherchiert, Ihre Kampagne erstellt und in ein paar Marketing-Kanäle investiert. Nun, da einige Zeit vergangen ist, wie funktionieren diese Kanäle? Welcher Kanal hat die meisten neuen Benutzer hervorgebracht? Welche Quelle hat am meisten zu Ihrem Gesamtumsatz beigetragen?
 
-Mit [!DNL Adobe Commerce Intelligence] können Sie Ihre Umsätze und Benutzer einfach nach Empfehlungsquelle segmentieren, unabhängig davon, ob diese [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern entspricht. Diese Segmentierung ermöglicht es Ihnen, die Kanäle mit der besten Leistung zu finden und Ihr Marketing-Budget besser zu investieren.
+Mit [!DNL Adobe Commerce Intelligence] können Sie Ihre Umsätze und Benutzer einfach nach Empfehlungsquelle segmentieren, unabhängig davon, ob diese [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern entspricht. Diese Segmentierung ermöglicht es Ihnen, die Kanäle mit der besten Leistung zu finden und Ihr Marketing-Budget besser zu investieren.
 
 In diesem Thema werden einige Berichte vorgestellt, mit denen Sie Ihre wertvollsten Marketing-Kanäle aufdecken können:
 

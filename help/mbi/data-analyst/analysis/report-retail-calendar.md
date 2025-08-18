@@ -50,7 +50,7 @@ Sie [ eine ](../../assets/454-calendar.csv) Version `.csv` 4-5-4 Einzelhandelska
    * **Aktuelles Datum**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
-      * 
+      * &#x200B;
         [!UICONTROL Datentyp]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
@@ -62,7 +62,7 @@ Sie [ eine ](../../assets/454-calendar.csv) Version `.csv` 4-5-4 Einzelhandelska
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
-      * 
+      * &#x200B;
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **Im aktuellen Einzelhandelsjahr enthalten? (Ja/Nein)**
@@ -70,7 +70,7 @@ Sie [ eine ](../../assets/454-calendar.csv) Version `.csv` 4-5-4 Einzelhandelska
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
+      * &#x200B;
         [!UICONTROL Datentyp]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **Im vorigen Einzelhandelsjahr enthalten? (Ja/Nein)**
@@ -78,7 +78,7 @@ Sie [ eine ](../../assets/454-calendar.csv) Version `.csv` 4-5-4 Einzelhandelska
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * 
+      * &#x200B;
         [!UICONTROL Datentyp]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
@@ -139,62 +139,62 @@ Hinweis: Für diese Analyse sind keine neuen Metriken erforderlich. Achten Sie j
       * [!UICONTROL Filter]:
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
       * `multiple Y-axes` ausschalten
 
 * **Einzelhandelskalender - Übersicht (aktuelles Einzelhandelsjahr nach Monat)**
    * `A`: `Revenue`
-      * 
-        [!UICONTROL-Metrik]: `Revenue`
+      * &#x200B;
+        [!UICONTROL -Metrik]: `Revenue`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
 
 * **Einzelhandelskalender - Übersicht (vorheriges Einzelhandelsjahr nach Monat)**
    * `A`: `Revenue`
-      * 
-        [!UICONTROL-Metrik]: `Revenue`
+      * &#x200B;
+        [!UICONTROL -Metrik]: `Revenue`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * `B`: `Orders`
       * [!UICONTROL Metric]: Anzahl der Bestellungen
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * 
+         * &#x200B;
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Interval]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * 
+   * &#x200B;
      [!UICONTROL Chart type]: `Line`
 
 ## Nächste Schritte

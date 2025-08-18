@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Erstellen einer berechneten SQL-Spalte
 
-In diesem Abschnitt werden Zweck und Verwendungszwecke des `Calculation` Spaltentyps beschrieben, der mithilfe des [Data Warehouse Managers} zu Tabellen hinzugefügt ](../data-warehouse-mgr/tour-dwm.md) kann. Im Folgenden wird erläutert, was SQL-Berechnungen bewirken, warum sie verwendet werden und wie eine SQL-Berechnung erstellt wird. Nachfolgend werden zwei Beispiele beschrieben.
+In diesem Abschnitt werden Zweck und Verwendungszwecke des `Calculation` Spaltentyps beschrieben, der mithilfe des [Data Warehouse Managers&rbrace; zu Tabellen hinzugefügt ](../data-warehouse-mgr/tour-dwm.md) kann. Im Folgenden wird erläutert, was SQL-Berechnungen bewirken, warum sie verwendet werden und wie eine SQL-Berechnung erstellt wird. Nachfolgend werden zwei Beispiele beschrieben.
 
 **Erläuterung**
 
