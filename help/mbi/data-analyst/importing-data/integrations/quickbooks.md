@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Unternehmensfinanzen nun neben Ihren Ver
 exl-id: e100c88c-af59-4185-b2a2-c8e77bfd7277
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 32b1e1be4e372164da757cb339ba1618d33a75ea
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 0%
 ![](../../../assets/Quickbooks.png)
 
 Mit der [!DNL QuickBooks] Integration können Ihre Unternehmensfinanzen nun parallel zu Ihren Verkaufs- und Marketing-Daten verwaltet werden, sodass Sie Ihre Ausgaben schnell und einfach im Auge behalten, Ausgabenüberschreitungen erkennen und vieles mehr.
+
+>[!NOTE]
+>
+>Adobe Commerce Intelligence kann mit QuickBooks Online (nicht Desktop) integriert werden und erfordert eine Intuit-Kontoanmeldung mit einer Cloud-Verbindung, die mit der QuickBooks Online SaaS-Struktur und nicht mit dem lokal installierten QuickBooks Desktop-Modell übereinstimmt.
 
 ## Hinzufügen von [!DNL QuickBooks] als Datenquelle in [!DNL Commerce Intelligence]
 
@@ -40,4 +44,4 @@ Melden Sie sich nach dem Klicken auf **[!UICONTROL Connect to Quickbooks]** bei 
 ## verwandt
 
 * [ [!DNL QuickBooks]  Daten](../integrations/quickbooks-data.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
