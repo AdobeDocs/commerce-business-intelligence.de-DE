@@ -70,6 +70,6 @@ Um eine Integration hinzuzufügen, klicken Sie auf **[!UICONTROL Manage Data** >
 * [Konsolidieren von Tabellen](../../../best-practices/consolidating-your-tables.md)
 * [Beschränken des Zugriffs auf die Datenbank](../../../administrator/account-management/restrict-db-access.md)
 
-**Sie eine Integration nicht sehen, die Sie möchten?** Einige Integrationen müssen aktiviert werden, damit sie in Ihrem Konto sichtbar sind. Wenn Sie nach etwas wie [!DNL Facebook] suchen, es aber nicht aufgeführt ist, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+**Sie eine Integration nicht sehen, die Sie möchten?** Einige Integrationen müssen aktiviert werden, damit sie in Ihrem Konto sichtbar sind. Wenn Sie nach etwas wie [!DNL Facebook] suchen, es aber nicht aufgeführt ist, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
 
 **Wenn Sie einen Fehlerstatus für eine Integration sehen** finden Sie im Abschnitt [Fehlerbehebung](https://support.magento.com/hc/en-us/sections/360003078151) Hilfe.

@@ -99,7 +99,7 @@ Führen Sie produktspezifische Anzeigen durch? Wenn ja, können Sie den ROI dies
 >
 >In diesem Beispiel wird davon ausgegangen, dass alle Kampagnenkosten ausschließlich zur Generierung von Käufen bestimmter Produkte verwendet wurden. Unter der Annahme, dass alle Kosten für die Generierung von Käufen aufgewendet wurden, entfällt der resultierende ROI auf das Worst-Case-Szenario (höchste Kosten pro Kauf). Sie können sicher sein, dass Ihr tatsächlicher ROI höher ist als diese Berechnung. Beispiel: Angenommen, Sie haben 20 USD für eine Kampagne ausgegeben, die 10 neue Benutzende und 10 Käufe generiert hat, dann betragen die tatsächlichen Kosten pro Kauf 1 USD. Unter der Annahme, dass alle Kosten für die Akquise neuer Benutzer aufgewendet wurden, betragen die Kosten pro Kauf 2 USD.
 
-Bevor Sie beginnen, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um die folgenden Dimensionen mit Ihrer Zeileneintragstabelle zu verbinden (`sales\_flat\_order\_item, order\_item`):
+Bevor Sie beginnen, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um die folgenden Dimensionen mit Ihrer Zeileneintragstabelle zu verbinden (`sales\_flat\_order\_item, order\_item`):
 
 * Quelle der Bestellung (wenn Sie nur die Empfehlungsquelle auf Benutzerebene verfolgen, dann fügen Sie die Quelle des Benutzers hinzu)
 * Kampagne des Auftrags (wenn Sie nur die Empfehlungsquelle auf Benutzerebene verfolgen, dann der Kampagne des Benutzers beitreten)

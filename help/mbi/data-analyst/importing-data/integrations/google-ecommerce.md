@@ -60,7 +60,7 @@ So identifizieren Sie die [!DNL Google Analytics]-Profil-ID einer bestimmten Web
 ## Verwandt:
 
 * [&#x200B; [!DNL Google ECommerce]  Daten](../integrations/google-ecommerce-data.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
 * [Einrichten [!DNL Google ECommerce] Tracking](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Entdecken Sie Ihre wertvollsten Akquisitionsquellen und -kanäle](../../analysis/most-value-source-channel.md)
 * [Steigerung des ROI Ihrer Werbekampagnen](../../analysis/roi-ad-camp.md)

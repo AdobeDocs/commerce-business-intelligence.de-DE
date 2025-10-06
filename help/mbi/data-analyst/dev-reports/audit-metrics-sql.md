@@ -48,4 +48,4 @@ Sie können auch benutzerdefinierte Abfragen schreiben und die Ergebnisse export
 
 >[!NOTE]
 >
->Wenn Sie nach dem Überprüfen Ihrer Daten eine Diskrepanz feststellen, finden Sie im Support-Thema [Kontaktaufnahme mit dem Support: &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) Diskrepanzen) weitere Informationen zu weiteren Schritten.
+>Wenn Sie nach dem Überprüfen Ihrer Daten eine Diskrepanz feststellen, finden Sie im Support-Thema [Kontaktaufnahme mit dem Support: &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=de) Diskrepanzen) weitere Informationen zu weiteren Schritten.
