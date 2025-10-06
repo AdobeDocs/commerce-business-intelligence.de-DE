@@ -29,7 +29,7 @@ Klicken Sie dazu in der Navigationsleiste oben rechts auf den Namen Ihres Untern
 
 >[!WARNING]
 >
->Wenn Sie einen Benutzer deaktivieren, werden die von diesem Benutzer erstellten Diagramme, Dashboards und anderen Assets entfernt. Wenn Sie diese Assets beibehalten möchten, wenden Sie sich an das [!DNL Commerce Intelligence][ Support](../guide-overview.md#Submitting-a-Support-Ticket)Team, bevor Sie den Benutzer deaktivieren. Der Support kann Ihnen dabei helfen, diese Assets auf einen anderen Benutzer zu übertragen.
+>Wenn Sie einen Benutzer deaktivieren, werden die von diesem Benutzer erstellten Diagramme, Dashboards und anderen Assets entfernt. Wenn Sie diese Assets beibehalten möchten, wenden Sie sich an das [!DNL Commerce Intelligence][&#x200B; Support](../guide-overview.md#Submitting-a-Support-Ticket)Team, bevor Sie den Benutzer deaktivieren. Der Support kann Ihnen dabei helfen, diese Assets auf einen anderen Benutzer zu übertragen.
 
 ### Benutzer reaktivieren
 

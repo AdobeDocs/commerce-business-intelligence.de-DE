@@ -57,7 +57,7 @@ Keine neuen Metriken!!!
 
 >[!NOTE]
 >
->Stellen Sie sicher[ dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
+>Stellen Sie sicher[&#x200B; dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
@@ -66,9 +66,9 @@ Keine neuen Metriken!!!
 
 * `A`: `Average Order Value`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Scalar`
 
 * **Anzahl der Bestellungen nach Zwischensummen-Buckets mit Versandregel A**
@@ -80,53 +80,53 @@ Keine neuen Metriken!!!
 
 * `A`: `Number of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Column`
 
 * **Prozent der Bestellungen nach Zwischensumme mit Versandregel A**
    * [!UICONTROL Metric]: `Number of orders`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Gruppieren nach]: `Independent`
    * [!UICONTROL Formula]: `(A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `%`
 
 * `A`: `Number of orders by subtotal (hide)`
 * `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 * **Prozent der Bestellungen mit Zwischensumme über Versandregel A**
    * [!UICONTROL Metric]: `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Perspective]: `Cumulative`
 
    * [!UICONTROL Metric]: `Number of orders`
-   * 
+   * &#x200B;
      [!UICONTROL Gruppieren nach]: `Independent`
 
    * [!UICONTROL Formula]: `1- (A / B)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: `%`
 
 * `A`: `Number of orders by subtotal`
 * `B`: `Total number of orders (hide)`
 * [!UICONTROL Formula]: `% of orders`
 * [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
+* &#x200B;
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
+* &#x200B;
   [!UICONTROL Chart Type]: `Line`
 
 

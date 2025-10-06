@@ -26,8 +26,8 @@ Um anzuzeigen, wem ein Dashboard gehört, klicken Sie auf das Dashboard-Dropdown
 So entfernen Sie alle doppelten Dashboards:
 
 1. Synchronisieren Sie mit Ihrem Team und ermitteln Sie die Person, die das Dashboard verwalten soll.
-1. [Machen Sie die Freigabe ](../data-user/dashboards/leave-dashboard.md) allen ähnlichen Dashboards rückgängig, mit Ausnahme des Dashboards, das vom Hauptbenutzer freigegeben wird.
-1. Wenn Sie über eine Kopie des Dashboards verfügen, [ Sie diese ](../data-user/dashboards/deleting-dashboard.md).
+1. [Machen Sie die Freigabe &#x200B;](../data-user/dashboards/leave-dashboard.md) allen ähnlichen Dashboards rückgängig, mit Ausnahme des Dashboards, das vom Hauptbenutzer freigegeben wird.
+1. Wenn Sie über eine Kopie des Dashboards verfügen, [&#x200B; Sie diese &#x200B;](../data-user/dashboards/deleting-dashboard.md).
 1. Bitten Sie andere, ihre Version des Dashboards zu löschen.
 
 ## Erstellen eines Kernsatzes von Dashboards

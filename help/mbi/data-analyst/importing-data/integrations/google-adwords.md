@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![Google AdWords-Logo](../../../assets/Google_Adwords_logo.png)
 
-Sie haben recherchiert, Ihre Anzeigen erstellt und Ihre [!DNL Google] gestartet. Jetzt ist es an der Zeit, Ihre Anzeigenausgabendaten zu analysieren und festzustellen, ob Ihr Geld effektiv ausgegeben wird. Mit Ihren Werbeausgabendaten können Sie [Kampagnen-ROI messen, indem Sie Ihre Werbekosten und den Kundenlebenszeitwert (Customer Lifetime Value, CLV) der ](../../analysis/roi-ad-camp.md) Ihrer Kampagnen erworbenen Benutzer zusammenfassen.
+Sie haben recherchiert, Ihre Anzeigen erstellt und Ihre [!DNL Google] gestartet. Jetzt ist es an der Zeit, Ihre Anzeigenausgabendaten zu analysieren und festzustellen, ob Ihr Geld effektiv ausgegeben wird. Mit Ihren Werbeausgabendaten können Sie [Kampagnen-ROI messen, indem Sie Ihre Werbekosten und den Kundenlebenszeitwert (Customer Lifetime Value, CLV) der &#x200B;](../../analysis/roi-ad-camp.md) Ihrer Kampagnen erworbenen Benutzer zusammenfassen.
 
 Beginnen Sie, indem Sie Ihre [!DNL Google Adwords] Anmeldedaten in [!DNL Commerce Intelligence] eingeben.
 

@@ -64,7 +64,7 @@ Diese wird dann verwendet, um Folgendes zu erstellen:
 
 Beide Felder müssen auf Benutzerebene erstellt werden (z. B. in der `user`). Dies ermöglicht eine Normalisierung der Durchschnittsanalyse durch die Benutzer (d. h., der Nenner bei dieser Durchschnittsberechnung ist die Anzahl der Benutzer).
 
-Hier kommt [!DNL Commerce Intelligence] ins Spiel! Sie können Ihre [!DNL Commerce Intelligence] Data Warehouse verwenden, um die oben genannten Spalten zu erstellen. Wenden Sie sich an das Adobe-Analystenteam und nennen Sie uns die spezifische Definition Ihrer neuen Spalten für die Erstellung. Sie können auch den [Spalteneditor“ ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+Hier kommt [!DNL Commerce Intelligence] ins Spiel! Sie können Ihre [!DNL Commerce Intelligence] Data Warehouse verwenden, um die oben genannten Spalten zu erstellen. Wenden Sie sich an das Adobe-Analystenteam und nennen Sie uns die spezifische Definition Ihrer neuen Spalten für die Erstellung. Sie können auch den [Spalteneditor“ &#x200B;](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 Es empfiehlt sich, die Erstellung dieser berechneten Datenfelder in Ihrer Datenbank zu vermeiden, da dies eine unnötige Belastung für Ihre Produktions-Server darstellt.
 
@@ -81,7 +81,7 @@ Und Sie möchten sehen, dass diese Berechnung über die Zeit, oder den Trend, ei
 
 1. Wechseln Sie zu **[!UICONTROL Data]** und wählen Sie die Registerkarte `Metrics` aus.
 1. Klicken Sie auf **[!UICONTROL Add New Metric]** und wählen Sie die `user` aus (in der Sie die Dimensionen oben erstellt haben).
-1. Wählen Sie aus dem Dropdown-Menü `Average` in der Spalte `Time between a customer's registration date and first purchase date``user` in der Tabelle nach `Customer's registration date` sortiert aus.
+1. Wählen Sie aus dem Dropdown-Menü `Average` in der Spalte `Time between a customer's registration date and first purchase date` `user` in der Tabelle nach `Customer's registration date` sortiert aus.
 1. Fügen Sie alle relevanten Filter oder Filtersätze hinzu.
 
 Diese Metrik ist jetzt bereit.

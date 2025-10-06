@@ -44,8 +44,8 @@ Nachdem der Bericht gespeichert wurde, navigieren Sie zu diesem Dashboard, indem
 
 ## Benutzerdefinierte Abfragen
 
-Sie können auch benutzerdefinierte Abfragen schreiben und die Ergebnisse exportieren, um sie mit Ihrer lokalen Datenbank zu vergleichen. Schreiben Sie gemäß [Richtlinien für die ](../../best-practices/optimizing-your-sql-queries.md)) eine Abfrage im SQL-Editor. Mit den Schaltflächen oben in der Seitenleiste können Sie zwischen Listen von Tabellen und Metriken wechseln, die für die Verwendung in der [!DNL SQL Report Builder] verfügbar sind, und sie zu Ihrer Abfrage hinzufügen. Wenn Ihre benutzerdefinierte Abfrage Ihren Anforderungen entspricht, können Sie den Bericht speichern und diese Daten aus dem Dashboard exportieren.
+Sie können auch benutzerdefinierte Abfragen schreiben und die Ergebnisse exportieren, um sie mit Ihrer lokalen Datenbank zu vergleichen. Schreiben Sie gemäß [Richtlinien für die &#x200B;](../../best-practices/optimizing-your-sql-queries.md)) eine Abfrage im SQL-Editor. Mit den Schaltflächen oben in der Seitenleiste können Sie zwischen Listen von Tabellen und Metriken wechseln, die für die Verwendung in der [!DNL SQL Report Builder] verfügbar sind, und sie zu Ihrer Abfrage hinzufügen. Wenn Ihre benutzerdefinierte Abfrage Ihren Anforderungen entspricht, können Sie den Bericht speichern und diese Daten aus dem Dashboard exportieren.
 
 >[!NOTE]
 >
->Wenn Sie nach dem Überprüfen Ihrer Daten eine Diskrepanz feststellen, finden Sie im Support-Thema [Kontaktaufnahme mit dem Support: ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) Diskrepanzen) weitere Informationen zu weiteren Schritten.
+>Wenn Sie nach dem Überprüfen Ihrer Daten eine Diskrepanz feststellen, finden Sie im Support-Thema [Kontaktaufnahme mit dem Support: &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) Diskrepanzen) weitere Informationen zu weiteren Schritten.

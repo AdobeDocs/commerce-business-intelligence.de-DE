@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Die Massenbearbeitungsfunktion erleichtert das Ändern von Diagrammnamen und Datumsangaben in Ihren Dashboards. Sie möchten beispielsweise, dass alle Diagramme in einem bestimmten Dashboard auf einen einzelnen Store verweisen und Berichte auf monatlicher Basis und nicht vierteljährlich erstellen. Anstatt alles manuell zu ändern, lassen Sie die `bulk-editing` die Arbeit erledigen. In diesem Thema erfahren Sie, wie Sie Folgendes verwenden:
 
-* [Die  [!DNL Find/Replace] ](#findreplace)
+* [Die  [!DNL Find/Replace] &#x200B;](#findreplace)
 
-* [Die  [!DNL Prepend Name] ](#prepend)
+* [Die  [!DNL Prepend Name] &#x200B;](#prepend)
 
-* [Die  [!DNL Change Dates] ](#dates)
+* [Die  [!DNL Change Dates] &#x200B;](#dates)
 
 Berücksichtigen Sie dabei Folgendes: *Müssen diese Änderungen dauerhaft sein?* Wenn nicht, klonen Sie das Dashboard und ändern Sie dann die Daten im neuen Dashboard. Auf diese Weise können Sie Ihr ursprüngliches Dashboard beibehalten und gleichzeitig die benötigten Änderungen vornehmen.
 

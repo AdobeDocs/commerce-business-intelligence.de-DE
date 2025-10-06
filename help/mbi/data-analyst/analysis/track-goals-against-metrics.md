@@ -55,46 +55,46 @@ Es ist hilfreich, bei der Analyse Ihrer Ziele einen Mix aus statischen Werten un
 
 * **Zum Erreichen des Ziels verbleibender Umsatz**
 * `A`: `Revenue`
-* 
-  [!UICONTROL-Metrik]: `Revenue`
+* &#x200B;
+  [!UICONTROL -Metrik]: `Revenue`
 
 * `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* 
-  [!UICONTROL-Formel]: `(B-A)`
-* 
+* &#x200B;
+  [!UICONTROL -Formel]: `(B-A)`
+* &#x200B;
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (Welcher relevante Zeitraum gewünscht wird)
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
-* 
+* &#x200B;
   [!UICONTROL Diagrammtyp]: `Scalar`
 
 * **Umsatzziele**
 * `A`: `Revenue`
-* 
-  [!UICONTROL-Metrik]: `Revenue`
+* &#x200B;
+  [!UICONTROL -Metrik]: `Revenue`
 
 * `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * `C`: `Revenue (amount change since previous year)` (ausblenden)
-* 
-  [!UICONTROL-Metrik]: `Revenue`
+* &#x200B;
+  [!UICONTROL -Metrik]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Diesen Monat letztes Jahr)
-* 
-  [!UICONTROL-Formel]: `(A-C)`
-* 
+* &#x200B;
+  [!UICONTROL -Formel]: `(A-C)`
+* &#x200B;
   [!UICONTROL Format]: `Currency`
 
 * `Multiple Y-Axes` ausschalten
 * [!UICONTROL Time period]: (Welcher relevante Zeitraum gewünscht wird)*
-* 
+* &#x200B;
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 

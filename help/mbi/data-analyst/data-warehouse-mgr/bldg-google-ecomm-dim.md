@@ -23,7 +23,7 @@ Die behandelten Dimensionen bieten Ihnen die Möglichkeit, Analysen zu erstellen
 
 ## Voraussetzungen und Übersicht
 
-Zum Erstellen der Dimensionen in diesem Thema benötigen Sie eine [!DNL Google ECommerce], eine `orders` und eine `customers`. Diese Tabellen müssen mit [ Data Warehouse synchronisiert werden](../../data-analyst/data-warehouse-mgr/tour-dwm.md) bevor Dimensionen erstellt werden können. Synchronisierte Tabellen werden im Abschnitt `Synced Tables` der `Data Warehouse Manager` angezeigt.
+Zum Erstellen der Dimensionen in diesem Thema benötigen Sie eine [!DNL Google ECommerce], eine `orders` und eine `customers`. Diese Tabellen müssen mit [&#x200B; Data Warehouse synchronisiert werden](../../data-analyst/data-warehouse-mgr/tour-dwm.md) bevor Dimensionen erstellt werden können. Synchronisierte Tabellen werden im Abschnitt `Synced Tables` der `Data Warehouse Manager` angezeigt.
 
 Im Folgenden finden Sie eine kurze Übersicht über das Synchronisieren von Tabellen und Spalten, wenn Sie eine Aktualisierung benötigen:
 
@@ -76,7 +76,7 @@ Im Folgenden wird der gesamte Prozess beschrieben:
 
 ![Animierte Demonstration der Erstellung der Google Analytics-Quelldimension](../../assets/help_center.gif)
 
-Als Nächstes versuchen Sie **das [!DNL Google Analytics] Medium der Bestellung** und `campaign` zu erstellen. Für diese Dimensionen wurden nicht viele Änderungen vorgenommen. Versuchen Sie es also. Wenn Sie jedoch stecken bleiben, können Sie [Ende dieses Artikels) ](#stuck), um zu sehen, was anders ist.
+Als Nächstes versuchen Sie **das [!DNL Google Analytics] Medium der Bestellung** und `campaign` zu erstellen. Für diese Dimensionen wurden nicht viele Änderungen vorgenommen. Versuchen Sie es also. Wenn Sie jedoch stecken bleiben, können Sie [Ende dieses Artikels) &#x200B;](#stuck), um zu sehen, was anders ist.
 
 ### Tabelle „Kunden“ {#customers}
 
@@ -97,11 +97,11 @@ In diesem Beispiel wird die Dimension **Quelle des ersten Auftrags des Kunden[!D
    _
 1. Klicken Sie auf **[!UICONTROL Save]** , um die Dimension zu erstellen.
 
-Als Nächstes versuchen Sie **das [!DNL Google Analytics] Medium des Kunden und** `campaign` zu erstellen. Für diese Dimensionen wurden nicht viele Änderungen vorgenommen. Versuchen Sie es also. Wenn Sie jedoch stecken bleiben, können Sie [Ende dieses Artikels) ](#stuck), um zu sehen, was anders ist.
+Als Nächstes versuchen Sie **das [!DNL Google Analytics] Medium des Kunden und** `campaign` zu erstellen. Für diese Dimensionen wurden nicht viele Änderungen vorgenommen. Versuchen Sie es also. Wenn Sie jedoch stecken bleiben, können Sie [Ende dieses Artikels) &#x200B;](#stuck), um zu sehen, was anders ist.
 
 ### Bonus: Bestelltisch, Runde 2
 
-Sie können hier bei Bedarf stoppen, aber dieser Abschnitt ermöglicht eine weitere Analyse, indem **die [!DNL Google Analytics] Dimensionen des Kunden,** Sie im [ Abschnitt erstellt haben](#customers) in die `orders` Tabelle aufgenommen werden. Wenn Sie die Dimensionen in diesem Abschnitt erstellen, können Sie alle Metriken analysieren, die auf Ihrer `orders`-Tabelle basieren - `Revenue`, `Number of orders`, `Distinct buyers` usw. -, indem Sie die [!DNL Google Analytics] Attribute der ersten Bestellung eines Kunden verwenden.
+Sie können hier bei Bedarf stoppen, aber dieser Abschnitt ermöglicht eine weitere Analyse, indem **die [!DNL Google Analytics] Dimensionen des Kunden,** Sie im [&#x200B; Abschnitt erstellt haben](#customers) in die `orders` Tabelle aufgenommen werden. Wenn Sie die Dimensionen in diesem Abschnitt erstellen, können Sie alle Metriken analysieren, die auf Ihrer `orders`-Tabelle basieren - `Revenue`, `Number of orders`, `Distinct buyers` usw. -, indem Sie die [!DNL Google Analytics] Attribute der ersten Bestellung eines Kunden verwenden.
 
 Dieses Beispiel verbindet die Dimension `Customer's first order's [!DNL Google Analytics] source` mit der `orders`.
 

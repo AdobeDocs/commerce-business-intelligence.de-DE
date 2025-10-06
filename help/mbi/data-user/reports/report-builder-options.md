@@ -14,7 +14,7 @@ ht-degree: 0%
 # Report Builder auswählen
 
 >[!NOTE]
->>Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
+>&#x200B;>Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
 
 Nachdem Sie nun mehr Optionen zum Erstellen von Analysen haben, kann es manchmal schwierig sein, genau zu wissen, welche Variante des Report Builders Ihren Anforderungen entspricht. Dieses Thema führt Sie durch die Auswahl der besten Methode zur Erstellung Ihrer Analyse.
 

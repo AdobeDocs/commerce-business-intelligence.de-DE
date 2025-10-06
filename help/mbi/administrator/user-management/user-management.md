@@ -50,7 +50,7 @@ Diese Berechtigungen ermöglichen es Benutzenden, bestimmte Aktionen auszuführe
 
 >[!NOTE]
 >
->_Sie können den Zugriff eines **[!UICONTROL Standard]**Benutzers [auf bestimmte Metriken) ](../../administrator/user-management/restrict-metric-access.md)._
+>_Sie können den Zugriff eines **[!UICONTROL Standard]**&#x200B;Benutzers [auf bestimmte Metriken) &#x200B;](../../administrator/user-management/restrict-metric-access.md)._
 >
 >**[!UICONTROL Standard] _Benutzer können über eine zusätzliche Berechtigungseinstellung auf Abrechnung zugreifen._
 >

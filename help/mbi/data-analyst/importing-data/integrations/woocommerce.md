@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Möchten Sie sehen, wie Ihr Unternehmen funktioniert oder Ihre wertvollsten Akquisequellen und -kanäle finden? Sie können diese Fragen und mehr beantworten, indem Sie Ihre [!DNL WooCommerce] mit [!DNL Commerce Intelligence] verbinden.
 
-Die [!DNL WooCommerce]-Datenbank basiert auf [!DNL MySQL]. Sie können sie über eine [!DNL Commerce Intelligence]Direktverbindung[, ](../integrations/mysql-via-a-direct-connection.md) oder [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)über eine [ mit `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md) verbinden. Adobe empfiehlt die Verwendung der SSH-Methode, da diese am sichersten ist.
+Die [!DNL WooCommerce]-Datenbank basiert auf [!DNL MySQL]. Sie können sie über eine [!DNL Commerce Intelligence]Direktverbindung[, &#x200B;](../integrations/mysql-via-a-direct-connection.md) oder [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)über eine [&#x200B; mit `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md) verbinden. Adobe empfiehlt die Verwendung der SSH-Methode, da diese am sichersten ist.
 
 ## Verwandt:
 

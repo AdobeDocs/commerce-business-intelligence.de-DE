@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Wenn Sie mehrere Metriken in [!DNL Commerce Intelligence] haben, die auf ähnliche Weise gefiltert werden müssen (z. B. Filtern von Testaufträgen), können Sie gespeicherte Filtersätze erstellen und sie auf die Metriken anwenden. Dies spart Ihnen Zeit, da Sie beim Erstellen oder Bearbeiten einer Metrik keine individuellen Filter hinzufügen müssen.
 
-Weitere Informationen finden [ im ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html)Schulungsvideo“.
+Weitere Informationen finden [&#x200B; im &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html)Schulungsvideo“.
 
 >[!NOTE]
 >

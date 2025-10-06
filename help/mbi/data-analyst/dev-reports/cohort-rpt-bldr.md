@@ -213,4 +213,4 @@ Dies entspricht dem obigen `perspective`, mit der Ausnahme, dass der Wert des er
 
 ## Verpackung {#finish}
 
-Die `Cohort Report Builder` ist für die Gruppierung von Benutzern nach einem gemeinsamen `cohort date` optimiert. Möglicherweise möchten Sie die Benutzer nach einer ähnlichen Aktivität oder einem ähnlichen Attribut gruppieren. Adobe empfiehlt, sich [ (dieses Tutorial zu qualitativen Kohorten) ](../dev-reports/create-qual-cohort-analysis.md), um loszulegen.
+Die `Cohort Report Builder` ist für die Gruppierung von Benutzern nach einem gemeinsamen `cohort date` optimiert. Möglicherweise möchten Sie die Benutzer nach einer ähnlichen Aktivität oder einem ähnlichen Attribut gruppieren. Adobe empfiehlt, sich [&#x200B; (dieses Tutorial zu qualitativen Kohorten) &#x200B;](../dev-reports/create-qual-cohort-analysis.md), um loszulegen.

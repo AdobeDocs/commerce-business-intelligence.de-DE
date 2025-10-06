@@ -48,7 +48,7 @@ Wenn einige dieser Berechnungen derzeit nicht in Ihrer Datenbank vorhanden sind,
 
 *Wenn ja, enthält diese Tabelle möglicherweise nicht alle Ihre Kunden. Wenden Sie sich an das [Support-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um sicherzustellen, dass Ihre Kundenanalysen alle Kunden einschließen.*
 
-*Nicht sicher, ob Sie Gastbestellungen annehmen? Weitere Informationen finden Sie [ &quot;](../data-warehouse-mgr/guest-orders.md) Thema“*
+*Nicht sicher, ob Sie Gastbestellungen annehmen? Weitere Informationen finden Sie [&#x200B; &quot;](../data-warehouse-mgr/guest-orders.md) Thema“*
 
 ## Tabelle mit Bestellungen
 
@@ -512,13 +512,13 @@ Im Folgenden finden Sie einige Beispiele für nützliche Berichte und Metriken:
 
 >[!NOTE]
 >
->Für die beiden Filter können Sie beliebige andere Medien hinzufügen, die als „bezahlte“ Medien für Ihr Unternehmen gelten (z. B. CPC oder Paid Search). Sie können auch beliebige andere Quellen hinzufügen, die Sie analysieren möchten, z. B. Facebook. In [ Artikel finden ](../analysis/roi-ad-camp.md) weitere Informationen zu CAC, LTV und ROI.
+>Für die beiden Filter können Sie beliebige andere Medien hinzufügen, die als „bezahlte“ Medien für Ihr Unternehmen gelten (z. B. CPC oder Paid Search). Sie können auch beliebige andere Quellen hinzufügen, die Sie analysieren möchten, z. B. Facebook. In [&#x200B; Artikel finden &#x200B;](../analysis/roi-ad-camp.md) weitere Informationen zu CAC, LTV und ROI.
 
 ![Lebensdauerwert nach Akquise-Quelle, Medium und Kampagne](../../assets/LTV_2.png)<!--{: width="929"}-->
 
 ### Return on Investment (ROI)
 
-* **Beschreibung**: Eine Möglichkeit, den ROI nach Kampagne zu berechnen, besteht in der Analyse aller über die Kampagne aufgegebenen Bestellungen. Eine alternative Methode besteht jedoch darin, den Lebenszeitwert der durch eine Kampagne akquirierten Kunden zu analysieren. Zur Analyse des ROI ist es wichtig, dass die Kampagnennamen in Ihren Ausgaben- und Transaktionsdaten konsistent sind. Wenn Sie den folgenden Bericht erstellen und aufgrund nicht übereinstimmender Kampagnennamen keine ROI-Werte vorhanden sind, müssen Sie sich möglicherweise das von [ implementierte ](../../best-practices/utm-tagging-google.md)UTM-Tagging“ ansehen.
+* **Beschreibung**: Eine Möglichkeit, den ROI nach Kampagne zu berechnen, besteht in der Analyse aller über die Kampagne aufgegebenen Bestellungen. Eine alternative Methode besteht jedoch darin, den Lebenszeitwert der durch eine Kampagne akquirierten Kunden zu analysieren. Zur Analyse des ROI ist es wichtig, dass die Kampagnennamen in Ihren Ausgaben- und Transaktionsdaten konsistent sind. Wenn Sie den folgenden Bericht erstellen und aufgrund nicht übereinstimmender Kampagnennamen keine ROI-Werte vorhanden sind, müssen Sie sich möglicherweise das von [&#x200B; implementierte &#x200B;](../../best-practices/utm-tagging-google.md)UTM-Tagging“ ansehen.
 * **Beispiel für einen Bericht**: ROI nach Kampagne
    * **[!UICONTROL Metric A]**: `New Customers`
    * **[!UICONTROL Filter A]**: `Customer's first order's source` WIE &#39;%google%&#39;
@@ -537,7 +537,7 @@ Im Folgenden finden Sie einige Beispiele für nützliche Berichte und Metriken:
 
 >[!NOTE]
 >
->Sie können die Formel als „ROI“ bezeichnen und alle Metriken ausblenden. Darüber hinaus können Sie die Filter in den Metriken anpassen, um alternative Quellen und Medien zu analysieren. Weitere Informationen zu CAC[ LTV und ROI ](../analysis/roi-ad-camp.md) Sie auch unter diesem Thema).
+>Sie können die Formel als „ROI“ bezeichnen und alle Metriken ausblenden. Darüber hinaus können Sie die Filter in den Metriken anpassen, um alternative Quellen und Medien zu analysieren. Weitere Informationen zu CAC[&#x200B; LTV und ROI &#x200B;](../analysis/roi-ad-camp.md) Sie auch unter diesem Thema).
 
 ![ROI 1](../../assets/ROI_1.png)<!--{: width="929"}-->
 
