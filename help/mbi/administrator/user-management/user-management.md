@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Commerce Intelligence-Benutzenden verwal
 exl-id: 2a5eeabb-3c13-4ca1-b845-ed255b389c9f
 role: Admin, User
 feature: User Management
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Diese Berechtigungen ermöglichen es Benutzenden, bestimmte Aktionen auszuführe
 
 >[!NOTE]
 >
->_Sie können den Zugriff eines **[!UICONTROL Standard]**&#x200B;Benutzers [auf bestimmte Metriken) ](../../administrator/user-management/restrict-metric-access.md)._
+>_Sie können den Zugriff eines **[!UICONTROL Standard]**Benutzers [auf bestimmte Metriken) ](../../administrator/user-management/restrict-metric-access.md)._
 >
 >**[!UICONTROL Standard] _Benutzer können über eine zusätzliche Berechtigungseinstellung auf Abrechnung zugreifen._
 >
@@ -66,7 +66,7 @@ Neben den allgemeinen Berechtigungsebenen gibt es auch zwei weitere Benutzerbeze
 
 `Admin` Benutzer haben standardmäßig Zugriff auf die Registerkarte `Billing` . `Standard` Benutzer können jedoch auch Zugriff erhalten, wenn sie in ihrem Profil das Kontrollkästchen `Billing` aktiviert haben.
 
-![billing](../../assets/billing.png)<!--{: width="550" height="363"}-->
+![Abrechnungsseite](../../assets/billing.png)<!--{: width="550" height="363"}-->
 
 ### Technisch
 

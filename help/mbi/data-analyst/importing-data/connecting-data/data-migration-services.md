@@ -4,16 +4,16 @@ description: Erfahren Sie alles, was Sie benötigen, um eine Anfrage zu senden u
 exl-id: 105cd003-98ef-4358-80b9-b3190c2c57b7
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
 # Datenmigration
 
-Die Migration auf ein neues Datenbankschema, einen neuen Server oder eine neue Berichtsdatenbank ist nicht zwingend. Das [[!DNL Adobe] Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) bietet Unterstützung bei der Migration.
+Die Migration auf ein neues Datenbankschema, einen neuen Server oder eine neue Berichtsdatenbank ist nicht zwingend. Das [[!DNL Adobe] Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) bietet Unterstützung bei der Migration.
 
 Um sicherzustellen, dass Ihr Übergang so reibungslos wie möglich verläuft, sollten Sie bei der Übermittlung Ihrer Migrationsanfrage so detailliert wie möglich sein. In diesem Thema finden Sie alles, was Sie zum Senden einer Anfrage und für die ersten Schritte mit der Migration benötigen. Wenn Sie uns ein umfassendes Bild Ihrer Bedürfnisse vermitteln, können Sie sicherstellen, dass Ihr Projekt ordnungsgemäß abgewickelt wird und die Schätzung korrekt ist.
 
@@ -59,7 +59,7 @@ Wenn Sie sich beim Abgleichen wohl fühlen, befolgen Sie diese Anweisungen und f
 
 Im Folgenden finden Sie ein Beispiel:
 
-![](../../../assets/Migration_Spreadsheet.png)
+![Vorlage für Migrationsarbeitsblätter mit Datenbankschema und Tabellenstruktur](../../../assets/Migration_Spreadsheet.png)
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Im Folgenden finden Sie ein Beispiel:
 
 ## Wie sende ich eine Anfrage? {#submitreq}
 
-Sie können sich an uns wenden, indem Sie [eine Support-Anfrage einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Sie können sich an uns wenden, indem Sie [eine Support-Anfrage einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 Vergessen Sie nicht, die Tabelle anzuhängen, wenn Sie die Schritte aus dem vorherigen Abschnitt zum Erstellen der Tabelle mit Spaltenanpassung befolgt haben.
 

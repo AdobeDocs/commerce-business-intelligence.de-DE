@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Spalten erstellen, um Ihre Daten für die Ana
 exl-id: 1af79b9e-77ff-4fc6-917a-4e6743b95035
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Eine berechnete Altersspalte gibt die Anzahl Sekunden zwischen der aktuellen Zei
 
 Im folgenden Beispiel wird `Seconds since customer's most recent order` in der `customers`-Tabelle erstellt. Dies kann verwendet werden, um Benutzerlisten von Kunden zu erstellen, die innerhalb von `X days` keine Käufe getätigt haben (manchmal auch als Abwanderung bezeichnet).
 
-![](../../assets/age.gif)
+![Animierte Demonstration der Erstellung einer Altersberechnungsspalte](../../assets/age.gif)
 
 ### Währungsumrechner
 
@@ -47,7 +47,7 @@ Im folgenden Beispiel wird ein `base\_grand\_total In AED` erstellt, bei dem der
 
 Für Commerce-Clients speichert das `base\_currency\_code` normalerweise native Währungen. Das `Spot Time` sollte mit dem in Ihren Metriken verwendeten Datum übereinstimmen.
 
-![](../../assets/currency_converter.png)
+![Spaltenkonfiguration des Währungsumrechners berechnet](../../assets/currency_converter.png)
 
 ## 1:n-berechnete Spalten {#onetomany}
 
@@ -59,7 +59,7 @@ Eine verbundene Spalte verschiebt ein Attribut in der einen Tabelle *in* der vie
 
 Im folgenden Beispiel wird die Dimension `Customer's group\_id` mit der `orders` verbunden.
 
-![](../../assets/joined_column.gif)
+![Animierte Demonstration der Erstellung von verknüpften Spalten-Verknüpfungstabellen](../../assets/joined_column.gif)
 
 ## n:1-berechnete Spalten {#manytoone}
 
@@ -71,7 +71,7 @@ Dieser Typ der berechneten Spalte gibt die Anzahl der Werte in der vielen Tabell
 
 Im folgenden Beispiel wird die Dimension `Customer's lifetime number of canceled orders` für die `customers`-Tabelle erstellt (mit einem Filter für `orders.status`).
 
-![](../../assets/many_to_one.gif){: width="699" height="351"}
+![Animierte Demonstration der Viele-zu-eins-Spaltenaggregation](../../assets/many_to_one.gif){: width="699" height="351"}
 
 ### Summe {#sum}
 
@@ -95,7 +95,7 @@ Diese Art von Dimension kann beispielsweise bestimmen, ob ein Kunde jemals ein b
 
 Wenn Sie beim Erstellen einer berechneten Spalte nicht genau wissen können, was alle Eingaben sind, sollten Sie diese Referenzzuordnung beim Erstellen von Folgendem zur Hand haben:
 
-![](../../assets/merged_reference_map.png)
+![Referenzzuordnung mit zusammengeführter berechneter Spaltenkonfiguration](../../assets/merged_reference_map.png)
 
 ## Erweiterte berechnete Spalten {#advanced}
 

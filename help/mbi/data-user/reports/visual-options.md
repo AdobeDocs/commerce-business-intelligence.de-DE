@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Visualisierungsoptionen in Visual Report 
 exl-id: e42a004e-28e3-4484-bb5a-b58c810b23e0
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ Das [!DNL Commerce Intelligence] [!DNL Visual Report Builder] bietet 12 verschie
 
 `Scalar` Berichte werden als einzelner numerischer Wert angezeigt. Meistens wird dies verwendet, um den Wert „all time“ einer Schlüsselmetrik wie Umsatz oder Bestellungen anzuzeigen oder den Umsatz mit dem aktuellen Datum und dem Budget mit zwei separaten Skalarberichten zu vergleichen. Im folgenden Beispiel wird lediglich die Gesamtzahl der Bestellungen für das jeweilige Reporting-Intervall angezeigt:
 
-![](../../assets/blobid0.png)
+![Skalarbericht, der die Gesamtzahl der Bestellungen als einen einzelnen numerischen Wert anzeigt](../../assets/blobid0.png)
 
 Um einen Bericht als Skalar zu speichern, konfigurieren Sie Ihre Filter und Zeiteinstellungen und klicken Sie dann oben rechts im Bericht auf **[!UICONTROL Save]** oder **[!UICONTROL Update]** . Wählen Sie in der Dropdown-Liste `Type` den Namen Zahl: Metrik aus, um den Bericht als den in der linken Seitenleiste angezeigten Wert zu speichern.
 
-![](../../assets/blobid1.png)
+![Dialogfeld „Bericht speichern“ mit der Dropdown-Liste „Typ“ mit der Option „Name der Metrik-Zahl“](../../assets/blobid1.png)
 
 **Voraussetzungen**:
 
@@ -51,11 +51,11 @@ Um einen Bericht als Skalar zu speichern, konfigurieren Sie Ihre Filter und Zeit
 
 Wie der Name schon sagt, eignen sich `table` Berichte hervorragend für die Anzeige von Tabellendetails. Wenn in einem einzelnen Bericht viele Gruppen nach Werten oder Metriken angezeigt werden müssen, ist eine Tabelle oft die beste Lösung. Nachfolgend finden Sie eine Tabelle mit „Kundendetails“, in der Bestellungen und Umsatz nach Kunden-E-Mail gruppiert angezeigt werden:
 
-![](../../assets/blobid2.png)
+![Tabellenbericht mit Kundendetails mit Bestellungen und Umsatz nach Kunden-E-Mail](../../assets/blobid2.png)
 
 Ähnlich wie bei Skalarberichten können Sie einen Bericht als Tabelle speichern, indem Sie im Report Builder auf **[!UICONTROL Save]** oder **[!UICONTROL Update]** klicken und dann die Option Tabelle in der Dropdown-Liste `Type` auswählen.
 
-![](../../assets/blobid3.png)
+![Dialogfeld „Bericht speichern“ mit Dropdown-Liste „Typ“ mit ausgewählter Option „Tabelle“](../../assets/blobid3.png)
 
 **Voraussetzungen:**
 
@@ -65,13 +65,13 @@ Wie der Name schon sagt, eignen sich `table` Berichte hervorragend für die Anze
 
 `Line` Diagramme sind die perfekte Wahl, um die Leistung ähnlicher Metrikkohorten zu vergleichen. Beispielsweise können Sie, wie unten dargestellt, die Umsätze zweier Regionen über denselben Zeitraum analysieren oder das jährliche Wachstum der Auftragserfüllung vergleichen:
 
-![](../../assets/blobid0.png)
+![Liniendiagramm zum Vergleich von zwei Metriken im Zeitverlauf mit mehreren Zeilen](../../assets/blobid0.png)
 
 Jede Metrik und Formel, die dem Bericht hinzugefügt wird, wird durch eine eigene Zeile dargestellt. Vergessen Sie beim Vergleich von Metriken mit ähnlichen Einheiten und Maßstäben nicht, das Kontrollkästchen zu deaktivieren, damit `Multiple Y-Axes` alle Metriken auf derselben Skala anzeigen können.
 
 Um einen Bericht als Liniendiagramm zu speichern, passen Sie den `Type` an `Chart` an und wählen Sie die entsprechende Visualisierung in Report Builder aus, wie unten dargestellt:
 
-![](../../assets/blobid1.png)
+![Report Builder mit ausgewähltem Diagrammtyp und hervorgehobener Option „Liniendiagramm-Visualisierung“](../../assets/blobid1.png)
 
 **Voraussetzungen:**
 
@@ -81,13 +81,13 @@ Um einen Bericht als Liniendiagramm zu speichern, passen Sie den `Type` an `Char
 
 `Bar` Diagramme zeigen Ihre Daten als eine Reihe horizontaler Balken an und eignen sich am besten zur Anzeige der Gesamtleistung einer begrenzten Anzahl von Metriken oder „Gruppieren nach“-Werten. Beispielsweise könnte ein Balkendiagramm verwendet werden, um den Umsatz nach Filiale zu vergleichen:
 
-![](../../assets/blobid2.png)
+![Horizontales Balkendiagramm mit Umsatzvergleich nach Geschäft](../../assets/blobid2.png)
 
 Jede einzelne Kombination aus Metrik, Gruppierung nach und Zeitintervall wird als eigener Balken angezeigt. Wenn Sie zwei Metriken mit einer `group by` haben, die drei verschiedene `group by` enthalten, zeigt Ihr Bericht sechs separate Balken an.
 
 Um einen Bericht als Balkendiagramm zu speichern, passen Sie den `Type` an `Chart` an und wählen Sie die Option `Bar` wie unten dargestellt aus:
 
-![](../../assets/blobid3.png)
+![Report Builder mit ausgewähltem Diagrammtyp und hervorgehobener Option für die Balkenvisualisierung](../../assets/blobid3.png)
 
 **Voraussetzungen:**
 
@@ -99,13 +99,13 @@ Um einen Bericht als Balkendiagramm zu speichern, passen Sie den `Type` an `Char
 
 Der folgende Bericht enthält beispielsweise zwei identische Umsatzmetriken, von denen eine für Erstbestellungen und die andere für Wiederholungsaufträge gefiltert wurde. Nach der Gruppierung nach Store können Sie sowohl den Gesamtumsatzbeitrag für jeden Store (dargestellt durch die Gesamtbreite des Balkens) als auch die erste vs. wiederholte Aufschlüsselung des Umsatzes für jeden Store sehen.
 
-![](../../assets/blobid4.png)
+![Gestapeltes horizontales Balkendiagramm mit erstmaligem und wiederholtem Umsatz nach Geschäft](../../assets/blobid4.png)
 
 Stellen Sie sicher, dass das `Multiple Y-Axes` beim Einrichten eines Berichts wie des oben genannten deaktiviert ist.
 
 Um einen Bericht als gestapeltes Balkendiagramm zu speichern, passen Sie den `Type` an `Chart` an und wählen Sie die Option Gestapelter Balken im Report Builder aus:
 
-![](../../assets/blobid5.png)
+![Report Builder mit ausgewähltem Diagrammtyp und hervorgehobener Visualisierungsoption „Gestapelter Balken“](../../assets/blobid5.png)
 
 **Voraussetzungen:**
 
@@ -117,11 +117,11 @@ Um einen Bericht als gestapeltes Balkendiagramm zu speichern, passen Sie den `Ty
 
 Im folgenden Beispiel sehen Sie zwei Umsatzmetriken: eine nach erstmaligem Umsatz und die andere nach wiederholtem Umsatz, mit einem Trend im Zeitverlauf nach Monat:
 
-![](../../assets/blobid6.png)
+![Vertikales Säulendiagramm mit erstmaligem und wiederholtem Umsatz nach Monat](../../assets/blobid6.png)
 
 Spaltenberichte können gespeichert werden, indem die `Type` in `Chart` geändert und die Option für die Spaltenvisualisierung ausgewählt wird:
 
-![](../../assets/blobid7.png)
+![Report Builder mit ausgewähltem Diagrammtyp und hervorgehobener Option zur Spaltenvisualisierung](../../assets/blobid7.png)
 
 **Voraussetzungen:**
 
@@ -133,13 +133,13 @@ Spaltenberichte können gespeichert werden, indem die `Type` in `Chart` geänder
 
 Wenn Sie dieselbe Berichtskonfiguration wie im obigen Abschnitt `Column` verwenden, würde ein Bericht mit zwei Umsatzmetriken (erstmalig gefiltert und wiederholt) wie folgt aussehen mit einer gestapelten Spaltenvisualisierung:
 
-![](../../assets/blobid8.png)
+![Gestapeltes vertikales Säulendiagramm mit erstmaligem und wiederholtem Umsatz nach Monat](../../assets/blobid8.png)
 
 Auch hier ist es wichtig, dass das Kontrollkästchen `Multiple Y-Axes` deaktiviert wird, wenn mit der gestapelten Spaltenvisualisierung mehrere Metriken angezeigt werden.
 
 Um einen Bericht als gestapelte Spalte zu speichern, setzen Sie den `Type` auf `Chart` und wählen Sie die Option `stacked column` aus:
 
-![](../../assets/blobid9.png)
+![Report Builder mit ausgewähltem Diagrammtyp und hervorgehobener Option zur Visualisierung gestapelter Spalten](../../assets/blobid9.png)
 
 **Voraussetzungen:**
 
@@ -149,11 +149,11 @@ Um einen Bericht als gestapelte Spalte zu speichern, setzen Sie den `Type` auf `
 
 `Pie` Diagramme eignen sich am besten für die Anzeige einer einzelnen Metrik mit einem oder mehreren Gruppenbys oder mehrerer Metriken ohne Gruppenbys. In beiden Fällen muss das Zeitintervall auf „Ohne“ festgelegt sein, damit Daten in einem Tortendiagramm angezeigt werden. Im folgenden Beispiel wird eine einzelne Bestellmetrik nach Shop-Namen gruppiert, um die Aufschlüsselung der Bestellungen nach Shop anzuzeigen:
 
-![](../../assets/blobid10.png)
+![Tortendiagramm, das die Verteilung der Bestellungen nach Shop-Namen anzeigt](../../assets/blobid10.png)
 
 Um einen Bericht als Tortendiagramm zu speichern, setzen Sie den `Type` auf `Chart` und wählen Sie die Option `pie` wie unten dargestellt aus:
 
-![](../../assets/blobid11.png)
+![Report Builder mit ausgewähltem Diagrammtyp und hervorgehobener Option „Kreisdiagramm-Visualisierung“](../../assets/blobid11.png)
 
 **Voraussetzungen:**
 
@@ -168,11 +168,11 @@ Um einen Bericht als Tortendiagramm zu speichern, setzen Sie den `Type` auf `Cha
 
 Unter Verwendung des gleichen Beispiels aus dem Abschnitt `stacked column` zeigt der nachstehende Bericht den ersten Umsatz im Vergleich zu den wiederholten Einnahmen mit der Visualisierung des Flächendiagramms:
 
-![](../../assets/blobid12.png)
+![Flächendiagramm, das die Trends beim erstmaligen und wiederholten Umsatz im Zeitverlauf anzeigt](../../assets/blobid12.png)
 
 Um einen Bericht als Flächendiagramm zu speichern, passen Sie die `Type` an `Chart` an und wählen Sie die Option Bereich aus:
 
-![](../../assets/blobid13.png)
+![Report Builder mit ausgewähltem Diagrammtyp und hervorgehobener Option zur Bereichsdiagramm-Visualisierung](../../assets/blobid13.png)
 
 **Voraussetzungen:**
 
@@ -180,19 +180,19 @@ Um einen Bericht als Flächendiagramm zu speichern, passen Sie die `Type` an `Ch
 
 ## `Funnel`
 
-`Funnel` Diagramme eignen sich perfekt zur Visualisierung von Konversionen in einer erwarteten Ereignissequenz. Einige Beispiele sind die Analyse des potenziellen Umsatzes in Ihrem Verkaufstrichter vom Lead zum geschlossenen Abschluss oder die Messung des Rückgangs bei den Kunden zwischen ihrer ersten und zweiten Bestellung, der zweiten und dritten Bestellung usw. Ein Beispiel für Letzteres wird unten angezeigt:
+`Funnel` Diagramme eignen sich perfekt zur Visualisierung von Konversionen in einer erwarteten Ereignissequenz. Einige Beispiele sind die Analyse des potenziellen Umsatzes in Ihrer funnel vom Lead bis zum abgeschlossenen Abschluss oder die Messung des Rückgangs bei den Kunden zwischen ihrer ersten und zweiten Bestellung, der zweiten und dritten Bestellung usw. Ein Beispiel für Letzteres wird unten angezeigt:
 
-![](../../assets/blobid4.png)
+![Funnel-Diagramm, das die Kundenkonversion über sequenzielle Bestellungen hinweg zeigt](../../assets/blobid4.png)
 
-In einem Trichterbericht wird der relative Wert einer bestimmten Stufe des Trichters durch die Höhe der Stufe widergespiegelt. Die Berichtskonfiguration bestimmt die Reihenfolge, in der die Schritte angezeigt werden. Es gibt zwei Möglichkeiten, einen Trichterbericht zu konfigurieren:
+In einem funnel-Bericht wird der relative Wert eines bestimmten Schritts der funnel durch die Höhe des Schritts dargestellt. Die Berichtskonfiguration bestimmt die Reihenfolge, in der die Schritte angezeigt werden. Es gibt zwei Möglichkeiten, einen funnel-Bericht zu konfigurieren:
 
-* `Single metric with one group by`: - Reihenfolge der Schritte, bestimmt durch die Einstellung „Oben/Unten anzeigen“ in der Gruppe von. Standardmäßig werden die Trichterschritte in der Reihenfolge vom größten zum kleinsten Wert angezeigt, Sie können sie jedoch auch alphabetisch nach der Gruppe „Nach Name“ sortieren.
+* `Single metric with one group by`: - Reihenfolge der Schritte, bestimmt durch die Einstellung „Oben/Unten anzeigen“ in der Gruppe von. Standardmäßig werden die funnel-Schritte nach dem größten bis zum kleinsten Wert sortiert. Sie können sie aber auch alphabetisch nach der Gruppe nach Namen sortieren.
 
 * `Multiple metrics with no group by`: - Reihenfolge der Schritte, die durch die Reihenfolge bestimmt wird, in der die Metriken dem Bericht hinzugefügt werden.
 
-Um einen Bericht als Trichterdiagramm zu speichern, passen Sie den `Type` `Chart` an und wählen Sie die entsprechende Visualisierung in Report Builder aus.
+Um einen Bericht als funnel-Diagramm zu speichern, passen Sie den `Type` an `Chart` an und wählen Sie die entsprechende Visualisierung in Report Builder aus.
 
-![](../../assets/blobid5.png)
+![Report Builder mit ausgewähltem Diagrammtyp und hervorgehobener funnel-Visualisierungsoption](../../assets/blobid5.png)
 
 **Voraussetzungen:**
 
@@ -205,13 +205,13 @@ Um einen Bericht als Trichterdiagramm zu speichern, passen Sie den `Type` `Chart
 
 Eine `scatter plot` wird verwendet, um die Beziehung einer Metrik mit zwei verschiedenen Variablen zu untersuchen, damit Sie Korrelationen und Ausreißer einfach identifizieren können. Diese Art der Visualisierung eignet sich am besten nur für numerische Dimensionen. Versuchen Sie es mit der Bestellmetrik und den `Customer's lifetime number of coupons`- und `Customer's lifetime revenue` Dimensionen, um zu sehen, wie die Couponnutzung mit dem Umsatz zusammenhängt. Sie können zwischen einem Streudiagramm mit und ohne Trendlinie wählen:
 
-![](../../assets/scatter-plot-1.png)
+![Streudiagramm, das die Korrelation zwischen Kundenmetriken anzeigt](../../assets/scatter-plot-1.png)
 
-![ohne Trendlinie](../../assets/scatter-plot-2.png)
+![Streudiagramm ohne Trendlinie mit Datenpunktverteilung](../../assets/scatter-plot-2.png)
 
-![](../../assets/scatter-plot-3.png)
+![Streudiagramm mit Datenpunkten und Korrelationsmuster](../../assets/scatter-plot-3.png)
 
-![mit Trendlinie](../../assets/scatter-plot-4.png)
+![Streudiagramm mit Trendlinie, das die Korrelation zwischen den Metriken anzeigt](../../assets/scatter-plot-4.png)
 
 **Voraussetzungen:**
 
@@ -233,11 +233,11 @@ In einem `bubble` können bis zu vier Datendimensionen angezeigt werden, wobei d
 
 Das folgende Diagramm zeigt beispielsweise die Anzahl der Kunden (Blasengröße), gruppiert nach einer bestimmten Akquisequelle (Blasenfarbe) und dem Status (verschiedene Blasen in einer bestimmten Farbe), dargestellt als Gesamtumsatz und durchschnittliche Lebensdauerbestellungen.
 
-![](../../assets/bubble-1.png)
+![Blasendiagramm, das die Kundenanzahl nach Akquise-Quelle und Status im Vergleich zu Umsatz und Bestellungen zeigt](../../assets/bubble-1.png)
 
 Das folgende Diagramm zeigt die Anzahl der Kunden (Blasengröße), gruppiert nach Akquise-Quelle (Blasenfarbe) und Status (verschiedene Blasen in einer bestimmten Farbe), dargestellt als durchschnittlicher Lebenszeitwert und Gesamtumsatz.
 
-![](../../assets/bubble-2.png)
+![Blasendiagramm mit Kundenmetriken nach Akquise-Quelle und Status](../../assets/bubble-2.png)
 
 **Anforderungen für ein Blasendiagramm mit einer Serie:**
 
@@ -265,7 +265,7 @@ Verwenden Sie `heatmaps`, um Hotspots in Ihren Daten zu visualisieren. Beispiels
 
 Die folgende Heatmap zeigt Bestellungen nach Wochentag und Stunde des Tages insgesamt über mehrere Wochen hinweg.
 
-![](../../assets/heat-map.png)<!--{: width="650"}-->
+![Heatmap, die die Bestellintensität nach Wochentag und Stunde des Tages anzeigt](../../assets/heat-map.png)<!--{: width="650"}-->
 
 **Voraussetzungen:**
 

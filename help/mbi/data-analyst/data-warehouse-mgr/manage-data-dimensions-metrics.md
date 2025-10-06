@@ -4,9 +4,9 @@ description: Erfahren Sie, was eine Dimension ist und wie sie verwendet werden k
 exl-id: 143a4b1e-2e6f-438a-90e6-bdda13b39cb9
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ So fügen Sie einer oder mehreren Dimensionen mehreren Metriken gleichzeitig hin
 
 1. Wählen Sie in der Spalte `Choose Metric(s) to Add Dimensions` die Metriken aus, denen Sie Dimensionen hinzufügen möchten. Nach der Auswahl wird die Spalte `Choose Dimensions to Add` rechts angezeigt. Markieren Sie die Dimensionen, die Sie zur ausgewählten Metrik hinzufügen möchten.
 
-   ![](../../assets/Add_Dimensions.png)
+   ![Dialogfeld „Dimensionen hinzufügen“ mit verfügbaren Dimensionsoptionen](../../assets/Add_Dimensions.png)
 
 1. Wenn Sie nach einer der Datendimensionen in Berichten segmentieren oder gruppieren möchten, stellen Sie sicher, dass Sie angeben, dass sie &quot;_&quot;_.
 

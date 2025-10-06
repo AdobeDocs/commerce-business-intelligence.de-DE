@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Daten in Ihrem Bericht für einen bestimm
 exl-id: a1bb4838-f882-44b1-a29f-84b985032ceb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Einige Metriken können im Laufe der Zeit einfach keinen Trend aufweisen, da die
 
 Wenn Sie eine solche Metrik in Ihrem Reporting verwenden, beachten Sie, dass beim Hinzufügen dieser Metrik zu einem Bericht automatisch eine unabhängige `Time Interval` der `None` und `Time Range` der `Global` festgelegt wird:
 
-![](../assets/Metrics_without_timestamps.gif)
+![Bericht, der die Metrik mit dem auf „Kein“ und dem auf „Globaler Zeitraum“ gesetzten Zeitintervall zeigt](../assets/Metrics_without_timestamps.gif)
 
 ## Einer Metrik ein unabhängiges Zeitintervall zuweisen {#independenttimeinterval}
 
@@ -62,11 +62,11 @@ Dieser Berichtstyp kann nützlich sein, wenn Sie den im Jahresvergleich generier
 
 Jetzt können Sie sehen, wie wirksam jeder Monat im letzten Jahr war:
 
-![](../assets/Independent_Time_Int.png)
+![Diagramm mit Prozentsatz des Umsatzes nach Monat für das Vorjahr](../assets/Independent_Time_Int.png)
 
 ## Vergleichen derselben Metrik über verschiedene Zeitbereiche hinweg {#difftimerange}
 
-In diesem Beispiel wird eine benutzerdefinierte Dimension namens `Day number of the month` verwendet. Wenn Sie diesen Bericht erstellen möchten und diese Dimension noch nicht in Ihrer Data Warehouse haben, wenden Sie sich an den [-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) um Hilfe zu erhalten.
+In diesem Beispiel wird eine benutzerdefinierte Dimension namens `Day number of the month` verwendet. Wenn Sie diesen Bericht erstellen möchten und diese Dimension noch nicht in Ihrer Data Warehouse haben, wenden Sie sich an den [-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) um Hilfe zu erhalten.
 
 Die beiden häufigsten Beispiele in dieser Kategorie sind (1) der Vergleich von Wachstumsmetriken (Umsatz im Jahresvergleich oder Monat im Monatsvergleich) und (2) ein besseres Verständnis der jüngsten Trends bei Lagerbeständen oder Artikelverkäufen.
 
@@ -87,7 +87,7 @@ Um diesen Anwendungsfall zu demonstrieren, sehen Sie sich den täglichen Umsatz 
 
    Machen Sie sich keine Gedanken, wenn die Metrik aus dem Bericht verschwindet - durch Festlegen einer unabhängigen Zeitoption wird die Metrik automatisch aus dem Bericht ausgeblendet. Um sie erneut anzuzeigen, klicken Sie **[!UICONTROL Show]** neben der Metrik.
 
-   ![](../assets/Different_Time_Ranges.gif)
+   ![Demonstration der Festlegung verschiedener Zeitbereiche für Metriken in einem Bericht](../assets/Different_Time_Ranges.gif)
 
    * Klicken Sie auf **[!UICONTROL Apply]** , um die Intervall- und Bereichseinstellungen zu speichern.
 
@@ -95,7 +95,7 @@ Um diesen Anwendungsfall zu demonstrieren, sehen Sie sich den täglichen Umsatz 
 
    * Wählen Sie in der Dropdown-Liste `Group By` die Option `Show All` und klicken Sie auf **[!UICONTROL Apply]**. Dadurch werden die X-Achsenwerte für den Bericht erstellt:
 
-   ![](../assets/TO4.png)
+   ![Bericht mit Umsatzvergleich gruppiert nach Tagesanzahl des Monats](../assets/TO4.png)
 
    * Benennen Sie die Metriken um. Im Beispiel ist die erste Metrik `Revenue - 2015` und die zweite `Revenue - 2014`.
 
@@ -136,7 +136,7 @@ Um die Formeln zu erstellen, klicken Sie auf **[!UICONTROL Add Formula]**. Geben
 
 * Geben Sie für die `last promo period` `D / C` in das Feld `Formula` ein.
 
-  ![](../assets/Different_Time_Ranges_2.png)
+  ![Bericht mit den Wochen der Angebotsberechnungen für verschiedene Zeiträume](../assets/Different_Time_Ranges_2.png)
 
 * Passen Sie abschließend den Bericht an, indem Sie die Metriken ausblenden und dem Bericht eine `SKU` oder eine ähnliche Dimension als `Group By` hinzufügen.
 

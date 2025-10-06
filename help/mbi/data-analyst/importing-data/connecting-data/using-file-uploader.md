@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie alle Ihre Daten in einer einzigen Data Wareho
 exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Verwenden Sie Werbekampagnen als Beispiel. Wenn Sie sowohl Online- als auch Offl
 ## Einschränkungen und Anforderungen {#require}
 
 1. **Das einzige unterstützte Format für Datei-Uploads ist `CSV` oder`comma separated values`**. Wenn Sie in Excel arbeiten, können Sie die Datei mithilfe der Funktion Speichern unter im `.csv` Format speichern.
-1. **`CSV`Dateien müssen`UTF-8 encoding`** verwenden. Meistens ist das kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, ([ Sie in diesem Support-Artikel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=de).
+1. **`CSV`Dateien müssen`UTF-8 encoding`** verwenden. Meistens ist das kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, ([ Sie in diesem Support-Artikel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Dateien dürfen nicht größer als 100 MB**. Wenn die Datei größer ist als diese, teilen Sie die Tabelle in Blöcke auf und speichern Sie sie als einzelne Dateien. Sie können die Daten anhängen, nachdem die ursprüngliche Datei geladen wurde.
 1. **Alle Tabellen müssen einen`primary key`** haben. Die Tabelle muss mindestens eine Spalte enthalten, die als `primary key` verwendet werden kann, oder eine eindeutige Kennung für jede Zeile der Tabelle. Jede als `primary key` gekennzeichnete Spalte darf *nie* null sein. Eine `primary key` kann so einfach sein wie das Hinzufügen einer Spalte, die jeder Zeile eine Zahl gibt, oder es können zwei Spalten verkettet sein, um eine Spalte mit eindeutigen Werten (z. B. `campaign name` und `date`) zu erstellen.
 
@@ -105,11 +105,11 @@ Ein *Erfolg!* nach dem Speichern der Tabelle wird oben im Bildschirm eine Meldun
 
 Wenn Sie eine visuelle Darstellung benötigen, sehen Sie sich den gesamten Prozess an:
 
-![](../../../assets/fileupload.gif)
+![Animierte Demonstration des Datei-Upload-Prozesses mit hinzugefügten Daten](../../../assets/fileupload.gif)
 
 Hochgeladene Tabellen werden im Data Warehouse **Manager unter dem Abschnitt** Datei-Uploads“ der Tabellenliste (sowohl in den Optionen Alle Tabellen als auch Synchronisierte Tabellen) angezeigt:
 
-![](../../../assets/upload-tables.png)
+![Oberfläche „Tabellen hochladen“ mit verfügbaren Tabellen für den Datenimport](../../../assets/upload-tables.png)
 
 ## Aktualisieren oder Anhängen von Daten an eine vorhandene Tabelle {#appending}
 

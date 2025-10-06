@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über einige ER-Diagramme, die Ihnen dabei helfen
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Ein Kunde kann viele Bestellungen aufgeben. Die Beziehung zwischen diesen beiden
 
 Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse . Wenn Sie bereit sind, den Pfad zu erstellen, wird er wie folgt definiert:
 
-![](../../assets/SFO___CE_path.png)
+![Entitätsbeziehungsdiagramm, das den Pfad von sales_flat_order zu customer_entity anzeigt](../../assets/SFO___CE_path.png)
 
 ## `sales\_flat\_order & sales\_flat\_order\_item`
 
@@ -49,7 +49,7 @@ Eine Bestellung kann viele Artikel enthalten. Die Beziehung zwischen diesen beid
 
 Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse . Wenn Sie bereit sind, den Pfad zu erstellen, definieren Sie ihn wie unten gezeigt.
 
-![](../../assets/SFOI___SFO_path.png)
+![Entitätsbeziehungsdiagramm, das den Pfad von sales_flat_order_item zu sales_flat_order anzeigt](../../assets/SFOI___SFO_path.png)
 
 ## `catalog\_product\_entity & sales\_flat\_order\_item`
 
@@ -59,4 +59,4 @@ Ein Produkt kann viele Artikel gekauft werden. Die Beziehung zwischen diesen bei
 
 Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse . Wenn Sie bereit sind, den Pfad zu erstellen, definieren Sie ihn wie unten gezeigt.
 
-![](../../assets/SFOI___CPE_path.png)
+![Entitätsbeziehungsdiagramm, das den Pfad von sales_flat_order_item zu catalog_product_entity anzeigt](../../assets/SFOI___CPE_path.png)

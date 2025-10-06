@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über einige verschiedene Methoden zur Bewertung 
 exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Die oben unter (1) und (2) genannten Analysen werden in einem separaten Tutorial
 1. Wählen Sie `Add New Metric` aus und wählen Sie die [!DNL `Adwords...`] aus, in der Ihre [!DNL AdWords] Kostendaten erfasst werden.
 1. Geben Sie der Metrik im Metrik-Editor einen Namen (z. B. [!UICONTROL AdWord Cost])
 1. Führen Sie mithilfe der Dropdown-Listen einen **Summe** für die Spalte `adCost` in der Tabelle [!DNL Adwords...] (Änderung) durch, die nach der Spalte `date` sortiert ist.
-   ![](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
+   ![Erfolgsmeldung nach dem Hinzufügen einer neuen Metrik](../../assets/success-add-new-metric.png)<!--="500" height="303"}-->
 1. Klicken Sie oben auf `Back to Metric List` und wechseln Sie zu einem beliebigen Dashboard.
 
 1. Erstellen eines Berichts zu den Ausgaben von Segmenten nach Kampagnen
@@ -99,7 +99,7 @@ Führen Sie produktspezifische Anzeigen durch? Wenn ja, können Sie den ROI dies
 >
 >In diesem Beispiel wird davon ausgegangen, dass alle Kampagnenkosten ausschließlich zur Generierung von Käufen bestimmter Produkte verwendet wurden. Unter der Annahme, dass alle Kosten für die Generierung von Käufen aufgewendet wurden, entfällt der resultierende ROI auf das Worst-Case-Szenario (höchste Kosten pro Kauf). Sie können sicher sein, dass Ihr tatsächlicher ROI höher ist als diese Berechnung. Beispiel: Angenommen, Sie haben 20 USD für eine Kampagne ausgegeben, die 10 neue Benutzende und 10 Käufe generiert hat, dann betragen die tatsächlichen Kosten pro Kauf 1 USD. Unter der Annahme, dass alle Kosten für die Akquise neuer Benutzer aufgewendet wurden, betragen die Kosten pro Kauf 2 USD.
 
-Bevor Sie beginnen, [ Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um die folgenden Dimensionen mit Ihrer Zeileneintragstabelle zu verbinden (`sales\_flat\_order\_item, order\_item`):
+Bevor Sie beginnen, [ Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um die folgenden Dimensionen mit Ihrer Zeileneintragstabelle zu verbinden (`sales\_flat\_order\_item, order\_item`):
 
 * Quelle der Bestellung (wenn Sie nur die Empfehlungsquelle auf Benutzerebene verfolgen, dann fügen Sie die Quelle des Benutzers hinzu)
 * Kampagne des Auftrags (wenn Sie nur die Empfehlungsquelle auf Benutzerebene verfolgen, dann der Kampagne des Benutzers beitreten)
@@ -122,8 +122,8 @@ Bevor Sie beginnen, [ Sie ein Support-Ticket](https://experienceleague.adobe.com
 1. Fügen Sie mit diesen Metriken Formeln hinzu:
 1. [!UICONTROL ROI]: Geben Sie die `\[A\]/\[B\]` ein, wenn `\[A\]` für `Revenue per campaign for specific product(s)` und `\[B\]` für `Ad cost by campaigns` steht. Gibt das Verhältnis von (Umsatz für bestimmte Produkte) zu (Kampagnenkosten) zurück.
 1. [!UICONTROL Return]: Geben Sie die `\[A\]-\[B\]` ein. Dies gibt die durchschnittliche Spanne zurück, die ein Benutzer durch Berechnung erzielt hat (durchschnittliche Benutzerkosten pro Akquise)
-1. (Optional) [!UICONTROL Revenue]: Blenden Sie die `Revenue by items` ein, um den Umsatz für bestimmte Produkte pro Kampagne anzuzeigen
-1. (Optional) [!UICONTROL Cost]: Blenden Sie die `AdWords Cost` ein, um die Kosten für Kampagnen anzuzeigen
+   1. (Optional) [!UICONTROL Revenue]: Blenden Sie die `Revenue by items` ein, um den Umsatz für bestimmte Produkte pro Kampagne anzuzeigen
+   1. (Optional) [!UICONTROL Cost]: Blenden Sie die `AdWords Cost` ein, um die Kosten für Kampagnen anzuzeigen
 
 1. Geben Sie Ihrem Bericht einen Namen und speichern Sie ihn unbedingt als Tabelle
 

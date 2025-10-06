@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie ein Diagramm bearbeiten, das einem anderen Be
 exl-id: defcb72d-6027-4ae7-b974-e2f39773fe32
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '171'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Suchen Sie zunächst das Diagramm, das Sie von dem anderen Benutzer kopieren mö
 
 ## Klonen des Diagramms
 
-Wählen Sie im freigegebenen Dashboard das Diagramm aus, das Sie in Ihr eigenes Konto kopieren möchten. Klicken Sie auf das Zahnradsymbol (![](../../assets/gear-icon.png)) und dann auf **[!UICONTROL Save As]**.
+Wählen Sie im freigegebenen Dashboard das Diagramm aus, das Sie in Ihr eigenes Konto kopieren möchten. Klicken Sie auf das Zahnradsymbol ![Zahnradsymbol](../../assets/gear-icon.png) und dann auf **[!UICONTROL Save As]**.
 
 Sie werden aufgefordert, Ihre Kopie des Diagramms zu benennen und sie einem Ihrer vorhandenen Dashboards hinzuzufügen. Wenn Sie kein Dashboard auswählen, wird es Ihrer Liste vorhandener Diagramme hinzugefügt und Sie können [es später hinzufügen](../../data-user/dashboards/add-charts-dashboard.md).
 

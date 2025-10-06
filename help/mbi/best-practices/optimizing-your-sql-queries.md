@@ -4,18 +4,18 @@ description: Erfahren Sie, wie Sie SQL-Abfragen optimieren können.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 # SQL-Abfragen optimieren
 
-Mit dem [!DNL SQL Report Builder] können Sie diese Abfragen jederzeit abfragen und iterieren. Dies ist nützlich, wenn Sie eine Abfrage ändern müssen, ohne auf den Abschluss eines Aktualisierungszyklus warten zu müssen, bevor eine von Ihnen erstellte Spalte oder ein Bericht aktualisiert werden muss.
+Mit dem [!DNL SQL Report Builder] können Sie Ihre Abfragen jederzeit ausführen und ändern. Diese Funktion ist hilfreich, wenn Sie eine Abfrage sofort aktualisieren müssen, anstatt zu warten, bis ein Aktualisierungszyklus abgeschlossen ist, bevor Sie eine Spalte oder einen Bericht korrigieren.
 
-Bevor eine Abfrage ausgeführt wird, [[!DNL Commerce Intelligence] schätzt ihre Kosten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=de). Die Kosten berücksichtigen die Dauer und Anzahl der Ressourcen, die für die Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch erachtet werden oder die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] Limit überschreitet, schlägt die Abfrage fehl. Für die Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), mit der sichergestellt wird, dass Sie möglichst optimierte Abfragen schreiben, empfiehlt Adobe Folgendes.
+Bevor eine Abfrage ausgeführt wird, [[!DNL Commerce Intelligence] schätzt ihre Kosten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Die Kosten berücksichtigen die Dauer und Anzahl der Ressourcen, die für die Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch erachtet werden oder die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] Limit überschreitet, schlägt die Abfrage fehl. Für die Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), mit der sichergestellt wird, dass Sie möglichst optimierte Abfragen schreiben, empfiehlt Adobe Folgendes.
 
 ## Verwenden von SELECT oder Auswählen aller Spalten
 
@@ -25,7 +25,7 @@ Aus diesem Grund empfiehlt Adobe, nach Möglichkeit keine `SELECT *` zu verwende
 
 | **Stattdessen…** | **Jetzt testen!** |
 |-----|-----|
-| ![](../../mbi/assets/Select_all_1.png) | ![](../../mbi/assets/Select_all_2.png) |
+| ![SQL-Abfrage mit SELECT-Sternchen](../../mbi/assets/Select_all_1.png) | ![SQL-Abfrage mit Auswahl bestimmter Spalten](../../mbi/assets/Select_all_2.png) |
 
 {style="table-layout:auto"}
 
@@ -39,7 +39,7 @@ Sehen Sie sich an, wie Sie eine Abfrage vom Typ VOLLSTÄNDIGER ÄUSSERER JOIN ne
 
 | **Stattdessen…** | **Jetzt testen!** |
 |-----|-----|
-| ![](../../mbi/assets/Full_Outer_Join_1.png) | ![](../../mbi/assets/Full_Outer_Join_2.png) |
+| ![SQL-Abfrage mit vollständigem äußeren Join](../../mbi/assets/Full_Outer_Join_1.png) | ![SQL-Abfrage mit optimiertem Join](../../mbi/assets/Full_Outer_Join_2.png) |
 
 {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ Sie können zwar mehrere Joins in Ihre Abfrage einbeziehen, aber denken Sie dara
 
 ## Verwenden von Filtern
 
-Verwenden Sie nach Möglichkeit Filter. `WHERE`- und `HAVING` filtern Ihre Ergebnisse und geben Ihnen nur die Daten, die Sie wirklich möchten.
+Verwenden Sie nach Möglichkeit Filter. Die -Klauseln `WHERE` und `HAVING` Ihre Ergebnisse filtern und geben Ihnen nur die Daten, die Sie wirklich möchten.
 
 ## Verwenden von Filtern in JOIN-Klauseln
 
@@ -59,7 +59,7 @@ Wenn Sie bei der Durchführung eines Joins einen Filter verwenden, stellen Sie s
 
 | **Stattdessen…** | **Jetzt testen!** |
 |-----|-----|
-| ![](../../mbi/assets/Join_filters_1.png) | ![](../../mbi/assets/Join_filters_2.png) |
+| ![SQL-Abfrage mit WHERE-Klausel-Filter](../../mbi/assets/Join_filters_1.png) | ![SQL-Abfrage mit ON-Klausel-Filter](../../mbi/assets/Join_filters_2.png) |
 
 {style="table-layout:auto"}
 
@@ -73,19 +73,19 @@ Vergleichsoperatoren (>, &lt;, = usw.) sind die kostengünstigsten, gefolgt von 
 
 Die Verwendung von `EXISTS` im Vergleich zu `IN` hängt von der Art der Ergebnisse ab, die Sie zurückgeben möchten. Wenn Sie nur an einem einzelnen Wert interessiert sind, verwenden Sie die `EXISTS`-Klausel anstelle von `IN`. `IN` wird mit Listen von kommagetrennten Werten verwendet, was die Berechnungskosten der Abfrage erhöht.
 
-Wenn `IN` Abfragen ausgeführt werden, muss das System zunächst die Unterabfrage (die `IN`) verarbeiten und dann die gesamte Abfrage basierend auf der in der `IN`-Anweisung angegebenen Beziehung. `EXISTS` ist wesentlich effizienter, da die Abfrage nicht mehrmals ausgeführt werden muss. Beim Überprüfen der in der Abfrage angegebenen Beziehung wird ein Wert „true/false“ zurückgegeben.
+Wenn `IN` Abfragen ausgeführt werden, muss das System zunächst die Unterabfrage (die `IN`) verarbeiten und dann die gesamte Abfrage basierend auf der in der `IN`-Anweisung angegebenen Beziehung. Die `EXISTS` Abfrage ist wesentlich effizienter, da die Abfrage nicht mehrmals ausgeführt werden muss. Beim Überprüfen der in der Abfrage angegebenen Beziehung wird ein Wert „true/false“ zurückgegeben.
 
 Einfach ausgedrückt: Das System muss bei der Verwendung von `EXISTS` nicht so viel verarbeiten.
 
 | **Stattdessen…** | **Jetzt testen!** |
 |-----|-----|
-| ![](../../mbi/assets/Exists_1.png) | ![](../../mbi/assets/Exists_2.png) |
+| ![SQL-Abfrage mit LEFT JOIN mit NULL-Überprüfung](../../mbi/assets/Exists_1.png) | ![SQL-Abfrage mit EXISTS-Klausel](../../mbi/assets/Exists_2.png) |
 
 {style="table-layout:auto"}
 
 ## Verwenden von ORDER BY
 
-`ORDER BY` ist eine teure Funktion in SQL und kann die Kosten einer Abfrage erheblich erhöhen. Wenn Sie eine Fehlermeldung erhalten, in der Sie darauf hingewiesen werden, dass die Kosten für EXPLAIN Ihrer Abfrage zu hoch sind, sollten Sie `ORDER BY` aus Ihrer Abfrage entfernen, es sei denn, dies ist erforderlich.
+Die `ORDER BY` ist in SQL sehr aufwändig und kann die Kosten einer Abfrage erheblich erhöhen. Wenn Sie eine Fehlermeldung erhalten, in der Sie darauf hingewiesen werden, dass die Kosten für EXPLAIN Ihrer Abfrage zu hoch sind, sollten Sie `ORDER BY` aus Ihrer Abfrage entfernen, es sei denn, dies ist erforderlich.
 
 Das soll nicht heißen, dass `ORDER BY` nicht verwendet werden kann - nur, dass es nur verwendet werden sollte, wenn es notwendig ist.
 
@@ -95,7 +95,7 @@ Es kann einige Situationen geben, in denen dieser Ansatz nicht mit dem übereins
 
 | **Stattdessen…** | **Jetzt testen!** |
 |-----|-----|
-| ![](../../mbi/assets/Group_by_2.png) | ![](../../mbi/assets/Group_by_1.png) |
+| ![SQL-Abfrage mit GROUP BY vor dem Filtern](../../mbi/assets/Group_by_2.png) | ![SQL-Abfrage mit Filter vor GROUP BY](../../mbi/assets/Group_by_1.png) |
 
 {style="table-layout:auto"}
 

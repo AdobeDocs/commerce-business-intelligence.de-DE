@@ -4,9 +4,9 @@ description: Erfahren Sie, wie viele mögliche Vorkommen in einer Tabelle zu ein
 exl-id: e7256f46-879a-41da-9919-b700f2691013
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ In einer `one-to-one` Beziehung gehört ein Datensatz in Tabelle `B` nur zu eine
 
 Beispielsweise kann eine Person in der Beziehung zwischen Personen- und Führerscheinnummern nur eine Führerscheinnummer haben, und eine Führerscheinnummer gehört nur zu einer Person.
 
-![](../../assets/one-to-one.png)
+![Diagramm mit Eins-zu-eins-Beziehung zwischen zwei Entitäten](../../assets/one-to-one.png)
 
 ### `One-to-Many` {#onetomany}
 
 In einer `one-to-many` kann ein Datensatz in der Tabelle `A` zu mehreren Datensätzen in der Tabelle `B` gehören. Denken Sie an die Beziehung zwischen `orders` und `items`. Eine Bestellung kann viele Artikel enthalten, aber ein Artikel gehört zu einer einzigen Bestellung. In diesem Fall ist der `orders` die eine Seite und der `items` die viele Seite.
 
-![](../../assets/one-to-many_001.png)
+![Diagramm mit einer n:n-Beziehung zwischen Bestellungen und Artikeln](../../assets/one-to-many_001.png)
 
 ### `Many-to-Many` {#manytomany}
 
@@ -45,7 +45,7 @@ In einer `many-to-many` kann ein Datensatz in der Tabelle `B` zu mehreren Datens
 
 Denken Sie an die Beziehung zwischen **Produkten** und **Kategorien**: Ein Produkt kann zu vielen Kategorien gehören, und eine Kategorie kann viele Produkte enthalten.
 
-![](../../assets/many-to-many.png)
+![Diagramm mit n:n-Beziehungen zwischen Produkten und Kategorien](../../assets/many-to-many.png)
 
 ## Auswerten von Tabellen {#eval}
 
@@ -75,7 +75,7 @@ Eine bestimmte Person kann nur über eine Führerscheinnummer verfügen. Eine be
 
 Dies ist eine `one-to-one` Beziehung, bei der jede Tabelle eine Seite ist.
 
-![](../../assets/one-to-one3.png)
+![Konzeptgrafik der Eins-zu-eins-Beziehung zwischen Person und Führerschein](../../assets/one-to-one3.png)
 
 ### `One-to-Many`
 
@@ -83,7 +83,7 @@ Eine bestimmte Bestellung kann möglicherweise viele Artikel enthalten. Ein best
 
 Dies ist eine `one-to-many` Beziehung, bei der die Tabelle Bestellungen die eine Seite und die Tabelle Artikel die viele Seite ist.
 
-![](../../assets/one-to-many3.png)
+![Konzeptdiagramm der Eins-zu-Viele-Beziehung zwischen Bestellungen und Artikeln](../../assets/one-to-many3.png)
 
 ### `Many-to-Many`
 
@@ -91,7 +91,7 @@ Ein bestimmtes Produkt kann möglicherweise zu vielen Kategorien gehören. Eine 
 
 Dies ist eine `many-to-many` Beziehung, bei der jede Tabelle eine Viele-Seite ist.
 
-![](../../assets/many-to-many3.png)
+![Konzeptgrafik der Viele-zu-viele-Beziehung zwischen Produkten und Kategorien](../../assets/many-to-many3.png)
 
 ### Verwenden des Tabellenschemas {#schema}
 
@@ -105,7 +105,7 @@ Wenn die Tabellen mithilfe der `primary key` beider Tabellen verknüpft sind, wi
 
 Beispielsweise kann eine `users`-Tabelle die meisten Benutzerattribute (z. B. den Namen) erfassen, während eine zusätzliche `user_source`-Tabelle die Quellen der Benutzerregistrierung erfasst. In jeder Tabelle steht eine Zeile für einen Benutzer.
 
-![](../../assets/one-to-one1.png)
+![Schemadiagramm mit Eins-zu-eins-Beziehung mithilfe von Primärschlüsseln](../../assets/one-to-one1.png)
 
 ### `One-to-many`
 
@@ -115,17 +115,17 @@ Beispielsweise kann eine `users`-Tabelle die meisten Benutzerattribute (z. B. de
 
 Wenn Tabellen mithilfe eines `Foreign key` verknüpft werden, der auf eine `primary key` verweist, beschreibt diese Einrichtung eine `one-to-many`. Die eine Seite ist die Tabelle, die die `primary key` enthält, und die viele Seite ist die Tabelle, die die `foreign key` enthält.
 
-![](../../assets/one-to-many1.png)
+![Schemadiagramm mit einer n:n-Beziehung unter Verwendung eines Fremdschlüssels](../../assets/one-to-many1.png)
 
 ### `Many-to-many`
 
 Wenn einer der folgenden Punkte zutrifft, wird die Beziehung `many-to-many`:
 
 * `Non-primary key` Spalten werden zur Verknüpfung von zwei Tabellen verwendet
-  ![](../../assets/many-to-many1.png)
+  ![Schemadiagramm mit Viele-zu-viele-Beziehungen unter Verwendung von Nicht-Primärschlüsseln](../../assets/many-to-many1.png)
 * Ein Teil eines zusammengesetzten `primary key` wird verwendet, um zwei Tabellen zu verknüpfen
 
-![](../../assets/many-to-mnay2.png)
+![Schemadiagramm mit einer n:n-Beziehung unter Verwendung eines zusammengesetzten Primärschlüssels](../../assets/many-to-mnay2.png)
 
 ## Nächste Schritte
 

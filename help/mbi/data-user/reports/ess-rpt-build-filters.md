@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Filter verwenden.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 0854d644cb72b3fc8b8b31a0bf7e8dca4cc99724
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu begrenze
 
    In diesem Bericht zeigt jeder Datenpunkt die Gesamtzahl der Kunden für den Monat an.
 
-1. Klicken Sie im linken Bedienfeld auf das Symbol „Filter“ (![](../../assets/magento-bi-btn-filter.png)).
+1. Klicken Sie im linken Bedienfeld auf das Symbol „Filter![ (](../../assets/magento-bi-btn-filter.png)).
 
    ![Filter hinzufügen](../../assets/magento-bi-report-builder-filter-add.png)
 
@@ -35,7 +35,7 @@ Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu begrenze
 
    Filter sind alphabetisch nummeriert, wobei der erste `[A]` ist. Die ersten beiden Teile des Filters sind Dropdown-Optionen, und der dritte Teil ist ein -Wert.
 
-   ![](../../assets/magento-bi-report-builder-filter-add-a.png)
+   ![Filterschnittstelle mit der Option „Filter hinzufügen“](../../assets/magento-bi-report-builder-filter-add-a.png)
 
    * Klicken Sie auf den ersten Teil des Filters und wählen Sie die Spalte aus, die Sie als Betreff des Ausdrucks verwenden möchten.
 

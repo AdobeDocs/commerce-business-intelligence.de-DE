@@ -4,9 +4,9 @@ description: Erfahren Sie, wie SQL-Abfragen in die berechneten Spalten und Metri
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Sehen Sie sich ein konkretes Beispiel an, wie eine `Total Revenue` Metrik in [!D
 | `email NOT LIKE '%@magento.com'` | `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | `timestamp` (und Reporting-`time range`) |
 
-Navigieren Sie zum Metrik-Builder, indem Sie **[!UICONTROL Manage Data** > **&#x200B; Metriken &#x200B;**> **Neue Metrik erstellen]** klicken. Sie müssen zunächst die entsprechende `source` auswählen, bei der es sich in diesem Fall um die `orders` handelt. Anschließend würde die Metrik wie unten dargestellt eingerichtet:
+Navigieren Sie zum Metrik-Builder, indem Sie **[!UICONTROL Manage Data** > ** Metriken **> **Neue Metrik erstellen]** klicken. Sie müssen zunächst die entsprechende `source` auswählen, bei der es sich in diesem Fall um die `orders` handelt. Anschließend würde die Metrik wie unten dargestellt eingerichtet:
 
 ![Metrikaggregation](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ Die Abfrage für diese Aggregation kann in etwa wie folgt aussehen:
 
 Für die Einrichtung in [!DNL Commerce Intelligence] ist die Verwendung Ihres Data Warehouse-Managers erforderlich, mit dem Sie einen Pfad zwischen Ihrer `orders` und `customers` Tabelle erstellen und dann in der Tabelle Ihres Kunden eine Spalte mit dem Namen `Customer LTV` erstellen.
 
-Erfahren Sie, wie Sie einen neuen Pfad zwischen dem `customers` und dem `orders` einrichten. Das Endziel besteht darin, eine neue aggregierte Spalte in der `customers` zu erstellen. Gehen Sie daher in Ihrer Data Warehouse zur `customers` Tabelle und klicken Sie auf **[!UICONTROL Create a Column** > **&#x200B; Definition auswählen &#x200B;**> **SUM]**.
+Erfahren Sie, wie Sie einen neuen Pfad zwischen dem `customers` und dem `orders` einrichten. Das Endziel besteht darin, eine neue aggregierte Spalte in der `customers` zu erstellen. Gehen Sie daher in Ihrer Data Warehouse zur `customers` Tabelle und klicken Sie auf **[!UICONTROL Create a Column** > ** Definition auswählen **> **SUM]**.
 
 Als Nächstes müssen Sie die Quelltabelle auswählen. Wenn ein Pfad zu Ihrer `orders` vorhanden ist, wählen Sie ihn einfach aus der Dropdown-Liste aus. Wenn Sie jedoch einen neuen Pfad erstellen, klicken Sie auf **[!UICONTROL Create new path]** . Daraufhin wird der folgende Bildschirm angezeigt:
 
@@ -89,7 +89,7 @@ Hier müssen Sie die Beziehung zwischen den beiden Tabellen, die Sie verbinden m
 
 Nachdem der Pfad gespeichert wurde, können Sie die Spalte `Customer LTV` erstellen! Siehe unten:
 
-![](../../assets/Customer_LTV.gif)
+![Animierte Demonstration der Wertanalyse der Kundenlebensdauer mit SQL](../../assets/Customer_LTV.gif)
 
 Nachdem Sie nun die neue Spalte `Customer LTV` in Ihrer `customers` erstellt haben, können Sie mithilfe dieser Spalte eine [Metrikaggregation](#aggregate) erstellen (um beispielsweise den durchschnittlichen LTV pro Kunde zu ermitteln). Sie können auch die berechnete Spalte in einem Bericht `group by` oder `filter`, indem Sie vorhandene Metriken verwenden, die auf der `customers`-Tabelle basieren.
 

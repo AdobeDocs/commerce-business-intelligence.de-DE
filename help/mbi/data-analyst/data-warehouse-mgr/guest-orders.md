@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Auswirkungen von Gastbestellungen auf I
 exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ In der typischen Commerce-Datenbank gibt es eine `orders`, die mit einer `custom
 
 * **Wenn alle Kunden registriert** und keine Gastbestellungen zulässig sind, bedeutet dies, dass jeder Datensatz in der `orders`-Tabelle einen -Wert in der `customer\_id` Spalte aufweist. Dadurch wird jede Bestellung wieder an die `customers`-Tabelle angefügt.
 
-  ![](../../assets/guest-orders-4.png)
+  ![Datentabelle für Gastbestellungen mit Kundeninformationen](../../assets/guest-orders-4.png)
 
 * **Wenn Gastbestellungen zulässig sind** bedeutet dies, dass einige Bestellungen in der Spalte &quot;`customer\_id`&quot; keinen Wert aufweisen. Nur registrierte Kunden erhalten einen Wert für die Spalte `customer\_id` in der `orders`. Kunden, die nicht registriert sind, erhalten einen `NULL` Wert (oder ein leeres Feld) für diese Spalte. Infolgedessen verfügen nicht alle Bestelldatensätze über übereinstimmende Datensätze in der `customers`.
 
@@ -39,7 +39,7 @@ Die beste Möglichkeit, Gastaufträge zu berücksichtigen, besteht darin, alle M
 
 Sie werden möglicherweise feststellen, dass der in diesem Einrichtungstyp festgelegte `Customers we count`-Filter einen Filter für `Customer's order number = 1` enthält.
 
-![](../../assets/guest-orders-filter-set.png)
+![Filtersatz-Konfiguration zum Ausschluss von Gastaufträgen](../../assets/guest-orders-filter-set.png)
 
 In einer Situation ohne Gastaufträge ist jeder Kunde als eindeutige Zeile in der Kundentabelle vorhanden (siehe Abbildung 1). Eine Metrik wie `New customers` kann einfach die ID dieser Tabelle basierend auf `created\_at` Datum zählen, um neue Kunden anhand des Registrierungsdatums zu verstehen.
 

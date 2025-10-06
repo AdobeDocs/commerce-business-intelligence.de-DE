@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie ein Dashboard für Investoren erstellen.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards, Data Integration
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ So erstellen Sie Berichte für Ihr Investor-Dashboard:
    * Metrik - Umsatz
 * **[!UICONTROL Revenue from 1st time orders vs repeat orders]**
    * Metrik - Erster Bestellumsatz
-   * Filter - Die Bestellnummer des Benutzers ist gleich 1
+      * Filter - Die Bestellnummer des Benutzers ist gleich 1
    * Metrik 2 - Umsatz der Wiederholungsaufträge
       * Filter - Die Bestellnummer des Benutzers ist größer als 1
    * Deaktivieren Sie das Kontrollkästchen für Mehrere Y-Achsen
@@ -77,4 +77,4 @@ Mit den [Commerce Data Enrichment-Services](https://business.adobe.com/products/
 
 Organisieren Sie Ihre Berichte sorgfältig und achten Sie auf Details. Nach Abschluss des Vorgangs sieht das Dashboard wie folgt aus:
 
-![](../../mbi/assets/investor-dboard-example.png)
+![Build Investor Dashboard](../../mbi/assets/investor-dboard-example.png)

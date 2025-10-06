@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Ge
 exl-id: 9d621f40-f9c2-4310-bd96-a46ab7159930
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Die meisten Kunden möchten ihre **Geschäftsziele** verfolgen, wissen aber nicht, dass dies in [!DNL Adobe Commerce Intelligence] möglich ist. In diesem Thema wird gezeigt, wie Sie ein Dashboard einrichten, mit dem Sie Ihre Geschäftsziele anhand Ihrer tatsächlichen Daten verfolgen können - einschließlich Umsatz, neu registrierte Benutzer und Bestellungen im Zeitverlauf. Außerdem erfahren Sie, wie Sie die Leistung von Jahr zu Jahr vergleichen können, und das alles in einem Dashboard wie diesem:
 
-![](../../assets/Goals-_dashboard_2.png)
+![Dashboard mit Zielen, die anhand der tatsächlichen Leistungsmetriken verfolgt werden](../../assets/Goals-_dashboard_2.png)
 
 Bevor Sie beginnen, sollten Sie den [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) überprüfen und sicherstellen, dass Sie Ihre Geschäftsziele für einen bestimmten Zeitraum definiert haben.
 
@@ -25,7 +25,7 @@ Sie müssen zunächst eine Datei hochladen, die bestimmte tägliche/monatliche/v
 
 Sie können den [Datei-Uploader](../importing-data/connecting-data/using-file-uploader.md) und das folgende Bild verwenden, um Ihre Datei zu formatieren. Zu den häufigsten Zielen, die Kunden in [!DNL Commerce Intelligence] verfolgen, gehören Bestellungen, Umsatz und neue registrierte Konten.
 
-![](../../assets/Goals-_Excel.png)
+![Excel-Tabellenvorlage zum Tracking von Zielen und Metriken](../../assets/Goals-_Excel.png)
 
 ## Metriken
 
@@ -55,46 +55,46 @@ Es ist hilfreich, bei der Analyse Ihrer Ziele einen Mix aus statischen Werten un
 
 * **Zum Erreichen des Ziels verbleibender Umsatz**
 * `A`: `Revenue`
-* &#x200B;
-  [!UICONTROL -Metrik]: `Revenue`
+* 
+  [!UICONTROL-Metrik]: `Revenue`
 
 * `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * [!UICONTROL Formula]: `Revenue left to achieve target`
-* &#x200B;
-  [!UICONTROL -Formel]: `(B-A)`
-* &#x200B;
+* 
+  [!UICONTROL-Formel]: `(B-A)`
+* 
   [!UICONTROL Format]: `Number`
 
 * [!UICONTROL Time period]: (Welcher relevante Zeitraum gewünscht wird)
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
-* &#x200B;
+* 
   [!UICONTROL Diagrammtyp]: `Scalar`
 
 * **Umsatzziele**
 * `A`: `Revenue`
-* &#x200B;
-  [!UICONTROL -Metrik]: `Revenue`
+* 
+  [!UICONTROL-Metrik]: `Revenue`
 
 * `B`: `Target Revenue`
 * [!UICONTROL Metric]: `Monthly Revenue Target`
 
 * `C`: `Revenue (amount change since previous year)` (ausblenden)
-* &#x200B;
-  [!UICONTROL -Metrik]: `Revenue`
+* 
+  [!UICONTROL-Metrik]: `Revenue`
 * [!UICONTROL Perspective]: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Diesen Monat letztes Jahr)
-* &#x200B;
-  [!UICONTROL -Formel]: `(A-C)`
-* &#x200B;
+* 
+  [!UICONTROL-Formel]: `(A-C)`
+* 
   [!UICONTROL Format]: `Currency`
 
 * `Multiple Y-Axes` ausschalten
 * [!UICONTROL Time period]: (Welcher relevante Zeitraum gewünscht wird)*
-* &#x200B;
+* 
   [!UICONTROL Interval]: `Month`
 * [!UICONTROL Chart Type]: `Line Chart`
 

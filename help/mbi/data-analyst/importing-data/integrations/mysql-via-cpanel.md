@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie MySQL über cPanel verbinden.
 exl-id: 90b0a0b0-8c6b-4144-95b4-f588f18616c7
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Erste Schritte.
 1. Klicken Sie auf **[!UICONTROL [!DNL MySQL] Databases]** im Abschnitt `Database` .
 1. Scrollen Sie nach unten zum Abschnitt `Add New User` und erstellen Sie einen Benutzer für [!DNL Commerce Intelligence]:
 
-   ![](../../../assets/create-mbi-mysql-user-cpanel.png)
+   ![cPanel MySQL-Datenbankschnittstelle mit der Anzeige „Benutzerformular erstellen“](../../../assets/create-mbi-mysql-user-cpanel.png)
 
 1. Klicken Sie auf **[!UICONTROL Create User]**.
 1. Nachdem Sie den Benutzer erstellt haben, müssen Sie ihn mit einer Datenbank verknüpfen. Gehen Sie zurück zum Abschnitt `Add New User` . Sehen Sie sich die Einstellungen für `Add User to Database?` an.
@@ -69,4 +69,4 @@ Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um die Einr
 
 ## Verwandt:
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

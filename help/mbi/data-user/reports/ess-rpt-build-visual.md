@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Visual Report Builder verwenden.
 exl-id: 1101f43d-e014-4df2-be21-12d90a9d8a56
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
      ![Gruppieren nach Tabellendaten](../../assets/magento-bi-report-builder-group-by-table-data.png)
 
-   * Klicken Sie auf das Steuerelement Transpose (![](../../assets/magento-bi-btn-transpose.png)) in der oberen rechten Ecke der Tabelle, um die Ausrichtung der Daten zu ändern.
+   * Klicken Sie auf das Steuerelement ![Transpose](../../assets/magento-bi-btn-transpose.png) in der oberen rechten Ecke der Tabelle, um die Ausrichtung der Daten zu ändern.
 
      Die Achse der Daten wird umgekehrt, und die Tabelle hat jetzt eine Spalte für jeden Couponcode und eine Zeile für jeden Monat. Diese Ausrichtung ist möglicherweise leichter zu lesen.
 
@@ -95,14 +95,14 @@ Das folgende Beispiel zeigt, wie Sie einen einfachen Bericht erstellen, die Date
 
      | | |
      |-----|-----|
-     | ![](../../assets/magento-bi-btn-chart-line.png) | Liniendiagramm |
-     | ![](../../assets/magento-bi-btn-chart-horz-bar.png) | Horizontalbalken |
-     | ![](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Horizontaler gestapelter Balken |
-     | ![](../../assets/magento-bi-btn-chart-vert-bar.png) | Vertikaler Balken |
-     | ![](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Vertikaler gestapelter Balken |
-     | ![](../../assets/magento-bi-btn-chart-pie.png) | Kreis |
-     | ![](../../assets/magento-bi-btn-chart-area.png) | Bereich |
-     | ![](../../assets/magento-bi-btn-chart-funnel.png) | Trichter |
+     | ![Liniendiagramm-Symbol](../../assets/magento-bi-btn-chart-line.png) | Liniendiagramm |
+     | ![Horizontalbalkensymbol](../../assets/magento-bi-btn-chart-horz-bar.png) | Horizontalbalken |
+     | ![Horizontales gestapeltes Balkensymbol](../../assets/magento-bi-btn-chart-horz-stacked-bar.png) | Horizontaler gestapelter Balken |
+     | ![Symbol für vertikalen Balken](../../assets/magento-bi-btn-chart-vert-bar.png) | Vertikaler Balken |
+     | ![Vertikales gestapeltes Balkensymbol](../../assets/magento-bi-btn-chart-vert-stacked-bar.png) | Vertikaler gestapelter Balken |
+     | ![Tortendiagramm-Symbol](../../assets/magento-bi-btn-chart-pie.png) | Kreis |
+     | ![Symbol für Flächendiagramm](../../assets/magento-bi-btn-chart-area.png) | Bereich |
+     | ![Funnel-Diagrammsymbol](../../assets/magento-bi-btn-chart-funnel.png) | Trichter |
 
      {style="table-layout:auto"}
 

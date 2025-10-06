@@ -4,9 +4,9 @@ description: Lernen Sie die in SQL Report Builder verwendete Terminologie kennen
 exl-id: 9b9bc205-5b64-4e64-8d23-057072e5dd72
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: SQL Report Builder, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Betrachten Sie als Beispiel diese Abfrage, die die monatliche Gesamtzahl der fü
 
 Diese Abfrage gibt die folgende Ergebnistabelle zurück:
 
-![](../assets/SQL_results_table.png)
+![Tabelle mit SQL-Abfrageergebnissen mit Artikeln, die nach Produkt, Jahr und Monat verkauft wurden](../assets/SQL_results_table.png)
 
 ## Schritt 2: Visualisierung erstellen
 
@@ -66,7 +66,7 @@ Mit diesen Ergebnissen *Sie, wie Sie die Visualisierung erstellen.* Klicken Sie 
 
 Wenn eine Abfrage zum ersten Mal ausgeführt wird, kann der Bericht undurchsichtig aussehen, da alle Spalten in der Abfrage als Serie dargestellt werden:
 
-![](../assets/SQL_initial_report_results.png)
+![Anfänglicher SQL-Bericht mit allen als Serie dargestellten Spalten](../assets/SQL_initial_report_results.png)
 
 In diesem Beispiel soll dies ein Liniendiagramm sein, das die Entwicklung im Zeitverlauf anzeigt. Verwenden Sie zum Erstellen die folgenden Einstellungen:
 
@@ -82,13 +82,13 @@ In diesem Beispiel soll dies ein Liniendiagramm sein, das die Entwicklung im Zei
 
 Nachstehend finden Sie einen kurzen Überblick über die Erstellung dieser Visualisierung, von der Ausführung der Abfrage bis zur Einrichtung des Berichts:
 
-![](../assets/SQL_report_settings.gif)
+![Animierte Demonstration der Konfiguration der Visualisierungseinstellungen von SQL-Berichten](../assets/SQL_report_settings.gif)
 
 ## Schritt 3: `Chart Type` auswählen
 
 In diesem Beispiel wird der Diagrammtyp `Line` verwendet. Um einen anderen `chart type` zu verwenden, klicken Sie auf die Symbole über dem Abschnitt Diagrammoptionen , um ihn zu ändern:
 
-![](../assets/Chart_types.png)
+![Verfügbare Diagrammtypsymbole einschließlich Linien-, Balken-, Flächen- und anderer Visualisierungsoptionen](../assets/Chart_types.png)
 
 ## Schritt 4: Speichern Sie die Visualisierung
 

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Microsoft SQL [!DNL Commerce Intelligenc
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/MicrosoftSQLServer-logo.png)
+![Microsoft SQL Server-Logo](../../../assets/MicrosoftSQLServer-logo.png)
 
 In diesem Thema wird erläutert, wie Sie Ihre [!DNL Microsoft SQL]-Datenbank in einem vierstufigen Prozess mit [!DNL Commerce Intelligence] verbinden. Dieser Prozess erfordert einige technische Kenntnisse in Bezug auf Server-Verbindungen und SQL und erfordert möglicherweise Unterstützung von Entwicklern in Ihrem Team.
 
-[!DNL Commerce Intelligence] unterstützt [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] und die meisten anderen Cloud-Server-Anbieter. Wenn Sie eine Frage zu Ihrem Gastgeber haben, [ Sie (ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de)) uns bitten, diese Informationen bereitzustellen.
+[!DNL Commerce Intelligence] unterstützt [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] und die meisten anderen Cloud-Server-Anbieter. Wenn Sie eine Frage zu Ihrem Gastgeber haben, [ Sie (ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)) uns bitten, diese Informationen bereitzustellen.
 
 Ihr System muss SELECT-Abfragen in Ihrer Datenbank ausführen. Dies erfolgt zunächst, um einen Schnappschuss Ihrer Datenbankstruktur zu erhalten, und dann regelmäßig durch Überstunden, um Ihre Daten auf dem neuesten Stand zu halten. Ihre Aktualisierungen erfolgen inkrementell, und Adobe beschränkt die Aktualisierungshäufigkeit und -zeit, um eine unerwünschte Belastung Ihres Servers zu vermeiden.
 
@@ -41,7 +41,7 @@ Die beste Möglichkeit, dies zu tun, besteht darin, eine Verbindung zu Ihrem Dat
 
 1. Geben Sie die IP-Adresse, den Benutzernamen und das Kennwort des Servers in [!DNL Commerce Intelligence] unter **[!UICONTROL Manage Data** > **Connections]** ein.
 
-   ![](../../../assets/manage-data-connections.png)
+   ![Seite „Datenverbindungen verwalten“ mit Datenbankintegrationen](../../../assets/manage-data-connections.png)
 
 1. Klicken Sie auf **[!UICONTROL Add a Data Source]**.
 

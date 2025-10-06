@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie gespeicherte Filtersätze erstellen und auf d
 exl-id: 6ef8b67c-bebd-45eb-bca7-95832ec34fc8
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Wenn Sie mehrere Metriken in [!DNL Commerce Intelligence] haben, die auf ähnliche Weise gefiltert werden müssen (z. B. Filtern von Testaufträgen), können Sie gespeicherte Filtersätze erstellen und sie auf die Metriken anwenden. Dies spart Ihnen Zeit, da Sie beim Erstellen oder Bearbeiten einer Metrik keine individuellen Filter hinzufügen müssen.
 
-Weitere Informationen finden [ im ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html?lang=de)Schulungsvideo“.
+Weitere Informationen finden [ im ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-filter-sets.html)Schulungsvideo“.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Weitere Informationen finden [ im ](https://experienceleague.adobe.com/docs/comm
 
 1. Klicken Sie in der Seitenleiste auf **[!DNL Manage Data** > **Filter Sets]** .
 
-   ![](../../assets/create-filter-sets.png)
+   ![Erstellen Sie die Schnittstelle Filtersätze mit der Option Filtersatz hinzufügen](../../assets/create-filter-sets.png)
 
 1. Klicken Sie oben auf der Seite auf **[!UICONTROL Add Filter Set]** .
 

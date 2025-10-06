@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Dimensionen erstellen, die Ihre E-Commerce-Da
 exl-id: f8a557ae-01d7-4886-8a1c-c0f245c7bc49
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Zum Erstellen der Dimensionen in diesem Thema benötigen Sie eine [!DNL Google E
 
 Im Folgenden finden Sie eine kurze Übersicht über das Synchronisieren von Tabellen und Spalten, wenn Sie eine Aktualisierung benötigen:
 
-![](../../assets/Syncing_New_Columns.gif)
+![Animierte Demonstration zum Synchronisieren neuer Spalten in Data Warehouse](../../assets/Syncing_New_Columns.gif)
 
 Nachdem Sie eine Verknüpfung von der `orders` zur [!DNL Google eCommerce] erstellt haben, erstellen Sie die ersten drei Dimensionen in der Liste unten. Als Nächstes verwenden Sie diese Dimensionen, um drei Benutzer-/Kundendimensionen in der `customers` zu erstellen. Um den Vorgang abzuschließen, verbinden Sie diese Spalten mit der `orders`.
 
@@ -65,7 +65,7 @@ In diesem Beispiel wird die Dimension **Order&#39;s [!DNL Google Analytics] Sour
 1. Legen Sie im angezeigten Fenster die `Many` Seite auf `orders.order\_id` oder die Spalte in der `orders` fest, die die Bestell-ID enthält.
 1. Suchen Sie auf der `One` Seite die `Google ECommerce` Tabelle und legen Sie dann die Spalte auf `transactionID` fest.
 
-   ![](../../assets/google-ecommerce-table.png)
+   ![Google eCommerce-Tabellenstruktur mit verfügbaren Dimensionen](../../assets/google-ecommerce-table.png)
 
 1. Klicken Sie auf **[!UICONTROL Save]** , um den Pfad zu erstellen.
 1. Nachdem der Pfad hinzugefügt wurde, klicken Sie erneut auf das Dropdown-**[!UICONTROL Select table and column]**.
@@ -74,7 +74,7 @@ In diesem Beispiel wird die Dimension **Order&#39;s [!DNL Google Analytics] Sour
 
 Im Folgenden wird der gesamte Prozess beschrieben:
 
-![](../../assets/help_center.gif)
+![Animierte Demonstration der Erstellung der Google Analytics-Quelldimension](../../assets/help_center.gif)
 
 Als Nächstes versuchen Sie **das [!DNL Google Analytics] Medium der Bestellung** und `campaign` zu erstellen. Für diese Dimensionen wurden nicht viele Änderungen vorgenommen. Versuchen Sie es also. Wenn Sie jedoch stecken bleiben, können Sie [Ende dieses Artikels) ](#stuck), um zu sehen, was anders ist.
 
@@ -115,7 +115,7 @@ Dieses Beispiel verbindet die Dimension `Customer's first order's [!DNL Google A
 
 Im Folgenden wird der gesamte Prozess beschrieben:
 
-![](../../assets/help_center2.gif)
+![Animierte Demonstration der Erstellung von Dimensionen der Kundenakquise](../../assets/help_center2.gif)
 
 Schließen Sie die `Customer's first order's` Medium- und `campaign`-Dimensionen mit dem `orders` ab. Verbinden Sie die Dimensionen, und wenn es Probleme gibt, dann schauen Sie [Ende des Artikels](#stuck) wenn Sie Hilfe benötigen.
 

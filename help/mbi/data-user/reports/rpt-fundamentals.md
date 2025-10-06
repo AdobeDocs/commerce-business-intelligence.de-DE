@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Berichtsdaten verwenden.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Es ist an der Zeit, eine Liste möglicher Analysen und Messungen zu erstellen, u
 
 * Durchschnittliche Zeit von der Registrierung bis zum ersten Kaufdatum pro Verwendung.
 
-Dadurch wird die durchschnittliche Zeit zwischen dem Registrierungsdatum und dem ersten Kaufdatum des Benutzers angezeigt und eine Vorstellung davon gegeben, wie sich Benutzer in diesem letzten Schritt im Konversionstrichter verhalten.
+Dadurch wird die durchschnittliche Zeit zwischen dem Registrierungsdatum und dem ersten Kaufdatum der Benutzenden angezeigt und eine Vorstellung davon gegeben, wie sich die Benutzenden in diesem letzten Schritt der Konversions-funnel verhalten.
 
 ## Ermitteln der Daten
 
@@ -81,7 +81,7 @@ Und Sie möchten sehen, dass diese Berechnung über die Zeit, oder den Trend, ei
 
 1. Wechseln Sie zu **[!UICONTROL Data]** und wählen Sie die Registerkarte `Metrics` aus.
 1. Klicken Sie auf **[!UICONTROL Add New Metric]** und wählen Sie die `user` aus (in der Sie die Dimensionen oben erstellt haben).
-1. Wählen Sie aus dem Dropdown-Menü `Average` in der Spalte `Time between a customer's registration date and first purchase date` `user` in der Tabelle nach `Customer's registration date` sortiert aus.
+1. Wählen Sie aus dem Dropdown-Menü `Average` in der Spalte `Time between a customer's registration date and first purchase date``user` in der Tabelle nach `Customer's registration date` sortiert aus.
 1. Fügen Sie alle relevanten Filter oder Filtersätze hinzu.
 
 Diese Metrik ist jetzt bereit.
@@ -128,4 +128,4 @@ Müssen Sie einen Bericht in eine Präsentation oder ein Dokument aufnehmen? Jed
 
 Siehe unten:
 
-![](../../assets/exp-rep-as-image.gif)
+![Animierte Demonstration zum Exportieren eines Berichts als Bilddatei](../../assets/exp-rep-as-image.gif)

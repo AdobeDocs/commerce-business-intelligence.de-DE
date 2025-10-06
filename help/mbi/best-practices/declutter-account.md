@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihr - [!DNL Commerce Intelligence]  bereinige
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Nachdem Sie auf Ihre Dashboards und Berichte zugegriffen haben, können Sie mit 
 
 Sie können auch **[!UICONTROL Dashboard Options]** und dann **[!UICONTROL Delete]** aus dem Dashboard selbst auswählen.
 
-![](../../mbi/assets/Delete_from_dashboard.png)
+![Löschoption im Dashboard-Zahnradmenü](../../mbi/assets/Delete_from_dashboard.png)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Sie können auch **[!UICONTROL Dashboard Options]** und dann **[!UICONTROL Delet
 
 Im Folgenden finden Sie einen Überblick über den nicht verwendeten Löschvorgang von Berichten:
 
-![](../../mbi/assets/unused_reports.png)
+![Liste der nicht verwendeten Berichte, die Berichte in keinem Dashboard anzeigt](../../mbi/assets/unused_reports.png)
 
 ## Schritt 3: Nicht verwendete Metriken löschen
 
@@ -93,7 +93,7 @@ Nachdem Sie Ihre Benutzerliste, Dashboards und Berichte bereinigt haben, können
 1. Unten auf der Seite sehen Sie einen Abschnitt namens **[!UICONTROL Dependent Charts]**. Klicken Sie auf den Link, um eine Liste abhängiger Berichte für diese Metrik zu erstellen.
 1. Nachdem das System die Prüfung abgeschlossen hat, zeigt [!DNL Commerce Intelligence] eine Liste der Dashboards, Berichte und Benutzer an, die diese Metrik verwenden.
 
-![](../../mbi/assets/report_dependecies.png)
+![Dialogfeld Berichtsabhängigkeiten, das anzeigt, welche Berichte die ausgewählte Spalte verwenden](../../mbi/assets/report_dependecies.png)
 
 Wenn Sie feststellen, dass die Metrik nicht mehr benötigt wird, navigieren Sie zurück zur **[!UICONTROL Metrics]** Seite, indem Sie auf **[!UICONTROL Back to Metric List]** klicken, um die Metrik zu finden, die Sie löschen möchten. Klicken Sie auf **[!UICONTROL Delete]**.
 
@@ -112,6 +112,7 @@ Wenn Sie dies fortsetzen möchten, wenden Sie sich an [!DNL Commerce Intelligenc
 1. Gehen Sie zu **[!DNL Manage Data]** und dann zu **[!UICONTROL Data Warehouse]**.
 1. Navigieren Sie in der **[!UICONTROL Synced Tables]** zur Tabelle, die die Spalte enthält.
 1. Aktivieren Sie ein oder mehrere Kontrollkästchen neben einer oder mehreren Spalten, deren Synchronisierung Sie aufheben möchten.
+
    >[!NOTE]
    >
    >Sie können die Synchronisierung einer Primären Schlüsselspalte nicht aufheben, ohne die gesamte Tabelle abzulegen.
@@ -120,7 +121,7 @@ Wenn Sie dies fortsetzen möchten, wenden Sie sich an [!DNL Commerce Intelligenc
 
 Im Folgenden wird der gesamte Prozess beschrieben:
 
-![](../../mbi/assets/drop_column.png)
+![Spaltenoption in Data Warehouse Manager ablegen](../../mbi/assets/drop_column.png)
 
 ## Verpackung
 

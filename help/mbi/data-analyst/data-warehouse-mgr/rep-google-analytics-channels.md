@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Google Analytics-Kanäle mithilfe von Akquise
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Da Sie nun wissen, dass Kanäle nur noch Kombinationen aus Quellen und Medien si
 
    Bringen Sie es als [-Upload in Ihre Data Warehouse](../importing-data/connecting-data/using-file-uploader.md).
 
-   ![](../../assets/Setting_Primary_Keys.png)
+   ![Data Warehouse Manager-Benutzeroberfläche mit Primärschlüsseleinstellungen](../../assets/Setting_Primary_Keys.png)
 
 1. **Beziehung zwischen Zuordnungen und [!DNL Google ECommerce]-Upload herstellen**
 

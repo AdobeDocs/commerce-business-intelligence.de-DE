@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den Status des Aktualisierungszyklus überpr�
 exl-id: bd65f2bb-86c1-4e83-a132-797694ddb086
 role: Admin, Data Architect, Data Engineer, User
 feature: Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Wenn Sie sich bei Ihrem [!DNL Adobe Commerce Intelligence]-Dashboard anmelden, g
 
 ## Warum sollte ich den Status des Aktualisierungszyklus überprüfen?
 
-Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die Daten in Ihrem [!DNL Commerce Intelligence]-Konto prüfen. Wenn Sie [Ergebnisse sehen, die nicht Ihren Erwartungen entsprechen](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) z. B. der tägliche Umsatz in [!DNL Commerce Intelligence] nicht mit dem übereinstimmt, was Sie auf Ihrer E-Commerce-Plattform oder in Ihrem [[!DNL Google] E-Commerce-Umsatz sehen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=de) können Sie den letzten Datenpunkt überprüfen, um festzustellen, ob das Problem behoben wird, sobald eine Aktualisierung abgeschlossen ist.
+Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die Daten in Ihrem [!DNL Commerce Intelligence]-Konto prüfen. Wenn Sie [Ergebnisse sehen, die nicht Ihren Erwartungen entsprechen](../data-analyst/data-warehouse-mgr/data-and-updates-faq.md) z. B. der tägliche Umsatz in [!DNL Commerce Intelligence] nicht mit dem übereinstimmt, was Sie auf Ihrer E-Commerce-Plattform oder in Ihrem [[!DNL Google] E-Commerce-Umsatz sehen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) können Sie den letzten Datenpunkt überprüfen, um festzustellen, ob das Problem behoben wird, sobald eine Aktualisierung abgeschlossen ist.
 
 ## [!UICONTROL Read-Only] und [!UICONTROL Standard] Benutzer
 
 `Read-only` Benutzer können sich bei ihrem Dashboard anmelden und sehen, wie kürzlich die Daten aktualisiert wurden, indem sie den Mauszeiger über das Symbol oben rechts auf der Seite bewegen. Dies zeigt an, wann der letzte Datenpunkt abgerufen wurde.
 
-![](../../mbi/assets/last-success-data.png)
+![Zeitstempel der letzten erfolgreichen Datenaktualisierung in der -Benutzeroberfläche](../../mbi/assets/last-success-data.png)
 
 ## Benutzer [!UICONTROL Admin]
 
@@ -31,7 +31,7 @@ Die Überprüfung des Status-Aktualisierungszyklus ist nützlich, wenn Sie die D
 
 Admin-Benutzer können auch auf &quot;**[!UICONTROL Manage Data]**&quot; > &quot;**[!UICONTROL Integrations]**&quot; klicken, um weitere Informationen zu erhalten.
 
-![](../../mbi/assets/detail-manage-data-integrations.png)
+![Seite Datenintegrationen verwalten mit Verbindungsdetails und Aktualisierungsstatus](../../mbi/assets/detail-manage-data-integrations.png)
 
 Auf dieser Seite werden der aktuelle Aktualisierungsstatus und die Zeit der letzten abgeschlossenen Aktualisierung angezeigt.
 

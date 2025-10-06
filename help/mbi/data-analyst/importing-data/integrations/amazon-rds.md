@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre RDS-Instanz verbinden.
 exl-id: 02ad29c8-84d6-4b49-9ac1-e5f4feaa7fda
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Die Schritte zum Verbinden Ihrer [!DNL RDS]-Instanz variieren je nach verwendete
 
 Auf der Seite Anmeldedaten (**[!UICONTROL Manage Data** > **Integrations]**) für jede Datenbank wird ein Feld mit den IP-Adressen angezeigt, die Sie für die Verbindung von R[!DNL RDS] mit [!DNL Commerce Intelligence]: `54.88.76.97` und `34.250.211.151` autorisieren müssen. Im Folgenden sehen Sie die `MySQL credentials`, auf der Sie das Feld „IP-Adresse“ markiert haben:
 
-![](../../../assets/RDS_IP.png)
+![Einstellungen der Amazon RDS-Sicherheitsgruppe zeigen die IP-Adresskonfiguration an](../../../assets/RDS_IP.png)
 
 Damit [!DNL Commerce Intelligence] erfolgreich eine Verbindung mit Ihrer [!DNL RDS]-Instanz herstellen können, müssen Sie diese IP-Adressen über die Verwaltungskonsole von AWS der entsprechenden Datenbanksicherheitsgruppe hinzufügen. Diese IP-Adressen können zu einer vorhandenen Gruppe hinzugefügt oder erstellt werden. Wichtig ist, dass die Gruppe berechtigt ist, auf die Instanz zuzugreifen, mit der Sie eine Verbindung herstellen [!DNL Commerce Intelligence].
 
@@ -55,6 +55,6 @@ Um die Erstellung der Verbindung abzuschließen, benötigen Sie die folgenden In
 
 Wenn Sie eine verschlüsselte Verbindung verwenden, ändern Sie den Umschalter `Encrypted` auf der Seite mit den Datenbank-Anmeldeinformationen in `Yes`. Dadurch wird ein zusätzliches Formular zum Einrichten der Verschlüsselung angezeigt:
 
-![](../../../assets/sql-integration-encrypted-yes.png)
+![SQL-Integrationsformular mit aktivierter Verschlüsselung zeigt die Option Ja an](../../../assets/sql-integration-encrypted-yes.png)
 
 

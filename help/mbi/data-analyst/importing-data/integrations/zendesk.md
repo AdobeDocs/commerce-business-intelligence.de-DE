@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Helpdesk-Berichte in  [!DNL Commerce Inte
 exl-id: 1c7f7c5c-4b1c-4bcf-8f1d-2b4cf9cdb0fb
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../../administrator/user-management/user-management.md).
 
-![](../../../assets/Zendesk_logo.png)
+![Zendesk-Logo](../../../assets/Zendesk_logo.png)
 
 Durch das Verbinden Ihrer [!DNL Zendesk] können Sie die Helpdesk-Berichte in [!DNL Commerce Intelligence] konsolidieren. Auf diese Weise können Sie den Kunden-Support optimieren und die Helpdesk-Leistung neben Ihrem Umsatz überwachen.
 
@@ -31,7 +31,7 @@ Um diesen Vorgang abzuschließen, müssen Sie zwei Browser-Fenster oder Register
 
 ## Öffnen Sie die Seite [!DNL Zendesk] in [!DNL Commerce Intelligence] {#stepone}
 
-1. Navigieren Sie zur `Integrations` unter **[!UICONTROL Manage Data** > **&#x200B; Datenquellen &#x200B;**> **Integrationen]**.
+1. Navigieren Sie zur `Integrations` unter **[!UICONTROL Manage Data** > ** Datenquellen **> **Integrationen]**.
 1. Klicken Sie auf **[!UICONTROL Add Integration]** rechts im Bildschirm.
 1. Klicken Sie auf das Symbol [!DNL Zendesk] . Dadurch wird die Seite mit den [!DNL Zendesk]-Anmeldeinformationen geöffnet.
 
@@ -54,4 +54,4 @@ Um diesen Vorgang abzuschließen, müssen Sie zwei Browser-Fenster oder Register
 ## Verwandt:
 
 * [ [!DNL Zendesk]  Daten](../integrations/exp-zendesk-data.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -4,9 +4,9 @@ description: Erfahren Sie, was eine qualitative Kohorte ist, warum Sie am Aufbau
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Wenn Sie jedoch das Kohortenverhalten mehrerer Benutzersegmente im selben Kohort
 
 Das Erstellen eines `qualitative cohort` in der `Report Builder` beinhaltet, dass das Adobe-Analystenteam einige [erweiterte berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md) auf den erforderlichen Tabellen erstellt.
 
-Um diese zu erstellen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) ein (und lesen Sie diesen Artikel!). Hier finden Sie, was Sie wissen müssen:
+Um diese zu erstellen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ein (und lesen Sie diesen Artikel!). Hier finden Sie, was Sie wissen müssen:
 
 * Die `metric`, mit der Sie Ihre Kohortenanalyse durchführen möchten, und welche Tabelle verwendet wird (Beispiel: `Revenue`, basierend auf der `orders`).
 
@@ -55,7 +55,7 @@ Sobald das Adobe-Analyst-Team auf die oben genannten Fragen antwortet, haben Sie
 
 Zunächst möchten Sie die Metrik, die Sie für die Kohorte interessieren, einmal für jedes `cohort` hinzufügen, das Sie analysieren. In diesem Beispiel möchten Sie kumulative `Revenue` sehen, die in den Monaten nach der ersten Bestellung eines Kunden getätigt wurden, und die nach `User's referral source` segmentiert sind. Das bedeutet, dass Sie für jedes Segment eine `Revenue` Metrik hinzufügen und nach dem spezifischen Segment filtern:
 
-![](../../assets/qualcohort1.gif)
+![Animierte Demonstration zur Erstellung einer qualitativen Kohortenanalyse](../../assets/qualcohort1.gif)
 
 Zweitens sollten Sie zwei Änderungen an den Zeitoptionen des Berichts vornehmen:
 
@@ -65,7 +65,7 @@ Zweitens sollten Sie zwei Änderungen an den Zeitoptionen des Berichts vornehmen
 
 In diesem Beispiel sehen Sie eine `all time` Ansicht von `Revenue`. Danach sollten Sie eine Reihe von Punkten bekommen:
 
-![](../../assets/qualcohort2.gif)
+![Animierte Demonstration der Optionen für Kohortengruppierung und Analyse](../../assets/qualcohort2.gif)
 
 Drittens nehmen Sie die Anpassung vor, um die `cohorts` einzurichten. Basierend auf den `cohort date` und `time interval`, die Sie dem Adobe-Analystenteam angegeben haben, haben Sie eine Dimension in Ihrem Konto, die die `cohort` Datierung durchführt. In diesem Beispiel wird diese benutzerdefinierte Dimension `Months between this order and customer's first order date` genannt. Mit dieser Dimension sollten Sie:
 

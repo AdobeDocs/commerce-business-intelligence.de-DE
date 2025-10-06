@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Finanzdaten formatieren und importieren.
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ In diesem Thema wird die beste Möglichkeit zum Importieren von Finanzdaten für
 
 Eine zweidimensionale tabellenübergreifende Datentabelle ist häufig das Format, das für Finanzdaten verwendet wird. Bei Werten, die nach Beschriftungen in Spalten und Zeilen kategorisiert sind, ist diese Art von Layout möglicherweise einfach mit menschlichen Augen und Tabellen-Tools zu sehen, aber es ist nicht datenbankfreundlich.
 
-![](../../mbi/assets/crosstab.png)
+![Kreuztabellenformat mit Daten im Pivot-Tabellen-Layout](../../mbi/assets/crosstab.png)
 
 Um diese Daten in [!DNL Commerce Intelligence] zu importieren und zu analysieren, muss die Tabelle in eine eindimensionale Liste reduziert werden. Wenn sie reduziert wird, wird jeder Datenwert durch mehrere Kennzeichnungen kategorisiert, die sich alle in einer einzigen Zeile befinden, wobei jede Zeile eindeutig ist oder einen eindeutigen Bezeichner hätte, z. B. eine Primärschlüsselspalte.
 
-![](../../mbi/assets/flattened.png)
+![Reduziertes Format mit Daten im Spaltenlayout](../../mbi/assets/flattened.png)
 
 ## Excel-Dateien für den Import formatieren
 
@@ -35,7 +35,7 @@ So reduzieren Sie eine zweidimensionale Tabelle mithilfe einer [!DNL Excel] Pivo
 1. Erstellen Sie die Pivot-Tabelle in einem neuen Blatt und klicken Sie auf **[!UICONTROL Finish]**.
 1. Heben Sie die Auswahl der Spalten- und Zeilenfelder in der Feldliste auf.
 1. Doppelklicken Sie auf den resultierenden numerischen Wert, um die reduzierten Quelldaten in einem neuen Blatt anzuzeigen.
-   ![](../../mbi/assets/pivot-table-double-click.png)
+   ![Excel-Pivot-Tabelle-Feldliste mit Doppelklick zum Erweitern](../../mbi/assets/pivot-table-double-click.png)
 1. Als `CSV` speichern.
 
 ## Verpackung

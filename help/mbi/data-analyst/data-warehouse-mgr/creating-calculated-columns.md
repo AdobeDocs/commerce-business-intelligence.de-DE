@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Daten aus verschiedenen Quellen zusammenführ
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Ihre neue Spalte wird in der aktuellen Tabelle mit dem Status `Pending` angezeig
 
 Wenn Sie beim Erstellen einer berechneten Spalte Schwierigkeiten haben, sich an alle Eingaben zu erinnern, versuchen Sie, diese Referenzzuordnung beim Erstellen von praktisch zu halten:
 
-![](../../assets/Calculated_Columns_Example.png)
+![Beispielkonfiguration für berechnete Spalten in Data Warehouse Manager](../../assets/Calculated_Columns_Example.png)
 
 ## Verwandte Dokumentation
 

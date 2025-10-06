@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Daten und Metriken mithilfe von SQL Report Bu
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Data Architect, Data Engineer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ Die [!DNL SQL Report Builder] wird hauptsächlich zum Erstellen neuer Berichte u
 
 Um eine klarere Ansicht der Abfrage zu erhalten, können Sie die Darstellung der Abfrage im Abfragefeld neu formatieren. Wenn Sie bereit sind, wählen Sie `Run Query` aus. Die Ergebnisse werden als Tabelle im Bedienfeld Bericht unter der Abfrage angezeigt.
 
-![](../../assets/run-query-results.gif)
+![Animierte Demonstration der Ausführung einer SQL-Abfrage und der Anzeige von Ergebnissen](../../assets/run-query-results.gif)
 
 ## Abfrage einschränken
 
 Wenn Sie versuchen, eine bestimmte Diskrepanz oder einen bestimmten Datensatz zu identifizieren, sollten Sie die Abfrage auf eine bestimmte Stichprobe beschränken, um sie mit Ihrer lokalen Datenbank zu vergleichen. Sie können dies tun, indem Sie die Abfrage entsprechend Ihren gewünschten Einschränkungen bearbeiten. Im folgenden Beispiel beschränken Sie die Abfrage darauf, nur Umsätze ab dem 1. Januar 2013 einzubeziehen. Nachdem Sie die Abfrage aktualisiert haben, wählen Sie erneut **[!UICONTROL Run Query]** aus, um die Ergebnisse zu aktualisieren.
 
-![](../../assets/restricting-query.gif)
+![Animierte Demonstration der Einschränkung von Abfragen mit Filtern](../../assets/restricting-query.gif)
 
 ## Speichern und Exportieren
 
@@ -40,7 +40,7 @@ Wenn der Bericht Ihren Anforderungen entspricht, geben Sie dem Bericht einen ein
 
 Nachdem der Bericht gespeichert wurde, navigieren Sie zu diesem Dashboard, indem Sie `Go to Dashboard` auswählen. Von dort aus können Sie die Daten exportieren, indem Sie den Bericht suchen und **[!UICONTROL Options gear > Full `.csv`Export]** oder **[!UICONTROL Full Excel Export]** auswählen.
 
-![](../../assets/export-dboard-data.gif)
+![Animierte Demonstration zum Exportieren von Dashboard-Daten](../../assets/export-dboard-data.gif)
 
 ## Benutzerdefinierte Abfragen
 
@@ -48,4 +48,4 @@ Sie können auch benutzerdefinierte Abfragen schreiben und die Ergebnisse export
 
 >[!NOTE]
 >
->Wenn Sie nach dem Überprüfen Ihrer Daten eine Diskrepanz feststellen, finden Sie im Support-Thema [Kontaktaufnahme mit dem Support: ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=de) Diskrepanzen) weitere Informationen zu weiteren Schritten.
+>Wenn Sie nach dem Überprüfen Ihrer Daten eine Diskrepanz feststellen, finden Sie im Support-Thema [Kontaktaufnahme mit dem Support: ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) Diskrepanzen) weitere Informationen zu weiteren Schritten.

@@ -4,9 +4,9 @@ description: Verbessern Sie die Sichtbarkeit Ihrer Daten, optimieren Sie das Rep
 role: Admin, User
 feature: User Management
 exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
-source-git-commit: df408b8947a62cdb498b56370be965c89c45f6ff
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -460,7 +460,7 @@ Admin-Benutzer können Dashboard-Daten mit Zugriff auf alle Stores anzeigen.
 
 Benutzer können jedoch Dashboard-Daten anzeigen, die basierend auf den Stores gefiltert wurden, die ihnen während der Benutzerkonfiguration zugeordnet sind.
 
-![Dashboard-Admin anzeigen](../../assets/view-dashboard-user.png)
+![Dashboard-gefilterter Administrator anzeigen](../../assets/view-dashboard-user.png)
 
 >[!TIP]
 >

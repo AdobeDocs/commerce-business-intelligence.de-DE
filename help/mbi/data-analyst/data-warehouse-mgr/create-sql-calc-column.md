@@ -4,16 +4,16 @@ description: Erfahren Sie, wie erweiterte Spalten in Form von SQL-Berechnungsspa
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 8090c2e0f17f0e8d3bdec668ce546206bf024691
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
 
 # Erstellen einer berechneten SQL-Spalte
 
-In diesem Abschnitt werden Zweck und Verwendungszwecke des `Calculation` Spaltentyps beschrieben, der mithilfe des [Data Warehouse Managers&rbrace; zu Tabellen hinzugefügt ](../data-warehouse-mgr/tour-dwm.md) kann. Im Folgenden wird erläutert, was SQL-Berechnungen bewirken, warum sie verwendet werden und wie eine SQL-Berechnung erstellt wird. Nachfolgend werden zwei Beispiele beschrieben.
+In diesem Abschnitt werden Zweck und Verwendungszwecke des `Calculation` Spaltentyps beschrieben, der mithilfe des [Data Warehouse Managers} zu Tabellen hinzugefügt ](../data-warehouse-mgr/tour-dwm.md) kann. Im Folgenden wird erläutert, was SQL-Berechnungen bewirken, warum sie verwendet werden und wie eine SQL-Berechnung erstellt wird. Nachfolgend werden zwei Beispiele beschrieben.
 
 **Erläuterung**
 
@@ -27,7 +27,7 @@ Die verschiedenen Spalten, die mit der `Calculation` Spalte erstellt werden kön
 
 Die meisten Konten verfügen über eine Spalte namens `Is customer's last order?` in ihrer `orders`, um Analysen zu Wiederholungskäuferraten und abgewanderten Kunden durchzuführen. Wenn sich Ihr Konto auf der neuen Architektur befindet, wird diese Spalte mithilfe einer `Calculation` Spalte erstellt und ist im folgenden Screenshot zu sehen:
 
-![](../../assets/Is_customer_s_last_order.png)
+![SQL-Definition der berechneten Spalte zur Identifizierung der letzten Bestellung eines Kunden](../../assets/Is_customer_s_last_order.png)
 
 Die Spalte `Is customer's last order?` verwendet die Eingaben `Customer's lifetime number of orders` und `Customer's order number` Alias `A` bzw. `B`.
 
@@ -47,7 +47,7 @@ Viele Kunden analysieren den Umsatz gerne auf Artikelebene, indem sie ihn nach F
 
 Um Analysen des Produktumsatzes zu ermöglichen, verfügen die meisten Konten in ihrer `Order item total value (quantity * price)` über eine Spalte mit dem Namen `Orders Items`. Wenn sich Ihr Konto auf der neuen Architektur befindet, wird diese Spalte auch mit einer `Calculation` Spalte erstellt und ist im folgenden Screenshot zu sehen:
 
-![](../../assets/Order_item_total_value.png)
+![SQL-Definition der berechneten Spalte für den Gesamtwert des Bestellartikels](../../assets/Order_item_total_value.png)
 
 Im Commerce-Schema verwendet die `Order item total value (quantity * price)` die `qty ordered` Eingaben und `base price` Alias `A` bzw. `B`.
 
@@ -57,7 +57,7 @@ Die von dieser neuen Spalte zurückgegebenen Werte lauten in Dollar und Cent, so
 
 Eine neue `Calculation` Spalte kann zu einer Tabelle hinzugefügt werden, indem Sie zu **[!DNL Manage Data > Data Warehouse]** navigieren, wie unten dargestellt:
 
-![](../../assets/blobid2.png)
+![Tabellenansicht mit berechneten Spaltenergebnissen](../../assets/blobid2.png)
 
 Gehen Sie wie folgt vor, um eine `Calculation` Spalte zu erstellen:
 

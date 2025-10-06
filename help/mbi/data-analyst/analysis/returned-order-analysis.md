@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie ein Dashboard einrichten, das eine detaillier
 exl-id: 6a948561-45b7-4813-9661-ab42197ca5bd
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das eine detaillierte Analyse der Rückgaben Ihres Stores bietet.
 
-![](../../assets/detailed-returns-dboard.png)
+![Dashboard „Detaillierte Rücksendungen“ mit Rückgaberaten und -gründen](../../assets/detailed-returns-dboard.png)
 
 Bevor Sie beginnen, müssen Sie [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)-Kunde sein und sollten sicherstellen, dass Ihr Unternehmen die `enterprise\_rma` für Rücksendungen verwendet.
 
@@ -61,9 +61,9 @@ Zu erstellende Spalten
 * **`Order's created at`**
 * Definition auswählen: `Joined Column`
 * [!UICONTROL Create Path]:
-* &#x200B;
+* 
   [!UICONTROL Many]: `enterprise_rma.order_id`
-* &#x200B;
+* 
   [!UICONTROL One]: `sales_flat_order.entity_id`
 
 * [!UICONTROL table] auswählen: `sales_flat_order`
@@ -82,9 +82,9 @@ Zu erstellende Spalten
 * **`return_date_requested`**
 * Definition auswählen: `Joined Column`
 * [!UICONTROL Create Path]:
-   * &#x200B;
+   * 
      [!UICONTROL Many]: `enterprise_rma_item_entity.rma_entity_id`
-   * &#x200B;
+   * 
      [!UICONTROL One]: `enterprise_rma.entity_id`
 
 * [!UICONTROL table] auswählen: `enterprise_rma`
@@ -157,14 +157,14 @@ Zu erstellende Spalten
 
 * Formel: Wahrscheinlichkeit der Wiederholungsreihenfolge
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervall]: `None`
 * [!UICONTROL Group by]: `Customer's order number`
-* &#x200B;
+* 
   [!UICONTROL Diagrammtyp]: `Bar`
 
 * **Durchschn. Zeit bis zur Rückkehr (alle Zeiten)**
@@ -172,9 +172,9 @@ Zu erstellende Spalten
 * [!UICONTROL Metric]: `Avg time between order and return`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervall]: `None`
-* &#x200B;
+* 
   [!UICONTROL Diagrammtyp]: `Number`
 
 * **Prozent der Bestellungen mit einer Rücksendung**
@@ -188,11 +188,11 @@ Zu erstellende Spalten
 
 * Formel: % der Bestellungen mit Rücksendung
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervall]: `None`
 * [!UICONTROL Chart Type]: `Number - % of orders with return`
 
@@ -202,7 +202,7 @@ Zu erstellende Spalten
 
 * [!UICONTROL Time period]: `All time`
 * [!UICONTROL Interval]: `By month`
-* &#x200B;
+* 
   [!UICONTROL Diagrammtyp]: `Line`
 
 * **Kunden, die eine Rückgabe getätigt und nicht erneut gekauft haben**
@@ -213,11 +213,11 @@ Zu erstellende Spalten
    * `Is customer's last order? (1=yes/0=no) = 1`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervall]: `None`
-* &#x200B;
+* 
   [!UICONTROL Gruppieren nach]: `Customer_email`
-* &#x200B;
+* 
   [!UICONTROL Diagrammtyp]: `Table`
 
 * **Rückgaberate nach Artikel**
@@ -230,16 +230,16 @@ Zu erstellende Spalten
 
 * [!UICONTROL Formula]: `Return %`
 * [!UICONTROL Formula]: `B / A`
-* &#x200B;
+* 
   [!UICONTROL Format]: `Percentage`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Intervall]: `None`
 * [!UICONTROL Group by]: `product_sku AND/OR product_name`
-* &#x200B;
+* 
   [!UICONTROL Diagrammtyp]: `Table`
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie im Dashboard nach Bedarf organisieren. Das Ergebnis kann wie im obigen Beispiel-Dashboard aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder das Professional Services-Team kontaktieren möchten, wenden [ sich an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder das Professional Services-Team kontaktieren möchten, wenden [ sich an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

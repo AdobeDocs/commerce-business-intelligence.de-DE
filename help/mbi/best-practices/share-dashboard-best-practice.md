@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Dashboards verwenden und freigeben könn
 exl-id: 73df627f-bc08-45c0-aa5e-410c4fd0642d
 role: Admin, User
 feature: Dashboards
-source-git-commit: d40a04cedb3aee3385a8c34e0919f954431e0897
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Manchmal finden Sie mehrere Dashboards mit demselben Namen - normalerweise, weil
 
 Um anzuzeigen, wem ein Dashboard gehört, klicken Sie auf das Dashboard-Dropdown-Menü in der oberen linken Ecke. Alle Dashboards, die keinen Namen darunter haben, gehören zu Ihnen.
 
-![](../../mbi/assets/Dash_ownership.png)
+![Dashboard-Eigentümerindikator mit Erstellern und Berechtigungen](../../mbi/assets/Dash_ownership.png)
 
 So entfernen Sie alle doppelten Dashboards:
 

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Daten in Ihrem Bericht für einen bestimm
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -37,13 +37,13 @@ Nachdem die ursprüngliche Metrik ausgewählt wurde, können Sie zusätzliche Me
 
 Angenommen, Sie möchten einen Bericht erstellen, der den durchschnittlichen Umsatz pro Bestellung ausgibt. In diesem Fall würden Sie die `Revenue` Metrik durch die `Number of orders` Metrik teilen.
 
-![](../assets/ave-rev-per-order.png)
+![Verwenden von Visual Report Builder](../assets/ave-rev-per-order.png)
 
 ## Schritt 4: `Time Period` und `Interval of Analysis` einstellen {#time}
 
 Sie können den Zeitraum für die Analyse auf Null in einer bestimmten Zeitspanne festlegen. Sie können auch Zeitintervalle zur Segmentierung der Daten auswählen (z. B. nach Jahr, Quartal oder Monat). Verwenden Sie die Menüs oben rechts im Diagramm, um den Zeitraum und das Intervall festzulegen.
 
-![](../assets/Time_Options_Report_Builder.png)
+![Verwenden von Visual Report Builder](../assets/Time_Options_Report_Builder.png)
 
 Wenn Sie einen bestimmten Datumsbereich für den Zeitraum festlegen, stellen Sie sicher, dass das Startdatum am Anfang des Intervalls und das Enddatum am Ende Ihres Intervalls liegt.
 
@@ -57,17 +57,17 @@ Sie können `None` auswählen, um zu verhindern, dass eine Metrik segmentiert wi
 
 Gehen Sie zurück zu Ihrem Beispiel für den durchschnittlichen Umsatz pro Bestellung und legen Sie „Gruppieren nach“ auf „Promo-Code“ fest. Dies zeigt den durchschnittlichen Umsatz pro Bestellung für Bestellungen mit und ohne Promo-Code.
 
-![](../assets/Group_By_Report_Builder.png)
+![Verwenden von Visual Report Builder](../assets/Group_By_Report_Builder.png)
 
 Wenn die in der Analyse enthaltenen Metriken auf verschiedenen Datentabellen basieren, können Sie in einem Popup die entsprechende Datendimension in jeder Tabelle auswählen. Das Ziel besteht hier darin, Dimensionen zu finden, die gemeinsame Werte für die Segmentierung aufweisen:
 
-![](../assets/Dimension_Editor.png)
+![Verwenden von Visual Report Builder](../assets/Dimension_Editor.png)
 
 ## Schritt 6: Festlegen von `Metric Filters`, `Perspective` und `Time Interval` {#metric-specific}
 
-Für jede Metrik, die der Analyse hinzugefügt wird, können Sie Filter hinzufügen, die relevante Datenperspektive auswählen und `time interval` Optionen festlegen. Um auf diese Funktionen zuzugreifen, klicken Sie auf die Symbole Trichter (`Filter`), Auge (`Perspective`) und Uhr (`Time`) neben den im Bericht enthaltenen Metriken.
+Für jede Metrik, die der Analyse hinzugefügt wird, können Sie Filter hinzufügen, die relevante Datenperspektive auswählen und `time interval` Optionen festlegen. Um auf diese Funktionen zuzugreifen, klicken Sie auf die Symbole funnel (`Filter`), Auge (`Perspective`) und Clock (`Time`) neben den im Bericht enthaltenen Metriken.
 
-![](../assets/Filters_Perspective_Interval_Report_builder.png)
+![Verwenden von Visual Report Builder](../assets/Filters_Perspective_Interval_Report_builder.png)
 
 ### `Filters`
 
@@ -83,7 +83,7 @@ Die Verwendung von Platzhaltern (`%` oder `_`) mit `LIKE` Anweisungen wird unter
 
 Das Hinzufügen mehrerer Filter ermöglicht eine strenge Kontrolle der Diagrammdaten. Standardmäßig müssen alle Filterbedingungen erfüllt sein, damit ein Datenelement eingeschlossen wird. Sie können jedoch ODER-Beziehungen erstellen, indem Sie das Textfeld Filterregeln bearbeiten.
 
-![](../assets/edit-filter-rules.png)
+![Verwenden von Visual Report Builder](../assets/edit-filter-rules.png)
 
 ### `Perspectives`
 
@@ -91,23 +91,23 @@ Das Hinzufügen mehrerer Filter ermöglicht eine strenge Kontrolle der Diagrammd
 
 - `Standard perspective`: Die Standardperspektive zeigt das Ergebnis für das Abgleichdatum auf der X-Achse an (z. B. Umsatz im Januar). Dies ist die Perspektive, die Sie im Beispiel für den durchschnittlichen Umsatz pro Bestellung verwenden.
 
-![](../assets/Standard.png)
+![Verwenden von Visual Report Builder](../assets/Standard.png)
 
 - `Amount` ODER-`Percent Change` versus `Previous Period` Perspektive: Diese Perspektive zeigt die Menge oder prozentuale Änderung von einem Intervall zum nächsten und ist nützlich, um die Änderungsrate in sich schnell ändernden Metriken zu messen. Es gibt auch eine Perspektive, das Intervall mit dem gleichen Zeitraum des Vorjahres zu vergleichen, um ein jährliches Wachstum zu zeigen.
 
-![](../assets/Amt_or_Percent_Change.png)
+![Verwenden von Visual Report Builder](../assets/Amt_or_Percent_Change.png)
 
 - `Cumulative perspective`: Die `cumulative perspective` zeigt den laufenden oder kumulativen Summenbetrag der Metrik über den Zeitraum an. Dies wird häufig verwendet, um Gesamtkunden zu analysieren und zukünftige Kapazitäten zu planen.
 
-![](../assets/Cumulative_Perspective.png)
+![Verwenden von Visual Report Builder](../assets/Cumulative_Perspective.png)
 
 - `Percent of First Value perspective`: Diese Perspektive zeigt die Daten als Prozentsatz des ersten in die Analyse eingeschlossenen Intervalls an. Dies ist hilfreich, um die Effektivität bestimmter Aktionen im Verhältnis zur Leistung des ersten Zeitraums zu messen.
 
-![](../assets/Percent_of_First_Value.png)
+![Verwenden von Visual Report Builder](../assets/Percent_of_First_Value.png)
 
 - `Rolling averages window perspective`: Die Fensterperspektive Rollierende Durchschnittswerte zeigt den rollierenden Durchschnittswert einer Metrik über den angegebenen Zeitraum an. Das Intervall muss dem auf Berichtsebene festgelegten Intervall entsprechen. Wenn der Bericht beispielsweise das letzte vollständige Quartal mit dem Umsatz nach Woche ausgibt, können Sie den rollierenden durchschnittlichen Zeitbereich des Fensters auf vier Wochen festlegen. Dadurch sind die ersten drei Werte null und der vierte Wert stellt den Durchschnitt der ersten vier Wochen des Umsatzes dar. Deaktivieren Sie aus Gründen der Klarheit das Kontrollkästchen `Multiple Y-Axes` , wenn Sie dieselbe Metrik mit einem rollierenden Durchschnitt anzeigen (siehe folgendes Beispiel).
 
-![](../assets/rolling_avg_window.png)
+![Verwenden von Visual Report Builder](../assets/rolling_avg_window.png)
 
 ### Metrikspezifische Zeitoptionen
 
@@ -131,7 +131,7 @@ Sie können ein Diagramm, eine Tabelle oder eine Zahl (`scalar`) über das Dropd
 
 Sie können den Bericht dann speichern, indem Sie auf **[!UICONTROL Save to Dashboard]** klicken.
 
-![](../assets/save-to-dashboard.png)
+![Verwenden von Visual Report Builder](../assets/save-to-dashboard.png)
 
 ## Berichtsausgaben
 
@@ -139,14 +139,14 @@ Informationen zur Auswahl der Berichtsausgabe finden Sie in den folgenden Themen
 
 ### Diagramm
 
-![](../assets/RB_Chart.png)
+![Verwenden von Visual Report Builder](../assets/RB_Chart.png)
 
 ### Tabelle
 
-![](../assets/RB_Table.png)
+![Verwenden von Visual Report Builder](../assets/RB_Table.png)
 
 ### Zahl (`scalar`)
 
-![](../assets/RB_Scalar.png)
+![Verwenden von Visual Report Builder](../assets/RB_Scalar.png)
 
 Herzlichen Glückwunsch! Sie sind fertig.

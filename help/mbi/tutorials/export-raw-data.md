@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie Datensätze aus Ihrer  [!DNL Commerce Intelli
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Data Architect, Data Engineer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
 # Exportieren von Rohdaten
 
-Mithilfe von Rohdatenexporten können Sie Datensätze aus Ihrer Data Warehouse exportieren, um einen genaueren Überblick über die Funktionen Ihres Dashboards zu erhalten. Darüber hinaus können Rohdatenexporte Ihnen dabei helfen, [Datendiskrepanzen zu identifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=de).
+Mithilfe von Rohdatenexporten können Sie Datensätze aus Ihrer Data Warehouse exportieren, um einen genaueren Überblick über die Funktionen Ihres Dashboards zu erhalten. Darüber hinaus können Rohdatenexporte Ihnen dabei helfen, [Datendiskrepanzen zu identifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
 Rohdatenexporte bieten Zugriff auf zusätzliche Spalten und Dimensionen, die durch De-Normalisierung und Voraggregation relevanter Metriken generiert wurden. `User's first order date` ist beispielsweise eine Dimension, die Sie für jeden Benutzer in [!DNL Commerce Intelligence] exportieren können, während sie möglicherweise nicht in Ihrer Datenbank verfügbar ist.
 
@@ -34,7 +34,7 @@ Es gibt zwei Möglichkeiten, Rohdaten in [!DNL Commerce Intelligence] zu exporti
 
 Wenn Sie die Tabelle aus [!UICONTROL Manage Data] Registerkarte exportieren möchten, benötigen Sie [Admin](../administrator/user-management/user-management.md)-Berechtigungen.
 
-1. Klicken Sie **[!UICONTROL Manage Data** > **&#x200B; Daten exportieren &#x200B;**> **Rohdatenexport]**.
+1. Klicken Sie **[!UICONTROL Manage Data** > ** Daten exportieren **> **Rohdatenexport]**.
 1. Es wird eine `Export List` der kürzlich erstellten Datenexporte angezeigt, sofern vorhanden. Klicken Sie auf **[!UICONTROL Add Export]** , um einen Export zu erstellen.
 1. Das Dialogfeld `New Raw Data Export` wird angezeigt. Hier können Sie Ihren Export anpassen, indem Sie Spalten und Filter auswählen oder die Auswahl aufheben:
 
@@ -61,7 +61,7 @@ Wenn Sie die Tabelle aus [!UICONTROL Manage Data] Registerkarte exportieren möc
 
 Betrachten Sie den gesamten Prozess auf der Diagrammebene.
 
-![](../assets/Chart-level_export.gif)
+![Animierte Demonstration des Exports von Rohdaten aus einem Diagramm](../assets/Chart-level_export.gif)
 
 ## Schritt 2: Export herunterladen {#download}
 
@@ -69,7 +69,7 @@ Der Export wird sofort nach Abschluss der Auswahl im Dialogfeld &quot;`Raw Data 
 
 Um zu überprüfen, ob Ihr Export bereit ist, klicken Sie in der oberen rechten Ecke des Bildschirms auf **[!UICONTROL Raw Data Exports]** . Klicken Sie auf **[!UICONTROL Download]** , um eine komprimierte `.csv`-Datei Ihres Exports herunterzuladen.
 
-![](../assets/Downloading_export.gif)
+![Animierte Demonstration zum Herunterladen einer exportierten CSV-Datei](../assets/Downloading_export.gif)
 
 ## Schritt 3: Zugriff auf historische Exporte {#historical}
 

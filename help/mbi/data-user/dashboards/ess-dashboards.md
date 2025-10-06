@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie ein Dashboard erstellen und damit arbeiten k�
 exl-id: a872344b-ac66-41eb-a471-5a69f8802527
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie kön
 
 1. Klicken Sie im Menü auf **[!UICONTROL Dashboards]**.
 
-1. Der Name des Standard-Dashboards wird in der oberen linken Ecke der Dashboard-Kopfzeile angezeigt. Klicken Sie auf den Abwärtspfeil (![](../../assets/magento-bi-btn-down.png)), um die verfügbaren Optionen anzuzeigen.
+1. Der Name des Standard-Dashboards wird in der oberen linken Ecke der Dashboard-Kopfzeile angezeigt. Klicken Sie auf den Abwärtspfeil ![Abwärtspfeilsymbol](../../assets/magento-bi-btn-down.png), um die verfügbaren Optionen anzuzeigen.
 
    ![Dashboard erstellen](../../assets/magento-bi-dashboard-create.png)
 
@@ -49,7 +49,7 @@ Wie die von Ihnen erstellten Dashboards aussehen, liegt ganz bei Ihnen. Sie kön
 
    ![Dashboard-Name](../../assets/magento-bi-dashboard-create-name.png)
 
-   * Der Name Ihres neuen Dashboards wird in der oberen linken Ecke angezeigt. Klicken Sie auf den Abwärtspfeil (![](../../assets/magento-bi-btn-down.png)), um die Optionen anzuzeigen. Wenn Sie eine Gruppe erstellt haben, wird das neue Dashboard unterhalb der Gruppe in der Liste angezeigt.
+   * Der Name Ihres neuen Dashboards wird in der oberen linken Ecke angezeigt. Klicken Sie auf den Abwärtspfeil (![Abwärtspfeilsymbol](../../assets/magento-bi-btn-down.png), um die Optionen anzuzeigen. Wenn Sie eine Gruppe erstellt haben, wird das neue Dashboard unterhalb der Gruppe in der Liste angezeigt.
 
 ### Bericht hinzufügen
 

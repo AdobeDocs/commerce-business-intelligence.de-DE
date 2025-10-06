@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Report Builder auswählen.
 exl-id: ec4204ef-975e-45c3-b09e-fb97ffc2c497
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Report Builder auswählen
 
 >[!NOTE]
->&#x200B;>Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
+>>Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md).
 
 Nachdem Sie nun mehr Optionen zum Erstellen von Analysen haben, kann es manchmal schwierig sein, genau zu wissen, welche Variante des Report Builders Ihren Anforderungen entspricht. Dieses Thema führt Sie durch die Auswahl der besten Methode zur Erstellung Ihrer Analyse.
 
@@ -53,7 +53,7 @@ Manchmal kann die Struktur Ihrer Daten die [!DNL SQL Report Builder] zu einer ef
 
 Angenommen, ein einzelnes Produkt wird als Teil mehrerer Produktkategorien betrachtet, und Sie möchten den Umsatz für jede Kategorie jedes Produkts anzeigen. Der Versuch, diese Beziehung mit dem DWM zu erstellen, kann mühsam und schwierig sein, aber das Schreiben einer [!DNL SQL] Abfrage kann etwas einfacher sein:
 
-![](../../assets/When_should_I_use_the_RB_2.png)
+![SQL-Abfrage, die den Umsatz nach Produktkategorie mit Eins-zu-Viele-Beziehungen anzeigt](../../assets/When_should_I_use_the_RB_2.png)
 
 ## Wann sollte ich das herkömmliche Report Builder verwenden? {#whentraditionalrb}
 

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Datenspalten mit veränderlichen Werten konfi
 exl-id: c31ef32e-ba5a-4902-b632-fbab551cc632
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Die Häufigkeit der erneuten Prüfungen kann in der Data Warehouse verwaltet wer
 
 Um die Häufigkeit der erneuten Prüfungen zu ändern, aktivieren Sie das Kontrollkästchen neben den Spalten, die Sie ändern möchten. Klicken Sie dann auf das Dropdown-Menü **[!UICONTROL Set Recheck Frequency]** und legen Sie die gewünschte Häufigkeit fest.
 
-![](../../assets/dwm-recheck.png)
+![Data Warehouse Manager mit den Konfigurationsoptionen für eine erneute Überprüfung](../../assets/dwm-recheck.png)
 
 Manchmal werden `Paused` in der `Changes?` Spalte angezeigt. Dieser Wert wird angezeigt, wenn die [Replikationsmethode](../../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) der Tabelle auf `Paused` festgelegt ist.
 

@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über eine Methode zum Erstellen neuer, in einem 
 exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1120'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ In diesem Dokument werden der Zweck und die Verwendungszwecke von `Data Warehous
 
 Bei der `Data Warehouse Views`-Funktion handelt es sich um eine Methode zur Erstellung neuer, in einem Warehouse gespeicherter Tabellen, indem eine vorhandene Tabelle geändert oder mehrere Tabellen mithilfe von SQL zusammengefügt oder konsolidiert werden. Nachdem ein `Data Warehouse View` durch einen Aktualisierungszyklus erstellt und verarbeitet wurde, wird es in Ihrer Data Warehouse als neue Tabelle unter der `Data Warehouse Views` Dropdown-Liste ausgefüllt, wie unten dargestellt:
 
-![](../../assets/Data_Warehouse.png)
+![Data Warehouse-Schnittstelle mit Tabellenverwaltungsoptionen](../../assets/Data_Warehouse.png)
 
 Von hier aus funktioniert Ihre neue Ansicht wie jede andere Tabelle, sodass Sie neue berechnete Spalten erstellen oder Metriken und Berichte darüber erstellen können.
 
@@ -31,7 +31,7 @@ Wenn Sie mit SQL vertraut sind, verwenden beide Konsolidierungsbeispiele die Fun
 
 Sie können neue `Data Warehouse Views` erstellen und vorhandene Ansichten löschen, indem Sie zu **[!UICONTROL Manage Data]** > **[!UICONTROL Data Warehouse Views]** gehen, wie unten dargestellt:
 
-![](../../assets/Data_Warehouse_Views.png)
+![Abschnitt mit Data Warehouse-Ansichten mit benutzerdefinierten Ansichtskonfigurationen](../../assets/Data_Warehouse_Views.png)
 
 Von hier aus können Sie eine Ansicht erstellen, indem Sie den folgenden Beispielanweisungen folgen:
 
@@ -136,7 +136,7 @@ Anstatt für jede Anzeigenquelle einen separaten Satz von Marketing-Metriken zu 
 
 **Suchen Sie zusätzliche Hilfe?**
 
-Das Schreiben von SQL und das Erstellen von `Data Warehouse Views` ist nicht im Lieferumfang des technischen Supports enthalten. Das [Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) bietet jedoch Unterstützung bei der Erstellung von Ansichten an. Das Supportteam kann Ihnen bei allen Fragen behilflich sein, von der Migration einer alten Datenbank mit einer neuen Datenbank bis zur Erstellung einer einzigen Data Warehouse-Ansicht für bestimmte Analysezwecke.
+Das Schreiben von SQL und das Erstellen von `Data Warehouse Views` ist nicht im Lieferumfang des technischen Supports enthalten. Das [Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) bietet jedoch Unterstützung bei der Erstellung von Ansichten an. Das Supportteam kann Ihnen bei allen Fragen behilflich sein, von der Migration einer alten Datenbank mit einer neuen Datenbank bis zur Erstellung einer einzigen Data Warehouse-Ansicht für bestimmte Analysezwecke.
 
 Normalerweise erfordert die Erstellung eines neuen `Data Warehouse View` für die Konsolidierung von 2-3 ähnlich strukturierten Tabellen fünf Stunden Service-Zeit, was etwa 1.250 US-Dollar Arbeit entspricht. Im Folgenden finden Sie jedoch einige häufige Faktoren, die die erwarteten erforderlichen Investitionen erhöhen können:
 
