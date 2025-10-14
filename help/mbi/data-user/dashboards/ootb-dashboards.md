@@ -35,11 +35,11 @@ Dieses Dashboard kann auch Kohortendiagramme enthalten, die den Lebenszeitumsatz
 
 Weitere Informationen zu Kohorten finden Sie unter [Durchführen einer Kohortenanalyse](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
 
-Wenn Sie derzeit keine Quelle für die Benutzerakquise verfolgen, lesen Sie den Abschnitt [Übersicht über Source-Daten zur Benutzerakquise ](../../data-analyst/analysis/google-track-user-acq.md).
+Wenn Sie derzeit keine Quelle für die Benutzerakquise verfolgen, lesen Sie den Abschnitt [Übersicht über Source-Daten zur Benutzerakquise &#x200B;](../../data-analyst/analysis/google-track-user-acq.md).
 
 ## E-Mail-Zusammenfassung
 
-Das `Email Summary`-Dashboard enthält einen Beispielsatz von Diagrammen, die in einer automatisierten täglichen E-Mail-Zusammenfassung verwendet werden können. Weitere Informationen [ Konfigurieren von E-Mail](../../data-user/export-data/email-summaries.md)Zusammenfassungen finden Sie unter „Erstellen automatisierter E-Mail-Zusammenfassungen“.  
+Das `Email Summary`-Dashboard enthält einen Beispielsatz von Diagrammen, die in einer automatisierten täglichen E-Mail-Zusammenfassung verwendet werden können. Weitere Informationen [&#x200B; Konfigurieren von E-Mail](../../data-user/export-data/email-summaries.md)Zusammenfassungen finden Sie unter „Erstellen automatisierter E-Mail-Zusammenfassungen“.  
 
 ## Aufbewahrungszustand
 

@@ -23,11 +23,11 @@ Die [!DNL Google Analytics]-Integration ist *live* - dies bedeutet, dass die `Re
 >
 >Am 1. Juli 2023 werden die Daten in den Standardeigenschaften von Universal Analytics ([!DNL Google Analytics] 3) nicht mehr verarbeitet. Sie können Ihre Universal Analytics-Berichte für einen Zeitraum nach dem 1. Juli 2023 anzeigen. Neue Daten fließen jedoch nur in [!DNL Google Analytics] 4-Eigenschaften.
 
-[!DNL Google Analytics] Integrationen in [!DNL Commerce Intelligence] verwenden die [!DNL Google Analytics][ Core-Reporting](https://developers.google.com/analytics/devguides/reporting/core/v3/)API) und unterstützen die folgenden Metriken und Dimensionen.
+[!DNL Google Analytics] Integrationen in [!DNL Commerce Intelligence] verwenden die [!DNL Google Analytics][&#x200B; Core-Reporting](https://developers.google.com/analytics/devguides/reporting/core/v3/)API) und unterstützen die folgenden Metriken und Dimensionen.
 
 >[!NOTE]
 >
->Um unerwartete oder unsinnige Ergebnisse zu vermeiden, stellen Sie sicher, dass alle verwendeten Dimensionen mit einer oder mehreren Metriken kompatibel sind, die Sie im `Report Builder` verwenden. Sie können ([) ](https://ga-dev-tools.google/dimensions-metrics-explorer/).
+>Um unerwartete oder unsinnige Ergebnisse zu vermeiden, stellen Sie sicher, dass alle verwendeten Dimensionen mit einer oder mehreren Metriken kompatibel sind, die Sie im `Report Builder` verwenden. Sie können ([) &#x200B;](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Unterstützte Metriken
 
@@ -156,7 +156,7 @@ Die [!DNL Google Analytics]-Integration ist *live* - dies bedeutet, dass die `Re
 
 +++Unterstützte Metriken und Dimensionen (Google Analytics 4)
 
-[!DNL Google Analytics] Integrationen in verwenden [!DNL Commerce Intelligence] die [!DNL Google Analytics]Data [ v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+[!DNL Google Analytics] Integrationen in verwenden [!DNL Commerce Intelligence] die [!DNL Google Analytics]Data [&#x200B; v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
 
 >[!NOTE]
 >

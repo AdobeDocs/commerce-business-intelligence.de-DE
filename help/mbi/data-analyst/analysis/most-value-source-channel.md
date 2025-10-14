@@ -57,7 +57,7 @@ Um diesen Bericht in der Report Builder zu erstellen, fügen Sie die Metrik **Du
 
 Im Folgenden finden Sie eine visuelle Anleitung:
 
-![Durchschnittlicher Lebensdauerumsatz nach Benutzerquelle ](../../assets/Lifetime_revenue_by_user_source.gif).
+![Durchschnittlicher Lebensdauerumsatz nach Benutzerquelle &#x200B;](../../assets/Lifetime_revenue_by_user_source.gif).
 
 In diesem Beispiel wird nur der Lebensdauerumsatz untersucht. Sie können diese Analyse aber auch replizieren, um die [!UICONTROL Number of orders] oder [!UICONTROL Distinct buyers] nach Empfehlungsquelle zu untersuchen.
 
@@ -119,5 +119,5 @@ Dieses Thema hat nur einige Analysen angesprochen, mit denen Sie den Wert Ihrer 
 
 * [Verweisquelle für Tracking-Reihenfolge über [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)
 * [Verbinden Ihres [!DNL Google Adwords] Kontos](../importing-data/integrations/google-adwords.md)
-* [ [!DNL Google ECommerce]  mit Bestellungen und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [&#x200B; [!DNL Google ECommerce]  mit Bestellungen und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Best Practices für UTM-Tagging in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

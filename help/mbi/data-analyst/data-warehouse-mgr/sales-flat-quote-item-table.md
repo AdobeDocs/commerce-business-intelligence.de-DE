@@ -72,7 +72,7 @@ Die `quote_item` Tabelle (`sales_flat_quote_item` auf M1) enthält Datensätze z
 
 `quote_item`
 
-* Verbinden Sie sich mit `quote_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Wenden Sie sich an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um Hilfe bei der Konfiguration dieser Berechnungen zu erhalten, falls Sie etwas in Data Warehouse Manager erstellen.
+* Verbinden Sie sich mit `quote_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Wenden Sie sich an den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um Hilfe bei der Konfiguration dieser Berechnungen zu erhalten, falls Sie etwas in Data Warehouse Manager erstellen.
    * Pfad: `quote_item.parent_item_id` (viele) => `quote_item.item_id` (eins)
 
 `store`

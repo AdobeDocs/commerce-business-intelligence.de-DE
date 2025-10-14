@@ -21,7 +21,7 @@ Zu einer bereits langen Aktualisierungszeit können viele Faktoren hinzukommen. 
 
 In einer Datenbanktabelle können Datenspalten mit veränderlichen Werten vorhanden sein. Beispiel: In einer Tabelle **Bestellungen** kann es eine Spalte namens **Status** geben. Wenn eine Bestellung erstmals in die Datenbank geschrieben wird, kann die Statusspalte den Wert `pending` enthalten. Die Bestellung wird in Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md) mit diesem `pending` Wert repliziert.
 
-Änderbare Spalten müssen im [ auf aktualisierte Werte ](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) werden. Standardmäßig überprüft [!DNL Commerce Intelligence] diese Spalten bei jeder Aktualisierung neu. Wenn jedoch eine große Datenmenge erneut überprüft und repliziert werden muss, kann dies negative Auswirkungen auf die Aktualisierungszeit haben. Anstatt während jeder Aktualisierung erneute Prüfungen durchzuführen, empfiehlt Adobe, die Häufigkeit der erneuten Prüfungen auf täglich, wöchentlich oder monatlich festzulegen.
+Änderbare Spalten müssen im [&#x200B; auf aktualisierte Werte &#x200B;](../data-analyst/data-warehouse-mgr/cfg-data-rechecks.md) werden. Standardmäßig überprüft [!DNL Commerce Intelligence] diese Spalten bei jeder Aktualisierung neu. Wenn jedoch eine große Datenmenge erneut überprüft und repliziert werden muss, kann dies negative Auswirkungen auf die Aktualisierungszeit haben. Anstatt während jeder Aktualisierung erneute Prüfungen durchzuführen, empfiehlt Adobe, die Häufigkeit der erneuten Prüfungen auf täglich, wöchentlich oder monatlich festzulegen.
 
 ## Verwenden von inkrementellen Replikationsmethoden
 

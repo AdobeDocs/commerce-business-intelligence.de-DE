@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Um Ihre [!DNL Linkshare]-Daten in [!DNL Adobe Commerce Intelligence] einzubringen, müssen Sie zwei Dinge tun:
 
-1. [Exportieren der Linkshare-Daten in ](#export)
+1. [Exportieren der Linkshare-Daten in &#x200B;](#export)
 1. [Tabelle hochladen in [!DNL Commerce Intelligence]](../connecting-data/using-file-uploader.md)
 
 ## Exportieren von Daten aus Linkshare {#export}

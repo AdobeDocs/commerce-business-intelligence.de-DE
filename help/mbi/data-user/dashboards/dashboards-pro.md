@@ -133,7 +133,7 @@ Das Dashboard „Bestellungen“ bietet Einblicke in das Transaktionsvolumen von
 
 ## PRODUCT
 
-Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Bruttowarenwert (GMV) und die am häufigsten gekauften und rückerstatteten Produkte an. Dies kann Ihnen helfen, Käufe und Rücksendungen auszugleichen und den Produkterfolg und die Beliebtheit zu bestimmen. Ihr Store muss [konfiguriert sein, um Rückerstattungen zu ](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=de)), damit diese Diagramme ausgefüllt werden.
+Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Bruttowarenwert (GMV) und die am häufigsten gekauften und rückerstatteten Produkte an. Dies kann Ihnen helfen, Käufe und Rücksendungen auszugleichen und den Produkterfolg und die Beliebtheit zu bestimmen. Ihr Store muss [konfiguriert sein, um Rückerstattungen zu &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=de)), damit diese Diagramme ausgefüllt werden.
 
 >[!NOTE]
 >

@@ -36,5 +36,5 @@ Die unten untersuchte Tabellenstruktur wird beim Erstellen einer `.csv` zum Aufz
 
 ## verwandt
 
-* [ [!DNL AdWords] ](../integrations/google-adwords.md)
+* [&#x200B; [!DNL AdWords] &#x200B;](../integrations/google-adwords.md)
 * [Steigerung des ROI von Werbekampagnen](../../analysis/roi-ad-camp.md)

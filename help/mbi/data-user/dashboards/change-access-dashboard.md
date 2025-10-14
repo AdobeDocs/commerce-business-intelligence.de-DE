@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Zugriff auf freigegebene Dashboards ändern
 
-Der Zugriff auf Dashboards kann jederzeit geändert werden, indem die gleichen Schritte zum [ (anfänglichen Freigeben des Dashboards) ](../../data-user/dashboards/share-dashboard-with-users.md){: target="_blank"} werden. Aktualisieren Sie in der Liste der Benutzer, die im Menü `Share Dashboard` angezeigt wird, die Berechtigungen des Benutzers bzw. der Organisation nach Bedarf, und klicken Sie zum Aktualisieren auf **[!UICONTROL Save Changes]** .
+Der Zugriff auf Dashboards kann jederzeit geändert werden, indem die gleichen Schritte zum [&#x200B; (anfänglichen Freigeben des Dashboards) &#x200B;](../../data-user/dashboards/share-dashboard-with-users.md){: target="_blank"} werden. Aktualisieren Sie in der Liste der Benutzer, die im Menü `Share Dashboard` angezeigt wird, die Berechtigungen des Benutzers bzw. der Organisation nach Bedarf, und klicken Sie zum Aktualisieren auf **[!UICONTROL Save Changes]** .

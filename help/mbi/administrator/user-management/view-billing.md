@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Rechnungsinformationen
 
-Zum Anzeigen, Hinzufügen oder Ändern der Rechnungsinformationen Ihres Kontos benötigen Sie `Billing` Berechtigungen. [Berechtigungen werden für jeden Benutzer einzeln festgelegt, ](../../administrator/user-management/user-management.md) Benutzerkonten erstellt werden. Wenn Sie `Billing` Berechtigungen benötigen, wenden Sie sich an den Administrator Ihres Kontos.
+Zum Anzeigen, Hinzufügen oder Ändern der Rechnungsinformationen Ihres Kontos benötigen Sie `Billing` Berechtigungen. [Berechtigungen werden für jeden Benutzer einzeln festgelegt, &#x200B;](../../administrator/user-management/user-management.md) Benutzerkonten erstellt werden. Wenn Sie `Billing` Berechtigungen benötigen, wenden Sie sich an den Administrator Ihres Kontos.

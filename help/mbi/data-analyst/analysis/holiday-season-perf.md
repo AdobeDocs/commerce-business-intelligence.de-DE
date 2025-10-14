@@ -19,7 +19,7 @@ Anstürme können zu jedem Zeitpunkt des Jahres auftreten. Wenn Ihr Unternehmen 
 
 ## Empfohlene Kennzahlen
 
-Berücksichtigen Sie bei der Analyse der Leistung während der Weihnachtssaison [ Analyse (oder ](../../data-user/reports/ess-manage-data-metrics.md)) dieser Metriken:
+Berücksichtigen Sie bei der Analyse der Leistung während der Weihnachtssaison [&#x200B; Analyse (oder &#x200B;](../../data-user/reports/ess-manage-data-metrics.md)) dieser Metriken:
 
 ### Anzahl neuer Kunden, Anzahl der Bestellungen, Umsatz
 

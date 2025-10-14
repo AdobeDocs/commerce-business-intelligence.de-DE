@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Die Tabelle `customer_entity` enthält Einträge aller registrierten Konten. Ein Konto gilt als registriert, wenn er sich für ein Konto anmeldet, unabhängig davon, ob er jemals einen Kauf abschließt. Jede Zeile entspricht einem eindeutigen registrierten Konto, das durch die `entity_id` dieses Kontos identifiziert wird.
 
-Diese Tabelle enthält keine Datensätze von Kunden, die eine Bestellung per Gast-Checkout aufgeben. Wenn Ihr Geschäft einen Gast-Checkout akzeptiert, finden Sie [ diesen Bestellungen unter &quot;](../data-warehouse-mgr/guest-orders.md) für Gastbestellungen“.
+Diese Tabelle enthält keine Datensätze von Kunden, die eine Bestellung per Gast-Checkout aufgeben. Wenn Ihr Geschäft einen Gast-Checkout akzeptiert, finden Sie [&#x200B; diesen Bestellungen unter &quot;](../data-warehouse-mgr/guest-orders.md) für Gastbestellungen“.
 
 ## Gemeinsame Spalten
 

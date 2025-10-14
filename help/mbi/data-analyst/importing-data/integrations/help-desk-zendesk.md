@@ -283,7 +283,7 @@ Bevor Sie beginnen, verbinden Sie Ihre [[!DNL Zendesk]](../integrations/zendesk.
 
 >[!NOTE]
 >
->Stellen Sie sicher[ dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
+>Stellen Sie sicher[&#x200B; dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../../../data-analyst/data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
 
 ### Berichte
 

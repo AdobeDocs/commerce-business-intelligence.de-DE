@@ -17,7 +17,7 @@ Die `sales_order_item` Tabelle (`sales_flat_order_item` auf M1) enthält Datens�
 
 ## Produktarten
 
-Die `sales_order_item` erfasst Details zu allen [Produktarten](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html?lang=de#product-types) die gekauft wurden. Eine gängige Praxis in [!DNL Adobe Commerce] besteht darin, konfigurierbare Produkte anzubieten, d. h. ein Produkt, das anhand von Größe, Farbe und anderen Produktattributen angepasst werden kann. Obwohl ein konfigurierbares Produkt über eine eigene `sku` verfügt, kann es sich auf mehrere einfache Produkte beziehen, wobei jedes einfache Produkt eine eindeutige Produktkonfiguration darstellt. Weitere Informationen finden [ unter &quot;](https://developer.adobe.com/commerce/webapi/rest/tutorials/configurable-product/) konfigurieren“.
+Die `sales_order_item` erfasst Details zu allen [Produktarten](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html?lang=de#product-types) die gekauft wurden. Eine gängige Praxis in [!DNL Adobe Commerce] besteht darin, konfigurierbare Produkte anzubieten, d. h. ein Produkt, das anhand von Größe, Farbe und anderen Produktattributen angepasst werden kann. Obwohl ein konfigurierbares Produkt über eine eigene `sku` verfügt, kann es sich auf mehrere einfache Produkte beziehen, wobei jedes einfache Produkt eine eindeutige Produktkonfiguration darstellt. Weitere Informationen finden [&#x200B; unter &quot;](https://developer.adobe.com/commerce/webapi/rest/tutorials/configurable-product/) konfigurieren“.
 
 Betrachten Sie beispielsweise ein konfigurierbares Produkt wie ein T-Shirt. Beim Auschecken wählt der Kunde Optionen aus, um die Farbe und Größe zu ändern. Wenn der Kunde eine Farbe für `blue` und eine Größe für `small` auswählt, kauft er am Ende ein einfaches Produkt wie `t-shirt-blue-small`, das sich auf das übergeordnete Produkt von `t-shirt` bezieht.
 
@@ -84,7 +84,7 @@ Daher ist es möglich, den Verkauf von Produkten entweder auf der einfachen Eben
 
 `sales_order_item`
 
-* Verbinden Sie sich mit `sales_order_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Wenden Sie sich an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um Hilfe bei der Konfiguration dieser Berechnungen zu erhalten, falls Sie etwas in Data Warehouse Manager erstellen.
+* Verbinden Sie sich mit `sales_order_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Wenden Sie sich an den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um Hilfe bei der Konfiguration dieser Berechnungen zu erhalten, falls Sie etwas in Data Warehouse Manager erstellen.
    * Pfad: `sales_order_item.parent_item_id` (viele) => `sales_order_item.item_id` (eins)
 
 `store`

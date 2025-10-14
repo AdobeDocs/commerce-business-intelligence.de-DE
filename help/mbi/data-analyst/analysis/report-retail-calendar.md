@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Reporting über einen Einzelhandelskalender
 
-Dieses Thema zeigt, wie Sie die Struktur einrichten, um einen [4-5-4 Einzelhandelskalender ](https://nrf.com/resources/4-5-4-calendar) Ihrem [!DNL Adobe Commerce Intelligence]-Konto zu verwenden. Der Visual Report Builder bietet unglaublich flexible Zeitbereiche, Intervalle und unabhängige Einstellungen. Alle diese Einstellungen funktionieren jedoch mit dem herkömmlichen monatlichen Kalender.
+Dieses Thema zeigt, wie Sie die Struktur einrichten, um einen [4-5-4 Einzelhandelskalender &#x200B;](https://nrf.com/resources/4-5-4-calendar) Ihrem [!DNL Adobe Commerce Intelligence]-Konto zu verwenden. Der Visual Report Builder bietet unglaublich flexible Zeitbereiche, Intervalle und unabhängige Einstellungen. Alle diese Einstellungen funktionieren jedoch mit dem herkömmlichen monatlichen Kalender.
 
 Da viele Kunden ihren Kalender so ändern, dass er Einzelhandels- oder Buchhaltungstermine verwendet, veranschaulichen die folgenden Schritte, wie Sie mit Ihren Daten arbeiten und Berichte mit Einzelhandelsterminen erstellen. Obwohl die folgenden Anweisungen auf den Einzelhandelskalender 4-5-4 verweisen, können Sie ihn für jeden spezifischen Kalender ändern, den Ihr Team verwendet, sei es finanziell oder nur in einem benutzerdefinierten Zeitrahmen.
 
@@ -23,7 +23,7 @@ Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv
 
 ## Erste Schritte
 
-Sie [ eine ](../../assets/454-calendar.csv) Version `.csv` 4-5-4 Einzelhandelskalenders für die Einzelhandelsjahre 2014 bis 2017 herunterladen. Möglicherweise müssen Sie diese Datei an Ihren internen Einzelhandelskalender anpassen und den Datumsbereich erweitern, um Ihren historischen und aktuellen Zeitrahmen zu unterstützen. Verwenden Sie nach dem Herunterladen der Datei den Datei-Uploader, um eine Einzelhandelskalendertabelle in Ihrer [!DNL Commerce Intelligence] Data Warehouse zu erstellen. Wenn Sie eine unveränderte Version des Einzelhandelskalenders 4-5-4 verwenden, stellen Sie sicher, dass die Struktur und die Datentypen der Felder in dieser Tabelle den folgenden Werten entsprechen:
+Sie [&#x200B; eine &#x200B;](../../assets/454-calendar.csv) Version `.csv` 4-5-4 Einzelhandelskalenders für die Einzelhandelsjahre 2014 bis 2017 herunterladen. Möglicherweise müssen Sie diese Datei an Ihren internen Einzelhandelskalender anpassen und den Datumsbereich erweitern, um Ihren historischen und aktuellen Zeitrahmen zu unterstützen. Verwenden Sie nach dem Herunterladen der Datei den Datei-Uploader, um eine Einzelhandelskalendertabelle in Ihrer [!DNL Commerce Intelligence] Data Warehouse zu erstellen. Wenn Sie eine unveränderte Version des Einzelhandelskalenders 4-5-4 verwenden, stellen Sie sicher, dass die Struktur und die Datentypen der Felder in dieser Tabelle den folgenden Werten entsprechen:
 
 | Spaltenname | Spaltendatentyp | Primärer Schlüssel |
 | --- | --- | --- |

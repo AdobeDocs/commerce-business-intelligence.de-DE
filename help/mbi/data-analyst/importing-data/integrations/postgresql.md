@@ -42,7 +42,7 @@ Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firew
 
 ## Erstellen eines [!DNL Linux] Benutzers für [!DNL Commerce Intelligence] {#linux}
 
-Dabei kann es sich um einen Produktions- oder Sekundärrechner handeln, sofern er Echtzeitdaten (oder häufig aktualisierte Daten) enthält. Sie können [diesen Benutzer ](../../../administrator/account-management/restrict-db-access.md) beliebiger Weise einschränken, solange er das Recht behält, eine Verbindung zum [!DNL PostgreSQL]-Server herzustellen.
+Dabei kann es sich um einen Produktions- oder Sekundärrechner handeln, sofern er Echtzeitdaten (oder häufig aktualisierte Daten) enthält. Sie können [diesen Benutzer &#x200B;](../../../administrator/account-management/restrict-db-access.md) beliebiger Weise einschränken, solange er das Recht behält, eine Verbindung zum [!DNL PostgreSQL]-Server herzustellen.
 
 1. Um den neuen Benutzer hinzuzufügen, führen Sie die folgenden Befehle als Stammordner auf Ihrem [!DNL Linux] aus:
 

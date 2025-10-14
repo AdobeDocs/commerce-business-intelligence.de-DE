@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Google Analytics]- und UTM-Attribution
 
-Es ist wichtig, die [Quelle der Benutzerakquise](../../data-analyst/analysis/google-track-user-acq.md) zu verfolgen, um [die Werbekampagnen mit der besten Performance zu ](../../data-analyst/analysis/most-value-source-channel.md). In diesem Thema wird der Prozess der [!DNL Google Analytics]-Quellattribution untersucht. Mit anderen Worten, welche Informationen wann aufgezeichnet werden.
+Es ist wichtig, die [Quelle der Benutzerakquise](../../data-analyst/analysis/google-track-user-acq.md) zu verfolgen, um [die Werbekampagnen mit der besten Performance zu &#x200B;](../../data-analyst/analysis/most-value-source-channel.md). In diesem Thema wird der Prozess der [!DNL Google Analytics]-Quellattribution untersucht. Mit anderen Worten, welche Informationen wann aufgezeichnet werden.
 
 ## Was ist Attribution?
 
@@ -25,7 +25,7 @@ Die Realität ist, dass Benutzer oft aus vielen Quellen kommen, bevor sie eine M
 
 ## Wie ordnet [!DNL Google Analytics] Verweisquellen über UTM-Parameter zu?
 
-Wenn die UTM-Parameter für die URL angegeben werden, werden diese ausgewertet und in einem [!DNL Google Analytics] ([) ](https://en.wikipedia.org/wiki/HTTP_cookie). Wenn eine Website nicht über [!DNL Google Analytics] verfügt, macht es keinen Sinn, UTMs zu verwenden. [!DNL Google Analytics] verfügt über Regeln für den Umgang mit Benutzenden, die während ihres Lebenszyklus mehrere URLs mit UTMs aufrufen (mehr dazu später). Angenommen, die Website ist so konfiguriert, dass UTM-Parameter in einer externen Datenbank erfasst werden. Wenn eine Mikro- oder Makrokonvertierung stattfindet, wird alles, was sich zum Zeitpunkt der Konvertierung im [!DNL Google Analytics]-Cookie befindet, in die Datenbank repliziert.
+Wenn die UTM-Parameter für die URL angegeben werden, werden diese ausgewertet und in einem [!DNL Google Analytics] ([) &#x200B;](https://en.wikipedia.org/wiki/HTTP_cookie). Wenn eine Website nicht über [!DNL Google Analytics] verfügt, macht es keinen Sinn, UTMs zu verwenden. [!DNL Google Analytics] verfügt über Regeln für den Umgang mit Benutzenden, die während ihres Lebenszyklus mehrere URLs mit UTMs aufrufen (mehr dazu später). Angenommen, die Website ist so konfiguriert, dass UTM-Parameter in einer externen Datenbank erfasst werden. Wenn eine Mikro- oder Makrokonvertierung stattfindet, wird alles, was sich zum Zeitpunkt der Konvertierung im [!DNL Google Analytics]-Cookie befindet, in die Datenbank repliziert.
 
 ## Erster Klick vs. letzter Klick
 
@@ -67,6 +67,6 @@ Da fragt man sich: „Wie viel Umsatz machte mir die bezahlte Recherche? Von E-M
 * [Verfolgen Sie die Quelle der Benutzerreferenz in Ihrer Datenbank](../analysis/google-track-user-acq.md)
 * [Benutzergeräte-, Browser- und Betriebssystemdaten in der Datenbank tracken](../analysis/google-track-user-acq.md)
 * [Entdecken Sie Ihre wertvollsten Akquisitionsquellen und -kanäle](../analysis/most-value-source-channel.md)
-* [Konto  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Konto  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Steigerung des ROI Ihrer Werbekampagnen](../analysis/roi-ad-camp.md)
 * [Fünf Best Practices für UTM-Tagging in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

@@ -17,7 +17,7 @@ Etwas Seltsames in Ihren [[!DNL Zendesk] Daten](../integrations/exp-zendesk-data
 
 ## Aktivieren des Datenexports
 
-Der Datenexport ist derzeit nicht für alle [!DNL Zendesk]-Konten aktiviert. Um diese Funktion zu aktivieren, [ Sie „ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de)&quot; und geben Sie Ihren [!DNL Zendesk] Subdomain-Namen an.
+Der Datenexport ist derzeit nicht für alle [!DNL Zendesk]-Konten aktiviert. Um diese Funktion zu aktivieren, [&#x200B; Sie „ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de)&quot; und geben Sie Ihren [!DNL Zendesk] Subdomain-Namen an.
 
 >[!NOTE]
 >

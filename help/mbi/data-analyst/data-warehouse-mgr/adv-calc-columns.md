@@ -161,10 +161,10 @@ Um diesen Typ von berechneter Spalte zu erstellen, müssen Sie Folgendes wissen:
 
 Keine Sorge. Nur weil er hier nicht aufgeführt ist, heißt das noch lange nicht, dass er nicht möglich ist. Das Adobe-Team der Data Warehouse-Analysten kann Ihnen dabei helfen.
 
-Um eine neue berechnete Spalte zu definieren[ reichen Sie ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), in dem Sie genau angeben, was Sie erstellen möchten.
+Um eine neue berechnete Spalte zu definieren[&#x200B; reichen Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), in dem Sie genau angeben, was Sie erstellen möchten.
 
 ## Verwandte Dokumentation
 
 * [Berechnete Spalten erstellen](../data-warehouse-mgr/creating-calculated-columns.md)
 * [Berechnete Spaltentypen](../data-warehouse-mgr/calc-column-types.md)
-* [ [!DNL Google ECommerce]  mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [&#x200B; [!DNL Google ECommerce]  mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
