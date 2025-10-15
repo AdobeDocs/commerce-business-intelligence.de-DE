@@ -88,7 +88,7 @@ Diese Tabelle wird verwendet, um Ihre Abonnementinformationen zu verwalten, z. B
 
 ## Marketing-Ausgabentabelle
 
-Bei der Analyse Ihrer Marketing-Ausgaben können Sie [!DNL Facebook], [!DNL Google AdWords] oder andere Quellen in Ihre Analysen einbeziehen. Wenn Sie mehrere Quellen für Marketingausgaben haben, wenden Sie sich an das [Managed Services-Team](https://business.adobe.com/products/magento/fully-managed-service.html), um Hilfe beim Einrichten einer konsolidierten Tabelle für Ihre Marketing-Kampagnen zu erhalten.
+Bei der Analyse Ihrer Marketing-Ausgaben können Sie [!DNL Facebook], [!DNL Google AdWords] oder andere Quellen in Ihre Analysen einbeziehen. Wenn Sie mehrere Quellen für Marketingausgaben haben, wenden Sie sich an das [Managed Services-Team](https://business.adobe.com/de/products/magento/fully-managed-service.html), um Hilfe beim Einrichten einer konsolidierten Tabelle für Ihre Marketing-Kampagnen zu erhalten.
 
 **Dimensionen**
 

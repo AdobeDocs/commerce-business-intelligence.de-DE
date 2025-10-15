@@ -17,7 +17,7 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das eine detaillierte Anal
 
 ![Dashboard „Detaillierte Rücksendungen“ mit Rückgaberaten und -gründen](../../assets/detailed-returns-dboard.png)
 
-Bevor Sie beginnen, müssen Sie [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)-Kunde sein und sollten sicherstellen, dass Ihr Unternehmen die `enterprise\_rma` für Rücksendungen verwendet.
+Bevor Sie beginnen, müssen Sie [Adobe Commerce](https://business.adobe.com/de/products/magento/magento-commerce.html)-Kunde sein und sollten sicherstellen, dass Ihr Unternehmen die `enterprise\_rma` für Rücksendungen verwendet.
 
 Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 

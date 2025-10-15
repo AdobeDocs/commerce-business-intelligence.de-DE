@@ -64,7 +64,7 @@ Mit einer [!DNL Google Analytics] Integration können Sie Berichte zu folgenden 
 * Site-Besuche
 * Konversionsrate
 
-Mit den [Commerce Data Enrichment-Services](https://business.adobe.com/products/magento/magento-commerce.html) können Sie Berichte zu folgenden Themen einbeziehen:
+Mit den [Commerce Data Enrichment-Services](https://business.adobe.com/de/products/magento/magento-commerce.html) können Sie Berichte zu folgenden Themen einbeziehen:
 
 * Unique Customers nach Bundesland/Region, Alter, Geschlecht.
 
