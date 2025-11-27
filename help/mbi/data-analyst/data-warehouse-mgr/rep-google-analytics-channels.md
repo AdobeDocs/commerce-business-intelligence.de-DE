@@ -46,7 +46,7 @@ Da Sie nun wissen, dass Kanäle nur noch Kombinationen aus Quellen und Medien si
 
 1. **Integration [!DNL Google ECommerce]aktivieren**
 
-   [Wenn aktiviert](../importing-data/integrations/google-ecommerce.md), stellen Sie sicher, [ ](tour-dwm.md#syncing) die Felder **medium** und **source** in Ihrer Data Warehouse zu synchronisieren. Nach Abschluss dieses Vorgangs werden Medium- und Quellakquisitionsdaten in Ihre Data Warehouse eingebracht.
+   [Wenn aktiviert](../importing-data/integrations/google-ecommerce.md), stellen Sie sicher, [&#x200B; &#x200B;](tour-dwm.md#syncing) die Felder **medium** und **source** in Ihrer Data Warehouse zu synchronisieren. Nach Abschluss dieses Vorgangs werden Medium- und Quellakquisitionsdaten in Ihre Data Warehouse eingebracht.
 
 1. **Laden Sie eine Zuordnung der Kanalgruppierungen von Google hoch**
 
@@ -60,7 +60,7 @@ Da Sie nun wissen, dass Kanäle nur noch Kombinationen aus Quellen und Medien si
 
 1. **Beziehung zwischen Zuordnungen und [!DNL Google ECommerce]-Upload herstellen**
 
-   Um eine Beziehung zwischen dem [!DNL Google ECommerce] und der Zuordnungstabelle herzustellen, [ Sie eine Support-Anfrage ](../../guide-overview.md#Submitting-a-Support-Ticket) Ihr Datenanalyst-Team und verweisen Sie auf dieses Thema. Der Analyst erstellt eine neue berechnete Spalte mit dem Namen **Channel** in der ECommerce-Tabelle. **Nach einem vollständigen** kann diese Spalte in einer `Filter` oder `Group by` verwendet werden.
+   Um eine Beziehung zwischen dem [!DNL Google ECommerce] und der Zuordnungstabelle herzustellen, [&#x200B; Sie eine Support-Anfrage &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket) Ihr Datenanalyst-Team und verweisen Sie auf dieses Thema. Der Analyst erstellt eine neue berechnete Spalte mit dem Namen **Channel** in der ECommerce-Tabelle. **Nach einem vollständigen** kann diese Spalte in einer `Filter` oder `Group by` verwendet werden.
 
 Sie haben jetzt [!DNL Google Analytics Channel] Gruppierungen in Ihrer Data Warehouse, was bedeutet, dass Sie Ihre Daten aus einer neuen Perspektive analysieren können:
 
