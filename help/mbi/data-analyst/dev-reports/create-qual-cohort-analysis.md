@@ -4,9 +4,9 @@ description: Erfahren Sie, was eine qualitative Kohorte ist, warum Sie am Aufbau
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,6 @@ Dieses Thema geht näher darauf ein, was eine qualitative Kohorte ist, warum Sie
 ## Was sind überhaupt `qualitative cohorts`? {#whatare}
 
 `Cohort` Analyse im Allgemeinen kann grob definiert werden als die Analyse von Benutzergruppen, die ähnliche Eigenschaften über ihren Lebenszyklus hinweg aufweisen. So können Sie Verhaltenstrends in verschiedenen Benutzergruppen identifizieren.
-
-Siehe [Kohortenanalyse](https://www.cohortanalysis.com/).
 
 Die meisten `cohort` in [!DNL Commerce Intelligence] gruppieren Benutzer nach einem gemeinsamen Datum (z. B. die Gruppe aller Kunden, die ihren ersten Kauf in einem bestimmten Monat getätigt haben). Ein `qualitative cohort` ist etwas Anderes: Es handelt sich um eine Benutzergruppe, die durch ein Merkmal definiert wird, das nicht zeitbasiert ist. Beispiele:
 
@@ -39,7 +37,7 @@ Wenn Sie jedoch das Kohortenverhalten mehrerer Benutzersegmente im selben Kohort
 
 Das Erstellen eines `qualitative cohort` in der `Report Builder` beinhaltet, dass das Adobe-Analystenteam einige [erweiterte berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md) auf den erforderlichen Tabellen erstellt.
 
-Um diese zu erstellen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) ein (und lesen Sie diesen Artikel!). Hier finden Sie, was Sie wissen müssen:
+Um diese zu erstellen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ein (und lesen Sie diesen Artikel!). Hier finden Sie, was Sie wissen müssen:
 
 * Die `metric`, mit der Sie Ihre Kohortenanalyse durchführen möchten, und welche Tabelle verwendet wird (Beispiel: `Revenue`, basierend auf der `orders`).
 

@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Analyse von Benutzergruppen, die über 
 exl-id: d80c5389-7256-40e0-86e0-49903113f93d
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1597'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,6 @@ Wollten Sie schon immer einmal untersuchen, wie sich verschiedene Untergruppen I
 ## Was ist eine Kohortenanalyse? {#what}
 
 `Cohort` Analyse kann grob definiert werden als die Analyse von Benutzergruppen, die über ihren Lebenszyklus ähnliche Merkmale aufweisen. So können Sie Verhaltenstrends in verschiedenen Benutzergruppen identifizieren.
-
-Eine ausführliche Einführung in die `cohort` finden Sie auf [dieser Seite](https://www.cohortanalysis.com/).
 
 In Ihrem [!DNL Commerce Intelligence]-Dashboard ist es einfach, `cohorts` basierend auf einem `cohort` und einer Metrik in Ihrem Konto zu erstellen.
 
@@ -213,4 +211,4 @@ Dies entspricht dem obigen `perspective`, mit der Ausnahme, dass der Wert des er
 
 ## Verpackung {#finish}
 
-Die `Cohort Report Builder` ist für die Gruppierung von Benutzern nach einem gemeinsamen `cohort date` optimiert. Möglicherweise möchten Sie die Benutzer nach einer ähnlichen Aktivität oder einem ähnlichen Attribut gruppieren. Adobe empfiehlt, sich [&#x200B; (dieses Tutorial zu qualitativen Kohorten) &#x200B;](../dev-reports/create-qual-cohort-analysis.md), um loszulegen.
+Die `Cohort Report Builder` ist für die Gruppierung von Benutzern nach einem gemeinsamen `cohort date` optimiert. Möglicherweise möchten Sie die Benutzer nach einer ähnlichen Aktivität oder einem ähnlichen Attribut gruppieren. Adobe empfiehlt, sich [ (dieses Tutorial zu qualitativen Kohorten) ](../dev-reports/create-qual-cohort-analysis.md), um loszulegen.

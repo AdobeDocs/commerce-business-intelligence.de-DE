@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den Zustand wichtiger Metriken wie Benutzerle
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
 role: Admin, Data Architect, Data Engineer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Die Verfügbarkeit einiger Dashboards hängt von Ihrem Datensatz ab.
 
-Wenn Sie Fragen haben oder daran interessiert sind, ein Paket zu Ihrem Konto hinzuzufügen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um Hilfe zu erhalten.
+Wenn Sie Fragen haben oder daran interessiert sind, ein Paket zu Ihrem Konto hinzuzufügen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um Hilfe zu erhalten.
 
 ## Überblick für Führungskräfte
 
@@ -35,17 +35,17 @@ Dieses Dashboard kann auch Kohortendiagramme enthalten, die den Lebenszeitumsatz
 
 Weitere Informationen zu Kohorten finden Sie unter [Durchführen einer Kohortenanalyse](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
 
-Wenn Sie derzeit keine Quelle für die Benutzerakquise verfolgen, lesen Sie den Abschnitt [Übersicht über Source-Daten zur Benutzerakquise &#x200B;](../../data-analyst/analysis/google-track-user-acq.md).
+Wenn Sie derzeit keine Quelle für die Benutzerakquise verfolgen, lesen Sie den Abschnitt [Übersicht über Source-Daten zur Benutzerakquise ](../../data-analyst/analysis/google-track-user-acq.md).
 
 ## E-Mail-Zusammenfassung
 
-Das `Email Summary`-Dashboard enthält einen Beispielsatz von Diagrammen, die in einer automatisierten täglichen E-Mail-Zusammenfassung verwendet werden können. Weitere Informationen [&#x200B; Konfigurieren von E-Mail](../../data-user/export-data/email-summaries.md)Zusammenfassungen finden Sie unter „Erstellen automatisierter E-Mail-Zusammenfassungen“.  
+Das `Email Summary`-Dashboard enthält einen Beispielsatz von Diagrammen, die in einer automatisierten täglichen E-Mail-Zusammenfassung verwendet werden können. Weitere Informationen [ Konfigurieren von E-Mail](../../data-user/export-data/email-summaries.md)Zusammenfassungen finden Sie unter „Erstellen automatisierter E-Mail-Zusammenfassungen“.  
 
 ## Aufbewahrungszustand
 
 Das `Retention health`-Dashboard zeigt das Verhalten beim wiederholten Kauf Ihres Benutzerstamms an.
 
-Das `Time between orders` Diagramm zeigt die durchschnittliche und/oder mediane Zeit zwischen der ersten und zweiten, zweiten und dritten Ordnung usw. eines Benutzers. Sie können [diese Daten zur Konfiguration Ihrer E-Mail-Marketing-Kampagnen verwenden](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/).
+Das `Time between orders` Diagramm zeigt die durchschnittliche und/oder mediane Zeit zwischen der ersten und zweiten, zweiten und dritten Ordnung usw. eines Benutzers. Sie können diese Daten verwenden, um Ihre E-Mail-Marketing-Kampagnen zu konfigurieren.
 
 Das `Users by lifetime number of orders` Diagramm listet die Gesamtzahl der Benutzer für jede lebenslange Anzahl von Bestellungen auf, um einen allgemeinen Überblick über das Verhalten bei wiederholten Käufen zu geben.  
 
@@ -89,7 +89,7 @@ Das `Users to target`-Dashboard enthält tabellenartige Diagramme, in denen Benu
 
 * Liste der Top-Spender, die in den letzten `X` Tagen aktiv waren (wen Sie möglicherweise belohnen möchten)
 
-Mit Ihren Datenexportwerkzeugen können Sie ganz einfach [E-Mail-Listen von Benutzern mit ähnlichem Kaufverhalten für Target-Marketing erstellen](http://blog.rjmetrics.com/creating-contact-lists-for-top-customers/).
+Sie können Ihre Datenexportwerkzeuge verwenden, um E-Mail-Listen von Benutzern mit ähnlichem Kaufverhalten für Target-Marketing zu erstellen.
 
 ## Benutzeraktivität
 
@@ -97,4 +97,4 @@ Das `User activity`-Dashboard enthält Diagramme, die Benutzer nach verschiedene
 
 Das `% of cohort members who have purchased` Diagramm ist nützlich, da es das Konversionsverhältnis (von 0 bis 1) von Benutzern basierend auf dem Zeitpunkt ihrer Registrierung anzeigt (jede Zeile stellt eine Kohorte von Benutzern dar). Es zeigt auch an, wann sie ihren ersten Kauf tätigen (z. B. in Monat 1, 2, 3… nach der Registrierung). Dies kann zeigen, dass 10 % der Benutzenden in Monat 1 aktiviert wurden, während diese Zahl in Monat 2, 3, 4… zunimmt und später ein Plateau erreicht werden kann.
 
-In der Regel werden die Linien in diesem Diagramm nach einiger Zeit horizontal. Dies deutet darauf hin, dass nach diesem Zeitpunkt nur wenige zusätzliche Kohortenmitglieder organisch konvertieren - die meisten Benutzer, die einen Kauf tätigen werden, haben dies bereits getan. Zum gegenwärtigen Zeitpunkt ist es höchst unwahrscheinlich, dass diese Mitglieder ohne Eingreifen in Käufer übergehen. [Sie mit benutzerdefinierten Promotions oder zielgerichteten E-Mails zu kontaktieren, ist eine risikoarme Methode, um die Konversion dieser Population zu starten.](http://blog.rjmetrics.com/acting-on-marketing-data-in-your-rjmetrics-online-dashboard/)
+In der Regel werden die Linien in diesem Diagramm nach einiger Zeit horizontal. Dies deutet darauf hin, dass nach diesem Zeitpunkt nur wenige zusätzliche Kohortenmitglieder organisch konvertieren - die meisten Benutzer, die einen Kauf tätigen werden, haben dies bereits getan. Zum gegenwärtigen Zeitpunkt ist es höchst unwahrscheinlich, dass diese Mitglieder ohne Eingreifen in Käufer übergehen. Sie mit benutzerdefinierten Promotions oder zielgerichteten E-Mails zu kontaktieren, ist eine risikoarme Methode, um die Konversion dieser Population zu starten.
