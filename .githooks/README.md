@@ -1,7 +1,7 @@
 ---
-source-git-commit: 199353c57dd1ca316c2a8b76fee1148d0e342299
+source-git-commit: 98e0c5dbd61d6d0f8d1a6e09d239cb25cbab8f81
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Dieses Verzeichnis enthält Pre-Commit-Hooks, die Bilder automatisch optimieren,
 
 ## Was die Haken tun
 
-- **Staging** Bilddateien (PNG, JPG, JPEG, GIF, SVG) automatisch erkennen
+- **Staging** Bilddateien (PNG, JPG, JPEG, GIF) automatisch erkennen
 - **`image_optim`** ausführen, um Bilder zu komprimieren und zu optimieren
 - **Optimierte Bilder automatisch neu**.
 - **Sicherstellen, dass alle übergebenen Bilder** optimiert sind
@@ -85,11 +85,11 @@ Image optimization complete!
 ## Bildrichtlinien
 
 - **PNG**: Für Screenshots und Benutzeroberflächenelemente verwenden (wird automatisch optimiert)
-- **SVG**: Für Symbole und einfache Grafiken verwenden (Optimierung standardmäßig deaktiviert)
+- **SVG**: Für Symbole und einfache Grafiken verwenden (nicht automatisch durch den Pre-Commit-Hook optimiert)
 - **JPEG**: Für Fotos verwenden (wird automatisch optimiert)
 - **GIF**: Für Animationen verwenden (wird automatisch optimiert)
 
-Die Pre-Commit-Hooks optimieren automatisch alle Bilder beim Commit.
+Die Pre-Commit-Hooks optimieren beim Commit automatisch PNG-, JPEG- und GIF-Bilder.
 
 ## Manuelle Optimierung
 
@@ -138,10 +138,13 @@ Die Erweiterungspunkte verwenden die Konfigurationsdatei `_jekyll/.image_optim.y
 
 ## Unterstützte Bildformate
 
+Der Pre-Commit-Hook verarbeitet automatisch:
+
 - **PNG** (`.png`) - Verlustfreie und verlustbehaftete Komprimierung
 - **JPEG** (`.jpg`, `.jpeg`) - Verlustbehaftete Komprimierung mit Metadatenbereinigung
 - **GIF** (`.gif`) - Animation und statische Optimierung
-- **SVG** (`.svg`) - Vektoroptimierung (standardmäßig deaktiviert)
+
+**Hinweis**: Die SVG-Optimierung ist standardmäßig deaktiviert (kann komplexe Vektorgrafiken und Animationen beschädigen). SVG-Dateien werden vom Pre-Commit-Hook nicht automatisch verarbeitet.
 
 ## Best Practices
 
