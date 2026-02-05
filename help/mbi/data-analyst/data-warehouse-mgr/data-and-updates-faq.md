@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den Status Ihres Aktualisierungszyklus überp
 exl-id: a4a2e487-b826-4888-baf0-9d246a8ff153
 role: Admin, Data Architect, Data Engineer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: db93e5284950fa9336d0833af24589754c94a8b3
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,15 @@ ht-degree: 0%
 
 ## Warum haben sich meine Daten geändert? {#datachange}
 
-Diagrammwerte können sich den ganzen Tag über ändern, da neue Daten mit Ihrer Data Warehouse synchronisiert werden. Außerdem können sich Werte für vorhandene Datenspalten aufgrund von [&#x200B; ändern](../data-warehouse-mgr/cfg-data-rechecks.md). Eine erneute Prüfung ist ein Prozess, der nach geänderten Werten in Datenspalten sucht, z. B. nach einem Bestellstatus, der von `open` zu `shipped` wechselt.
+Diagrammwerte können sich den ganzen Tag über ändern, da neue Daten mit Ihrer Data Warehouse synchronisiert werden. Außerdem können sich Werte für vorhandene Datenspalten aufgrund von [ ändern](../data-warehouse-mgr/cfg-data-rechecks.md). Eine erneute Prüfung ist ein Prozess, der nach geänderten Werten in Datenspalten sucht, z. B. nach einem Bestellstatus, der von `open` zu `shipped` wechselt.
 
-Es gibt verschiedene Möglichkeiten, [den Status Ihres Aktualisierungszyklus zu überprüfen](../../best-practices/check-update-cycle.md) je nach den Berechtigungseinstellungen des Benutzers.
+Es gibt verschiedene Möglichkeiten, [den Status Ihres Aktualisierungszyklus zu überprüfen](../../best-practices/check-update-cycle.md) je nach den Berechtigungseinstellungen des Benutzers:
+
+* **[!UICONTROL Read-Only]und [!UICONTROL Standard] Benutzer** - Kann den Mauszeiger über das Symbol oben rechts auf der Seite bewegen, um zu sehen, wann der letzte Datenpunkt abgerufen wurde.
+* **[!UICONTROL Admin]Benutzer** - Kann den letzten Datenpunkt und das Statussymbol für Kontointegrationen anzeigen. Navigieren Sie für weitere Details zu **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]** , um den aktuellen Aktualisierungsstatus und die Uhrzeit der letzten abgeschlossenen Aktualisierung anzuzeigen.
+* **API-Methode** - Kann den zuletzt abgeschlossenen Aktualisierungszyklus mithilfe der Aktualisierungszyklus-Status-API abrufen.
+
+Ausführliche Informationen zur Überprüfung des Status Ihres Aktualisierungszyklus finden Sie unter [Überprüfen des Aktualisierungszyklusstatus](../../best-practices/check-update-cycle.md).
 
 ## Was ist der Unterschied zwischen einer regulären und einer erzwungenen Aktualisierung? {#regularforcedupdates}
 
@@ -36,12 +42,12 @@ Zu einer bereits langen Aktualisierungszeit können zahlreiche Faktoren hinzukom
 
 ## Kann ich benachrichtigt werden, wenn ein Aktualisierungszyklus abgeschlossen ist? {#notifyupdate}
 
-Wenn eine Aktualisierung ausgeführt wird, gibt es auf der `Connections` einen Link, über den Sie nach Abschluss des Zyklus eine E-Mail-Benachrichtigung anfordern können.
+Wenn eine Aktualisierung ausgeführt wird, gibt es auf der Seite **[!UICONTROL Manage Data]** > **[!UICONTROL Integrations]** einen Link, über den Sie nach Abschluss des Zyklus eine E-Mail-Benachrichtigung anfordern können. Wenn keine Aktualisierung ausgeführt wird, wird stattdessen ein Link angezeigt, um den Start einer Aktualisierung zu erzwingen.
 
 ## Warum [!DNL Google ECommerce] sich die Daten von meiner Datenbank? {#ecommdatabase}
 
-Diskrepanzen zwischen [!DNL Google Analytics] und Ihrer Datenbank können aus verschiedenen Gründen auftreten. Tracking wird nicht ordnungsgemäß aktiviert, Benutzer, die inkognito besuchen, und Klickereignisse funktionieren nicht ordnungsgemäß, sind nur einige Beispiele. Wenn Ihre Umsätze und Bestellungen nicht korrekt aussehen, [&#x200B; Sie (siehe dieses Thema](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html?lang=de) ein Problem diagnostizieren.
+Diskrepanzen zwischen [!DNL Google Analytics] und Ihrer Datenbank können aus verschiedenen Gründen auftreten. Tracking wird nicht ordnungsgemäß aktiviert, Benutzer, die inkognito besuchen, und Klickereignisse funktionieren nicht ordnungsgemäß, sind nur einige Beispiele. Wenn Ihre Umsätze und Bestellungen nicht korrekt aussehen, [ Sie (siehe dieses Thema](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.html) ein Problem diagnostizieren.
 
 ## Wie kann ich eine Datendiskrepanz beheben? {#datadiscrepancy}
 
-Adobe weiß, dass es frustrierend sein kann, inkonsistente Daten zu sehen. Versuchen Sie, das Problem mithilfe [&#x200B; Tutorials &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html?lang=de)Datendiskrepanz-Checkliste“ oder [Datenexporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=de) zu diagnostizieren. Wenn Sie immer noch blockiert sind, [&#x200B; Sie den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Adobe weiß, dass es frustrierend sein kann, inkonsistente Daten zu sehen. Versuchen Sie, das Problem mithilfe [ Tutorials ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.html)Datendiskrepanz-Checkliste“ oder [Datenexporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html) zu diagnostizieren. Wenn Sie immer noch blockiert sind, [ Sie den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
