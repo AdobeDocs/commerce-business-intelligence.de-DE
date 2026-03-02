@@ -1,5 +1,7 @@
 ---
 solution: Commerce, Commerce Intelligence
+landing-page-name: commerce
+landing-page-breadcrumb-title: Commerce
 product: magento
 type: Documentation
 audience: end-user
@@ -10,8 +12,8 @@ feature-set: Commerce Intelligence
 level: Beginner, Intermediate
 topic: Commerce
 index: true
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: aae7508da07dcf464401a4e5681f76cee20f01c9
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+source-git-commit: 269e0b3e7e61c784157bb56ca5c95b1db270118a
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
