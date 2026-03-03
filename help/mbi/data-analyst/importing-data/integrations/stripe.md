@@ -21,8 +21,8 @@ ht-degree: 0%
 
 [!DNL Stripe] können Sie die Zahlungs- und Rechnungsdaten Ihres Unternehmens verwalten und verfolgen. Das Verbinden Ihres [!DNL Stripe]-Kontos mit [!DNL Commerce Intelligence] erfolgt in zwei einfachen Schritten:
 
-1. [ [!DNL Stripe]  als Datenquelle hinzufügen in [!DNL Commerce Intelligence]](#stepone)
-1. [ [!DNL Commerce Intelligence]  Zugriff auf Ihre  [!DNL Stripe]  zulassen](#steptwo)
+1. [&#x200B; [!DNL Stripe]  als Datenquelle hinzufügen in [!DNL Commerce Intelligence]](#stepone)
+1. [&#x200B; [!DNL Commerce Intelligence]  Zugriff auf Ihre  [!DNL Stripe]  zulassen](#steptwo)
 
 ## [!DNL Stripe] als Datenquelle hinzufügen {#stepone}
 
@@ -47,5 +47,5 @@ Nachdem Sie auf **[!UICONTROL Connect with Stripe]** geklickt haben, wird die Se
 
 Die [[!DNL Stripe] API-Dokumentation](https://stripe.com/docs/api) kann eine nützliche Ressource sein, um mehr darüber zu erfahren, wie [!DNL Stripe] in [!DNL Commerce Intelligence] integriert wird.
 
-* [ [!DNL Stripe]  Daten](../integrations/stripe-data.md)
+* [&#x200B; [!DNL Stripe]  Daten](../integrations/stripe-data.md)
 * [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

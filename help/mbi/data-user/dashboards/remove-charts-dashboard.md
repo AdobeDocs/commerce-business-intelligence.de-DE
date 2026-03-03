@@ -17,6 +17,6 @@ Um ein Diagramm aus einem Dashboard zu entfernen, klicken Sie auf das Zahnradsym
 
 >[!NOTE]
 >
->Das Entfernen eines Diagramms ist nicht dasselbe wie [Löschen](../../data-user/dashboards/delete-chart.md). Außerdem [kann ein Diagramm jederzeit in ein Dashboard ](../../data-user/dashboards/add-charts-dashboard.md) werden.
+>Das Entfernen eines Diagramms ist nicht dasselbe wie [Löschen](../../data-user/dashboards/delete-chart.md). Außerdem [kann ein Diagramm jederzeit in ein Dashboard &#x200B;](../../data-user/dashboards/add-charts-dashboard.md) werden.
 
 ![Diagramm entfernen](../../assets/Removing_Charts_from_Dashboards.gif)

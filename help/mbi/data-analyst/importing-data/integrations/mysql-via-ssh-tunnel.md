@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## SPRINGEN ZU
 
-* [[!DNL MySQL] über ](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] über &#x200B;](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] über [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 Um Ihre [!DNL MySQL] Datenbank über eine [!DNL Commerce Intelligence] mit `SSH tunnel` zu verbinden, müssen Sie einige Schritte ausführen:
@@ -54,7 +54,7 @@ Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firew
 
 ## Erstellen eines [!DNL Linux] Benutzers für [!DNL Commerce Intelligence] {#linux}
 
-Dabei kann es sich um einen Produktions- oder Sekundärrechner handeln, sofern er Echtzeitdaten (oder häufig aktualisierte Daten) enthält. Sie können [diesen Benutzer ](../../../administrator/account-management/restrict-db-access.md) beliebiger Weise einschränken, solange er das Recht behält, eine Verbindung zum `MySQL`-Server herzustellen.
+Dabei kann es sich um einen Produktions- oder Sekundärrechner handeln, sofern er Echtzeitdaten (oder häufig aktualisierte Daten) enthält. Sie können [diesen Benutzer &#x200B;](../../../administrator/account-management/restrict-db-access.md) beliebiger Weise einschränken, solange er das Recht behält, eine Verbindung zum `MySQL`-Server herzustellen.
 
 1. Um den neuen Benutzer hinzuzufügen, führen Sie die folgenden Befehle als Stammordner auf Ihrem [!DNL Linux] aus:
 

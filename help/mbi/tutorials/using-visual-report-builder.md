@@ -27,7 +27,7 @@ Um einen in der [!DNL Visual Report Builder] erstellten Bericht zu bearbeiten, k
 
 ## Schritt 2: Hinzufügen von Metriken
 
-Der erste Schritt bei der Erstellung einer Analyse besteht darin, [ zu analysierende ](../data-user/reports/ess-manage-data-metrics.md) auszuwählen. Während die Metriken standardmäßig alphabetisch aufgelistet sind, können Sie sie auch nach der Tabelle gruppieren, der die Metrik zugrunde liegt.
+Der erste Schritt bei der Erstellung einer Analyse besteht darin, [&#x200B; zu analysierende &#x200B;](../data-user/reports/ess-manage-data-metrics.md) auszuwählen. Während die Metriken standardmäßig alphabetisch aufgelistet sind, können Sie sie auch nach der Tabelle gruppieren, der die Metrik zugrunde liegt.
 
 Nachdem die ursprüngliche Metrik ausgewählt wurde, können Sie zusätzliche Metriken hinzufügen und alle Metriken in einem Bericht überlagern oder Berechnungen mit mehreren Metriken durchführen, indem Sie Formeln hinzufügen.
 
@@ -51,7 +51,7 @@ Wenn Sie beispielsweise einen Zeitraum zwischen `January 1st` und `March 1st` fe
 
 ## Schritt 5: `Group by` / `Segmenting the Analysis` {#groupby}
 
-[Um Ihre Metriken nach einer Datendimension zu ](../best-practices/segment-filter.md), klicken Sie oben links im Diagramm auf das Menü **[!UICONTROL Group by]** . Dadurch wird ein Dropdown-Menü angezeigt, das alle verfügbaren Dimensionen der ersten in der Liste enthaltenen Metrik enthält.
+[Um Ihre Metriken nach einer Datendimension zu &#x200B;](../best-practices/segment-filter.md), klicken Sie oben links im Diagramm auf das Menü **[!UICONTROL Group by]** . Dadurch wird ein Dropdown-Menü angezeigt, das alle verfügbaren Dimensionen der ersten in der Liste enthaltenen Metrik enthält.
 
 Sie können `None` auswählen, um zu verhindern, dass eine Metrik segmentiert wird. Beispielsweise könnten Sie eine Metrik benötigen, die den Gesamtumsatz ohne Segmentierung zurückgibt, während eine andere Umsatzmetrik nach Region segmentiert ist.
 

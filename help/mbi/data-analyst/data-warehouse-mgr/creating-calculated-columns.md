@@ -55,4 +55,4 @@ Wenn Sie beim Erstellen einer berechneten Spalte Schwierigkeiten haben, sich an 
 
 * [Berechnete Spaltentypen](../data-warehouse-mgr/calc-column-types.md)
 * [Erweiterte berechnete Spaltentypen](../data-warehouse-mgr/adv-calc-columns.md)
-* [ [!DNL Google ECommerce]  mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [&#x200B; [!DNL Google ECommerce]  mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)

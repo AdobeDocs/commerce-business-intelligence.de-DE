@@ -135,6 +135,6 @@ Zum Abschluss haben Sie diese Tabelle zusammengestellt, die die verschiedenen Re
 ## Verwandte Dokumentation
 
 * [Grundlagen zu Datenprüfungen](../data-warehouse-mgr/cfg-data-rechecks.md)
-* [Ändern der Datenbank zur Unterstützung von ](../../best-practices/mod-db-inc-replication.md)
+* [Ändern der Datenbank zur Unterstützung von &#x200B;](../../best-practices/mod-db-inc-replication.md)
 * [Datenbank für Analysen optimieren](../../best-practices/opt-db-analysis.md)
 * [Verkürzung der Aktualisierungszeiten](../../best-practices/reduce-update-cycle-time.md)

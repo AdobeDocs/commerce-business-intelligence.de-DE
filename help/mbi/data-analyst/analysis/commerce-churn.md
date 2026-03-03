@@ -37,7 +37,7 @@ Zu erstellende Spalten
 
 >[!NOTE]
 >
->Stellen Sie sicher[ dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
+>Stellen Sie sicher[&#x200B; dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
 
 ## Metriken
 
@@ -69,26 +69,26 @@ Zu erstellende Spalten
 
 >[!NOTE]
 >
->Stellen Sie sicher[ dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
+>Stellen Sie sicher[&#x200B; dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
 * **Abwanderungsrate**
    * [!UICONTROL Metric]: Neue Kunden (nach Datum der ersten Bestellung)
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * 
+   * &#x200B;
      [!UICONTROL Perspective]: `Cumulative`
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]:
-   * Sekunden seit dem letzten Bestelldatum des Kunden >= [Ihr selbst definierter Abgang für abgewanderte Kunden ]**`^`**
+   * Sekunden seit dem letzten Bestelldatum des Kunden >= [Ihr selbst definierter Abgang für abgewanderte Kunden ]&#x200B;**`^`**
    * `Lifetime number of orders Greater Than 0`
 
    * [!UICONTROL Metric]: `New customers (by last order date)`
    * [!UICONTROL Filter]: `Lifetime number of orders Greater Than 0`
-   * 
+   * &#x200B;
      [!UICONTROL Perspective]: Cumulative
    * [!UICONTROL Formula]: `(B / ((A + B) - C)`
-   * 
+   * &#x200B;
      [!UICONTROL Format]: Percentage
 
 * *`A`:`New customers cumulative`*

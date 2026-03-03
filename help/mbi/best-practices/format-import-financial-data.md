@@ -40,4 +40,4 @@ So reduzieren Sie eine zweidimensionale Tabelle mithilfe einer [!DNL Excel] Pivo
 
 ## Verpackung
 
-Die Datentabelle wurde in ein Listenformat konvertiert, wobei alle ursprünglichen Informationen beibehalten wurden, und kann jetzt zur [ in  [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) importiert werden.
+Die Datentabelle wurde in ein Listenformat konvertiert, wobei alle ursprünglichen Informationen beibehalten wurden, und kann jetzt zur [&#x200B; in  [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) importiert werden.

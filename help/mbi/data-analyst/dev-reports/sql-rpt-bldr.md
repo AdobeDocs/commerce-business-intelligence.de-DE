@@ -17,13 +17,13 @@ ht-degree: 0%
 >
 >Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md) um SQL-Diagramme zu erstellen und zu bearbeiten. `Standard` Benutzer können diese Diagramme in Dashboards neu anordnen und `Read-only` Benutzer haben die gleiche Erfahrung wie mit herkömmlichen Diagrammen. Darüber hinaus haben `Read-only` Benutzer keinen Zugriff auf den Text der Abfrage.
 
-Weitere Informationen finden [ im ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)Schulungsvideo“.
+Weitere Informationen finden [&#x200B; im &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)Schulungsvideo“.
 
 [!DNL SQL], oder Structured Query Language, ist eine Programmiersprache, die zur Kommunikation mit Datenbanken verwendet wird. In [!DNL Commerce Intelligence] wird [!DNL SQL] zum Abfragen oder Abrufen von Daten aus Ihrer Data Warehouse verwendet. Sehen Sie sich die Berichte in Ihrem Dashboard an - hinter den Kulissen basiert jeder Bericht auf einer [!DNL SQL] Abfrage.
 
 Sie können die [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) verwenden, um Ihre Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und sie in ein Diagramm umzuwandeln. Sie können mit der Erstellung eines Berichts mit dem [!DNL SQL Report Builder] beginnen, indem Sie auf **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]** klicken.
 
-Weitere Informationen finden [ im ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)Schulungsvideo“.
+Weitere Informationen finden [&#x200B; im &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-training-video-sql-report-builder.html)Schulungsvideo“.
 
 Mit dem [!DNL SQL Report Builder] können Sie Ihre Data Warehouse direkt abfragen, die Ergebnisse anzeigen und schnell in ein Diagramm umwandeln. Das Beste an der Verwendung von [!DNL SQL] zum Erstellen von Berichten ist, dass Sie nicht auf Aktualisierungszyklen warten müssen, um die von Ihnen erstellten Spalten zu iterieren. Wenn die Ergebnisse nicht korrekt aussehen, können Sie die Abfrage schnell bearbeiten und erneut ausführen, bis die Dinge Ihren Erwartungen entsprechen.
 
@@ -55,7 +55,7 @@ Um einen Bericht zu bearbeiten, klicken Sie auf das Zahnradsymbol (![Zahnradsymb
 >
 >Bei [!DNL SQL Report Builder]-Abfragen wird zwischen Groß- und Kleinschreibung unterschieden. Achten Sie beim Schreiben von Abfragen darauf, die richtige Groß-/Kleinschreibung zu verwenden, da sonst unerwartete Ergebnisse oder Fehler auftreten können.
 
-Schreiben Sie gemäß [Richtlinien für ](../../best-practices/optimizing-your-sql-queries.md) Abfrageoptimierung) eine Abfrage im [!DNL SQL].
+Schreiben Sie gemäß [Richtlinien für &#x200B;](../../best-practices/optimizing-your-sql-queries.md) Abfrageoptimierung) eine Abfrage im [!DNL SQL].
 
 >[!IMPORTANT]
 >
@@ -83,7 +83,7 @@ Wenn Sie die Abfrage fertig geschrieben haben, klicken Sie auf **[!UICONTROL Run
 
 Wenn in den Ergebnissen etwas nicht korrekt angezeigt wird, können Sie die Abfrage bearbeiten und erneut ausführen, bis Sie zufrieden sind.
 
-Manchmal werden [Nachrichten unter dem Editor mit „ERKLÄREN“ in ihnen ](../../best-practices/optimizing-your-sql-queries.md). Wenn Sie eine dieser Optionen sehen, bedeutet dies, dass Ihre Abfrage nicht ausgeführt wurde und etwas optimiert werden muss.
+Manchmal werden [Nachrichten unter dem Editor mit „ERKLÄREN“ in ihnen &#x200B;](../../best-practices/optimizing-your-sql-queries.md). Wenn Sie eine dieser Optionen sehen, bedeutet dies, dass Ihre Abfrage nicht ausgeführt wurde und etwas optimiert werden muss.
 
 Nachdem Sie die Bearbeitung der Abfrage abgeschlossen haben, können Sie mit dem Erstellen einer Visualisierung oder dem Speichern Ihrer Arbeit in einem Dashboard fortfahren.
 
@@ -113,7 +113,7 @@ Klicken Sie oben rechts im **[!UICONTROL Save]** auf [!DNL SQL] und wählen Sie 
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) erhalten Sie die Möglichkeit, Ihre Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und schnell in einen Bericht umzuwandeln. Durch die Verwendung von [!DNL SQL] können [ auch nicht  [!DNL SQL]  Funktionen ](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) Report Builder `Visual` oder `Cohort` verwenden und erhalten so mehr Kontrolle über Ihre Daten.
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) erhalten Sie die Möglichkeit, Ihre Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und schnell in einen Bericht umzuwandeln. Durch die Verwendung von [!DNL SQL] können [&#x200B; auch nicht  [!DNL SQL]  Funktionen &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) Report Builder `Visual` oder `Cohort` verwenden und erhalten so mehr Kontrolle über Ihre Daten.
 
 Berechnete Spalten, die mit [!DNL SQL] erstellt wurden, sind nicht von Aktualisierungszyklen abhängig, d. h. Sie können sie nach Belieben durchlaufen und sofort die Ergebnisse sehen.
 
@@ -157,7 +157,7 @@ Anders als die [!DNL Visual Report Builder] dient die [[!DNL Cohort Report Build
 | **Dies ist perfekt für…** | **Das ist nicht so toll für…** |
 |---|---|
 | Fortgeschrittene Analysten/Analysten | Anfänger - Sie benötigen praxisorientierte Kohorten. |
-| Identifizieren von Verhaltenstrends im Zeitverlauf | Qualitative Analyse - kann [ durchgeführt werden](../dev-reports/create-qual-cohort-analysis.md) erfordert jedoch die Unterstützung von Adobe. |
+| Identifizieren von Verhaltenstrends im Zeitverlauf | Qualitative Analyse - kann [&#x200B; durchgeführt werden](../dev-reports/create-qual-cohort-analysis.md) erfordert jedoch die Unterstützung von Adobe. |
 
 ## Abfragen nach dem Aktualisierungszyklus neu erstellen
 

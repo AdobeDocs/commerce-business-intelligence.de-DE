@@ -27,7 +27,7 @@ Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu begrenze
 
    In diesem Bericht zeigt jeder Datenpunkt die Gesamtzahl der Kunden für den Monat an.
 
-1. Klicken Sie im linken Bedienfeld auf das Symbol „Filter![ (](../../assets/magento-bi-btn-filter.png)).
+1. Klicken Sie im linken Bedienfeld auf das Symbol „Filter![&#x200B; (](../../assets/magento-bi-btn-filter.png)).
 
    ![Filter hinzufügen](../../assets/magento-bi-report-builder-filter-add.png)
 
@@ -55,7 +55,7 @@ Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu begrenze
 
      ![Gefilterter Bericht](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
-1. Klicken Sie in der Seitenleiste auf das Symbol für die ![ (](../../assets/magento-bi-btn-perspective.png)).
+1. Klicken Sie in der Seitenleiste auf das Symbol für die ![&#x200B; (](../../assets/magento-bi-btn-perspective.png)).
 
    ![Perspektive](../../assets/magento-bi-report-builder-filter-perspective.png)<!--{: .zoom}-->
 

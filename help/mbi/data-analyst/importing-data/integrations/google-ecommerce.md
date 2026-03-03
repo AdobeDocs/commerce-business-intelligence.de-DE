@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![Google eCommerce-Logo](../../../assets/google-ecommerce-logo.png)
 
-Sie haben einen stetigen Fluss von Traffic und Bestellungen, was bedeutet, dass Sie Kunden effektiv erreichen und gewinnen. Aber was sind Ihre wertvollsten Empfehlungskanäle? Wie hoch ist der durchschnittliche Lebenszeitwert von Kunden, die aus einer Quelle im Vergleich zu einer anderen akquiriert wurden? Durch die Verbindung Ihrer Quelldaten für Auftragsverweise von [!DNL Google ECommerce] zu [!DNL Commerce Intelligence] können Sie Analysen erstellen, mit denen Sie Ihre [wertvollsten Marketing-Kanäle“ ](../../../data-analyst/analysis/most-value-source-channel.md).
+Sie haben einen stetigen Fluss von Traffic und Bestellungen, was bedeutet, dass Sie Kunden effektiv erreichen und gewinnen. Aber was sind Ihre wertvollsten Empfehlungskanäle? Wie hoch ist der durchschnittliche Lebenszeitwert von Kunden, die aus einer Quelle im Vergleich zu einer anderen akquiriert wurden? Durch die Verbindung Ihrer Quelldaten für Auftragsverweise von [!DNL Google ECommerce] zu [!DNL Commerce Intelligence] können Sie Analysen erstellen, mit denen Sie Ihre [wertvollsten Marketing-Kanäle“ &#x200B;](../../../data-analyst/analysis/most-value-source-channel.md).
 
 Beginnen Sie, indem Sie Ihre [!DNL Google ECommerce]-Anmeldedaten in [!DNL Commerce Intelligence]:
 
@@ -59,7 +59,7 @@ So identifizieren Sie die [!DNL Google Analytics]-Profil-ID einer bestimmten Web
 
 ## Verwandt:
 
-* [ [!DNL Google ECommerce]  Daten](../integrations/google-ecommerce-data.md)
+* [&#x200B; [!DNL Google ECommerce]  Daten](../integrations/google-ecommerce-data.md)
 * [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Einrichten [!DNL Google ECommerce] Tracking](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Entdecken Sie Ihre wertvollsten Akquisitionsquellen und -kanäle](../../analysis/most-value-source-channel.md)

@@ -35,7 +35,7 @@ Mit der [!DNL Google Analytics Live] Integration ist hingegen jedes [!DNL Google
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] ist eine `Premium`. [Wenden Sie sich an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), wenn Sie diese Integration zu Ihrem Abonnement hinzufügen möchten.
+>[!DNL Google Analytics Warehoused] ist eine `Premium`. [Wenden Sie sich an den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), wenn Sie diese Integration zu Ihrem Abonnement hinzufügen möchten.
 
 1. Navigieren Sie zur `Connections` unter **[!UICONTROL Admin** > **Integrations]**.
 1. Klicken Sie auf der rechten Seite auf **[!UICONTROL Add an Integration]**.

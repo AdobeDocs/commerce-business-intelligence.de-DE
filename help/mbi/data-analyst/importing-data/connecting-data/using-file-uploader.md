@@ -24,7 +24,7 @@ Verwenden Sie Werbekampagnen als Beispiel. Wenn Sie sowohl Online- als auch Offl
 ## Einschränkungen und Anforderungen {#require}
 
 1. **Das einzige unterstützte Format für Datei-Uploads ist `CSV` oder`comma separated values`**. Wenn Sie in Excel arbeiten, können Sie die Datei mithilfe der Funktion Speichern unter im `.csv` Format speichern.
-1. **`CSV`Dateien müssen`UTF-8 encoding`** verwenden. Meistens ist das kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, ([ Sie in diesem Support-Artikel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
+1. **`CSV`Dateien müssen`UTF-8 encoding`** verwenden. Meistens ist das kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, ([&#x200B; Sie in diesem Support-Artikel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Dateien dürfen nicht größer als 100 MB**. Wenn die Datei größer ist als diese, teilen Sie die Tabelle in Blöcke auf und speichern Sie sie als einzelne Dateien. Sie können die Daten anhängen, nachdem die ursprüngliche Datei geladen wurde.
 1. **Alle Tabellen müssen einen`primary key`** haben. Die Tabelle muss mindestens eine Spalte enthalten, die als `primary key` verwendet werden kann, oder eine eindeutige Kennung für jede Zeile der Tabelle. Jede als `primary key` gekennzeichnete Spalte darf *nie* null sein. Eine `primary key` kann so einfach sein wie das Hinzufügen einer Spalte, die jeder Zeile eine Zahl gibt, oder es können zwei Spalten verkettet sein, um eine Spalte mit eindeutigen Werten (z. B. `campaign name` und `date`) zu erstellen.
 
@@ -73,7 +73,7 @@ Einige Werte in Ihrer Datei - z. B. Postleitzahlen und IDs - können mit Nullen 
 
 Verwenden Sie `US ZIP codes` als Beispiel für das Ändern der Zahlenformatierung. Markieren Sie in [!DNL Excel] die Spalte, die `ZIP codes` enthält, und [ändern Sie das Zahlenformat](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) in `ZIP code`. Sie können auch ein benutzerdefiniertes Zahlenformat auswählen und im `Type` Fenster `00000` eingeben. Beachten Sie, dass diese Methode Probleme verursachen kann, wenn einige Codes als `00000` formatiert sind und andere `00000-0000`.
 
-Der `Type` kann [anders formatiert werden, um andere Datentypen, z. ](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us). IDs, aufzunehmen. Wenn ein `ID` beispielsweise neun Stellen lang ist, kann der `Type` `000000000` oder `000-000-000` sein. Dies würde `123456` in `000-123-456` ändern.
+Der `Type` kann [anders formatiert werden, um andere Datentypen, z. &#x200B;](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us). IDs, aufzunehmen. Wenn ein `ID` beispielsweise neun Stellen lang ist, kann der `Type` `000000000` oder `000-000-000` sein. Dies würde `123456` in `000-123-456` ändern.
 
 [!DNL Google Docs] und [!DNL Apple Numbers] Ressourcen finden Sie in der Liste [Verwandt](#related) unten auf dieser Seite.
 
