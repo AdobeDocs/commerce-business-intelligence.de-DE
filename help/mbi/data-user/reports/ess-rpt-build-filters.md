@@ -2,9 +2,9 @@
 title: Filter
 description: Erfahren Sie, wie Sie Filter verwenden.
 exl-id: eb683dfe-9a90-400a-a0c0-3dc00d1f28b5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu begrenze
 
    In diesem Bericht zeigt jeder Datenpunkt die Gesamtzahl der Kunden für den Monat an.
 
-1. Klicken Sie im linken Bedienfeld auf das Symbol „Filter![&#x200B; (](../../assets/magento-bi-btn-filter.png)).
+1. Klicken Sie im linken Bedienfeld auf das Symbol „Filter![ (](../../assets/magento-bi-btn-filter.png)).
 
    ![Filter hinzufügen](../../assets/magento-bi-report-builder-filter-add.png)
 
@@ -55,7 +55,7 @@ Es können ein oder mehrere Filter hinzugefügt werden, um die Daten zu begrenze
 
      ![Gefilterter Bericht](../../assets/magento-bi-report-builder-filter-report.png)<!--{: .zoom}-->
 
-1. Klicken Sie in der Seitenleiste auf das Symbol für die ![&#x200B; (](../../assets/magento-bi-btn-perspective.png)).
+1. Klicken Sie in der Seitenleiste auf das Symbol für die ![ (](../../assets/magento-bi-btn-perspective.png)).
 
    ![Perspektive](../../assets/magento-bi-report-builder-filter-perspective.png)<!--{: .zoom}-->
 

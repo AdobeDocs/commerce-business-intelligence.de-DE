@@ -2,9 +2,9 @@
 title: Arbeiten mit SQL Report Builder
 description: Erfahren Sie, wie Sie Daten und Metriken mithilfe von SQL Report Builder überprüfen können, damit Sie die Ergebnisse mit den Daten aus Ihrer lokalen Datenbank vergleichen können.
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -44,8 +44,8 @@ Nachdem der Bericht gespeichert wurde, navigieren Sie zu diesem Dashboard, indem
 
 ## Benutzerdefinierte Abfragen
 
-Sie können auch benutzerdefinierte Abfragen schreiben und die Ergebnisse exportieren, um sie mit Ihrer lokalen Datenbank zu vergleichen. Schreiben Sie gemäß [Richtlinien für die &#x200B;](../../best-practices/optimizing-your-sql-queries.md)) eine Abfrage im SQL-Editor. Mit den Schaltflächen oben in der Seitenleiste können Sie zwischen Listen von Tabellen und Metriken wechseln, die für die Verwendung in der [!DNL SQL Report Builder] verfügbar sind, und sie zu Ihrer Abfrage hinzufügen. Wenn Ihre benutzerdefinierte Abfrage Ihren Anforderungen entspricht, können Sie den Bericht speichern und diese Daten aus dem Dashboard exportieren.
+Sie können auch benutzerdefinierte Abfragen schreiben und die Ergebnisse exportieren, um sie mit Ihrer lokalen Datenbank zu vergleichen. Schreiben Sie gemäß [Richtlinien für die ](../../best-practices/optimizing-your-sql-queries.md)) eine Abfrage im SQL-Editor. Mit den Schaltflächen oben in der Seitenleiste können Sie zwischen Listen von Tabellen und Metriken wechseln, die für die Verwendung in der [!DNL SQL Report Builder] verfügbar sind, und sie zu Ihrer Abfrage hinzufügen. Wenn Ihre benutzerdefinierte Abfrage Ihren Anforderungen entspricht, können Sie den Bericht speichern und diese Daten aus dem Dashboard exportieren.
 
 >[!NOTE]
 >
->Wenn Sie nach dem Überprüfen Ihrer Daten eine Diskrepanz feststellen, finden Sie im Support-Thema [Kontaktaufnahme mit dem Support: &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html?lang=de) Diskrepanzen) weitere Informationen zu weiteren Schritten.
+>Wenn Sie nach dem Überprüfen Ihrer Daten eine Diskrepanz feststellen, finden Sie im Support-Thema [Kontaktaufnahme mit dem Support: ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies.html) Diskrepanzen) weitere Informationen zu weiteren Schritten.

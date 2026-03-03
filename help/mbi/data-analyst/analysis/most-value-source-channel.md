@@ -2,9 +2,9 @@
 title: Identifizieren Ihrer wertvollsten Marketing-Quellen und -Kanäle
 description: Erfahren Sie mehr über einige Berichte, mit denen Sie Ihre wertvollsten Marketing-Kanäle aufdecken können.
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Sie haben Ihre Zielgruppe recherchiert, Ihre Kampagne erstellt und in ein paar Marketing-Kanäle investiert. Nun, da einige Zeit vergangen ist, wie funktionieren diese Kanäle? Welcher Kanal hat die meisten neuen Benutzer hervorgebracht? Welche Quelle hat am meisten zu Ihrem Gesamtumsatz beigetragen?
 
-Mit [!DNL Adobe Commerce Intelligence] können Sie Ihre Umsätze und Benutzer einfach nach Empfehlungsquelle segmentieren, unabhängig davon, ob diese [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern entspricht. Diese Segmentierung ermöglicht es Ihnen, die Kanäle mit der besten Leistung zu finden und Ihr Marketing-Budget besser zu investieren.
+Mit [!DNL Adobe Commerce Intelligence] können Sie Ihre Umsätze und Benutzer einfach nach Empfehlungsquelle segmentieren, unabhängig davon, ob diese [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern entspricht. Diese Segmentierung ermöglicht es Ihnen, die Kanäle mit der besten Leistung zu finden und Ihr Marketing-Budget besser zu investieren.
 
 In diesem Thema werden einige Berichte vorgestellt, mit denen Sie Ihre wertvollsten Marketing-Kanäle aufdecken können:
 
@@ -57,7 +57,7 @@ Um diesen Bericht in der Report Builder zu erstellen, fügen Sie die Metrik **Du
 
 Im Folgenden finden Sie eine visuelle Anleitung:
 
-![Durchschnittlicher Lebensdauerumsatz nach Benutzerquelle &#x200B;](../../assets/Lifetime_revenue_by_user_source.gif).
+![Durchschnittlicher Lebensdauerumsatz nach Benutzerquelle ](../../assets/Lifetime_revenue_by_user_source.gif).
 
 In diesem Beispiel wird nur der Lebensdauerumsatz untersucht. Sie können diese Analyse aber auch replizieren, um die [!UICONTROL Number of orders] oder [!UICONTROL Distinct buyers] nach Empfehlungsquelle zu untersuchen.
 
@@ -119,5 +119,5 @@ Dieses Thema hat nur einige Analysen angesprochen, mit denen Sie den Wert Ihrer 
 
 * [Verweisquelle für Tracking-Reihenfolge über [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)
 * [Verbinden Ihres [!DNL Google Adwords] Kontos](../importing-data/integrations/google-adwords.md)
-* [&#x200B; [!DNL Google ECommerce]  mit Bestellungen und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [ [!DNL Google ECommerce]  mit Bestellungen und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Best Practices für UTM-Tagging in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

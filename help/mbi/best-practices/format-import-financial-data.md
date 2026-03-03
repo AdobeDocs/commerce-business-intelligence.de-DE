@@ -2,9 +2,9 @@
 title: Formatieren und Importieren von Finanzdaten
 description: Erfahren Sie, wie Sie Finanzdaten formatieren und importieren.
 exl-id: cdbed262-7cf1-4fd6-ad5a-c44d26dffba7
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -40,4 +40,4 @@ So reduzieren Sie eine zweidimensionale Tabelle mithilfe einer [!DNL Excel] Pivo
 
 ## Verpackung
 
-Die Datentabelle wurde in ein Listenformat konvertiert, wobei alle ursprünglichen Informationen beibehalten wurden, und kann jetzt zur [&#x200B; in  [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) importiert werden.
+Die Datentabelle wurde in ein Listenformat konvertiert, wobei alle ursprünglichen Informationen beibehalten wurden, und kann jetzt zur [ in  [!DNL Commerce Intelligence]](../data-analyst/importing-data/connecting-data/using-file-uploader.md) importiert werden.

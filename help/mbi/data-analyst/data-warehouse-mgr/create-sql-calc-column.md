@@ -2,9 +2,9 @@
 title: Erstellen und Verwenden einer berechneten SQL-Spalte
 description: Erfahren Sie, wie erweiterte Spalten in Form von SQL-Berechnungsspalten in der neuen Adobe Commerce Intelligence-Architektur erstellt werden können.
 exl-id: f16e4ee4-ed73-4ddb-b701-1fe3db14346a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, SQL Report Builder, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Erstellen einer berechneten SQL-Spalte
 
-In diesem Abschnitt werden Zweck und Verwendungszwecke des `Calculation` Spaltentyps beschrieben, der mithilfe des [Data Warehouse Managers&rbrace; zu Tabellen hinzugefügt &#x200B;](../data-warehouse-mgr/tour-dwm.md) kann. Im Folgenden wird erläutert, was SQL-Berechnungen bewirken, warum sie verwendet werden und wie eine SQL-Berechnung erstellt wird. Nachfolgend werden zwei Beispiele beschrieben.
+In diesem Abschnitt werden Zweck und Verwendungszwecke des `Calculation` Spaltentyps beschrieben, der mithilfe des [Data Warehouse Managers} zu Tabellen hinzugefügt ](../data-warehouse-mgr/tour-dwm.md) kann. Im Folgenden wird erläutert, was SQL-Berechnungen bewirken, warum sie verwendet werden und wie eine SQL-Berechnung erstellt wird. Nachfolgend werden zwei Beispiele beschrieben.
 
 **Erläuterung**
 

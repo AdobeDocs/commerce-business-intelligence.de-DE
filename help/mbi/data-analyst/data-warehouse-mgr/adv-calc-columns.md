@@ -2,9 +2,9 @@
 title: Erweiterte berechnete Spaltentypen
 description: Lernen Sie die Grundlagen für die meisten Anwendungsfälle von Spalten kennen - möglicherweise möchten Sie jedoch eine berechnete Spalte, die etwas komplexer ist als das, was Data Warehouse Manager erstellen kann.
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 2%
@@ -161,10 +161,10 @@ Um diesen Typ von berechneter Spalte zu erstellen, müssen Sie Folgendes wissen:
 
 Keine Sorge. Nur weil er hier nicht aufgeführt ist, heißt das noch lange nicht, dass er nicht möglich ist. Das Adobe-Team der Data Warehouse-Analysten kann Ihnen dabei helfen.
 
-Um eine neue berechnete Spalte zu definieren[&#x200B; reichen Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), in dem Sie genau angeben, was Sie erstellen möchten.
+Um eine neue berechnete Spalte zu definieren[ reichen Sie ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), in dem Sie genau angeben, was Sie erstellen möchten.
 
 ## Verwandte Dokumentation
 
 * [Berechnete Spalten erstellen](../data-warehouse-mgr/creating-calculated-columns.md)
 * [Berechnete Spaltentypen](../data-warehouse-mgr/calc-column-types.md)
-* [&#x200B; [!DNL Google ECommerce]  mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [ [!DNL Google ECommerce]  mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)

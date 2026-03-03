@@ -2,9 +2,9 @@
 title: PrestaShop verbinden
 description: Erfahren Sie, wie Sie PrestaShop-Daten mit  [!DNL Commerce Intelligence] verbinden.
 exl-id: b6f240c0-9461-4015-a56a-64e8e67392fa
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Möchten Sie sehen, wie Ihr Unternehmen funktioniert oder Ihre wertvollsten Akquisequellen und -kanäle finden? Sie können diese Fragen und mehr beantworten, indem Sie Ihre [!DNL PrestaShop] mit [!DNL Commerce Intelligence] verbinden.
 
-Die [!DNL PrestaShop]-Datenbank basiert auf [!DNL MySQL]. Sie können sie über eine [!DNL Commerce Intelligence]Direktverbindung[, &#x200B;](../integrations/mysql-via-a-direct-connection.md) oder [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)über eine [&#x200B; mit `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md) verbinden. Adobe empfiehlt die Verwendung der `SSH`-Methode, da sie die sicherste ist.
+Die [!DNL PrestaShop]-Datenbank basiert auf [!DNL MySQL]. Sie können sie über eine [!DNL Commerce Intelligence]Direktverbindung[, ](../integrations/mysql-via-a-direct-connection.md) oder [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)über eine [ mit `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md) verbinden. Adobe empfiehlt die Verwendung der `SSH`-Methode, da sie die sicherste ist.
 
 ## Verwandte Dokumentation
 

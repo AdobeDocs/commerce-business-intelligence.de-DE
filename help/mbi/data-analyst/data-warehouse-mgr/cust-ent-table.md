@@ -2,9 +2,9 @@
 title: Tabelle customer_entity
 description: Erfahren Sie, wie Sie auf Datensätze aller registrierten Konten zugreifen können.
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Die Tabelle `customer_entity` enthält Einträge aller registrierten Konten. Ein Konto gilt als registriert, wenn er sich für ein Konto anmeldet, unabhängig davon, ob er jemals einen Kauf abschließt. Jede Zeile entspricht einem eindeutigen registrierten Konto, das durch die `entity_id` dieses Kontos identifiziert wird.
 
-Diese Tabelle enthält keine Datensätze von Kunden, die eine Bestellung per Gast-Checkout aufgeben. Wenn Ihr Geschäft einen Gast-Checkout akzeptiert, finden Sie [&#x200B; diesen Bestellungen unter &quot;](../data-warehouse-mgr/guest-orders.md) für Gastbestellungen“.
+Diese Tabelle enthält keine Datensätze von Kunden, die eine Bestellung per Gast-Checkout aufgeben. Wenn Ihr Geschäft einen Gast-Checkout akzeptiert, finden Sie [ diesen Bestellungen unter &quot;](../data-warehouse-mgr/guest-orders.md) für Gastbestellungen“.
 
 ## Gemeinsame Spalten
 

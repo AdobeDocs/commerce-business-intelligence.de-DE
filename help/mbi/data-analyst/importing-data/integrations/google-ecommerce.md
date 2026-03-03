@@ -2,9 +2,9 @@
 title: Google E-Commerce verbinden
 description: Erfahren Sie mehr über Ihre wertvollsten Empfehlungskanäle.
 exl-id: c80f52f3-894a-4084-8c0e-aee618ed77f5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![Google eCommerce-Logo](../../../assets/google-ecommerce-logo.png)
 
-Sie haben einen stetigen Fluss von Traffic und Bestellungen, was bedeutet, dass Sie Kunden effektiv erreichen und gewinnen. Aber was sind Ihre wertvollsten Empfehlungskanäle? Wie hoch ist der durchschnittliche Lebenszeitwert von Kunden, die aus einer Quelle im Vergleich zu einer anderen akquiriert wurden? Durch die Verbindung Ihrer Quelldaten für Auftragsverweise von [!DNL Google ECommerce] zu [!DNL Commerce Intelligence] können Sie Analysen erstellen, mit denen Sie Ihre [wertvollsten Marketing-Kanäle“ &#x200B;](../../../data-analyst/analysis/most-value-source-channel.md).
+Sie haben einen stetigen Fluss von Traffic und Bestellungen, was bedeutet, dass Sie Kunden effektiv erreichen und gewinnen. Aber was sind Ihre wertvollsten Empfehlungskanäle? Wie hoch ist der durchschnittliche Lebenszeitwert von Kunden, die aus einer Quelle im Vergleich zu einer anderen akquiriert wurden? Durch die Verbindung Ihrer Quelldaten für Auftragsverweise von [!DNL Google ECommerce] zu [!DNL Commerce Intelligence] können Sie Analysen erstellen, mit denen Sie Ihre [wertvollsten Marketing-Kanäle“ ](../../../data-analyst/analysis/most-value-source-channel.md).
 
 Beginnen Sie, indem Sie Ihre [!DNL Google ECommerce]-Anmeldedaten in [!DNL Commerce Intelligence]:
 
@@ -59,8 +59,8 @@ So identifizieren Sie die [!DNL Google Analytics]-Profil-ID einer bestimmten Web
 
 ## Verwandt:
 
-* [&#x200B; [!DNL Google ECommerce]  Daten](../integrations/google-ecommerce-data.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [ [!DNL Google ECommerce]  Daten](../integrations/google-ecommerce-data.md)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Einrichten [!DNL Google ECommerce] Tracking](https://support.google.com/analytics/answer/1009612?hl=en)
 * [Entdecken Sie Ihre wertvollsten Akquisitionsquellen und -kanäle](../../analysis/most-value-source-channel.md)
 * [Steigerung des ROI Ihrer Werbekampagnen](../../analysis/roi-ad-camp.md)

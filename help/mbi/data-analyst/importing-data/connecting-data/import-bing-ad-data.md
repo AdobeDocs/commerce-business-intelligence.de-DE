@@ -2,9 +2,9 @@
 title: Bing- und Ausgabendaten importieren
 description: Erfahren Sie, wie Sie Bing-Daten zu Werbeausgaben zur  [!DNL Commerce Intelligence]  in importieren.
 exl-id: c8dec4b4-74ce-41b2-a77d-403fe44e2816
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
@@ -26,4 +26,4 @@ Zum Exportieren Ihrer [!DNL Bing Ads] müssen Sie [!DNL Bing Ads Editor] install
 1. Klicken Sie im Dialogfeld `Save As` auf den Ordner, in dem Sie Ihre Exportdatei speichern möchten.
 1. Wählen Sie im `File name` einen Namen für Ihren Dateiexport.
 1. Klicken Sie auf **[!UICONTROL Save]**.
-1. Wenden Sie sich nach dem Herunterladen der Datei [an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um einen ersten Upload in Ihrem Namen durchzuführen und die erforderlichen Backend-Dimensionen einzurichten.
+1. Wenden Sie sich nach dem Herunterladen der Datei [an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um einen ersten Upload in Ihrem Namen durchzuführen und die erforderlichen Backend-Dimensionen einzurichten.

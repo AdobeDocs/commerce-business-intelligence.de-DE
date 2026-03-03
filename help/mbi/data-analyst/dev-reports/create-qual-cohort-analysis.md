@@ -2,9 +2,9 @@
 title: Erstellen einer qualitativen Kohortenanalyse
 description: Erfahren Sie, was eine qualitative Kohorte ist, warum Sie am Aufbau dieser Analyse interessiert sein könnten und wie Sie sie in Commerce Intelligence erstellen können.
 exl-id: 113244e4-409b-4129-b3d4-7a3433539ade
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Wenn Sie jedoch das Kohortenverhalten mehrerer Benutzersegmente im selben Kohort
 
 Das Erstellen eines `qualitative cohort` in der `Report Builder` beinhaltet, dass das Adobe-Analystenteam einige [erweiterte berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md) auf den erforderlichen Tabellen erstellt.
 
-Um diese zu erstellen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) ein (und lesen Sie diesen Artikel!). Hier finden Sie, was Sie wissen müssen:
+Um diese zu erstellen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) ein (und lesen Sie diesen Artikel!). Hier finden Sie, was Sie wissen müssen:
 
 * Die `metric`, mit der Sie Ihre Kohortenanalyse durchführen möchten, und welche Tabelle verwendet wird (Beispiel: `Revenue`, basierend auf der `orders`).
 

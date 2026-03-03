@@ -2,9 +2,9 @@
 title: SQL-Abfragen optimieren
 description: Erfahren Sie, wie Sie SQL-Abfragen optimieren können.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: acc152709c7c66f387f4eded9e6c1c646a83af35
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Mit dem [!DNL SQL Report Builder] können Sie Ihre Abfragen jederzeit ausführen und ändern. Diese Funktion ist hilfreich, wenn Sie eine Abfrage sofort aktualisieren müssen, anstatt zu warten, bis ein Aktualisierungszyklus abgeschlossen ist, bevor Sie eine Spalte oder einen Bericht korrigieren.
 
-Bevor eine Abfrage ausgeführt wird, [[!DNL Commerce Intelligence] schätzt ihre Kosten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=de). Die Kosten berücksichtigen die Dauer und Anzahl der Ressourcen, die für die Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch erachtet werden oder die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] Limit überschreitet, schlägt die Abfrage fehl. Für die Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), mit der sichergestellt wird, dass Sie möglichst optimierte Abfragen schreiben, empfiehlt Adobe Folgendes.
+Bevor eine Abfrage ausgeführt wird, [[!DNL Commerce Intelligence] schätzt ihre Kosten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html). Die Kosten berücksichtigen die Dauer und Anzahl der Ressourcen, die für die Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch erachtet werden oder die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] Limit überschreitet, schlägt die Abfrage fehl. Für die Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), mit der sichergestellt wird, dass Sie möglichst optimierte Abfragen schreiben, empfiehlt Adobe Folgendes.
 
 ## Verwenden von SELECT oder Auswählen aller Spalten
 

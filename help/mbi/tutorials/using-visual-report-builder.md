@@ -2,9 +2,9 @@
 title: Verwenden von Visual Report Builder
 description: Erfahren Sie, wie Sie die Daten in Ihrem Bericht für einen bestimmten Zeitraum analysieren können.
 exl-id: da97b63d-63f0-4fd6-87e3-4cac49a42acc
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Um einen in der [!DNL Visual Report Builder] erstellten Bericht zu bearbeiten, k
 
 ## Schritt 2: Hinzufügen von Metriken
 
-Der erste Schritt bei der Erstellung einer Analyse besteht darin, [&#x200B; zu analysierende &#x200B;](../data-user/reports/ess-manage-data-metrics.md) auszuwählen. Während die Metriken standardmäßig alphabetisch aufgelistet sind, können Sie sie auch nach der Tabelle gruppieren, der die Metrik zugrunde liegt.
+Der erste Schritt bei der Erstellung einer Analyse besteht darin, [ zu analysierende ](../data-user/reports/ess-manage-data-metrics.md) auszuwählen. Während die Metriken standardmäßig alphabetisch aufgelistet sind, können Sie sie auch nach der Tabelle gruppieren, der die Metrik zugrunde liegt.
 
 Nachdem die ursprüngliche Metrik ausgewählt wurde, können Sie zusätzliche Metriken hinzufügen und alle Metriken in einem Bericht überlagern oder Berechnungen mit mehreren Metriken durchführen, indem Sie Formeln hinzufügen.
 
@@ -51,7 +51,7 @@ Wenn Sie beispielsweise einen Zeitraum zwischen `January 1st` und `March 1st` fe
 
 ## Schritt 5: `Group by` / `Segmenting the Analysis` {#groupby}
 
-[Um Ihre Metriken nach einer Datendimension zu &#x200B;](../best-practices/segment-filter.md), klicken Sie oben links im Diagramm auf das Menü **[!UICONTROL Group by]** . Dadurch wird ein Dropdown-Menü angezeigt, das alle verfügbaren Dimensionen der ersten in der Liste enthaltenen Metrik enthält.
+[Um Ihre Metriken nach einer Datendimension zu ](../best-practices/segment-filter.md), klicken Sie oben links im Diagramm auf das Menü **[!UICONTROL Group by]** . Dadurch wird ein Dropdown-Menü angezeigt, das alle verfügbaren Dimensionen der ersten in der Liste enthaltenen Metrik enthält.
 
 Sie können `None` auswählen, um zu verhindern, dass eine Metrik segmentiert wird. Beispielsweise könnten Sie eine Metrik benötigen, die den Gesamtumsatz ohne Segmentierung zurückgibt, während eine andere Umsatzmetrik nach Region segmentiert ist.
 

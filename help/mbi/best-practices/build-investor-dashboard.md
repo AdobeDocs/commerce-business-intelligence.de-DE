@@ -2,9 +2,9 @@
 title: Erstellen eines Dashboards für Investoren
 description: Erfahren Sie, wie Sie ein Dashboard für Investoren erstellen.
 exl-id: 917e7628-3498-4413-a7e1-61799989a7dd
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Dashboards, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Mit einer [!DNL Google Analytics] Integration können Sie Berichte zu folgenden 
 * Site-Besuche
 * Konversionsrate
 
-Mit den [Commerce Data Enrichment-Services](https://business.adobe.com/de/products/magento/magento-commerce.html) können Sie Berichte zu folgenden Themen einbeziehen:
+Mit den [Commerce Data Enrichment-Services](https://business.adobe.com/products/magento/magento-commerce.html) können Sie Berichte zu folgenden Themen einbeziehen:
 
 * Unique Customers nach Bundesland/Region, Alter, Geschlecht.
 

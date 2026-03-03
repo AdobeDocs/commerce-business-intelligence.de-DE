@@ -2,9 +2,9 @@
 title: Berechnete Spalten erstellen
 description: Erfahren Sie, wie Sie Daten aus verschiedenen Quellen zusammenführen.
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%
@@ -55,4 +55,4 @@ Wenn Sie beim Erstellen einer berechneten Spalte Schwierigkeiten haben, sich an 
 
 * [Berechnete Spaltentypen](../data-warehouse-mgr/calc-column-types.md)
 * [Erweiterte berechnete Spaltentypen](../data-warehouse-mgr/adv-calc-columns.md)
-* [&#x200B; [!DNL Google ECommerce]  mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [ [!DNL Google ECommerce]  mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)

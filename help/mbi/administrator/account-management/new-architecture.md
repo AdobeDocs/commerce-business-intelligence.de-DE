@@ -2,9 +2,9 @@
 title: Neue Architektur
 description: Erfahren Sie mehr über die Vorteile der Umstellung auf eine neue Architektur.
 exl-id: cbb10673-5704-4a90-9574-5ac114f389b9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Import/Export
-source-git-commit: ddda796c9f32d22b1d679fc245eb11b92cd491cf
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Wenn dies abgeschlossen ist, wissen Sie, welche Daten Sie mit der neuen Data War
 
 ### Hilfe wird abgerufen
 
-Das [!DNL Adobe Commerce Intelligence] [Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de)Team kann die erneute Implementierung gegen Aufpreis durchführen. Wenden Sie sich an Ihr [Adobe-](../../guide-overview.md#Submitting-a-Support-Ticket) und stellen Sie eine Liste der Dashboards/Berichte bereit, die Sie in Ihrem neuen Konto vorrangig erstellen möchten
+Das [!DNL Adobe Commerce Intelligence] [Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)Team kann die erneute Implementierung gegen Aufpreis durchführen. Wenden Sie sich an Ihr [Adobe-](../../guide-overview.md#Submitting-a-Support-Ticket) und stellen Sie eine Liste der Dashboards/Berichte bereit, die Sie in Ihrem neuen Konto vorrangig erstellen möchten
 
 ### Bestehende Architektur beibehalten
 

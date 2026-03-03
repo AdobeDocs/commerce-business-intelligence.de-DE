@@ -2,9 +2,9 @@
 title: Microsoft SQL Server verbinden
 description: Erfahren Sie, wie Sie Ihre Microsoft SQL [!DNL Commerce Intelligence] Datenbank in einem vierstufigen Prozess mit verbinden.
 exl-id: 7f49d1dc-8fbb-4a8c-9d07-9a8195c266f5
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 In diesem Thema wird erläutert, wie Sie Ihre [!DNL Microsoft SQL]-Datenbank in einem vierstufigen Prozess mit [!DNL Commerce Intelligence] verbinden. Dieser Prozess erfordert einige technische Kenntnisse in Bezug auf Server-Verbindungen und SQL und erfordert möglicherweise Unterstützung von Entwicklern in Ihrem Team.
 
-[!DNL Commerce Intelligence] unterstützt [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] und die meisten anderen Cloud-Server-Anbieter. Wenn Sie eine Frage zu Ihrem Gastgeber haben, [&#x200B; Sie (ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de)) uns bitten, diese Informationen bereitzustellen.
+[!DNL Commerce Intelligence] unterstützt [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] und die meisten anderen Cloud-Server-Anbieter. Wenn Sie eine Frage zu Ihrem Gastgeber haben, [ Sie (ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html)) uns bitten, diese Informationen bereitzustellen.
 
 Ihr System muss SELECT-Abfragen in Ihrer Datenbank ausführen. Dies erfolgt zunächst, um einen Schnappschuss Ihrer Datenbankstruktur zu erhalten, und dann regelmäßig durch Überstunden, um Ihre Daten auf dem neuesten Stand zu halten. Ihre Aktualisierungen erfolgen inkrementell, und Adobe beschränkt die Aktualisierungshäufigkeit und -zeit, um eine unerwünschte Belastung Ihres Servers zu vermeiden.
 

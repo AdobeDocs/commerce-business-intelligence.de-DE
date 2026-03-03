@@ -2,9 +2,9 @@
 title: 'Grundlegendes zu Ihrer  [!DNL Commerce Intelligence] '
 description: Erfahren Sie mehr über das Arbeiten mit und die Verbesserung Ihrer  [!DNL Commerce Intelligence] .
 exl-id: 601b5fba-da02-4cc8-96ed-147c24f326f9
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Ihre [!DNL Adobe Commerce Intelligence]
 
-Beachten Sie bei der Analyse Ihrer Commerce-Daten diese Faktoren und häufigen Missverständnisse. Wenn Sie Hilfe benötigen, um sicherzustellen, dass Sie Ihr Commerce-Schema ordnungsgemäß verwenden, zögern Sie nicht, sich an den [&#x200B; zu wenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Beachten Sie bei der Analyse Ihrer Commerce-Daten diese Faktoren und häufigen Missverständnisse. Wenn Sie Hilfe benötigen, um sicherzustellen, dass Sie Ihr Commerce-Schema ordnungsgemäß verwenden, zögern Sie nicht, sich an den [ zu wenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## [!DNL entity\_id]
 

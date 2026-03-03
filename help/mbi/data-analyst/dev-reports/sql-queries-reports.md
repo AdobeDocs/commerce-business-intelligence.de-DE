@@ -2,9 +2,9 @@
 title: SQL-Abfragen in Commerce Intelligence-Berichte übersetzen
 description: Erfahren Sie, wie SQL-Abfragen in die berechneten Spalten und Metriken übersetzt werden, die Sie in Commerce Intelligence verwenden.
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # SQL-Abfragen in Commerce Intelligence übersetzen
 
-Haben Sie sich jemals gefragt, wie SQL-Abfragen in die [berechneten Spalten](../data-warehouse-mgr/creating-calculated-columns.md), [Metriken](../../data-user/reports/ess-manage-data-metrics.md) und [Berichte](../../tutorials/using-visual-report-builder.md) übersetzt werden, die Sie in [!DNL Commerce Intelligence] verwenden? Wenn Sie ein erfahrener SQL-Benutzer sind, können Sie im [!DNL Commerce Intelligence]Data Warehouse Manager[&#x200B; intelligenter arbeiten, wenn Sie verstehen, wie SQL in übersetzt &#x200B;](../data-warehouse-mgr/tour-dwm.md), und die [!DNL Commerce Intelligence] optimal nutzen.
+Haben Sie sich jemals gefragt, wie SQL-Abfragen in die [berechneten Spalten](../data-warehouse-mgr/creating-calculated-columns.md), [Metriken](../../data-user/reports/ess-manage-data-metrics.md) und [Berichte](../../tutorials/using-visual-report-builder.md) übersetzt werden, die Sie in [!DNL Commerce Intelligence] verwenden? Wenn Sie ein erfahrener SQL-Benutzer sind, können Sie im [!DNL Commerce Intelligence]Data Warehouse Manager[ intelligenter arbeiten, wenn Sie verstehen, wie SQL in übersetzt ](../data-warehouse-mgr/tour-dwm.md), und die [!DNL Commerce Intelligence] optimal nutzen.
 
 Am Ende dieses Themas finden Sie eine **Übersetzungsmatrix** für SQL-Abfrageklauseln und [!DNL Commerce Intelligence].
 
@@ -53,7 +53,7 @@ Sehen Sie sich ein konkretes Beispiel an, wie eine `Total Revenue` Metrik in [!D
 | `email NOT LIKE '%@magento.com'` | `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | `timestamp` (und Reporting-`time range`) |
 
-Navigieren Sie zum Metrik-Builder, indem Sie **[!UICONTROL Manage Data** > **&#x200B; Metriken &#x200B;**> **Neue Metrik erstellen]** klicken. Sie müssen zunächst die entsprechende `source` auswählen, bei der es sich in diesem Fall um die `orders` handelt. Anschließend würde die Metrik wie unten dargestellt eingerichtet:
+Navigieren Sie zum Metrik-Builder, indem Sie **[!UICONTROL Manage Data** > ** Metriken **> **Neue Metrik erstellen]** klicken. Sie müssen zunächst die entsprechende `source` auswählen, bei der es sich in diesem Fall um die `orders` handelt. Anschließend würde die Metrik wie unten dargestellt eingerichtet:
 
 ![Metrikaggregation](../../assets/Metric_aggregation.png)
 
@@ -75,7 +75,7 @@ Die Abfrage für diese Aggregation kann in etwa wie folgt aussehen:
 
 Für die Einrichtung in [!DNL Commerce Intelligence] ist die Verwendung Ihres Data Warehouse-Managers erforderlich, mit dem Sie einen Pfad zwischen Ihrer `orders` und `customers` Tabelle erstellen und dann in der Tabelle Ihres Kunden eine Spalte mit dem Namen `Customer LTV` erstellen.
 
-Erfahren Sie, wie Sie einen neuen Pfad zwischen dem `customers` und dem `orders` einrichten. Das Endziel besteht darin, eine neue aggregierte Spalte in der `customers` zu erstellen. Gehen Sie daher in Ihrer Data Warehouse zur `customers` Tabelle und klicken Sie auf **[!UICONTROL Create a Column** > **&#x200B; Definition auswählen &#x200B;**> **SUM]**.
+Erfahren Sie, wie Sie einen neuen Pfad zwischen dem `customers` und dem `orders` einrichten. Das Endziel besteht darin, eine neue aggregierte Spalte in der `customers` zu erstellen. Gehen Sie daher in Ihrer Data Warehouse zur `customers` Tabelle und klicken Sie auf **[!UICONTROL Create a Column** > ** Definition auswählen **> **SUM]**.
 
 Als Nächstes müssen Sie die Quelltabelle auswählen. Wenn ein Pfad zu Ihrer `orders` vorhanden ist, wählen Sie ihn einfach aus der Dropdown-Liste aus. Wenn Sie jedoch einen neuen Pfad erstellen, klicken Sie auf **[!UICONTROL Create new path]** . Daraufhin wird der folgende Bildschirm angezeigt:
 

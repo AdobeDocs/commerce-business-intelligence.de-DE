@@ -2,9 +2,9 @@
 title: Exportieren von Diagrammdaten
 description: Erfahren Sie, wie Sie die Daten hinter einem Diagramm anzeigen.
 exl-id: 3c75ff3c-c4e2-4ff8-a303-6f24ccfca0ff
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 7ad99cbe08f6f6dee82cf804fabe1ea9cf440289
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
@@ -22,6 +22,6 @@ Wählen Sie entweder:
 - `Full Excel Export`
 - `Raw Export`
 
-Sie können auch die (Tabelle [&#x200B; Spalten, die Sie in den Export einbeziehen möchten) &#x200B;](../../tutorials/export-raw-data.md).
+Sie können auch die (Tabelle [ Spalten, die Sie in den Export einbeziehen möchten) ](../../tutorials/export-raw-data.md).
 
 Wenn Sie ein Diagramm in eine Präsentation oder ein Dokument einfügen müssen, können Sie das Diagramm als Bild im PNG-, PDF- oder SVG-Format exportieren. Klicken Sie auf das Zahnradsymbol in der oberen rechten Ecke eines beliebigen Diagramms. Wählen Sie die Option `Enlarge` im Dropdown-Menü aus und klicken Sie dann auf **[!UICONTROL Download]** , um den Export abzuschließen.

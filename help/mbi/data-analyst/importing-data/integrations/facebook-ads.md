@@ -2,9 +2,9 @@
 title: Facebook-Anzeigen verbinden
 description: Erfahren Sie, wie Sie Ihre Anzeigenausgabendaten analysieren und feststellen können, ob Ihr Geld effektiv ausgegeben wird.
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -19,12 +19,12 @@ ht-degree: 0%
 
 ![Facebook Ads-Logo](../../../assets/facebook-ads-logo.png)
 
-Sie haben recherchiert, Ihre Anzeigen erstellt und Ihre Kampagne auf [!DNL Facebook] gestartet. Jetzt ist es an der Zeit, Ihre Anzeigenausgabendaten zu analysieren und festzustellen, ob Ihr Geld effektiv ausgegeben wird. Mit Ihren Werbeausgabendaten können Sie [Kampagnen-ROI messen, indem Sie Ihre Werbekosten und den Kundenlebenszeitwert (Customer Lifetime Value, CLV) der &#x200B;](../../../data-analyst/analysis/roi-ad-camp.md) Ihrer Kampagnen erworbenen Benutzer zusammenfassen.
+Sie haben recherchiert, Ihre Anzeigen erstellt und Ihre Kampagne auf [!DNL Facebook] gestartet. Jetzt ist es an der Zeit, Ihre Anzeigenausgabendaten zu analysieren und festzustellen, ob Ihr Geld effektiv ausgegeben wird. Mit Ihren Werbeausgabendaten können Sie [Kampagnen-ROI messen, indem Sie Ihre Werbekosten und den Kundenlebenszeitwert (Customer Lifetime Value, CLV) der ](../../../data-analyst/analysis/roi-ad-camp.md) Ihrer Kampagnen erworbenen Benutzer zusammenfassen.
 
 Die Verbindung Ihrer [!DNL Facebook Ad] mit [!DNL Commerce Intelligence] ist ein einfacher dreistufiger Prozess:
 
-1. [&#x200B; [!DNL Facebook]  als Datenquelle hinzufügen in [!DNL Commerce Intelligence]](#stepone)
-1. [&#x200B; [!DNL Commerce Intelligence]  Zugriff auf Ihre  [!DNL Facebook Ads]  zulassen](#steptwo)
+1. [ [!DNL Facebook]  als Datenquelle hinzufügen in [!DNL Commerce Intelligence]](#stepone)
+1. [ [!DNL Commerce Intelligence]  Zugriff auf Ihre  [!DNL Facebook Ads]  zulassen](#steptwo)
 1. [Select [!DNL Facebook Ads] Accounts für Datenabruf](#stepthree)
 
 ## Hinzufügen von [!DNL Facebook] als Datenquelle in [!DNL Commerce Intelligence] {#stepone}
@@ -58,8 +58,8 @@ Vergewissern Sie sich, dass Sie [!DNL Facebook] Kampagnen in [!DNL Google Analyt
 
 ## verwandt
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
-* [Konto  [!DNL Google Adwords] &#x200B;](../integrations/google-ecommerce.md)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Konto  [!DNL Google Adwords] ](../integrations/google-ecommerce.md)
 * [Verfolgen Sie die Quelle der Bestellungsreferenz über [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Verfolgen Sie die Quelle der Benutzerreferenz in Ihrer Datenbank](../../analysis/google-track-user-acq.md)
 * [Benutzergeräte-, Browser- und Betriebssystemdaten in der Datenbank tracken](../../analysis/track-usr-dev-browser.md)

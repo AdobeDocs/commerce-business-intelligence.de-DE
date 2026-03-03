@@ -2,9 +2,9 @@
 title: Enthaltene Dashboards
 description: Erfahren Sie, wie Sie den Zustand wichtiger Metriken wie Benutzerlebensdauerumsatz, Anzahl der Wiederholungskäufe und mehr überprüfen können, um so eine solide Grundlage für die zukünftige Untersuchung zu schaffen.
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-source-git-commit: 3a7423c9dd0f957b77baa27b3447a715caad017b
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Die Verfügbarkeit einiger Dashboards hängt von Ihrem Datensatz ab.
 
-Wenn Sie Fragen haben oder daran interessiert sind, ein Paket zu Ihrem Konto hinzuzufügen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um Hilfe zu erhalten.
+Wenn Sie Fragen haben oder daran interessiert sind, ein Paket zu Ihrem Konto hinzuzufügen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um Hilfe zu erhalten.
 
 ## Überblick für Führungskräfte
 
@@ -35,11 +35,11 @@ Dieses Dashboard kann auch Kohortendiagramme enthalten, die den Lebenszeitumsatz
 
 Weitere Informationen zu Kohorten finden Sie unter [Durchführen einer Kohortenanalyse](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
 
-Wenn Sie derzeit keine Quelle für die Benutzerakquise verfolgen, lesen Sie den Abschnitt [Übersicht über Source-Daten zur Benutzerakquise &#x200B;](../../data-analyst/analysis/google-track-user-acq.md).
+Wenn Sie derzeit keine Quelle für die Benutzerakquise verfolgen, lesen Sie den Abschnitt [Übersicht über Source-Daten zur Benutzerakquise ](../../data-analyst/analysis/google-track-user-acq.md).
 
 ## E-Mail-Zusammenfassung
 
-Das `Email Summary`-Dashboard enthält einen Beispielsatz von Diagrammen, die in einer automatisierten täglichen E-Mail-Zusammenfassung verwendet werden können. Weitere Informationen [&#x200B; Konfigurieren von E-Mail](../../data-user/export-data/email-summaries.md)Zusammenfassungen finden Sie unter „Erstellen automatisierter E-Mail-Zusammenfassungen“.  
+Das `Email Summary`-Dashboard enthält einen Beispielsatz von Diagrammen, die in einer automatisierten täglichen E-Mail-Zusammenfassung verwendet werden können. Weitere Informationen [ Konfigurieren von E-Mail](../../data-user/export-data/email-summaries.md)Zusammenfassungen finden Sie unter „Erstellen automatisierter E-Mail-Zusammenfassungen“.  
 
 ## Aufbewahrungszustand
 

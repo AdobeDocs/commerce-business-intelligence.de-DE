@@ -2,9 +2,9 @@
 title: Speichern von Daten in Adobe Commerce
 description: Erfahren Sie, wie Daten generiert werden, wodurch eine neue Zeile eingefügt wird und wie Aktionen in der Adobe Commerce-Datenbank aufgezeichnet werden.
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 Die [!DNL Adobe Commerce]-Plattform erfasst und organisiert eine Vielzahl wertvoller Commerce-Daten über Hunderte von Tabellen hinweg. In diesem Thema wird Folgendes beschrieben:
 
 * So werden diese Daten generiert
-* was dazu führt, dass eine neue Zeile in eine der [Commerce-Kerntabellen“ eingefügt &#x200B;](../data-warehouse-mgr/common-mage-tables.md)
+* was dazu führt, dass eine neue Zeile in eine der [Commerce-Kerntabellen“ eingefügt ](../data-warehouse-mgr/common-mage-tables.md)
 * Wie Aktionen wie der Kauf oder die Erstellung eines Kontos in der [!DNL Adobe Commerce]-Datenbank aufgezeichnet werden
 
 Um diese Konzepte zu besprechen, sehen Sie sich das folgende Beispiel an:
@@ -61,7 +61,7 @@ Kurz nach dem Hinzufügen der drei neuen Produkte besucht ein neuer Kunde, `Samm
 
 ## `sales\_flat\_order (or Sales\_order`, wenn Sie [!DNL Adobe Commerce 2.x] haben
 
-Nachdem die Kontoerstellung abgeschlossen ist, ist `Sammy Customer` bereit, einen Kauf zu tätigen. Auf der Website fügt der Kunde zwei `Throwback Bellbottoms` und ein `V-Neck T-Shirt` zum Warenkorb hinzu. Wenn der Kunde mit der Auswahl zufrieden ist, wechselt er zur Kasse und reicht die Bestellung ein, wodurch folgender Eintrag in der Tabelle [Einfache Bestellung“ erstellt &#x200B;](../data-warehouse-mgr/sales-flat-order-table.md):
+Nachdem die Kontoerstellung abgeschlossen ist, ist `Sammy Customer` bereit, einen Kauf zu tätigen. Auf der Website fügt der Kunde zwei `Throwback Bellbottoms` und ein `V-Neck T-Shirt` zum Warenkorb hinzu. Wenn der Kunde mit der Auswahl zufrieden ist, wechselt er zur Kasse und reicht die Bestellung ein, wodurch folgender Eintrag in der Tabelle [Einfache Bestellung“ erstellt ](../data-warehouse-mgr/sales-flat-order-table.md):
 
 | **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|

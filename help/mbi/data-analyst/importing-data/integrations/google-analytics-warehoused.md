@@ -2,9 +2,9 @@
 title: Google Analytics Warehouse verbinden
 description: Erfahren Sie, wie Sie verfolgen können, wie Besucher Ihre Site verwenden, welche Inhalte attraktiv sind, wo Besucher die Site verlassen und vieles mehr.
 exl-id: b9879399-9e1a-4f36-b510-8426ebc83aeb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Mit der [!DNL Google Analytics Live] Integration ist hingegen jedes [!DNL Google
 
 >[!INFO]
 >
->[!DNL Google Analytics Warehoused] ist eine `Premium`. [Wenden Sie sich an den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), wenn Sie diese Integration zu Ihrem Abonnement hinzufügen möchten.
+>[!DNL Google Analytics Warehoused] ist eine `Premium`. [Wenden Sie sich an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), wenn Sie diese Integration zu Ihrem Abonnement hinzufügen möchten.
 
 1. Navigieren Sie zur `Connections` unter **[!UICONTROL Admin** > **Integrations]**.
 1. Klicken Sie auf der rechten Seite auf **[!UICONTROL Add an Integration]**.
@@ -63,7 +63,7 @@ So identifizieren Sie die [!DNL Google Analytics]-Profil-ID einer bestimmten Web
 
 ## Verwandte Dokumentation
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Verbinden [!DNL Google Adwords]](../integrations/google-adwords.md)
 * [Analyse der Website-Aktivität und der Konversionsraten der Kunden](../../analysis/web-act-cust-conversion.md)
 * [Tracking von Benutzerakquise-Daten mithilfe von  [!DNL Google Analytics] -Cookies](../../analysis/google-track-user-acq.md)

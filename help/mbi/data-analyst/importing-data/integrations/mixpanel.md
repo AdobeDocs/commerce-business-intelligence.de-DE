@@ -2,9 +2,9 @@
 title: Mixpanel verbinden
 description: Erfahren Sie, wie Sie analysieren können, wie Benutzer Ihre Websites und Programme navigieren und verwenden.
 exl-id: e6a9f08f-1063-4d92-93e6-971280239fdb
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -64,5 +64,5 @@ Wenn die Verbindung erfolgreich hergestellt wurde, wird ein _Erfolgreich!_ Nachr
 
 ### verwandt
 
-* [&#x200B; [!DNL Mixpanel]  Daten](../integrations/mixpanel-data.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [ [!DNL Mixpanel]  Daten](../integrations/mixpanel-data.md)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

@@ -2,9 +2,9 @@
 title: Erwartete QuickBooks-Daten
 description: Erfahren Sie, wie Sie relevante Datenfelder für die Analyse einfach verfolgen können.
 exl-id: a60996bd-e3d1-497d-abce-f02ef1444f1a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -62,4 +62,4 @@ Um alle für das Tracking verfügbaren Felder anzuzeigen, klicken Sie auf die Li
 ## Verwandt:
 
 * [Verbinden [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

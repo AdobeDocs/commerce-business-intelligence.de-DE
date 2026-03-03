@@ -2,9 +2,9 @@
 title: Verwenden eines Berichts
 description: Erfahren Sie, wie Sie Ihre Berichtsdaten verwenden.
 exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Diese wird dann verwendet, um Folgendes zu erstellen:
 
 Beide Felder müssen auf Benutzerebene erstellt werden (z. B. in der `user`). Dies ermöglicht eine Normalisierung der Durchschnittsanalyse durch die Benutzer (d. h., der Nenner bei dieser Durchschnittsberechnung ist die Anzahl der Benutzer).
 
-Hier kommt [!DNL Commerce Intelligence] ins Spiel! Sie können Ihre [!DNL Commerce Intelligence] Data Warehouse verwenden, um die oben genannten Spalten zu erstellen. Wenden Sie sich an das Adobe-Analystenteam und nennen Sie uns die spezifische Definition Ihrer neuen Spalten für die Erstellung. Sie können auch den [Spalteneditor“ &#x200B;](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+Hier kommt [!DNL Commerce Intelligence] ins Spiel! Sie können Ihre [!DNL Commerce Intelligence] Data Warehouse verwenden, um die oben genannten Spalten zu erstellen. Wenden Sie sich an das Adobe-Analystenteam und nennen Sie uns die spezifische Definition Ihrer neuen Spalten für die Erstellung. Sie können auch den [Spalteneditor“ ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 Es empfiehlt sich, die Erstellung dieser berechneten Datenfelder in Ihrer Datenbank zu vermeiden, da dies eine unnötige Belastung für Ihre Produktions-Server darstellt.
 
@@ -81,7 +81,7 @@ Und Sie möchten sehen, dass diese Berechnung über die Zeit, oder den Trend, ei
 
 1. Wechseln Sie zu **[!UICONTROL Data]** und wählen Sie die Registerkarte `Metrics` aus.
 1. Klicken Sie auf **[!UICONTROL Add New Metric]** und wählen Sie die `user` aus (in der Sie die Dimensionen oben erstellt haben).
-1. Wählen Sie aus dem Dropdown-Menü `Average` in der Spalte `Time between a customer's registration date and first purchase date` `user` in der Tabelle nach `Customer's registration date` sortiert aus.
+1. Wählen Sie aus dem Dropdown-Menü `Average` in der Spalte `Time between a customer's registration date and first purchase date``user` in der Tabelle nach `Customer's registration date` sortiert aus.
 1. Fügen Sie alle relevanten Filter oder Filtersätze hinzu.
 
 Diese Metrik ist jetzt bereit.

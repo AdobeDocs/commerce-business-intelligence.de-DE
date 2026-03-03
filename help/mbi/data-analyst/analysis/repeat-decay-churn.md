@@ -2,9 +2,9 @@
 title: Analyse der Wiederholungswahrscheinlichkeit von Abfall und Abwanderung
 description: Erfahren Sie, wie viel Zeit zwischen Bestellungen vergeht und wann Kunden voraussichtlich abwandern werden.
 exl-id: ea26052d-ac74-43b7-a4a6-977800d4c719
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Nachdem Sie die oben genannte Analyse erstellt und eine Abwanderungsschwelle fes
 
 Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt erwerben, im Laufe der Zeit anders verhalten als andere Kunden. Möchten Sie mehr erfahren? Sehen Sie sich dieses Tutorial an, um das lebenslange Kaufverhalten von Kundenkohorten basierend auf bestimmten Produkten zu untersuchen, die sie gekauft haben.
 
-Diese Best Practice wird von [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS) bereitgestellt. [Kontaktieren Sie den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um weitere Informationen zu erhalten.
+Diese Best Practice wird von [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS) bereitgestellt. [Kontaktieren Sie den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um weitere Informationen zu erhalten.
 
 ### verwandt
 

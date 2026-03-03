@@ -2,9 +2,9 @@
 title: Kundenabwanderung definieren
 description: Erfahren Sie, wie Sie ein Dashboard einrichten, mit dem Sie Abwanderung für Ihre Transaktionskunden definieren können.
 exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Keine neuen Metriken!
 
 >[!NOTE]
 >
->Stellen Sie sicher[&#x200B; dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
+>Stellen Sie sicher[ dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
@@ -69,27 +69,27 @@ Keine neuen Metriken!
 * [!UICONTROL Metric]: Anzahl der Bestellungen
 
 * [!UICONTROL Formula]: Anfängliche Wahrscheinlichkeit für Wiederholungsreihenfolge
-* &#x200B;
-  [!UICONTROL -Formel]: `A/B`
-* &#x200B;
+* 
+  [!UICONTROL-Formel]: `A/B`
+* 
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Scalar`
 
 * **Wiederholungsreihenwahrscheinlichkeit angegeben Monate seit Bestellung**
 * Metrik A: Wiederholungsaufträge nach Monaten seit vorheriger Bestellung (ausblenden)
 * [!UICONTROL Metric]: `Number of orders`
-* &#x200B;
+* 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
 * Metrik B: Letzte Bestellungen nach Monaten seit Bestellung (ausblenden)
 * [!UICONTROL Metric]: `Number of orders`
-* &#x200B;
+* 
   [!UICONTROL Perspective]: `Cumulative`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
@@ -97,29 +97,29 @@ Keine neuen Metriken!
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Customer's order number greater than 1`
 
-* &#x200B;
+* 
   [!UICONTROL Gruppieren nach]: `Independent`
 
 * Metrik-ID: Letzte Bestellungen (Ausblenden)
 * [!UICONTROL Metric]: `Number of orders`
 * [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
 
-* &#x200B;
+* 
   [!UICONTROL Gruppieren nach]: `Independent`
 
 * [!UICONTROL Formula]: Anfängliche Wahrscheinlichkeit für Wiederholungsreihenfolge
-* &#x200B;
-  [!UICONTROL -Formel]: `(C-A)/(C+D-A-B)`
-* &#x200B;
+* 
+  [!UICONTROL-Formel]: `(C-A)/(C+D-A-B)`
+* 
   [!UICONTROL Format]: `Percent`
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Months since previous order`
 * Oben anzeigen.Unten: Die 24 wichtigsten Kategorien, sortiert nach Kategorienamen
 
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 Der Bericht über die Wahrscheinlichkeit des ursprünglichen Wiederholungsauftrags stellt die Gesamtzahl der Wiederholungsaufträge/Gesamtaufträge dar. Jede Bestellung ist eine Möglichkeit, eine Wiederholungsreihenfolge zu erstellen. Die Anzahl der Wiederholungsreihenfolgen ist die Teilmenge derjenigen, die tatsächlich eine Wiederholungsreihenfolge ausführen.
@@ -132,4 +132,4 @@ Nachdem Sie Ihr Dashboard erstellt haben, lautet die am häufigsten gestellte Fr
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie im Dashboard nach Bedarf organisieren. Das Ergebnis kann wie das Bild oben auf der Seite aussehen
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [&#x200B; sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

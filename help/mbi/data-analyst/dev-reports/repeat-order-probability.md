@@ -2,9 +2,9 @@
 title: Bericht zur Wahrscheinlichkeit der Wiederholungsreihenfolge
 description: Lernen Sie den Bericht zur Wahrscheinlichkeit der Wiederholungsreihenfolge kennen und verstehen Sie ihn.
 exl-id: 2c88b85a-7320-44ca-87a5-5b91250348ea
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Wenn Sie einen Filter hinzugefügt haben, der eine Dimension verwendet, die nich
 
 In bestimmten Fällen können Sie eine `order-specific` Dimension in eine `user-specific` Dimension umwandeln, die dem `Repeat Order Probability` als Filter hinzugefügt werden soll. In diesen Fällen geben Sie das Sortierattribut der ersten oder letzten Bestellung eines Benutzers zurück (z. B. den Regionsnamen der ersten Bestellung eines Benutzers).
 
-Wenn Sie eine solche neue Dimension erstellen möchten, wenden [&#x200B; sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Wenn Sie eine solche neue Dimension erstellen möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
 
 ## Vergleich der Wiederholungswahrscheinlichkeit von Aufträgen mit verschiedenen Attributen
 

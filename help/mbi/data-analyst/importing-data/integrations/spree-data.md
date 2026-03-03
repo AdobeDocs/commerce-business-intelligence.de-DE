@@ -2,9 +2,9 @@
 title: Erwartete Spreedaten
 description: Erkunden Sie die wichtigsten Datentabellen, die Sie von Spree in Ihr - [!DNL Commerce Intelligence]  importieren können.
 exl-id: 203a2d4b-e7ad-4704-a3c1-8e22ff0bf2d6
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 6e2f9e4a9e91212771e6f6baa8c2f8101125217a
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Nachdem Sie [Ihren [!DNL Spree] Store](../../../data-analyst/importing-data/integrations/spree.md) verbunden haben, können Sie den [Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder von Ihrer [!DNL Spree] zur Analyse einfach zu verfolgen.
 
-In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!DNL Spree] in Ihr [!DNL Commerce Intelligence]-Konto importieren können, einschließlich Links zu [zusätzlichen &#x200B;](https://guides.spreecommerce.org/developer/addresses.html#address)) [!DNL Spree].
+In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!DNL Spree] in Ihr [!DNL Commerce Intelligence]-Konto importieren können, einschließlich Links zu [zusätzlichen ](https://guides.spreecommerce.org/developer/addresses.html#address)) [!DNL Spree].
 
 | **Tabellenname** | **Beschreibung** |
 |-----|-----|
@@ -30,4 +30,4 @@ In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!D
 ## Verwandt:
 
 * [Verbinden [!DNL Spree]](../integrations/spree.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)

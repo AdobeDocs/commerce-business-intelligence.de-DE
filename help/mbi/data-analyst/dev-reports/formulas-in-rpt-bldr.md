@@ -2,9 +2,9 @@
 title: Formeln in der Report Builder
 description: Erfahren Sie, wie Formeln in der Report Builder verwendet werden können.
 exl-id: 7a0ad07a-5bcc-474f-95bc-ccc2b74073b2
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Formeln in der `Report Builder`
 
-In der [`Report Builder`](../../tutorials/using-visual-report-builder.md) können Sie mit den [definierten Metriken“ in &#x200B;](../../data-user/reports/ess-manage-data-metrics.md) Konto leistungsstarke Visualisierungen erstellen. Durch die Kombination dieser Metriken in einer Formel können Sie zusätzliche Einblicke aus Ihren Daten gewinnen. Dieses Thema taucht ein in die Verwendung von Formeln im `Report Builder` - lasst uns einsteigen!
+In der [`Report Builder`](../../tutorials/using-visual-report-builder.md) können Sie mit den [definierten Metriken“ in ](../../data-user/reports/ess-manage-data-metrics.md) Konto leistungsstarke Visualisierungen erstellen. Durch die Kombination dieser Metriken in einer Formel können Sie zusätzliche Einblicke aus Ihren Daten gewinnen. Dieses Thema taucht ein in die Verwendung von Formeln im `Report Builder` - lasst uns einsteigen!
 
 ## Was ist ein `formula`? {#what}
 
@@ -65,4 +65,4 @@ In diesem Beispiel haben Sie die `Stacked Columns` Perspektive verwendet, um die
 
 Ist Ihnen in den obigen Beispielen aufgefallen, dass die `timestamp`, `groupings`, `perspectives` und `filters` der Formel von den Eingabemetriken übernommen werden? Denken Sie daran, dass Formeln für die Verwendung von `perspectives` und [unabhängigen Zeitoptionen](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"} verwendet werden können, genau wie Metriken.
 
-Wenn Sie weitere Fragen zur Verwendung von Formeln in der `Report Builder` haben, wenden Sie [&#x200B; an den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Wenn Sie weitere Fragen zur Verwendung von Formeln in der `Report Builder` haben, wenden Sie [ an den ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

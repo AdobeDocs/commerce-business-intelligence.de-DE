@@ -2,9 +2,9 @@
 title: Tabelle enterprise_rma
 description: Erfahren Sie, wie Sie Informationen zu einer bestimmten Rückgabeanfrage analysieren können.
 exl-id: a19cbc9a-e34f-4f4e-820f-9e413d1a552d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Jede Zeile in der `enterprise_rma` (in Adobe Commerce 2.x häufig als `magento_r
 |---|---|---|
 | `Number of returns` | Die Anzahl der angeforderten Rücksendungen. | `Operation`: `entity id`<br>`Operation`: `Count`<br>`Timestamp` Spalte: `date requested` |
 | `Total returned amount` | Der insgesamt zurückgegebene Geldbetrag. | `Operation `Spalte: `Return's total value`<br>`Operation`: Summe<br>`Timestamp` Spalte: angefordertes Datum |
-| `Average returned amount` | Der durchschnittliche zurückgegebene Geldbetrag. | `Operation` ` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
+| `Average returned amount` | Der durchschnittliche zurückgegebene Geldbetrag. | `Operation`` Column: Return's total value`<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
 | `Average time to return` | Die durchschnittliche Zeit von der Bestellung bis zur Rückkehr. | `Operation` Spalte: Sekunden zwischen dem Erstellungsdatum des Auftrags und dem Rückgabedatum der Anforderung<br>`Operation`: `Average`<br>`Timestamp` Spalte: `date requested` |
 
 {style="table-layout:auto"}

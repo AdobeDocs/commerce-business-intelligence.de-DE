@@ -2,9 +2,9 @@
 title: UTM-Tracking in Google Analytics
 description: Erfahren Sie mehr über Best Practices für UTM-Tracking (Tagging) in Google Analytics.
 exl-id: 70bfd855-3b3f-469b-99bc-deb8251904b7
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
-source-git-commit: adb7aaef1cf914d43348abf5c7e4bec7c51bed0c
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 `UTM`-Tracking ist eine Tagging-Konvention für URLs, mit der Sie analysieren können, woher Ihre Benutzer kommen. Wenn Sie sich die URLs ansehen, auf die Sie in den meisten Marketing-E-Mail- oder Banneranzeigen klicken, sehen Sie UTM-Tagging. Es sind diese langen Verbindungen, die mit Dingen wie `utm\_source` und `utm\_medium` enden.
 
-[!DNL Google Analytics] verwendet `UTM`-Tagging, um herauszufinden, wo Ihr Traffic herkommt. Einige dieser Informationen stammen vom [HTTP Referrer](https://en.wikipedia.org/wiki/HTTP_referer) aber der Rest muss mit `UTM` Parametern angegeben werden. Wenn Sie `google adwords` oder `email marketing` sehen, bedeutet dies, dass diese `UTM` Parameter vom ursprünglichen Link-Klick aufgezeichnet und dann in den Cookies der Benutzer gespeichert werden. Von dort aus verwendet [!DNL Google Analytics] diese Daten, um [interessante Verhaltensweisen“ &#x200B;](../data-analyst/analysis/google-track-user-acq.md) Ihrer Site zuzuordnen. Wenn Sie verstehen, wofür diese Parameter bestimmt sind, können Sie verstehen, wie UTM-Tagging am besten eingerichtet und verwendet werden.
+[!DNL Google Analytics] verwendet `UTM`-Tagging, um herauszufinden, wo Ihr Traffic herkommt. Einige dieser Informationen stammen vom [HTTP Referrer](https://en.wikipedia.org/wiki/HTTP_referer) aber der Rest muss mit `UTM` Parametern angegeben werden. Wenn Sie `google adwords` oder `email marketing` sehen, bedeutet dies, dass diese `UTM` Parameter vom ursprünglichen Link-Klick aufgezeichnet und dann in den Cookies der Benutzer gespeichert werden. Von dort aus verwendet [!DNL Google Analytics] diese Daten, um [interessante Verhaltensweisen“ ](../data-analyst/analysis/google-track-user-acq.md) Ihrer Site zuzuordnen. Wenn Sie verstehen, wofür diese Parameter bestimmt sind, können Sie verstehen, wie UTM-Tagging am besten eingerichtet und verwendet werden.
 
 ## Best Practices für UTM-Tagging
 
