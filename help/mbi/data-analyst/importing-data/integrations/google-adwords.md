@@ -2,9 +2,9 @@
 title: Google AdWords verbinden
 description: Erfahren Sie, wie Sie den Kampagnen-ROI messen, indem Sie Ihre Werbekosten und den Lebenszeitwert (CLV) der von Ihren Kampagnen erworbenen Benutzer vereinen.
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 4d04b79d55d02bee6dfc3a810e144073e7353ec0
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%

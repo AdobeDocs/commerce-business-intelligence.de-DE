@@ -2,9 +2,9 @@
 title: Replizieren von Google Analytics-Kanälen mithilfe von Akquisequellen
 description: Erfahren Sie, wie Sie Google Analytics-Kanäle mithilfe von Akquisequellen replizieren.
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
-role: Admin, Data Architect, Data Engineer, User
+role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 736dbdc3ea6bc8b7c852f06110705765f040c31f
+source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%
@@ -32,11 +32,11 @@ Standardmäßig richtet [!DNL Google] acht verschiedene Kanäle ein. Nachfolgend
 | Direkt | Jeder, der direkt auf Ihre Site kommt. | Source = `Direct`<br>UND Medium = `(not set); OR Medium = (none)` |
 | Organische Suche | Traffic, der organisch in unbezahlten Suchmaschinen eingestuft wurde. | Medium = `organic` |
 | Empfehlung | Traffic, der von einem externen Link kommt, bei dem es sich nicht um eine organische Suche handelt, oder von Websites, die keine sozialen Netzwerke sind. | Medium = `referral` |
-| Paid Search | Traffic mit einem UTM-Trackingcode, bei dem das Medium entweder „cpc“, „pc“ oder „paidSearch“ ist UND ein Werbenetzwerk ist, das nicht mit „Content“ übereinstimmt. | Medium = `^(cpc|ppc|paidsearch)$`<br>UND-Werbenetzwerk ≠ `Content` |
-| Sozial | Empfehlungs-Traffic, der von einem von etwa 400 sozialen Netzwerken stammt und nicht als Anzeigen getaggt ist. | Empfehlung für Social Source = `Yes`<br>ODER Medium = `^(social|social-network|social-media|sm|social network|social media)$` |
+| Paid Search | Traffic mit einem UTM-Trackingcode, bei dem das Medium entweder „cpc“, „pc“ oder „paidSearch“ ist UND ein Werbenetzwerk ist, das nicht mit „Content“ übereinstimmt. | Medium = `^(cpc`\|`ppc`\|`paidsearch)$`<br>AND AD Distribution Network ≠ `Content` |
+| Sozial | Referral Traffic, die aus einem von etwa 400 sozialen Netzwerken stammen und nicht als Werbung getaggt sind. | Verweis auf Social Source = `Yes`<br>ODER Medium = `^(social`\|`social-network`\|`social-media`\|`sm`\|`social network`\|`social media)$` |
 | E-Mail | Traffic von Sitzungen, die mit einem Medium von „E-Mail“ getaggt sind. | UTM-Trackingcode von Medium = `email` |
-| Anzeige | Traffic mit einem UTM-Trackingcode, bei dem das Medium entweder display oder cpm ist. Umfasst auch AdWords-Interaktionen, bei denen das Anzeigenverteilungsnetzwerk mit „Inhalt“ übereinstimmt | Medium = `^(display|cpm|banner)$`<br>ODER Anzeigenverteilungsnetzwerk = `Content`<br>UND Anzeigenformat ≠ `Text` |
-| Sonstige | Sitzungen von anderen Werbekanälen (ohne Paid Search), die mit einem Medium von „cpc“, „ppc“, „cpm“, „cpv“, „cpa“, „cpp“, „Affiliate“ getaggt sind. | Medium = `^(cpv|cpa|cpp|content-text)$` |
+| Anzeige | Traffic mit einem UTM-Trackingcode, bei dem das Medium entweder display oder cpm ist. Umfasst auch AdWords-Interaktionen, bei denen das Anzeigenverteilungsnetzwerk mit „Inhalt“ übereinstimmt | Medium = `^(display`\|`cpm`\|`banner)$`<br>ODER Anzeigenverteilungsnetzwerk = `Content`<br>UND Anzeigenformat ≠ `Text` |
+| Sonstige | Sitzungen von anderen Werbekanälen (ohne Paid Search), die mit einem Medium von „cpc“, „ppc“, „cpm“, „cpv“, „cpa“, „cpp“, „Affiliate“ getaggt sind. | Medium = `^(cpv`\|`cpa`\|`cpp`\|`content-text)$` |
 
 {style="table-layout:auto"}
 
