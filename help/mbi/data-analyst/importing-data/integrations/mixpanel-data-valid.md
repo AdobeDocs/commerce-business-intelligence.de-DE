@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie bestätigen können, dass Sie alle Daten sync
 exl-id: d18ce954-26fe-4440-ad8b-4f266c007b2f
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+source-git-commit: 063112ebbafad195b0a80ee2b119ab32d879ae5b
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 0%
@@ -30,3 +30,4 @@ Wenn [!DNL Adobe Commerce Intelligence] zum ersten Mal eine Verbindung zu Ihren 
    ![Option Mixpanel in CSV exportieren im Menü](../../../assets/export-csv-mixpanel.png)
 
 1. Senden Sie die `.csv`-Datei an den Account Manager oder Analyst, mit dem Sie diesen Validierungsprozess durchführen.
+
