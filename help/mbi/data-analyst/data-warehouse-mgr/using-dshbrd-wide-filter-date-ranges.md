@@ -43,11 +43,11 @@ Wenn Sie einen Datumsfilter für ein Dashboard angeben, wird dieser Filter nur a
 
 ## Filter speichern
 
-Um zu analysieren, wie sich ein bestimmter Store entwickelt, klicken Sie auf das Store-Symbol in der oberen rechten Ecke (![Store-Filter](../../assets/store-filter.png)). Standardmäßig ist `Store Filter` auf `All Stores` festgelegt, wodurch die Daten aus allen [Store-Ansichten](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html) angezeigt werden, die auf Ihrer Commerce-Site verfügbar sind.
+Um zu analysieren, wie sich ein bestimmter Store entwickelt, klicken Sie auf das Store-Symbol in der oberen rechten Ecke (![Store-Filter](../../assets/store-filter.png)). Standardmäßig ist `Store Filter` auf `All Stores` festgelegt, wodurch die Daten aus allen [Store-Ansichten](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=de) angezeigt werden, die auf Ihrer Commerce-Site verfügbar sind.
 
 >[!NOTE]
 >
->Ein Speicherfilter ist für ein ganzes [!DNL Commerce Intelligence]-Konto aktiviert oder deaktiviert. Wenn ein Dashboard Berichte enthält, die nicht vom Filter betroffen sind (z. B. Berichte, die nicht auf [!DNL Adobe Commerce] Daten basieren), werden diese Berichte nicht aktualisiert, wenn der Speicherfilter angewendet wird. Sie können [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) wenn Sie der Meinung sind, dass ein Bericht basierend auf der Store-Auswahl aktualisiert werden sollte oder wenn Sie der Meinung sind, dass Ihr Account-Store-Filter versehentlich deaktiviert ist.
+>Ein Speicherfilter ist für ein ganzes [!DNL Commerce Intelligence]-Konto aktiviert oder deaktiviert. Wenn ein Dashboard Berichte enthält, die nicht vom Filter betroffen sind (z. B. Berichte, die nicht auf [!DNL Adobe Commerce] Daten basieren), werden diese Berichte nicht aktualisiert, wenn der Speicherfilter angewendet wird. Sie können [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) wenn Sie der Meinung sind, dass ein Bericht basierend auf der Store-Auswahl aktualisiert werden sollte oder wenn Sie der Meinung sind, dass Ihr Account-Store-Filter versehentlich deaktiviert ist.
 
 Wenn Sie einen Store aus der `Store Filter` auswählen, behält der Filter Ihre Auswahl bei, wenn Sie zwischen Dashboards navigieren. Wenn Sie Ihre Auswahl beibehalten, können Sie Daten für Ihren ausgewählten Store überall anzeigen, bis Sie `All Stores` auswählen.
 

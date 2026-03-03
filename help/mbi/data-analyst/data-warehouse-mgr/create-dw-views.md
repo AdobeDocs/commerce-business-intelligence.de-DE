@@ -136,7 +136,7 @@ Anstatt für jede Anzeigenquelle einen separaten Satz von Marketing-Metriken zu 
 
 **Suchen Sie zusätzliche Hilfe?**
 
-Das Schreiben von SQL und das Erstellen von `Data Warehouse Views` ist nicht im Lieferumfang des technischen Supports enthalten. Das [Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) bietet jedoch Unterstützung bei der Erstellung von Ansichten an. Das Supportteam kann Ihnen bei allen Fragen behilflich sein, von der Migration einer alten Datenbank mit einer neuen Datenbank bis zur Erstellung einer einzigen Data Warehouse-Ansicht für bestimmte Analysezwecke.
+Das Schreiben von SQL und das Erstellen von `Data Warehouse Views` ist nicht im Lieferumfang des technischen Supports enthalten. Das [Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) bietet jedoch Unterstützung bei der Erstellung von Ansichten an. Das Supportteam kann Ihnen bei allen Fragen behilflich sein, von der Migration einer alten Datenbank mit einer neuen Datenbank bis zur Erstellung einer einzigen Data Warehouse-Ansicht für bestimmte Analysezwecke.
 
 Normalerweise erfordert die Erstellung eines neuen `Data Warehouse View` für die Konsolidierung von 2-3 ähnlich strukturierten Tabellen fünf Stunden Service-Zeit, was etwa 1.250 US-Dollar Arbeit entspricht. Im Folgenden finden Sie jedoch einige häufige Faktoren, die die erwarteten erforderlichen Investitionen erhöhen können:
 

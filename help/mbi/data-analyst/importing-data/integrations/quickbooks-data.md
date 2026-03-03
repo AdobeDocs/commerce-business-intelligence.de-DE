@@ -62,4 +62,4 @@ Um alle für das Tracking verfügbaren Felder anzuzeigen, klicken Sie auf die Li
 ## Verwandt:
 
 * [Verbinden [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)

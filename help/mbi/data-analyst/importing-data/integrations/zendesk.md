@@ -54,4 +54,4 @@ Um diesen Vorgang abzuschließen, müssen Sie zwei Browser-Fenster oder Register
 ## Verwandt:
 
 * [&#x200B; [!DNL Zendesk]  Daten](../integrations/exp-zendesk-data.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)

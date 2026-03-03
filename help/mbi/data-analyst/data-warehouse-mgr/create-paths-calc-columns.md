@@ -20,7 +20,7 @@ Beim [Erstellen berechneter Spalten](../data-warehouse-mgr/creating-calculated-c
 1. Beziehung der Tabellen in Ihren Datenbanken zueinander
 1. Die primären und Fremdschlüssel, die diese Beziehung definieren
 
-Wenn Sie diese Informationen kennen, können Sie einfach einen Pfad erstellen, der den Anweisungen in diesem Thema folgt. Sie können einen technischen Experten in Ihrer Organisation fragen oder sich an das [Professional Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) wenden.
+Wenn Sie diese Informationen kennen, können Sie einfach einen Pfad erstellen, der den Anweisungen in diesem Thema folgt. Sie können einen technischen Experten in Ihrer Organisation fragen oder sich an das [Professional Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) wenden.
 
 ## Aktualisierung von Tabellenbeziehungen und Schlüsseltypen {#refresher}
 
@@ -79,7 +79,7 @@ Jetzt können Sie den Pfad erstellen.
 
 * **[!DNL Commerce Intelligence]kann keine Primär-/Fremdschlüsselbeziehungen erraten**. Sie möchten keine falschen Daten in Ihr Konto einschleusen. Daher müssen Pfade manuell erstellt werden.
 
-* **Derzeit können Pfade nur zwischen zwei verschiedenen Tabellen angegeben werden**. Enthält die Logik, die Sie wiederherstellen möchten, mehr als zwei Tabellen? Es kann dann sinnvoll sein, (1) die Spalten zuerst mit einer Zwischentabelle und dann mit der Tabelle „Endziel“ zu verbinden, oder (2) sich mit dem [Professional Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) beraten, um den besten Ansatz für Ihre Ziele zu finden.
+* **Derzeit können Pfade nur zwischen zwei verschiedenen Tabellen angegeben werden**. Enthält die Logik, die Sie wiederherstellen möchten, mehr als zwei Tabellen? Es kann dann sinnvoll sein, (1) die Spalten zuerst mit einer Zwischentabelle und dann mit der Tabelle „Endziel“ zu verbinden, oder (2) sich mit dem [Professional Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) beraten, um den besten Ansatz für Ihre Ziele zu finden.
 
 * **Eine Spalte kann jeweils nur die Fremdschlüsselreferenz für einen Pfad sein**. Wenn `order_items.order_id` beispielsweise auf `orders.id` verweist, kann `order_items.order_id` auf nichts anderes verweisen.
 

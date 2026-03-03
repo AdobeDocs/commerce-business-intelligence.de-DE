@@ -25,6 +25,6 @@ In bestimmten Fällen können Sie sich entscheiden, die Datentabelle zu ändern,
 
    ![Dropdown-Liste zur Tabellenauswahl mit verfügbaren Tabellen](../../assets/change-metrics-2.png)
 
-1. Wenn in der neuen Tabelle keine entsprechende Spalte vorhanden ist, können Sie diese entweder **in Ihrer Datentabelle erstellen** oder [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html) wenn es sich um eine von [!DNL Commerce Intelligence] erstellte Berechnungsspalte oder Dimension handelt. Sie können auch **Dimension aus der Metrik löschen**. Um eine nicht mehr benötigte Dimension zu löschen, gehen Sie einfach zurück zum Editor der Metrik und wählen Sie unter `Dimensions` aus, welche Dimensionen gelöscht werden sollen.
+1. Wenn in der neuen Tabelle keine entsprechende Spalte vorhanden ist, können Sie diese entweder **in Ihrer Datentabelle erstellen** oder [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) wenn es sich um eine von [!DNL Commerce Intelligence] erstellte Berechnungsspalte oder Dimension handelt. Sie können auch **Dimension aus der Metrik löschen**. Um eine nicht mehr benötigte Dimension zu löschen, gehen Sie einfach zurück zum Editor der Metrik und wählen Sie unter `Dimensions` aus, welche Dimensionen gelöscht werden sollen.
 
    ![Dropdown-Menü für die operative Spaltenauswahl](../../assets/change-metrics-3.png)
