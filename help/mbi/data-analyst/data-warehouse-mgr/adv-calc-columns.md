@@ -4,9 +4,15 @@ description: Lernen Sie die Grundlagen für die meisten Anwendungsfälle von Spa
 exl-id: 9871fa19-95b3-46e4-ae2d-bd7c524d12db
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/X0eHrn1HpOnwDENUnnBphaBBJxfZCymDeySTznBipMU
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: 930
 ht-degree: 2%
 
 ---
@@ -161,10 +167,10 @@ Um diesen Typ von berechneter Spalte zu erstellen, müssen Sie Folgendes wissen:
 
 Keine Sorge. Nur weil er hier nicht aufgeführt ist, heißt das noch lange nicht, dass er nicht möglich ist. Das Adobe-Team der Data Warehouse-Analysten kann Ihnen dabei helfen.
 
-Um eine neue berechnete Spalte zu definieren[&#x200B; reichen Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), in dem Sie genau angeben, was Sie erstellen möchten.
+Um eine neue berechnete Spalte zu definieren[ reichen Sie ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), in dem Sie genau angeben, was Sie erstellen möchten.
 
 ## Verwandte Dokumentation
 
 * [Berechnete Spalten erstellen](../data-warehouse-mgr/creating-calculated-columns.md)
 * [Berechnete Spaltentypen](../data-warehouse-mgr/calc-column-types.md)
-* [&#x200B; [!DNL Google ECommerce]  mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [ [!DNL Google ECommerce]  mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)

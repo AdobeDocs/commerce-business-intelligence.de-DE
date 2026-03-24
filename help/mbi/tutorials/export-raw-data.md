@@ -4,16 +4,22 @@ description: Erfahren Sie, wie Sie Datensätze aus Ihrer  [!DNL Commerce Intelli
 exl-id: 26decdaf-2b2c-4ca2-b3d5-0386892662e8
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/8n0DUwkiI1BVF5612vCd4jFWx7jwWlfOHg2K3hgWkco
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: 491
 ht-degree: 0%
 
 ---
 
 # Exportieren von Rohdaten
 
-Mithilfe von Rohdatenexporten können Sie Datensätze aus Ihrer Data Warehouse exportieren, um einen genaueren Überblick über die Funktionen Ihres Dashboards zu erhalten. Darüber hinaus können Rohdatenexporte Ihnen dabei helfen, [Datendiskrepanzen zu identifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=de).
+Mithilfe von Rohdatenexporten können Sie Datensätze aus Ihrer Data Warehouse exportieren, um einen genaueren Überblick über die Funktionen Ihres Dashboards zu erhalten. Darüber hinaus können Rohdatenexporte Ihnen dabei helfen, [Datendiskrepanzen zu identifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html).
 
 Rohdatenexporte bieten Zugriff auf zusätzliche Spalten und Dimensionen, die durch De-Normalisierung und Voraggregation relevanter Metriken generiert wurden. `User's first order date` ist beispielsweise eine Dimension, die Sie für jeden Benutzer in [!DNL Commerce Intelligence] exportieren können, während sie möglicherweise nicht in Ihrer Datenbank verfügbar ist.
 
@@ -34,7 +40,7 @@ Es gibt zwei Möglichkeiten, Rohdaten in [!DNL Commerce Intelligence] zu exporti
 
 Wenn Sie die Tabelle aus [!UICONTROL Manage Data] Registerkarte exportieren möchten, benötigen Sie [Admin](../administrator/user-management/user-management.md)-Berechtigungen.
 
-1. Klicken Sie **[!UICONTROL Manage Data** > **&#x200B; Daten exportieren &#x200B;**> **Rohdatenexport]**.
+1. Klicken Sie **[!UICONTROL Manage Data** > ** Daten exportieren **> **Rohdatenexport]**.
 1. Es wird eine `Export List` der kürzlich erstellten Datenexporte angezeigt, sofern vorhanden. Klicken Sie auf **[!UICONTROL Add Export]** , um einen Export zu erstellen.
 1. Das Dialogfeld `New Raw Data Export` wird angezeigt. Hier können Sie Ihren Export anpassen, indem Sie Spalten und Filter auswählen oder die Auswahl aufheben:
 

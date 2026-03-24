@@ -4,9 +4,15 @@ description: Erfahren Sie, wie Sie Google Analytics-Kanäle mithilfe von Akquise
 exl-id: e7248fe4-94db-4cdf-8f58-1f65061a207d
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/5UBZqrRg-eiDLvcGe93qEX5KQKWc63eTQOLQ9pnprkI
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: 688
 ht-degree: 0%
 
 ---
@@ -46,7 +52,7 @@ Da Sie nun wissen, dass Kanäle nur noch Kombinationen aus Quellen und Medien si
 
 1. **Integration [!DNL Google ECommerce]aktivieren**
 
-   [Wenn aktiviert](../importing-data/integrations/google-ecommerce.md), stellen Sie sicher, [&#x200B; &#x200B;](tour-dwm.md#syncing) die Felder **medium** und **source** in Ihrer Data Warehouse zu synchronisieren. Nach Abschluss dieses Vorgangs werden Medium- und Quellakquisitionsdaten in Ihre Data Warehouse eingebracht.
+   [Wenn aktiviert](../importing-data/integrations/google-ecommerce.md), stellen Sie sicher, [ ](tour-dwm.md#syncing) die Felder **medium** und **source** in Ihrer Data Warehouse zu synchronisieren. Nach Abschluss dieses Vorgangs werden Medium- und Quellakquisitionsdaten in Ihre Data Warehouse eingebracht.
 
 1. **Laden Sie eine Zuordnung der Kanalgruppierungen von Google hoch**
 
@@ -60,7 +66,7 @@ Da Sie nun wissen, dass Kanäle nur noch Kombinationen aus Quellen und Medien si
 
 1. **Beziehung zwischen Zuordnungen und [!DNL Google ECommerce]-Upload herstellen**
 
-   Um eine Beziehung zwischen dem [!DNL Google ECommerce] und der Zuordnungstabelle herzustellen, [&#x200B; Sie eine Support-Anfrage &#x200B;](../../guide-overview.md#Submitting-a-Support-Ticket) Ihr Datenanalyst-Team und verweisen Sie auf dieses Thema. Der Analyst erstellt eine neue berechnete Spalte mit dem Namen **Channel** in der ECommerce-Tabelle. **Nach einem vollständigen** kann diese Spalte in einer `Filter` oder `Group by` verwendet werden.
+   Um eine Beziehung zwischen dem [!DNL Google ECommerce] und der Zuordnungstabelle herzustellen, [ Sie eine Support-Anfrage ](../../guide-overview.md#Submitting-a-Support-Ticket) Ihr Datenanalyst-Team und verweisen Sie auf dieses Thema. Der Analyst erstellt eine neue berechnete Spalte mit dem Namen **Channel** in der ECommerce-Tabelle. **Nach einem vollständigen** kann diese Spalte in einer `Filter` oder `Group by` verwendet werden.
 
 Sie haben jetzt [!DNL Google Analytics Channel] Gruppierungen in Ihrer Data Warehouse, was bedeutet, dass Sie Ihre Daten aus einer neuen Perspektive analysieren können:
 

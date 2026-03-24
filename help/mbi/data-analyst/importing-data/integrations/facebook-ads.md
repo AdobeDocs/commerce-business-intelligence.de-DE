@@ -4,9 +4,15 @@ description: Erfahren Sie, wie Sie Ihre Anzeigenausgabendaten analysieren und fe
 exl-id: 219a868b-f17c-4299-9e29-94db9156c9b6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/6TR559YyeTHT3KWl3oA4Bdnpr-HCowTXTTkvmP0I0tg
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: 313
 ht-degree: 0%
 
 ---
@@ -19,12 +25,12 @@ ht-degree: 0%
 
 ![Facebook Ads-Logo](../../../assets/facebook-ads-logo.png)
 
-Sie haben recherchiert, Ihre Anzeigen erstellt und Ihre Kampagne auf [!DNL Facebook] gestartet. Jetzt ist es an der Zeit, Ihre Anzeigenausgabendaten zu analysieren und festzustellen, ob Ihr Geld effektiv ausgegeben wird. Mit Ihren Werbeausgabendaten können Sie [Kampagnen-ROI messen, indem Sie Ihre Werbekosten und den Kundenlebenszeitwert (Customer Lifetime Value, CLV) der &#x200B;](../../../data-analyst/analysis/roi-ad-camp.md) Ihrer Kampagnen erworbenen Benutzer zusammenfassen.
+Sie haben recherchiert, Ihre Anzeigen erstellt und Ihre Kampagne auf [!DNL Facebook] gestartet. Jetzt ist es an der Zeit, Ihre Anzeigenausgabendaten zu analysieren und festzustellen, ob Ihr Geld effektiv ausgegeben wird. Mit Ihren Werbeausgabendaten können Sie [Kampagnen-ROI messen, indem Sie Ihre Werbekosten und den Kundenlebenszeitwert (Customer Lifetime Value, CLV) der ](../../../data-analyst/analysis/roi-ad-camp.md) Ihrer Kampagnen erworbenen Benutzer zusammenfassen.
 
 Die Verbindung Ihrer [!DNL Facebook Ad] mit [!DNL Commerce Intelligence] ist ein einfacher dreistufiger Prozess:
 
-1. [&#x200B; [!DNL Facebook]  als Datenquelle hinzufügen in [!DNL Commerce Intelligence]](#stepone)
-1. [&#x200B; [!DNL Commerce Intelligence]  Zugriff auf Ihre  [!DNL Facebook Ads]  zulassen](#steptwo)
+1. [ [!DNL Facebook]  als Datenquelle hinzufügen in [!DNL Commerce Intelligence]](#stepone)
+1. [ [!DNL Commerce Intelligence]  Zugriff auf Ihre  [!DNL Facebook Ads]  zulassen](#steptwo)
 1. [Select [!DNL Facebook Ads] Accounts für Datenabruf](#stepthree)
 
 ## Hinzufügen von [!DNL Facebook] als Datenquelle in [!DNL Commerce Intelligence] {#stepone}
@@ -58,8 +64,8 @@ Vergewissern Sie sich, dass Sie [!DNL Facebook] Kampagnen in [!DNL Google Analyt
 
 ## verwandt
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
-* [Konto  [!DNL Google Adwords] &#x200B;](../integrations/google-ecommerce.md)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Konto  [!DNL Google Adwords] ](../integrations/google-ecommerce.md)
 * [Verfolgen Sie die Quelle der Bestellungsreferenz über [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Verfolgen Sie die Quelle der Benutzerreferenz in Ihrer Datenbank](../../analysis/google-track-user-acq.md)
 * [Benutzergeräte-, Browser- und Betriebssystemdaten in der Datenbank tracken](../../analysis/track-usr-dev-browser.md)

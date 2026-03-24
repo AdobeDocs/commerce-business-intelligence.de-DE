@@ -4,9 +4,15 @@ description: Erfahren Sie, wie Sie den Kampagnen-ROI messen, indem Sie Ihre Werb
 exl-id: db99f817-2a2e-4194-9dd2-ec2d6b27a118
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/mZ8R2vPyFy8pGpYi4KhqocVnP-OlgMPGU3KJ4C9vsTo
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: 322
 ht-degree: 0%
 
 ---
@@ -19,7 +25,7 @@ ht-degree: 0%
 
 ![Google AdWords-Logo](../../../assets/Google_Adwords_logo.png)
 
-Sie haben recherchiert, Ihre Anzeigen erstellt und Ihre [!DNL Google] gestartet. Jetzt ist es an der Zeit, Ihre Anzeigenausgabendaten zu analysieren und festzustellen, ob Ihr Geld effektiv ausgegeben wird. Mit Ihren Werbeausgabendaten können Sie [Kampagnen-ROI messen, indem Sie Ihre Werbekosten und den Kundenlebenszeitwert (Customer Lifetime Value, CLV) der &#x200B;](../../analysis/roi-ad-camp.md) Ihrer Kampagnen erworbenen Benutzer zusammenfassen.
+Sie haben recherchiert, Ihre Anzeigen erstellt und Ihre [!DNL Google] gestartet. Jetzt ist es an der Zeit, Ihre Anzeigenausgabendaten zu analysieren und festzustellen, ob Ihr Geld effektiv ausgegeben wird. Mit Ihren Werbeausgabendaten können Sie [Kampagnen-ROI messen, indem Sie Ihre Werbekosten und den Kundenlebenszeitwert (Customer Lifetime Value, CLV) der ](../../analysis/roi-ad-camp.md) Ihrer Kampagnen erworbenen Benutzer zusammenfassen.
 
 Beginnen Sie, indem Sie Ihre [!DNL Google Adwords] Anmeldedaten in [!DNL Commerce Intelligence] eingeben.
 
@@ -55,7 +61,7 @@ Möglicherweise sind mehrere Websites mit einem einzigen [!DNL Google Analytics]
 
 ## verwandt
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
 * [Verfolgen Sie die Quelle der Bestellungsreferenz über [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Verfolgen Sie die Quelle der Benutzerreferenz in Ihrer Datenbank](../../analysis/google-track-user-acq.md)
 * [Entdecken Sie Ihre wertvollsten Akquisitionsquellen und -kanäle](../../analysis/most-value-source-channel.md)

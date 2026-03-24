@@ -1,23 +1,29 @@
 ---
 title: Enterprise_RMA_ITEM_ENTITY-Tabelle
-description: Erfahren Sie, wie Sie Informationen zu einem bestimmten Element aus einer angeforderten Rücksendung analysieren können.
+description: Learn how to analyze information about a specific item from a requested return.
 exl-id: aa71cb3f-3e0b-4b6b-b4cc-dad103f79c51
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/jBMtEluq3XNIzItebuvDQ43PAuW6mAsyG7RkHn8URJ4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: 269
 ht-degree: 0%
 
 ---
 
-# enterprise_rma_item_entity-Tabelle
+# enterprise_rma_item_entity Table
 
-Jede Zeile in der `enterprise_rma_item_entity` (in Commerce 2.x häufig als `magento_rma_item_entity` bezeichnet, der Name kann jedoch angepasst werden) enthält Informationen zu einem bestimmten Element aus einer angeforderten Rückgabe.
+Each row in the `enterprise_rma_item_entity` table (often called `magento_rma_item_entity` in Commerce 2.x, but the name can be customized) contains information about a specific item from a requested return.
 
 >[!NOTE]
 >
->Diese Tabelle wird nur dann standardmäßig mit Ihrem Commerce-Konto geliefert, wenn Sie `Enterprise Edition` oder `Enterprise Cloud Edition` sind.
+>This table only comes standard with your Commerce account if you are an `Enterprise Edition` or `Enterprise Cloud Edition` customer.
 
 ## Gemeinsame native Spalten
 
@@ -26,9 +32,9 @@ Jede Zeile in der `enterprise_rma_item_entity` (in Commerce 2.x häufig als `mag
 | `entity\_id` | Eindeutige Kennung für die Tabelle. Jedes `entity\_id` stellt ein Element dar, das zur Rücksendung angefordert wurde. |
 | `rma\_entity\_id` | Fremdschlüssel, der der `enterprise\_rma`-Tabelle zugeordnet ist. |
 | `status` | Der Status der Rückgabe des Elements. Die Werte umfassen u. a. „Received“, „Pending“, „Authorized“. Die Werte in diesem Status stimmen möglicherweise nicht mit dem Wert des Gesamtrückgabestatus überein. |
-| `qty\_requested` | Die Menge, die der Kunde für die Rücksendung anfordert. |
-| `qty\_approved` | Die für die Rücksendung genehmigte Menge. |
-| `qty\_returned` | Die zurückgegebene Menge. |
+| `qty\_requested` | The quantity the customer requests for return. |
+| `qty\_approved` | The quantity approved for return. |
+| `qty\_returned` | The quantity returned. |
 | `order\_item\_id` | Fremdschlüssel, der der `sales\_flat\_order\_item`-Tabelle zugeordnet ist. |
 | `product\_sku` | Die SKU wird zurückgegeben. |
 
@@ -40,7 +46,7 @@ Jede Zeile in der `enterprise_rma_item_entity` (in Commerce 2.x häufig als `mag
 |---|---|
 | `Return date\_requested` | Dies ist das Datum, an dem der Kunde die Rücksendung angefordert hat. |
 | `Item price` | Der Preis des Artikels. |
-| `Return item's total value (qty\_returned * price)` | Dies ist der gesamte Geldwert der zurückgegebenen Artikel. Dies wird zur Berechnung des Gesamtrenditebetrags für die `enterprise\_rma` verwendet. |
+| `Return item's total value (qty\_returned * price)` | Dies ist der gesamte Geldwert der zurückgegebenen Artikel. This is used to calculate the total return amount on the `enterprise\_rma` table. |
 
 {style="table-layout:auto"}
 
@@ -57,13 +63,13 @@ Jede Zeile in der `enterprise_rma_item_entity` (in Commerce 2.x häufig als `mag
 
 `enterprise_rma`
 
-* Erstellen Sie verknüpfte Spalten wie `Return date\_requested` in der `enterprise_rma_item_entity` mithilfe des folgenden Joins:
+* Create joined columns such as `Return date\_requested` on the `enterprise_rma_item_entity` table via the following join:
 * Commerce 1.x: `enterprise_rma_item_entity.rma_entity_id ` (viele) => `enterprise_rma.entity_id` (eine)
 * Commerce 2.x: `magento_rma_item_entity.rma_entity_id ` (viele) => `magento_rma.entity_id` (eine)
 
 `sales_flat_order_item`
 
-* Erstellen von verbundenen Spalten auf dem  Tabelle über folgenden Join `enterprise_rma_item_entity`:
+* Create joined columns on the  `enterprise_rma_item_entity` table via the following join:
 
 * Commerce 1.x: `enterprise_rma_item_entity.order_item_id ` (viele) => `sales_flat_order_item.item_id` (eine)
 * Commerce 2.x: `magento_rma_item_entity.order_item_id ` (viele) => `sales_order_item.item_id` (eine)

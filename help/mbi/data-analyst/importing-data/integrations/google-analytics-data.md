@@ -4,9 +4,15 @@ description: Erfahren Sie, wie Sie mit Ihren Google Analytics-Metriken interagie
 exl-id: db9fdaaa-47a9-4095-b1f8-9b6c74c25b7c
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/tUS-KM-3gcLLLeCY4tqS6pUDMeCvLkrFSKp-U-JT61E
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: 269
 ht-degree: 0%
 
 ---
@@ -23,11 +29,11 @@ Die [!DNL Google Analytics]-Integration ist *live* - dies bedeutet, dass die `Re
 >
 >Am 1. Juli 2023 werden die Daten in den Standardeigenschaften von Universal Analytics ([!DNL Google Analytics] 3) nicht mehr verarbeitet. Sie können Ihre Universal Analytics-Berichte für einen Zeitraum nach dem 1. Juli 2023 anzeigen. Neue Daten fließen jedoch nur in [!DNL Google Analytics] 4-Eigenschaften.
 
-[!DNL Google Analytics] Integrationen in [!DNL Commerce Intelligence] verwenden die [!DNL Google Analytics][&#x200B; Core-Reporting](https://developers.google.com/analytics/devguides/reporting/core/v3/)API) und unterstützen die folgenden Metriken und Dimensionen.
+[!DNL Google Analytics] Integrationen in [!DNL Commerce Intelligence] verwenden die [!DNL Google Analytics][ Core-Reporting](https://developers.google.com/analytics/devguides/reporting/core/v3/)API) und unterstützen die folgenden Metriken und Dimensionen.
 
 >[!NOTE]
 >
->Um unerwartete oder unsinnige Ergebnisse zu vermeiden, stellen Sie sicher, dass alle verwendeten Dimensionen mit einer oder mehreren Metriken kompatibel sind, die Sie im `Report Builder` verwenden. Sie können ([) &#x200B;](https://ga-dev-tools.google/dimensions-metrics-explorer/).
+>Um unerwartete oder unsinnige Ergebnisse zu vermeiden, stellen Sie sicher, dass alle verwendeten Dimensionen mit einer oder mehreren Metriken kompatibel sind, die Sie im `Report Builder` verwenden. Sie können ([) ](https://ga-dev-tools.google/dimensions-metrics-explorer/).
 
 ## Unterstützte Metriken
 
@@ -156,7 +162,7 @@ Die [!DNL Google Analytics]-Integration ist *live* - dies bedeutet, dass die `Re
 
 +++Unterstützte Metriken und Dimensionen (Google Analytics 4)
 
-[!DNL Google Analytics] Integrationen in verwenden [!DNL Commerce Intelligence] die [!DNL Google Analytics]Data [&#x200B; v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
+[!DNL Google Analytics] Integrationen in verwenden [!DNL Commerce Intelligence] die [!DNL Google Analytics]Data [ v1 (GA4)](https://developers.google.com/analytics/devguides/reporting/data/v1).
 
 >[!NOTE]
 >

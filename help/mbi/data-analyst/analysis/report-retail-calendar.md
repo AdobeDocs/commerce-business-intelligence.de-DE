@@ -4,16 +4,22 @@ description: Erfahren Sie, wie Sie die Struktur einrichten, um einen 4-5-4-Einze
 exl-id: 3754151c-4b0f-4238-87f2-134b8409e32b
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/fXws4NU5bBiAnWU5F9B7mNPts3d-e5D41zSUCpJDomE
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: 651
 ht-degree: 0%
 
 ---
 
 # Reporting über einen Einzelhandelskalender
 
-Dieses Thema zeigt, wie Sie die Struktur einrichten, um einen [4-5-4 Einzelhandelskalender &#x200B;](https://nrf.com/resources/4-5-4-calendar) Ihrem [!DNL Adobe Commerce Intelligence]-Konto zu verwenden. Der Visual Report Builder bietet unglaublich flexible Zeitbereiche, Intervalle und unabhängige Einstellungen. Alle diese Einstellungen funktionieren jedoch mit dem herkömmlichen monatlichen Kalender.
+Dieses Thema zeigt, wie Sie die Struktur einrichten, um einen [4-5-4 Einzelhandelskalender ](https://nrf.com/resources/4-5-4-calendar) Ihrem [!DNL Adobe Commerce Intelligence]-Konto zu verwenden. Der Visual Report Builder bietet unglaublich flexible Zeitbereiche, Intervalle und unabhängige Einstellungen. Alle diese Einstellungen funktionieren jedoch mit dem herkömmlichen monatlichen Kalender.
 
 Da viele Kunden ihren Kalender so ändern, dass er Einzelhandels- oder Buchhaltungstermine verwendet, veranschaulichen die folgenden Schritte, wie Sie mit Ihren Daten arbeiten und Berichte mit Einzelhandelsterminen erstellen. Obwohl die folgenden Anweisungen auf den Einzelhandelskalender 4-5-4 verweisen, können Sie ihn für jeden spezifischen Kalender ändern, den Ihr Team verwendet, sei es finanziell oder nur in einem benutzerdefinierten Zeitrahmen.
 
@@ -23,7 +29,7 @@ Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv
 
 ## Erste Schritte
 
-Sie [&#x200B; eine &#x200B;](../../assets/454-calendar.csv) Version `.csv` 4-5-4 Einzelhandelskalenders für die Einzelhandelsjahre 2014 bis 2017 herunterladen. Möglicherweise müssen Sie diese Datei an Ihren internen Einzelhandelskalender anpassen und den Datumsbereich erweitern, um Ihren historischen und aktuellen Zeitrahmen zu unterstützen. Verwenden Sie nach dem Herunterladen der Datei den Datei-Uploader, um eine Einzelhandelskalendertabelle in Ihrer [!DNL Commerce Intelligence] Data Warehouse zu erstellen. Wenn Sie eine unveränderte Version des Einzelhandelskalenders 4-5-4 verwenden, stellen Sie sicher, dass die Struktur und die Datentypen der Felder in dieser Tabelle den folgenden Werten entsprechen:
+Sie [ eine ](../../assets/454-calendar.csv) Version `.csv` 4-5-4 Einzelhandelskalenders für die Einzelhandelsjahre 2014 bis 2017 herunterladen. Möglicherweise müssen Sie diese Datei an Ihren internen Einzelhandelskalender anpassen und den Datumsbereich erweitern, um Ihren historischen und aktuellen Zeitrahmen zu unterstützen. Verwenden Sie nach dem Herunterladen der Datei den Datei-Uploader, um eine Einzelhandelskalendertabelle in Ihrer [!DNL Commerce Intelligence] Data Warehouse zu erstellen. Wenn Sie eine unveränderte Version des Einzelhandelskalenders 4-5-4 verwenden, stellen Sie sicher, dass die Struktur und die Datentypen der Felder in dieser Tabelle den folgenden Werten entsprechen:
 
 | Spaltenname | Spaltendatentyp | Primärer Schlüssel |
 | --- | --- | --- |
@@ -50,7 +56,7 @@ Sie [&#x200B; eine &#x200B;](../../assets/454-calendar.csv) Version `.csv` 4-5-4
    * **Aktuelles Datum**
       * [!UICONTROL Column type]: `Same table > Calculation`
       * [!UICONTROL Inputs]: `Date Retail`
-      * &#x200B;
+      * 
         [!UICONTROL Datentyp]: `Datetime`
       * [!UICONTROL Calculation]: `case when A is null then null else to\_char(now(), 'YYYY-MM-DD 00:00:00') end`
 
@@ -62,7 +68,7 @@ Sie [&#x200B; eine &#x200B;](../../assets/454-calendar.csv) Version `.csv` 4-5-4
       * [!UICONTROL Column type]: E`vent Counter`
       * [!UICONTROL Local Key]: `Current date`
       * [!UICONTROL Remote Key]: `Retail calendar.Date Retail`
-      * &#x200B;
+      * 
         [!UICONTROL Operation]: `Max`
       * [!UICONTROL Operation value]: `Year Retail`
    * **Im aktuellen Einzelhandelsjahr enthalten? (Ja/Nein)**
@@ -70,7 +76,7 @@ Sie [&#x200B; eine &#x200B;](../../assets/454-calendar.csv) Version `.csv` 4-5-4
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
+      * 
         [!UICONTROL Datentyp]: `String`
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when A = B then 'Yes' else 'No' end`
    * **Im vorigen Einzelhandelsjahr enthalten? (Ja/Nein)**
@@ -78,7 +84,7 @@ Sie [&#x200B; eine &#x200B;](../../assets/454-calendar.csv) Version `.csv` 4-5-4
       * [!UICONTROL Inputs]:
          * `A` - `Year Retail`
          * `B` - `Current retail year`
-      * &#x200B;
+      * 
         [!UICONTROL Datentyp]: String
       * [!UICONTROL Calculation]: `case when A is null or B is null then null when (A = (B-1)) then 'Yes' else 'No' end`
 
@@ -139,62 +145,62 @@ Hinweis: Für diese Analyse sind keine neuen Metriken erforderlich. Achten Sie j
       * [!UICONTROL Filter]:
          * `Created\_at (retail Year) = 2015`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail week)
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Line`
       * `multiple Y-axes` ausschalten
 
 * **Einzelhandelskalender - Übersicht (aktuelles Einzelhandelsjahr nach Monat)**
    * `A`: `Revenue`
-      * &#x200B;
-        [!UICONTROL -Metrik]: `Revenue`
+      * 
+        [!UICONTROL-Metrik]: `Revenue`
       * [!UICONTROL Filter]:
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * `B`: `Orders`
       * [!UICONTROL Metric]: `Number of orders`
       * [!UICONTROL Filter]:
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Line`
 
 * **Einzelhandelskalender - Übersicht (vorheriges Einzelhandelsjahr nach Monat)**
    * `A`: `Revenue`
-      * &#x200B;
-        [!UICONTROL -Metrik]: `Revenue`
+      * 
+        [!UICONTROL-Metrik]: `Revenue`
       * [!UICONTROL Filter]:
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * `B`: `Orders`
       * [!UICONTROL Metric]: Anzahl der Bestellungen
       * [!UICONTROL Filter]:
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * `C`: `Avg order value`
       * [!UICONTROL Metric]: `Avg order value`
       * [!UICONTROL Filter]:
-         * &#x200B;
+         * 
            [!UICONTROL Include current retail year?]: `Yes`
    * [!UICONTROL Time period]: `All time`
-   * &#x200B;
+   * 
      [!UICONTROL Interval]: `None`
-   * &#x200B;
+   * 
      [!UICONTROL Group by]: `Created\_at` (retail month)
-   * &#x200B;
+   * 
      [!UICONTROL Chart type]: `Line`
 
 ## Nächste Schritte

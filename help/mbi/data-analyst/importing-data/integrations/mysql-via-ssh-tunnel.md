@@ -4,9 +4,15 @@ description: Erfahren Sie, wie Sie eine Verbindung  [!DNL MySQL]  SSH-Tunnel her
 exl-id: 6b691a6a-9542-4e47-9b1d-d6d3c3dac357
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/WhcwNz65oubtSKnVGeoHfbEVbPvo1fq-RvpAcP96NEc
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: 615
 ht-degree: 0%
 
 ---
@@ -21,7 +27,7 @@ ht-degree: 0%
 
 ## SPRINGEN ZU
 
-* [[!DNL MySQL] über &#x200B;](../integrations/mysql-via-a-direct-connection.md)
+* [[!DNL MySQL] über ](../integrations/mysql-via-a-direct-connection.md)
 * [[!DNL MySQL] über [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 Um Ihre [!DNL MySQL] Datenbank über eine [!DNL Commerce Intelligence] mit `SSH tunnel` zu verbinden, müssen Sie einige Schritte ausführen:
@@ -54,7 +60,7 @@ Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firew
 
 ## Erstellen eines [!DNL Linux] Benutzers für [!DNL Commerce Intelligence] {#linux}
 
-Dabei kann es sich um einen Produktions- oder Sekundärrechner handeln, sofern er Echtzeitdaten (oder häufig aktualisierte Daten) enthält. Sie können [diesen Benutzer &#x200B;](../../../administrator/account-management/restrict-db-access.md) beliebiger Weise einschränken, solange er das Recht behält, eine Verbindung zum `MySQL`-Server herzustellen.
+Dabei kann es sich um einen Produktions- oder Sekundärrechner handeln, sofern er Echtzeitdaten (oder häufig aktualisierte Daten) enthält. Sie können [diesen Benutzer ](../../../administrator/account-management/restrict-db-access.md) beliebiger Weise einschränken, solange er das Recht behält, eine Verbindung zum `MySQL`-Server herzustellen.
 
 1. Um den neuen Benutzer hinzuzufügen, führen Sie die folgenden Befehle als Stammordner auf Ihrem [!DNL Linux] aus:
 
@@ -120,4 +126,4 @@ Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um die Einr
 
 ## Verwandt:
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
