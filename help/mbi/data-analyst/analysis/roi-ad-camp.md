@@ -5,11 +5,21 @@ exl-id: 4f2bf408-eeaf-4dbf-b62e-89426734640a
 role: Admin, User
 feature: Data Warehouse Manager, Reports, Campaigns
 TQID: https://experienceleague.adobe.com/teo53W9N30xpRRE1nUupBLKJnl1kUK4zt-roFGiulGU
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 1253
@@ -19,14 +29,14 @@ ht-degree: 0%
 
 # Advertising-Kampagnen und ROI
 
-Mit [!DNL Adobe Commerce Intelligence] können Sie Werbungskosten[ und Umsatzdaten einfach aus Ihrer ](../../data-analyst/importing-data/integrations/google-adwords.md) zusammenführen. Auf diese Weise können Sie ermitteln, welche Kampagnen den höchsten ROI aufweisen. In diesem Thema werden einige verschiedene Methoden zur Bewertung der Kampagnenleistung untersucht.
+Mit [!DNL Adobe Commerce Intelligence] können Sie Werbungskosten[&#x200B; und Umsatzdaten einfach aus Ihrer &#x200B;](../../data-analyst/importing-data/integrations/google-adwords.md) zusammenführen. Auf diese Weise können Sie ermitteln, welche Kampagnen den höchsten ROI aufweisen. In diesem Thema werden einige verschiedene Methoden zur Bewertung der Kampagnenleistung untersucht.
 
 ## Voraussetzungen
 
 * Importieren Sie Ihre Werbungskostendaten:
    * [Verbinden Sie Ihre [!DNL Google AdWords] mit [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): Dadurch werden Ihre [!DNL Adwords] in [!DNL Commerce Intelligence] synchronisiert.
    * [Andere Werbungskostendaten hochladen](../importing-data/connecting-data/import-offline-ad-data.md): Dies wird für Kanäle ohne direkten Connector für [!DNL Commerce Intelligence] empfohlen
-   * Wenn Sie Kostendaten aus mehreren Quellen importieren, können [ die ](../../best-practices/consolidating-your-tables.md) in [!DNL Commerce Intelligence] (konsolidieren). Senden [ einfach ein Support-Ticket](../../guide-overview.md#Submitting-a-Support-Ticket).
+   * Wenn Sie Kostendaten aus mehreren Quellen importieren, können [&#x200B; die &#x200B;](../../best-practices/consolidating-your-tables.md) in [!DNL Commerce Intelligence] (konsolidieren). Senden [&#x200B; einfach ein Support-Ticket](../../guide-overview.md#Submitting-a-Support-Ticket).
 * [Tracking von Kanaldaten zur Benutzerakquise](../analysis/google-track-user-acq.md)
 
 ## Kampagnen zur Benutzerakquise
@@ -37,7 +47,7 @@ Kampagnen, die auf die Benutzerakquise abzielen, können aus vielen Perspektiven
 1. Konversionsrate von der Registrierung bis zum Kauf von Kampagnen
 1. Der ROI von Kampagnen auf der Basis des durchschnittlichen Lebenszeitwerts der Benutzenden (LTV)
 
-Die oben unter (1) und (2) genannten Analysen werden in einem separaten Tutorial zum [ Ihrer Top-Marketing-Kanäle ](../analysis/most-value-source-channel.md). Hier können Sie Analysen (3) zur Messung des Kampagnen-ROI im Zeitverlauf durchführen. Dies beantwortet die Frage, ob die durch eine bestimmte Kampagne erzielten Benutzerinnen und Benutzer über die gesamte Lebensdauer einen Umsatz generierten, der die Anschaffungskosten deckte.
+Die oben unter (1) und (2) genannten Analysen werden in einem separaten Tutorial zum [&#x200B; Ihrer Top-Marketing-Kanäle &#x200B;](../analysis/most-value-source-channel.md). Hier können Sie Analysen (3) zur Messung des Kampagnen-ROI im Zeitverlauf durchführen. Dies beantwortet die Frage, ob die durch eine bestimmte Kampagne erzielten Benutzerinnen und Benutzer über die gesamte Lebensdauer einen Umsatz generierten, der die Anschaffungskosten deckte.
 
 >[!NOTE]
 >
@@ -105,7 +115,7 @@ Führen Sie produktspezifische Anzeigen durch? Wenn ja, können Sie den ROI dies
 >
 >In diesem Beispiel wird davon ausgegangen, dass alle Kampagnenkosten ausschließlich zur Generierung von Käufen bestimmter Produkte verwendet wurden. Unter der Annahme, dass alle Kosten für die Generierung von Käufen aufgewendet wurden, entfällt der resultierende ROI auf das Worst-Case-Szenario (höchste Kosten pro Kauf). Sie können sicher sein, dass Ihr tatsächlicher ROI höher ist als diese Berechnung. Beispiel: Angenommen, Sie haben 20 USD für eine Kampagne ausgegeben, die 10 neue Benutzende und 10 Käufe generiert hat, dann betragen die tatsächlichen Kosten pro Kauf 1 USD. Unter der Annahme, dass alle Kosten für die Akquise neuer Benutzer aufgewendet wurden, betragen die Kosten pro Kauf 2 USD.
 
-Bevor Sie beginnen, [ Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um die folgenden Dimensionen mit Ihrer Zeileneintragstabelle zu verbinden (`sales\_flat\_order\_item, order\_item`):
+Bevor Sie beginnen, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um die folgenden Dimensionen mit Ihrer Zeileneintragstabelle zu verbinden (`sales\_flat\_order\_item, order\_item`):
 
 * Quelle der Bestellung (wenn Sie nur die Empfehlungsquelle auf Benutzerebene verfolgen, dann fügen Sie die Quelle des Benutzers hinzu)
 * Kampagne des Auftrags (wenn Sie nur die Empfehlungsquelle auf Benutzerebene verfolgen, dann der Kampagne des Benutzers beitreten)
@@ -141,6 +151,6 @@ Bevor Sie beginnen, [ Sie ein Support-Ticket](https://experienceleague.adobe.com
 * [Verfolgen Sie die Quelle der Benutzerreferenz in Ihrer Datenbank](../analysis/google-track-user-acq.md)
 * [Benutzergeräte-, Browser- und Betriebssystemdaten in der Datenbank tracken](../analysis/track-usr-dev-browser.md)
 * [Entdecken Sie Ihre wertvollsten Akquisitionsquellen und -kanäle](../analysis/most-value-source-channel.md)
-* [Konto  [!DNL Google Adwords] ](../importing-data/integrations/google-adwords.md)
+* [Konto  [!DNL Google Adwords] &#x200B;](../importing-data/integrations/google-adwords.md)
 * [Wie funktioniert  [!DNL Google Analytics]  UTM-Attribution?](../analysis/utm-attributes.md)
 * [Fünf Best Practices für UTM-Tagging in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

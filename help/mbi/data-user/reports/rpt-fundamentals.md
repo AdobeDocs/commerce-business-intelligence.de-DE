@@ -5,11 +5,21 @@ exl-id: 94d4db27-0e06-4066-9c03-036b109d2d9b
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/e-QGaopbnpaXeP94RbjiD3SVKUcFutb-37ClyKValk8
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 995
@@ -70,7 +80,7 @@ Diese wird dann verwendet, um Folgendes zu erstellen:
 
 Beide Felder müssen auf Benutzerebene erstellt werden (z. B. in der `user`). Dies ermöglicht eine Normalisierung der Durchschnittsanalyse durch die Benutzer (d. h., der Nenner bei dieser Durchschnittsberechnung ist die Anzahl der Benutzer).
 
-Hier kommt [!DNL Commerce Intelligence] ins Spiel! Sie können Ihre [!DNL Commerce Intelligence] Data Warehouse verwenden, um die oben genannten Spalten zu erstellen. Wenden Sie sich an das Adobe-Analystenteam und nennen Sie uns die spezifische Definition Ihrer neuen Spalten für die Erstellung. Sie können auch den [Spalteneditor“ ](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
+Hier kommt [!DNL Commerce Intelligence] ins Spiel! Sie können Ihre [!DNL Commerce Intelligence] Data Warehouse verwenden, um die oben genannten Spalten zu erstellen. Wenden Sie sich an das Adobe-Analystenteam und nennen Sie uns die spezifische Definition Ihrer neuen Spalten für die Erstellung. Sie können auch den [Spalteneditor“ &#x200B;](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
 Es empfiehlt sich, die Erstellung dieser berechneten Datenfelder in Ihrer Datenbank zu vermeiden, da dies eine unnötige Belastung für Ihre Produktions-Server darstellt.
 
@@ -87,7 +97,7 @@ Und Sie möchten sehen, dass diese Berechnung über die Zeit, oder den Trend, ei
 
 1. Wechseln Sie zu **[!UICONTROL Data]** und wählen Sie die Registerkarte `Metrics` aus.
 1. Klicken Sie auf **[!UICONTROL Add New Metric]** und wählen Sie die `user` aus (in der Sie die Dimensionen oben erstellt haben).
-1. Wählen Sie aus dem Dropdown-Menü `Average` in der Spalte `Time between a customer's registration date and first purchase date``user` in der Tabelle nach `Customer's registration date` sortiert aus.
+1. Wählen Sie aus dem Dropdown-Menü `Average` in der Spalte `Time between a customer's registration date and first purchase date` `user` in der Tabelle nach `Customer's registration date` sortiert aus.
 1. Fügen Sie alle relevanten Filter oder Filtersätze hinzu.
 
 Diese Metrik ist jetzt bereit.

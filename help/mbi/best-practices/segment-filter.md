@@ -5,11 +5,23 @@ exl-id: 66391bce-bdeb-4e9d-8089-1c796e00d91e
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/bfu4JUbmC5QrHIgnTbZ-AW1fLsrGj-TKd-BpEvpjJRk
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 911
@@ -35,7 +47,7 @@ Mithilfe von Benutzersegmenten können Sie besser verstehen, wer Ihre Benutzer s
 * **Alter / Geburtsjahr**: Wie alt sind Ihre Benutzer? Wie alt sind Ihre aktivsten Benutzer? Für eine effektivere Analyse ist es in der Regel sinnvoll, die Werte in Bereiche zu unterteilen.
 * **Geschlecht**: Binden verschiedene Geschlechter unterschiedlich mit Ihrer Website ein?
 * **Adresse**: Woher kommen Ihre User? Sollten Sie Ihre Marketing-Maßnahmen auf eine bestimmte Region konzentrieren? Haben Ihre letzten Werbekampagnen in Ihren Zielregionen wie erwartet funktioniert?
-* **Quelle der Kundenakquise**\: Wissen Sie, von welchem Marketing-Kanal Ihre Benutzer kommen? Haben sie auf eine Anzeige geklickt oder Sie über die Suche gefunden? [Die Segmentierung Ihrer Daten nach ](../data-analyst/analysis/google-track-user-acq.md) ist der erste Schritt zur Optimierung der Neukundengewinnung. Schritt zwei besteht darin, mehr Geld für das auszugeben, was funktioniert, und das zu töten, was nicht funktioniert.
+* **Quelle der Kundenakquise**\: Wissen Sie, von welchem Marketing-Kanal Ihre Benutzer kommen? Haben sie auf eine Anzeige geklickt oder Sie über die Suche gefunden? [Die Segmentierung Ihrer Daten nach &#x200B;](../data-analyst/analysis/google-track-user-acq.md) ist der erste Schritt zur Optimierung der Neukundengewinnung. Schritt zwei besteht darin, mehr Geld für das auszugeben, was funktioniert, und das zu töten, was nicht funktioniert.
 * **Registriergerät**: Haben sich Benutzer über Ihre Mobile App oder Ihre Website registriert? iOS oder Android™? Ist Ihr mobiler Benutzerstamm groß genug, um mehr Ressourcen für die Entwicklung Ihres mobilen Produkts bereitzustellen? Wenn Sie dies noch nicht verfolgen, lesen Sie den Abschnitt [Informationen zum Tracking von Benutzergeräten](../data-analyst/analysis/track-usr-dev-browser.md).
 * **Referenziert von**: Wer sind Ihre Top-Influencer? Wie viele Benutzer wurden von anderen direkt weitergeleitet?
 * **Branche**: Wenn Sie ein B2B-Unternehmen sind, in welchen Branchen arbeiten Ihre Anwender? Welchen Handelsorganisationen ist der Beitritt wert?
@@ -48,7 +60,7 @@ Order- und Ereignissegmente helfen dabei, das Benutzerverhalten und die Interakt
 
 * **[!UICONTROL Billing / Shipping Address]**: Woher kommen die meisten Bestellungen? Gibt es einen Unterschied zwischen Abrechnungs- und Versandadressen?
 * **[!UICONTROL Status]**: Wie viele Ihrer Bestellungen konnten nicht abgeschlossen werden? Wie hoch ist das Verhältnis der ausstehenden Bestellungen in den letzten sieben Tagen?
-* **[!UICONTROL Customer acquisition source]**: Sie können Benutzerakquise-Daten nicht nur auf Benutzerebene verfolgen, sondern [ auch auf Auftrags- oder Ereignisebene ](../data-analyst/analysis/google-track-user-acq.md). Ein Benutzer, der sich über eine Quelle registriert hat, kann weiterhin über andere Quellen auf Ihre Site zugreifen.
+* **[!UICONTROL Customer acquisition source]**: Sie können Benutzerakquise-Daten nicht nur auf Benutzerebene verfolgen, sondern [&#x200B; auch auf Auftrags- oder Ereignisebene &#x200B;](../data-analyst/analysis/google-track-user-acq.md). Ein Benutzer, der sich über eine Quelle registriert hat, kann weiterhin über andere Quellen auf Ihre Site zugreifen.
 * **[!UICONTROL Device]**: Steigt die Anzahl der Bestellungen für Mobilgeräte? Wie viel Ihres Umsatzes wird durch Käufe für Mobilgeräte generiert? (Wenn Sie dies noch nicht nachverfolgen, lesen Sie den Abschnitt [Nachverfolgen von Gerätedaten für Bestellungen](../data-analyst/analysis/track-usr-dev-browser.md).
 * **[!UICONTROL Fulfillment Center]**: Welches Ihrer Fulfillment-Center generiert die meisten Umsätze? Wenn Sie den Unterschied zwischen Bestellzeit und Versandzeit analysieren, welches Fulfillment Center reagiert am besten?
 * **[!UICONTROL Delivery Carrier]**: Welcher ist der beliebteste Anbieter? Welcher Spediteur hat die geringste Anzahl an zurückgesandten Artikeln?
@@ -77,7 +89,7 @@ Diese Art von Analyse machen Marketing-Experten der Fortune 1000-Unternehmen den
 
 Um Ihre Metriken anhand der oben genannten Dimensionen zu segmentieren, müssen Sie als Erstes sicherstellen, dass Sie diese Daten in Ihrer Datenbank nachverfolgen. Wenn es nicht verfolgt wird, wenden Sie sich an Ihr Tech-Team und finden Sie einen Weg, um mit dem Tracking dieser Daten zu beginnen.
 
-Nachdem Sie bestätigt haben, dass die Daten in Ihrer Datenbank verfolgt werden, [ Sie sich an das Support-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um die Dimensionen in Ihre [!DNL Commerce Intelligence] Metriken und Diagramme zu übertragen. Sie können auch das Tool *Feldverwaltung* verwenden, um diese Felder in [!DNL Commerce Intelligence] zu verfolgen.
+Nachdem Sie bestätigt haben, dass die Daten in Ihrer Datenbank verfolgt werden, [&#x200B; Sie sich an das Support-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html), um die Dimensionen in Ihre [!DNL Commerce Intelligence] Metriken und Diagramme zu übertragen. Sie können auch das Tool *Feldverwaltung* verwenden, um diese Felder in [!DNL Commerce Intelligence] zu verfolgen.
 
 ## verwandt
 

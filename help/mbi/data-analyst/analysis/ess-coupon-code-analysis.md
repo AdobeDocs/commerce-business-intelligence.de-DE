@@ -5,11 +5,21 @@ exl-id: 0d486259-b210-42ae-8f79-cd91cc15c2c2
 role: Admin, User
 feature: Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/Wr-Lx6N-regGfzW3olk2hya-AybetR0w4Z2yFTWHeDM
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 532
@@ -68,42 +78,42 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
 >Der [!UICONTROL Time Period]** für jeden Bericht wird als `All-time` aufgeführt. Sie können dies an Ihre Analyseanforderungen anpassen. Adobe empfiehlt, dass alle Berichte in diesem Dashboard denselben Zeitraum abdecken, z. B. `All time`, `Year-to-date` oder `Last 365 days`.
 
 * **Bestellungen mit Coupons**
-   * 
-     [!UICONTROL-Metrik]: `Orders`
+   * &#x200B;
+     [!UICONTROL -Metrik]: `Orders`
       * Filter hinzufügen:
          * [`A`] `coupon_code` **IST NICHT** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **Bestellungen ohne Coupons**
-   * 
-     [!UICONTROL-Metrik]: `Orders`
+   * &#x200B;
+     [!UICONTROL -Metrik]: `Orders`
       * Filter hinzufügen:
          * [`A`] `coupon_code` **IS** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart type]:`Number (scalar)`
 
 * **Nettoumsatz aus Bestellungen mit Coupons**
-   * 
-     [!UICONTROL-Metrik]: `Revenue`
+   * &#x200B;
+     [!UICONTROL -Metrik]: `Revenue`
       * Filter hinzufügen:
          * [`A`] `coupon_code` **IST NICHT** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
 * **Rabatte auf Gutscheine**
    * [!UICONTROL Metric]: `Coupon discount amount`
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -113,7 +123,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
          * [`A`] `Customer's first order's coupon_code` **IST NICHT** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -123,7 +133,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
          * [A] `Customer's first order's coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -147,23 +157,23 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
 
    * Formel erstellen: `Gross revenue`
       * [!UICONTROL Formula]: `(B – C)`
-      * 
+      * &#x200B;
         [!UICONTROL Format]: `Currency`
 
    * Formel erstellen: **% Rabatt**
       * Formel: `(C / (B - C))`
-      * 
+      * &#x200B;
         [!UICONTROL Format]: `Percentage`
 
    * Formel erstellen: `Average order discount`
       * [!UICONTROL Formula]: `(C / A)`
-      * 
+      * &#x200B;
         [!UICONTROL Format]: `Percentage`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervall]: `None`
-   * 
+   * &#x200B;
      [!UICONTROL Diagrammtyp]: `Table`
 
 * **Durchschnittlicher Lebensdauerumsatz nach Erstbestellung**
@@ -172,7 +182,7 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
          * [`A`] `coupon_code` **IS**`[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Chart type]: `Number (scalar)`
 
@@ -182,10 +192,10 @@ Der erste Schritt besteht darin, eine neue Metrik mit den folgenden Schritten zu
          * [`A`] `Customer's first order's coupon_code` **IST NICHT** `[NULL]`
 
    * [!UICONTROL Time period]: `All time`
-   * 
+   * &#x200B;
      [!UICONTROL Intervall]: `None`
    * [!UICONTROL Group by]: `Customer's first order's coupon_code`
-   * 
+   * &#x200B;
      [!UICONTROL Diagrammtyp]: **Column**
 
 * **Neue Kunden durch Coupon-/Nicht-Coupon-Akquise**
