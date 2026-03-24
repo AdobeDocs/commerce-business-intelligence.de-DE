@@ -4,16 +4,32 @@ description: Erfahren Sie mehr über einige ER-Diagramme, die Ihnen dabei helfen
 exl-id: de7d419f-efbe-4d0c-95a8-155a12aa93f3
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-source-git-commit: 5e80ff8f8ec76996b88a22b115be696b110581be
+TQID: https://experienceleague.adobe.com/pWd5aVoaq2TPkGr37cNeF8CEZ63fItwCEez61eEgGBo
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: 346
 ht-degree: 0%
 
 ---
 
 # Entitätsbeziehungsdiagramm
 
-Was ist ein **[!UICONTROL entity relationship (ER) diagram]**? Ein [!UICONTROL ER] ist eine Visualisierung von Tabellen innerhalb einer Datenbank und ihrer Beziehung zueinander. Dieses Thema enthält einige [!UICONTROL ER], die Ihnen helfen, die Beziehung zwischen einigen gängigen Adobe Commerce-Datenbanktabellen zu visualisieren.
+What is an **[!UICONTROL entity relationship (ER) diagram]**? An [!UICONTROL ER] diagram is a visualization of tables within a database and how they relate to each other. This topic contains a few [!UICONTROL ER] diagrams to help you visualize the relationship between a few common Adobe Commerce database tables.
 
 >[!NOTE]
 >
@@ -35,7 +51,7 @@ Ein Kunde kann viele Bestellungen aufgeben. Die Beziehung zwischen diesen beiden
 
 >[!IMPORTANT]
 >
->`customer\_entity.entity\_id` ist nicht gleich `sales\_flat\_order.entity\_id`. Das erste kann als `customer\_id` betrachtet werden, und das zweite kann als `order\_id.` betrachtet werden
+>`customer\_entity.entity\_id` does not equal `sales\_flat\_order.entity\_id`. The first can be thought of as a `customer\_id` and the second can be thought of as an `order\_id.`
 
 Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse . Wenn Sie bereit sind, den Pfad zu erstellen, wird er wie folgt definiert:
 
@@ -55,7 +71,7 @@ Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] ni
 
 ![3_oneProductManyTimes](../../assets/3_OneProductManyTimes.png)
 
-Ein Produkt kann viele Artikel gekauft werden. Die Beziehung zwischen diesen beiden Tabellen ist `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
+One product can be purchased many items. Die Beziehung zwischen diesen beiden Tabellen ist `catalog\_product\_entity.entity\_id = sales\_flat\_order\_item.product`.
 
 Wenn der Pfad zwischen diesen beiden Tabellen in [!DNL Commerce Intelligence] nicht vorhanden ist, können Sie [den Pfad erstellen](../data-warehouse-mgr/create-paths-calc-columns.md) auf der Registerkarte Data Warehouse . Wenn Sie bereit sind, den Pfad zu erstellen, definieren Sie ihn wie unten gezeigt.
 
