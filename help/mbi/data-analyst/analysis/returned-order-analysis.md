@@ -32,7 +32,7 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das eine detaillierte Anal
 
 ![Dashboard „Detaillierte Rücksendungen“ mit Rückgaberaten und -gründen](../../assets/detailed-returns-dboard.png)
 
-Bevor Sie beginnen, müssen Sie [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)-Kunde sein und sollten sicherstellen, dass Ihr Unternehmen die `enterprise\_rma` für Rücksendungen verwendet.
+Bevor Sie beginnen, müssen Sie [Adobe Commerce](https://business.adobe.com/de/products/magento/magento-commerce.html)-Kunde sein und sollten sicherstellen, dass Ihr Unternehmen die `enterprise\_rma` für Rücksendungen verwendet.
 
 Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv-calc-columns.md).
 
@@ -257,4 +257,4 @@ Zu erstellende Spalten
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie im Dashboard nach Bedarf organisieren. Das Ergebnis kann wie im obigen Beispiel-Dashboard aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder das Professional Services-Team kontaktieren möchten, wenden [&#x200B; sich an den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder das Professional Services-Team kontaktieren möchten, wenden [&#x200B; sich an den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
