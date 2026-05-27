@@ -5,11 +5,21 @@ exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/IUTQdZYcHkue-29jNZOxONAK4u5plphslzqtUXJ5JAs
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 962
@@ -22,7 +32,7 @@ ht-degree: 3%
 Die [!DNL Adobe Commerce]-Plattform erfasst und organisiert eine Vielzahl wertvoller Commerce-Daten über Hunderte von Tabellen hinweg. In diesem Thema wird Folgendes beschrieben:
 
 * So werden diese Daten generiert
-* was dazu führt, dass eine neue Zeile in eine der [Commerce-Kerntabellen“ eingefügt ](../data-warehouse-mgr/common-mage-tables.md)
+* was dazu führt, dass eine neue Zeile in eine der [Commerce-Kerntabellen“ eingefügt &#x200B;](../data-warehouse-mgr/common-mage-tables.md)
 * Wie Aktionen wie der Kauf oder die Erstellung eines Kontos in der [!DNL Adobe Commerce]-Datenbank aufgezeichnet werden
 
 Um diese Konzepte zu besprechen, sehen Sie sich das folgende Beispiel an:
@@ -67,9 +77,9 @@ Kurz nach dem Hinzufügen der drei neuen Produkte besucht ein neuer Kunde, `Samm
 
 ## `sales\_flat\_order (or Sales\_order`, wenn Sie [!DNL Adobe Commerce 2.x] haben
 
-Nachdem die Kontoerstellung abgeschlossen ist, ist `Sammy Customer` bereit, einen Kauf zu tätigen. Auf der Website fügt der Kunde zwei `Throwback Bellbottoms` und ein `V-Neck T-Shirt` zum Warenkorb hinzu. Wenn der Kunde mit der Auswahl zufrieden ist, wechselt er zur Kasse und reicht die Bestellung ein, wodurch folgender Eintrag in der Tabelle [Einfache Bestellung“ erstellt ](../data-warehouse-mgr/sales-flat-order-table.md):
+Nachdem die Kontoerstellung abgeschlossen ist, ist `Sammy Customer` bereit, einen Kauf zu tätigen. Auf der Website fügt der Kunde zwei `Throwback Bellbottoms` und ein `V-Neck T-Shirt` zum Warenkorb hinzu. Wenn der Kunde mit der Auswahl zufrieden ist, wechselt er zur Kasse und reicht die Bestellung ein, wodurch folgender Eintrag in der Tabelle [Einfache Bestellung“ erstellt &#x200B;](../data-warehouse-mgr/sales-flat-order-table.md):
 
-| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
+| **`entity id`** | **`customer id**` | &#x200B;**`subtotal`**&#x200B; | &#x200B;**`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94,85 | 2016/09/23 15:41:39 |
 
