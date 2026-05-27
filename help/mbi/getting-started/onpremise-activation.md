@@ -24,7 +24,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: b6ae8fb1a1a7f30e3d56740986f9366e7d1e7f1a
 workflow-type: tm+mt
-source-wordcount: 732
+source-wordcount: 748
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Nachdem Sie den dedizierten Benutzer für die [!DNL Commerce Intelligence] im Ad
 
 ## Abrufen von Datenbankverbindungsinformationen
 
-Abrufen der Informationen zur Datenbankverbindung mit der zu [!DNL Commerce] [!DNL Commerce Intelligence] Datenbank
+Abrufen der Informationen zur Datenbankverbindung mit der zu [!DNL Commerce Intelligence] [!DNL Commerce] Datenbank
 
 1. Führen Sie die folgenden Schritte aus, um Ihre Informationen zu erhalten.
 
