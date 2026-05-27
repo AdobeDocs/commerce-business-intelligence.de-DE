@@ -59,7 +59,7 @@ Zu erstellende Spalten
 
 * &#x200B;
       Sekunden seit dem letzten Bestelldatum des Kunden
-  * [!UICONTROL Column type]:     „Selbe Tabelle > Alter
+  * [!UICONTROL Column type]: - „Gleiche Tabelle > Alter
 * Ausgewählte [!UICONTROL column]: `Customer's last order date`
 
 * (Eingabe) Zählerreferenz
@@ -79,7 +79,7 @@ Zu erstellende Spalten
 * **Customer_entity**-Tabelle
 * Anzahl der Kunden
 * [!UICONTROL Column type]: `One to Many > JOINED_COLUMN`
-* [!UICONTROL Path]: `customer_entity`.(Eingabe) Referenz > Kundenkonzentration. `Primary Key`
+* [!UICONTROL Path]: `customer_entity`.(input) reference > Customer Concentration. `Primary Key`
 * Ausgewählte [!UICONTROL column]: `Number of customers`
 
 * (Eingabe) `Ranking by customer lifetime revenue`

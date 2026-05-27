@@ -21,14 +21,14 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
 workflow-type: tm+mt
-source-wordcount: 75
+source-wordcount: 88
 ht-degree: 0%
 
 ---
 
 # Passwort zurücksetzen
 
-Um Ihr Kennwort zurückzusetzen, klicken Sie auf der **[!UICONTROL Reset Password]**-Anmeldeseite unter dem Feld Kennwort auf [!DNL Adobe Commerce Intelligence] . Geben Sie die E-Mail-Adresse für das Benutzerkonto ein und eine E-Mail wird mit einem Link zum Zurücksetzen des Kennworts gesendet.
+Um Ihr Kennwort zurückzusetzen, klicken Sie auf der [!DNL Adobe Commerce Intelligence]-Anmeldeseite unter dem Feld Kennwort auf **[!UICONTROL Reset Password]** . Geben Sie die E-Mail-Adresse für das Benutzerkonto ein und eine E-Mail wird mit einem Link zum Zurücksetzen des Kennworts gesendet.
 
 Sie können Ihr Kennwort in [!DNL Commerce Intelligence] auch über die Seite **[!UICONTROL Personal Settings]** ändern.
 

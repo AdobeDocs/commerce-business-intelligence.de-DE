@@ -17,7 +17,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 760
+source-wordcount: 781
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Wenn die UTM-Parameter für die URL angegeben werden, werden diese ausgewertet u
 
 Die Attribution Letztklick ist das häufigste Attributionsmodell, das von [!DNL Google Analytics] verwendet wird. In diesem Fall stellt das [!DNL Google Analytics]-Cookie die UTM-Parameter der letzten Quelle vor dem Konversionsereignis dar und wird [in der Datenbank aufgezeichnet](../../data-analyst/analysis/google-track-user-acq.md). Das [!DNL Google Analytics]-Cookie überschreibt nur die vorherigen UTM-Parameter, wenn der Benutzer auf eine neue URL klickt, die einen neuen Satz UTM-Parameter enthält.
 
-Angenommen, ein Benutzer besucht eine Website zuerst über [!DNL Google Analytics] *Paid Search*, kehrt dann über *Organische Suche* zurück und kehrt schließlich direkt *oder über einen* E-Mail-Link **&#x200B; ohne UTM-Parameter &#x200B;** vor dem Konversionsereignis zur** zurück. In diesem Beispiel besagt das [!DNL Google Analytics]-Cookie, dass die Quelle des Benutzers organisch ist, da dies die letzte Quelle vor der Konversion darstellt. Der *Pfad* des Benutzers vor diesem endgültigen Konversionsereignis wird ignoriert. Wenn der Benutzer die Website stattdessen über einen E-Mail-Link mit UTM besucht hat, würde das [!DNL Google Analytics]-Cookie sagen, dass die Quelle „E-Mail“ ist. Wenn also UTM-Parameter im Cookie vorhanden sind und der Benutzer über Direct eintritt, zeigt das [!DNL Google Analytics]-Cookie die UTM-Parameter anstelle von „direct“ an.
+Angenommen, ein Benutzer besucht eine Website zuerst über [!DNL Google Analytics] *Paid Search*, kehrt dann über *Organische Suche* zurück und kehrt schließlich direkt *oder über einen* E-Mail-Link ***ohne UTM-Parameter**&#x200B;vor dem Konversionsereignis zur* zurück. In diesem Beispiel besagt das [!DNL Google Analytics]-Cookie, dass die Quelle des Benutzers organisch ist, da dies die letzte Quelle vor der Konversion darstellt. Der *Pfad* des Benutzers vor diesem endgültigen Konversionsereignis wird ignoriert. Wenn der Benutzer die Website stattdessen über einen E-Mail-Link mit UTM besucht hat, würde das [!DNL Google Analytics]-Cookie sagen, dass die Quelle „E-Mail“ ist. Wenn also UTM-Parameter im Cookie vorhanden sind und der Benutzer über Direct eintritt, zeigt das [!DNL Google Analytics]-Cookie die UTM-Parameter anstelle von „direct“ an.
 
 >[!NOTE]
 >

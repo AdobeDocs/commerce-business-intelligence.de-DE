@@ -30,7 +30,7 @@ ht-degree: 0%
 
 # SQL-Abfragen in Commerce Intelligence übersetzen
 
-Haben Sie sich jemals gefragt, wie SQL-Abfragen in die [berechneten Spalten](../data-warehouse-mgr/creating-calculated-columns.md), [Metriken](../../data-user/reports/ess-manage-data-metrics.md) und [Berichte](../../tutorials/using-visual-report-builder.md) übersetzt werden, die Sie in [!DNL Commerce Intelligence] verwenden? Wenn Sie ein erfahrener SQL-Benutzer sind, können Sie im [!DNL Commerce Intelligence]Data Warehouse Manager[&#x200B; intelligenter arbeiten, wenn Sie verstehen, wie SQL in übersetzt &#x200B;](../data-warehouse-mgr/tour-dwm.md), und die [!DNL Commerce Intelligence] optimal nutzen.
+Haben Sie sich jemals gefragt, wie SQL-Abfragen in die [berechneten Spalten](../data-warehouse-mgr/creating-calculated-columns.md), [Metriken](../../data-user/reports/ess-manage-data-metrics.md) und [Berichte](../../tutorials/using-visual-report-builder.md) übersetzt werden, die Sie in [!DNL Commerce Intelligence] verwenden? Wenn Sie ein erfahrener SQL-Benutzer sind, können Sie im [Data Warehouse Manager[!DNL Commerce Intelligence] intelligenter arbeiten, wenn Sie wissen, wie SQL in übersetzt &#x200B;](../data-warehouse-mgr/tour-dwm.md), und [!DNL Commerce Intelligence] Plattform optimal nutzen.
 
 Am Ende dieses Themas finden Sie eine **Übersetzungsmatrix** für SQL-Abfrageklauseln und [!DNL Commerce Intelligence].
 
@@ -134,7 +134,7 @@ Beginnen Sie mit der folgenden Abfrage:
 
 >[!NOTE]
 >
->Der einzige Unterschied zu der Abfrage, mit der Sie vorher begonnen haben, ist das Hinzufügen des „coupon\_code“ als Gruppierung nach._
+>Der einzige Unterschied zu der Abfrage, mit der Sie vorher begonnen haben, ist das Hinzufügen des „coupon\_code“ als Gruppierung nach.
 
 Mit derselben `Total Revenue`, die Sie zuvor erstellt haben, können Sie jetzt einen Umsatzbericht erstellen, der nach Couponcode segmentiert ist! Sehen Sie sich das folgende GIF an, das zeigt, wie Sie diesen visuellen Bericht einrichten, indem Sie Daten von September bis November betrachten:
 

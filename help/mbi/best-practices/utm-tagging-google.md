@@ -22,8 +22,8 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 450
-ht-degree: 0%
+source-wordcount: 461
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,7 @@ Jedes Mal, wenn Sie Personen bitten, auf einen Link zu klicken, sollten Sie `UTM
 
 `UTM`-getaggte URLs können umständlich sein. Anstatt zu versuchen, sie mit langer Hand zu tippen, verwenden Sie ein Tool [wie dieses](https://support.google.com/analytics/answer/1033867?hl=en), um Ihnen zu helfen. Dadurch wird sichergestellt, dass Sie alle sinnvollen Parameter zur URL hinzufügen und die URL kopieren und einfügen können. Um Social-Media-Links zu verwalten, bieten Tools wie [!DNL Hootsuite] die Option, allen Ihren Links benutzerdefinierte URL-Parameter hinzuzufügen.
 
-### &#x200B;3. Achten Sie in den Parameterwerten auf Groß- und Kleinschreibung
+### &#x200B;3. Achten Sie bei den Parameterwerten auf Groß- und Kleinschreibung.
 
 Beachten Sie, dass sich das Tag `utm\_source=adwords` von `utm\_source=Adwords` unterscheidet. Erwäge, alles kleingeschrieben zu machen.
 
@@ -53,7 +53,7 @@ Beachten Sie, dass sich das Tag `utm\_source=adwords` von `utm\_source=Adwords` 
 
 Jedes Mal, wenn eine Transaktion oder ein Ereignis stattfindet, möchten Sie die Leistung Ihrer Marketing-Aktivitäten bewerten. Lesen Sie dazu die Werte der UTM-Parameterwerte aus dem [[!DNL Google Analytics] Cookie in Ihre Datenbank](../data-analyst/analysis/google-track-user-acq.md).
 
-### &#x200B;5. Überlegen Sie, wie Sie Kampagnen benennen
+### &#x200B;5. Denken Sie daran, wie Sie Kampagnen benennen
 
 Um verfolgen zu können, wie sich Ihre Marketing-Maßnahmen im Laufe der Zeit verbessern, müssen Sie Ihre Namenskonventionen intelligent einhalten. Halten Sie es einfach und minimieren Sie so viel wie möglich. Komplizierte Benennungssysteme sind schwieriger zu verwalten.
 

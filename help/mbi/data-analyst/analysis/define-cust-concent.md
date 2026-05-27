@@ -23,7 +23,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 472
+source-wordcount: 483
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Zu erstellende Spalten
 * Perzentil des Umsatzes des Kunden
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **wenn A null ist, dann andernfalls null (A/B)* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **&#x200B; wenn A null ist, dann andernfalls null (A/B)*100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order`
@@ -93,7 +93,7 @@ Zu erstellende Spalten
 * Perzentil des Umsatzes des Kunden
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **wenn A null ist, dann andernfalls null (A/B)* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - **&#x200B; wenn A null ist, dann andernfalls null (A/B)*100 end &#x200B;**
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]

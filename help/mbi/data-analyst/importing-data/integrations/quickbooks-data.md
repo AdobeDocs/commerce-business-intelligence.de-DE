@@ -23,7 +23,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 796
+source-wordcount: 1090
 ht-degree: 0%
 
 ---
@@ -79,4 +79,4 @@ Um alle für das Tracking verfügbaren Felder anzuzeigen, klicken Sie auf die Li
 ## Verwandt:
 
 * [Verbinden [!DNL QuickBooks]](../integrations/quickbooks.md)
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
