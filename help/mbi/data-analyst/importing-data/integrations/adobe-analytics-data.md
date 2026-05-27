@@ -5,25 +5,14 @@ exl-id: 4df66ec1-c7f3-4b02-8f0f-49cada99c14c
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/vA-1cABpxQNwI8xTF4Elkgv2geudkp5tnBH1l6-PZiY
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: 418
 ht-degree: 0%
 
 ---
@@ -56,7 +45,7 @@ Die Tabelle würde die folgenden Spalten enthalten:
 | `page_views` | Ausgewählte Metrik: Die Gesamtzahl der Seitenansichten für den identifizierten Zeitraum. |
 | `page` | Ausgewählte Dimension: Einzelne Seitennamen mit verfolgten Ansichten. |
 
-Mit den Optionen [!DNL Commerce Intelligence]Synchronisieren *oder Nicht synchronisieren* auf der *können Sie steuern, welche der ausgewählten Metriken* Dimensionen Daten in Ihrer `Data Warehouse`-Tabelle verfügbar haben. Spalten, die derzeit nicht synchronisiert werden, werden grau angezeigt. Wenn Sie die Synchronisierung einer Spalte beenden, können Sie die Synchronisierung später erneut starten.
+Mit den Optionen *Synchronisieren* oder Nicht synchronisieren *auf der `Data Warehouse` können Sie steuern, welche der ausgewählten Metriken* Dimensionen Daten in Ihrer [!DNL Commerce Intelligence]-Tabelle verfügbar haben. Spalten, die derzeit nicht synchronisiert werden, werden grau angezeigt. Wenn Sie die Synchronisierung einer Spalte beenden, können Sie die Synchronisierung später erneut starten.
 
 ## Aktuelle Einschränkungen
 
@@ -65,6 +54,6 @@ In diesem Abschnitt werden die Einschränkungen der [!DNL Adobe Analytics] für 
 | Einschränkung | Beschreibung |
 | --- | --- |
 | `Historical data period` | Wie bei anderen Integrationen von Drittanbietern ruft die [!DNL Adobe Analytics]-Integration eine begrenzte Menge an historischen Daten ab und behält dann die Daten auf dem neuesten Stand. Der historische Zeitraum ist auf 2 Wochen konfiguriert. |
-| `Empty component combinations` | Einige Kombinationen von Metriken und Dimensionen enthalten keine Daten. Wenn eine solche Kombination für die Replikation ausgewählt ist, schließt [!DNL Commerce Intelligence] die Spalte aus der replizierten Tabelle aus. Um diese Kombination zu vermeiden, können Sie zunächst einen Bericht in der [[!DNL Adobe Analytics] Workspace erstellen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de) um zu überprüfen, ob Sie die erwarteten Daten erhalten. |
+| `Empty component combinations` | Einige Kombinationen von Metriken und Dimensionen enthalten keine Daten. Wenn eine solche Kombination für die Replikation ausgewählt ist, schließt [!DNL Commerce Intelligence] die Spalte aus der replizierten Tabelle aus. Um diese Kombination zu vermeiden, können Sie zunächst einen Bericht in der [[!DNL Adobe Analytics] Workspace erstellen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) um zu überprüfen, ob Sie die erwarteten Daten erhalten. |
 | `Re-authorization cadence` | Die [!DNL Adobe Analytics] Integration muss alle zwei Wochen erneut autorisiert werden. Um die Autorisierung erneut durchzuführen, gehen Sie zur Seite Bearbeiten für die Integration und klicken Sie auf **[!UICONTROL Re-Authorize with [!DNL Adobe Analytics]]**. |
 | `One dimension per row` | [!DNL Adobe Analytics] stellt Metrikdaten für jeweils eine Dimension bereit. Wenn Sie beim Einrichten mehrere Dimensionen auswählen, enthält jede Zeile in Ihrer [!DNL Commerce Intelligence] einen einzelnen Dimensionswert und NULL für jede andere Dimension. |

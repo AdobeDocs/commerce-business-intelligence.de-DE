@@ -5,27 +5,14 @@ exl-id: 28db0e78-0222-431d-bbb9-6ef133686603
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
 TQID: https://experienceleague.adobe.com/pdmp5wyeWdjrebZlZ9j4u3OJBb-LpADk6Uib-bWy1Vc
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c32adafa-ed01-4b31-997e-2413013911b0id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 1293
+source-wordcount: 1400
 ht-degree: 0%
 
 ---
@@ -43,7 +30,7 @@ Verwenden Sie Werbekampagnen als Beispiel. Wenn Sie sowohl Online- als auch Offl
 ## Einschränkungen und Anforderungen {#require}
 
 1. **Das einzige unterstützte Format für Datei-Uploads ist `CSV` oder`comma separated values`**. Wenn Sie in Excel arbeiten, können Sie die Datei mithilfe der Funktion Speichern unter im `.csv` Format speichern.
-1. **`CSV`Dateien müssen`UTF-8 encoding`** verwenden. Meistens ist das kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, ([&#x200B; Sie in diesem Support-Artikel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=de).
+1. **`CSV`Dateien müssen`UTF-8 encoding`** verwenden. Meistens ist das kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, ([ Sie in diesem Support-Artikel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html).
 1. **Dateien dürfen nicht größer als 100 MB**. Wenn die Datei größer ist als diese, teilen Sie die Tabelle in Blöcke auf und speichern Sie sie als einzelne Dateien. Sie können die Daten anhängen, nachdem die ursprüngliche Datei geladen wurde.
 1. **Alle Tabellen müssen einen`primary key`** haben. Die Tabelle muss mindestens eine Spalte enthalten, die als `primary key` verwendet werden kann, oder eine eindeutige Kennung für jede Zeile der Tabelle. Jede als `primary key` gekennzeichnete Spalte darf *nie* null sein. Eine `primary key` kann so einfach sein wie das Hinzufügen einer Spalte, die jeder Zeile eine Zahl gibt, oder es können zwei Spalten verkettet sein, um eine Spalte mit eindeutigen Werten (z. B. `campaign name` und `date`) zu erstellen.
 
@@ -92,7 +79,7 @@ Einige Werte in Ihrer Datei - z. B. Postleitzahlen und IDs - können mit Nullen 
 
 Verwenden Sie `US ZIP codes` als Beispiel für das Ändern der Zahlenformatierung. Markieren Sie in [!DNL Excel] die Spalte, die `ZIP codes` enthält, und [ändern Sie das Zahlenformat](https://support.microsoft.com/en-us/office/display-numbers-as-postal-codes-61b55c9f-6fe3-4e54-96ca-9e85c38a5a1d?ui=en-us&rs=en-us&ad=us) in `ZIP code`. Sie können auch ein benutzerdefiniertes Zahlenformat auswählen und im `Type` Fenster `00000` eingeben. Beachten Sie, dass diese Methode Probleme verursachen kann, wenn einige Codes als `00000` formatiert sind und andere `00000-0000`.
 
-Der `Type` kann [anders formatiert werden, um andere Datentypen, z. &#x200B;](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us). IDs, aufzunehmen. Wenn ein `ID` beispielsweise neun Stellen lang ist, kann der `Type` `000000000` oder `000-000-000` sein. Dies würde `123456` in `000-123-456` ändern.
+Der `Type` kann [anders formatiert werden, um andere Datentypen, z. ](https://support.microsoft.com/en-us/office/keeping-leading-zeros-and-large-numbers-1bf7b935-36e1-4985-842f-5dfa51f85fe7?correlationid=e1d4c2d3-cd5d-4a14-999d-437800274a90&ui=en-us&rs=en-us&ad=us). IDs, aufzunehmen. Wenn ein `ID` beispielsweise neun Stellen lang ist, kann der `Type` `000000000` oder `000-000-000` sein. Dies würde `123456` in `000-123-456` ändern.
 
 [!DNL Google Docs] und [!DNL Apple Numbers] Ressourcen finden Sie in der Liste [Verwandt](#related) unten auf dieser Seite.
 
@@ -120,7 +107,7 @@ Nachdem Ihre Tabelle korrekt formatiert und [!DNL Commerce Intelligence] ist, f�
 
 1. Klicken Sie auf **[!UICONTROL Save Table]**.
 
-Ein *Erfolg!* nach dem Speichern der Tabelle wird oben im Bildschirm eine Meldung angezeigt.
+A *Erfolg!* wird nach dem Speichern der Tabelle oben im Bildschirm angezeigt.
 
 Wenn Sie eine visuelle Darstellung benötigen, sehen Sie sich den gesamten Prozess an:
 
@@ -152,7 +139,7 @@ Haben Sie neue Daten, die Sie einer bereits hochgeladenen Datei hinzufügen kön
 
 1. Klicken Sie auf **[!UICONTROL Open]** , um den Upload zu starten.
 
-   Nach Abschluss des Uploads validiert [!DNL Commerce Intelligence] die Datenstruktur in der Datei. Ein *Erfolg!* nach dem Speichern der Tabelle wird oben im Bildschirm eine Meldung angezeigt.
+   Nach Abschluss des Uploads validiert [!DNL Commerce Intelligence] die Datenstruktur in der Datei. A *Erfolg!* wird nach dem Speichern der Tabelle oben im Bildschirm angezeigt.
 
 ## Datenverfügbarkeit {#availability}
 
@@ -172,4 +159,4 @@ Außerdem ist der Datei-Upload nicht die einzige Möglichkeit, Ihre Daten in [!D
 
 ## Drittanbieterressource
 
-* [[!DNL Google Docs] Anleitung zur Datenformatierung](https://support.google.com/docs/answer/56470?hl=en)
+* [Handbuch zur [!DNL Google Docs] Datenformatierung](https://support.google.com/docs/answer/56470?hl=en)
