@@ -23,7 +23,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 566
+source-wordcount: 567
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ In einer Situation ohne Gastaufträge ist jeder Kunde als eindeutige Zeile in de
 
 Bei einer Einrichtung für Gastaufträge, bei der alle Kundenmetriken auf der `orders` basieren, um Gastaufträge zu berücksichtigen, müssen Sie sicherstellen, dass Sie `not counting customers twice` sind. Wenn Sie die Kennung der Tabelle Bestellungen zählen, zählen Sie jede Bestellung. Wenn Sie stattdessen die ID in der `orders` Tabelle zählen und einen Filter verwenden, `Customer's order number = 1`, zählen Sie jede eindeutige Kunden-`only one time`. Dies gilt für alle Metriken auf Kundenebene, wie `Customer's lifetime revenue` oder `Customer's lifetime number of orders`.
 
-Oben sehen Sie, dass die `customer\_ids`-Tabelle Null-`orders` enthält. Wenn Sie die `customer\_email` verwenden, um Unique Customers zu identifizieren, können Sie sehen, dass `erin@test.com` drei (3) Bestellungen aufgegeben hat. Daher können Sie basierend auf den folgenden Bedingungen eine `New customers` Metrik in Ihrer `orders` erstellen:
+Oben sehen Sie, dass die `orders`-Tabelle Null-`customer\_ids` enthält. Wenn Sie die `customer\_email` verwenden, um Unique Customers zu identifizieren, können Sie sehen, dass `erin@test.com` drei (3) Bestellungen aufgegeben hat. Daher können Sie basierend auf den folgenden Bedingungen eine `New customers` Metrik in Ihrer `orders` erstellen:
 
 * `Operation table = orders`
 * `Operation column = id`

@@ -25,7 +25,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 646
+source-wordcount: 686
 ht-degree: 0%
 
 ---
@@ -47,10 +47,10 @@ Die `quote_item` Tabelle (`sales_flat_quote_item` auf M1) enthält Datensätze z
 | `item_id` (K) | Eindeutige Kennung der Tabelle |
 | `name` | Textname des Bestellartikels |
 | `parent_item_id` | `Foreign key`, das ein einfaches Produkt auf sein übergeordnetes Bundle oder konfigurierbares Produkt bezieht. Join-`quote_item.item_id`, um übergeordnete Produktattribute zu bestimmen, die mit einem einfachen Produkt verknüpft sind. Für übergeordnete Warenkorbartikel (d. h. Bundle oder konfigurierbare Produkttypen) wird der `parent_item_id` `NULL` |
-| `product_id` | Der `Foreign key` Tabelle zugeordnete `catalog_product_entity` Mit `catalog_product_entity.entity_id` verbinden, um Produktattribute zu bestimmen, die mit dem Auftragselement verknüpft sind |
+| `product_id` | Der `catalog_product_entity` Tabelle zugeordnete `Foreign key` Mit `catalog_product_entity.entity_id` verbinden, um Produktattribute zu bestimmen, die mit dem Auftragselement verknüpft sind |
 | `product_type` | Typ des Produkts, das dem Warenkorb hinzugefügt wurde. Mögliche [Produkttypen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html?lang=de#product-types) sind: einfach, konfigurierbar, gruppiert, virtuell, gebündelt und herunterladbar |
 | `qty` | Menge der im Warenkorb enthaltenen Einheiten für den jeweiligen Warenkorbartikel |
-| `quote_id` | Der `Foreign key` Tabelle zugeordnete `quote` Join to `quote.entity_id`, um die mit dem Warenkorbelement verknüpften Warenkorbattribute zu bestimmen |
+| `quote_id` | Der `quote` Tabelle zugeordnete `Foreign key` Join to `quote.entity_id`, um die mit dem Warenkorbelement verknüpften Warenkorbattribute zu bestimmen |
 | `sku` | Eindeutige Kennung für den Artikel im Warenkorb |
 | `store_id` | Fremdschlüssel, der der `store`-Tabelle zugeordnet ist. Join to `store.store_id`, um zu bestimmen, welche Commerce-Store-Ansicht mit dem Warenkorbelement verknüpft ist |
 

@@ -26,7 +26,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 811
+source-wordcount: 889
 ht-degree: 0%
 
 ---
@@ -55,13 +55,13 @@ Daher ist es möglich, den Verkauf von Produkten entweder auf der einfachen Eben
 | `created_at` | Erstellungszeitstempel des Bestellelements, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL Commerce Intelligence] kann dieser Zeitstempel in eine Reporting-Zeitzone umgewandelt werden, [!DNL Commerce Intelligence] sich von Ihrer Datenbank-Zeitzone unterscheidet. |
 | `item_id` (K) | Eindeutige Kennung für die Tabelle. |
 | `name` | Textname des Bestellartikels. |
-| `order_id` | Der `Foreign key` Tabelle zugeordnete `sales_order` Mit `sales_order.entity_id` verbinden, um die mit dem Auftragselement verknüpften Auftragsattribute zu bestimmen. |
+| `order_id` | Der `sales_order` Tabelle zugeordnete `Foreign key` Mit `sales_order.entity_id` verbinden, um die mit dem Auftragselement verknüpften Auftragsattribute zu bestimmen. |
 | `parent_item_id` | `Foreign key`, das ein einfaches Produkt auf sein übergeordnetes Bundle oder konfigurierbares Produkt bezieht. Join-`sales_order_item.item_id`, um übergeordnete Produktattribute zu bestimmen, die mit einem einfachen Produkt verknüpft sind. Bei übergeordneten Bestellartikeln (d. h. Bundle oder konfigurierbare Produkttypen) wird die `parent_item_id` `NULL`. |
-| `product_id` | Der `Foreign key` Tabelle zugeordnete `catalog_product_entity` Mit `catalog_product_entity.entity_id` verbinden, um Produktattribute zu bestimmen, die mit dem Auftragselement verknüpft sind. |
+| `product_id` | Der `catalog_product_entity` Tabelle zugeordnete `Foreign key` Mit `catalog_product_entity.entity_id` verbinden, um Produktattribute zu bestimmen, die mit dem Auftragselement verknüpft sind. |
 | `product_type` | Typ des verkauften Produkts. Mögliche [Produkttypen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html?lang=de#product-types) sind: einfach, konfigurierbar, gruppiert, virtuell, gebündelt und herunterladbar. |
 | `qty_ordered` | Menge der Einheiten, die zum Zeitpunkt des Verkaufs für den jeweiligen Bestellartikel im Warenkorb enthalten sind. |
 | `sku` | Eindeutige Kennung für den gekauften Bestellartikel. |
-| `store_id` | Der `Foreign key` Tabelle zugeordnete `store` Mit `store.store_id` verbinden, um zu bestimmen, welche Commerce-Store-Ansicht mit dem Bestellartikel verknüpft ist. |
+| `store_id` | Der `store` Tabelle zugeordnete `Foreign key` Mit `store.store_id` verbinden, um zu bestimmen, welche Commerce-Store-Ansicht mit dem Bestellartikel verknüpft ist. |
 
 {style="table-layout:auto"}
 

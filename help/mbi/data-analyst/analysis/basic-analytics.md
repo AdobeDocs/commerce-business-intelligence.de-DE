@@ -24,7 +24,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 3130
+source-wordcount: 3169
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ In dieser Tabelle stellt jede Zeile einen verkauften Artikel dar. Diese Tabelle 
 * **[!UICONTROL Item_id]**: Die eindeutige Kennung für jede Zeile in der Tabelle.
 * **[!UICONTROL Order_id]**: Der Referenzschlüssel für Ihre `Orders`, der Ihnen mitteilt, welche Artikel in derselben Bestellung gekauft wurden. Wenn eine Bestellung mehrere Artikel enthält, wird dieser Wert wiederholt.
 * **[!UICONTROL Product_id]**: Wenn Sie Informationen zu dem spezifischen gekauften Produkt wünschen (z. B. Farbe, Größe usw.), würden Sie diese Spalte verwenden, um diese Informationen aus Ihrer Produkttabelle abzurufen.
-* **[!UICONTROL Order's created_at]**: Der Zeitstempel, mit dem die Bestellung aufgegeben wurde. Er wird normalerweise aus der `order line items` Tabelle in Ihre `Orders` kopiert.
+* **[!UICONTROL Order's created_at]**: Der Zeitstempel, mit dem die Bestellung aufgegeben wurde. Er wird normalerweise aus der `Orders` Tabelle in Ihre `order line items` kopiert.
 * **[!UICONTROL Order's coupon_code]**: Ähnlich wie bei der Dimension `Order's created_at` wird diese Spalte aus Ihrer Tabelle Bestellungen kopiert.
 
 ## Tabelle zu Abonnements
@@ -271,7 +271,7 @@ Im Folgenden finden Sie einige Beispiele für nützliche Berichte und Metriken:
 ### Durchschnittlicher Umsatz über die Kundenlebensdauer
 
 * **Beschreibung**: Die durchschnittliche Umsatzmenge, die von Ihren Kunden während ihrer Lebensdauer generiert wird.
-* **Metrikbeschreibung**: Diese Metrik führt basierend auf der **einen** Durchschnitt`Customer's Lifetime Revenue` der `customer_entity` Spalte in der `created_at` aus.
+* **Metrikbeschreibung**: Diese Metrik führt basierend auf der `created_at` einen **Durchschnitt** der `Customer's Lifetime Revenue` Spalte in der `customer_entity` aus.
 * **Berichtsbeschreibung**: Allzeitdurchschnitt des lebenslangen Umsatzes des Kunden
    * **[!UICONTROL Metric]**: `Average Customer Lifetime Revenue`
    * **[!UICONTROL Time Range]**: `All Time`
@@ -375,7 +375,7 @@ Im Folgenden finden Sie einige Beispiele für nützliche Berichte und Metriken:
 
 ### Zeit zwischen Bestellungen
 
-* **Beschreibung**: Testen Sie Ihre Annahmen und Erwartungen über die Kaufzyklen Ihrer Kunden mit einer **Zeit zwischen** Bestellungen Analyse, die die durchschnittliche (oder mittlere!) Zeit zwischen den Käufen betrachtet. In der folgenden Grafik sehen Sie, dass Ihre besten Kunden - diejenigen, die mehr als drei Bestellungen aufgeben - ihren zweiten Kauf in weniger als sechs Monaten tätigen. Kunden, die keine vierte Bestellung aufgegeben haben, warten 14 Monate, bevor sie einen zweiten Kauf tätigen.
+* **Beschreibung**: Testen Sie Ihre Annahmen und Erwartungen über die Kaufzyklen Ihrer Kunden mit einer **Zeit zwischen Aufträgen** Analyse, die auf den Durchschnitt (oder Median!) Zeit zwischen Käufen. In der folgenden Grafik sehen Sie, dass Ihre besten Kunden - diejenigen, die mehr als drei Bestellungen aufgeben - ihren zweiten Kauf in weniger als sechs Monaten tätigen. Kunden, die keine vierte Bestellung aufgegeben haben, warten 14 Monate, bevor sie einen zweiten Kauf tätigen.
 * **Metrikdefinition**: Diese Metrik führt einen **Durchschnitt** von `Time since previous order` aus `sales_flat_order` sortiert nach `created_at` durch.
 * **Berichtsbeispiel**:
    * **Metrik 1**: ≤ 3 Bestellungen
@@ -536,7 +536,7 @@ Im Folgenden finden Sie einige Beispiele für nützliche Berichte und Metriken:
 
 ### Return on Investment (ROI)
 
-* **Beschreibung**: Eine Möglichkeit, den ROI nach Kampagne zu berechnen, besteht in der Analyse aller über die Kampagne aufgegebenen Bestellungen. Eine alternative Methode besteht jedoch darin, den Lebenszeitwert der durch eine Kampagne akquirierten Kunden zu analysieren. Zur Analyse des ROI ist es wichtig, dass die Kampagnennamen in Ihren Ausgaben- und Transaktionsdaten konsistent sind. Wenn Sie den folgenden Bericht erstellen und aufgrund nicht übereinstimmender Kampagnennamen keine ROI-Werte vorhanden sind, müssen Sie sich möglicherweise das von [&#x200B; implementierte &#x200B;](../../best-practices/utm-tagging-google.md)UTM-Tagging“ ansehen.
+* **Beschreibung**: Eine Möglichkeit, den ROI nach Kampagne zu berechnen, besteht in der Analyse aller über die Kampagne aufgegebenen Bestellungen. Eine alternative Methode besteht jedoch darin, den Lebenszeitwert der durch eine Kampagne akquirierten Kunden zu analysieren. Zur Analyse des ROI ist es wichtig, dass die Kampagnennamen in Ihren Ausgaben- und Transaktionsdaten konsistent sind. Wenn Sie den folgenden Bericht erstellen und aufgrund nicht übereinstimmender Kampagnennamen keine ROI-Werte vorhanden sind, müssen Sie sich möglicherweise das von [&#128279;](../../best-practices/utm-tagging-google.md) implementierte UTM-Tagging“ ansehen.
 * **Beispiel für einen Bericht**: ROI nach Kampagne
    * **[!UICONTROL Metric A]**: `New Customers`
    * **[!UICONTROL Filter A]**: `Customer's first order's source` WIE &#39;%google%&#39;
