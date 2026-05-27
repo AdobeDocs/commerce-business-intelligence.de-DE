@@ -24,7 +24,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 269
+source-wordcount: 298
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 Nachdem Sie eine [!DNL Google Analytics]-Integration verbunden haben, können Sie mit Ihren [!DNL Google Analytics] Metriken *sofort im`Visual Report Builder`* interagieren. Wenn Sie den `Visual Report Builder` eingeben und auf **[!UICONTROL Add a Metric]** klicken, wird eine Reihe von Metriken aus Ihrem [!DNL Google Analytics] in einem Dropdown-Menü direkt unter den Metriken in Ihrer Data Warehouse angezeigt.
 
-Die [!DNL Google Analytics]-Integration ist *live* - dies bedeutet, dass die `Report Builder` Daten von [!DNL Google Analytics] anfordert *sofort* wenn Sie eine Metrik zu Ihrem Bericht hinzufügen. Das bedeutet auch, dass die Metriken, auf die Sie zugreifen können, genau so definiert sind, wie sie sich in [!DNL Google Analytics] befinden, und dass diese Werte nicht in Ihrem *-Konto* eingelagert[!DNL Commerce Intelligence] sondern nur visuell in Ihren Berichten angezeigt werden.
+Die [!DNL Google Analytics]-Integration ist *live* - dies bedeutet, dass die `Report Builder` Daten von [!DNL Google Analytics] anfordert *sofort* wenn Sie eine Metrik zu Ihrem Bericht hinzufügen. Das bedeutet auch, dass die Metriken, auf die Sie zugreifen können, genau so definiert sind, wie sie sich in [!DNL Google Analytics] befinden, und dass diese Werte nicht in Ihrem [!DNL Commerce Intelligence]-Konto *eingelagert* sondern nur visuell in Ihren Berichten angezeigt werden.
 
 +++Unterstützte Metriken und Dimensionen (Google Analytics 3 oder Universal Analytics)
 

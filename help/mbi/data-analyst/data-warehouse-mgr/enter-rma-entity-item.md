@@ -21,7 +21,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: 08a466710b782238003c6bdb8cefacd07134291c
 workflow-type: tm+mt
-source-wordcount: 269
+source-wordcount: 271
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Jede Zeile in der `enterprise_rma_item_entity` (in Commerce 2.x häufig als `mag
 
 `sales_flat_order_item`
 
-* Erstellen von verbundenen Spalten auf dem  Tabelle über folgenden Join `enterprise_rma_item_entity`:
+* Erstellen Sie verknüpfte Spalten in der `enterprise_rma_item_entity`-Tabelle über den folgenden Join:
 
 * Commerce 1.x: `enterprise_rma_item_entity.order_item_id ` (viele) => `sales_flat_order_item.item_id` (eine)
 * Commerce 2.x: `magento_rma_item_entity.order_item_id ` (viele) => `sales_order_item.item_id` (eine)

@@ -22,7 +22,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 1041
+source-wordcount: 1066
 ht-degree: 0%
 
 ---
@@ -37,9 +37,9 @@ Das Verständnis von Beziehungen ist für die Aufrechterhaltung der Datenintegri
 
 Es gibt drei Arten von Beziehungen, die zwischen zwei Tabellen bestehen können:
 
-1. [`Eins-zu-eins`](#onetoone)
+1. [`one-to-one`](#onetoone)
 1. [`one-to-many`](#onetomany)
-1. [`Viele-zu-viele`](#manytomany)
+1. [`many-to-many`](#manytomany)
 
 ### `One-to-One` {#onetoone}
 

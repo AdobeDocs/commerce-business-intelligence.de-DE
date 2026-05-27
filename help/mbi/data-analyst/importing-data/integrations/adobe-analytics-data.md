@@ -23,7 +23,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 400
+source-wordcount: 418
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Die Tabelle würde die folgenden Spalten enthalten:
 | `page_views` | Ausgewählte Metrik: Die Gesamtzahl der Seitenansichten für den identifizierten Zeitraum. |
 | `page` | Ausgewählte Dimension: Einzelne Seitennamen mit verfolgten Ansichten. |
 
-Mit den Optionen [!DNL Commerce Intelligence]Synchronisieren *oder Nicht synchronisieren* auf der *können Sie steuern, welche der ausgewählten Metriken* Dimensionen Daten in Ihrer `Data Warehouse`-Tabelle verfügbar haben. Spalten, die derzeit nicht synchronisiert werden, werden grau angezeigt. Wenn Sie die Synchronisierung einer Spalte beenden, können Sie die Synchronisierung später erneut starten.
+Mit den Optionen *Synchronisieren* oder Nicht synchronisieren *auf der `Data Warehouse` können Sie steuern, welche der ausgewählten Metriken* Dimensionen Daten in Ihrer [!DNL Commerce Intelligence]-Tabelle verfügbar haben. Spalten, die derzeit nicht synchronisiert werden, werden grau angezeigt. Wenn Sie die Synchronisierung einer Spalte beenden, können Sie die Synchronisierung später erneut starten.
 
 ## Aktuelle Einschränkungen
 

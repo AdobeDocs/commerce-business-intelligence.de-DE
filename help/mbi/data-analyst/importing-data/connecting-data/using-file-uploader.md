@@ -25,7 +25,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 1293
+source-wordcount: 1400
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Nachdem Ihre Tabelle korrekt formatiert und [!DNL Commerce Intelligence] ist, f�
 
 1. Klicken Sie auf **[!UICONTROL Save Table]**.
 
-Ein *Erfolg!* nach dem Speichern der Tabelle wird oben im Bildschirm eine Meldung angezeigt.
+A *Erfolg!* wird nach dem Speichern der Tabelle oben im Bildschirm angezeigt.
 
 Wenn Sie eine visuelle Darstellung benötigen, sehen Sie sich den gesamten Prozess an:
 
@@ -152,7 +152,7 @@ Haben Sie neue Daten, die Sie einer bereits hochgeladenen Datei hinzufügen kön
 
 1. Klicken Sie auf **[!UICONTROL Open]** , um den Upload zu starten.
 
-   Nach Abschluss des Uploads validiert [!DNL Commerce Intelligence] die Datenstruktur in der Datei. Ein *Erfolg!* nach dem Speichern der Tabelle wird oben im Bildschirm eine Meldung angezeigt.
+   Nach Abschluss des Uploads validiert [!DNL Commerce Intelligence] die Datenstruktur in der Datei. A *Erfolg!* wird nach dem Speichern der Tabelle oben im Bildschirm angezeigt.
 
 ## Datenverfügbarkeit {#availability}
 
@@ -172,4 +172,4 @@ Außerdem ist der Datei-Upload nicht die einzige Möglichkeit, Ihre Daten in [!D
 
 ## Drittanbieterressource
 
-* [[!DNL Google Docs] Anleitung zur Datenformatierung](https://support.google.com/docs/answer/56470?hl=en)
+* [Handbuch zur [!DNL Google Docs] Datenformatierung](https://support.google.com/docs/answer/56470?hl=en)

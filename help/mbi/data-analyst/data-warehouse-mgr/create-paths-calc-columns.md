@@ -23,7 +23,7 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1030
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Sie haben einen falschen Pfad in Ihrer Data Warehouse erstellt? Oder Sie machen 
 
 ## Verpackung {#wrapup}
 
-Jetzt, da Sie sich mit dem Erstellen von Pfaden für berechnete Spalten in Ihrer Data Warehouse vertraut machen können. Wenn Sie sich bezüglich eines bestimmten Pfads immer noch nicht sicher sind, denken Sie daran, dass Sie in Ihrem **[!UICONTROL Support]**-Konto immer auf [!DNL Commerce Intelligence] klicken können, um Hilfe zu erhalten.
+Jetzt, da Sie sich mit dem Erstellen von Pfaden für berechnete Spalten in Ihrer Data Warehouse vertraut machen können. Wenn Sie sich bezüglich eines bestimmten Pfads immer noch nicht sicher sind, denken Sie daran, dass Sie in Ihrem [!DNL Commerce Intelligence]-Konto immer auf **[!UICONTROL Support]** klicken können, um Hilfe zu erhalten.
 
 ## verwandt
 
