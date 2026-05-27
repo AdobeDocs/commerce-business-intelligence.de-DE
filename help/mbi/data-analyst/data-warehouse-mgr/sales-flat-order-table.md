@@ -5,28 +5,14 @@ exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/zdxIx9qHzEyoCbFzh0EBv1BKJEWiShtAt33-dtkEGNo
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 1200
+source-wordcount: 1201
 ht-degree: 0%
 
 ---
@@ -47,7 +33,7 @@ Diese Tabelle enthält alle Kundenbestellungen, unabhängig davon, ob diese Best
 | `base_subtotal` | Bruttowarenwert aller in der Bestellung enthaltenen Artikel. Steuern, Versandkosten, Rabatte usw. sind nicht enthalten |
 | `base_shipping_amount` | Auf Bestellung angewendeter Versandwert |
 | `base_tax_amount` | Auf Bestellung angewendeter Steuerwert |
-| `billing_address_id` | Der `Foreign key` Tabelle zugeordnete `sales_order_address` `sales_order_address.entity_id` Sie die mit der Bestellung verbundenen Details der Rechnungsadresse an. |
+| `billing_address_id` | Der `sales_order_address` Tabelle zugeordnete `Foreign key` `sales_order_address.entity_id` Sie die mit der Bestellung verbundenen Details der Rechnungsadresse an. |
 | `coupon_code` | Coupon auf Bestellung angewendet. Wenn kein Coupon angewendet wird, wird dieses Feld `NULL` |
 | `created_at` | Erstellungszeitstempel der Bestellung, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL Commerce Intelligence] kann dieser Zeitstempel in eine Berichtszeitzone umgewandelt werden, [!DNL Commerce Intelligence] sich von Ihrer Datenbankzeitzone unterscheidet |
 | `customer_email` | E-Mail-Adresse des Bestellers. Dies wird in allen Situationen ausgefüllt, einschließlich Bestellungen, die über den Gast-Checkout verarbeitet werden |
@@ -57,7 +43,7 @@ Diese Tabelle enthält alle Kundenbestellungen, unabhängig davon, ob diese Best
 | `increment_id` | Eindeutige Kennung für eine Bestellung, die in Adobe Commerce häufig als `order_id` bezeichnet wird. Der `increment_id` wird am häufigsten für Joins mit externen Quellen verwendet, z. B. [!DNL Google Ecommerce] |
 | `shipping_address_id` | Fremdschlüssel, der der `sales_order_address`-Tabelle zugeordnet ist. `sales_order_address.entity_id` Sie mit , um die mit der Bestellung verbundenen Details der Versandadresse zu bestimmen |
 | `status` | Status der Bestellung. Kann Werte wie „abgeschlossen“, „Verarbeitung läuft“, „abgebrochen“, „rückerstattet“ und alle benutzerdefinierten Status zurückgeben, die auf der Commerce-Instanz implementiert sind. Änderungen vorbehalten, sobald die Bestellung bearbeitet wird |
-| `store_id` | Der `Foreign key` Tabelle zugeordnete `store` Mit `store` verbinden.`store_id`, um zu bestimmen, welche Commerce Store-Ansicht mit der Bestellung verknüpft ist |
+| `store_id` | Der `store` Tabelle zugeordnete `Foreign key` Mit `store` verbinden.`store_id` So bestimmen Sie, welche Commerce Store-Ansicht mit der Bestellung verknüpft ist |
 
 {style="table-layout:auto"}
 
@@ -65,26 +51,26 @@ Diese Tabelle enthält alle Kundenbestellungen, unabhängig davon, ob diese Best
 
 | **Spaltenname** | **Beschreibung** |
 |---|---|
-| `Billing address city` | Rechnungsort für die Bestellung. Berechnet durch `sales_order`.`billing_address_id` zu `sales_order_address`.`entity_id` und Zurückgeben des `city` |
-| `Billing address country` | Ländercode der Rechnungsstellung für die Bestellung. Berechnet durch `sales_order`.`billing_address_id` zu `sales_order_address`.`entity_id` und Zurückgeben der `country_id` |
-| `Billing address region` | Rechnungsregion (meistens Bundesland oder Provinz) für die Bestellung. Berechnet durch `sales_order`.`billing_address_id` zu `sales_order_address`.`entity_id` und Zurückgeben des `region` |
+| `Billing address city` | Rechnungsort für die Bestellung. Berechnet durch Verbinden von `sales_order`.`billing_address_id` bis `sales_order_address`.`entity_id` und Rückgabe des `city` |
+| `Billing address country` | Ländercode der Rechnungsstellung für die Bestellung. Berechnet durch Verbinden von `sales_order`.`billing_address_id` bis `sales_order_address`.`entity_id` und die `country_id` zurückgibt |
+| `Billing address region` | Rechnungsregion (meistens Bundesland oder Provinz) für die Bestellung. Berechnet durch Verbinden von `sales_order`.`billing_address_id` bis `sales_order_address`.`entity_id` und Rückgabe des `region` |
 | `Customer's first order date` | Zeitstempel der ersten Bestellung dieses Kunden. Wird häufig als „Akquisitionsdatum“ für einen Kunden betrachtet. Berechnet durch Rückgabe der `sales_order`.`created_at` Wert für jeden einzelnen Kunden |
 | `Customer's first order's billing region` | Abrechnungsregion für die Akquise für den Kunden, der die Bestellung aufgegeben hat Berechnet durch Rückgabe der `Billing address region`, die mit der ersten Bestellung des Kunden verbunden sind |
 | `Customer's first order's coupon_code` | Gutscheincode für den Kunden, der diese Bestellung aufgegeben hat. Berechnet durch Rückgabe der `coupon_code`, die mit der ersten Bestellung des Kunden verbunden sind |
-| `Customer's group code` | Gruppenname des Kunden, der diese Bestellung aufgegeben hat. Berechnet durch `sales_order`.`customer_group_id` zu `customer_group`.`customer_group_id` und Zurückgeben des `customer_group_code` |
+| `Customer's group code` | Gruppenname des Kunden, der diese Bestellung aufgegeben hat. Berechnet durch Verbinden von `sales_order`.`customer_group_id` bis `customer_group`.`customer_group_id` und Rückgabe des `customer_group_code` |
 | `Customer's lifetime number of coupons` | Die Gesamtmenge der Coupons, die auf alle von diesem Kunden aufgegebenen Bestellungen angewendet wurden. Berechnet durch Zählen der Bestellungen, bei denen die `coupon_code` nicht für jeden einzelnen Kunden `NULL` ist |
 | `Customer's lifetime number of orders` | Gesamtzahl der von diesem Kunden aufgegebenen Bestellungen. Berechnet durch Zählen der Zeilen in der `sales_order` für jeden einzelnen Kunden |
 | `Customer's lifetime revenue` | Summe des Gesamtumsatzes für alle Bestellungen dieses Kunden. Berechnet durch Summierung des Felds &quot;`base_grand_total`&quot; für alle Bestellungen für jeden einzelnen Kunden |
 | `Customer's order number` | Sequenzieller Auftragsrang für die Bestellung dieses Kunden. Berechnet, indem alle von einem Kunden aufgegebenen Bestellungen identifiziert, in aufsteigender Reihenfolge nach dem `created_at` Zeitstempel sortiert und jeder Bestellung ein inkrementierender ganzzahliger Wert zugewiesen wird. Beispiel: Bei der ersten Bestellung eines Kunden wird die `Customer's order number` 1 zurückgegeben, bei der zweiten Bestellung des Kunden wird die `Customer's order number` 2 zurückgegeben usw. |
 | `Customer's order number (previous-current)` | Rang der vorherigen Bestellung eines Kunden, verkettet mit dem Rang dieser Bestellung, getrennt durch ein `-` Zeichen. Wird durch Verketten (“`Customer's order number` - 1„) mit &quot;`-`&quot; gefolgt von &quot;`Customer's order number`&quot; berechnet. Beispiel: Für die Bestellung, die mit dem zweiten Kauf des Kunden verknüpft ist, gibt diese Spalte einen Wert von `1-2` zurück. Wird am häufigsten verwendet, wenn die Zeit zwischen zwei Bestellereignissen dargestellt wird (d. h. im Diagramm „Zeit zwischen Bestellungen„) |
 | `Is customer's last order?` | Bestimmt, ob die Bestellung der letzten oder letzten Bestellung des Kunden entspricht. Wird durch Vergleich des `Customer's order number` mit `Customer's lifetime number of orders` berechnet. Wenn diese beiden Felder für die angegebene Reihenfolge gleich sind, gibt diese Spalte `Yes` zurück. Andernfalls gibt sie `No` zurück |
-| `Number of items in order` | Die Gesamtmenge der Artikel, die in der Bestellung enthalten sind. Berechnet durch `sales_order`.`entity_id` zu `sales_order_item`.`order_id` und Zusammenfassung der `sales_order_item`.`qty_ordered` |
+| `Number of items in order` | Die Gesamtmenge der Artikel, die in der Bestellung enthalten sind. Berechnet durch Verbinden von `sales_order`.`entity_id` bis `sales_order_item`.`order_id` und die Zusammenfassung der `sales_order_item`.`qty_ordered` Feld |
 | `Seconds between customer's first order date and this order` | Zeit zwischen dieser Bestellung und der ersten Bestellung des Kunden. Berechnet durch Subtrahieren von `Customer's first order date` vom `created_at` für jede Bestellung, zurückgegeben als ganzzahlige Anzahl von Sekunden |
 | `Seconds since previous order` | Verstrichene Zeit zwischen dieser Bestellung und der unmittelbar vorangehenden Bestellung des Kunden. Berechnet durch Subtrahieren der `created_at` für die vorherige Reihenfolge von der `created_at` dieser Reihenfolge, zurückgegeben als ganzzahlige Anzahl von Sekunden. Beispiel: Für den Bestelldatensatz, der der dritten Bestellung eines Kunden entspricht, gibt diese Spalte die Anzahl der Sekunden zwischen der zweiten und dritten Bestellung des Kunden zurück. Für die erste Bestellung des Kunden gibt dieses Feld `NULL` zurück. |
-| `Shipping address city` | Versandstadt für die Bestellung. Berechnet durch `sales_order`.`shipping_address_id` zu `sales_order_address`.`entity_id` und Zurückgeben des `city` |
-| `Shipping address country` | Lieferland-Code für die Bestellung. Berechnet durch `sales_order`.`Shipping_address_id` zu `sales_order_address`.`entity_id` und Zurückgeben der `country_id` |
-| `Shipping address region` | Versandregion (meistens Bundesland oder Provinz) für die Bestellung. Berechnet durch `sales_order`.`shipping_address_id` zu `sales_order_address`.`entity_id` und Zurückgeben des `region` |
-| `Store name` | Der Name des Commerce-Stores, der mit dieser Bestellung verknüpft ist. Berechnet durch `sales_order`.`store_id` zu `store`.`store_id` und Zurückgeben des `name` |
+| `Shipping address city` | Versandstadt für die Bestellung. Berechnet durch Verbinden von `sales_order`.`shipping_address_id` bis `sales_order_address`.`entity_id` und Rückgabe des `city` |
+| `Shipping address country` | Lieferland-Code für die Bestellung. Berechnet durch Verbinden von `sales_order`.`Shipping_address_id` bis `sales_order_address`.`entity_id` und die `country_id` zurückgibt |
+| `Shipping address region` | Versandregion (meistens Bundesland oder Provinz) für die Bestellung. Berechnet durch Verbinden von `sales_order`.`shipping_address_id` bis `sales_order_address`.`entity_id` und Rückgabe des `region` |
+| `Store name` | Der Name des Commerce-Stores, der mit dieser Bestellung verknüpft ist. Berechnet durch Verbinden von `sales_order`.`store_id` bis `store`.`store_id` und Rückgabe des `name` |
 
 ## Allgemeine Metriken
 

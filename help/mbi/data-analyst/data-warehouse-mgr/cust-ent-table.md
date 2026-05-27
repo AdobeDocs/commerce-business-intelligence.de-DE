@@ -5,28 +5,14 @@ exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: 604
 ht-degree: 0%
 
 ---
@@ -35,7 +21,7 @@ ht-degree: 0%
 
 Die Tabelle `customer_entity` enthält Einträge aller registrierten Konten. Ein Konto gilt als registriert, wenn er sich für ein Konto anmeldet, unabhängig davon, ob er jemals einen Kauf abschließt. Jede Zeile entspricht einem eindeutigen registrierten Konto, das durch die `entity_id` dieses Kontos identifiziert wird.
 
-Diese Tabelle enthält keine Datensätze von Kunden, die eine Bestellung per Gast-Checkout aufgeben. Wenn Ihr Geschäft einen Gast-Checkout akzeptiert, finden Sie [&#x200B; diesen Bestellungen unter &quot;](../data-warehouse-mgr/guest-orders.md) für Gastbestellungen“.
+Diese Tabelle enthält keine Datensätze von Kunden, die eine Bestellung per Gast-Checkout aufgeben. Wenn Ihr Geschäft einen Gast-Checkout akzeptiert, finden Sie [ diesen Bestellungen unter &quot;](../data-warehouse-mgr/guest-orders.md) für Gastbestellungen“.
 
 ## Gemeinsame Spalten
 
@@ -45,7 +31,7 @@ Diese Tabelle enthält keine Datensätze von Kunden, die eine Bestellung per Gas
 | `email` | Dem Konto zugeordnete E-Mail-Adresse |
 | `entity_id` (K) | Eindeutige Kennung für die Tabelle, die häufig bei Verknüpfungen mit dem `customer_id` in anderen Tabellen innerhalb der Instanz verwendet wird |
 | `group_id` | Fremdschlüssel, der der `customer_group`-Tabelle zugeordnet ist. `customer_group.customer_group_id` beitreten, um die mit dem registrierten Konto verknüpfte Kundengruppe zu bestimmen |
-| `store_id` | Fremdschlüssel, der der `store`-Tabelle zugeordnet ist. Mit `store` verbinden.`store_id`, um zu bestimmen, welche Commerce-Store-Ansicht mit dem registrierten Konto verknüpft ist |
+| `store_id` | Fremdschlüssel, der der `store`-Tabelle zugeordnet ist. Mit `store` verbinden.`store_id` So bestimmen Sie, welche Commerce-Store-Ansicht mit dem registrierten Konto verknüpft ist |
 
 {style="table-layout:auto"}
 
@@ -54,10 +40,10 @@ Diese Tabelle enthält keine Datensätze von Kunden, die eine Bestellung per Gas
 | **Spaltenname** | **Beschreibung** |
 |---|---|
 | `Customer's first 30 day revenue` | Summe des Umsatzes für alle Bestellungen dieses Kunden innerhalb von 30 Tagen nach dem ersten Bestelldatum des Kunden. Berechnet durch Verbinden von `customer_entity.entity_id` mit `sales_order.customer_id` und Summieren des `base_grand_total`-Felds für alle Bestellungen, bei denen `sales_order.Seconds between customer's first order date and this order` ≤ 2592000, d. h. die Anzahl der Sekunden in 30 Tagen |
-| `Customer's first order date` | Zeitstempel der ersten Bestellung dieses Kunden. Berechnet durch Verbinden von `customer_entity.entity_id` mit `sales_order.customer_id` und Zurückgeben der `sales_order`.`created_at` |
+| `Customer's first order date` | Zeitstempel der ersten Bestellung dieses Kunden. Berechnet durch Verbinden von `customer_entity.entity_id` mit `sales_order.customer_id` und Zurückgeben der `sales_order`.`created_at` Wert |
 | `Customer's first order's billing region` | Rechnungsregion, die mit der ersten Bestellung des Kunden verknüpft ist. Berechnet durch Verbinden von `customer_entity.entity_id` mit `sales_order.customer_id` und Zurückgeben der `Billing address region` mit `sales_order.Customer's order number` = 1 |
 | `Customer's first order's coupon_code` | Couponcode, der mit der ersten Bestellung des Kunden verknüpft ist. Berechnet durch Verbinden von `customer_entity.entity_id` mit `sales_order.customer_id` und Zurückgeben der `sales_order.coupon_code` mit `sales_order.Customer's order number` = 1 |
-| `Customer's group code` | Gruppenname des registrierten Kunden. Berechnet durch Verbinden von `customer_entity.group_id` mit `customer_group`.`customer_group_id` und Zurückgeben des `customer_group_code` |
+| `Customer's group code` | Gruppenname des registrierten Kunden. Berechnet durch Verbinden von `customer_entity.group_id` mit `customer_group`.`customer_group_id` und Rückgabe des `customer_group_code` |
 | `Customer's lifetime number of coupons` | Gesamtzahl der Coupons, die auf alle von diesem Kunden aufgegebenen Bestellungen angewendet wurden. Berechnet durch Verbinden von `customer_entity.entity_id` mit `sales_order.customer_id` und Zählen der Anzahl der Bestellungen, bei denen die `sales_order.coupon_code` nicht `NULL` ist |
 | `Customer's lifetime number of orders` | Gesamtzahl der von diesem Kunden aufgegebenen Bestellungen. Berechnet durch Verbinden von `customer_entity.entity_id` mit `sales_order.customer_id` und Zählen der Anzahl der Zeilen in der `sales_order` |
 | `Customer's lifetime revenue` | Summe des Gesamtumsatzes für alle Bestellungen dieses Kunden. Berechnet, indem `customer_entity.entity_id` mit `sales_order.customer_id` verbunden und das Feld `base_grand_total` für alle Bestellungen dieses Kunden zusammengefasst wird |

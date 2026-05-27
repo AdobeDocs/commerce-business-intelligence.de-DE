@@ -5,25 +5,14 @@ exl-id: cd5120ca-454c-4cf4-acb4-3aebe06cdc9a
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/leSf21lcOaEbm1aehC8iZLdbtRJFKK9yVQwdvft-GKQ
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 566
+source-wordcount: 567
 ht-degree: 0%
 
 ---
@@ -62,7 +51,7 @@ In einer Situation ohne Gastaufträge ist jeder Kunde als eindeutige Zeile in de
 
 Bei einer Einrichtung für Gastaufträge, bei der alle Kundenmetriken auf der `orders` basieren, um Gastaufträge zu berücksichtigen, müssen Sie sicherstellen, dass Sie `not counting customers twice` sind. Wenn Sie die Kennung der Tabelle Bestellungen zählen, zählen Sie jede Bestellung. Wenn Sie stattdessen die ID in der `orders` Tabelle zählen und einen Filter verwenden, `Customer's order number = 1`, zählen Sie jede eindeutige Kunden-`only one time`. Dies gilt für alle Metriken auf Kundenebene, wie `Customer's lifetime revenue` oder `Customer's lifetime number of orders`.
 
-Oben sehen Sie, dass die `customer\_ids`-Tabelle Null-`orders` enthält. Wenn Sie die `customer\_email` verwenden, um Unique Customers zu identifizieren, können Sie sehen, dass `erin@test.com` drei (3) Bestellungen aufgegeben hat. Daher können Sie basierend auf den folgenden Bedingungen eine `New customers` Metrik in Ihrer `orders` erstellen:
+Oben sehen Sie, dass die `orders`-Tabelle Null-`customer\_ids` enthält. Wenn Sie die `customer\_email` verwenden, um Unique Customers zu identifizieren, können Sie sehen, dass `erin@test.com` drei (3) Bestellungen aufgegeben hat. Daher können Sie basierend auf den folgenden Bedingungen eine `New customers` Metrik in Ihrer `orders` erstellen:
 
 * `Operation table = orders`
 * `Operation column = id`
