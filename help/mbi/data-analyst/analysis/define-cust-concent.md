@@ -5,25 +5,14 @@ exl-id: 6242019f-a6a5-48d3-b214-94acd7842e00
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/kayq-ci-AiHHgNoaX09h6dqKQX14MudLvEqFmos3hQE
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 472
+source-wordcount: 483
 ht-degree: 0%
 
 ---
@@ -75,7 +64,7 @@ Zu erstellende Spalten
 * Perzentil des Umsatzes des Kunden
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **wenn A null ist, dann andernfalls null (A/B)* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - ** wenn A null ist, dann andernfalls null (A/B)*100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 * `Sales_flat_order`
@@ -93,7 +82,7 @@ Zu erstellende Spalten
 * Perzentil des Umsatzes des Kunden
 * [!UICONTROL Column type]: - `Same table > Calculation`
 * [!UICONTROL Inputs]: - `(input) Ranking by customer lifetime revenue`, `Number of customers`
-* [!UICONTROL Calculation]: - **wenn A null ist, dann andernfalls null (A/B)* 100 end &#x200B;**
+* [!UICONTROL Calculation]: - ** wenn A null ist, dann andernfalls null (A/B)*100 end **
 * [!UICONTROL Datatype]: - `Decimal`
 
 >[!NOTE]
@@ -117,16 +106,16 @@ Zu erstellende Spalten
 * [!UICONTROL Metric]: `Total customer lifetime value`
 * [!UICONTROL Filter]: `Customer's revenue percentile IS NOT NULL`
 
-* &#x200B;
+* 
   [!UICONTROL Gruppieren nach]: `Independent`
 * `A`: `Total customer lifetime revenue by percentile`
 * `B`: `Total customer lifetime revenue (ungrouped)`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * [!UICONTROL Group by]: `Customer's revenue percentile`
 * Oben/unten anzeigen: `100% of Customer's revenue percentile Name`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Line`
 
 * **Top 10% Konzentration**
@@ -134,12 +123,12 @@ Zu erstellende Spalten
 
 * `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Diagramm ausblenden
-* &#x200B;
+* 
   [!UICONTROL Gruppieren nach]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **Unten 50 % Konzentration mit nur einem Kauf**
@@ -150,12 +139,12 @@ Zu erstellende Spalten
 * [!UICONTROL Filter]:
 
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Diagramm ausblenden
-* &#x200B;
+* 
   [!UICONTROL Gruppieren nach]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 * **untere 10%-Konzentration**
@@ -163,14 +152,14 @@ Zu erstellende Spalten
 
 * `A`: `Total customer lifetime revenue`
 * [!UICONTROL Time period]: `All time`
-* &#x200B;
+* 
   [!UICONTROL Interval]: `None`
 * Diagramm ausblenden
-* &#x200B;
+* 
   [!UICONTROL Gruppieren nach]: `Email`
-* &#x200B;
+* 
   [!UICONTROL Chart type]: `Table`
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie im Dashboard nach Bedarf organisieren. Das Ergebnis kann wie im obigen Beispiel-Dashboard aussehen.
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [&#x200B; sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).

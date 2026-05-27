@@ -5,28 +5,14 @@ exl-id: b9577919-0db0-47f1-a426-1abe48443ac0
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/h1abSvMbiLAovsl4YtlBHmLTOW03Bk6WlMOwYvh4cIk
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
-source-wordcount: 1237
+source-wordcount: 1244
 ht-degree: 0%
 
 ---
@@ -83,7 +69,7 @@ Mit Data Warehouse Manager können Sie nicht nur Ihre Datenquellen einfach anzei
    Wenn Sie eine Tabelle synchronisieren, die direkt aus Ihrer Datenbank stammt, ist es möglich, dass `Primary Keys` nicht gekennzeichnet wird. Wenden Sie sich in diesem Fall an Ihren Datenbankadministrator, um das Hinzufügen eines Primärschlüssels oder von Primärschlüsseln zur Tabelle anzufordern.
 1. Klicken Sie abschließend auf die ![Schaltfläche](../../assets/button.png).
 
-Ein *Erfolg!* wird eine Meldung angezeigt und der Status ändert sich für die ausgewählten Spalten in `Pending`. Nach Abschluss der nächsten vollständigen Aktualisierung stehen die neu synchronisierten Tabellen und Spalten zur Verwendung in Berichten zur Verfügung. Sie können auch neue [Replikationsmethoden](./cfg-replication-methods.md) nach der ersten Synchronisierung festlegen.
+A *Erfolg!* wird angezeigt und der Status ändert sich für die ausgewählten Spalten in `Pending`. Nach Abschluss der nächsten vollständigen Aktualisierung stehen die neu synchronisierten Tabellen und Spalten zur Verwendung in Berichten zur Verfügung. Sie können auch neue [Replikationsmethoden](./cfg-replication-methods.md) nach der ersten Synchronisierung festlegen.
 
 Im Folgenden finden Sie einen kurzen Überblick über den gesamten Prozess:
 
@@ -105,7 +91,7 @@ Unter der Suchleiste in der Tabellenliste befindet sich ein `Check for new table
 
 Die einfache Möglichkeit, Daten aus all Ihren Quellen zu sehen und zu verwalten, macht es viel einfacher, Einblicke in Ihr Unternehmen zu gewinnen. In Data Warehouse Manager können Sie jedoch einen Schritt weiter gehen, indem Sie in Ihren Tabellen berechnete Spalten erstellen. `Calculated` Spalten leiten neue Informationen aus Ihren vorhandenen Daten ab.
 
-Angenommen, Sie möchten Ihrer `user's lifetime revenue`-Tabelle `users` hinzufügen, um Benutzer mit hohem Wert zu finden. Wenn Sie den Umsatz nach Geschlecht segmentieren möchten, können Sie `customer's gender` zu Ihrer `orders` hinzufügen.
+Angenommen, Sie möchten Ihrer `users`-Tabelle `user's lifetime revenue` hinzufügen, um Benutzer mit hohem Wert zu finden. Wenn Sie den Umsatz nach Geschlecht segmentieren möchten, können Sie `customer's gender` zu Ihrer `orders` hinzufügen.
 
 Weitere Informationen finden Sie in diesem [Tutorial](../../data-analyst/data-warehouse-mgr/creating-calculated-columns.md).
 
@@ -135,7 +121,7 @@ Im Folgenden finden Sie einen kurzen Überblick über das Entfernen einer Spalte
 
 ## Wann kann ich meine neuen Spalten verwenden? {#when}
 
-Neue synchronisierte Spalten und neue/aktualisierte berechnete Spalten sind nach Abschluss der nächsten vollständigen Aktualisierung einsatzbereit. Wenn noch keine Aktualisierung in Bearbeitung ist, können Sie eine Aktualisierung erzwingen, indem Sie oben auf der **[!UICONTROL Force update]**- oder `Data Warehouse` auf `Integrations` klicken. Sie können auch eine E-Mail-Benachrichtigung nach Abschluss der Aktualisierung planen, indem Sie auf **[!UICONTROL Email me when complete]** klicken.
+Neue synchronisierte Spalten und neue/aktualisierte berechnete Spalten sind nach Abschluss der nächsten vollständigen Aktualisierung einsatzbereit. Wenn noch keine Aktualisierung in Bearbeitung ist, können Sie eine Aktualisierung erzwingen, indem Sie oben auf der `Data Warehouse`- oder `Integrations` auf **[!UICONTROL Force update]** klicken. Sie können auch eine E-Mail-Benachrichtigung nach Abschluss der Aktualisierung planen, indem Sie auf **[!UICONTROL Email me when complete]** klicken.
 
 Wenn Sie bereit sind, Ihre neuen Spalten in Berichten zu verwenden [müssen Sie sie zuerst zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md). Obwohl Daten erst nach Abschluss einer Aktualisierung verfügbar sind, können Sie in Berichten dennoch neue Spalten verwenden. Daten innerhalb des Berichts werden angezeigt, wenn die Aktualisierung abgeschlossen ist.
 
