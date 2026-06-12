@@ -5,30 +5,21 @@ exl-id: da610988-21c1-4f5f-b4e2-e2deb175a2aa
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export, SQL Report Builder
 TQID: https://experienceleague.adobe.com/IsDW3nNBF840BAd4zIhCDmHvFAFJv-1oQmrJw5MKh0Q
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 566
 ht-degree: 0%
 
 ---
 
 # [!DNL PostgreSQL] über [!DNL SSH Tunnel] verbinden
 
-Um Ihre [!DNL PostgreSQL] Datenbank über eine [!DNL Commerce Intelligence] mit `SSH tunnel` zu verbinden, müssen Sie einige Schritte ausführen:
+Um Ihre [!DNL PostgreSQL] Datenbank über eine `SSH tunnel` mit [!DNL Commerce Intelligence] zu verbinden, müssen Sie einige Schritte ausführen:
 
 1. [Abrufen des  [!DNL Commerce Intelligence]  Schlüssels](#retrieve)
 1. [Zugriff auf die IP [!DNL Commerce Intelligence] Adresse zulassen](#allowlist)
@@ -57,7 +48,7 @@ Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firew
 
 ## Erstellen eines [!DNL Linux] Benutzers für [!DNL Commerce Intelligence] {#linux}
 
-Dabei kann es sich um einen Produktions- oder Sekundärrechner handeln, sofern er Echtzeitdaten (oder häufig aktualisierte Daten) enthält. Sie können [diesen Benutzer &#x200B;](../../../administrator/account-management/restrict-db-access.md) beliebiger Weise einschränken, solange er das Recht behält, eine Verbindung zum [!DNL PostgreSQL]-Server herzustellen.
+Dabei kann es sich um einen Produktions- oder Sekundärrechner handeln, sofern er Echtzeitdaten (oder häufig aktualisierte Daten) enthält. Sie können [diesen Benutzer ](../../../administrator/account-management/restrict-db-access.md) beliebiger Weise einschränken, solange er das Recht behält, eine Verbindung zum [!DNL PostgreSQL]-Server herzustellen.
 
 1. Um den neuen Benutzer hinzuzufügen, führen Sie die folgenden Befehle als Stammordner auf Ihrem [!DNL Linux] aus:
 
@@ -116,8 +107,13 @@ Unter `SSH Connection`:
 * `Username`: Ihr SSH-Anmeldename (sollte rjmetrisch sein)
 * `SSH Port`: SSH-Port auf dem Server (standardmäßig 22)
 
-Wenn Sie fertig sind, klicken Sie auf **Speichern und testen** um die Einrichtung abzuschließen.
+Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um die Einrichtung abzuschließen.
 
-### verwandt
+>[!NOTE]
+>
+>Informationen zu Registrierung, Aktualisierung, Fehlermeldungen und Fehlerbehebung für SSH-Hostschlüssel finden Sie unter [SSH-Hostschlüsselüberprüfung](ssh-host-key-verification.md).
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+## verwandt {#related}
+
+* [Überprüfung des SSH-Hostschlüssels](ssh-host-key-verification.md)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
