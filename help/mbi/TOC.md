@@ -5,9 +5,9 @@ user-guide-title: Commerce Intelligence-Benutzerhandbuch
 breadcrumb-title: Commerce Intelligence-Benutzerhandbuch
 role: Admin, Developer, Leader, User
 feature: Business Performance
-source-git-commit: 994fd98dac3dd8693b79c7497bba7bb6df27edf6
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
@@ -137,6 +137,7 @@ ht-degree: 0%
       - [Verbinden von Adobe Commerce](data-analyst/importing-data/integrations/magento.md)
       - [Erwartete Commerce-Daten](data-analyst/importing-data/integrations/magento-data.md)
       - [Verbinden [!DNL Microsoft SQL Server]](data-analyst/importing-data/integrations/microsoft-sql-server.md)
+      - [Überprüfung des SSH-Hostschlüssels](data-analyst/importing-data/integrations/ssh-host-key-verification.md)
       - [Verbindung  [!DNL MongoDB] über [!DNL SSH Tunnel]](data-analyst/importing-data/integrations/mongodb-via-ssh-tunnel.md)
       - [Verbindung  [!DNL MySQL]  a [!DNL direct connection]](data-analyst/importing-data/integrations/mysql-via-a-direct-connection.md)
       - [Verbindung  [!DNL MySQL] über [!DNL cPanel]](data-analyst/importing-data/integrations/mysql-via-cpanel.md)

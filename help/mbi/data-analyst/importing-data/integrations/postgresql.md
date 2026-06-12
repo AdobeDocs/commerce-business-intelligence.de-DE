@@ -19,16 +19,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 566
 ht-degree: 0%
 
 ---
 
 # [!DNL PostgreSQL] über [!DNL SSH Tunnel] verbinden
 
-Um Ihre [!DNL PostgreSQL] Datenbank über eine [!DNL Commerce Intelligence] mit `SSH tunnel` zu verbinden, müssen Sie einige Schritte ausführen:
+Um Ihre [!DNL PostgreSQL] Datenbank über eine `SSH tunnel` mit [!DNL Commerce Intelligence] zu verbinden, müssen Sie einige Schritte ausführen:
 
 1. [Abrufen des  [!DNL Commerce Intelligence]  Schlüssels](#retrieve)
 1. [Zugriff auf die IP [!DNL Commerce Intelligence] Adresse zulassen](#allowlist)
@@ -116,8 +116,13 @@ Unter `SSH Connection`:
 * `Username`: Ihr SSH-Anmeldename (sollte rjmetrisch sein)
 * `SSH Port`: SSH-Port auf dem Server (standardmäßig 22)
 
-Wenn Sie fertig sind, klicken Sie auf **Speichern und testen** um die Einrichtung abzuschließen.
+Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um die Einrichtung abzuschließen.
 
-### verwandt
+>[!NOTE]
+>
+>Informationen zu Registrierung, Aktualisierung, Fehlermeldungen und Fehlerbehebung für SSH-Hostschlüssel finden Sie unter [SSH-Hostschlüsselüberprüfung](ssh-host-key-verification.md).
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+## verwandt {#related}
+
+* [Überprüfung des SSH-Hostschlüssels](ssh-host-key-verification.md)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)

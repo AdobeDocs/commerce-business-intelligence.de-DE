@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 376
+source-wordcount: 399
 ht-degree: 0%
 
 ---
@@ -36,12 +36,13 @@ ht-degree: 0%
 
 ## Zu springen
 
-* [[!DNL MySQL] über &#x200B;](../integrations/mysql-via-ssh-tunnel.md)
+* [[!DNL MySQL] über `SSH tunnel`](../integrations/mysql-via-ssh-tunnel.md)
+* [Überprüfung des SSH-Hostschlüssels](../integrations/ssh-host-key-verification.md)
 * [[!DNL MySQL] über [!DNL cPanel]](../integrations/mysql-via-cpanel.md)
 
 >[!NOTE]
 >
->[!DNL Adobe] empfiehlt die Verwendung von [SSH](../integrations/mysql-via-ssh-tunnel.md) oder einer anderen Form der Verschlüsselung, um Ihre Daten zu schützen! Wenn dies keine Option ist, können Sie [!DNL Commerce Intelligence] dennoch direkt mit Ihrer Datenbank verbinden, indem Sie die Anweisungen in diesem Thema verwenden.
+>[!DNL Adobe] empfiehlt die Verwendung von [SSH](../integrations/mysql-via-ssh-tunnel.md) oder einer anderen Form der Verschlüsselung, um Ihre Daten zu schützen! Informationen zur Überprüfung des SSH-Hostschlüssels finden Sie unter [SSH-Hostschlüsselüberprüfung](../integrations/ssh-host-key-verification.md). Wenn dies keine Option ist, können Sie [!DNL Commerce Intelligence] dennoch direkt mit Ihrer Datenbank verbinden, indem Sie die Anweisungen in diesem Thema verwenden.
 
 Dieses Thema führt Sie durch die direkte Verbindung Ihrer [!DNL MySQL] mit [!DNL Commerce Intelligence]. Diese Einstellungen können auch mit [!DNL Adobe Commerce] oder anderen eCommerce-Datenbanken verwendet werden, die MySQL verwenden.
 
@@ -53,7 +54,7 @@ Damit die Verbindung erfolgreich hergestellt werden kann, müssen Sie Ihre Firew
 
 ## Erstellen eines [!DNL MySQL] Benutzers für [!DNL Commerce Intelligence]
 
-Die einfachste Möglichkeit, einen `MySQL` Benutzer für [!DNL Commerce Intelligence] zu erstellen, besteht darin, die folgende Abfrage auszuführen, wenn Sie mit `MySQL` Berechtigungen bei `GRANT` angemeldet sind. Ersetzen Sie `Commerce Intelligence IP Address` durch die [!DNL Commerce Intelligence] IP-Adresse und ersetzen Sie `secure password` durch ein sicheres Kennwort Ihrer Wahl:
+Die einfachste Möglichkeit, einen `MySQL` Benutzer für [!DNL Commerce Intelligence] zu erstellen, besteht darin, die folgende Abfrage auszuführen, wenn Sie mit `GRANT` Berechtigungen bei `MySQL` angemeldet sind. Ersetzen Sie `Commerce Intelligence IP Address` durch die [!DNL Commerce Intelligence] IP-Adresse und ersetzen Sie `secure password` durch ein sicheres Kennwort Ihrer Wahl:
 
 ```sql
     GRANT SELECT ON *.* TO 'magentobi'@'<Commerce Intelligence IP address>' IDENTIFIED BY '<secure password>';
@@ -81,4 +82,4 @@ Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um die Einr
 
 ## Verwandte Dokumentation
 
-* [Integrationen erneut authentifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)

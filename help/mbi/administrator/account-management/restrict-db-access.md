@@ -16,16 +16,16 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 204
+source-wordcount: 225
 ht-degree: 0%
 
 ---
 
 # Zugriff beschränken
 
-Wenn Sie einen SSH-Tunnel zu Ihrem Server erstellen, müssen [!DNL Adobe Commerce Intelligence] auf nichts anderes als auf die Datenbank zugreifen können. Wenn Sie nicht möchten, dass [!DNL Commerce Intelligence] vollen Zugriff auf den Server haben, auf dem sich Ihre Datenbank befindet, können Sie den Zugriff einschränken, indem Sie den [!DNL Commerce Intelligence Linux] Benutzer in eine [eingeschränkte Bash-Shell“ &#x200B;](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
+Wenn Sie einen SSH-Tunnel zu Ihrem Server erstellen, müssen [!DNL Adobe Commerce Intelligence] auf nichts anderes als auf die Datenbank zugreifen können. Informationen zu Registrierung, Fehlern und Fehlerbehebung für SSH-Hostschlüssel finden Sie unter [SSH-Hostschlüsselüberprüfung](../../data-analyst/importing-data/integrations/ssh-host-key-verification.md). Wenn Sie nicht möchten, dass [!DNL Commerce Intelligence] vollen Zugriff auf den Server haben, auf dem sich Ihre Datenbank befindet, können Sie den Zugriff einschränken, indem Sie den [!DNL Commerce Intelligence Linux] Benutzer in eine [eingeschränkte Bash-Shell“ &#x200B;](https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html).
 
 Sie können den Namen bereits erraten haben, aber eine eingeschränkte Bash-Shell wird verwendet, um eine Umgebung einzurichten, die kontrollierter ist als die Standard-Shell. Das Wichtige an dieser Art von Shell ist, dass eingeschränkte Shell-Benutzer nicht auf Systemfunktionen zugreifen oder irgendwelche Änderungen vornehmen können.
 

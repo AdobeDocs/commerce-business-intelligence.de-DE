@@ -19,9 +19,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 100
+source-wordcount: 110
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 Möchten Sie sehen, wie Ihr Unternehmen funktioniert oder Ihre wertvollsten Akquisequellen und -kanäle finden? Wenn Sie Ihre [!DNL Adobe Commerce] mit [!DNL Commerce Intelligence] verbinden, können Sie diese Fragen und mehr beantworten.
 
-Da die [!DNL Adobe Commerce] Datenbank auf MySQL basiert, können Sie sie über eine [!DNL Commerce Intelligence]Direktverbindung[, &#x200B;](../integrations/mysql-via-a-direct-connection.md) oder [[!DNL cPanel]](../integrations/mysql-via-cpanel.md)über einen SSH-Tunnel[&#x200B; mit &#x200B;](../integrations/mysql-via-ssh-tunnel.md) verbinden. Die SSH-Methode wird empfohlen, da sie die sicherste ist.
+Da die [!DNL Adobe Commerce] Datenbank auf MySQL basiert, können Sie sie über eine [Direktverbindung](../integrations/mysql-via-a-direct-connection.md), [[!DNL cPanel]](../integrations/mysql-via-cpanel.md) oder [über einen SSH-Tunnel](../integrations/mysql-via-ssh-tunnel.md) mit [!DNL Commerce Intelligence] verbinden. Die SSH-Methode wird empfohlen, da sie die sicherste ist. Informationen zur Überprüfung des SSH-Hostschlüssels finden Sie unter [SSH-Hostschlüsselüberprüfung](../integrations/ssh-host-key-verification.md).
 
 ## Verwandte Informationen
 

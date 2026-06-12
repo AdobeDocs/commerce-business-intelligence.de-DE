@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 3a6b80d7bcfa5db4d86ab4da81239e3ea804f6ad
 workflow-type: tm+mt
-source-wordcount: 567
+source-wordcount: 628
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Es gibt vier Möglichkeiten, Ihre Daten in [!DNL Commerce Intelligence] zu über
 
 [!DNL Commerce Intelligence] unterstützt SQL-basierte und NoSQL-Datenbanken wie [MySQL](../../importing-data/integrations/mysql-via-ssh-tunnel.md), [Microsoft SQL](../integrations/microsoft-sql-server.md), [MongoDB](../integrations/mongodb-via-ssh-tunnel.md) und [PostgreSQL](../integrations/postgresql.md).
 
-Adobe empfiehlt, eine bewährte Verschlüsselungsmethode wie einen SSH-Tunnel zu verwenden, auch wenn Sie Ihre Datenbank mithilfe der Datenbankanmeldeinformationen direkt mit [!DNL Commerce Intelligence] verbinden können. Dadurch wird sichergestellt, dass Ihre Daten beim Eintritt in Ihre Data Warehouse sicher bleiben.
+Adobe empfiehlt, eine bewährte Verschlüsselungsmethode wie einen SSH-Tunnel zu verwenden, auch wenn Sie Ihre Datenbank mithilfe der Datenbankanmeldeinformationen direkt mit [!DNL Commerce Intelligence] verbinden können. Dadurch wird sichergestellt, dass Ihre Daten beim Eintritt in Ihre Data Warehouse sicher bleiben. Informationen zu Registrierung, Fehlern und Fehlerbehebung für SSH-Hostschlüssel finden Sie unter [SSH-Hostschlüsselüberprüfung](../integrations/ssh-host-key-verification.md).
 
 Je nach Verbindungsmethode und Datenbanktyp sind möglicherweise technische Kenntnisse erforderlich, um die Einrichtung abzuschließen.
 
@@ -85,11 +85,11 @@ Weitere Informationen zu den ersten Schritten mit dem `Import API` finden Sie au
 Um eine Integration hinzuzufügen, klicken Sie auf **[!UICONTROL Manage Data** > **Connections]** und dann auf **[!UICONTROL Add a New Data Source]**. Klicken Sie auf das Symbol der Integration, die Sie hinzufügen möchten, und befolgen Sie die Anweisungen in den Hilfethemen, um Dinge einzurichten:
 
 * [Häufig gestellte Fragen zur Integration](https://support.magento.com/hc/en-us/sections/360003161871-Integration-FAQ)
-* [Verfügbar &#x200B;](../integrations/integrations.md)
+* [Verfügbare `SaaS` und `database` Integrationen](../integrations/integrations.md)
 * [Konsolidieren von Tabellen](../../../best-practices/consolidating-your-tables.md)
 * [Beschränken des Zugriffs auf die Datenbank](../../../administrator/account-management/restrict-db-access.md)
 
-**Sie eine Integration nicht sehen, die Sie möchten?** Einige Integrationen müssen aktiviert werden, damit sie in Ihrem Konto sichtbar sind. Wenn Sie nach etwas wie [!DNL Facebook] suchen, es aber nicht aufgeführt ist, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+**Sie sehen keine Integration, die Sie möchten?** Einige Integrationen müssen aktiviert werden, damit sie in Ihrem Konto sichtbar sind. Wenn Sie nach etwas wie [!DNL Facebook] suchen, es aber nicht aufgeführt ist, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
 
 **Wenn Sie einen Fehlerstatus für eine Integration sehen** finden Sie im Abschnitt [Fehlerbehebung](https://support.magento.com/hc/en-us/sections/360003078151) Hilfe.
 
