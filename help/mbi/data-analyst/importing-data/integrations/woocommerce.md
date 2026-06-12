@@ -40,5 +40,5 @@ Die [!DNL WooCommerce]-Datenbank basiert auf [!DNL MySQL]. Sie können sie über
 
 ## Verwandt:
 
-* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
 * [Empfohlene Datendimensionen für Segmentierung und Filterung](../../../best-practices/segment-filter.md)

@@ -166,4 +166,4 @@ Wenn Sie fertig sind, klicken Sie auf **[!UICONTROL Save & Test]** , um die Einr
 ## verwandt {#related}
 
 * [Überprüfung des SSH-Hostschlüssels](ssh-host-key-verification.md)
-* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
