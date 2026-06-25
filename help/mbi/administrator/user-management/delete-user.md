@@ -19,7 +19,7 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
 workflow-type: tm+mt
 source-wordcount: 201
 ht-degree: 0%
@@ -43,3 +43,4 @@ Wenn Sie die Dashboards nur von diesem Benutzer in das Konto eines anderen Benut
 1. Verwenden Sie die E-Mail-Adresse des gelöschten Benutzers, um einen neuen [!DNL Commerce Intelligence] Benutzer zu erstellen.
 1. [Benachrichtigen Sie den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), nachdem Sie den Benutzer erstellt haben. Der Support überträgt die Dashboards in Ihr Konto.
 1. Nachdem Sie vom Adobe-Support über die Übertragung informiert wurden, können Sie den Benutzer erneut löschen.
+
