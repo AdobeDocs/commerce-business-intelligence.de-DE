@@ -18,7 +18,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
 workflow-type: tm+mt
 source-wordcount: 229
 ht-degree: 0%
@@ -40,4 +40,5 @@ Hier finden Sie die empfohlene Liste der Elemente, die Sie für die Option benö
 1. **Eine Browser-Erweiterung zum Drehen zwischen mehreren Registerkarten gleichzeitig.** Auf diese Weise können Sie alle ausgewählten Dashboards einrichten, die auf einer eindeutigen Registerkarte angezeigt werden. Adobe empfiehlt die [Revolver Tabs](https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda?hl=en)-Erweiterung, wenn Sie [!DNL Chrome] verwenden.
 
 Sobald Sie über die oben genannte Hardware verfügen, können Sie ein Browser-Fenster auf Ihrem Bildschirm mit einem bestimmten Dashboard öffnen, das Sie auf jeder Registerkarte anzeigen möchten. Konfigurieren Sie abschließend Ihren Browser so, dass er jedes Dashboard mit der gewünschten Häufigkeit durchläuft.
+
 
