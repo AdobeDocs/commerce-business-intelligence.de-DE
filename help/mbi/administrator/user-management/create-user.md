@@ -4,11 +4,19 @@ description: Erfahren Sie, wie Sie einen neuen  [!DNL Commerce Intelligence]  hi
 role: Admin, User
 feature: User Management
 TQID: https://experienceleague.adobe.com/-cMJHvHlodd05-Np22qtxxS8lHMi4StXOz1iD83xWkU
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 exl-id: 6b846e3d-fce0-4145-b298-9a9c57e6bd26
 source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
@@ -27,7 +35,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Zum Anzeigen, Hinzufügen oder Ändern der Rechnungsinformationen Ihres Kontos benötigen Sie `Billing` Berechtigungen. [Berechtigungen werden für jeden Benutzer einzeln festgelegt, ](../../administrator/user-management/user-management.md) Benutzerkonten erstellt werden. Wenn Sie `Billing` Berechtigungen benötigen, wenden Sie sich an den Administrator Ihres Kontos.
+   >Zum Anzeigen, Hinzufügen oder Ändern der Rechnungsinformationen Ihres Kontos benötigen Sie `Billing` Berechtigungen. [Berechtigungen werden für jeden Benutzer einzeln festgelegt, &#x200B;](../../administrator/user-management/user-management.md) Benutzerkonten erstellt werden. Wenn Sie `Billing` Berechtigungen benötigen, wenden Sie sich an den Administrator Ihres Kontos.
 
 1. Klicken Sie auf **[!UICONTROL Save]**.
 
@@ -35,7 +43,7 @@ Dem neuen Benutzer wird eine E-Mail mit Anmelde- und Kennwortdetails gesendet.
 
 >[!NOTE]
 >
->Der neue Benutzer verfügt standardmäßig über keine Dashboards. Adobe empfiehlt, [ erforderlichen ](../../data-user/dashboards/share-dashboard-with-users.md) sofort für neue Benutzende freizugeben.
+>Der neue Benutzer verfügt standardmäßig über keine Dashboards. Adobe empfiehlt, [&#x200B; erforderlichen &#x200B;](../../data-user/dashboards/share-dashboard-with-users.md) sofort für neue Benutzende freizugeben.
 
 ## E-Mail-Adresse oder Passwort aktualisieren
 
@@ -47,4 +55,4 @@ Wenn Sie die Einladung erneut senden müssen, klicken Sie auf der [Anmeldeseite]
 
 >[!IMPORTANT]
 >
->Jedes Konto verfügt über eine vertraglich vereinbarte Anzahl von Lizenzen oder Lizenzen. Wenn Sie Ihr Limit erreicht haben oder mehr erfahren möchten, [ Sie ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+>Jedes Konto verfügt über eine vertraglich vereinbarte Anzahl von Lizenzen oder Lizenzen. Wenn Sie Ihr Limit erreicht haben oder mehr erfahren möchten, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
