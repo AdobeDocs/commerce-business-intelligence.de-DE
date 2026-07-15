@@ -1,7 +1,6 @@
 ---
 title: Löschen oder Reaktivieren von Adobe Commerce Intelligence-Benutzenden
 description: Erfahren Sie, wie Sie einen  [!DNL Commerce Intelligence]  löschen.
-exl-id: 0590275d-3329-40fb-8be1-4a700438338d
 role: Admin, User
 feature: User Management
 product_v2:
@@ -19,12 +18,14 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 0590275d-3329-40fb-8be1-4a700438338d
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 201
 ht-degree: 0%
 
 ---
+
 
 # Löschen eines [!DNL Adobe Commerce Intelligence] Benutzers
 
@@ -43,5 +44,3 @@ Wenn Sie die Dashboards nur von diesem Benutzer in das Konto eines anderen Benut
 1. Verwenden Sie die E-Mail-Adresse des gelöschten Benutzers, um einen neuen [!DNL Commerce Intelligence] Benutzer zu erstellen.
 1. [Benachrichtigen Sie den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), nachdem Sie den Benutzer erstellt haben. Der Support überträgt die Dashboards in Ihr Konto.
 1. Nachdem Sie vom Adobe-Support über die Übertragung informiert wurden, können Sie den Benutzer erneut löschen.
-
-

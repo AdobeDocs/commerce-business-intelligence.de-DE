@@ -1,7 +1,6 @@
 ---
 title: Beschränken des Zugriffs auf Ihre Datenbank
 description: Erfahren Sie, wie Sie den Zugriff einschränken und so den Zugriff auf den Server einschränken können, auf dem sich Ihre Datenbank befindet.
-exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
 role: Admin, User
 feature: Accounts, User Management
 TQID: https://experienceleague.adobe.com/O2cS-hbhjqktc4LpJD6agxgIwabrypgCY9fnJTCR2XM
@@ -16,12 +15,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 7a0bc0d7-086e-4a6e-b1dd-6db13814710e
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
 source-wordcount: 225
 ht-degree: 0%
 
 ---
+
 
 # Zugriff beschränken
 
@@ -32,7 +33,6 @@ Sie können den Namen bereits erraten haben, aber eine eingeschränkte Bash-Shel
 Um den [!DNL Commerce Intelligence Linux] Benutzer einzuschränken, müssen Sie zwei Dinge tun:
 
 1. Ändern Sie die PATH-Umgebungsvariable in die leere Zeichenfolge. Das bedeutet, dass der Benutzer nicht auf ausführbare Dateien des Systems zugreifen kann.
-
 1. Stellen Sie sicher, dass die ausgeführte Shell `bash -r` ist
 
 Beide Aktionen können in der `authorized_keys`-Datei im `dir/.ssh` des Benutzers als Teil des Befehls ausgeführt werden, der bei der Anmeldung des Benutzers ausgeführt wird. Er sieht in etwa so aus:
@@ -44,5 +44,3 @@ command="env PATH="" /bin/bash -r" <rjmetrics public key goes here>
 ```
 
 Wenn dies abgeschlossen ist, kann der Benutzer, den Sie für [!DNL Commerce Intelligence] erstellt haben, keine Änderungen an Ihrem System vornehmen.
-
-

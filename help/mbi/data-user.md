@@ -1,7 +1,6 @@
 ---
 title: Datennutzer
 description: Erfahren Sie, wie Sie Daten verwenden, um fundiertere Geschäftsentscheidungen zu treffen und Berichte und Dashboards zu erstellen.
-exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
 TQID: https://experienceleague.adobe.com/-sqS1qaDbWwGY2Hy13sSqw4sdnxZYGQqiEn5wVcF5lo
@@ -20,18 +19,21 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 2f412c94-5042-4411-b19b-482993e6f70f
+source-git-commit: 1e8d1a7b6807eb23a7784133ca2d1aea219386b7
 workflow-type: tm+mt
 source-wordcount: 86
 ht-degree: 0%
 
 ---
 
+
 # Datennutzer
 
 Sie verwenden Daten, um geschäftliche Entscheidungen zu treffen. Möglicherweise erhalten Sie Berichte und Dashboards von einem Datenanalytiker in Ihrem Team. Sie möchten aber auch erfahren, wie Sie diese Berichte und Dashboards erstellen.
 
 In diesem Abschnitt wird Folgendes veranschaulicht:
+
 * Erfassen und Anzeigen von Daten in [!DNL Commerce Intelligence] mithilfe von Berichten und Dashboards
 * Geben Sie diese Daten per E-Mail und `.csv` für die beteiligten Akteure frei
 
@@ -40,5 +42,3 @@ In diesem Abschnitt wird Folgendes veranschaulicht:
 * [Erstellen von Berichten](../mbi/data-user/reports/rpt-fundamentals.md)
 * [Erstellen von Dashboards](../mbi/data-user/dashboards/ess-dashboards.md)
 * [Freigeben von Daten](../mbi/data-user/export-data/share-data.md)
-
-

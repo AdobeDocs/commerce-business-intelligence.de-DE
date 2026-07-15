@@ -1,7 +1,6 @@
 ---
 title: Passwort zurücksetzen
 description: Erfahren Sie, wie Sie das Kennwort eines Benutzers zurücksetzen.
-exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
 role: Admin, User
 feature: User Management
 product_v2:
@@ -19,12 +18,14 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 94b6ebcdfcf08c1ef7b878966c0985cdce8f80bd
+exl-id: 4de90da3-9846-4c3a-a31e-8b379f207618
+source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
 workflow-type: tm+mt
-source-wordcount: 88
+source-wordcount: 89
 ht-degree: 0%
 
 ---
+
 
 # Passwort zurücksetzen
 
@@ -32,6 +33,4 @@ Um Ihr Kennwort zurückzusetzen, klicken Sie auf der [!DNL Adobe Commerce Intell
 
 Sie können Ihr Kennwort in [!DNL Commerce Intelligence] auch über die Seite **[!UICONTROL Personal Settings]** ändern.
 
-Wenn Sie Ihr Kennwort zurückgesetzt haben und Ihr Konto gesperrt bleibt, befolgen Sie [diese Tipps](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.html?lang=de), um das Problem zu identifizieren.
-
-
+Wenn Sie Ihr Kennwort zurückgesetzt haben und Ihr Konto gesperrt bleibt, befolgen Sie [diese Tipps](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout), um das Problem zu identifizieren.
