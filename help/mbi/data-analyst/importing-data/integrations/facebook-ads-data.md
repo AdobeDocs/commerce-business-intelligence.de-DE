@@ -84,4 +84,4 @@ Diese Tabelle enthält dieselben Informationen wie die `facebook_ads_insights_{a
 ## verwandt
 
 * [Verbinden [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
