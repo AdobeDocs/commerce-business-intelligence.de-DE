@@ -23,7 +23,7 @@ Dieser Abschnitt enthält die Änderungen, die in den letzten 60 Tagen vorgenomm
   </thead>
   <tbody>
     <tr>
-      <td><p>Neue <a href="https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">SSH-Hostschlüsselüberprüfung</a> Themendokumente speichern und testen die Registrierung, aktualisieren SSH-Hostschlüssel, Migrationsverhalten, Fehlerbehebung und wann der Support kontaktiert werden sollte. Themen zur SSH-Tunnelintegration sind jetzt mit diesem Handbuch verknüpft.</p>
+      <td><p>Neue <a href="https://experienceleague.adobe.com/de/docs/commerce-business-intelligence/mbi/analyze/integration/ssh-host-key-verification">SSH-Hostschlüsselüberprüfung</a> Themendokumente speichern und testen die Registrierung, aktualisieren SSH-Hostschlüssel, Migrationsverhalten, Fehlerbehebung und wann der Support kontaktiert werden sollte. Themen zur SSH-Tunnelintegration sind jetzt mit diesem Handbuch verknüpft.</p>
 </td>
       <td>
         Feedback
