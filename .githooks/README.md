@@ -1,7 +1,7 @@
 ---
-source-git-commit: 98e0c5dbd61d6d0f8d1a6e09d239cb25cbab8f81
+source-git-commit: aa7acd0d863a3cd48ff83675b72c2a96eae02b4d
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -11,10 +11,11 @@ Dieses Verzeichnis enthält Pre-Commit-Hooks, die Bilder automatisch optimieren,
 
 ## Was die Haken tun
 
-- **Staging** Bilddateien (PNG, JPG, JPEG, GIF) automatisch erkennen
-- **`image_optim`** ausführen, um Bilder zu komprimieren und zu optimieren
+- **Staging** Bilddateien (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`) automatisch erkennen
+- **Führen Sie`image_optim`** aus, um Rasterbilder (`.png`, `.jpeg`, `.jpg`, `.gif`) zu komprimieren und zu optimieren.
 - **Optimierte Bilder automatisch neu**.
-- **Sicherstellen, dass alle übergebenen Bilder** optimiert sind
+- **Sicherstellen, dass alle übergebenen Rasterbilder** optimiert sind
+- **Überprüfen Sie gestaffelte SVGs** anhand einer Größenbeschränkung und brechen Sie den Commit ab, wenn eine übergroße SVG von einer Datei in `help/` referenziert wird (andernfalls nur warnen).
 
 ## Vorteile
 
@@ -77,19 +78,37 @@ chmod +x .githooks/*
 
 ```bash
 Found 1 staged image(s). Running optimization...
-Optimizing: path/to/your/image.png
-Re-staged optimized image: path/to/your/image.png
-Image optimization complete!
+
+Checking images ...
+path/to/your/image.png    100.00%
+Pre-commit image checks complete!
+```
+
+### Komponententests
+
+Die SVG-Linkerkennungslogik des Hooks (die entscheidet, ob ein übergroßes SVG von `help/` referenziert wird) wird von Modultests abgedeckt, die nur die gebündelte `minitest` von Ruby benötigen - keine Edelsteine oder `_jekyll` Einrichtung:
+
+```bash
+ruby .githooks/test/svg_link_checker_test.rb
 ```
 
 ## Bildrichtlinien
 
 - **PNG**: Für Screenshots und Benutzeroberflächenelemente verwenden (wird automatisch optimiert)
-- **SVG**: Für Symbole und einfache Grafiken verwenden (nicht automatisch durch den Pre-Commit-Hook optimiert)
 - **JPEG**: Für Fotos verwenden (wird automatisch optimiert)
 - **GIF**: Für Animationen verwenden (wird automatisch optimiert)
+- **SVG**: Für Symbole und einfache Grafiken verwenden (nicht optimiert, aber auf eine Größenbeschränkung geprüft; der Commit schlägt nur fehl, wenn die übergroße SVG von `help/` verknüpft ist)
 
-Die Pre-Commit-Hooks optimieren beim Commit automatisch PNG-, JPEG- und GIF-Bilder.
+Die Pre-Commit-Hooks optimieren beim Commit automatisch `.png`, `.jpeg`/`.jpg` und `.gif` Bilder und überprüfen gestaffelte SVGs anhand einer Größenbeschränkung (140 KB).
+
+Wenn eine gestaffelte SVG das Limit überschreitet und von einer Datei in `help/` auf diese verwiesen wird, wird der Commit abgebrochen. Wenn in `help/` nicht auf die übergroße SVG verwiesen wird, gibt der Hook nur eine Warnung aus, und der Commit wird fortgesetzt. Konvertieren Sie stattdessen übergroße SVGs in PNG:
+
+```bash
+cd _jekyll
+bundle exec rake images:svg_to_png path=../help/assets/image.svg
+```
+
+Der Pfad ist relativ zu `_jekyll`, sodass Bilder unter `help/` als `../help/...` referenziert werden.
 
 ## Manuelle Optimierung
 
@@ -107,7 +126,7 @@ Die Erweiterungspunkte verwenden die Konfigurationsdatei `_jekyll/.image_optim.y
 - **PNG**: Verwendet `advpng`, `optipng` und `pngquant`
 - **JPEG**: Verwendet `jhead`, `jpegoptim` und `jpegtran`
 - **GIF**: Verwendet `gifsicle`
-- **SVG**: Die SVG-Optimierung ist standardmäßig deaktiviert (kann komplexe Vektorgrafiken und Animationen beschädigen)
+- **SVG**: Nicht optimiert (von der `image_optim` ausgeschlossen, um Vektorgrafiken und Animationen beizubehalten), aber mit einer Größenbeschränkung von 140 KB überprüft
 
 ## Fehlerbehebung
 
@@ -120,8 +139,14 @@ Die Erweiterungspunkte verwenden die Konfigurationsdatei `_jekyll/.image_optim.y
 ### Optimierungsfehler
 
 - Stellen Sie sicher, dass `bundle install` im `_jekyll` ausgeführt wurde.
-- Überprüfen Sie, ob der `adobe-comdox-exl-rake-tasks` Gem installiert ist (bietet `image_optim`)
+- Vergewissern Sie sich, dass der `adobe-comdox-exl-rake-tasks` Gem installiert ist (stellt die `images:optimize`-, `images:check_size`- und `images:svg_to_png`-Aufgaben bereit, die der Hook ausführt)
 - Überprüfen der `.image_optim.yml` Konfigurationsdatei
+
+### SVG überschreitet Größenbeschränkung
+
+- Der Commit wird abgebrochen, wenn ein gestaffelter SVG 140 KB überschreitet und von einer Datei in `help/` referenziert wird (andernfalls warnt der Hook nur und der Commit wird fortgesetzt)
+- Konvertieren Sie die SVG in PNG: `cd _jekyll && bundle exec rake images:svg_to_png path=../help/assets/image.svg` (der Pfad ist relativ zu `_jekyll`, sodass Bilder unter `help/` als `../help/...` referenziert werden)
+- Staging Sie dann das PNG anstelle des SVGS und übertragen Sie erneut
 
 ### Leistungsprobleme
 
@@ -132,19 +157,17 @@ Die Erweiterungspunkte verwenden die Konfigurationsdatei `_jekyll/.image_optim.y
 
 1. **Pre-commit-Trigger**: Wenn Sie `git commit` ausführen, wird der Hook automatisch ausgeführt
 2. **Bilderkennung**: Durchsucht gestaffelte Dateien nach Bilderweiterungen
-3. **Optimierung**: Führt `image_optim` für jedes Staging-Bild aus
+3. **Optimierung**: Wird `image_optim` für jedes bereitgestellte PNG, jede JPEG oder jede GIF ausgeführt
 4. **Re-Staging**: Fügt dem Staging-Bereich automatisch optimierte Bilder zurück
-5. **Commit wird fortgesetzt**: Wenn die Optimierung erfolgreich ist, wird der Commit normal fortgesetzt
+5. **Größenüberprüfung für SVG**: Prüft jedes bereitgestellte SVG anhand der Größenbeschränkung von 140 KB
+6. **Commit wird fortgesetzt**: Wenn die Optimierung erfolgreich ist und keine übergroße SVG von `help/` referenziert wird, wird der Commit normal fortgesetzt. Andernfalls wird der Commit abgebrochen (eine übergroße SVG wird nicht von `help/` Triggern referenziert, eine Warnung)
 
 ## Unterstützte Bildformate
-
-Der Pre-Commit-Hook verarbeitet automatisch:
 
 - **PNG** (`.png`) - Verlustfreie und verlustbehaftete Komprimierung
 - **JPEG** (`.jpg`, `.jpeg`) - Verlustbehaftete Komprimierung mit Metadatenbereinigung
 - **GIF** (`.gif`) - Animation und statische Optimierung
-
-**Hinweis**: Die SVG-Optimierung ist standardmäßig deaktiviert (kann komplexe Vektorgrafiken und Animationen beschädigen). SVG-Dateien werden vom Pre-Commit-Hook nicht automatisch verarbeitet.
+- **SVG** (`.svg`) - Nicht optimiert (Commit unverändert, um die Qualität zu erhalten), aber auf eine Größenbeschränkung von 140 KB geprüft; der Commit wird abgebrochen, wenn der Grenzwert überschritten wird und der SVG von `help/` referenziert wird (andernfalls warnt der Hook nur)
 
 ## Best Practices
 
