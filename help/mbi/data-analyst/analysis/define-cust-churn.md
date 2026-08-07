@@ -5,11 +5,21 @@ exl-id: fea8f7e9-c84c-4d49-a657-8b75140c113a
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports, Dashboards
 TQID: https://experienceleague.adobe.com/eDJBh7FlhuKjBa5ft4sqAfZavmBk4V9m-Iu-26cG2VI
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
 workflow-type: tm+mt
 source-wordcount: 592
@@ -43,8 +53,8 @@ Zu erstellende Spalten
 * Definition auswählen: Verbundene Spalte
 * [!UICONTROL table] auswählen: `customer_entity`
 * [!UICONTROL column] auswählen: `Customer's lifetime number of orders`
-* [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]: `Orders we count`
+* [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * `Seconds since created_at`
 * Definition auswählen: `Age`
@@ -62,71 +72,71 @@ Keine neuen Metriken!
 
 >[!NOTE]
 >
->Stellen Sie sicher[ dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
+>Stellen Sie sicher[&#x200B; dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
 * **Anfängliche Wiederholungsreihenfolgewahrscheinlichkeit**
 * Metrik A: Allzeit-Wiederholungsaufträge
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * Metrik B: Allzeitbestellungen
 * [!UICONTROL Metric]: Anzahl der Bestellungen
 
 * [!UICONTROL Formula]: Anfängliche Wahrscheinlichkeit für Wiederholungsreihenfolge
-* 
-  [!UICONTROL-Formel]: `A/B`
-* 
-  [!UICONTROL Format]: `Percent`
+* &#x200B;
+  [!UICONTROL -Formel]&#x200B;: `A/B`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Scalar`
 
 * **Wiederholungsreihenwahrscheinlichkeit angegeben Monate seit Bestellung**
 * Metrik A: Wiederholungsaufträge nach Monaten seit vorheriger Bestellung (ausblenden)
-* [!UICONTROL Metric]: `Number of orders`
-* 
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* &#x200B;
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * Metrik B: Letzte Bestellungen nach Monaten seit Bestellung (ausblenden)
-* [!UICONTROL Metric]: `Number of orders`
-* 
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* &#x200B;
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
 * Metrik C: Allzeit-Wiederholungsaufträge (ausblenden)
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
-* 
-  [!UICONTROL Gruppieren nach]: `Independent`
+* &#x200B;
+  [!UICONTROL Gruppieren nach]&#x200B;: `Independent`
 
 * Metrik-ID: Letzte Bestellungen (Ausblenden)
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
-* 
-  [!UICONTROL Gruppieren nach]: `Independent`
+* &#x200B;
+  [!UICONTROL Gruppieren nach]&#x200B;: `Independent`
 
 * [!UICONTROL Formula]: Anfängliche Wahrscheinlichkeit für Wiederholungsreihenfolge
-* 
-  [!UICONTROL-Formel]: `(C-A)/(C+D-A-B)`
-* 
-  [!UICONTROL Format]: `Percent`
+* &#x200B;
+  [!UICONTROL -Formel]&#x200B;: `(C-A)/(C+D-A-B)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Months since previous order`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Months since previous order`
 * Oben anzeigen.Unten: Die 24 wichtigsten Kategorien, sortiert nach Kategorienamen
 
-* 
-  [!UICONTROL Chart type]: `Line`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Line`
 
 Der Bericht über die Wahrscheinlichkeit des ursprünglichen Wiederholungsauftrags stellt die Gesamtzahl der Wiederholungsaufträge/Gesamtaufträge dar. Jede Bestellung ist eine Möglichkeit, eine Wiederholungsreihenfolge zu erstellen. Die Anzahl der Wiederholungsreihenfolgen ist die Teilmenge derjenigen, die tatsächlich eine Wiederholungsreihenfolge ausführen.
 
@@ -138,4 +148,4 @@ Nachdem Sie Ihr Dashboard erstellt haben, lautet die am häufigsten gestellte Fr
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie im Dashboard nach Bedarf organisieren. Das Ergebnis kann wie das Bild oben auf der Seite aussehen
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [&#x200B; sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html).
