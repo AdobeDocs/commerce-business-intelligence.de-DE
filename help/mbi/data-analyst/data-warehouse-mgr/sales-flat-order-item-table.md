@@ -5,11 +5,25 @@ exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/oIuu3bNkmZMRrwa6V76fQPgKUWr4IsG3Madq46ar0Tk
-product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b0c4e988-b173-423f-88d4-345071a0bce8
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
 source-wordcount: 896
@@ -23,7 +37,7 @@ Die `sales_order_item` Tabelle (`sales_flat_order_item` auf M1) enthält Datens�
 
 ## Produktarten
 
-Die `sales_order_item` erfasst Details zu allen [Produktarten](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/product-create#product-types) die gekauft wurden. Eine gängige Praxis in [!DNL Adobe Commerce] besteht darin, konfigurierbare Produkte anzubieten, d. h. ein Produkt, das anhand von Größe, Farbe und anderen Produktattributen angepasst werden kann. Obwohl ein konfigurierbares Produkt über eine eigene `sku` verfügt, kann es sich auf mehrere einfache Produkte beziehen, wobei jedes einfache Produkt eine eindeutige Produktkonfiguration darstellt. Weitere Informationen finden [ unter &quot;](https://developer.adobe.com/commerce/webapi/rest/tutorials/configurable-product/) konfigurieren“.
+Die `sales_order_item` erfasst Details zu allen [Produktarten](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/product-create#product-types) die gekauft wurden. Eine gängige Praxis in [!DNL Adobe Commerce] besteht darin, konfigurierbare Produkte anzubieten, d. h. ein Produkt, das anhand von Größe, Farbe und anderen Produktattributen angepasst werden kann. Obwohl ein konfigurierbares Produkt über eine eigene `sku` verfügt, kann es sich auf mehrere einfache Produkte beziehen, wobei jedes einfache Produkt eine eindeutige Produktkonfiguration darstellt. Weitere Informationen finden [&#x200B; unter &quot;](https://developer.adobe.com/commerce/webapi/rest/tutorials/configurable-product/) konfigurieren“.
 
 Betrachten Sie beispielsweise ein konfigurierbares Produkt wie ein T-Shirt. Beim Auschecken wählt der Kunde Optionen aus, um die Farbe und Größe zu ändern. Wenn der Kunde eine Farbe für `blue` und eine Größe für `small` auswählt, kauft er am Ende ein einfaches Produkt wie `t-shirt-blue-small`, das sich auf das übergeordnete Produkt von `t-shirt` bezieht.
 
@@ -90,7 +104,7 @@ Daher ist es möglich, den Verkauf von Produkten entweder auf der einfachen Eben
 
 `sales_order_item`
 
-* Verbinden Sie sich mit `sales_order_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Wenden Sie sich an den ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um Hilfe bei der Konfiguration dieser Berechnungen zu erhalten, falls Sie etwas in Data Warehouse Manager erstellen.
+* Verbinden Sie sich mit `sales_order_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Wenden Sie sich an den &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um Hilfe bei der Konfiguration dieser Berechnungen zu erhalten, falls Sie etwas in Data Warehouse Manager erstellen.
   * Pfad: `sales_order_item.parent_item_id` (viele) => `sales_order_item.item_id` (eins)
 
 `store`
