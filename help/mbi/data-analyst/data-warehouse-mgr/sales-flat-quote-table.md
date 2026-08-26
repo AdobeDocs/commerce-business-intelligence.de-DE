@@ -1,30 +1,18 @@
 ---
 title: Angebotstabelle
-description: Erfahren Sie, wie Sie mit der Angebotstabelle arbeiten.
+description: Überprüfen Sie das Schema der Angebotstabelle in Commerce Intelligence, das jeden Warenkorb verfolgt. Erfahren Sie mehr über die Empfehlungen von Adobe zur Verwaltung der Tabellengröße im Zeitverlauf.
 exl-id: 3a1e9239-33a7-429e-bfc8-628c68701710
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/Q-46fusr2IS4ZQDrR8IjHEttueSBpT2-LQBtsejMEC4
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 613
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -81,14 +69,14 @@ Die `quote` Tabelle (`sales_flat_quote` auf M1) enthält Datensätze zu jedem in
 `customer_entity`
 
 * Join in `customer_entity` Tabelle, um neue Spalten auf Kundenebene zu erstellen, die mit dem Kunden verknüpft sind, der den Warenkorb erstellt hat.
-   * Pfad: `quote.customer_id` (viele) => `customer_entity.entity_id` (eins)
+  * Pfad: `quote.customer_id` (viele) => `customer_entity.entity_id` (eins)
 
 `sales_order`
 
 * Mit `sales_order` Tabelle verbinden, um Spalten zu erstellen, die mit einem konvertierten Warenkorb verknüpfte Bestelldetails zurückgeben.
-   * Pfad: `quote.reserved_order_id` (viele) => `sales_order.increment_id` (eins)
+  * Pfad: `quote.reserved_order_id` (viele) => `sales_order.increment_id` (eins)
 
 `store`
 
 * Join `store` Tabelle, um Spalten zu erstellen, die Details zum mit dem Warenkorb verknüpften Commerce-Store zurückgeben.
-   * Pfad: `quote.store_id` (viele) => `store.store_id` (eins)
+  * Pfad: `quote.store_id` (viele) => `store.store_id` (eins)

@@ -1,27 +1,18 @@
 ---
 title: Daten mit Zuordnungstabellen standardisieren
-description: Erfahren Sie, wie Sie mit Zuordnungstabellen arbeiten.
+description: Standardisieren Sie inkonsistente Werte, z. B. Formate für den Abrechnungsstatus, indem Sie Zuordnungstabellen in Commerce Intelligence Data Warehouse Manager verwenden, um die Berichte korrekt zu halten.
 exl-id: e452ff87-f298-43d5-acc3-af58e53bd0bc
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
 TQID: https://experienceleague.adobe.com/ScOu9-YwG9T8nTMEow3QehHL8GcYeuNtUS0MHTf4GFU
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 775
+source-wordcount: 788
 ht-degree: 0%
 
 ---
@@ -73,7 +64,7 @@ Um die `joined` Spalte zu erstellen, navigieren Sie zu der Tabelle, in die das F
 1. Klicken Sie auf **[!UICONTROL Create a Column]**.
 1. Wählen Sie `Joined Column` aus dem Dropdown-Menü `Definition` aus.
 1. Geben Sie der Spalte einen Namen, der sie von der `state` Spalte in Ihrer Datenbank unterscheidet. Benennen Sie die Spalte `billing state (mapped)`, damit Sie sehen können, welche Spalte bei der Segmentierung in Report Builder verwendet werden soll.
-1. Der Pfad, den Sie zum Verbinden der Tabellen benötigen, existiert nicht. Daher müssen Sie einen erstellen. Klicken Sie in der Dropdown-Liste **[!UICONTROL Create new path]** auf `Select a table and column` .
+1. Der Pfad, den Sie zum Verbinden der Tabellen benötigen, existiert nicht. Daher müssen Sie einen erstellen. Klicken Sie in der Dropdown-Liste `Select a table and column` auf **[!UICONTROL Create new path]** .
 
    Wenn Sie sich nicht sicher sind, was die Tabellenbeziehung ist oder wie Sie die Primär- und Fremdschlüssel richtig definieren, finden Sie im [Tutorial](../../data-analyst/data-warehouse-mgr/create-paths-calc-columns.md) Hilfe.
 

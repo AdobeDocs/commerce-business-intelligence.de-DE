@@ -5,29 +5,15 @@ exl-id: 5aa571c9-7f38-462c-8f1b-76a826c9dc55
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager
 TQID: https://experienceleague.adobe.com/vYwWxyLRBA-ZG6IZv9Xw1nYqdYG2nfucHNB6rF8qAsM
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1120
-ht-degree: 6%
+source-wordcount: 1156
+ht-degree: 13%
 
 ---
 
@@ -79,11 +65,11 @@ Sehen Sie sich eines der zuvor in diesem Artikel erwähnten Beispiele genauer an
 
 | **`_id`** | **`campaign`** | **`adClicks`** | **`date`** | **`impressions`** | **`adCost`** |
 |--- |--- |--- |--- |--- |--- |
-| 1 | EEE | 60 | 05.05.2017 00:00:00 | 2000 | 10,2 |
-| 2 | Ogg | 40 | 23.05.2017 00:00:00 | 900 | 4,6 |
-| 3 | AAA | 22 | 12.06.2017 00:00:00 | 400 | 2,5 |
-| 4 | EEE | 350 | 30.06.2017 00:00:00 | 14500 | 35 |
-| 5 | FFF | 280 | 10.07.2017 00:00:00 | 10200 | 28,5 |
+| 1 | EEE | 60 | 2017-05-05 00:00:00 | 2000 | 10,2 |
+| 2 | Ogg | 40 | 2017-05-23 00:00:00 | 900 | 4,6 |
+| 3 | AAA | 22 | 2017-06-12 00:00:00 | 400 | 2,5 |
+| 4 | EEE | 350 | 2017-06-30 00:00:00 | 14500 | 35 |
+| 5 | FFF | 280 | 2017-07-10 00:00:00 | 10200 | 28,5 |
 
 `Ad source: Facebook`
 
@@ -93,11 +79,11 @@ Sehen Sie sich eines der zuvor in diesem Artikel erwähnten Beispiele genauer an
 
 | **`_id`** | **`campaign`** | **`adClicks`** | **`date`** | **`impressions`** | **`adCost`** |
 |--- |--- |--- |--- |--- |--- |
-| 1 | AAA | 25 | 01.05.2017 00:00:00 | 1200 | 5 |
-| 2 | DDd | 12 | 15.05.2017 00:00:00 | 800 | 2,5 |
-| 3 | AAA | 40 | 22.05.2017 00:00:00 | 2000 | 7 |
-| 4 | AAA | 110 | 08.06.2017 00:00:00 | 6000 | 10 |
-| 5 | CCC | 5 | 06.07.2017 00:00:00 | 300 | 1,2 |
+| 1 | AAA | 25 | 2017-05-01 00:00:00 | 1200 | 5 |
+| 2 | DDd | 12 | 2017-05-15 00:00:00 | 800 | 2,5 |
+| 3 | AAA | 40 | 2017-05-22 00:00:00 | 2000 | 7 |
+| 4 | AAA | 110 | 2017-06-08 00:00:00 | 6000 | 10 |
+| 5 | CCC | 5 | 2017-07-06 00:00:00 | 300 | 1,2 |
 
 Um eine einzelne Ausgabentabelle für Anzeigen zu erstellen, die sowohl [!DNL Facebook]- als auch [!DNL Google AdWords]-Kampagnen enthält, müssen Sie eine SQL-Abfrage schreiben und die `UNION ALL`-Funktion verwenden. Eine `UNION ALL`-Anweisung wird meist verwendet, um mehrere verschiedene SQL-Abfragen zu kombinieren und dabei die Ergebnisse jeder Abfrage an eine einzelne Ausgabe anzuhängen.
 
@@ -141,22 +127,22 @@ Beim Speichern der obigen Abfrage als `Data Warehouse View` wird eine Tabelle mi
 
 | **`id`** | **`ad_source`** | **`date`** | **`campaign`** | **`spend`** | **`impressions`** | **`clicks`** |
 |--- |--- |--- |--- |--- |--- |--- |
-| **1** | [!DNL Facebook] | 01.05.2017 00:00:00 | AAA | 5 | 1200 | 25 |
-| **1** | [!DNL Google AdWords] | 05.05.2017 00:00:00 | EEE | 10,2 | 2000 | 60 |
-| **2** | [!DNL Facebook] | 15.05.2017 00:00:00 | DDd | 2,5 | 800 | 12 |
-| **2** | [!DNL Google AdWords] | 23.05.2017 00:00:00 | Ogg | 4,6 | 900 | 40 |
-| **3** | [!DNL Facebook] | 22.05.2017 00:00:00 | AAA | 7 | 2000 | 40 |
-| **3** | [!DNL Google AdWords] | 12.06.2017 00:00:00 | AAA | 2,5 | 400 | 22 |
-| **4** | [!DNL Facebook] | 08.06.2017 00:00:00 | AAA | 10 | 6000 | 110 |
-| **4** | [!DNL Google AdWords] | 30.06.2017 00:00:00 | EEE | 35 | 14500 | 350 |
-| **5** | [!DNL Facebook] | 06.07.2017 00:00:00 | CCC | 1,2 | 300 | 5 |
-| **5** | [!DNL Google AdWords] | 10.07.2017 00:00:00 | FFF | 28,5 | 10200 | 280 |
+| **1** | [!DNL Facebook] | 2017-05-01 00:00:00 | AAA | 5 | 1200 | 25 |
+| **1** | [!DNL Google AdWords] | 2017-05-05 00:00:00 | EEE | 10,2 | 2000 | 60 |
+| **2** | [!DNL Facebook] | 2017-05-15 00:00:00 | DDd | 2,5 | 800 | 12 |
+| **2** | [!DNL Google AdWords] | 2017-05-23 00:00:00 | Ogg | 4,6 | 900 | 40 |
+| **3** | [!DNL Facebook] | 2017-05-22 00:00:00 | AAA | 7 | 2000 | 40 |
+| **3** | [!DNL Google AdWords] | 2017-06-12 00:00:00 | AAA | 2,5 | 400 | 22 |
+| **4** | [!DNL Facebook] | 2017-06-08 00:00:00 | AAA | 10 | 6000 | 110 |
+| **4** | [!DNL Google AdWords] | 2017-06-30 00:00:00 | EEE | 35 | 14500 | 350 |
+| **5** | [!DNL Facebook] | 2017-07-06 00:00:00 | CCC | 1,2 | 300 | 5 |
+| **5** | [!DNL Google AdWords] | 2017-07-10 00:00:00 | FFF | 28,5 | 10200 | 280 |
 
 Anstatt für jede Anzeigenquelle einen separaten Satz von Marketing-Metriken zu erstellen, können Sie mit der obigen Tabelle nur einen einzigen Satz von Metriken erstellen, um alle Ihre Anzeigen zu erfassen.
 
 **Suchen Sie zusätzliche Hilfe?**
 
-Das Schreiben von SQL und das Erstellen von `Data Warehouse Views` ist nicht im Lieferumfang des technischen Supports enthalten. Das [Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) bietet jedoch Unterstützung bei der Erstellung von Ansichten an. Das Supportteam kann Ihnen bei allen Fragen behilflich sein, von der Migration einer alten Datenbank mit einer neuen Datenbank bis zur Erstellung einer einzigen Data Warehouse-Ansicht für bestimmte Analysezwecke.
+Das Schreiben von SQL und das Erstellen von `Data Warehouse Views` ist nicht im Lieferumfang des technischen Supports enthalten. Das [Services-Team](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) bietet jedoch Unterstützung bei der Erstellung von Ansichten an. Das Supportteam kann Ihnen bei allen Fragen behilflich sein, von der Migration einer alten Datenbank mit einer neuen Datenbank bis zur Erstellung einer einzigen Data Warehouse-Ansicht für bestimmte Analysezwecke.
 
 Normalerweise erfordert die Erstellung eines neuen `Data Warehouse View` für die Konsolidierung von 2-3 ähnlich strukturierten Tabellen fünf Stunden Service-Zeit, was etwa 1.250 US-Dollar Arbeit entspricht. Im Folgenden finden Sie jedoch einige häufige Faktoren, die die erwarteten erforderlichen Investitionen erhöhen können:
 

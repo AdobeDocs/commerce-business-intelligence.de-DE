@@ -5,24 +5,15 @@ exl-id: b0619365-fa75-49b5-a393-87f3364a390f
 role: Admin, User
 feature: Data Warehouse Manager, Reports
 TQID: https://experienceleague.adobe.com/eILs8O8m45IOVLRYERopvcugIawdQ3c1YGTxr11W3mo
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1382
-ht-degree: 1%
+source-wordcount: 1422
+ht-degree: 2%
 
 ---
 
@@ -63,8 +54,8 @@ Sehen Sie sich einige Beispieldaten für Couponakquise versus Nicht-Couponakquis
 
 | **Kundenakquise** | **Anzahl neuer Kunden** | **Durchschnittlicher Lebensdauerumsatz** | **Anzahl der Wiederholungsaufträge** | **Anzahl der Wiederholungsaufträge mit Coupon** | **% der Wiederholungsaufträge mit Coupon** |
 |-----|-----|-----|-----|-----|-----|
-| Coupon | 1.206 | 356,91 $ | 2.570 | 1.248 | 48,56 % |
-| Gutscheinfrei | 11.561 | 498,30 $ | 20.145 | 3.251 | 16,14 % |
+| Coupon | 1.206 | $356.91 | 2.570 | 1.248 | 48.56% |
+| Gutscheinfrei | 11.561 | $498.30 | 20.145 | 3.251 | 16.14% |
 
 {style="table-layout:auto"}
 
@@ -126,9 +117,9 @@ Sehen Sie sich jetzt ein Beispiel mit drei verschiedenen Coupons an, die für di
 
 | **Coupon** | **Erstbestellungen (FTO)** | **Bruttoeinnahmen aus FTO** | **Auf FTO angewendete Rabatte** | **Nettoeinnahmen aus FTO** | **Durchschnittlicher Bestellwert für FTO** |
 |-----|-----|-----|-----|-----|-----|
-| **25 % Rabatt auf 100 $ oder mehr** | 56 | 8 531,04 $ | 2 132,76 $ | 6 398,28 $ | 152,34 $ |
-| **$ 10 Rabatt** | 87 | 3 707,07 $ | 426,10 $ | 3 280,97 $ | 42,61 $ |
-| **20 % Rabatt** | 145 | 10 975,05 $ | 2 195,01 $ | 8 780,04 $ | 75,69 $ |
+| **25 % Rabatt auf 100 $ oder mehr** | 56 | $8,531.04 | $2,132.76 | $6,398.28 | $152.34 |
+| **$ 10 Rabatt** | 87 | $3,707.07 | $426.10 | $3,280.97 | $42.61 |
+| **20 % Rabatt** | 145 | $10,975.05 | $2,195.01 | $8,780.04 | $75.69 |
 
 {style="table-layout:auto"}
 
@@ -154,9 +145,9 @@ Nachdem Sie sich nun die Bestellungen selbst angesehen haben, sehen Sie sich die
 
 | **Erstbestellgutschein des Kunden** | **Anzahl der Kunden** | **Durchschnittliche Anzahl der Bestellungen während der gesamten Lebensdauer** | **Durchschnittlicher Lebensdauerumsatz** |
 |-----|-----|-----|-----|
-| **25 % Rabatt auf 100 $ oder mehr** | 56 | 2,8 | 554,54 $ |
-| **$ 10 Rabatt** | 87 | 1,9 | 115,50 $ |
-| **20 % Rabatt** | 145 | 1,3 | 103,75 $ |
+| **25 % Rabatt auf 100 $ oder mehr** | 56 | 2,8 | $554.54 |
+| **$ 10 Rabatt** | 87 | 1,9 | $115.50 |
+| **20 % Rabatt** | 145 | 1,3 | $103.75 |
 
 {style="table-layout:auto"}
 
@@ -166,4 +157,4 @@ Die größte Anzahl von Kunden wurde mit dem „20% Rabatt“-Coupon erworben. D
 
 ## Verpackung {#wrapup}
 
-Es gibt eine Vielzahl von Analysen, die Sie erstellen können, um besser zu verstehen, wie Ihre Kunden Gutscheine verwenden. Haben Sie schon einmal darüber nachgedacht zu analysieren, wie Ihre Kunden Ihre Coupons verwenden oder wie lange es dauert, bis Coupons verwendet werden? Wie sieht es mit der Suche nach dem optimalen Rabattbetrag aus - welcher Betrag ermutigt Wiederholungskäufer, einen höheren durchschnittlichen Bestellwert und einen höheren Lebensdauerumsatz? Wenn Sie Hilfe bei diesen Fragen benötigen, wenden [&#x200B; sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Es gibt eine Vielzahl von Analysen, die Sie erstellen können, um besser zu verstehen, wie Ihre Kunden Gutscheine verwenden. Haben Sie schon einmal darüber nachgedacht zu analysieren, wie Ihre Kunden Ihre Coupons verwenden oder wie lange es dauert, bis Coupons verwendet werden? Wie sieht es mit der Suche nach dem optimalen Rabattbetrag aus - welcher Betrag ermutigt Wiederholungskäufer, einen höheren durchschnittlichen Bestellwert und einen höheren Lebensdauerumsatz? Wenn Sie Hilfe bei diesen Fragen benötigen, wenden [ sich an den Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

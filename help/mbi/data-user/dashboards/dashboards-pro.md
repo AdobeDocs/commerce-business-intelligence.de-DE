@@ -5,27 +5,14 @@ exl-id: fe61c92e-de87-4317-96d7-01d2a9846bf9
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
 TQID: https://experienceleague.adobe.com/niQ01gOnBCdufbZDpw0mcck3AWN-2gXR1QyWD8LHLBQ
-product_v2:
-  - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b0c4e988-b173-423f-88d4-345071a0bce8
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+product_v2: id: cc9c1b69-d771-4a04-84d3-df2e3989418fid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b0c4e988-b173-423f-88d4-345071a0bce8id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1987
+source-wordcount: 1989
 ht-degree: 0%
 
 ---
@@ -36,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Der Zugriff auf diese Dashboards hängt von Ihrem Kontotyp und Ihrer Zugriffsebene ab. Wenn diese Dashboards nicht angezeigt werden, wenden Sie sich an den [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+>Der Zugriff auf diese Dashboards hängt von Ihrem Kontotyp und Ihrer Zugriffsebene ab. Wenn diese Dashboards nicht angezeigt werden, wenden Sie sich an den [Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Berichtverfügbarkeit
 
@@ -48,7 +35,7 @@ Das Dashboard „Kunden“ (Gast-Checkout zulässig) enthält Informationen zu I
 
 ### Berichte
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |---|---|
 | `Orders by New Customers (Past 30 Days)` | Bestellungen in den letzten 30 Tagen von Kunden, die noch nie eine Bestellung aufgegeben haben. |
 | `Orders by Existing Customers (Past 30 Days)` | Bestellungen in den letzten 30 Tagen von Kunden, die zuvor mindestens eine Bestellung aufgegeben haben. |
@@ -70,7 +57,7 @@ Das Dashboard Kunden (kein Gast-Checkout zulässig) enthält Informationen zu Ih
 
 ### Berichte
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |---|---|
 | `Account Registration (Past 30 Days)` | Die Anzahl der Personen, die sich in den letzten 30 Tagen für ein Konto bei Ihrem Store registriert haben. |
 | `Accounts Registered (Past 30 Days) with 1 or More Orders` | Die Anzahl der Personen, die sich in den letzten 30 Tagen für ein Konto bei Ihrem Geschäft registriert und auch mindestens eine Bestellung aufgegeben haben. |
@@ -93,7 +80,7 @@ Das Dashboard „Executive Summary“ (Gast-Checkout zulässig) bietet einen kur
 
 ### Berichte
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |---|---|
 | `Revenue (Current Month)` | Der Umsatz, der von Ihrem Geschäft für den aktuellen Monat generiert wurde. In diesem Fall wird der Umsatz definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
 | `Revenue (Past 6 Months by Day)` | Gesamter Tagesumsatz, überlagert mit dem durchschnittlichen Tagesumsatz der letzten sieben Tage. In diesem Fall wird der Umsatz definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
@@ -112,7 +99,7 @@ Das Dashboard „Executive Summary“ (Kein Gast-Checkout zulässig) bietet eine
 
 ### Berichte
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |---|---|
 | `Revenue (Current Month)` | Der Umsatz, der von Ihrem Geschäft in diesem Monat generiert wurde. In diesem Fall wird der Umsatz definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
 | `Revenue (Past 6 Months by Day)` | Gesamter Tagesumsatz, überlagert mit dem durchschnittlichen Tagesumsatz der letzten sieben Tage. In diesem Fall wird der Umsatz definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
@@ -135,7 +122,7 @@ Das Dashboard „Bestellungen“ bietet Einblicke in das Transaktionsvolumen von
 
 ### Berichte
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |---|---|
 | `Orders (Past 30 Days)` | Die Anzahl der Bestellungen, die in den letzten 30 Tagen bei Ihrem Geschäft aufgegeben wurden. |
 | `Revenue (Past 30 Days)` | Der Umsatz, der von Ihrem Geschäft in den letzten 30 Tagen generiert wurde. Der Umsatz ist definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
@@ -152,7 +139,7 @@ Das Dashboard „Bestellungen“ bietet Einblicke in das Transaktionsvolumen von
 
 ## PRODUCT
 
-Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Bruttowarenwert (GMV) und die am häufigsten gekauften und rückerstatteten Produkte an. Dies kann Ihnen helfen, Käufe und Rücksendungen auszugleichen und den Produkterfolg und die Beliebtheit zu bestimmen. Ihr Store muss [konfiguriert sein, um Rückerstattungen zu &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=de)), damit diese Diagramme ausgefüllt werden.
+Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Bruttowarenwert (GMV) und die am häufigsten gekauften und rückerstatteten Produkte an. Dies kann Ihnen helfen, Käufe und Rücksendungen auszugleichen und den Produkterfolg und die Beliebtheit zu bestimmen. Ihr Store muss [konfiguriert sein, um Rückerstattungen zu ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure)), damit diese Diagramme ausgefüllt werden.
 
 >[!NOTE]
 >
@@ -160,7 +147,7 @@ Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf b
 
 ### Berichte
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |---|---|
 | `GMV (Past 30 Days)` | Der Bruttowarenwert aller in den letzten 30 Tagen verkauften Produkte. GMV ist definiert als die bestellte Menge multipliziert mit dem Grundpreis für jedes Produkt. |
 | `% GMV (Past 30 Days) Refunded` | Prozent des GMV für Produkte, die in den letzten 30 Tagen gekauft wurden und zu einer Rückerstattung führten. |
