@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Der Zugriff auf diese Dashboards hängt von Ihrem Kontotyp und Ihrer Zugriffsebene ab. Wenn diese Dashboards nicht angezeigt werden, wenden Sie sich an den [Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+>Der Zugriff auf diese Dashboards hängt von Ihrem Kontotyp und Ihrer Zugriffsebene ab. Wenn diese Dashboards nicht angezeigt werden, wenden Sie sich an den [Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Berichtverfügbarkeit
 
@@ -152,7 +152,7 @@ Das Dashboard „Bestellungen“ bietet Einblicke in das Transaktionsvolumen von
 
 ## PRODUCT
 
-Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Bruttowarenwert (GMV) und die am häufigsten gekauften und rückerstatteten Produkte an. Dies kann Ihnen helfen, Käufe und Rücksendungen auszugleichen und den Produkterfolg und die Beliebtheit zu bestimmen. Ihr Store muss [konfiguriert sein, um Rückerstattungen zu &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure)), damit diese Diagramme ausgefüllt werden.
+Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Bruttowarenwert (GMV) und die am häufigsten gekauften und rückerstatteten Produkte an. Dies kann Ihnen helfen, Käufe und Rücksendungen auszugleichen und den Produkterfolg und die Beliebtheit zu bestimmen. Ihr Store muss [konfiguriert sein, um Rückerstattungen zu &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure)), damit diese Diagramme ausgefüllt werden.
 
 >[!NOTE]
 >

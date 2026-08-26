@@ -124,4 +124,4 @@ Geben Sie den Verbindungsnamen, die ungefähre Zeit des letzten **[!UICONTROL Sa
 * [MySQL über SSH-Tunnel verbinden](mysql-via-ssh-tunnel.md)
 * [MongoDB über SSH-Tunnel verbinden](mongodb-via-ssh-tunnel.md)
 * [PostgreSQL über SSH-Tunnel verbinden](postgresql.md)
-* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

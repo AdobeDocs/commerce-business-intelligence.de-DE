@@ -29,7 +29,7 @@ ht-degree: 0%
 
 # Exportieren von Rohdaten
 
-Mithilfe von Rohdatenexporten können Sie Datensätze aus Ihrer Data Warehouse exportieren, um einen genaueren Überblick über die Funktionen Ihres Dashboards zu erhalten. Darüber hinaus können Rohdatenexporte Ihnen dabei helfen, [Datendiskrepanzen zu identifizieren](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies).
+Mithilfe von Rohdatenexporten können Sie Datensätze aus Ihrer Data Warehouse exportieren, um einen genaueren Überblick über die Funktionen Ihres Dashboards zu erhalten. Darüber hinaus können Rohdatenexporte Ihnen dabei helfen, [Datendiskrepanzen zu identifizieren](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies).
 
 Rohdatenexporte bieten Zugriff auf zusätzliche Spalten und Dimensionen, die durch De-Normalisierung und Voraggregation relevanter Metriken generiert wurden. `User's first order date` ist beispielsweise eine Dimension, die Sie für jeden Benutzer in [!DNL Commerce Intelligence] exportieren können, während sie möglicherweise nicht in Ihrer Datenbank verfügbar ist.
 

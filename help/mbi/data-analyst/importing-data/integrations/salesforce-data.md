@@ -65,4 +65,4 @@ Derzeit macht [!DNL Salesforce] die folgenden Objekte in ihrer API nicht verfüg
 ## Verwandt:
 
 * [Verbinden [!DNL Salesforce]](../integrations/salesforce.md)
-* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

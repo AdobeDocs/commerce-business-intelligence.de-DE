@@ -74,7 +74,7 @@ Vergewissern Sie sich, dass Sie [!DNL Facebook] Kampagnen in [!DNL Google Analyt
 
 ## verwandt
 
-* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [Konto  [!DNL Google Adwords] &#x200B;](../integrations/google-ecommerce.md)
 * [Verfolgen Sie die Quelle der Bestellungsreferenz über [!DNL Google eCommerce]](../integrations/google-ecommerce.md)
 * [Verfolgen Sie die Quelle der Benutzerreferenz in Ihrer Datenbank](../../analysis/google-track-user-acq.md)

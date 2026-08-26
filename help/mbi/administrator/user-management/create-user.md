@@ -55,4 +55,4 @@ Wenn Sie die Einladung erneut senden müssen, klicken Sie auf der [Anmeldeseite]
 
 >[!IMPORTANT]
 >
->Jedes Konto verfügt über eine vertraglich vereinbarte Anzahl von Lizenzen oder Lizenzen. Wenn Sie Ihr Limit erreicht haben oder mehr erfahren möchten, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+>Jedes Konto verfügt über eine vertraglich vereinbarte Anzahl von Lizenzen oder Lizenzen. Wenn Sie Ihr Limit erreicht haben oder mehr erfahren möchten, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

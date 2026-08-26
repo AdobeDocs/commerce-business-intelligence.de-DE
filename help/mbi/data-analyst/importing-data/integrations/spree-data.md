@@ -46,4 +46,4 @@ In diesem Thema werden die wichtigsten Datentabellen untersucht, die Sie aus [!D
 ## Verwandt:
 
 * [Verbinden [!DNL Spree]](../integrations/spree.md)
-* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

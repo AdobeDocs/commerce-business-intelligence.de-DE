@@ -31,7 +31,7 @@ ht-degree: 40%
 
 # Lagerbestände analysieren
 
-Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihr aktuelles Inventar bietet und Anweisungen für Clients sowohl zur alten als auch zur neuen Architektur enthält. Sie befinden sich auf der alten Architektur, wenn die Option **[!UICONTROL Data Warehouse Views]** nicht im Menü **[!UICONTROL Manage Data]** vorhanden ist. Wenn Sie die veraltete Architektur verwenden, senden Sie eine [neue Support-Anfrage](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) mit dem Betreff **[!UICONTROL INVENTORY ANALYSIS]**, sobald Sie den entsprechenden Abschnitt in den Anweisungen unter _Berechnete Spalten_ erreicht haben.
+Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihr aktuelles Inventar bietet und Anweisungen für Clients sowohl zur alten als auch zur neuen Architektur enthält. Sie befinden sich auf der alten Architektur, wenn die Option **[!UICONTROL Data Warehouse Views]** nicht im Menü **[!UICONTROL Manage Data]** vorhanden ist. Wenn Sie die veraltete Architektur verwenden, senden Sie eine [neue Support-Anfrage](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) mit dem Betreff **[!UICONTROL INVENTORY ANALYSIS]**, sobald Sie den entsprechenden Abschnitt in den Anweisungen unter _Berechnete Spalten_ erreicht haben.
 
 ## Nachzuverfolgende Spalten:
 
@@ -260,4 +260,4 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihr aktue
   * &#x200B;
     [!UICONTROL Chart type]&#x200B;: `Table`
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [&#x200B; sich an den Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [&#x200B; sich an den Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

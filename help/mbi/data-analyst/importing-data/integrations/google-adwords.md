@@ -72,7 +72,7 @@ Möglicherweise sind mehrere Websites mit einem einzigen [!DNL Google Analytics]
 
 ## verwandt
 
-* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)
 * [Verfolgen Sie die Quelle der Bestellungsreferenz über [!DNL Google ECommerce]](../integrations/google-ecommerce.md)
 * [Verfolgen Sie die Quelle der Benutzerreferenz in Ihrer Datenbank](../../analysis/google-track-user-acq.md)
 * [Entdecken Sie Ihre wertvollsten Akquisitionsquellen und -kanäle](../../analysis/most-value-source-channel.md)

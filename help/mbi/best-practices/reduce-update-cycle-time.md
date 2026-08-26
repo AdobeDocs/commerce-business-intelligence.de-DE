@@ -59,4 +59,4 @@ Neben der Neubewertung der Häufigkeit der erneuten Prüfungen, der Replikations
 
 ## Verpackung
 
-Wenn Ihre Aktualisierungszeit auch nach der Implementierung dieser Empfehlungen immer noch langsam zu sein scheint, [wenden Sie sich an das Support-Team](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Wenn Ihre Aktualisierungszeit auch nach der Implementierung dieser Empfehlungen immer noch langsam zu sein scheint, [wenden Sie sich an das Support-Team](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
