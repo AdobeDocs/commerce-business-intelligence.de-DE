@@ -1,6 +1,6 @@
 ---
 title: Verkürzen des Aktualisierungszyklus
-description: Erfahren Sie, wie Sie die Zykluszeit für Aktualisierungen reduzieren können.
+description: Verkürzen Sie den Commerce Intelligence-Aktualisierungszyklus, damit Ihre Dashboards die neuesten Daten schneller widerspiegeln. Erfahren Sie, was die Synchronisierungsgeschwindigkeit beeinflusst und wie Sie sie verbessern können.
 exl-id: 0b211e2d-770f-480d-a7fb-8d10e3e7272e
 role: Admin, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager, Dashboards
@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 427
 ht-degree: 0%
 
 ---
@@ -59,4 +59,4 @@ Neben der Neubewertung der Häufigkeit der erneuten Prüfungen, der Replikations
 
 ## Verpackung
 
-Wenn Ihre Aktualisierungszeit auch nach der Implementierung dieser Empfehlungen immer noch langsam zu sein scheint, [wenden Sie sich an das Support-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Wenn Ihre Aktualisierungszeit auch nach der Implementierung dieser Empfehlungen immer noch langsam zu sein scheint, [wenden Sie sich an das Support-Team](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

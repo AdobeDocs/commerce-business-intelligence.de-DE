@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: 560
 ht-degree: 0%
 
 ---
@@ -82,4 +82,4 @@ In diesem Beispiel haben Sie die `Stacked Columns` Perspektive verwendet, um die
 
 Ist Ihnen in den obigen Beispielen aufgefallen, dass die `timestamp`, `groupings`, `perspectives` und `filters` der Formel von den Eingabemetriken übernommen werden? Denken Sie daran, dass Formeln für die Verwendung von `perspectives` und [unabhängigen Zeitoptionen](../../tutorials/time-options-visual-rpt-bldr.md){: target="_blank"} verwendet werden können, genau wie Metriken.
 
-Wenn Sie weitere Fragen zur Verwendung von Formeln in der `Report Builder` haben, wenden Sie [&#x200B; an den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Wenn Sie weitere Fragen zur Verwendung von Formeln in der `Report Builder` haben, wenden Sie [&#x200B; an den &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

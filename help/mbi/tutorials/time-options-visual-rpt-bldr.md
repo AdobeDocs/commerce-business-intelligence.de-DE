@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1329
+source-wordcount: 1353
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Jetzt können Sie sehen, wie wirksam jeder Monat im letzten Jahr war:
 
 ## Vergleichen derselben Metrik über verschiedene Zeitbereiche hinweg {#difftimerange}
 
-In diesem Beispiel wird eine benutzerdefinierte Dimension namens `Day number of the month` verwendet. Wenn Sie diesen Bericht erstellen möchten und diese Dimension noch nicht in Ihrer Data Warehouse haben, wenden Sie sich an den [-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) um Hilfe zu erhalten.
+In diesem Beispiel wird eine benutzerdefinierte Dimension namens `Day number of the month` verwendet. Wenn Sie diesen Bericht erstellen möchten und diese Dimension noch nicht in Ihrer Data Warehouse haben, wenden Sie sich an den [-Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) um Hilfe zu erhalten.
 
 Die beiden häufigsten Beispiele in dieser Kategorie sind (1) der Vergleich von Wachstumsmetriken (Umsatz im Jahresvergleich oder Monat im Monatsvergleich) und (2) ein besseres Verständnis der jüngsten Trends bei Lagerbeständen oder Artikelverkäufen.
 
@@ -137,11 +137,11 @@ Denken Sie daran, die Zeitbereiche auf das einzustellen, was Sie benötigen, wen
    * Klicken Sie auf **[!UICONTROL Apply]** , um die Intervall- und Bereichseinstellungen zu speichern.
    * Duplizieren Sie die `Items sold last 28 days` und öffnen Sie die `Time Options` der neuen Metrik. Legen Sie die Optionen wie folgt fest:
 
-      * `Time Interval`: Belassen Sie das als `None`.
-      * `Time Range`: Ändern Sie dies in den Datumsbereich, der der gewünschten Promotion entspricht, indem Sie auf **[!UICONTROL Specific Date Range]** klicken und dann die entsprechenden Daten eingeben.
-      * Benennen Sie die `Items sold during last promotion` um oder etwas Ähnliches.
-      * Fügen Sie Ihre `Units on hand` hinzu.
-      * Als Nächstes müssen Sie die Berechnungen hinzufügen, die uns die verfügbaren Wochen unter Berücksichtigung der Umsatztrends für die Zeiträume (`last 7 days`, `last 28 days` und `last promo`) zeigen, die Sie in den Bericht aufnehmen. Sie müssen dies für jeden Zeitraum einmal tun.
+     * `Time Interval`: Belassen Sie das als `None`.
+     * `Time Range`: Ändern Sie dies in den Datumsbereich, der der gewünschten Promotion entspricht, indem Sie auf **[!UICONTROL Specific Date Range]** klicken und dann die entsprechenden Daten eingeben.
+     * Benennen Sie die `Items sold during last promotion` um oder etwas Ähnliches.
+     * Fügen Sie Ihre `Units on hand` hinzu.
+     * Als Nächstes müssen Sie die Berechnungen hinzufügen, die uns die verfügbaren Wochen unter Berücksichtigung der Umsatztrends für die Zeiträume (`last 7 days`, `last 28 days` und `last promo`) zeigen, die Sie in den Bericht aufnehmen. Sie müssen dies für jeden Zeitraum einmal tun.
 
 Um die Formeln zu erstellen, klicken Sie auf **[!UICONTROL Add Formula]**. Geben Sie die unten stehenden Formeln ein und klicken Sie abschließend auf **[!UICONTROL Apply Changes]** . Wiederholen Sie dies für jeden der drei Zeiträume:
 

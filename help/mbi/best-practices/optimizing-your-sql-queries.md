@@ -1,6 +1,6 @@
 ---
 title: SQL-Abfragen optimieren
-description: Erfahren Sie, wie Sie SQL-Abfragen optimieren können.
+description: Optimieren von SQL-Abfragen in der Commerce Intelligence SQL Report Builder. Best Practices zur Reduzierung der Abfragekosten und zur Vermeidung von Fehlern durch übergroße Ergebnisse.
 exl-id: 2782c707-6a02-4e5d-bfbb-eff20659fbb2
 role: Admin, Developer, User
 feature: Data Integration, Data Import/Export, Data Warehouse Manager
@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 826
+source-wordcount: 847
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 Mit dem [!DNL SQL Report Builder] können Sie Ihre Abfragen jederzeit ausführen und ändern. Diese Funktion ist hilfreich, wenn Sie eine Abfrage sofort aktualisieren müssen, anstatt zu warten, bis ein Aktualisierungszyklus abgeschlossen ist, bevor Sie eine Spalte oder einen Bericht korrigieren.
 
-Bevor eine Abfrage ausgeführt wird, [[!DNL Commerce Intelligence] schätzt ihre Kosten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.html?lang=de). Die Kosten berücksichtigen die Dauer und Anzahl der Ressourcen, die für die Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch erachtet werden oder die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] Limit überschreitet, schlägt die Abfrage fehl. Für die Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), mit der sichergestellt wird, dass Sie möglichst optimierte Abfragen schreiben, empfiehlt Adobe Folgendes.
+Bevor eine Abfrage ausgeführt wird, schätzt [!DNL Commerce Intelligence] ihre Kosten. Die Kosten berücksichtigen die Dauer und Anzahl der Ressourcen, die für die Ausführung einer Abfrage erforderlich sind. Wenn diese Kosten als zu hoch erachtet werden oder die Anzahl der zurückgegebenen Zeilen [!DNL Commerce Intelligence] Limit überschreitet, schlägt die Abfrage fehl. Für die Abfrage Ihrer [Data Warehouse](../data-analyst/data-warehouse-mgr/tour-dwm.md), mit der sichergestellt wird, dass Sie möglichst optimierte Abfragen schreiben, empfiehlt Adobe Folgendes.
 
 ## Verwenden von SELECT oder Auswählen aller Spalten
 

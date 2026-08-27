@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 306
+source-wordcount: 319
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 In diesem Thema wird erläutert, wie Sie Ihre [!DNL Microsoft SQL]-Datenbank in einem vierstufigen Prozess mit [!DNL Commerce Intelligence] verbinden. Dieser Prozess erfordert einige technische Kenntnisse in Bezug auf Server-Verbindungen und SQL und erfordert möglicherweise Unterstützung von Entwicklern in Ihrem Team.
 
-[!DNL Commerce Intelligence] unterstützt [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] und die meisten anderen Cloud-Server-Anbieter. Wenn Sie eine Frage zu Ihrem Gastgeber haben, [&#x200B; Sie (ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de)) uns bitten, diese Informationen bereitzustellen.
+[!DNL Commerce Intelligence] unterstützt [!DNL Amazon RDS], [!DNL EC2], [!DNL Microsoft SQL Azure] und die meisten anderen Cloud-Server-Anbieter. Wenn Sie eine Frage zu Ihrem Gastgeber haben, [&#x200B; Sie (ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)) uns bitten, diese Informationen bereitzustellen.
 
 Ihr System muss SELECT-Abfragen in Ihrer Datenbank ausführen. Dies erfolgt zunächst, um einen Schnappschuss Ihrer Datenbankstruktur zu erhalten, und dann regelmäßig durch Überstunden, um Ihre Daten auf dem neuesten Stand zu halten. Ihre Aktualisierungen erfolgen inkrementell, und Adobe beschränkt die Aktualisierungshäufigkeit und -zeit, um eine unerwünschte Belastung Ihres Servers zu vermeiden.
 

@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 628
+source-wordcount: 627
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Um eine Integration hinzuzufügen, klicken Sie auf **[!UICONTROL Manage Data** >
 * [Konsolidieren von Tabellen](../../../best-practices/consolidating-your-tables.md)
 * [Beschränken des Zugriffs auf die Datenbank](../../../administrator/account-management/restrict-db-access.md)
 
-**Sie sehen keine Integration, die Sie möchten?** Einige Integrationen müssen aktiviert werden, damit sie in Ihrem Konto sichtbar sind. Wenn Sie nach etwas wie [!DNL Facebook] suchen, es aber nicht aufgeführt ist, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+**Sie sehen keine Integration, die Sie möchten?** Einige Integrationen müssen aktiviert werden, damit sie in Ihrem Konto sichtbar sind. Wenn Sie nach etwas wie [!DNL Facebook] suchen, es aber nicht aufgeführt ist, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 **Wenn Sie einen Fehlerstatus für eine Integration sehen** finden Sie im Abschnitt [Fehlerbehebung](https://support.magento.com/hc/en-us/sections/360003078151) Hilfe.
 
 ## Überwachen des Aktualisierungsstatus (optional)
 
-Nachdem Sie Quellen verbunden haben, sollten Sie eine allgemeine Konsistenzprüfung automatisieren, um zu bestätigen, dass vollständige Aktualisierungen abgeschlossen werden. Verwenden Sie die [Update Cycle Status-API](https://developer.adobe.com/commerce/services/reporting/update-cycle-status-api/) in der Entwicklerdokumentation, um den zuletzt abgeschlossenen Aktualisierungszyklus für Ihren Client abzurufen und ihn in internen Dashboards oder Warnhinweisen anzuzeigen.
+Nachdem Sie Quellen verbunden haben, sollten Sie eine allgemeine Konsistenzprüfung automatisieren, um zu bestätigen, dass vollständige Aktualisierungen abgeschlossen werden. Verwenden Sie die [Update Cycle Status-API](https://developer.adobe.com/commerce/services/reporting/update-cycle/) in der Entwicklerdokumentation, um den zuletzt abgeschlossenen Aktualisierungszyklus für Ihren Client abzurufen und ihn in internen Dashboards oder Warnhinweisen anzuzeigen.
 

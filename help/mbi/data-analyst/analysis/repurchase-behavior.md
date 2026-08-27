@@ -19,10 +19,10 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 0%
+source-wordcount: 866
+ht-degree: 1%
 
 ---
 
@@ -63,9 +63,9 @@ Beachten Sie dabei die oben genannten Metriken. Sehen Sie sich ein Beispiel an, 
 
 | **Produktname** | **Wahrscheinlichkeit der Wiederholungsreihenfolge** | **Durchschn. Lebensdauer der Bestellungen** | **Durchschn. Lebensdauerumsatz** | **Mediane Zeit bis zur nächsten Bestellung** |
 |-----|-----|-----|-----|-----|
-| Kaffeebrüher mit einer Tasse | 94,98 % | 7,92 | 549,82 $ | 57,01 Tage |
-| Kaffeekapseln | 93,82 % | 8,68 | 479,98 $ | 63,48 Tage |
-| Kaffeebohnen | 41,92 % | 6,07 | 99,82 $ | 27,31 Tage |
+| Kaffeebrüher mit einer Tasse | 94.98% | 7,92 | $549.82 | 57,01 Tage |
+| Kaffeekapseln | 93.82% | 8,68 | $479.98 | 63,48 Tage |
+| Kaffeebohnen | 41.92% | 6,07 | $99.82 | 27,31 Tage |
 
 {style="table-layout:auto"}
 
@@ -97,4 +97,4 @@ Neben der Analyse des Rückkaufverhaltens Ihrer Kunden können Sie auch Analysen
 
 Nachdem Sie erkannt haben, warum eine Abwanderung stattfindet, können Sie Ihre Analyse verwenden, um eine `reactivation` Kampagne zu erstellen. Mithilfe dieser Daten können Sie Benutzer identifizieren, die inaktiv geworden sind, wie lange es seit ihrem letzten Besuch gewesen ist, was ihr letzter Kauf war usw. Auf diese Weise können Sie umsetzbare Entscheidungen treffen, die Ihre Kundinnen und Kunden dazu anregen, zurückzukehren.
 
-Um Hilfe bei der Analyse zu erhalten, [den Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Um Hilfe bei der Analyse zu erhalten, [den Support kontaktieren](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

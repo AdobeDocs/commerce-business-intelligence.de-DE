@@ -1,6 +1,6 @@
 ---
 title: Audit von Zendesk-Daten
-description: Erfahren Sie, wie Sie Ihre Zendesk-Daten exportieren.
+description: Überprüfen Sie Ihre Zendesk-Daten in Commerce Intelligence, indem Sie sie in eine herunterladbare Datei exportieren. Verwenden Sie den Export, um Diskrepanzen zu identifizieren und die Genauigkeit zu überprüfen.
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 306
+source-wordcount: 323
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Etwas Seltsames in Ihren [[!DNL Zendesk] Daten](../integrations/exp-zendesk-data
 
 ## Aktivieren des Datenexports
 
-Der Datenexport ist derzeit nicht für alle [!DNL Zendesk]-Konten aktiviert. Um diese Funktion zu aktivieren, [&#x200B; Sie „ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de)&quot; und geben Sie Ihren [!DNL Zendesk] Subdomain-Namen an.
+Der Datenexport ist derzeit nicht für alle [!DNL Zendesk]-Konten aktiviert. Um diese Funktion zu aktivieren, [&#x200B; Sie „ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)&quot; und geben Sie Ihren [!DNL Zendesk] Subdomain-Namen an.
 
 >[!NOTE]
 >
@@ -55,6 +55,6 @@ Nachdem der Datenexport aktiviert wurde, können nur Administratoren in einer be
 
    Dieser Downloadlink ist mindestens drei Tage gültig.
 
-Dieser Prozess erstellt eine XML-Datei, die alle im aktuellen [!DNL Zendesk] gespeicherten Informationen enthält, einschließlich Ticketdaten (mit Kommentaren), Benutzerdaten und Kontodaten. An dieser Stelle können Sie [ein Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) (stellen Sie sicher, dass Sie diese Datei anhängen!) So können Sie sich Ihre Daten genauer ansehen. Wenn die Datei zu groß ist, geben Sie sie über [!DNL Dropbox] oder [!DNL Google Drive] für das [!DNL Commerce Intelligence]-Team frei.
+Dieser Prozess erstellt eine XML-Datei, die alle im aktuellen [!DNL Zendesk] gespeicherten Informationen enthält, einschließlich Ticketdaten (mit Kommentaren), Benutzerdaten und Kontodaten. An dieser Stelle können Sie [ein Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) (stellen Sie sicher, dass Sie diese Datei anhängen!) So können Sie sich Ihre Daten genauer ansehen. Wenn die Datei zu groß ist, geben Sie sie über [!DNL Dropbox] oder [!DNL Google Drive] für das [!DNL Commerce Intelligence]-Team frei.
 
 Weitere Informationen zu [!DNL Zendesk] Dateiexporten finden Sie in der offiziellen [[!DNL Zendesk] Exportdokumentation](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

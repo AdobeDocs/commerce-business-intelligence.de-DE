@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1987
+source-wordcount: 1989
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Der Zugriff auf diese Dashboards hängt von Ihrem Kontotyp und Ihrer Zugriffsebene ab. Wenn diese Dashboards nicht angezeigt werden, wenden Sie sich an den [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+>Der Zugriff auf diese Dashboards hängt von Ihrem Kontotyp und Ihrer Zugriffsebene ab. Wenn diese Dashboards nicht angezeigt werden, wenden Sie sich an den [Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Berichtverfügbarkeit
 
@@ -48,7 +48,7 @@ Das Dashboard „Kunden“ (Gast-Checkout zulässig) enthält Informationen zu I
 
 ### Berichte
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |---|---|
 | `Orders by New Customers (Past 30 Days)` | Bestellungen in den letzten 30 Tagen von Kunden, die noch nie eine Bestellung aufgegeben haben. |
 | `Orders by Existing Customers (Past 30 Days)` | Bestellungen in den letzten 30 Tagen von Kunden, die zuvor mindestens eine Bestellung aufgegeben haben. |
@@ -70,7 +70,7 @@ Das Dashboard Kunden (kein Gast-Checkout zulässig) enthält Informationen zu Ih
 
 ### Berichte
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |---|---|
 | `Account Registration (Past 30 Days)` | Die Anzahl der Personen, die sich in den letzten 30 Tagen für ein Konto bei Ihrem Store registriert haben. |
 | `Accounts Registered (Past 30 Days) with 1 or More Orders` | Die Anzahl der Personen, die sich in den letzten 30 Tagen für ein Konto bei Ihrem Geschäft registriert und auch mindestens eine Bestellung aufgegeben haben. |
@@ -93,7 +93,7 @@ Das Dashboard „Executive Summary“ (Gast-Checkout zulässig) bietet einen kur
 
 ### Berichte
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |---|---|
 | `Revenue (Current Month)` | Der Umsatz, der von Ihrem Geschäft für den aktuellen Monat generiert wurde. In diesem Fall wird der Umsatz definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
 | `Revenue (Past 6 Months by Day)` | Gesamter Tagesumsatz, überlagert mit dem durchschnittlichen Tagesumsatz der letzten sieben Tage. In diesem Fall wird der Umsatz definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
@@ -112,7 +112,7 @@ Das Dashboard „Executive Summary“ (Kein Gast-Checkout zulässig) bietet eine
 
 ### Berichte
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |---|---|
 | `Revenue (Current Month)` | Der Umsatz, der von Ihrem Geschäft in diesem Monat generiert wurde. In diesem Fall wird der Umsatz definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
 | `Revenue (Past 6 Months by Day)` | Gesamter Tagesumsatz, überlagert mit dem durchschnittlichen Tagesumsatz der letzten sieben Tage. In diesem Fall wird der Umsatz definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
@@ -135,7 +135,7 @@ Das Dashboard „Bestellungen“ bietet Einblicke in das Transaktionsvolumen von
 
 ### Berichte
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |---|---|
 | `Orders (Past 30 Days)` | Die Anzahl der Bestellungen, die in den letzten 30 Tagen bei Ihrem Geschäft aufgegeben wurden. |
 | `Revenue (Past 30 Days)` | Der Umsatz, der von Ihrem Geschäft in den letzten 30 Tagen generiert wurde. Der Umsatz ist definiert als der Endpreis, den ein Kunde für eine Bestellung bezahlt. |
@@ -152,7 +152,7 @@ Das Dashboard „Bestellungen“ bietet Einblicke in das Transaktionsvolumen von
 
 ## PRODUCT
 
-Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Bruttowarenwert (GMV) und die am häufigsten gekauften und rückerstatteten Produkte an. Dies kann Ihnen helfen, Käufe und Rücksendungen auszugleichen und den Produkterfolg und die Beliebtheit zu bestimmen. Ihr Store muss [konfiguriert sein, um Rückerstattungen zu &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure.html?lang=de)), damit diese Diagramme ausgefüllt werden.
+Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf bestellte Produkte, ihren Bruttowarenwert (GMV) und die am häufigsten gekauften und rückerstatteten Produkte an. Dies kann Ihnen helfen, Käufe und Rücksendungen auszugleichen und den Produkterfolg und die Beliebtheit zu bestimmen. Ihr Store muss [konfiguriert sein, um Rückerstattungen zu &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customer-accounts/store-credit/credit-configure)), damit diese Diagramme ausgefüllt werden.
 
 >[!NOTE]
 >
@@ -160,7 +160,7 @@ Das Dashboard „Produkte“ zeigt die allgemeine Produktleistung in Bezug auf b
 
 ### Berichte
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |---|---|
 | `GMV (Past 30 Days)` | Der Bruttowarenwert aller in den letzten 30 Tagen verkauften Produkte. GMV ist definiert als die bestellte Menge multipliziert mit dem Grundpreis für jedes Produkt. |
 | `% GMV (Past 30 Days) Refunded` | Prozent des GMV für Produkte, die in den letzten 30 Tagen gekauft wurden und zu einer Rückerstattung führten. |

@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 32bcb9f48faa4e766972b0690f86c9813c6a9d53
 workflow-type: tm+mt
-source-wordcount: 1400
+source-wordcount: 1370
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Verwenden Sie Werbekampagnen als Beispiel. Wenn Sie sowohl Online- als auch Offl
 ## Einschränkungen und Anforderungen {#require}
 
 1. **Das einzige unterstützte Format für Datei-Uploads ist `CSV` oder`comma separated values`**. Wenn Sie in Excel arbeiten, können Sie die Datei mithilfe der Funktion Speichern unter im `.csv` Format speichern.
-1. **`CSV`Dateien müssen`UTF-8 encoding`** verwenden. Meistens ist das kein Problem. Wenn dieser Fehler beim Hochladen einer Datei auftritt, ([&#x200B; Sie in diesem Support-Artikel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.html?lang=de).
+1. **`CSV`Dateien müssen`UTF-8 encoding`** verwenden. Meistens ist das kein Problem.
 1. **Dateien dürfen nicht größer als 100 MB**. Wenn die Datei größer ist als diese, teilen Sie die Tabelle in Blöcke auf und speichern Sie sie als einzelne Dateien. Sie können die Daten anhängen, nachdem die ursprüngliche Datei geladen wurde.
 1. **Alle Tabellen müssen einen`primary key`** haben. Die Tabelle muss mindestens eine Spalte enthalten, die als `primary key` verwendet werden kann, oder eine eindeutige Kennung für jede Zeile der Tabelle. Jede als `primary key` gekennzeichnete Spalte darf *nie* null sein. Eine `primary key` kann so einfach sein wie das Hinzufügen einer Spalte, die jeder Zeile eine Zahl gibt, oder es können zwei Spalten verkettet sein, um eine Spalte mit eindeutigen Werten (z. B. `campaign name` und `date`) zu erstellen.
 

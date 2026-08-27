@@ -25,9 +25,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 last-update: 2026-08-14
-source-git-commit: a02a389e329acf9bf10b85687e5f877cab992337
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 489
+source-wordcount: 492
 ht-degree: 2%
 
 ---
@@ -58,15 +58,15 @@ Zusätzlich zu den oben genannten rollenbasierten Workflows enthält dieses Hand
 
 ## Hilfe erhalten
 
-Wenden Sie sich an [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), wenn Sie Fragen haben und einige Ihrer Professional Services in Anspruch nehmen möchten oder Probleme mit Ihrem Konto auftreten.
+Wenden Sie sich an [Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), wenn Sie Fragen haben und einige Ihrer Professional Services in Anspruch nehmen möchten oder Probleme mit Ihrem Konto auftreten.
 
 ### Service-Richtlinien
 
-Hier finden Sie [Liste der Services, die das Support-Team bereitstellt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Hier finden Sie [Liste der Services, die das Support-Team bereitstellt](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ### Senden eines Support-Tickets
 
-Benötigen Sie Hilfe beim Erstellen einer erweiterten berechneten Spalte? Haben Sie einen Defekt oder ein Verbindungsproblem festgestellt? Wenn Sie sich an das Support-Team wenden müssen, bittet Adobe Sie, die [Richtlinien für Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) zu verwenden. In diesen Richtlinien werden die Informationen beschrieben, die Adobe zur Lösung des Problems benötigt.
+Benötigen Sie Hilfe beim Erstellen einer erweiterten berechneten Spalte? Haben Sie einen Defekt oder ein Verbindungsproblem festgestellt? Wenn Sie sich an das Support-Team wenden müssen, bittet Adobe Sie, die [Richtlinien für Support-Tickets](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) zu verwenden. In diesen Richtlinien werden die Informationen beschrieben, die Adobe zur Lösung des Problems benötigt.
 
 ## Verfügbare Dokumentation
 

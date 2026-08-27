@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 846
+source-wordcount: 861
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Wenn Sie jedoch das Kohortenverhalten mehrerer Benutzersegmente im selben Kohort
 
 Das Erstellen eines `qualitative cohort` in der `Report Builder` beinhaltet, dass das Adobe-Analystenteam einige [erweiterte berechnete Spalten](../data-warehouse-mgr/creating-calculated-columns.md) auf den erforderlichen Tabellen erstellt.
 
-Um diese zu erstellen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) ein (und lesen Sie diesen Artikel!). Hier finden Sie, was Sie wissen müssen:
+Um diese zu erstellen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) ein (und lesen Sie diesen Artikel!). Hier finden Sie, was Sie wissen müssen:
 
 * Die `metric`, mit der Sie Ihre Kohortenanalyse durchführen möchten, und welche Tabelle verwendet wird (Beispiel: `Revenue`, basierend auf der `orders`).
 

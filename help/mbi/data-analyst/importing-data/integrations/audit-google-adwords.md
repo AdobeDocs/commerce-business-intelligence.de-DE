@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 135
+source-wordcount: 160
 ht-degree: 0%
 
 ---
@@ -40,6 +40,6 @@ Etwas Seltsames in [[!DNL Google Adwords]](../integrations/google-adwords.md) ge
 
 1. Nachdem Ihr Konto [!DNL Google Adwords] Editor hinzugefügt wurde, wählen Sie **[!UICONTROL File** > **&#x200B; Tabelle exportieren (CSV)**> **Gesamtes Konto exportieren]**
 
-Dadurch wird eine `.csv`-Datei erstellt, die alle im aktuellen [!DNL Google Adwords]-Konto gespeicherten Informationen enthält. Senden Sie an dieser Stelle ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) (fügen Sie diese Datei an!), damit Sie sich Ihre Daten genauer ansehen können. Wenn die Datei zu groß ist, geben Sie sie über [!DNL Commerce Intelligence] oder [!DNL Dropbox] für das [!DNL Google Drive]-Team frei.
+Dadurch wird eine `.csv`-Datei erstellt, die alle im aktuellen [!DNL Google Adwords]-Konto gespeicherten Informationen enthält. Senden Sie an dieser Stelle ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) (stellen Sie sicher, dass Sie diese Datei anhängen!) So können Sie sich Ihre Daten genauer ansehen. Wenn die Datei zu groß ist, geben Sie sie über [!DNL Dropbox] oder [!DNL Google Drive] für das [!DNL Commerce Intelligence]-Team frei.
 
 Weitere Informationen zu [!DNL Google Adwords] `.csv` Dateiexporten finden Sie in der offiziellen [[!DNL Google Adwords] Dokumentation](https://support.google.com/google-ads/editor/answer/38657?hl=en).

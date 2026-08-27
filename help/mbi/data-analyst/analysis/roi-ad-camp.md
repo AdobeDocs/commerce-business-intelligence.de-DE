@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 1253
+source-wordcount: 1265
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ Mit [!DNL Adobe Commerce Intelligence] können Sie Werbungskosten[&#x200B; und U
 ## Voraussetzungen
 
 * Importieren Sie Ihre Werbungskostendaten:
-   * [Verbinden Sie Ihre [!DNL Google AdWords] mit [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): Dadurch werden Ihre [!DNL Adwords] in [!DNL Commerce Intelligence] synchronisiert.
-   * [Andere Werbungskostendaten hochladen](../importing-data/connecting-data/import-offline-ad-data.md): Dies wird für Kanäle ohne direkten Connector für [!DNL Commerce Intelligence] empfohlen
-   * Wenn Sie Kostendaten aus mehreren Quellen importieren, können [&#x200B; die &#x200B;](../../best-practices/consolidating-your-tables.md) in [!DNL Commerce Intelligence] (konsolidieren). Senden [&#x200B; einfach ein Support-Ticket](../../guide-overview.md#Submitting-a-Support-Ticket).
+  * [Verbinden Sie Ihre [!DNL Google AdWords] mit [!DNL Commerce Intelligence]](../importing-data/integrations/google-adwords.md): Dadurch werden Ihre [!DNL Adwords] in [!DNL Commerce Intelligence] synchronisiert.
+  * [Andere Werbungskostendaten hochladen](../importing-data/connecting-data/import-offline-ad-data.md): Dies wird für Kanäle ohne direkten Connector für [!DNL Commerce Intelligence] empfohlen
+  * Wenn Sie Kostendaten aus mehreren Quellen importieren, können [&#x200B; die &#x200B;](../../best-practices/consolidating-your-tables.md) in [!DNL Commerce Intelligence] (konsolidieren). Senden [&#x200B; einfach ein Support-Ticket](../../guide-overview.md#Submitting-a-Support-Ticket).
 * [Tracking von Kanaldaten zur Benutzerakquise](../analysis/google-track-user-acq.md)
 
 ## Kampagnen zur Benutzerakquise
@@ -85,7 +85,7 @@ Die oben unter (1) und (2) genannten Analysen werden in einem separaten Tutorial
 1. Klicken Sie in einem beliebigen Dashboard auf **[!UICONTROL Add Report > Create report]**
 1. Wählen Sie die `Average lifetime revenue` Metrik aus, die den Lebensdauerumsatz eines durchschnittlichen Benutzers berechnet
 1. Legen Sie die [!UICONTROL Time period] auf `All-time` und [!UICONTROL Interval] auf `None` fest.
-1. Fügen Sie auf der Registerkarte `Group by` als `campaign` `utm\_campaign` oder [!UICONTROL grouping field] hinzu und klicken Sie in das Feld `Add All` .
+1. Fügen Sie auf der Registerkarte `Group by` als [!UICONTROL grouping field] `campaign` oder `utm\_campaign` hinzu und klicken Sie in das Feld `Add All` .
 1. Dieser Bericht zeigt den durchschnittlichen Umsatz aus der Nutzungsdauer nach Kampagnen an
 
 **Berechnen Sie abschließend den Kampagnen-ROI, indem Sie diese drei Analysen in einem Bericht zusammenführen:**
@@ -115,7 +115,7 @@ Führen Sie produktspezifische Anzeigen durch? Wenn ja, können Sie den ROI dies
 >
 >In diesem Beispiel wird davon ausgegangen, dass alle Kampagnenkosten ausschließlich zur Generierung von Käufen bestimmter Produkte verwendet wurden. Unter der Annahme, dass alle Kosten für die Generierung von Käufen aufgewendet wurden, entfällt der resultierende ROI auf das Worst-Case-Szenario (höchste Kosten pro Kauf). Sie können sicher sein, dass Ihr tatsächlicher ROI höher ist als diese Berechnung. Beispiel: Angenommen, Sie haben 20 USD für eine Kampagne ausgegeben, die 10 neue Benutzende und 10 Käufe generiert hat, dann betragen die tatsächlichen Kosten pro Kauf 1 USD. Unter der Annahme, dass alle Kosten für die Akquise neuer Benutzer aufgewendet wurden, betragen die Kosten pro Kauf 2 USD.
 
-Bevor Sie beginnen, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um die folgenden Dimensionen mit Ihrer Zeileneintragstabelle zu verbinden (`sales\_flat\_order\_item, order\_item`):
+Bevor Sie beginnen, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um die folgenden Dimensionen mit Ihrer Zeileneintragstabelle zu verbinden (`sales\_flat\_order\_item, order\_item`):
 
 * Quelle der Bestellung (wenn Sie nur die Empfehlungsquelle auf Benutzerebene verfolgen, dann fügen Sie die Quelle des Benutzers hinzu)
 * Kampagne des Auftrags (wenn Sie nur die Empfehlungsquelle auf Benutzerebene verfolgen, dann der Kampagne des Benutzers beitreten)
@@ -126,7 +126,7 @@ Bevor Sie beginnen, [&#x200B; Sie ein Support-Ticket](https://experienceleague.a
 1. Klicken Sie in einem beliebigen Dashboard auf **[!UICONTROL Add Report > Create new report]**
 1. Wählen Sie die `Revenue by items`, die den Umsatz auf der Ebene der Zeileneinträge berechnet
 1. Legen Sie die [!UICONTROL Time period] auf `All-time` und [!UICONTROL Interval] auf `None` fest.
-1. Fügen Sie auf der Registerkarte &quot;`Filter by`&quot; `product name 'IN'` &quot;`A`, `B`, `C`, …“ hinzu und fügen Sie alle Produktnamen, auf die Ihre Kampagne abzielt, durch ein Komma getrennt ein (z. B. `product name 'IN' yellow t-shirt`, `red t-shirt, blue t-shirt`)
+1. Fügen Sie auf der Registerkarte &quot;`Filter by`&quot; `product name 'IN'` Produkt-`A`, Produkt-`B`, Produkt-`C` …“ hinzu. und alle Produktnamen, auf die Ihre Kampagne abzielt, durch ein Komma getrennt (z. B. `product name 'IN' yellow t-shirt`, `red t-shirt, blue t-shirt`)
 1. Fügen Sie auf der Registerkarte `Group by` `order's campaign` oder `order's utm\_campaign` als `grouping` Feld hinzu und klicken Sie in das Feld **[!UICONTROL Add All]** .
 1. Dieser Bericht zeigt den Umsatz für bestimmte Produkte nach Kampagnen an
 

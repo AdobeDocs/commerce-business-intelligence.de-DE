@@ -1,6 +1,6 @@
 ---
 title: Einführung in Adobe Commerce Intelligence
-description: Informationen zu Adobe Commerce Intelligence.
+description: Erste Schritte mit Adobe Commerce Intelligence, früher Magento Business Intelligence. Erfahren Sie, was die Plattform bietet und wie Sie Ihre Daten erkunden können.
 exl-id: 0c960d8c-9bb7-429e-a88e-21678a77b710
 role: Admin, Developer, Leader, User
 feature: Commerce Tables, Data Warehouse Manager, Reports, Data Integration
@@ -25,9 +25,9 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 252
+source-wordcount: 275
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Verbinden, konsolidieren und transformieren Sie Ihre Daten. Visualisieren, analy
 
 Zu den Standard-Dashboards gehören Marketing-ROI, Kundenlebenszeitwert, Kundensegmentierung, Executive- und Investor-KPIs, Kohortenanalyse und Merchandising-Analyse.
 
-Wenn Sie [&#128279;](../getting-started/onpremise-activation.md) Ihr [!DNL Commerce Intelligence]-Konto aktivieren, verbinden Sie Ihre [!DNL Adobe Commerce] mit [!DNL Commerce Intelligence] und erhalten sofort Zugriff auf fünf Dashboards mit etwa 100 Berichten. Diese Berichte liefern Einblicke in Ihre Daten und beantworten Fragen wie *Wie wachsen meine Bestellungen von Monat zu Monat?*, *Wer sind meine treuesten Kunden?*, und *Funktioniert meine Coupon-Strategie?*.
+Wenn Sie [&#128279;](../getting-started/onpremise-activation.md) Ihr [!DNL Commerce Intelligence]-Konto aktivieren, verbinden Sie Ihre [!DNL Adobe Commerce] mit [!DNL Commerce Intelligence] und erhalten sofort Zugriff auf fünf Dashboards mit etwa 100 Berichten. Diese Berichte liefern Einblicke in Ihre Daten und beantworten Fragen wie *Wie wachsen meine Bestellungen von Monat zu Monat?*, *Wer sind meine treuesten Kunden?* und *Funktioniert meine Couponstrategie?*.

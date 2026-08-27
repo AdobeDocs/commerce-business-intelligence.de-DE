@@ -1,6 +1,6 @@
 ---
 title: Sales_order-Tabelle
-description: Erfahren Sie, wie Sie mit der Tabelle „sales_order“ arbeiten.
+description: Erkunden Sie die Tabellenstruktur „sales_order“ in Commerce Intelligence Data Warehouse. Verstehen, wie jede Zeile eine Reihenfolge darstellt und wo benutzerdefinierte Aufspaltungen auftreten.
 exl-id: 19a8ab88-de51-48f8-af39-ae4897834afe
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -24,9 +24,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 1201
+source-wordcount: 1215
 ht-degree: 0%
 
 ---
@@ -105,21 +105,21 @@ Diese Tabelle enthält alle Kundenbestellungen, unabhängig davon, ob diese Best
 `customer_entity`
 
 * Join in `customer_entity` Tabelle, um neue Spalten auf Kundenebene zu erstellen, die mit dem Kunden verknüpft sind, der die Bestellung aufgegeben hat.
-   * Pfad: `sales_order.customer_id` (viele) => `customer_entity.entity_id` (eins)
+  * Pfad: `sales_order.customer_id` (viele) => `customer_entity.entity_id` (eins)
 
 `customer_group`
 
 * Mit `customer_group` Tabelle verbinden, um Spalten zu erstellen, die den Namen der Kundengruppe des Kunden zurückgeben, der die Bestellung aufgegeben hat.
-   * Pfad: `sales_order.customer_group_id` (viele) => `customer_group.customer_group_id` (eins)
+  * Pfad: `sales_order.customer_group_id` (viele) => `customer_group.customer_group_id` (eins)
 
 `sales_order_address`
 
 * Mit `sales_order_address` Tabelle verbinden, um Spalten zu erstellen, die die mit der Bestellung verbundenen Abrechnungs- und Versandspeicherorte zurückgeben. Je nachdem, ob die Abrechnungs- oder Versanddaten erforderlich sind, sind zwei Fügewege möglich.
-   * Pfade:
-      * Versand: `sales_order.shipping_address_id`(viele) => `sales_order_address.entity_id` (eine)
-      * Abrechnung: `sales_order.billing_address_id`(viele) => `sales_order_address.entity_id` (eine)
+  * Pfade:
+    * Versand: `sales_order.shipping_address_id`(viele) => `sales_order_address.entity_id` (eine)
+    * Abrechnung: `sales_order.billing_address_id`(viele) => `sales_order_address.entity_id` (eine)
 
 `store`
 
 * Mit `store` Tabelle verbinden, um Spalten zu erstellen, die Details zum Commerce-Store zurückgeben, der mit der Bestellung verknüpft ist.
-   * Pfad: `sales_order.store_id` (viele) => `store.store_id` (eins)
+  * Pfad: `sales_order.store_id` (viele) => `store.store_id` (eins)

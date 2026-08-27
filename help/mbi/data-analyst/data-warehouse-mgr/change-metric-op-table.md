@@ -1,6 +1,6 @@
 ---
-title: Change a metric's operational table
-description: Learn how to change the data table that a metric uses to perform its operation.
+title: Operationstabelle einer Metrik ändern
+description: Erfahren Sie, wie Sie die Datentabelle ändern, die eine Metrik verwendet, um ihren Vorgang auszuführen.
 exl-id: c7a074ca-31f4-43e5-85d9-b64dca95dc23
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -20,27 +20,27 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 231
+source-wordcount: 244
 ht-degree: 0%
 
 ---
 
-# Change a metric&#39;s operational table
+# Operationstabelle einer Metrik ändern
 
-In certain cases, you may decide to change the data table that a metric uses to perform its operation. For example, if you have a new users table, you want to migrate your user-related metrics from the  `Users\_Old` table to use the `Users\_New` table instead.
+In bestimmten Fällen können Sie sich entscheiden, die Datentabelle zu ändern, die eine Metrik verwendet, um ihren Vorgang auszuführen. Wenn Sie beispielsweise über eine neue Benutzertabelle verfügen, möchten Sie Ihre benutzerbezogenen Metriken aus der `Users\_Old` migrieren, um stattdessen die `Users\_New` zu verwenden.
 
-1. Go to **[!UICONTROL Data]** > **[!UICONTROL Metrics]**
-1. Click **[!UICONTROL Edit]** beside the metric for which you would like to switch the `operational` table.
-1. In the editor, click **[!UICONTROL Change]**.
+1. Navigieren Sie zu **[!UICONTROL Data]** > **[!UICONTROL Metrics]**
+1. Klicken Sie **[!UICONTROL Edit]** neben der Metrik, für die Sie die `operational` wechseln möchten.
+1. Klicken Sie im Editor auf **[!UICONTROL Change]**.
 
-   ![Metric definition page showing operational table setting](../../assets/change-metrics-1.png)
-1. Select the new table that you would like to base this metric on.
-1. Match existing data dimensions to corresponding ones in the new table. For example, if you had a column called `User's registration date`, simply select which column in the new table records the same date data. (See next step if you do not have matching columns in the new table)
+   ![Seite zur Metrikdefinition mit der Einstellung der Operationstabelle](../../assets/change-metrics-1.png)
+1. Wählen Sie die neue Tabelle aus, auf der Sie diese Metrik basieren möchten.
+1. Ordnen Sie die vorhandenen Datendimensionen den entsprechenden Dimensionen in der neuen Tabelle zu. Wenn Sie beispielsweise eine Spalte mit dem Namen `User's registration date` haben, wählen Sie einfach aus, welche Spalte in der neuen Tabelle dieselben Datumsdaten aufzeichnet. (Siehe nächster Schritt, wenn die neue Tabelle keine übereinstimmenden Spalten enthält)
 
-   ![Table selection dropdown showing available tables](../../assets/change-metrics-2.png)
+   ![Dropdown-Liste zur Tabellenauswahl mit verfügbaren Tabellen](../../assets/change-metrics-2.png)
 
-1. If you do not have a matching column in the new table, you can either **create it in your data table** or [contact support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) if it is a calculation column or dimension made by [!DNL Commerce Intelligence]. You can also **delete the dimension from the metric**. To delete a dimension that you no longer need, simply go back to the metric&#39;s editor and select which dimensions to delete under `Dimensions`.
+1. Wenn in der neuen Tabelle keine entsprechende Spalte vorhanden ist, können Sie diese entweder **in Ihrer Datentabelle erstellen** oder [Support kontaktieren](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) wenn es sich um eine von [!DNL Commerce Intelligence] erstellte Berechnungsspalte oder Dimension handelt. Sie können auch **Dimension aus der Metrik löschen**. Um eine nicht mehr benötigte Dimension zu löschen, gehen Sie einfach zurück zum Editor der Metrik und wählen Sie unter `Dimensions` aus, welche Dimensionen gelöscht werden sollen.
 
-   ![Operational column selection dropdown menu](../../assets/change-metrics-3.png)
+   ![Dropdown-Menü für die operative Spaltenauswahl](../../assets/change-metrics-3.png)

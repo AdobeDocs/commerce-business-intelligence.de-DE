@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 343
+source-wordcount: 357
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Wenn Sie einen Filter hinzugefügt haben, der eine Dimension verwendet, die nich
 
 In bestimmten Fällen können Sie eine `order-specific` Dimension in eine `user-specific` Dimension umwandeln, die dem `Repeat Order Probability` als Filter hinzugefügt werden soll. In diesen Fällen geben Sie das Sortierattribut der ersten oder letzten Bestellung eines Benutzers zurück (z. B. den Regionsnamen der ersten Bestellung eines Benutzers).
 
-Wenn Sie eine solche neue Dimension erstellen möchten, wenden [&#x200B; sich an den Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Wenn Sie eine solche neue Dimension erstellen möchten, wenden [&#x200B; sich an den Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ## Vergleich der Wiederholungswahrscheinlichkeit von Aufträgen mit verschiedenen Attributen
 

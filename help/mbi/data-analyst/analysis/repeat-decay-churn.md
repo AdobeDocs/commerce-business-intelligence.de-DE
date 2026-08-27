@@ -20,9 +20,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 968
+source-wordcount: 969
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Nachdem Sie die oben genannte Analyse erstellt und eine Abwanderungsschwelle fes
 
 Wenn Sie mehr als ein Produkt anbieten, fragen Sie sich wahrscheinlich, wie sich Kunden, die ein bestimmtes Produkt erwerben, im Laufe der Zeit anders verhalten als andere Kunden. Möchten Sie mehr erfahren? Sehen Sie sich dieses Tutorial an, um das lebenslange Kaufverhalten von Kundenkohorten basierend auf bestimmten Produkten zu untersuchen, die sie gekauft haben.
 
-Diese Best Practice wird von [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS) bereitgestellt. [Kontaktieren Sie den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um weitere Informationen zu erhalten.
+Diese Best Practice wird von [!DNL Adobe Commerce Intelligence] Data Analysis Services (DAS) bereitgestellt. [Kontaktieren Sie den &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um weitere Informationen zu erhalten.
 
 ### verwandt
 

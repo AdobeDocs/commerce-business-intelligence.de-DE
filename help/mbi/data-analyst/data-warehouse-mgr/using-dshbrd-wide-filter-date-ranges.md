@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: 481
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ Wenn Sie einen Datumsfilter für ein Dashboard angeben, wird dieser Filter nur a
 
 ## Filter speichern
 
-Um zu analysieren, wie sich ein bestimmter Store entwickelt, klicken Sie auf das Store-Symbol in der oberen rechten Ecke (![Store-Filter](../../assets/store-filter.png)). Standardmäßig ist `Store Filter` auf `All Stores` festgelegt, wodurch die Daten aus allen [Store-Ansichten](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-views.html?lang=de) angezeigt werden, die auf Ihrer Commerce-Site verfügbar sind.
+Um zu analysieren, wie sich ein bestimmter Store entwickelt, klicken Sie auf das Store-Symbol in der oberen rechten Ecke (![Store-Filter](../../assets/store-filter.png)). Standardmäßig ist `Store Filter` auf `All Stores` festgelegt, wodurch die Daten aus allen [Store-Ansichten](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-views) angezeigt werden, die auf Ihrer Commerce-Site verfügbar sind.
 
 >[!NOTE]
 >
->Ein Speicherfilter ist für ein ganzes [!DNL Commerce Intelligence]-Konto aktiviert oder deaktiviert. Wenn ein Dashboard Berichte enthält, die nicht vom Filter betroffen sind (z. B. Berichte, die nicht auf [!DNL Adobe Commerce] Daten basieren), werden diese Berichte nicht aktualisiert, wenn der Speicherfilter angewendet wird. Sie können [Support kontaktieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) wenn Sie der Meinung sind, dass ein Bericht basierend auf der Store-Auswahl aktualisiert werden sollte oder wenn Sie der Meinung sind, dass Ihr Account-Store-Filter versehentlich deaktiviert ist.
+>Ein Speicherfilter ist für ein ganzes [!DNL Commerce Intelligence]-Konto aktiviert oder deaktiviert. Wenn ein Dashboard Berichte enthält, die nicht vom Filter betroffen sind (z. B. Berichte, die nicht auf [!DNL Adobe Commerce] Daten basieren), werden diese Berichte nicht aktualisiert, wenn der Speicherfilter angewendet wird. Sie können [Support kontaktieren](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) wenn Sie der Meinung sind, dass ein Bericht basierend auf der Store-Auswahl aktualisiert werden sollte oder wenn Sie der Meinung sind, dass Ihr Account-Store-Filter versehentlich deaktiviert ist.
 
 Wenn Sie einen Store aus der `Store Filter` auswählen, behält der Filter Ihre Auswahl bei, wenn Sie zwischen Dashboards navigieren. Wenn Sie Ihre Auswahl beibehalten, können Sie Daten für Ihren ausgewählten Store überall anzeigen, bis Sie `All Stores` auswählen.
 

@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c8d7097b4f841a4fe8c5777f207ea0ea53202a0f
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 342
+source-wordcount: 343
 ht-degree: 0%
 
 ---
@@ -84,4 +84,4 @@ Diese Tabelle enthält dieselben Informationen wie die `facebook_ads_insights_{a
 ## verwandt
 
 * [Verbinden [!DNL Facebook Ads]](../integrations/facebook-ads.md)
-* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations.html?lang=de)
+* [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

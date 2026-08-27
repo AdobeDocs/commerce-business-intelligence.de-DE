@@ -20,23 +20,23 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 491
+source-wordcount: 511
 ht-degree: 0%
 
 ---
 
 # Exportieren von Rohdaten
 
-Mithilfe von Rohdatenexporten können Sie Datensätze aus Ihrer Data Warehouse exportieren, um einen genaueren Überblick über die Funktionen Ihres Dashboards zu erhalten. Darüber hinaus können Rohdatenexporte Ihnen dabei helfen, [Datendiskrepanzen zu identifizieren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.html?lang=de).
+Mithilfe von Rohdatenexporten können Sie Datensätze aus Ihrer Data Warehouse exportieren, um einen genaueren Überblick über die Funktionen Ihres Dashboards zu erhalten. Darüber hinaus können Rohdatenexporte Ihnen dabei helfen, [Datendiskrepanzen zu identifizieren](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies).
 
 Rohdatenexporte bieten Zugriff auf zusätzliche Spalten und Dimensionen, die durch De-Normalisierung und Voraggregation relevanter Metriken generiert wurden. `User's first order date` ist beispielsweise eine Dimension, die Sie für jeden Benutzer in [!DNL Commerce Intelligence] exportieren können, während sie möglicherweise nicht in Ihrer Datenbank verfügbar ist.
 
 Dieses Tutorial behandelt Folgendes:
 
 * [Auswahl der zu exportierenden Daten](#select)
-* [Export herunterladen (](#download)
+* [Export herunterladen (`.csv`)](#download)
 * [Zugriff auf historische Exporte](#historical)
 
 ## Schritt 1: Auswahl der zu exportierenden Daten {#select}

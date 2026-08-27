@@ -22,9 +22,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 390
+source-wordcount: 409
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Wenn dies abgeschlossen ist, wissen Sie, welche Daten Sie mit der neuen Data War
 
 ### Hilfe wird abgerufen
 
-Das [!DNL Adobe Commerce Intelligence] [Services](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de)Team kann die erneute Implementierung gegen Aufpreis durchführen. Wenden Sie sich an Ihr [Adobe-](../../guide-overview.md#Submitting-a-Support-Ticket) und stellen Sie eine Liste der Dashboards/Berichte bereit, die Sie in Ihrem neuen Konto vorrangig erstellen möchten
+Das [!DNL Adobe Commerce Intelligence] [Services](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)Team kann die erneute Implementierung gegen Aufpreis durchführen. Wenden Sie sich an Ihr [Adobe-](../../guide-overview.md#Submitting-a-Support-Ticket) und stellen Sie eine Liste der Dashboards/Berichte bereit, die Sie in Ihrem neuen Konto vorrangig erstellen möchten
 
 ### Bestehende Architektur beibehalten
 

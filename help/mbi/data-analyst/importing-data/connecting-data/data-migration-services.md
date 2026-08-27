@@ -22,16 +22,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
 workflow-type: tm+mt
-source-wordcount: 685
+source-wordcount: 711
 ht-degree: 0%
 
 ---
 
 # Datenmigration
 
-Die Migration auf ein neues Datenbankschema, einen neuen Server oder eine neue Berichtsdatenbank ist nicht zwingend. Das [[!DNL Adobe] Services-Team](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de) bietet Unterstützung bei der Migration.
+Die Migration auf ein neues Datenbankschema, einen neuen Server oder eine neue Berichtsdatenbank ist nicht zwingend. Das [[!DNL Adobe] Services-Team](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) bietet Unterstützung bei der Migration.
 
 Um sicherzustellen, dass Ihr Übergang so reibungslos wie möglich verläuft, sollten Sie bei der Übermittlung Ihrer Migrationsanfrage so detailliert wie möglich sein. In diesem Thema finden Sie alles, was Sie zum Senden einer Anfrage und für die ersten Schritte mit der Migration benötigen. Wenn Sie uns ein umfassendes Bild Ihrer Bedürfnisse vermitteln, können Sie sicherstellen, dass Ihr Projekt ordnungsgemäß abgewickelt wird und die Schätzung korrekt ist.
 
@@ -85,7 +85,7 @@ Im Folgenden finden Sie ein Beispiel:
 
 ## Wie sende ich eine Anfrage? {#submitreq}
 
-Sie können sich an uns wenden, indem Sie [eine Support-Anfrage einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de).
+Sie können sich an uns wenden, indem Sie [eine Support-Anfrage einreichen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 Vergessen Sie nicht, die Tabelle anzuhängen, wenn Sie die Schritte aus dem vorherigen Abschnitt zum Erstellen der Tabelle mit Spaltenanpassung befolgt haben.
 

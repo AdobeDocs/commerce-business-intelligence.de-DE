@@ -1,6 +1,6 @@
 ---
 title: Tabelle quote_item
-description: Erfahren Sie, wie Sie mit der Tabelle quote_item arbeiten.
+description: Überprüfen Sie das Tabellenschema quote_item in Commerce Intelligence, das jedes Warenkorbelement verfolgt. Erfahren Sie mehr über die Empfehlungen von Adobe zur Verwaltung der Tabellengröße im Zeitverlauf.
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
@@ -23,9 +23,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
 workflow-type: tm+mt
-source-wordcount: 686
+source-wordcount: 704
 ht-degree: 0%
 
 ---
@@ -42,13 +42,13 @@ Die `quote_item` Tabelle (`sales_flat_quote_item` auf M1) enthält Datensätze z
 
 | **Spaltenname** | **Beschreibung** |
 |---|---|
-| `base_price` | Preis einer einzelnen Einheit eines Produkts zum Zeitpunkt, als der Artikel zum Warenkorb hinzugefügt wurde, nach [Katalogpreisregeln, gestaffelten Rabatten und Sonderpreisen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=de) und bevor Steuern, Versand oder Warenkorbabschläge angewendet werden. Dies wird in der Basiswährung des Stores dargestellt. |
+| `base_price` | Preis einer einzelnen Einheit eines Produkts zum Zeitpunkt, als der Artikel zum Warenkorb hinzugefügt wurde, nach [Katalogpreisregeln, gestaffelten Rabatten und Sonderpreisen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/pricing/pricing-advanced) und bevor Steuern, Versand oder Warenkorbabschläge angewendet werden. Dies wird in der Basiswährung des Stores dargestellt. |
 | `created_at` | Erstellungszeitstempel des Warenkorbelements, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL Commerce Intelligence] kann dieser Zeitstempel in eine Berichtszeitzone umgewandelt werden, [!DNL Commerce Intelligence] sich von Ihrer Datenbankzeitzone unterscheidet |
 | `item_id` (K) | Eindeutige Kennung der Tabelle |
 | `name` | Textname des Bestellartikels |
 | `parent_item_id` | `Foreign key`, das ein einfaches Produkt auf sein übergeordnetes Bundle oder konfigurierbares Produkt bezieht. Join-`quote_item.item_id`, um übergeordnete Produktattribute zu bestimmen, die mit einem einfachen Produkt verknüpft sind. Für übergeordnete Warenkorbartikel (d. h. Bundle oder konfigurierbare Produkttypen) wird der `parent_item_id` `NULL` |
 | `product_id` | Der `catalog_product_entity` Tabelle zugeordnete `Foreign key` Mit `catalog_product_entity.entity_id` verbinden, um Produktattribute zu bestimmen, die mit dem Auftragselement verknüpft sind |
-| `product_type` | Typ des Produkts, das dem Warenkorb hinzugefügt wurde. Mögliche [Produkttypen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html?lang=de#product-types) sind: einfach, konfigurierbar, gruppiert, virtuell, gebündelt und herunterladbar |
+| `product_type` | Typ des Produkts, das dem Warenkorb hinzugefügt wurde. Mögliche [Produkttypen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/product-create#product-types) sind: einfach, konfigurierbar, gruppiert, virtuell, gebündelt und herunterladbar |
 | `qty` | Menge der im Warenkorb enthaltenen Einheiten für den jeweiligen Warenkorbartikel |
 | `quote_id` | Der `quote` Tabelle zugeordnete `Foreign key` Join to `quote.entity_id`, um die mit dem Warenkorbelement verknüpften Warenkorbattribute zu bestimmen |
 | `sku` | Eindeutige Kennung für den Artikel im Warenkorb |
@@ -62,7 +62,7 @@ Die `quote_item` Tabelle (`sales_flat_quote_item` auf M1) enthält Datensätze z
 |---|---|
 | `Cart creation date` | Zeitstempel, der mit dem Erstellungsdatum des Warenkorbs verknüpft ist. Berechnet durch Verbinden von `quote_item.quote_id` mit `quote.entity_id` und Zurückgeben des `created_at` Zeitstempels |
 | `Cart is active? (1/0)` | Boolesches Feld, das „1“ zurückgibt, wenn der Warenkorb von einem Kunden erstellt wurde und noch nicht in eine Bestellung konvertiert wurde. Gibt „0“ für konvertierte Warenkörbe oder Warenkörbe zurück, die über den Administrator erstellt wurden. Berechnet durch Verbinden von `quote_item.quote_id` mit `quote.entity_id` und Zurückgeben des `is_active` |
-| `Cart item total value (qty * base_price)` | Gesamtwert eines Artikels zum Zeitpunkt der Hinzufügung des Artikels zu einem Warenkorb, nachdem [Katalogpreisregeln, gestaffelte Rabatte und Sonderpreise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=de) angewendet wurden und bevor Steuern, Versand oder Warenkorbabschläge angewendet wurden. Berechnet durch Multiplizieren des `qty` mit dem `base_price` |
+| `Cart item total value (qty * base_price)` | Gesamtwert eines Artikels zum Zeitpunkt der Hinzufügung des Artikels zu einem Warenkorb, nachdem [Katalogpreisregeln, gestaffelte Rabatte und Sonderpreise](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/pricing/pricing-advanced) angewendet wurden und bevor Steuern, Versand oder Warenkorbabschläge angewendet wurden. Berechnet durch Multiplizieren des `qty` mit dem `base_price` |
 | `Seconds since cart creation` | Verstrichene Zeit zwischen dem Erstellungsdatum des Warenkorbs und jetzt. Berechnet durch Verbinden von `quote_item.quote_id` mit `quote.entity_id` und Zurückgeben des `Seconds since cart creation` |
 | `Store name` | Name des Commerce-Stores, der mit dem Auftragselement verknüpft ist. Berechnet durch Verbinden von `sales_order_item.store_id` mit `store.store_id` und Zurückgeben des `name` |
 
@@ -82,19 +82,19 @@ Die `quote_item` Tabelle (`sales_flat_quote_item` auf M1) enthält Datensätze z
 `catalog_product_entity`
 
 * Mit `catalog_product_entity` Tabelle verbinden, um Spalten zu erstellen, die Produktattribute zurückgeben, die mit dem Warenkorbelement verknüpft sind.
-   * Pfad: `quote_item.product_id` (viele) => `catalog_product_entity.entity_id` (eins)
+  * Pfad: `quote_item.product_id` (viele) => `catalog_product_entity.entity_id` (eins)
 
 `quote`
 
 * Mit `quote` Tabelle verbinden, um neue Spalten auf Warenkorbebene zu erstellen, die mit dem Warenkorbelement verknüpft sind.
-   * Pfad: `quote_item.quote_id` (viele) => `quote.entity_id` (eins)
+  * Pfad: `quote_item.quote_id` (viele) => `quote.entity_id` (eins)
 
 `quote_item`
 
-* Verbinden Sie sich mit `quote_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Wenden Sie sich an den &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies.html?lang=de), um Hilfe bei der Konfiguration dieser Berechnungen zu erhalten, falls Sie etwas in Data Warehouse Manager erstellen.
-   * Pfad: `quote_item.parent_item_id` (viele) => `quote_item.item_id` (eins)
+* Verbinden Sie sich mit `quote_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Wenden Sie sich an den &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um Hilfe bei der Konfiguration dieser Berechnungen zu erhalten, falls Sie etwas in Data Warehouse Manager erstellen.
+  * Pfad: `quote_item.parent_item_id` (viele) => `quote_item.item_id` (eins)
 
 `store`
 
 * Join `store` Tabelle, um Spalten zu erstellen, die Details zum Commerce-Store zurückgeben, der mit dem Warenkorbelement verknüpft ist.
-   * Pfad: `quote_item.store_id` (viele) => `store.store_id` (eins)
+  * Pfad: `quote_item.store_id` (viele) => `store.store_id` (eins)
