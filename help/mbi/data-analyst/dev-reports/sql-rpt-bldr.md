@@ -4,42 +4,56 @@ description: Erfahren Sie mehr über die Verwendung von SQL Report Builder.
 exl-id: 3a485b00-c59d-4bc5-b78b-57e9e92dd9d6
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-TQID: https://experienceleague.adobe.com/AH2H26Tjo9EXQdXg3fckTOgVkSbA6yqPJdVuO1Yzw2A
+TQID: 'https://experienceleague.adobe.com/AH2H26Tjo9EXQdXg3fckTOgVkSbA6yqPJdVuO1Yzw2A'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Optimization
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 1448
+source-wordcount: '1448'
 ht-degree: 0%
-
 ---
-
 # Verwenden von [!DNL SQL Report Builder]
 
 >[!NOTE]
 >
 >Erfordert [Administratorberechtigungen](../../administrator/user-management/user-management.md) um SQL-Diagramme zu erstellen und zu bearbeiten. `Standard` Benutzer können diese Diagramme in Dashboards neu anordnen und `Read-only` Benutzer haben die gleiche Erfahrung wie mit herkömmlichen Diagrammen. Darüber hinaus haben `Read-only` Benutzer keinen Zugriff auf den Text der Abfrage.
 
-Weitere Informationen finden [&#x200B; im &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/mbi/sql-report-builder)Schulungsvideo“.
+Weitere Informationen finden [ im ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/mbi/sql-report-builder)Schulungsvideo“.
 
 [!DNL SQL], oder Structured Query Language, ist eine Programmiersprache, die zur Kommunikation mit Datenbanken verwendet wird. In [!DNL Commerce Intelligence] wird [!DNL SQL] zum Abfragen oder Abrufen von Daten aus Ihrer Data Warehouse verwendet. Sehen Sie sich die Berichte in Ihrem Dashboard an - hinter den Kulissen basiert jeder Bericht auf einer [!DNL SQL] Abfrage.
 
 Sie können die [[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) verwenden, um Ihre Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und sie in ein Diagramm umzuwandeln. Sie können mit der Erstellung eines Berichts mit dem [!DNL SQL Report Builder] beginnen, indem Sie auf **[!UICONTROL Report Builder** > **[!DNL SQL Report Builder]]** klicken.
 
-Weitere Informationen finden [&#x200B; im &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/mbi/sql-report-builder)Schulungsvideo“.
+Weitere Informationen finden [ im ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/mbi/sql-report-builder)Schulungsvideo“.
 
 Mit dem [!DNL SQL Report Builder] können Sie Ihre Data Warehouse direkt abfragen, die Ergebnisse anzeigen und schnell in ein Diagramm umwandeln. Das Beste an der Verwendung von [!DNL SQL] zum Erstellen von Berichten ist, dass Sie nicht auf Aktualisierungszyklen warten müssen, um die von Ihnen erstellten Spalten zu iterieren. Wenn die Ergebnisse nicht korrekt aussehen, können Sie die Abfrage schnell bearbeiten und erneut ausführen, bis die Dinge Ihren Erwartungen entsprechen.
 
@@ -71,7 +85,7 @@ Um einen Bericht zu bearbeiten, klicken Sie auf das Zahnradsymbol (![Zahnradsymb
 >
 >Bei [!DNL SQL Report Builder]-Abfragen wird zwischen Groß- und Kleinschreibung unterschieden. Achten Sie beim Schreiben von Abfragen darauf, die richtige Groß-/Kleinschreibung zu verwenden, da sonst unerwartete Ergebnisse oder Fehler auftreten können.
 
-Schreiben Sie gemäß [Richtlinien für &#x200B;](../../best-practices/optimizing-your-sql-queries.md) Abfrageoptimierung) eine Abfrage im [!DNL SQL].
+Schreiben Sie gemäß [Richtlinien für ](../../best-practices/optimizing-your-sql-queries.md) Abfrageoptimierung) eine Abfrage im [!DNL SQL].
 
 >[!IMPORTANT]
 >
@@ -99,7 +113,7 @@ Wenn Sie die Abfrage fertig geschrieben haben, klicken Sie auf **[!UICONTROL Run
 
 Wenn in den Ergebnissen etwas nicht korrekt angezeigt wird, können Sie die Abfrage bearbeiten und erneut ausführen, bis Sie zufrieden sind.
 
-Manchmal werden [Nachrichten unter dem Editor mit „ERKLÄREN“ in ihnen &#x200B;](../../best-practices/optimizing-your-sql-queries.md). Wenn Sie eine dieser Optionen sehen, bedeutet dies, dass Ihre Abfrage nicht ausgeführt wurde und etwas optimiert werden muss.
+Manchmal werden [Nachrichten unter dem Editor mit „ERKLÄREN“ in ihnen ](../../best-practices/optimizing-your-sql-queries.md). Wenn Sie eine dieser Optionen sehen, bedeutet dies, dass Ihre Abfrage nicht ausgeführt wurde und etwas optimiert werden muss.
 
 Nachdem Sie die Bearbeitung der Abfrage abgeschlossen haben, können Sie mit dem Erstellen einer Visualisierung oder dem Speichern Ihrer Arbeit in einem Dashboard fortfahren.
 
@@ -129,7 +143,7 @@ Klicken Sie oben rechts im [!DNL SQL] auf **[!UICONTROL Save]** und wählen Sie 
 
 #### [!DNL SQL Report Builder]
 
-[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) erhalten Sie die Möglichkeit, Ihre Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und schnell in einen Bericht umzuwandeln. Durch die Verwendung von [!DNL SQL] können [&#x200B; auch nicht  [!DNL SQL]  Funktionen &#x200B;](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) Report Builder `Visual` oder `Cohort` verwenden und erhalten so mehr Kontrolle über Ihre Daten.
+[[!DNL SQL Report Builder]](../dev-reports/sql-rpt-bldr.md) erhalten Sie die Möglichkeit, Ihre Data Warehouse direkt abzufragen, die Ergebnisse anzuzeigen und schnell in einen Bericht umzuwandeln. Durch die Verwendung von [!DNL SQL] können [ auch nicht  [!DNL SQL]  Funktionen ](https://docs.aws.amazon.com/redshift/latest/dg/c_SQL_functions.html) Report Builder `Visual` oder `Cohort` verwenden und erhalten so mehr Kontrolle über Ihre Daten.
 
 Berechnete Spalten, die mit [!DNL SQL] erstellt wurden, sind nicht von Aktualisierungszyklen abhängig, d. h. Sie können sie nach Belieben durchlaufen und sofort die Ergebnisse sehen.
 
@@ -149,7 +163,7 @@ Berechnete Spalten, die mit [!DNL SQL] erstellt wurden, sind nicht von Aktualisi
 
 In den meisten Fällen können diese Unterschiede den Aktualisierungszyklen zugeschrieben werden. Wenn [!DNL Commerce Intelligence] Daten aus Ihrer Datenbank in Ihre Data Warehouse repliziert, können selbst bei Verwendung derselben Abfrage unterschiedliche Ergebnisse auftreten.
 
-Verbindungsprobleme können auch zu Diskrepanzen führen. Navigieren Sie zur `Connections` Seite, indem Sie zum Überprüfen auf **[!DNL Manage Data** > **Connections]** klicken. Gibt es einen Fehler bei der betreffenden Datenbankintegration? In diesem Fall müssen Sie die Integration möglicherweise [erneut authentifizieren](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations) um die Dinge wieder zum Laufen zu bringen.
+Verbindungsprobleme können auch zu Diskrepanzen führen. Navigieren Sie zur `Connections` Seite, indem Sie zum Überprüfen auf **[!DNL Manage Data** > **Connections]** klicken. Gibt es einen Fehler bei der betreffenden Datenbankintegration? In diesem Fall müssen Sie die Integration möglicherweise [erneut authentifizieren](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations) um die Dinge wieder zum Laufen zu bringen.
 
 Wenn alle Ihre Integrationen erfolgreich verbunden sind und Sie sich nicht in der Mitte eines Aktualisierungszyklus befinden, kann etwas Anderes fehlen.
 
@@ -173,7 +187,7 @@ Anders als die [!DNL Visual Report Builder] dient die [[!DNL Cohort Report Build
 | **Dies ist perfekt für…** | **Das ist nicht so toll für…** |
 |---|---|
 | Fortgeschrittene Analysten/Analysten | Anfänger - Sie benötigen praxisorientierte Kohorten. |
-| Identifizieren von Verhaltenstrends im Zeitverlauf | Qualitative Analyse - kann [&#x200B; durchgeführt werden](../dev-reports/create-qual-cohort-analysis.md) erfordert jedoch die Unterstützung von Adobe. |
+| Identifizieren von Verhaltenstrends im Zeitverlauf | Qualitative Analyse - kann [ durchgeführt werden](../dev-reports/create-qual-cohort-analysis.md) erfordert jedoch die Unterstützung von Adobe. |
 
 ## Abfragen nach dem Aktualisierungszyklus neu erstellen
 

@@ -4,38 +4,56 @@ description: Erfahren Sie, wie Sie auf Datensätze aller registrierten Konten zu
 exl-id: 24bf0e66-eea0-45ea-8ce6-4ff99b678201
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys
+TQID: 'https://experienceleague.adobe.com/iTzls4nEtW9ep-3s536ZnRCCr2TeMD6AsDecZc3Cdys'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 604
+source-wordcount: '604'
 ht-degree: 0%
-
 ---
-
 # customer_entity-Tabelle
 
 Die Tabelle `customer_entity` enthält Einträge aller registrierten Konten. Ein Konto gilt als registriert, wenn er sich für ein Konto anmeldet, unabhängig davon, ob er jemals einen Kauf abschließt. Jede Zeile entspricht einem eindeutigen registrierten Konto, das durch die `entity_id` dieses Kontos identifiziert wird.
 
-Diese Tabelle enthält keine Datensätze von Kunden, die eine Bestellung per Gast-Checkout aufgeben. Wenn Ihr Geschäft einen Gast-Checkout akzeptiert, finden Sie [&#x200B; diesen Bestellungen unter &quot;](../data-warehouse-mgr/guest-orders.md) für Gastbestellungen“.
+Diese Tabelle enthält keine Datensätze von Kunden, die eine Bestellung per Gast-Checkout aufgeben. Wenn Ihr Geschäft einen Gast-Checkout akzeptiert, finden Sie [ diesen Bestellungen unter &quot;](../data-warehouse-mgr/guest-orders.md) für Gastbestellungen“.
 
 ## Gemeinsame Spalten
 
@@ -84,9 +102,9 @@ Diese Tabelle enthält keine Datensätze von Kunden, die eine Bestellung per Gas
 `customer_group`
 
 * Mit `customer_group` Tabelle verbinden, um Spalten zu erstellen, die den Kundengruppennamen des registrierten Kontos zurückgeben.
-   * Pfad: `customer_entity.group_id` (viele) => `customer_group.customer_group_id` (eins)
+  * Pfad: `customer_entity.group_id` (viele) => `customer_group.customer_group_id` (eins)
 
 `store`
 
 * Mit `store` Tabelle verbinden, um Spalten zu erstellen, die Details zum Store zurückgeben, der mit dem registrierten Konto verknüpft ist.
-   * Pfad: `customer_entity.store_id` (viele) => `store.store_id` (eins)
+  * Pfad: `customer_entity.store_id` (viele) => `store.store_id` (eins)

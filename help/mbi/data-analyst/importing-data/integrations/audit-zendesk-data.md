@@ -4,37 +4,52 @@ description: Überprüfen Sie Ihre Zendesk-Daten in Commerce Intelligence, indem
 exl-id: 3c8dcc72-3623-4c4e-a941-f431a97571e0
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/EQmiSbzzvOONQ8-F1U9uMVpgXUKd2PEjcLXLVSgQSm8
+TQID: 'https://experienceleague.adobe.com/EQmiSbzzvOONQ8-F1U9uMVpgXUKd2PEjcLXLVSgQSm8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 323
+source-wordcount: '323'
 ht-degree: 0%
-
 ---
-
 # Audit von Zendesk-Daten
 
 Etwas Seltsames in Ihren [[!DNL Zendesk] Daten](../integrations/exp-zendesk-data.md) gefunden? Um das Problem zu identifizieren, müssen Sie Ihre Daten untersuchen. Exportieren Sie dazu Ihre [!DNL Zendesk] in eine herunterladbare Datei.
 
 ## Aktivieren des Datenexports
 
-Der Datenexport ist derzeit nicht für alle [!DNL Zendesk]-Konten aktiviert. Um diese Funktion zu aktivieren, [&#x200B; Sie „ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)&quot; und geben Sie Ihren [!DNL Zendesk] Subdomain-Namen an.
+Der Datenexport ist derzeit nicht für alle [!DNL Zendesk]-Konten aktiviert. Um diese Funktion zu aktivieren, [ Sie „ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)&quot; und geben Sie Ihren [!DNL Zendesk] Subdomain-Namen an.
 
 >[!NOTE]
 >
@@ -55,6 +70,6 @@ Nachdem der Datenexport aktiviert wurde, können nur Administratoren in einer be
 
    Dieser Downloadlink ist mindestens drei Tage gültig.
 
-Dieser Prozess erstellt eine XML-Datei, die alle im aktuellen [!DNL Zendesk] gespeicherten Informationen enthält, einschließlich Ticketdaten (mit Kommentaren), Benutzerdaten und Kontodaten. An dieser Stelle können Sie [ein Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) (stellen Sie sicher, dass Sie diese Datei anhängen!) So können Sie sich Ihre Daten genauer ansehen. Wenn die Datei zu groß ist, geben Sie sie über [!DNL Dropbox] oder [!DNL Google Drive] für das [!DNL Commerce Intelligence]-Team frei.
+Dieser Prozess erstellt eine XML-Datei, die alle im aktuellen [!DNL Zendesk] gespeicherten Informationen enthält, einschließlich Ticketdaten (mit Kommentaren), Benutzerdaten und Kontodaten. An dieser Stelle können Sie [ein Support-Ticket einreichen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) (stellen Sie sicher, dass Sie diese Datei anhängen!) So können Sie sich Ihre Daten genauer ansehen. Wenn die Datei zu groß ist, geben Sie sie über [!DNL Dropbox] oder [!DNL Google Drive] für das [!DNL Commerce Intelligence]-Team frei.
 
 Weitere Informationen zu [!DNL Zendesk] Dateiexporten finden Sie in der offiziellen [[!DNL Zendesk] Exportdokumentation](https://support.zendesk.com/hc/en-us/articles/4408886165402-Exporting-data-to-a-JSON-CSV-or-XML-file).

@@ -4,30 +4,45 @@ description: Erfahren Sie, wie Sie Daten aus verschiedenen Quellen zusammenführ
 exl-id: 668cbc77-6a96-4687-9f40-3635b1be5c66
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/dGzhox6Xjuvc3goSxkF2W-5yBlkgKgnOJg7YcuD2Q0s
+TQID: 'https://experienceleague.adobe.com/dGzhox6Xjuvc3goSxkF2W-5yBlkgKgnOJg7YcuD2Q0s'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 345
+source-wordcount: '344'
 ht-degree: 0%
-
 ---
-
 # Berechnete Spalten erstellen
 
 Bei der Analyse Ihrer Daten ist es hilfreich, Daten aus verschiedenen Quellen zu konsolidieren. Möchten Sie den Umsatz nach Akquise-Quelle gruppieren, die Daten aus Ihrer `orders`-Tabelle verknüpfen und Daten [!DNL Google Analytics]? Vielleicht möchten Sie den Umsatz nach Kundengeschlecht gruppieren oder einem Kundenattribut Transaktionsdaten für die Segmentierung hinzufügen. In diesem Thema wird erläutert, wie Sie genau dies tun können.
@@ -72,4 +87,4 @@ Wenn Sie beim Erstellen einer berechneten Spalte Schwierigkeiten haben, sich an 
 
 * [Berechnete Spaltentypen](../data-warehouse-mgr/calc-column-types.md)
 * [Erweiterte berechnete Spaltentypen](../data-warehouse-mgr/adv-calc-columns.md)
-* [&#x200B; [!DNL Google ECommerce]  mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [ [!DNL Google ECommerce]  mit Bestell- und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)

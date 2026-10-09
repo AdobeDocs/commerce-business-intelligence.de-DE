@@ -4,33 +4,48 @@ description: Erfahren Sie, wie SQL-Abfragen in die berechneten Spalten und Metri
 exl-id: b3e3905f-6952-4f15-a582-bf892a971fae
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, SQL Report Builder, Reports
-TQID: https://experienceleague.adobe.com/-VQfwFZeSlEcD053XRQ4mWF51jnTGaV04tUAqLu7-U8
+TQID: 'https://experienceleague.adobe.com/-VQfwFZeSlEcD053XRQ4mWF51jnTGaV04tUAqLu7-U8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Reporting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 942
+source-wordcount: '942'
 ht-degree: 0%
-
 ---
-
 # SQL-Abfragen in Commerce Intelligence übersetzen
 
-Haben Sie sich jemals gefragt, wie SQL-Abfragen in die [berechneten Spalten](../data-warehouse-mgr/creating-calculated-columns.md), [Metriken](../../data-user/reports/ess-manage-data-metrics.md) und [Berichte](../../tutorials/using-visual-report-builder.md) übersetzt werden, die Sie in [!DNL Commerce Intelligence] verwenden? Wenn Sie ein erfahrener SQL-Benutzer sind, können Sie im [Data Warehouse Manager[!DNL Commerce Intelligence] intelligenter arbeiten, wenn Sie wissen, wie SQL in übersetzt &#x200B;](../data-warehouse-mgr/tour-dwm.md), und [!DNL Commerce Intelligence] Plattform optimal nutzen.
+Haben Sie sich jemals gefragt, wie SQL-Abfragen in die [berechneten Spalten](../data-warehouse-mgr/creating-calculated-columns.md), [Metriken](../../data-user/reports/ess-manage-data-metrics.md) und [Berichte](../../tutorials/using-visual-report-builder.md) übersetzt werden, die Sie in [!DNL Commerce Intelligence] verwenden? Wenn Sie ein erfahrener SQL-Benutzer sind, können Sie im [Data Warehouse Manager[!DNL Commerce Intelligence] intelligenter arbeiten, wenn Sie wissen, wie SQL in übersetzt ](../data-warehouse-mgr/tour-dwm.md), und [!DNL Commerce Intelligence] Plattform optimal nutzen.
 
 Am Ende dieses Themas finden Sie eine **Übersetzungsmatrix** für SQL-Abfrageklauseln und [!DNL Commerce Intelligence].
 
@@ -70,7 +85,7 @@ Sehen Sie sich ein konkretes Beispiel an, wie eine `Total Revenue` Metrik in [!D
 | `email NOT LIKE '%@magento.com'` | `filter` |
 | `AND created_at < X`<br><br>`AND created_at >= Y` | `timestamp` (und Reporting-`time range`) |
 
-Navigieren Sie zum Metrik-Builder, indem Sie **[!UICONTROL Manage Data** > **&#x200B; Metriken &#x200B;**> **Neue Metrik erstellen]** klicken. Sie müssen zunächst die entsprechende `source` auswählen, bei der es sich in diesem Fall um die `orders` handelt. Anschließend würde die Metrik wie unten dargestellt eingerichtet:
+Navigieren Sie zum Metrik-Builder, indem Sie **[!UICONTROL Manage Data** > ** Metriken **> **Neue Metrik erstellen]** klicken. Sie müssen zunächst die entsprechende `source` auswählen, bei der es sich in diesem Fall um die `orders` handelt. Anschließend würde die Metrik wie unten dargestellt eingerichtet:
 
 ![Metrikaggregation](../../assets/Metric_aggregation.png)
 
@@ -92,7 +107,7 @@ Die Abfrage für diese Aggregation kann in etwa wie folgt aussehen:
 
 Für die Einrichtung in [!DNL Commerce Intelligence] ist die Verwendung Ihres Data Warehouse-Managers erforderlich, mit dem Sie einen Pfad zwischen Ihrer `orders` und `customers` Tabelle erstellen und dann in der Tabelle Ihres Kunden eine Spalte mit dem Namen `Customer LTV` erstellen.
 
-Erfahren Sie, wie Sie einen neuen Pfad zwischen dem `customers` und dem `orders` einrichten. Das Endziel besteht darin, eine neue aggregierte Spalte in der `customers` zu erstellen. Gehen Sie daher in Ihrer Data Warehouse zur `customers` Tabelle und klicken Sie auf **[!UICONTROL Create a Column** > **&#x200B; Definition auswählen &#x200B;**> **SUM]**.
+Erfahren Sie, wie Sie einen neuen Pfad zwischen dem `customers` und dem `orders` einrichten. Das Endziel besteht darin, eine neue aggregierte Spalte in der `customers` zu erstellen. Gehen Sie daher in Ihrer Data Warehouse zur `customers` Tabelle und klicken Sie auf **[!UICONTROL Create a Column** > ** Definition auswählen **> **SUM]**.
 
 Als Nächstes müssen Sie die Quelltabelle auswählen. Wenn ein Pfad zu Ihrer `orders` vorhanden ist, wählen Sie ihn einfach aus der Dropdown-Liste aus. Wenn Sie jedoch einen neuen Pfad erstellen, klicken Sie auf **[!UICONTROL Create new path]** . Daraufhin wird der folgende Bildschirm angezeigt:
 

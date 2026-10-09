@@ -1,29 +1,37 @@
 ---
-title: Entrümpeln  [!DNL Commerce Intelligence]  Kontos
-description: Erfahren Sie, wie Sie Ihr - [!DNL Commerce Intelligence]  bereinigen können.
+title: Entrümpeln Ihres [!DNL Commerce Intelligence] Kontos
+description: Erfahren Sie, wie Sie Ihr [!DNL Commerce Intelligence]-Konto bereinigen können.
 exl-id: 5fcdac2d-41ca-4011-b646-a699d9ecc6e4
 role: Admin, User
 feature: Accounts
-TQID: https://experienceleague.adobe.com/cybn11Z5oXnfc6Oz34Dk1syw4w0o03vA-TRNMjHeifE
+TQID: 'https://experienceleague.adobe.com/cybn11Z5oXnfc6Oz34Dk1syw4w0o03vA-TRNMjHeifE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: 9e444628-408e-5d74-8cd4-c552f0d5d47f
+    internal-label: Accounts
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 907
+source-wordcount: '909'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Commerce Intelligence] bereinigen
 
 Unabhängig davon, ob Sie seit sechs Monaten oder sechs Jahren mit [!DNL Commerce Intelligence] arbeiten, ist die Pflege eines ordentlichen Kontos von größter Bedeutung, damit Ihr Unternehmen die Plattform optimal nutzen kann. Im Laufe der Zeit gibt es natürlich nicht mehr benötigte Benutzer, Dashboards, Berichte, Metriken und Spalten. Vielleicht haben Sie einen Bericht für die einmalige Verwendung erstellt und vergessen, oder ein Benutzer, der Ihr Unternehmen verlassen hat, hat sein Konto nie deaktiviert.
@@ -42,7 +50,7 @@ Klicken Sie dazu in der Navigationsleiste oben rechts auf den Namen Ihres Untern
 
 >[!WARNING]
 >
->Wenn Sie einen Benutzer deaktivieren, werden die von diesem Benutzer erstellten Diagramme, Dashboards und anderen Assets entfernt. Wenn Sie diese Assets beibehalten möchten, wenden Sie sich an das [!DNL Commerce Intelligence][&#x200B; Support](../guide-overview.md#Submitting-a-Support-Ticket)Team, bevor Sie den Benutzer deaktivieren. Der Support kann Ihnen dabei helfen, diese Assets auf einen anderen Benutzer zu übertragen.
+>Wenn Sie einen Benutzer deaktivieren, werden die von diesem Benutzer erstellten Diagramme, Dashboards und anderen Assets entfernt. Wenn Sie diese Assets beibehalten möchten, wenden Sie sich an das [!DNL Commerce Intelligence][ Support](../guide-overview.md#Submitting-a-Support-Ticket)Team, bevor Sie den Benutzer deaktivieren. Der Support kann Ihnen dabei helfen, diese Assets auf einen anderen Benutzer zu übertragen.
 
 ### Benutzer reaktivieren
 

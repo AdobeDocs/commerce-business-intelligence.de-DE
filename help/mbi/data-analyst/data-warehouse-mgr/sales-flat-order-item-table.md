@@ -4,44 +4,62 @@ description: Erfahren Sie, wie Sie mit der Tabelle sales_order_item arbeiten.
 exl-id: 5c48e985-3ba2-414b-bd1f-555b3da763bd
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/oIuu3bNkmZMRrwa6V76fQPgKUWr4IsG3Madq46ar0Tk
+TQID: 'https://experienceleague.adobe.com/oIuu3bNkmZMRrwa6V76fQPgKUWr4IsG3Madq46ar0Tk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 896
+source-wordcount: '896'
 ht-degree: 0%
-
 ---
-
 # `sales_order_item`
 
 Die `sales_order_item` Tabelle (`sales_flat_order_item` auf M1) enthält Datensätze zu allen Produkten, die in einer Bestellung gekauft wurden. Jede Zeile stellt eine eindeutige `sku` dar, die in einer Bestellung enthalten ist. Die Menge der Einheiten, die für eine bestimmte `sku` gekauft wurden, wird am häufigsten durch das Feld `qty_ordered` dargestellt.
 
 ## Produktarten
 
-Die `sales_order_item` erfasst Details zu allen [Produktarten](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/product-create#product-types) die gekauft wurden. Eine gängige Praxis in [!DNL Adobe Commerce] besteht darin, konfigurierbare Produkte anzubieten, d. h. ein Produkt, das anhand von Größe, Farbe und anderen Produktattributen angepasst werden kann. Obwohl ein konfigurierbares Produkt über eine eigene `sku` verfügt, kann es sich auf mehrere einfache Produkte beziehen, wobei jedes einfache Produkt eine eindeutige Produktkonfiguration darstellt. Weitere Informationen finden [&#x200B; unter &quot;](https://developer.adobe.com/commerce/webapi/rest/tutorials/configurable-product/) konfigurieren“.
+Die `sales_order_item` erfasst Details zu allen [Produktarten](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/product-create#product-types) die gekauft wurden. Eine gängige Praxis in [!DNL Adobe Commerce] besteht darin, konfigurierbare Produkte anzubieten, d. h. ein Produkt, das anhand von Größe, Farbe und anderen Produktattributen angepasst werden kann. Obwohl ein konfigurierbares Produkt über eine eigene `sku` verfügt, kann es sich auf mehrere einfache Produkte beziehen, wobei jedes einfache Produkt eine eindeutige Produktkonfiguration darstellt. Weitere Informationen finden [ unter &quot;](https://developer.adobe.com/commerce/webapi/rest/tutorials/configurable-product/) konfigurieren“.
 
 Betrachten Sie beispielsweise ein konfigurierbares Produkt wie ein T-Shirt. Beim Auschecken wählt der Kunde Optionen aus, um die Farbe und Größe zu ändern. Wenn der Kunde eine Farbe für `blue` und eine Größe für `small` auswählt, kauft er am Ende ein einfaches Produkt wie `t-shirt-blue-small`, das sich auf das übergeordnete Produkt von `t-shirt` bezieht.
 
-Wenn ein konfigurierbares Produkt in einer Bestellung enthalten ist, werden zwei Zeilen in der `sales_order_item` generiert: eine für die [einfache](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/types/product-create-simple) `sku` und eine für das [konfigurierbare](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/types/product-create-configurable) übergeordnete Element. Diese beiden Datensätze in der `sales_order_item` Tabelle können über den folgenden Join miteinander verknüpft werden:
+Wenn ein konfigurierbares Produkt in einer Bestellung enthalten ist, werden zwei Zeilen in der `sales_order_item` generiert: eine für die [einfache](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/types/product-create-simple) `sku` und eine für das [konfigurierbare](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/types/product-create-configurable) übergeordnete Element. Diese beiden Datensätze in der `sales_order_item` Tabelle können über den folgenden Join miteinander verknüpft werden:
 
 * (einfach) `sales_order_item.parent_item_id` => (konfigurierbar) `sales_order_item.item_id`
 
@@ -51,14 +69,14 @@ Daher ist es möglich, den Verkauf von Produkten entweder auf der einfachen Eben
 
 | **Spaltenname** | **Beschreibung** |
 |----|----|
-| `base_price` | Der Preis einer einzelnen Einheit eines Produkts zum Zeitpunkt des Verkaufs wird nach [Katalogpreisregeln, gestaffelten Rabatten und Sonderpreisen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/pricing/pricing-advanced) angewendet und bevor Steuern, Versand oder Warenkorb-Rabatte angewendet werden. Dies wird in der Basiswährung des Stores dargestellt. |
+| `base_price` | Der Preis einer einzelnen Einheit eines Produkts zum Zeitpunkt des Verkaufs wird nach [Katalogpreisregeln, gestaffelten Rabatten und Sonderpreisen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced) angewendet und bevor Steuern, Versand oder Warenkorb-Rabatte angewendet werden. Dies wird in der Basiswährung des Stores dargestellt. |
 | `created_at` | Erstellungszeitstempel des Bestellelements, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL Commerce Intelligence] kann dieser Zeitstempel in eine Reporting-Zeitzone umgewandelt werden, [!DNL Commerce Intelligence] sich von Ihrer Datenbank-Zeitzone unterscheidet. |
 | `item_id` (K) | Eindeutige Kennung für die Tabelle. |
 | `name` | Textname des Bestellartikels. |
 | `order_id` | Der `sales_order` Tabelle zugeordnete `Foreign key` Mit `sales_order.entity_id` verbinden, um die mit dem Auftragselement verknüpften Auftragsattribute zu bestimmen. |
 | `parent_item_id` | `Foreign key`, das ein einfaches Produkt auf sein übergeordnetes Bundle oder konfigurierbares Produkt bezieht. Join-`sales_order_item.item_id`, um übergeordnete Produktattribute zu bestimmen, die mit einem einfachen Produkt verknüpft sind. Bei übergeordneten Bestellartikeln (d. h. Bundle oder konfigurierbare Produkttypen) wird die `parent_item_id` `NULL`. |
 | `product_id` | Der `catalog_product_entity` Tabelle zugeordnete `Foreign key` Mit `catalog_product_entity.entity_id` verbinden, um Produktattribute zu bestimmen, die mit dem Auftragselement verknüpft sind. |
-| `product_type` | Typ des verkauften Produkts. Mögliche [Produkttypen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/product-create#product-types) sind: einfach, konfigurierbar, gruppiert, virtuell, gebündelt und herunterladbar. |
+| `product_type` | Typ des verkauften Produkts. Mögliche [Produkttypen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/product-create#product-types) sind: einfach, konfigurierbar, gruppiert, virtuell, gebündelt und herunterladbar. |
 | `qty_ordered` | Menge der Einheiten, die zum Zeitpunkt des Verkaufs für den jeweiligen Bestellartikel im Warenkorb enthalten sind. |
 | `sku` | Eindeutige Kennung für den gekauften Bestellartikel. |
 | `store_id` | Der `store` Tabelle zugeordnete `Foreign key` Mit `store.store_id` verbinden, um zu bestimmen, welche Commerce-Store-Ansicht mit dem Bestellartikel verknüpft ist. |
@@ -73,7 +91,7 @@ Daher ist es möglich, den Verkauf von Produkten entweder auf der einfachen Eben
 | `Customer's lifetime number of orders` | Gesamtzahl der von diesem Kunden aufgegebenen Bestellungen. Berechnet durch Verbinden von `sales_order_item.order_id` mit `sales_order.entity_id` und Zurückgeben des `Customer's lifetime number of orders`. |
 | `Customer's lifetime revenue` | Summe des Gesamtumsatzes für alle Bestellungen dieses Kunden. Berechnet durch Verbinden von `sales_order_item.order_id` mit `sales_order.entity_id` und Zurückgeben des `Customer's lifetime revenue`. |
 | `Customer's order number` | Sequenzieller Auftragsrang für die Bestellung dieses Kunden. Berechnet durch Verbinden von `sales_order_item.order_id` mit `sales_order.entity_id` und Zurückgeben des `Customer's order number`. |
-| `Order item total value (quantity * price)` | Der Gesamtwert eines Bestellartikels zum Zeitpunkt des Verkaufs nach Anwendung [Katalogpreisregeln, gestaffelten Rabatten und Sonderpreisen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/pricing/pricing-advanced) und vor Anwendung von Steuern, Versand- oder Warenkorbabschlägen. Berechnet durch Multiplizieren des `qty_ordered` mit dem `base_price`. |
+| `Order item total value (quantity * price)` | Der Gesamtwert eines Bestellartikels zum Zeitpunkt des Verkaufs nach Anwendung [Katalogpreisregeln, gestaffelten Rabatten und Sonderpreisen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced) und vor Anwendung von Steuern, Versand- oder Warenkorbabschlägen. Berechnet durch Multiplizieren des `qty_ordered` mit dem `base_price`. |
 | `Order's coupon_code` | Auf die Bestellung angewendeter Coupon. Berechnet durch Verbinden von `sales_order_item.order_id` mit `sales_order.entity_id` und Zurückgeben des `coupon_code`. |
 | `Order's increment_id` | Eindeutige Kennung der Bestellung. Berechnet durch Verbinden von `sales_order_item.order_id` mit `sales_order.entity_id` und Zurückgeben des `increment_id`. |
 | `Order's status` | Status der Bestellung. Berechnet durch Verbinden von `sales_order_item.order_id` mit `sales_order.entity_id` und Zurückgeben des `status`. |
@@ -104,7 +122,7 @@ Daher ist es möglich, den Verkauf von Produkten entweder auf der einfachen Eben
 
 `sales_order_item`
 
-* Verbinden Sie sich mit `sales_order_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Wenden Sie sich an den &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um Hilfe bei der Konfiguration dieser Berechnungen zu erhalten, falls Sie etwas in Data Warehouse Manager erstellen.
+* Verbinden Sie sich mit `sales_order_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Wenden Sie sich an den ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um Hilfe bei der Konfiguration dieser Berechnungen zu erhalten, falls Sie etwas in Data Warehouse Manager erstellen.
   * Pfad: `sales_order_item.parent_item_id` (viele) => `sales_order_item.item_id` (eins)
 
 `store`

@@ -4,30 +4,43 @@ description: Erfahren Sie, wie Sie den Zustand wichtiger Metriken wie Benutzerle
 exl-id: f50fc417-e5d4-401c-9baa-cda1468196a2
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Dashboards
-TQID: https://experienceleague.adobe.com/P-wLLeYV4VVlaeMEa-X5WkXcS09d5fKQZGQwGO-OnK0
+TQID: 'https://experienceleague.adobe.com/P-wLLeYV4VVlaeMEa-X5WkXcS09d5fKQZGQwGO-OnK0'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Troubleshooting
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 974
+source-wordcount: '974'
 ht-degree: 0%
-
 ---
-
 # Enthaltene Dashboards
 
 [!DNL Adobe] bietet `eCommerce` und `SaaS` Starter-Pakete an. Diese von Adobe-Analysten erstellten Pakete enthalten eine benutzerdefinierte Reihe von Dashboards und Berichten für Ihren Datensatz. Die in diesen Paketen enthaltenen Analysen ermöglichen es Ihnen, den Zustand wesentlicher Metriken wie den Lebensdauerumsatz der Benutzenden, die Anzahl der Wiederholungskäufe und mehr zu überprüfen und so eine solide Grundlage für die zukünftige Exploration zu schaffen.
@@ -36,7 +49,7 @@ ht-degree: 0%
 >
 >Die Verfügbarkeit einiger Dashboards hängt von Ihrem Datensatz ab.
 
-Wenn Sie Fragen haben oder daran interessiert sind, ein Paket zu Ihrem Konto hinzuzufügen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um Hilfe zu erhalten.
+Wenn Sie Fragen haben oder daran interessiert sind, ein Paket zu Ihrem Konto hinzuzufügen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um Hilfe zu erhalten.
 
 ## Überblick für Führungskräfte
 
@@ -52,11 +65,11 @@ Dieses Dashboard kann auch Kohortendiagramme enthalten, die den Lebenszeitumsatz
 
 Weitere Informationen zu Kohorten finden Sie unter [Durchführen einer Kohortenanalyse](../../data-analyst/dev-reports/cohort-rpt-bldr.md).
 
-Wenn Sie derzeit keine Quelle für die Benutzerakquise verfolgen, lesen Sie den Abschnitt [Übersicht über Source-Daten zur Benutzerakquise &#x200B;](../../data-analyst/analysis/google-track-user-acq.md).
+Wenn Sie derzeit keine Quelle für die Benutzerakquise verfolgen, lesen Sie den Abschnitt [Übersicht über Source-Daten zur Benutzerakquise ](../../data-analyst/analysis/google-track-user-acq.md).
 
 ## E-Mail-Zusammenfassung
 
-Das `Email Summary`-Dashboard enthält einen Beispielsatz von Diagrammen, die in einer automatisierten täglichen E-Mail-Zusammenfassung verwendet werden können. Weitere Informationen [&#x200B; Konfigurieren von E-Mail](../../data-user/export-data/email-summaries.md)Zusammenfassungen finden Sie unter „Erstellen automatisierter E-Mail-Zusammenfassungen“.  
+Das `Email Summary`-Dashboard enthält einen Beispielsatz von Diagrammen, die in einer automatisierten täglichen E-Mail-Zusammenfassung verwendet werden können. Weitere Informationen [ Konfigurieren von E-Mail](../../data-user/export-data/email-summaries.md)Zusammenfassungen finden Sie unter „Erstellen automatisierter E-Mail-Zusammenfassungen“.  
 
 ## Aufbewahrungszustand
 

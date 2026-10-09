@@ -4,35 +4,49 @@ description: Erfahren Sie, wie Daten generiert werden, wodurch eine neue Zeile e
 exl-id: 436ecdc1-7112-4dec-9db7-1f3757a2a938
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/IUTQdZYcHkue-29jNZOxONAK4u5plphslzqtUXJ5JAs
+TQID: 'https://experienceleague.adobe.com/IUTQdZYcHkue-29jNZOxONAK4u5plphslzqtUXJ5JAs'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 962
-ht-degree: 3%
-
+source-wordcount: '964'
+ht-degree: 4%
 ---
-
 # Speichern von Daten in [!DNL Adobe Commerce]
 
 Die [!DNL Adobe Commerce]-Plattform erfasst und organisiert eine Vielzahl wertvoller Commerce-Daten über Hunderte von Tabellen hinweg. In diesem Thema wird Folgendes beschrieben:
 
 * So werden diese Daten generiert
-* was dazu führt, dass eine neue Zeile in eine der [Commerce-Kerntabellen“ eingefügt &#x200B;](../data-warehouse-mgr/common-mage-tables.md)
+* was dazu führt, dass eine neue Zeile in eine der [Commerce-Kerntabellen“ eingefügt ](../data-warehouse-mgr/common-mage-tables.md)
 * Wie Aktionen wie der Kauf oder die Erstellung eines Kontos in der [!DNL Adobe Commerce]-Datenbank aufgezeichnet werden
 
 Um diese Konzepte zu besprechen, sehen Sie sich das folgende Beispiel an:
@@ -52,11 +66,11 @@ Zufrieden mit allen Einstellungen für `Throwback Bellbottoms` klickt der Mitarb
 | 207 | 4 | 12 | Hemden6 | 2016/09/22 09:24:02 |
 
 * `entity_id` - Dies ist der Primärschlüssel der `catalog_product_entity`, d. h. jede Zeile der Tabelle muss eine andere `entity_id` haben. Jeder `entity_id` in dieser Tabelle kann nur einem Produkt zugeordnet werden und jedes Produkt kann nur einem `entity_id` zugeordnet werden
-   * Die oberste Zeile der obigen Tabelle, `entity_id` = 205, ist die neue Zeile, die für „Throwback Bellbottom“ erstellt wurde. Wo immer `entity_id` = 205 in der Commerce-Plattform angezeigt wird, bezieht sich dies auf das Produkt „Throwback Bellboths“
+  * Die oberste Zeile der obigen Tabelle, `entity_id` = 205, ist die neue Zeile, die für „Throwback Bellbottom“ erstellt wurde. Wo immer `entity_id` = 205 in der Commerce-Plattform angezeigt wird, bezieht sich dies auf das Produkt „Throwback Bellboths“
 * `entity_type_id` - Commerce verfügt über mehrere Objektkategorien (z. B. Kunden, Adressen und Produkte, um nur einige zu nennen). Diese Spalte wird verwendet, um die Kategorie zu kennzeichnen, in die diese bestimmte Zeile fällt.
-   * Da dies die `catalog_product_entity` Tabelle ist, hat jede Zeile denselben Entitätstyp: product. In Adobe Commerce lautet der `entity_type_id` für Produkt 4. Aus diesem Grund geben alle drei neu erstellten Produkte 4 für diese Spalte zurück.
+  * Da dies die `catalog_product_entity` Tabelle ist, hat jede Zeile denselben Entitätstyp: product. In Adobe Commerce lautet der `entity_type_id` für Produkt 4. Aus diesem Grund geben alle drei neu erstellten Produkte 4 für diese Spalte zurück.
 * `attribute_set_id` - Attributsätze werden verwendet, um Produkte mit denselben Deskriptoren zu identifizieren.
-   * Die beiden obersten Zeilen der Tabelle sind die `Throwback Bellbottoms` und `Straight Leg Jeans` Produkte, die beide Hosen sind. Diese Produkte hätten die gleichen Deskriptoren (z. B. Name, Einnahmung, Taille) und daher die gleiche `attribute_set_id`. Der dritte Artikel, `V-Neck T-Shirt`, hat einen anderen `attribute_set_id`, weil er nicht die gleichen Deskriptoren wie die Hose hätte; Hemden haben keine Taillenbänder oder Innähte.
+  * Die beiden obersten Zeilen der Tabelle sind die `Throwback Bellbottoms` und `Straight Leg Jeans` Produkte, die beide Hosen sind. Diese Produkte hätten die gleichen Deskriptoren (z. B. Name, Einnahmung, Taille) und daher die gleiche `attribute_set_id`. Der dritte Artikel, `V-Neck T-Shirt`, hat einen anderen `attribute_set_id`, weil er nicht die gleichen Deskriptoren wie die Hose hätte; Hemden haben keine Taillenbänder oder Innähte.
 * `sku` : Hierbei handelt es sich um eindeutige Werte, die den einzelnen Produkten vom Benutzer beim Erstellen eines Produkts in Adobe Commerce zugewiesen werden.
 * `created_at` - Diese Spalte gibt den Zeitstempel zurück, an dem jedes Produkt erstellt wurde
 
@@ -69,26 +83,26 @@ Kurz nach dem Hinzufügen der drei neuen Produkte besucht ein neuer Kunde, `Samm
 | `214` | `1` | `sammy.customer@gmail.com` | `2016/09/23 15:27:12` |
 
 * `entity_id` - Wie die vorherige Tabelle ist `entity_id` der Primärschlüssel der `customer_entity`.
-   * Als `Sammy Customer` ein Konto erstellt und die obige Zeile in die `customer_entity`-Tabelle geschrieben wurde, wurde dem Kunden `entity_id` = 214 zugewiesen. In allen Tabellen bezieht sich der als `entity_id` = 214 identifizierte Kunde immer auf den Benutzer Sammy Customer
+  * Als `Sammy Customer` ein Konto erstellt und die obige Zeile in die `customer_entity`-Tabelle geschrieben wurde, wurde dem Kunden `entity_id` = 214 zugewiesen. In allen Tabellen bezieht sich der als `entity_id` = 214 identifizierte Kunde immer auf den Benutzer Sammy Customer
 * `entity_type_id` - Diese Spalte identifiziert, welcher Entitätstyp in dieser Tabelle aufgeführt wird, und funktioniert genauso wie in der `catalog_product_entity`
-   * Jede Zeile in der `customer_entity` ist ein Kunde, und Commerce definiert Kunden standardmäßig als `entity_type_id` 1
+  * Jede Zeile in der `customer_entity` ist ein Kunde, und Commerce definiert Kunden standardmäßig als `entity_type_id` 1
 * `email` - Dieses Feld wird mit der E-Mail ausgefüllt, die ein neuer Kunde bei der Kontoerstellung eingibt
 * `created_at` - Diese Spalte gibt den Zeitstempel für den Zeitpunkt zurück, zu dem jeder Benutzer Mitglied wurde
 
 ## `sales\_flat\_order (or Sales\_order`, wenn Sie [!DNL Adobe Commerce 2.x] haben
 
-Nachdem die Kontoerstellung abgeschlossen ist, ist `Sammy Customer` bereit, einen Kauf zu tätigen. Auf der Website fügt der Kunde zwei `Throwback Bellbottoms` und ein `V-Neck T-Shirt` zum Warenkorb hinzu. Wenn der Kunde mit der Auswahl zufrieden ist, wechselt er zur Kasse und reicht die Bestellung ein, wodurch folgender Eintrag in der Tabelle [Einfache Bestellung“ erstellt &#x200B;](../data-warehouse-mgr/sales-flat-order-table.md):
+Nachdem die Kontoerstellung abgeschlossen ist, ist `Sammy Customer` bereit, einen Kauf zu tätigen. Auf der Website fügt der Kunde zwei `Throwback Bellbottoms` und ein `V-Neck T-Shirt` zum Warenkorb hinzu. Wenn der Kunde mit der Auswahl zufrieden ist, wechselt er zur Kasse und reicht die Bestellung ein, wodurch folgender Eintrag in der Tabelle [Einfache Bestellung“ erstellt ](../data-warehouse-mgr/sales-flat-order-table.md):
 
-| **`entity id`** | **`customer id**` | &#x200B;**`subtotal`**&#x200B; | &#x200B;**`created at`** |
+| **`entity id`** | **`customer id**` | **`subtotal`** | **`created at`** |
 |---|---|---|---|
 | 227 | 214 | 94,85 | 2016/09/23 15:41:39 |
 
 * `entity_id` : Dies ist der Primärschlüssel der `sales_flat_order`.
-   * Als Sammy Customer diese Bestellung aufgab und die obige Zeile in die `sales_flat_order`-Tabelle geschrieben wurde, wurde die Bestellung `entity_id` = 227 zugewiesen.
+  * Als Sammy Customer diese Bestellung aufgab und die obige Zeile in die `sales_flat_order`-Tabelle geschrieben wurde, wurde die Bestellung `entity_id` = 227 zugewiesen.
 * `customer_id` - Diese Spalte ist die eindeutige Kennung des Kunden, der diese bestimmte Bestellung aufgegeben hat
-   * Der mit dieser Bestellung verknüpfte `customer_id` ist 214, was der `entity_id` von Sammy Customer auf der `customer_entity` ist.
+  * Der mit dieser Bestellung verknüpfte `customer_id` ist 214, was der `entity_id` von Sammy Customer auf der `customer_entity` ist.
 * `subtotal` - Diese Spalte ist der Gesamtbetrag, der einem Kunden für die Bestellung in Rechnung gestellt wird
-   * Die beiden Paare „Throwback Bellboths“ und „V-Neck T-Shirt“ kosteten insgesamt 94,85 Dollar
+  * Die beiden Paare „Throwback Bellboths“ und „V-Neck T-Shirt“ kosteten insgesamt 94,85 Dollar
 * `created_at` - Diese Spalte gibt den Zeitstempel für die Erstellung jeder Bestellung zurück
 
 ## `sales\_flat\_order\_item ( or Sales\_order\_item`
@@ -103,13 +117,13 @@ Wenn `Sammy Customer` die Bestellung übermitteln, wird zusätzlich zur einzelne
 | 823 | `V-Neck T-Shirt` | 207 | 227 | 1 | 14,95 |
 
 * `item_id` - Diese Spalte ist der Primärschlüssel der `sales_flat_order_item`
-   * Die Bestellung von `Sammy Customer` hat zwei Zeilen in dieser Tabelle erstellt, da die Bestellung zwei verschiedene Produkte enthielt
+  * Die Bestellung von `Sammy Customer` hat zwei Zeilen in dieser Tabelle erstellt, da die Bestellung zwei verschiedene Produkte enthielt
 * `name` - Diese Spalte ist der Name des Produkts.
 * `product_id` - Diese Spalte ist die eindeutige Kennung des Produkts, auf das sich diese Zeile bezieht
-   * Die erste obige Zeile hat `product_id` = 205, da `Throwback Bellbottoms` in der `catalog_product_entity` Tabelle einen `entity_id` von 205 haben
+  * Die erste obige Zeile hat `product_id` = 205, da `Throwback Bellbottoms` in der `catalog_product_entity` Tabelle einen `entity_id` von 205 haben
 * `order_id` - Diese Spalte ist die `entity_id` der Bestellung, die diese bestimmten Bestellelemente enthält.
-   * Beide Zeilen oben haben `order_id` = 227, da sie beide Teil der von `Sammy Customer` aufgegebenen Reihenfolge sind, die in der `sales_flat_order`-Tabelle `entity_id` = 227 hat
+  * Beide Zeilen oben haben `order_id` = 227, da sie beide Teil der von `Sammy Customer` aufgegebenen Reihenfolge sind, die in der `sales_flat_order`-Tabelle `entity_id` = 227 hat
 * `qty_ordered` - Diese Spalte ist die Anzahl der Einheiten des Produkts, die in dieser spezifischen Reihenfolge enthalten sind
-   * `Sammy Customer` Bestellung enthielt zwei `Throwback Bellbottoms`
+  * `Sammy Customer` Bestellung enthielt zwei `Throwback Bellbottoms`
 * `price` - Diese Spalte ist der Preis einer einzelnen Einheit des Bestellartikels
-   * Die `subtotal` aus `Sammy Customer` Bestellung in der `sales_flat_order` Tabelle war 94,85, was die Summe von zwei Paaren von `Throwback Bellbottoms` bei jeweils 39,95 US-Dollar und 1 `V-Neck T-Shirt` bei 14,95 US-Dollar ist.
+  * Die `subtotal` aus `Sammy Customer` Bestellung in der `sales_flat_order` Tabelle war 94,85, was die Summe von zwei Paaren von `Throwback Bellbottoms` bei jeweils 39,95 US-Dollar und 1 `V-Neck T-Shirt` bei 14,95 US-Dollar ist.

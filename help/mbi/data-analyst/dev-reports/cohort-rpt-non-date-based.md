@@ -4,27 +4,38 @@ description: Erfahren Sie, wie Sie Benutzer nach einer ähnlichen Aktivität ode
 exl-id: c7b85ce9-113c-4ffc-855f-3d53fe2347d8
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/2JOFQPEaz-wQd4Ml-9vc0ZkmSIDD10e6xX-XkodZtXc
+TQID: 'https://experienceleague.adobe.com/2JOFQPEaz-wQd4Ml-9vc0ZkmSIDD10e6xX-XkodZtXc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 462
-ht-degree: 0%
-
+source-wordcount: '474'
+ht-degree: 1%
 ---
-
 # [!DNL Cohort Report Builder] für nicht-datumsbasierte Kohorten
 
 Die [`Cohort Report Builder`](../dev-reports/cohort-rpt-bldr.md) hilft Händlern dabei, das Verhalten verschiedener Untergruppen von Benutzern im Laufe der Zeit zu untersuchen. In der Vergangenheit wurde die `Cohort Report Builder` für die Gruppierung von Benutzern nach einem gemeinsamen `cohort date` optimiert (z. B. nach der Gruppe aller Kunden, die ihren ersten Kauf in einem bestimmten Monat getätigt haben). Mit der `Non-Date Based Cohort`-Funktion können Benutzer jetzt nach einer ähnlichen Aktivität oder einem ähnlichen Attribut gruppiert werden. Sehen Sie sich einige Anwendungsfälle für diese Funktion an.
@@ -39,7 +50,7 @@ Dies ist keine umfassende Liste, aber hier sind einige potenzielle Analysen, die
 
 ## So erstellen Sie Ihre Analyse
 
-1. Klicken Sie auf der linken Registerkarte oder **[!UICONTROL Report Builder]** in einem beliebigen Dashboard auf **[!UICONTROL Add Report** > **Create Report]** .
+1. Klicken Sie auf der linken Registerkarte oder **[!UICONTROL Add Report** > **Create Report]** in einem beliebigen Dashboard auf **[!UICONTROL Report Builder]** .
 
 1. Klicken Sie im `Report Builder Selection` auf **[!UICONTROL Create Report]** neben der Option `Visual Report Builder` .
 
@@ -73,7 +84,7 @@ Für die Erstellung eines Kohortenberichts sind fünf Spezifikationen erforderli
 
 `Cohorts` werden anhand eines Verhaltenscharakteristikums gruppiert, in diesem Beispiel `Customer's first order GA source`. Die hier verfügbaren Optionen sind Spalten, die bereits als `groupable` für die Metrik gekennzeichnet sind.
 
-#### &#x200B;2. Auswahl der Kohorten
+#### &#x200B;2. Kohorten auswählen
 
 Sie können alle Ergebnisse für das angegebene Merkmal anzeigen. Da dies zu vielen `cohorts` führen kann, können Sie die spezifischen `cohorts` (die den verschiedenen für die `Customer's first order GA source` verfügbaren Werten entsprechen) auswählen, die Sie benötigen.
 

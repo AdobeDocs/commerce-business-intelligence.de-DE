@@ -4,32 +4,49 @@ description: Überprüfen Sie das Tabellenschema quote_item in Commerce Intellig
 exl-id: dad36e88-5986-4b52-8a0e-ac084fabb275
 role: Admin, Developer, User
 feature: Data Import/Export, Data Integration, Data Warehouse Manager, Commerce Tables
-TQID: https://experienceleague.adobe.com/wLNm1g1L6-0Ded-bZT991KvJi3dVO6zA4i2qftiX2J0
+TQID: 'https://experienceleague.adobe.com/wLNm1g1L6-0Ded-bZT991KvJi3dVO6zA4i2qftiX2J0'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 8d67ca0f988fe925d77c3a4a56c93ce86759de25
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 704
+source-wordcount: '704'
 ht-degree: 0%
-
 ---
-
 # quote_item-Tabelle
 
 Die `quote_item` Tabelle (`sales_flat_quote_item` auf M1) enthält Datensätze zu jedem Artikel, der einem Warenkorb hinzugefügt wurde, unabhängig davon, ob der Warenkorb abgebrochen oder in einen Kauf umgewandelt wurde. Jede Zeile stellt ein Warenkorbelement dar. Aufgrund der potenziellen Größe dieser Tabelle empfiehlt Adobe, Datensätze regelmäßig zu löschen, wenn bestimmte Kriterien erfüllt sind, z. B. wenn nicht konvertierte Warenkörbe älter als 60 Tage sind.
@@ -42,13 +59,13 @@ Die `quote_item` Tabelle (`sales_flat_quote_item` auf M1) enthält Datensätze z
 
 | **Spaltenname** | **Beschreibung** |
 |---|---|
-| `base_price` | Preis einer einzelnen Einheit eines Produkts zum Zeitpunkt, als der Artikel zum Warenkorb hinzugefügt wurde, nach [Katalogpreisregeln, gestaffelten Rabatten und Sonderpreisen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/pricing/pricing-advanced) und bevor Steuern, Versand oder Warenkorbabschläge angewendet werden. Dies wird in der Basiswährung des Stores dargestellt. |
+| `base_price` | Preis einer einzelnen Einheit eines Produkts zum Zeitpunkt, als der Artikel zum Warenkorb hinzugefügt wurde, nach [Katalogpreisregeln, gestaffelten Rabatten und Sonderpreisen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced) und bevor Steuern, Versand oder Warenkorbabschläge angewendet werden. Dies wird in der Basiswährung des Stores dargestellt. |
 | `created_at` | Erstellungszeitstempel des Warenkorbelements, lokal in UTC gespeichert. Abhängig von Ihrer Konfiguration in [!DNL Commerce Intelligence] kann dieser Zeitstempel in eine Berichtszeitzone umgewandelt werden, [!DNL Commerce Intelligence] sich von Ihrer Datenbankzeitzone unterscheidet |
 | `item_id` (K) | Eindeutige Kennung der Tabelle |
 | `name` | Textname des Bestellartikels |
 | `parent_item_id` | `Foreign key`, das ein einfaches Produkt auf sein übergeordnetes Bundle oder konfigurierbares Produkt bezieht. Join-`quote_item.item_id`, um übergeordnete Produktattribute zu bestimmen, die mit einem einfachen Produkt verknüpft sind. Für übergeordnete Warenkorbartikel (d. h. Bundle oder konfigurierbare Produkttypen) wird der `parent_item_id` `NULL` |
 | `product_id` | Der `catalog_product_entity` Tabelle zugeordnete `Foreign key` Mit `catalog_product_entity.entity_id` verbinden, um Produktattribute zu bestimmen, die mit dem Auftragselement verknüpft sind |
-| `product_type` | Typ des Produkts, das dem Warenkorb hinzugefügt wurde. Mögliche [Produkttypen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/product-create#product-types) sind: einfach, konfigurierbar, gruppiert, virtuell, gebündelt und herunterladbar |
+| `product_type` | Typ des Produkts, das dem Warenkorb hinzugefügt wurde. Mögliche [Produkttypen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/product-create#product-types) sind: einfach, konfigurierbar, gruppiert, virtuell, gebündelt und herunterladbar |
 | `qty` | Menge der im Warenkorb enthaltenen Einheiten für den jeweiligen Warenkorbartikel |
 | `quote_id` | Der `quote` Tabelle zugeordnete `Foreign key` Join to `quote.entity_id`, um die mit dem Warenkorbelement verknüpften Warenkorbattribute zu bestimmen |
 | `sku` | Eindeutige Kennung für den Artikel im Warenkorb |
@@ -62,7 +79,7 @@ Die `quote_item` Tabelle (`sales_flat_quote_item` auf M1) enthält Datensätze z
 |---|---|
 | `Cart creation date` | Zeitstempel, der mit dem Erstellungsdatum des Warenkorbs verknüpft ist. Berechnet durch Verbinden von `quote_item.quote_id` mit `quote.entity_id` und Zurückgeben des `created_at` Zeitstempels |
 | `Cart is active? (1/0)` | Boolesches Feld, das „1“ zurückgibt, wenn der Warenkorb von einem Kunden erstellt wurde und noch nicht in eine Bestellung konvertiert wurde. Gibt „0“ für konvertierte Warenkörbe oder Warenkörbe zurück, die über den Administrator erstellt wurden. Berechnet durch Verbinden von `quote_item.quote_id` mit `quote.entity_id` und Zurückgeben des `is_active` |
-| `Cart item total value (qty * base_price)` | Gesamtwert eines Artikels zum Zeitpunkt der Hinzufügung des Artikels zu einem Warenkorb, nachdem [Katalogpreisregeln, gestaffelte Rabatte und Sonderpreise](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/pricing/pricing-advanced) angewendet wurden und bevor Steuern, Versand oder Warenkorbabschläge angewendet wurden. Berechnet durch Multiplizieren des `qty` mit dem `base_price` |
+| `Cart item total value (qty * base_price)` | Gesamtwert eines Artikels zum Zeitpunkt der Hinzufügung des Artikels zu einem Warenkorb, nachdem [Katalogpreisregeln, gestaffelte Rabatte und Sonderpreise](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced) angewendet wurden und bevor Steuern, Versand oder Warenkorbabschläge angewendet wurden. Berechnet durch Multiplizieren des `qty` mit dem `base_price` |
 | `Seconds since cart creation` | Verstrichene Zeit zwischen dem Erstellungsdatum des Warenkorbs und jetzt. Berechnet durch Verbinden von `quote_item.quote_id` mit `quote.entity_id` und Zurückgeben des `Seconds since cart creation` |
 | `Store name` | Name des Commerce-Stores, der mit dem Auftragselement verknüpft ist. Berechnet durch Verbinden von `sales_order_item.store_id` mit `store.store_id` und Zurückgeben des `name` |
 
@@ -91,7 +108,7 @@ Die `quote_item` Tabelle (`sales_flat_quote_item` auf M1) enthält Datensätze z
 
 `quote_item`
 
-* Verbinden Sie sich mit `quote_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Wenden Sie sich an den &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um Hilfe bei der Konfiguration dieser Berechnungen zu erhalten, falls Sie etwas in Data Warehouse Manager erstellen.
+* Verbinden Sie sich mit `quote_item` , um Spalten zu erstellen, die Details der übergeordneten konfigurierbaren oder Bundle-SKU mit dem einfachen Produkt verknüpfen. [Wenden Sie sich an den ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um Hilfe bei der Konfiguration dieser Berechnungen zu erhalten, falls Sie etwas in Data Warehouse Manager erstellen.
   * Pfad: `quote_item.parent_item_id` (viele) => `quote_item.item_id` (eins)
 
 `store`

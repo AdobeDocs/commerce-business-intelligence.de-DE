@@ -4,31 +4,47 @@ description: Erfahren Sie, wie Sie mit Data Warehouse Manager relevante Datenfel
 exl-id: b0085683-7bb1-4da2-b343-4309e4796f0c
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/iCKOCRAELybmKfHS8F7XaKpEx9blpkRK0i0e-eEYJgU
+TQID: 'https://experienceleague.adobe.com/iCKOCRAELybmKfHS8F7XaKpEx9blpkRK0i0e-eEYJgU'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 603
+source-wordcount: '603'
 ht-degree: 0%
-
 ---
-
 # Erwartete [!DNL Google Adwords]
 
 Nachdem [Sie Ihr [!DNL Google Adwords] Konto verbunden haben](../integrations/google-adwords.md) können Sie den [Data Warehouse Manager](../../data-warehouse-mgr/tour-dwm.md) verwenden, um relevante Datenfelder für die Analyse einfach zu verfolgen.
@@ -99,7 +115,7 @@ Die `adwords` Tabelle enthält die folgenden Spalten:
 
 {style="table-layout:auto"}
 
-Mithilfe dieser Daten können Sie mit der Erstellung von [Metriken](../../../data-user/reports/ess-manage-data-metrics.md) und [Berichten](../../../tutorials/using-visual-report-builder.md) auf der Grundlage von Ausgabendaten beginnen und [diese mit Ihrem Lebensdauerumsatz zu verbinden, um den ROI zu &#x200B;](../../analysis/roi-ad-camp.md).
+Mithilfe dieser Daten können Sie mit der Erstellung von [Metriken](../../../data-user/reports/ess-manage-data-metrics.md) und [Berichten](../../../tutorials/using-visual-report-builder.md) auf der Grundlage von Ausgabendaten beginnen und [diese mit Ihrem Lebensdauerumsatz zu verbinden, um den ROI zu ](../../analysis/roi-ad-camp.md).
 
 ## Konsolidierte Tabellen
 
@@ -107,4 +123,4 @@ Mithilfe dieser Daten können Sie mit der Erstellung von [Metriken](../../../dat
 
 Wenn Sie keine konsolidierte Tabelle haben und ein schönes Dashboard auf der `adwords` erstellen, müssen Sie die Berichte replizieren oder doppelte Metriken erstellen, um diese Daten mit Ihren [!DNL Facebook Ads] zu vergleichen. Durch die Verwendung einer konsolidierten Tabelle können Sie [!DNL Facebook Ads] Daten nahtlos in Ihre vorhandenen [!DNL Adwords] Berichte integrieren. Sie können auch nach Anzeigenplattform segmentieren.
 
-Wenn Sie die oben genannten Felder bereits synchronisiert haben, [&#x200B; Sie uns &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um Ihre Werbeausgaben zu konsolidieren.
+Wenn Sie die oben genannten Felder bereits synchronisiert haben, [ Sie uns ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um Ihre Werbeausgaben zu konsolidieren.

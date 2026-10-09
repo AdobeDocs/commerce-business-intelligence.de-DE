@@ -4,29 +4,41 @@ description: Erfahren Sie, wie Sie Daten und Metriken mithilfe von SQL Report Bu
 exl-id: d1d9e099-4138-43e6-aaec-6f15ebc5c4d4
 role: Admin, Developer, User
 feature: Reports, Data Warehouse Manager, SQL Report Builder
-TQID: https://experienceleague.adobe.com/7Yx7Kpir-xjz5TPuajN7CFsLjWAbY0AT3bKtBabA5Wk
+TQID: 'https://experienceleague.adobe.com/7Yx7Kpir-xjz5TPuajN7CFsLjWAbY0AT3bKtBabA5Wk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: c38ccf61-5a4f-5140-ad2b-c3434e82ed6d
+    internal-label: SQL Report Builder
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Optimization
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 521
+source-wordcount: '521'
 ht-degree: 0%
-
 ---
-
 # [!DNL SQL Report Builder]
 
 Die [!DNL SQL Report Builder] wird hauptsächlich zum Erstellen neuer Berichte und zur Iteration von Analysen verwendet, kann aber auch zur effektiven Prüfung von Daten und Metriken verwendet werden. In den folgenden Informationen wird erläutert, wie Sie Daten und Metriken mithilfe der [!DNL SQL Report Builder] überprüfen können, damit Sie die Ergebnisse mit den Daten aus Ihrer lokalen Datenbank vergleichen können.
@@ -60,8 +72,8 @@ Nachdem der Bericht gespeichert wurde, navigieren Sie zu diesem Dashboard, indem
 
 ## Benutzerdefinierte Abfragen
 
-Sie können auch benutzerdefinierte Abfragen schreiben und die Ergebnisse exportieren, um sie mit Ihrer lokalen Datenbank zu vergleichen. Schreiben Sie gemäß [Richtlinien für die &#x200B;](../../best-practices/optimizing-your-sql-queries.md)) eine Abfrage im SQL-Editor. Mit den Schaltflächen oben in der Seitenleiste können Sie zwischen Listen von Tabellen und Metriken wechseln, die für die Verwendung in der [!DNL SQL Report Builder] verfügbar sind, und sie zu Ihrer Abfrage hinzufügen. Wenn Ihre benutzerdefinierte Abfrage Ihren Anforderungen entspricht, können Sie den Bericht speichern und diese Daten aus dem Dashboard exportieren.
+Sie können auch benutzerdefinierte Abfragen schreiben und die Ergebnisse exportieren, um sie mit Ihrer lokalen Datenbank zu vergleichen. Schreiben Sie gemäß [Richtlinien für die ](../../best-practices/optimizing-your-sql-queries.md)) eine Abfrage im SQL-Editor. Mit den Schaltflächen oben in der Seitenleiste können Sie zwischen Listen von Tabellen und Metriken wechseln, die für die Verwendung in der [!DNL SQL Report Builder] verfügbar sind, und sie zu Ihrer Abfrage hinzufügen. Wenn Ihre benutzerdefinierte Abfrage Ihren Anforderungen entspricht, können Sie den Bericht speichern und diese Daten aus dem Dashboard exportieren.
 
 >[!NOTE]
 >
->Wenn Sie nach dem Überprüfen Ihrer Daten eine Diskrepanz feststellen, finden Sie im Support-Thema [Kontaktaufnahme mit dem Support: &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies) Diskrepanzen) weitere Informationen zu weiteren Schritten.
+>Wenn Sie nach dem Überprüfen Ihrer Daten eine Diskrepanz feststellen, finden Sie im Support-Thema [Kontaktaufnahme mit dem Support: ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-data-discrepancies) Diskrepanzen) weitere Informationen zu weiteren Schritten.

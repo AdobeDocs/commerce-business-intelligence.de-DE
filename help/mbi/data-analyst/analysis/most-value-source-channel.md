@@ -4,32 +4,41 @@ description: Erfahren Sie mehr über einige Berichte, mit denen Sie Ihre wertvol
 exl-id: 8d25bc80-ea60-47db-b01b-04a23a24c14d
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Reports
-TQID: https://experienceleague.adobe.com/aV7qVf-LREVyXEtR2EMJqRSTo-rvfzLIwuulccXrqzE
+TQID: 'https://experienceleague.adobe.com/aV7qVf-LREVyXEtR2EMJqRSTo-rvfzLIwuulccXrqzE'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 974
+source-wordcount: '978'
 ht-degree: 0%
-
 ---
-
 # Identifizieren erfolgreicher Marketing-Quellen
 
 Sie haben Ihre Zielgruppe recherchiert, Ihre Kampagne erstellt und in ein paar Marketing-Kanäle investiert. Nun, da einige Zeit vergangen ist, wie funktionieren diese Kanäle? Welcher Kanal hat die meisten neuen Benutzer hervorgebracht? Welche Quelle hat am meisten zu Ihrem Gesamtumsatz beigetragen?
 
-Mit [!DNL Adobe Commerce Intelligence] können Sie Ihre Umsätze und Benutzer einfach nach Empfehlungsquelle segmentieren, unabhängig davon, ob diese [[!DNL [Google Analytics' UTM fields]]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern entspricht. Diese Segmentierung ermöglicht es Ihnen, die Kanäle mit der besten Leistung zu finden und Ihr Marketing-Budget besser zu investieren.
+Mit [!DNL Adobe Commerce Intelligence] können Sie Ihre Umsätze und Benutzer einfach nach Empfehlungsquelle segmentieren, unabhängig davon, ob diese [!DNL [Google Analytics' UTM fields]](https://support.google.com/analytics/answer/1191184?hl=en) oder benutzerdefinierten Datenfeldern entspricht. Diese Segmentierung ermöglicht es Ihnen, die Kanäle mit der besten Leistung zu finden und Ihr Marketing-Budget besser zu investieren.
 
 In diesem Thema werden einige Berichte vorgestellt, mit denen Sie Ihre wertvollsten Marketing-Kanäle aufdecken können:
 
@@ -52,7 +61,7 @@ Um diesen Bericht in der [Report Builder](../../tutorials/using-visual-report-bu
 1. Legen Sie die [!UICONTROL Time Period] auf den Registrierungszeitraum fest, den Sie analysieren möchten.
 1. Legen Sie die [!UICONTROL Interval] auf monatlich fest.
 1. Setzen Sie [!UICONTROL Group By] auf die Akquise- (oder Verweisquelle) und wählen Sie die Quellen aus, die Sie einbeziehen möchten.
-1. In diesem Beispiel wird die `stacked columns` [!UICONTROL chart type] verwendet.
+1. In diesem Beispiel wird die [!UICONTROL chart type] `stacked columns` verwendet.
 
 Im Folgenden finden Sie eine visuelle Anleitung:
 
@@ -71,7 +80,7 @@ Um diesen Bericht in der Report Builder zu erstellen, fügen Sie die Metrik **Du
 
 Im Folgenden finden Sie eine visuelle Anleitung:
 
-![Durchschnittlicher Lebensdauerumsatz nach Benutzerquelle &#x200B;](../../assets/Lifetime_revenue_by_user_source.gif).
+![Durchschnittlicher Lebensdauerumsatz nach Benutzerquelle ](../../assets/Lifetime_revenue_by_user_source.gif).
 
 In diesem Beispiel wird nur der Lebensdauerumsatz untersucht. Sie können diese Analyse aber auch replizieren, um die [!UICONTROL Number of orders] oder [!UICONTROL Distinct buyers] nach Empfehlungsquelle zu untersuchen.
 
@@ -133,5 +142,5 @@ Dieses Thema hat nur einige Analysen angesprochen, mit denen Sie den Wert Ihrer 
 
 * [Verweisquelle für Tracking-Reihenfolge über [!DNL Google ECommerce]](../importing-data/integrations/google-ecommerce.md)
 * [Verbinden Ihres [!DNL Google Adwords] Kontos](../importing-data/integrations/google-adwords.md)
-* [&#x200B; [!DNL Google ECommerce]  mit Bestellungen und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
+* [ [!DNL Google ECommerce]  mit Bestellungen und Kundendaten](../data-warehouse-mgr/bldg-google-ecomm-dim.md)
 * [Best Practices für UTM-Tagging in [!DNL Google Analytics]](../../best-practices/utm-tagging-google.md)

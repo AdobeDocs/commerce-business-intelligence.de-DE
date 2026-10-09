@@ -4,31 +4,45 @@ description: Erfahren Sie, wie Sie Analytics-Grundlagen verstehen und erstellen.
 exl-id: 23cea7b3-2e66-40c3-b4bd-d197237782e3
 role: Admin, Developer, User
 feature: Data Warehouse Manager, Dashboards, Data Integration
-TQID: https://experienceleague.adobe.com/5AOJMiHxtu-nt3cWP-lF5g4Zufa2MuZr7xA8pX3OgB8
+TQID: 'https://experienceleague.adobe.com/5AOJMiHxtu-nt3cWP-lF5g4Zufa2MuZr7xA8pX3OgB8'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 02934da4962380494ab8a2becf5f06efb15d84dc
+    internal-label: Insights
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 3891
+source-wordcount: '3891'
 ht-degree: 18%
-
 ---
-
 # Grundlegende Analysen
 
 Sobald Sie mit der [!DNL Adobe Commerce Intelligence]-Plattform vertraut sind und über ein grundlegendes Verständnis des Tools verfügen, sollten Sie mit der Erstellung von Berichten beginnen. Eine der häufigsten Fragen, die Sie möglicherweise haben, ist: „Was sollte ich mir ansehen?“
@@ -64,9 +78,9 @@ Wenn einige dieser Berechnungen derzeit nicht in Ihrer Datenbank vorhanden sind,
 
 **Akzeptieren Sie Gastbestellungen?**
 
-*Wenn ja, enthält diese Tabelle möglicherweise nicht alle Ihre Kunden. Wenden Sie sich an das [Support-Team](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um sicherzustellen, dass Ihre Kundenanalysen alle Kunden einschließen.*
+*Wenn ja, enthält diese Tabelle möglicherweise nicht alle Ihre Kunden. Wenden Sie sich an das [Support-Team](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), um sicherzustellen, dass Ihre Kundenanalysen alle Kunden einschließen.*
 
-*Nicht sicher, ob Sie Gastbestellungen annehmen? Weitere Informationen finden Sie [&#x200B; &quot;](../data-warehouse-mgr/guest-orders.md) Thema“*
+*Nicht sicher, ob Sie Gastbestellungen annehmen? Weitere Informationen finden Sie [ &quot;](../data-warehouse-mgr/guest-orders.md) Thema“*
 
 ## Tabelle mit Bestellungen
 
@@ -78,7 +92,7 @@ In dieser Tabelle stellt jede Zeile eine Reihenfolge dar. Die Spalten in dieser 
 * **[!UICONTROL Created_at]**: Das Datum, an dem die Bestellung erstellt oder aufgegeben wurde.
 * **[!UICONTROL Customer_email]**: Die E-Mail-Adresse des Kunden, der die Bestellung aufgegeben hat. Dies kann auch die eindeutige Kennung für den Kunden sein.
 * **[!UICONTROL Customer's lifetime number of orders]**: Eine Kopie der Spalte mit demselben Namen in Ihrer `Customers`.
-* **[!UICONTROL Customer's order number]**: Die mit der Bestellung verknüpfte sequenzielle Bestellnummer des Kunden. Wenn es sich bei der betrachteten Zeile beispielsweise um die erste Bestellung eines Kunden handelt, lautet diese Spalte „1“. Wenn dies jedoch die 15. Bestellung des Kunden war, zeigt diese Spalte „15“ für diese Bestellung an. Wenn diese Dimension nicht in Ihrer `Customers` vorhanden ist, bitten Sie das [Support-Team](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), Sie beim Aufbau zu unterstützen.
+* **[!UICONTROL Customer's order number]**: Die mit der Bestellung verknüpfte sequenzielle Bestellnummer des Kunden. Wenn es sich bei der betrachteten Zeile beispielsweise um die erste Bestellung eines Kunden handelt, lautet diese Spalte „1“. Wenn dies jedoch die 15. Bestellung des Kunden war, zeigt diese Spalte „15“ für diese Bestellung an. Wenn diese Dimension nicht in Ihrer `Customers` vorhanden ist, bitten Sie das [Support-Team](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies), Sie beim Aufbau zu unterstützen.
 * **[!UICONTROL Customer's order number (previous-current)]**: Eine Verkettung zweier Werte in der **[!UICONTROL Customer's order number]**. Sie wird in einem Beispielbericht unten verwendet, um die verstrichene Zeit zwischen zwei beliebigen Bestellungen anzuzeigen. Bei dieser Berechnung wird beispielsweise die Zeit zwischen dem ersten Bestelldatum eines Kunden und seinem zweiten Bestelldatum als „1-2“ dargestellt.
 * **[!UICONTROL Coupon_code]**: Zeigt an, welche Coupons für jede Bestellung verwendet wurden.
 * **[!UICONTROL Seconds since previous order]**: Die Zeit (in Sekunden) zwischen den Bestellungen eines Kunden.
@@ -106,7 +120,7 @@ Diese Tabelle wird verwendet, um Ihre Abonnementinformationen zu verwalten, z. B
 
 ## Marketing-Ausgabentabelle
 
-Bei der Analyse Ihrer Marketing-Ausgaben können Sie [!DNL Facebook], [!DNL Google AdWords] oder andere Quellen in Ihre Analysen einbeziehen. Wenn Sie mehrere Quellen für Marketingausgaben haben, wenden Sie sich an das [Managed Services-Team](https://business.adobe.com/de/products/magento/fully-managed-service.html), um Hilfe beim Einrichten einer konsolidierten Tabelle für Ihre Marketing-Kampagnen zu erhalten.
+Bei der Analyse Ihrer Marketing-Ausgaben können Sie [!DNL Facebook], [!DNL Google AdWords] oder andere Quellen in Ihre Analysen einbeziehen. Wenn Sie mehrere Quellen für Marketingausgaben haben, wenden Sie sich an das [Managed Services-Team](https://business.adobe.com/products/magento/fully-managed-service.html), um Hilfe beim Einrichten einer konsolidierten Tabelle für Ihre Marketing-Kampagnen zu erhalten.
 
 **Dimensionen**
 
@@ -530,13 +544,13 @@ Im Folgenden finden Sie einige Beispiele für nützliche Berichte und Metriken:
 
 >[!NOTE]
 >
->Für die beiden Filter können Sie beliebige andere Medien hinzufügen, die als „bezahlte“ Medien für Ihr Unternehmen gelten (z. B. CPC oder Paid Search). Sie können auch beliebige andere Quellen hinzufügen, die Sie analysieren möchten, z. B. Facebook. In [&#x200B; Artikel finden &#x200B;](../analysis/roi-ad-camp.md) weitere Informationen zu CAC, LTV und ROI.
+>Für die beiden Filter können Sie beliebige andere Medien hinzufügen, die als „bezahlte“ Medien für Ihr Unternehmen gelten (z. B. CPC oder Paid Search). Sie können auch beliebige andere Quellen hinzufügen, die Sie analysieren möchten, z. B. Facebook. In [ Artikel finden ](../analysis/roi-ad-camp.md) weitere Informationen zu CAC, LTV und ROI.
 
 ![Lebensdauerwert nach Akquise-Quelle, Medium und Kampagne](../../assets/LTV_2.png)<!--{: width="929"}-->
 
 ### Return on Investment (ROI)
 
-* **Beschreibung**: Eine Möglichkeit, den ROI nach Kampagne zu berechnen, besteht in der Analyse aller über die Kampagne aufgegebenen Bestellungen. Eine alternative Methode besteht jedoch darin, den Lebenszeitwert der durch eine Kampagne akquirierten Kunden zu analysieren. Zur Analyse des ROI ist es wichtig, dass die Kampagnennamen in Ihren Ausgaben- und Transaktionsdaten konsistent sind. Wenn Sie den folgenden Bericht erstellen und aufgrund nicht übereinstimmender Kampagnennamen keine ROI-Werte vorhanden sind, müssen Sie sich möglicherweise das von [&#128279;](../../best-practices/utm-tagging-google.md) implementierte UTM-Tagging“ ansehen.
+* **Beschreibung**: Eine Möglichkeit, den ROI nach Kampagne zu berechnen, besteht in der Analyse aller über die Kampagne aufgegebenen Bestellungen. Eine alternative Methode besteht jedoch darin, den Lebenszeitwert der durch eine Kampagne akquirierten Kunden zu analysieren. Zur Analyse des ROI ist es wichtig, dass die Kampagnennamen in Ihren Ausgaben- und Transaktionsdaten konsistent sind. Wenn Sie den folgenden Bericht erstellen und aufgrund nicht übereinstimmender Kampagnennamen keine ROI-Werte vorhanden sind, müssen Sie sich möglicherweise das von ](../../best-practices/utm-tagging-google.md) implementierte [UTM-Tagging“ ansehen.
 * **Beispiel für einen Bericht**: ROI nach Kampagne
   * **[!UICONTROL Metric A]**: `New Customers`
   * **[!UICONTROL Filter A]**: `Customer's first order's source` WIE &#39;%google%&#39;
@@ -555,7 +569,7 @@ Im Folgenden finden Sie einige Beispiele für nützliche Berichte und Metriken:
 
 >[!NOTE]
 >
->Sie können die Formel als „ROI“ bezeichnen und alle Metriken ausblenden. Darüber hinaus können Sie die Filter in den Metriken anpassen, um alternative Quellen und Medien zu analysieren. Weitere Informationen zu CAC[&#x200B; LTV und ROI &#x200B;](../analysis/roi-ad-camp.md) Sie auch unter diesem Thema).
+>Sie können die Formel als „ROI“ bezeichnen und alle Metriken ausblenden. Darüber hinaus können Sie die Filter in den Metriken anpassen, um alternative Quellen und Medien zu analysieren. Weitere Informationen zu CAC[ LTV und ROI ](../analysis/roi-ad-camp.md) Sie auch unter diesem Thema).
 
 ![ROI 1](../../assets/ROI_1.png)<!--{: width="929"}-->
 
