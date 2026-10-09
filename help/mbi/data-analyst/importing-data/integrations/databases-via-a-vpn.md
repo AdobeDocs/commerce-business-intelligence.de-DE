@@ -4,29 +4,43 @@ description: Erfahren Sie, wie Sie Datenbanken über VPN statt über SSH-Tunnel 
 exl-id: c7aa564d-42de-426e-92e9-f6e250a6abba
 role: Admin, Developer, User
 feature: Commerce Tables, Data Warehouse Manager, Data Integration, Data Import/Export
-TQID: https://experienceleague.adobe.com/0B7swwGIgBemitnx8Q4tyN8VtqwzcA-DYZdXHqzyNAk
+TQID: 'https://experienceleague.adobe.com/0B7swwGIgBemitnx8Q4tyN8VtqwzcA-DYZdXHqzyNAk'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b0c4e988-b173-423f-88d4-345071a0bce8
+    internal-label: Data Warehouse Manager
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: 5d2a63cb-5675-5572-9de5-bc904157ef45
+    internal-label: Commerce Tables
+  - id: 4d217dbe-2c9a-5839-94d7-471fd31623b7
+    internal-label: Data Integration
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: efc8727dd67a9ffcd7a8a1059ea93df8c6344599
+    internal-label: Data integration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 414
-ht-degree: 0%
-
+source-wordcount: '422'
+ht-degree: 1%
 ---
-
 # Verbinden von Datenbanken über VPN
 
 Adobe empfiehlt zwar, Ihre Datenbanken über eine `SSH tunnel` zu verbinden, Sie können aber auch eine verschlüsselte `VPN` verwenden, um die Sicherheit zu gewährleisten. Informationen zur SSH-Hostschlüsselregistrierung, zu Fehlern und zur Fehlerbehebung bei SSH-Tunnelverbindungen finden Sie unter [SSH-Hostschlüsselüberprüfung](ssh-host-key-verification.md). Ein `VPN` kann für jede Ihrer Datenbankintegrationen verwendet werden, und um die Dinge einfach zu halten, ist der Prozess so ziemlich dasselbe wie das Einrichten eines `SSH tunnel`:
@@ -66,10 +80,10 @@ Geben Sie die folgenden Informationen auf dieser Seite ein, beginnend mit dem Ab
 * `Username`: Der Benutzername für den [!DNL Commerce Intelligence] Datenbankbenutzer
 * `Password`: Das Kennwort für den [!DNL Commerce Intelligence] Datenbankbenutzer
 * `Port`: Der Port der Datenbank auf Ihrem Server. Die Standardeinstellungen sind:
-   * `MicrosoftSQL`: `1433`
-   * `MongoDB`: `27017`
-   * `MySQL`: `3306`
-   * `PostgreSQL`: `5432`
+  * `MicrosoftSQL`: `1433`
+  * `MongoDB`: `27017`
+  * `MySQL`: `3306`
+  * `PostgreSQL`: `5432`
 * `Host`: Standardmäßig ist dies localhost `127.0.0.1`, aber es kann auch die öffentliche IP-Adresse Ihres Servers oder eine Adresse eines lokalen Netzwerks sein.
 * `Database Name (optional)`: Wenn Sie nur den Zugriff auf eine Datenbank zulassen (dies wird während des Erstellungsschritts des Datenbankbenutzers angegeben), geben Sie den Namen dieser Datenbank hier ein.
 

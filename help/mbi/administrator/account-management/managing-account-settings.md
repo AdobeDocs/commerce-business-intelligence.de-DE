@@ -6,26 +6,37 @@ role: Admin, User
 feature: Accounts
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b6935462-7263-4ced-a703-60de6a5aeb2d
+    internal-label: Administration
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: 9e444628-408e-5d74-8cd4-c552f0d5d47f
+    internal-label: Accounts
 subfeature_v2:
   - id: a763c1a2-1d0a-40d7-9617-8139636fd12e
+    internal-label: Access management
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4e01225a6bd285afbe988b9c24e07e2ea34649fc
+    internal-label: Administration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 352
+source-wordcount: '354'
 ht-degree: 0%
-
 ---
-
 # Anpassen der Kontoeinstellungen
 
 >[!NOTE]
@@ -38,7 +49,7 @@ In Ihrem [!DNL Commerce Intelligence] können Sie Ihre Kontoeinstellungen für I
 
 * **[!UICONTROL Currency:]** Dies ist die *Standardwährung* für alle Geldwerte in Ihrem Konto. Jedes Mal, wenn ein Dezimal- oder Währungswert mit Ihrer Data Warehouse synchronisiert wird, bestimmt diese Einstellung, welches Symbol in Ihren Berichten vor diesem Wert platziert wird.
 
-* **[!UICONTROL Blackout Hours:]** Mit dieser Einstellung wird sichergestellt, dass Ihre Data Warehouse während der ausgewählten Tageszeiten nicht auf Ihre verbundenen Datenbanken zugreift. Alle Stunden werden zur Nullstunde und in Eastern Standard Time (EST) angegeben. Wenn Sie beispielsweise nicht möchten, dass der Zugriff auf Ihre Produktionsdatenbank zwischen 9:00 :00 EST und 13:00 :00 EST erfolgt, sollten Sie das folgende Ziffernarray eingeben: **9, 10, 11, 12**.
+* **[!UICONTROL Blackout Hours:]** Mit dieser Einstellung wird sichergestellt, dass Ihre Data Warehouse während der ausgewählten Tageszeiten nicht auf Ihre verbundenen Datenbanken zugreift. Alle Stunden werden zur Nullstunde und in Eastern Standard Time (EST) angegeben. Wenn Sie beispielsweise nicht möchten, dass der Zugriff auf Ihre Produktionsdatenbank zwischen 9:00 Uhr EST und 13:00 Uhr EST erfolgt, sollten Sie das folgende Array von Ziffern eingeben: **9, 10, 11, 12**.
 
 * **[!UICONTROL Forced update hours:]** Mit dieser Einstellung wird sichergestellt, dass ein Data Warehouse-Update automatisch in Ihrem Konto *während der von* angegebenen Zeiten) beginnt. Wie bei Blackout Hours sind diese auch in ET. Wenn Data Warehouse-Aktualisierungen beispielsweise automatisch um 12:00 **12:** und **:** EST beginnen sollen, sollten Sie das folgende Ziffernarray eingeben: **0, 12**.
 

@@ -3,33 +3,46 @@ title: Erweiterte Benutzerverwaltung
 description: Verbessern Sie die Sichtbarkeit Ihrer Daten, optimieren Sie das Reporting, passen Sie den Zugriff für Benutzergruppen an, vereinfachen Sie die Freigabe von Dashboards und stellen Sie Sicherheit und Skalierbarkeit für Ihr Unternehmen sicher.
 role: Admin, User
 feature: User Management
+exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b6935462-7263-4ced-a703-60de6a5aeb2d
+    internal-label: Administration
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
 subfeature_v2:
   - id: d971c7be-3e54-4af9-807c-8d1f9f7b22df
+    internal-label: User management
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-exl-id: d96a075d-53ab-48d3-ba83-3ff4298a0cb7
-source-git-commit: fac3c5724cab4a90422fad310a4573a7268a56c4
+    internal-label: Administration
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 877
+source-wordcount: '877'
 ht-degree: 0%
-
 ---
-
 
 # Erweiterte Benutzerverwaltung
 
@@ -462,11 +475,11 @@ Admin-Benutzer werden standardmäßig immer [!UICONTROL **Alle**]-Stores zugeord
 
 - Zu den Freigabeberechtigungen für Dashboards gehören:
 
-   - [!UICONTROL **Bearbeiten**]: Nur für Administratoren verfügbar, um Dashboards zu ändern, Daten zu filtern, Berichte zu ändern oder Daten zu exportieren.
+  - [!UICONTROL **Bearbeiten**]: Nur für Administratoren verfügbar, um Dashboards zu ändern, Daten zu filtern, Berichte zu ändern oder Daten zu exportieren.
 
-   - [!UICONTROL **Ansicht**]: Für Benutzer in allen Rollen mit (bestimmten Einschränkungen) verfügbar.
+  - [!UICONTROL **Ansicht**]: Für Benutzer in allen Rollen mit (bestimmten Einschränkungen) verfügbar.
 
-   - [!UICONTROL **Keine**]: Widerruft den Zugriff auf das Dashboard für bestimmte Benutzergruppen oder Administratoren.
+  - [!UICONTROL **Keine**]: Widerruft den Zugriff auf das Dashboard für bestimmte Benutzergruppen oder Administratoren.
 
   >[!NOTE]
   >

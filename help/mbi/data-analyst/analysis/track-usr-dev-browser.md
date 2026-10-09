@@ -4,25 +4,34 @@ description: Erfahren Sie, wie viele Benutzer sich tatsächlich über Mobilgerä
 exl-id: 57b1bc45-b139-4370-86ea-2fbd021aa14d
 role: Admin, User
 feature: Reports, Dashboards
-TQID: https://experienceleague.adobe.com/-j-LqjbuqLjdmDWNGxAERaDJNMapTMn7uDar1HsshSc
+TQID: 'https://experienceleague.adobe.com/-j-LqjbuqLjdmDWNGxAERaDJNMapTMn7uDar1HsshSc'
 product_v2:
   - id: cc9c1b69-d771-4a04-84d3-df2e3989418f
+    internal-label: Commerce Intelligence
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f842eedf-96a8-52c7-891d-4e56f7441a7e
+    internal-label: Reports
+  - id: 06e518d4-11ae-5c20-98b0-ce8ab05d7166
+    internal-label: Dashboards
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: db7e4a13f32f02292f9c33d8d7d942461fea4bb4
+    internal-label: Beginner
+source-git-commit: fdbaf74705fb224414ac8cb69f6a1b34277e3f79
 workflow-type: tm+mt
-source-wordcount: 432
+source-wordcount: '439'
 ht-degree: 0%
-
 ---
-
 # Tracking [!UICONTROL Google Analytics]
 
 Mit [!UICONTROL Google Analytics] können Sie [Informationen zur Empfehlungsquelle speichern](../analysis/google-track-user-acq.md) um zu verstehen, woher Ihre wertvollsten Benutzer kommen. In diesem Thema wird die Plattform (z. B. Gerät oder Browser) erläutert, an der Ihre Benutzerinnen und Benutzer arbeiten. Dadurch können Sie nachvollziehen, wie viele Benutzer sich tatsächlich über Mobilgeräte anmelden und wie sich dies auf den Lebenszeitwert dieser Benutzer auswirkt.
@@ -34,7 +43,7 @@ Jedes Mal, wenn eine Anfrage an Ihre Website gesendet wird, sendet der Browser d
 1. `Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_8\_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36`
 1. `Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0 Firefox/17.0`
 1. `Mozilla/5.0 (iPhone; U; CPU iPhone OS 4\_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7`
-1,` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
+1.` Mozilla/5.0 (iPad; CPU OS 5\_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B176 Safari/7534.48.3`
 1. `Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
 
 Wenn Sie genau hinschauen, sehen Sie, dass die Zeichenfolge Informationen über das Betriebssystem, den Browser und den Namen des Geräts enthält, das der Benutzer verwendet (sofern es einen Namen hat). Obwohl die Zeichenfolgen von Benutzeragenten von Plattform zu Plattform und sogar von Version stark variieren, ist es im Allgemeinen wahr, dass der Plattformname irgendwo in der Plattform vorhanden ist. Beispiel: #1 oben ist ein Mac mit dem Chrome-Browser, #2 oben ist ein Windows-Computer mit dem Firefox-Browser, #3 ist ein iPhone, #4 ist ein iPad und #5 ist ein Android-Gerät.
