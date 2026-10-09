@@ -81,7 +81,7 @@ Je nach Verbindungsmethode und Datenbanktyp sind möglicherweise technische Kenn
 
 `SaaS` Integrationen sind Services wie [[!DNL Google Adwords]](../integrations/google-adwords.md), [[!DNL Salesforce]](../integrations/salesforce.md) und [[!DNL Zendesk]](../integrations/zendesk.md). Da sich Daten von Drittanbietern auf dem Server des Anbieters befinden, können Sie nicht direkt darauf zugreifen, wie Sie es mit den Daten in Ihrer Datenbank tun können.
 
-Normalerweise ist das Einrichten einer Integration in [!DNL Commerce Intelligence] so einfach wie das Eingeben Ihrer Kontoanmeldeinformationen. Einige Dienste benötigen möglicherweise einen API-Schlüssel, um die Autorisierung abzuschließen. Anweisungen zum Generieren [ benötigten Anmeldeinformationen finden ](../integrations/integrations.md) im Abschnitt „Integrationen“.
+Normalerweise ist das Einrichten einer Integration in [!DNL Commerce Intelligence] so einfach wie das Eingeben Ihrer Kontoanmeldeinformationen. Einige Dienste benötigen möglicherweise einen API-Schlüssel, um die Autorisierung abzuschließen. Anweisungen zum Generieren [&#x200B; benötigten Anmeldeinformationen finden &#x200B;](../integrations/integrations.md) im Abschnitt „Integrationen“.
 
 ## Datei-Upload
 
@@ -104,7 +104,7 @@ Um eine Integration hinzuzufügen, klicken Sie auf **[!UICONTROL Manage Data** >
 * [Konsolidieren von Tabellen](../../../best-practices/consolidating-your-tables.md)
 * [Beschränken des Zugriffs auf die Datenbank](../../../administrator/account-management/restrict-db-access.md)
 
-**Sie sehen keine Integration, die Sie möchten?** Einige Integrationen müssen aktiviert werden, damit sie in Ihrem Konto sichtbar sind. Wenn Sie nach etwas wie [!DNL Facebook] suchen, es aber nicht aufgeführt ist, [ Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+**Sie sehen keine Integration, die Sie möchten?** Einige Integrationen müssen aktiviert werden, damit sie in Ihrem Konto sichtbar sind. Wenn Sie nach etwas wie [!DNL Facebook] suchen, es aber nicht aufgeführt ist, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 **Wenn Sie einen Fehlerstatus für eine Integration sehen** finden Sie im Abschnitt [Fehlerbehebung](https://support.magento.com/hc/en-us/sections/360003078151) Hilfe.
 

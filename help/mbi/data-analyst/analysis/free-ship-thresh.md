@@ -66,7 +66,7 @@ Wenn Sie sich auf der ursprünglichen Architektur befinden (z. B. wenn Sie die O
   >Die „Bucket“-Größen hängen davon ab, was für Sie als Kunde geeignet ist. Sie könnten mit Ihrem `average order value` beginnen und einige Behälter erstellen, die kleiner und größer als dieser Betrag sind. Wenn Sie sich die unten stehende Berechnung ansehen, sehen Sie, wie Sie einen Teil der Abfrage einfach kopieren, bearbeiten und zusätzliche Behälter erstellen können. Das Beispiel erfolgt in Schritten von 50.
 
   * `Column type - Same table, Column definition - Calculation, Column Inputs-` `base_subtotal` oder `calculated column`, `Datatype`: `Integer`
-  * [!UICONTROL Calculation]: `case when A >= 0 and A<=200 then 0 - 200`
+  * [!UICONTROL Calculation]&#x200B;: `case when A >= 0 and A<=200 then 0 - 200`
     Wenn `A< 200` und `A <= 250` dann `201 - 250`
     Wenn `A<251` und `A<= 300` dann `251 - 300`
     Wenn `A<301` und `A<= 350` dann `301 - 350`
@@ -82,77 +82,77 @@ Keine neuen Metriken!!!
 
 >[!NOTE]
 >
->Stellen Sie sicher[ dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
+>Stellen Sie sicher[&#x200B; dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
 * **Durchschnittlicher Bestellwert mit Versandregel A**
-  * [!UICONTROL Metric]: `Average order value`
+  * [!UICONTROL Metric]&#x200B;: `Average order value`
 
 * `A`: `Average Order Value`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart Type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Scalar`
 
 * **Anzahl der Bestellungen nach Zwischensummen-Buckets mit Versandregel A**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
   >[!NOTE]
   >
   >Sie können das Ende abschneiden, indem Sie die oberen `X` `sorted by` `Order subtotal` (Eimer) in der `Show top/bottom` anzeigen.
 
 * `A`: `Number of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
-  [!UICONTROL Chart Type]: `Column`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Column`
 
 * **Prozent der Bestellungen nach Zwischensumme mit Versandregel A**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
-  * 
-    [!UICONTROL Gruppieren nach]: `Independent`
-  * [!UICONTROL Formula]: `(A / B)`
-  * 
-    [!UICONTROL Format]: `%`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL Gruppieren nach]&#x200B;: `Independent`
+  * [!UICONTROL Formula]&#x200B;: `(A / B)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `%`
 
 * `A`: `Number of orders by subtotal (hide)`
 * `B`: `Total number of orders (hide)`
-* [!UICONTROL Formula]: `% of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Formula]&#x200B;: `% of orders`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * **Prozent der Bestellungen mit Zwischensumme über Versandregel A**
-  * [!UICONTROL Metric]: `Number of orders`
-  * 
-    [!UICONTROL Perspective]: `Cumulative`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL Perspective]&#x200B;: `Cumulative`
 
-  * [!UICONTROL Metric]: `Number of orders`
-  * 
-    [!UICONTROL Gruppieren nach]: `Independent`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
+  * &#x200B;
+    [!UICONTROL Gruppieren nach]&#x200B;: `Independent`
 
-  * [!UICONTROL Formula]: `1- (A / B)`
-  * 
-    [!UICONTROL Format]: `%`
+  * [!UICONTROL Formula]&#x200B;: `1- (A / B)`
+  * &#x200B;
+    [!UICONTROL Format]&#x200B;: `%`
 
 * `A`: `Number of orders by subtotal`
 * `B`: `Total number of orders (hide)`
-* [!UICONTROL Formula]: `% of orders`
-* [!UICONTROL Time period]: `Time period with shipping rule A`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Order subtotal (buckets)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Formula]&#x200B;: `% of orders`
+* [!UICONTROL Time period]&#x200B;: `Time period with shipping rule A`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Order subtotal (buckets)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 
 Wiederholen Sie die obigen Schritte und Berichte für Versand B und den Zeitraum mit Versandregel B.

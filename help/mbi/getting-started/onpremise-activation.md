@@ -57,7 +57,7 @@ Wenden Sie sich zur Erstellung Ihres Kontos an Ihr Adobe-Accountteam oder Ihren 
 
 Nachdem Ihr Konto erstellt wurde, überprüfen Sie Ihre E-Mail auf eine Konto-Benachrichtigungs-E-Mail von [!DNL The Magento BI Team@rjmetrics.com]. Verwenden Sie den in der E-Mail angegebenen Link, um auf Ihr [!DNL Commerce Intelligence]-Konto zuzugreifen und Ihr Kennwort zu erstellen. Wechseln Sie zu Ihrem Posteingang und überprüfen Sie Ihre E-Mail-Adresse.
 
-Wenn Sie keine E-Mail erhalten haben, wenden [ sich an den Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Wenn Sie keine E-Mail erhalten haben, wenden [&#x200B; sich an den Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
 
 ![Bildschirm zum Erstellen eines Kennworts für ein neues Commerce Intelligence-Konto](../assets/create-account-4.png)
 
@@ -148,15 +148,15 @@ Geben Sie Ihre [!DNL Commerce Intelligence] im [!UICONTROL Connect your Magento 
 
 [!UICONTROL Integration Name]: [Wählen Sie einen Namen für Ihre [!DNL Commerce Intelligence]]
 
-[!UICONTROL Host]: `mbi.internal`
+[!UICONTROL Host]&#x200B;: `mbi.internal`
 
-[!UICONTROL Port]: `3306`
+[!UICONTROL Port]&#x200B;: `3306`
 
-[!UICONTROL Benutzername]: `mbi`
+[!UICONTROL Benutzername]&#x200B;: `mbi`
 
 [!UICONTROL Password]: [Eingabekennwort im vorherigen Abschnitt angezeigt]
 
-[!UICONTROL Database Name]: `main`
+[!UICONTROL Database Name]&#x200B;: `main`
 
 [!UICONTROL Table Prefixes]: [Leer lassen, wenn keine Tabellenpräfixe vorhanden sind]
 
@@ -166,7 +166,7 @@ Geben Sie Ihre [!DNL Commerce Intelligence] im [!UICONTROL Connect your Magento 
 
 **Eingänge:**
 
-[!UICONTROL Database Timezone]: `UTC`
+[!UICONTROL Database Timezone]&#x200B;: `UTC`
 
 [!UICONTROL Desired Timezone]: [Wählen Sie die Zeitzone aus, für die Ihre Daten angezeigt werden sollen]
 
@@ -182,13 +182,13 @@ Die Projekt-Benutzeroberfläche bietet eine SSH-Zugriffszeichenfolge. Diese Zeic
 
 **Eingänge:**
 
-[!UICONTROL Encryption Type]: `SSH Tunnel`
+[!UICONTROL Encryption Type]&#x200B;: `SSH Tunnel`
 
 [!UICONTROL Remote Address]: `ssh.us-3.magento.cloud` [aus dem vorherigen Schritt]
 
 [!UICONTROL Username]: `vfbfui4vmfez6-master-7rqtwti—mymagento` [aus dem vorherigen Schritt]
 
-[!UICONTROL Port]: `22`
+[!UICONTROL Port]&#x200B;: `22`
 
 ## Speichern Sie Ihre Integration.
 
@@ -200,7 +200,7 @@ Sie haben jetzt Ihre [!DNL Commerce]-Datenbank erfolgreich mit Ihrem [!DNL Comme
 >
 >Wenn Sie [!DNL Adobe Commerce Intelligence Pro] sind, wenden Sie sich an Ihren Customer Success Manager oder technischen Kundenberater, um die nächsten Schritte zu koordinieren.
 
-Nachdem Sie die Konfiguration abgeschlossen haben, [ Sie sich ](../getting-started/sign-in.md) Ihrem [!DNL Commerce Intelligence] Konto an.
+Nachdem Sie die Konfiguration abgeschlossen haben, [&#x200B; Sie sich &#x200B;](../getting-started/sign-in.md) Ihrem [!DNL Commerce Intelligence] Konto an.
 
 <!--
 # Activate your [!DNL Commerce Intelligence] Account

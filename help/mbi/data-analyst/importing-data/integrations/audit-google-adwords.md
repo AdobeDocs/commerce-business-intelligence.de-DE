@@ -53,7 +53,7 @@ Etwas Seltsames in [[!DNL Google Adwords]](../integrations/google-adwords.md) ge
 
 1. Geben Sie Ihre [!DNL Google Adwords] Kontoinformationen ein.
 
-1. Nachdem Ihr Konto [!DNL Google Adwords] Editor hinzugefügt wurde, wählen Sie **[!UICONTROL File** > ** Tabelle exportieren (CSV)**> **Gesamtes Konto exportieren]**
+1. Nachdem Ihr Konto [!DNL Google Adwords] Editor hinzugefügt wurde, wählen Sie **[!UICONTROL File** > **&#x200B; Tabelle exportieren (CSV)**> **Gesamtes Konto exportieren]**
 
 Dadurch wird eine `.csv`-Datei erstellt, die alle im aktuellen [!DNL Google Adwords]-Konto gespeicherten Informationen enthält. Senden Sie an dieser Stelle ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies) (stellen Sie sicher, dass Sie diese Datei anhängen!) So können Sie sich Ihre Daten genauer ansehen. Wenn die Datei zu groß ist, geben Sie sie über [!DNL Dropbox] oder [!DNL Google Drive] für das [!DNL Commerce Intelligence]-Team frei.
 

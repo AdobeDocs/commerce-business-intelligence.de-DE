@@ -65,8 +65,8 @@ Zu erstellende Spalten
 * Definition auswählen: Verbundene Spalte
 * [!UICONTROL table] auswählen: `customer_entity`
 * [!UICONTROL column] auswählen: `Customer's lifetime number of orders`
-* [!UICONTROL Path]: `sales_flat_order.customer_id = customer_entity.entity_id`
-* [!UICONTROL Filter]: `Orders we count`
+* [!UICONTROL Path]&#x200B;: `sales_flat_order.customer_id = customer_entity.entity_id`
+* [!UICONTROL Filter]&#x200B;: `Orders we count`
 
 * `Seconds since created_at`
 * Definition auswählen: `Age`
@@ -84,71 +84,71 @@ Keine neuen Metriken!
 
 >[!NOTE]
 >
->Stellen Sie sicher[ dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
+>Stellen Sie sicher[&#x200B; dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
 * **Anfängliche Wiederholungsreihenfolgewahrscheinlichkeit**
 * Metrik A: Allzeit-Wiederholungsaufträge
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * Metrik B: Allzeitbestellungen
 * [!UICONTROL Metric]: Anzahl der Bestellungen
 
 * [!UICONTROL Formula]: Anfängliche Wahrscheinlichkeit für Wiederholungsreihenfolge
-* 
-  [!UICONTROL-Formel]: `A/B`
-* 
-  [!UICONTROL Format]: `Percent`
+* &#x200B;
+  [!UICONTROL -Formel]&#x200B;: `A/B`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* 
-  [!UICONTROL Chart type]: `Scalar`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Scalar`
 
 * **Wiederholungsreihenwahrscheinlichkeit angegeben Monate seit Bestellung**
 * Metrik A: Wiederholungsaufträge nach Monaten seit vorheriger Bestellung (ausblenden)
-* [!UICONTROL Metric]: `Number of orders`
-* 
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* &#x200B;
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
 * Metrik B: Letzte Bestellungen nach Monaten seit Bestellung (ausblenden)
-* [!UICONTROL Metric]: `Number of orders`
-* 
-  [!UICONTROL Perspective]: `Cumulative`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* &#x200B;
+  [!UICONTROL Perspective]&#x200B;: `Cumulative`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
 * Metrik C: Allzeit-Wiederholungsaufträge (ausblenden)
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Customer's order number greater than 1`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Customer's order number greater than 1`
 
-* 
-  [!UICONTROL Gruppieren nach]: `Independent`
+* &#x200B;
+  [!UICONTROL Gruppieren nach]&#x200B;: `Independent`
 
 * Metrik-ID: Letzte Bestellungen (Ausblenden)
-* [!UICONTROL Metric]: `Number of orders`
-* [!UICONTROL Filter]: `Is customer's last order? (Yes/No) = Yes`
+* [!UICONTROL Metric]&#x200B;: `Number of orders`
+* [!UICONTROL Filter]&#x200B;: `Is customer's last order? (Yes/No) = Yes`
 
-* 
-  [!UICONTROL Gruppieren nach]: `Independent`
+* &#x200B;
+  [!UICONTROL Gruppieren nach]&#x200B;: `Independent`
 
 * [!UICONTROL Formula]: Anfängliche Wahrscheinlichkeit für Wiederholungsreihenfolge
-* 
-  [!UICONTROL-Formel]: `(C-A)/(C+D-A-B)`
-* 
-  [!UICONTROL Format]: `Percent`
+* &#x200B;
+  [!UICONTROL -Formel]&#x200B;: `(C-A)/(C+D-A-B)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Percent`
 
-* [!UICONTROL Time period]: `All time`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `Months since previous order`
+* [!UICONTROL Time period]&#x200B;: `All time`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `Months since previous order`
 * Oben anzeigen.Unten: Die 24 wichtigsten Kategorien, sortiert nach Kategorienamen
 
-* 
-  [!UICONTROL Chart type]: `Line`
+* &#x200B;
+  [!UICONTROL Chart type]&#x200B;: `Line`
 
 Der Bericht über die Wahrscheinlichkeit des ursprünglichen Wiederholungsauftrags stellt die Gesamtzahl der Wiederholungsaufträge/Gesamtaufträge dar. Jede Bestellung ist eine Möglichkeit, eine Wiederholungsreihenfolge zu erstellen. Die Anzahl der Wiederholungsreihenfolgen ist die Teilmenge derjenigen, die tatsächlich eine Wiederholungsreihenfolge ausführen.
 
@@ -160,4 +160,4 @@ Nachdem Sie Ihr Dashboard erstellt haben, lautet die am häufigsten gestellte Fr
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie im Dashboard nach Bedarf organisieren. Das Ergebnis kann wie das Bild oben auf der Seite aussehen
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [&#x200B; sich an den Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

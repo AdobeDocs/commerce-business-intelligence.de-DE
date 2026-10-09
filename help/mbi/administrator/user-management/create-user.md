@@ -46,7 +46,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Zum Anzeigen, Hinzufügen oder Ändern der Rechnungsinformationen Ihres Kontos benötigen Sie `Billing` Berechtigungen. [Berechtigungen werden für jeden Benutzer einzeln festgelegt, ](../../administrator/user-management/user-management.md) Benutzerkonten erstellt werden. Wenn Sie `Billing` Berechtigungen benötigen, wenden Sie sich an den Administrator Ihres Kontos.
+   >Zum Anzeigen, Hinzufügen oder Ändern der Rechnungsinformationen Ihres Kontos benötigen Sie `Billing` Berechtigungen. [Berechtigungen werden für jeden Benutzer einzeln festgelegt, &#x200B;](../../administrator/user-management/user-management.md) Benutzerkonten erstellt werden. Wenn Sie `Billing` Berechtigungen benötigen, wenden Sie sich an den Administrator Ihres Kontos.
 
 1. Klicken Sie auf **[!UICONTROL Save]**.
 
@@ -54,7 +54,7 @@ Dem neuen Benutzer wird eine E-Mail mit Anmelde- und Kennwortdetails gesendet.
 
 >[!NOTE]
 >
->Der neue Benutzer verfügt standardmäßig über keine Dashboards. Adobe empfiehlt, [ erforderlichen ](../../data-user/dashboards/share-dashboard-with-users.md) sofort für neue Benutzende freizugeben.
+>Der neue Benutzer verfügt standardmäßig über keine Dashboards. Adobe empfiehlt, [&#x200B; erforderlichen &#x200B;](../../data-user/dashboards/share-dashboard-with-users.md) sofort für neue Benutzende freizugeben.
 
 ## E-Mail-Adresse oder Passwort aktualisieren
 
@@ -66,4 +66,4 @@ Wenn Sie die Einladung erneut senden müssen, klicken Sie auf der [Anmeldeseite]
 
 >[!IMPORTANT]
 >
->Jedes Konto verfügt über eine vertraglich vereinbarte Anzahl von Lizenzen oder Lizenzen. Wenn Sie Ihr Limit erreicht haben oder mehr erfahren möchten, [ Sie ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+>Jedes Konto verfügt über eine vertraglich vereinbarte Anzahl von Lizenzen oder Lizenzen. Wenn Sie Ihr Limit erreicht haben oder mehr erfahren möchten, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

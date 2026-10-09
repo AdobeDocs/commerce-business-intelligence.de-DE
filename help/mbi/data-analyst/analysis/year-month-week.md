@@ -74,7 +74,7 @@ Diese Analyse enthält [erweiterte berechnete Spalten](../data-warehouse-mgr/adv
   * `created_at (month)` [!UICONTROL Calculation]: **to_char(A, &#39;mm-month&#39;)**
   * `created_at (day of the month)`&lt; [!UICONTROL Calculation]: **to_char(A, &#39;dd&#39;)**
   * `created_at (day of the week)` [!UICONTROL Calculation]: **to_char(A, &#39;d-Day&#39;)**
-  * **`created_at (hour of the day)` [!UICONTROL Calculation]: **to_char(A, &#39;hh24&#39;)**
+  * **`created_at (hour of the day)` [!UICONTROL Calculation]: &#x200B;** to_char(A, &#39;hh24&#39;)**
     ![Erstellen der Benutzeroberfläche für berechnete Spalten in Data Warehouse Manager](../../assets/new-arch-create-calc.png)
 
 ## Metriken
@@ -83,31 +83,31 @@ Keine.
 
 >[!NOTE]
 >
->Stellen Sie sicher[ dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
+>Stellen Sie sicher[&#x200B; dass Sie alle neuen Spalten als Dimensionen zu Metriken hinzufügen](../data-warehouse-mgr/manage-data-dimensions-metrics.md) bevor Sie neue Berichte erstellen.
 
 ## Berichte
 
 * **YoY-Diagramm**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Time options]: `Time range (Custom)`: `2 years ago to 1 year ago`
 
   * [!UICONTROL Show top/bottom]: Top 100% sortiert nach **`created_at (month-day)`***
 
 * `A`: `This year`
 * `B`: `Last year`
-* [!UICONTROL Time period]: `1 year ago to 0 years ago`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (month-day)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Time period]&#x200B;: `1 year ago to 0 years ago`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `created_at (month-day)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * **MoM-Diagramm**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * Zeitoptionen: `Time range (Custom)`: `2 months ago to 1 month ago`
 
   * Oben/Unten anzeigen: Top 100% sortiert nach **`created_at (day of month)`***
@@ -115,44 +115,44 @@ Keine.
 * `A`: Diesen Monat*
 * `B`: Letzter Monat*
 * [!UICONTROL Time period]: Vor einem Monat bis vor 0 Monaten
-* 
-  [!UICONTROL Interval]: None
-* [!UICONTROL Group by]: `created_at (day of month)`
-* 
-  [!UICONTROL Chart Type]: Line
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: None
+* [!UICONTROL Group by]&#x200B;: `created_at (day of month)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: Line
 
 * **WoW-Diagramm**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Time options]: `Time range (Custom)`: `2 weeks ago to 1 week ago`
 
   * [!UICONTROL Show top/bottom]: Top 100% sortiert nach `created_at (day of week)`
 
 * `A`: `This week`
 * `B`: `Last week`
-* [!UICONTROL Time period]: `1 week ago to 0 weeks ago`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (day of week)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Time period]&#x200B;: `1 week ago to 0 weeks ago`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `created_at (day of week)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 * **DoD-Diagramm**
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
 
-  * [!UICONTROL Metric]: `Number of orders`
+  * [!UICONTROL Metric]&#x200B;: `Number of orders`
   * [!UICONTROL Time options]: `Time range (Custom)`: `2 days ago to 1 day ago`
 
   * [!UICONTROL Show top/bottom]: Top 100% sortiert nach `created_at (hour of day)`
 
 * `A`: `Today`
 * Metrik B: `Yesterday`
-* [!UICONTROL Time period]: `1 day ago to 0 days ago`
-* 
-  [!UICONTROL Interval]: `None`
-* [!UICONTROL Group by]: `created_at (hour of day)`
-* 
-  [!UICONTROL Chart Type]: `Line`
+* [!UICONTROL Time period]&#x200B;: `1 day ago to 0 days ago`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `None`
+* [!UICONTROL Group by]&#x200B;: `created_at (hour of day)`
+* &#x200B;
+  [!UICONTROL Chart Type]&#x200B;: `Line`
 
 Nachdem Sie alle Berichte kompiliert haben, können Sie sie im Dashboard nach Bedarf organisieren. Das Ergebnis könnte wie das Bild oben auf dieser Seite aussehen.

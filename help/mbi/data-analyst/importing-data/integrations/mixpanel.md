@@ -92,5 +92,5 @@ Wenn die Verbindung erfolgreich hergestellt wurde, wird eine _Erfolgreich!_ Nach
 
 ### verwandt
 
-* [ [!DNL Mixpanel]  Daten](../integrations/mixpanel-data.md)
+* [&#x200B; [!DNL Mixpanel]  Daten](../integrations/mixpanel-data.md)
 * [Erneute Authentifizierung von Integrationen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/mbi-reauthenticating-integrations)

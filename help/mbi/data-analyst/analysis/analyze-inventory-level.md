@@ -67,88 +67,88 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihr aktue
 
 * **[!UICONTROL catalog_product_entity]**:
   * **`Product's most recent order date`**
-    * [!UICONTROL Column type]: `Many to One`
-    * 
-      [!UICONTROL Column equation]: `MAX`
-    * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `Many to One`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `MAX`
+    * [!UICONTROL Path]&#x200B;: `sales_order_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `created_at`
     * [!UICONTROL Filters]:
       * [A] `Ordered products we count`
 
   * **`Product's first order date`**
-    * [!UICONTROL Column type]: `Many to One`
-    * 
-      [!UICONTROL Column equation]: `MIN`
-    * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `Many to One`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `MIN`
+    * [!UICONTROL Path]&#x200B;: `sales_order_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `created_at`
     * [!UICONTROL Filters]:
       * [A] `Ordered products we count`
 
   * **`Seconds since product's most recent order date`**
-    * [!UICONTROL Column type]: `Same Table`
-    * 
-      [!UICONTROL Column equation]: `AGE`
+    * [!UICONTROL Column type]&#x200B;: `Same Table`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `AGE`
     * [!UICONTROL DATETIME column] auswählen: `Product's most recent order date`
 
   * **`Product's lifetime number of items sold`**
-    * [!UICONTROL Column type]: `Many to One`
-    * 
-      [!UICONTROL Column equation]: `SUM`
-    * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `Many to One`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `SUM`
+    * [!UICONTROL Path]&#x200B;: `sales_order_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `qty_ordered`
     * [!UICONTROL Filters]:
       * [A] `Ordered products we count`
 
   * **`Avg products sold per week (all time)`**
-    * [!UICONTROL Column type]: `Same Table`
-    * 
-      [!UICONTROL Column equation]: `CALCULATION`
+    * [!UICONTROL Column type]&#x200B;: `Same Table`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `CALCULATION`
     * [!UICONTROL Column] Eingaben:
       * A: `Product's lifetime number of items sold`
       * B: `Product's first order date`
-    * 
-      [!UICONTROL Datatype]: `Decimal`
+    * &#x200B;
+      [!UICONTROL Datatype]&#x200B;: `Decimal`
     * Definition:
       * Fall, wenn A null ist oder B null ist, dann wird null else round(A::decimal/(extract(Epoch from (current_timestamp - B))::decimal/604800.0),2) end
 
 * **[!UICONTROL cataloginventory_stock_item]**:
   * **`Sku`**
-    * [!UICONTROL Column type]: `One to Many`
-    * 
-      [!UICONTROL Column equation]: `JOINED_COLUMN`
-    * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `sku`
 
   * **`Product's lifetime number of items sold`**
-    * [!UICONTROL Column type]: `One to Many`
-    * 
-      [!UICONTROL Column equation]: `JOINED_COLUMN`
-    * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `Product's lifetime number of items sold`
 
   * **`Seconds since product's most recent order date`**
-    * [!UICONTROL Column type]: `One to Many`
-    * 
-      [!UICONTROL Column equation]: `JOINED_COLUMN`
-    * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `Seconds since product's most recent order date`
 
   * **`Avg products sold per week (all time)`**
-    * [!UICONTROL Column type]: `One to Many`
-    * 
-      [!UICONTROL Column equation]: `JOINED_COLUMN`
-    * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `Avg products sold per week (all time)`
 
   * **`Weeks on hand`**
-    * [!UICONTROL Column type]: `Same Table`
-    * 
-      [!UICONTROL Column equation]: `CALCULATION`
+    * [!UICONTROL Column type]&#x200B;: `Same Table`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `CALCULATION`
     * [!UICONTROL Column] Eingaben:
       * A: `qty`
       * B: `Avg products sold per week (all time)`
-    * 
-      [!UICONTROL Datatype]: `Decimal`
+    * &#x200B;
+      [!UICONTROL Datatype]&#x200B;: `Decimal`
     * Definition:
       * Fall, wenn A null ist oder B null ist oder B = 0,0, dann wird null else round(A::decimal/B,2) end
 
@@ -157,34 +157,34 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihr aktue
 
 * **[!UICONTROL catalog_product_entity]**:
   * **`Product's most recent order date`**
-    * [!UICONTROL Column type]: `Many to One`
-    * 
-      [!UICONTROL Column equation]: `MAX`
-    * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `Many to One`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `MAX`
+    * [!UICONTROL Path]&#x200B;: `sales_order_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `created_at`
     * [!UICONTROL Filters]:
       * [A] `Ordered products we count`
 
   * **`Product's first order date`**
-    * [!UICONTROL Column type]: `Many to One`
-    * 
-      [!UICONTROL Column equation]: `MIN`
-    * [!UICONTROL Path]: `sales_order_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `Many to One`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `MIN`
+    * [!UICONTROL Path]&#x200B;: `sales_order_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `created_at`
     * [!UICONTROL Filters]:
       * [A] `Ordered products we count`
 
   * **`Seconds since product's most recent order date`**
-    * [!UICONTROL Column type]: `Same Table`
-    * 
-      [!UICONTROL Column equation]: `AGE`
+    * [!UICONTROL Column type]&#x200B;: `Same Table`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `AGE`
     * Select DATETIME column: **`Product's most recent order date`**
 
   * **`Product's lifetime number of items sold`**
-    * [!UICONTROL Column type]: `Many to One`
-    * 
-      [!UICONTROL Column equation]: `SUM`
-    * [!UICONTROL Path]: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
+    * [!UICONTROL Column type]&#x200B;: `Many to One`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `SUM`
+    * [!UICONTROL Path]&#x200B;: **`sales_order_item.product_id => catalog_product_entity.entity_id`**
     * [!UICONTROL column] auswählen: **`qty_ordered`**
     * [!UICONTROL Filters]:
       * [A] `Ordered products we count`
@@ -194,31 +194,31 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihr aktue
 
 * **[!UICONTROL cataloginventory_stock_item]**:
   * **`Sku`**
-    * [!UICONTROL Column type]: `One to Many`
-    * 
-      [!UICONTROL Column equation]: `JOINED_COLUMN`
-    * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `sku`
 
   * **`Product's lifetime number of items sold`**
-    * [!UICONTROL Column type]: `One to Many`
-    * 
-      [!UICONTROL Column equation]: `JOINED_COLUMN`
-    * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `Product's lifetime number of items sold`
 
   * **`Seconds since product's most recent order date`**
-    * [!UICONTROL Column type]: `One to Many`
-    * 
-      [!UICONTROL Column equation]: `JOINED_COLUMN`
-    * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `Seconds since product's most recent order date`
 
   * **`Avg products sold per week (all time)`**
-    * [!UICONTROL Column type]: `One to Many`
-    * 
-      [!UICONTROL Column equation]: `JOINED_COLUMN`
-    * [!UICONTROL Path]: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
+    * [!UICONTROL Column type]&#x200B;: `One to Many`
+    * &#x200B;
+      [!UICONTROL Column equation]&#x200B;: `JOINED_COLUMN`
+    * [!UICONTROL Path]&#x200B;: `cataloginventory_stock_item.product_id => catalog_product_entity.entity_id`
     * [!UICONTROL column] auswählen: `Avg products sold per week (all time)`
 
   * **`Weeks on hand`**
@@ -241,37 +241,37 @@ Dieses Thema zeigt, wie Sie ein Dashboard einrichten, das Einblicke in Ihr aktue
 ### Berichtsanweisungen
 
 * **`Inventory on hand by sku`**
-  * [!UICONTROL Metric]: `Inventory on hand`
-  * [!UICONTROL Time period]: `All time`
+  * [!UICONTROL Metric]&#x200B;: `Inventory on hand`
+  * [!UICONTROL Time period]&#x200B;: `All time`
   * Zeitintervall: `None`
   * [!UICONTROL Group by]:
     * `Sku`
     * `Weeks on hand`
-  * 
-    [!UICONTROL Chart type]: `Table`
+  * &#x200B;
+    [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **`Inventory with less than 2 weeks on hand (order now)`**
-  * [!UICONTROL Metric]: `Inventory on hand`
+  * [!UICONTROL Metric]&#x200B;: `Inventory on hand`
     * [!UICONTROL Filters]:
       * [A] `Weeks on hand` `< 2`
 
-  * [!UICONTROL Time period]: `All time`
+  * [!UICONTROL Time period]&#x200B;: `All time`
   * Zeitintervall: `None`
-  * 
-    [!UICONTROL Gruppieren nach]: `Sku`
-  * 
-    [!UICONTROL Chart type]: `Table`
+  * &#x200B;
+    [!UICONTROL Gruppieren nach]&#x200B;: `Sku`
+  * &#x200B;
+    [!UICONTROL Chart type]&#x200B;: `Table`
 
 * **`Inventory with more than 26 weeks on hand (put on sale)`**
-  * [!UICONTROL Metric]: `Inventory on hand`
+  * [!UICONTROL Metric]&#x200B;: `Inventory on hand`
     * [!UICONTROL Filters]:
       * [A] `Weeks on hand` `> 26`
 
-  * [!UICONTROL Time period]: `All time`
+  * [!UICONTROL Time period]&#x200B;: `All time`
   * Zeitintervall: `None`
-  * 
-    [!UICONTROL Gruppieren nach]: `Sku`
-  * 
-    [!UICONTROL Chart type]: `Table`
+  * &#x200B;
+    [!UICONTROL Gruppieren nach]&#x200B;: `Sku`
+  * &#x200B;
+    [!UICONTROL Chart type]&#x200B;: `Table`
 
-Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [ sich an den Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).
+Wenn Sie beim Erstellen dieser Analyse auf Fragen stoßen oder einfach das Professional Services-Team kontaktieren möchten, wenden [&#x200B; sich an den Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies).

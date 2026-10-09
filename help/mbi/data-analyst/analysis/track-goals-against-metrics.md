@@ -80,48 +80,48 @@ Es ist hilfreich, bei der Analyse Ihrer Ziele einen Mix aus statischen Werten un
 
 * **Zum Erreichen des Ziels verbleibender Umsatz**
 * `A`: `Revenue`
-* 
-  [!UICONTROL-Metrik]: `Revenue`
+* &#x200B;
+  [!UICONTROL -Metrik]&#x200B;: `Revenue`
 
 * `B`: `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
-* [!UICONTROL Formula]: `Revenue left to achieve target`
-* 
-  [!UICONTROL-Formel]: `(B-A)`
-* 
-  [!UICONTROL Format]: `Number`
+* [!UICONTROL Formula]&#x200B;: `Revenue left to achieve target`
+* &#x200B;
+  [!UICONTROL -Formel]&#x200B;: `(B-A)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Number`
 
 * [!UICONTROL Time period]: (Welcher relevante Zeitraum gewünscht wird)
-* 
-  [!UICONTROL Interval]: `Month`
-* 
-  [!UICONTROL Diagrammtyp]: `Scalar`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `Month`
+* &#x200B;
+  [!UICONTROL Diagrammtyp]&#x200B;: `Scalar`
 
 * **Umsatzziele**
 * `A`: `Revenue`
-* 
-  [!UICONTROL-Metrik]: `Revenue`
+* &#x200B;
+  [!UICONTROL -Metrik]&#x200B;: `Revenue`
 
 * `B`: `Target Revenue`
-* [!UICONTROL Metric]: `Monthly Revenue Target`
+* [!UICONTROL Metric]&#x200B;: `Monthly Revenue Target`
 
 * `C`: `Revenue (amount change since previous year)` (ausblenden)
-* 
-  [!UICONTROL-Metrik]: `Revenue`
-* [!UICONTROL Perspective]: `Amount change vs. Previous year`
+* &#x200B;
+  [!UICONTROL -Metrik]&#x200B;: `Revenue`
+* [!UICONTROL Perspective]&#x200B;: `Amount change vs. Previous year`
 
 * [!UICONTROL Formula]: (Diesen Monat letztes Jahr)
-* 
-  [!UICONTROL-Formel]: `(A-C)`
-* 
-  [!UICONTROL Format]: `Currency`
+* &#x200B;
+  [!UICONTROL -Formel]&#x200B;: `(A-C)`
+* &#x200B;
+  [!UICONTROL Format]&#x200B;: `Currency`
 
 * `Multiple Y-Axes` ausschalten
 * [!UICONTROL Time period]: (Welcher relevante Zeitraum gewünscht wird)*
-* 
-  [!UICONTROL Interval]: `Month`
-* [!UICONTROL Chart Type]: `Line Chart`
+* &#x200B;
+  [!UICONTROL Interval]&#x200B;: `Month`
+* [!UICONTROL Chart Type]&#x200B;: `Line Chart`
 
 Nachdem Sie die oben genannten Berichte zu Umsatzzielen abgeschlossen haben, können Sie identische Berichte für Ziele rund um Bestellungen, registrierte Konten oder andere Werte erstellen, die Sie in Ihren Zieldatei-Upload aufgenommen haben.
 
